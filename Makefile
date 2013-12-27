@@ -115,6 +115,9 @@ example:
 	mkdir example
 	cd example && jar xvf $(MCJAR) && rm -rf *.class META-INF/ achievement/ com/ paulscode/ lang/ net/
 
+example.zip: example
+	cd example && zip -r example.zip * && mv example.zip ..
+
 $(PACKNAME)-nostalgia.zip:
 	make clean
 	make nostalgia
