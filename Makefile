@@ -100,7 +100,7 @@ $(DIRS):
 
 .PHONY: install
 install: $(PACKNAME).zip
-	cp $(PACKNAME).zip $(MCDIR)/texturepacks
+	cp $(PACKNAME).zip $(MCDIR)/resourcepacks
 
 .PHONY: clean
 clean:
