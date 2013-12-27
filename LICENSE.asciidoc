@@ -1,0 +1,29 @@
+BucePack is composed of textures and code that are distributed under several
+different terms and conditions.
+
+All Minecraft textures are modified and/or distributed under the Minecraft
+Terms of Use <https://minecraft.net/terms> and Brand Guidelines
+<https://minecraft.net/brand>.
+
+The pumpkinblur.png is from Xander the Great's Swords to Hammers pack
+<http://www.planetminecraft.com/texture_pack/swords-to-hammers/>,
+and is redistributed with his permission.
+
+The saddle.png is borrowed from reddit user /u/the_form_scattered
+<http://www.reddit.com/r/Minecraft/comments/12ah90/i_added_a_little_bit_to_the_saddle_texture_i_love/c6tq9ut>,
+whose account is deleted. His saddle texture is redistributed in good faith
+under the assumption that he wouldn't have created a one-off texture and
+linked it on a popular social media site where reposting is common if he did
+not want others to share it. /u/the_form_scattered, if you're reading this and
+want me to remove your texture, just get in touch with me and I will gladly
+oblige.
+
+Any textures belonging to me are released under the CC BY-SA 4.0 license
+<http://creativecommons.org/licenses/by-sa/4.0/>. Most of the textures I've
+created are modified versions of old Minecraft textures, so if you want to
+redistribute them you may need to also follow the Minecraft TOS and Brand
+Guidelines. I am not a lawyer so caveat emptor applies here.
+
+All code included in the BucePack git repository is released under the WTFPL
+<http://www.wtfpl.net/txt/copying/>.
+
