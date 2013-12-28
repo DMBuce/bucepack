@@ -29,8 +29,8 @@ FLAVOR = \
 	$(PACKDIR)/assets/minecraft/textures/blocks/redstone_ore.png \
 	$(PACKDIR)/assets/minecraft/textures/items/emerald.png \
 	$(PACKDIR)/assets/minecraft/textures/blocks/command_block.png \
-	$(PACKDIR)/assets/minecraft/textures/items/fish_cooked.png \
-	$(PACKDIR)/assets/minecraft/textures/items/fish_raw.png \
+	$(PACKDIR)/assets/minecraft/textures/items/fish_cod_cooked.png \
+	$(PACKDIR)/assets/minecraft/textures/items/fish_cod_raw.png \
 	$(PACKDIR)/assets/minecraft/textures/items/pumpkin_pie.png \
 	$(PACKDIR)/assets/minecraft/textures/entity/iron_golem.png \
 	$(PACKDIR)/assets/minecraft/textures/entity/pig/pig_saddle.png \
