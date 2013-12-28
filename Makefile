@@ -3,7 +3,7 @@ PACKNAME = BucePack
 PACKDIR  = $(PACKNAME)
 SRCDIR   = pack
 MCDIR    = $(HOME)/.minecraft
-MCJAR    = $(MCDIR)/bin/minecraft.jar
+MCJAR    = $(shell find /home/woody/.minecraft/versions/ -type f -name '*.jar' | sort | tail -n1)
 
 # needed by all texture pack targets
 DEFAULT = $(PACKDIR)/pack.mcmeta $(PACKDIR)/pack.png
