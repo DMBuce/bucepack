@@ -1,8 +1,7 @@
 BucePack is a Minecraft texture pack made with minor changes to the default
 textures.
 
-Album: http://imgur.com/a/GIW5l
-
+Album: http://imgur.com/a/GIW5l +
 Download: http://www.mediafire.com/download/l68bnlnk0j6x61a/BucePack.zip
 
 Each texture belongs to one target. Use `make <target>` to add a
