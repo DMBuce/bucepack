@@ -6,7 +6,8 @@ MCDIR    = $(HOME)/.minecraft
 MCJAR    = $(shell find /home/woody/.minecraft/versions/ -type f -name '*.jar' | sort | tail -n1)
 
 # needed by all texture pack targets
-DEFAULT = $(PACKDIR)/pack.mcmeta $(PACKDIR)/pack.png
+DEFAULT = $(PACKDIR)/pack.mcmeta $(PACKDIR)/pack.png \
+	$(PACKDIR)/CONTRIBUTORS.txt $(PACKDIR)/LICENSE.txt
 
 # textures taken directly from previous versions of minecraft
 NOSTALGIA = \
@@ -88,6 +89,12 @@ $(PACKDIR)/%.png.mcmeta: pack/%.png.mcmeta
 	cp $< $@
 
 $(PACKDIR)/pack.mcmeta: $(SRCDIR)/pack.mcmeta
+	cp $< $@
+
+$(PACKDIR)/CONTRIBUTORS.txt: CONTRIBUTORS.asciidoc
+	cp $< $@
+
+$(PACKDIR)/LICENSE.txt: LICENSE.asciidoc
 	cp $< $@
 
 $(PACKNAME).zip: $(PACKDIR)
