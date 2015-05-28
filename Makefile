@@ -13,6 +13,10 @@ DEFAULT = $(PACKDIR)/pack.mcmeta $(PACKDIR)/pack.png \
 NOSTALGIA = \
 	$(PACKDIR)/assets/minecraft/textures/blocks/iron_block.png \
 	$(PACKDIR)/assets/minecraft/textures/blocks/gravel.png \
+	$(PACKDIR)/assets/minecraft/textures/blocks/lava_still.png \
+	$(PACKDIR)/assets/minecraft/textures/blocks/lava_still.png.mcmeta \
+	$(PACKDIR)/assets/minecraft/textures/blocks/lava_flow.png \
+	$(PACKDIR)/assets/minecraft/textures/blocks/lava_flow.png.mcmeta \
 	$(PACKDIR)/assets/minecraft/textures/items/apple.png \
 	$(PACKDIR)/assets/minecraft/textures/items/chicken_raw.png \
 	$(PACKDIR)/assets/minecraft/textures/items/chicken_cooked.png \
