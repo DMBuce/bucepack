@@ -17,6 +17,7 @@ NOSTALGIA = \
 	$(PACKDIR)/assets/minecraft/textures/blocks/lava_still.png.mcmeta \
 	$(PACKDIR)/assets/minecraft/textures/blocks/lava_flow.png \
 	$(PACKDIR)/assets/minecraft/textures/blocks/lava_flow.png.mcmeta \
+	$(PACKDIR)/assets/minecraft/textures/blocks/flower_rose.png \
 	$(PACKDIR)/assets/minecraft/textures/items/apple.png \
 	$(PACKDIR)/assets/minecraft/textures/items/chicken_raw.png \
 	$(PACKDIR)/assets/minecraft/textures/items/chicken_cooked.png \
@@ -24,7 +25,30 @@ NOSTALGIA = \
 	$(PACKDIR)/assets/minecraft/textures/items/porkchop_raw.png \
 	$(PACKDIR)/assets/minecraft/textures/items/beef_cooked.png \
 	$(PACKDIR)/assets/minecraft/textures/items/beef_raw.png \
-	$(PACKDIR)/assets/minecraft/textures/items/bread.png
+	$(PACKDIR)/assets/minecraft/textures/items/bread.png \
+	$(PACKDIR)/assets/minecraft/sounds/random/bowhit4.ogg \
+	$(PACKDIR)/assets/minecraft/sounds/random/bowhit2.ogg \
+	$(PACKDIR)/assets/minecraft/sounds/random/bowhit1.ogg \
+	$(PACKDIR)/assets/minecraft/sounds/random/bowhit3.ogg \
+	$(PACKDIR)/assets/minecraft/sounds/liquid/swim4.ogg \
+	$(PACKDIR)/assets/minecraft/sounds/liquid/swim3.ogg \
+	$(PACKDIR)/assets/minecraft/sounds/liquid/splash.ogg \
+	$(PACKDIR)/assets/minecraft/sounds/liquid/splash2.ogg \
+	$(PACKDIR)/assets/minecraft/sounds/liquid/swim1.ogg \
+	$(PACKDIR)/assets/minecraft/sounds/liquid/swim2.ogg \
+	$(PACKDIR)/assets/minecraft/sounds/step/grass4.ogg \
+	$(PACKDIR)/assets/minecraft/sounds/step/grass5.ogg \
+	$(PACKDIR)/assets/minecraft/sounds/step/grass1.ogg \
+	$(PACKDIR)/assets/minecraft/sounds/step/grass2.ogg \
+	$(PACKDIR)/assets/minecraft/sounds/step/grass6.ogg \
+	$(PACKDIR)/assets/minecraft/sounds/step/grass3.ogg \
+	$(PACKDIR)/assets/minecraft/sounds/mob/cow/say3.ogg \
+	$(PACKDIR)/assets/minecraft/sounds/mob/cow/say2.ogg \
+	$(PACKDIR)/assets/minecraft/sounds/mob/cow/hurt2.ogg \
+	$(PACKDIR)/assets/minecraft/sounds/mob/cow/say1.ogg \
+	$(PACKDIR)/assets/minecraft/sounds/mob/cow/say4.ogg \
+	$(PACKDIR)/assets/minecraft/sounds/mob/cow/hurt3.ogg \
+	$(PACKDIR)/assets/minecraft/sounds/mob/cow/hurt1.ogg
 
 # new textures that add flavor
 FLAVOR = \
@@ -53,6 +77,8 @@ NOSTALGIA_FLAVOR = \
 	$(PACKDIR)/assets/minecraft/textures/items/potato_poisonous.png \
 	$(PACKDIR)/assets/minecraft/textures/items/carrot_golden.png \
 	$(PACKDIR)/assets/minecraft/textures/items/carrot.png \
+	$(PACKDIR)/assets/minecraft/textures/items/mutton_cooked.png \
+	$(PACKDIR)/assets/minecraft/textures/items/mutton_raw.png \
 	$(PACKDIR)/assets/minecraft/textures/items/cookie.png
 
 # textures that didn't work out well
