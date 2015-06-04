@@ -92,7 +92,11 @@ DIRS     = \
 	$(PACKDIR)/assets/minecraft/textures/entity/pig \
 	$(PACKDIR)/assets/minecraft/textures/blocks \
 	$(PACKDIR)/assets/minecraft/textures/items \
-	$(PACKDIR)/assets/minecraft/textures/misc
+	$(PACKDIR)/assets/minecraft/textures/misc \
+	$(PACKDIR)/assets/minecraft/sounds/liquid \
+	$(PACKDIR)/assets/minecraft/sounds/mob/cow \
+	$(PACKDIR)/assets/minecraft/sounds/random \
+	$(PACKDIR)/assets/minecraft/sounds/step
 
 .PHONY: all
 all: nostalgia flavor nostalgia-flavor
@@ -111,6 +115,9 @@ nostalgia-flavor: dirs $(NOSTALGIA_FLAVOR) $(DEFAULT)
 
 .PHONY: gross
 gross: dirs $(GROSS) $(DEFAULT)
+
+$(PACKDIR)/%.ogg: pack/%.ogg
+	cp $< $@
 
 $(PACKDIR)/%.png: pack/%.png
 	cp $< $@
