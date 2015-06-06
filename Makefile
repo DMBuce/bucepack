@@ -84,6 +84,8 @@ NOSTALGIA_FLAVOR = \
 	$(PACKDIR)/assets/minecraft/textures/items/carrot.png \
 	$(PACKDIR)/assets/minecraft/textures/items/mutton_cooked.png \
 	$(PACKDIR)/assets/minecraft/textures/items/mutton_raw.png \
+	$(PACKDIR)/assets/minecraft/textures/items/rabbit_cooked.png \
+	$(PACKDIR)/assets/minecraft/textures/items/rabbit_raw.png \
 	$(PACKDIR)/assets/minecraft/textures/items/cookie.png
 
 # textures that didn't work out well
