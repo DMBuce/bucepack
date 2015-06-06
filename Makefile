@@ -69,11 +69,6 @@ FLAVOR = \
 	$(PACKDIR)/assets/minecraft/textures/entity/villager/librarian.png \
 	$(PACKDIR)/assets/minecraft/textures/misc/pumpkinblur.png \
 	$(PACKDIR)/assets/minecraft/textures/misc/pumpkinblur.png.mcmeta
-# some day ...
-#	$(PACKDIR)/assets/minecraft/textures/blocks/glass.png \
-#	$(PACKDIR)/assets/minecraft/models/block/glass.json \
-#	$(PACKDIR)/assets/minecraft/models/item/glass.json \
-#	$(PACKDIR)/assets/minecraft/blockstates/glass.json \
 
 # slightly tweaked textures to make nostalgia and flavor textures mesh better
 NOSTALGIA_FLAVOR = \
@@ -90,6 +85,10 @@ NOSTALGIA_FLAVOR = \
 
 # textures that didn't work out well
 GROSS = \
+	$(PACKDIR)/assets/minecraft/textures/blocks/glass.png \
+	$(PACKDIR)/assets/minecraft/models/block/glass.json \
+	$(PACKDIR)/assets/minecraft/models/item/glass.json \
+	$(PACKDIR)/assets/minecraft/blockstates/glass.json \
 	$(PACKDIR)/assets/minecraft/textures/blocks/bedrock.png \
 	$(PACKDIR)/assets/minecraft/textures/items/potion_splash.png
 
