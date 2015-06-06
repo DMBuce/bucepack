@@ -17,6 +17,7 @@ NOSTALGIA = \
 	$(PACKDIR)/assets/minecraft/textures/blocks/lava_still.png.mcmeta \
 	$(PACKDIR)/assets/minecraft/textures/blocks/lava_flow.png \
 	$(PACKDIR)/assets/minecraft/textures/blocks/lava_flow.png.mcmeta \
+	$(PACKDIR)/assets/minecraft/lang/en_US.lang \
 	$(PACKDIR)/assets/minecraft/textures/blocks/flower_rose.png \
 	$(PACKDIR)/assets/minecraft/textures/items/apple.png \
 	$(PACKDIR)/assets/minecraft/textures/items/chicken_raw.png \
@@ -94,6 +95,7 @@ GROSS = \
 
 # dirs for all of the above
 DIRS     = \
+	$(PACKDIR)/assets/minecraft/lang \
 	$(PACKDIR)/assets/minecraft/models/block \
 	$(PACKDIR)/assets/minecraft/models/item \
 	$(PACKDIR)/assets/minecraft/blockstates \
@@ -135,6 +137,9 @@ $(PACKDIR)/%.json: pack/%.json
 	cp $< $@
 
 $(PACKDIR)/%.png.mcmeta: pack/%.png.mcmeta
+	cp $< $@
+
+$(PACKDIR)/%.lang: pack/%.lang
 	cp $< $@
 
 $(PACKDIR)/pack.mcmeta: $(SRCDIR)/pack.mcmeta
