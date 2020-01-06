@@ -9,16 +9,28 @@ MCJAR    = $(shell find $(HOME)/.minecraft/versions/ -type f -name '*.jar' | sor
 DEFAULT = $(PACKDIR)/pack.mcmeta $(PACKDIR)/pack.png \
 	$(PACKDIR)/CONTRIBUTORS.txt $(PACKDIR)/LICENSE.txt
 
+# minimal set of textures that i like
+MINIMAL = \
+	$(PACKDIR)/assets/minecraft/blockstates/coal_ore.json \
+	$(PACKDIR)/assets/minecraft/blockstates/lapis_ore.json \
+	$(PACKDIR)/assets/minecraft/models/block/coal_ore_1.json \
+	$(PACKDIR)/assets/minecraft/models/block/lapis_ore_1.json \
+	$(PACKDIR)/assets/minecraft/textures/block/coal_ore_1.png \
+	$(PACKDIR)/assets/minecraft/textures/block/lapis_ore_1.png \
+	$(PACKDIR)/assets/minecraft/textures/block/diamond_ore.png \
+	$(PACKDIR)/assets/minecraft/textures/block/redstone_ore.png \
+	$(PACKDIR)/assets/minecraft/textures/entity/pig/pig_saddle.png
+
 # textures taken directly from previous versions of minecraft
 NOSTALGIA = \
-	$(PACKDIR)/assets/minecraft/textures/blocks/iron_block.png \
-	$(PACKDIR)/assets/minecraft/textures/blocks/gravel.png \
-	$(PACKDIR)/assets/minecraft/textures/blocks/lava_still.png \
-	$(PACKDIR)/assets/minecraft/textures/blocks/lava_still.png.mcmeta \
-	$(PACKDIR)/assets/minecraft/textures/blocks/lava_flow.png \
-	$(PACKDIR)/assets/minecraft/textures/blocks/lava_flow.png.mcmeta \
+	$(PACKDIR)/assets/minecraft/textures/block/iron_block.png \
+	$(PACKDIR)/assets/minecraft/textures/block/gravel.png \
+	$(PACKDIR)/assets/minecraft/textures/block/lava_still.png \
+	$(PACKDIR)/assets/minecraft/textures/block/lava_still.png.mcmeta \
+	$(PACKDIR)/assets/minecraft/textures/block/lava_flow.png \
+	$(PACKDIR)/assets/minecraft/textures/block/lava_flow.png.mcmeta \
 	$(PACKDIR)/assets/minecraft/lang/en_US.lang \
-	$(PACKDIR)/assets/minecraft/textures/blocks/flower_rose.png \
+	$(PACKDIR)/assets/minecraft/textures/block/flower_rose.png \
 	$(PACKDIR)/assets/minecraft/textures/items/apple.png \
 	$(PACKDIR)/assets/minecraft/textures/items/chicken_raw.png \
 	$(PACKDIR)/assets/minecraft/textures/items/chicken_cooked.png \
@@ -53,12 +65,12 @@ NOSTALGIA = \
 
 # new textures that add flavor
 FLAVOR = \
-	$(PACKDIR)/assets/minecraft/textures/blocks/coal_ore.png \
-	$(PACKDIR)/assets/minecraft/textures/blocks/lapis_ore.png \
-	$(PACKDIR)/assets/minecraft/textures/blocks/diamond_ore.png \
-	$(PACKDIR)/assets/minecraft/textures/blocks/redstone_ore.png \
+	$(PACKDIR)/assets/minecraft/textures/block/coal_ore.png \
+	$(PACKDIR)/assets/minecraft/textures/block/lapis_ore.png \
+	$(PACKDIR)/assets/minecraft/textures/block/diamond_ore.png \
+	$(PACKDIR)/assets/minecraft/textures/block/redstone_ore.png \
 	$(PACKDIR)/assets/minecraft/textures/items/emerald.png \
-	$(PACKDIR)/assets/minecraft/textures/blocks/command_block.png \
+	$(PACKDIR)/assets/minecraft/textures/block/command_block.png \
 	$(PACKDIR)/assets/minecraft/textures/items/fish_cod_cooked.png \
 	$(PACKDIR)/assets/minecraft/textures/items/fish_cod_raw.png \
 	$(PACKDIR)/assets/minecraft/textures/items/fish_salmon_cooked.png \
@@ -86,11 +98,11 @@ NOSTALGIA_FLAVOR = \
 
 # textures that didn't work out well
 GROSS = \
-	$(PACKDIR)/assets/minecraft/textures/blocks/glass.png \
+	$(PACKDIR)/assets/minecraft/textures/block/glass.png \
 	$(PACKDIR)/assets/minecraft/models/block/glass.json \
 	$(PACKDIR)/assets/minecraft/models/item/glass.json \
 	$(PACKDIR)/assets/minecraft/blockstates/glass.json \
-	$(PACKDIR)/assets/minecraft/textures/blocks/bedrock.png \
+	$(PACKDIR)/assets/minecraft/textures/block/bedrock.png \
 	$(PACKDIR)/assets/minecraft/textures/items/potion_splash.png
 
 # dirs for all of the above
@@ -101,7 +113,7 @@ DIRS     = \
 	$(PACKDIR)/assets/minecraft/blockstates \
 	$(PACKDIR)/assets/minecraft/textures/entity/villager \
 	$(PACKDIR)/assets/minecraft/textures/entity/pig \
-	$(PACKDIR)/assets/minecraft/textures/blocks \
+	$(PACKDIR)/assets/minecraft/textures/block \
 	$(PACKDIR)/assets/minecraft/textures/items \
 	$(PACKDIR)/assets/minecraft/textures/misc \
 	$(PACKDIR)/assets/minecraft/sounds/liquid \
@@ -114,6 +126,9 @@ all: nostalgia flavor nostalgia-flavor
 
 .PHONY: everything
 everything: all gross
+
+.PHONY: minimal
+minimal: dirs $(MINIMAL) $(DEFAULT)
 
 .PHONY: nostalgia
 nostalgia: dirs $(NOSTALGIA) $(DEFAULT)
@@ -181,6 +196,12 @@ example:
 example.zip: example
 	cd example && zip -r example.zip * && mv example.zip ..
 
+$(PACKNAME)-minimal.zip:
+	make clean
+	make minimal
+	make $(PACKNAME).zip
+	mv $(PACKNAME).zip $(PACKNAME)-minimal.zip
+
 $(PACKNAME)-nostalgia.zip:
 	make clean
 	make nostalgia
@@ -198,9 +219,9 @@ $(PACKNAME)-all.zip: all $(PACKNAME).zip
 	mv $(PACKNAME).zip $(PACKNAME)-all.zip
 
 .PHONY: dist
-dist: $(PACKNAME)-nostalgia.zip $(PACKNAME)-flavor.zip $(PACKNAME)-all.zip
+dist: $(PACKNAME)-minimal.zip $(PACKNAME)-nostalgia.zip $(PACKNAME)-flavor.zip $(PACKNAME)-all.zip
 
 .PHONY: distclean
 distclean: clean
-	rm -f $(PACKNAME)-nostalgia.zip $(PACKNAME)-flavor.zip $(PACKNAME)-all.zip
+	rm -f $(PACKNAME)-minimal.zip $(PACKNAME)-nostalgia.zip $(PACKNAME)-flavor.zip $(PACKNAME)-all.zip
 
