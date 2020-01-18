@@ -60,14 +60,14 @@ uninstall:
 # textures taken directly from previous versions of minecraft
 NOSTALGIA = \
 	assets/minecraft/textures/block/iron_block.png \
-	assets/minecraft/textures/items/apple.png \
-	assets/minecraft/textures/items/chicken_raw.png \
-	assets/minecraft/textures/items/chicken_cooked.png \
-	assets/minecraft/textures/items/porkchop_cooked.png \
-	assets/minecraft/textures/items/porkchop_raw.png \
-	assets/minecraft/textures/items/beef_cooked.png \
-	assets/minecraft/textures/items/beef_raw.png \
-	assets/minecraft/textures/items/bread.png \
+	assets/minecraft/textures/item/apple.png \
+	assets/minecraft/textures/item/chicken_raw.png \
+	assets/minecraft/textures/item/chicken_cooked.png \
+	assets/minecraft/textures/item/porkchop_cooked.png \
+	assets/minecraft/textures/item/porkchop_raw.png \
+	assets/minecraft/textures/item/beef_cooked.png \
+	assets/minecraft/textures/item/beef_raw.png \
+	assets/minecraft/textures/item/bread.png \
 	assets/minecraft/sounds/random/bowhit4.ogg \
 	assets/minecraft/sounds/random/bowhit2.ogg \
 	assets/minecraft/sounds/random/bowhit1.ogg \
@@ -94,29 +94,29 @@ NOSTALGIA = \
 
 # new textures that add flavor
 FLAVOR = \
-	assets/minecraft/textures/items/emerald.png \
+	assets/minecraft/textures/item/emerald.png \
 	assets/minecraft/textures/block/command_block.png \
-	assets/minecraft/textures/items/fish_cod_cooked.png \
-	assets/minecraft/textures/items/fish_cod_raw.png \
-	assets/minecraft/textures/items/fish_salmon_cooked.png \
-	assets/minecraft/textures/items/fish_salmon_raw.png \
-	assets/minecraft/textures/items/pumpkin_pie.png \
+	assets/minecraft/textures/item/fish_cod_cooked.png \
+	assets/minecraft/textures/item/fish_cod_raw.png \
+	assets/minecraft/textures/item/fish_salmon_cooked.png \
+	assets/minecraft/textures/item/fish_salmon_raw.png \
+	assets/minecraft/textures/item/pumpkin_pie.png \
 	assets/minecraft/textures/entity/iron_golem.png \
 	assets/minecraft/textures/entity/villager/priest.png \
 	assets/minecraft/textures/entity/villager/librarian.png
 
 # slightly tweaked textures to make nostalgia and flavor textures mesh better
 NOSTALGIA_FLAVOR = \
-	assets/minecraft/textures/items/potato.png \
-	assets/minecraft/textures/items/potato_baked.png \
-	assets/minecraft/textures/items/potato_poisonous.png \
-	assets/minecraft/textures/items/carrot_golden.png \
-	assets/minecraft/textures/items/carrot.png \
-	assets/minecraft/textures/items/mutton_cooked.png \
-	assets/minecraft/textures/items/mutton_raw.png \
-	assets/minecraft/textures/items/rabbit_cooked.png \
-	assets/minecraft/textures/items/rabbit_raw.png \
-	assets/minecraft/textures/items/cookie.png
+	assets/minecraft/textures/item/potato.png \
+	assets/minecraft/textures/item/potato_baked.png \
+	assets/minecraft/textures/item/potato_poisonous.png \
+	assets/minecraft/textures/item/carrot_golden.png \
+	assets/minecraft/textures/item/carrot.png \
+	assets/minecraft/textures/item/mutton_cooked.png \
+	assets/minecraft/textures/item/mutton_raw.png \
+	assets/minecraft/textures/item/rabbit_cooked.png \
+	assets/minecraft/textures/item/rabbit_raw.png \
+	assets/minecraft/textures/item/cookie.png
 
 # textures that didn't work out well
 GROSS = \
@@ -125,5 +125,5 @@ GROSS = \
 	assets/minecraft/models/item/glass.json \
 	assets/minecraft/blockstates/glass.json \
 	assets/minecraft/textures/block/bedrock.png \
-	assets/minecraft/textures/items/potion_splash.png
+	assets/minecraft/textures/item/potion_splash.png
 
