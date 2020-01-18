@@ -92,7 +92,7 @@ Retro Iron
 
 Reverts the iron block to its smooth texture from before 1.9pre5.
 
-image::https://i.imgur.com/NZjS1Vu.png[Retro Iron Preview]
+image::https://i.imgur.com/Wn4tVMv.png[Retro Iron Preview]
 
 Download: https://github.com/DMBuce/bucepack/releases
 
