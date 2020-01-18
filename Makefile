@@ -2,7 +2,7 @@
 PACKFILES = oretypes.zip pigarmor.zip brewguide.zip retrofood.zip retromoo.zip
 MCDIR     = $(HOME)/.minecraft
 
-CLEAN_TARGETS := $(PACKFILES) pack.mcmeta pack.png
+CLEAN_TARGETS := $(PACKFILES) pack.mcmeta pack.png test.zip
 
 .SECONDEXPANSION:
 
