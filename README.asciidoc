@@ -8,6 +8,8 @@ Brew Guide
 
 Adds a simple cheat sheet to the brewing stand GUI to remind you how potions are made.
 
+![Brew Guide Preview](https://i.imgur.com/edmhYeq.png)
+
 Download: https://github.com/DMBuce/bucepack/releases
 
 Build: `make brewguide.zip`
@@ -26,6 +28,8 @@ Pig Armor
 
 Adds iron armor to saddled pigs.
 
+![Pig Armor Preview](https://i.imgur.com/DlGyagv.png)
+
 This is an aesthetic change only,
 it doesn't reduce the damage that pigs take.
 
@@ -37,6 +41,8 @@ Ore Types
 ---------
 
 Organizes ores into types to provide more variety and consistency
+
+![Ore Types Preview](https://i.imgur.com/0dsr1uE.png)
 
 * "Smeltable" ores (Iron, Gold) are unchanged
 * "Gemlike" ores (Diamond, Redstone) match emerald's gemlike texture
@@ -57,6 +63,8 @@ Retro Food
 
 Reverts food to their outlined textures from before 1.4.2,
 and adds outlines to some food that's been added to the game since then.
+
+![Retro Food Preview](https://i.imgur.com/DorMwHO.png)
 
 Retextured items:
 
