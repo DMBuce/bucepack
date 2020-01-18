@@ -60,13 +60,6 @@ uninstall:
 # textures taken directly from previous versions of minecraft
 NOSTALGIA = \
 	assets/minecraft/textures/block/iron_block.png \
-	assets/minecraft/textures/block/gravel.png \
-	assets/minecraft/textures/block/lava_still.png \
-	assets/minecraft/textures/block/lava_still.png.mcmeta \
-	assets/minecraft/textures/block/lava_flow.png \
-	assets/minecraft/textures/block/lava_flow.png.mcmeta \
-	assets/minecraft/lang/en_US.lang \
-	assets/minecraft/textures/block/flower_rose.png \
 	assets/minecraft/textures/items/apple.png \
 	assets/minecraft/textures/items/chicken_raw.png \
 	assets/minecraft/textures/items/chicken_cooked.png \
@@ -79,12 +72,12 @@ NOSTALGIA = \
 	assets/minecraft/sounds/random/bowhit2.ogg \
 	assets/minecraft/sounds/random/bowhit1.ogg \
 	assets/minecraft/sounds/random/bowhit3.ogg \
-	assets/minecraft/sounds/liquid/swim4.ogg \
-	assets/minecraft/sounds/liquid/swim3.ogg \
 	assets/minecraft/sounds/liquid/splash.ogg \
 	assets/minecraft/sounds/liquid/splash2.ogg \
 	assets/minecraft/sounds/liquid/swim1.ogg \
 	assets/minecraft/sounds/liquid/swim2.ogg \
+	assets/minecraft/sounds/liquid/swim3.ogg \
+	assets/minecraft/sounds/liquid/swim4.ogg \
 	assets/minecraft/sounds/step/grass4.ogg \
 	assets/minecraft/sounds/step/grass5.ogg \
 	assets/minecraft/sounds/step/grass1.ogg \
@@ -101,10 +94,6 @@ NOSTALGIA = \
 
 # new textures that add flavor
 FLAVOR = \
-	assets/minecraft/textures/block/coal_ore.png \
-	assets/minecraft/textures/block/lapis_ore.png \
-	assets/minecraft/textures/block/diamond_ore.png \
-	assets/minecraft/textures/block/redstone_ore.png \
 	assets/minecraft/textures/items/emerald.png \
 	assets/minecraft/textures/block/command_block.png \
 	assets/minecraft/textures/items/fish_cod_cooked.png \
@@ -113,11 +102,8 @@ FLAVOR = \
 	assets/minecraft/textures/items/fish_salmon_raw.png \
 	assets/minecraft/textures/items/pumpkin_pie.png \
 	assets/minecraft/textures/entity/iron_golem.png \
-	assets/minecraft/textures/entity/pig/pig_saddle.png \
 	assets/minecraft/textures/entity/villager/priest.png \
-	assets/minecraft/textures/entity/villager/librarian.png \
-	assets/minecraft/textures/misc/pumpkinblur.png \
-	assets/minecraft/textures/misc/pumpkinblur.png.mcmeta
+	assets/minecraft/textures/entity/villager/librarian.png
 
 # slightly tweaked textures to make nostalgia and flavor textures mesh better
 NOSTALGIA_FLAVOR = \
