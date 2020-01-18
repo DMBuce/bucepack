@@ -82,33 +82,33 @@ test_FILES = \
 all: $(PACKFILES)
 
 test.zip: $(test_FILES)
-	cp $(@:.zip=.png) pack.png
-	cp $(@:.zip=.mcmeta) pack.mcmeta
+	cp meta/$(@:.zip=.png) pack.png
+	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^
 
 oretypes.zip: $(oretypes_FILES)
-	cp $(@:.zip=.png) pack.png
-	cp $(@:.zip=.mcmeta) pack.mcmeta
+	cp meta/$(@:.zip=.png) pack.png
+	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^
 
 pigarmor.zip: $(pigarmor_FILES)
-	cp $(@:.zip=.png) pack.png
-	cp $(@:.zip=.mcmeta) pack.mcmeta
+	cp meta/$(@:.zip=.png) pack.png
+	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^
 
 brewguide.zip: $(brewguide_FILES)
-	cp $(@:.zip=.png) pack.png
-	cp $(@:.zip=.mcmeta) pack.mcmeta
+	cp meta/$(@:.zip=.png) pack.png
+	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^
 
 retrofood.zip: $(retrofood_FILES)
-	cp $(@:.zip=.png) pack.png
-	cp $(@:.zip=.mcmeta) pack.mcmeta
+	cp meta/$(@:.zip=.png) pack.png
+	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^
 
 retromoo.zip: $(retromoo_FILES)
-	cp $(@:.zip=.png) pack.png
-	cp $(@:.zip=.mcmeta) pack.mcmeta
+	cp meta/$(@:.zip=.png) pack.png
+	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^
 
 .PHONY: install
