@@ -25,28 +25,29 @@ brewguide_FILES := $(DEFAULT_FILES) \
 
 retrofood_FILES := $(DEFAULT_FILES) \
 	assets/minecraft/textures/item/apple.png \
-	assets/minecraft/textures/item/beef_cooked.png \
-	assets/minecraft/textures/item/beef_raw.png \
+	assets/minecraft/textures/item/baked_potato.png \
+	assets/minecraft/textures/item/beef.png \
 	assets/minecraft/textures/item/bread.png \
-	assets/minecraft/textures/item/carrot_golden.png \
 	assets/minecraft/textures/item/carrot.png \
-	assets/minecraft/textures/item/chicken_cooked.png \
-	assets/minecraft/textures/item/chicken_raw.png \
+	assets/minecraft/textures/item/chicken.png \
+	assets/minecraft/textures/item/cod.png \
+	assets/minecraft/textures/item/cooked_beef.png \
+	assets/minecraft/textures/item/cooked_chicken.png \
+	assets/minecraft/textures/item/cooked_cod.png \
+	assets/minecraft/textures/item/cooked_mutton.png \
+	assets/minecraft/textures/item/cooked_porkchop.png \
+	assets/minecraft/textures/item/cooked_rabbit.png \
+	assets/minecraft/textures/item/cooked_salmon.png \
 	assets/minecraft/textures/item/cookie.png \
-	assets/minecraft/textures/item/fish_cod_cooked.png \
-	assets/minecraft/textures/item/fish_cod_raw.png \
-	assets/minecraft/textures/item/fish_salmon_cooked.png \
-	assets/minecraft/textures/item/fish_salmon_raw.png \
-	assets/minecraft/textures/item/mutton_cooked.png \
-	assets/minecraft/textures/item/mutton_raw.png \
-	assets/minecraft/textures/item/porkchop_cooked.png \
-	assets/minecraft/textures/item/porkchop_raw.png \
-	assets/minecraft/textures/item/potato_baked.png \
+	assets/minecraft/textures/item/golden_apple.png \
+	assets/minecraft/textures/item/golden_carrot.png \
+	assets/minecraft/textures/item/mutton.png \
+	assets/minecraft/textures/item/poisonous_potato.png \
+	assets/minecraft/textures/item/porkchop.png \
 	assets/minecraft/textures/item/potato.png \
-	assets/minecraft/textures/item/potato_poisonous.png \
 	assets/minecraft/textures/item/pumpkin_pie.png \
-	assets/minecraft/textures/item/rabbit_cooked.png \
-	assets/minecraft/textures/item/rabbit_raw.png
+	assets/minecraft/textures/item/rabbit.png \
+	assets/minecraft/textures/item/salmon.png
 
 retromoo_FILES = \
 	assets/minecraft/sounds/mob/cow/hurt1.ogg \
@@ -58,7 +59,6 @@ retromoo_FILES = \
 	assets/minecraft/sounds/mob/cow/say4.ogg
 
 test_FILES = \
-	assets/minecraft/textures/block/command_block.png \
 	assets/minecraft/textures/block/iron_block.png \
 	assets/minecraft/textures/entity/iron_golem.png \
 	assets/minecraft/sounds/random/bowhit4.ogg \
