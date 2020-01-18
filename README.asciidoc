@@ -1,73 +1,89 @@
-BucePack is a Minecraft texture pack made with minor changes to the default
-textures.
+BucePack is a simple Makefile that I use to build my Minecraft resource packs,
+described below.
 
-Album (somewhat outdated): http://imgur.com/a/GIW5l +
 Downloads: https://github.com/DMBuce/bucepack/releases
 
-Each texture belongs to one target. Use `make <target>` to add a
-target to the pack, replacing 'target' with one of the targets described
-below. If no 'target' is given, all targets excluding `gross` are added. 
+Ore Types
+---------
 
-After you have added one or more targets to the pack, you can inspect and
-modify the textures within BucePack directory. Once you are satisfied, run
-`make BucePack.zip` to create the texture pack, or `make install` to create
-the pack and install it to `~/.minecraft`.
+Organizes ores into types to provide more variety and consistency
 
-`nostalgia`
------------
+* "Smeltable" ores (Iron, Gold) are unchanged
+* "Gemlike" ores (Diamond, Redstone) match emerald's gemlike texture
+* "Lumpy" ores (Coal, Lapis) use a mixture of shapes,
+  50% similar to the default coal ore and
+  50% similar to the default lapis ore
 
-Textures and sounds from previous versions of Minecraft.
+As an originally unintended bonus,
+gemlike ores stick up one pixel above lava,
+so you can discover them a bit more easily.
+
+Download: https://github.com/DMBuce/bucepack/releases
+
+Build: `make oretypes.zip`
+
+Pig Armor
+---------
+
+Adds iron armor to saddled pigs.
+
+Download: https://github.com/DMBuce/bucepack/releases
+
+Build: `make pigarmor.zip`
+
+Brew Guide
+----------
+
+Adds a simple cheat sheet to the brewing stand GUI to remind you how potions are made.
+
+Download: https://github.com/DMBuce/bucepack/releases
+
+Build: `make brewguide.zip`
+
+Retro Food
+----------
+
+Adds back the dark outlines around food items like before version 1.4.2.
+
+These food items are changed:
+
+* Apple
+* Chicken
+* Pork
+* Beef
+* Bread
+* Potatoes
+* Carrots
+* Cookies
+* Cod
+* Salmon
+* Pumpkin Pie
+
+Download: https://github.com/DMBuce/bucepack/releases
+
+Build: `make retrofood.zip`
+
+Retro Moo
+---------
+
+Adds the old derpy cow noises.
+
+Download: https://github.com/DMBuce/bucepack/releases
+
+Build: `make retromoo.zip`
+
+Test
+----
+
+Unpolished resource pack subject to change.
 
 * Smooth Iron Block from before 1.9pre5
-* Grainy Gravel from before 1.3.1
-* Non-cheesy lava
-* Roses instead of poppies
-* Outlined food from before 1.4.2
-** Apple
-** Chicken
-** Pork
-** Beef
-** Bread
 * Arrow *twang* sound
 * Water *sploosh* sound
 * Crunchy grass noise
-* Derpy cow noises
-
-`flavor`
---------
-
-Custom textures that add flavor
-
 * Emerald items match diamonds
-* Ores are arranged into groups to provide both variety and consistency
-** "Lumpy" ores (Coal, Lapis) use a shape similar to the default lapis ore
-** "Gemlike" ores (Diamond, Redstone) match emerald's gemlike texture
-*** Ore texture pokes up above lava
-** "Smeltable" ores (Iron, Gold) are unchanged
 * Command Blocks are centered
-* Pumpkin Pie is changed to look less like cheese
-* Fish have a darkened outline to match other foods
-* Wearing a Pumpkin no longer gives you a headache
-* Librarian and Priest villagers swapped clothes
 * Iron Golems are removed to create new jobs for green villagers
-* Saddled pigs have more protection
 
-`nostalgia-flavor`
-------------------
-
-Slightly tweaked textures to make nostalgia and flavor textures mesh better
-
-* Food items are outlined
-** Potatoes
-** Carrots
-** Cookies
-
-`gross`
--------
-
-Textures I've played with that didn't work out well
-
-* Bedrock uses the Glowing Obsidian texture from Pocket Edition
-* Splash Potions are regular Potions with a pin added
-* Regular non-stained glass has translucent streaks
+Build: `make test.zip`
 

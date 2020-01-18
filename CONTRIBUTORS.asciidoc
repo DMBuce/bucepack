@@ -3,7 +3,7 @@ CONTRIBUTORS
 
 Thanks to:
 
-* http://www.mojang.com[Mojang] (All "nostalgia" texures, including the Iron Block, Gravel, Apple, Bread, and Raw/Cooked Chicken/Pork/Beef)
+* http://www.mojang.com[Mojang] (All old texures, including the Iron Block, Apple, Bread, and Raw/Cooked Chicken/Pork/Beef)
 * http://www.reddit.com/r/Minecraft/comments/12ah90/i_added_a_little_bit_to_the_saddle_texture_i_love/c6tq9ut[/u/the_form_scattered] (Pig Saddle)
 
 /////
