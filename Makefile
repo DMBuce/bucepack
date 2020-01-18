@@ -4,8 +4,6 @@ MCDIR     = $(HOME)/.minecraft
 
 CLEAN_TARGETS := $(PACKFILES) pack.mcmeta pack.png test.zip
 
-.SECONDEXPANSION:
-
 # needed by all texture pack targets
 DEFAULT = CONTRIBUTORS.txt LICENSE.txt
 
