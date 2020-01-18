@@ -113,13 +113,13 @@ retromoo.zip: $(retromoo_FILES)
 
 .PHONY: install
 install: $(PACKFILES)
-	cp $< $(MCDIR)/resourcepacks
-
-.PHONY: clean
-clean:
-	rm -rf $(CLEAN_TARGETS)
+	cp $^ $(MCDIR)/resourcepacks
 
 .PHONY: uninstall
 uninstall:
 	cd $(MCDIR)/resourcepacks && rm -f $(PACKFILES)
+
+.PHONY: clean
+clean:
+	rm -rf $(CLEAN_TARGETS)
 
