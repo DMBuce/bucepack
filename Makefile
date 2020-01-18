@@ -1,5 +1,5 @@
 
-PACKFILES = oretypes.zip pigarmor.zip brewguide.zip retrofood.zip
+PACKFILES = oretypes.zip pigarmor.zip brewguide.zip retrofood.zip retromoo.zip
 MCDIR     = $(HOME)/.minecraft
 
 CLEAN_TARGETS := $(PACKFILES) pack.mcmeta pack.png
@@ -50,6 +50,15 @@ retrofood_FILES := $(DEFAULT_FILES) \
 	assets/minecraft/textures/item/rabbit_cooked.png \
 	assets/minecraft/textures/item/rabbit_raw.png
 
+retromoo_FILES = \
+	assets/minecraft/sounds/mob/cow/hurt1.ogg \
+	assets/minecraft/sounds/mob/cow/hurt2.ogg \
+	assets/minecraft/sounds/mob/cow/hurt3.ogg \
+	assets/minecraft/sounds/mob/cow/say1.ogg \
+	assets/minecraft/sounds/mob/cow/say2.ogg \
+	assets/minecraft/sounds/mob/cow/say3.ogg \
+	assets/minecraft/sounds/mob/cow/say4.ogg
+
 .PHONY: all
 all: $(PACKFILES)
 
@@ -73,6 +82,11 @@ retrofood.zip: $(retrofood_FILES)
 	cp $(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^
 
+retromoo.zip: $(retromoo_FILES)
+	cp $(@:.zip=.png) pack.png
+	cp $(@:.zip=.mcmeta) pack.mcmeta
+	zip $@ pack.png pack.mcmeta $^
+
 .PHONY: install
 install: $(PACKFILES)
 	cp $< $(MCDIR)/resourcepacks
@@ -85,11 +99,11 @@ clean:
 uninstall:
 	cd $(MCDIR)/resourcepacks && rm -f $(PACKFILES)
 
-# dead code below
-
-# textures taken directly from previous versions of minecraft
+# old resources i don't use anymore
 NOSTALGIA = \
+	assets/minecraft/textures/block/command_block.png \
 	assets/minecraft/textures/block/iron_block.png \
+	assets/minecraft/textures/entity/iron_golem.png \
 	assets/minecraft/sounds/random/bowhit4.ogg \
 	assets/minecraft/sounds/random/bowhit2.ogg \
 	assets/minecraft/sounds/random/bowhit1.ogg \
@@ -105,29 +119,5 @@ NOSTALGIA = \
 	assets/minecraft/sounds/step/grass1.ogg \
 	assets/minecraft/sounds/step/grass2.ogg \
 	assets/minecraft/sounds/step/grass6.ogg \
-	assets/minecraft/sounds/step/grass3.ogg \
-	assets/minecraft/sounds/mob/cow/say3.ogg \
-	assets/minecraft/sounds/mob/cow/say2.ogg \
-	assets/minecraft/sounds/mob/cow/hurt2.ogg \
-	assets/minecraft/sounds/mob/cow/say1.ogg \
-	assets/minecraft/sounds/mob/cow/say4.ogg \
-	assets/minecraft/sounds/mob/cow/hurt3.ogg \
-	assets/minecraft/sounds/mob/cow/hurt1.ogg
-
-# new textures that add flavor
-FLAVOR = \
-	assets/minecraft/textures/item/emerald.png \
-	assets/minecraft/textures/block/command_block.png \
-	assets/minecraft/textures/entity/iron_golem.png \
-	assets/minecraft/textures/entity/villager/priest.png \
-	assets/minecraft/textures/entity/villager/librarian.png
-
-# textures that didn't work out well
-GROSS = \
-	assets/minecraft/textures/block/glass.png \
-	assets/minecraft/models/block/glass.json \
-	assets/minecraft/models/item/glass.json \
-	assets/minecraft/blockstates/glass.json \
-	assets/minecraft/textures/block/bedrock.png \
-	assets/minecraft/textures/item/potion_splash.png
+	assets/minecraft/sounds/step/grass3.ogg
 
