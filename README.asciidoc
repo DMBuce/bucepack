@@ -1,5 +1,6 @@
-BucePack is a simple Makefile that I use to build my Minecraft resource packs,
-described below.
+= Buce's Packs
+
+Resource packs for Minecraft.
 
 Downloads: https://github.com/DMBuce/bucepack/releases
 
