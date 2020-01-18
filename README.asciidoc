@@ -20,6 +20,8 @@ Village Mech
 
 Turns iron golems into mechsuit-wearing villagers.
 
+image::https://i.imgur.com/4Ro6gQr.png[Village Mech Preview]
+
 Download: https://github.com/DMBuce/bucepack/releases
 
 Build: `make villagemech.zip`
@@ -89,6 +91,8 @@ Retro Iron
 ----------
 
 Reverts the iron block to its smooth texture from before 1.9pre5.
+
+image::https://i.imgur.com/NZjS1Vu.png[Retro Iron Preview]
 
 Download: https://github.com/DMBuce/bucepack/releases
 
