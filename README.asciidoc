@@ -4,6 +4,8 @@ Resource packs for Minecraft.
 
 Downloads: https://github.com/DMBuce/bucepack/releases
 
+Build: `make`
+
 Brew Guide
 ----------
 
@@ -47,7 +49,7 @@ Organizes ores into types to provide more variety and consistency
 
 image::https://i.imgur.com/0dsr1uE.png[Ore Types Preview]
 
-* "Smeltable" ores (Iron, Gold) are unchanged
+* "Metallic" ores (Iron, Gold) are unchanged
 * "Gemlike" ores (Diamond, Redstone) match emerald's gemlike texture
 * "Lumpy" ores (Coal, Lapis) use a mixture of shapes,
   with 50% similar to the default coal ore and
