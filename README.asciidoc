@@ -47,7 +47,7 @@ image::https://i.imgur.com/0dsr1uE.png[Ore Types Preview]
 * "Smeltable" ores (Iron, Gold) are unchanged
 * "Gemlike" ores (Diamond, Redstone) match emerald's gemlike texture
 * "Lumpy" ores (Coal, Lapis) use a mixture of shapes,
-  50% similar to the default coal ore and
+  with 50% similar to the default coal ore and
   50% similar to the default lapis ore
 
 As an originally unintended bonus,
