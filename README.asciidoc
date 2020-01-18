@@ -20,7 +20,7 @@ Village Mech
 
 Turns iron golems into mechsuit-wearing villagers.
 
-image::https://i.imgur.com/4Ro6gQr.png[Village Mech Preview]
+image::https://i.imgur.com/oF0MLK9.png[Village Mech Preview]
 
 Download: https://github.com/DMBuce/bucepack/releases
 
