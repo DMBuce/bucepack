@@ -1,5 +1,5 @@
 
-PACKFILES = oretypes.zip pigarmor.zip brewguide.zip
+PACKFILES = oretypes.zip pigarmor.zip brewguide.zip retrofood.zip
 MCDIR     = $(HOME)/.minecraft
 
 CLEAN_TARGETS := $(PACKFILES) pack.mcmeta pack.png
@@ -25,6 +25,31 @@ pigarmor_FILES := $(DEFAULT_FILES) \
 brewguide_FILES := $(DEFAULT_FILES) \
 	assets/minecraft/textures/gui/container/brewing_stand.png
 
+retrofood_FILES := $(DEFAULT_FILES) \
+	assets/minecraft/textures/item/apple.png \
+	assets/minecraft/textures/item/beef_cooked.png \
+	assets/minecraft/textures/item/beef_raw.png \
+	assets/minecraft/textures/item/bread.png \
+	assets/minecraft/textures/item/carrot_golden.png \
+	assets/minecraft/textures/item/carrot.png \
+	assets/minecraft/textures/item/chicken_cooked.png \
+	assets/minecraft/textures/item/chicken_raw.png \
+	assets/minecraft/textures/item/cookie.png \
+	assets/minecraft/textures/item/fish_cod_cooked.png \
+	assets/minecraft/textures/item/fish_cod_raw.png \
+	assets/minecraft/textures/item/fish_salmon_cooked.png \
+	assets/minecraft/textures/item/fish_salmon_raw.png \
+	assets/minecraft/textures/item/mutton_cooked.png \
+	assets/minecraft/textures/item/mutton_raw.png \
+	assets/minecraft/textures/item/porkchop_cooked.png \
+	assets/minecraft/textures/item/porkchop_raw.png \
+	assets/minecraft/textures/item/potato_baked.png \
+	assets/minecraft/textures/item/potato.png \
+	assets/minecraft/textures/item/potato_poisonous.png \
+	assets/minecraft/textures/item/pumpkin_pie.png \
+	assets/minecraft/textures/item/rabbit_cooked.png \
+	assets/minecraft/textures/item/rabbit_raw.png
+
 .PHONY: all
 all: $(PACKFILES)
 
@@ -39,6 +64,11 @@ pigarmor.zip: $(pigarmor_FILES)
 	zip $@ pack.png pack.mcmeta $^
 
 brewguide.zip: $(brewguide_FILES)
+	cp $(@:.zip=.png) pack.png
+	cp $(@:.zip=.mcmeta) pack.mcmeta
+	zip $@ pack.png pack.mcmeta $^
+
+retrofood.zip: $(retrofood_FILES)
 	cp $(@:.zip=.png) pack.png
 	cp $(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^
@@ -60,14 +90,6 @@ uninstall:
 # textures taken directly from previous versions of minecraft
 NOSTALGIA = \
 	assets/minecraft/textures/block/iron_block.png \
-	assets/minecraft/textures/item/apple.png \
-	assets/minecraft/textures/item/chicken_raw.png \
-	assets/minecraft/textures/item/chicken_cooked.png \
-	assets/minecraft/textures/item/porkchop_cooked.png \
-	assets/minecraft/textures/item/porkchop_raw.png \
-	assets/minecraft/textures/item/beef_cooked.png \
-	assets/minecraft/textures/item/beef_raw.png \
-	assets/minecraft/textures/item/bread.png \
 	assets/minecraft/sounds/random/bowhit4.ogg \
 	assets/minecraft/sounds/random/bowhit2.ogg \
 	assets/minecraft/sounds/random/bowhit1.ogg \
@@ -96,27 +118,9 @@ NOSTALGIA = \
 FLAVOR = \
 	assets/minecraft/textures/item/emerald.png \
 	assets/minecraft/textures/block/command_block.png \
-	assets/minecraft/textures/item/fish_cod_cooked.png \
-	assets/minecraft/textures/item/fish_cod_raw.png \
-	assets/minecraft/textures/item/fish_salmon_cooked.png \
-	assets/minecraft/textures/item/fish_salmon_raw.png \
-	assets/minecraft/textures/item/pumpkin_pie.png \
 	assets/minecraft/textures/entity/iron_golem.png \
 	assets/minecraft/textures/entity/villager/priest.png \
 	assets/minecraft/textures/entity/villager/librarian.png
-
-# slightly tweaked textures to make nostalgia and flavor textures mesh better
-NOSTALGIA_FLAVOR = \
-	assets/minecraft/textures/item/potato.png \
-	assets/minecraft/textures/item/potato_baked.png \
-	assets/minecraft/textures/item/potato_poisonous.png \
-	assets/minecraft/textures/item/carrot_golden.png \
-	assets/minecraft/textures/item/carrot.png \
-	assets/minecraft/textures/item/mutton_cooked.png \
-	assets/minecraft/textures/item/mutton_raw.png \
-	assets/minecraft/textures/item/rabbit_cooked.png \
-	assets/minecraft/textures/item/rabbit_raw.png \
-	assets/minecraft/textures/item/cookie.png
 
 # textures that didn't work out well
 GROSS = \
