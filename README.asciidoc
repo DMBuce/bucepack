@@ -115,7 +115,7 @@ Build: `make retrosploosh.zip`
 Retro Crunch
 ------------
 
-Reverts grass noise so it has a crunchy sound when stepping on it.
+Reverts grass noise so it has a *crunch* sound when stepping on it.
 
 Download: https://github.com/DMBuce/bucepack/releases
 
