@@ -59,8 +59,34 @@ retromoo_FILES = \
 	assets/minecraft/sounds/mob/cow/say3.ogg \
 	assets/minecraft/sounds/mob/cow/say4.ogg
 
+test_FILES = \
+	assets/minecraft/textures/block/command_block.png \
+	assets/minecraft/textures/block/iron_block.png \
+	assets/minecraft/textures/entity/iron_golem.png \
+	assets/minecraft/sounds/random/bowhit4.ogg \
+	assets/minecraft/sounds/random/bowhit2.ogg \
+	assets/minecraft/sounds/random/bowhit1.ogg \
+	assets/minecraft/sounds/random/bowhit3.ogg \
+	assets/minecraft/sounds/liquid/splash.ogg \
+	assets/minecraft/sounds/liquid/splash2.ogg \
+	assets/minecraft/sounds/liquid/swim1.ogg \
+	assets/minecraft/sounds/liquid/swim2.ogg \
+	assets/minecraft/sounds/liquid/swim3.ogg \
+	assets/minecraft/sounds/liquid/swim4.ogg \
+	assets/minecraft/sounds/step/grass4.ogg \
+	assets/minecraft/sounds/step/grass5.ogg \
+	assets/minecraft/sounds/step/grass1.ogg \
+	assets/minecraft/sounds/step/grass2.ogg \
+	assets/minecraft/sounds/step/grass6.ogg \
+	assets/minecraft/sounds/step/grass3.ogg
+
 .PHONY: all
 all: $(PACKFILES)
+
+test.zip: $(test_FILES)
+	cp $(@:.zip=.png) pack.png
+	cp $(@:.zip=.mcmeta) pack.mcmeta
+	zip $@ pack.png pack.mcmeta $^
 
 oretypes.zip: $(oretypes_FILES)
 	cp $(@:.zip=.png) pack.png
@@ -98,26 +124,4 @@ clean:
 .PHONY: uninstall
 uninstall:
 	cd $(MCDIR)/resourcepacks && rm -f $(PACKFILES)
-
-# old resources i don't use anymore
-NOSTALGIA = \
-	assets/minecraft/textures/block/command_block.png \
-	assets/minecraft/textures/block/iron_block.png \
-	assets/minecraft/textures/entity/iron_golem.png \
-	assets/minecraft/sounds/random/bowhit4.ogg \
-	assets/minecraft/sounds/random/bowhit2.ogg \
-	assets/minecraft/sounds/random/bowhit1.ogg \
-	assets/minecraft/sounds/random/bowhit3.ogg \
-	assets/minecraft/sounds/liquid/splash.ogg \
-	assets/minecraft/sounds/liquid/splash2.ogg \
-	assets/minecraft/sounds/liquid/swim1.ogg \
-	assets/minecraft/sounds/liquid/swim2.ogg \
-	assets/minecraft/sounds/liquid/swim3.ogg \
-	assets/minecraft/sounds/liquid/swim4.ogg \
-	assets/minecraft/sounds/step/grass4.ogg \
-	assets/minecraft/sounds/step/grass5.ogg \
-	assets/minecraft/sounds/step/grass1.ogg \
-	assets/minecraft/sounds/step/grass2.ogg \
-	assets/minecraft/sounds/step/grass6.ogg \
-	assets/minecraft/sounds/step/grass3.ogg
 
