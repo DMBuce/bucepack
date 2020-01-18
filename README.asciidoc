@@ -3,6 +3,36 @@ described below.
 
 Downloads: https://github.com/DMBuce/bucepack/releases
 
+Brew Guide
+----------
+
+Adds a simple cheat sheet to the brewing stand GUI to remind you how potions are made.
+
+Download: https://github.com/DMBuce/bucepack/releases
+
+Build: `make brewguide.zip`
+
+Village Mech
+------------
+
+Turns iron golems into mechsuit-wearing villagers.
+
+Download: https://github.com/DMBuce/bucepack/releases
+
+Build: `make villagemech.zip`
+
+Pig Armor
+---------
+
+Adds iron armor to saddled pigs.
+
+This is an aesthetic change only,
+it doesn't reduce the damage that pigs take.
+
+Download: https://github.com/DMBuce/bucepack/releases
+
+Build: `make pigarmor.zip`
+
 Ore Types
 ---------
 
@@ -16,36 +46,19 @@ Organizes ores into types to provide more variety and consistency
 
 As an originally unintended bonus,
 gemlike ores stick up one pixel above lava,
-so you can discover them a bit more easily.
+so you can find them a bit more easily.
 
 Download: https://github.com/DMBuce/bucepack/releases
 
 Build: `make oretypes.zip`
 
-Pig Armor
----------
-
-Adds iron armor to saddled pigs.
-
-Download: https://github.com/DMBuce/bucepack/releases
-
-Build: `make pigarmor.zip`
-
-Brew Guide
-----------
-
-Adds a simple cheat sheet to the brewing stand GUI to remind you how potions are made.
-
-Download: https://github.com/DMBuce/bucepack/releases
-
-Build: `make brewguide.zip`
-
 Retro Food
 ----------
 
-Adds back the dark outlines around food items like before version 1.4.2.
+Reverts food to their outlined textures from before 1.4.2,
+and adds outlines to some food that's been added to the game since then.
 
-These food items are changed:
+Retextured items:
 
 * Apples
 * Chicken
@@ -63,27 +76,48 @@ Download: https://github.com/DMBuce/bucepack/releases
 
 Build: `make retrofood.zip`
 
+Retro Iron
+----------
+
+Reverts the iron block to its smooth texture from before 1.9pre5.
+
+Download: https://github.com/DMBuce/bucepack/releases
+
+Build: `make retroiron.zip`
+
 Retro Moo
 ---------
 
-Adds the old derpy cow noises.
+Reverts cow noises to their old, derpy sounds.
 
 Download: https://github.com/DMBuce/bucepack/releases
 
 Build: `make retromoo.zip`
 
-Test
-----
+Retro Twang
+-----------
 
-Unpolished resource pack subject to change.
+Reverts arrow noise so it has a *twang* sound.
 
-* Smooth Iron Block from before 1.9pre5
-* Arrow *twang* sound
-* Water *sploosh* sound
-* Crunchy grass noise
-* Emerald items match diamonds
-* Command Blocks are centered
-* Iron Golems are removed to create new jobs for green villagers
+Download: https://github.com/DMBuce/bucepack/releases
 
-Build: `make test.zip`
+Build: `make retrotwang.zip`
+
+Retro Sploosh
+-------------
+
+Reverts water noise so it has a *sploosh* sound.
+
+Download: https://github.com/DMBuce/bucepack/releases
+
+Build: `make retrosploosh.zip`
+
+Retro Crunch
+------------
+
+Reverts grass noise so it has a crunchy sound when stepping on it.
+
+Download: https://github.com/DMBuce/bucepack/releases
+
+Build: `make retrocrunch.zip`
 
