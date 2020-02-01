@@ -11,7 +11,7 @@ Painting Overhaul
 
 Replaces the default paintings with more recognizable ones.
 
-image::https://i.imgur.com/pMn24j4.png[Painting Overhaul Preview]
+https://i.imgur.com/D1B8Pae.png[Painting Overhaul Preview]
 
 Below are the painting titles, organized by size,
 with links to their inspiration.
