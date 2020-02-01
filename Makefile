@@ -1,5 +1,6 @@
 
-PACKFILES = brewguide.zip paintingoverhaul.zip villagemech.zip pigarmor.zip oretypes.zip \
+PACKFILES = paintingoverhaul.zip noteguide.zip ethonianman.zip \
+	brewguide.zip villagemech.zip pigarmor.zip oretypes.zip \
 	retrofood.zip retroiron.zip \
 	retromoo.zip retrotwang.zip retrosploosh.zip retrocrunch.zip
 MCDIR     = $(HOME)/.minecraft
@@ -8,9 +9,6 @@ CLEAN_TARGETS := $(PACKFILES) pack.mcmeta pack.png test.zip
 
 # needed by all texture pack targets
 DEFAULT = CONTRIBUTORS.txt LICENSE.txt
-
-brewguide_FILES := $(DEFAULT_FILES) \
-	assets/minecraft/textures/gui/container/brewing_stand.png
 
 paintingoverhaul_FILES := $(DEFAULT_FILES) \
 	assets/minecraft/textures/painting/kebab.png \
@@ -39,6 +37,15 @@ paintingoverhaul_FILES := $(DEFAULT_FILES) \
 	assets/minecraft/textures/painting/burning_skull.png \
 	assets/minecraft/textures/painting/pigscene.png \
 	assets/minecraft/textures/painting/pointer.png
+
+noteguide_FILES := $(DEFAULT_FILES) \
+	assets/minecraft/textures/painting/circleoffifths.png
+
+ethonianman_FILES := $(DEFAULT_FILES) \
+	assets/minecraft/textures/painting/ethonian.png
+
+brewguide_FILES := $(DEFAULT_FILES) \
+	assets/minecraft/textures/gui/container/brewing_stand.png
 
 villagemech_FILES := $(DEFAULT_FILES) \
 	assets/minecraft/textures/entity/iron_golem/iron_golem.png \
@@ -130,12 +137,24 @@ test.zip: $(test_FILES)
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^
 
-brewguide.zip: $(brewguide_FILES)
+paintingoverhaul.zip: $(paintingoverhaul_FILES)
 	cp meta/$(@:.zip=.png) pack.png
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^
 
-paintingoverhaul.zip: $(paintingoverhaul_FILES)
+noteguide.zip: $(noteguide_FILES)
+	cp meta/$(@:.zip=.png) pack.png
+	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
+	zip $@ pack.png pack.mcmeta $^
+	printf "@ assets/minecraft/textures/painting/circleoffifths.png\n@=assets/minecraft/textures/painting/pointer.png\n" | zipnote -w $@
+
+ethonianman.zip: $(ethonianman_FILES)
+	cp meta/$(@:.zip=.png) pack.png
+	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
+	zip $@ pack.png pack.mcmeta $^
+	printf "@ assets/minecraft/textures/painting/ethonian.png\n@=assets/minecraft/textures/painting/pigscene.png\n" | zipnote -w $@
+
+brewguide.zip: $(brewguide_FILES)
 	cp meta/$(@:.zip=.png) pack.png
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^
