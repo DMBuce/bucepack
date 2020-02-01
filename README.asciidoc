@@ -54,6 +54,23 @@ Download: https://github.com/DMBuce/bucepack/releases
 
 Build: `make paintingoverhaul.zip`
 
+Ethonian Man & Note Guide
+-------------------------
+
+These two texture packs add
+https://en.wikipedia.org/wiki/Vitruvian_Man[The Ethonian Man] and
+https://en.wikipedia.org/wiki/Circle_of_fifths[Note Guide] paintings,
+respectively.
+
+image::https://i.imgur.com/Q0UcUhm.png[Ethonian Man & Note Guide Preview]
+
+The Note Guide painting has notes arranged in the Circle of Fifths.
+https://www.youtube.com/watch?v=d1aJ6HixSe0[Here's an introduction to the Circle of Fifths].
+
+Download: https://github.com/DMBuce/bucepack/releases
+
+Build: `make ethonianman.zip; make noteguide.zip`
+
 Brew Guide
 ----------
 
