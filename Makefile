@@ -1,5 +1,5 @@
 
-PACKFILES = brewguide.zip villagemech.zip pigarmor.zip oretypes.zip \
+PACKFILES = brewguide.zip paintingoverhaul.zip villagemech.zip pigarmor.zip oretypes.zip \
 	retrofood.zip retroiron.zip \
 	retromoo.zip retrotwang.zip retrosploosh.zip retrocrunch.zip
 MCDIR     = $(HOME)/.minecraft
@@ -11,6 +11,34 @@ DEFAULT = CONTRIBUTORS.txt LICENSE.txt
 
 brewguide_FILES := $(DEFAULT_FILES) \
 	assets/minecraft/textures/gui/container/brewing_stand.png
+
+paintingoverhaul_FILES := $(DEFAULT_FILES) \
+	assets/minecraft/textures/painting/kebab.png \
+	assets/minecraft/textures/painting/aztec.png \
+	assets/minecraft/textures/painting/alban.png \
+	assets/minecraft/textures/painting/aztec2.png \
+	assets/minecraft/textures/painting/bomb.png \
+	assets/minecraft/textures/painting/plant.png \
+	assets/minecraft/textures/painting/wasteland.png \
+	assets/minecraft/textures/painting/wanderer.png \
+	assets/minecraft/textures/painting/graham.png \
+	assets/minecraft/textures/painting/pool.png \
+	assets/minecraft/textures/painting/courbet.png \
+	assets/minecraft/textures/painting/sunset.png \
+	assets/minecraft/textures/painting/sea.png \
+	assets/minecraft/textures/painting/creebet.png \
+	assets/minecraft/textures/painting/match.png \
+	assets/minecraft/textures/painting/bust.png \
+	assets/minecraft/textures/painting/stage.png \
+	assets/minecraft/textures/painting/void.png \
+	assets/minecraft/textures/painting/skull_and_roses.png \
+	assets/minecraft/textures/painting/wither.png \
+	assets/minecraft/textures/painting/fighters.png \
+	assets/minecraft/textures/painting/skeleton.png \
+	assets/minecraft/textures/painting/donkey_kong.png \
+	assets/minecraft/textures/painting/burning_skull.png \
+	assets/minecraft/textures/painting/pigscene.png \
+	assets/minecraft/textures/painting/pointer.png
 
 villagemech_FILES := $(DEFAULT_FILES) \
 	assets/minecraft/textures/entity/iron_golem/iron_golem.png \
@@ -103,6 +131,11 @@ test.zip: $(test_FILES)
 	zip $@ pack.png pack.mcmeta $^
 
 brewguide.zip: $(brewguide_FILES)
+	cp meta/$(@:.zip=.png) pack.png
+	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
+	zip $@ pack.png pack.mcmeta $^
+
+paintingoverhaul.zip: $(paintingoverhaul_FILES)
 	cp meta/$(@:.zip=.png) pack.png
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^
