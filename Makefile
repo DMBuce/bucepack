@@ -1,7 +1,7 @@
 
 PACKFILES = paintingoverhaul.zip noteguide.zip ethonianman.zip periodictable.zip \
 	brewguide.zip villagemech.zip pigarmor.zip oretypes.zip \
-	retrofood.zip retroiron.zip \
+	retrofood.zip retronetherrack.zip retroiron.zip \
 	retromoo.zip retrotwang.zip retrosploosh.zip retrocrunch.zip
 MCDIR     = $(HOME)/.minecraft
 
@@ -95,6 +95,9 @@ retrofood_FILES := $(DEFAULT_FILES) \
 	assets/minecraft/textures/item/rabbit.png \
 	assets/minecraft/textures/item/salmon.png
 
+retronetherrack_FILES := $(DEFAULT_FILES) \
+	assets/minecraft/textures/block/netherrack.png
+
 retroiron_FILES := $(DEFAULT_FILES) \
 	assets/minecraft/textures/block/iron_block.png
 
@@ -184,6 +187,11 @@ oretypes.zip: $(oretypes_FILES)
 	zip $@ pack.png pack.mcmeta $^
 
 retrofood.zip: $(retrofood_FILES)
+	cp meta/$(@:.zip=.png) pack.png
+	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
+	zip $@ pack.png pack.mcmeta $^
+
+retronetherrack.zip: $(retronetherrack_FILES)
 	cp meta/$(@:.zip=.png) pack.png
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^

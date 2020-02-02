@@ -100,7 +100,7 @@ Adds a Periodic Table of Alchemy painting to remind you how potions are made.
 
 image::https://i.imgur.com/WCJayle.png[Periodic Table Preview]
 
-Build: `make noteguide.zip`
+Build: `make periodictable.zip`
 
 Brew Guide
 ----------
@@ -184,6 +184,17 @@ Retextured items:
 Download: https://github.com/DMBuce/bucepack/releases
 
 Build: `make retrofood.zip`
+
+Retro Netherrack
+----------
+
+Reverts netherrack to its bloody texture from before 1.14.
+
+image::https://i.imgur.com/WEfv6iZ.png[Retro Netherrack Preview]
+
+Download: https://github.com/DMBuce/bucepack/releases
+
+Build: `make retronetherrack.zip`
 
 Retro Iron
 ----------
