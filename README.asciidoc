@@ -186,7 +186,7 @@ Download: https://github.com/DMBuce/bucepack/releases
 Build: `make retrofood.zip`
 
 Retro Netherrack
-----------
+----------------
 
 Reverts netherrack to its bloody texture from before 1.14.
 
