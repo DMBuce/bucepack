@@ -67,7 +67,7 @@ Download: https://github.com/DMBuce/bucepack/releases
 
 Build: `make paintingoverhaul.zip`
 
-Ethonian Man 
+Ethonian Man
 ------------
 
 Adds https://en.wikipedia.org/wiki/Vitruvian_Man[The Ethonian Man] painting.
