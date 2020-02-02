@@ -67,22 +67,40 @@ Download: https://github.com/DMBuce/bucepack/releases
 
 Build: `make paintingoverhaul.zip`
 
-Ethonian Man & Note Guide
--------------------------
+Ethonian Man 
+------------
 
-These two texture packs add
-https://en.wikipedia.org/wiki/Vitruvian_Man[The Ethonian Man] and
-https://en.wikipedia.org/wiki/Circle_of_fifths[Note Guide] paintings,
-respectively.
+Adds https://en.wikipedia.org/wiki/Vitruvian_Man[The Ethonian Man] painting.
 
-image::https://i.imgur.com/P1dhrD6.png[Ethonian Man & Note Guide Preview]
-
-The Note Guide painting has notes arranged in the Circle of Fifths.
-https://www.youtube.com/watch?v=d1aJ6HixSe0[Here's an introduction to the Circle of Fifths].
+image::https://i.imgur.com/Dh8wU07.png[Ethonian Man Preview]
 
 Download: https://github.com/DMBuce/bucepack/releases
 
-Build: `make ethonianman.zip; make noteguide.zip`
+Build: `make ethonianman.zip`
+
+Note Guide
+----------
+
+Adds a https://en.wikipedia.org/wiki/Circle_of_fifths[Note Guide] painting.
+
+image::https://i.imgur.com/xGPLQf8.png[Note Guide Preview]
+
+Next to each note is the number of clicks needed to tune a note block.
+Notes are arranged in the Circle of Fifths.
+For an introduction to the Circle of Fifths, I recommend
+https://www.youtube.com/watch?v=d1aJ6HixSe0[Michael New's Youtube video]
+on the subject.
+
+Build: `make noteguide.zip`
+
+Periodic Table
+--------------
+
+Adds a Periodic Table of Alchemy painting to remind you how potions are made.
+
+image::https://i.imgur.com/xGPLQf8.png[Periodic Table Preview]
+
+Build: `make noteguide.zip`
 
 Brew Guide
 ----------
