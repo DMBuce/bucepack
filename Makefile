@@ -1,5 +1,5 @@
 
-PACKFILES = paintingoverhaul.zip noteguide.zip ethonianman.zip periodictable.zip \
+PACKFILES = paintingoverhaul.zip noteguide.zip periodictable.zip \
 	brewguide.zip techarrows.zip villagemech.zip pigarmor.zip oretypes.zip \
 	retrofood.zip retronetherrack.zip retroiron.zip \
 	retromoo.zip retrotwang.zip retrosploosh.zip retrocrunch.zip
@@ -40,9 +40,6 @@ paintingoverhaul_FILES := $(DEFAULT_FILES) \
 
 noteguide_FILES := $(DEFAULT_FILES) \
 	assets/minecraft/textures/painting/circleoffifths.png
-
-ethonianman_FILES := $(DEFAULT_FILES) \
-	assets/minecraft/textures/painting/ethonian.png
 
 periodictable_FILES := $(DEFAULT_FILES) \
 	assets/minecraft/textures/painting/periodictable.png
@@ -161,12 +158,6 @@ noteguide.zip: $(noteguide_FILES)
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^
 	printf "@ assets/minecraft/textures/painting/circleoffifths.png\n@=assets/minecraft/textures/painting/pointer.png\n" | zipnote -w $@
-
-ethonianman.zip: $(ethonianman_FILES)
-	cp meta/$(@:.zip=.png) pack.png
-	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
-	zip $@ pack.png pack.mcmeta $^
-	printf "@ assets/minecraft/textures/painting/ethonian.png\n@=assets/minecraft/textures/painting/pigscene.png\n" | zipnote -w $@
 
 periodictable.zip: $(periodictable_FILES)
 	cp meta/$(@:.zip=.png) pack.png

@@ -60,23 +60,12 @@ with links to their inspiration.
 4x4 Paintings:
 
 * https://en.wikipedia.org/wiki/The_Creation_of_Adam[Creation of Steve]
-* https://en.wikipedia.org/wiki/Early_Spring_(painting)[Early Spring]
+* https://en.wikipedia.org/wiki/Vitruvian_Man[The Ethonian Man]
 * https://en.wikipedia.org/wiki/Brig_%22Mercury%22_Attacked_by_Two_Turkish_Ships[Brig Mercury]
 
 Download: https://github.com/DMBuce/bucepack/releases
 
 Build: `make paintingoverhaul.zip`
-
-Ethonian Man
-------------
-
-Adds https://en.wikipedia.org/wiki/Vitruvian_Man[The Ethonian Man] painting.
-
-image::https://i.imgur.com/Dh8wU07.png[Ethonian Man Preview]
-
-Download: https://github.com/DMBuce/bucepack/releases
-
-Build: `make ethonianman.zip`
 
 Note Guide
 ----------
@@ -116,8 +105,8 @@ Build: `make brewguide.zip`
 Tech Arrows
 -----------
 
-Adds arrows to the top of hoppers and the side of observers to make it easier
-to see which direction they're pointing.
+Adds arrows to the top of hoppers and the side of observers so that you can
+see which direction they're pointing.
 
 image::https://i.imgur.com/RwOzhsR.png[Tech Arrows Preview]
 
