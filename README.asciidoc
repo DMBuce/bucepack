@@ -189,9 +189,11 @@ Build: `make retrofood.zip`
 Retro Netherrack
 ----------------
 
-Reverts netherrack to its bloody texture from before 1.14.
+Reverts netherrack and quartz ore to their bloody textures from before 1.14.
 
-image::https://i.imgur.com/WEfv6iZ.png[Retro Netherrack Preview]
+Also retextures the quartz item to look more crystalline.
+
+image::https://i.imgur.com/tBIX8AV.png[Retro Netherrack Preview]
 
 Download: https://github.com/DMBuce/bucepack/releases
 

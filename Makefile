@@ -101,7 +101,9 @@ retrofood_FILES := $(DEFAULT_FILES) \
 	assets/minecraft/textures/item/salmon.png
 
 retronetherrack_FILES := $(DEFAULT_FILES) \
-	assets/minecraft/textures/block/netherrack.png
+	assets/minecraft/textures/block/netherrack.png \
+	assets/minecraft/textures/block/nether_quartz_ore.png \
+	assets/minecraft/textures/item/quartz.png
 
 retroiron_FILES := $(DEFAULT_FILES) \
 	assets/minecraft/textures/block/iron_block.png
