@@ -119,7 +119,7 @@ Tech Arrows
 Adds arrows to the top of hoppers and the side of observers to make it easier
 to see which direction they're pointing.
 
-image::https://i.imgur.com/edmhYeq.png[Tech Arrows Preview]
+image::https://i.imgur.com/RwOzhsR.png[Tech Arrows Preview]
 
 Download: https://github.com/DMBuce/bucepack/releases
 
