@@ -64,13 +64,18 @@ villagemech_FILES := $(DEFAULT_FILES) \
 pigarmor_FILES := $(DEFAULT_FILES) \
 	assets/minecraft/textures/entity/pig/pig_saddle.png
 
+
 oretypes_FILES := $(DEFAULT_FILES) \
 	assets/minecraft/blockstates/coal_ore.json \
 	assets/minecraft/blockstates/lapis_ore.json \
 	assets/minecraft/models/block/coal_ore_1.json \
+	assets/minecraft/models/block/coal_ore_2.json \
 	assets/minecraft/models/block/lapis_ore_1.json \
+	assets/minecraft/models/block/lapis_ore_2.json \
 	assets/minecraft/textures/block/coal_ore_1.png \
+	assets/minecraft/textures/block/coal_ore_2.png \
 	assets/minecraft/textures/block/lapis_ore_1.png \
+	assets/minecraft/textures/block/lapis_ore_2.png \
 	assets/minecraft/textures/block/diamond_ore.png \
 	assets/minecraft/textures/block/redstone_ore.png
 

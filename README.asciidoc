@@ -144,13 +144,12 @@ Ore Types
 
 Organizes ores into types to provide more variety and consistency
 
-image::https://i.imgur.com/0dsr1uE.png[Ore Types Preview]
+image::https://i.imgur.com/kXCHAdS.png[Ore Types Preview]
 
 * "Metallic" ores (Iron, Gold) are unchanged
 * "Gemlike" ores (Diamond, Redstone) match emerald's gemlike texture
-* "Lumpy" ores (Coal, Lapis) use a mixture of shapes,
-  with 50% similar to the default coal ore and
-  50% similar to the default lapis ore
+* "Lumpy" ores (Coal, Lapis) use a random mixture of the default coal ore,
+  the default lapis ore, and the default quartz ore shapes.
 
 As an originally unintended bonus,
 gemlike ores stick up one pixel above lava,
