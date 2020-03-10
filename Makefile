@@ -1,6 +1,6 @@
 
 PACKFILES = paintingoverhaul.zip noteguide.zip ethonianman.zip periodictable.zip \
-	brewguide.zip villagemech.zip pigarmor.zip oretypes.zip \
+	brewguide.zip techarrows.zip villagemech.zip pigarmor.zip oretypes.zip \
 	retrofood.zip retronetherrack.zip retroiron.zip \
 	retromoo.zip retrotwang.zip retrosploosh.zip retrocrunch.zip
 MCDIR     = $(HOME)/.minecraft
@@ -49,6 +49,14 @@ periodictable_FILES := $(DEFAULT_FILES) \
 
 brewguide_FILES := $(DEFAULT_FILES) \
 	assets/minecraft/textures/gui/container/brewing_stand.png
+
+techarrows_FILES := $(DEFAULT_FILES) \
+	assets/minecraft/models/block/hopper_side.json \
+	assets/minecraft/models/block/observer.json \
+	assets/minecraft/textures/block/hopper_inside.png \
+	assets/minecraft/textures/block/hopper_inside_side.png \
+	assets/minecraft/textures/block/observer_back_on.png \
+	assets/minecraft/textures/block/observer_side.png
 
 villagemech_FILES := $(DEFAULT_FILES) \
 	assets/minecraft/textures/entity/iron_golem/iron_golem.png \
@@ -167,6 +175,11 @@ periodictable.zip: $(periodictable_FILES)
 	printf "@ assets/minecraft/textures/painting/periodictable.png\n@=assets/minecraft/textures/painting/skeleton.png\n" | zipnote -w $@
 
 brewguide.zip: $(brewguide_FILES)
+	cp meta/$(@:.zip=.png) pack.png
+	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
+	zip $@ pack.png pack.mcmeta $^
+
+techarrows.zip: $(techarrows_FILES)
 	cp meta/$(@:.zip=.png) pack.png
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^
