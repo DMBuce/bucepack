@@ -1,6 +1,6 @@
 
-PACKFILES = paintingoverhaul.zip noteguide.zip periodictable.zip \
-	brewguide.zip techarrows.zip musicinfo.zip villagemech.zip pigarmor.zip oretypes.zip \
+PACKFILES = paintingoverhaul.zip noteguide.zip \
+	brewguide.zip techarrows.zip villagemech.zip pigarmor.zip oretypes.zip \
 	retrofood.zip retronetherrack.zip retroiron.zip \
 	retromoo.zip retrotwang.zip retrosploosh.zip retrocrunch.zip
 MCDIR     = $(HOME)/.minecraft
@@ -39,23 +39,6 @@ paintingoverhaul_FILES := $(DEFAULT_FILES) \
 	assets/minecraft/textures/painting/pointer.png
 
 noteguide_FILES := $(DEFAULT_FILES) \
-	assets/minecraft/textures/painting/circleoffifths.png
-
-periodictable_FILES := $(DEFAULT_FILES) \
-	assets/minecraft/textures/painting/periodictable.png
-
-brewguide_FILES := $(DEFAULT_FILES) \
-	assets/minecraft/textures/gui/container/brewing_stand.png
-
-techarrows_FILES := $(DEFAULT_FILES) \
-	assets/minecraft/models/block/hopper_side.json \
-	assets/minecraft/models/block/observer.json \
-	assets/minecraft/textures/block/hopper_inside.png \
-	assets/minecraft/textures/block/hopper_inside_side.png \
-	assets/minecraft/textures/block/observer_back_on.png \
-	assets/minecraft/textures/block/observer_side.png
-
-musicinfo_FILES := $(DEFAULT_FILES) \
 	assets/minecraft/textures/block/note_block_0.png \
 	assets/minecraft/textures/block/note_block_1.png \
 	assets/minecraft/textures/block/note_block_2.png \
@@ -107,6 +90,17 @@ musicinfo_FILES := $(DEFAULT_FILES) \
 	assets/minecraft/models/block/note_block_23.json \
 	assets/minecraft/models/block/note_block_24.json \
 	assets/minecraft/blockstates/note_block.json
+
+brewguide_FILES := $(DEFAULT_FILES) \
+	assets/minecraft/textures/gui/container/brewing_stand.png
+
+techarrows_FILES := $(DEFAULT_FILES) \
+	assets/minecraft/models/block/hopper_side.json \
+	assets/minecraft/models/block/observer.json \
+	assets/minecraft/textures/block/hopper_inside.png \
+	assets/minecraft/textures/block/hopper_inside_side.png \
+	assets/minecraft/textures/block/observer_back_on.png \
+	assets/minecraft/textures/block/observer_side.png
 
 villagemech_FILES := $(DEFAULT_FILES) \
 	assets/minecraft/textures/entity/iron_golem/iron_golem.png \
@@ -217,13 +211,6 @@ noteguide.zip: $(noteguide_FILES)
 	cp meta/$(@:.zip=.png) pack.png
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^
-	printf "@ assets/minecraft/textures/painting/circleoffifths.png\n@=assets/minecraft/textures/painting/pointer.png\n" | zipnote -w $@
-
-periodictable.zip: $(periodictable_FILES)
-	cp meta/$(@:.zip=.png) pack.png
-	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
-	zip $@ pack.png pack.mcmeta $^
-	printf "@ assets/minecraft/textures/painting/periodictable.png\n@=assets/minecraft/textures/painting/skeleton.png\n" | zipnote -w $@
 
 brewguide.zip: $(brewguide_FILES)
 	cp meta/$(@:.zip=.png) pack.png
@@ -231,11 +218,6 @@ brewguide.zip: $(brewguide_FILES)
 	zip $@ pack.png pack.mcmeta $^
 
 techarrows.zip: $(techarrows_FILES)
-	cp meta/$(@:.zip=.png) pack.png
-	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
-	zip $@ pack.png pack.mcmeta $^
-
-musicinfo.zip: $(musicinfo_FILES)
 	cp meta/$(@:.zip=.png) pack.png
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^

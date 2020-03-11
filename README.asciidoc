@@ -70,26 +70,18 @@ Build: `make paintingoverhaul.zip`
 Note Guide
 ----------
 
-Adds a https://en.wikipedia.org/wiki/Circle_of_fifths[Note Guide] painting.
-
-image::https://i.imgur.com/xGPLQf8.png[Note Guide Preview]
-
-Next to each note is the number of clicks needed to tune a note block.
-Notes are arranged in the Circle of Fifths.
+Adds a display to the top of note blocks that shows the note it's tuned to,
+its position on a keyboard, and its position on the
+https://en.wikipedia.org/wiki/Circle_of_fifths[Circle of Fifths].
 For an introduction to the Circle of Fifths, I recommend
 https://www.youtube.com/watch?v=d1aJ6HixSe0[Michael New's Youtube video]
 on the subject.
 
+image::https://i.imgur.com/qPgdTGc.png[Music Info]
+
+Download: https://github.com/DMBuce/bucepack/releases
+
 Build: `make noteguide.zip`
-
-Periodic Table
---------------
-
-Adds a Periodic Table of Alchemy painting to remind you how potions are made.
-
-image::https://i.imgur.com/WCJayle.png[Periodic Table Preview]
-
-Build: `make periodictable.zip`
 
 Brew Guide
 ----------
@@ -113,23 +105,6 @@ image::https://i.imgur.com/RwOzhsR.png[Tech Arrows Preview]
 Download: https://github.com/DMBuce/bucepack/releases
 
 Build: `make techarrows.zip`
-
-Music Info
-----------
-
-Adds a display to the top of note blocks that shows the note it's tuned to,
-its position on a keyboard, and its position on the Circle of Fifths.
-For an introduction to the Circle of Fifths, I recommend
-https://www.youtube.com/watch?v=d1aJ6HixSe0[Michael New's Youtube video]
-on the subject.
-
-image::https://i.imgur.com/qPgdTGc.png[Music Info]
-
-Download: https://github.com/DMBuce/bucepack/releases
-
-Build: `make musicinfo.zip`
-
-
 
 Village Mech
 ------------
