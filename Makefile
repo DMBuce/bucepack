@@ -1,6 +1,6 @@
 
 PACKFILES = paintingoverhaul.zip noteguide.zip periodictable.zip \
-	brewguide.zip techarrows.zip villagemech.zip pigarmor.zip oretypes.zip \
+	brewguide.zip techarrows.zip musicinfo.zip villagemech.zip pigarmor.zip oretypes.zip \
 	retrofood.zip retronetherrack.zip retroiron.zip \
 	retromoo.zip retrotwang.zip retrosploosh.zip retrocrunch.zip
 MCDIR     = $(HOME)/.minecraft
@@ -54,6 +54,59 @@ techarrows_FILES := $(DEFAULT_FILES) \
 	assets/minecraft/textures/block/hopper_inside_side.png \
 	assets/minecraft/textures/block/observer_back_on.png \
 	assets/minecraft/textures/block/observer_side.png
+
+musicinfo_FILES := $(DEFAULT_FILES) \
+	assets/minecraft/textures/block/note_block_0.png \
+	assets/minecraft/textures/block/note_block_1.png \
+	assets/minecraft/textures/block/note_block_2.png \
+	assets/minecraft/textures/block/note_block_3.png \
+	assets/minecraft/textures/block/note_block_4.png \
+	assets/minecraft/textures/block/note_block_5.png \
+	assets/minecraft/textures/block/note_block_6.png \
+	assets/minecraft/textures/block/note_block_7.png \
+	assets/minecraft/textures/block/note_block_8.png \
+	assets/minecraft/textures/block/note_block_9.png \
+	assets/minecraft/textures/block/note_block_10.png \
+	assets/minecraft/textures/block/note_block_11.png \
+	assets/minecraft/textures/block/note_block_12.png \
+	assets/minecraft/textures/block/note_block_13.png \
+	assets/minecraft/textures/block/note_block_14.png \
+	assets/minecraft/textures/block/note_block_15.png \
+	assets/minecraft/textures/block/note_block_16.png \
+	assets/minecraft/textures/block/note_block_17.png \
+	assets/minecraft/textures/block/note_block_18.png \
+	assets/minecraft/textures/block/note_block_19.png \
+	assets/minecraft/textures/block/note_block_20.png \
+	assets/minecraft/textures/block/note_block_21.png \
+	assets/minecraft/textures/block/note_block_22.png \
+	assets/minecraft/textures/block/note_block_23.png \
+	assets/minecraft/textures/block/note_block_24.png \
+	assets/minecraft/models/block/note_block_0.json \
+	assets/minecraft/models/block/note_block_1.json \
+	assets/minecraft/models/block/note_block_2.json \
+	assets/minecraft/models/block/note_block_3.json \
+	assets/minecraft/models/block/note_block_4.json \
+	assets/minecraft/models/block/note_block_5.json \
+	assets/minecraft/models/block/note_block_6.json \
+	assets/minecraft/models/block/note_block_7.json \
+	assets/minecraft/models/block/note_block_8.json \
+	assets/minecraft/models/block/note_block_9.json \
+	assets/minecraft/models/block/note_block_10.json \
+	assets/minecraft/models/block/note_block_11.json \
+	assets/minecraft/models/block/note_block_12.json \
+	assets/minecraft/models/block/note_block_13.json \
+	assets/minecraft/models/block/note_block_14.json \
+	assets/minecraft/models/block/note_block_15.json \
+	assets/minecraft/models/block/note_block_16.json \
+	assets/minecraft/models/block/note_block_17.json \
+	assets/minecraft/models/block/note_block_18.json \
+	assets/minecraft/models/block/note_block_19.json \
+	assets/minecraft/models/block/note_block_20.json \
+	assets/minecraft/models/block/note_block_21.json \
+	assets/minecraft/models/block/note_block_22.json \
+	assets/minecraft/models/block/note_block_23.json \
+	assets/minecraft/models/block/note_block_24.json \
+	assets/minecraft/blockstates/note_block.json
 
 villagemech_FILES := $(DEFAULT_FILES) \
 	assets/minecraft/textures/entity/iron_golem/iron_golem.png \
@@ -178,6 +231,11 @@ brewguide.zip: $(brewguide_FILES)
 	zip $@ pack.png pack.mcmeta $^
 
 techarrows.zip: $(techarrows_FILES)
+	cp meta/$(@:.zip=.png) pack.png
+	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
+	zip $@ pack.png pack.mcmeta $^
+
+musicinfo.zip: $(musicinfo_FILES)
 	cp meta/$(@:.zip=.png) pack.png
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^

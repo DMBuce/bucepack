@@ -114,6 +114,23 @@ Download: https://github.com/DMBuce/bucepack/releases
 
 Build: `make techarrows.zip`
 
+Music Info
+----------
+
+Adds a display to the top of note blocks that shows the note it's tuned to,
+its position on a keyboard, and its position on the Circle of Fifths.
+For an introduction to the Circle of Fifths, I recommend
+https://www.youtube.com/watch?v=d1aJ6HixSe0[Michael New's Youtube video]
+on the subject.
+
+image::https://i.imgur.com/qPgdTGc.png[Music Info]
+
+Download: https://github.com/DMBuce/bucepack/releases
+
+Build: `make musicinfo.zip`
+
+
+
 Village Mech
 ------------
 
