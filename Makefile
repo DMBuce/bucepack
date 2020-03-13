@@ -89,6 +89,7 @@ noteguide_FILES := $(DEFAULT_FILES) \
 	assets/minecraft/models/block/note_block_22.json \
 	assets/minecraft/models/block/note_block_23.json \
 	assets/minecraft/models/block/note_block_24.json \
+	assets/minecraft/models/item/note_block.json \
 	assets/minecraft/blockstates/note_block.json
 
 brewguide_FILES := $(DEFAULT_FILES) \
