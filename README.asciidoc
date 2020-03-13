@@ -74,11 +74,20 @@ Adds a display to the top of note blocks that shows the note it's tuned to,
 the octave, the note's position on a keyboard, and its position on the
 https://en.wikipedia.org/wiki/Circle_of_fifths[Circle of Fifths].
 
-image::https://i.imgur.com/razfQLj.png[Note Guide]
-
 For an introduction to the Circle of Fifths, I recommend
 https://www.youtube.com/watch?v=d1aJ6HixSe0[Michael New's Youtube video]
 on the subject.
+
+image::https://i.imgur.com/razfQLj.png[Note Guide]
+
+Unfortunately, note blocks don't have an orientation, so in this texture pack,
+the direction they face depends on the instrument it's set to, i.e. the
+block underneath:
+
+* Facing West: bass, snare, hat, basedrum
+* Facing North: harp, guitar, iron_xylophone, xylophone
+* Facing South: cow_bell, chime, flute, bell
+* Facing East: didgeridoo, pling, banjo, bit
 
 Download: https://github.com/DMBuce/bucepack/releases
 
