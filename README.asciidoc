@@ -84,10 +84,10 @@ Unfortunately, note blocks don't have an orientation, so in this texture pack,
 the direction they face depends on the instrument it's set to, i.e. the
 block underneath:
 
-* Facing West: bass, snare, hat, basedrum
-* Facing North: harp, guitar, iron_xylophone, xylophone
-* Facing South: cow_bell, chime, flute, bell
-* Facing East: didgeridoo, pling, banjo, bit
+* Facing West: bass, snare, hat, basedrum (wood/sand/glass/stone)
+* Facing North: harp, guitar, iron_xylophone, xylophone (dirt/wool/iron/bone)
+* Facing South: cow_bell, chime, flute, bell (soul sand/packed ice/clay/gold)
+* Facing East: didgeridoo, pling, banjo, bit (pumpkin/glowstone/hay/emerald)
 
 Download: https://github.com/DMBuce/bucepack/releases
 
