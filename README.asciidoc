@@ -71,13 +71,14 @@ Note Guide
 ----------
 
 Adds a display to the top of note blocks that shows the note it's tuned to,
-its position on a keyboard, and its position on the
+the octave, the note's position on a keyboard, and its position on the
 https://en.wikipedia.org/wiki/Circle_of_fifths[Circle of Fifths].
+
+image::https://i.imgur.com/razfQLj.png[Note Guide]
+
 For an introduction to the Circle of Fifths, I recommend
 https://www.youtube.com/watch?v=d1aJ6HixSe0[Michael New's Youtube video]
 on the subject.
-
-image::https://i.imgur.com/qPgdTGc.png[Music Info]
 
 Download: https://github.com/DMBuce/bucepack/releases
 
