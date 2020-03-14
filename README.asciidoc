@@ -70,7 +70,7 @@ Build: `make paintingoverhaul.zip`
 Note Guide
 ----------
 
-Adds a display to the top of note blocks that shows the note it's tuned to,
+Adds a display to the top of note blocks that shows the note it's tuned to
 and its position on a keyboard.
 
 There's also an Advanced version of the pack that additionally displays the
