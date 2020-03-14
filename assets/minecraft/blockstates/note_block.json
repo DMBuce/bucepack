@@ -11,10 +11,28 @@
 		},
 		{
 			"when": { "OR": [
+				{ "note": "12", "instrument": "bell" },
+				{ "note": "12", "instrument": "chime" },
+				{ "note": "12", "instrument": "cow_bell" },
+				{ "note": "12", "instrument": "flute" }
+			]},
+			"apply": { "model": "block/note_block_0", "y": 0 }
+		},
+		{
+			"when": { "OR": [
 				{ "note": "0", "instrument": "basedrum" },
 				{ "note": "0", "instrument": "hat" },
 				{ "note": "0", "instrument": "snare" },
 				{ "note": "0", "instrument": "bass" }
+			]},
+			"apply": { "model": "block/note_block_0", "y": 90 }
+		},
+		{
+			"when": { "OR": [
+				{ "note": "12", "instrument": "basedrum" },
+				{ "note": "12", "instrument": "hat" },
+				{ "note": "12", "instrument": "snare" },
+				{ "note": "12", "instrument": "bass" }
 			]},
 			"apply": { "model": "block/note_block_0", "y": 90 }
 		},
@@ -29,10 +47,28 @@
 		},
 		{
 			"when": { "OR": [
+				{ "note": "12", "instrument": "harp" },
+				{ "note": "12", "instrument": "iron_xylophone" },
+				{ "note": "12", "instrument": "xylophone" },
+				{ "note": "12", "instrument": "guitar" }
+			]},
+			"apply": { "model": "block/note_block_0", "y": 180 }
+		},
+		{
+			"when": { "OR": [
 				{ "note": "0", "instrument": "bit" },
 				{ "note": "0", "instrument": "pling" },
 				{ "note": "0", "instrument": "didgeridoo" },
 				{ "note": "0", "instrument": "banjo" }
+			]},
+			"apply": { "model": "block/note_block_0", "y": 270 }
+		},
+		{
+			"when": { "OR": [
+				{ "note": "12", "instrument": "bit" },
+				{ "note": "12", "instrument": "pling" },
+				{ "note": "12", "instrument": "didgeridoo" },
+				{ "note": "12", "instrument": "banjo" }
 			]},
 			"apply": { "model": "block/note_block_0", "y": 270 }
 		},
@@ -47,10 +83,28 @@
 		},
 		{
 			"when": { "OR": [
+				{ "note": "13", "instrument": "bell" },
+				{ "note": "13", "instrument": "chime" },
+				{ "note": "13", "instrument": "cow_bell" },
+				{ "note": "13", "instrument": "flute" }
+			]},
+			"apply": { "model": "block/note_block_1", "y": 0 }
+		},
+		{
+			"when": { "OR": [
 				{ "note": "1", "instrument": "basedrum" },
 				{ "note": "1", "instrument": "hat" },
 				{ "note": "1", "instrument": "snare" },
 				{ "note": "1", "instrument": "bass" }
+			]},
+			"apply": { "model": "block/note_block_1", "y": 90 }
+		},
+		{
+			"when": { "OR": [
+				{ "note": "13", "instrument": "basedrum" },
+				{ "note": "13", "instrument": "hat" },
+				{ "note": "13", "instrument": "snare" },
+				{ "note": "13", "instrument": "bass" }
 			]},
 			"apply": { "model": "block/note_block_1", "y": 90 }
 		},
@@ -65,10 +119,28 @@
 		},
 		{
 			"when": { "OR": [
+				{ "note": "13", "instrument": "harp" },
+				{ "note": "13", "instrument": "iron_xylophone" },
+				{ "note": "13", "instrument": "xylophone" },
+				{ "note": "13", "instrument": "guitar" }
+			]},
+			"apply": { "model": "block/note_block_1", "y": 180 }
+		},
+		{
+			"when": { "OR": [
 				{ "note": "1", "instrument": "bit" },
 				{ "note": "1", "instrument": "pling" },
 				{ "note": "1", "instrument": "didgeridoo" },
 				{ "note": "1", "instrument": "banjo" }
+			]},
+			"apply": { "model": "block/note_block_1", "y": 270 }
+		},
+		{
+			"when": { "OR": [
+				{ "note": "13", "instrument": "bit" },
+				{ "note": "13", "instrument": "pling" },
+				{ "note": "13", "instrument": "didgeridoo" },
+				{ "note": "13", "instrument": "banjo" }
 			]},
 			"apply": { "model": "block/note_block_1", "y": 270 }
 		},
@@ -83,10 +155,28 @@
 		},
 		{
 			"when": { "OR": [
+				{ "note": "14", "instrument": "bell" },
+				{ "note": "14", "instrument": "chime" },
+				{ "note": "14", "instrument": "cow_bell" },
+				{ "note": "14", "instrument": "flute" }
+			]},
+			"apply": { "model": "block/note_block_2", "y": 0 }
+		},
+		{
+			"when": { "OR": [
 				{ "note": "2", "instrument": "basedrum" },
 				{ "note": "2", "instrument": "hat" },
 				{ "note": "2", "instrument": "snare" },
 				{ "note": "2", "instrument": "bass" }
+			]},
+			"apply": { "model": "block/note_block_2", "y": 90 }
+		},
+		{
+			"when": { "OR": [
+				{ "note": "14", "instrument": "basedrum" },
+				{ "note": "14", "instrument": "hat" },
+				{ "note": "14", "instrument": "snare" },
+				{ "note": "14", "instrument": "bass" }
 			]},
 			"apply": { "model": "block/note_block_2", "y": 90 }
 		},
@@ -101,10 +191,28 @@
 		},
 		{
 			"when": { "OR": [
+				{ "note": "14", "instrument": "harp" },
+				{ "note": "14", "instrument": "iron_xylophone" },
+				{ "note": "14", "instrument": "xylophone" },
+				{ "note": "14", "instrument": "guitar" }
+			]},
+			"apply": { "model": "block/note_block_2", "y": 180 }
+		},
+		{
+			"when": { "OR": [
 				{ "note": "2", "instrument": "bit" },
 				{ "note": "2", "instrument": "pling" },
 				{ "note": "2", "instrument": "didgeridoo" },
 				{ "note": "2", "instrument": "banjo" }
+			]},
+			"apply": { "model": "block/note_block_2", "y": 270 }
+		},
+		{
+			"when": { "OR": [
+				{ "note": "14", "instrument": "bit" },
+				{ "note": "14", "instrument": "pling" },
+				{ "note": "14", "instrument": "didgeridoo" },
+				{ "note": "14", "instrument": "banjo" }
 			]},
 			"apply": { "model": "block/note_block_2", "y": 270 }
 		},
@@ -119,10 +227,28 @@
 		},
 		{
 			"when": { "OR": [
+				{ "note": "15", "instrument": "bell" },
+				{ "note": "15", "instrument": "chime" },
+				{ "note": "15", "instrument": "cow_bell" },
+				{ "note": "15", "instrument": "flute" }
+			]},
+			"apply": { "model": "block/note_block_3", "y": 0 }
+		},
+		{
+			"when": { "OR": [
 				{ "note": "3", "instrument": "basedrum" },
 				{ "note": "3", "instrument": "hat" },
 				{ "note": "3", "instrument": "snare" },
 				{ "note": "3", "instrument": "bass" }
+			]},
+			"apply": { "model": "block/note_block_3", "y": 90 }
+		},
+		{
+			"when": { "OR": [
+				{ "note": "15", "instrument": "basedrum" },
+				{ "note": "15", "instrument": "hat" },
+				{ "note": "15", "instrument": "snare" },
+				{ "note": "15", "instrument": "bass" }
 			]},
 			"apply": { "model": "block/note_block_3", "y": 90 }
 		},
@@ -137,10 +263,28 @@
 		},
 		{
 			"when": { "OR": [
+				{ "note": "15", "instrument": "harp" },
+				{ "note": "15", "instrument": "iron_xylophone" },
+				{ "note": "15", "instrument": "xylophone" },
+				{ "note": "15", "instrument": "guitar" }
+			]},
+			"apply": { "model": "block/note_block_3", "y": 180 }
+		},
+		{
+			"when": { "OR": [
 				{ "note": "3", "instrument": "bit" },
 				{ "note": "3", "instrument": "pling" },
 				{ "note": "3", "instrument": "didgeridoo" },
 				{ "note": "3", "instrument": "banjo" }
+			]},
+			"apply": { "model": "block/note_block_3", "y": 270 }
+		},
+		{
+			"when": { "OR": [
+				{ "note": "15", "instrument": "bit" },
+				{ "note": "15", "instrument": "pling" },
+				{ "note": "15", "instrument": "didgeridoo" },
+				{ "note": "15", "instrument": "banjo" }
 			]},
 			"apply": { "model": "block/note_block_3", "y": 270 }
 		},
@@ -155,10 +299,28 @@
 		},
 		{
 			"when": { "OR": [
+				{ "note": "16", "instrument": "bell" },
+				{ "note": "16", "instrument": "chime" },
+				{ "note": "16", "instrument": "cow_bell" },
+				{ "note": "16", "instrument": "flute" }
+			]},
+			"apply": { "model": "block/note_block_4", "y": 0 }
+		},
+		{
+			"when": { "OR": [
 				{ "note": "4", "instrument": "basedrum" },
 				{ "note": "4", "instrument": "hat" },
 				{ "note": "4", "instrument": "snare" },
 				{ "note": "4", "instrument": "bass" }
+			]},
+			"apply": { "model": "block/note_block_4", "y": 90 }
+		},
+		{
+			"when": { "OR": [
+				{ "note": "16", "instrument": "basedrum" },
+				{ "note": "16", "instrument": "hat" },
+				{ "note": "16", "instrument": "snare" },
+				{ "note": "16", "instrument": "bass" }
 			]},
 			"apply": { "model": "block/note_block_4", "y": 90 }
 		},
@@ -173,10 +335,28 @@
 		},
 		{
 			"when": { "OR": [
+				{ "note": "16", "instrument": "harp" },
+				{ "note": "16", "instrument": "iron_xylophone" },
+				{ "note": "16", "instrument": "xylophone" },
+				{ "note": "16", "instrument": "guitar" }
+			]},
+			"apply": { "model": "block/note_block_4", "y": 180 }
+		},
+		{
+			"when": { "OR": [
 				{ "note": "4", "instrument": "bit" },
 				{ "note": "4", "instrument": "pling" },
 				{ "note": "4", "instrument": "didgeridoo" },
 				{ "note": "4", "instrument": "banjo" }
+			]},
+			"apply": { "model": "block/note_block_4", "y": 270 }
+		},
+		{
+			"when": { "OR": [
+				{ "note": "16", "instrument": "bit" },
+				{ "note": "16", "instrument": "pling" },
+				{ "note": "16", "instrument": "didgeridoo" },
+				{ "note": "16", "instrument": "banjo" }
 			]},
 			"apply": { "model": "block/note_block_4", "y": 270 }
 		},
@@ -191,10 +371,28 @@
 		},
 		{
 			"when": { "OR": [
+				{ "note": "17", "instrument": "bell" },
+				{ "note": "17", "instrument": "chime" },
+				{ "note": "17", "instrument": "cow_bell" },
+				{ "note": "17", "instrument": "flute" }
+			]},
+			"apply": { "model": "block/note_block_5", "y": 0 }
+		},
+		{
+			"when": { "OR": [
 				{ "note": "5", "instrument": "basedrum" },
 				{ "note": "5", "instrument": "hat" },
 				{ "note": "5", "instrument": "snare" },
 				{ "note": "5", "instrument": "bass" }
+			]},
+			"apply": { "model": "block/note_block_5", "y": 90 }
+		},
+		{
+			"when": { "OR": [
+				{ "note": "17", "instrument": "basedrum" },
+				{ "note": "17", "instrument": "hat" },
+				{ "note": "17", "instrument": "snare" },
+				{ "note": "17", "instrument": "bass" }
 			]},
 			"apply": { "model": "block/note_block_5", "y": 90 }
 		},
@@ -209,10 +407,28 @@
 		},
 		{
 			"when": { "OR": [
+				{ "note": "17", "instrument": "harp" },
+				{ "note": "17", "instrument": "iron_xylophone" },
+				{ "note": "17", "instrument": "xylophone" },
+				{ "note": "17", "instrument": "guitar" }
+			]},
+			"apply": { "model": "block/note_block_5", "y": 180 }
+		},
+		{
+			"when": { "OR": [
 				{ "note": "5", "instrument": "bit" },
 				{ "note": "5", "instrument": "pling" },
 				{ "note": "5", "instrument": "didgeridoo" },
 				{ "note": "5", "instrument": "banjo" }
+			]},
+			"apply": { "model": "block/note_block_5", "y": 270 }
+		},
+		{
+			"when": { "OR": [
+				{ "note": "17", "instrument": "bit" },
+				{ "note": "17", "instrument": "pling" },
+				{ "note": "17", "instrument": "didgeridoo" },
+				{ "note": "17", "instrument": "banjo" }
 			]},
 			"apply": { "model": "block/note_block_5", "y": 270 }
 		},
@@ -227,10 +443,28 @@
 		},
 		{
 			"when": { "OR": [
+				{ "note": "18", "instrument": "bell" },
+				{ "note": "18", "instrument": "chime" },
+				{ "note": "18", "instrument": "cow_bell" },
+				{ "note": "18", "instrument": "flute" }
+			]},
+			"apply": { "model": "block/note_block_6", "y": 0 }
+		},
+		{
+			"when": { "OR": [
 				{ "note": "6", "instrument": "basedrum" },
 				{ "note": "6", "instrument": "hat" },
 				{ "note": "6", "instrument": "snare" },
 				{ "note": "6", "instrument": "bass" }
+			]},
+			"apply": { "model": "block/note_block_6", "y": 90 }
+		},
+		{
+			"when": { "OR": [
+				{ "note": "18", "instrument": "basedrum" },
+				{ "note": "18", "instrument": "hat" },
+				{ "note": "18", "instrument": "snare" },
+				{ "note": "18", "instrument": "bass" }
 			]},
 			"apply": { "model": "block/note_block_6", "y": 90 }
 		},
@@ -245,10 +479,28 @@
 		},
 		{
 			"when": { "OR": [
+				{ "note": "18", "instrument": "harp" },
+				{ "note": "18", "instrument": "iron_xylophone" },
+				{ "note": "18", "instrument": "xylophone" },
+				{ "note": "18", "instrument": "guitar" }
+			]},
+			"apply": { "model": "block/note_block_6", "y": 180 }
+		},
+		{
+			"when": { "OR": [
 				{ "note": "6", "instrument": "bit" },
 				{ "note": "6", "instrument": "pling" },
 				{ "note": "6", "instrument": "didgeridoo" },
 				{ "note": "6", "instrument": "banjo" }
+			]},
+			"apply": { "model": "block/note_block_6", "y": 270 }
+		},
+		{
+			"when": { "OR": [
+				{ "note": "18", "instrument": "bit" },
+				{ "note": "18", "instrument": "pling" },
+				{ "note": "18", "instrument": "didgeridoo" },
+				{ "note": "18", "instrument": "banjo" }
 			]},
 			"apply": { "model": "block/note_block_6", "y": 270 }
 		},
@@ -263,10 +515,28 @@
 		},
 		{
 			"when": { "OR": [
+				{ "note": "19", "instrument": "bell" },
+				{ "note": "19", "instrument": "chime" },
+				{ "note": "19", "instrument": "cow_bell" },
+				{ "note": "19", "instrument": "flute" }
+			]},
+			"apply": { "model": "block/note_block_7", "y": 0 }
+		},
+		{
+			"when": { "OR": [
 				{ "note": "7", "instrument": "basedrum" },
 				{ "note": "7", "instrument": "hat" },
 				{ "note": "7", "instrument": "snare" },
 				{ "note": "7", "instrument": "bass" }
+			]},
+			"apply": { "model": "block/note_block_7", "y": 90 }
+		},
+		{
+			"when": { "OR": [
+				{ "note": "19", "instrument": "basedrum" },
+				{ "note": "19", "instrument": "hat" },
+				{ "note": "19", "instrument": "snare" },
+				{ "note": "19", "instrument": "bass" }
 			]},
 			"apply": { "model": "block/note_block_7", "y": 90 }
 		},
@@ -281,10 +551,28 @@
 		},
 		{
 			"when": { "OR": [
+				{ "note": "19", "instrument": "harp" },
+				{ "note": "19", "instrument": "iron_xylophone" },
+				{ "note": "19", "instrument": "xylophone" },
+				{ "note": "19", "instrument": "guitar" }
+			]},
+			"apply": { "model": "block/note_block_7", "y": 180 }
+		},
+		{
+			"when": { "OR": [
 				{ "note": "7", "instrument": "bit" },
 				{ "note": "7", "instrument": "pling" },
 				{ "note": "7", "instrument": "didgeridoo" },
 				{ "note": "7", "instrument": "banjo" }
+			]},
+			"apply": { "model": "block/note_block_7", "y": 270 }
+		},
+		{
+			"when": { "OR": [
+				{ "note": "19", "instrument": "bit" },
+				{ "note": "19", "instrument": "pling" },
+				{ "note": "19", "instrument": "didgeridoo" },
+				{ "note": "19", "instrument": "banjo" }
 			]},
 			"apply": { "model": "block/note_block_7", "y": 270 }
 		},
@@ -299,10 +587,28 @@
 		},
 		{
 			"when": { "OR": [
+				{ "note": "20", "instrument": "bell" },
+				{ "note": "20", "instrument": "chime" },
+				{ "note": "20", "instrument": "cow_bell" },
+				{ "note": "20", "instrument": "flute" }
+			]},
+			"apply": { "model": "block/note_block_8", "y": 0 }
+		},
+		{
+			"when": { "OR": [
 				{ "note": "8", "instrument": "basedrum" },
 				{ "note": "8", "instrument": "hat" },
 				{ "note": "8", "instrument": "snare" },
 				{ "note": "8", "instrument": "bass" }
+			]},
+			"apply": { "model": "block/note_block_8", "y": 90 }
+		},
+		{
+			"when": { "OR": [
+				{ "note": "20", "instrument": "basedrum" },
+				{ "note": "20", "instrument": "hat" },
+				{ "note": "20", "instrument": "snare" },
+				{ "note": "20", "instrument": "bass" }
 			]},
 			"apply": { "model": "block/note_block_8", "y": 90 }
 		},
@@ -317,10 +623,28 @@
 		},
 		{
 			"when": { "OR": [
+				{ "note": "20", "instrument": "harp" },
+				{ "note": "20", "instrument": "iron_xylophone" },
+				{ "note": "20", "instrument": "xylophone" },
+				{ "note": "20", "instrument": "guitar" }
+			]},
+			"apply": { "model": "block/note_block_8", "y": 180 }
+		},
+		{
+			"when": { "OR": [
 				{ "note": "8", "instrument": "bit" },
 				{ "note": "8", "instrument": "pling" },
 				{ "note": "8", "instrument": "didgeridoo" },
 				{ "note": "8", "instrument": "banjo" }
+			]},
+			"apply": { "model": "block/note_block_8", "y": 270 }
+		},
+		{
+			"when": { "OR": [
+				{ "note": "20", "instrument": "bit" },
+				{ "note": "20", "instrument": "pling" },
+				{ "note": "20", "instrument": "didgeridoo" },
+				{ "note": "20", "instrument": "banjo" }
 			]},
 			"apply": { "model": "block/note_block_8", "y": 270 }
 		},
@@ -335,10 +659,28 @@
 		},
 		{
 			"when": { "OR": [
+				{ "note": "21", "instrument": "bell" },
+				{ "note": "21", "instrument": "chime" },
+				{ "note": "21", "instrument": "cow_bell" },
+				{ "note": "21", "instrument": "flute" }
+			]},
+			"apply": { "model": "block/note_block_9", "y": 0 }
+		},
+		{
+			"when": { "OR": [
 				{ "note": "9", "instrument": "basedrum" },
 				{ "note": "9", "instrument": "hat" },
 				{ "note": "9", "instrument": "snare" },
 				{ "note": "9", "instrument": "bass" }
+			]},
+			"apply": { "model": "block/note_block_9", "y": 90 }
+		},
+		{
+			"when": { "OR": [
+				{ "note": "21", "instrument": "basedrum" },
+				{ "note": "21", "instrument": "hat" },
+				{ "note": "21", "instrument": "snare" },
+				{ "note": "21", "instrument": "bass" }
 			]},
 			"apply": { "model": "block/note_block_9", "y": 90 }
 		},
@@ -353,10 +695,28 @@
 		},
 		{
 			"when": { "OR": [
+				{ "note": "21", "instrument": "harp" },
+				{ "note": "21", "instrument": "iron_xylophone" },
+				{ "note": "21", "instrument": "xylophone" },
+				{ "note": "21", "instrument": "guitar" }
+			]},
+			"apply": { "model": "block/note_block_9", "y": 180 }
+		},
+		{
+			"when": { "OR": [
 				{ "note": "9", "instrument": "bit" },
 				{ "note": "9", "instrument": "pling" },
 				{ "note": "9", "instrument": "didgeridoo" },
 				{ "note": "9", "instrument": "banjo" }
+			]},
+			"apply": { "model": "block/note_block_9", "y": 270 }
+		},
+		{
+			"when": { "OR": [
+				{ "note": "21", "instrument": "bit" },
+				{ "note": "21", "instrument": "pling" },
+				{ "note": "21", "instrument": "didgeridoo" },
+				{ "note": "21", "instrument": "banjo" }
 			]},
 			"apply": { "model": "block/note_block_9", "y": 270 }
 		},
@@ -371,10 +731,28 @@
 		},
 		{
 			"when": { "OR": [
+				{ "note": "22", "instrument": "bell" },
+				{ "note": "22", "instrument": "chime" },
+				{ "note": "22", "instrument": "cow_bell" },
+				{ "note": "22", "instrument": "flute" }
+			]},
+			"apply": { "model": "block/note_block_10", "y": 0 }
+		},
+		{
+			"when": { "OR": [
 				{ "note": "10", "instrument": "basedrum" },
 				{ "note": "10", "instrument": "hat" },
 				{ "note": "10", "instrument": "snare" },
 				{ "note": "10", "instrument": "bass" }
+			]},
+			"apply": { "model": "block/note_block_10", "y": 90 }
+		},
+		{
+			"when": { "OR": [
+				{ "note": "22", "instrument": "basedrum" },
+				{ "note": "22", "instrument": "hat" },
+				{ "note": "22", "instrument": "snare" },
+				{ "note": "22", "instrument": "bass" }
 			]},
 			"apply": { "model": "block/note_block_10", "y": 90 }
 		},
@@ -389,10 +767,28 @@
 		},
 		{
 			"when": { "OR": [
+				{ "note": "22", "instrument": "harp" },
+				{ "note": "22", "instrument": "iron_xylophone" },
+				{ "note": "22", "instrument": "xylophone" },
+				{ "note": "22", "instrument": "guitar" }
+			]},
+			"apply": { "model": "block/note_block_10", "y": 180 }
+		},
+		{
+			"when": { "OR": [
 				{ "note": "10", "instrument": "bit" },
 				{ "note": "10", "instrument": "pling" },
 				{ "note": "10", "instrument": "didgeridoo" },
 				{ "note": "10", "instrument": "banjo" }
+			]},
+			"apply": { "model": "block/note_block_10", "y": 270 }
+		},
+		{
+			"when": { "OR": [
+				{ "note": "22", "instrument": "bit" },
+				{ "note": "22", "instrument": "pling" },
+				{ "note": "22", "instrument": "didgeridoo" },
+				{ "note": "22", "instrument": "banjo" }
 			]},
 			"apply": { "model": "block/note_block_10", "y": 270 }
 		},
@@ -407,10 +803,28 @@
 		},
 		{
 			"when": { "OR": [
+				{ "note": "23", "instrument": "bell" },
+				{ "note": "23", "instrument": "chime" },
+				{ "note": "23", "instrument": "cow_bell" },
+				{ "note": "23", "instrument": "flute" }
+			]},
+			"apply": { "model": "block/note_block_11", "y": 0 }
+		},
+		{
+			"when": { "OR": [
 				{ "note": "11", "instrument": "basedrum" },
 				{ "note": "11", "instrument": "hat" },
 				{ "note": "11", "instrument": "snare" },
 				{ "note": "11", "instrument": "bass" }
+			]},
+			"apply": { "model": "block/note_block_11", "y": 90 }
+		},
+		{
+			"when": { "OR": [
+				{ "note": "23", "instrument": "basedrum" },
+				{ "note": "23", "instrument": "hat" },
+				{ "note": "23", "instrument": "snare" },
+				{ "note": "23", "instrument": "bass" }
 			]},
 			"apply": { "model": "block/note_block_11", "y": 90 }
 		},
@@ -425,6 +839,15 @@
 		},
 		{
 			"when": { "OR": [
+				{ "note": "23", "instrument": "harp" },
+				{ "note": "23", "instrument": "iron_xylophone" },
+				{ "note": "23", "instrument": "xylophone" },
+				{ "note": "23", "instrument": "guitar" }
+			]},
+			"apply": { "model": "block/note_block_11", "y": 180 }
+		},
+		{
+			"when": { "OR": [
 				{ "note": "11", "instrument": "bit" },
 				{ "note": "11", "instrument": "pling" },
 				{ "note": "11", "instrument": "didgeridoo" },
@@ -434,435 +857,12 @@
 		},
 		{
 			"when": { "OR": [
-				{ "note": "12", "instrument": "bell" },
-				{ "note": "12", "instrument": "chime" },
-				{ "note": "12", "instrument": "cow_bell" },
-				{ "note": "12", "instrument": "flute" }
-			]},
-			"apply": { "model": "block/note_block_12", "y": 0 }
-		},
-		{
-			"when": { "OR": [
-				{ "note": "12", "instrument": "basedrum" },
-				{ "note": "12", "instrument": "hat" },
-				{ "note": "12", "instrument": "snare" },
-				{ "note": "12", "instrument": "bass" }
-			]},
-			"apply": { "model": "block/note_block_12", "y": 90 }
-		},
-		{
-			"when": { "OR": [
-				{ "note": "12", "instrument": "harp" },
-				{ "note": "12", "instrument": "iron_xylophone" },
-				{ "note": "12", "instrument": "xylophone" },
-				{ "note": "12", "instrument": "guitar" }
-			]},
-			"apply": { "model": "block/note_block_12", "y": 180 }
-		},
-		{
-			"when": { "OR": [
-				{ "note": "12", "instrument": "bit" },
-				{ "note": "12", "instrument": "pling" },
-				{ "note": "12", "instrument": "didgeridoo" },
-				{ "note": "12", "instrument": "banjo" }
-			]},
-			"apply": { "model": "block/note_block_12", "y": 270 }
-		},
-		{
-			"when": { "OR": [
-				{ "note": "13", "instrument": "bell" },
-				{ "note": "13", "instrument": "chime" },
-				{ "note": "13", "instrument": "cow_bell" },
-				{ "note": "13", "instrument": "flute" }
-			]},
-			"apply": { "model": "block/note_block_13", "y": 0 }
-		},
-		{
-			"when": { "OR": [
-				{ "note": "13", "instrument": "basedrum" },
-				{ "note": "13", "instrument": "hat" },
-				{ "note": "13", "instrument": "snare" },
-				{ "note": "13", "instrument": "bass" }
-			]},
-			"apply": { "model": "block/note_block_13", "y": 90 }
-		},
-		{
-			"when": { "OR": [
-				{ "note": "13", "instrument": "harp" },
-				{ "note": "13", "instrument": "iron_xylophone" },
-				{ "note": "13", "instrument": "xylophone" },
-				{ "note": "13", "instrument": "guitar" }
-			]},
-			"apply": { "model": "block/note_block_13", "y": 180 }
-		},
-		{
-			"when": { "OR": [
-				{ "note": "13", "instrument": "bit" },
-				{ "note": "13", "instrument": "pling" },
-				{ "note": "13", "instrument": "didgeridoo" },
-				{ "note": "13", "instrument": "banjo" }
-			]},
-			"apply": { "model": "block/note_block_13", "y": 270 }
-		},
-		{
-			"when": { "OR": [
-				{ "note": "14", "instrument": "bell" },
-				{ "note": "14", "instrument": "chime" },
-				{ "note": "14", "instrument": "cow_bell" },
-				{ "note": "14", "instrument": "flute" }
-			]},
-			"apply": { "model": "block/note_block_14", "y": 0 }
-		},
-		{
-			"when": { "OR": [
-				{ "note": "14", "instrument": "basedrum" },
-				{ "note": "14", "instrument": "hat" },
-				{ "note": "14", "instrument": "snare" },
-				{ "note": "14", "instrument": "bass" }
-			]},
-			"apply": { "model": "block/note_block_14", "y": 90 }
-		},
-		{
-			"when": { "OR": [
-				{ "note": "14", "instrument": "harp" },
-				{ "note": "14", "instrument": "iron_xylophone" },
-				{ "note": "14", "instrument": "xylophone" },
-				{ "note": "14", "instrument": "guitar" }
-			]},
-			"apply": { "model": "block/note_block_14", "y": 180 }
-		},
-		{
-			"when": { "OR": [
-				{ "note": "14", "instrument": "bit" },
-				{ "note": "14", "instrument": "pling" },
-				{ "note": "14", "instrument": "didgeridoo" },
-				{ "note": "14", "instrument": "banjo" }
-			]},
-			"apply": { "model": "block/note_block_14", "y": 270 }
-		},
-		{
-			"when": { "OR": [
-				{ "note": "15", "instrument": "bell" },
-				{ "note": "15", "instrument": "chime" },
-				{ "note": "15", "instrument": "cow_bell" },
-				{ "note": "15", "instrument": "flute" }
-			]},
-			"apply": { "model": "block/note_block_15", "y": 0 }
-		},
-		{
-			"when": { "OR": [
-				{ "note": "15", "instrument": "basedrum" },
-				{ "note": "15", "instrument": "hat" },
-				{ "note": "15", "instrument": "snare" },
-				{ "note": "15", "instrument": "bass" }
-			]},
-			"apply": { "model": "block/note_block_15", "y": 90 }
-		},
-		{
-			"when": { "OR": [
-				{ "note": "15", "instrument": "harp" },
-				{ "note": "15", "instrument": "iron_xylophone" },
-				{ "note": "15", "instrument": "xylophone" },
-				{ "note": "15", "instrument": "guitar" }
-			]},
-			"apply": { "model": "block/note_block_15", "y": 180 }
-		},
-		{
-			"when": { "OR": [
-				{ "note": "15", "instrument": "bit" },
-				{ "note": "15", "instrument": "pling" },
-				{ "note": "15", "instrument": "didgeridoo" },
-				{ "note": "15", "instrument": "banjo" }
-			]},
-			"apply": { "model": "block/note_block_15", "y": 270 }
-		},
-		{
-			"when": { "OR": [
-				{ "note": "16", "instrument": "bell" },
-				{ "note": "16", "instrument": "chime" },
-				{ "note": "16", "instrument": "cow_bell" },
-				{ "note": "16", "instrument": "flute" }
-			]},
-			"apply": { "model": "block/note_block_16", "y": 0 }
-		},
-		{
-			"when": { "OR": [
-				{ "note": "16", "instrument": "basedrum" },
-				{ "note": "16", "instrument": "hat" },
-				{ "note": "16", "instrument": "snare" },
-				{ "note": "16", "instrument": "bass" }
-			]},
-			"apply": { "model": "block/note_block_16", "y": 90 }
-		},
-		{
-			"when": { "OR": [
-				{ "note": "16", "instrument": "harp" },
-				{ "note": "16", "instrument": "iron_xylophone" },
-				{ "note": "16", "instrument": "xylophone" },
-				{ "note": "16", "instrument": "guitar" }
-			]},
-			"apply": { "model": "block/note_block_16", "y": 180 }
-		},
-		{
-			"when": { "OR": [
-				{ "note": "16", "instrument": "bit" },
-				{ "note": "16", "instrument": "pling" },
-				{ "note": "16", "instrument": "didgeridoo" },
-				{ "note": "16", "instrument": "banjo" }
-			]},
-			"apply": { "model": "block/note_block_16", "y": 270 }
-		},
-		{
-			"when": { "OR": [
-				{ "note": "17", "instrument": "bell" },
-				{ "note": "17", "instrument": "chime" },
-				{ "note": "17", "instrument": "cow_bell" },
-				{ "note": "17", "instrument": "flute" }
-			]},
-			"apply": { "model": "block/note_block_17", "y": 0 }
-		},
-		{
-			"when": { "OR": [
-				{ "note": "17", "instrument": "basedrum" },
-				{ "note": "17", "instrument": "hat" },
-				{ "note": "17", "instrument": "snare" },
-				{ "note": "17", "instrument": "bass" }
-			]},
-			"apply": { "model": "block/note_block_17", "y": 90 }
-		},
-		{
-			"when": { "OR": [
-				{ "note": "17", "instrument": "harp" },
-				{ "note": "17", "instrument": "iron_xylophone" },
-				{ "note": "17", "instrument": "xylophone" },
-				{ "note": "17", "instrument": "guitar" }
-			]},
-			"apply": { "model": "block/note_block_17", "y": 180 }
-		},
-		{
-			"when": { "OR": [
-				{ "note": "17", "instrument": "bit" },
-				{ "note": "17", "instrument": "pling" },
-				{ "note": "17", "instrument": "didgeridoo" },
-				{ "note": "17", "instrument": "banjo" }
-			]},
-			"apply": { "model": "block/note_block_17", "y": 270 }
-		},
-		{
-			"when": { "OR": [
-				{ "note": "18", "instrument": "bell" },
-				{ "note": "18", "instrument": "chime" },
-				{ "note": "18", "instrument": "cow_bell" },
-				{ "note": "18", "instrument": "flute" }
-			]},
-			"apply": { "model": "block/note_block_18", "y": 0 }
-		},
-		{
-			"when": { "OR": [
-				{ "note": "18", "instrument": "basedrum" },
-				{ "note": "18", "instrument": "hat" },
-				{ "note": "18", "instrument": "snare" },
-				{ "note": "18", "instrument": "bass" }
-			]},
-			"apply": { "model": "block/note_block_18", "y": 90 }
-		},
-		{
-			"when": { "OR": [
-				{ "note": "18", "instrument": "harp" },
-				{ "note": "18", "instrument": "iron_xylophone" },
-				{ "note": "18", "instrument": "xylophone" },
-				{ "note": "18", "instrument": "guitar" }
-			]},
-			"apply": { "model": "block/note_block_18", "y": 180 }
-		},
-		{
-			"when": { "OR": [
-				{ "note": "18", "instrument": "bit" },
-				{ "note": "18", "instrument": "pling" },
-				{ "note": "18", "instrument": "didgeridoo" },
-				{ "note": "18", "instrument": "banjo" }
-			]},
-			"apply": { "model": "block/note_block_18", "y": 270 }
-		},
-		{
-			"when": { "OR": [
-				{ "note": "19", "instrument": "bell" },
-				{ "note": "19", "instrument": "chime" },
-				{ "note": "19", "instrument": "cow_bell" },
-				{ "note": "19", "instrument": "flute" }
-			]},
-			"apply": { "model": "block/note_block_19", "y": 0 }
-		},
-		{
-			"when": { "OR": [
-				{ "note": "19", "instrument": "basedrum" },
-				{ "note": "19", "instrument": "hat" },
-				{ "note": "19", "instrument": "snare" },
-				{ "note": "19", "instrument": "bass" }
-			]},
-			"apply": { "model": "block/note_block_19", "y": 90 }
-		},
-		{
-			"when": { "OR": [
-				{ "note": "19", "instrument": "harp" },
-				{ "note": "19", "instrument": "iron_xylophone" },
-				{ "note": "19", "instrument": "xylophone" },
-				{ "note": "19", "instrument": "guitar" }
-			]},
-			"apply": { "model": "block/note_block_19", "y": 180 }
-		},
-		{
-			"when": { "OR": [
-				{ "note": "19", "instrument": "bit" },
-				{ "note": "19", "instrument": "pling" },
-				{ "note": "19", "instrument": "didgeridoo" },
-				{ "note": "19", "instrument": "banjo" }
-			]},
-			"apply": { "model": "block/note_block_19", "y": 270 }
-		},
-		{
-			"when": { "OR": [
-				{ "note": "20", "instrument": "bell" },
-				{ "note": "20", "instrument": "chime" },
-				{ "note": "20", "instrument": "cow_bell" },
-				{ "note": "20", "instrument": "flute" }
-			]},
-			"apply": { "model": "block/note_block_20", "y": 0 }
-		},
-		{
-			"when": { "OR": [
-				{ "note": "20", "instrument": "basedrum" },
-				{ "note": "20", "instrument": "hat" },
-				{ "note": "20", "instrument": "snare" },
-				{ "note": "20", "instrument": "bass" }
-			]},
-			"apply": { "model": "block/note_block_20", "y": 90 }
-		},
-		{
-			"when": { "OR": [
-				{ "note": "20", "instrument": "harp" },
-				{ "note": "20", "instrument": "iron_xylophone" },
-				{ "note": "20", "instrument": "xylophone" },
-				{ "note": "20", "instrument": "guitar" }
-			]},
-			"apply": { "model": "block/note_block_20", "y": 180 }
-		},
-		{
-			"when": { "OR": [
-				{ "note": "20", "instrument": "bit" },
-				{ "note": "20", "instrument": "pling" },
-				{ "note": "20", "instrument": "didgeridoo" },
-				{ "note": "20", "instrument": "banjo" }
-			]},
-			"apply": { "model": "block/note_block_20", "y": 270 }
-		},
-		{
-			"when": { "OR": [
-				{ "note": "21", "instrument": "bell" },
-				{ "note": "21", "instrument": "chime" },
-				{ "note": "21", "instrument": "cow_bell" },
-				{ "note": "21", "instrument": "flute" }
-			]},
-			"apply": { "model": "block/note_block_21", "y": 0 }
-		},
-		{
-			"when": { "OR": [
-				{ "note": "21", "instrument": "basedrum" },
-				{ "note": "21", "instrument": "hat" },
-				{ "note": "21", "instrument": "snare" },
-				{ "note": "21", "instrument": "bass" }
-			]},
-			"apply": { "model": "block/note_block_21", "y": 90 }
-		},
-		{
-			"when": { "OR": [
-				{ "note": "21", "instrument": "harp" },
-				{ "note": "21", "instrument": "iron_xylophone" },
-				{ "note": "21", "instrument": "xylophone" },
-				{ "note": "21", "instrument": "guitar" }
-			]},
-			"apply": { "model": "block/note_block_21", "y": 180 }
-		},
-		{
-			"when": { "OR": [
-				{ "note": "21", "instrument": "bit" },
-				{ "note": "21", "instrument": "pling" },
-				{ "note": "21", "instrument": "didgeridoo" },
-				{ "note": "21", "instrument": "banjo" }
-			]},
-			"apply": { "model": "block/note_block_21", "y": 270 }
-		},
-		{
-			"when": { "OR": [
-				{ "note": "22", "instrument": "bell" },
-				{ "note": "22", "instrument": "chime" },
-				{ "note": "22", "instrument": "cow_bell" },
-				{ "note": "22", "instrument": "flute" }
-			]},
-			"apply": { "model": "block/note_block_22", "y": 0 }
-		},
-		{
-			"when": { "OR": [
-				{ "note": "22", "instrument": "basedrum" },
-				{ "note": "22", "instrument": "hat" },
-				{ "note": "22", "instrument": "snare" },
-				{ "note": "22", "instrument": "bass" }
-			]},
-			"apply": { "model": "block/note_block_22", "y": 90 }
-		},
-		{
-			"when": { "OR": [
-				{ "note": "22", "instrument": "harp" },
-				{ "note": "22", "instrument": "iron_xylophone" },
-				{ "note": "22", "instrument": "xylophone" },
-				{ "note": "22", "instrument": "guitar" }
-			]},
-			"apply": { "model": "block/note_block_22", "y": 180 }
-		},
-		{
-			"when": { "OR": [
-				{ "note": "22", "instrument": "bit" },
-				{ "note": "22", "instrument": "pling" },
-				{ "note": "22", "instrument": "didgeridoo" },
-				{ "note": "22", "instrument": "banjo" }
-			]},
-			"apply": { "model": "block/note_block_22", "y": 270 }
-		},
-		{
-			"when": { "OR": [
-				{ "note": "23", "instrument": "bell" },
-				{ "note": "23", "instrument": "chime" },
-				{ "note": "23", "instrument": "cow_bell" },
-				{ "note": "23", "instrument": "flute" }
-			]},
-			"apply": { "model": "block/note_block_23", "y": 0 }
-		},
-		{
-			"when": { "OR": [
-				{ "note": "23", "instrument": "basedrum" },
-				{ "note": "23", "instrument": "hat" },
-				{ "note": "23", "instrument": "snare" },
-				{ "note": "23", "instrument": "bass" }
-			]},
-			"apply": { "model": "block/note_block_23", "y": 90 }
-		},
-		{
-			"when": { "OR": [
-				{ "note": "23", "instrument": "harp" },
-				{ "note": "23", "instrument": "iron_xylophone" },
-				{ "note": "23", "instrument": "xylophone" },
-				{ "note": "23", "instrument": "guitar" }
-			]},
-			"apply": { "model": "block/note_block_23", "y": 180 }
-		},
-		{
-			"when": { "OR": [
 				{ "note": "23", "instrument": "bit" },
 				{ "note": "23", "instrument": "pling" },
 				{ "note": "23", "instrument": "didgeridoo" },
 				{ "note": "23", "instrument": "banjo" }
 			]},
-			"apply": { "model": "block/note_block_23", "y": 270 }
+			"apply": { "model": "block/note_block_11", "y": 270 }
 		},
 		{
 			"when": { "OR": [
@@ -871,7 +871,7 @@
 				{ "note": "24", "instrument": "cow_bell" },
 				{ "note": "24", "instrument": "flute" }
 			]},
-			"apply": { "model": "block/note_block_24", "y": 0 }
+			"apply": { "model": "block/note_block_0", "y": 0 }
 		},
 		{
 			"when": { "OR": [
@@ -880,7 +880,7 @@
 				{ "note": "24", "instrument": "snare" },
 				{ "note": "24", "instrument": "bass" }
 			]},
-			"apply": { "model": "block/note_block_24", "y": 90 }
+			"apply": { "model": "block/note_block_0", "y": 90 }
 		},
 		{
 			"when": { "OR": [
@@ -889,7 +889,7 @@
 				{ "note": "24", "instrument": "xylophone" },
 				{ "note": "24", "instrument": "guitar" }
 			]},
-			"apply": { "model": "block/note_block_24", "y": 180 }
+			"apply": { "model": "block/note_block_0", "y": 180 }
 		},
 		{
 			"when": { "OR": [
@@ -898,7 +898,7 @@
 				{ "note": "24", "instrument": "didgeridoo" },
 				{ "note": "24", "instrument": "banjo" }
 			]},
-			"apply": { "model": "block/note_block_24", "y": 270 }
+			"apply": { "model": "block/note_block_0", "y": 270 }
 		}
 	]
 }

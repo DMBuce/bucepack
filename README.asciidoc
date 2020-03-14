@@ -71,14 +71,9 @@ Note Guide
 ----------
 
 Adds a display to the top of note blocks that shows the note it's tuned to,
-the octave, the note's position on a keyboard, and its position on the
-https://en.wikipedia.org/wiki/Circle_of_fifths[Circle of Fifths].
+and its position on a keyboard.
 
-For an introduction to the Circle of Fifths, I recommend
-https://www.youtube.com/watch?v=d1aJ6HixSe0[Michael New's Youtube video]
-on the subject.
-
-image::https://i.imgur.com/razfQLj.png[Note Guide]
+image::https://i.imgur.com/Nb8e9mn.png[Note Guide]
 
 Unfortunately, note blocks don't have an orientation, so in this texture pack,
 the direction they face depends on the instrument it's set to, i.e. the
@@ -92,6 +87,25 @@ block underneath:
 Download: https://github.com/DMBuce/bucepack/releases
 
 Build: `make noteguide.zip`
+
+// note guide comparison: https://i.imgur.com/inCcwta.png
+
+Advanced Note Guide
+-------------------
+
+This is like the Note Guide pack, above, with the addition of a display that
+shows the octave and the note's position on the
+https://en.wikipedia.org/wiki/Circle_of_fifths[Circle of Fifths].
+
+image::https://i.imgur.com/pxVbfzn.png[Advanced Note Guide]
+
+For an introduction to the Circle of Fifths, I recommend
+https://www.youtube.com/watch?v=d1aJ6HixSe0[Michael New's Youtube video]
+on the subject.
+
+Download: https://github.com/DMBuce/bucepack/releases
+
+Build: `make noteguide_adv.zip`
 
 Brew Guide
 ----------

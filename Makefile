@@ -1,5 +1,5 @@
 
-PACKFILES = paintingoverhaul.zip noteguide.zip \
+PACKFILES = paintingoverhaul.zip noteguide.zip noteguide_adv.zip \
 	brewguide.zip techarrows.zip villagemech.zip pigarmor.zip oretypes.zip \
 	retrofood.zip retronetherrack.zip retroiron.zip \
 	retromoo.zip retrotwang.zip retrosploosh.zip retrocrunch.zip
@@ -51,19 +51,47 @@ noteguide_FILES := $(DEFAULT_FILES) \
 	assets/minecraft/textures/block/note_block_9.png \
 	assets/minecraft/textures/block/note_block_10.png \
 	assets/minecraft/textures/block/note_block_11.png \
-	assets/minecraft/textures/block/note_block_12.png \
-	assets/minecraft/textures/block/note_block_13.png \
-	assets/minecraft/textures/block/note_block_14.png \
-	assets/minecraft/textures/block/note_block_15.png \
-	assets/minecraft/textures/block/note_block_16.png \
-	assets/minecraft/textures/block/note_block_17.png \
-	assets/minecraft/textures/block/note_block_18.png \
-	assets/minecraft/textures/block/note_block_19.png \
-	assets/minecraft/textures/block/note_block_20.png \
-	assets/minecraft/textures/block/note_block_21.png \
-	assets/minecraft/textures/block/note_block_22.png \
-	assets/minecraft/textures/block/note_block_23.png \
-	assets/minecraft/textures/block/note_block_24.png \
+	assets/minecraft/models/block/note_block_0.json \
+	assets/minecraft/models/block/note_block_1.json \
+	assets/minecraft/models/block/note_block_2.json \
+	assets/minecraft/models/block/note_block_3.json \
+	assets/minecraft/models/block/note_block_4.json \
+	assets/minecraft/models/block/note_block_5.json \
+	assets/minecraft/models/block/note_block_6.json \
+	assets/minecraft/models/block/note_block_7.json \
+	assets/minecraft/models/block/note_block_8.json \
+	assets/minecraft/models/block/note_block_9.json \
+	assets/minecraft/models/block/note_block_10.json \
+	assets/minecraft/models/block/note_block_11.json \
+	assets/minecraft/models/item/note_block.json \
+	assets/minecraft/blockstates/note_block.json
+
+noteguide_adv_FILES := $(DEFAULT_FILES) \
+	assets/minecraft/textures/block/adv_note_block_0.png \
+	assets/minecraft/textures/block/adv_note_block_1.png \
+	assets/minecraft/textures/block/adv_note_block_2.png \
+	assets/minecraft/textures/block/adv_note_block_3.png \
+	assets/minecraft/textures/block/adv_note_block_4.png \
+	assets/minecraft/textures/block/adv_note_block_5.png \
+	assets/minecraft/textures/block/adv_note_block_6.png \
+	assets/minecraft/textures/block/adv_note_block_7.png \
+	assets/minecraft/textures/block/adv_note_block_8.png \
+	assets/minecraft/textures/block/adv_note_block_9.png \
+	assets/minecraft/textures/block/adv_note_block_10.png \
+	assets/minecraft/textures/block/adv_note_block_11.png \
+	assets/minecraft/textures/block/adv_note_block_12.png \
+	assets/minecraft/textures/block/adv_note_block_13.png \
+	assets/minecraft/textures/block/adv_note_block_14.png \
+	assets/minecraft/textures/block/adv_note_block_15.png \
+	assets/minecraft/textures/block/adv_note_block_16.png \
+	assets/minecraft/textures/block/adv_note_block_17.png \
+	assets/minecraft/textures/block/adv_note_block_18.png \
+	assets/minecraft/textures/block/adv_note_block_19.png \
+	assets/minecraft/textures/block/adv_note_block_20.png \
+	assets/minecraft/textures/block/adv_note_block_21.png \
+	assets/minecraft/textures/block/adv_note_block_22.png \
+	assets/minecraft/textures/block/adv_note_block_23.png \
+	assets/minecraft/textures/block/adv_note_block_24.png \
 	assets/minecraft/models/block/note_block_0.json \
 	assets/minecraft/models/block/note_block_1.json \
 	assets/minecraft/models/block/note_block_2.json \
@@ -90,7 +118,7 @@ noteguide_FILES := $(DEFAULT_FILES) \
 	assets/minecraft/models/block/note_block_23.json \
 	assets/minecraft/models/block/note_block_24.json \
 	assets/minecraft/models/item/note_block.json \
-	assets/minecraft/blockstates/note_block.json
+	assets/minecraft/blockstates/adv_note_block.json
 
 brewguide_FILES := $(DEFAULT_FILES) \
 	assets/minecraft/textures/gui/container/brewing_stand.png
@@ -212,6 +240,37 @@ noteguide.zip: $(noteguide_FILES)
 	cp meta/$(@:.zip=.png) pack.png
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^
+
+noteguide_adv.zip: $(noteguide_adv_FILES)
+	cp meta/$(@:.zip=.png) pack.png
+	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
+	zip $@ pack.png pack.mcmeta $^
+	printf "@ assets/minecraft/blockstates/adv_note_block.json\n@=assets/minecraft/blockstates/note_block.json\n" | zipnote -w $@
+	printf "@ assets/minecraft/textures/block/adv_note_block_0.png\n@=assets/minecraft/textures/block/note_block_0.png\n" | zipnote -w $@
+	printf "@ assets/minecraft/textures/block/adv_note_block_1.png\n@=assets/minecraft/textures/block/note_block_1.png\n" | zipnote -w $@
+	printf "@ assets/minecraft/textures/block/adv_note_block_2.png\n@=assets/minecraft/textures/block/note_block_2.png\n" | zipnote -w $@
+	printf "@ assets/minecraft/textures/block/adv_note_block_3.png\n@=assets/minecraft/textures/block/note_block_3.png\n" | zipnote -w $@
+	printf "@ assets/minecraft/textures/block/adv_note_block_4.png\n@=assets/minecraft/textures/block/note_block_4.png\n" | zipnote -w $@
+	printf "@ assets/minecraft/textures/block/adv_note_block_5.png\n@=assets/minecraft/textures/block/note_block_5.png\n" | zipnote -w $@
+	printf "@ assets/minecraft/textures/block/adv_note_block_6.png\n@=assets/minecraft/textures/block/note_block_6.png\n" | zipnote -w $@
+	printf "@ assets/minecraft/textures/block/adv_note_block_7.png\n@=assets/minecraft/textures/block/note_block_7.png\n" | zipnote -w $@
+	printf "@ assets/minecraft/textures/block/adv_note_block_8.png\n@=assets/minecraft/textures/block/note_block_8.png\n" | zipnote -w $@
+	printf "@ assets/minecraft/textures/block/adv_note_block_9.png\n@=assets/minecraft/textures/block/note_block_9.png\n" | zipnote -w $@
+	printf "@ assets/minecraft/textures/block/adv_note_block_10.png\n@=assets/minecraft/textures/block/note_block_10.png\n" | zipnote -w $@
+	printf "@ assets/minecraft/textures/block/adv_note_block_11.png\n@=assets/minecraft/textures/block/note_block_11.png\n" | zipnote -w $@
+	printf "@ assets/minecraft/textures/block/adv_note_block_12.png\n@=assets/minecraft/textures/block/note_block_12.png\n" | zipnote -w $@
+	printf "@ assets/minecraft/textures/block/adv_note_block_13.png\n@=assets/minecraft/textures/block/note_block_13.png\n" | zipnote -w $@
+	printf "@ assets/minecraft/textures/block/adv_note_block_14.png\n@=assets/minecraft/textures/block/note_block_14.png\n" | zipnote -w $@
+	printf "@ assets/minecraft/textures/block/adv_note_block_15.png\n@=assets/minecraft/textures/block/note_block_15.png\n" | zipnote -w $@
+	printf "@ assets/minecraft/textures/block/adv_note_block_16.png\n@=assets/minecraft/textures/block/note_block_16.png\n" | zipnote -w $@
+	printf "@ assets/minecraft/textures/block/adv_note_block_17.png\n@=assets/minecraft/textures/block/note_block_17.png\n" | zipnote -w $@
+	printf "@ assets/minecraft/textures/block/adv_note_block_18.png\n@=assets/minecraft/textures/block/note_block_18.png\n" | zipnote -w $@
+	printf "@ assets/minecraft/textures/block/adv_note_block_19.png\n@=assets/minecraft/textures/block/note_block_19.png\n" | zipnote -w $@
+	printf "@ assets/minecraft/textures/block/adv_note_block_20.png\n@=assets/minecraft/textures/block/note_block_20.png\n" | zipnote -w $@
+	printf "@ assets/minecraft/textures/block/adv_note_block_21.png\n@=assets/minecraft/textures/block/note_block_21.png\n" | zipnote -w $@
+	printf "@ assets/minecraft/textures/block/adv_note_block_22.png\n@=assets/minecraft/textures/block/note_block_22.png\n" | zipnote -w $@
+	printf "@ assets/minecraft/textures/block/adv_note_block_23.png\n@=assets/minecraft/textures/block/note_block_23.png\n" | zipnote -w $@
+	printf "@ assets/minecraft/textures/block/adv_note_block_24.png\n@=assets/minecraft/textures/block/note_block_24.png\n" | zipnote -w $@
 
 brewguide.zip: $(brewguide_FILES)
 	cp meta/$(@:.zip=.png) pack.png

@@ -21,16 +21,10 @@ instrumentgroups=(
 echo '{
 	"multipart": ['
 
-for note in {0..11}; do
+for note in {0..24}; do
     for instgrp in "${instrumentgroups[@]}"; do
         printf "$template" $(printf "$instgrp" $note $note $note $note $note)
-        printf "$template" $(printf "$instgrp" $((note+12)) $((note+12)) $((note+12)) $((note+12)) $note)
 	done
-done
-
-note=$((note+13))
-for instgrp in "${instrumentgroups[@]}"; do
-    printf "$template" $(printf "$instgrp" $note $note $note $note $((note-24)))
 done | sed '$ s/,$//'
 
 echo '	]
