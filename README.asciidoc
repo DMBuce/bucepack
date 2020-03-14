@@ -76,6 +76,9 @@ and its position on a keyboard.
 There's also an Advanced version of the pack that additionally displays the
 octave and the note's position on the
 https://en.wikipedia.org/wiki/Circle_of_fifths[Circle of Fifths].
+For an introduction to the Circle of Fifths, I recommend
+https://www.youtube.com/watch?v=d1aJ6HixSe0[Michael New's Youtube video]
+on the subject.
 
 image::https://i.imgur.com/j1urkAi.png[Note Guide]
 //image::https://i.imgur.com/Nb8e9mn.png[Note Guide]
