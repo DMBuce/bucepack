@@ -19,11 +19,11 @@ I'm including mods that affect mob spawning rules as well since biomes and struc
 
 Just Enough Dimensions (JED):
 * Amazing mod with many partially-documented features
-** Some info is on the curseforge page
-** Other info can be intuited from Masa's pastebin - look for his most recent "testing config"
-** Still more info can be found in the release notes (also on his pastebin and linked from the curseforge page)
+ * Some info is on the curseforge page
+ * Other info can be intuited from Masa's pastebin - look for his most recent "testing config"
+ * Still more info can be found in the release notes (also on his pastebin and linked from the curseforge page)
 * Customizes things at the level of the world: WorldProviders, ChunkGenerators, Skyboxes, DayNightCycle, Weather, etc.
-** Figuring out the name of another mod's WorldProvider/ChunkGenerator/Skybox class can be difficult but e.g. `jar tf mods/modname.jar | grep -i -e provide -e generat` helps
+ * Figuring out the name of another mod's WorldProvider/ChunkGenerator/Skybox class can be difficult but e.g. `jar tf mods/modname.jar | grep -i -e provide -e generat` helps
 * Doesn't do much with biomes, but can set a single biome for an entire dimension
 BiomeTweaker
 * Great for adding mob spawns to biomes
