@@ -285,14 +285,14 @@ Quality of life mods that I see no reason to exclude in any of my packs:
 * Controlling
 * Quark
 * Inventory Tweaks
-* MouseTweaks
+* Mouse Tweaks
 * AppleSkin
 * Diet Hopper
 * Quick Leaf Decay
 
 Runners up:
 
-* Harvest
+* SimpleHarvest
 * Bauble Shulker Boxes
 * Quark Oddities
 * Charset Storage Barrels
