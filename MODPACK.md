@@ -17,8 +17,8 @@ So I wanted to document my experience with various worldgen mods here.
 
 I'm including mods that affect mob spawning rules as well since biomes and structures affect mobspawning so much.
 
-Just Enough Dimensions (JED):
-* Amazing mod with many partially-documented features
+Just Enough Dimensions (JED)
+* Amazing mod, but info for the configs can be hard to find
   * Some info is on the curseforge page
   * Other info can be intuited from Masa's pastebin - look for his most recent "testing config"
   * Still more info can be found in the release notes (also on his pastebin and linked from the curseforge page)
@@ -94,7 +94,7 @@ TODO: Document how to get around the structure file's 32x32x32 limit for use wit
 If your pack includes Thaumcraft and Blood Magic,
 you can use COFH World to create pools of blood lined with rotten flesh.
 In combination with the meatlike texture of netherrack,
-the end result is a huge, disgusting scab-like thing.
+the end result is a big disgusting scab-like thing.
 
 Here's the config snippet for that:
 
@@ -254,7 +254,7 @@ In packs with limited worldgen I prefer to avoid the usual resource gathering mo
 So far I've tried and liked these alternatives:
 
 * Fishing with Advanced Fishing + Giacomo's Fishing Net + LootTweaker
-* Treasure Slimes with Primitve Mobs
+* Treasure Slimes with Primitive Mobs
 * Thaumcraft Loot Bags with ModTweaker + LootTweaker
 * Fossils & Archaeology sifter
 * Various methods involving Scavenge + Bonemeal Control + ContentTweaker + quick and dirty scripts to generate configs for those mods (examples of that here: https://github.com/DMBuce/myconesia/tree/master/bin)
