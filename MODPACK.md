@@ -25,22 +25,28 @@ Just Enough Dimensions (JED):
   * Customizes things at the level of the world: WorldProviders, ChunkGenerators, Skyboxes, DayNightCycle, Weather, etc.
     * Figuring out the name of another mod's WorldProvider/ChunkGenerator/Skybox class can be difficult but e.g. `jar tf mods/modname.jar | grep -i -e provide -e generat` helps
 * Doesn't do much with biomes, but can set a single biome for an entire dimension
+
 BiomeTweaker
 * Great for adding mob spawns to biomes
 * Also great for replacing certain biome features such as dirt/grass, vegetation, pools, etc.
 * For replacing blocks in general I've had varying degress of success with this mod. Try it and if it doesn't work, try Dimensional Control and if that doesn't work, look for a more customizeable worldgen mod and if that doesn't work, you're out of luck unless you write your own.
+
 Dimensional Control
 * An option worth trying if replacing blocks with BiomeTweaker doesn't work
+
 InControl
 * Confusing documentation with examples that don't cover every config option
 * You can do an advanced search on GitHub to find more examples, e.g. `path:config/incontrol filename:spawn.json`
 * Suppressing spawns or modifying their NBT works well
 * When adding new spawns, test a lot and expect bugs
+
 COFH World
 * Lets you spawn arbitrary blocks in small structures such as veins, spikes, geodes, etc.
 * Structures are limited in shape and can't include NBT data, use Pillar or Recurrent Complex for more complex needs
+
 Pillar
 * Lets you spawn stuff in using vanilla structure files
+
 Recurrent Complex
 * On my todo list to try, will add info when I do
 
