@@ -1,6 +1,6 @@
 = Buce's Packs
 
-Resource packs for Minecraft.
+Resource and data packs for Minecraft.
 
 Downloads: https://github.com/DMBuce/bucepack/releases
 
@@ -250,4 +250,50 @@ Reverts grass noise so it has a *crunch* sound when stepping on it.
 Download: https://github.com/DMBuce/bucepack/releases
 
 Build: `make retrocrunch.zip`
+
+Climbable Things
+----------------
+
+Lets you climb chains and bamboo.
+Installed as a data pack.
+
+image::https://i.imgur.com/4yukdfV.png[Climbable Things]
+
+Download: https://github.com/DMBuce/bucepack/releases
+
+Build: `make climbablethings.zip`
+
+Hostile Bastions
+----------------
+
+Makes Piglins hostile when you break blocks in their bastions.
+Installed as a data pack.
+
+Download: https://github.com/DMBuce/bucepack/releases
+
+Build: `make hostilebastions.zip`
+
+Waterproof Tech
+---------------
+
+Makes rails and redstone components waterproof.
+Installed as a data pack.
+
+image::https://i.imgur.com/Qn3IYx4.png[Waterproof Tech]
+
+Download: https://github.com/DMBuce/bucepack/releases
+
+Build: `make waterprooftech.zip`
+
+Blue Fire
+---------
+
+Lets you use blue shiny rocks to make blue fire.
+Installed as a data pack.
+
+image::https://i.imgur.com/paceJ4Z.png[Blue Fire]
+
+Download: https://github.com/DMBuce/bucepack/releases
+
+Build: `make bluefire.zip`
 

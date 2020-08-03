@@ -1,0 +1,22 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:polished_blackstone_bricks"
+		},
+		"title": {
+			"text": "Hostile Bastions"
+		},
+		"description": {
+			"text": "Makes Piglins hostile when you break blocks in their bastions"
+		},
+		"show_toast": false,
+		"announce_to_chat": false,
+		"frame": "task"
+	},
+	"parent": "bucepack:root",
+	"criteria": {
+		"tick": {
+			"trigger": "minecraft:tick"
+		}
+	}
+}

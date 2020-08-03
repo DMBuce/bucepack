@@ -1,0 +1,22 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:bamboo"
+		},
+		"title": {
+			"text": "Climbable Things"
+		},
+		"description": {
+			"text": "Makes chains and bamboo climbable."
+		},
+		"show_toast": false,
+		"announce_to_chat": false,
+		"frame": "task"
+	},
+	"parent": "bucepack:root",
+	"criteria": {
+		"tick": {
+			"trigger": "minecraft:tick"
+		}
+	}
+}

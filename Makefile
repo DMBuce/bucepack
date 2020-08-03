@@ -2,7 +2,8 @@
 PACKFILES = paintingoverhaul.zip noteguide.zip noteguide_adv.zip \
 	brewguide.zip techarrows.zip broadfacedravager.zip villagemech.zip pigarmor.zip oretypes.zip \
 	retrofood.zip retronetherrack.zip retroiron.zip \
-	retromoo.zip retrotwang.zip retrosploosh.zip retrocrunch.zip
+	retromoo.zip retrotwang.zip retrosploosh.zip retrocrunch.zip \
+	climbablethings.zip hostilebastions.zip waterprooftech.zip bluefire.zip
 MCDIR     = $(HOME)/.minecraft
 
 CLEAN_TARGETS := $(PACKFILES) pack.mcmeta pack.png test.zip
@@ -186,8 +187,7 @@ retrofood_FILES := $(DEFAULT_FILES) \
 
 retronetherrack_FILES := $(DEFAULT_FILES) \
 	assets/minecraft/textures/block/netherrack.png \
-	assets/minecraft/textures/block/nether_quartz_ore.png \
-	assets/minecraft/textures/item/quartz.png
+	assets/minecraft/textures/block/nether_quartz_ore.png
 
 retroiron_FILES := $(DEFAULT_FILES) \
 	assets/minecraft/textures/block/iron_block.png
@@ -222,6 +222,26 @@ retrocrunch_FILES := $(DEFAULT_FILES) \
 	assets/minecraft/sounds/step/grass2.ogg \
 	assets/minecraft/sounds/step/grass6.ogg \
 	assets/minecraft/sounds/step/grass3.ogg
+
+climbablethings_FILES := $(DEFAULT_FILES) \
+	data/minecraft/tags/blocks/climbable.json \
+	data/bucepack/advancements/root.json \
+	data/bucepack/advancements/climbablethings.json
+
+hostilebastions_FILES := $(DEFAULT_FILES) \
+	data/minecraft/tags/blocks/guarded_by_piglins.json \
+	data/bucepack/advancements/root.json \
+	data/bucepack/advancements/hostilebastions.json
+
+waterprooftech_FILES := $(DEFAULT_FILES) \
+	data/minecraft/tags/blocks/signs.json \
+	data/bucepack/advancements/root.json \
+	data/bucepack/advancements/waterprooftech.json
+
+bluefire_FILES := $(DEFAULT_FILES) \
+	data/minecraft/tags/blocks/soul_fire_base_blocks.json \
+	data/bucepack/advancements/root.json \
+	data/bucepack/advancements/bluefire.json
 
 test_FILES = \
 	# nothing
@@ -336,6 +356,26 @@ retrosploosh.zip: $(retrosploosh_FILES)
 	zip $@ pack.png pack.mcmeta $^
 
 retrocrunch.zip: $(retrocrunch_FILES)
+	cp meta/$(@:.zip=.png) pack.png
+	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
+	zip $@ pack.png pack.mcmeta $^
+
+climbablethings.zip: $(climbablethings_FILES)
+	cp meta/$(@:.zip=.png) pack.png
+	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
+	zip $@ pack.png pack.mcmeta $^
+
+hostilebastions.zip: $(hostilebastions_FILES)
+	cp meta/$(@:.zip=.png) pack.png
+	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
+	zip $@ pack.png pack.mcmeta $^
+
+waterprooftech.zip: $(waterprooftech_FILES)
+	cp meta/$(@:.zip=.png) pack.png
+	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
+	zip $@ pack.png pack.mcmeta $^
+
+bluefire.zip: $(bluefire_FILES)
 	cp meta/$(@:.zip=.png) pack.png
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^

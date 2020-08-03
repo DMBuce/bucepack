@@ -1,0 +1,18 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:obsidian"
+		},
+		"title": "Buce's Packs",
+		"description": "Currently installed datapacks",
+		"background": "minecraft:textures/block/blue_terracotta.png",
+		"show_toast": false,
+		"announce_to_chat": false,
+		"frame": "challenge"
+	},
+	"criteria": {
+		"tick": {
+			"trigger": "minecraft:tick"
+		}
+	}
+}
