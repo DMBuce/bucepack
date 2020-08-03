@@ -145,6 +145,15 @@ Download: https://github.com/DMBuce/bucepack/releases
 
 Build: `make pigarmor.zip`
 
+Broadfaced Ravager
+------------------
+
+Moves the ravager's eyes to the side of its face.
+
+Download: https://github.com/DMBuce/bucepack/releases
+
+Build: `make broadfacedravager.zip`
+
 Ore Types
 ---------
 
