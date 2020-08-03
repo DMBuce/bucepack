@@ -1,6 +1,6 @@
 
 PACKFILES = paintingoverhaul.zip noteguide.zip noteguide_adv.zip \
-	brewguide.zip techarrows.zip villagemech.zip pigarmor.zip oretypes.zip \
+	brewguide.zip techarrows.zip broadfacedravager.zip villagemech.zip pigarmor.zip oretypes.zip \
 	retrofood.zip retronetherrack.zip retroiron.zip \
 	retromoo.zip retrotwang.zip retrosploosh.zip retrocrunch.zip
 MCDIR     = $(HOME)/.minecraft
@@ -130,6 +130,9 @@ techarrows_FILES := $(DEFAULT_FILES) \
 	assets/minecraft/textures/block/hopper_inside_side.png \
 	assets/minecraft/textures/block/observer_back_on.png \
 	assets/minecraft/textures/block/observer_side.png
+
+broadfacedravager_FILES := $(DEFAULT_FILES) \
+	assets/minecraft/textures/entity/illager/ravager.png
 
 villagemech_FILES := $(DEFAULT_FILES) \
 	assets/minecraft/textures/entity/iron_golem/iron_golem.png \
@@ -278,6 +281,11 @@ brewguide.zip: $(brewguide_FILES)
 	zip $@ pack.png pack.mcmeta $^
 
 techarrows.zip: $(techarrows_FILES)
+	cp meta/$(@:.zip=.png) pack.png
+	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
+	zip $@ pack.png pack.mcmeta $^
+
+broadfacedravager.zip: $(broadfacedravager_FILES)
 	cp meta/$(@:.zip=.png) pack.png
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^
