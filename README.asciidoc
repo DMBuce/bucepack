@@ -1,9 +1,4 @@
 :toc: macro
-//:numbered:  1
-//:data-uri:  1
-//:icons:     1
-//:sectids:   1
-
 :sectlinks: 1
 
 = Buce's Packs
