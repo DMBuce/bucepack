@@ -241,6 +241,17 @@ Download: https://github.com/DMBuce/bucepack/releases
 
 Build: `make retrocrunch.zip`
 
+No Treasure Maps
+----------------
+
+Replaces Treasure Maps with Hearts of the Sea in shipwreck chests as a workaround for an issue in
+https://github.com/dmbuce/badlands-challenge#the-badlands-challenge[The Badlands Challenge].
+Needs to be installed as a data pack.
+
+Download: https://github.com/DMBuce/bucepack/releases
+
+Build: `make notreasuremaps.zip`
+
 Aggro Bastions
 --------------
 
