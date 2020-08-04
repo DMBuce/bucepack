@@ -1,13 +1,13 @@
 {
 	"display": {
 		"icon": {
-			"item": "minecraft:polished_blackstone_bricks"
+			"item": "minecraft:bamboo"
 		},
 		"title": {
-			"text": "Hostile Bastions"
+			"text": "Climbable"
 		},
 		"description": {
-			"text": "Makes Piglins hostile when you break blocks in their bastions"
+			"text": "Makes chains and bamboo climbable."
 		},
 		"show_toast": false,
 		"announce_to_chat": false,

@@ -11,7 +11,8 @@ Painting Overhaul
 
 Replaces the default paintings with more recognizable ones.
 
-image::https://i.imgur.com/pXPHqgO.png[Painting Overhaul Preview]
+//image::https://i.imgur.com/pXPHqgO.png[Painting Overhaul]
+image::https://i.imgur.com/WLFKdEM.png[Painting Overhaul]
 
 Below are the painting titles, organized by size,
 with links to their inspiration.
@@ -80,8 +81,8 @@ For an introduction to the Circle of Fifths, I recommend
 https://www.youtube.com/watch?v=d1aJ6HixSe0[Michael New's Youtube video]
 on the subject.
 
-image::https://i.imgur.com/j1urkAi.png[Note Guide]
-//image::https://i.imgur.com/Nb8e9mn.png[Note Guide]
+//image::https://i.imgur.com/j1urkAi.png[Note Guide]
+image::https://i.imgur.com/Nb8e9mn.png[Note Guide]
 //image::https://i.imgur.com/pxVbfzn.png[Advanced Note Guide]
 
 Unfortunately, note blocks don't have an orientation, so in this texture pack,
@@ -102,7 +103,7 @@ Brew Guide
 
 Adds a simple cheat sheet to the brewing stand GUI to remind you how potions are made.
 
-image::https://i.imgur.com/edmhYeq.png[Brew Guide Preview]
+image::https://i.imgur.com/edmhYeq.png[Brew Guide]
 
 Download: https://github.com/DMBuce/bucepack/releases
 
@@ -114,7 +115,7 @@ Tech Arrows
 Adds arrows to the top of hoppers and the side of observers so that you can
 see which direction they're pointing.
 
-image::https://i.imgur.com/RwOzhsR.png[Tech Arrows Preview]
+image::https://i.imgur.com/RwOzhsR.png[Tech Arrows]
 
 Download: https://github.com/DMBuce/bucepack/releases
 
@@ -125,7 +126,7 @@ Village Mech
 
 Turns iron golems into mechsuit-wearing villagers.
 
-image::https://i.imgur.com/oF0MLK9.png[Village Mech Preview]
+image::https://i.imgur.com/oF0MLK9.png[Village Mech]
 
 Download: https://github.com/DMBuce/bucepack/releases
 
@@ -136,7 +137,7 @@ Pig Armor
 
 Adds iron armor to saddled pigs.
 
-image::https://i.imgur.com/DlGyagv.png[Pig Armor Preview]
+image::https://i.imgur.com/DlGyagv.png[Pig Armor]
 
 This is an aesthetic change only,
 it doesn't reduce the damage that pigs take.
@@ -145,21 +146,23 @@ Download: https://github.com/DMBuce/bucepack/releases
 
 Build: `make pigarmor.zip`
 
-Broadfaced Ravager
-------------------
+Ravager
+-------
 
 Moves the ravager's eyes to the side of its face.
 
+image::https://i.imgur.com/bJEeUdc.png[Ravager]
+
 Download: https://github.com/DMBuce/bucepack/releases
 
-Build: `make broadfacedravager.zip`
+Build: `make ravager.zip`
 
 Ore Types
 ---------
 
 Organizes ores into types to provide more variety and consistency
 
-image::https://i.imgur.com/kXCHAdS.png[Ore Types Preview]
+image::https://i.imgur.com/kXCHAdS.png[Ore Types]
 
 * "Metallic" ores (Iron, Gold) are unchanged
 * "Gemlike" ores (Diamond, Redstone) match emerald's gemlike texture
@@ -180,7 +183,7 @@ Retro Food
 Reverts food to their outlined textures from before 1.4.2,
 and adds outlines to some food that's been added to the game since then.
 
-image::https://i.imgur.com/DorMwHO.png[Retro Food Preview]
+image::https://i.imgur.com/DorMwHO.png[Retro Food]
 
 Retextured items:
 
@@ -207,7 +210,7 @@ Reverts netherrack and quartz ore to their bloody textures from before 1.14.
 
 Also retextures the quartz item to look more crystalline.
 
-image::https://i.imgur.com/tBIX8AV.png[Retro Netherrack Preview]
+image::https://i.imgur.com/tBIX8AV.png[Retro Netherrack]
 
 Download: https://github.com/DMBuce/bucepack/releases
 
@@ -218,7 +221,7 @@ Retro Iron
 
 Reverts the iron block to its smooth texture from before 1.9pre5.
 
-image::https://i.imgur.com/Wn4tVMv.png[Retro Iron Preview]
+image::https://i.imgur.com/Wn4tVMv.png[Retro Iron]
 
 Download: https://github.com/DMBuce/bucepack/releases
 
@@ -260,27 +263,27 @@ Download: https://github.com/DMBuce/bucepack/releases
 
 Build: `make retrocrunch.zip`
 
-Climbable Things
-----------------
+Aggro Bastions
+--------------
+
+Makes piglins hostile when you break blocks that bastions are made out of.
+Installed as a data pack.
+
+Download: https://github.com/DMBuce/bucepack/releases
+
+Build: `make aggrobastions.zip`
+
+Climbable
+---------
 
 Lets you climb chains and bamboo.
 Installed as a data pack.
 
-image::https://i.imgur.com/4yukdfV.png[Climbable Things]
+image::https://i.imgur.com/4yukdfV.png[Climbable]
 
 Download: https://github.com/DMBuce/bucepack/releases
 
-Build: `make climbablethings.zip`
-
-Hostile Bastions
-----------------
-
-Makes Piglins hostile when you break blocks in their bastions.
-Installed as a data pack.
-
-Download: https://github.com/DMBuce/bucepack/releases
-
-Build: `make hostilebastions.zip`
+Build: `make climbable.zip`
 
 Waterproof Tech
 ---------------

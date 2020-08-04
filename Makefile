@@ -1,9 +1,8 @@
 
-PACKFILES = paintingoverhaul.zip noteguide.zip noteguide_adv.zip \
-	brewguide.zip techarrows.zip broadfacedravager.zip villagemech.zip pigarmor.zip oretypes.zip \
-	retrofood.zip retronetherrack.zip retroiron.zip \
-	retromoo.zip retrotwang.zip retrosploosh.zip retrocrunch.zip \
-	climbablethings.zip hostilebastions.zip waterprooftech.zip bluefire.zip
+PACKFILES = paintingoverhaul.zip noteguide.zip brewguide.zip \
+	techarrows.zip ravager.zip villagemech.zip pigarmor.zip oretypes.zip \
+	retrofood.zip retroiron.zip retromoo.zip retrotwang.zip retrosploosh.zip retrocrunch.zip \
+	climbable.zip aggrobastions.zip waterprooftech.zip bluefire.zip
 MCDIR     = $(HOME)/.minecraft
 
 CLEAN_TARGETS := $(PACKFILES) pack.mcmeta pack.png test.zip
@@ -132,7 +131,7 @@ techarrows_FILES := $(DEFAULT_FILES) \
 	assets/minecraft/textures/block/observer_back_on.png \
 	assets/minecraft/textures/block/observer_side.png
 
-broadfacedravager_FILES := $(DEFAULT_FILES) \
+ravager_FILES := $(DEFAULT_FILES) \
 	assets/minecraft/textures/entity/illager/ravager.png
 
 villagemech_FILES := $(DEFAULT_FILES) \
@@ -223,15 +222,15 @@ retrocrunch_FILES := $(DEFAULT_FILES) \
 	assets/minecraft/sounds/step/grass6.ogg \
 	assets/minecraft/sounds/step/grass3.ogg
 
-climbablethings_FILES := $(DEFAULT_FILES) \
+climbable_FILES := $(DEFAULT_FILES) \
 	data/minecraft/tags/blocks/climbable.json \
 	data/bucepack/advancements/root.json \
-	data/bucepack/advancements/climbablethings.json
+	data/bucepack/advancements/climbable.json
 
-hostilebastions_FILES := $(DEFAULT_FILES) \
+aggrobastions_FILES := $(DEFAULT_FILES) \
 	data/minecraft/tags/blocks/guarded_by_piglins.json \
 	data/bucepack/advancements/root.json \
-	data/bucepack/advancements/hostilebastions.json
+	data/bucepack/advancements/aggrobastions.json
 
 waterprooftech_FILES := $(DEFAULT_FILES) \
 	data/minecraft/tags/blocks/signs.json \
@@ -305,7 +304,7 @@ techarrows.zip: $(techarrows_FILES)
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^
 
-broadfacedravager.zip: $(broadfacedravager_FILES)
+ravager.zip: $(ravager_FILES)
 	cp meta/$(@:.zip=.png) pack.png
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^
@@ -360,12 +359,12 @@ retrocrunch.zip: $(retrocrunch_FILES)
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^
 
-climbablethings.zip: $(climbablethings_FILES)
+climbable.zip: $(climbable_FILES)
 	cp meta/$(@:.zip=.png) pack.png
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^
 
-hostilebastions.zip: $(hostilebastions_FILES)
+aggrobastions.zip: $(aggrobastions_FILES)
 	cp meta/$(@:.zip=.png) pack.png
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^
