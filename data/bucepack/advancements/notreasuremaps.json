@@ -1,0 +1,22 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:heart_of_the_sea"
+		},
+		"title": {
+			"text": "No Treasure Maps"
+		},
+		"description": {
+			"text": "Replaces Treasure Maps with Hearts of the Sea in shipwreck chests"
+		},
+		"show_toast": false,
+		"announce_to_chat": false,
+		"frame": "task"
+	},
+	"parent": "bucepack:root",
+	"criteria": {
+		"tick": {
+			"trigger": "minecraft:tick"
+		}
+	}
+}

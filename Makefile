@@ -2,7 +2,7 @@
 PACKFILES = paintingoverhaul.zip noteguide.zip brewguide.zip \
 	techarrows.zip ravager.zip villagemech.zip pigarmor.zip oretypes.zip \
 	retrofood.zip retroiron.zip retromoo.zip retrotwang.zip retrosploosh.zip retrocrunch.zip \
-	climbable.zip aggrobastions.zip waterprooftech.zip bluefire.zip
+	climbable.zip aggrobastions.zip waterprooftech.zip notreasuremaps.zip bluefire.zip
 MCDIR     = $(HOME)/.minecraft
 
 CLEAN_TARGETS := $(PACKFILES) pack.mcmeta pack.png test.zip
@@ -237,6 +237,12 @@ waterprooftech_FILES := $(DEFAULT_FILES) \
 	data/bucepack/advancements/root.json \
 	data/bucepack/advancements/waterprooftech.json
 
+notreasuremaps_FILES := $(DEFAULT_FILES) \
+	data/minecraft/loot_tables/chests/buried_treasure.json \
+	data/minecraft/loot_tables/chests/shipwreck_map.json \
+	data/bucepack/advancements/root.json \
+	data/bucepack/advancements/notreasuremaps.json
+
 bluefire_FILES := $(DEFAULT_FILES) \
 	data/minecraft/tags/blocks/soul_fire_base_blocks.json \
 	data/bucepack/advancements/root.json \
@@ -370,6 +376,11 @@ aggrobastions.zip: $(aggrobastions_FILES)
 	zip $@ pack.png pack.mcmeta $^
 
 waterprooftech.zip: $(waterprooftech_FILES)
+	cp meta/$(@:.zip=.png) pack.png
+	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
+	zip $@ pack.png pack.mcmeta $^
+
+notreasuremaps.zip: $(notreasuremaps_FILES)
 	cp meta/$(@:.zip=.png) pack.png
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^
