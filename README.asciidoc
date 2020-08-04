@@ -1,10 +1,17 @@
 = Buce's Packs
 
+:toc:
+:toc-placement!:
+
 Resource and data packs for Minecraft.
+
+toc::[]
 
 Downloads: https://github.com/DMBuce/bucepack/releases
 
 Build: `make`
+
+== Texture Packs
 
 Painting Overhaul
 -----------------
@@ -205,6 +212,8 @@ Download: https://github.com/DMBuce/bucepack/releases
 
 Build: `make retroiron.zip`
 
+== Sound Packs
+
 Retro Moo
 ---------
 
@@ -241,6 +250,8 @@ Download: https://github.com/DMBuce/bucepack/releases
 
 Build: `make retrocrunch.zip`
 
+== Data Packs
+
 No Treasure Maps
 ----------------
 
@@ -269,6 +280,10 @@ Lets you climb chains and bamboo.
 Needs to be installed as a data pack.
 
 image::https://i.imgur.com/4yukdfV.png[Climbable]
+
+Note that you need to be in the same block space as the block you're climbing.
+Since bamboo is randomly offset from the center of the block it's in,
+some bamboo shoots will have one or two sides that aren't climbable.
 
 Download: https://github.com/DMBuce/bucepack/releases
 
