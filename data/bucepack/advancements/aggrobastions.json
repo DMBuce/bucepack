@@ -7,7 +7,7 @@
 			"text": "Aggro Bastions"
 		},
 		"description": {
-			"text": "Makes bastion piglins more aggressive."
+			"text": "Makes bastion piglins more aggressive"
 		},
 		"show_toast": false,
 		"announce_to_chat": false,

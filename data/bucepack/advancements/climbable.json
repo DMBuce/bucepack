@@ -7,7 +7,7 @@
 			"text": "Climbable"
 		},
 		"description": {
-			"text": "Makes chains and bamboo climbable."
+			"text": "Makes chains and bamboo climbable"
 		},
 		"show_toast": false,
 		"announce_to_chat": false,
