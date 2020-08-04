@@ -1,6 +1,6 @@
 = Buce's Packs
 
-:toc:
+:toc: macro
 :toc-placement!:
 
 Resource and data packs for Minecraft.
