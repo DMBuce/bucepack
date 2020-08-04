@@ -131,7 +131,7 @@ Build: `make villagemech.zip`
 
 Adds iron armor to saddled pigs.
 
-image::https://i.imgur.com/DlGyagv.png[Pig Armor]
+image::https://i.imgur.com/KA4glG4.png[Pig Armor]
 
 This is an aesthetic change only,
 it doesn't reduce the damage that pigs take.
