@@ -74,16 +74,7 @@ Note Guide
 Adds a display to the top of note blocks that shows the note it's tuned to
 and its position on a keyboard.
 
-There's an Advanced version of the pack that additionally displays the
-octave and the note's position on the
-https://en.wikipedia.org/wiki/Circle_of_fifths[Circle of Fifths].
-For an introduction to the Circle of Fifths, I recommend
-https://www.youtube.com/watch?v=d1aJ6HixSe0[Michael New's Youtube video]
-on the subject.
-
-//image::https://i.imgur.com/j1urkAi.png[Note Guide]
 image::https://i.imgur.com/Nb8e9mn.png[Note Guide]
-//image::https://i.imgur.com/pxVbfzn.png[Advanced Note Guide]
 
 Unfortunately, note blocks don't have an orientation, so in this texture pack,
 the direction they face depends on the instrument it's set to, i.e. the
@@ -96,7 +87,7 @@ block underneath:
 
 Download: https://github.com/DMBuce/bucepack/releases
 
-Build: `make noteguide.zip; make noteguide_adv.zip`
+Build: `make noteguide.zip`
 
 Brew Guide
 ----------
@@ -202,19 +193,6 @@ Retextured items:
 Download: https://github.com/DMBuce/bucepack/releases
 
 Build: `make retrofood.zip`
-
-Retro Netherrack
-----------------
-
-Reverts netherrack and quartz ore to their bloody textures from before 1.14.
-
-Also retextures the quartz item to look more crystalline.
-
-image::https://i.imgur.com/tBIX8AV.png[Retro Netherrack]
-
-Download: https://github.com/DMBuce/bucepack/releases
-
-Build: `make retronetherrack.zip`
 
 Retro Iron
 ----------
