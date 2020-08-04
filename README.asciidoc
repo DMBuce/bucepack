@@ -18,8 +18,7 @@ Build: `make`
 
 == Texture Packs
 
-Painting Overhaul
------------------
+=== Painting Overhaul
 
 Replaces the default paintings with more recognizable ones.
 
@@ -80,8 +79,8 @@ Download: https://github.com/DMBuce/bucepack/releases
 
 Build: `make paintingoverhaul.zip`
 
-Note Guide
-----------
+=== Note Guide
+
 
 Adds a display to the top of note blocks that shows the note it's tuned to
 and its position on a keyboard.
@@ -101,8 +100,8 @@ Download: https://github.com/DMBuce/bucepack/releases
 
 Build: `make noteguide.zip`
 
-Brew Guide
-----------
+=== Brew Guide
+
 
 Adds a simple cheat sheet to the brewing stand GUI to remind you how potions are made.
 
@@ -112,8 +111,7 @@ Download: https://github.com/DMBuce/bucepack/releases
 
 Build: `make brewguide.zip`
 
-Tech Arrows
------------
+=== Tech Arrows
 
 Adds arrows to the top of hoppers and the side of observers so that you can
 see which direction they're pointing.
@@ -124,8 +122,7 @@ Download: https://github.com/DMBuce/bucepack/releases
 
 Build: `make techarrows.zip`
 
-Village Mech
-------------
+=== Village Mech
 
 Turns iron golems into mechsuit-wearing villagers.
 
@@ -135,8 +132,7 @@ Download: https://github.com/DMBuce/bucepack/releases
 
 Build: `make villagemech.zip`
 
-Pig Armor
----------
+=== Pig Armor
 
 Adds iron armor to saddled pigs.
 
@@ -149,8 +145,7 @@ Download: https://github.com/DMBuce/bucepack/releases
 
 Build: `make pigarmor.zip`
 
-Ravager
--------
+=== Ravager
 
 Moves the ravager's eyes to the side of its face.
 
@@ -160,8 +155,7 @@ Download: https://github.com/DMBuce/bucepack/releases
 
 Build: `make ravager.zip`
 
-Ore Types
----------
+=== Ore Types
 
 Organizes ores into types to provide more variety and consistency
 
@@ -180,8 +174,7 @@ Download: https://github.com/DMBuce/bucepack/releases
 
 Build: `make oretypes.zip`
 
-Retro Food
-----------
+=== Retro Food
 
 Reverts food to their outlined textures from before 1.4.2,
 and adds outlines to some food that's been added to the game since then.
@@ -206,8 +199,7 @@ Download: https://github.com/DMBuce/bucepack/releases
 
 Build: `make retrofood.zip`
 
-Retro Iron
-----------
+=== Retro Iron
 
 Reverts the iron block to its smooth texture from before 1.9pre5.
 
@@ -219,8 +211,7 @@ Build: `make retroiron.zip`
 
 == Sound Packs
 
-Retro Moo
----------
+=== Retro Moo
 
 Reverts cow noises to their old, derpy sounds.
 
@@ -228,8 +219,7 @@ Download: https://github.com/DMBuce/bucepack/releases
 
 Build: `make retromoo.zip`
 
-Retro Twang
------------
+=== Retro Twang
 
 Reverts arrow noise so it has a *twang* sound.
 
@@ -237,8 +227,7 @@ Download: https://github.com/DMBuce/bucepack/releases
 
 Build: `make retrotwang.zip`
 
-Retro Sploosh
--------------
+=== Retro Sploosh
 
 Reverts water noise so it has a *sploosh* sound.
 
@@ -246,8 +235,7 @@ Download: https://github.com/DMBuce/bucepack/releases
 
 Build: `make retrosploosh.zip`
 
-Retro Crunch
-------------
+=== Retro Crunch
 
 Reverts grass noise so it has a *crunch* sound when stepping on it.
 
@@ -257,8 +245,7 @@ Build: `make retrocrunch.zip`
 
 == Data Packs
 
-No Treasure Maps
-----------------
+=== No Treasure Maps
 
 Replaces Treasure Maps with Hearts of the Sea in shipwreck chests as a workaround for an issue in
 https://github.com/dmbuce/badlands-challenge#the-badlands-challenge[The Badlands Challenge].
@@ -268,8 +255,7 @@ Download: https://github.com/DMBuce/bucepack/releases
 
 Build: `make notreasuremaps.zip`
 
-Aggro Bastions
---------------
+=== Aggro Bastions
 
 Makes piglins hostile when you break blocks that bastions are made out of.
 Needs to be installed as a data pack.
@@ -278,8 +264,7 @@ Download: https://github.com/DMBuce/bucepack/releases
 
 Build: `make aggrobastions.zip`
 
-Climbable
----------
+=== Climbable
 
 Lets you climb chains and bamboo.
 Needs to be installed as a data pack.
@@ -294,8 +279,7 @@ Download: https://github.com/DMBuce/bucepack/releases
 
 Build: `make climbable.zip`
 
-Waterproof Tech
----------------
+=== Waterproof Tech
 
 Makes rails and redstone components waterproof.
 Needs to be installed as a data pack.
@@ -306,8 +290,7 @@ Download: https://github.com/DMBuce/bucepack/releases
 
 Build: `make waterprooftech.zip`
 
-Blue Fire
----------
+=== Blue Fire
 
 Lets you use blue shiny rocks to make blue fire.
 Needs to be installed as a data pack.
