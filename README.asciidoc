@@ -280,7 +280,7 @@ Waterproof Tech
 Makes rails and redstone components waterproof.
 Needs to be installed as a data pack.
 
-image::https://i.imgur.com/Qn3IYx4.png[Waterproof Tech]
+image::https://i.imgur.com/mXfFuET.png[Waterproof Tech]
 
 Download: https://github.com/DMBuce/bucepack/releases
 
