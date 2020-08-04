@@ -1,5 +1,3 @@
-= Buce's Packs
-
 :toc:       macro
 :numbered:  1
 :data-uri:  1
@@ -7,6 +5,8 @@
 :sectids:   1
 
 :sectlinks: 1
+
+= Buce's Packs
 
 Resource and data packs for Minecraft.
 
