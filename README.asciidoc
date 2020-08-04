@@ -245,7 +245,7 @@ Aggro Bastions
 --------------
 
 Makes piglins hostile when you break blocks that bastions are made out of.
-Installed as a data pack.
+Needs to be installed as a data pack.
 
 Download: https://github.com/DMBuce/bucepack/releases
 
@@ -255,7 +255,7 @@ Climbable
 ---------
 
 Lets you climb chains and bamboo.
-Installed as a data pack.
+Needs to be installed as a data pack.
 
 image::https://i.imgur.com/4yukdfV.png[Climbable]
 
@@ -267,7 +267,7 @@ Waterproof Tech
 ---------------
 
 Makes rails and redstone components waterproof.
-Installed as a data pack.
+Needs to be installed as a data pack.
 
 image::https://i.imgur.com/Qn3IYx4.png[Waterproof Tech]
 
@@ -279,7 +279,7 @@ Blue Fire
 ---------
 
 Lets you use blue shiny rocks to make blue fire.
-Installed as a data pack.
+Needs to be installed as a data pack.
 
 image::https://i.imgur.com/paceJ4Z.png[Blue Fire]
 
