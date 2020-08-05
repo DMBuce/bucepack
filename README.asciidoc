@@ -244,7 +244,6 @@ Build: `make retrocrunch.zip`
 
 Replaces Treasure Maps with Hearts of the Sea in shipwreck chests as a workaround for an issue in
 https://github.com/dmbuce/badlands-challenge#the-badlands-challenge[The Badlands Challenge].
-Needs to be installed as a data pack.
 
 Download: https://github.com/DMBuce/bucepack/releases
 
@@ -253,7 +252,6 @@ Build: `make notreasuremaps.zip`
 === Aggro Bastions
 
 Makes piglins hostile when you break blocks that bastions are made out of.
-Needs to be installed as a data pack.
 
 Download: https://github.com/DMBuce/bucepack/releases
 
@@ -262,7 +260,6 @@ Build: `make aggrobastions.zip`
 === Climbable
 
 Lets you climb chains and bamboo.
-Needs to be installed as a data pack.
 
 image::https://i.imgur.com/4yukdfV.png[Climbable]
 
@@ -277,7 +274,6 @@ Build: `make climbable.zip`
 === Waterproof Tech
 
 Makes rails and redstone components waterproof.
-Needs to be installed as a data pack.
 
 image::https://i.imgur.com/mXfFuET.png[Waterproof Tech]
 
@@ -288,7 +284,6 @@ Build: `make waterprooftech.zip`
 === Blue Fire
 
 Lets you use blue shiny rocks to make blue fire.
-Needs to be installed as a data pack.
 
 image::https://i.imgur.com/paceJ4Z.png[Blue Fire]
 
