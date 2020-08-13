@@ -1,0 +1,23 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:totem_of_undying"
+		},
+		"title": {
+			"text": "Phylactery"
+		},
+		"description": {
+			"text": "Drop a totem of undying, a sponge, and a trident with Loyalty III into the water of a cauldron"
+		},
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false,
+		"frame": "goal"
+	},
+	"parent": "bucepack:lichdom",
+	"criteria": {
+		"impossible": {
+			"trigger": "minecraft:impossible"
+		}
+	}
+}

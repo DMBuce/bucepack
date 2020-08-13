@@ -1,0 +1,23 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:turtle_helmet"
+		},
+		"title": {
+			"text": "Form of the Turtle"
+		},
+		"description": {
+			"text": "Gain the powers and weaknesses of a turtle by killing one"
+		},
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false,
+		"frame": "task"
+	},
+	"parent": "lichdom:become_lich",
+	"criteria": {
+		"impossible": {
+			"trigger": "minecraft:impossible"
+		}
+	}
+}

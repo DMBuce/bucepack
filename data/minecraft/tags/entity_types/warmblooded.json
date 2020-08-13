@@ -1,0 +1,32 @@
+{
+  "values": [
+    "minecraft:bat",
+    "minecraft:cat",
+    "minecraft:chicken",
+    "minecraft:cow",
+    "minecraft:dolphin",
+    "minecraft:donkey",
+    "minecraft:evoker",
+    "minecraft:fox",
+    "minecraft:hoglin",
+    "minecraft:horse",
+    "minecraft:illusioner",
+    "minecraft:llama",
+    "minecraft:mooshroom",
+    "minecraft:mule",
+    "minecraft:ocelot",
+    "minecraft:panda",
+    "minecraft:parrot",
+    "minecraft:pig",
+    "minecraft:piglin",
+    "minecraft:pillager",
+    "minecraft:polar_bear",
+    "minecraft:rabbit",
+    "minecraft:ravager",
+    "minecraft:sheep",
+    "minecraft:villager",
+    "minecraft:vindicator",
+    "minecraft:witch",
+    "minecraft:wolf"
+  ]
+}

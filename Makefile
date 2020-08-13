@@ -2,7 +2,8 @@
 PACKFILES = paintingoverhaul.zip noteguide.zip brewguide.zip \
 	techarrows.zip ravager.zip villagemech.zip pigarmor.zip oretypes.zip \
 	retrofood.zip retroiron.zip retromoo.zip retrotwang.zip retrosploosh.zip retrocrunch.zip \
-	climbable.zip aggrobastions.zip waterprooftech.zip notreasuremaps.zip bluefire.zip
+	climbable.zip aggrobastions.zip waterprooftech.zip notreasuremaps.zip bluefire.zip \
+	lichdom.zip
 MCDIR     = $(HOME)/.minecraft
 
 CLEAN_TARGETS := $(PACKFILES) pack.mcmeta pack.png test.zip
@@ -248,6 +249,63 @@ bluefire_FILES := $(DEFAULT_FILES) \
 	data/bucepack/advancements/root.json \
 	data/bucepack/advancements/bluefire.json
 
+lichdom_FILES := $(DEFAULT_FILES) \
+	data/minecraft/tags/functions/load-lichdom.json \
+	data/minecraft/tags/functions/tick-lichdom.json \
+	data/bucepack/functions/load.mcfunction \
+	data/bucepack/functions/tick.mcfunction \
+	data/bucepack/tags/functions/death-lichdom.json \
+	data/lichdom/tags/entity_types/undead.json \
+	data/lichdom/tags/entity_types/has_blood.json \
+	data/lichdom/functions/load.mcfunction \
+	data/lichdom/functions/tick.mcfunction \
+	data/lichdom/functions/death.mcfunction \
+	data/lichdom/functions/craft_phylactery.mcfunction \
+	data/lichdom/functions/craft_pedestal.mcfunction \
+	data/lichdom/functions/finish_pedestal.mcfunction \
+	data/lichdom/functions/pedestal_respawn.mcfunction \
+	data/lichdom/functions/tick_lich.mcfunction \
+	data/lichdom/functions/tick_vampire.mcfunction \
+	data/lichdom/functions/tick_bunny.mcfunction \
+	data/lichdom/functions/tick_turtle.mcfunction \
+	data/lichdom/functions/tick_bat.mcfunction \
+	data/lichdom/functions/tick_rabbit.mcfunction \
+	data/lichdom/functions/rot_food.mcfunction \
+	data/lichdom/functions/lich_form.mcfunction \
+	data/lichdom/functions/vampire_form.mcfunction \
+	data/lichdom/functions/bunny_form.mcfunction \
+	data/lichdom/functions/turtle_form.mcfunction \
+	data/lichdom/functions/reset_form.mcfunction \
+	data/lichdom/functions/steal_unlife_1.mcfunction \
+	data/lichdom/functions/steal_unlife_2.mcfunction \
+	data/lichdom/functions/steal_unlife_3.mcfunction \
+	data/lichdom/functions/steal_unlife_4.mcfunction \
+	data/lichdom/functions/drink_blood_1.mcfunction \
+	data/lichdom/functions/drink_blood_2.mcfunction \
+	data/lichdom/functions/drink_blood_3.mcfunction \
+	data/lichdom/functions/drink_blood_4.mcfunction \
+	data/lichdom/functions/test.mcfunction \
+	data/bucepack/advancements/root.json \
+	data/bucepack/advancements/lichdom.json \
+	data/lichdom/advancements/craft_pedestal.json \
+	data/lichdom/advancements/craft_phylactery.json \
+	data/lichdom/advancements/become_bunny.json \
+	data/lichdom/advancements/become_lich.json \
+	data/lichdom/advancements/become_turtle.json \
+	data/lichdom/advancements/become_vampire.json \
+	data/lichdom/advancements/lich_form.json \
+	data/lichdom/advancements/vampire_form.json \
+	data/lichdom/advancements/bunny_form.json \
+	data/lichdom/advancements/turtle_form.json \
+	data/lichdom/advancements/steal_unlife_1.json \
+	data/lichdom/advancements/steal_unlife_2.json \
+	data/lichdom/advancements/steal_unlife_3.json \
+	data/lichdom/advancements/steal_unlife_4.json \
+	data/lichdom/advancements/drink_blood_1.json \
+	data/lichdom/advancements/drink_blood_2.json \
+	data/lichdom/advancements/drink_blood_3.json \
+	data/lichdom/advancements/drink_blood_4.json
+
 test_FILES = \
 	# nothing
 
@@ -389,6 +447,14 @@ bluefire.zip: $(bluefire_FILES)
 	cp meta/$(@:.zip=.png) pack.png
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^
+
+lichdom.zip: $(lichdom_FILES)
+	cp meta/$(@:.zip=.png) pack.png
+	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
+	zip $@ pack.png pack.mcmeta $^
+	printf "@ data/minecraft/tags/functions/tick-lichdom.json\n@=data/minecraft/tags/functions/tick.json\n" | zipnote -w $@
+	printf "@ data/minecraft/tags/functions/load-lichdom.json\n@=data/minecraft/tags/functions/load.json\n" | zipnote -w $@
+	printf "@ data/bucepack/tags/functions/death-lichdom.json\n@=data/bucepack/tags/functions/death.json\n" | zipnote -w $@
 
 .PHONY: install
 install: $(PACKFILES)

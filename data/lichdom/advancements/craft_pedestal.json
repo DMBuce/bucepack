@@ -1,0 +1,23 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:beacon"
+		},
+		"title": {
+			"text": "Phylactery Pedestal"
+		},
+		"description": {
+			"text": "Put a dragon head on a beacon and drop a phylactery on top"
+		},
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false,
+		"frame": "goal"
+	},
+	"parent": "lichdom:craft_phylactery",
+	"criteria": {
+		"impossible": {
+			"trigger": "minecraft:impossible"
+		}
+	}
+}

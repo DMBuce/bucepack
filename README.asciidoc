@@ -291,3 +291,110 @@ Download: https://github.com/DMBuce/bucepack/releases
 
 Build: `make bluefire.zip`
 
+=== Hardcore Lichdom
+
+Hardcore Lichdom is a challenge datapack designed for hardcore mode. It lets
+players who conquer the Illagers, the Ocean, the Wither, and The End
+without dying gain immortality and keep their world forever. Advancements
+document the basics of the data pack. For more comprehensive documentation,
+read on.
+
+When you die in minecraft hardcore mode you are given the
+option to spectate the world as a ghost. If you use rare materials to perform
+the proper rituals, you can cheat death and become a lich, a powerful
+undead that can use a phylactery pedestal to regenerate your body and restore
+your ghost form to life.
+
+To become a lich, you will need:
+
+* Totem of Undying
+* Dry Sponge
+* Trident with Loyalty III
+* Cauldron
+* Dragon Head
+* Beacon
+
+image::https://i.imgur.com/dxgHI3n.png[Hardcore Lichdom]
+
+Make sure the cauldron has water in it, then throw the totem, sponge, and
+loyalty trident in to turn the totem into a phylactery. Place the dragon head
+on top of the beacon, then throw the phylactery on top of the dragon head to
+create a phylactery pedestal.
+
+image::https://i.imgur.com/a04jraC.png[Phylactery Pedestal]
+
+Choose the location for your phylactery pedestal carefully with the following
+in mind:
+
+* The pedestal block can't be moved or destroyed once created
+* The phylactery item can't despawn or be picked up, but it's otherwise a
+  normal item that can be destroyed by fire and explosions
+* You may want to shield the phylactery pedestal from the sun so you aren't
+  affected by its debilitating effects when you respawn (see below)
+
+Once the phylactery pedestal is built, you will need a magic user's help to
+become a lich. Simply convince a witch to kill you with magic damage, and
+lichdom is yours. Once the witch kills you, your ghost form will be able to
+obtain a new body at the phylactery pedestal.
+
+Lichdom has the following consequences and benefits:
+
+* Direct sunlight poisons you
+* Undead won't attack you
+* Food rots in your hands
+* For sustenance, you must steal necromantic energy from other undead by
+  damaging them
+* Some animals transform when they're near you -- bats become vampiric,
+  rabbits become rabid, and turtles become more turtley
+
+In addition, as a lich you can gain different sets of abilities, called
+"forms", by killing certain animals. The animal forms available to you are
+described below, and replace the lich powers described above. To revert to
+lich form, you can either kill a villager or die and regenerate your body at a
+pedestal.
+
+**Form of the Vampire**: Kill a bat to obtain this form
+
+* Wings burst from your back, destroying anything in your chestplate slot
+* Direct sunlight withers you
+* You have Night Vision and Regeneration
+* Undead won't attack you unless they're under the power of a lich
+* Food rots in your hands
+* For sustenance, you must drink blood from creatures by damaging them
+* Bats become vampiric when they're near you
+
+**Form of the Werebunny**: Kill a rabbit to obtain this form
+
+* Your body grows fur and powerful muscles, destroying anything in your
+  chestplate slot
+* Direct moonlight increases your speed and makes you ravenously hungry
+* You have Strength and Jump Boost II
+* You can eat only carrots and raw meat for sustenance
+* All other food rots in your hands
+* Rabbits become rabid when they're near you
+
+**Form of the Turtle**: Kill a turtle to obtain this form
+
+* You grow a turtle shell, destroying anything in your helmet slot
+* You die if your shell breaks
+* You have Slowness, Dolphin's Grace, and Resistance III
+* You can eat only dried kelp for sustenance
+* All other food rots in your hands
+* Turtles become more turtley when they're near you
+
+Download: https://github.com/DMBuce/bucepack/releases
+
+Build: `make lichdom.zip`
+
+Known Issues:
+
+* This pack uses teams and is incompatible with other data packs that use
+  teams
+* Sunlight and moonlight affect players even when it's raining or snowing
+  because Java edition does not have a `/weather query` command
+* Food that rots will always produce either two rotten flesh or one
+  poisonous potato because preserving stack sizes with `/replaceitem` is only
+  possible with hacky shulker box workarounds
+* If a player in turtle form dies from their shell breaking, other players who
+  die in the same tick will have their death messages suppressed
+

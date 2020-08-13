@@ -1,0 +1,8 @@
+# runs as a player that a witch killed
+
+# debug
+#say turning @s[team=!lich] into a lich
+
+# add player to lich team
+team join lich @s[team=!lich]
+

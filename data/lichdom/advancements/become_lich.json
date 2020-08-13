@@ -1,0 +1,31 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:skeleton_skull"
+		},
+		"title": {
+			"text": "Phenomenal Cosmic Power"
+		},
+		"description": {
+			"text": "Become a lich by convincing a witch to kill you, then regenerate your body at a phylactery pedestal"
+		},
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false,
+		"frame": "challenge"
+	},
+	"parent": "lichdom:craft_pedestal",
+	"criteria": {
+		"witch_killed_player": {
+			"trigger": "minecraft:entity_killed_player",
+			"conditions": {
+				"entity": {
+					"type": "minecraft:witch"
+				}
+			}
+		}
+	},
+	"rewards": {
+		"function": "lichdom:lich_form"
+	}
+}

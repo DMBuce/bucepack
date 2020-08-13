@@ -1,0 +1,23 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:wither_skeleton_skull"
+		},
+		"title": {
+			"text": "Form of the Vampire"
+		},
+		"description": {
+			"text": "Gain the powers and weaknesses of a bat by killing one"
+		},
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false,
+		"frame": "task"
+	},
+	"parent": "lichdom:become_lich",
+	"criteria": {
+		"impossible": {
+			"trigger": "minecraft:impossible"
+		}
+	}
+}

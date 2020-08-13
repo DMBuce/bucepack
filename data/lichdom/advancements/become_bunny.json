@@ -1,0 +1,23 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:rabbit_foot"
+		},
+		"title": {
+			"text": "Form of the Werebunny"
+		},
+		"description": {
+			"text": "Gain the powers and weaknesses of a bunny by killing one"
+		},
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false,
+		"frame": "task"
+	},
+	"parent": "lichdom:become_lich",
+	"criteria": {
+		"impossible": {
+			"trigger": "minecraft:impossible"
+		}
+	}
+}

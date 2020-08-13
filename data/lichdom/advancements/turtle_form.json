@@ -1,0 +1,31 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:green_wool"
+		},
+		"title": {
+			"text": "Too Turtley for the Turtle Club"
+		},
+		"description": {
+			"text": "Kill a turtle to gain its form"
+		},
+		"show_toast": false,
+		"announce_to_chat": false,
+		"hidden": true,
+		"frame": "task"
+	},
+	"parent": "lichdom:become_lich",
+	"criteria": {
+		"killed_player": {
+			"trigger": "minecraft:player_killed_entity",
+			"conditions": {
+				"entity": {
+					"type": "minecraft:turtle"
+				}
+			}
+		}
+	},
+	"rewards": {
+		"function": "lichdom:turtle_form"
+	}
+}

@@ -1,0 +1,42 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:wither_skeleton_skull"
+		},
+		"title": {
+			"text": "Drink Blood"
+		},
+		"description": {
+			"text": "Drink blood from a creature"
+		},
+		"show_toast": false,
+		"announce_to_chat": false,
+		"hidden": true,
+		"frame": "task"
+	},
+	"parent": "lichdom:vampire_form",
+	"criteria": {
+		"witch_killed_player": {
+			"trigger": "minecraft:player_hurt_entity",
+			"conditions": {
+				"entity": {
+					"type": "#lichdom:has_blood"
+				},
+				"damage": {
+					"taken": { "min": 6, "max": 7 },
+					"type": {
+						"is_explosion": false,
+						"is_fire": false,
+						"is_magic": false,
+						"is_projectile": false,
+						"is_lightning": false
+					}
+
+				}
+			}
+		}
+	},
+	"rewards": {
+		"function": "lichdom:drink_blood_3"
+	}
+}
