@@ -240,7 +240,7 @@ waterprooftech_FILES := $(DEFAULT_FILES) \
 
 notreasuremaps_FILES := $(DEFAULT_FILES) \
 	data/minecraft/loot_tables/chests/buried_treasure.json \
-	data/minecraft/loot_tables/chests/shipwreck_map.json \
+	data/minecraft/loot_tables/chests/shipwreck_map_nomap.json \
 	data/bucepack/advancements/root.json \
 	data/bucepack/advancements/notreasuremaps.json
 
@@ -442,6 +442,7 @@ notreasuremaps.zip: $(notreasuremaps_FILES)
 	cp meta/$(@:.zip=.png) pack.png
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^
+	printf "@ data/minecraft/loot_tables/chests/shipwreck_map_nomap.json\n@=data/minecraft/loot_tables/chests/shipwreck_map.json\n" | zipnote -w $@
 
 bluefire.zip: $(bluefire_FILES)
 	cp meta/$(@:.zip=.png) pack.png
