@@ -1,6 +1,6 @@
 
 PACKFILES = paintingoverhaul.zip noteguide.zip brewguide.zip \
-	techarrows.zip ravager.zip villagemech.zip pigarmor.zip oretypes.zip \
+	techarrows.zip ravager.zip villagemech.zip candystrider.zip pigarmor.zip oretypes.zip \
 	retrofood.zip retroiron.zip retromoo.zip retrotwang.zip retrosploosh.zip retrocrunch.zip \
 	climbable.zip aggrobastions.zip waterprooftech.zip notreasuremaps.zip bluefire.zip \
 	escapeend.zip escapenether.zip lichdom.zip
@@ -141,9 +141,12 @@ villagemech_FILES := $(DEFAULT_FILES) \
 	assets/minecraft/textures/entity/iron_golem/iron_golem_crackiness_medium.png \
 	assets/minecraft/textures/entity/iron_golem/iron_golem_crackiness_high.png
 
+candystrider_FILES := $(DEFAULT_FILES) \
+	assets/minecraft/textures/entity/strider/strider_cold.png \
+	assets/minecraft/textures/entity/strider/strider.png
+
 pigarmor_FILES := $(DEFAULT_FILES) \
 	assets/minecraft/textures/entity/pig/pig_saddle.png
-
 
 oretypes_FILES := $(DEFAULT_FILES) \
 	assets/minecraft/blockstates/coal_ore.json \
@@ -386,6 +389,11 @@ ravager.zip: $(ravager_FILES)
 	zip $@ pack.png pack.mcmeta $^
 
 villagemech.zip: $(villagemech_FILES)
+	cp meta/$(@:.zip=.png) pack.png
+	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
+	zip $@ pack.png pack.mcmeta $^
+
+candystrider.zip: $(candystrider_FILES)
 	cp meta/$(@:.zip=.png) pack.png
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^
