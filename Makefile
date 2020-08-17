@@ -3,7 +3,7 @@ PACKFILES = paintingoverhaul.zip noteguide.zip brewguide.zip \
 	techarrows.zip ravager.zip villagemech.zip pigarmor.zip oretypes.zip \
 	retrofood.zip retroiron.zip retromoo.zip retrotwang.zip retrosploosh.zip retrocrunch.zip \
 	climbable.zip aggrobastions.zip waterprooftech.zip notreasuremaps.zip bluefire.zip \
-	lichdom.zip
+	escapeend.zip escapenether.zip lichdom.zip
 MCDIR     = $(HOME)/.minecraft
 
 CLEAN_TARGETS := $(PACKFILES) pack.mcmeta pack.png test.zip
@@ -249,6 +249,18 @@ bluefire_FILES := $(DEFAULT_FILES) \
 	data/bucepack/advancements/root.json \
 	data/bucepack/advancements/bluefire.json
 
+escapeend_FILES := $(DEFAULT_FILES) \
+	data/minecraft/tags/functions/tick-escape.json \
+	data/escape/functions/end_respawn.mcfunction \
+	data/escape/functions/tick-end.mcfunction
+
+escapenether_FILES := $(DEFAULT_FILES) \
+	data/minecraft/tags/functions/tick-escape.json \
+	data/escape/functions/nether_respawn.mcfunction \
+	data/escape/functions/tick-nether.mcfunction \
+	data/escape/tags/blocks/airlava.json \
+	data/escape/advancements/kill_wither.json
+
 lichdom_FILES := $(DEFAULT_FILES) \
 	data/minecraft/tags/functions/load-lichdom.json \
 	data/minecraft/tags/functions/tick-lichdom.json \
@@ -448,6 +460,20 @@ bluefire.zip: $(bluefire_FILES)
 	cp meta/$(@:.zip=.png) pack.png
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^
+
+escapeend.zip: $(escapeend_FILES)
+	cp meta/$(@:.zip=.png) pack.png
+	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
+	zip $@ pack.png pack.mcmeta $^
+	printf "@ data/minecraft/tags/functions/tick-escape.json\n@=data/minecraft/tags/functions/tick.json\n" | zipnote -w $@
+	printf "@ data/escape/functions/tick-end.mcfunction\n@=data/escape/functions/tick.mcfunction\n" | zipnote -w $@
+
+escapenether.zip: $(escapenether_FILES)
+	cp meta/$(@:.zip=.png) pack.png
+	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
+	zip $@ pack.png pack.mcmeta $^
+	printf "@ data/minecraft/tags/functions/tick-escape.json\n@=data/minecraft/tags/functions/tick.json\n" | zipnote -w $@
+	printf "@ data/escape/functions/tick-nether.mcfunction\n@=data/escape/functions/tick.mcfunction\n" | zipnote -w $@
 
 lichdom.zip: $(lichdom_FILES)
 	cp meta/$(@:.zip=.png) pack.png
