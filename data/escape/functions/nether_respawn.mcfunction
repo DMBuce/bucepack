@@ -12,3 +12,6 @@ execute as @s at @s run fill ~-2 ~-1 ~-2 ~2 ~-1 ~2 minecraft:crimson_stem replac
 #summon ~ ~-2 ~ minecraft:armor_stand {Invulnerable:1,NoGravity:1,Invisible:1,Tags:["spawn_column"]}
 execute as @s at @s run fill ~-1 ~-2 ~-1 ~1 0 ~1 minecraft:netherrack replace #escape:airlava
 
+# run addon respawn functions
+execute as @s at @s run function #escape:respawn
+

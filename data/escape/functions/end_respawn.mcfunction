@@ -11,4 +11,8 @@ execute as @s at @s run fill ~-2 ~-1 ~-2 ~2 ~-1 ~2 minecraft:obsidian replace
 give @p minecraft:slime_block 64
 give @p minecraft:piston 64
 give @p minecraft:observer 64
+give @p minecraft:birch_boat
+
+# run addon respawn functions
+execute as @s at @s run function #escape:respawn
 

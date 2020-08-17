@@ -271,6 +271,16 @@ Download: https://github.com/DMBuce/bucepack/releases
 
 Build: `make climbable.zip`
 
+=== Speedy Paths
+
+Makes soul speed work with path blocks.
+
+image::[Speedy Paths]
+
+Download: https://github.com/DMBuce/bucepack/releases
+
+Build: `make speedypaths.zip`
+
 === Waterproof Tech
 
 Makes rails and redstone components waterproof.
@@ -290,6 +300,62 @@ image::https://i.imgur.com/paceJ4Z.png[Blue Fire]
 Download: https://github.com/DMBuce/bucepack/releases
 
 Build: `make bluefire.zip`
+
+=== Escape the Nether
+
+A survival challenge that starts you in the Nether.
+The overworld is inaccessible to you until you defeat the wither.
+Until you do that, you'll respawn in the Nether in a cage made of fungus and
+netherbrick.
+
+image::[Escape the Nether]
+
+Download: https://github.com/DMBuce/bucepack/releases
+
+Build: `make escapenether.zip`
+
+=== Escape the End
+
+A survival challenge that starts you in The End.
+The overworld is inaccessible to you until you defeat the dragon and obtain
+elytra -- but not necessarily in that order. Until you do those two things,
+you'll respawn on The End platform with slimestone materials in your inventory
+that you can use to travel to the outer end islands.
+
+image::[Escape the End]
+
+Download: https://github.com/DMBuce/bucepack/releases
+
+Build: `make escapeend.zip`
+
+=== Escape the Grind
+
+The two data packs above, Escape the Nether and Escape the End, provide a
+survival experience outside the overworld with a bare minimum of
+additions to make the game still playable. Part of the challenge is
+that normal parts of the game aren't available to you. For example, ranged
+combat is not possible using only materials found in The End, and enchanting
+isn't possible using only materials found in the Nether.
+
+Escape the Grind is an addon data pack that's designed to reduce the grind of,
+and add possibilities to, a Nether-only or End-only survival experience.
+
+Changes that facilitate survival in Nether:
+
+* The first time you spawn, you're given a saddle and a mushroom on a stick
+* Grindstones can be crafted using a blackstone slab
+* There's a chance that crying obsidian will drop lapis when broken
+
+Changes that facilitate survival in The End:
+
+* In addition to slimestone materials, you're given TNT when you respawn
+* End city loot includes fireworks and enchanted crossbows
+
+image::[Escape the Grind]
+
+Download: https://github.com/DMBuce/bucepack/releases
+
+Build: `make escapegrind.zip`
 
 === Hardcore Lichdom
 

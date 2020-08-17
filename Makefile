@@ -2,8 +2,8 @@
 PACKFILES = paintingoverhaul.zip noteguide.zip brewguide.zip \
 	techarrows.zip ravager.zip villagemech.zip candystrider.zip pigarmor.zip oretypes.zip \
 	retrofood.zip retroiron.zip retromoo.zip retrotwang.zip retrosploosh.zip retrocrunch.zip \
-	climbable.zip aggrobastions.zip waterprooftech.zip notreasuremaps.zip bluefire.zip \
-	escapeend.zip escapenether.zip lichdom.zip
+	climbable.zip speedypaths.zip aggrobastions.zip waterprooftech.zip notreasuremaps.zip bluefire.zip \
+	escapeend.zip escapenether.zip escapegrind.zip lichdom.zip
 MCDIR     = $(HOME)/.minecraft
 
 CLEAN_TARGETS := $(PACKFILES) pack.mcmeta pack.png test.zip
@@ -226,6 +226,9 @@ retrocrunch_FILES := $(DEFAULT_FILES) \
 	assets/minecraft/sounds/step/grass6.ogg \
 	assets/minecraft/sounds/step/grass3.ogg
 
+speedypaths_FILES := $(DEFAULT_FILES) \
+	data/minecraft/tags/blocks/soul_speed_blocks.json
+
 climbable_FILES := $(DEFAULT_FILES) \
 	data/minecraft/tags/blocks/climbable.json \
 	data/bucepack/advancements/root.json \
@@ -263,6 +266,13 @@ escapenether_FILES := $(DEFAULT_FILES) \
 	data/escape/functions/tick-nether.mcfunction \
 	data/escape/tags/blocks/airlava.json \
 	data/escape/advancements/kill_wither.json
+
+escapegrind_FILES := $(DEFAULT_FILES) \
+	data/minecraft/loot_tables/blocks/crying_obsidian_lapis.json \
+	data/minecraft/loot_tables/chests/end_city_treasure_crossbow.json \
+	data/escape/recipes/grindstone.json \
+	data/escape/tags/functions/respawn.json \
+	data/escape/functions/grind_respawn.mcfunction
 
 lichdom_FILES := $(DEFAULT_FILES) \
 	data/minecraft/tags/functions/load-lichdom.json \
@@ -443,6 +453,11 @@ retrocrunch.zip: $(retrocrunch_FILES)
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^
 
+speedypaths.zip: $(speedypaths_FILES)
+	cp meta/$(@:.zip=.png) pack.png
+	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
+	zip $@ pack.png pack.mcmeta $^
+
 climbable.zip: $(climbable_FILES)
 	cp meta/$(@:.zip=.png) pack.png
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
@@ -482,6 +497,13 @@ escapenether.zip: $(escapenether_FILES)
 	zip $@ pack.png pack.mcmeta $^
 	printf "@ data/minecraft/tags/functions/tick-escape.json\n@=data/minecraft/tags/functions/tick.json\n" | zipnote -w $@
 	printf "@ data/escape/functions/tick-nether.mcfunction\n@=data/escape/functions/tick.mcfunction\n" | zipnote -w $@
+
+escapegrind.zip: $(escapegrind_FILES)
+	cp meta/$(@:.zip=.png) pack.png
+	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
+	zip $@ pack.png pack.mcmeta $^
+	printf "@ data/minecraft/loot_tables/blocks/crying_obsidian_lapis.json\n@=data/minecraft/loot_tables/blocks/crying_obsidian.json\n" | zipnote -w $@
+	printf "@ data/minecraft/loot_tables/chests/end_city_treasure_crossbow.json\n@=data/minecraft/loot_tables/chests/end_city_treasure.json\n" | zipnote -w $@
 
 lichdom.zip: $(lichdom_FILES)
 	cp meta/$(@:.zip=.png) pack.png
