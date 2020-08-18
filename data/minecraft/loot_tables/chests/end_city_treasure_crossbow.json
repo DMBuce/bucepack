@@ -75,14 +75,14 @@
             {
               "function": "minecraft:set_count",
               "count": {
-                "min": 1.0,
-                "max": 10.0,
+                "min": 24.0,
+                "max": 36.0,
                 "type": "minecraft:uniform"
               }
             },
             {
               "function": "minecraft:set_nbt",
-              "nbt": "{Fireworks:{Flight:2,Explosions:[{Type:0,Flicker:0,Trail:1,Colors:[I;14188952]},{Type:1,Flicker:0,Trail:0,Colors:[I;12801229]}]}}"
+              "tag": "{Fireworks:{Flight:2,Explosions:[{Type:0,Flicker:0,Trail:1,Colors:[I;14188952]},{Type:1,Flicker:0,Trail:0,Colors:[I;12801229]}]}}"
             }
           ],
           "name": "minecraft:firework_rocket"
@@ -137,7 +137,7 @@
         },
         {
           "type": "minecraft:item",
-          "weight": 3,
+          "weight": 6,
           "functions": [
             {
               "function": "minecraft:enchant_with_levels",

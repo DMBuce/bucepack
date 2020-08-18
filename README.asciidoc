@@ -324,6 +324,14 @@ that you can use to travel to the outer end islands.
 
 image::[Escape the End]
 
+If you want to use this pack and Escape the Nether to play minecraft in
+reverse, i.e. if you want to beat The End to gain access to the Nether and
+then beat the Nether to gain access to the overworld, install them both in the
+usual way and then run these commands:
+
+    /datapack disable "file/escapeend.zip"
+    /datapack enable "file/escapeend.zip" after "file/escapenether.zip"
+
 Download: https://github.com/DMBuce/bucepack/releases
 
 Build: `make escapeend.zip`
@@ -342,13 +350,16 @@ and add possibilities to, a Nether-only or End-only survival experience.
 
 Changes that facilitate survival in Nether:
 
-* The first time you spawn, you're given a saddle and a mushroom on a stick
+* You're given a saddle and a mushroom on a stick whenever you respawn
 * Grindstones can be crafted using a blackstone slab
 * There's a chance that crying obsidian will drop lapis when broken
 
 Changes that facilitate survival in The End:
 
-* In addition to slimestone materials, you're given TNT when you respawn
+* In addition to slimestone materials, you're given TNT whenever you respawn
+* While holding ender pearls in both your main hand and offhand, purple
+  particles indicate you're looking in the direction of an end city and sandy
+  particles indicate you're looking within 90 degrees of one
 * End city loot includes fireworks and enchanted crossbows
 
 image::[Escape the Grind]

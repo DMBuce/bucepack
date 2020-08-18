@@ -268,11 +268,16 @@ escapenether_FILES := $(DEFAULT_FILES) \
 	data/escape/advancements/kill_wither.json
 
 escapegrind_FILES := $(DEFAULT_FILES) \
+	data/minecraft/tags/functions/load-grind.json \
+	data/minecraft/tags/functions/tick-grind.json \
 	data/minecraft/loot_tables/blocks/crying_obsidian_lapis.json \
 	data/minecraft/loot_tables/chests/end_city_treasure_crossbow.json \
 	data/escape/recipes/grindstone.json \
 	data/escape/tags/functions/respawn.json \
-	data/escape/functions/grind_respawn.mcfunction
+	data/escape/functions/load.mcfunction \
+	data/escape/functions/tick_grind.mcfunction \
+	data/escape/functions/grind_respawn.mcfunction \
+	data/escape/functions/locate_city.mcfunction
 
 lichdom_FILES := $(DEFAULT_FILES) \
 	data/minecraft/tags/functions/load-lichdom.json \
@@ -502,6 +507,8 @@ escapegrind.zip: $(escapegrind_FILES)
 	cp meta/$(@:.zip=.png) pack.png
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^
+	printf "@ data/minecraft/tags/functions/load-grind.json\n@=data/minecraft/tags/functions/load.json\n" | zipnote -w $@
+	printf "@ data/minecraft/tags/functions/tick-grind.json\n@=data/minecraft/tags/functions/tick.json\n" | zipnote -w $@
 	printf "@ data/minecraft/loot_tables/blocks/crying_obsidian_lapis.json\n@=data/minecraft/loot_tables/blocks/crying_obsidian.json\n" | zipnote -w $@
 	printf "@ data/minecraft/loot_tables/chests/end_city_treasure_crossbow.json\n@=data/minecraft/loot_tables/chests/end_city_treasure.json\n" | zipnote -w $@
 
