@@ -351,7 +351,7 @@ and add possibilities to, a Nether-only or End-only survival experience.
 Changes that facilitate survival in Nether:
 
 * You're given a saddle and a mushroom on a stick whenever you respawn
-* Grindstones can be crafted using a blackstone slab
+* Grindstones can be crafted using a polished blackstone slab
 * There's a chance that crying obsidian will drop lapis when broken
 
 Changes that facilitate survival in The End:
