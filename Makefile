@@ -1,9 +1,10 @@
 
-PACKFILES = paintingoverhaul.zip noteguide.zip brewguide.zip \
+RESOURCEPACKFILES = paintingoverhaul.zip noteguide.zip brewguide.zip \
 	techarrows.zip ravager.zip villagemech.zip candystrider.zip pigarmor.zip oretypes.zip \
-	retrofood.zip retroiron.zip retromoo.zip retrotwang.zip retrosploosh.zip retrocrunch.zip \
-	climbable.zip speedypaths.zip aggrobastions.zip waterprooftech.zip notreasuremaps.zip bluefire.zip \
+	retrofood.zip retroiron.zip retromoo.zip retrotwang.zip retrosploosh.zip retrocrunch.zip
+DATAPACKFILES = climbable.zip speedypaths.zip aggrobastions.zip waterprooftech.zip notreasuremaps.zip bluefire.zip \
 	escapeend.zip escapenether.zip escapegrind.zip lichdom.zip
+PACKFILES = $(RESOURCEPACKFILES) $(DATAPACKFILES)
 MCDIR     = $(HOME)/.minecraft
 
 CLEAN_TARGETS := $(PACKFILES) pack.mcmeta pack.png test.zip
@@ -521,8 +522,10 @@ lichdom.zip: $(lichdom_FILES)
 	printf "@ data/bucepack/tags/functions/death-lichdom.json\n@=data/bucepack/tags/functions/death.json\n" | zipnote -w $@
 
 .PHONY: install
-install: $(PACKFILES)
-	cp $^ $(MCDIR)/resourcepacks
+install: $(RESOURCEPACKFILES) $(DATAPACKFILES)
+	cp $(RESOURCEPACKFILES) $(MCDIR)/resourcepacks
+	mkdir $(MCDIR)/datapacks
+	cp $(DATAPACKFILES) $(MCDIR)/datapacks
 
 .PHONY: uninstall
 uninstall:
