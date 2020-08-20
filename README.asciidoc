@@ -275,7 +275,7 @@ Build: `make climbable.zip`
 
 Makes soul speed work with path blocks.
 
-image::[Speedy Paths]
+image::https://i.imgur.com/XafV8TN.png[Speedy Paths]
 
 Download: https://github.com/DMBuce/bucepack/releases
 
