@@ -308,7 +308,7 @@ The overworld is inaccessible to you until you defeat the wither.
 Until you do that, you'll respawn in the Nether in a cage made of fungus and
 netherbrick.
 
-image::[Escape the Nether]
+//image::[Escape the Nether]
 
 Download: https://github.com/DMBuce/bucepack/releases
 
@@ -322,7 +322,7 @@ elytra -- but not necessarily in that order. Until you do those two things,
 you'll respawn on The End platform with slimestone materials in your inventory
 that you can use to travel to the outer end islands.
 
-image::[Escape the End]
+//image::[Escape the End]
 
 If you want to use this pack and Escape the Nether to play minecraft in
 reverse, i.e. if you want to beat The End to gain access to the Nether and
@@ -362,7 +362,7 @@ Changes that facilitate survival in The End:
   particles indicate you're looking within 90 degrees of one
 * End city loot includes fireworks and enchanted crossbows
 
-image::[Escape the Grind]
+//image::[Escape the Grind]
 
 Download: https://github.com/DMBuce/bucepack/releases
 
