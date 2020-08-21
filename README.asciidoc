@@ -370,11 +370,11 @@ Build: `make escapegrind.zip`
 
 === Hardcore Lichdom
 
-Hardcore Lichdom is a challenge datapack designed for hardcore mode. It lets
-players who conquer the Illagers, the Ocean, the Wither, and The End
-without dying gain immortality and keep their world forever. Advancements
-document the basics of the data pack. For more comprehensive documentation,
-read on.
+Hardcore Lichdom is a challenge datapack designed for hardcore mode.  With
+this pack, players who conquer the Illagers, the Ocean, the Wither, and The
+End without dying can gain immortality and keep their world forever.
+Advancements document the basics of the data pack. For more comprehensive
+documentation, read on.
 
 When you die in minecraft hardcore mode you are given the
 option to spectate the world as a ghost. If you use rare materials to perform
