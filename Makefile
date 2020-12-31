@@ -3,7 +3,7 @@ RESOURCEPACKFILES = paintingoverhaul.zip noteguide.zip brewguide.zip \
 	techarrows.zip ravager.zip villagemech.zip candystrider.zip pigarmor.zip oretypes.zip \
 	retrofood.zip retroiron.zip retromoo.zip retrotwang.zip retrosploosh.zip retrocrunch.zip
 DATAPACKFILES = climbable.zip speedypaths.zip aggrobastions.zip waterprooftech.zip notreasuremaps.zip bluefire.zip \
-	escapeend.zip escapenether.zip escapegrind.zip lichdom.zip
+	lootoverhaul.zip escapeend.zip escapenether.zip escapegrind.zip lichdom.zip
 PACKFILES = $(RESOURCEPACKFILES) $(DATAPACKFILES)
 MCDIR     = $(HOME)/.minecraft
 
@@ -246,7 +246,6 @@ waterprooftech_FILES := $(DEFAULT_FILES) \
 	data/bucepack/advancements/waterprooftech.json
 
 notreasuremaps_FILES := $(DEFAULT_FILES) \
-	data/minecraft/loot_tables/chests/buried_treasure.json \
 	data/minecraft/loot_tables/chests/shipwreck_map_nomap.json \
 	data/bucepack/advancements/root.json \
 	data/bucepack/advancements/notreasuremaps.json
@@ -255,6 +254,56 @@ bluefire_FILES := $(DEFAULT_FILES) \
 	data/minecraft/tags/blocks/soul_fire_base_blocks.json \
 	data/bucepack/advancements/root.json \
 	data/bucepack/advancements/bluefire.json
+
+data/minecraft/loot_tables/%.json: data/minecraft/loot_tables/%.json.yaml data/minecraft/loot_tables/loot_table.j2
+	j2 data/minecraft/loot_tables/loot_table.j2 $< -o $@
+
+lootoverhaul_FILES := $(DEFAULT_FILES) \
+	data/minecraft/loot_tables/chests/spawn_bonus_chest.json \
+	data/minecraft/loot_tables/subtables/music_disc.json \
+	data/minecraft/loot_tables/subtables/biome_log.json \
+	data/minecraft/loot_tables/subtables/treasure_seed.json \
+	data/minecraft/loot_tables/test.json
+	#data/minecraft/loot_tables/chests/abandoned_mineshaft.json \
+	#data/minecraft/loot_tables/chests/bastion_bridge.json \
+	#data/minecraft/loot_tables/chests/bastion_hoglin_stable.json \
+	#data/minecraft/loot_tables/chests/bastion_other.json \
+	#data/minecraft/loot_tables/chests/bastion_treasure.json \
+	#data/minecraft/loot_tables/chests/buried_treasure.json \
+	#data/minecraft/loot_tables/chests/desert_pyramid.json \
+	#data/minecraft/loot_tables/chests/end_city_treasure.json \
+	#data/minecraft/loot_tables/chests/igloo_chest.json \
+	#data/minecraft/loot_tables/chests/jungle_temple_dispenser.json \
+	#data/minecraft/loot_tables/chests/jungle_temple.json \
+	#data/minecraft/loot_tables/chests/nether_bridge.json \
+	#data/minecraft/loot_tables/chests/pillager_outpost.json \
+	#data/minecraft/loot_tables/chests/ruined_portal.json \
+	#data/minecraft/loot_tables/chests/shipwreck_map.json \
+	#data/minecraft/loot_tables/chests/shipwreck_supply.json \
+	#data/minecraft/loot_tables/chests/shipwreck_treasure.json \
+	#data/minecraft/loot_tables/chests/simple_dungeon.json \
+	#data/minecraft/loot_tables/chests/stronghold_corridor.json \
+	#data/minecraft/loot_tables/chests/stronghold_crossing.json \
+	#data/minecraft/loot_tables/chests/stronghold_library.json \
+	#data/minecraft/loot_tables/chests/underwater_ruin_big.json \
+	#data/minecraft/loot_tables/chests/underwater_ruin_small.json \
+	#data/minecraft/loot_tables/chests/village/village_armorer.json \
+	#data/minecraft/loot_tables/chests/village/village_butcher.json \
+	#data/minecraft/loot_tables/chests/village/village_cartographer.json \
+	#data/minecraft/loot_tables/chests/village/village_desert_house.json \
+	#data/minecraft/loot_tables/chests/village/village_fisher.json \
+	#data/minecraft/loot_tables/chests/village/village_fletcher.json \
+	#data/minecraft/loot_tables/chests/village/village_mason.json \
+	#data/minecraft/loot_tables/chests/village/village_plains_house.json \
+	#data/minecraft/loot_tables/chests/village/village_savanna_house.json \
+	#data/minecraft/loot_tables/chests/village/village_shepherd.json \
+	#data/minecraft/loot_tables/chests/village/village_snowy_house.json \
+	#data/minecraft/loot_tables/chests/village/village_taiga_house.json \
+	#data/minecraft/loot_tables/chests/village/village_tannery.json \
+	#data/minecraft/loot_tables/chests/village/village_temple.json \
+	#data/minecraft/loot_tables/chests/village/village_toolsmith.json \
+	#data/minecraft/loot_tables/chests/village/village_weaponsmith.json \
+	#data/minecraft/loot_tables/chests/woodland_mansion.json \
 
 escapeend_FILES := $(DEFAULT_FILES) \
 	data/minecraft/tags/functions/tick-escape.json \
@@ -490,6 +539,11 @@ bluefire.zip: $(bluefire_FILES)
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^
 
+lootoverhaul.zip: $(lootoverhaul_FILES)
+	cp meta/$(@:.zip=.png) pack.png
+	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
+	zip $@ pack.png pack.mcmeta $^
+
 escapeend.zip: $(escapeend_FILES)
 	cp meta/$(@:.zip=.png) pack.png
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
@@ -524,7 +578,7 @@ lichdom.zip: $(lichdom_FILES)
 .PHONY: install
 install: $(RESOURCEPACKFILES) $(DATAPACKFILES)
 	cp $(RESOURCEPACKFILES) $(MCDIR)/resourcepacks
-	mkdir $(MCDIR)/datapacks
+	mkdir -p $(MCDIR)/datapacks
 	cp $(DATAPACKFILES) $(MCDIR)/datapacks
 
 .PHONY: uninstall

@@ -1,0 +1,33 @@
+pools:
+  - rolls: 1
+    entries:
+      - { type: item, weight: 15, item: music_disc_13 }
+      - { type: itemstack, weight: 100, item: cobblestone, min: 3, max: 5 }
+      - { type: loot_table, weight: 100, table: subtables/music_disc }
+  - rolls: { min: 2, max: 4, type: uniform }
+    entries:
+      - { type: explorer_map, weight: 10, structure: swamp_hut, decor: mansion, display: "Swamp Explorer Map", skipchunks: false }
+      - type: suspicious_stew
+        weight: 10
+        effects:
+          - { name: absorption,          min: 7, max: 10 }
+          - { name: bad_omen,            min: 6, max: 8  }
+          - { name: blindness,           min: 5, max: 7  }
+          - { name: conduit_power,       min: 7, max: 10 }
+          - { name: dolphins_grace,      min: 7, max: 10 }
+          - { name: fire_resistance,     min: 7, max: 10 }
+          - { name: glowing,             min: 6, max: 8  }
+          - { name: hero_of_the_village, min: 7, max: 10 }
+          - { name: invisibility,        min: 7, max: 10 }
+          - { name: jump_boost,          min: 7, max: 10 }
+          - { name: levitation,          min: 6, max: 8  }
+          - { name: night_vision,        min: 7, max: 10 }
+          - { name: regeneration,        min: 7, max: 10 }
+          - { name: resistance,          min: 7, max: 10 }
+          - { name: saturation,          min: 7, max: 10 }
+          - { name: slow_falling,        min: 6, max: 8  }
+          - { name: slowness,            min: 6, max: 8  }
+          - { name: speed,               min: 7, max: 10 }
+          - { name: strength,            min: 7, max: 10 }
+          - { name: water_breathing,     min: 7, max: 10 }
+          - { name: weakness,            min: 6, max: 8  }

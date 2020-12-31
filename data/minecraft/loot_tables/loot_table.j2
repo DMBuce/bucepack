@@ -1,0 +1,158 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {%- for pool in pools %}
+    {
+      {%- if pool.rolls is mapping %}
+      "rolls": {
+        "min": {{pool.rolls.min}}.0,
+        "max": {{pool.rolls.max}}.0,
+        "type": "minecraft:{{pool.rolls.type}}"
+      },
+      {%- else %}
+      "rolls": {{pool.rolls}},
+      {%- endif %}
+      "entries": [
+        {%- for entry in pool.entries %}
+        {%- if entry.type == "item" %}
+        {
+          "type": "minecraft:item",
+          "weight": {{entry.weight}},
+          "name": "minecraft:{{entry.item}}"
+        }{{ "," if not loop.last }}
+        {%- elif entry.type == "itemstack" %}
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:{{entry.item}}",
+          "weight": {{entry.weight}},
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": {{entry.min}}.0,
+                "max": {{entry.max}}.0,
+                "type": "minecraft:uniform"
+              }
+            }
+          ]
+        }{{ "," if not loop.last }}
+        {%- elif entry.type == "loot_table" %}
+        {
+          "type": "minecraft:loot_table",
+          "weight": {{entry.weight}},
+          "quality": {{ entry.quality if entry.quality is defined else 0 }},
+          "name": "minecraft:{{entry.table}}"
+        }{{ "," if not loop.last }}
+        {%- elif entry.type == "explorer_map" %}
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:map",
+          "weight": {{entry.weight}},
+          "functions": [
+            {
+              "function": "minecraft:exploration_map",
+              "destination": "{{entry.structure}}",
+              "decoration": "{{entry.decor}}",
+              "zoom": 1,
+              "skip_existing_chunks": {{ entry.skipchunks | lower }}
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": "{{entry.display}}"
+            }
+          ]
+        }{{ "," if not loop.last }}
+        {%- elif entry.type == "suspicious_stew" %}
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:suspicious_stew",
+          "weight": {{entry.weight}},
+          "functions": [
+            {
+              "function": "minecraft:set_stew_effect",
+              "effects": [
+                {%- for effect in entry.effects %}
+                {
+                  "type": "minecraft:{{effect.name}}",
+                  "duration": {
+                    "min": {{effect.min}}.0,
+                    "max": {{effect.max}}.0
+                  }
+                }{{ "," if not loop.last }}
+                {%- endfor %}
+              ]
+            }
+          ]
+        }{{ "," if not loop.last }}
+        {%- elif entry.type == "itemstack_biome" %}
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:{{entry.item}}",
+          "weight": {{entry.weight}},
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": {{entry.min}}.0,
+                "max": {{entry.max}}.0,
+                "type": "minecraft:uniform"
+              }
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:alternative",
+              "terms": [
+                {%- for biome in entry.biomes %}
+                {
+                  "condition": "minecraft:location_check",
+                  "predicate": {
+                    "biome": "minecraft:{{biome}}"
+                  }
+                }{{ "," if not loop.last }}
+                {%- endfor %}
+              ]
+            }
+          ]
+        }{{ "," if not loop.last }}
+        {%- elif entry.type == "itemstack_unused" %}
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:{{entry.item}}",
+          "weight": {{entry.weight}},
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": {{entry.min}}.0,
+                "max": {{entry.max}}.0,
+                "type": "minecraft:uniform"
+              }
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "player": {
+                  "stats": [
+                    {
+                      "type": "minecraft:used",
+                      "stat": "minecraft:{{entry.item}}",
+                      "value": { "max": 0 }
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        }{{ "," if not loop.last }}
+        {%- endif %}
+        {%- endfor %}
+      ]
+    }{{ "," if not loop.last }}
+    {%- endfor %}
+  ]
+}
+{#- vim: set ft=conf: #}
