@@ -1,0 +1,5 @@
+pools:
+  - rolls: 1
+    entries:
+      - { type: magicbook_lvl,    weight: 50, level: 30 }
+      - { type: magicbook_random, weight: 50 }

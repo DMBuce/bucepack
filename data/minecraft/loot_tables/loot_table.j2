@@ -55,6 +55,26 @@
           "functions": [
             {
               "function": "minecraft:enchant_randomly"
+              {%- if entry.enchants is defined %},
+              "enchantments": [
+                {%- for enchant in entry.enchants %}
+                "minecraft:{{enchant}}"{{ "," if not loop.last }}
+                {%- endfor %}
+              ]
+              {%- endif %}
+            }
+          ],
+          "name": "minecraft:book"
+        }{{ "," if not loop.last }}
+        {%- elif entry.type == "magicbook_lvl" %}
+        {
+          "type": "minecraft:item",
+          "weight": {{entry.weight}},
+          "functions": [
+            {
+              "function": "minecraft:enchant_with_levels",
+              "levels": {{entry.level}},
+              "treasure": true
             }
           ],
           "name": "minecraft:book"
