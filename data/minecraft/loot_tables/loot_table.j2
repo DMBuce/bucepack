@@ -15,16 +15,6 @@
       "entries": [
         {%- for entry in pool.entries %}
         {%- if entry.type == "item" %}
-		{#-
-        {
-          "type": "minecraft:item",
-          {%- if entry.weight != 1 %}
-          "weight": {{entry.weight}},
-          {%- endif %}
-          "name": "minecraft:{{entry.item}}"
-        }{{ "," if not loop.last }}
-        {%- elif entry.type == "item" %}
-		#}
         {
           "type": "minecraft:item",
           {%- if entry.weight != 1 %}
@@ -39,10 +29,25 @@
                 "max": {{entry.max}}.0,
                 "type": "minecraft:uniform"
               }
+            }{{- "," if entry.looting is mapping }}
+            {%- if entry.looting is mapping %}
+            {
+              "function": "minecraft:looting_enchant",
+              "count": {
+                "min": {{entry.looting.min}},
+                "max": {{entry.looting.max}}
+              }
             }
+            {%- endif %}
           ],
           {%- endif %}
           "name": "minecraft:{{entry.item}}"
+        }{{ "," if not loop.last }}
+        {%- elif entry.type == "tag" %}
+        {
+          "type": "minecraft:tag",
+          "name": "minecraft:{{entry.name}}",
+          "expand": {{ entry.expand | lower }}
         }{{ "," if not loop.last }}
         {%- elif entry.type == "loot_table" %}
         {
@@ -210,7 +215,22 @@
         }{{ "," if not loop.last }}
         {%- endif %}
         {%- endfor %}
+      ]{{ "," if pool.conditions is defined }}
+      {%- if pool.conditions is defined %}
+      "conditions": [
+        {%- for condition in pool.conditions %}
+        {%- if condition.condition == "skeleton_is_killer" %}
+        {
+          "condition": "minecraft:entity_properties",
+          "predicate": {
+            "type": "#minecraft:skeletons"
+          },
+          "entity": "killer"
+        }{{ "," if not loop.last }}
+        {%- endif %}
+        {%- endfor %}
       ]
+      {%- endif %}
     }{{ "," if not loop.last }}
     {%- endfor %}
   ]
