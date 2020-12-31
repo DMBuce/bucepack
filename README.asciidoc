@@ -301,6 +301,12 @@ Download: https://github.com/DMBuce/bucepack/releases
 
 Build: `make bluefire.zip`
 
+=== Loot Overhaul
+
+WIP
+
+//Treasure Seeds: https://i.imgur.com/gUnJW5S.png
+
 === Escape the Nether
 
 A survival challenge that starts you in the Nether.
