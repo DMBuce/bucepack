@@ -15,6 +15,7 @@
       "entries": [
         {%- for entry in pool.entries %}
         {%- if entry.type == "item" %}
+		{#-
         {
           "type": "minecraft:item",
           {%- if entry.weight != 1 %}
@@ -22,12 +23,14 @@
           {%- endif %}
           "name": "minecraft:{{entry.item}}"
         }{{ "," if not loop.last }}
-        {%- elif entry.type == "itemstack" %}
+        {%- elif entry.type == "item" %}
+		#}
         {
           "type": "minecraft:item",
           {%- if entry.weight != 1 %}
           "weight": {{entry.weight}},
           {%- endif %}
+          {%- if entry.min is defined and entry.max is defined %}
           "functions": [
             {
               "function": "minecraft:set_count",
@@ -38,6 +41,7 @@
               }
             }
           ],
+          {%- endif %}
           "name": "minecraft:{{entry.item}}"
         }{{ "," if not loop.last }}
         {%- elif entry.type == "loot_table" %}
@@ -136,7 +140,7 @@
             }
           ]
         }{{ "," if not loop.last }}
-        {%- elif entry.type == "itemstack_biome" %}
+        {%- elif entry.type == "item_biome" %}
         {
           "type": "minecraft:item",
           "name": "minecraft:{{entry.item}}",
@@ -169,7 +173,7 @@
             }
           ]
         }{{ "," if not loop.last }}
-        {%- elif entry.type == "itemstack_unused" %}
+        {%- elif entry.type == "item_unused" %}
         {
           "type": "minecraft:item",
           "name": "minecraft:{{entry.item}}",

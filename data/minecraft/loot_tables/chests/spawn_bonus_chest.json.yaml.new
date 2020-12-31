@@ -1,10 +1,10 @@
 pools:
   - rolls: 1
     entries:
-      - { type: itemstack, weight: 100,  item: cobblestone, min: 3, max: 5 }
+      - { type: item, weight: 100,  item: cobblestone, min: 3, max: 5 }
   - rolls: 1
     entries:
-      - { type: itemstack, weight: 100,  item: bread, min: 2, max: 3 }
+      - { type: item, weight: 100,  item: bread, min: 2, max: 3 }
   - rolls: 1
     entries:
       - { type: loot_table, weight: 100, table: subtables/biome_log }

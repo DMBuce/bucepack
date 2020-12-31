@@ -1,25 +1,25 @@
 pools:
   - rolls: 1
     entries:
-      - { type: itemstack_unused, weight: 99,  item: carrot        , min: 1, max: 3 }
-      - { type: itemstack_unused, weight: 99,  item: potato        , min: 1, max: 3 }
-      - { type: itemstack_unused, weight: 99,  item: wheat_seeds   , min: 1, max: 3 }
-      - { type: itemstack_unused, weight: 99,  item: melon_seeds   , min: 1, max: 3 }
-      - { type: itemstack_unused, weight: 99,  item: pumpkin_seeds , min: 1, max: 3 }
-      - { type: itemstack_unused, weight: 99,  item: beetroot_seeds, min: 1, max: 3 }
-      - { type: itemstack_unused, weight: 99,  item: cocoa_beans   , min: 1, max: 3 }
-      - { type: itemstack_unused, weight: 99,  item: sweet_berries , min: 1, max: 3 }
-      - { type: itemstack_unused, weight: 99,  item: fern          , min: 1, max: 3 }
-      - { type: itemstack_unused, weight: 99,  item: cactus        , min: 1, max: 3 }
-      - { type: itemstack_unused, weight: 99,  item: sugar_cane    , min: 1, max: 3 }
-      - { type: itemstack_unused, weight: 99,  item: bamboo        , min: 1, max: 3 }
-      - { type: itemstack_unused, weight: 99,  item: kelp          , min: 1, max: 3 }
-      - { type: itemstack_unused, weight: 99,  item: brown_mushroom, min: 1, max: 3 }
-      - { type: itemstack_unused, weight: 99,  item: red_mushroom  , min: 1, max: 3 }
-      - { type: itemstack_unused, weight: 99,  item: rose_bush     , min: 1, max: 3 }
-      - { type: itemstack_unused, weight: 99,  item: lilac         , min: 1, max: 3 }
-      - { type: itemstack_unused, weight: 99,  item: peony         , min: 1, max: 3 }
-      - { type: itemstack_unused, weight: 99,  item: sunflower     , min: 1, max: 3 }
+      - { type: item_unused, weight: 99,  item: carrot        , min: 1, max: 3 }
+      - { type: item_unused, weight: 99,  item: potato        , min: 1, max: 3 }
+      - { type: item_unused, weight: 99,  item: wheat_seeds   , min: 1, max: 3 }
+      - { type: item_unused, weight: 99,  item: melon_seeds   , min: 1, max: 3 }
+      - { type: item_unused, weight: 99,  item: pumpkin_seeds , min: 1, max: 3 }
+      - { type: item_unused, weight: 99,  item: beetroot_seeds, min: 1, max: 3 }
+      - { type: item_unused, weight: 99,  item: cocoa_beans   , min: 1, max: 3 }
+      - { type: item_unused, weight: 99,  item: sweet_berries , min: 1, max: 3 }
+      - { type: item_unused, weight: 99,  item: fern          , min: 1, max: 3 }
+      - { type: item_unused, weight: 99,  item: cactus        , min: 1, max: 3 }
+      - { type: item_unused, weight: 99,  item: sugar_cane    , min: 1, max: 3 }
+      - { type: item_unused, weight: 99,  item: bamboo        , min: 1, max: 3 }
+      - { type: item_unused, weight: 99,  item: kelp          , min: 1, max: 3 }
+      - { type: item_unused, weight: 99,  item: brown_mushroom, min: 1, max: 3 }
+      - { type: item_unused, weight: 99,  item: red_mushroom  , min: 1, max: 3 }
+      - { type: item_unused, weight: 99,  item: rose_bush     , min: 1, max: 3 }
+      - { type: item_unused, weight: 99,  item: lilac         , min: 1, max: 3 }
+      - { type: item_unused, weight: 99,  item: peony         , min: 1, max: 3 }
+      - { type: item_unused, weight: 99,  item: sunflower     , min: 1, max: 3 }
       - type: suspicious_stew
         weight: 1
         effects:

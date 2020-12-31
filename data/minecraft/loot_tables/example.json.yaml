@@ -1,8 +1,7 @@
 pools:
   - rolls: { min: 2, max: 4 }
     entries:
-      - { type: item, weight: 25, item: golden_apple }
-      - { type: itemstack, weight: 25, min: 3, max: 5, item: cobblestone }
+      - { type: item, weight: 10, min: 3, max: 12, item: cobblestone }
       - { type: loot_table, weight: 25, table: subtables/music_disc }
       - { type: empty, weight: 25 }
   - rolls: 1

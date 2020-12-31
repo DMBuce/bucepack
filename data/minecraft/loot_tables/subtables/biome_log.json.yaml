@@ -54,12 +54,12 @@ biomes:
 pools:
   - rolls: 1
     entries:
-      - { type: itemstack,       weight: 1,  item: oak_log,      min: 3, max: 5 }
-      - { type: itemstack_biome, weight: 99, item: spruce_log,   min: 3, max: 5, biomes: *spruce_log }
-      - { type: itemstack_biome, weight: 99, item: birch_log,    min: 3, max: 5, biomes: *birch_log }
-      - { type: itemstack_biome, weight: 99, item: jungle_log,   min: 3, max: 5, biomes: *jungle_log }
-      - { type: itemstack_biome, weight: 99, item: acacia_log,   min: 3, max: 5, biomes: *acacia_log }
-      - { type: itemstack_biome, weight: 99, item: dark_oak_log, min: 3, max: 5, biomes: *dark_oak_log }
-      - { type: itemstack_biome, weight: 99, item: crimson_stem, min: 3, max: 5, biomes: *crimson_stem }
-      - { type: itemstack_biome, weight: 99, item: warped_stem,  min: 3, max: 5, biomes: *warped_stem }
-      - { type: itemstack_biome, weight: 99, item: stick,        min: 2, max: 4, biomes: *stick }
+      - { type: item,       weight: 1,  item: oak_log,      min: 3, max: 5 }
+      - { type: item_biome, weight: 99, item: spruce_log,   min: 3, max: 5, biomes: *spruce_log }
+      - { type: item_biome, weight: 99, item: birch_log,    min: 3, max: 5, biomes: *birch_log }
+      - { type: item_biome, weight: 99, item: jungle_log,   min: 3, max: 5, biomes: *jungle_log }
+      - { type: item_biome, weight: 99, item: acacia_log,   min: 3, max: 5, biomes: *acacia_log }
+      - { type: item_biome, weight: 99, item: dark_oak_log, min: 3, max: 5, biomes: *dark_oak_log }
+      - { type: item_biome, weight: 99, item: crimson_stem, min: 3, max: 5, biomes: *crimson_stem }
+      - { type: item_biome, weight: 99, item: warped_stem,  min: 3, max: 5, biomes: *warped_stem }
+      - { type: item_biome, weight: 99, item: stick,        min: 2, max: 4, biomes: *stick }

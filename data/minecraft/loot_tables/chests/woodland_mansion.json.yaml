@@ -13,19 +13,19 @@ pools:
       - { type: magicbook_random, weight: 10 }
   - rolls: { min: 1, max: 4 }
     entries:
-      - { type: itemstack, weight: 10, min: 1, max: 4, item: iron_ingot }
-      - { type: itemstack, weight: 5,  min: 1, max: 4, item: gold_ingot }
-      - { type: item,      weight: 20, item: bread }
-      - { type: itemstack, weight: 20, min: 1, max: 4, item: wheat }
-      - { type: item,      weight: 10, item: bucket }
-      - { type: itemstack, weight: 15, min: 1, max: 4, item: redstone }
-      - { type: itemstack, weight: 15, min: 1, max: 4, item: coal }
-      - { type: itemstack, weight: 10, min: 2, max: 4, item: melon_seeds }
-      - { type: itemstack, weight: 10, min: 2, max: 4, item: pumpkin_seeds }
-      - { type: itemstack, weight: 10, min: 2, max: 4, item: beetroot_seeds }
+      - { type: item, weight: 10, min: 1, max: 4, item: iron_ingot }
+      - { type: item, weight: 5,  min: 1, max: 4, item: gold_ingot }
+      - { type: item, weight: 20,                 item: bread }
+      - { type: item, weight: 20, min: 1, max: 4, item: wheat }
+      - { type: item, weight: 10,                 item: bucket }
+      - { type: item, weight: 15, min: 1, max: 4, item: redstone }
+      - { type: item, weight: 15, min: 1, max: 4, item: coal }
+      - { type: item, weight: 10, min: 2, max: 4, item: melon_seeds }
+      - { type: item, weight: 10, min: 2, max: 4, item: pumpkin_seeds }
+      - { type: item, weight: 10, min: 2, max: 4, item: beetroot_seeds }
   - rolls: 3
     entries:
-      - { type: itemstack, weight: 10, min: 1, max: 8, item: bone }
-      - { type: itemstack, weight: 10, min: 1, max: 8, item: gunpowder }
-      - { type: itemstack, weight: 10, min: 1, max: 8, item: rotten_flesh }
-      - { type: itemstack, weight: 10, min: 1, max: 8, item: string }
+      - { type: item, weight: 10, min: 1, max: 8, item: bone }
+      - { type: item, weight: 10, min: 1, max: 8, item: gunpowder }
+      - { type: item, weight: 10, min: 1, max: 8, item: rotten_flesh }
+      - { type: item, weight: 10, min: 1, max: 8, item: string }

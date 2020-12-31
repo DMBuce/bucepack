@@ -9,16 +9,16 @@ pools:
       - { type: item, weight: 3, item: wooden_pickaxe }
   - rolls: 3
     entries:
-      - { type: itemstack, weight: 5, min: 1, max: 2, item: apple }
-      - { type: itemstack, weight: 3, min: 1, max: 2, item: bread }
-      - { type: itemstack, weight: 3, min: 1, max: 2, item: salmon }
+      - { type: item, weight: 5, min: 1, max: 2, item: apple }
+      - { type: item, weight: 3, min: 1, max: 2, item: bread }
+      - { type: item, weight: 3, min: 1, max: 2, item: salmon }
   - rolls: 4
     entries:
-      - { type: itemstack, weight: 10, min: 1, max: 12, item: stick }
-      - { type: itemstack, weight: 10, min: 1, max: 12, item: oak_planks }
-      - { type: itemstack, weight: 3,  min: 1, max: 3,  item: oak_log }
-      - { type: itemstack, weight: 3,  min: 1, max: 3,  item: spruce_log }
-      - { type: itemstack, weight: 3,  min: 1, max: 3,  item: birch_log }
-      - { type: itemstack, weight: 3,  min: 1, max: 3,  item: jungle_log }
-      - { type: itemstack, weight: 3,  min: 1, max: 3,  item: acacia_log }
-      - { type: itemstack, weight: 3,  min: 1, max: 3,  item: dark_oak_log }
+      - { type: item, weight: 10, min: 1, max: 12, item: stick }
+      - { type: item, weight: 10, min: 1, max: 12, item: oak_planks }
+      - { type: item, weight: 3,  min: 1, max: 3,  item: oak_log }
+      - { type: item, weight: 3,  min: 1, max: 3,  item: spruce_log }
+      - { type: item, weight: 3,  min: 1, max: 3,  item: birch_log }
+      - { type: item, weight: 3,  min: 1, max: 3,  item: jungle_log }
+      - { type: item, weight: 3,  min: 1, max: 3,  item: acacia_log }
+      - { type: item, weight: 3,  min: 1, max: 3,  item: dark_oak_log }

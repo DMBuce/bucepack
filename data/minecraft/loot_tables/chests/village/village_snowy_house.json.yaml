@@ -1,13 +1,13 @@
 pools:
   - rolls: { min: 3, max: 8 }
     entries:
-      - { type: item, weight: 1, item: blue_ice }
-      - { type: item, weight: 4, item: snow_block }
-      - { type: itemstack, weight: 10, min: 1, max: 7, item: potato }
-      - { type: itemstack, weight: 10, min: 1, max: 4, item: bread }
-      - { type: itemstack, weight: 10, min: 1, max: 5, item: beetroot_seeds }
-      - { type: item, weight: 1, item: beetroot_soup }
-      - { type: item, weight: 1, item: furnace }
-      - { type: itemstack, weight: 1,  min: 1, max: 4, item: emerald }
-      - { type: itemstack, weight: 10, min: 1, max: 7, item: snowball }
-      - { type: itemstack, weight: 5,  min: 1, max: 4, item: coal }
+      - { type: item, weight: 1,                  item: blue_ice }
+      - { type: item, weight: 4,                  item: snow_block }
+      - { type: item, weight: 10, min: 1, max: 7, item: potato }
+      - { type: item, weight: 10, min: 1, max: 4, item: bread }
+      - { type: item, weight: 10, min: 1, max: 5, item: beetroot_seeds }
+      - { type: item, weight: 1,                  item: beetroot_soup }
+      - { type: item, weight: 1,                  item: furnace }
+      - { type: item, weight: 1,  min: 1, max: 4, item: emerald }
+      - { type: item, weight: 10, min: 1, max: 7, item: snowball }
+      - { type: item, weight: 5,  min: 1, max: 4, item: coal }
