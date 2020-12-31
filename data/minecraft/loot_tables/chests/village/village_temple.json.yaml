@@ -1,0 +1,9 @@
+pools:
+  - rolls: { min: 3, max: 8 }
+    entries:
+      - { type: itemstack, weight: 2, min: 1, max: 4, item: redstone }
+      - { type: itemstack, weight: 7, min: 1, max: 4, item: bread }
+      - { type: itemstack, weight: 7, min: 1, max: 4, item: rotten_flesh }
+      - { type: itemstack, weight: 1, min: 1, max: 4, item: lapis_lazuli }
+      - { type: itemstack, weight: 1, min: 1, max: 4, item: gold_ingot }
+      - { type: itemstack, weight: 1, min: 1, max: 4, item: emerald }

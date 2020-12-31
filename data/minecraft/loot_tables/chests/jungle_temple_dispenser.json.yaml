@@ -1,0 +1,4 @@
+pools:
+  - rolls: { min: 1, max: 2 }
+    entries:
+      - { type: itemstack, weight: 30, min: 2, max: 7, item: arrow }

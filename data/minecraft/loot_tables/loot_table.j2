@@ -17,13 +17,17 @@
         {%- if entry.type == "item" %}
         {
           "type": "minecraft:item",
+          {%- if entry.weight != 1 %}
           "weight": {{entry.weight}},
+          {%- endif %}
           "name": "minecraft:{{entry.item}}"
         }{{ "," if not loop.last }}
         {%- elif entry.type == "itemstack" %}
         {
           "type": "minecraft:item",
+          {%- if entry.weight != 1 %}
           "weight": {{entry.weight}},
+          {%- endif %}
           "functions": [
             {
               "function": "minecraft:set_count",
@@ -39,19 +43,25 @@
         {%- elif entry.type == "loot_table" %}
         {
           "type": "minecraft:loot_table",
+          {%- if entry.weight != 1 %}
           "weight": {{entry.weight}},
+          {%- endif %}
           "quality": {{ entry.quality if entry.quality is defined else 0 }},
           "name": "minecraft:{{entry.table}}"
         }{{ "," if not loop.last }}
         {%- elif entry.type == "empty" %}
         {
           "type": "minecraft:empty",
+          {%- if entry.weight != 1 %}
           "weight": {{entry.weight}}
+          {%- endif %}
         }{{ "," if not loop.last }}
         {%- elif entry.type == "magicbook_random" %}
         {
           "type": "minecraft:item",
+          {%- if entry.weight != 1 %}
           "weight": {{entry.weight}},
+          {%- endif %}
           "functions": [
             {
               "function": "minecraft:enchant_randomly"
@@ -69,7 +79,9 @@
         {%- elif entry.type == "magicbook_lvl" %}
         {
           "type": "minecraft:item",
+          {%- if entry.weight != 1 %}
           "weight": {{entry.weight}},
+          {%- endif %}
           "functions": [
             {
               "function": "minecraft:enchant_with_levels",
@@ -83,7 +95,9 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:map",
+          {%- if entry.weight != 1 %}
           "weight": {{entry.weight}},
+          {%- endif %}
           "functions": [
             {
               "function": "minecraft:exploration_map",
@@ -102,7 +116,9 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:suspicious_stew",
+          {%- if entry.weight != 1 %}
           "weight": {{entry.weight}},
+          {%- endif %}
           "functions": [
             {
               "function": "minecraft:set_stew_effect",
@@ -124,7 +140,9 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:{{entry.item}}",
+          {%- if entry.weight != 1 %}
           "weight": {{entry.weight}},
+          {%- endif %}
           "functions": [
             {
               "function": "minecraft:set_count",
@@ -155,7 +173,9 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:{{entry.item}}",
+          {%- if entry.weight != 1 %}
           "weight": {{entry.weight}},
+          {%- endif %}
           "functions": [
             {
               "function": "minecraft:set_count",
@@ -191,4 +211,4 @@
     {%- endfor %}
   ]
 }
-{#- vim: set ft=conf: #}
+{#- vim: set ft=j2: #}

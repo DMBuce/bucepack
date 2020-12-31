@@ -1,14 +1,14 @@
 pools:
+  - rolls: { min: 2, max: 4 }
+    entries:
+      - { type: item, weight: 25, item: golden_apple }
+      - { type: itemstack, weight: 25, min: 3, max: 5, item: cobblestone }
+      - { type: loot_table, weight: 25, table: subtables/music_disc }
+      - { type: empty, weight: 25 }
   - rolls: 1
     entries:
-      - { type: item, weight: 15, item: music_disc_13 }
-      - { type: itemstack, weight: 100, item: cobblestone, min: 3, max: 5 }
-      - { type: loot_table, weight: 100, table: subtables/music_disc }
-      - { type: empty,      weight: 15 }
-  - rolls: { min: 2, max: 4, type: uniform }
-    entries:
       - { type: explorer_map, weight: 10, structure: swamp_hut, decor: mansion, display: "Swamp Explorer Map", skipchunks: false }
-      - { type: magicbook_lvl,    weight: 50, level: 30 }
+      - { type: magicbook_lvl, weight: 50, level: 30 }
       - { type: magicbook_random, weight: 50 }
       - type: suspicious_stew
         weight: 10

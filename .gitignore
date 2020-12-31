@@ -1,4 +1,6 @@
 *.zip
 pack.mcmeta
 pack.png
+data/minecraft/loot_tables/*.json
 data/minecraft/loot_tables/*/*.json
+data/minecraft/loot_tables/*/*/*.json

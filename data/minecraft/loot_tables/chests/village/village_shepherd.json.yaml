@@ -1,0 +1,11 @@
+pools:
+  - rolls: { min: 1, max: 5 }
+    entries:
+      - { type: itemstack, weight: 6, min: 1, max: 8, item: white_wool }
+      - { type: itemstack, weight: 3, min: 1, max: 3, item: black_wool }
+      - { type: itemstack, weight: 2, min: 1, max: 3, item: gray_wool }
+      - { type: itemstack, weight: 2, min: 1, max: 3, item: brown_wool }
+      - { type: itemstack, weight: 2, min: 1, max: 3, item: light_gray_wool }
+      - { type: item, weight: 1, item: emerald }
+      - { type: item, weight: 1, item: shears }
+      - { type: itemstack, weight: 6, min: 1, max: 6, item: wheat }

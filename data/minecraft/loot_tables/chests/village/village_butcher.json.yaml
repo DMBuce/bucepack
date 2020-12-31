@@ -1,0 +1,9 @@
+pools:
+  - rolls: { min: 1, max: 5 }
+    entries:
+      - { type: item, weight: 1, item: emerald }
+      - { type: itemstack, weight: 6, min: 1, max: 3, item: porkchop }
+      - { type: itemstack, weight: 6, min: 1, max: 3, item: wheat }
+      - { type: itemstack, weight: 6, min: 1, max: 3, item: beef }
+      - { type: itemstack, weight: 6, min: 1, max: 3, item: mutton }
+      - { type: itemstack, weight: 3, min: 1, max: 3, item: coal }

@@ -259,53 +259,53 @@ data/minecraft/loot_tables/%.json: data/minecraft/loot_tables/%.json.yaml data/m
 	j2 data/minecraft/loot_tables/loot_table.j2 $< -o $@
 
 lootoverhaul_FILES := $(DEFAULT_FILES) \
+	data/minecraft/loot_tables/chests/abandoned_mineshaft.json \
+	data/minecraft/loot_tables/chests/bastion_bridge.json \
+	data/minecraft/loot_tables/chests/bastion_hoglin_stable.json \
+	data/minecraft/loot_tables/chests/bastion_other.json \
+	data/minecraft/loot_tables/chests/bastion_treasure.json \
+	data/minecraft/loot_tables/chests/buried_treasure.json \
 	data/minecraft/loot_tables/chests/desert_pyramid.json \
+	data/minecraft/loot_tables/chests/end_city_treasure.json \
+	data/minecraft/loot_tables/chests/igloo_chest.json \
+	data/minecraft/loot_tables/chests/jungle_temple_dispenser.json \
+	data/minecraft/loot_tables/chests/jungle_temple.json \
+	data/minecraft/loot_tables/chests/nether_bridge.json \
+	data/minecraft/loot_tables/chests/pillager_outpost.json \
+	data/minecraft/loot_tables/chests/ruined_portal.json \
+	data/minecraft/loot_tables/chests/shipwreck_map.json \
+	data/minecraft/loot_tables/chests/shipwreck_supply.json \
+	data/minecraft/loot_tables/chests/shipwreck_treasure.json \
+	data/minecraft/loot_tables/chests/simple_dungeon.json \
 	data/minecraft/loot_tables/chests/spawn_bonus_chest.json \
+	data/minecraft/loot_tables/chests/stronghold_corridor.json \
+	data/minecraft/loot_tables/chests/stronghold_crossing.json \
+	data/minecraft/loot_tables/chests/stronghold_library.json \
+	data/minecraft/loot_tables/chests/underwater_ruin_big.json \
+	data/minecraft/loot_tables/chests/underwater_ruin_small.json \
+	data/minecraft/loot_tables/chests/village/village_armorer.json \
+	data/minecraft/loot_tables/chests/village/village_butcher.json \
+	data/minecraft/loot_tables/chests/village/village_cartographer.json \
+	data/minecraft/loot_tables/chests/village/village_desert_house.json \
+	data/minecraft/loot_tables/chests/village/village_fisher.json \
+	data/minecraft/loot_tables/chests/village/village_fletcher.json \
+	data/minecraft/loot_tables/chests/village/village_mason.json \
+	data/minecraft/loot_tables/chests/village/village_plains_house.json \
+	data/minecraft/loot_tables/chests/village/village_savanna_house.json \
+	data/minecraft/loot_tables/chests/village/village_shepherd.json \
+	data/minecraft/loot_tables/chests/village/village_snowy_house.json \
+	data/minecraft/loot_tables/chests/village/village_taiga_house.json \
+	data/minecraft/loot_tables/chests/village/village_tannery.json \
+	data/minecraft/loot_tables/chests/village/village_temple.json \
+	data/minecraft/loot_tables/chests/village/village_toolsmith.json \
+	data/minecraft/loot_tables/chests/village/village_weaponsmith.json \
+	data/minecraft/loot_tables/chests/woodland_mansion.json \
 	data/minecraft/loot_tables/subtables/music_disc.json \
 	data/minecraft/loot_tables/subtables/ench_book.json \
 	data/minecraft/loot_tables/subtables/lib_book.json \
 	data/minecraft/loot_tables/subtables/biome_log.json \
 	data/minecraft/loot_tables/subtables/treasure_seed.json \
-	data/minecraft/loot_tables/test.json
-	#data/minecraft/loot_tables/chests/abandoned_mineshaft.json \
-	#data/minecraft/loot_tables/chests/bastion_bridge.json \
-	#data/minecraft/loot_tables/chests/bastion_hoglin_stable.json \
-	#data/minecraft/loot_tables/chests/bastion_other.json \
-	#data/minecraft/loot_tables/chests/bastion_treasure.json \
-	#data/minecraft/loot_tables/chests/buried_treasure.json \
-	#data/minecraft/loot_tables/chests/end_city_treasure.json \
-	#data/minecraft/loot_tables/chests/igloo_chest.json \
-	#data/minecraft/loot_tables/chests/jungle_temple_dispenser.json \
-	#data/minecraft/loot_tables/chests/jungle_temple.json \
-	#data/minecraft/loot_tables/chests/nether_bridge.json \
-	#data/minecraft/loot_tables/chests/pillager_outpost.json \
-	#data/minecraft/loot_tables/chests/ruined_portal.json \
-	#data/minecraft/loot_tables/chests/shipwreck_map.json \
-	#data/minecraft/loot_tables/chests/shipwreck_supply.json \
-	#data/minecraft/loot_tables/chests/shipwreck_treasure.json \
-	#data/minecraft/loot_tables/chests/simple_dungeon.json \
-	#data/minecraft/loot_tables/chests/stronghold_corridor.json \
-	#data/minecraft/loot_tables/chests/stronghold_crossing.json \
-	#data/minecraft/loot_tables/chests/stronghold_library.json \
-	#data/minecraft/loot_tables/chests/underwater_ruin_big.json \
-	#data/minecraft/loot_tables/chests/underwater_ruin_small.json \
-	#data/minecraft/loot_tables/chests/village/village_armorer.json \
-	#data/minecraft/loot_tables/chests/village/village_butcher.json \
-	#data/minecraft/loot_tables/chests/village/village_cartographer.json \
-	#data/minecraft/loot_tables/chests/village/village_desert_house.json \
-	#data/minecraft/loot_tables/chests/village/village_fisher.json \
-	#data/minecraft/loot_tables/chests/village/village_fletcher.json \
-	#data/minecraft/loot_tables/chests/village/village_mason.json \
-	#data/minecraft/loot_tables/chests/village/village_plains_house.json \
-	#data/minecraft/loot_tables/chests/village/village_savanna_house.json \
-	#data/minecraft/loot_tables/chests/village/village_shepherd.json \
-	#data/minecraft/loot_tables/chests/village/village_snowy_house.json \
-	#data/minecraft/loot_tables/chests/village/village_taiga_house.json \
-	#data/minecraft/loot_tables/chests/village/village_tannery.json \
-	#data/minecraft/loot_tables/chests/village/village_temple.json \
-	#data/minecraft/loot_tables/chests/village/village_toolsmith.json \
-	#data/minecraft/loot_tables/chests/village/village_weaponsmith.json \
-	#data/minecraft/loot_tables/chests/woodland_mansion.json \
+	data/minecraft/loot_tables/example.json
 
 escapeend_FILES := $(DEFAULT_FILES) \
 	data/minecraft/tags/functions/tick-escape.json \
