@@ -23,7 +23,6 @@
         {%- elif entry.type == "itemstack" %}
         {
           "type": "minecraft:item",
-          "name": "minecraft:{{entry.item}}",
           "weight": {{entry.weight}},
           "functions": [
             {
@@ -34,7 +33,8 @@
                 "type": "minecraft:uniform"
               }
             }
-          ]
+          ],
+          "name": "minecraft:{{entry.item}}"
         }{{ "," if not loop.last }}
         {%- elif entry.type == "loot_table" %}
         {
@@ -42,6 +42,22 @@
           "weight": {{entry.weight}},
           "quality": {{ entry.quality if entry.quality is defined else 0 }},
           "name": "minecraft:{{entry.table}}"
+        }{{ "," if not loop.last }}
+        {%- elif entry.type == "empty" %}
+        {
+          "type": "minecraft:empty",
+          "weight": {{entry.weight}}
+        }{{ "," if not loop.last }}
+        {%- elif entry.type == "magicbook_random" %}
+        {
+          "type": "minecraft:item",
+          "weight": {{entry.weight}},
+          "functions": [
+            {
+              "function": "minecraft:enchant_randomly"
+            }
+          ],
+          "name": "minecraft:book"
         }{{ "," if not loop.last }}
         {%- elif entry.type == "explorer_map" %}
         {

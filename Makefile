@@ -259,6 +259,7 @@ data/minecraft/loot_tables/%.json: data/minecraft/loot_tables/%.json.yaml data/m
 	j2 data/minecraft/loot_tables/loot_table.j2 $< -o $@
 
 lootoverhaul_FILES := $(DEFAULT_FILES) \
+	data/minecraft/loot_tables/chests/desert_pyramid.json \
 	data/minecraft/loot_tables/chests/spawn_bonus_chest.json \
 	data/minecraft/loot_tables/subtables/music_disc.json \
 	data/minecraft/loot_tables/subtables/biome_log.json \
@@ -270,7 +271,6 @@ lootoverhaul_FILES := $(DEFAULT_FILES) \
 	#data/minecraft/loot_tables/chests/bastion_other.json \
 	#data/minecraft/loot_tables/chests/bastion_treasure.json \
 	#data/minecraft/loot_tables/chests/buried_treasure.json \
-	#data/minecraft/loot_tables/chests/desert_pyramid.json \
 	#data/minecraft/loot_tables/chests/end_city_treasure.json \
 	#data/minecraft/loot_tables/chests/igloo_chest.json \
 	#data/minecraft/loot_tables/chests/jungle_temple_dispenser.json \
