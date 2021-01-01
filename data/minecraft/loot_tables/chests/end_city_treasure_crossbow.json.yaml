@@ -1,0 +1,30 @@
+pools:
+  - rolls: { min: 2, max: 6 }
+    entries:
+      - { type: item, weight: 5,  min: 2, max: 7,   item: diamond }
+      - { type: item, weight: 10, min: 4, max: 8,   item: iron_ingot }
+      - { type: item, weight: 15, min: 2, max: 7,   item: gold_ingot }
+      - { type: item, weight: 2,  min: 2, max: 6,   item: emerald }
+      - { type: item, weight: 5,  min: 24, max: 36, item: firework_rocket,
+          nbt: "{Fireworks:{Flight:2,Explosions:[{Type:0,Flicker:0,Trail:1,Colors:[I;14188952]},{Type:1,Flicker:0,Trail:0,Colors:[I;12801229]}]}}"
+        }
+      - { type: item, weight: 5,  min: 1, max: 10,  item: beetroot_seeds }
+      - { type: item, weight: 3,                    item: saddle }
+      - { type: item, weight: 1,                    item: iron_horse_armor }
+      - { type: item, weight: 1,                    item: golden_horse_armor }
+      - { type: item, weight: 1,                    item: diamond_horse_armor }
+      - { type: item, weight: 3, enchant_lvl: { min: 20, max: 39 }, item: crossbow }
+      - { type: item, weight: 6, enchant_lvl: { min: 20, max: 39 }, item: diamond_sword }
+      - { type: item, weight: 3, enchant_lvl: { min: 20, max: 39 }, item: diamond_boots }
+      - { type: item, weight: 3, enchant_lvl: { min: 20, max: 39 }, item: diamond_chestplate }
+      - { type: item, weight: 3, enchant_lvl: { min: 20, max: 39 }, item: diamond_leggings }
+      - { type: item, weight: 3, enchant_lvl: { min: 20, max: 39 }, item: diamond_helmet }
+      - { type: item, weight: 3, enchant_lvl: { min: 20, max: 39 }, item: diamond_pickaxe }
+      - { type: item, weight: 3, enchant_lvl: { min: 20, max: 39 }, item: diamond_shovel }
+      - { type: item, weight: 3, enchant_lvl: { min: 20, max: 39 }, item: iron_sword }
+      - { type: item, weight: 3, enchant_lvl: { min: 20, max: 39 }, item: iron_boots }
+      - { type: item, weight: 3, enchant_lvl: { min: 20, max: 39 }, item: iron_chestplate }
+      - { type: item, weight: 3, enchant_lvl: { min: 20, max: 39 }, item: iron_leggings }
+      - { type: item, weight: 3, enchant_lvl: { min: 20, max: 39 }, item: iron_helmet }
+      - { type: item, weight: 3, enchant_lvl: { min: 20, max: 39 }, item: iron_pickaxe }
+      - { type: item, weight: 3, enchant_lvl: { min: 20, max: 39 }, item: iron_shovel }

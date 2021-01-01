@@ -1,0 +1,5 @@
+type: block
+pools:
+  - rolls: 1
+    entries:
+      - { type: crying_obsidian_drops }

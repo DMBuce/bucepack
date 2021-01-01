@@ -36,7 +36,7 @@
                 "max": {{entry.max}}.0,
                 "type": "minecraft:uniform"
               }
-            }{{ "," if entry.damage is defined or entry.count is defined or entry.enchant_lvl is defined or entry.enchant_rand is defined or entry.looting is defined }}
+            }{{ "," if entry.damage is defined or entry.count is defined or entry.enchant_lvl is defined or entry.enchant_rand is defined or entry.looting is defined or entry.nbt is defined }}
             {%- endif %}
             {%- if entry.damage is defined %}
             {
@@ -45,13 +45,13 @@
                 "min": {{entry.damage.min}},
                 "max": {{entry.damage.max}}
               }
-            }{{ "," if entry.count is defined or entry.enchant_lvl is defined or entry.enchant_rand is defined or entry.looting is defined }}
+            }{{ "," if entry.count is defined or entry.enchant_lvl is defined or entry.enchant_rand is defined or entry.looting is defined or entry.nbt is defined }}
             {%- endif %}
             {%- if entry.count is defined %}
             {
               "function": "minecraft:set_count",
               "count": {{entry.count}}
-            }{{ "," if entry.enchant_lvl is defined or entry.enchant_rand is defined or entry.looting is defined }}
+            }{{ "," if entry.enchant_lvl is defined or entry.enchant_rand is defined or entry.looting is defined or entry.nbt is defined }}
             {%- endif %}
             {%- if entry.enchant_lvl is defined %}
             {
@@ -66,7 +66,7 @@
               "levels": {{entry.enchant_lvl}},
               {%- endif %}
               "treasure": true
-            }{{ "," if entry.enchant_rand is defined or entry.looting is defined }}
+            }{{ "," if entry.enchant_rand is defined or entry.looting is defined or entry.nbt is defined }}
             {%- endif %}
             {%- if entry.enchant_rand is defined %}
             {
@@ -78,7 +78,7 @@
               {%- endfor %}
               ]
               {%- endif %}
-            }{{ "," if entry.looting is defined }}
+            }{{ "," if entry.looting is defined or entry.nbt is defined }}
             {%- endif %}
             {%- if entry.looting is defined %}
             {
@@ -87,6 +87,12 @@
                 "min": {{entry.looting.min}},
                 "max": {{entry.looting.max}}
               }
+            }{{ "," if entry.nbt is defined }}
+            {%- endif %}
+            {%- if entry.nbt is defined %}
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{{entry.nbt}}"
             }
             {%- endif %}
           ],
@@ -245,6 +251,62 @@
                   ]
                 }
               }
+            }
+          ]
+        }{{ "," if not loop.last }}
+        {%- elif entry.type == "crying_obsidian_drops" %}
+        {#- just hardcode everything #}
+        {
+          "type": "minecraft:alternatives",
+          "children": [
+            {
+              "type": "minecraft:item",
+              "conditions": [
+                {
+                  "condition": "minecraft:match_tool",
+                  "predicate": {
+                    "enchantments": [
+                      {
+                        "enchantment": "minecraft:silk_touch",
+                        "levels": {
+                          "min": 1
+                        }
+                      }
+                    ]
+                  }
+                }
+              ],
+              "name": "minecraft:crying_obsidian"
+            },
+            {
+              "type": "minecraft:alternatives",
+              "conditions": [
+                {
+                  "condition": "minecraft:survives_explosion"
+                }
+              ],
+              "children": [
+                {
+                  "type": "minecraft:item",
+                  "conditions": [
+                    {
+                      "condition": "minecraft:table_bonus",
+                      "enchantment": "minecraft:fortune",
+                      "chances": [
+                        0.15,
+                        0.25,
+                        0.5,
+                        1.0
+                      ]
+                    }
+                  ],
+                  "name": "minecraft:lapis_lazuli"
+                },
+                {
+                  "type": "minecraft:item",
+                  "name": "minecraft:crying_obsidian"
+                }
+              ]
             }
           ]
         }{{ "," if not loop.last }}
