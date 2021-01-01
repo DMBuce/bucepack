@@ -2,11 +2,13 @@ pools:
   - rolls: { min: 2, max: 4 }
     entries:
       - { type: item, weight: 10, min: 3, max: 12, item: cobblestone }
-      - { type: loot_table, weight: 25, table: subtables/music_disc }
+      - { type: tag,  weight: 3,  expand: true,    tag:  music_discs }
+      - { type: tag,  weight: 10, expand: true, tag: saplings }
+      - { type: loot_table, weight: 25, table: subtables/lib_book }
+      - { type: explorer_map, weight: 10, structure: swamp_hut, decor: mansion, display: "Swamp Explorer Map", skipchunks: false }
       - { type: empty, weight: 25 }
   - rolls: 1
     entries:
-      - { type: explorer_map, weight: 10, structure: swamp_hut, decor: mansion, display: "Swamp Explorer Map", skipchunks: false }
       - { type: item, weight: 1, enchant_lvl: 30, item: book }
       - { type: item, weight: 1, enchant_rand: [], item: book }
       - type: suspicious_stew

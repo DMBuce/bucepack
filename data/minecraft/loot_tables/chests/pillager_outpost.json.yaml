@@ -1,20 +1,21 @@
 pools:
   - rolls: { min: 0, max: 1 }
     entries:
-      - { type: item, weight: 1, item: crossbow }
+      - { type: item, weight: 1, item: crossbow, enchant_lvl: { min: 15, max: 20 } }
   - rolls: { min: 2, max: 3 }
     entries:
-      - { type: item, weight: 7, min: 3, max: 5, item: wheat }
-      - { type: item, weight: 5, min: 2, max: 5, item: potato }
-      - { type: item, weight: 5, min: 3, max: 5, item: carrot }
+      - { type: item, weight: 7, count: 16, item: egg }
+      - { type: tag,  weight: 10, expand: true, tag: saplings }
   - rolls: { min: 1, max: 3 }
     entries:
-      - { type: item, weight: 1, min: 2, max: 3, item: dark_oak_log }
+      - { type: item, weight: 1, min: 8, max: 16, item: dark_oak_log }
   - rolls: { min: 2, max: 3 }
     entries:
-      - { type: item, weight: 7,                 item: experience_bottle }
+      - { type: explorer_map, weight: 7, structure: swamp_hut,
+          decor: mansion, display: "Swamp Explorer Map", skipchunks: false
+        }
       - { type: item, weight: 4, min: 1, max: 6, item: string }
       - { type: item, weight: 4, min: 2, max: 7, item: arrow }
       - { type: item, weight: 3, min: 1, max: 3, item: tripwire_hook }
       - { type: item, weight: 3, min: 1, max: 3, item: iron_ingot }
-      - { type: item, weight: 1, enchant_rand: [], item: book }
+      - { type: loot_table, weight: 1, table: subtables/ench_book }

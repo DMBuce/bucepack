@@ -2,6 +2,6 @@ pools:
   - rolls: { min: 1, max: 5 }
     entries:
       - { type: item, weight: 2, min: 1, max: 3, item: iron_ingot }
-      - { type: item, weight: 4, min: 1, max: 4, item: bread }
-      - { type: item, weight: 1,                 item: iron_helmet }
+      - { type: item, weight: 4, min: 1, max: 4, item: pumpkin_pie }
+      - { type: item, weight: 1,                 item: chainmail_helmet, enchant_lvl: { min: 15, max: 25 } }
       - { type: item, weight: 1,                 item: emerald }
