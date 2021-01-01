@@ -1,0 +1,5 @@
+pools:
+  - rolls: 1
+    entries:
+      - { type: item, weight: 50, enchant_lvl: 30,  item: book }
+      - { type: item, weight: 50, enchant_rand: [], item: book }

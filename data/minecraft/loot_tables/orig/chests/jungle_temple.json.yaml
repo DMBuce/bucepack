@@ -1,0 +1,15 @@
+pools:
+  - rolls: { min: 2, max: 6 }
+    entries:
+      - { type: item, weight: 3,  min: 1, max: 3, item: diamond }
+      - { type: item, weight: 10, min: 1, max: 5, item: iron_ingot }
+      - { type: item, weight: 15, min: 2, max: 7, item: gold_ingot }
+      - { type: item, weight: 15, min: 1, max: 3, item: bamboo }
+      - { type: item, weight: 2,  min: 1, max: 3, item: emerald }
+      - { type: item, weight: 20, min: 4, max: 6, item: bone }
+      - { type: item, weight: 16, min: 3, max: 7, item: rotten_flesh }
+      - { type: item, weight: 3,                  item: saddle }
+      - { type: item, weight: 1,                  item: iron_horse_armor }
+      - { type: item, weight: 1,                  item: golden_horse_armor }
+      - { type: item, weight: 1,                  item: diamond_horse_armor }
+      - { type: item, weight: 1, enchant_lvl: 30, item: book }

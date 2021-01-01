@@ -1,0 +1,11 @@
+pools:
+  - rolls: { min: 1, max: 5 }
+    entries:
+      - { type: item, weight: 1, min: 1, max: 3, item: clay_ball }
+      - { type: item, weight: 1,                 item: flower_pot }
+      - { type: item, weight: 2,                 item: stone }
+      - { type: item, weight: 2,                 item: stone_bricks }
+      - { type: item, weight: 4, min: 1, max: 4, item: bread }
+      - { type: item, weight: 1,                 item: yellow_dye }
+      - { type: item, weight: 1,                 item: smooth_stone }
+      - { type: item, weight: 1,                 item: emerald }

@@ -1,0 +1,28 @@
+type: fishing
+pools:
+  - rolls: 1.0
+    entries:
+      - { type: item, weight: 17, item: lily_pad }
+      - { type: item, weight: 10, item: leather_boots, damage: { min: 0.0, max: 0.9 } }
+      - { type: item, weight: 10, item: leather }
+      - { type: item, weight: 10, item: bone }
+      - { type: potion, weight: 10, effect: water }
+      - { type: item, weight: 5,  item: string }
+      - { type: item, weight: 2,  item: fishing_rod, damage: { min: 0.0, max: 0.9 } }
+      - { type: item, weight: 10, item: bowl }
+      - { type: item, weight: 5,  item: stick }
+      - { type: item, weight: 1,  item: ink_sac, count: 10 }
+      - { type: item, weight: 10, item: tripwire_hook }
+      - { type: item, weight: 10, item: rotten_flesh }
+      - type: item_biome
+        weight: 10
+        item: bamboo
+        biomes: [
+          jungle,
+          jungle_hills,
+          jungle_edge,
+          bamboo_jungle,
+          modified_jungle,
+          modified_jungle_edge,
+          bamboo_jungle_hills
+        ]

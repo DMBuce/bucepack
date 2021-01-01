@@ -1,0 +1,15 @@
+pools:
+  - rolls: { min: 3, max: 8 }
+    entries:
+      - { type: item, weight: 1,  min: 1, max: 5, item: iron_nugget }
+      - { type: item, weight: 2,                  item: fern }
+      - { type: item, weight: 2,                  item: large_fern }
+      - { type: item, weight: 10, min: 1, max: 7, item: potato }
+      - { type: item, weight: 5,  min: 1, max: 7, item: sweet_berries }
+      - { type: item, weight: 10, min: 1, max: 4, item: bread }
+      - { type: item, weight: 5,  min: 1, max: 5, item: pumpkin_seeds }
+      - { type: item, weight: 1,                  item: pumpkin_pie }
+      - { type: item, weight: 2,  min: 1, max: 4, item: emerald }
+      - { type: item, weight: 5,  min: 1, max: 5, item: spruce_sapling }
+      - { type: item, weight: 1,                  item: spruce_sign }
+      - { type: item, weight: 10, min: 1, max: 5, item: spruce_log }

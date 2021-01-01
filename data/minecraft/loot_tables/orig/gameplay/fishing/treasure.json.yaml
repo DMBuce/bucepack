@@ -1,0 +1,18 @@
+type: fishing
+pools:
+  - rolls: 1.0
+    entries:
+      - { type: item, weight: 1, item: name_tag }
+      - { type: item, weight: 1, item: saddle }
+      - type: item
+        weight: 1
+        item: bow
+        damage: { min: 0.0, max: 0.25 }
+        enchant_lvl: 30
+      - type: item
+        weight: 1
+        item: fishing_rod
+        damage: { min: 0.0, max: 0.25 }
+        enchant_lvl: 30
+      - { type: item, weight: 1, item: book, enchant_lvl: 30 }
+      - { type: item, weight: 1, item: nautilus_shell }
