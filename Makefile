@@ -301,6 +301,10 @@ lootoverhaul_FILES := $(DEFAULT_FILES) \
 	data/minecraft/loot_tables/chests/village/village_toolsmith.json \
 	data/minecraft/loot_tables/chests/village/village_weaponsmith.json \
 	data/minecraft/loot_tables/chests/woodland_mansion.json \
+	data/minecraft/loot_tables/gameplay/piglin_bartering.json \
+	data/minecraft/loot_tables/gameplay/fishing/fish.json \
+	data/minecraft/loot_tables/gameplay/fishing/junk.json \
+	data/minecraft/loot_tables/gameplay/fishing/treasure.json \
 	data/minecraft/loot_tables/subtables/music_disc.json \
 	data/minecraft/loot_tables/subtables/ench_book.json \
 	data/minecraft/loot_tables/subtables/lib_book.json \

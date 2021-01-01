@@ -1,5 +1,5 @@
 {
-  "type": "minecraft:chest",
+  "type": "minecraft:{{ type if type is defined else "chest" }}",
   "pools": [
     {%- for pool in pools %}
     {
@@ -20,8 +20,15 @@
           {%- if entry.weight != 1 %}
           "weight": {{entry.weight}},
           {%- endif %}
-          {%- if entry.min is defined and entry.max is defined %}
+          {%- if entry.min is defined 
+              or entry.damage is defined
+              or entry.count is defined
+              or entry.enchant_lvl is defined
+              or entry.enchant_rand is defined
+              or entry.looting is defined
+          %}
           "functions": [
+            {%- if entry.min is defined %}
             {
               "function": "minecraft:set_count",
               "count": {
@@ -29,8 +36,43 @@
                 "max": {{entry.max}}.0,
                 "type": "minecraft:uniform"
               }
-            }{{- "," if entry.looting is mapping }}
-            {%- if entry.looting is mapping %}
+            }{{ "," if entry.damage is defined or entry.count is defined or entry.enchant_lvl is defined or entry.enchant_rand is defined or entry.looting is defined }}
+            {%- endif %}
+            {%- if entry.damage is defined %}
+            {
+              "function": "minecraft:set_damage",
+              "damage": {
+                "min": {{entry.damage.min}},
+                "max": {{entry.damage.max}}
+              }
+            }{{ "," if entry.count is defined or entry.enchant_lvl is defined or entry.enchant_rand is defined or entry.looting is defined }}
+            {%- endif %}
+            {%- if entry.count is defined %}
+            {
+              "function": "minecraft:set_count",
+              "count": {{entry.count}}
+            }{{ "," if entry.enchant_lvl is defined or entry.enchant_rand is defined or entry.looting is defined }}
+            {%- endif %}
+            {%- if entry.enchant_lvl is defined %}
+            {
+              "function": "minecraft:enchant_with_levels",
+              "levels": {{entry.enchant_lvl}},
+              "treasure": true
+            }{{ "," if entry.enchant_rand is defined or entry.looting is defined }}
+            {%- endif %}
+            {%- if entry.enchant_rand is defined %}
+            {
+              "function": "minecraft:enchant_randomly"
+              {%- if entry.enchant_rand | length > 0 %},
+              "enchantments": [
+              {%- for enchant in entry.enchant_rand %}
+                "minecraft:{{enchant}}"{{ "," if not loop.last }}
+              {%- endfor %}
+              ]
+              {%- endif %}
+            }{{ "," if entry.looting is defined }}
+            {%- endif %}
+            {%- if entry.looting is defined %}
             {
               "function": "minecraft:looting_enchant",
               "count": {
@@ -64,6 +106,20 @@
           {%- if entry.weight != 1 %}
           "weight": {{entry.weight}}
           {%- endif %}
+        }{{ "," if not loop.last }}
+        {%- elif entry.type == "potion" %}
+        {
+          "type": "minecraft:item",
+          {%- if entry.weight != 1 %}
+          "weight": {{entry.weight}},
+          {%- endif %}
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Potion:\"minecraft:{{entry.effect}}\"}"
+            }
+          ],
+          "name": "minecraft:{{ entry.item if entry.item is defined else "potion" }}"
         }{{ "," if not loop.last }}
         {%- elif entry.type == "magicbook_random" %}
         {
@@ -103,28 +159,31 @@
         {%- elif entry.type == "explorer_map" %}
         {
           "type": "minecraft:item",
-          "name": "minecraft:map",
           {%- if entry.weight != 1 %}
           "weight": {{entry.weight}},
           {%- endif %}
           "functions": [
             {
               "function": "minecraft:exploration_map",
+              {%- if entry.structure is defined %}
               "destination": "{{entry.structure}}",
+              {%- endif %}
               "decoration": "{{entry.decor}}",
               "zoom": 1,
               "skip_existing_chunks": {{ entry.skipchunks | lower }}
-            },
+            }
+            {%- if entry.display is defined %},
             {
               "function": "minecraft:set_name",
               "name": "{{entry.display}}"
             }
-          ]
+            {%- endif %}
+          ],
+          "name": "minecraft:map"
         }{{ "," if not loop.last }}
         {%- elif entry.type == "suspicious_stew" %}
         {
           "type": "minecraft:item",
-          "name": "minecraft:suspicious_stew",
           {%- if entry.weight != 1 %}
           "weight": {{entry.weight}},
           {%- endif %}
@@ -143,15 +202,13 @@
                 {%- endfor %}
               ]
             }
-          ]
+          ],
+          "name": "minecraft:suspicious_stew"
         }{{ "," if not loop.last }}
         {%- elif entry.type == "item_biome" %}
         {
           "type": "minecraft:item",
-          "name": "minecraft:{{entry.item}}",
-          {%- if entry.weight != 1 %}
-          "weight": {{entry.weight}},
-          {%- endif %}
+          {%- if entry.min is defined %}
           "functions": [
             {
               "function": "minecraft:set_count",
@@ -162,6 +219,7 @@
               }
             }
           ],
+          {%- endif %}
           "conditions": [
             {
               "condition": "minecraft:alternative",
@@ -176,7 +234,11 @@
                 {%- endfor %}
               ]
             }
-          ]
+          ],
+          {%- if entry.weight != 1 %}
+          "weight": {{entry.weight}},
+          {%- endif %}
+          "name": "minecraft:{{entry.item}}"
         }{{ "," if not loop.last }}
         {%- elif entry.type == "item_unused" %}
         {
