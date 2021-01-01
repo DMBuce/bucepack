@@ -1,24 +1,10 @@
 pools:
   - rolls: 1
     entries:
-      - { type: item, weight: 1, item: stone_axe }
-      - { type: item, weight: 3, item: wooden_axe }
+      - { type: item, weight: 100,  item: cobblestone, min: 3, max: 5 }
   - rolls: 1
     entries:
-      - { type: item, weight: 1, item: stone_pickaxe }
-      - { type: item, weight: 3, item: wooden_pickaxe }
-  - rolls: 3
+      - { type: item, weight: 100,  item: bread, min: 2, max: 3 }
+  - rolls: 1
     entries:
-      - { type: item, weight: 5, min: 1, max: 2, item: apple }
-      - { type: item, weight: 3, min: 1, max: 2, item: bread }
-      - { type: item, weight: 3, min: 1, max: 2, item: salmon }
-  - rolls: 4
-    entries:
-      - { type: item, weight: 10, min: 1, max: 12, item: stick }
-      - { type: item, weight: 10, min: 1, max: 12, item: oak_planks }
-      - { type: item, weight: 3,  min: 1, max: 3,  item: oak_log }
-      - { type: item, weight: 3,  min: 1, max: 3,  item: spruce_log }
-      - { type: item, weight: 3,  min: 1, max: 3,  item: birch_log }
-      - { type: item, weight: 3,  min: 1, max: 3,  item: jungle_log }
-      - { type: item, weight: 3,  min: 1, max: 3,  item: acacia_log }
-      - { type: item, weight: 3,  min: 1, max: 3,  item: dark_oak_log }
+      - { type: loot_table, weight: 100, table: subtables/biome_log }

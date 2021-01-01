@@ -1,4 +1,12 @@
 pools:
-  - rolls: { min: 1, max: 2 }
+  - rolls: { min: 2, max: 4 }
     entries:
       - { type: item, weight: 30, min: 2, max: 7, item: arrow }
+      - { type: item, weight: 30, min: 2, max: 7, item: tipped_arrow,
+          nbt: "{Potion:\"minecraft:poison\"}"
+        }
+      - { type: item, weight: 30, min: 2, max: 7, item: tipped_arrow,
+          nbt: "{Potion:\"minecraft:weakness\"}"
+        }
+      - { type: potion, weight: 30, item: splash_potion, effect: poison }
+      - { type: potion, weight: 30, item: splash_potion, effect: instant_damage }
