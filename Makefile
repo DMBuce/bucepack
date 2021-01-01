@@ -305,10 +305,10 @@ lootoverhaul_FILES := $(DEFAULT_FILES) \
 	data/minecraft/loot_tables/gameplay/fishing/fish.json \
 	data/minecraft/loot_tables/gameplay/fishing/junk.json \
 	data/minecraft/loot_tables/gameplay/fishing/treasure.json \
-	data/minecraft/loot_tables/subtables/music_disc.json \
+	data/minecraft/loot_tables/subtables/biome_log.json \
 	data/minecraft/loot_tables/subtables/ench_book.json \
 	data/minecraft/loot_tables/subtables/lib_book.json \
-	data/minecraft/loot_tables/subtables/biome_log.json \
+	data/minecraft/loot_tables/subtables/music_disc.json \
 	data/minecraft/loot_tables/subtables/treasure_seed.json \
 	data/minecraft/loot_tables/example.json
 
