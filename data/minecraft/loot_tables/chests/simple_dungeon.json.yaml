@@ -10,7 +10,7 @@ pools:
       - { type: item, weight: 10, item: golden_horse_armor }
       - { type: item, weight: 15, item: iron_horse_armor }
       - { type: item, weight: 5,  item: diamond_horse_armor }
-      - { type: magicbook_random, weight: 10 }
+      - { type: item, weight: 10, item: book, enchant_rand: [] }
   - rolls: { min: 1, max: 4 }
     entries:
       - { type: item, weight: 10, min: 1, max: 4, item: iron_ingot }

@@ -10,7 +10,7 @@ pools:
       - { type: item, weight: 10, item: chainmail_chestplate }
       - { type: item, weight: 15, item: diamond_hoe }
       - { type: item, weight: 5,  item: diamond_chestplate }
-      - { type: magicbook_random, weight: 10 }
+      - { type: item, weight: 10, enchant_rand: [], item: book }
   - rolls: { min: 1, max: 4 }
     entries:
       - { type: item, weight: 10, min: 1, max: 4, item: iron_ingot }

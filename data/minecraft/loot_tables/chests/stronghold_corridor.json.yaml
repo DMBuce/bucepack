@@ -19,4 +19,4 @@ pools:
       - { type: item, weight: 1,                  item: iron_horse_armor }
       - { type: item, weight: 1,                  item: golden_horse_armor }
       - { type: item, weight: 1,                  item: diamond_horse_armor }
-      - { type: magicbook_lvl, weight: 1, level: 30 }
+      - { type: item, weight: 1, enchant_lvl: 30, item: book }

@@ -12,7 +12,7 @@ pools:
       - { type: item, weight: 15,                 item: iron_horse_armor }
       - { type: item, weight: 10,                 item: golden_horse_armor }
       - { type: item, weight: 5,                  item: diamond_horse_armor }
-      - { type: magicbook_random, weight: 20 }
+      - { type: item, weight: 20, enchant_rand: [], item: book }
       - { type: item, weight: 20,                 item: golden_apple }
       - { type: item, weight: 2,                  item: enchanted_golden_apple }
       - { type: empty, weight: 15 }

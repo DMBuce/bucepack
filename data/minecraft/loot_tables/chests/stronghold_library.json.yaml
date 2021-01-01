@@ -5,4 +5,4 @@ pools:
       - { type: item, weight: 20, min: 2, max: 7, item: paper }
       - { type: item, weight: 1,                  item: map }
       - { type: item, weight: 1,                  item: compass }
-      - { type: magicbook_lvl, weight: 10, level: 30 }
+      - { type: item, weight: 10, enchant_lvl: 30, item: book }

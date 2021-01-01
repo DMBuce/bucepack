@@ -1,12 +1,12 @@
 pools:
   - rolls: 1
     entries:
-      - { type: magicbook_lvl, weight: 50, level: 30 }
-      - type: magicbook_random
-        weight: 50
-        enchants:
-          - mending
-          - soul_speed
-          - frost_walker
-          - vanishing_curse
-          - binding_curse
+      - { type: item, weight: 50, item: book, enchant_lvl: 30, }
+      - { type: item, weight: 50, item: book, enchant_rand: [
+            mending,
+            soul_speed,
+            frost_walker,
+            vanishing_curse,
+            binding_curse
+          ]
+        }

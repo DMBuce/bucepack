@@ -56,7 +56,15 @@
             {%- if entry.enchant_lvl is defined %}
             {
               "function": "minecraft:enchant_with_levels",
+              {%- if entry.enchant_lvl is mapping %}
+              "levels": {
+                "min": {{entry.enchant_lvl.min}}.0,
+                "max": {{entry.enchant_lvl.max}}.0,
+                "type": "minecraft:uniform"
+              },
+              {%- else %}
               "levels": {{entry.enchant_lvl}},
+              {%- endif %}
               "treasure": true
             }{{ "," if entry.enchant_rand is defined or entry.looting is defined }}
             {%- endif %}
@@ -120,41 +128,6 @@
             }
           ],
           "name": "minecraft:{{ entry.item if entry.item is defined else "potion" }}"
-        }{{ "," if not loop.last }}
-        {%- elif entry.type == "magicbook_random" %}
-        {
-          "type": "minecraft:item",
-          {%- if entry.weight != 1 %}
-          "weight": {{entry.weight}},
-          {%- endif %}
-          "functions": [
-            {
-              "function": "minecraft:enchant_randomly"
-              {%- if entry.enchants is defined %},
-              "enchantments": [
-                {%- for enchant in entry.enchants %}
-                "minecraft:{{enchant}}"{{ "," if not loop.last }}
-                {%- endfor %}
-              ]
-              {%- endif %}
-            }
-          ],
-          "name": "minecraft:book"
-        }{{ "," if not loop.last }}
-        {%- elif entry.type == "magicbook_lvl" %}
-        {
-          "type": "minecraft:item",
-          {%- if entry.weight != 1 %}
-          "weight": {{entry.weight}},
-          {%- endif %}
-          "functions": [
-            {
-              "function": "minecraft:enchant_with_levels",
-              "levels": {{entry.level}},
-              "treasure": true
-            }
-          ],
-          "name": "minecraft:book"
         }{{ "," if not loop.last }}
         {%- elif entry.type == "explorer_map" %}
         {

@@ -4,7 +4,7 @@ pools:
       - { type: item, weight: 20, item: golden_apple }
       - { type: item, weight: 1,  item: enchanted_golden_apple }
       - { type: item, weight: 30, item: name_tag }
-      - { type: magicbook_random, weight: 10 }
+      - { type: item, weight: 10, enchant_rand: [], item: book }
       - { type: item, weight: 5,  item: iron_pickaxe }
       - { type: empty, weight: 5 }
   - rolls: { min: 2, max: 4 }
