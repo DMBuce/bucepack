@@ -7,7 +7,10 @@ DATAPACKFILES = climbable.zip speedypaths.zip aggrobastions.zip waterprooftech.z
 PACKFILES = $(RESOURCEPACKFILES) $(DATAPACKFILES)
 MCDIR     = $(HOME)/.minecraft
 
-CLEAN_TARGETS := $(PACKFILES) pack.mcmeta pack.png test.zip
+CLEAN_TARGETS := $(PACKFILES) pack.mcmeta pack.png test.zip \
+	data/minecraft/loot_tables/*.json \
+	data/minecraft/loot_tables/*/*.json \
+	data/minecraft/loot_tables/*/*/*.json
 
 # needed by all texture pack targets
 DEFAULT = CONTRIBUTORS.txt LICENSE.txt
