@@ -1,12 +1,14 @@
 pools:
   - rolls: 1
     entries:
-      - { type: item, weight: 1,                  item: heart_of_the_sea }
+      - { type: item, weight: 9,                  item: heart_of_the_sea }
+      - { type: item, weight: 1,                  item: trident }
   - rolls: { min: 5, max: 8 }
     entries:
-      - { type: item, weight: 20, min: 1, max: 4, item: iron_ingot }
+      - { type: item, weight: 15, min: 1, max: 4, item: iron_ingot }
       - { type: item, weight: 10, min: 1, max: 4, item: gold_ingot }
       - { type: item, weight: 5,  min: 1, max: 2, item: tnt }
+      - { type: tag,  weight: 5,  expand: true,   tag:  music_discs }
   - rolls: { min: 1, max: 3 }
     entries:
       - { type: item, weight: 5,  min: 4, max: 8, item: emerald }
@@ -14,8 +16,8 @@ pools:
       - { type: item, weight: 5,  min: 1, max: 5, item: prismarine_crystals }
   - rolls: { min: 0, max: 1 }
     entries:
-      - { type: item, weight: 1,                  item: leather_chestplate }
-      - { type: item, weight: 1,                  item: iron_sword }
+      - { type: item, weight: 1, item: leather_helmet, enchant_rand: [ "respiration", "aqua_affinity" ] }
+      - { type: item, weight: 1, item: leather_boots, enchant_rand: [ "depth_strider" ] }
   - rolls: 2
     entries:
       - { type: item, weight: 1,  min: 2, max: 4, item: cooked_cod }
