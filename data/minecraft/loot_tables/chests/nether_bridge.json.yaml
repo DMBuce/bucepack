@@ -4,12 +4,24 @@ pools:
       - { type: item, weight: 5,  min: 1, max: 3, item: diamond }
       - { type: item, weight: 5,  min: 1, max: 5, item: iron_ingot }
       - { type: item, weight: 15, min: 1, max: 3, item: gold_ingot }
-      - { type: item, weight: 5,                  item: golden_sword }
-      - { type: item, weight: 5,                  item: golden_chestplate }
+      - { type: item, weight: 2, item: golden_sword, enchant_lvl: { min: 25, max: 30 } }
+      - { type: item, weight: 2, item: golden_helmet, enchant_lvl: { min: 25, max: 30 } }
+      - { type: item, weight: 2, item: golden_chestplate, enchant_lvl: { min: 25, max: 30 } }
+      - { type: item, weight: 2, item: golden_leggings, enchant_lvl: { min: 25, max: 30 } }
+      - { type: item, weight: 2, item: golden_boots, enchant_lvl: { min: 25, max: 30 } }
       - { type: item, weight: 5,                  item: flint_and_steel }
       - { type: item, weight: 5,  min: 3, max: 7, item: nether_wart }
-      - { type: item, weight: 10,                 item: saddle }
-      - { type: item, weight: 8,                  item: golden_horse_armor }
+      - { type: item, weight: 5,                  item: string }
+      - { type: item, weight: 5,                  item: leather }
+      - { type: item, weight: 8, item: book, enchant_rand: [
+            mending,
+            soul_speed,
+            frost_walker,
+            vanishing_curse,
+            binding_curse
+          ]
+        }
       - { type: item, weight: 5,                  item: iron_horse_armor }
-      - { type: item, weight: 3,                  item: diamond_horse_armor }
+      - { type: explorer_map, weight: 5, structure: bastion_remnant, decor: target_point, display: "Nether Explorer Map", skipchunks: true }
+      - { type: item, weight: 3, min: 2, max: 3,  item: diamonds }
       - { type: item, weight: 2, min: 2, max: 4,  item: obsidian }

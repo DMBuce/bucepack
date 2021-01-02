@@ -3,19 +3,14 @@ pools:
     entries:
       - type: item
         weight: 15
-        item: diamond_shovel
+        item: diamond_pickaxe
         damage: { min: 0.15, max: 0.8 }
         enchant_rand: []
-      - type: item
-        weight: 12
-        count: 1
-        item: diamond_pickaxe
-        damage: { min: 0.15, max: 0.95 }
-        enchant_rand: []
+      - { type: item, weight: 12, count: 3,        item: diamond }
       - { type: item, weight: 8,  count: 1,        item: netherite_scrap }
       - { type: item, weight: 12, count: 1,        item: ancient_debris }
       - { type: item, weight: 5,  count: 2,        item: ancient_debris }
-      - { type: item, weight: 12, count: 1,        item: saddle }
+      - { type: tag,  weight: 12, expand: true,    tag:  music_discs }
       - { type: item, weight: 16, min: 2, max: 4,  item: gold_block }
       - { type: item, weight: 10, min: 8, max: 17, item: golden_carrot }
       - { type: item, weight: 10, count: 1,        item: golden_apple }

@@ -1,21 +1,26 @@
 pools:
   - rolls: 1
     entries:
-      - { type: item, weight: 6, count: 1, item: diamond_pickaxe, enchant_rand: [] }
-      - { type: item, weight: 6, count: 1, item: diamond_shovel }
+      - { type: item, weight: 12, min: 2, max: 3, item: diamond_shovel }
       - type: item
         weight: 6
         item: crossbow
         damage: { min: 0.1, max: 0.9 }
-        enchant_rand: []
+        enchant_lvl: { min: 25, max: 30 }
       - { type: item, weight: 12, count: 1,         item: ancient_debris }
       - { type: item, weight: 4,  count: 1,         item: netherite_scrap }
       - { type: item, weight: 10, min: 10, max: 22, item: spectral_arrow }
-      - { type: item, weight: 9,  count: 1,         item: piglin_banner_pattern }
-      - { type: item, weight: 5,  count: 1,         item: music_disc_pigstep }
+      - { type: tag,  weight: 14, expand: true,     tag:  music_discs }
       - { type: item, weight: 12, min: 6,  max: 17, item: golden_carrot }
       - { type: item, weight: 9,  count: 1,         item: golden_apple }
-      - { type: item, weight: 10, item: book, enchant_rand: [ "soul_speed" ] }
+      - { type: item, weight: 10, item: book, enchant_rand: [
+            mending,
+            soul_speed,
+            frost_walker,
+            vanishing_curse,
+            binding_curse
+          ]
+        }
   - rolls: 2
     entries:
       - type: item
@@ -29,17 +34,23 @@ pools:
         weight: 1
         count: 1
         item: golden_boots
-        enchant_rand: [ "soul_speed" ]
+        enchant_rand: [ 
+            mending,
+            soul_speed,
+            frost_walker,
+            vanishing_curse,
+            binding_curse
+        ]
       - { type: item, weight: 1, count: 1,       item: golden_axe, enchant_rand: [] }
       - { type: item, weight: 2, count: 1,       item: gold_block }
-      - { type: item, weight: 1, count: 1,       item: crossbow }
+      - { type: item, weight: 1, count: 1,       item: crossbow, enchant_lvl: { min: 25, max: 30 } }
       - { type: item, weight: 2, min: 1, max: 6, item: gold_ingot }
       - { type: item, weight: 2, min: 1, max: 6, item: iron_ingot }
-      - { type: item, weight: 1, count: 1,       item: golden_sword }
-      - { type: item, weight: 1, count: 1,       item: golden_chestplate }
-      - { type: item, weight: 1, count: 1,       item: golden_helmet }
-      - { type: item, weight: 1, count: 1,       item: golden_leggings }
-      - { type: item, weight: 1, count: 1,       item: golden_boots }
+      - { type: item, weight: 1, count: 1,       item: golden_sword, enchant_lvl: {min: 25, max: 30 } }
+      - { type: item, weight: 1, count: 1,       item: golden_chestplate, enchant_lvl: {min: 25, max: 30 } }
+      - { type: item, weight: 1, count: 1,       item: golden_helmet, enchant_lvl: {min: 25, max: 30 } }
+      - { type: item, weight: 1, count: 1,       item: golden_leggings, enchant_lvl: {min: 25, max: 30 } }
+      - { type: item, weight: 1, count: 1,       item: golden_boots, enchant_lvl: {min: 25, max: 30 } }
       - { type: item, weight: 2, min: 1, max: 5, item: crying_obsidian }
   - rolls: { min: 3, max: 4 }
     entries:

@@ -11,6 +11,14 @@ pools:
     entries:
       - { type: item, weight: 1, enchant_lvl: 30, item: book }
       - { type: item, weight: 1, enchant_rand: [], item: book }
+      - { type: item, weight: 50, item: book, enchant_rand: [
+            mending,
+            soul_speed,
+            frost_walker,
+            vanishing_curse,
+            binding_curse
+          ]
+        }
       - type: suspicious_stew
         weight: 10
         effects:

@@ -3,7 +3,14 @@ pools:
   - rolls: 1
     entries:
       - { type: item, weight: 5, enchant_rand: [ "soul_speed" ], item: book }
-      - { type: item, weight: 8, enchant_rand: [ "soul_speed" ], item: iron_boots }
+      - { type: item, weight: 8, item: iron_boots, enchant_rand: [
+            mending,
+            soul_speed,
+            frost_walker,
+            vanishing_curse,
+            binding_curse
+          ]
+        }
       - { type: potion, weight: 8,  effect: fire_resistance }
       - { type: potion, weight: 8,  effect: fire_resistance, item: splash_potion }
       - { type: potion, weight: 10, effect: water }

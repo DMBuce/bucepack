@@ -15,7 +15,7 @@ pools:
       - { type: item, weight: 1, count: 1,         item: gold_block }
       - { type: item, weight: 1, min: 4,  max: 9,  item: gold_ingot }
       - { type: item, weight: 1, min: 4,  max: 9,  item: iron_ingot }
-      - { type: item, weight: 1, count: 1,         item: golden_sword }
+      - { type: item, weight: 1, count: 1,         item: golden_sword, enchant_lvl: { min: 25, max: 30 } }
       - type: item
         weight: 1
         count: 1

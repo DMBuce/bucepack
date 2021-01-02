@@ -3,14 +3,14 @@ pools:
   - rolls: 1.0
     entries:
       - { type: item, weight: 17, item: lily_pad }
-      - { type: item, weight: 6, item: leather_boots, damage: { min: 0.0, max: 0.9 } }
+      - { type: item, weight: 1, item: leather_boots, damage: { min: 0.0, max: 0.9 } }
       - { type: item, weight: 10, item: leather }
       - { type: item, weight: 10, item: bone }
       - { type: item, weight: 10, item: glass_bottle }
-      - { type: item, weight: 7,  item: string }
-      - { type: item, weight: 2,  item: fishing_rod, damage: { min: 0.0, max: 0.9 } }
+      - { type: item, weight: 10,  item: string }
+      - { type: item, weight: 1,  item: fishing_rod, damage: { min: 0.0, max: 0.9 } }
       - { type: item, weight: 10, item: bowl }
-      - { type: item, weight: 7,  item: stick }
+      - { type: item, weight: 10,  item: stick }
       - { type: item, weight: 1,  item: ink_sac, count: 10 }
       - { type: item, weight: 10, item: tripwire_hook }
       - { type: item, weight: 10, item: rotten_flesh }
