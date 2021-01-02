@@ -7,5 +7,5 @@ pools:
       - { type: item, weight: 2, min: 3, max: 6, item: brown_wool }
       - { type: item, weight: 2, min: 3, max: 6, item: light_gray_wool }
       - { type: item, weight: 1,                 item: emerald }
-      - { type: item, weight: 1,                 item: shears, enchant_lvl: { min: 15, max: 20 } }
+      - { type: item, weight: 1,                 item: shears, enchant_rand: [] }
       - { type: item, weight: 6, min: 3, max: 8, item: cookie }
