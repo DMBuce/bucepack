@@ -1,7 +1,7 @@
 pools:
   - rolls: 1
     entries:
-      - { type: item, weight: 12, min: 2, max: 3, item: diamond_shovel }
+      - { type: item, weight: 12, min: 2, max: 3, item: diamond }
       - type: item
         weight: 6
         item: crossbow
@@ -41,7 +41,7 @@ pools:
             vanishing_curse,
             binding_curse
         ]
-      - { type: item, weight: 1, count: 1,       item: golden_axe, enchant_rand: [] }
+      - { type: item, weight: 1, count: 1,       item: golden_axe, enchant_lvl: { min: 25, max: 30 } }
       - { type: item, weight: 2, count: 1,       item: gold_block }
       - { type: item, weight: 1, count: 1,       item: crossbow, enchant_lvl: { min: 25, max: 30 } }
       - { type: item, weight: 2, min: 1, max: 6, item: gold_ingot }
