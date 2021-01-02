@@ -308,6 +308,12 @@ lootoverhaul_FILES := $(DEFAULT_FILES) \
 	data/minecraft/loot_tables/gameplay/fishing/fish.json \
 	data/minecraft/loot_tables/gameplay/fishing/junk.json \
 	data/minecraft/loot_tables/gameplay/fishing/treasure.json \
+	data/minecraft/recipes/diamond_horse_armor.json \
+	data/minecraft/recipes/gold_horse_armor.json \
+	data/minecraft/recipes/iron_horse_armor.json \
+	data/minecraft/recipes/nametag.json \
+	data/minecraft/recipes/piglin_banner_pattern.json \
+	data/minecraft/recipes/saddle.json \
 	data/minecraft/loot_tables/subtables/biome_log.json \
 	data/minecraft/loot_tables/subtables/ench_book.json \
 	data/minecraft/loot_tables/subtables/head_decor.json \
