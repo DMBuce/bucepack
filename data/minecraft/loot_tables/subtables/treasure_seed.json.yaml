@@ -10,6 +10,7 @@ pools:
       - { type: item_unused, weight: 99,  item: cocoa_beans   , min: 2, max: 4 }
       - { type: item_unused, weight: 99,  item: sweet_berries , min: 2, max: 3 }
       - { type: item_unused, weight: 99,  item: fern          , min: 2, max: 4 }
+      - { type: item_unused, weight: 99,  item: vine          , min: 2, max: 4 }
       - { type: item_unused, weight: 99,  item: cactus        , min: 2, max: 4 }
       - { type: item_unused, weight: 99,  item: sugar_cane    , min: 2, max: 4 }
       - { type: item_unused, weight: 99,  item: bamboo        , min: 2, max: 4 }
