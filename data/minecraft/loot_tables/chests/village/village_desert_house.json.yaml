@@ -4,7 +4,7 @@ pools:
       - { type: item, weight: 1,                  item: clay_ball }
       - { type: item, weight: 1,                  item: experience_bottle }
       - { type: item, weight: 10, min: 1, max: 4, item: cactus }
-      - { type: item, weight: 10, min: 2, max: 8, item: cookies }
+      - { type: item, weight: 10, min: 2, max: 8, item: cookie }
       - { type: item, weight: 10, min: 1, max: 4, item: pumpkin_pie }
       - { type: item, weight: 1,                  item: cake }
       - { type: item, weight: 2,  count: 16,      item: egg }

@@ -16,6 +16,6 @@ pools:
       - { type: item, weight: 5, item: iron_leggings  , enchant_lvl: { min: 20, max: 25 } }
       - { type: item, weight: 5, item: iron_boots     , enchant_lvl: { min: 20, max: 25 } }
       - { type: item, weight: 1,                  item: golden_apple }
-      - { type: item, weight: 1,                  item: eye_of_ender }
+      - { type: item, weight: 1,                  item: ender_eye }
       - { type: tag,  weight: 3, expand: true,    tag:  music_discs }
       - { type: loot_table, weight: 1, table: subtables/ench_book }

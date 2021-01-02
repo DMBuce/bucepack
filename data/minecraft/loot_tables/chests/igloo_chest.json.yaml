@@ -7,7 +7,7 @@ pools:
       - { type: item, weight: 1,                   item: stone_pickaxe,
           enchant_rand: [ 'silk_touch' ]
         }
-      - { type: item, weight: 1,                   item: eye_of_ender }
+      - { type: item, weight: 1,                   item: ender_eye }
       - { type: item, weight: 10,                  item: rabbit_stew }
       - { type: item, weight: 1,                   item: emerald }
       - { type: item, weight: 10,                  item: cake }

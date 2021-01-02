@@ -23,5 +23,5 @@ pools:
         }
       - { type: item, weight: 5,                  item: iron_horse_armor }
       - { type: explorer_map, weight: 5, structure: bastion_remnant, decor: target_point, display: "Nether Explorer Map", skipchunks: true }
-      - { type: item, weight: 3, min: 2, max: 3,  item: diamonds }
+      - { type: item, weight: 3, min: 2, max: 3,  item: diamond }
       - { type: item, weight: 2, min: 2, max: 4,  item: obsidian }

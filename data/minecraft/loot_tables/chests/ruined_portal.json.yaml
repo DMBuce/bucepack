@@ -28,10 +28,10 @@ pools:
       - { type: potion, weight: 1, item: splash_potion, effect: fire_resistance }
       - { type: item, weight: 1,                    item: enchanted_golden_apple }
       - { type: item, weight: 1,  min: 1,  max: 2,  item: gold_block }
-  - rolls: 1,
+  - rolls: 1
     entries:
       - { type: item, weight: 1,  min: 3,  max: 8,  item: obsidian }
-  - rolls: 1,
+  - rolls: 1
     entries:
       - { type: item, weight: 1,                    item: lava_bucket }
       - { type: item, weight: 1,  min: 9,  max: 18, item: iron_nugget }
