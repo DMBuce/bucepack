@@ -307,6 +307,14 @@ WIP
 
 //Treasure Seeds: https://i.imgur.com/gUnJW5S.png
 
+// recipes:
+//saddle: https://i.imgur.com/cSZtkTY.png
+//name tag: https://i.imgur.com/cMT90oB.png
+//iron horse armor: https://i.imgur.com/2rd1ZdZ.png
+//gold horse armor: https://i.imgur.com/A1nTNnK.png
+//diamond horse armor: https://i.imgur.com/842M2eK.png
+//snout banner pattern: https://i.imgur.com/uKTapeF.png
+
 === Escape the Nether
 
 A survival challenge that starts you in the Nether.
