@@ -2,7 +2,7 @@ type: fishing
 pools:
   - rolls: 1.0
     entries:
-      - { type: item, weight: 1, item: name_tag }
+      - { type: item, weight: 1, item: lead }
       - { type: tag,  weight: 1, expand: true, tag: music_discs }
       - type: item
         weight: 1

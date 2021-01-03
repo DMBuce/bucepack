@@ -9,7 +9,7 @@ pools:
       - { type: item, weight: 10, min: 8, max: 21, item: salmon }
       - { type: item, weight: 6,  min: 2, max: 8,  item: coal }
       - { type: item, weight: 5,  min: 1, max: 3,  item: tropical_fish }
-      - { type: item, weight: 2,  min: 8, max: 16, item: prismarine }
+      - { type: item, weight: 2,  min: 1, max: 3,  item: prismarine_shard }
       - { type: item, weight: 2,  min: 1, max: 3,  item: bamboo }
       - { type: item, weight: 3,  min: 1, max: 5,  item: gunpowder }
       - { type: item, weight: 1,  min: 1, max: 2,  item: tnt }
