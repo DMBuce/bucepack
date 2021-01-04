@@ -1,7 +1,17 @@
 pools:
-  - rolls: { min: 1, max: 5 }
+  - rolls: { min: 3, max: 8 }
     entries:
-      - { type: item, weight: 2, min: 1, max: 3, item: iron_ingot }
-      - { type: item, weight: 4, min: 1, max: 4, item: pumpkin_pie }
-      - { type: item, weight: 1,                 item: chainmail_helmet, enchant_lvl: { min: 15, max: 25 } }
-      - { type: item, weight: 1,                 item: emerald }
+      - { type: item, weight: 3,  min: 1, max: 3, item: diamond }
+      - { type: item, weight: 10, min: 1, max: 5, item: iron_ingot }
+      - { type: item, weight: 5,  min: 1, max: 3, item: gold_ingot }
+      - { type: item, weight: 15, min: 1, max: 3, item: pumpkin_pie }
+      - { type: item, weight: 15, min: 3, max: 5, item: cookie }
+      - { type: item, weight: 10, enchant_rand: [], item: shield }
+      - { type: item, weight: 5,                  item: chainmail_chestplate, enchant_lvl: { min: 15, max: 20 } }
+      - { type: item, weight: 5,                  item: chainmail_helmet, enchant_lvl: { min: 15, max: 20 } }
+      - { type: item, weight: 5,                  item: chainmail_leggings, enchant_lvl: { min: 15, max: 20 } }
+      - { type: item, weight: 5,                  item: chainmail_boots, enchant_lvl: { min: 15, max: 20 } }
+      - { type: item, weight: 5,                  item: emerald }
+      - { type: tag,  weight: 5,  expand: true,   tag:  saplings }
+      - { type: loot_table, weight: 3, table: subtables/biome_log }
+      - { type: item, weight: 3,                  item: experience_bottle }
