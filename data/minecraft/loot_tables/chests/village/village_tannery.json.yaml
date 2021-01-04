@@ -7,5 +7,5 @@ pools:
       - { type: item, weight: 2,                 item: leather_helmet, enchant_lvl: { min: 15, max: 20 } }
       - { type: item, weight: 5, min: 1, max: 4, item: pumpkin_pie }
       - { type: item, weight: 2,                 item: leather_leggings, enchant_lvl: { min: 15, max: 20 } }
-      - { type: tag,  weight: 1,  expand: true,  tag:  music_discs }
+      - { type: item, weight: 1,                 item: saddle }
       - { type: item, weight: 1, min: 1, max: 4, item: emerald }
