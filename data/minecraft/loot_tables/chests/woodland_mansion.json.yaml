@@ -21,7 +21,7 @@ pools:
       - { type: item, weight: 5,  min: 1,  max: 4,  item: gold_ingot }
       - { type: item, weight: 20, min: 12, max: 20, item: cookie }
       - { type: item, weight: 20, min: 2,  max: 4,  item: pumpkin_pie }
-      - { type: item, weight: 10, min: 8,  max: 16, item: bookshelf }
+      - { type: item, weight: 10, min: 8,  max: 16, item: petrified_oak_slab }
       - { type: item, weight: 15, min: 1,  max: 4,  item: redstone }
       - { type: item, weight: 15, min: 1,  max: 4,  item: coal }
       - { type: loot_table, weight: 20, table: subtables/treasure_seed }
