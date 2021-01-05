@@ -2,8 +2,8 @@
 RESOURCEPACKFILES = paintingoverhaul.zip noteguide.zip brewguide.zip \
 	techarrows.zip ravager.zip villagemech.zip candystrider.zip pigarmor.zip oretypes.zip \
 	retrofood.zip retroiron.zip retromoo.zip retrotwang.zip retrosploosh.zip retrocrunch.zip
-DATAPACKFILES = climbable.zip speedypaths.zip aggrobastions.zip waterprooftech.zip notreasuremaps.zip bluefire.zip \
-	lootoverhaul.zip escapeend.zip escapenether.zip escapegrind.zip lichdom.zip
+DATAPACKFILES = gardnerendermen.zip aggrobastions.zip climbable.zip speedypaths.zip waterprooftech.zip notreasuremaps.zip bluefire.zip \
+	lootoverhaul.zip dragonproof.zip escapeend.zip escapenether.zip escapegrind.zip lichdom.zip
 PACKFILES = $(RESOURCEPACKFILES) $(DATAPACKFILES)
 MCDIR     = $(HOME)/.minecraft
 
@@ -230,18 +230,21 @@ retrocrunch_FILES := $(DEFAULT_FILES) \
 	assets/minecraft/sounds/step/grass6.ogg \
 	assets/minecraft/sounds/step/grass3.ogg
 
-speedypaths_FILES := $(DEFAULT_FILES) \
-	data/minecraft/tags/blocks/soul_speed_blocks.json
+gardnerendermen_FILES := $(DEFAULT_FILES) \
+	data/minecraft/tags/blocks/enderman_holdable.json
+
+aggrobastions_FILES := $(DEFAULT_FILES) \
+	data/minecraft/tags/blocks/guarded_by_piglins.json \
+	data/bucepack/advancements/root.json \
+	data/bucepack/advancements/aggrobastions.json
 
 climbable_FILES := $(DEFAULT_FILES) \
 	data/minecraft/tags/blocks/climbable.json \
 	data/bucepack/advancements/root.json \
 	data/bucepack/advancements/climbable.json
 
-aggrobastions_FILES := $(DEFAULT_FILES) \
-	data/minecraft/tags/blocks/guarded_by_piglins.json \
-	data/bucepack/advancements/root.json \
-	data/bucepack/advancements/aggrobastions.json
+speedypaths_FILES := $(DEFAULT_FILES) \
+	data/minecraft/tags/blocks/soul_speed_blocks.json
 
 waterprooftech_FILES := $(DEFAULT_FILES) \
 	data/minecraft/tags/blocks/signs.json \
@@ -320,6 +323,9 @@ lootoverhaul_FILES := $(DEFAULT_FILES) \
 	data/minecraft/loot_tables/subtables/lib_book.json \
 	data/minecraft/loot_tables/subtables/treasure_seed.json \
 	data/minecraft/loot_tables/example.json
+
+dragonproof_FILES := $(DEFAULT_FILES) \
+	data/minecraft/tags/blocks/dragon_immune.json
 
 escapeend_FILES := $(DEFAULT_FILES) \
 	data/minecraft/tags/functions/tick-escape.json \
@@ -524,7 +530,12 @@ retrocrunch.zip: $(retrocrunch_FILES)
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^
 
-speedypaths.zip: $(speedypaths_FILES)
+gardnerendermen.zip: $(gardnerendermen_FILES)
+	cp meta/$(@:.zip=.png) pack.png
+	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
+	zip $@ pack.png pack.mcmeta $^
+
+aggrobastions.zip: $(aggrobastions_FILES)
 	cp meta/$(@:.zip=.png) pack.png
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^
@@ -534,7 +545,7 @@ climbable.zip: $(climbable_FILES)
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^
 
-aggrobastions.zip: $(aggrobastions_FILES)
+speedypaths.zip: $(speedypaths_FILES)
 	cp meta/$(@:.zip=.png) pack.png
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^
@@ -556,6 +567,11 @@ bluefire.zip: $(bluefire_FILES)
 	zip $@ pack.png pack.mcmeta $^
 
 lootoverhaul.zip: $(lootoverhaul_FILES)
+	cp meta/$(@:.zip=.png) pack.png
+	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
+	zip $@ pack.png pack.mcmeta $^
+
+dragonproof.zip: $(dragonproof_FILES)
 	cp meta/$(@:.zip=.png) pack.png
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^

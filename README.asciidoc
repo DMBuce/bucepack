@@ -301,12 +301,16 @@ Download: https://github.com/DMBuce/bucepack/releases
 
 Build: `make bluefire.zip`
 
-=== Loot Overhaul
-
-WIP
-
+//=== Dragonproof End
+//
+//https://i.imgur.com/c7kQFcp.png
+//
+//=== Loot Overhaul
+//
+//WIP
+//
 //Treasure Seeds: https://i.imgur.com/gUnJW5S.png
-
+//
 // recipes:
 //saddle: https://i.imgur.com/cSZtkTY.png
 //name tag: https://i.imgur.com/cMT90oB.png
