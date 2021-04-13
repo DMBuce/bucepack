@@ -350,10 +350,12 @@ Bonus spawn chests generate a more limited and curated set of starter items
 designed to jumpstart the tree-punching phase of a fresh world:
 3-5 cobble, 2-3 bread, 3-5 logs, and a book & quill.
 
-Food looted is themed according to the structure it spawns in. Underground
-structures have potatoes and carrots. Villager and illager structures have
-pie, cookies, and cake instead. Ocean chests have salmon and cod. Desert
-and jungle temples occasionally have honey.
+Food loot is themed according to the structure it spawns in.
+To give a few examples:
+Underground structures have potatoes and carrots.
+Villager and illager structures have pie, cookies, and cake.
+Ocean chests have salmon and cod.
+Desert and jungle temples occasionally have honey.
 
 Some chests have custom explorer maps that lead to other structures. For
 example, Woodland Mansion chests have a chance to spawn a Reconnaissance Map
@@ -370,7 +372,8 @@ treasure enchant instead of a single random enchant.
 
 The soul speed books and gear normally found in nether chests have a
 random treasure enchant instead. More nether chests have such books. Note that
-bartering is unchanged and still generates Soul Speed 100% of the time.
+books obtained through bartering still generate with Soul Speed 100% of the
+time.
 
 Most armor & tools are enchanted at an enchantment level determined by the
 area the structure spawns in. Aboveground structures have gear enchanted at
@@ -387,18 +390,6 @@ haven't eaten, planted, or otherwise used one of the items shown below, you
 have a chance to find it in End City and Woodland Mansion chests.
 
 image::https://i.imgur.com/gUnJW5S.png[Treasure Seeds]
-
-Some highlights of other items you might rarely find in varous structures...
-It's possible to find any sapling type in villages and cocoa beans in savanna
-villages.
-You get petrified oak slabs in underground structures, ender eyes in strongholds
-and temples, xp bottles throughout the world, prismarine/scutes/nautilus
-shells in ocean chests, tridents in treasure chests, or blackstone/quartz in
-ruined portal chests.
-More chests spawn music discs, and it's possible to find every music disc in a
-chest instead of just Cat and 13.
-The intention is that although you won't be able to loot any of these things
-reliably, when you do, it will make your world feel just a bit more special.
 
 Download: https://github.com/DMBuce/bucepack/releases
 
