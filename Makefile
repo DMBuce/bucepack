@@ -1,6 +1,6 @@
 
 RESOURCEPACKFILES = paintingoverhaul.zip noteguide.zip brewguide.zip \
-	techarrows.zip ravager.zip villagemech.zip candystrider.zip pigarmor.zip oretypes.zip \
+	techarrows.zip ravager.zip villagemech.zip pigarmor.zip oretypes.zip \
 	retrofood.zip retroiron.zip retromoo.zip retrotwang.zip retrosploosh.zip retrocrunch.zip
 DATAPACKFILES = gardenerendermen.zip aggrobastions.zip climbable.zip speedypaths.zip waterprooftech.zip notreasuremaps.zip bluefire.zip \
 	lootoverhaul.zip dragonproof.zip escapeend.zip escapenether.zip escapegrind.zip lichdom.zip
