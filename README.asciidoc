@@ -306,9 +306,8 @@ Build: `make bluefire.zip`
 Makes it so that endermen can't pick up blocks such as dirt and grass blocks,
 and can pick up more plants and fungi.
 
-In this pack, enderman can pick up ferns, dead bushes, grass, flowers,
-saplings, berry bushes, cacti, melons, pumpkins, red & brown mushrooms,
-crimson & warped fungus & roots, and TNT.
+The blocks that endermen can pick up are listed
+https://raw.githubusercontent.com/DMBuce/bucepack/master/data/minecraft/tags/blocks/enderman_holdable.json[here].
 
 Download: https://github.com/DMBuce/bucepack/releases
 
@@ -320,7 +319,9 @@ Makes the Enderdragon phase through all blocks found in the end. In addition
 to the magenta glass and banners found in End Cities, this pack makes other
 magenta blocks dragonproof as well.
 
-All dragonproofed blocks are shown below.
+All dragonproofed blocks are listed
+https://https://raw.githubusercontent.com/DMBuce/bucepack/master/data/minecraft/tags/blocks/dragon_immune.json[here].
+Many of them are shown below.
 
 image::https://i.imgur.com/c7kQFcp.png[Dragonproof Blocks]
 
