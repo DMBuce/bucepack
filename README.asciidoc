@@ -379,6 +379,7 @@ have a chance to find it in End City and Woodland Mansion chests.
 
 image::https://i.imgur.com/gUnJW5S.png[Treasure Seeds]
 
+
 Enchanted books in most loot tables spawn with a 50% chance to be enchanted
 with multiple enchants instead of a single random enchant. Enchanted
 books found in libraries and map rooms have the other 50% spawn as a
