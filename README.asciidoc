@@ -303,20 +303,12 @@ Build: `make bluefire.zip`
 
 === Gardner Endermen
 
-Makes it so that endermen can't pick up blocks such as dirt and grass, and can
-pick up more plants and fungi.
+Makes it so that endermen can't pick up blocks such as dirt and grass blocks,
+and can pick up more plants and fungi.
 
-Full list of blocks that endermen can pick up in this datapack:
-
-* Grass, ferns & dead bushes
-* Flowers
-* Saplings
-* Berry bushes
-* Cactus
-* Melons & pumpkins
-* Crimson & warped fungus and roots
-* Red & brown mushrooms
-* TNT
+In this pack, enderman can only pick up ferns, dead bushes, grass, flowers,
+saplings, berry bushes, cacti, melons, pumpkins, red & brown mushrooms,
+crimson & warped fungus & roots, and TNT.
 
 Download: https://github.com/DMBuce/bucepack/releases
 
@@ -327,6 +319,8 @@ Build: `make gardnerendermen.zip`
 Makes the Enderdragon phase through all blocks found in the end. In addition
 to the magenta glass and banners found in End Cities, this pack makes other
 magenta blocks dragonproof as well.
+
+All dragonproofed blocks are shown below.
 
 image::https://i.imgur.com/c7kQFcp.png[Dragonproof Blocks]
 
@@ -351,12 +345,14 @@ image::https://i.imgur.com/A1nTNnK.png[Gold Horse Armor]
 image::https://i.imgur.com/842M2eK.png[Diamond Horse Armor]
 image::https://i.imgur.com/uKTapeF.png[Snout Banner Pattern]
 
-Items that are mostly only useful as food such as wheat and bread have been
-replaced. Underground structures have potatoes and carrots instead. Villager
-and illager structures have pie, cookies, and cake instead.
+Bonus spawn chests generate a more curated set of starter items: 3-5 cobble,
+2-3 bread, 3-5 logs, a book & quill. The intention is to provide fewer items
+overall that are more useful in a fresh world.
 
-More chests spawn music discs, and it's possible to find every music disc in a
-chest instead of just Cat and 13.
+Food looted from chests depends on the structure its found in. Underground
+structures have potatoes and carrots. Villager and illager structures have
+pie, cookies, and cake instead. Ocean chests have salmon and cod. Desert
+and jungle temples occasionally have honey.
 
 Some chests have custom explorer maps that lead to other structures. For
 example, Woodland Mansion chests have a chance to spawn a Reconnaissance Map
@@ -364,6 +360,10 @@ that leads to a Pillager Outpost, and the chest in the outpost has a chance to
 spawn a Swamp Exploration Map that leads to a Witch Hut. Maps found in Nether
 Fortresses lead to Piglin Bastions, and vice versa. End City chests have a
 chance to spawn a map leading to another End City. And so on.
+
+Villages generate chainmail instead of iron armor.
+End Cities generate only diamond gear rather than a mix of diamond and iron.
+Woodland Mansions can rarely generate a conduit, beacon, or shulker box.
 
 Instead of generating seeds, End Cities and Woodland Mansions generate plant
 resources that you haven't used yet. Such resources include everything from
@@ -388,6 +388,17 @@ Most armor & tools are enchanted at an enchantment level determined by the
 area the structure spawns in. Aboveground structures have gear enchanted at
 levels 15-20, underground and ocean structures at levels 20-25, nether
 structures at levels 25-30, and end structures at levels 25-39.
+
+Some highlights of items you might rarely find... It's possible to find any
+sapling type in villages and cocoa beans in savanna villages.
+You get petrified oak slabs in underground structures, ender eyes in strongholds
+and temples, xp bottles throughout the world, prismarine/scutes/nautilus
+shells in ocean chests, tridents in treasure chests, or blackstone/quartz in
+ruined portal chests.
+More chests spawn music discs, and it's possible to find every music disc in a
+chest instead of just Cat and 13.
+The intention is that although you won't be able to loot any of these things
+reliably, when you do, it will make your world feel just a bit more special.
 
 Download: https://github.com/DMBuce/bucepack/releases
 
