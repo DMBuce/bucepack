@@ -301,23 +301,97 @@ Download: https://github.com/DMBuce/bucepack/releases
 
 Build: `make bluefire.zip`
 
-//=== Dragonproof End
-//
-//https://i.imgur.com/c7kQFcp.png
-//
-//=== Loot Overhaul
-//
-//WIP
-//
-//Treasure Seeds: https://i.imgur.com/gUnJW5S.png
-//
-// recipes:
-//saddle: https://i.imgur.com/cSZtkTY.png
-//name tag: https://i.imgur.com/cMT90oB.png
-//iron horse armor: https://i.imgur.com/2rd1ZdZ.png
-//gold horse armor: https://i.imgur.com/A1nTNnK.png
-//diamond horse armor: https://i.imgur.com/842M2eK.png
-//snout banner pattern: https://i.imgur.com/uKTapeF.png
+=== Gardner Endermen
+
+Makes it so that endermen can't pick up blocks such as dirt and grass, and can
+pick up more plants and fungi.
+
+Full list of blocks that endermen can pick up in this datapack:
+
+* Grass, ferns & dead bushes
+* Flowers
+* Saplings
+* Berry bushes
+* Cactus
+* Melons & pumpkins
+* Crimson & warped fungus and roots
+* Red & brown mushrooms
+* TNT
+
+Download: https://github.com/DMBuce/bucepack/releases
+
+Build: `make gardnerendermen.zip`
+
+=== Dragonproof End
+
+Makes the Enderdragon phase through all blocks found in the end. In addition
+to the magenta glass and banners found in End Cities, this pack makes other
+magenta blocks dragonproof as well.
+
+image::https://i.imgur.com/c7kQFcp.png[Dragonproof Blocks]
+
+Download: https://github.com/DMBuce/bucepack/releases
+
+Build: `make dragonproof.zip`
+
+=== Loot Overhaul
+
+Overhauls the vanilla loot tables to make early-to-midgame exploration more
+exciting. Many, though not all, of the loot changes are described below.
+
+Saddles, horse armor, nametags and leads are craftable and removed from the
+loot tables to make room for other loot. This is to avoid changing the rarity
+of some entries like ore ingots. All loot table entries added by this pack are
+a replacements for the entries that it removes.
+
+image::https://i.imgur.com/cSZtkTY.png[Saddle Recipe]
+image::https://i.imgur.com/cMT90oB.png[Name Tags]
+image::https://i.imgur.com/2rd1ZdZ.png[Iron Horse Armor]
+image::https://i.imgur.com/A1nTNnK.png[Gold Horse Armor]
+image::https://i.imgur.com/842M2eK.png[Diamond Horse Armor]
+image::https://i.imgur.com/uKTapeF.png[Snout Banner Pattern]
+
+Items that are mostly only useful as food such as wheat and bread have been
+replaced. Underground structures have potatoes and carrots instead. Villager
+and illager structures have pie, cookies, and cake instead.
+
+More chests spawn music discs, and it's possible to find every music disc in a
+chest instead of just Cat and 13.
+
+Some chests have custom explorer maps that lead to other structures. For
+example, Woodland Mansion chests have a chance to spawn a Reconnaissance Map
+that leads to a Pillager Outpost, and the chest in the outpost has a chance to
+spawn a Swamp Exploration Map that leads to a Witch Hut. Maps found in Nether
+Fortresses lead to Piglin Bastions, and vice versa. End City chests have a
+chance to spawn a map leading to another End City. And so on.
+
+Instead of generating seeds, End Cities and Woodland Mansions generate plant
+resources that you haven't used yet. Such resources include everything from
+berries, wheat seeds and potatoes to cactus, bamboo, and rose bushes. If you
+haven't eaten, planted, or otherwise used the items shown below, you have a
+chance to find them in End City and Woodland Mansion chests. There is also a
+small chance to generate Suspcious Stew so that once you've collected all
+these items, you'll get Suspicious Stew instead of just nothing.
+
+image::https://i.imgur.com/gUnJW5S.png[Treasure Seeds]
+
+Enchanted books in most loot tables spawn with a 50% chance to be enchanted
+with multiple enchants instead of a single random enchant. Enchanted
+books found in libraries and map rooms have the other 50% spawn as a
+treasure enchant instead of a single random enchant.
+
+The soul speed books and gear normally found in nether chests have a
+random treasure enchant instead. More nether chests have such books. Note that
+bartering is unchanged and still generates Soul Speed 100% of the time.
+
+Most armor & tools are enchanted at an enchantment level determined by the
+area the structure spawns in. Aboveground structures have gear enchanted at
+levels 15-20, underground and ocean structures at levels 20-25, nether
+structures at levels 25-30, and end structures at levels 25-39.
+
+Download: https://github.com/DMBuce/bucepack/releases
+
+Build: `make lootoverhaul.zip`
 
 === Escape the Nether
 
