@@ -357,6 +357,9 @@ Villager and illager structures have pie, cookies, and cake.
 Ocean chests have salmon and cod.
 Desert and jungle temples occasionally have honey.
 
+More chests spawn music discs, and it's possible to find every music disc in a
+chest instead of just Cat and 13.
+
 Some chests have custom explorer maps that lead to other structures. For
 example, Woodland Mansion chests have a chance to spawn a Reconnaissance Map
 that leads to a Pillager Outpost, and the chest in the outpost has a chance to
@@ -364,6 +367,17 @@ spawn a Swamp Exploration Map that leads to a Witch Hut. Maps found in Nether
 Fortresses lead to Piglin Bastions, and vice versa. End City chests have a
 chance to spawn a map leading to another End City. Maps leading to Jungle
 Temples can generate in Stronghold Libraries. And so on.
+
+End Cities generate only diamond gear rather than a mix of diamond and iron,
+and Woodland Mansions can rarely generate a conduit, beacon, or shulker box.
+
+Instead of generating seeds, End Cities and Woodland Mansions generate plant
+resources that you haven't used yet. Such resources include everything from
+berries, wheat seeds and potatoes to cactus, bamboo, and rose bushes. If you
+haven't eaten, planted, or otherwise used one of the items shown below, you
+have a chance to find it in End City and Woodland Mansion chests.
+
+image::https://i.imgur.com/gUnJW5S.png[Treasure Seeds]
 
 Enchanted books in most loot tables spawn with a 50% chance to be enchanted
 with multiple enchants instead of a single random enchant. Enchanted
@@ -379,17 +393,6 @@ Most armor & tools are enchanted at an enchantment level determined by the
 area the structure spawns in. Aboveground structures have gear enchanted at
 levels 15-20, underground and ocean structures at levels 20-25, nether
 structures at levels 25-30, and end structures at levels 25-39.
-
-End Cities generate only diamond gear rather than a mix of diamond and iron,
-and Woodland Mansions can rarely generate a conduit, beacon, or shulker box.
-
-Instead of generating seeds, End Cities and Woodland Mansions generate plant
-resources that you haven't used yet. Such resources include everything from
-berries, wheat seeds and potatoes to cactus, bamboo, and rose bushes. If you
-haven't eaten, planted, or otherwise used one of the items shown below, you
-have a chance to find it in End City and Woodland Mansion chests.
-
-image::https://i.imgur.com/gUnJW5S.png[Treasure Seeds]
 
 Download: https://github.com/DMBuce/bucepack/releases
 
