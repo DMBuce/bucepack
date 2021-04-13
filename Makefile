@@ -2,7 +2,7 @@
 RESOURCEPACKFILES = paintingoverhaul.zip noteguide.zip brewguide.zip \
 	techarrows.zip ravager.zip villagemech.zip candystrider.zip pigarmor.zip oretypes.zip \
 	retrofood.zip retroiron.zip retromoo.zip retrotwang.zip retrosploosh.zip retrocrunch.zip
-DATAPACKFILES = gardnerendermen.zip aggrobastions.zip climbable.zip speedypaths.zip waterprooftech.zip notreasuremaps.zip bluefire.zip \
+DATAPACKFILES = gardenerendermen.zip aggrobastions.zip climbable.zip speedypaths.zip waterprooftech.zip notreasuremaps.zip bluefire.zip \
 	lootoverhaul.zip dragonproof.zip escapeend.zip escapenether.zip escapegrind.zip lichdom.zip
 PACKFILES = $(RESOURCEPACKFILES) $(DATAPACKFILES)
 MCDIR     = $(HOME)/.minecraft
@@ -230,7 +230,7 @@ retrocrunch_FILES := $(DEFAULT_FILES) \
 	assets/minecraft/sounds/step/grass6.ogg \
 	assets/minecraft/sounds/step/grass3.ogg
 
-gardnerendermen_FILES := $(DEFAULT_FILES) \
+gardenerendermen_FILES := $(DEFAULT_FILES) \
 	data/minecraft/tags/blocks/enderman_holdable.json
 
 aggrobastions_FILES := $(DEFAULT_FILES) \
@@ -530,7 +530,7 @@ retrocrunch.zip: $(retrocrunch_FILES)
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^
 
-gardnerendermen.zip: $(gardnerendermen_FILES)
+gardenerendermen.zip: $(gardenerendermen_FILES)
 	cp meta/$(@:.zip=.png) pack.png
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^

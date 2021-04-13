@@ -301,7 +301,7 @@ Download: https://github.com/DMBuce/bucepack/releases
 
 Build: `make bluefire.zip`
 
-=== Gardner Endermen
+=== Gardener Endermen
 
 Makes it so that endermen can't pick up blocks such as dirt and grass blocks,
 and can pick up more plants and fungi.
@@ -311,7 +311,7 @@ https://raw.githubusercontent.com/DMBuce/bucepack/master/data/minecraft/tags/blo
 
 Download: https://github.com/DMBuce/bucepack/releases
 
-Build: `make gardnerendermen.zip`
+Build: `make gardenerendermen.zip`
 
 === Dragonproof End
 
