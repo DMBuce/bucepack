@@ -306,7 +306,7 @@ Build: `make bluefire.zip`
 Makes it so that endermen can't pick up blocks such as dirt and grass blocks,
 and can pick up more plants and fungi.
 
-The blocks that endermen can pick up are listed
+All the blocks that endermen can pick up are listed
 https://raw.githubusercontent.com/DMBuce/bucepack/master/data/minecraft/tags/blocks/enderman_holdable.json[here].
 
 Download: https://github.com/DMBuce/bucepack/releases
