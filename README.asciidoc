@@ -306,7 +306,7 @@ Build: `make bluefire.zip`
 Makes it so that endermen can't pick up blocks such as dirt and grass blocks,
 and can pick up more plants and fungi.
 
-In this pack, enderman can only pick up ferns, dead bushes, grass, flowers,
+In this pack, enderman can pick up ferns, dead bushes, grass, flowers,
 saplings, berry bushes, cacti, melons, pumpkins, red & brown mushrooms,
 crimson & warped fungus & roots, and TNT.
 
@@ -335,8 +335,8 @@ exciting. Many, though not all, of the loot changes are described below.
 
 Saddles, horse armor, nametags and leads are craftable and removed from the
 loot tables to make room for other loot. This is to avoid changing the rarity
-of some entries like ore ingots. All loot table entries added by this pack are
-a replacements for the entries that it removes.
+of some entries like ore ingots. Nearly all loot table entries added by this
+pack are replacements for the entries that it removes.
 
 image::https://i.imgur.com/cSZtkTY.png[Saddle Recipe]
 image::https://i.imgur.com/cMT90oB.png[Name Tags]
@@ -345,11 +345,11 @@ image::https://i.imgur.com/A1nTNnK.png[Gold Horse Armor]
 image::https://i.imgur.com/842M2eK.png[Diamond Horse Armor]
 image::https://i.imgur.com/uKTapeF.png[Snout Banner Pattern]
 
-Bonus spawn chests generate a more curated set of starter items: 3-5 cobble,
-2-3 bread, 3-5 logs, a book & quill. The intention is to provide fewer items
-overall that are more useful in a fresh world.
+Bonus spawn chests generate a more limited and curated set of starter items
+designed to jumpstart the tree-punching phase of a fresh world:
+3-5 cobble, 2-3 bread, 3-5 logs, and a book & quill.
 
-Food looted from chests depends on the structure its found in. Underground
+Food looted is themed according to the structure it spawns in. Underground
 structures have potatoes and carrots. Villager and illager structures have
 pie, cookies, and cake instead. Ocean chests have salmon and cod. Desert
 and jungle temples occasionally have honey.
@@ -359,21 +359,8 @@ example, Woodland Mansion chests have a chance to spawn a Reconnaissance Map
 that leads to a Pillager Outpost, and the chest in the outpost has a chance to
 spawn a Swamp Exploration Map that leads to a Witch Hut. Maps found in Nether
 Fortresses lead to Piglin Bastions, and vice versa. End City chests have a
-chance to spawn a map leading to another End City. And so on.
-
-Villages generate chainmail instead of iron armor.
-End Cities generate only diamond gear rather than a mix of diamond and iron.
-Woodland Mansions can rarely generate a conduit, beacon, or shulker box.
-
-Instead of generating seeds, End Cities and Woodland Mansions generate plant
-resources that you haven't used yet. Such resources include everything from
-berries, wheat seeds and potatoes to cactus, bamboo, and rose bushes. If you
-haven't eaten, planted, or otherwise used the items shown below, you have a
-chance to find them in End City and Woodland Mansion chests. There is also a
-small chance to generate Suspcious Stew so that once you've collected all
-these items, you'll get Suspicious Stew instead of just nothing.
-
-image::https://i.imgur.com/gUnJW5S.png[Treasure Seeds]
+chance to spawn a map leading to another End City. Maps leading to Jungle
+Temples can generate in Stronghold Libraries. And so on.
 
 Enchanted books in most loot tables spawn with a 50% chance to be enchanted
 with multiple enchants instead of a single random enchant. Enchanted
@@ -389,8 +376,20 @@ area the structure spawns in. Aboveground structures have gear enchanted at
 levels 15-20, underground and ocean structures at levels 20-25, nether
 structures at levels 25-30, and end structures at levels 25-39.
 
-Some highlights of items you might rarely find... It's possible to find any
-sapling type in villages and cocoa beans in savanna villages.
+End Cities generate only diamond gear rather than a mix of diamond and iron,
+and Woodland Mansions can rarely generate a conduit, beacon, or shulker box.
+
+Instead of generating seeds, End Cities and Woodland Mansions generate plant
+resources that you haven't used yet. Such resources include everything from
+berries, wheat seeds and potatoes to cactus, bamboo, and rose bushes. If you
+haven't eaten, planted, or otherwise used one of the items shown below, you
+have a chance to find it in End City and Woodland Mansion chests.
+
+image::https://i.imgur.com/gUnJW5S.png[Treasure Seeds]
+
+Some highlights of other items you might rarely find in varous structures...
+It's possible to find any sapling type in villages and cocoa beans in savanna
+villages.
 You get petrified oak slabs in underground structures, ender eyes in strongholds
 and temples, xp bottles throughout the world, prismarine/scutes/nautilus
 shells in ocean chests, tridents in treasure chests, or blackstone/quartz in
