@@ -343,7 +343,7 @@ escapegrind_FILES := $(DEFAULT_FILES) \
 	data/minecraft/tags/functions/load-grind.json \
 	data/minecraft/tags/functions/tick-grind.json \
 	data/minecraft/loot_tables/blocks/crying_obsidian_lapis.json \
-	data/minecraft/loot_tables/chests/end_city_treasure_crossbow.json \
+	data/minecraft/loot_tables/chests/end_city_treasure.json \
 	data/escape/recipes/grindstone.json \
 	data/escape/tags/functions/respawn.json \
 	data/escape/functions/load.mcfunction \
@@ -597,7 +597,6 @@ escapegrind.zip: $(escapegrind_FILES)
 	printf "@ data/minecraft/tags/functions/load-grind.json\n@=data/minecraft/tags/functions/load.json\n" | zipnote -w $@
 	printf "@ data/minecraft/tags/functions/tick-grind.json\n@=data/minecraft/tags/functions/tick.json\n" | zipnote -w $@
 	printf "@ data/minecraft/loot_tables/blocks/crying_obsidian_lapis.json\n@=data/minecraft/loot_tables/blocks/crying_obsidian.json\n" | zipnote -w $@
-	printf "@ data/minecraft/loot_tables/chests/end_city_treasure_crossbow.json\n@=data/minecraft/loot_tables/chests/end_city_treasure.json\n" | zipnote -w $@
 
 lichdom.zip: $(lichdom_FILES)
 	cp meta/$(@:.zip=.png) pack.png
