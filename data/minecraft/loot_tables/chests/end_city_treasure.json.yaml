@@ -17,4 +17,4 @@ pools:
       - { type: item, weight: 4, enchant_lvl: { min: 25, max: 39 }, item: diamond_leggings }
       - { type: item, weight: 4, enchant_lvl: { min: 25, max: 39 }, item: diamond_helmet }
       - { type: item, weight: 4, enchant_lvl: { min: 25, max: 39 }, item: diamond_pickaxe }
-      - { type: item, weight: 4, enchant_lvl: { min: 25, max: 39 }, item: diamond_shovel }
+      - { type: item, weight: 4, enchant_lvl: { min: 25, max: 39 }, item: diamond_axe }
