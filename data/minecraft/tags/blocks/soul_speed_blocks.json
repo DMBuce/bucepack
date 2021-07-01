@@ -1,5 +1,6 @@
 {
-	"values": [
-		"minecraft:grass_path"
-	]
+  "replace": false,
+  "values": [
+    "minecraft:dirt_path"
+  ]
 }
