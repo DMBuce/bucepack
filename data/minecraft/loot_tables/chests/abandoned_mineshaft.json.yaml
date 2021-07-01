@@ -18,6 +18,7 @@ pools:
       - { type: item, weight: 10, min: 3, max: 8,  item: coal }
       - { type: item, weight: 10, min: 8, max: 16, item: cobblestone }
       - { type: item, weight: 5,  min: 8, max: 16, item: petrified_oak_slab }
+      - { type: item, weight: 15, min: 3, max: 6,  item: glow_berries }
       - { type: item, weight: 10, min: 2, max: 4,  item: carrot }
       - { type: item, weight: 10, min: 2, max: 4,  item: potato }
       - { type: item, weight: 10, min: 2, max: 4,  item: beetroot_seeds }
