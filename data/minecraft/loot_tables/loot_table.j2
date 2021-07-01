@@ -5,13 +5,14 @@
     {
       {%- if pool.rolls is mapping %}
       "rolls": {
+        "type": "minecraft:uniform",
         "min": {{pool.rolls.min}}.0,
-        "max": {{pool.rolls.max}}.0,
-        "type": "minecraft:uniform"
+        "max": {{pool.rolls.max}}.0
       },
       {%- else %}
-      "rolls": {{pool.rolls}},
+      "rolls": {{pool.rolls}}.0,
       {%- endif %}
+      "bonus_rolls": 0.0,
       "entries": [
         {%- for entry in pool.entries %}
         {%- if entry.type == "item" %}
@@ -32,25 +33,29 @@
             {
               "function": "minecraft:set_count",
               "count": {
+                "type": "minecraft:uniform",
                 "min": {{entry.min}}.0,
-                "max": {{entry.max}}.0,
-                "type": "minecraft:uniform"
-              }
+                "max": {{entry.max}}.0
+              },
+              "add": false
             }{{ "," if entry.damage is defined or entry.count is defined or entry.enchant_lvl is defined or entry.enchant_rand is defined or entry.looting is defined or entry.nbt is defined }}
             {%- endif %}
             {%- if entry.damage is defined %}
             {
               "function": "minecraft:set_damage",
               "damage": {
+                "type": "minecraft:uniform",
                 "min": {{entry.damage.min}},
                 "max": {{entry.damage.max}}
-              }
+              },
+              "add": false
             }{{ "," if entry.count is defined or entry.enchant_lvl is defined or entry.enchant_rand is defined or entry.looting is defined or entry.nbt is defined }}
             {%- endif %}
             {%- if entry.count is defined %}
             {
               "function": "minecraft:set_count",
-              "count": {{entry.count}}
+              "count": {{entry.count}}.0,
+              "add": false
             }{{ "," if entry.enchant_lvl is defined or entry.enchant_rand is defined or entry.looting is defined or entry.nbt is defined }}
             {%- endif %}
             {%- if entry.enchant_lvl is defined %}
@@ -58,12 +63,12 @@
               "function": "minecraft:enchant_with_levels",
               {%- if entry.enchant_lvl is mapping %}
               "levels": {
+                "type": "minecraft:uniform",
                 "min": {{entry.enchant_lvl.min}}.0,
-                "max": {{entry.enchant_lvl.max}}.0,
-                "type": "minecraft:uniform"
+                "max": {{entry.enchant_lvl.max}}.0
               },
               {%- else %}
-              "levels": {{entry.enchant_lvl}},
+              "levels": {{entry.enchant_lvl}}.0,
               {%- endif %}
               "treasure": true
             }{{ "," if entry.enchant_rand is defined or entry.looting is defined or entry.nbt is defined }}
@@ -174,6 +179,7 @@
                 {
                   "type": "minecraft:{{effect.name}}",
                   "duration": {
+                    "type": "minecraft:uniform",
                     "min": {{effect.min}}.0,
                     "max": {{effect.max}}.0
                   }
@@ -195,7 +201,8 @@
                 "min": {{entry.min}}.0,
                 "max": {{entry.max}}.0,
                 "type": "minecraft:uniform"
-              }
+              },
+              "add": false
             }
           ],
           {%- endif %}
@@ -233,7 +240,8 @@
                 "min": {{entry.min}}.0,
                 "max": {{entry.max}}.0,
                 "type": "minecraft:uniform"
-              }
+              },
+              "add": false
             }
           ],
           "conditions": [
