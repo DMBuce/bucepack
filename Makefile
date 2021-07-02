@@ -618,6 +618,11 @@ install: $(RESOURCEPACKFILES) $(DATAPACKFILES)
 	mkdir -p $(MCDIR)/datapacks
 	cp $(DATAPACKFILES) $(MCDIR)/datapacks
 
+.PHONY: mantrid
+mantrid: $(RESOURCEPACKFILES) $(DATAPACKFILES)
+	rsync -auv $(RESOURCEPACKFILES) mantrid:$(MCDIR)/resourcepacks
+	rsync -auv $(DATAPACKFILES) mantrid:$(MCDIR)/datapacks
+
 .PHONY: uninstall
 uninstall:
 	cd $(MCDIR)/resourcepacks && rm -f $(PACKFILES)
