@@ -131,10 +131,13 @@ brewguide_FILES := $(DEFAULT_FILES) \
 techarrows_FILES := $(DEFAULT_FILES) \
 	assets/minecraft/models/block/hopper_side.json \
 	assets/minecraft/models/block/observer.json \
+	assets/minecraft/models/block/observer_on.json \
 	assets/minecraft/textures/block/hopper_inside.png \
 	assets/minecraft/textures/block/hopper_inside_side.png \
 	assets/minecraft/textures/block/observer_back_on.png \
-	assets/minecraft/textures/block/observer_side.png
+	assets/minecraft/textures/block/observer_side.png \
+	assets/minecraft/textures/block/observer_side_on.png \
+	assets/minecraft/textures/block/observer_front_on.png
 
 ravager_FILES := $(DEFAULT_FILES) \
 	assets/minecraft/textures/entity/illager/ravager.png
