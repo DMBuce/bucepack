@@ -578,14 +578,18 @@ Known Issues:
 HOW TO UPDATE LOOT TABLES AFTER MINECRAFT UPDATES
 =================================================
 
-Extract the necessary folders from the new jar:
+Extract the necessary folders from the new jar
 
+ mkdir 1.17
+ cd 1.17
+ jar xf ~/.minecraft/versions/1.17/1.17.jar assets data
+ cd ..
+
+Copy new loot tables to orig.new folder
+
+ mkdir data/minecraft/loot_tables/orig.new
+ rsync -av 1.17.jar/data/minecraft/loot_tables/{gameplay,chests} data/minecraft/loot_tables/orig.new/
  cd data/minecraft/loot_tables
- mkdir orig.new
- cd orig.new
- jar xf ~/.minecraft/versions/1.17/1.17.jar data/minecraft/loot_tables/{gameplay,chests}
- mv data/minecraft/loot_tables/* .
- rmdir -p data/minecraft/loot_tables
 
 Append newlines to the new tables so that diff won't complain about newlines
 
