@@ -591,10 +591,6 @@ Copy new loot tables to orig.new folder
  rsync -av 1.17.jar/data/minecraft/loot_tables/{gameplay,chests} data/minecraft/loot_tables/orig.new/
  cd data/minecraft/loot_tables
 
-Append newlines to the new tables so that diff won't complain about newlines
-
- find orig.new/ -name \*.json | while read file; do echo >> "$file"; done
-
 Convert the original tables from YAML to JSON
 
  find orig -name \*.yaml -exec ./yaml2json {} +
@@ -602,6 +598,10 @@ Convert the original tables from YAML to JSON
 Compare the new and old tables using diff
 
  diff -ruU10 orig orig.new/ | grep -v '^Only in' | vim -
+
+If diff complains about newlines, append newlines to the new tables
+
+ find orig.new/ -name \*.json | while read file; do echo >> "$file"; done
 
 Edit the loot table template or what-have-you to update whatever formatting
 changes Mojang made to the JSON
