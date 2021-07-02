@@ -573,3 +573,43 @@ Known Issues:
 * If a player in turtle form dies from their shell breaking, other players who
   die in the same tick will have their death messages suppressed
 
+////
+
+HOW TO UPDATE LOOT TABLES AFTER MINECRAFT UPDATES
+=================================================
+
+Extract the necessary folders from the new jar:
+
+ cd data/minecraft/loot_tables
+ mkdir orig.new
+ cd orig.new
+ jar xf ~/.minecraft/versions/1.17/1.17.jar data/minecraft/loot_tables/{gameplay,chests}
+ mv data/minecraft/loot_tables/* .
+ rmdir -p data/minecraft/loot_tables
+
+Append newlines to the new tables so that diff won't complain about newlines
+
+ find orig.new/ -name \*.json | while read file; do echo >> "$file"; done
+
+Convert the original tables from YAML to JSON
+
+ find orig -name \*.yaml -exec ./yaml2json {} +
+
+Compare the new and old tables using diff
+
+ diff -ruU10 orig orig.new/ | grep -v '^Only in' | vim -
+
+Edit the loot table template or what-have-you to update whatever formatting
+changes Mojang made to the JSON
+
+ vim loot_table.j2 
+
+Repeat important steps as necessary
+
+ find orig -name \*.yaml -exec ./yaml2json {} +
+ diff -ruU10 orig orig.new/ | grep -v '^Only in' | vim -
+ vim loot_table.j2 
+
+Commit changes in the usual way
+
+////

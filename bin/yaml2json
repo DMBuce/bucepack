@@ -1,0 +1,24 @@
+#!/bin/bash
+
+# global vars
+gitroot="$(cd "$(dirname "$0")" && git rev-parse --show-toplevel)"
+template="$gitroot/data/minecraft/loot_tables/loot_table.j2"
+
+# parse args
+for yaml in "$@"; do
+	# figure out json file
+	json="${yaml%.yaml}"
+
+	# skip file if it's not readable or not named *.yaml
+	if [[ ! -r "$yaml" ]]; then
+		echo "Can't find or read file: $yaml" >&2
+		continue
+	elif [[ "$yaml" != *.yaml ]]; then
+		echo "Wrong file extension: ${yaml##*.}" >&2
+		continue
+	fi
+
+	# turn yaml into json
+	j2 "$template" "$yaml" -o "$json"
+done
+
