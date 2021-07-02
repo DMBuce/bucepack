@@ -167,7 +167,10 @@ oretypes_FILES := $(DEFAULT_FILES) \
 	assets/minecraft/textures/block/lapis_ore_1.png \
 	assets/minecraft/textures/block/lapis_ore_2.png \
 	assets/minecraft/textures/block/diamond_ore.png \
-	assets/minecraft/textures/block/redstone_ore.png
+	assets/minecraft/textures/block/redstone_ore.png \
+	assets/minecraft/textures/block/emerald_ore.png \
+	assets/minecraft/textures/block/gold_ore.png \
+	assets/minecraft/textures/block/iron_ore.png
 
 retrofood_FILES := $(DEFAULT_FILES) \
 	assets/minecraft/textures/item/apple.png \
