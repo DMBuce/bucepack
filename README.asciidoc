@@ -194,16 +194,6 @@ Download: https://github.com/DMBuce/bucepack/releases
 
 Build: `make retrofood.zip`
 
-=== Retro Iron
-
-Reverts the iron block to its smooth texture from before 1.9pre5.
-
-image::https://i.imgur.com/Wn4tVMv.png[Retro Iron]
-
-Download: https://github.com/DMBuce/bucepack/releases
-
-Build: `make retroiron.zip`
-
 == Sound Packs
 
 === Retro Moo
@@ -249,14 +239,6 @@ Download: https://github.com/DMBuce/bucepack/releases
 
 Build: `make notreasuremaps.zip`
 
-=== Aggro Bastions
-
-Makes piglins hostile when you break blocks that bastions are made out of.
-
-Download: https://github.com/DMBuce/bucepack/releases
-
-Build: `make aggrobastions.zip`
-
 === Climbable
 
 Lets you climb chains and bamboo.
@@ -290,16 +272,6 @@ image::https://i.imgur.com/mXfFuET.png[Waterproof Tech]
 Download: https://github.com/DMBuce/bucepack/releases
 
 Build: `make waterprooftech.zip`
-
-=== Blue Fire
-
-Lets you use blue shiny rocks to make blue fire.
-
-image::https://i.imgur.com/paceJ4Z.png[Blue Fire]
-
-Download: https://github.com/DMBuce/bucepack/releases
-
-Build: `make bluefire.zip`
 
 === Gardener Endermen
 
