@@ -3,7 +3,7 @@ RESOURCEPACKFILES = paintingoverhaul.zip noteguide.zip brewguide.zip \
 	techarrows.zip ravager.zip villagemech.zip pigarmor.zip oretypes.zip \
 	retrofood.zip retromoo.zip retrotwang.zip retrosploosh.zip retrocrunch.zip
 DATAPACKFILES = gardenerendermen.zip climbable.zip speedypaths.zip waterprooftech.zip notreasuremaps.zip \
-	lootoverhaul.zip dragonproof.zip escapeend.zip escapenether.zip escapegrind.zip lichdom.zip
+	lootoverhaul.zip dragonproof.zip shearless.zip escapeend.zip escapenether.zip escapegrind.zip lichdom.zip
 PACKFILES = $(RESOURCEPACKFILES) $(DATAPACKFILES)
 MCDIR     = $(HOME)/.minecraft
 
@@ -336,6 +336,9 @@ lootoverhaul_FILES := $(DEFAULT_FILES) \
 dragonproof_FILES := $(DEFAULT_FILES) \
 	data/minecraft/tags/blocks/dragon_immune.json
 
+shearless_FILES := $(DEFAULT_FILES) \
+	data/minecraft/tags/blocks/mineable/hoe.json
+
 escapeend_FILES := $(DEFAULT_FILES) \
 	data/minecraft/tags/functions/tick-escape.json \
 	data/escape/functions/end_respawn.mcfunction \
@@ -580,7 +583,7 @@ lootoverhaul.zip: $(lootoverhaul_FILES)
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^
 
-dragonproof.zip: $(dragonproof_FILES)
+shearless.zip: $(shearless_FILES)
 	cp meta/$(@:.zip=.png) pack.png
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^
