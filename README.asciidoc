@@ -109,9 +109,11 @@ Build: `make brewguide.zip`
 === Tech Arrows
 
 Adds arrows to the top of hoppers and the side of observers so that you can
-see which direction they're pointing.
+see which direction they're pointing. The observer's arrows light up when they
+activate so that you can see signals passing through them.
 
-image::https://i.imgur.com/RwOzhsR.png[Tech Arrows]
+//image::https://i.imgur.com/RwOzhsR.png[Tech Arrows]
+imgae::https://i.imgur.com/EyBG6cG.png[Tech Arrows]
 
 Download: https://github.com/DMBuce/bucepack/releases
 
@@ -152,14 +154,20 @@ Build: `make ravager.zip`
 
 === Ore Types
 
-Organizes ores into types to provide more variety and consistency
+Mixes classic ore textures with the modern ones introduced in 1.17 to provide
+more variety in ore shapes.
+Nether and deepslate ores are left unchanged, while stone ores use a simple,
+classic-inspired aesthetic that pairs well with stone's clean texture.
 
-image::https://i.imgur.com/kXCHAdS.png[Ore Types]
+//image::https://i.imgur.com/kXCHAdS.png[Ore Types]
+image::https://i.imgur.com/G4xb3Q7.png[Ore Types]
 
-* "Metallic" ores (Iron, Gold) are unchanged
-* "Gemlike" ores (Diamond, Redstone) match emerald's gemlike texture
-* "Lumpy" ores (Coal, Lapis) use a random mixture of the default coal ore,
-  the default lapis ore, and the default quartz ore shapes.
+Rather than simply reverting the stone ores to their 1.16 version,
+this pack organizes them into "types" that determine the ore's shape.
+
+* "Metallic" ores (Copper, Iron, Gold) are shaped like classic iron ore
+* "Gemlike" ores (Redstone, Diamond, Emerald) use the old emerald shape
+* "Lumpy" ores (Coal, Lapis) are shaped like modern coal ore
 
 As an originally unintended bonus,
 gemlike ores stick up one pixel above lava,
