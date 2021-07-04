@@ -1,16 +1,16 @@
 {
-	"values": [
-		"#buttons",
-		"minecraft:lever",
-		"minecraft:redstone_wire",
-		"minecraft:redstone_torch",
-		"minecraft:repeater",
-		"minecraft:comparator",
-		"minecraft:tripwire_hook",
-		"minecraft:tripwire",
-		"minecraft:rail",
-		"minecraft:detector_rail",
-		"minecraft:powered_rail",
-		"minecraft:activator_rail"
-	]
+  "values": [
+    "#buttons",
+    "minecraft:lever",
+    "minecraft:redstone_wire",
+    "minecraft:redstone_torch",
+    "minecraft:repeater",
+    "minecraft:comparator",
+    "minecraft:tripwire_hook",
+    "minecraft:tripwire",
+    "minecraft:rail",
+    "minecraft:detector_rail",
+    "minecraft:powered_rail",
+    "minecraft:activator_rail"
+  ]
 }
