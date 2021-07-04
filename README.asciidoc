@@ -271,6 +271,34 @@ Download: https://github.com/DMBuce/bucepack/releases
 
 Build: `make speedypaths.zip`
 
+=== Shearless
+
+Makes hoes able to harvest blocks normally obtained by breaking them with shears.
+
+TODO: document this better, add a picture
+
+Download: https://github.com/DMBuce/bucepack/releases
+
+Build: `make shearless.zip`
+
+=== Torched Portals
+
+Lets you light portals with torches.
+
+Due to implementation details,
+this pack changes a few other things about torches:
+
+* Torches get squished by falling blocks
+* Torches are treated like fire by mob pathfinding
+* Splash water potions destroy torches
+* Entities in torches start on fire maybe?
+
+TODO: document this better, add a picture
+
+Download: https://github.com/DMBuce/bucepack/releases
+
+Build: `make torched_portals.zip`
+
 === Waterproof Tech
 
 Makes rails and redstone components waterproof.
