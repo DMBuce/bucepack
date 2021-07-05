@@ -207,7 +207,8 @@ classic_lapis_FILES := $(DEFAULT_FILES) \
 	assets/minecraft/textures/block/lapis_block.png
 
 classic_rose_FILES := $(DEFAULT_FILES) \
-	assets/minecraft/textures/block/poppy.png
+	assets/minecraft/textures/block/poppy.png \
+	assets/minecraft/lang/en_us.json
 
 classic_food_FILES := $(DEFAULT_FILES) \
 	assets/minecraft/textures/item/apple.png \
