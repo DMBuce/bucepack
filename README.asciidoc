@@ -177,14 +177,49 @@ Download: https://github.com/DMBuce/bucepack/releases
 
 Build: `make ore_types.zip`
 
-=== Retro Food
+=== Discreet Pumpkin
 
-Reverts food to their outlined textures from before 1.4.2,
+Makes the pumpkin helmet gui less obtrusive.
+
+//image::[Discreet Pumkin]
+
+Download: https://github.com/DMBuce/bucepack/releases
+
+Build: `make discreet_pumpkin.zip`
+
+=== Stickier Piston
+
+Makes the heads of sticky pistons more green.
+
+//image::[Stickier Piston]
+
+Download: https://github.com/DMBuce/bucepack/releases
+
+Build: `make stickier_piston.zip`
+
+=== Classic Textures
+
+This is a series of texture packs that revert certain blocks and items to
+an older version.
+
+Classic Netherrack reverts netherrack to its bloody texture from before 1.14.
+
+Classic Lava reverts lava to its less cheesy texture from before 1.5.
+
+Classic Gravel reverts gravel to its beta texture from before 1.0.0.
+
+Classic Lapis reverts the lapis block to its smooth texture from before 1.6.1.
+
+Classic Rose reverts the poppy to its rose texture from before 1.7.2.
+
+//image::[Classic Blocks]
+
+Classic Food reverts food to their outlined textures from before 1.4.2,
 and adds outlines to some food that's been added to the game since then.
 
-image::https://i.imgur.com/DorMwHO.png[Retro Food]
+image::https://i.imgur.com/DorMwHO.png[Classic Food]
 
-Retextured items:
+Retextured food items:
 
 * Apples
 * Chicken
@@ -200,41 +235,37 @@ Retextured items:
 
 Download: https://github.com/DMBuce/bucepack/releases
 
-Build: `make classic_food.zip`
+Build:
+
+ make classic_lava.zip
+ make classic_gravel.zip
+ make classic_lapis.zip
+ make classic_rose.zip
+ make classic_food.zip
 
 == Sound Packs
 
-=== Retro Moo
+=== Classic Sounds
 
-Reverts cow noises to their old, derpy sounds.
+This is a series of sound packs that revert certain sounds to an older
+version.
 
-Download: https://github.com/DMBuce/bucepack/releases
+Classic Moo reverts cow noises to their old, derpy sounds.
 
-Build: `make classic_moo.zip`
+Classic Twang reverts the arrow noise so it has a *twang* sound.
 
-=== Retro Twang
+Classic Sploosh reverts water noise so it has a *sploosh* sound.
 
-Reverts arrow noise so it has a *twang* sound.
-
-Download: https://github.com/DMBuce/bucepack/releases
-
-Build: `make classic_twang.zip`
-
-=== Retro Sploosh
-
-Reverts water noise so it has a *sploosh* sound.
+Classic Crunch reverts grass noise so it has a *crunch* sound when stepping on it.
 
 Download: https://github.com/DMBuce/bucepack/releases
 
-Build: `make classic_sploosh.zip`
+Build:
 
-=== Retro Crunch
-
-Reverts grass noise so it has a *crunch* sound when stepping on it.
-
-Download: https://github.com/DMBuce/bucepack/releases
-
-Build: `make classic_crunch.zip`
+ make classic_moo.zip
+ make classic_twang.zip
+ make classic_sploosh.zip
+ make classic_crunch.zip
 
 == Data Packs
 

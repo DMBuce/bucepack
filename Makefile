@@ -1,7 +1,9 @@
 
 RESOURCEPACKFILES = painting_overhaul.zip note_guide.zip brew_guide.zip \
 	tech_arrows.zip ravager.zip villager_mech.zip pig_armor.zip ore_types.zip \
-	classic_food.zip classic_moo.zip classic_twang.zip classic_sploosh.zip classic_crunch.zip
+	discreet_pumpkin.zip stickier_piston.zip \
+	classic_netherrack.zip classic_lava.zip classic_gravel.zip classic_lapis.zip classic_rose.zip classic_food.zip \
+	classic_moo.zip classic_twang.zip classic_sploosh.zip classic_crunch.zip
 DATAPACKFILES = gardener_endermen.zip climbable.zip speedy_paths.zip waterproof_tech.zip no_treasure_maps.zip \
 	loot_overhaul.zip dragonproof.zip shearless.zip escape_end.zip escape_nether.zip escape_grind.zip lichdom.zip \
 	starter_item_bed.zip starter_item_book.zip starter_item_bucket.zip starter_item_map.zip starter_item_shulker.zip
@@ -176,6 +178,36 @@ ore_types_FILES := $(DEFAULT_FILES) \
 	#assets/minecraft/textures/block/coal_ore_2.png \
 	#assets/minecraft/textures/block/lapis_ore_1.png \
 	#assets/minecraft/textures/block/lapis_ore_2.png \
+
+discreet_pumpkin_FILES := $(DEFAULT_FILES) \
+	assets/minecraft/textures/misc/pumpkinblur.png
+
+stickier_piston_FILES := $(DEFAULT_FILES) \
+	assets/minecraft/models/block/sticky_piston.json \
+	assets/minecraft/textures/block/piston_side_sticky.png \
+	assets/minecraft/textures/block/piston_top_sticky.png
+
+classic_netherrack_FILES := $(DEFAULT_FILES) \
+	assets/minecraft/textures/block/netherrack.png \
+	assets/minecraft/textures/block/nether_quartz_ore.png \
+	assets/minecraft/textures/block/nether_gold_ore.png \
+	assets/minecraft/textures/block/crimson_nylium_side.png \
+	assets/minecraft/textures/block/warped_nylium_side.png
+
+classic_lava_FILES := $(DEFAULT_FILES) \
+	assets/minecraft/textures/block/lava_still.png.mcmeta \
+	assets/minecraft/textures/block/lava_flow.png.mcmeta \
+	assets/minecraft/textures/block/lava_still.png \
+	assets/minecraft/textures/block/lava_flow.png
+
+classic_gravel_FILES := $(DEFAULT_FILES) \
+	assets/minecraft/textures/block/gravel.png
+
+classic_lapis_FILES := $(DEFAULT_FILES) \
+	assets/minecraft/textures/block/lapis_block.png
+
+classic_rose_FILES := $(DEFAULT_FILES) \
+	assets/minecraft/textures/block/poppy.png
 
 classic_food_FILES := $(DEFAULT_FILES) \
 	assets/minecraft/textures/item/apple.png \
@@ -538,6 +570,41 @@ pig_armor.zip: $(pig_armor_FILES)
 	zip $@ pack.png pack.mcmeta $^
 
 ore_types.zip: $(ore_types_FILES)
+	cp meta/$(@:.zip=.png) pack.png
+	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
+	zip $@ pack.png pack.mcmeta $^
+
+discreet_pumpkin.zip: $(discreet_pumpkin_FILES)
+	cp meta/$(@:.zip=.png) pack.png
+	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
+	zip $@ pack.png pack.mcmeta $^
+
+stickier_piston.zip: $(stickier_piston_FILES)
+	cp meta/$(@:.zip=.png) pack.png
+	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
+	zip $@ pack.png pack.mcmeta $^
+
+classic_netherrack.zip: $(classic_netherrack_FILES)
+	cp meta/$(@:.zip=.png) pack.png
+	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
+	zip $@ pack.png pack.mcmeta $^
+
+classic_lava.zip: $(classic_lava_FILES)
+	cp meta/$(@:.zip=.png) pack.png
+	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
+	zip $@ pack.png pack.mcmeta $^
+
+classic_gravel.zip: $(classic_gravel_FILES)
+	cp meta/$(@:.zip=.png) pack.png
+	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
+	zip $@ pack.png pack.mcmeta $^
+
+classic_lapis.zip: $(classic_lapis_FILES)
+	cp meta/$(@:.zip=.png) pack.png
+	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
+	zip $@ pack.png pack.mcmeta $^
+
+classic_rose.zip: $(classic_rose_FILES)
 	cp meta/$(@:.zip=.png) pack.png
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^
