@@ -3,7 +3,7 @@ RESOURCEPACKFILES = paintingoverhaul.zip noteguide.zip brewguide.zip \
 	techarrows.zip ravager.zip villagemech.zip pigarmor.zip oretypes.zip \
 	retrofood.zip retromoo.zip retrotwang.zip retrosploosh.zip retrocrunch.zip
 DATAPACKFILES = gardenerendermen.zip climbable.zip speedypaths.zip waterprooftech.zip notreasuremaps.zip \
-	lootoverhaul.zip dragonproof.zip shearless.zip torch_portals.zip escapeend.zip escapenether.zip escapegrind.zip lichdom.zip \
+	lootoverhaul.zip dragonproof.zip shearless.zip escapeend.zip escapenether.zip escapegrind.zip lichdom.zip \
 	starter_item_bed.zip starter_item_book.zip starter_item_bucket.zip starter_item_map.zip starter_item_shulker.zip
 
 PACKFILES = $(RESOURCEPACKFILES) $(DATAPACKFILES)
@@ -342,9 +342,6 @@ dragonproof_FILES := $(DEFAULT_FILES) \
 shearless_FILES := $(DEFAULT_FILES) \
 	data/minecraft/tags/blocks/mineable/hoe.json
 
-torch_portals_FILES := $(DEFAULT_FILES) \
-	data/minecraft/tags/blocks/fire.json
-
 escapeend_FILES := $(DEFAULT_FILES) \
 	data/minecraft/tags/functions/tick-escape.json \
 	data/escape/functions/end_respawn.mcfunction \
@@ -600,11 +597,6 @@ bluefire.zip: $(bluefire_FILES)
 	zip $@ pack.png pack.mcmeta $^
 
 lootoverhaul.zip: $(lootoverhaul_FILES)
-	cp meta/$(@:.zip=.png) pack.png
-	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
-	zip $@ pack.png pack.mcmeta $^
-
-torch_portals.zip: $(torch_portals_FILES)
 	cp meta/$(@:.zip=.png) pack.png
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^
