@@ -340,7 +340,24 @@ dragonproof_FILES := $(DEFAULT_FILES) \
 	data/minecraft/tags/blocks/dragon_immune.json
 
 shearless_FILES := $(DEFAULT_FILES) \
-	data/minecraft/tags/blocks/mineable/hoe.json
+	data/minecraft/tags/blocks/mineable/hoe.json \
+	data/minecraft/loot_tables/blocks/cobweb.json \
+	data/minecraft/loot_tables/blocks/dead_bush.json \
+	data/minecraft/loot_tables/blocks/fern.json \
+	data/minecraft/loot_tables/blocks/glow_lichen.json \
+	data/minecraft/loot_tables/blocks/grass.json \
+	data/minecraft/loot_tables/blocks/hanging_roots.json \
+	data/minecraft/loot_tables/blocks/large_fern.json \
+	data/minecraft/loot_tables/blocks/nether_sprouts.json \
+	data/minecraft/loot_tables/blocks/seagrass.json \
+	data/minecraft/loot_tables/blocks/small_dripleaf.json \
+	data/minecraft/loot_tables/blocks/tall_grass.json \
+	data/minecraft/loot_tables/blocks/tall_seagrass.json \
+	data/minecraft/loot_tables/blocks/twisting_vines.json \
+	data/minecraft/loot_tables/blocks/twisting_vines_plant.json \
+	data/minecraft/loot_tables/blocks/vine.json \
+	data/minecraft/loot_tables/blocks/weeping_vines.json \
+	data/minecraft/loot_tables/blocks/weeping_vines_plant.json
 
 escapeend_FILES := $(DEFAULT_FILES) \
 	data/minecraft/tags/functions/tick-escape.json \

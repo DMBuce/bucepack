@@ -273,12 +273,12 @@ Build: `make speedypaths.zip`
 
 === Shearless
 
-Makes hoes able to harvest blocks normally obtained by breaking them with shears.
+Makes hoes able to harvest blocks that are normally obtained with shears.
 
-TODO: add a picture
+image::https://i.imgur.com/7tN7Zij.png[Shearless]
 
-Materials obtained by shearing are unchanged, however. For example, you still
-need to use shears to obtain wool from sheep.
+Note that shears are still required to shear sheep, mooshroom, snow golems,
+pumpkins, beehives, and bee nests.
 
 Download: https://github.com/DMBuce/bucepack/releases
 
