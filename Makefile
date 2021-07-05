@@ -3,7 +3,9 @@ RESOURCEPACKFILES = paintingoverhaul.zip noteguide.zip brewguide.zip \
 	techarrows.zip ravager.zip villagemech.zip pigarmor.zip oretypes.zip \
 	retrofood.zip retromoo.zip retrotwang.zip retrosploosh.zip retrocrunch.zip
 DATAPACKFILES = gardenerendermen.zip climbable.zip speedypaths.zip waterprooftech.zip notreasuremaps.zip \
-	lootoverhaul.zip dragonproof.zip shearless.zip torch_portals.zip escapeend.zip escapenether.zip escapegrind.zip lichdom.zip
+	lootoverhaul.zip dragonproof.zip shearless.zip torch_portals.zip escapeend.zip escapenether.zip escapegrind.zip lichdom.zip \
+	starter_item_bed.zip starter_item_book.zip starter_item_bucket.zip starter_item_map.zip starter_item_shulker.zip
+
 PACKFILES = $(RESOURCEPACKFILES) $(DATAPACKFILES)
 MCDIR     = $(HOME)/.minecraft
 
@@ -423,6 +425,21 @@ lichdom_FILES := $(DEFAULT_FILES) \
 	data/lichdom/advancements/drink_blood_3.json \
 	data/lichdom/advancements/drink_blood_4.json
 
+starter_item_bed_FILES := $(DEFAULT_FILES) \
+	data/minecraft/tags/items/starter_item_bed.json
+
+starter_item_book_FILES := $(DEFAULT_FILES) \
+	data/minecraft/tags/items/starter_item_book.json
+
+starter_item_bucket_FILES := $(DEFAULT_FILES) \
+	data/minecraft/tags/items/starter_item_bucket.json
+
+starter_item_map_FILES := $(DEFAULT_FILES) \
+	data/minecraft/tags/items/starter_item_map.json
+
+starter_item_shulker_FILES := $(DEFAULT_FILES) \
+	data/minecraft/tags/items/starter_item_shulker.json
+
 test_FILES = \
 	# nothing
 
@@ -625,6 +642,36 @@ lichdom.zip: $(lichdom_FILES)
 	printf "@ data/minecraft/tags/functions/tick-lichdom.json\n@=data/minecraft/tags/functions/tick.json\n" | zipnote -w $@
 	printf "@ data/minecraft/tags/functions/load-lichdom.json\n@=data/minecraft/tags/functions/load.json\n" | zipnote -w $@
 	printf "@ data/bucepack/tags/functions/death-lichdom.json\n@=data/bucepack/tags/functions/death.json\n" | zipnote -w $@
+
+starter_item_bed.zip: $(starter_item_bed_FILES)
+	cp meta/$(@:.zip=.png) pack.png
+	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
+	zip $@ pack.png pack.mcmeta $^
+	printf "@ data/minecraft/tags/items/starter_item_bed.json\n@=data/minecraft/tags/items/starter_item.json\n" | zipnote -w $@
+
+starter_item_book.zip: $(starter_item_book_FILES)
+	cp meta/$(@:.zip=.png) pack.png
+	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
+	zip $@ pack.png pack.mcmeta $^
+	printf "@ data/minecraft/tags/items/starter_item_book.json\n@=data/minecraft/tags/items/starter_item.json\n" | zipnote -w $@
+
+starter_item_bucket.zip: $(starter_item_bucket_FILES)
+	cp meta/$(@:.zip=.png) pack.png
+	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
+	zip $@ pack.png pack.mcmeta $^
+	printf "@ data/minecraft/tags/items/starter_item_bucket.json\n@=data/minecraft/tags/items/starter_item.json\n" | zipnote -w $@
+
+starter_item_map.zip: $(starter_item_map_FILES)
+	cp meta/$(@:.zip=.png) pack.png
+	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
+	zip $@ pack.png pack.mcmeta $^
+	printf "@ data/minecraft/tags/items/starter_item_map.json\n@=data/minecraft/tags/items/starter_item.json\n" | zipnote -w $@
+
+starter_item_shulker.zip: $(starter_item_shulker_FILES)
+	cp meta/$(@:.zip=.png) pack.png
+	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
+	zip $@ pack.png pack.mcmeta $^
+	printf "@ data/minecraft/tags/items/starter_item_shulker.json\n@=data/minecraft/tags/items/starter_item.json\n" | zipnote -w $@
 
 .PHONY: install
 install: $(RESOURCEPACKFILES) $(DATAPACKFILES)

@@ -407,6 +407,18 @@ Download: https://github.com/DMBuce/bucepack/releases
 
 Build: `make lootoverhaul.zip`
 
+=== Starter Items
+
+This is an addon to the Loot Overhaul pack above.
+
+If multiple Starter Item packs are installed, the bonus chest will spawn one
+starter item chosen at random. To make it spawn *all* starter items, edit
+`lootoverhaul.zip/data/minecraft/loot_tables/chests/spawn_bonus_chest.json`
+and change the `expand` line in the `starter_item` tag entry so that it says
+`true` instead of `false`:
+
+ "expand": true
+
 === Escape the Nether
 
 A survival challenge that starts you in the Nether.

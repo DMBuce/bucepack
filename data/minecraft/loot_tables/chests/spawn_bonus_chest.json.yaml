@@ -11,3 +11,6 @@ pools:
   - rolls: 1
     entries:
       - { type: item, weight: 1,  item: writable_book }
+  - rolls: 1
+    entries:
+      - { type: tag,  weight: 1, expand: true, tag: starter_item }
