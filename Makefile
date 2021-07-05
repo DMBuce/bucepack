@@ -276,6 +276,7 @@ data/minecraft/loot_tables/%.json: data/minecraft/loot_tables/%.json.yaml data/m
 	j2 data/minecraft/loot_tables/loot_table.j2 $< -o $@
 
 lootoverhaul_FILES := $(DEFAULT_FILES) \
+	data/minecraft/tags/items/starter_item.json \
 	data/minecraft/tags/items/creeper_drop_music_discs.json \
 	data/minecraft/loot_tables/chests/abandoned_mineshaft.json \
 	data/minecraft/loot_tables/chests/bastion_bridge.json \
