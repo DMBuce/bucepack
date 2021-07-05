@@ -72,7 +72,7 @@ with links to their inspiration.
 
 Download: https://github.com/DMBuce/bucepack/releases
 
-Build: `make paintingoverhaul.zip`
+Build: `make painting_overhaul.zip`
 
 === Note Guide
 
@@ -93,7 +93,7 @@ block underneath:
 
 Download: https://github.com/DMBuce/bucepack/releases
 
-Build: `make noteguide.zip`
+Build: `make note_guide.zip`
 
 === Brew Guide
 
@@ -104,7 +104,7 @@ image::https://i.imgur.com/edmhYeq.png[Brew Guide]
 
 Download: https://github.com/DMBuce/bucepack/releases
 
-Build: `make brewguide.zip`
+Build: `make brew_guide.zip`
 
 === Tech Arrows
 
@@ -117,9 +117,9 @@ imgae::https://i.imgur.com/EyBG6cG.png[Tech Arrows]
 
 Download: https://github.com/DMBuce/bucepack/releases
 
-Build: `make techarrows.zip`
+Build: `make tech_arrows.zip`
 
-=== Village Mech
+=== Villager Mech
 
 Turns iron golems into mechsuit-wearing villagers.
 
@@ -127,7 +127,7 @@ image::https://i.imgur.com/oF0MLK9.png[Village Mech]
 
 Download: https://github.com/DMBuce/bucepack/releases
 
-Build: `make villagemech.zip`
+Build: `make villager_mech.zip`
 
 === Pig Armor
 
@@ -140,7 +140,7 @@ it doesn't reduce the damage that pigs take.
 
 Download: https://github.com/DMBuce/bucepack/releases
 
-Build: `make pigarmor.zip`
+Build: `make pig_armor.zip`
 
 === Ravager
 
@@ -175,7 +175,7 @@ so you can find them a bit more easily.
 
 Download: https://github.com/DMBuce/bucepack/releases
 
-Build: `make oretypes.zip`
+Build: `make ore_types.zip`
 
 === Retro Food
 
@@ -200,7 +200,7 @@ Retextured items:
 
 Download: https://github.com/DMBuce/bucepack/releases
 
-Build: `make retrofood.zip`
+Build: `make classic_food.zip`
 
 == Sound Packs
 
@@ -210,7 +210,7 @@ Reverts cow noises to their old, derpy sounds.
 
 Download: https://github.com/DMBuce/bucepack/releases
 
-Build: `make retromoo.zip`
+Build: `make classic_moo.zip`
 
 === Retro Twang
 
@@ -218,7 +218,7 @@ Reverts arrow noise so it has a *twang* sound.
 
 Download: https://github.com/DMBuce/bucepack/releases
 
-Build: `make retrotwang.zip`
+Build: `make classic_twang.zip`
 
 === Retro Sploosh
 
@@ -226,7 +226,7 @@ Reverts water noise so it has a *sploosh* sound.
 
 Download: https://github.com/DMBuce/bucepack/releases
 
-Build: `make retrosploosh.zip`
+Build: `make classic_sploosh.zip`
 
 === Retro Crunch
 
@@ -234,7 +234,7 @@ Reverts grass noise so it has a *crunch* sound when stepping on it.
 
 Download: https://github.com/DMBuce/bucepack/releases
 
-Build: `make retrocrunch.zip`
+Build: `make classic_crunch.zip`
 
 == Data Packs
 
@@ -245,7 +245,7 @@ https://github.com/dmbuce/badlands-challenge#the-badlands-challenge[The Badlands
 
 Download: https://github.com/DMBuce/bucepack/releases
 
-Build: `make notreasuremaps.zip`
+Build: `make no_treasure_maps.zip`
 
 === Climbable
 
@@ -269,7 +269,7 @@ image::https://i.imgur.com/XafV8TN.png[Speedy Paths]
 
 Download: https://github.com/DMBuce/bucepack/releases
 
-Build: `make speedypaths.zip`
+Build: `make speedy_paths.zip`
 
 === Shearless
 
@@ -292,7 +292,7 @@ image::https://i.imgur.com/mXfFuET.png[Waterproof Tech]
 
 Download: https://github.com/DMBuce/bucepack/releases
 
-Build: `make waterprooftech.zip`
+Build: `make waterproof_tech.zip`
 
 === Gardener Endermen
 
@@ -304,7 +304,7 @@ https://raw.githubusercontent.com/DMBuce/bucepack/master/data/minecraft/tags/blo
 
 Download: https://github.com/DMBuce/bucepack/releases
 
-Build: `make gardenerendermen.zip`
+Build: `make gardener_endermen.zip`
 
 === Dragonproof End
 
@@ -390,7 +390,7 @@ structures at levels 25-30, and end structures at levels 25-39.
 
 Download: https://github.com/DMBuce/bucepack/releases
 
-Build: `make lootoverhaul.zip`
+Build: `make loot_overhaul.zip`
 
 === Starter Items
 
@@ -398,7 +398,7 @@ This is an addon to the Loot Overhaul pack above.
 
 If multiple Starter Item packs are installed, the bonus chest will spawn one
 starter item chosen at random. To make it spawn *all* starter items, edit
-`lootoverhaul.zip/data/minecraft/loot_tables/chests/spawn_bonus_chest.json`
+`loot_overhaul.zip/data/minecraft/loot_tables/chests/spawn_bonus_chest.json`
 and change the `expand` line in the `starter_item` tag entry so that it says
 `true` instead of `false`:
 
@@ -415,7 +415,7 @@ netherbrick.
 
 Download: https://github.com/DMBuce/bucepack/releases
 
-Build: `make escapenether.zip`
+Build: `make escape_nether.zip`
 
 === Escape the End
 
@@ -432,12 +432,12 @@ reverse, i.e. if you want to beat The End to gain access to the Nether and
 then beat the Nether to gain access to the overworld, install them both in the
 usual way and then run these commands:
 
-    /datapack disable "file/escapeend.zip"
-    /datapack enable "file/escapeend.zip" after "file/escapenether.zip"
+    /datapack disable "file/escape_end.zip"
+    /datapack enable "file/escape_end.zip" after "file/escape_nether.zip"
 
 Download: https://github.com/DMBuce/bucepack/releases
 
-Build: `make escapeend.zip`
+Build: `make escape_end.zip`
 
 === Escape the Grind
 
@@ -469,7 +469,7 @@ Changes that facilitate survival in The End:
 
 Download: https://github.com/DMBuce/bucepack/releases
 
-Build: `make escapegrind.zip`
+Build: `make escape_grind.zip`
 
 === Hardcore Lichdom
 

@@ -1,9 +1,9 @@
 
-RESOURCEPACKFILES = paintingoverhaul.zip noteguide.zip brewguide.zip \
-	techarrows.zip ravager.zip villagemech.zip pigarmor.zip oretypes.zip \
-	retrofood.zip retromoo.zip retrotwang.zip retrosploosh.zip retrocrunch.zip
-DATAPACKFILES = gardenerendermen.zip climbable.zip speedypaths.zip waterprooftech.zip notreasuremaps.zip \
-	lootoverhaul.zip dragonproof.zip shearless.zip escapeend.zip escapenether.zip escapegrind.zip lichdom.zip \
+RESOURCEPACKFILES = painting_overhaul.zip note_guide.zip brew_guide.zip \
+	tech_arrows.zip ravager.zip villager_mech.zip pig_armor.zip ore_types.zip \
+	classic_food.zip classic_moo.zip classic_twang.zip classic_sploosh.zip classic_crunch.zip
+DATAPACKFILES = gardener_endermen.zip climbable.zip speedy_paths.zip waterproof_tech.zip no_treasure_maps.zip \
+	loot_overhaul.zip dragonproof.zip shearless.zip escape_end.zip escape_nether.zip escape_grind.zip lichdom.zip \
 	starter_item_bed.zip starter_item_book.zip starter_item_bucket.zip starter_item_map.zip starter_item_shulker.zip
 
 PACKFILES = $(RESOURCEPACKFILES) $(DATAPACKFILES)
@@ -17,7 +17,7 @@ CLEAN_TARGETS := $(PACKFILES) pack.mcmeta pack.png test.zip \
 # needed by all texture pack targets
 DEFAULT = CONTRIBUTORS.txt LICENSE.txt
 
-paintingoverhaul_FILES := $(DEFAULT_FILES) \
+painting_overhaul_FILES := $(DEFAULT_FILES) \
 	assets/minecraft/textures/painting/kebab.png \
 	assets/minecraft/textures/painting/aztec.png \
 	assets/minecraft/textures/painting/alban.png \
@@ -45,7 +45,7 @@ paintingoverhaul_FILES := $(DEFAULT_FILES) \
 	assets/minecraft/textures/painting/pigscene.png \
 	assets/minecraft/textures/painting/pointer.png
 
-noteguide_FILES := $(DEFAULT_FILES) \
+note_guide_FILES := $(DEFAULT_FILES) \
 	assets/minecraft/textures/block/note_block_0.png \
 	assets/minecraft/textures/block/note_block_1.png \
 	assets/minecraft/textures/block/note_block_2.png \
@@ -73,7 +73,7 @@ noteguide_FILES := $(DEFAULT_FILES) \
 	assets/minecraft/models/item/note_block.json \
 	assets/minecraft/blockstates/note_block.json
 
-noteguide_adv_FILES := $(DEFAULT_FILES) \
+note_guide_adv_FILES := $(DEFAULT_FILES) \
 	assets/minecraft/textures/block/adv_note_block_0.png \
 	assets/minecraft/textures/block/adv_note_block_1.png \
 	assets/minecraft/textures/block/adv_note_block_2.png \
@@ -127,10 +127,10 @@ noteguide_adv_FILES := $(DEFAULT_FILES) \
 	assets/minecraft/models/item/note_block.json \
 	assets/minecraft/blockstates/adv_note_block.json
 
-brewguide_FILES := $(DEFAULT_FILES) \
+brew_guide_FILES := $(DEFAULT_FILES) \
 	assets/minecraft/textures/gui/container/brewing_stand.png
 
-techarrows_FILES := $(DEFAULT_FILES) \
+tech_arrows_FILES := $(DEFAULT_FILES) \
 	assets/minecraft/models/block/hopper_side.json \
 	assets/minecraft/models/block/observer.json \
 	assets/minecraft/models/block/observer_on.json \
@@ -144,7 +144,7 @@ techarrows_FILES := $(DEFAULT_FILES) \
 ravager_FILES := $(DEFAULT_FILES) \
 	assets/minecraft/textures/entity/illager/ravager.png
 
-villagemech_FILES := $(DEFAULT_FILES) \
+villager_mech_FILES := $(DEFAULT_FILES) \
 	assets/minecraft/textures/entity/iron_golem/iron_golem.png \
 	assets/minecraft/textures/entity/iron_golem/iron_golem_crackiness_low.png \
 	assets/minecraft/textures/entity/iron_golem/iron_golem_crackiness_medium.png \
@@ -154,10 +154,10 @@ candystrider_FILES := $(DEFAULT_FILES) \
 	assets/minecraft/textures/entity/strider/strider_cold.png \
 	assets/minecraft/textures/entity/strider/strider.png
 
-pigarmor_FILES := $(DEFAULT_FILES) \
+pig_armor_FILES := $(DEFAULT_FILES) \
 	assets/minecraft/textures/entity/pig/pig_saddle.png
 
-oretypes_FILES := $(DEFAULT_FILES) \
+ore_types_FILES := $(DEFAULT_FILES) \
 	assets/minecraft/textures/block/coal_ore.png \
 	assets/minecraft/textures/block/lapis_ore.png \
 	assets/minecraft/textures/block/diamond_ore.png \
@@ -177,7 +177,7 @@ oretypes_FILES := $(DEFAULT_FILES) \
 	#assets/minecraft/textures/block/lapis_ore_1.png \
 	#assets/minecraft/textures/block/lapis_ore_2.png \
 
-retrofood_FILES := $(DEFAULT_FILES) \
+classic_food_FILES := $(DEFAULT_FILES) \
 	assets/minecraft/textures/item/apple.png \
 	assets/minecraft/textures/item/baked_potato.png \
 	assets/minecraft/textures/item/beef.png \
@@ -210,7 +210,7 @@ retronetherrack_FILES := $(DEFAULT_FILES) \
 retroiron_FILES := $(DEFAULT_FILES) \
 	assets/minecraft/textures/block/iron_block.png
 
-retromoo_FILES := $(DEFAULT_FILES) \
+classic_moo_FILES := $(DEFAULT_FILES) \
 	assets/minecraft/sounds/mob/cow/hurt1.ogg \
 	assets/minecraft/sounds/mob/cow/hurt2.ogg \
 	assets/minecraft/sounds/mob/cow/hurt3.ogg \
@@ -219,13 +219,13 @@ retromoo_FILES := $(DEFAULT_FILES) \
 	assets/minecraft/sounds/mob/cow/say3.ogg \
 	assets/minecraft/sounds/mob/cow/say4.ogg
 
-retrotwang_FILES := $(DEFAULT_FILES) \
+classic_twang_FILES := $(DEFAULT_FILES) \
 	assets/minecraft/sounds/random/bowhit4.ogg \
 	assets/minecraft/sounds/random/bowhit2.ogg \
 	assets/minecraft/sounds/random/bowhit1.ogg \
 	assets/minecraft/sounds/random/bowhit3.ogg
 
-retrosploosh_FILES := $(DEFAULT_FILES) \
+classic_sploosh_FILES := $(DEFAULT_FILES) \
 	assets/minecraft/sounds/liquid/splash.ogg \
 	assets/minecraft/sounds/liquid/splash2.ogg \
 	assets/minecraft/sounds/liquid/swim1.ogg \
@@ -233,7 +233,7 @@ retrosploosh_FILES := $(DEFAULT_FILES) \
 	assets/minecraft/sounds/liquid/swim3.ogg \
 	assets/minecraft/sounds/liquid/swim4.ogg
 
-retrocrunch_FILES := $(DEFAULT_FILES) \
+classic_crunch_FILES := $(DEFAULT_FILES) \
 	assets/minecraft/sounds/step/grass4.ogg \
 	assets/minecraft/sounds/step/grass5.ogg \
 	assets/minecraft/sounds/step/grass1.ogg \
@@ -241,7 +241,7 @@ retrocrunch_FILES := $(DEFAULT_FILES) \
 	assets/minecraft/sounds/step/grass6.ogg \
 	assets/minecraft/sounds/step/grass3.ogg
 
-gardenerendermen_FILES := $(DEFAULT_FILES) \
+gardener_endermen_FILES := $(DEFAULT_FILES) \
 	data/minecraft/tags/blocks/enderman_holdable.json
 
 aggrobastions_FILES := $(DEFAULT_FILES) \
@@ -254,18 +254,18 @@ climbable_FILES := $(DEFAULT_FILES) \
 	data/bucepack/advancements/root.json \
 	data/bucepack/advancements/climbable.json
 
-speedypaths_FILES := $(DEFAULT_FILES) \
+speedy_paths_FILES := $(DEFAULT_FILES) \
 	data/minecraft/tags/blocks/soul_speed_blocks.json
 
-waterprooftech_FILES := $(DEFAULT_FILES) \
+waterproof_tech_FILES := $(DEFAULT_FILES) \
 	data/minecraft/tags/blocks/signs.json \
 	data/bucepack/advancements/root.json \
-	data/bucepack/advancements/waterprooftech.json
+	data/bucepack/advancements/waterproof_tech.json
 
-notreasuremaps_FILES := $(DEFAULT_FILES) \
+no_treasure_maps_FILES := $(DEFAULT_FILES) \
 	data/minecraft/loot_tables/chests/shipwreck_map_nomap.json \
 	data/bucepack/advancements/root.json \
-	data/bucepack/advancements/notreasuremaps.json
+	data/bucepack/advancements/no_treasure_maps.json
 
 bluefire_FILES := $(DEFAULT_FILES) \
 	data/minecraft/tags/blocks/soul_fire_base_blocks.json \
@@ -275,7 +275,7 @@ bluefire_FILES := $(DEFAULT_FILES) \
 data/minecraft/loot_tables/%.json: data/minecraft/loot_tables/%.json.yaml data/minecraft/loot_tables/loot_table.j2
 	j2 data/minecraft/loot_tables/loot_table.j2 $< -o $@
 
-lootoverhaul_FILES := $(DEFAULT_FILES) \
+loot_overhaul_FILES := $(DEFAULT_FILES) \
 	data/minecraft/tags/items/starter_item.json \
 	data/minecraft/tags/items/creeper_drop_music_discs.json \
 	data/minecraft/loot_tables/chests/abandoned_mineshaft.json \
@@ -359,19 +359,19 @@ shearless_FILES := $(DEFAULT_FILES) \
 	data/minecraft/loot_tables/blocks/weeping_vines.json \
 	data/minecraft/loot_tables/blocks/weeping_vines_plant.json
 
-escapeend_FILES := $(DEFAULT_FILES) \
+escape_end_FILES := $(DEFAULT_FILES) \
 	data/minecraft/tags/functions/tick-escape.json \
 	data/escape/functions/end_respawn.mcfunction \
 	data/escape/functions/tick-end.mcfunction
 
-escapenether_FILES := $(DEFAULT_FILES) \
+escape_nether_FILES := $(DEFAULT_FILES) \
 	data/minecraft/tags/functions/tick-escape.json \
 	data/escape/functions/nether_respawn.mcfunction \
 	data/escape/functions/tick-nether.mcfunction \
 	data/escape/tags/blocks/airlava.json \
 	data/escape/advancements/kill_wither.json
 
-escapegrind_FILES := $(DEFAULT_FILES) \
+escape_grind_FILES := $(DEFAULT_FILES) \
 	data/minecraft/tags/functions/load-grind.json \
 	data/minecraft/tags/functions/tick-grind.json \
 	data/minecraft/loot_tables/blocks/crying_obsidian_lapis.json \
@@ -466,17 +466,17 @@ test.zip: $(test_FILES)
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^
 
-paintingoverhaul.zip: $(paintingoverhaul_FILES)
+painting_overhaul.zip: $(painting_overhaul_FILES)
 	cp meta/$(@:.zip=.png) pack.png
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^
 
-noteguide.zip: $(noteguide_FILES)
+note_guide.zip: $(note_guide_FILES)
 	cp meta/$(@:.zip=.png) pack.png
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^
 
-noteguide_adv.zip: $(noteguide_adv_FILES)
+note_guide_adv.zip: $(note_guide_adv_FILES)
 	cp meta/$(@:.zip=.png) pack.png
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^
@@ -507,12 +507,12 @@ noteguide_adv.zip: $(noteguide_adv_FILES)
 	printf "@ assets/minecraft/textures/block/adv_note_block_23.png\n@=assets/minecraft/textures/block/note_block_23.png\n" | zipnote -w $@
 	printf "@ assets/minecraft/textures/block/adv_note_block_24.png\n@=assets/minecraft/textures/block/note_block_24.png\n" | zipnote -w $@
 
-brewguide.zip: $(brewguide_FILES)
+brew_guide.zip: $(brew_guide_FILES)
 	cp meta/$(@:.zip=.png) pack.png
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^
 
-techarrows.zip: $(techarrows_FILES)
+tech_arrows.zip: $(tech_arrows_FILES)
 	cp meta/$(@:.zip=.png) pack.png
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^
@@ -522,7 +522,7 @@ ravager.zip: $(ravager_FILES)
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^
 
-villagemech.zip: $(villagemech_FILES)
+villager_mech.zip: $(villager_mech_FILES)
 	cp meta/$(@:.zip=.png) pack.png
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^
@@ -532,17 +532,17 @@ candystrider.zip: $(candystrider_FILES)
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^
 
-pigarmor.zip: $(pigarmor_FILES)
+pig_armor.zip: $(pig_armor_FILES)
 	cp meta/$(@:.zip=.png) pack.png
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^
 
-oretypes.zip: $(oretypes_FILES)
+ore_types.zip: $(ore_types_FILES)
 	cp meta/$(@:.zip=.png) pack.png
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^
 
-retrofood.zip: $(retrofood_FILES)
+classic_food.zip: $(classic_food_FILES)
 	cp meta/$(@:.zip=.png) pack.png
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^
@@ -557,27 +557,27 @@ retroiron.zip: $(retroiron_FILES)
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^
 
-retromoo.zip: $(retromoo_FILES)
+classic_moo.zip: $(classic_moo_FILES)
 	cp meta/$(@:.zip=.png) pack.png
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^
 
-retrotwang.zip: $(retrotwang_FILES)
+classic_twang.zip: $(classic_twang_FILES)
 	cp meta/$(@:.zip=.png) pack.png
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^
 
-retrosploosh.zip: $(retrosploosh_FILES)
+classic_sploosh.zip: $(classic_sploosh_FILES)
 	cp meta/$(@:.zip=.png) pack.png
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^
 
-retrocrunch.zip: $(retrocrunch_FILES)
+classic_crunch.zip: $(classic_crunch_FILES)
 	cp meta/$(@:.zip=.png) pack.png
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^
 
-gardenerendermen.zip: $(gardenerendermen_FILES)
+gardener_endermen.zip: $(gardener_endermen_FILES)
 	cp meta/$(@:.zip=.png) pack.png
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^
@@ -592,17 +592,17 @@ climbable.zip: $(climbable_FILES)
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^
 
-speedypaths.zip: $(speedypaths_FILES)
+speedy_paths.zip: $(speedy_paths_FILES)
 	cp meta/$(@:.zip=.png) pack.png
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^
 
-waterprooftech.zip: $(waterprooftech_FILES)
+waterproof_tech.zip: $(waterproof_tech_FILES)
 	cp meta/$(@:.zip=.png) pack.png
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^
 
-notreasuremaps.zip: $(notreasuremaps_FILES)
+no_treasure_maps.zip: $(no_treasure_maps_FILES)
 	cp meta/$(@:.zip=.png) pack.png
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^
@@ -613,7 +613,12 @@ bluefire.zip: $(bluefire_FILES)
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^
 
-lootoverhaul.zip: $(lootoverhaul_FILES)
+loot_overhaul.zip: $(loot_overhaul_FILES)
+	cp meta/$(@:.zip=.png) pack.png
+	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
+	zip $@ pack.png pack.mcmeta $^
+
+dragonproof.zip: $(dragonproof_FILES)
 	cp meta/$(@:.zip=.png) pack.png
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^
@@ -623,21 +628,21 @@ shearless.zip: $(shearless_FILES)
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^
 
-escapeend.zip: $(escapeend_FILES)
+escape_end.zip: $(escape_end_FILES)
 	cp meta/$(@:.zip=.png) pack.png
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^
 	printf "@ data/minecraft/tags/functions/tick-escape.json\n@=data/minecraft/tags/functions/tick.json\n" | zipnote -w $@
 	printf "@ data/escape/functions/tick-end.mcfunction\n@=data/escape/functions/tick.mcfunction\n" | zipnote -w $@
 
-escapenether.zip: $(escapenether_FILES)
+escape_nether.zip: $(escape_nether_FILES)
 	cp meta/$(@:.zip=.png) pack.png
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^
 	printf "@ data/minecraft/tags/functions/tick-escape.json\n@=data/minecraft/tags/functions/tick.json\n" | zipnote -w $@
 	printf "@ data/escape/functions/tick-nether.mcfunction\n@=data/escape/functions/tick.mcfunction\n" | zipnote -w $@
 
-escapegrind.zip: $(escapegrind_FILES)
+escape_grind.zip: $(escape_grind_FILES)
 	cp meta/$(@:.zip=.png) pack.png
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^
