@@ -1,0 +1,31 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "rolls": 1.0,
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:vine"
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:match_tool",
+          "predicate": {
+            "items": [
+              "minecraft:shears",
+              "minecraft:wooden_hoe",
+              "minecraft:stone_hoe",
+              "minecraft:iron_hoe",
+              "minecraft:diamond_hoe",
+              "minecraft:gold_hoe",
+              "minecraft:netherite_hoe"
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}
