@@ -181,7 +181,7 @@ Build: `make ore_types.zip`
 
 Makes the pumpkin helmet gui less obtrusive.
 
-//image::[Discreet Pumkin]
+image::https://i.imgur.com/2RWgrPq.png[Discreet Pumpkin]
 
 Download: https://github.com/DMBuce/bucepack/releases
 
@@ -191,7 +191,7 @@ Build: `make discreet_pumpkin.zip`
 
 Makes the heads of sticky pistons more green.
 
-//image::[Stickier Piston]
+image::https://i.imgur.com/b6jnTOt.png[Stickier Piston]
 
 Download: https://github.com/DMBuce/bucepack/releases
 
@@ -212,7 +212,7 @@ Classic Lapis reverts the lapis block to its smooth texture from before 1.6.1.
 
 Classic Rose reverts the poppy to its rose texture from before 1.7.2.
 
-//image::[Classic Blocks]
+image::https://i.imgur.com/9o75jWL.png[Classic Blocks]
 
 Classic Food reverts food to their outlined textures from before 1.4.2,
 and adds outlines to some food that's been added to the game since then.
