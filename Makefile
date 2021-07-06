@@ -5,7 +5,7 @@ RESOURCEPACKFILES = painting_overhaul.zip note_guide.zip brew_guide.zip \
 	classic_netherrack.zip classic_lava.zip classic_gravel.zip classic_lapis.zip classic_rose.zip classic_food.zip \
 	classic_moo.zip classic_twang.zip classic_sploosh.zip classic_crunch.zip
 DATAPACKFILES = gardener_endermen.zip climbable.zip speedy_paths.zip waterproof_tech.zip no_treasure_maps.zip \
-	loot_overhaul.zip dragonproof.zip shearless.zip escape_end.zip escape_nether.zip escape_grind.zip lichdom.zip \
+	fortunate_jungle.zip loot_overhaul.zip dragonproof.zip shearless.zip escape_end.zip escape_nether.zip escape_grind.zip lichdom.zip \
 	starter_bed.zip starter_book.zip starter_bucket.zip starter_map.zip starter_shulker.zip
 
 PACKFILES = $(RESOURCEPACKFILES) $(DATAPACKFILES)
@@ -308,6 +308,9 @@ bluefire_FILES := $(DEFAULT_FILES) \
 
 data/minecraft/loot_tables/%.json: data/minecraft/loot_tables/%.json.yaml data/minecraft/loot_tables/loot_table.j2
 	j2 data/minecraft/loot_tables/loot_table.j2 $< -o $@
+
+fortunate_jungle_FILES := $(DEFAULT_FILES) \
+	data/minecraft/loot_tables/blocks/jungle_leaves.json
 
 loot_overhaul_FILES := $(DEFAULT_FILES) \
 	data/minecraft/tags/items/starter_item.json \
@@ -678,6 +681,11 @@ no_treasure_maps.zip: $(no_treasure_maps_FILES)
 	printf "@ data/minecraft/loot_tables/chests/shipwreck_map_nomap.json\n@=data/minecraft/loot_tables/chests/shipwreck_map.json\n" | zipnote -w $@
 
 bluefire.zip: $(bluefire_FILES)
+	cp meta/$(@:.zip=.png) pack.png
+	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
+	zip $@ pack.png pack.mcmeta $^
+
+fortunate_jungle.zip: $(fortunate_jungle_FILES)
 	cp meta/$(@:.zip=.png) pack.png
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^

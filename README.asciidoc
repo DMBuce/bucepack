@@ -354,6 +354,22 @@ Download: https://github.com/DMBuce/bucepack/releases
 
 Build: `make dragonproof.zip`
 
+=== Fortunate Jungle
+
+Increases the drop rate of jungle saplings harvested with fortune hoes.
+The table below summarizes the drop rates of jungle sapling with and without this pack,
+as well as the drop rate of other saplings.
+
+ Drop                      | Source        | No Fortune  | Fortune I     | Fortune II    | Fortune III  | Fortune IV+
+ ------------------------------------------------------------------------------------------------------------------
+ Vanilla Jungle Saplings   | Jungle Leaves | 2.5% (1⁄40) | 2.78% (1⁄36)  | 3.125% (1⁄32) | 4.17% (1⁄24) | 10% (1⁄10)
+ Fortunate Jungle Saplings | Jungle Leaves | 2.5% (1⁄40) | 3.125% (1⁄32) | 4.17% (1⁄24)  | 5% (1⁄2)     | 10% (1⁄10)
+ Other Saplings            | Other Leaves  | 5% (1⁄20)   | 6.25% (1⁄16)  | 8.33% (1⁄12)  | 10% (1⁄10)   |
+
+Download: https://github.com/DMBuce/bucepack/releases
+
+Build: `make fortunate_jungle.zip`
+
 === Loot Overhaul
 
 Overhauls the vanilla loot tables to make early-to-midgame exploration more
