@@ -373,7 +373,9 @@ image::https://i.imgur.com/uKTapeF.png[Snout Banner Pattern]
 
 Bonus spawn chests generate a more limited and curated set of starter items
 designed to jumpstart the tree-punching phase of a fresh world:
-3-5 cobble, 2-3 bread, and 3-5 logs.
+3-5 cobble, 2-3 bread, and 3-5 logs. Additional items can be added to the
+bonus spawn chest with one or more of the link::#starter-items[Starter Item]
+datapacks below.
 
 Food loot is themed according to the structure it spawns in.
 To give a few examples:
@@ -424,9 +426,21 @@ Download: https://github.com/DMBuce/bucepack/releases
 
 Build: `make loot_overhaul.zip`
 
-=== Starter Items
+=== Starter Item
 
-This is an addon to the Loot Overhaul pack above.
+This is a series of addons datapacks for the
+link::#loot-overhaul[Loot Overhaul]
+pack above that add one additional item to the bonus spawn chest.
+
+Starter Bed adds a Red Bed to the bonus spawn chest.
+
+Starter Book adds a Book & Quill to the bonus spawn chest.
+
+Starter Bucket adds a Bucket to the bonus spawn chest.
+
+Starter Map adds a Map to the bonus spawn chest.
+
+Starter Shulker adds a Shulker Box to the bonus spawn chest.
 
 If multiple Starter Item packs are installed, the bonus chest will spawn one
 starter item chosen at random. To make it spawn *all* starter items, edit
@@ -435,6 +449,16 @@ and change the `expand` line in the `starter_item` tag entry so that it says
 `true` instead of `false`:
 
  "expand": true
+
+Download: https://github.com/DMBuce/bucepack/releases
+
+Build:
+
+ make starter_item_bed.zip
+ make starter_item_book.zip
+ make starter_item_bucket.zip
+ make starter_item_map.zip
+ make starter_item_shulker.zip
 
 === Escape the Nether
 
