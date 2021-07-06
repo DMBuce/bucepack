@@ -360,11 +360,11 @@ Increases the drop rate of jungle saplings harvested with fortune hoes.
 The table below summarizes the drop rates of jungle sapling with and without this pack,
 as well as the drop rate of other saplings.
 
- Drop                      | Source        | No Fortune  | Fortune I     | Fortune II    | Fortune III  | Fortune IV+
- ------------------------------------------------------------------------------------------------------------------
- Vanilla Jungle Saplings   | Jungle Leaves | 2.5% (1⁄40) | 2.78% (1⁄36)  | 3.125% (1⁄32) | 4.17% (1⁄24) | 10% (1⁄10)
- Fortunate Jungle Saplings | Jungle Leaves | 2.5% (1⁄40) | 3.125% (1⁄32) | 4.17% (1⁄24)  | 5% (1⁄2)     | 10% (1⁄10)
- Other Saplings            | Other Leaves  | 5% (1⁄20)   | 6.25% (1⁄16)  | 8.33% (1⁄12)  | 10% (1⁄10)   |
+ Drop                     | Source        | No Fortune  | Fortune I     | Fortune II    | Fortune III  | Fortune IV+
+ -------------------------+---------------+-------------+---------------+---------------+--------------+------------
+ Vanilla Jungle Saplings  | Jungle Leaves | 2.5% (1⁄40) | 2.78% (1⁄36)  | 3.125% (1⁄32) | 4.17% (1⁄24) | 10% (1⁄10)
+ Datapack Jungle Saplings | Jungle Leaves | 2.5% (1⁄40) | 3.125% (1⁄32) | 4.17% (1⁄24)  | 5% (1⁄20)    | 10% (1⁄10)
+ Other Saplings           | Other Leaves  | 5% (1⁄20)   | 6.25% (1⁄16)  | 8.33% (1⁄12)  | 10% (1⁄10)   |
 
 Download: https://github.com/DMBuce/bucepack/releases
 
@@ -651,6 +651,16 @@ Known Issues:
   die in the same tick will have their death messages suppressed
 
 ////
+
+TO DO AFTER MINECRAFT UPDATES
+=============================
+
+Merge loot table changes with Loot Overhaul
+Add new plants to Gardener Endermen and Shearless packs
+Add new ores to Ore Types
+Add new End blocks to Dragonproof
+Add new potions to Brewing Guide
+Add new redstone components to Waterproof
 
 HOW TO UPDATE LOOT TABLES AFTER MINECRAFT UPDATES
 =================================================
