@@ -4,8 +4,9 @@ RESOURCEPACKFILES = painting_overhaul.zip note_guide.zip brew_guide.zip \
 	discreet_pumpkin.zip stickier_piston.zip \
 	classic_netherrack.zip classic_lava.zip classic_gravel.zip classic_lapis.zip classic_rose.zip classic_food.zip \
 	classic_moo.zip classic_twang.zip classic_sploosh.zip classic_crunch.zip
-DATAPACKFILES = gardener_endermen.zip climbable.zip speedy_paths.zip waterproof_tech.zip no_treasure_maps.zip \
-	fortunate_jungle.zip loot_overhaul.zip dragonproof.zip shearless.zip escape_end.zip escape_nether.zip escape_grind.zip lichdom.zip \
+DATAPACKFILES = gardener_endermen.zip climbable.zip speedy_paths.zip \
+	no_treasure_maps.zip fortunate_jungle.zip loot_overhaul.zip dragonproof.zip
+	shearless.zip escape_end.zip escape_nether.zip escape_grind.zip lichdom.zip \
 	starter_bed.zip starter_book.zip starter_bucket.zip starter_map.zip starter_shulker.zip
 
 PACKFILES = $(RESOURCEPACKFILES) $(DATAPACKFILES)

@@ -316,16 +316,6 @@ Download: https://github.com/DMBuce/bucepack/releases
 
 Build: `make shearless.zip`
 
-=== Waterproof Tech
-
-Makes rails and redstone components waterproof.
-
-image::https://i.imgur.com/mXfFuET.png[Waterproof Tech]
-
-Download: https://github.com/DMBuce/bucepack/releases
-
-Build: `make waterproof_tech.zip`
-
 === Gardener Endermen
 
 Makes it so that endermen can't pick up blocks such as dirt and grass blocks,
@@ -660,7 +650,6 @@ Add new plants to Gardener Endermen and Shearless packs
 Add new ores to Ore Types
 Add new End blocks to Dragonproof
 Add new potions to Brewing Guide
-Add new redstone components to Waterproof
 
 HOW TO UPDATE LOOT TABLES AFTER MINECRAFT UPDATES
 =================================================
