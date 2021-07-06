@@ -237,6 +237,7 @@ Download: https://github.com/DMBuce/bucepack/releases
 
 Build:
 
+ make classic_netherrack.zip
  make classic_lava.zip
  make classic_gravel.zip
  make classic_lapis.zip
