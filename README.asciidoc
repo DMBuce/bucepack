@@ -374,7 +374,7 @@ image::https://i.imgur.com/uKTapeF.png[Snout Banner Pattern]
 Bonus spawn chests generate a more limited and curated set of starter items
 designed to jumpstart the tree-punching phase of a fresh world:
 3-5 cobble, 2-3 bread, and 3-5 logs. Additional items can be added to the
-bonus spawn chest with one or more of the link::#starter-items[Starter Item]
+bonus spawn chest with one or more of the <<starter-items,Starter Item>>
 datapacks below.
 
 Food loot is themed according to the structure it spawns in.
@@ -429,7 +429,7 @@ Build: `make loot_overhaul.zip`
 === Starter Item
 
 This is a series of addons datapacks for the
-link::#loot-overhaul[Loot Overhaul]
+<<loot-overhaul,Loot Overhaul>>
 pack above that add one additional item to the bonus spawn chest.
 
 Starter Bed adds a Red Bed to the bonus spawn chest.
