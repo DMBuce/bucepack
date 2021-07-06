@@ -445,7 +445,7 @@ Starter Shulker adds a Shulker Box to the bonus spawn chest.
 If multiple Starter Item packs are installed, the bonus chest will spawn one
 starter item chosen at random. To make it spawn *all* starter items, edit
 `loot_overhaul.zip/data/minecraft/loot_tables/chests/spawn_bonus_chest.json`
-and change the `expand` line in the `starter_item` tag entry so that it says
+and change the `expand` line in the `starter` tag entry so that it says
 `true` instead of `false`:
 
  "expand": true
@@ -454,11 +454,11 @@ Download: https://github.com/DMBuce/bucepack/releases
 
 Build:
 
- make starter_item_bed.zip
- make starter_item_book.zip
- make starter_item_bucket.zip
- make starter_item_map.zip
- make starter_item_shulker.zip
+ make starter_bed.zip
+ make starter_book.zip
+ make starter_bucket.zip
+ make starter_map.zip
+ make starter_shulker.zip
 
 === Escape the Nether
 
