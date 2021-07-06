@@ -2,5 +2,9 @@
 pack.mcmeta
 pack.png
 data/minecraft/loot_tables/*.json
-data/minecraft/loot_tables/*/*.json
-data/minecraft/loot_tables/*/*/*.json
+data/minecraft/loot_tables/chests/*.json
+data/minecraft/loot_tables/chests/*/*.json
+data/minecraft/loot_tables/gameplay/*.json
+data/minecraft/loot_tables/gameplay/*/*.json
+data/minecraft/loot_tables/subtables/*.json
+data/minecraft/loot_tables/subtables/*/*.json
