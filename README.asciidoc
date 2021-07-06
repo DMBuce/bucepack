@@ -428,9 +428,9 @@ Build: `make loot_overhaul.zip`
 
 === Starter Item
 
-This is a series of addons datapacks for the
+This is a series of addon datapacks for the
 <<loot-overhaul,Loot Overhaul>>
-pack above that add one additional item to the bonus spawn chest.
+pack above. Each pack adds one additional item to the bonus spawn chest.
 
 Starter Bed adds a Red Bed to the bonus spawn chest.
 
@@ -462,7 +462,7 @@ Build:
 
 === Escape the Nether
 
-A survival challenge that starts you in the Nether.
+A 1.16.x survival challenge that starts you in the Nether.
 The overworld is inaccessible to you until you defeat the wither.
 Until you do that, you'll respawn in the Nether in a cage made of fungus and
 netherbrick.
@@ -475,7 +475,7 @@ Build: `make escape_nether.zip`
 
 === Escape the End
 
-A survival challenge that starts you in The End.
+A 1.16.x survival challenge that starts you in The End.
 The overworld is inaccessible to you until you defeat the dragon and obtain
 elytra -- but not necessarily in that order. Until you do those two things,
 you'll respawn on The End platform with slimestone materials in your inventory
@@ -504,7 +504,7 @@ that normal parts of the game aren't available to you. For example, ranged
 combat is not possible using only materials found in The End, and enchanting
 isn't possible using only materials found in the Nether.
 
-Escape the Grind is an addon data pack that's designed to reduce the grind of,
+Escape the Grind is a 1.16.x addon data pack that's designed to reduce the grind of,
 and add possibilities to, a Nether-only or End-only survival experience.
 
 Changes that facilitate survival in Nether:
@@ -529,7 +529,7 @@ Build: `make escape_grind.zip`
 
 === Hardcore Lichdom
 
-Hardcore Lichdom is a challenge datapack designed for hardcore mode.  With
+Hardcore Lichdom is a 1.16.x challenge datapack designed for hardcore mode.  With
 this pack, players who conquer the Illagers, the Ocean, the Wither, and The
 End without dying can gain immortality and keep their world forever.
 Advancements document the basics of the data pack. For more comprehensive
