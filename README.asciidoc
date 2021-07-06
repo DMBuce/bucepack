@@ -113,7 +113,7 @@ see which direction they're pointing. The observer's arrows light up when they
 activate so that you can see signals passing through them.
 
 //image::https://i.imgur.com/RwOzhsR.png[Tech Arrows]
-imgae::https://i.imgur.com/EyBG6cG.png[Tech Arrows]
+image::https://i.imgur.com/EyBG6cG.png[Tech Arrows]
 
 Download: https://github.com/DMBuce/bucepack/releases
 
