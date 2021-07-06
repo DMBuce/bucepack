@@ -184,6 +184,7 @@ discreet_pumpkin_FILES := $(DEFAULT_FILES) \
 
 stickier_piston_FILES := $(DEFAULT_FILES) \
 	assets/minecraft/models/block/sticky_piston.json \
+	assets/minecraft/models/block/sticky_piston_inventory.json \
 	assets/minecraft/textures/block/piston_side_sticky.png \
 	assets/minecraft/textures/block/piston_top_sticky.png
 
