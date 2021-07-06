@@ -332,7 +332,7 @@ Makes it so that endermen can't pick up blocks such as dirt and grass blocks,
 and can pick up more plants and fungi.
 
 All the blocks that endermen can pick up are listed
-link::https://raw.githubusercontent.com/DMBuce/bucepack/master/data/minecraft/tags/blocks/enderman_holdable.json[here].
+https://raw.githubusercontent.com/DMBuce/bucepack/master/data/minecraft/tags/blocks/enderman_holdable.json[here].
 
 Download: https://github.com/DMBuce/bucepack/releases
 
@@ -345,7 +345,7 @@ to the magenta glass and banners found in End Cities, this pack makes other
 magenta blocks dragonproof as well.
 
 All dragonproofed blocks are listed
-https://https://raw.githubusercontent.com/DMBuce/bucepack/master/data/minecraft/tags/blocks/dragon_immune.json[here].
+https://raw.githubusercontent.com/DMBuce/bucepack/master/data/minecraft/tags/blocks/dragon_immune.json[here].
 Many of them are shown below.
 
 image::https://i.imgur.com/c7kQFcp.png[Dragonproof Blocks]
