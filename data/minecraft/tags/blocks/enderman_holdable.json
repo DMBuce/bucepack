@@ -1,4 +1,5 @@
 {
+  "note-to-self": "include only what can be planted as single blocks in the ground and avoid double-tall or vinelike plants",
   "replace": true,
   "values": [
     "#minecraft:small_flowers",
@@ -17,6 +18,11 @@
     "#minecraft:saplings",
     "minecraft:sweet_berry_bush",
     "minecraft:brown_mushroom",
-    "minecraft:red_mushroom"
+    "minecraft:red_mushroom",
+    "minecraft:moss_carpet",
+    "minecraft:glow_lichen",
+    "minecraft:small_dripleaf",
+    "minecraft:azalea",
+    "minecraft:flowering_azalea"
   ]
 }
