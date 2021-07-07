@@ -7,7 +7,7 @@ RESOURCEPACKFILES = painting_overhaul.zip note_guide.zip brew_guide.zip \
 DATAPACKFILES = gardener_endermen.zip climbable.zip speedy_paths.zip \
 	no_treasure_maps.zip fortunate_jungle.zip dragonproof.zip \
 	shearless.zip mixed_crafting.zip \
-	loot_overhaul.zip mythic_loot.zip \
+	loot_overhaul.zip mythic_loot.zip more_shulker_shells.zip \
 	starter_bed.zip starter_book.zip starter_bucket.zip starter_map.zip starter_shulker.zip \
 	escape_end.zip escape_nether.zip escape_grind.zip lichdom.zip
 
@@ -425,6 +425,9 @@ mixed_crafting_FILES := $(DEFAULT_FILES) \
 	data/minecraft/tags/items/stone_crafting_materials.json \
 	data/minecraft/tags/items/stone_tool_materials.json
 
+more_shulker_shells_FILES := $(DEFAULT_FILES) \
+	data/minecraft/loot_tables/entities/shulker.json
+
 escape_end_FILES := $(DEFAULT_FILES) \
 	data/minecraft/tags/functions/tick-escape.json \
 	data/escape/functions/end_respawn.mcfunction \
@@ -740,6 +743,11 @@ shearless.zip: $(shearless_FILES)
 	zip $@ pack.png pack.mcmeta $^
 
 mixed_crafting.zip: $(mixed_crafting_FILES)
+	cp meta/$(@:.zip=.png) pack.png
+	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
+	zip $@ pack.png pack.mcmeta $^
+
+more_shulker_shells.zip: $(more_shulker_shells_FILES)
 	cp meta/$(@:.zip=.png) pack.png
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^

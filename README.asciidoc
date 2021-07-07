@@ -496,6 +496,15 @@ Build:
  make starter_map.zip
  make starter_shulker.zip
 
+=== More Shulker Shells
+
+Makes shulkers drop 0-2 shells. Looting decreases your chance of getting zero
+shells.
+
+Download: https://github.com/DMBuce/bucepack/releases
+
+Build: `make more_shulker_shells.zip`
+
 === Escape the Nether
 
 A 1.16.x survival challenge that starts you in the Nether.
