@@ -6,7 +6,8 @@ RESOURCEPACKFILES = painting_overhaul.zip note_guide.zip brew_guide.zip \
 	classic_moo.zip classic_twang.zip classic_sploosh.zip classic_crunch.zip
 DATAPACKFILES = gardener_endermen.zip climbable.zip speedy_paths.zip \
 	no_treasure_maps.zip fortunate_jungle.zip loot_overhaul.zip dragonproof.zip \
-	shearless.zip escape_end.zip escape_nether.zip escape_grind.zip lichdom.zip \
+	shearless.zip mixed_crafting.zip \
+	escape_end.zip escape_nether.zip escape_grind.zip lichdom.zip \
 	starter_bed.zip starter_book.zip starter_bucket.zip starter_map.zip starter_shulker.zip
 
 PACKFILES = $(RESOURCEPACKFILES) $(DATAPACKFILES)
@@ -401,6 +402,24 @@ shearless_FILES := $(DEFAULT_FILES) \
 	data/minecraft/loot_tables/blocks/weeping_vines.json \
 	data/minecraft/loot_tables/blocks/weeping_vines_plant.json
 
+mixed_crafting_FILES := $(DEFAULT_FILES) \
+	data/minecraft/recipes/bed.json \
+	data/minecraft/recipes/dispenser.json \
+	data/minecraft/recipes/dropper.json \
+	data/minecraft/recipes/lever.json \
+	data/minecraft/recipes/observer.json \
+	data/minecraft/recipes/piston.json \
+	data/minecraft/recipes/wooden_boat.json \
+	data/minecraft/recipes/wooden_button.json \
+	data/minecraft/recipes/wooden_door.json \
+	data/minecraft/recipes/wooden_fence.json \
+	data/minecraft/recipes/wooden_fence_gate.json \
+	data/minecraft/recipes/wooden_pressure_plate.json \
+	data/minecraft/recipes/wooden_sign.json \
+	data/minecraft/recipes/wooden_trapdoor.json \
+	data/minecraft/tags/items/stone_crafting_materials.json \
+	data/minecraft/tags/items/stone_tool_materials.json
+
 escape_end_FILES := $(DEFAULT_FILES) \
 	data/minecraft/tags/functions/tick-escape.json \
 	data/escape/functions/end_respawn.mcfunction \
@@ -706,6 +725,11 @@ dragonproof.zip: $(dragonproof_FILES)
 	zip $@ pack.png pack.mcmeta $^
 
 shearless.zip: $(shearless_FILES)
+	cp meta/$(@:.zip=.png) pack.png
+	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
+	zip $@ pack.png pack.mcmeta $^
+
+mixed_crafting.zip: $(mixed_crafting_FILES)
 	cp meta/$(@:.zip=.png) pack.png
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^

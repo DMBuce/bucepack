@@ -303,6 +303,25 @@ Download: https://github.com/DMBuce/bucepack/releases
 
 Build: `make speedy_paths.zip`
 
+=== Mixed Crafting
+
+Lets you mix different types of wool, wood, and/or stone in certain recipes.
+
+You can use any color of wool to craft red beds.
+
+You can use any kind of wood to craft signs, fences, gates, trapdoors,
+pressure plates, doors, and boats.
+You can craft any wooden button into an oak button.
+
+You can use many types of stone to craft stone tools, brewing stands,
+furnaces, dispensers, droppers, observers, pistons, and levers.
+The stone types that can be used in these recipes are listed
+https://raw.githubusercontent.com/DMBuce/bucepack/master/data/minecraft/tags/blocks/stone_crafting_material.json[here].
+
+Download: https://github.com/DMBuce/bucepack/releases
+
+Build: `make mixed_crafting.zip`
+
 === Shearless
 
 Makes hoes able to harvest blocks that are normally obtained with shears.
