@@ -5,10 +5,11 @@ RESOURCEPACKFILES = painting_overhaul.zip note_guide.zip brew_guide.zip \
 	classic_netherrack.zip classic_lava.zip classic_gravel.zip classic_lapis.zip classic_rose.zip classic_food.zip \
 	classic_moo.zip classic_twang.zip classic_sploosh.zip classic_crunch.zip
 DATAPACKFILES = gardener_endermen.zip climbable.zip speedy_paths.zip \
-	no_treasure_maps.zip fortunate_jungle.zip loot_overhaul.zip dragonproof.zip \
+	no_treasure_maps.zip fortunate_jungle.zip dragonproof.zip \
 	shearless.zip mixed_crafting.zip \
-	escape_end.zip escape_nether.zip escape_grind.zip lichdom.zip \
-	starter_bed.zip starter_book.zip starter_bucket.zip starter_map.zip starter_shulker.zip
+	loot_overhaul.zip mythic_loot.zip \
+	starter_bed.zip starter_book.zip starter_bucket.zip starter_map.zip starter_shulker.zip \
+	escape_end.zip escape_nether.zip escape_grind.zip lichdom.zip
 
 PACKFILES = $(RESOURCEPACKFILES) $(DATAPACKFILES)
 MCDIR     = $(HOME)/.minecraft
@@ -379,6 +380,10 @@ loot_overhaul_FILES := $(DEFAULT_FILES) \
 	data/minecraft/loot_tables/subtables/treasure_seed.json \
 	data/minecraft/loot_tables/example.json
 
+mythic_loot_FILES := $(DEFAULT_FILES) \
+	data/minecraft/loot_tables/subtables/mythic.json.yaml \
+	data/minecraft/recipes/light.json
+
 dragonproof_FILES := $(DEFAULT_FILES) \
 	data/minecraft/tags/blocks/dragon_immune.json
 
@@ -715,6 +720,11 @@ fortunate_jungle.zip: $(fortunate_jungle_FILES)
 	zip $@ pack.png pack.mcmeta $^
 
 loot_overhaul.zip: $(loot_overhaul_FILES)
+	cp meta/$(@:.zip=.png) pack.png
+	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
+	zip $@ pack.png pack.mcmeta $^
+
+mythic_loot.zip: $(mythic_loot_FILES)
 	cp meta/$(@:.zip=.png) pack.png
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^

@@ -451,6 +451,17 @@ Download: https://github.com/DMBuce/bucepack/releases
 
 Build: `make loot_overhaul.zip`
 
+=== Mythic Loot
+
+This is an addon pack for the
+<<loot-overhaul,Loot Overhaul>>
+datapack above. It adds mythic items to the loot tables that spawn with a one
+in a thousand chance in chests and a one in a million chance from fishing.
+
+Download: https://github.com/DMBuce/bucepack/releases
+
+Build: `make mythic_loot.zip`
+
 === Starter Item
 
 This is a series of addon datapacks for the

@@ -1,0 +1,84 @@
+# to get a quick list of all items with lore:
+# 
+# perl -ne 'm/Name:........([^\\]*).*Lore:.......([^\\]*)/ && print $1, ": ", $2, "\n"' subtables/mythic.json.yaml
+
+pools:
+  - rolls: 1
+    entries:
+      - { type: item, weight: 1, item: diamond_pickaxe,
+          nbt: '{stonebreaker:1b,display:{Name:\"{\\\"text\\\":\\\"§r§dStonebreaker\\\"}\",Lore:[\"\\\"Breaks through stone many blocks at a time.\\\"\"]},Enchantments:[{id:unbreaking,lvl:3}]}'
+        }
+  - rolls: 1
+    entries:
+      - { type: item, weight: 1, item: diamond_axe,
+          nbt: '{treefeller:1b,display:{Name:\"{\\\"text\\\":\\\"§r§dTreefeller\\\"}\",Lore:[\"\\\"Fells trees in one swing.\\\"\"]},Enchantments:[{id:unbreaking,lvl:3}]}'
+        }
+  - rolls: 1
+    entries:
+      - { type: item, weight: 1, item: diamond_shovel,
+          nbt: '{sandripper:1b,display:{Name:\"{\\\"text\\\":\\\"§r§dSandripper\\\"}\",Lore:[\"\\\"Rips through sand a column at a time.\\\"\"]},Enchantments:[{id:unbreaking,lvl:3}]}'
+        }
+  - rolls: 1
+    entries:
+      - { type: item, weight: 1, item: diamond_hoe,
+          nbt: '{branchbiter:1b,display:{Name:\"{\\\"text\\\":\\\"§r§dBranchbiter\\\"}\",Lore:[\"\\\"Chews through leaves many blocks at a time.\\\"\"]},Enchantments:[{id:unbreaking,lvl:3}]}'
+        }
+  - rolls: 1
+    entries:
+      - { type: item, weight: 1, item: diamond_sword,
+          nbt: '{vorpal:1b,display:{Name:\"{\\\"text\\\":\\\"§r§dVorpal Blade\\\"}\",Lore:[\"\\\"Occasionally beheads mobs.\\\"\"]},Enchantments:[{id:unbreaking,lvl:3}]}'
+        }
+  - rolls: 1
+    entries:
+      - { type: item, weight: 1, item: trident,
+          nbt: '{stormcaller:1b,display:{Name:\"{\\\"text\\\":\\\"§r§dStormcaller\\\"}\",Lore:[\"\\\"TODO: figure out what this weapon does.\\\"\"]},Enchantments:[{id:unbreaking,lvl:3}]}'
+        }
+  - rolls: 1
+    entries:
+      - { type: item, weight: 1, item: bow,
+          nbt: '{fireball:1b,display:{Name:\"{\\\"text\\\":\\\"§r§dNeverending Fire Storm\\\"}\",Lore:[\"\\\"Shoots fireballs.\\\"\"]},Enchantments:[{id:infinity,lvl:1},{id:mending,lvl:1}]}'
+        }
+  - rolls: 1
+    entries:
+      - { type: item, weight: 1, item: crossbow,
+          nbt: '{sixshooter:1b,display:{Name:\"{\\\"text\\\":\\\"§r§dSix Shooter\\\"}\",Lore:[\"\\\"Shoots six shots.\\\"\"]},Enchantments:[{id:quick_charge,lvl:5},{unbreaking:3}]}'
+        }
+  - rolls: 1
+    entries:
+      - { type: item, weight: 1, item: diamond_helmet,
+          nbt: '{owlsight:1b,display:{Name:\"{\\\"text\\\":\\\"§r§dHelm of Owlsight\\\"}\",Lore:[\"\\\"Grants nightvision at dusk.\\\"\"]},Enchantments:[{id:unbreaking,lvl:3}]}'
+        }
+  - rolls: 1
+    entries:
+      - { type: item, weight: 1, item: diamond_chestplate,
+          nbt:'{display:{Name:\"{\\\"text\\\":\\\"§r§dAegis of Endurance\\\"}\",Lore:[\"\\\"Boosts vitality.\\\"\"]},Enchantments:[{id:unbreaking,lvl:3}],AttributeModifiers:[{Slot:"chest",AttributeName:"generic.max_health",Name:"generic.max_health",Amount:6.0,Operation:0,UUID:[I;1986497455,1094009722,-1779243889,-277989848]}]}'
+        }
+  - rolls: 1
+    entries:
+      - { type: item, weight: 1, item: diamond_leggings,
+          nbt: '{display:{Name:\"{\\\"text\\\":\\\"§r§dTrousers of Traveling\\\"}\",Lore:[\"\\\"For the fleet of foot.\\\"\"]},Enchantments:[{id:unbreaking,lvl:3}],AttributeModifiers:[{Slot:"legs",AttributeName:"generic.movement_speed",Name:"generic.movement_speed",Amount:0.2,Operation:0,UUID:[I;-1739252648,-763214326,-1592923154,1933501344]}]}'
+        }
+  - rolls: 1
+    entries:
+      - { type: item, weight: 1, item: diamond_boots,
+          nbt: '{display:{Name:\"{\\\"text\\\":\\\"§r§dBoots of Frost and Flood\\\"}\",Lore:[\"\\\"Travel over and through water.\\\"\"]},Enchantments:[{id:frost_walker,lvl:2},{id:depth_strider,lvl:3}]}'
+        }
+  - rolls: 1
+    entries:
+      - { type: item, weight: 1, item: elytra,
+          nbt: '{display:{Name:\"{\\\"text\\\":\\\"§r§dWings of the Whirlwind\\\"}\",Lore:[\"\\\"Buffets your enemies and deflects their arrows.\\\"\"]},Enchantments:[{id:projectile_protection,lvl:3},{thorns:3}]}'
+        }
+  - rolls: 1
+    entries:
+      - { type: item, weight: 1, item: diamond_horse_armor,
+          nbt: '{display:{Name:\"{\\\"text\\\":\\\"§r§dBarding of the Brave\\\"}\",Lore:[\"\\\"Enhances the abilities of any worthy steed.\\\"\"]},Enchantments:[{id:depth_strider,lvl:3},{feather_falling:4}]},AttributeModifiers:[{Slot:"armor",AttributeName:"generic.max_health",Name:"generic.max_health",Amount:10.0,Operation:0,UUID:[I;-694445997,556351870,-2025324678,2119694944]},{Slot:"armor",AttributeName:"generic.movement_speed",Name:"generic.movement_speed",Amount:0.075,Operation:0,UUID:[I;1511046274,853625857,-1128932004,19699720]},{Slot:"armor",AttributeName:"generic.jump_strength",Name:"generic.jump_strength",Amount:0.2,Operation:0,UUID:[I;-2051896741,236080387,-2083109123,-1554541182]}]}'
+        }
+  - rolls: 1
+    entries:
+      /*Name:        End Portal Frame\, Lore:       Enough to build an end portal.\\*/
+      - { type: item, weight: 1, item: end_portal_frame, count: 12 }
+  - rolls: 1
+    entries:
+      - { type: item, weight: 1, item: light,
+          /*Name:        Light\\*/ nbt: '{display:{Lore:[\"\\\"Place into crafting grid to create more light.\\\"\"]}}'
+        }
