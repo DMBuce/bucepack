@@ -381,7 +381,7 @@ loot_overhaul_FILES := $(DEFAULT_FILES) \
 	data/minecraft/loot_tables/example.json
 
 mythic_loot_FILES := $(DEFAULT_FILES) \
-	data/minecraft/loot_tables/subtables/mythic.json.yaml \
+	data/minecraft/loot_tables/subtables/mythic.json \
 	data/minecraft/recipes/light.json
 
 dragonproof_FILES := $(DEFAULT_FILES) \
