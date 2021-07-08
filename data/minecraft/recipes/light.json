@@ -2,6 +2,9 @@
   "type": "minecraft:crafting_shapeless",
   "ingredients": [
     {
+      "item": "minecraft:end_rod"
+    },
+    {
       "item": "minecraft:light"
     }
   ],
