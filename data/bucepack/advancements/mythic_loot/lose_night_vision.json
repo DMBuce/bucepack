@@ -1,0 +1,55 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:carrot"
+		},
+		"title": {
+			"text": "Lose Night Vision"
+		},
+		"description": {
+			"text": "Tracks when a player loses night vision"
+		},
+		"show_toast": false,
+		"announce_to_chat": false,
+		"hidden": true,
+		"frame": "task"
+	},
+	"parent": "bucepack:mythic_loot/darkvision",
+	"criteria": {
+		"gain_night_vision": {
+			"trigger": "minecraft:effects_changed",
+			"conditions": {
+				"player": [
+					{
+						"condition": "minecraft:inverted",
+						"term": {
+							"condition": "minecraft:entity_properties",
+							"entity": "this",
+							"predicate": {
+								"effects": [
+									{
+										"minecraft:night_vision": {}
+									}
+								]
+							}
+						}
+					},
+					{
+						"condition": "minecraft:entity_properties",
+						"entity": "this",
+						"predicate": {
+							"player": {
+								"advancements": {
+									"bucepack:mythic_loot/has_night_vision"
+								}
+							}
+						}
+					}
+				]
+			}
+		}
+	},
+	"rewards": {
+		"function": "bucepack:lose_nightvision"
+	}
+}

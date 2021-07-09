@@ -320,6 +320,7 @@ fortunate_jungle_FILES := $(DEFAULT_FILES) \
 	data/minecraft/loot_tables/blocks/jungle_leaves.json
 
 loot_overhaul_FILES := $(DEFAULT_FILES) \
+	data/bucepack/advancements/loot_overhaul.json \
 	data/minecraft/tags/items/starter_item.json \
 	data/minecraft/tags/items/creeper_drop_music_discs.json \
 	data/minecraft/loot_tables/chests/abandoned_mineshaft.json \
@@ -382,6 +383,13 @@ loot_overhaul_FILES := $(DEFAULT_FILES) \
 
 mythic_loot_FILES := $(DEFAULT_FILES) \
 	data/minecraft/loot_tables/subtables/mythic.json \
+	data/bucepack/advancements/mythic_loot.json \
+	data/bucepack/advancements/mythic_loot/darkvision.json \
+	data/bucepack/advancements/mythic_loot/has_night_vision.json \
+	data/bucepack/advancements/mythic_loot/lose_night_vision.json \
+	data/bucepack/functions/activate_darkvision.mcfunction \
+	data/bucepack/functions/lose_nightvision.mcfunction \
+	data/bucepack/predicates/darkvision.json \
 	data/minecraft/recipes/light.json
 
 dragonproof_FILES := $(DEFAULT_FILES) \

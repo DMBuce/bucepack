@@ -1,0 +1,38 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:golden_carrot"
+		},
+		"title": {
+			"text": "Have Night Vision"
+		},
+		"description": {
+			"text": "Tracks when a player has night vision"
+		},
+		"show_toast": false,
+		"announce_to_chat": false,
+		"hidden": true,
+		"frame": "task"
+	},
+	"parent": "bucepack:mythic_loot/darkvision",
+	"criteria": {
+		"gain_night_vision": {
+			"trigger": "minecraft:effects_changed",
+			"conditions": {
+				"player": [
+					{
+						"condition": "minecraft:entity_properties",
+						"entity": "this",
+						"predicate": {
+							"effects": [
+								{
+									"minecraft:night_vision": {}
+								}
+							]
+						}
+					}
+				]
+			}
+		}
+	}
+}

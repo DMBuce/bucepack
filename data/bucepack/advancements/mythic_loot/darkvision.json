@@ -1,0 +1,40 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:golden_carrot"
+		},
+		"title": {
+			"text": "Darkvision"
+		},
+		"description": {
+			"text": "Activate the Helm of Darkvision"
+		},
+		"show_toast": false,
+		"announce_to_chat": false,
+		"hidden": true,
+		"frame": "task"
+	},
+	"parent": "bucepack:mythic_loot",
+	"criteria": {
+		"eat_carrot": {
+			"trigger": "minecraft:consume_item",
+			"conditions": {
+				"item": {
+					"items": [
+						"minecraft:carrot",
+						"minecraft:golden_carrot"
+					]
+				},
+				"player": [
+					{
+						"condition": "minecraft:reference",
+						"name": "bucepack:darkvision"
+					}
+				]
+			}
+		}
+	},
+	"rewards": {
+		"function": "bucepack:activate_darkvision"
+	}
+}

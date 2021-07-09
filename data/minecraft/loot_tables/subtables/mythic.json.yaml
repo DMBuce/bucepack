@@ -73,7 +73,7 @@ pools:
   - rolls: 1
     entries:
       - { type: item, weight: 1, item: diamond_helmet,
-          nbt: '{owlsight:1b,display:{Name:\"{\\\"text\\\":\\\"§r§dHelm of Owlsight\\\"}\",Lore:[\"\\\"Grants nightvision at dusk\\\"\"]},Enchantments:[{id:unbreaking,lvl:3}]}'
+          nbt: '{darkvision:1b,display:{Name:\"{\\\"text\\\":\\\"§r§dHelm of Darkvision\\\"}\",Lore:[\"\\\"Grants night vision for half a day when you eat a carrot or lose night vision\\\"\"]},Enchantments:[{id:unbreaking,lvl:3}]}'
         }
   - rolls: 1
     entries:
