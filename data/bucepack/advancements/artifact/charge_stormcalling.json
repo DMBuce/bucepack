@@ -54,6 +54,6 @@
 		]
 	],
 	"rewards": {
-		"function": "bucepack:check_stormcalling"
+		"function": "bucepack:artifact/stormcalling/check"
 	}
 }

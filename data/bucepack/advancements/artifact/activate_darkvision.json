@@ -28,13 +28,13 @@
 				"player": [
 					{
 						"condition": "minecraft:reference",
-						"name": "bucepack:darkvision"
+						"name": "bucepack:artifact/darkvision"
 					}
 				]
 			}
 		}
 	},
 	"rewards": {
-		"function": "bucepack:activate_darkvision"
+		"function": "bucepack:artifact/darkvision/activate"
 	}
 }

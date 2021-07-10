@@ -316,6 +316,9 @@ bluefire_FILES := $(DEFAULT_FILES) \
 data/minecraft/loot_tables/%.json: data/minecraft/loot_tables/%.json.yaml data/minecraft/loot_tables/loot_table.j2
 	j2 data/minecraft/loot_tables/loot_table.j2 $< -o $@
 
+data/bucepack/loot_tables/%.json: data/bucepack/loot_tables/%.json.yaml data/minecraft/loot_tables/loot_table.j2
+	j2 data/minecraft/loot_tables/loot_table.j2 $< -o $@
+
 fortunate_jungle_FILES := $(DEFAULT_FILES) \
 	data/minecraft/loot_tables/blocks/jungle_leaves.json
 
@@ -383,26 +386,25 @@ loot_overhaul_FILES := $(DEFAULT_FILES) \
 	data/minecraft/loot_tables/example.json
 
 artifact_loot_FILES := $(DEFAULT_FILES) \
-	data/bucepack/advancements/loot_overhaul.json \
-	data/bucepack/advancements/artifact_loot/charge_fireball.json \
-	data/bucepack/advancements/artifact_loot/darkvision.json \
-	data/bucepack/advancements/artifact_loot/fireball.json \
-	data/bucepack/advancements/artifact_loot.json \
-	data/bucepack/advancements/artifact_loot/stormcalling.json \
 	data/bucepack/advancements/root.json \
-	data/bucepack/functions/activate_darkvision.mcfunction \
-	data/bucepack/functions/call_storm.mcfunction \
-	data/bucepack/functions/charge_fireball.mcfunction \
-	data/bucepack/functions/charge_stormcalling.mcfunction \
-	data/bucepack/functions/check_stormcalling.mcfunction \
-	data/bucepack/functions/fireball_cleanup.mcfunction \
-	data/bucepack/functions/load_artifact.mcfunction \
-	data/bucepack/functions/reset_storm_charge.mcfunction \
-	data/bucepack/functions/shoot_fireball.mcfunction \
-	data/bucepack/predicates/darkvision.json \
-	data/bucepack/predicates/fireball.json \
-	data/minecraft/loot_tables/subtables/artifact.json \
-	data/minecraft/loot_tables/subtables/artifact.json.yaml \
+	data/bucepack/advancements/loot_overhaul.json \
+	data/bucepack/advancements/artifact/activate_darkvision.json \
+	data/bucepack/advancements/artifact/activate_fireball.json \
+	data/bucepack/advancements/artifact/charge_fireball.json \
+	data/bucepack/advancements/artifact/charge_stormcalling.json \
+	data/bucepack/advancements/artifact_loot.json \
+	data/bucepack/functions/artifact/darkvision/activate.mcfunction \
+	data/bucepack/functions/artifact/fireball/activate.mcfunction \
+	data/bucepack/functions/artifact/fireball/charge.mcfunction \
+	data/bucepack/functions/artifact/fireball/cleanup.mcfunction \
+	data/bucepack/functions/artifact/load.mcfunction \
+	data/bucepack/functions/artifact/stormcalling/activate.mcfunction \
+	data/bucepack/functions/artifact/stormcalling/charge.mcfunction \
+	data/bucepack/functions/artifact/stormcalling/check.mcfunction \
+	data/bucepack/functions/artifact/stormcalling/reset.mcfunction \
+	data/bucepack/loot_tables/subtables/artifact.json \
+	data/bucepack/predicates/artifact/darkvision.json \
+	data/bucepack/predicates/artifact/fireball.json \
 	data/minecraft/recipes/light.json \
 	data/minecraft/tags/functions/load-artifact.json \
 

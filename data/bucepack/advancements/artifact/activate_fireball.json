@@ -14,7 +14,7 @@
 		"hidden": true,
 		"frame": "task"
 	},
-	"parent": "bucepack:charge_fireball",
+	"parent": "bucepack:artifact/fireball/charge",
 	"criteria": {
 		"shot_fireball": {
 			"trigger": "minecraft:tick",
@@ -22,7 +22,7 @@
 				"player": [
 					{
 						"condition": "minecraft:reference",
-						"name": "bucepack:fireball"
+						"name": "bucepack:artifact/fireball"
 					},
 					{
 						"condition": "minecraft:entity_properties",
@@ -30,7 +30,7 @@
 						"predicate": {
 							"player": {
 								"advancements": {
-									"bucepack:artifact_loot/charge_fireball": true
+									"bucepack:artifact/charge_fireball": true
 								},
 								"stats": [
 									{
@@ -47,6 +47,6 @@
 		}
 	},
 	"rewards": {
-		"function": "bucepack:shoot_fireball"
+		"function": "bucepack:artifact/fireball/activate"
 	}
 }

@@ -5,5 +5,5 @@ title @s actionbar "A storm heeds your call."
 weather thunder
 
 # reset storm charge
-function bucepack:reset_storm_charge
+function bucepack:artifact/stormcalling/reset
 

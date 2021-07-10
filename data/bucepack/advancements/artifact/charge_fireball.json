@@ -22,13 +22,13 @@
 				"player": [
 					{
 						"condition": "minecraft:reference",
-						"name": "bucepack:fireball"
+						"name": "bucepack:artifact/fireball"
 					}
 				]
 			}
 		}
 	},
 	"rewards": {
-		"function": "bucepack:charge_fireball"
+		"function": "bucepack:artifact/fireball/charge"
 	}
 }
