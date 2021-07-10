@@ -1,0 +1,52 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:tnt"
+		},
+		"title": {
+			"text": "Fireball"
+		},
+		"description": {
+			"text": "Shoot the Neverending Fire Storm"
+		},
+		"show_toast": false,
+		"announce_to_chat": false,
+		"hidden": true,
+		"frame": "task"
+	},
+	"parent": "bucepack:charge_fireball",
+	"criteria": {
+		"shot_fireball": {
+			"trigger": "minecraft:tick",
+			"conditions": {
+				"player": [
+					{
+						"condition": "minecraft:reference",
+						"name": "bucepack:fireball"
+					},
+					{
+						"condition": "minecraft:entity_properties",
+						"entity": "this",
+						"predicate": {
+							"player": {
+								"advancements": {
+									"bucepack:mythic_loot/charge_fireball": true
+								},
+								"stats": [
+									{
+										"type": "minecraft:used",
+										"name": "minecraft:bow",
+										"value": { "min":1 }
+									}
+								]
+							}
+						}
+					}
+				]
+			}
+		}
+	},
+	"rewards": {
+		"function": "bucepack:shoot_fireball"
+	}
+}

@@ -320,6 +320,7 @@ fortunate_jungle_FILES := $(DEFAULT_FILES) \
 	data/minecraft/loot_tables/blocks/jungle_leaves.json
 
 loot_overhaul_FILES := $(DEFAULT_FILES) \
+	data/bucepack/advancements/root.json \
 	data/bucepack/advancements/loot_overhaul.json \
 	data/minecraft/tags/items/starter_item.json \
 	data/minecraft/tags/items/creeper_drop_music_discs.json \
@@ -382,15 +383,31 @@ loot_overhaul_FILES := $(DEFAULT_FILES) \
 	data/minecraft/loot_tables/example.json
 
 mythic_loot_FILES := $(DEFAULT_FILES) \
-	data/minecraft/loot_tables/subtables/mythic.json \
-	data/bucepack/advancements/mythic_loot.json \
+	data/bucepack/advancements/loot_overhaul.json \
+	data/bucepack/advancements/mythic_loot/charge_fireball.json \
 	data/bucepack/advancements/mythic_loot/darkvision.json \
-	data/bucepack/advancements/mythic_loot/has_night_vision.json \
-	data/bucepack/advancements/mythic_loot/lose_night_vision.json \
+	data/bucepack/advancements/mythic_loot/fireball.json \
+	data/bucepack/advancements/mythic_loot.json \
+	data/bucepack/advancements/mythic_loot/stormcalling.json \
+	data/bucepack/advancements/root.json \
 	data/bucepack/functions/activate_darkvision.mcfunction \
-	data/bucepack/functions/lose_nightvision.mcfunction \
+	data/bucepack/functions/call_storm.mcfunction \
+	data/bucepack/functions/charge_fireball.mcfunction \
+	data/bucepack/functions/charge_stormcalling.mcfunction \
+	data/bucepack/functions/check_stormcalling.mcfunction \
+	data/bucepack/functions/fireball_cleanup.mcfunction \
+	data/bucepack/functions/load_mythic.mcfunction \
+	data/bucepack/functions/reset_storm_charge.mcfunction \
+	data/bucepack/functions/shoot_fireball.mcfunction \
 	data/bucepack/predicates/darkvision.json \
-	data/minecraft/recipes/light.json
+	data/bucepack/predicates/fireball.json \
+	data/minecraft/loot_tables/subtables/mythic.json \
+	data/minecraft/loot_tables/subtables/mythic.json.yaml \
+	data/minecraft/recipes/light.json \
+	data/minecraft/tags/functions/load-mythic.json \
+	#data/bucepack/advancements/mythic_loot/has_night_vision.json \
+	#data/bucepack/advancements/mythic_loot/lose_night_vision.json \
+	#data/bucepack/functions/lose_nightvision.mcfunction \
 
 dragonproof_FILES := $(DEFAULT_FILES) \
 	data/minecraft/tags/blocks/dragon_immune.json
@@ -739,6 +756,7 @@ mythic_loot.zip: $(mythic_loot_FILES)
 	cp meta/$(@:.zip=.png) pack.png
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^
+	printf "@ data/minecraft/tags/functions/load-mythic.json\n@=data/minecraft/tags/functions/load.json\n" | zipnote -w $@
 
 dragonproof.zip: $(dragonproof_FILES)
 	cp meta/$(@:.zip=.png) pack.png

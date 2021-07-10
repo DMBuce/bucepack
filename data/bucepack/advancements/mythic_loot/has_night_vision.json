@@ -24,11 +24,9 @@
 						"condition": "minecraft:entity_properties",
 						"entity": "this",
 						"predicate": {
-							"effects": [
-								{
-									"minecraft:night_vision": {}
-								}
-							]
+							"effects": {
+								"minecraft:night_vision": {}
+							}
 						}
 					}
 				]

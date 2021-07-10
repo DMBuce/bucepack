@@ -3,9 +3,9 @@
 	"entity": "this",
 	"predicate": {
 		"equipment": {
-			"head": {
-				"items": [ "minecraft:diamond_helmet" ],
-				"nbt": "{darkvision:1b}"
+			"mainhand": {
+				"items": [ "minecraft:bow" ],
+				"nbt": "{fireball:1b}"
 			}
 		}
 	}

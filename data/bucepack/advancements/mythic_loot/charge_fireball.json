@@ -1,0 +1,34 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:fire_charge"
+		},
+		"title": {
+			"text": "Charge Fireball"
+		},
+		"description": {
+			"text": "Charge the Neverending Fire Storm"
+		},
+		"show_toast": false,
+		"announce_to_chat": false,
+		"hidden": true,
+		"frame": "task"
+	},
+	"parent": "bucepack:mythic_loot",
+	"criteria": {
+		"charging_fireball": {
+			"trigger": "minecraft:using_item",
+			"conditions": {
+				"player": [
+					{
+						"condition": "minecraft:reference",
+						"name": "bucepack:fireball"
+					}
+				]
+			}
+		}
+	},
+	"rewards": {
+		"function": "bucepack:charge_fireball"
+	}
+}

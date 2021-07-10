@@ -26,11 +26,9 @@
 							"condition": "minecraft:entity_properties",
 							"entity": "this",
 							"predicate": {
-								"effects": [
-									{
-										"minecraft:night_vision": {}
-									}
-								]
+								"effects": {
+									"minecraft:night_vision": {}
+								}
 							}
 						}
 					},
@@ -40,7 +38,7 @@
 						"predicate": {
 							"player": {
 								"advancements": {
-									"bucepack:mythic_loot/has_night_vision"
+									"bucepack:mythic_loot/has_night_vision": true
 								}
 							}
 						}

@@ -53,7 +53,7 @@ pools:
   - rolls: 1
     entries:
       - { type: item, weight: 1, item: trident,
-          nbt: '{stormcaller:1b,display:{Name:\"{\\\"text\\\":\\\"§r§dStormcaller\\\"}\",Lore:[\"\\\"Summons a storm when it strikes a bell\\\"\"]},Enchantments:[{id:unbreaking,lvl:3}]}'
+          nbt: '{stormcalling:1b,display:{Name:\"{\\\"text\\\":\\\"§r§dStormcaller\\\"}\",Lore:[\"\\\"Summons a storm when you\\\"\",\"\\\"charge it in water while\\\"\",\"\\\"looking skyward\\\"\"]},Enchantments:[{id:unbreaking,lvl:3}]}'
         }
   - rolls: 1
     entries:
@@ -73,16 +73,16 @@ pools:
   - rolls: 1
     entries:
       - { type: item, weight: 1, item: diamond_helmet,
-          nbt: '{darkvision:1b,display:{Name:\"{\\\"text\\\":\\\"§r§dHelm of Darkvision\\\"}\",Lore:[\"\\\"Grants night vision for half a day when you eat a carrot or lose night vision\\\"\"]},Enchantments:[{id:unbreaking,lvl:3}]}'
+          nbt: '{darkvision:1b,display:{Name:\"{\\\"text\\\":\\\"§r§dHelm of Darkvision\\\"}\",Lore:[\"\\\"Grants night vision for half a\\\"\",\"\\\"day when you eat a carrot\\\"\"]},Enchantments:[{id:unbreaking,lvl:3}]}'
         }
   - rolls: 1
     entries:
-      - { type: item, weight: 1, item: diamond_chestplate,
+      - { type: item, weight: 1, item: netherite_chestplate,
           nbt: '{display:{Name:\"{\\\"text\\\":\\\"§r§dAegis of Endurance\\\"}\",Lore:[\"\\\"Boosts vitality\\\"\"]},Enchantments:[{id:unbreaking,lvl:3}],AttributeModifiers:[{Slot:\"chest\",AttributeName:\"generic.max_health\",Name:\"generic.max_health\",Amount:10.0,Operation:0,UUID:[I;1986497455,1094009722,-1779243889,-277989848]},{Slot:\"chest\",AttributeName:\"generic.armor\",Name:\"generic.armor\",Amount:8.0,Operation:0,UUID:[I;717097559,423184775,-1334929543,1952788274]},{Slot:\"chest\",AttributeName:\"generic.armor_toughness\",Name:\"generic.armor_toughness\",Amount:2.0,Operation:0,UUID:[I;-354813259,1878082813,-1193018274,1873352094]}]}'
         }
   - rolls: 1
     entries:
-      - { type: item, weight: 1, item: diamond_leggings,
+      - { type: item, weight: 1, item: netherite_leggings,
           nbt: '{display:{Name:\"{\\\"text\\\":\\\"§r§dTrousers of Traveling\\\"}\",Lore:[\"\\\"For the fleet of foot\\\"\"]},Enchantments:[{id:unbreaking,lvl:3}],AttributeModifiers:[{Slot:\"legs\",AttributeName:\"generic.movement_speed\",Name:\"generic.movement_speed\",Amount:0.2,Operation:2,UUID:[I;-1739252648,-763214326,-1592923154,1933501344]},{Slot:\"legs\",AttributeName:\"generic.armor\",Name:\"generic.armor\",Amount:6.0,Operation:0,UUID:[I;1748112070,948193003,-1561903410,1308854036]},{Slot:\"legs\",AttributeName:\"generic.armor_toughness\",Name:\"generic.armor_toughness\",Amount:2.0,Operation:0,UUID:[I;591889826,2067615118,-2036409489,1144780995]}]}'
         }
   - rolls: 1
