@@ -7,10 +7,6 @@
     "minecraft:repeater",
     "minecraft:comparator",
     "minecraft:tripwire_hook",
-    "minecraft:tripwire",
-    "minecraft:rail",
-    "minecraft:detector_rail",
-    "minecraft:powered_rail",
-    "minecraft:activator_rail"
+    "minecraft:tripwire"
   ]
 }
