@@ -2,8 +2,8 @@
 
 use File::Basename;
 
-print dirname($0)."/subtables/mythic.json.yaml\n";
-open(FH, '<', dirname($0)."/subtables/mythic.json.yaml") or die $!;
+print dirname($0)."/subtables/artifact.json.yaml\n";
+open(FH, '<', dirname($0)."/subtables/artifact.json.yaml") or die $!;
 while (<FH>) {
 	if (!m/^#/ && m/Name:..........................([^\\]*)/) {
 		print $1;

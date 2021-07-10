@@ -4,5 +4,5 @@
 effect give @s night_vision 600 0 true
 
 # revoke advancement
-advancement revoke @s only bucepack:mythic_loot/darkvision
+advancement revoke @s only bucepack:artifact_loot/darkvision
 

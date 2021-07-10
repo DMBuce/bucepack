@@ -4,10 +4,10 @@
 			"item": "minecraft:nether_star"
 		},
 		"title": {
-			"text": "Mythic Loot"
+			"text": "Artifact Loot"
 		},
 		"description": {
-			"text": "Mythic items in loot"
+			"text": "Artifact items in loot"
 		},
 		"show_toast": false,
 		"announce_to_chat": false,

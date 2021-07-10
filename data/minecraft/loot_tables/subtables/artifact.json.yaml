@@ -1,6 +1,6 @@
 # to get a quick list of all items with lore:
 # 
-# perl -ne 'm/Name:..........................([^\\]*).*Lore:.......([^\\]*)/ && print $1, ": ", $2, "\n"' subtables/mythic.json.yaml
+# perl -ne 'm/Name:..........................([^\\]*).*Lore:.......([^\\]*)/ && print $1, ": ", $2, "\n"' subtables/artifact.json.yaml
 
 pools:
 

@@ -7,7 +7,7 @@ RESOURCEPACKFILES = painting_overhaul.zip note_guide.zip brew_guide.zip \
 DATAPACKFILES = gardener_endermen.zip climbable.zip speedy_paths.zip \
 	no_treasure_maps.zip fortunate_jungle.zip dragonproof.zip \
 	shearless.zip mixed_crafting.zip \
-	loot_overhaul.zip mythic_loot.zip more_shulker_shells.zip \
+	loot_overhaul.zip artifact_loot.zip more_shulker_shells.zip \
 	starter_bed.zip starter_book.zip starter_bucket.zip starter_map.zip starter_shulker.zip \
 	escape_end.zip escape_nether.zip escape_grind.zip lichdom.zip
 
@@ -382,13 +382,13 @@ loot_overhaul_FILES := $(DEFAULT_FILES) \
 	data/minecraft/loot_tables/subtables/treasure_seed.json \
 	data/minecraft/loot_tables/example.json
 
-mythic_loot_FILES := $(DEFAULT_FILES) \
+artifact_loot_FILES := $(DEFAULT_FILES) \
 	data/bucepack/advancements/loot_overhaul.json \
-	data/bucepack/advancements/mythic_loot/charge_fireball.json \
-	data/bucepack/advancements/mythic_loot/darkvision.json \
-	data/bucepack/advancements/mythic_loot/fireball.json \
-	data/bucepack/advancements/mythic_loot.json \
-	data/bucepack/advancements/mythic_loot/stormcalling.json \
+	data/bucepack/advancements/artifact_loot/charge_fireball.json \
+	data/bucepack/advancements/artifact_loot/darkvision.json \
+	data/bucepack/advancements/artifact_loot/fireball.json \
+	data/bucepack/advancements/artifact_loot.json \
+	data/bucepack/advancements/artifact_loot/stormcalling.json \
 	data/bucepack/advancements/root.json \
 	data/bucepack/functions/activate_darkvision.mcfunction \
 	data/bucepack/functions/call_storm.mcfunction \
@@ -396,15 +396,15 @@ mythic_loot_FILES := $(DEFAULT_FILES) \
 	data/bucepack/functions/charge_stormcalling.mcfunction \
 	data/bucepack/functions/check_stormcalling.mcfunction \
 	data/bucepack/functions/fireball_cleanup.mcfunction \
-	data/bucepack/functions/load_mythic.mcfunction \
+	data/bucepack/functions/load_artifact.mcfunction \
 	data/bucepack/functions/reset_storm_charge.mcfunction \
 	data/bucepack/functions/shoot_fireball.mcfunction \
 	data/bucepack/predicates/darkvision.json \
 	data/bucepack/predicates/fireball.json \
-	data/minecraft/loot_tables/subtables/mythic.json \
-	data/minecraft/loot_tables/subtables/mythic.json.yaml \
+	data/minecraft/loot_tables/subtables/artifact.json \
+	data/minecraft/loot_tables/subtables/artifact.json.yaml \
 	data/minecraft/recipes/light.json \
-	data/minecraft/tags/functions/load-mythic.json \
+	data/minecraft/tags/functions/load-artifact.json \
 
 dragonproof_FILES := $(DEFAULT_FILES) \
 	data/minecraft/tags/blocks/dragon_immune.json
@@ -749,11 +749,11 @@ loot_overhaul.zip: $(loot_overhaul_FILES)
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^
 
-mythic_loot.zip: $(mythic_loot_FILES)
+artifact_loot.zip: $(artifact_loot_FILES)
 	cp meta/$(@:.zip=.png) pack.png
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^
-	printf "@ data/minecraft/tags/functions/load-mythic.json\n@=data/minecraft/tags/functions/load.json\n" | zipnote -w $@
+	printf "@ data/minecraft/tags/functions/load-artifact.json\n@=data/minecraft/tags/functions/load.json\n" | zipnote -w $@
 
 dragonproof.zip: $(dragonproof_FILES)
 	cp meta/$(@:.zip=.png) pack.png

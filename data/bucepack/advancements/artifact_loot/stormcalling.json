@@ -14,7 +14,7 @@
 		"hidden": true,
 		"frame": "task"
 	},
-	"parent": "bucepack:mythic_loot",
+	"parent": "bucepack:artifact_loot",
 	"criteria": {
 		"in_water": {
 			"trigger": "minecraft:enter_block",

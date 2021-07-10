@@ -30,7 +30,7 @@
 						"predicate": {
 							"player": {
 								"advancements": {
-									"bucepack:mythic_loot/charge_fireball": true
+									"bucepack:artifact_loot/charge_fireball": true
 								},
 								"stats": [
 									{

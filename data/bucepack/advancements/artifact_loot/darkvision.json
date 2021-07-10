@@ -14,7 +14,7 @@
 		"hidden": true,
 		"frame": "task"
 	},
-	"parent": "bucepack:mythic_loot",
+	"parent": "bucepack:artifact_loot",
 	"criteria": {
 		"eat_carrot": {
 			"trigger": "minecraft:consume_item",

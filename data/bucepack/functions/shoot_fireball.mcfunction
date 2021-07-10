@@ -4,6 +4,6 @@
 execute at @e[type=arrow,distance=..2,sort=nearest] run summon minecraft:fireball ~ ~ ~
 
 # revoke advancements
-advancement revoke @s only bucepack:mythic_loot/charge_fireball
-advancement revoke @s only bucepack:mythic_loot/fireball
+advancement revoke @s only bucepack:artifact_loot/charge_fireball
+advancement revoke @s only bucepack:artifact_loot/fireball
 
