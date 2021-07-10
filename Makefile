@@ -405,9 +405,6 @@ mythic_loot_FILES := $(DEFAULT_FILES) \
 	data/minecraft/loot_tables/subtables/mythic.json.yaml \
 	data/minecraft/recipes/light.json \
 	data/minecraft/tags/functions/load-mythic.json \
-	#data/bucepack/advancements/mythic_loot/has_night_vision.json \
-	#data/bucepack/advancements/mythic_loot/lose_night_vision.json \
-	#data/bucepack/functions/lose_nightvision.mcfunction \
 
 dragonproof_FILES := $(DEFAULT_FILES) \
 	data/minecraft/tags/blocks/dragon_immune.json
