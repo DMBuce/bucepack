@@ -14,7 +14,7 @@
 		"hidden": false,
 		"frame": "goal"
 	},
-	"parent": "bucepack:lichdom",
+	"parent": "lichdom:lichdom",
 	"criteria": {
 		"impossible": {
 			"trigger": "minecraft:impossible"

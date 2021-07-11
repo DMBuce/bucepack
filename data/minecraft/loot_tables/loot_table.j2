@@ -118,7 +118,7 @@
           "weight": {{entry.weight}},
           {%- endif %}
           "quality": {{ entry.quality if entry.quality is defined else 0 }},
-          "name": "minecraft:{{entry.table}}"
+          "name": "bucepack:{{entry.table}}"
         }{{ "," if not loop.last }}
         {%- elif entry.type == "empty" %}
         {

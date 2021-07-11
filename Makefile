@@ -22,6 +22,7 @@ CLEAN_TARGETS := $(PACKFILES) data/bucepack pack.mcmeta pack.png test.zip \
 	data/minecraft/loot_tables/gameplay/*/*.json \
 	data/minecraft/loot_tables/subtables/*.json \
 	data/minecraft/loot_tables/subtables/*/*.json
+	#bucepack-data/*/subtables/*.json
 
 # needed by all texture pack targets
 DEFAULT = CONTRIBUTORS.txt LICENSE.txt
@@ -285,11 +286,6 @@ classic_crunch_FILES := $(DEFAULT_FILES) \
 gardener_endermen_FILES := $(DEFAULT_FILES) \
 	data/minecraft/tags/blocks/enderman_holdable.json
 
-aggrobastions_FILES := $(DEFAULT_FILES) \
-	data/minecraft/tags/blocks/guarded_by_piglins.json \
-	data/bucepack/advancements/root.json \
-	data/bucepack/advancements/aggrobastions.json
-
 climbable_FILES := $(DEFAULT_FILES) \
 	data/minecraft/tags/blocks/climbable.json \
 	data/bucepack/advancements/root.json \
@@ -308,17 +304,17 @@ no_treasure_maps_FILES := $(DEFAULT_FILES) \
 	data/bucepack/advancements/root.json \
 	data/bucepack/advancements/no_treasure_maps.json
 
-bluefire_FILES := $(DEFAULT_FILES) \
+blue_fire_FILES := $(DEFAULT_FILES) \
 	data/minecraft/tags/blocks/soul_fire_base_blocks.json \
 	data/bucepack/advancements/root.json \
-	data/bucepack/advancements/bluefire.json
+	data/bucepack/advancements/blue_fire.json
 
 fortunate_jungle_FILES := $(DEFAULT_FILES) \
 	data/minecraft/loot_tables/blocks/jungle_leaves.json
 
 loot_overhaul_FILES := $(DEFAULT_FILES) \
 	data/bucepack/advancements/root.json \
-	data/bucepack/advancements/loot_overhaul.json \
+	data/bucepack/advancements/loot_overhaul/loot_overhaul.json \
 	data/minecraft/tags/items/starter_item.json \
 	data/minecraft/tags/items/creeper_drop_music_discs.json \
 	data/minecraft/loot_tables/chests/abandoned_mineshaft.json \
@@ -366,18 +362,17 @@ loot_overhaul_FILES := $(DEFAULT_FILES) \
 	data/minecraft/loot_tables/gameplay/fishing/fish.json \
 	data/minecraft/loot_tables/gameplay/fishing/junk.json \
 	data/minecraft/loot_tables/gameplay/fishing/treasure.json \
+	data/bucepack/loot_tables/loot_overhaul/subtables/biome_log.json \
+	data/bucepack/loot_tables/loot_overhaul/subtables/ench_book.json \
+	data/bucepack/loot_tables/loot_overhaul/subtables/lib_book.json \
+	data/bucepack/loot_tables/loot_overhaul/subtables/treasure_seed.json \
+	data/bucepack/loot_tables/example.json \
 	data/minecraft/recipes/diamond_horse_armor.json \
 	data/minecraft/recipes/gold_horse_armor.json \
 	data/minecraft/recipes/iron_horse_armor.json \
 	data/minecraft/recipes/nametag.json \
 	data/minecraft/recipes/piglin_banner_pattern.json \
 	data/minecraft/recipes/saddle.json \
-	data/minecraft/loot_tables/subtables/biome_log.json \
-	data/minecraft/loot_tables/subtables/ench_book.json \
-	data/minecraft/loot_tables/subtables/head_decor.json \
-	data/minecraft/loot_tables/subtables/lib_book.json \
-	data/minecraft/loot_tables/subtables/treasure_seed.json \
-	data/minecraft/loot_tables/example.json
 
 artifact_loot_FILES := $(DEFAULT_FILES) \
 	data/bucepack/advancements/artifact/activate_darkvision.json \
@@ -385,7 +380,7 @@ artifact_loot_FILES := $(DEFAULT_FILES) \
 	data/bucepack/advancements/artifact/charge_fireball.json \
 	data/bucepack/advancements/artifact/charge_stormcalling.json \
 	data/bucepack/advancements/artifact/artifact_loot.json \
-	data/bucepack/advancements/loot_overhaul.json \
+	data/bucepack/advancements/loot_overhaul/loot_overhaul.json \
 	data/bucepack/advancements/root.json \
 	data/bucepack/functions/artifact/darkvision/activate.mcfunction \
 	data/bucepack/functions/artifact/fireball/activate.mcfunction \
@@ -398,7 +393,7 @@ artifact_loot_FILES := $(DEFAULT_FILES) \
 	data/bucepack/functions/artifact/stormcalling/reset.mcfunction \
 	data/bucepack/predicates/artifact/darkvision.json \
 	data/bucepack/predicates/artifact/fireball.json \
-	data/minecraft/loot_tables/subtables/artifact.json \
+	data/bucepack/loot_tables/artifact/subtables/artifact.json \
 	data/minecraft/recipes/light.json \
 	data/minecraft/tags/functions/load-artifact.json \
 
@@ -473,9 +468,9 @@ escape_grind_FILES := $(DEFAULT_FILES) \
 lichdom_FILES := $(DEFAULT_FILES) \
 	data/minecraft/tags/functions/load-lichdom.json \
 	data/minecraft/tags/functions/tick-lichdom.json \
-	data/bucepack/functions/load.mcfunction \
-	data/bucepack/functions/tick.mcfunction \
-	data/bucepack/tags/functions/death-lichdom.json \
+	data/lichdom/functions/fixme/load.mcfunction \
+	data/lichdom/functions/fixme/tick.mcfunction \
+	data/lichdom/tags/functions/death.json \
 	data/lichdom/tags/entity_types/undead.json \
 	data/lichdom/tags/entity_types/has_blood.json \
 	data/lichdom/functions/load.mcfunction \
@@ -507,7 +502,7 @@ lichdom_FILES := $(DEFAULT_FILES) \
 	data/lichdom/functions/drink_blood_4.mcfunction \
 	data/lichdom/functions/test.mcfunction \
 	data/bucepack/advancements/root.json \
-	data/bucepack/advancements/lichdom.json \
+	data/lichdom/advancements/lichdom.json \
 	data/lichdom/advancements/craft_pedestal.json \
 	data/lichdom/advancements/craft_phylactery.json \
 	data/lichdom/advancements/become_bunny.json \
@@ -548,6 +543,14 @@ test_FILES = \
 .PHONY: all
 all: $(PACKFILES)
 
+data/minecraft/loot_tables/%.json: minecraft-data/%.loot_table.json
+	mkdir -p $(dir $@)
+	cp -v $< $@
+
+data/bucepack/loot_tables/%.json: bucepack-data/%.loot_table.json
+	mkdir -p $(dir $@)
+	cp -v $< $@
+
 data/minecraft/functions/%.mcfunction: minecraft-data/%.function.mcfunction
 	mkdir -p $(dir $@)
 	cp -v $< $@
@@ -580,10 +583,13 @@ data/bucepack/tags/functions/%.json: bucepack-data/%.function.tag.json
 	mkdir -p $(dir $@)
 	cp -v $< $@
 
-data/minecraft/loot_tables/%.json: data/minecraft/loot_tables/%.json.yaml data/minecraft/loot_tables/loot_table.j2
-	j2 data/minecraft/loot_tables/loot_table.j2 $< -o $@
+#data/minecraft/loot_tables/%.json: data/minecraft/loot_tables/%.json.yaml data/minecraft/loot_tables/loot_table.j2
+#	j2 data/minecraft/loot_tables/loot_table.j2 $< -o $@
+#
+#data/bucepack/loot_tables/%.json: data/bucepack/loot_tables/%.json.yaml data/minecraft/loot_tables/loot_table.j2
+#	j2 data/minecraft/loot_tables/loot_table.j2 $< -o $@
 
-data/bucepack/loot_tables/%.json: data/bucepack/loot_tables/%.json.yaml data/minecraft/loot_tables/loot_table.j2
+%.json: %.json.yaml data/minecraft/loot_tables/loot_table.j2
 	j2 data/minecraft/loot_tables/loot_table.j2 $< -o $@
 
 test.zip: $(test_FILES)
@@ -742,11 +748,6 @@ gardener_endermen.zip: $(gardener_endermen_FILES)
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^
 
-aggrobastions.zip: $(aggrobastions_FILES)
-	cp meta/$(@:.zip=.png) pack.png
-	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
-	zip $@ pack.png pack.mcmeta $^
-
 climbable.zip: $(climbable_FILES)
 	cp meta/$(@:.zip=.png) pack.png
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
@@ -768,7 +769,7 @@ no_treasure_maps.zip: $(no_treasure_maps_FILES)
 	zip $@ pack.png pack.mcmeta $^
 	printf "@ data/minecraft/loot_tables/chests/shipwreck_map_nomap.json\n@=data/minecraft/loot_tables/chests/shipwreck_map.json\n" | zipnote -w $@
 
-bluefire.zip: $(bluefire_FILES)
+blue_fire.zip: $(blue_fire_FILES)
 	cp meta/$(@:.zip=.png) pack.png
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^
@@ -837,7 +838,6 @@ lichdom.zip: $(lichdom_FILES)
 	zip $@ pack.png pack.mcmeta $^
 	printf "@ data/minecraft/tags/functions/tick-lichdom.json\n@=data/minecraft/tags/functions/tick.json\n" | zipnote -w $@
 	printf "@ data/minecraft/tags/functions/load-lichdom.json\n@=data/minecraft/tags/functions/load.json\n" | zipnote -w $@
-	printf "@ data/bucepack/tags/functions/death-lichdom.json\n@=data/bucepack/tags/functions/death.json\n" | zipnote -w $@
 
 starter_bed.zip: $(starter_bed_FILES)
 	cp meta/$(@:.zip=.png) pack.png

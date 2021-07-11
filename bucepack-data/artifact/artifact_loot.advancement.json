@@ -13,7 +13,7 @@
 		"announce_to_chat": false,
 		"frame": "task"
 	},
-	"parent": "bucepack:loot_overhaul",
+	"parent": "bucepack:loot_overhaul/loot_overhaul",
 	"criteria": {
 		"tick": {
 			"trigger": "minecraft:tick"
