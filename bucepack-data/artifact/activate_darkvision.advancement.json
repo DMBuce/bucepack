@@ -27,8 +27,16 @@
 				},
 				"player": [
 					{
-						"condition": "minecraft:reference",
-						"name": "bucepack:artifact/darkvision"
+						"condition": "minecraft:entity_properties",
+						"entity": "this",
+						"predicate": {
+							"equipment": {
+								"head": {
+									"items": [ "minecraft:diamond_helmet" ],
+									"nbt": "{darkvision:1b}"
+								}
+							}
+						}
 					}
 				]
 			}

@@ -390,7 +390,6 @@ artifact_loot_FILES := $(DEFAULT_FILES) \
 	data/bucepack/functions/artifact/stormcalling/charge.mcfunction \
 	data/bucepack/functions/artifact/stormcalling/check.mcfunction \
 	data/bucepack/functions/artifact/stormcalling/reset.mcfunction \
-	data/bucepack/predicates/artifact/darkvision.json \
 	data/bucepack/loot_tables/artifact/subtables/artifact.json \
 	data/minecraft/recipes/light.json \
 	data/minecraft/tags/functions/load-artifact.json \
