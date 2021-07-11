@@ -385,12 +385,14 @@ artifact_loot_FILES := $(DEFAULT_FILES) \
 	data/bucepack/functions/artifact/fireball/activate.mcfunction \
 	data/bucepack/functions/artifact/fireball/charge.mcfunction \
 	data/bucepack/functions/artifact/fireball/reset.mcfunction \
+	data/bucepack/functions/artifact/fireball/set_motion.mcfunction \
 	data/bucepack/functions/artifact/load.mcfunction \
 	data/bucepack/functions/artifact/stormcalling/activate.mcfunction \
 	data/bucepack/functions/artifact/stormcalling/charge.mcfunction \
 	data/bucepack/functions/artifact/stormcalling/check.mcfunction \
 	data/bucepack/functions/artifact/stormcalling/reset.mcfunction \
 	data/bucepack/loot_tables/artifact/subtables/artifact.json \
+	data/bucepack/loot_tables/artifact/subtables/darkvision_helmet.json \
 	data/minecraft/recipes/light.json \
 	data/minecraft/tags/functions/load-artifact.json \
 

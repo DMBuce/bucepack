@@ -1,5 +1,8 @@
 # runs on server load
 
+# chunkload 0,0
+forceload add 1 1 -1 -1
+
 # add stormcalling objective
 scoreboard objectives add storm_charge dummy
 
