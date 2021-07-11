@@ -34,7 +34,7 @@ pools:
   - rolls: 1
     entries:
       - { type: item, weight: 1, item: diamond_shovel,
-          nbt: '{artifact:1b,felling:1b,display:{Name:\"{\\\"text\\\":\\\"Gravedigger\\\",\\\"color\\\":\\\"light_purple\\\"}\",Lore:[\"\\\"§r§bBoon: Excavating\\\"\"]},Enchantments:[{id:efficiency,lvl:5},{id:sharpness,lvl:5}]}'
+          nbt: '{artifact:1b,felling:1b,display:{Name:\"{\\\"text\\\":\\\"Gravedigger\\\",\\\"color\\\":\\\"light_purple\\\"}\",Lore:[\"\\\"§r§bBoon: Felling\\\"\"]},Enchantments:[{id:efficiency,lvl:5},{id:sharpness,lvl:5}]}'
         }
   - rolls: 1
     entries:
@@ -49,7 +49,7 @@ pools:
   - rolls: 1
     entries:
       - { type: item, weight: 1, item: trident,
-          nbt: '{artifact:1b,stormcalling:1b,display:{Name:\"{\\\"text\\\":\\\"Stormcaller\\\",\\\"color\\\":\\\"light_purple\\\"}\",Lore:[\"\\\"§r§bBoon: Stormcalling\\\"\"]},Enchantments:[{id:unbreaking,lvl:3}]}'
+          nbt: '{artifact:1b,stormcalling:1b,display:{Name:\"{\\\"text\\\":\\\"Stormcaller\\\",\\\"color\\\":\\\"light_purple\\\"}\",Lore:[\"\\\"§r§bBoon: Stormcalling\\\"\"]},Enchantments:[{id:unbreaking,lvl:3}],AttributeModifiers:[{Slot:\"mainhand\",AttributeName:\"generic.attack_speed\",Name:\"generic.attack_speed\",Amount:1.4,Operation:0,UUID:[I;-45235323,1513374611,-1734752737,1340528507]},{Slot:\"mainhand\",AttributeName:\"generic.attack_damage\",Name:\"generic.attack_damage\",Amount:10,Operation:0,UUID:[I;-1119792990,-658945342,-1627897520,86954822]}]}'
         }
   - rolls: 1
     entries:
@@ -97,7 +97,7 @@ pools:
   - rolls: 1
     entries:
       - { type: item, weight: 1, item: elytra,
-          nbt: '{artifact:1b,cloaking:1b,display:{Name:\"{\\\"text\\\":\\\"Wings of Cloaking\\\",\\\"color\\\":\\\"light_purple\\\"}\",Lore:[\"\\\"§r§bBoon: Cloaking\\\"\"]}}'
+          nbt: '{artifact:1b,cloaking:1b,display:{Name:\"{\\\"text\\\":\\\"Wings of Cloaking\\\",\\\"color\\\":\\\"light_purple\\\"}\",Lore:[\"\\\"§r§bBoon: Cloaking\\\"\"]},AttributeModifiers:[{Slot:\"chest\",AttributeName:\"generic.armor\",Name:\"generic.armor\",Amount:3.0,Operation:0,UUID:[I;-497889292,-868793500,-1479425606,-202804079]},{Slot:\"chest\",AttributeName:\"generic.armor_toughness\",Name:\"generic.armor_toughness\",Amount:0.0,Operation:0,UUID:[I;-1411764710,1954432632,-1352973442,371177441]}]}'
         }
 #  - rolls: 1
 #    entries:
@@ -107,7 +107,7 @@ pools:
   - rolls: 1
     entries:
       - { type: item, weight: 1, item: diamond_horse_armor,
-          nbt: '{artifact:1b,excellence:1b,display:{Name:\"{\\\"text\\\":\\\"Barding of Bounding\\\",\\\"color\\\":\\\"light_purple\\\"}\",Lore:[\"\\\"§r§bBoon: Excellence\\\"\"]},Enchantments:[{id:depth_strider,lvl:3},{id:feather_falling,lvl:4}],AttributeModifiers:[{Slot:\"armor\",AttributeName:\"generic.max_health\",Name:\"generic.max_health\",Amount:10.0,Operation:0,UUID:[I;-694445997,556351870,-2025324678,2119694944]},{Slot:\"armor\",AttributeName:\"generic.movement_speed\",Name:\"generic.movement_speed\",Amount:0.075,Operation:0,UUID:[I;1511046274,853625857,-1128932004,19699720]},{Slot:\"armor\",AttributeName:\"generic.jump_strength\",Name:\"generic.jump_strength\",Amount:0.2,Operation:0,UUID:[I;-2051896741,236080387,-2083109123,-1554541182]}]}'
+          nbt: '{artifact:1b,splendor:1b,display:{Name:\"{\\\"text\\\":\\\"Barding of Bounding\\\",\\\"color\\\":\\\"light_purple\\\"}\",Lore:[\"\\\"§r§bBoon: Splendor\\\"\"]},Enchantments:[{id:depth_strider,lvl:3},{id:feather_falling,lvl:4}],AttributeModifiers:[{Slot:\"armor\",AttributeName:\"generic.max_health\",Name:\"generic.max_health\",Amount:10.0,Operation:0,UUID:[I;-694445997,556351870,-2025324678,2119694944]},{Slot:\"armor\",AttributeName:\"generic.movement_speed\",Name:\"generic.movement_speed\",Amount:0.075,Operation:0,UUID:[I;1511046274,853625857,-1128932004,19699720]},{Slot:\"armor\",AttributeName:\"generic.jump_strength\",Name:\"generic.jump_strength\",Amount:0.2,Operation:0,UUID:[I;-2051896741,236080387,-2083109123,-1554541182]}]}'
         }
   - rolls: 1
     entries:

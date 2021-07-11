@@ -386,13 +386,13 @@ loot_overhaul_FILES := $(DEFAULT_FILES) \
 	data/minecraft/loot_tables/example.json
 
 artifact_loot_FILES := $(DEFAULT_FILES) \
-	data/bucepack/advancements/root.json \
-	data/bucepack/advancements/loot_overhaul.json \
 	data/bucepack/advancements/artifact/activate_darkvision.json \
 	data/bucepack/advancements/artifact/activate_fireball.json \
 	data/bucepack/advancements/artifact/charge_fireball.json \
 	data/bucepack/advancements/artifact/charge_stormcalling.json \
 	data/bucepack/advancements/artifact_loot.json \
+	data/bucepack/advancements/loot_overhaul.json \
+	data/bucepack/advancements/root.json \
 	data/bucepack/functions/artifact/darkvision/activate.mcfunction \
 	data/bucepack/functions/artifact/fireball/activate.mcfunction \
 	data/bucepack/functions/artifact/fireball/charge.mcfunction \
@@ -402,9 +402,9 @@ artifact_loot_FILES := $(DEFAULT_FILES) \
 	data/bucepack/functions/artifact/stormcalling/charge.mcfunction \
 	data/bucepack/functions/artifact/stormcalling/check.mcfunction \
 	data/bucepack/functions/artifact/stormcalling/reset.mcfunction \
-	data/bucepack/loot_tables/subtables/artifact.json \
 	data/bucepack/predicates/artifact/darkvision.json \
 	data/bucepack/predicates/artifact/fireball.json \
+	data/minecraft/loot_tables/subtables/artifact.json \
 	data/minecraft/recipes/light.json \
 	data/minecraft/tags/functions/load-artifact.json \
 
