@@ -3,43 +3,43 @@ pools:
 #  - rolls: 1
 #    entries:
 #      - { type: item, weight: 1, item: diamond_pickaxe,
-#          nbt: '{artifact:1b,smashing:1b,display:{Name:\"{\\\"text\\\":\\\"Stonebreaker\\\",\\\"color\\\":\\\"light_purple\\\"}\",Lore:[\"\\\"§r§bBoon: Smashing\\\"\"]},Enchantments:[{id:efficiency,lvl:5},{id:sharpness,lvl:5}]}'
+#          nbt: '{artifact:1b,breaking:1b,display:{Name:\"{\\\"text\\\":\\\"Stonebreaker\\\",\\\"color\\\":\\\"light_purple\\\"}\",Lore:[\"\\\"§r§bBoon: Smashing\\\"\"]},Enchantments:[{id:efficiency,lvl:5},{id:sharpness,lvl:5}]}'
 #        }
 #  - rolls: 1
 #    entries:
 #      - { type: item, weight: 1, item: diamond_axe,
-#          nbt: '{artifact:1b,felling:1b,display:{Name:\"{\\\"text\\\":\\\"Treefeller\\\",\\\"color\\\":\\\"light_purple\\\"}\",Lore:[\"\\\"§r§bBoon: Felling\\\"\"]},Enchantments:[{id:efficiency,lvl:5},{id:fire_aspect,lvl:3}]}'
+#          nbt: '{artifact:1b,breaking:1b,display:{Name:\"{\\\"text\\\":\\\"Treefeller\\\",\\\"color\\\":\\\"light_purple\\\"}\",Lore:[\"\\\"§r§bBoon: Breaking\\\"\"]},Enchantments:[{id:efficiency,lvl:5},{id:fire_aspect,lvl:3}]}'
 #        }
 #  - rolls: 1
 #    entries:
 #      - { type: item, weight: 1, item: diamond_shovel,
-#          nbt: '{artifact:1b,felling:1b,display:{Name:\"{\\\"text\\\":\\\"Sandripper\\\",\\\"color\\\":\\\"light_purple\\\"}\",Lore:[\"\\\"§r§bBoon: Felling\\\"\"]},Enchantments:[{id:efficiency,lvl:5},{id:sharpness,lvl:5}]}'
+#          nbt: '{artifact:1b,breaking:1b,display:{Name:\"{\\\"text\\\":\\\"Sandripper\\\",\\\"color\\\":\\\"light_purple\\\"}\",Lore:[\"\\\"§r§bBoon: Breaking\\\"\"]},Enchantments:[{id:efficiency,lvl:5},{id:sharpness,lvl:5}]}'
 #        }
 #  - rolls: 1
 #    entries:
 #      - { type: item, weight: 1, item: diamond_hoe,
-#          nbt: '{artifact:1b,smashing:1b,display:{Name:\"{\\\"text\\\":\\\"Branchbiter\\\",\\\"color\\\":\\\"light_purple\\\"}\",Lore:[\"\\\"§r§bBoon: Smashing\\\"\"]},Enchantments:[{id:efficiency,lvl:5},{id:knockback,lvl:3}]}'
+#          nbt: '{artifact:1b,breaking:1b,display:{Name:\"{\\\"text\\\":\\\"Branchbiter\\\",\\\"color\\\":\\\"light_purple\\\"}\",Lore:[\"\\\"§r§bBoon: Smashing\\\"\"]},Enchantments:[{id:efficiency,lvl:5},{id:knockback,lvl:3}]}'
 #        }
 
   - rolls: 1
     entries:
       - { type: item, weight: 1, item: diamond_pickaxe,
-          nbt: '{artifact:1b,smashing:1b,display:{Name:\"{\\\"text\\\":\\\"Bonebreaker\\\",\\\"color\\\":\\\"light_purple\\\"}\",Lore:[\"\\\"§r§bBoon: Smashing\\\"\"]},Enchantments:[{id:efficiency,lvl:5},{id:sharpness,lvl:5}]}'
+          nbt: '{artifact:1b,breaking:1b,display:{Name:\"{\\\"text\\\":\\\"Bonebreaker\\\",\\\"color\\\":\\\"light_purple\\\"}\",Lore:[\"\\\"§r§bBoon: Breaking\\\"\"]},Enchantments:[{id:efficiency,lvl:5},{id:sharpness,lvl:5}]}'
         }
   - rolls: 1
     entries:
       - { type: item, weight: 1, item: diamond_axe,
-          nbt: '{artifact:1b,felling:1b,display:{Name:\"{\\\"text\\\":\\\"Treefeller\\\",\\\"color\\\":\\\"light_purple\\\"}\",Lore:[\"\\\"§r§bBoon: Felling\\\"\"]},Enchantments:[{id:efficiency,lvl:5},{id:fire_aspect,lvl:3}]}'
+          nbt: '{artifact:1b,breaking:1b,display:{Name:\"{\\\"text\\\":\\\"Treefeller\\\",\\\"color\\\":\\\"light_purple\\\"}\",Lore:[\"\\\"§r§bBoon: Breaking\\\"\"]},Enchantments:[{id:efficiency,lvl:5},{id:fire_aspect,lvl:3}]}'
         }
   - rolls: 1
     entries:
       - { type: item, weight: 1, item: diamond_shovel,
-          nbt: '{artifact:1b,felling:1b,display:{Name:\"{\\\"text\\\":\\\"Gravedigger\\\",\\\"color\\\":\\\"light_purple\\\"}\",Lore:[\"\\\"§r§bBoon: Felling\\\"\"]},Enchantments:[{id:efficiency,lvl:5},{id:sharpness,lvl:5}]}'
+          nbt: '{artifact:1b,breaking:1b,display:{Name:\"{\\\"text\\\":\\\"Gravedigger\\\",\\\"color\\\":\\\"light_purple\\\"}\",Lore:[\"\\\"§r§bBoon: Breaking\\\"\"]},Enchantments:[{id:efficiency,lvl:5},{id:sharpness,lvl:5}]}'
         }
   - rolls: 1
     entries:
       - { type: item, weight: 1, item: diamond_hoe,
-          nbt: '{artifact:1b,smashing:1b,display:{Name:\"{\\\"text\\\":\\\"Herdsmacker\\\",\\\"color\\\":\\\"light_purple\\\"}\",Lore:[\"\\\"§r§bBoon: Smashing\\\"\"]},Enchantments:[{id:efficiency,lvl:5},{id:knockback,lvl:3}]}'
+          nbt: '{artifact:1b,breaking:1b,display:{Name:\"{\\\"text\\\":\\\"Herdsmacker\\\",\\\"color\\\":\\\"light_purple\\\"}\",Lore:[\"\\\"§r§bBoon: Breaking\\\"\"]},Enchantments:[{id:efficiency,lvl:5},{id:knockback,lvl:3}]}'
         }
   - rolls: 1
     entries:

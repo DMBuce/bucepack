@@ -458,6 +458,8 @@ This is an addon pack for the
 datapack above. It adds artifact items to the loot tables that spawn with a one
 in a thousand chance in chests and a one in a million chance from fishing.
 
+TODO: document that Unbreaking nullifies Breaking.
+
 Download: https://github.com/DMBuce/bucepack/releases
 
 Build: `make artifact_loot.zip`

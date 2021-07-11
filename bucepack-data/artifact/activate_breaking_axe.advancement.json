@@ -1,0 +1,36 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:diamond_axe"
+		},
+		"title": {
+			"text": "Breaking"
+		},
+		"description": {
+			"text": "Activate Treefeller"
+		},
+		"show_toast": false,
+		"announce_to_chat": false,
+		"hidden": true,
+		"frame": "task"
+	},
+	"parent": "bucepack:artifact/artifact_loot",
+	"criteria": {
+		"break_block": {
+			"trigger": "minecraft:item_durability_changed",
+			"conditions": {
+				"item": {
+					"items": [ "minecraft:diamond_axe" ],
+					"enchantments": {
+						"enchantment": "unbreaking",
+						"levels": { "max": 0 }
+					},
+					"nbt": "{breaking:1b}"
+				}
+			}
+		}
+	},
+	"rewards": {
+		"function": "bucepack:artifact/breaking/axe/activate"
+	}
+}
