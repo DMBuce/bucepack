@@ -9,7 +9,7 @@ pools:
       - { type: item, weight: 10,                  item: creeper_head }
       - { type: item, weight: 15,                  item: skeleton_skull }
       - { type: item, weight: 5,  min: 8, max: 16, item: petrified_oak_slab }
-      - { type: loot_table, weight: 10, table: subtables/ench_book }
+      - { type: loot_table, weight: 10, table: loot_overhaul/subtables/ench_book }
   - rolls: { min: 1, max: 4 }
     entries:
       - { type: item, weight: 10, min: 1, max: 4,  item: iron_ingot }

@@ -13,5 +13,5 @@ pools:
       - { type: item, weight: 6, enchant_rand: [], item: shield }
       - { type: item, weight: 5,  min: 3, max: 7, item: obsidian }
       - { type: tag,  weight: 5,  expand: true,   tag:  saplings }
-      - { type: loot_table, weight: 3, table: subtables/biome_log }
+      - { type: loot_table, weight: 3, table: loot_overhaul/subtables/biome_log }
       - { type: item, weight: 3,                  item: experience_bottle }

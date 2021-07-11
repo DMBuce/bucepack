@@ -5,7 +5,7 @@ pools:
       - { type: item, weight: 10, min: 4, max: 8,  item: iron_ingot }
       - { type: item, weight: 15, min: 2, max: 7,  item: gold_ingot }
       - { type: item, weight: 2,  min: 2, max: 6,  item: emerald }
-      - { type: loot_table, weight: 5, table: subtables/treasure_seed }
+      - { type: loot_table, weight: 5, table: loot_overhaul/subtables/treasure_seed }
       - { type: explorer_map, weight: 5, structure: endcity, decor: target_point, display: "End Island Explorer Map", skipchunks: true }
       - { type: item, weight: 6, enchant_lvl: { min: 25, max: 39 }, item: crossbow }
       - { type: item, weight: 9,  min: 18, max: 36, item: firework_rocket,

@@ -7,7 +7,7 @@ pools:
       - { type: item, weight: 1,  item: bread, min: 2, max: 3 }
   - rolls: 1
     entries:
-      - { type: loot_table, weight: 1, table: subtables/biome_log }
+      - { type: loot_table, weight: 1, table: loot_overhaul/subtables/biome_log }
   - rolls: 1
     entries:
       - { type: tag,  weight: 1, expand: true, tag: starter_item }

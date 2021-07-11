@@ -12,4 +12,4 @@ pools:
       - { type: item, weight: 2,  min: 1, max: 4, item: emerald }
       - { type: tag,  weight: 5,  expand: true,   tag:  saplings }
       - { type: item, weight: 1,                  item: experience_bottle }
-      - { type: loot_table, weight: 10, table: subtables/biome_log }
+      - { type: loot_table, weight: 10, table: loot_overhaul/subtables/biome_log }

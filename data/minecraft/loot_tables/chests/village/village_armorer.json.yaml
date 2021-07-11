@@ -13,5 +13,5 @@ pools:
       - { type: item, weight: 5,                  item: chainmail_boots, enchant_lvl: { min: 15, max: 20 } }
       - { type: item, weight: 5,                  item: emerald }
       - { type: tag,  weight: 5,  expand: true,   tag:  saplings }
-      - { type: loot_table, weight: 3, table: subtables/biome_log }
+      - { type: loot_table, weight: 3, table: loot_overhaul/subtables/biome_log }
       - { type: item, weight: 3,                  item: experience_bottle }

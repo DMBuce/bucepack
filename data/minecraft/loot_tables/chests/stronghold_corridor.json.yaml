@@ -18,4 +18,4 @@ pools:
       - { type: item, weight: 1,                  item: golden_apple }
       - { type: item, weight: 1,                  item: ender_eye }
       - { type: tag,  weight: 3, expand: true,    tag:  music_discs }
-      - { type: loot_table, weight: 1, table: subtables/ench_book }
+      - { type: loot_table, weight: 1, table: loot_overhaul/subtables/ench_book }

@@ -11,4 +11,4 @@ pools:
       - { type: item, weight: 8,  min: 4, max: 8,  item: honey_bottle }
       - { type: tag,  weight: 3,  expand: true,    tag:  music_discs }
       - { type: item, weight: 1,                   item: enchanted_golden_apple }
-      - { type: loot_table, weight: 3, table: subtables/ench_book }
+      - { type: loot_table, weight: 3, table: loot_overhaul/subtables/ench_book }
