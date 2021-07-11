@@ -685,6 +685,7 @@ TO DO AFTER MINECRAFT UPDATES
 =============================
 
 Merge loot table changes with Loot Overhaul
+Add new food to artifact predicate
 Add new plants to Gardener Endermen and Shearless packs
 Add new ores to Ore Types
 Add new End blocks to Dragonproof
