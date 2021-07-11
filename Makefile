@@ -14,7 +14,7 @@ DATAPACKFILES = gardener_endermen.zip climbable.zip speedy_paths.zip \
 PACKFILES = $(RESOURCEPACKFILES) $(DATAPACKFILES)
 MCDIR     = $(HOME)/.minecraft
 
-CLEAN_TARGETS := $(PACKFILES) pack.mcmeta pack.png test.zip \
+CLEAN_TARGETS := $(PACKFILES) data/bucepack pack.mcmeta pack.png test.zip \
 	data/minecraft/loot_tables/*.json \
 	data/minecraft/loot_tables/chests/*.json \
 	data/minecraft/loot_tables/chests/*/*.json \
@@ -313,12 +313,6 @@ bluefire_FILES := $(DEFAULT_FILES) \
 	data/bucepack/advancements/root.json \
 	data/bucepack/advancements/bluefire.json
 
-data/minecraft/loot_tables/%.json: data/minecraft/loot_tables/%.json.yaml data/minecraft/loot_tables/loot_table.j2
-	j2 data/minecraft/loot_tables/loot_table.j2 $< -o $@
-
-data/bucepack/loot_tables/%.json: data/bucepack/loot_tables/%.json.yaml data/minecraft/loot_tables/loot_table.j2
-	j2 data/minecraft/loot_tables/loot_table.j2 $< -o $@
-
 fortunate_jungle_FILES := $(DEFAULT_FILES) \
 	data/minecraft/loot_tables/blocks/jungle_leaves.json
 
@@ -553,6 +547,44 @@ test_FILES = \
 
 .PHONY: all
 all: $(PACKFILES)
+
+data/minecraft/functions/%.mcfunction: minecraft-data/%.function.mcfunction
+	mkdir -p $(dir $@)
+	cp -v $< $@
+
+data/bucepack/functions/%.mcfunction: bucepack-data/%.function.mcfunction
+	mkdir -p $(dir $@)
+	cp -v $< $@
+
+data/minecraft/advancements/%.json: minecraft-data/%.advancement.json
+	mkdir -p $(dir $@)
+	cp -v $< $@
+
+data/bucepack/advancements/%.json: bucepack-data/%.advancement.json
+	mkdir -p $(dir $@)
+	cp -v $< $@
+
+data/minecraft/predicates/%.json: minecraft-data/%.predicate.json
+	mkdir -p $(dir $@)
+	cp -v $< $@
+
+data/bucepack/predicates/%.json: bucepack-data/%.predicate.json
+	mkdir -p $(dir $@)
+	cp -v $< $@
+
+data/minecraft/tags/functions/%.json: minecraft-data/%.function.tag.json
+	mkdir -p $(dir $@)
+	cp -v $< $@
+
+data/bucepack/tags/functions/%.json: bucepack-data/%.function.tag.json
+	mkdir -p $(dir $@)
+	cp -v $< $@
+
+data/minecraft/loot_tables/%.json: data/minecraft/loot_tables/%.json.yaml data/minecraft/loot_tables/loot_table.j2
+	j2 data/minecraft/loot_tables/loot_table.j2 $< -o $@
+
+data/bucepack/loot_tables/%.json: data/bucepack/loot_tables/%.json.yaml data/minecraft/loot_tables/loot_table.j2
+	j2 data/minecraft/loot_tables/loot_table.j2 $< -o $@
 
 test.zip: $(test_FILES)
 	cp meta/$(@:.zip=.png) pack.png

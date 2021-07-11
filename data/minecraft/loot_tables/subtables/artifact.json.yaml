@@ -97,7 +97,7 @@ pools:
   - rolls: 1
     entries:
       - { type: item, weight: 1, item: elytra,
-          nbt: '{artifact:1b,cloaking:1b,display:{Name:\"{\\\"text\\\":\\\"Wings of Cloaking\\\",\\\"color\\\":\\\"light_purple\\\"}\",Lore:[\"\\\"§r§bBoon: Cloaking\\\"\"]},AttributeModifiers:[{Slot:\"chest\",AttributeName:\"generic.armor\",Name:\"generic.armor\",Amount:3.0,Operation:0,UUID:[I;-497889292,-868793500,-1479425606,-202804079]},{Slot:\"chest\",AttributeName:\"generic.armor_toughness\",Name:\"generic.armor_toughness\",Amount:0.0,Operation:0,UUID:[I;-1411764710,1954432632,-1352973442,371177441]}]}'
+          nbt: '{artifact:1b,cloaking:1b,display:{Name:\"{\\\"text\\\":\\\"Wings of Cloaking\\\",\\\"color\\\":\\\"light_purple\\\"}\",Lore:[\"\\\"§r§bBoon: Cloaking\\\"\"]},Enchantments:[{id:unbreaking,lvl:3}],AttributeModifiers:[{Slot:\"chest\",AttributeName:\"generic.armor\",Name:\"generic.armor\",Amount:3.0,Operation:0,UUID:[I;-497889292,-868793500,-1479425606,-202804079]},{Slot:\"chest\",AttributeName:\"generic.armor_toughness\",Name:\"generic.armor_toughness\",Amount:0.0,Operation:0,UUID:[I;-1411764710,1954432632,-1352973442,371177441]}]}'
         }
 #  - rolls: 1
 #    entries:
