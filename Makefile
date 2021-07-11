@@ -384,7 +384,7 @@ artifact_loot_FILES := $(DEFAULT_FILES) \
 	data/bucepack/advancements/artifact/activate_fireball.json \
 	data/bucepack/advancements/artifact/charge_fireball.json \
 	data/bucepack/advancements/artifact/charge_stormcalling.json \
-	data/bucepack/advancements/artifact_loot.json \
+	data/bucepack/advancements/artifact/artifact_loot.json \
 	data/bucepack/advancements/loot_overhaul.json \
 	data/bucepack/advancements/root.json \
 	data/bucepack/functions/artifact/darkvision/activate.mcfunction \

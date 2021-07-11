@@ -14,7 +14,7 @@
 		"hidden": true,
 		"frame": "task"
 	},
-	"parent": "bucepack:artifact_loot",
+	"parent": "bucepack:artifact/artifact_loot",
 	"criteria": {
 		"charging_fireball": {
 			"trigger": "minecraft:using_item",
