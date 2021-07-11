@@ -1,8 +1,17 @@
-# runs when a player starts charging a fireball bow
+# runs while a player charges fireball
 
-# set shot_fireball to 0
-scoreboard players set @s shot_fireball 0
+# increment fireball_charge
+scoreboard players add @s fireball_charge 1
 
-# try to clean up charge_fireball advancement every 5 seconds
-schedule function bucepack:artifact/fireball/cleanup 5s replace
+# summon fireball if charge exceeds threshold
+execute if entity @s[scores={fireball_charge=20..}] run function bucepack:artifact/fireball/activate
+
+# debug
+tellraw @s ["Fireball charge: ",{"score":{"name":"*","objective":"fireball_charge"}}]
+
+# reset charge 4t i.e. 0.2s from the last time this function is called
+schedule function bucepack:artifact/fireball/reset 4t replace
+
+# revoke advancement
+advancement revoke @s only bucepack:artifact/charge_fireball
 

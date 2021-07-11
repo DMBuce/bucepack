@@ -4,10 +4,10 @@
 			"item": "minecraft:fire_charge"
 		},
 		"title": {
-			"text": "Charge Fireball"
+			"text": "Fireball"
 		},
 		"description": {
-			"text": "Charge the Neverending Fire Storm"
+			"text": "Charge Meteor Storm"
 		},
 		"show_toast": false,
 		"announce_to_chat": false,
@@ -19,12 +19,10 @@
 		"charging_fireball": {
 			"trigger": "minecraft:using_item",
 			"conditions": {
-				"player": [
-					{
-						"condition": "minecraft:reference",
-						"name": "bucepack:artifact/fireball"
-					}
-				]
+				"item": {
+					"items": [ "minecraft:bow" ],
+					"nbt": "{fireball:1b}"
+				}
 			}
 		}
 	},

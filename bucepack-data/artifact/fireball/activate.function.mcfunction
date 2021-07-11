@@ -1,9 +1,8 @@
-# runs when a player shoots a fireball bow
 
-# summon fireball on top of arrow
-execute at @e[type=arrow,distance=..2,sort=nearest] run summon minecraft:fireball ~ ~ ~
+# summon fireball
+#title @s actionbar "Fireball!"
+summon minecraft:fireball ~ ~1 ~ {direction:[0.0,0.0,0.0]}
 
-# revoke advancements
-advancement revoke @s only bucepack:artifact/charge_fireball
-advancement revoke @s only bucepack:artifact/activate_fireball
+# reset fireball charge
+function bucepack:artifact/fireball/reset
 
