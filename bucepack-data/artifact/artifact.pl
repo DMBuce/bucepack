@@ -3,7 +3,7 @@
 use File::Basename;
 
 #print dirname($0)."/subtables/artifact.json.yaml\n";
-open(FH, '<', dirname($0)."/subtables/artifact.json.yaml") or die $!;
+open(FH, '<', dirname($0)."/subtables/artifact.loot_table.json.yaml") or die $!;
 while (<FH>) {
 	if (!m/^#/ && m/Name:.*text\\\\\\":\\\\\\"([^\\]*)/) {
 		print $1;
@@ -15,7 +15,7 @@ while (<FH>) {
 	}
 }
 
-open(FH, '<', dirname($0)."/subtables/darkvision_helmet.json.yaml") or die $!;
+open(FH, '<', dirname($0)."/subtables/darkvision_helmet.loot_table.json.yaml") or die $!;
 while (<FH>) {
 	if (!m/^#/ && m/Name:.*text\\\\\\":\\\\\\"([^\\]*)/) {
 		print $1;
