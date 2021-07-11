@@ -1,0 +1,121 @@
+pools:
+
+#  - rolls: 1
+#    entries:
+#      - { type: item, weight: 1, item: diamond_pickaxe,
+#          nbt: '{artifact:1b,smashing:1b,display:{Name:\"{\\\"text\\\":\\\"Stonebreaker\\\",\\\"color\\\":\\\"light_purple\\\"}\",Lore:[\"\\\"§r§bBoon: Smashing\\\"\"]},Enchantments:[{id:efficiency,lvl:5},{id:sharpness,lvl:5}]}'
+#        }
+#  - rolls: 1
+#    entries:
+#      - { type: item, weight: 1, item: diamond_axe,
+#          nbt: '{artifact:1b,felling:1b,display:{Name:\"{\\\"text\\\":\\\"Treefeller\\\",\\\"color\\\":\\\"light_purple\\\"}\",Lore:[\"\\\"§r§bBoon: Felling\\\"\"]},Enchantments:[{id:efficiency,lvl:5},{id:fire_aspect,lvl:3}]}'
+#        }
+#  - rolls: 1
+#    entries:
+#      - { type: item, weight: 1, item: diamond_shovel,
+#          nbt: '{artifact:1b,felling:1b,display:{Name:\"{\\\"text\\\":\\\"Sandripper\\\",\\\"color\\\":\\\"light_purple\\\"}\",Lore:[\"\\\"§r§bBoon: Felling\\\"\"]},Enchantments:[{id:efficiency,lvl:5},{id:sharpness,lvl:5}]}'
+#        }
+#  - rolls: 1
+#    entries:
+#      - { type: item, weight: 1, item: diamond_hoe,
+#          nbt: '{artifact:1b,smashing:1b,display:{Name:\"{\\\"text\\\":\\\"Branchbiter\\\",\\\"color\\\":\\\"light_purple\\\"}\",Lore:[\"\\\"§r§bBoon: Smashing\\\"\"]},Enchantments:[{id:efficiency,lvl:5},{id:knockback,lvl:3}]}'
+#        }
+
+  - rolls: 1
+    entries:
+      - { type: item, weight: 1, item: diamond_pickaxe,
+          nbt: '{artifact:1b,smashing:1b,display:{Name:\"{\\\"text\\\":\\\"Bonebreaker\\\",\\\"color\\\":\\\"light_purple\\\"}\",Lore:[\"\\\"§r§bBoon: Smashing\\\"\"]},Enchantments:[{id:efficiency,lvl:5},{id:sharpness,lvl:5}]}'
+        }
+  - rolls: 1
+    entries:
+      - { type: item, weight: 1, item: diamond_axe,
+          nbt: '{artifact:1b,felling:1b,display:{Name:\"{\\\"text\\\":\\\"Treefeller\\\",\\\"color\\\":\\\"light_purple\\\"}\",Lore:[\"\\\"§r§bBoon: Felling\\\"\"]},Enchantments:[{id:efficiency,lvl:5},{id:fire_aspect,lvl:3}]}'
+        }
+  - rolls: 1
+    entries:
+      - { type: item, weight: 1, item: diamond_shovel,
+          nbt: '{artifact:1b,felling:1b,display:{Name:\"{\\\"text\\\":\\\"Gravedigger\\\",\\\"color\\\":\\\"light_purple\\\"}\",Lore:[\"\\\"§r§bBoon: Excavating\\\"\"]},Enchantments:[{id:efficiency,lvl:5},{id:sharpness,lvl:5}]}'
+        }
+  - rolls: 1
+    entries:
+      - { type: item, weight: 1, item: diamond_hoe,
+          nbt: '{artifact:1b,smashing:1b,display:{Name:\"{\\\"text\\\":\\\"Herdsmacker\\\",\\\"color\\\":\\\"light_purple\\\"}\",Lore:[\"\\\"§r§bBoon: Smashing\\\"\"]},Enchantments:[{id:efficiency,lvl:5},{id:knockback,lvl:3}]}'
+        }
+  - rolls: 1
+    entries:
+      - { type: item, weight: 1, item: diamond_sword,
+          nbt: '{artifact:1b,vorpal:1b,display:{Name:\"{\\\"text\\\":\\\"Vorpal Blade\\\",\\\"color\\\":\\\"light_purple\\\"}\",Lore:[\"\\\"§r§bBoon: Beheading\\\"\"]},Enchantments:[{id:sharpness,lvl:4},{id:smite,lvl:4},{id:looting,lvl:3}]}'
+        }
+  - rolls: 1
+    entries:
+      - { type: item, weight: 1, item: trident,
+          nbt: '{artifact:1b,stormcalling:1b,display:{Name:\"{\\\"text\\\":\\\"Stormcaller\\\",\\\"color\\\":\\\"light_purple\\\"}\",Lore:[\"\\\"§r§bBoon: Stormcalling\\\"\"]},Enchantments:[{id:unbreaking,lvl:3}]}'
+        }
+  - rolls: 1
+    entries:
+      - { type: item, weight: 1, item: bow,
+          nbt: '{artifact:1b,fireball:1b,display:{Name:\"{\\\"text\\\":\\\"Comet Storm\\\",\\\"color\\\":\\\"light_purple\\\"}\",Lore:[\"\\\"§r§bBoon: Fireballs\\\"\"]},Enchantments:[{id:infinity,lvl:1},{id:mending,lvl:1}]}'
+        }
+  - rolls: 1
+    entries:
+      - { type: item, weight: 1, item: crossbow,
+          nbt: '{artifact:1b,flamethrower:1b,display:{Name:\"{\\\"text\\\":\\\"Flamethrower\\\",\\\"color\\\":\\\"light_purple\\\"}\",Lore:[\"\\\"§r§bBoon: Flamethrowing\\\"\"]},Enchantments:[{id:piercing,lvl:4},{id:multishot,lvl:1}]}'
+        }
+#  - rolls: 1
+#    entries:
+#      - { type: item, weight: 1, item: crossbow,
+#          nbt: '{artifact:1b,sixshooter:1b,display:{Name:\"{\\\"text\\\":\\\"Six Shooter\\\",\\\"color\\\":\\\"light_purple\\\"}\",Lore:[\"\\\"§r§bShoots six shots\\\"\"]},Enchantments:[{id:quick_charge,lvl:5},{unbreaking:3}]}'
+#        }
+#  - rolls: 1
+#    entries:
+#      - { type: item, weight: 1, item: crossbow,
+#          nbt: '{artifact:1b,display:{Name:\"{\\\"text\\\":\\\"Bolt Guzzler\\\",\\\"color\\\":\\\"light_purple\\\"}\",Lore:[\"\\\"§r§bChews through ammo and durability\\\"\"]},Enchantments:[{id:quick_charge,lvl:5},{id:multishot,lvl:1}]}'
+#        }
+  - rolls: 1
+    entries:
+      - { type: loot_table, weight: 1, table: subtables/darkvision_helmet }
+  #- rolls: 1
+  #  entries:
+  #    - { type: item, weight: 1, item: diamond_helmet,
+  #        nbt: '{artifact:1b,darkvision:1b,display:{Name:\"{\\\"text\\\":\\\"Helm of Darkvision\\\",\\\"color\\\":\\\"light_purple\\\"}\",Lore:[\"\\\"§r§bBoon: Darkvision\\\"\"]},Enchantments:[{id:protection,lvl:4},{id:blast_protection,lvl:2}]}'
+  #      }
+  - rolls: 1
+    entries:
+      - { type: item, weight: 1, item: diamond_chestplate,
+          nbt: '{artifact:1b,absorbing:1b,display:{Name:\"{\\\"text\\\":\\\"Aegis of Endurance\\\",\\\"color\\\":\\\"light_purple\\\"}\",Lore:[\"\\\"§r§bBoon: Absorbing\\\"\"]},Enchantments:[{id:unbreaking,lvl:3}],AttributeModifiers:[{Slot:\"chest\",AttributeName:\"generic.max_health\",Name:\"generic.max_health\",Amount:10.0,Operation:0,UUID:[I;1986497455,1094009722,-1779243889,-277989848]},{Slot:\"chest\",AttributeName:\"generic.armor\",Name:\"generic.armor\",Amount:8.0,Operation:0,UUID:[I;717097559,423184775,-1334929543,1952788274]},{Slot:\"chest\",AttributeName:\"generic.armor_toughness\",Name:\"generic.armor_toughness\",Amount:3.0,Operation:0,UUID:[I;-354813259,1878082813,-1193018274,1873352094]}]}'
+        }
+  - rolls: 1
+    entries:
+      - { type: item, weight: 1, item: diamond_leggings,
+          nbt: '{artifact:1b,mining:1b,display:{Name:\"{\\\"text\\\":\\\"Trousers of Traveling\\\",\\\"color\\\":\\\"light_purple\\\"}\",Lore:[\"\\\"§r§bBoon: Mining\\\"\"]},Enchantments:[{id:unbreaking,lvl:3}],AttributeModifiers:[{Slot:\"legs\",AttributeName:\"generic.movement_speed\",Name:\"generic.movement_speed\",Amount:0.2,Operation:2,UUID:[I;-1739252648,-763214326,-1592923154,1933501344]},{Slot:\"legs\",AttributeName:\"generic.armor\",Name:\"generic.armor\",Amount:6.0,Operation:0,UUID:[I;1748112070,948193003,-1561903410,1308854036]},{Slot:\"legs\",AttributeName:\"generic.armor_toughness\",Name:\"generic.armor_toughness\",Amount:3.0,Operation:0,UUID:[I;591889826,2067615118,-2036409489,1144780995]}]}'
+        }
+  - rolls: 1
+    entries:
+      - { type: item, weight: 1, item: diamond_boots,
+          nbt: '{artifact:1b,bounding:1b,display:{Name:\"{\\\"text\\\":\\\"Boots of Frost and Flood\\\",\\\"color\\\":\\\"light_purple\\\"}\",Lore:[\"\\\"§r§bBoon: Bounding\\\"\"]},Enchantments:[{id:frost_walker,lvl:2},{id:depth_strider,lvl:3}]}'
+        }
+  - rolls: 1
+    entries:
+      - { type: item, weight: 1, item: elytra,
+          nbt: '{artifact:1b,cloaking:1b,display:{Name:\"{\\\"text\\\":\\\"Wings of Cloaking\\\",\\\"color\\\":\\\"light_purple\\\"}\",Lore:[\"\\\"§r§bBoon: Cloaking\\\"\"]}}'
+        }
+#  - rolls: 1
+#    entries:
+#      - { type: item, weight: 1, item: elytra,
+#          nbt: '{artifact:1b,airwalking:1b,display:{Name:\"{\\\"text\\\":\\\"Wings of the Whirlwind\\\",\\\"color\\\":\\\"light_purple\\\"}\",Lore:[\"\\\"§r§bBoon: Airwalking\\\"\"]},Enchantments:[{id:projectile_protection,lvl:3},{id:thorns,lvl:3}]}'
+#        }
+  - rolls: 1
+    entries:
+      - { type: item, weight: 1, item: diamond_horse_armor,
+          nbt: '{artifact:1b,excellence:1b,display:{Name:\"{\\\"text\\\":\\\"Barding of Bounding\\\",\\\"color\\\":\\\"light_purple\\\"}\",Lore:[\"\\\"§r§bBoon: Excellence\\\"\"]},Enchantments:[{id:depth_strider,lvl:3},{id:feather_falling,lvl:4}],AttributeModifiers:[{Slot:\"armor\",AttributeName:\"generic.max_health\",Name:\"generic.max_health\",Amount:10.0,Operation:0,UUID:[I;-694445997,556351870,-2025324678,2119694944]},{Slot:\"armor\",AttributeName:\"generic.movement_speed\",Name:\"generic.movement_speed\",Amount:0.075,Operation:0,UUID:[I;1511046274,853625857,-1128932004,19699720]},{Slot:\"armor\",AttributeName:\"generic.jump_strength\",Name:\"generic.jump_strength\",Amount:0.2,Operation:0,UUID:[I;-2051896741,236080387,-2083109123,-1554541182]}]}'
+        }
+  - rolls: 1
+    entries:
+      - { type: item, weight: 1, item: end_portal_frame, count: 12,
+          nbt: '{artifact:1b,display:{Name:\"{\\\"text\\\":\\\"End Portal Frame\\\",\\\"color\\\":\\\"light_purple\\\"}\",Lore:[\"\\\"§r§bPlace them carefully\\\"\"]}}'
+        }
+  - rolls: 1
+    entries:
+      - { type: item, weight: 1, item: light,
+          nbt: '{artifact:1b,display:{Name:\"{\\\"text\\\":\\\"Light\\\",\\\"color\\\":\\\"light_purple\\\"}\",Lore:[\"\\\"§r§bCraft with an end rod to create more light\\\"\"]}}'
+        }

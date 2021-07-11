@@ -1,0 +1,12 @@
+pools:
+  - rolls: 1
+    entries:
+      - { type: item, weight: 1, item: diamond_helmet,
+          nbt: '{artifact:1b,darkvision:1b,display:{Name:\"{\\\"text\\\":\\\"Helm of Darkvision\\\",\\\"color\\\":\\\"light_purple\\\"}\",Lore:[\"\\\"§r§bBoon: Darkvision\\\"\"]},Enchantments:[{id:protection,lvl:4},{id:blast_protection,lvl:2}]}'
+        }
+      - { type: item, weight: 1, item: diamond_helmet,
+          nbt: '{artifact:1b,darkvision:1b,display:{Name:\"{\\\"text\\\":\\\"Helm of Darkvision\\\",\\\"color\\\":\\\"light_purple\\\"}\",Lore:[\"\\\"§r§bBoon: Darkvision\\\"\"]},Enchantments:[{id:protection,lvl:4},{id:fire_protection,lvl:2}]}'
+        }
+      - { type: item, weight: 1, item: diamond_helmet,
+          nbt: '{artifact:1b,darkvision:1b,display:{Name:\"{\\\"text\\\":\\\"Helm of Darkvision\\\",\\\"color\\\":\\\"light_purple\\\"}\",Lore:[\"\\\"§r§bBoon: Darkvision\\\"\"]},Enchantments:[{id:protection,lvl:4},{id:projectile_protection,lvl:2}]}'
+        }
