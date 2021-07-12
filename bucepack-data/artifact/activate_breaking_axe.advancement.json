@@ -21,11 +21,12 @@
 			"conditions": {
 				"item": {
 					"items": [ "minecraft:diamond_axe" ],
-					"enchantments": {
-						"enchantment": "unbreaking",
-						"levels": { "max": 0 }
-					},
 					"nbt": "{breaking:1b}"
+				},
+				"player": {
+					"flags": {
+						"is_sneaking": false
+					}
 				}
 			}
 		}

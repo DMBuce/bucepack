@@ -1,12 +1,5 @@
-# runs as a player using a breaking shovel positioned where the block was broken
+# runs 1t after a block is broken with breaking shovel
 
-# break 4 blocks above and below
-execute if block ~ ~4  ~ #mineable/shovel run setblock ~ ~4  ~ air destroy
-execute if block ~ ~3  ~ #mineable/shovel run setblock ~ ~3  ~ air destroy
-execute if block ~ ~2  ~ #mineable/shovel run setblock ~ ~2  ~ air destroy
-execute if block ~ ~1  ~ #mineable/shovel run setblock ~ ~1  ~ air destroy
-execute if block ~ ~-1 ~ #mineable/shovel run setblock ~ ~-1 ~ air destroy
-execute if block ~ ~-2 ~ #mineable/shovel run setblock ~ ~-2 ~ air destroy
-execute if block ~ ~-3 ~ #mineable/shovel run setblock ~ ~-3 ~ air destroy
-execute if block ~ ~-4 ~ #mineable/shovel run setblock ~ ~-4 ~ air destroy
+# break blocks from broken block's position
+execute as @a[predicate=bucepack:artifact/breaking/shovel] at @s positioned ~ ~1 ~ at @e[type=item,distance=..6,limit=1,nbt={Age:0s}] run function bucepack:artifact/breaking/shovel/break
 

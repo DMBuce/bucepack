@@ -1,5 +1,8 @@
 # runs when player uses a breaking pick
 
-# break blocks from broken block's position
-execute at @e[type=item,nbt={Age:0}] rotated as @s run function bucepack:artifact/breaking/pick/mine
+# break blocks in 1t when the item will exist
+schedule function bucepack:artifact/breaking/pick/mine 1t append
+
+# revoke advancement
+advancement revoke @s only bucepack:artifact/activate_breaking_pick
 
