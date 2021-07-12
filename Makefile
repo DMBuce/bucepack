@@ -376,16 +376,52 @@ loot_overhaul_FILES := $(DEFAULT_FILES) \
 
 artifact_loot_FILES := $(DEFAULT_FILES) \
 	data/bucepack/advancements/artifact/activate_darkvision.json \
+	data/bucepack/advancements/artifact/activate_absorbing.json \
+	data/bucepack/advancements/artifact/activate_mining.json \
+	data/bucepack/advancements/artifact/activate_bounding.json \
+	data/bucepack/advancements/artifact/activate_breaking_pick.json \
+	data/bucepack/advancements/artifact/activate_breaking_axe.json \
+	data/bucepack/advancements/artifact/activate_breaking_shovel.json \
+	data/bucepack/advancements/artifact/activate_breaking_hoe.json \
 	data/bucepack/advancements/artifact/charge_fireball.json \
+	data/bucepack/advancements/artifact/charge_flamethrower.json \
 	data/bucepack/advancements/artifact/charge_stormcalling.json \
 	data/bucepack/advancements/artifact/artifact_loot.json \
 	data/bucepack/advancements/loot_overhaul/loot_overhaul.json \
 	data/bucepack/advancements/root.json \
+	data/bucepack/predicates/artifact/breaking/pick.json \
+	data/bucepack/predicates/artifact/breaking/axe.json \
+	data/bucepack/predicates/artifact/breaking/shovel.json \
+	data/bucepack/predicates/artifact/breaking/hoe.json \
 	data/bucepack/functions/artifact/darkvision/activate.mcfunction \
+	data/bucepack/functions/artifact/absorbing/activate.mcfunction \
+	data/bucepack/functions/artifact/mining/activate.mcfunction \
+	data/bucepack/functions/artifact/bounding/activate.mcfunction \
+	data/bucepack/functions/artifact/breaking/pick/activate.mcfunction \
+	data/bucepack/functions/artifact/breaking/pick/mine.mcfunction \
+	data/bucepack/functions/artifact/breaking/pick/break.mcfunction \
+	data/bucepack/functions/artifact/breaking/pick/break_yz.mcfunction \
+	data/bucepack/functions/artifact/breaking/pick/break_xz.mcfunction \
+	data/bucepack/functions/artifact/breaking/pick/break_xy.mcfunction \
+	data/bucepack/functions/artifact/breaking/axe/activate.mcfunction \
+	data/bucepack/functions/artifact/breaking/axe/mine.mcfunction \
+	data/bucepack/functions/artifact/breaking/axe/break.mcfunction \
+	data/bucepack/functions/artifact/breaking/axe/chop.mcfunction \
+	data/bucepack/functions/artifact/breaking/shovel/activate.mcfunction \
+	data/bucepack/functions/artifact/breaking/shovel/mine.mcfunction \
+	data/bucepack/functions/artifact/breaking/shovel/break.mcfunction \
+	data/bucepack/functions/artifact/breaking/hoe/activate.mcfunction \
+	data/bucepack/functions/artifact/breaking/hoe/mine.mcfunction \
+	data/bucepack/functions/artifact/breaking/hoe/break.mcfunction \
+	data/bucepack/functions/artifact/breaking/hoe/break_yz.mcfunction \
+	data/bucepack/functions/artifact/breaking/hoe/break_xz.mcfunction \
+	data/bucepack/functions/artifact/breaking/hoe/break_xy.mcfunction \
 	data/bucepack/functions/artifact/fireball/activate.mcfunction \
 	data/bucepack/functions/artifact/fireball/charge.mcfunction \
 	data/bucepack/functions/artifact/fireball/reset.mcfunction \
-	data/bucepack/functions/artifact/fireball/set_motion.mcfunction \
+	data/bucepack/functions/artifact/flamethrower/activate.mcfunction \
+	data/bucepack/functions/artifact/flamethrower/charge.mcfunction \
+	data/bucepack/functions/artifact/flamethrower/reset.mcfunction \
 	data/bucepack/functions/artifact/load.mcfunction \
 	data/bucepack/functions/artifact/stormcalling/activate.mcfunction \
 	data/bucepack/functions/artifact/stormcalling/charge.mcfunction \

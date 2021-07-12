@@ -1,0 +1,74 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:golden_apple"
+		},
+		"title": {
+			"text": "Absorbing"
+		},
+		"description": {
+			"text": "Activate the Aegis of Endurance"
+		},
+		"show_toast": false,
+		"announce_to_chat": false,
+		"hidden": true,
+		"frame": "task"
+	},
+	"parent": "bucepack:artifact/artifact_loot",
+	"criteria": {
+		"get_hurt": {
+			"trigger": "minecraft:entity_hurt_player",
+			"conditions": {
+				"player": [
+					{
+						"condition": "minecraft:entity_properties",
+						"entity": "this",
+						"predicate": {
+							"equipment": {
+								"chest": {
+									"items": [ "minecraft:diamond_chestplate" ],
+									"nbt": "{absorbing:1b}"
+								}
+							}
+						}
+					}
+				]
+			}
+		},
+		"eat_apple": {
+			"trigger": "minecraft:consume_item",
+			"conditions": {
+				"item": {
+					"items": [
+						"minecraft:apple",
+						"minecraft:golden_apple",
+						"minecraft:enchanted_golden_apple"
+					]
+				},
+				"player": [
+					{
+						"condition": "minecraft:entity_properties",
+						"entity": "this",
+						"predicate": {
+							"equipment": {
+								"chest": {
+									"items": [ "minecraft:diamond_chestplate" ],
+									"nbt": "{absorbing:1b}"
+								}
+							}
+						}
+					}
+				]
+			}
+		}
+	},
+	"requirements": [
+		[
+			"get_hurt",
+			"eat_apple"
+		]
+	],
+	"rewards": {
+		"function": "bucepack:artifact/absorbing/activate"
+	}
+}

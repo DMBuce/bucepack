@@ -1,0 +1,73 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:golden_carrot"
+		},
+		"title": {
+			"text": "Cloaking"
+		},
+		"description": {
+			"text": "Activate the Wings of Cloaking"
+		},
+		"show_toast": false,
+		"announce_to_chat": false,
+		"hidden": true,
+		"frame": "task"
+	},
+	"parent": "bucepack:artifact/artifact_loot",
+	"criteria": {
+		"get_hurt": {
+			"trigger": "minecraft:entity_hurt_player",
+			"conditions": {
+				"player": [
+					{
+						"condition": "minecraft:entity_properties",
+						"entity": "this",
+						"predicate": {
+							"equipment": {
+								"chest": {
+									"items": [ "minecraft:elytra" ],
+									"nbt": "{cloaking:1b}"
+								}
+							}
+						}
+					}
+				]
+			}
+		},
+		"eat_carrot": {
+			"trigger": "minecraft:consume_item",
+			"conditions": {
+				"item": {
+					"items": [
+						"minecraft:carrot",
+						"minecraft:golden_carrot"
+					]
+				},
+				"player": [
+					{
+						"condition": "minecraft:entity_properties",
+						"entity": "this",
+						"predicate": {
+							"equipment": {
+								"chest": {
+									"items": [ "minecraft:elytra" ],
+									"nbt": "{cloaking:1b}"
+								}
+							}
+						}
+					}
+				]
+			}
+		}
+	},
+	"requirements": [
+		[
+			"get_hurt",
+			"eat_carrot"
+		]
+	],
+	"rewards": {
+		"function": "bucepack:artifact/cloaking/activate"
+	}
+}

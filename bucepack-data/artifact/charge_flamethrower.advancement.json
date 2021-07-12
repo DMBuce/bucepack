@@ -1,0 +1,32 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:flint_and_steel"
+		},
+		"title": {
+			"text": "Flamethrowing"
+		},
+		"description": {
+			"text": "Charge Flamethrower"
+		},
+		"show_toast": false,
+		"announce_to_chat": false,
+		"hidden": true,
+		"frame": "task"
+	},
+	"parent": "bucepack:artifact/artifact_loot",
+	"criteria": {
+		"charging_fireball": {
+			"trigger": "minecraft:using_item",
+			"conditions": {
+				"item": {
+					"items": [ "minecraft:crossbow" ],
+					"nbt": "{flamethrower:1b}"
+				}
+			}
+		}
+	},
+	"rewards": {
+		"function": "bucepack:artifact/flamethrower/charge"
+	}
+}
