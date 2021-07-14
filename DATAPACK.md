@@ -8,6 +8,8 @@ avoid @e and nbt
 use area effect clouds over armor stands
 * /summon minecraft:area_effect_cloud ~ ~ ~ {Age:-2147483648,Duration:-1,WaitTime:-2147483648}
 ordering target selectors: https://www.reddit.com/r/MinecraftCommands/comments/nw90u4/does_using_predicates_in_place_of_complicated/h18lr5u/
+raycast: https://www.reddit.com/r/MinecraftCommands/comments/9n1ghh/raycasting_in_1131/e7kxv2o/
+check if player is looking toward/away: https://www.reddit.com/r/MinecraftCommands/comments/akjyh5/help_any_way_to_execute_if_a_player_is_looking_at/ef5jehw/
 
 ## Best Practices
 

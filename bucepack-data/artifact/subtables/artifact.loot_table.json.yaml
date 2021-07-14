@@ -59,8 +59,13 @@ pools:
   - rolls: 1
     entries:
       - { type: item, weight: 1, item: crossbow,
-          nbt: '{artifact:1b,flamethrower:1b,display:{Name:\"{\\\"text\\\":\\\"Flamethrower\\\",\\\"color\\\":\\\"light_purple\\\"}\",Lore:[\"\\\"§r§bBoon: Flamethrowing\\\"\"]},Enchantments:[{id:piercing,lvl:4},{id:multishot,lvl:1}]}'
+          nbt: '{artifact:1b,chromatic:1b,display:{Name:\"{\\\"text\\\":\\\"Partyblaster\\\",\\\"color\\\":\\\"light_purple\\\"}\",Lore:[\"\\\"§r§bBoon: Chromatic\\\"\"]},Enchantments:[{id:piercing,lvl:4},{id:multishot,lvl:1}]}'
         }
+#  - rolls: 1
+#    entries:
+#      - { type: item, weight: 1, item: crossbow,
+#          nbt: '{artifact:1b,flamethrower:1b,display:{Name:\"{\\\"text\\\":\\\"Flamethrower\\\",\\\"color\\\":\\\"light_purple\\\"}\",Lore:[\"\\\"§r§bBoon: Flamethrowing\\\"\"]},Enchantments:[{id:piercing,lvl:4},{id:multishot,lvl:1}]}'
+#        }
 #  - rolls: 1
 #    entries:
 #      - { type: item, weight: 1, item: crossbow,
@@ -74,15 +79,15 @@ pools:
   - rolls: 1
     entries:
       - { type: loot_table, weight: 1, table: artifact/subtables/darkvision_helmet }
-  #- rolls: 1
-  #  entries:
-  #    - { type: item, weight: 1, item: diamond_helmet,
-  #        nbt: '{artifact:1b,darkvision:1b,display:{Name:\"{\\\"text\\\":\\\"Helm of Darkvision\\\",\\\"color\\\":\\\"light_purple\\\"}\",Lore:[\"\\\"§r§bBoon: Darkvision\\\"\"]},Enchantments:[{id:protection,lvl:4},{id:blast_protection,lvl:2}]}'
-  #      }
+#  - rolls: 1
+#    entries:
+#      - { type: item, weight: 1, item: diamond_helmet,
+#          nbt: '{artifact:1b,darkvision:1b,display:{Name:\"{\\\"text\\\":\\\"Helm of Darkvision\\\",\\\"color\\\":\\\"light_purple\\\"}\",Lore:[\"\\\"§r§bBoon: Darkvision\\\"\"]},Enchantments:[{id:protection,lvl:4},{id:blast_protection,lvl:2}]}'
+#        }
   - rolls: 1
     entries:
       - { type: item, weight: 1, item: diamond_chestplate,
-          nbt: '{artifact:1b,absorbing:1b,display:{Name:\"{\\\"text\\\":\\\"Aegis of Endurance\\\",\\\"color\\\":\\\"light_purple\\\"}\",Lore:[\"\\\"§r§bBoon: Absorbing\\\"\"]},Enchantments:[{id:unbreaking,lvl:3}],AttributeModifiers:[{Slot:\"chest\",AttributeName:\"generic.max_health\",Name:\"generic.max_health\",Amount:10.0,Operation:0,UUID:[I;1986497455,1094009722,-1779243889,-277989848]},{Slot:\"chest\",AttributeName:\"generic.armor\",Name:\"generic.armor\",Amount:8.0,Operation:0,UUID:[I;717097559,423184775,-1334929543,1952788274]},{Slot:\"chest\",AttributeName:\"generic.armor_toughness\",Name:\"generic.armor_toughness\",Amount:3.0,Operation:0,UUID:[I;-354813259,1878082813,-1193018274,1873352094]}]}'
+          nbt: '{artifact:1b,absorbing:1b,display:{Name:\"{\\\"text\\\":\\\"Aegis of Endurance\\\",\\\"color\\\":\\\"light_purple\\\"}\",Lore:[\"\\\"§r§bBoon: Absorbing\\\"\"]},Enchantments:[{id:unbreaking,lvl:3}],AttributeModifiers:[{Slot:\"chest\",AttributeName:\"generic.max_health\",Name:\"generic.max_health\",Amount:8.0,Operation:0,UUID:[I;1986497455,1094009722,-1779243889,-277989848]},{Slot:\"chest\",AttributeName:\"generic.armor\",Name:\"generic.armor\",Amount:8.0,Operation:0,UUID:[I;717097559,423184775,-1334929543,1952788274]},{Slot:\"chest\",AttributeName:\"generic.armor_toughness\",Name:\"generic.armor_toughness\",Amount:3.0,Operation:0,UUID:[I;-354813259,1878082813,-1193018274,1873352094]}]}'
         }
   - rolls: 1
     entries:
@@ -93,6 +98,11 @@ pools:
     entries:
       - { type: item, weight: 1, item: diamond_boots,
           nbt: '{artifact:1b,bounding:1b,display:{Name:\"{\\\"text\\\":\\\"Boots of Frost and Flood\\\",\\\"color\\\":\\\"light_purple\\\"}\",Lore:[\"\\\"§r§bBoon: Bounding\\\"\"]},Enchantments:[{id:frost_walker,lvl:2},{id:depth_strider,lvl:3}]}'
+        }
+  - rolls: 1
+    entries:
+      - { type: item, weight: 1, item: shield,
+          nbt: '{artifact:1b,gravitation:1b,display:{Name:\"{\\\"text\\\":\\\"Shield of Force\\\",\\\"color\\\":\\\"light_purple\\\"}\",Lore:[\"\\\"§r§bBoon: Gravitation\\\"\"]},Enchantments:[{id:unbreaking,lvl:3}],AttributeModifiers:[{Slot:\"mainhand\",AttributeName:\"generic.knockback_resistance\",Name:\"generic.knockback_resistance\",Amount:0.5,Operation:0,UUID:[I;-1463288798,890456819,-1708502708,-264816450]},{Slot:\"offhand\",AttributeName:\"generic.knockback_resistance\",Name:\"generic.knockback_resistance\",Amount:0.5,Operation:0,UUID:[I;1053975783,-742047292,-1516413331,-1935846599]}]}'
         }
   - rolls: 1
     entries:

@@ -10,6 +10,6 @@ scoreboard objectives add storm_charge dummy
 #scoreboard objectives add shot_fireball minecraft.used:minecraft.bow
 scoreboard objectives add fireball_charge dummy
 
-# add flamethrower objective
-scoreboard players add @s flamethrower_charge 1
+## add flamethrower objective
+#scoreboard objectives add flame_charge dummy
 

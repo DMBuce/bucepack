@@ -1,13 +1,13 @@
 {
 	"display": {
 		"icon": {
-			"item": "minecraft:flint_and_steel"
+			"item": "minecraft:firework_rocket"
 		},
 		"title": {
-			"text": "Flamethrowing"
+			"text": "Chromatic"
 		},
 		"description": {
-			"text": "Charge Flamethrower"
+			"text": "Shoot the Partyblaster"
 		},
 		"show_toast": false,
 		"announce_to_chat": false,
@@ -17,16 +17,15 @@
 	"parent": "bucepack:artifact/artifact_loot",
 	"criteria": {
 		"charging_flamethrower": {
-			"trigger": "minecraft:using_item",
+			"trigger": "minecraft:shot_crossbow",
 			"conditions": {
 				"item": {
-					"items": [ "minecraft:crossbow" ],
-					"nbt": "{flamethrower:1b}"
+					"nbt": "{chromatic:1b}"
 				}
 			}
 		}
 	},
 	"rewards": {
-		"function": "bucepack:artifact/flamethrower/charge"
+		"function": "bucepack:artifact/chromatic/activate"
 	}
 }

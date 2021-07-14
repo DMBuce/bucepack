@@ -1,13 +1,13 @@
 {
 	"display": {
 		"icon": {
-			"item": "minecraft:flint_and_steel"
+			"item": "minecraft:compass"
 		},
 		"title": {
-			"text": "Flamethrowing"
+			"text": "Super Gravitation"
 		},
 		"description": {
-			"text": "Charge Flamethrower"
+			"text": "Supercharge the Shield of Force"
 		},
 		"show_toast": false,
 		"announce_to_chat": false,
@@ -16,17 +16,22 @@
 	},
 	"parent": "bucepack:artifact/artifact_loot",
 	"criteria": {
-		"charging_flamethrower": {
+		"charging_gravitation": {
 			"trigger": "minecraft:using_item",
 			"conditions": {
 				"item": {
-					"items": [ "minecraft:crossbow" ],
-					"nbt": "{flamethrower:1b}"
+					"items": [ "minecraft:shield" ],
+					"nbt": "{gravitation:1b}"
+				},
+				"player": {
+					"flags": {
+						"is_sneaking": true
+					}
 				}
 			}
 		}
 	},
 	"rewards": {
-		"function": "bucepack:artifact/flamethrower/charge"
+		"function": "bucepack:artifact/gravitation/supercharge"
 	}
 }

@@ -459,8 +459,8 @@ datapack above. It adds artifact items to the loot tables that spawn with a one
 in a thousand chance in chests and a one in a million chance from fishing.
 
 TODO: document limitations of Breaking
-* Doesn't work if the block that was broken didn't drop an item
 * Doesn't work while sneaking
+* Doesn't work if the block that was broken didn't drop an item
 * Doesn't work with Unbreaking
 
 Download: https://github.com/DMBuce/bucepack/releases
