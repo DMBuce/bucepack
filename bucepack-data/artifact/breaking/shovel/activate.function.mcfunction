@@ -4,5 +4,5 @@
 schedule function bucepack:artifact/breaking/shovel/mine 1t append
 
 # revoke advancement
-advancement revoke @s only bucepack:artifact/activate_breaking_shovel
+advancement revoke @s only bucepack:artifact/breaking/shovel/trigger
 

@@ -4,5 +4,5 @@
 effect give @s night_vision 480 0 true
 
 # revoke advancement
-advancement revoke @s only bucepack:artifact/activate_darkvision
+advancement revoke @s only bucepack:artifact/darkvision/trigger
 

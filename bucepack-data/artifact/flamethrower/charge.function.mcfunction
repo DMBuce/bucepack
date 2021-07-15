@@ -13,5 +13,5 @@ execute if entity @s[scores={flame_charge=20..}] run function bucepack:artifact/
 schedule function bucepack:artifact/flamethrower/reset 4t replace
 
 # revoke advancement
-advancement revoke @s only bucepack:artifact/charge_flamethrower
+advancement revoke @s only bucepack:artifact/flamethrower/trigger
 

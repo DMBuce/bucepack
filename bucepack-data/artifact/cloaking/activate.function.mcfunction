@@ -4,5 +4,5 @@
 effect give @s invisibility 480 0 true
 
 # revoke advancement
-advancement revoke @s only bucepack:artifact/activate_cloaking
+advancement revoke @s only bucepack:artifact/cloaking/trigger
 

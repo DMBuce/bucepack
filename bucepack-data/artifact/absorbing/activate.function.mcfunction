@@ -4,5 +4,5 @@
 effect give @s absorption 120 2 true
 
 # revoke advancement
-advancement revoke @s only bucepack:artifact/activate_absorbing
+advancement revoke @s only bucepack:artifact/absorbing/trigger
 

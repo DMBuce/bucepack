@@ -14,5 +14,5 @@ execute if entity @s[scores={fireball_charge=16..}] run function bucepack:artifa
 schedule function bucepack:artifact/fireball/reset 4t replace
 
 # revoke advancement
-advancement revoke @s only bucepack:artifact/charge_fireball
+advancement revoke @s only bucepack:artifact/fireball/trigger
 

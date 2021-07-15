@@ -4,5 +4,5 @@
 schedule function bucepack:artifact/breaking/pick/mine 1t append
 
 # revoke advancement
-advancement revoke @s only bucepack:artifact/activate_breaking_pick
+advancement revoke @s only bucepack:artifact/breaking/pick/trigger
 
