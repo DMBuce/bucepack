@@ -695,6 +695,7 @@ Add new plants to Gardener Endermen and Shearless packs
 Add new ores to Ore Types
 Add new End blocks to Dragonproof
 Add new potions to Brewing Guide
+Add new hostile mobs to beheading loot table
 
 HOW TO UPDATE LOOT TABLES AFTER MINECRAFT UPDATES
 =================================================

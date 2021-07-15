@@ -44,7 +44,7 @@ pools:
   - rolls: 1
     entries:
       - { type: item, weight: 1, item: diamond_sword,
-          nbt: '{artifact:1b,vorpal:1b,display:{Name:\"{\\\"text\\\":\\\"Vorpal Blade\\\",\\\"color\\\":\\\"light_purple\\\"}\",Lore:[\"\\\"§r§bBoon: Beheading\\\"\"]},Enchantments:[{id:sharpness,lvl:4},{id:smite,lvl:4},{id:looting,lvl:3}]}'
+          nbt: '{artifact:1b,beheading:1b,display:{Name:\"{\\\"text\\\":\\\"Vorpal Blade\\\",\\\"color\\\":\\\"light_purple\\\"}\",Lore:[\"\\\"§r§bBoon: Beheading\\\"\"]},Enchantments:[{id:sharpness,lvl:4},{id:smite,lvl:4},{id:looting,lvl:3}]}'
         }
   - rolls: 1
     entries:

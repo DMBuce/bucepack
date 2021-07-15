@@ -439,6 +439,21 @@ artifact_loot_FILES := $(DEFAULT_FILES) \
 	data/bucepack/predicates/artifact/breaking/hoe.json \
 	data/bucepack/predicates/artifact/breaking/pick.json \
 	data/bucepack/predicates/artifact/breaking/shovel.json \
+	data/minecraft/loot_tables/entities/blaze.json \
+	data/minecraft/loot_tables/entities/cave_spider.json \
+	data/minecraft/loot_tables/entities/creeper.json \
+	data/minecraft/loot_tables/entities/drowned.json \
+	data/minecraft/loot_tables/entities/ender_dragon.json \
+	data/minecraft/loot_tables/entities/enderman.json \
+	data/minecraft/loot_tables/entities/guardian.json \
+	data/minecraft/loot_tables/entities/husk.json \
+	data/minecraft/loot_tables/entities/magma_cube.json \
+	data/minecraft/loot_tables/entities/skeleton.json \
+	data/minecraft/loot_tables/entities/slime.json \
+	data/minecraft/loot_tables/entities/spider.json \
+	data/minecraft/loot_tables/entities/stray.json \
+	data/minecraft/loot_tables/entities/vex.json \
+	data/minecraft/loot_tables/entities/zombie.json \
 	data/minecraft/recipes/light.json \
 	data/minecraft/tags/functions/load-artifact.json \
 
