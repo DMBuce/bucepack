@@ -119,10 +119,15 @@ pools:
       - { type: item, weight: 1, item: spyglass,
           nbt: '{artifact:1b,finding:1b,display:{Name:\"{\\\"text\\\":\\\"Exploroscope\\\",\\\"color\\\":\\\"light_purple\\\"}\",Lore:[\"\\\"§r§bBoon: Finding\\\"\"]},Enchantments:[{id:quick_charge,lvl:3},{id:infinity,lvl:1}]}'
         }
+#  - rolls: 1
+#    entries:
+#      - { type: item, weight: 1, item: diamond_horse_armor,
+#          nbt: '{artifact:1b,splendor:1b,display:{Name:\"{\\\"text\\\":\\\"Barding of Bounding\\\",\\\"color\\\":\\\"light_purple\\\"}\",Lore:[\"\\\"§r§bBoon: Splendor\\\"\"]},Enchantments:[{id:depth_strider,lvl:3},{id:feather_falling,lvl:4}],AttributeModifiers:[{Slot:\"armor\",AttributeName:\"generic.max_health\",Name:\"generic.max_health\",Amount:10.0,Operation:0,UUID:[I;-694445997,556351870,-2025324678,2119694944]},{Slot:\"armor\",AttributeName:\"generic.movement_speed\",Name:\"generic.movement_speed\",Amount:0.075,Operation:0,UUID:[I;1511046274,853625857,-1128932004,19699720]},{Slot:\"armor\",AttributeName:\"generic.jump_strength\",Name:\"generic.jump_strength\",Amount:0.2,Operation:0,UUID:[I;-2051896741,236080387,-2083109123,-1554541182]}]}'
+#        }
   - rolls: 1
     entries:
       - { type: item, weight: 1, item: diamond_horse_armor,
-          nbt: '{artifact:1b,splendor:1b,display:{Name:\"{\\\"text\\\":\\\"Barding of Bounding\\\",\\\"color\\\":\\\"light_purple\\\"}\",Lore:[\"\\\"§r§bBoon: Splendor\\\"\"]},Enchantments:[{id:depth_strider,lvl:3},{id:feather_falling,lvl:4}],AttributeModifiers:[{Slot:\"armor\",AttributeName:\"generic.max_health\",Name:\"generic.max_health\",Amount:10.0,Operation:0,UUID:[I;-694445997,556351870,-2025324678,2119694944]},{Slot:\"armor\",AttributeName:\"generic.movement_speed\",Name:\"generic.movement_speed\",Amount:0.075,Operation:0,UUID:[I;1511046274,853625857,-1128932004,19699720]},{Slot:\"armor\",AttributeName:\"generic.jump_strength\",Name:\"generic.jump_strength\",Amount:0.2,Operation:0,UUID:[I;-2051896741,236080387,-2083109123,-1554541182]}]}'
+          nbt: '{artifact:1b,splendor:1b,display:{Name:\"{\\\"text\\\":\\\"Barding of Bounding\\\",\\\"color\\\":\\\"light_purple\\\"}\",Lore:[\"\\\"§r§bBoon: Splendor\\\"\"]},Enchantments:[{id:depth_strider,lvl:3},{id:feather_falling,lvl:4}]}'
         }
   - rolls: 1
     entries:
