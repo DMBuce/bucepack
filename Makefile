@@ -394,6 +394,7 @@ artifact_loot_FILES := $(DEFAULT_FILES) \
 	data/bucepack/advancements/artifact/charge_fireball.json \
 	data/bucepack/advancements/artifact/charge_gravitation.json \
 	data/bucepack/advancements/artifact/charge_stormcalling.json \
+	data/bucepack/advancements/artifact/finding/endcity/trigger.json \
 	data/bucepack/advancements/artifact/supercharge_gravitation.json \
 	data/bucepack/advancements/loot_overhaul/loot_overhaul.json \
 	data/bucepack/advancements/root.json \
@@ -420,6 +421,10 @@ artifact_loot_FILES := $(DEFAULT_FILES) \
 	data/bucepack/functions/artifact/chromatic/party.mcfunction \
 	data/bucepack/functions/artifact/cloaking/activate.mcfunction \
 	data/bucepack/functions/artifact/darkvision/activate.mcfunction \
+	data/bucepack/functions/artifact/finding/activate.mcfunction \
+	data/bucepack/functions/artifact/finding/charge.mcfunction \
+	data/bucepack/functions/artifact/finding/ding.mcfunction \
+	data/bucepack/functions/artifact/finding/endcity/charge.mcfunction \
 	data/bucepack/functions/artifact/fireball/activate.mcfunction \
 	data/bucepack/functions/artifact/fireball/charge.mcfunction \
 	data/bucepack/functions/artifact/fireball/reset.mcfunction \

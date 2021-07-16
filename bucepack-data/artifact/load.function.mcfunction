@@ -3,6 +3,14 @@
 # chunkload 0,0
 forceload add 1 1 -1 -1
 
+# add objectives
+scoreboard objective add charge dummy
+scoreboard objectives add var dummy
+#scoreboard objectives add const dummy
+
+# reset objectives
+scoreboard players set * charge 0
+
 # add stormcalling objective
 scoreboard objectives add storm_charge dummy
 

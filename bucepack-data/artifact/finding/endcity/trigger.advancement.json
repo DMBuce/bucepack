@@ -1,0 +1,42 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:spyglass"
+		},
+		"title": {
+			"text": "Finding"
+		},
+		"description": {
+			"text": "Charge the Seeker's Scope"
+		},
+		"show_toast": false,
+		"announce_to_chat": false,
+		"hidden": true,
+		"frame": "task"
+	},
+	"parent": "bucepack:artifact/artifact_loot",
+	"criteria": {
+		"charging_gravitation": {
+			"trigger": "minecraft:using_item",
+			"conditions": {
+				"item": {
+					"items": [ "minecraft:spyglass" ],
+					"nbt": "{finding:1b}"
+				},
+				"player": {
+					"location": {
+						"dimension": "minecraft:the_end"
+					},
+					"stepping_on": {
+						"block": {
+							"blocks": [ "minecraft:end_stone" ]
+						}
+					}
+				}
+			}
+		}
+	},
+	"rewards": {
+		"function": "bucepack:artifact/finding/endcity/charge"
+	}
+}
