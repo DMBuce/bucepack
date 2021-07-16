@@ -1,0 +1,36 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:enchanted_golden_apple"
+		},
+		"title": {
+			"text": "Most Splendor"
+		},
+		"description": {
+			"text": "Activate the Barding of Bounding with an Enchanted Golden Apple"
+		},
+		"show_toast": false,
+		"announce_to_chat": false,
+		"hidden": true,
+		"frame": "task"
+	},
+	"parent": "bucepack:artifact/artifact_loot",
+	"criteria": {
+		"feed": {
+			"trigger": "minecraft:player_interacted_with_entity",
+			"conditions": {
+				"item": {
+					"items": [
+						"minecraft:enchanted_golden_apple"
+					]
+				},
+				"entity": {
+					"nbt": "{ArmorItem:{tag:{banding:1b}}}"
+				}
+			}
+		}
+	},
+	"rewards": {
+		"function": "bucepack:artifact/splendor/activate"
+	}
+}

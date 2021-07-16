@@ -6,10 +6,15 @@ forceload add 1 1 -1 -1
 # add objectives
 scoreboard objective add charge dummy
 scoreboard objectives add var dummy
-#scoreboard objectives add const dummy
+scoreboard objectives add const dummy
 
 # reset objectives
 scoreboard players set * charge 0
+
+# define constants
+scoreboard players set #buce.horse.max_health const 60.0
+scoreboard players set #buce.horse.max_speed const 0.3375
+scoreboard players set #buce.horse.max_jump const 1.0
 
 # add stormcalling objective
 scoreboard objectives add storm_charge dummy

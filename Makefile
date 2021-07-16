@@ -380,22 +380,25 @@ loot_overhaul_FILES := $(DEFAULT_FILES) \
 	data/minecraft/recipes/saddle.json \
 
 artifact_loot_FILES := $(DEFAULT_FILES) \
-	data/bucepack/advancements/artifact/activate_absorbing.json \
-	data/bucepack/advancements/artifact/activate_bounding.json \
-	data/bucepack/advancements/artifact/activate_breaking_axe.json \
-	data/bucepack/advancements/artifact/activate_breaking_hoe.json \
-	data/bucepack/advancements/artifact/activate_breaking_pick.json \
-	data/bucepack/advancements/artifact/activate_breaking_shovel.json \
-	data/bucepack/advancements/artifact/activate_chromatic.json \
-	data/bucepack/advancements/artifact/activate_cloaking.json \
-	data/bucepack/advancements/artifact/activate_darkvision.json \
-	data/bucepack/advancements/artifact/activate_mining.json \
+	data/bucepack/advancements/artifact/absorbing/trigger.json \
 	data/bucepack/advancements/artifact/artifact_loot.json \
-	data/bucepack/advancements/artifact/charge_fireball.json \
-	data/bucepack/advancements/artifact/charge_gravitation.json \
-	data/bucepack/advancements/artifact/charge_stormcalling.json \
+	data/bucepack/advancements/artifact/bounding/trigger.json \
+	data/bucepack/advancements/artifact/breaking/axe/trigger.json \
+	data/bucepack/advancements/artifact/breaking/hoe/trigger.json \
+	data/bucepack/advancements/artifact/breaking/pick/trigger.json \
+	data/bucepack/advancements/artifact/breaking/shovel/trigger.json \
+	data/bucepack/advancements/artifact/chromatic/trigger.json \
+	data/bucepack/advancements/artifact/cloaking/trigger.json \
+	data/bucepack/advancements/artifact/darkvision/trigger.json \
 	data/bucepack/advancements/artifact/finding/endcity/trigger.json \
-	data/bucepack/advancements/artifact/supercharge_gravitation.json \
+	data/bucepack/advancements/artifact/fireball/trigger.json \
+	data/bucepack/advancements/artifact/gravitation/trigger.json \
+	data/bucepack/advancements/artifact/gravitation/trigger_sneaking.json \
+	data/bucepack/advancements/artifact/mining/trigger.json \
+	data/bucepack/advancements/artifact/splendor/glowing/trigger.json \
+	data/bucepack/advancements/artifact/splendor/glowing/trigger_toggle.json \
+	data/bucepack/advancements/artifact/splendor/trigger.json \
+	data/bucepack/advancements/artifact/stormcalling/trigger.json \
 	data/bucepack/advancements/loot_overhaul/loot_overhaul.json \
 	data/bucepack/advancements/root.json \
 	data/bucepack/functions/artifact/absorbing/activate.mcfunction \
@@ -433,6 +436,13 @@ artifact_loot_FILES := $(DEFAULT_FILES) \
 	data/bucepack/functions/artifact/gravitation/supercharge.mcfunction \
 	data/bucepack/functions/artifact/load.mcfunction \
 	data/bucepack/functions/artifact/mining/activate.mcfunction \
+	data/bucepack/functions/artifact/splendor/activate.mcfunction \
+	data/bucepack/functions/artifact/splendor/glowing/activate.mcfunction \
+	data/bucepack/functions/artifact/splendor/glowing/permanent.mcfunction \
+	data/bucepack/functions/artifact/splendor/glowing/temporary.mcfunction \
+	data/bucepack/functions/artifact/splendor/glowing/toggle.mcfunction \
+	data/bucepack/functions/artifact/splendor/raycast.mcfunction \
+	data/bucepack/functions/artifact/splendor/upgrade.mcfunction \
 	data/bucepack/functions/artifact/stormcalling/activate.mcfunction \
 	data/bucepack/functions/artifact/stormcalling/charge.mcfunction \
 	data/bucepack/functions/artifact/stormcalling/check.mcfunction \
@@ -445,19 +455,34 @@ artifact_loot_FILES := $(DEFAULT_FILES) \
 	data/bucepack/predicates/artifact/breaking/pick.json \
 	data/bucepack/predicates/artifact/breaking/shovel.json \
 	data/minecraft/loot_tables/entities/blaze.json \
+	data/minecraft/loot_tables/entities/blaze.json \
+	data/minecraft/loot_tables/entities/cave_spider.json \
 	data/minecraft/loot_tables/entities/cave_spider.json \
 	data/minecraft/loot_tables/entities/creeper.json \
+	data/minecraft/loot_tables/entities/creeper.json \
+	data/minecraft/loot_tables/entities/drowned.json \
 	data/minecraft/loot_tables/entities/drowned.json \
 	data/minecraft/loot_tables/entities/ender_dragon.json \
+	data/minecraft/loot_tables/entities/ender_dragon.json \
+	data/minecraft/loot_tables/entities/enderman.json \
 	data/minecraft/loot_tables/entities/enderman.json \
 	data/minecraft/loot_tables/entities/guardian.json \
+	data/minecraft/loot_tables/entities/guardian.json \
+	data/minecraft/loot_tables/entities/husk.json \
 	data/minecraft/loot_tables/entities/husk.json \
 	data/minecraft/loot_tables/entities/magma_cube.json \
+	data/minecraft/loot_tables/entities/magma_cube.json \
+	data/minecraft/loot_tables/entities/skeleton.json \
 	data/minecraft/loot_tables/entities/skeleton.json \
 	data/minecraft/loot_tables/entities/slime.json \
+	data/minecraft/loot_tables/entities/slime.json \
+	data/minecraft/loot_tables/entities/spider.json \
 	data/minecraft/loot_tables/entities/spider.json \
 	data/minecraft/loot_tables/entities/stray.json \
+	data/minecraft/loot_tables/entities/stray.json \
 	data/minecraft/loot_tables/entities/vex.json \
+	data/minecraft/loot_tables/entities/vex.json \
+	data/minecraft/loot_tables/entities/zombie.json \
 	data/minecraft/loot_tables/entities/zombie.json \
 	data/minecraft/recipes/light.json \
 	data/minecraft/tags/functions/load-artifact.json \

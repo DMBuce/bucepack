@@ -117,7 +117,7 @@ pools:
   - rolls: 1
     entries:
       - { type: item, weight: 1, item: spyglass,
-          nbt: '{artifact:1b,finding:1b,display:{Name:\"{\\\"text\\\":\\\"Exploroscope\\\",\\\"color\\\":\\\"light_purple\\\"}\",Lore:[\"\\\"§r§bBoon: Finding\\\"\"]},Enchantments:[{id:quick_charge,lvl:3},{id:infinity,lvl:1}]}'
+          nbt: '{artifact:1b,finding:1b,display:{Name:\"{\\\"text\\\":\\\"Seeker''s Scope\\\",\\\"color\\\":\\\"light_purple\\\"}\",Lore:[\"\\\"§r§bBoon: Finding\\\"\"]},Enchantments:[{id:quick_charge,lvl:3},{id:infinity,lvl:1}]}'
         }
 #  - rolls: 1
 #    entries:

@@ -1,0 +1,36 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:golden_apple"
+		},
+		"title": {
+			"text": "More Splendor"
+		},
+		"description": {
+			"text": "Toggle the Barding of Bounding"
+		},
+		"show_toast": false,
+		"announce_to_chat": false,
+		"hidden": true,
+		"frame": "task"
+	},
+	"parent": "bucepack:artifact/artifact_loot",
+	"criteria": {
+		"feed": {
+			"trigger": "minecraft:player_interacted_with_entity",
+			"conditions": {
+				"item": {
+					"items": [
+						"minecraft:golden_apple"
+					]
+				},
+				"entity": {
+					"nbt": "{ArmorItem:{tag:{banding:1b}}}"
+				}
+			}
+		}
+	},
+	"rewards": {
+		"function": "bucepack:artifact/splendor/glowing/toggle"
+	}
+}

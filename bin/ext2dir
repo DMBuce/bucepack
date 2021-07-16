@@ -1,0 +1,17 @@
+#!/bin/bash
+# converts paths like
+#
+#  data/bucepack/artifact/splendor/glowing/activate.function.mcfunction
+#  bucepack-data/artifact/splendor/glowing/trigger.advancement.json
+#
+# to
+#
+#  data/bucepack/functions/artifact/splendor/glowing/activate.mcfunction
+#  data/bucepack/advancementsartifact/splendor/glowing/trigger.json
+#
+
+sed -r '
+	s,([^/]*)-data,data/\1,g
+	s,data/([^/]*)/(.*)\.([^./]*)\.([^./]*),data/\1/\3s/\2.\4,g
+' "$@"
+

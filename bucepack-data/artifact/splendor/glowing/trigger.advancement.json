@@ -1,0 +1,40 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:apple"
+		},
+		"title": {
+			"text": "Splendor"
+		},
+		"description": {
+			"text": "Activate the Barding of Bounding"
+		},
+		"show_toast": false,
+		"announce_to_chat": false,
+		"hidden": true,
+		"frame": "task"
+	},
+	"parent": "bucepack:artifact/artifact_loot",
+	"criteria": {
+		"feed": {
+			"trigger": "minecraft:player_interacted_with_entity",
+			"conditions": {
+				"item": {
+					"items": [
+						"minecraft:sugar",
+						"minecraft:wheat",
+						"minecraft:apple",
+						"minecraft:golden_carrot",
+						"minecraft:hay_bale"
+					]
+				},
+				"entity": {
+					"nbt": "{ArmorItem:{tag:{banding:1b}}}"
+				}
+			}
+		}
+	},
+	"rewards": {
+		"function": "bucepack:artifact/splendor/glowing/activate"
+	}
+}
