@@ -20,5 +20,5 @@ data modify entity @e[type=snowball,tag=searching_eye,limit=1] Motion set from e
 tag @e[tag=searching_eye] remove searching_eye
 
 # reset charge
-scoreboard players set @s charge 0
+scoreboard players set @s search_charge 0
 

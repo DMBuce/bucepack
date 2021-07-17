@@ -4,5 +4,5 @@
 playsound minecraft:entity.experience_orb.pickup player @s
 
 # reset charge
-scoreboard players set @s charge 0
+scoreboard players set @s search_charge 0
 

@@ -4,20 +4,13 @@
 forceload add 1 1 -1 -1
 
 # add objectives
-scoreboard objectives add charge dummy
 scoreboard objectives add var dummy
 scoreboard objectives add const dummy
+scoreboard objectives add search_charge dummy
+scoreboard objectives add storm_charge dummy
+scoreboard objectives add fireball_charge dummy
+#scoreboard objectives add flame_charge dummy
 
 # reset objectives
 scoreboard players set * charge 0
-
-# add stormcalling objective
-scoreboard objectives add storm_charge dummy
-
-# add fireball objective
-#scoreboard objectives add shot_fireball minecraft.used:minecraft.bow
-scoreboard objectives add fireball_charge dummy
-
-## add flamethrower objective
-#scoreboard objectives add flame_charge dummy
 
