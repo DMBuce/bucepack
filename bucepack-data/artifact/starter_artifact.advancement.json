@@ -1,14 +1,14 @@
 {
 	"display": {
 		"icon": {
-			"item": "minecraft:diamond_chestplate",
+			"item": "minecraft:diamond_pick",
 			"nbt": "{Enchantments:[{id:unbreaking,lvl:3}]}"
 		},
 		"title": {
-			"text": "Artifact Loot"
+			"text": "Starter Artifact"
 		},
 		"description": {
-			"text": "Artifact items in loot"
+			"text": "Start with an artifact in your inventory"
 		},
 		"show_toast": false,
 		"announce_to_chat": false,
@@ -19,5 +19,8 @@
 		"tick": {
 			"trigger": "minecraft:tick"
 		}
+	},
+	"rewards": {
+		"function": "bucepack:artifact/starter_artifact"
 	}
 }

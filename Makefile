@@ -8,7 +8,8 @@ DATAPACKFILES = gardener_endermen.zip climbable.zip speedy_paths.zip \
 	no_treasure_maps.zip fortunate_jungle.zip dragonproof.zip \
 	shearless.zip mixed_crafting.zip \
 	loot_overhaul.zip artifact_loot.zip more_shulker_shells.zip \
-	starter_bed.zip starter_book.zip starter_bucket.zip starter_map.zip starter_shulker.zip \
+	starter_bed.zip starter_book.zip starter_bucket.zip starter_map.zip \
+	starter_shulker.zip starter_artifact.zip \
 	escape_end.zip escape_nether.zip escape_grind.zip lichdom.zip
 
 PACKFILES = $(RESOURCEPACKFILES) $(DATAPACKFILES)
@@ -379,9 +380,8 @@ loot_overhaul_FILES := $(DEFAULT_FILES) \
 	data/minecraft/recipes/piglin_banner_pattern.json \
 	data/minecraft/recipes/saddle.json \
 
-artifact_loot_FILES := $(DEFAULT_FILES) \
+artifact_FILES := $(DEFAULT_FILES) \
 	data/bucepack/advancements/artifact/absorbing/trigger.json \
-	data/bucepack/advancements/artifact/artifact_loot.json \
 	data/bucepack/advancements/artifact/bounding/trigger.json \
 	data/bucepack/advancements/artifact/breaking/axe/trigger.json \
 	data/bucepack/advancements/artifact/breaking/hoe/trigger.json \
@@ -399,8 +399,6 @@ artifact_loot_FILES := $(DEFAULT_FILES) \
 	data/bucepack/advancements/artifact/splendor/glowing/trigger_toggle.json \
 	data/bucepack/advancements/artifact/splendor/trigger.json \
 	data/bucepack/advancements/artifact/stormcalling/trigger.json \
-	data/bucepack/advancements/loot_overhaul/loot_overhaul.json \
-	data/bucepack/advancements/root.json \
 	data/bucepack/functions/artifact/absorbing/activate.mcfunction \
 	data/bucepack/functions/artifact/bounding/activate.mcfunction \
 	data/bucepack/functions/artifact/breaking/axe/activate.mcfunction \
@@ -450,10 +448,6 @@ artifact_loot_FILES := $(DEFAULT_FILES) \
 	data/bucepack/loot_tables/artifact/subtables/artifact.json \
 	data/bucepack/loot_tables/artifact/subtables/darkvision_helmet.json \
 	data/bucepack/loot_tables/artifact/subtables/fireworks.json \
-	data/bucepack/predicates/artifact/breaking/axe.json \
-	data/bucepack/predicates/artifact/breaking/hoe.json \
-	data/bucepack/predicates/artifact/breaking/pick.json \
-	data/bucepack/predicates/artifact/breaking/shovel.json \
 	data/minecraft/loot_tables/entities/blaze.json \
 	data/minecraft/loot_tables/entities/blaze.json \
 	data/minecraft/loot_tables/entities/cave_spider.json \
@@ -486,6 +480,19 @@ artifact_loot_FILES := $(DEFAULT_FILES) \
 	data/minecraft/loot_tables/entities/zombie.json \
 	data/minecraft/recipes/light.json \
 	data/minecraft/tags/functions/load-artifact.json \
+
+starter_artifact_FILES := $(DEFAULT_FILES) \
+	$(artifact_FILES) \
+	data/bucepack/advancements/artifact/artifact.json \
+	data/bucepack/advancements/artifact/starter_artifact.json \
+	data/bucepack/advancements/root.json \
+	data/bucepack/functions/artifact/starter_artifact.mcfunction
+
+artifact_loot_FILES := $(DEFAULT_FILES) \
+	$(artifact_FILES) \
+	data/bucepack/advancements/artifact/artifact.json \
+	data/bucepack/advancements/artifact/artifact_loot.json \
+	data/bucepack/advancements/root.json
 
 dragonproof_FILES := $(DEFAULT_FILES) \
 	data/minecraft/tags/blocks/dragon_immune.json
@@ -873,6 +880,12 @@ loot_overhaul.zip: $(loot_overhaul_FILES)
 	cp meta/$(@:.zip=.png) pack.png
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^
+
+starter_artifact.zip: $(starter_artifact_FILES)
+	cp meta/$(@:.zip=.png) pack.png
+	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
+	zip $@ pack.png pack.mcmeta $^
+	printf "@ data/minecraft/tags/functions/load-artifact.json\n@=data/minecraft/tags/functions/load.json\n" | zipnote -w $@
 
 artifact_loot.zip: $(artifact_loot_FILES)
 	cp meta/$(@:.zip=.png) pack.png
