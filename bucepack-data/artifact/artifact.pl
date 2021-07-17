@@ -8,7 +8,7 @@ while (<FH>) {
 	if (!m/^#/ && m/Name:.*text\\\\\\":\\\\\\"([^\\]*)/) {
 		print $1;
 		if (m/Lore:.*§.([^\\]*)/) {
-			 print ", ", $1, "\n"
+			 print ": ", $1, "\n"
 		} else {
 			print "\n"
 		}
@@ -20,7 +20,7 @@ while (<FH>) {
 	if (!m/^#/ && m/Name:.*text\\\\\\":\\\\\\"([^\\]*)/) {
 		print $1;
 		if (m/Lore:.*§.([^\\]*)/) {
-			 print ", ", $1, "\n"
+			 print ": ", $1, "\n"
 		} else {
 			print "\n"
 		}

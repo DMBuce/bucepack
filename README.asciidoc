@@ -483,6 +483,10 @@ Starter Map adds a Map to the bonus spawn chest.
 
 Starter Shulker adds a Shulker Box to the bonus spawn chest.
 
+Starter Artifact adds a random <<artifacts,Artifact>> to each player's
+inventory the first time they join the world. Unlike the other starter packs
+here, it does not change the bonus spawn chest.
+
 If multiple Starter Item packs are installed, the bonus chest will spawn one
 starter item chosen at random. To make it spawn *all* starter items, edit
 `loot_overhaul.zip/data/minecraft/loot_tables/chests/spawn_bonus_chest.json`
@@ -683,6 +687,210 @@ Known Issues:
   possible with hacky shulker box workarounds
 * If a player in turtle form dies from their shell breaking, other players who
   die in the same tick will have their death messages suppressed
+
+== Artifacts
+
+Artifacts are rare items added by the <<starter-items,Starter Artifact>>
+and/or <<artifact-loot,Artifact Loot>> datapacks. They are usually tools,
+weapons, or armor with impossible enchants or attribute modifiers. In
+addition, each artifact has a Mythic Enchantment displayed as a light blue
+tooltip.
+
+Some mythical enchantments are activated by charging the artifact. To charge
+an artifact, hold right click.
+
+=== Bonebreaker
+
+Mythic Enchantment: Breaking
+
+A diamond pick with Efficiency V, Sharpness V, and Breaking, a mythic
+enchantment that breaks certain blocks in a 3x3 pattern.
+
+Breaking does not activate while sneaking, nor when Unbreaking preserves a
+tool's durability, nor when a broken block doesn't drop anything.
+
+=== Treefeller
+
+Mythic Enchantment: Breaking
+
+A diamond axe with Efficiency V, Fire Aspect III, and Breaking, a mythic
+enchantment that breaks certain blocks in a column 33 blocks high.
+
+Breaking does not activate while sneaking, nor when Unbreaking preserves a
+tool's durability, nor when a broken block doesn't drop anything.
+
+=== Gravedigger
+
+Mythic Enchantment: Breaking
+
+A diamond shovel with Efficiency V, Sharpness V, and Breaking, a mythic
+enchantment that breaks certain blocks in a column 9 blocks high.
+
+Breaking does not activate while sneaking, nor when Unbreaking preserves a
+tool's durability, nor when a broken block doesn't drop anything.
+
+=== Herdsmacker
+
+Mythic Enchantment: Breaking
+
+A diamond hoe with Efficiency V, Knockback V, and Breaking, a mythic
+enchantment that breaks certain blocks in a 3x3x3 sphere.
+
+Breaking does not activate while sneaking, nor when Unbreaking preserves a
+tool's durability, nor when a broken block doesn't drop anything.
+
+=== Vorpal Blade
+
+Mythic Enchantment: Beheading
+
+A diamond sword with Sharpness IV, Smite IV, Looting III, and Beheading, a
+mythic enchantment that has a chance to decapitate certain monsters:
+
+* Blaze
+* Cave Spider
+* Creeper
+* Drowned
+* Ender Dragon
+* Enderman
+* Guardian
+* Husk
+* Magma Cube
+* Shulker
+* Skeleton
+* Slime
+* Spider
+* Stray
+* Vex
+* Zombie
+
+=== Stormcaller
+
+Mythic Enchantment: Stormcalling
+
+A trident with increased Attack Speed, Damage, and Stormcalling, a mythic
+enchantment that summons a thunderstorm when you stand in water, look skyward,
+and charge the artifact.
+
+=== Comet Storm
+
+Mythic Enchantment: Fireballs
+
+A bow with Infinity, Mending, and Fireballs, a mythic enchantment that
+summons a fireball when you charge the artifact.
+
+=== Partyblaster
+
+Mythic Enchantment: Chromatic
+
+A crossbow with Piercing IV, Multishot, and Chromatic, a mythic enchantment
+that adds two random firework stars to any rocket shot from the artifact.
+
+=== Helm of Darkvision
+
+Mythic Enchantment: Darkvision
+
+A diamond helmet with Protection IV, another enchantment chosen randomly from
+Blast/Fire/Projectile Protection IV, and Darkvision, a mythic enchantment that
+provides 8 minutes of night vision when you take damage or eat food.
+
+=== Aegis of Endurance
+
+Mythic Enchantment: Absorbing
+
+A diamond chestplate with Unbreaking III, +8 Max Health (+4 hearts) and
+Absorbing, a mythic enchantment that provides six absorption hearts for 2
+minutes when you eat food.
+
+=== Trousers of Traveling
+
+Mythic Enchantment: Mining
+
+A diamond chestplate with Unbreaking III, +0.2 Movement Speed (equivalent to a
+Speed I potion) and Mining, a mythic enchantment that provides 1 minute of
+Haste I when you take damage or eat food.
+
+=== Boots of Frost and Flood
+
+Mythic Enchantment: Leaping
+
+Diamond boots with Frost Walker II, Depth Strider III,
+and Leaping, a mythic enchantment that provides 1 1/2 minutes of Jump Boost
+II when you take damage or eat food.
+
+=== Shield of Force
+
+Mythic Enchantment: Gravitation
+
+A shield with Unbreaking III, 50% Knockback Resistance, and Gravitation, a
+mythic enchantment that pulls the nearest item towards you when you charge the
+artifact, or all items when you charge it while sneaking.
+
+=== Wings of Cloaking
+
+Mythic Enchantment: Cloaking
+
+Elytra with Unbreaking III, +3 Armor (equivalent to a Leather Chestplate), and
+Cloaking, a mythic enchantment that provides 8 minutes of invisibility when
+you take damage or eat food.
+
+=== Seeker''s Scope
+
+Mythic Enchantment: Searching
+
+A spyglass with Infinity and Searching, a mythic enchantment that makes a
+*ding* sound while looking in the direction of a structure when you charge the
+artifact.
+
+Only one structure type can be searched for at a time. While holding the scope
+in your main hand, the type of structure is determined by a block in your
+offhand. While holding the scope in your offhand, the type of structure is
+determined by the block you're standing on.
+
+* **Blackstone**: Bastion Remnant
+* **Dark Oak Log**: Mansion
+* **Dark Oak Plank**: Pillager Outpost
+* **Emerald Block**: Village
+* **End Stone**: End City
+* **Gravel**: Ocean Ruin
+* **Mossy Cobblestone**: Jungle Pyramid
+* **Mossy Stone Brick**: Stronghold
+* **Nether Brick**: Fortress
+* **Oak Plank**: Shipwreck
+* **Obsidian**: Ruined Portal
+* **Prismarine**: Monument
+* **Sand**: Buried Treasure
+* **Sandstone**: Desert Pyramid
+* **Snow**: Igloo
+* **Soul Soil**: Nether Fossil
+* **Spruce Plank**: Swamp Hut
+* **Stone**: Abandoned Mine
+
+=== Barding of Bounding
+
+Mythic Enchantment: Splendor
+
+Diamond horse armor with Depth Strider III, Feather Falling IV, and Splendor,
+a mythic enchantment that provides several abilities to a horse wearing the
+artifact:
+
+* When put into love mode with a golden carrot, the horse gains 8 minutes of glowing
+* When put into love mode with a golden apple, the horse toggles a permanent
+  glowing effect on or off
+* When put into love mode with a Notch apple, the horse gains a permanent
+  glowing effect and max stats
+
+Note that love mode has a cooldown of 30 seconds after being fed a golden food
+item and 5 minutes after breeding. So be careful to wait that long after
+feeding before using your Notch apple!
+
+=== 12 End Portal Frames
+
+Lets you build and End Portal. End Portal Frames are directional, so place
+them carefully, while standing in the center of the portal you're building.
+
+=== Light
+
+An invisible light source. Craft with an end rod to create more light.
 
 ////
 

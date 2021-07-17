@@ -4,5 +4,5 @@
 advancement revoke @s only bucepack:artifact/bounding/trigger
 
 # give jump boost
-effect give @s jump_boost 90 0 true
+effect give @s jump_boost 90 1 true
 
