@@ -16,7 +16,7 @@
 	},
 	"parent": "bucepack:artifact/artifact_loot",
 	"criteria": {
-		"charging_gravitation": {
+		"hold_item_offhand": {
 			"trigger": "minecraft:using_item",
 			"conditions": {
 				"item": {
@@ -27,6 +27,30 @@
 					"location": {
 						"dimension": "minecraft:the_end"
 					},
+					"equipment": {
+						"offhand": {
+							"items": [ "minecraft:end_stone" ]
+						}
+					}
+				}
+			}
+		},
+		"stand_on_block": {
+			"trigger": "minecraft:using_item",
+			"conditions": {
+				"item": {
+					"items": [ "minecraft:spyglass" ],
+					"nbt": "{searching:1b}"
+				},
+				"player": {
+					"location": {
+						"dimension": "minecraft:the_end"
+					},
+					"equipment": {
+						"offhand": {
+							"items": [ "minecraft:spyglass" ]
+						}
+					},
 					"stepping_on": {
 						"block": {
 							"blocks": [ "minecraft:end_stone" ]
@@ -36,6 +60,12 @@
 			}
 		}
 	},
+	"requirements": [
+		[
+			"hold_item_offhand",
+			"stand_on_block"
+		]
+	],
 	"rewards": {
 		"function": "bucepack:artifact/searching/endcity/charge"
 	}

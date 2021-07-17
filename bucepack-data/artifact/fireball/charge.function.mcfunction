@@ -1,5 +1,8 @@
 # runs while a player charges fireball
 
+# revoke advancement
+advancement revoke @s only bucepack:artifact/fireball/trigger
+
 # increment fireball_charge
 scoreboard players add @s fireball_charge 1
 
@@ -12,7 +15,4 @@ execute if entity @s[scores={fireball_charge=16..}] run function bucepack:artifa
 
 # reset charge 4t i.e. 0.2s from the last time this function is called
 schedule function bucepack:artifact/fireball/reset 4t replace
-
-# revoke advancement
-advancement revoke @s only bucepack:artifact/fireball/trigger
 

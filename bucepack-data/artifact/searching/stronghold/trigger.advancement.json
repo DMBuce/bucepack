@@ -1,0 +1,72 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:spyglass"
+		},
+		"title": {
+			"text": "Finding"
+		},
+		"description": {
+			"text": "Charge the Seeker's Scope"
+		},
+		"show_toast": false,
+		"announce_to_chat": false,
+		"hidden": true,
+		"frame": "task"
+	},
+	"parent": "bucepack:artifact/artifact_loot",
+	"criteria": {
+		"hold_item_offhand": {
+			"trigger": "minecraft:using_item",
+			"conditions": {
+				"item": {
+					"items": [ "minecraft:spyglass" ],
+					"nbt": "{searching:1b}"
+				},
+				"player": {
+					"location": {
+						"dimension": "minecraft:the_overworld"
+					},
+					"equipment": {
+						"offhand": {
+							"items": [ "minecraft:mossy_stone_brick" ]
+						}
+					}
+				}
+			}
+		},
+		"stand_on_block": {
+			"trigger": "minecraft:using_item",
+			"conditions": {
+				"item": {
+					"items": [ "minecraft:spyglass" ],
+					"nbt": "{searching:1b}"
+				},
+				"player": {
+					"location": {
+						"dimension": "minecraft:the_overworld"
+					},
+					"equipment": {
+						"offhand": {
+							"items": [ "minecraft:spyglass" ]
+						}
+					},
+					"stepping_on": {
+						"block": {
+							"blocks": [ "minecraft:mossy_stone_brick" ]
+						}
+					}
+				}
+			}
+		}
+	},
+	"requirements": [
+		[
+			"hold_item_offhand",
+			"stand_on_block"
+		]
+	],
+	"rewards": {
+		"function": "bucepack:artifact/searching/stronghold/charge"
+	}
+}

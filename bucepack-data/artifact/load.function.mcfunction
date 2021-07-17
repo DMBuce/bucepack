@@ -12,5 +12,7 @@ scoreboard objectives add fireball_charge dummy
 #scoreboard objectives add flame_charge dummy
 
 # reset objectives
-scoreboard players set * charge 0
+scoreboard players set * search_charge 0
+scoreboard players set * storm_charge 0
+scoreboard players set * fireball_charge 0
 
