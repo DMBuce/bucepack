@@ -7,7 +7,7 @@
 			"text": "More Splendor"
 		},
 		"description": {
-			"text": "Toggle the Barding of Bounding"
+			"text": "Toggle the Barding of Bounding with a Golden Apple"
 		},
 		"show_toast": false,
 		"announce_to_chat": false,
@@ -25,7 +25,7 @@
 					]
 				},
 				"entity": {
-					"nbt": "{ArmorItem:{tag:{banding:1b}}}"
+					"nbt": "{ArmorItems:[{tag:{splendor:1b}}]}"
 				}
 			}
 		}

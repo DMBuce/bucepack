@@ -25,7 +25,7 @@
 					]
 				},
 				"entity": {
-					"nbt": "{ArmorItem:{tag:{banding:1b}}}"
+					"nbt": "{ArmorItems:[{tag:{splendor:1b}}]}"
 				}
 			}
 		}

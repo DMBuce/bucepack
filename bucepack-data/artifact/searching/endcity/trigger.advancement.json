@@ -21,7 +21,7 @@
 			"conditions": {
 				"item": {
 					"items": [ "minecraft:spyglass" ],
-					"nbt": "{finding:1b}"
+					"nbt": "{searching:1b}"
 				},
 				"player": {
 					"location": {
@@ -37,6 +37,6 @@
 		}
 	},
 	"rewards": {
-		"function": "bucepack:artifact/finding/endcity/charge"
+		"function": "bucepack:artifact/searching/endcity/charge"
 	}
 }

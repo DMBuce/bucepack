@@ -7,7 +7,7 @@
 			"text": "Splendor"
 		},
 		"description": {
-			"text": "Activate the Barding of Bounding"
+			"text": "Activate the Barding of Bounding with a Golden Carrot"
 		},
 		"show_toast": false,
 		"announce_to_chat": false,
@@ -21,15 +21,11 @@
 			"conditions": {
 				"item": {
 					"items": [
-						"minecraft:sugar",
-						"minecraft:wheat",
-						"minecraft:apple",
-						"minecraft:golden_carrot",
-						"minecraft:hay_bale"
+						"minecraft:golden_carrot"
 					]
 				},
 				"entity": {
-					"nbt": "{ArmorItem:{tag:{banding:1b}}}"
+					"nbt": "{ArmorItems:[{tag:{splendor:1b}}]}"
 				}
 			}
 		}
