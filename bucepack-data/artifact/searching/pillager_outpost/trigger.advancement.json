@@ -25,11 +25,11 @@
 				},
 				"player": {
 					"location": {
-						"dimension": "minecraft:the_overworld"
+						"dimension": "minecraft:overworld"
 					},
 					"equipment": {
 						"offhand": {
-							"items": [ "minecraft:dark_oak_plank" ]
+							"items": [ "minecraft:dark_oak_planks" ]
 						}
 					}
 				}
@@ -44,7 +44,7 @@
 				},
 				"player": {
 					"location": {
-						"dimension": "minecraft:the_overworld"
+						"dimension": "minecraft:overworld"
 					},
 					"equipment": {
 						"offhand": {
@@ -53,7 +53,7 @@
 					},
 					"stepping_on": {
 						"block": {
-							"blocks": [ "minecraft:dark_oak_plank" ]
+							"blocks": [ "minecraft:dark_oak_planks" ]
 						}
 					}
 				}

@@ -89,7 +89,7 @@
 						"entity": "this",
 						"predicate": {
 							"equipment": {
-								"head": {
+								"feet": {
 									"items": [ "minecraft:diamond_boots" ],
 									"nbt": "{leaping:1b}"
 								}

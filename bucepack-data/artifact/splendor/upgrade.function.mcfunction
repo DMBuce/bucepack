@@ -5,7 +5,7 @@
 attribute @s generic.movement_speed base set 0.3375
 # max out jump
 #data modify entity @s Attributes[2].Base set value 1.0
-attribute @s generic.jump_strength base set 1.0
+attribute @s horse.jump_strength base set 1.0
 # max out health
 #data modify entity @s Attributes[3].Base set value 60.0
 attribute @s generic.max_health base set 60.0

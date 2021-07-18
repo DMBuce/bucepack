@@ -1,7 +1,7 @@
 {
 	"display": {
 		"icon": {
-			"item": "minecraft:path_block"
+			"item": "minecraft:dirt_path"
 		},
 		"title": {
 			"text": "Speedy Paths"

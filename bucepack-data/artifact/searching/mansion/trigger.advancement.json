@@ -25,7 +25,7 @@
 				},
 				"player": {
 					"location": {
-						"dimension": "minecraft:the_overworld"
+						"dimension": "minecraft:overworld"
 					},
 					"equipment": {
 						"offhand": {
@@ -44,7 +44,7 @@
 				},
 				"player": {
 					"location": {
-						"dimension": "minecraft:the_overworld"
+						"dimension": "minecraft:overworld"
 					},
 					"equipment": {
 						"offhand": {

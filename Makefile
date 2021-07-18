@@ -385,7 +385,6 @@ loot_overhaul_FILES := $(DEFAULT_FILES) \
 
 artifact_FILES := $(DEFAULT_FILES) \
 	data/bucepack/advancements/artifact/absorbing/trigger.json \
-	data/bucepack/advancements/artifact/leaping/trigger.json \
 	data/bucepack/advancements/artifact/breaking/axe/trigger.json \
 	data/bucepack/advancements/artifact/breaking/hoe/trigger.json \
 	data/bucepack/advancements/artifact/breaking/pick/trigger.json \
@@ -393,17 +392,36 @@ artifact_FILES := $(DEFAULT_FILES) \
 	data/bucepack/advancements/artifact/chromatic/trigger.json \
 	data/bucepack/advancements/artifact/cloaking/trigger.json \
 	data/bucepack/advancements/artifact/darkvision/trigger.json \
-	data/bucepack/advancements/artifact/searching/endcity/trigger.json \
 	data/bucepack/advancements/artifact/fireball/trigger.json \
 	data/bucepack/advancements/artifact/gravitation/trigger.json \
 	data/bucepack/advancements/artifact/gravitation/trigger_sneaking.json \
+	data/bucepack/advancements/artifact/leaping/trigger.json \
 	data/bucepack/advancements/artifact/mining/trigger.json \
+	data/bucepack/advancements/artifact/searching/bastion_remnant/trigger.json \
+	data/bucepack/advancements/artifact/searching/buried_treasure/trigger.json \
+	data/bucepack/advancements/artifact/searching/desert_pyramid/trigger.json \
+	data/bucepack/advancements/artifact/searching/endcity/trigger.json \
+	data/bucepack/advancements/artifact/searching/endcity/trigger.json \
+	data/bucepack/advancements/artifact/searching/fortress/trigger.json \
+	data/bucepack/advancements/artifact/searching/igloo/trigger.json \
+	data/bucepack/advancements/artifact/searching/jungle_pyramid/trigger.json \
+	data/bucepack/advancements/artifact/searching/mansion/trigger.json \
+	data/bucepack/advancements/artifact/searching/mineshaft/trigger.json \
+	data/bucepack/advancements/artifact/searching/monument/trigger.json \
+	data/bucepack/advancements/artifact/searching/nether_fossil/trigger.json \
+	data/bucepack/advancements/artifact/searching/ocean_ruin/trigger.json \
+	data/bucepack/advancements/artifact/searching/pillager_outpost/trigger.json \
+	data/bucepack/advancements/artifact/searching/ruined_portal/trigger.json \
+	data/bucepack/advancements/artifact/searching/ruined_portal/trigger_nether.json \
+	data/bucepack/advancements/artifact/searching/shipwreck/trigger.json \
+	data/bucepack/advancements/artifact/searching/stronghold/trigger.json \
+	data/bucepack/advancements/artifact/searching/swamp_hut/trigger.json \
+	data/bucepack/advancements/artifact/searching/village/trigger.json \
 	data/bucepack/advancements/artifact/splendor/glowing/trigger.json \
 	data/bucepack/advancements/artifact/splendor/glowing/trigger_toggle.json \
 	data/bucepack/advancements/artifact/splendor/trigger.json \
 	data/bucepack/advancements/artifact/stormcalling/trigger.json \
 	data/bucepack/functions/artifact/absorbing/activate.mcfunction \
-	data/bucepack/functions/artifact/leaping/activate.mcfunction \
 	data/bucepack/functions/artifact/breaking/axe/activate.mcfunction \
 	data/bucepack/functions/artifact/breaking/axe/break.mcfunction \
 	data/bucepack/functions/artifact/breaking/axe/chop.mcfunction \
@@ -425,18 +443,40 @@ artifact_FILES := $(DEFAULT_FILES) \
 	data/bucepack/functions/artifact/chromatic/party.mcfunction \
 	data/bucepack/functions/artifact/cloaking/activate.mcfunction \
 	data/bucepack/functions/artifact/darkvision/activate.mcfunction \
-	data/bucepack/functions/artifact/searching/activate.mcfunction \
-	data/bucepack/functions/artifact/searching/charge.mcfunction \
-	data/bucepack/functions/artifact/searching/ding.mcfunction \
-	data/bucepack/functions/artifact/searching/endcity/charge.mcfunction \
 	data/bucepack/functions/artifact/fireball/activate.mcfunction \
 	data/bucepack/functions/artifact/fireball/charge.mcfunction \
 	data/bucepack/functions/artifact/fireball/reset.mcfunction \
 	data/bucepack/functions/artifact/gravitation/charge.mcfunction \
 	data/bucepack/functions/artifact/gravitation/pull.mcfunction \
 	data/bucepack/functions/artifact/gravitation/supercharge.mcfunction \
+	data/bucepack/functions/artifact/leaping/activate.mcfunction \
 	data/bucepack/functions/artifact/load.mcfunction \
 	data/bucepack/functions/artifact/mining/activate.mcfunction \
+	data/bucepack/functions/artifact/searching/activate.mcfunction \
+	data/bucepack/functions/artifact/searching/activate.mcfunction \
+	data/bucepack/functions/artifact/searching/bastion_remnant/charge.mcfunction \
+	data/bucepack/functions/artifact/searching/buried_treasure/charge.mcfunction \
+	data/bucepack/functions/artifact/searching/charge.mcfunction \
+	data/bucepack/functions/artifact/searching/charge.mcfunction \
+	data/bucepack/functions/artifact/searching/desert_pyramid/charge.mcfunction \
+	data/bucepack/functions/artifact/searching/ding.mcfunction \
+	data/bucepack/functions/artifact/searching/ding.mcfunction \
+	data/bucepack/functions/artifact/searching/endcity/charge.mcfunction \
+	data/bucepack/functions/artifact/searching/endcity/charge.mcfunction \
+	data/bucepack/functions/artifact/searching/fortress/charge.mcfunction \
+	data/bucepack/functions/artifact/searching/igloo/charge.mcfunction \
+	data/bucepack/functions/artifact/searching/jungle_pyramid/charge.mcfunction \
+	data/bucepack/functions/artifact/searching/mansion/charge.mcfunction \
+	data/bucepack/functions/artifact/searching/mineshaft/charge.mcfunction \
+	data/bucepack/functions/artifact/searching/monument/charge.mcfunction \
+	data/bucepack/functions/artifact/searching/nether_fossil/charge.mcfunction \
+	data/bucepack/functions/artifact/searching/ocean_ruin/charge.mcfunction \
+	data/bucepack/functions/artifact/searching/pillager_outpost/charge.mcfunction \
+	data/bucepack/functions/artifact/searching/ruined_portal/charge.mcfunction \
+	data/bucepack/functions/artifact/searching/shipwreck/charge.mcfunction \
+	data/bucepack/functions/artifact/searching/stronghold/charge.mcfunction \
+	data/bucepack/functions/artifact/searching/swamp_hut/charge.mcfunction \
+	data/bucepack/functions/artifact/searching/village/charge.mcfunction \
 	data/bucepack/functions/artifact/splendor/activate.mcfunction \
 	data/bucepack/functions/artifact/splendor/glowing/activate.mcfunction \
 	data/bucepack/functions/artifact/splendor/glowing/permanent.mcfunction \
@@ -551,6 +591,7 @@ studly_FILES := $(DEFAULT_FILES) \
 	data/bucepack/advancements/root.json \
 	data/bucepack/advancements/studly/root.json \
 	data/bucepack/advancements/studly/trigger.json \
+	data/bucepack/predicates/studly/equine.json \
 	data/bucepack/functions/studly/activate.mcfunction \
 	data/bucepack/functions/studly/breed.mcfunction \
 	data/bucepack/functions/studly/baby.mcfunction \
@@ -572,7 +613,7 @@ escape_nether_FILES := $(DEFAULT_FILES) \
 	data/escape/functions/nether_respawn.mcfunction \
 	data/escape/functions/tick-nether.mcfunction \
 	data/escape/tags/blocks/airlava.json \
-	data/escape/advancements/escape_nether.json \
+	data/bucepack/advancements/escape_nether.json \
 	data/escape/advancements/kill_wither.json
 
 escape_grind_FILES := $(DEFAULT_FILES) \
@@ -676,9 +717,6 @@ rpacks: $(RESOURCEPACKFILES)
 
 .PHONY: dpacks
 dpacks: $(DATAPACKFILES)
-
-LICENSE.txt: LICENSE.asciidoc
-	cp -v $< $@
 
 data/minecraft/loot_tables/%.json: minecraft-data/%.loot_table.json
 	mkdir -p $(dir $@)

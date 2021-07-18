@@ -75,23 +75,23 @@ template='{
 
 params=(
 	'bastion_remnant the_nether blackstone'
-	'buried_treasure the_overworld sand'
-	'desert_pyramid the_overworld sandstone'
+	'buried_treasure overworld sand'
+	'desert_pyramid overworld sandstone'
 	'endcity the_end end_stone'
-	'fortress the_nether nether_brick'
+	'fortress the_nether nether_bricks'
 	'nether_fossil the_nether soul_soil'
-	'ruined_portal the_overworld obsidian'
-	'igloo the_overworld snow'
-	'jungle_pyramid the_overworld mossy_cobblestone'
-	'mansion the_overworld dark_oak_log'
-	'mineshaft the_overworld stone'
-	'monument the_overworld prismarine'
-	'ocean_ruin the_overworld gravel'
-	'pillager_outpost the_overworld dark_oak_plank'
-	'shipwreck the_overworld oak_plank'
-	'stronghold the_overworld mossy_stone_brick'
-	'swamp_hut the_overworld spruce_plank'
-	'village the_overworld emerald_block'
+	'ruined_portal overworld obsidian'
+	'igloo overworld snow_block'
+	'jungle_pyramid overworld mossy_cobblestone'
+	'mansion overworld dark_oak_log'
+	'mineshaft overworld stone'
+	'monument overworld prismarine'
+	'ocean_ruin overworld gravel'
+	'pillager_outpost overworld dark_oak_planks'
+	'shipwreck overworld oak_planks'
+	'stronghold overworld mossy_stone_bricks'
+	'swamp_hut overworld spruce_planks'
+	'village overworld emerald_block'
 )
 
 for param in "${params[@]}"; do
@@ -101,5 +101,5 @@ done
 
 # ad hoc stuff
 cp bucepack-data/artifact/searching/ruined_portal/trigger.advancement.json bucepack-data/artifact/searching/ruined_portal/trigger_nether.advancement.json
-sed -i 's/overworld/nether/' bucepack-data/artifact/searching/ruined_portal/trigger_nether.advancement.json
+sed -i 's/overworld/the_nether/' bucepack-data/artifact/searching/ruined_portal/trigger_nether.advancement.json
 

@@ -25,11 +25,11 @@
 				},
 				"player": {
 					"location": {
-						"dimension": "minecraft:the_overworld"
+						"dimension": "minecraft:overworld"
 					},
 					"equipment": {
 						"offhand": {
-							"items": [ "minecraft:mossy_stone_brick" ]
+							"items": [ "minecraft:mossy_stone_bricks" ]
 						}
 					}
 				}
@@ -44,7 +44,7 @@
 				},
 				"player": {
 					"location": {
-						"dimension": "minecraft:the_overworld"
+						"dimension": "minecraft:overworld"
 					},
 					"equipment": {
 						"offhand": {
@@ -53,7 +53,7 @@
 					},
 					"stepping_on": {
 						"block": {
-							"blocks": [ "minecraft:mossy_stone_brick" ]
+							"blocks": [ "minecraft:mossy_stone_bricks" ]
 						}
 					}
 				}

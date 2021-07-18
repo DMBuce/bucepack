@@ -39,13 +39,22 @@
 					"type": "minecraft:mule"
 				}
 			}
+		},
+		"llama": {
+			"trigger": "minecraft:bred_animals",
+			"conditions": {
+				"child": {
+					"type": "minecraft:llama"
+				}
+			}
 		}
 	},
 	"requirements": [
 		[
 			"horse",
+			"donkey",
 			"mule",
-			"donkey"
+			"llama"
 		]
 	],
 	"rewards": {

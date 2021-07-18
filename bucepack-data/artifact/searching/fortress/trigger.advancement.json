@@ -29,7 +29,7 @@
 					},
 					"equipment": {
 						"offhand": {
-							"items": [ "minecraft:nether_brick" ]
+							"items": [ "minecraft:nether_bricks" ]
 						}
 					}
 				}
@@ -53,7 +53,7 @@
 					},
 					"stepping_on": {
 						"block": {
-							"blocks": [ "minecraft:nether_brick" ]
+							"blocks": [ "minecraft:nether_bricks" ]
 						}
 					}
 				}
