@@ -27,7 +27,7 @@
 							"equipment": {
 								"feet": {
 									"items": [ "minecraft:diamond_boots" ],
-									"nbt": "{bounding:1b}"
+									"nbt": "{leaping:1b}"
 								}
 							}
 						}
@@ -91,7 +91,7 @@
 							"equipment": {
 								"head": {
 									"items": [ "minecraft:diamond_boots" ],
-									"nbt": "{bounding:1b}"
+									"nbt": "{leaping:1b}"
 								}
 							}
 						}
@@ -107,6 +107,6 @@
 		]
 	],
 	"rewards": {
-		"function": "bucepack:artifact/bounding/activate"
+		"function": "bucepack:artifact/leaping/activate"
 	}
 }

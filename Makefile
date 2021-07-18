@@ -6,10 +6,10 @@ RESOURCEPACKFILES = painting_overhaul.zip note_guide.zip brew_guide.zip \
 	classic_moo.zip classic_twang.zip classic_sploosh.zip classic_crunch.zip
 DATAPACKFILES = gardener_endermen.zip climbable.zip speedy_paths.zip \
 	no_treasure_maps.zip fortunate_jungle.zip dragonproof.zip \
-	shearless.zip mixed_crafting.zip \
+	shearless.zip studly.zip \
 	loot_overhaul.zip artifact_loot.zip more_shulker_shells.zip \
 	starter_bed.zip starter_book.zip starter_bucket.zip starter_map.zip \
-	starter_shulker.zip starter_artifact.zip \
+	starter_shulker.zip starter_artifact.zip starter_bonus_chest.zip \
 	escape_end.zip escape_nether.zip escape_grind.zip lichdom.zip
 
 PACKFILES = $(RESOURCEPACKFILES) $(DATAPACKFILES)
@@ -382,7 +382,7 @@ loot_overhaul_FILES := $(DEFAULT_FILES) \
 
 artifact_FILES := $(DEFAULT_FILES) \
 	data/bucepack/advancements/artifact/absorbing/trigger.json \
-	data/bucepack/advancements/artifact/bounding/trigger.json \
+	data/bucepack/advancements/artifact/leaping/trigger.json \
 	data/bucepack/advancements/artifact/breaking/axe/trigger.json \
 	data/bucepack/advancements/artifact/breaking/hoe/trigger.json \
 	data/bucepack/advancements/artifact/breaking/pick/trigger.json \
@@ -390,7 +390,7 @@ artifact_FILES := $(DEFAULT_FILES) \
 	data/bucepack/advancements/artifact/chromatic/trigger.json \
 	data/bucepack/advancements/artifact/cloaking/trigger.json \
 	data/bucepack/advancements/artifact/darkvision/trigger.json \
-	data/bucepack/advancements/artifact/finding/endcity/trigger.json \
+	data/bucepack/advancements/artifact/searching/endcity/trigger.json \
 	data/bucepack/advancements/artifact/fireball/trigger.json \
 	data/bucepack/advancements/artifact/gravitation/trigger.json \
 	data/bucepack/advancements/artifact/gravitation/trigger_sneaking.json \
@@ -400,7 +400,7 @@ artifact_FILES := $(DEFAULT_FILES) \
 	data/bucepack/advancements/artifact/splendor/trigger.json \
 	data/bucepack/advancements/artifact/stormcalling/trigger.json \
 	data/bucepack/functions/artifact/absorbing/activate.mcfunction \
-	data/bucepack/functions/artifact/bounding/activate.mcfunction \
+	data/bucepack/functions/artifact/leaping/activate.mcfunction \
 	data/bucepack/functions/artifact/breaking/axe/activate.mcfunction \
 	data/bucepack/functions/artifact/breaking/axe/break.mcfunction \
 	data/bucepack/functions/artifact/breaking/axe/chop.mcfunction \
@@ -422,10 +422,10 @@ artifact_FILES := $(DEFAULT_FILES) \
 	data/bucepack/functions/artifact/chromatic/party.mcfunction \
 	data/bucepack/functions/artifact/cloaking/activate.mcfunction \
 	data/bucepack/functions/artifact/darkvision/activate.mcfunction \
-	data/bucepack/functions/artifact/finding/activate.mcfunction \
-	data/bucepack/functions/artifact/finding/charge.mcfunction \
-	data/bucepack/functions/artifact/finding/ding.mcfunction \
-	data/bucepack/functions/artifact/finding/endcity/charge.mcfunction \
+	data/bucepack/functions/artifact/searching/activate.mcfunction \
+	data/bucepack/functions/artifact/searching/charge.mcfunction \
+	data/bucepack/functions/artifact/searching/ding.mcfunction \
+	data/bucepack/functions/artifact/searching/endcity/charge.mcfunction \
 	data/bucepack/functions/artifact/fireball/activate.mcfunction \
 	data/bucepack/functions/artifact/fireball/charge.mcfunction \
 	data/bucepack/functions/artifact/fireball/reset.mcfunction \
@@ -494,6 +494,11 @@ artifact_loot_FILES := $(DEFAULT_FILES) \
 	data/bucepack/advancements/artifact/artifact_loot.json \
 	data/bucepack/advancements/root.json
 
+starter_bonus_chest_FILES := $(DEFAULT_FILES) \
+	data/bucepack/advancements/starter_bonus_chest.json \
+	data/bucepack/advancements/root.json \
+	data/bucepack/functions/starter_bonus_chest.mcfunction
+
 dragonproof_FILES := $(DEFAULT_FILES) \
 	data/minecraft/tags/blocks/dragon_immune.json
 
@@ -534,6 +539,17 @@ mixed_crafting_FILES := $(DEFAULT_FILES) \
 	data/minecraft/recipes/wooden_trapdoor.json \
 	data/minecraft/tags/items/stone_crafting_materials.json \
 	data/minecraft/tags/items/stone_tool_materials.json
+
+studly_FILES := $(DEFAULT_FILES) \
+	data/minecraft/tags/functions/load-studly.json \
+	data/bucepack/advancements/root.json \
+	data/bucepack/advancements/studly/root.json \
+	data/bucepack/advancements/studly/trigger.json \
+	data/bucepack/functions/studly/activate.mcfunction \
+	data/bucepack/functions/studly/breed.mcfunction \
+	data/bucepack/functions/studly/baby.mcfunction \
+	data/bucepack/functions/studly/debug.mcfunction \
+	data/bucepack/functions/studly/load.mcfunction
 
 more_shulker_shells_FILES := $(DEFAULT_FILES) \
 	data/minecraft/loot_tables/entities/shulker.json
@@ -887,6 +903,11 @@ starter_artifact.zip: $(starter_artifact_FILES)
 	zip $@ pack.png pack.mcmeta $^
 	printf "@ data/minecraft/tags/functions/load-artifact.json\n@=data/minecraft/tags/functions/load.json\n" | zipnote -w $@
 
+starter_bonus_chest.zip: $(starter_bonus_chest_FILES)
+	cp meta/$(@:.zip=.png) pack.png
+	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
+	zip $@ pack.png pack.mcmeta $^
+
 artifact_loot.zip: $(artifact_loot_FILES)
 	cp meta/$(@:.zip=.png) pack.png
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
@@ -904,6 +925,11 @@ shearless.zip: $(shearless_FILES)
 	zip $@ pack.png pack.mcmeta $^
 
 mixed_crafting.zip: $(mixed_crafting_FILES)
+	cp meta/$(@:.zip=.png) pack.png
+	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
+	zip $@ pack.png pack.mcmeta $^
+
+studly.zip: $(studly_FILES)
 	cp meta/$(@:.zip=.png) pack.png
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^
@@ -946,31 +972,31 @@ starter_bed.zip: $(starter_bed_FILES)
 	cp meta/$(@:.zip=.png) pack.png
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^
-	printf "@ data/minecraft/tags/items/starter_bed.json\n@=data/minecraft/tags/items/starter.json\n" | zipnote -w $@
+	printf "@ data/minecraft/tags/items/starter_bed.json\n@=data/minecraft/tags/items/starter_item.json\n" | zipnote -w $@
 
 starter_book.zip: $(starter_book_FILES)
 	cp meta/$(@:.zip=.png) pack.png
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^
-	printf "@ data/minecraft/tags/items/starter_book.json\n@=data/minecraft/tags/items/starter.json\n" | zipnote -w $@
+	printf "@ data/minecraft/tags/items/starter_book.json\n@=data/minecraft/tags/items/starter_item.json\n" | zipnote -w $@
 
 starter_bucket.zip: $(starter_bucket_FILES)
 	cp meta/$(@:.zip=.png) pack.png
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^
-	printf "@ data/minecraft/tags/items/starter_bucket.json\n@=data/minecraft/tags/items/starter.json\n" | zipnote -w $@
+	printf "@ data/minecraft/tags/items/starter_bucket.json\n@=data/minecraft/tags/items/starter_item.json\n" | zipnote -w $@
 
 starter_map.zip: $(starter_map_FILES)
 	cp meta/$(@:.zip=.png) pack.png
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^
-	printf "@ data/minecraft/tags/items/starter_map.json\n@=data/minecraft/tags/items/starter.json\n" | zipnote -w $@
+	printf "@ data/minecraft/tags/items/starter_map.json\n@=data/minecraft/tags/items/starter_item.json\n" | zipnote -w $@
 
 starter_shulker.zip: $(starter_shulker_FILES)
 	cp meta/$(@:.zip=.png) pack.png
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^
-	printf "@ data/minecraft/tags/items/starter_shulker.json\n@=data/minecraft/tags/items/starter.json\n" | zipnote -w $@
+	printf "@ data/minecraft/tags/items/starter_shulker.json\n@=data/minecraft/tags/items/starter_item.json\n" | zipnote -w $@
 
 .PHONY: install
 install: $(RESOURCEPACKFILES) $(DATAPACKFILES)

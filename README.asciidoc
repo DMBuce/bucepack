@@ -303,25 +303,6 @@ Download: https://github.com/DMBuce/bucepack/releases
 
 Build: `make speedy_paths.zip`
 
-=== Mixed Crafting
-
-Lets you mix different types of wool, wood, and/or stone in certain recipes.
-
-You can use any color of wool to craft red beds.
-
-You can use any kind of wood to craft signs, fences, gates, trapdoors,
-pressure plates, doors, and boats.
-You can craft any wooden button into an oak button.
-
-You can use many types of stone to craft stone tools, brewing stands,
-furnaces, dispensers, droppers, observers, pistons, and levers.
-The stone types that can be used in these recipes are listed
-https://raw.githubusercontent.com/DMBuce/bucepack/master/data/minecraft/tags/blocks/stone_crafting_material.json[here].
-
-Download: https://github.com/DMBuce/bucepack/releases
-
-Build: `make mixed_crafting.zip`
-
 === Shearless
 
 Makes hoes able to harvest blocks that are normally obtained with shears.
@@ -483,17 +464,15 @@ Starter Map adds a Map to the bonus spawn chest.
 
 Starter Shulker adds a Shulker Box to the bonus spawn chest.
 
-Starter Artifact adds a random <<artifacts,Artifact>> to each player's
+If several of the above Starter Item packs are installed, the bonus chest will spawn one
+starter item chosen at random.
+
+Starter Bonus Spawn Chest adds a random <<artifacts,Artifact>> to each player's
 inventory the first time they join the world. Unlike the other starter packs
 here, it does not change the bonus spawn chest.
 
-If multiple Starter Item packs are installed, the bonus chest will spawn one
-starter item chosen at random. To make it spawn *all* starter items, edit
-`loot_overhaul.zip/data/minecraft/loot_tables/chests/spawn_bonus_chest.json`
-and change the `expand` line in the `starter` tag entry so that it says
-`true` instead of `false`:
-
- "expand": true
+Starter Artifact adds a bonus spawn chest to each player's
+inventory the first time they join the world.
 
 Download: https://github.com/DMBuce/bucepack/releases
 
