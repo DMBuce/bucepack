@@ -1,0 +1,22 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:bucket"
+		},
+		"title": {
+			"text": "Starter Bucket"
+		},
+		"description": {
+			"text": "Adds a bucket to Loot Overhaul's curated bonus chest"
+		},
+		"show_toast": false,
+		"announce_to_chat": false,
+		"frame": "task"
+	},
+	"parent": "bucepack:loot_overhaul/loot_overhaul",
+	"criteria": {
+		"tick": {
+			"trigger": "minecraft:tick"
+		}
+	}
+}

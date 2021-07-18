@@ -1,0 +1,22 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:red_bed"
+		},
+		"title": {
+			"text": "Starter Bed"
+		},
+		"description": {
+			"text": "Adds a bed to Loot Overhaul's curated bonus chest"
+		},
+		"show_toast": false,
+		"announce_to_chat": false,
+		"frame": "task"
+	},
+	"parent": "bucepack:loot_overhaul/loot_overhaul",
+	"criteria": {
+		"tick": {
+			"trigger": "minecraft:tick"
+		}
+	}
+}

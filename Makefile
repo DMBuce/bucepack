@@ -290,7 +290,8 @@ classic_crunch_FILES := $(DEFAULT_FILES) \
 	assets/minecraft/sounds/step/grass3.ogg
 
 gardener_endermen_FILES := $(DEFAULT_FILES) \
-	data/minecraft/tags/blocks/enderman_holdable.json
+	data/minecraft/tags/blocks/enderman_holdable.json \
+	data/bucepack/advancements/gardener_endermen.json
 
 climbable_FILES := $(DEFAULT_FILES) \
 	data/minecraft/tags/blocks/climbable.json \
@@ -298,7 +299,8 @@ climbable_FILES := $(DEFAULT_FILES) \
 	data/bucepack/advancements/climbable.json
 
 speedy_paths_FILES := $(DEFAULT_FILES) \
-	data/minecraft/tags/blocks/soul_speed_blocks.json
+	data/minecraft/tags/blocks/soul_speed_blocks.json \
+	data/bucepack/advancements/speedy_paths.json
 
 waterproof_tech_FILES := $(DEFAULT_FILES) \
 	data/minecraft/tags/blocks/signs.json \
@@ -316,7 +318,8 @@ blue_fire_FILES := $(DEFAULT_FILES) \
 	data/bucepack/advancements/blue_fire.json
 
 fortunate_jungle_FILES := $(DEFAULT_FILES) \
-	data/minecraft/loot_tables/blocks/jungle_leaves.json
+	data/minecraft/loot_tables/blocks/jungle_leaves.json \
+	data/bucepack/advancements/fortunate_jungle.json
 
 loot_overhaul_FILES := $(DEFAULT_FILES) \
 	data/bucepack/advancements/root.json \
@@ -500,6 +503,7 @@ starter_bonus_chest_FILES := $(DEFAULT_FILES) \
 	data/bucepack/functions/starter_bonus_chest.mcfunction
 
 dragonproof_FILES := $(DEFAULT_FILES) \
+	data/bucepack/advancements/dragonproof.json \
 	data/minecraft/tags/blocks/dragon_immune.json
 
 shearless_FILES := $(DEFAULT_FILES) \
@@ -520,7 +524,8 @@ shearless_FILES := $(DEFAULT_FILES) \
 	data/minecraft/loot_tables/blocks/twisting_vines_plant.json \
 	data/minecraft/loot_tables/blocks/vine.json \
 	data/minecraft/loot_tables/blocks/weeping_vines.json \
-	data/minecraft/loot_tables/blocks/weeping_vines_plant.json
+	data/minecraft/loot_tables/blocks/weeping_vines_plant.json \
+	data/bucepack/advancements/shearless.json
 
 mixed_crafting_FILES := $(DEFAULT_FILES) \
 	data/minecraft/recipes/bed.json \
@@ -538,7 +543,8 @@ mixed_crafting_FILES := $(DEFAULT_FILES) \
 	data/minecraft/recipes/wooden_sign.json \
 	data/minecraft/recipes/wooden_trapdoor.json \
 	data/minecraft/tags/items/stone_crafting_materials.json \
-	data/minecraft/tags/items/stone_tool_materials.json
+	data/minecraft/tags/items/stone_tool_materials.json \
+	data/bucepack/advancements/mixed_crafting.json
 
 studly_FILES := $(DEFAULT_FILES) \
 	data/minecraft/tags/functions/load-studly.json \
@@ -552,18 +558,21 @@ studly_FILES := $(DEFAULT_FILES) \
 	data/bucepack/functions/studly/load.mcfunction
 
 more_shulker_shells_FILES := $(DEFAULT_FILES) \
-	data/minecraft/loot_tables/entities/shulker.json
+	data/minecraft/loot_tables/entities/shulker.json \
+	data/bucepack/advancements/more_shulker_shells.json
 
 escape_end_FILES := $(DEFAULT_FILES) \
 	data/minecraft/tags/functions/tick-escape.json \
 	data/escape/functions/end_respawn.mcfunction \
-	data/escape/functions/tick-end.mcfunction
+	data/escape/functions/tick-end.mcfunction \
+	data/bucepack/advancements/escape_end.json
 
 escape_nether_FILES := $(DEFAULT_FILES) \
 	data/minecraft/tags/functions/tick-escape.json \
 	data/escape/functions/nether_respawn.mcfunction \
 	data/escape/functions/tick-nether.mcfunction \
 	data/escape/tags/blocks/airlava.json \
+	data/escape/advancements/escape_nether.json \
 	data/escape/advancements/kill_wither.json
 
 escape_grind_FILES := $(DEFAULT_FILES) \
@@ -576,7 +585,8 @@ escape_grind_FILES := $(DEFAULT_FILES) \
 	data/escape/functions/load.mcfunction \
 	data/escape/functions/tick_grind.mcfunction \
 	data/escape/functions/grind_respawn.mcfunction \
-	data/escape/functions/locate_city.mcfunction
+	data/escape/functions/locate_city.mcfunction \
+	data/bucepack/advancements/escape_grind.json
 
 lichdom_FILES := $(DEFAULT_FILES) \
 	data/minecraft/tags/functions/load-lichdom.json \
@@ -636,19 +646,24 @@ lichdom_FILES := $(DEFAULT_FILES) \
 	data/lichdom/advancements/drink_blood_4.json
 
 starter_bed_FILES := $(DEFAULT_FILES) \
-	data/minecraft/tags/items/starter_bed.json
+	data/minecraft/tags/items/starter_bed.json \
+	data/bucepack/advancements/starter_bed.json
 
 starter_book_FILES := $(DEFAULT_FILES) \
-	data/minecraft/tags/items/starter_book.json
+	data/minecraft/tags/items/starter_book.json \
+	data/bucepack/advancements/starter_book.json
 
 starter_bucket_FILES := $(DEFAULT_FILES) \
-	data/minecraft/tags/items/starter_bucket.json
+	data/minecraft/tags/items/starter_bucket.json \
+	data/bucepack/advancements/starter_bucket.json
 
 starter_map_FILES := $(DEFAULT_FILES) \
-	data/minecraft/tags/items/starter_map.json
+	data/minecraft/tags/items/starter_map.json \
+	data/bucepack/advancements/starter_map.json
 
 starter_shulker_FILES := $(DEFAULT_FILES) \
-	data/minecraft/tags/items/starter_shulker.json
+	data/minecraft/tags/items/starter_shulker.json \
+	data/bucepack/advancements/starter_shulker.json
 
 test_FILES = \
 	# nothing

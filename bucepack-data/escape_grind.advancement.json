@@ -1,0 +1,22 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:grindstone"
+		},
+		"title": {
+			"text": "Escape the Grind"
+		},
+		"description": {
+			"text": "Addon pack for a less grindy Escape the Nether/End experience"
+		},
+		"show_toast": false,
+		"announce_to_chat": false,
+		"frame": "task"
+	},
+	"parent": "bucepack:root",
+	"criteria": {
+		"tick": {
+			"trigger": "minecraft:tick"
+		}
+	}
+}
