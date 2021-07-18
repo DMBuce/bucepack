@@ -26,7 +26,7 @@ CLEAN_TARGETS := $(PACKFILES) data/bucepack pack.mcmeta pack.png test.zip \
 	#bucepack-data/*/subtables/*.json
 
 # needed by all texture pack targets
-DEFAULT = CONTRIBUTORS.txt LICENSE.txt
+DEFAULT_FILES = LICENSE.txt
 
 lcg_FILES := \
 	data/lcg/functions/load.mcfunction \
@@ -655,6 +655,15 @@ test_FILES = \
 
 .PHONY: all
 all: $(PACKFILES)
+
+.PHONY: rpacks
+rpacks: $(RESOURCEPACKFILES)
+
+.PHONY: dpacks
+dpacks: $(DATAPACKFILES)
+
+LICENSE.txt: LICENSE.asciidoc
+	cp -v $< $@
 
 data/minecraft/loot_tables/%.json: minecraft-data/%.loot_table.json
 	mkdir -p $(dir $@)
