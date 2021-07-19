@@ -6,7 +6,7 @@ RESOURCEPACKFILES = painting_overhaul.zip note_guide.zip brew_guide.zip \
 	classic_moo.zip classic_twang.zip classic_sploosh.zip classic_crunch.zip
 DATAPACKFILES = gardener_endermen.zip climbable.zip speedy_paths.zip \
 	no_treasure_maps.zip fortunate_jungle.zip dragonproof.zip \
-	shearless.zip studly.zip smooth_cracked_stonecutting.zip \
+	shearless.zip breeding_overhaul.zip smooth_cracked_stonecutting.zip \
 	loot_overhaul.zip artifact_loot.zip more_shulker_shells.zip \
 	starter_bed.zip starter_book.zip starter_bucket.zip starter_map.zip \
 	starter_shulker.zip starter_artifact.zip starter_bonus_chest.zip \
@@ -586,17 +586,17 @@ mixed_crafting_FILES := $(DEFAULT_FILES) \
 	data/minecraft/tags/items/stone_tool_materials.json \
 	data/bucepack/advancements/mixed_crafting.json
 
-studly_FILES := $(DEFAULT_FILES) \
-	data/minecraft/tags/functions/load-studly.json \
+breeding_overhaul_FILES := $(DEFAULT_FILES) \
+	data/minecraft/tags/functions/load-breeding_overhaul.json \
 	data/bucepack/advancements/root.json \
-	data/bucepack/advancements/studly/root.json \
-	data/bucepack/advancements/studly/trigger.json \
-	data/bucepack/predicates/studly/equine.json \
-	data/bucepack/functions/studly/activate.mcfunction \
-	data/bucepack/functions/studly/breed.mcfunction \
-	data/bucepack/functions/studly/baby.mcfunction \
-	data/bucepack/functions/studly/debug.mcfunction \
-	data/bucepack/functions/studly/load.mcfunction
+	data/bucepack/advancements/breeding_overhaul/root.json \
+	data/bucepack/advancements/breeding_overhaul/trigger.json \
+	data/bucepack/predicates/breeding_overhaul/equine.json \
+	data/bucepack/functions/breeding_overhaul/activate.mcfunction \
+	data/bucepack/functions/breeding_overhaul/breed.mcfunction \
+	data/bucepack/functions/breeding_overhaul/baby.mcfunction \
+	data/bucepack/functions/breeding_overhaul/debug.mcfunction \
+	data/bucepack/functions/breeding_overhaul/load.mcfunction
 
 smooth_cracked_stonecutting_FILES := $(DEFAULT_FILES) \
 	data/bucepack/advancements/smooth_cracked_stonecutting/root.json \
@@ -1004,7 +1004,7 @@ mixed_crafting.zip: $(mixed_crafting_FILES)
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^
 
-studly.zip: $(studly_FILES)
+breeding_overhaul.zip: $(breeding_overhaul_FILES)
 	cp meta/$(@:.zip=.png) pack.png
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^

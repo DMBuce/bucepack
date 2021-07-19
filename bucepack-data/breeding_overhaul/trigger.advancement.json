@@ -14,7 +14,7 @@
 		"hidden": true,
 		"frame": "task"
 	},
-	"parent": "bucepack:studly/root",
+	"parent": "bucepack:breeding_overhaul/root",
 	"criteria": {
 		"horse": {
 			"trigger": "minecraft:bred_animals",
@@ -58,6 +58,6 @@
 		]
 	],
 	"rewards": {
-		"function": "bucepack:studly/activate"
+		"function": "bucepack:breeding_overhaul/activate"
 	}
 }
