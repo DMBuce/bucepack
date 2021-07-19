@@ -270,15 +270,6 @@ Build:
 
 == Data Packs
 
-=== No Treasure Maps
-
-Replaces Treasure Maps with Hearts of the Sea in shipwreck chests as a workaround for an issue in
-https://github.com/dmbuce/badlands-challenge#the-badlands-challenge[The Badlands Challenge].
-
-Download: https://github.com/DMBuce/bucepack/releases
-
-Build: `make no_treasure_maps.zip`
-
 === Climbable
 
 Lets you climb chains and bamboo.
@@ -302,19 +293,6 @@ image::https://i.imgur.com/XafV8TN.png[Speedy Paths]
 Download: https://github.com/DMBuce/bucepack/releases
 
 Build: `make speedy_paths.zip`
-
-=== Shearless
-
-Makes hoes able to harvest blocks that are normally obtained with shears.
-
-image::https://i.imgur.com/7tN7Zij.png[Shearless]
-
-Note that shears are still required to shear sheep, mooshroom, snow golems,
-pumpkins, beehives, and bee nests.
-
-Download: https://github.com/DMBuce/bucepack/releases
-
-Build: `make shearless.zip`
 
 === Gardener Endermen
 
@@ -344,6 +322,34 @@ Download: https://github.com/DMBuce/bucepack/releases
 
 Build: `make dragonproof.zip`
 
+=== Shearless
+
+Makes hoes able to harvest blocks that are normally obtained with shears.
+
+image::https://i.imgur.com/7tN7Zij.png[Shearless]
+
+Note that shears are still required to shear sheep, mooshroom, snow golems,
+pumpkins, beehives, and bee nests.
+
+This datapack is not compatible with other datapacks that modify the
+loot tables of the blocks shown above.
+
+Download: https://github.com/DMBuce/bucepack/releases
+
+Build: `make shearless.zip`
+
+=== More Shulker Shells
+
+Makes shulkers drop 0-2 shells. Looting decreases your chance of getting zero
+shells.
+
+This datapack is not compatible with other datapacks that modify the Shulker
+loot table.
+
+Download: https://github.com/DMBuce/bucepack/releases
+
+Build: `make more_shulker_shells.zip`
+
 === Fortunate Jungle
 
 Increases the drop rate of jungle saplings harvested with fortune hoes.
@@ -355,6 +361,9 @@ as well as the drop rate of other saplings.
  Vanilla Jungle Saplings  | Jungle Leaves | 2.5% (1⁄40) | 2.78% (1⁄36)  | 3.125% (1⁄32) | 4.17% (1⁄24) | 10% (1⁄10)
  Datapack Jungle Saplings | Jungle Leaves | 2.5% (1⁄40) | 3.125% (1⁄32) | 4.17% (1⁄24)  | 5% (1⁄20)    | 10% (1⁄10)
  Other Saplings           | Other Leaves  | 5% (1⁄20)   | 6.25% (1⁄16)  | 8.33% (1⁄12)  | 10% (1⁄10)   |
+
+This datapack is not compatible with other datapacks that modify the Jungle
+Leaves loot table.
 
 Download: https://github.com/DMBuce/bucepack/releases
 
@@ -428,6 +437,9 @@ area the structure spawns in. Aboveground structures have gear enchanted at
 levels 15-20, underground and ocean structures at levels 20-25, nether
 structures at levels 25-30, and end structures at levels 25-39.
 
+This datapack is not compatible with other datapacks that modify the chest or
+fishing loot tables.
+
 Download: https://github.com/DMBuce/bucepack/releases
 
 Build: `make loot_overhaul.zip`
@@ -483,15 +495,6 @@ Build:
  make starter_bucket.zip
  make starter_map.zip
  make starter_shulker.zip
-
-=== More Shulker Shells
-
-Makes shulkers drop 0-2 shells. Looting decreases your chance of getting zero
-shells.
-
-Download: https://github.com/DMBuce/bucepack/releases
-
-Build: `make more_shulker_shells.zip`
 
 === Escape the Nether
 
@@ -667,6 +670,15 @@ Known Issues:
 * If a player in turtle form dies from their shell breaking, other players who
   die in the same tick will have their death messages suppressed
 
+=== No Treasure Maps
+
+Replaces Treasure Maps with Hearts of the Sea in shipwreck chests as a workaround for an issue in
+https://github.com/dmbuce/badlands-challenge#the-badlands-challenge[The Badlands Challenge].
+
+Download: https://github.com/DMBuce/bucepack/releases
+
+Build: `make no_treasure_maps.zip`
+
 == Artifacts
 
 Artifacts are rare items added by the <<starter-items,Starter Artifact>>
@@ -677,6 +689,10 @@ tooltip.
 
 Some mythical enchantments are activated by charging the artifact. To charge
 an artifact, hold right click.
+
+Artifact datapacks are not compatible with other datapacks that modify the
+loot tables of certain mobs. See the <<vorpal-blade,Vorpal Blade>> description
+for details.
 
 === Bonebreaker
 
@@ -731,6 +747,9 @@ mythic enchantment that has a chance to decapitate certain monsters:
 * Stray
 * Vex
 * Zombie
+
+Artifact datapacks are not compatible with other datapacks that modify the
+loot tables of these mobs.
 
 === Stormcaller
 
