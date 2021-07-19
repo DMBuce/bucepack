@@ -2,7 +2,8 @@
 RESOURCEPACKFILES = painting_overhaul.zip note_guide.zip brew_guide.zip \
 	tech_arrows.zip ravager.zip villager_mech.zip pig_armor.zip ore_types.zip \
 	discreet_pumpkin.zip stickier_piston.zip \
-	classic_netherrack.zip classic_lava.zip classic_gravel.zip classic_lapis.zip classic_rose.zip classic_food.zip \
+	classic_netherrack.zip classic_lava.zip classic_gravel.zip classic_lapis.zip \
+	classic_rose.zip classic_food.zip \
 	classic_moo.zip classic_twang.zip classic_sploosh.zip classic_crunch.zip
 DATAPACKFILES = gardener_endermen.zip climbable.zip speedy_paths.zip \
 	no_treasure_maps.zip fortunate_jungle.zip dragonproof.zip \
@@ -760,6 +761,14 @@ data/minecraft/predicates/%.json: minecraft-data/%.predicate.json
 	cp -v $< $@
 
 data/bucepack/predicates/%.json: bucepack-data/%.predicate.json
+	mkdir -p $(dir $@)
+	cp -v $< $@
+
+data/minecraft/recipes/%.json: minecraft-data/%.recipe.json
+	mkdir -p $(dir $@)
+	cp -v $< $@
+
+data/bucepack/recipes/%.json: bucepack-data/%.recipe.json
 	mkdir -p $(dir $@)
 	cp -v $< $@
 
