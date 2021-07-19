@@ -71,7 +71,6 @@
 						"predicate": {
 							"equipment": {
 								"chest": {
-									"items": [ "minecraft:diamond_chestplate" ],
 									"nbt": "{absorbing:1b}"
 								}
 							}

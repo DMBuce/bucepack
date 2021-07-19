@@ -20,7 +20,14 @@
 			"trigger": "minecraft:item_durability_changed",
 			"conditions": {
 				"item": {
-					"items": [ "minecraft:diamond_pickaxe" ],
+					"items": [
+						"minecraft:wooden_pickaxe",
+						"minecraft:stone_pickaxe",
+						"minecraft:iron_pickaxe",
+						"minecraft:gold_pickaxe",
+						"minecraft:diamond_pickaxe",
+						"minecraft:netherite_pickaxe"
+					],
 					"nbt": "{breaking:1b}"
 				},
 				"player": {

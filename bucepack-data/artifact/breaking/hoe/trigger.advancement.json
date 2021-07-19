@@ -20,7 +20,14 @@
 			"trigger": "minecraft:item_durability_changed",
 			"conditions": {
 				"item": {
-					"items": [ "minecraft:diamond_hoe" ],
+					"items": [
+						"minecraft:wooden_hoe",
+						"minecraft:stone_hoe",
+						"minecraft:iron_hoe",
+						"minecraft:gold_hoe",
+						"minecraft:diamond_hoe",
+						"minecraft:netherite_hoe"
+					],
 					"nbt": "{breaking:1b}"
 				},
 				"player": {

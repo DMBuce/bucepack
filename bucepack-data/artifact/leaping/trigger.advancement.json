@@ -26,7 +26,6 @@
 						"predicate": {
 							"equipment": {
 								"feet": {
-									"items": [ "minecraft:diamond_boots" ],
 									"nbt": "{leaping:1b}"
 								}
 							}
@@ -90,7 +89,6 @@
 						"predicate": {
 							"equipment": {
 								"feet": {
-									"items": [ "minecraft:diamond_boots" ],
 									"nbt": "{leaping:1b}"
 								}
 							}

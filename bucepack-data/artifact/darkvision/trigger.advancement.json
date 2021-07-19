@@ -26,7 +26,6 @@
 						"predicate": {
 							"equipment": {
 								"head": {
-									"items": [ "minecraft:diamond_helmet" ],
 									"nbt": "{darkvision:1b}"
 								}
 							}
@@ -90,7 +89,6 @@
 						"predicate": {
 							"equipment": {
 								"head": {
-									"items": [ "minecraft:diamond_helmet" ],
 									"nbt": "{darkvision:1b}"
 								}
 							}

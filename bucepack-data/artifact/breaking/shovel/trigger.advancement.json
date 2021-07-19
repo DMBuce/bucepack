@@ -20,7 +20,14 @@
 			"trigger": "minecraft:item_durability_changed",
 			"conditions": {
 				"item": {
-					"items": [ "minecraft:diamond_shovel" ],
+					"items": [
+						"minecraft:wooden_shovel",
+						"minecraft:stone_shovel",
+						"minecraft:iron_shovel",
+						"minecraft:gold_shovel",
+						"minecraft:diamond_shovel",
+						"minecraft:netherite_shovel"
+					],
 					"nbt": "{breaking:1b}"
 				},
 				"player": {
