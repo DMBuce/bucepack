@@ -6,7 +6,7 @@ RESOURCEPACKFILES = painting_overhaul.zip note_guide.zip brew_guide.zip \
 	classic_moo.zip classic_twang.zip classic_sploosh.zip classic_crunch.zip
 DATAPACKFILES = gardener_endermen.zip climbable.zip speedy_paths.zip \
 	no_treasure_maps.zip fortunate_jungle.zip dragonproof.zip \
-	shearless.zip studly.zip \
+	shearless.zip studly.zip smooth_cracked_stonecutting.zip \
 	loot_overhaul.zip artifact_loot.zip more_shulker_shells.zip \
 	starter_bed.zip starter_book.zip starter_bucket.zip starter_map.zip \
 	starter_shulker.zip starter_artifact.zip starter_bonus_chest.zip \
@@ -598,6 +598,19 @@ studly_FILES := $(DEFAULT_FILES) \
 	data/bucepack/functions/studly/debug.mcfunction \
 	data/bucepack/functions/studly/load.mcfunction
 
+smooth_cracked_stonecutting_FILES := $(DEFAULT_FILES) \
+	data/bucepack/advancements/smooth_cracked_stonecutting/root.json \
+	data/bucepack/recipes/smooth_cracked_stonecutting/cracked_deepslate_bricks.json \
+	data/bucepack/recipes/smooth_cracked_stonecutting/cracked_deepslate_tiles.json \
+	data/bucepack/recipes/smooth_cracked_stonecutting/cracked_nether_bricks.json \
+	data/bucepack/recipes/smooth_cracked_stonecutting/cracked_polished_blackstone_bricks.json \
+	data/bucepack/recipes/smooth_cracked_stonecutting/cracked_stone_bricks.json \
+	data/bucepack/recipes/smooth_cracked_stonecutting/smooth_basalt.json \
+	data/bucepack/recipes/smooth_cracked_stonecutting/smooth_quartz.json \
+	data/bucepack/recipes/smooth_cracked_stonecutting/smooth_red_sandstone.json \
+	data/bucepack/recipes/smooth_cracked_stonecutting/smooth_sandstone.json \
+	data/bucepack/recipes/smooth_cracked_stonecutting/smooth_stone.json \
+
 more_shulker_shells_FILES := $(DEFAULT_FILES) \
 	data/minecraft/loot_tables/entities/shulker.json \
 	data/bucepack/advancements/more_shulker_shells.json
@@ -992,6 +1005,11 @@ mixed_crafting.zip: $(mixed_crafting_FILES)
 	zip $@ pack.png pack.mcmeta $^
 
 studly.zip: $(studly_FILES)
+	cp meta/$(@:.zip=.png) pack.png
+	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
+	zip $@ pack.png pack.mcmeta $^
+
+smooth_cracked_stonecutting.zip: $(smooth_cracked_stonecutting_FILES)
 	cp meta/$(@:.zip=.png) pack.png
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^

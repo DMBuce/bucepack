@@ -1,0 +1,22 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:smooth_stone"
+		},
+		"title": {
+			"text": "Smooth & Cracked Stonecutting"
+		},
+		"description": {
+			"text": "Adds smooth and cracked variants to the stonecutter"
+		},
+		"show_toast": false,
+		"announce_to_chat": false,
+		"frame": "task"
+	},
+	"parent": "bucepack:root",
+	"criteria": {
+		"tick": {
+			"trigger": "minecraft:tick"
+		}
+	}
+}
