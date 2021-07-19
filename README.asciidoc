@@ -452,21 +452,16 @@ Download: https://github.com/DMBuce/bucepack/releases
 
 Build: `make loot_overhaul.zip`
 
-=== Artifact Loot
-
-This is an addon pack for the
-<<loot-overhaul,Loot Overhaul>>
-datapack above. It adds artifact items to the loot tables that spawn with a one
-in a thousand chance in chests and a one in a million chance from fishing.
-
-TODO: document limitations of Breaking
-* Doesn't work while sneaking
-* Doesn't work if the block that was broken didn't drop an item
-* Doesn't work with Unbreaking
-
-Download: https://github.com/DMBuce/bucepack/releases
-
-Build: `make artifact_loot.zip`
+//=== Artifact Loot
+//
+//This is an addon pack for the
+//<<loot-overhaul,Loot Overhaul>>
+//datapack above. It adds <<Artifacts>> to the loot tables that spawn with a one
+//in a thousand chance in chests and a one in a million chance from fishing.
+//
+//Download: https://github.com/DMBuce/bucepack/releases
+//
+//Build: `make artifact_loot.zip`
 
 === Starter Item
 
@@ -487,12 +482,12 @@ Starter Shulker adds a Shulker Box to the bonus spawn chest.
 If several of the above Starter Item packs are installed, the bonus chest will spawn one
 starter item chosen at random.
 
-Starter Artifact adds a random <<artifacts,Artifact>> to each player's
-inventory the first time they join the world. Unlike the other starter packs
-here, it does not change the bonus spawn chest.
-
 Starter Bonus Chest adds a bonus spawn chest to each player's
 inventory the first time they join the world.
+
+Starter Artifact adds a random <<artifacts,Artifact>> to each player's
+inventory the first time they join the world. It does not change the bonus
+spawn chest.
 
 Download: https://github.com/DMBuce/bucepack/releases
 
@@ -894,6 +889,7 @@ Add new ores to Ore Types
 Add new End blocks to Dragonproof
 Add new potions to Brewing Guide
 Add new hostile mobs to beheading loot table
+Add new smooth & cracked blocks to stonecutter
 
 HOW TO UPDATE LOOT TABLES AFTER MINECRAFT UPDATES
 =================================================
