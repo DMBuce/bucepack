@@ -346,6 +346,7 @@ Blocks associated with picks:
 * Smithing Table
 
 Blocks associated with axes:
+
 * Cactus
 * Beds
 * Skulls
