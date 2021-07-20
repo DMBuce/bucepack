@@ -308,9 +308,9 @@ Build: `make dragonproof.zip`
 
 === Climbable
 
-Lets you climb chains.
+Lets you climb chains and iron bars.
 
-image::https://i.imgur.com/4yukdfV.png[Climbable]
+//image::https://i.imgur.com/4yukdfV.png[Climbable]
 
 Download: https://github.com/DMBuce/bucepack/releases
 
