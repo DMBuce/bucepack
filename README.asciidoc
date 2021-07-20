@@ -308,13 +308,9 @@ Build: `make dragonproof.zip`
 
 === Climbable
 
-Lets you climb chains and bamboo.
+Lets you climb chains.
 
 image::https://i.imgur.com/4yukdfV.png[Climbable]
-
-Note that you need to be in the same block space as the block you're climbing.
-Since bamboo is randomly offset from the center of the block it's in,
-some bamboo shoots will have one or two sides that aren't climbable.
 
 Download: https://github.com/DMBuce/bucepack/releases
 
@@ -329,6 +325,33 @@ image::https://i.imgur.com/XafV8TN.png[Speedy Paths]
 Download: https://github.com/DMBuce/bucepack/releases
 
 Build: `make speedy_paths.zip`
+
+=== Mineable
+
+In vanilla Minecraft, certain blocks like glass have no tool associated with
+them, so their breaking speed is the same whether you're using your fist or a
+tool or an Efficiency tool. This pack gives more blocks an associated tool.
+
+Blocks associated with picks:
+
+* Glass
+* Stained Glass
+* Glass Panes
+* Tinted Glass
+* Beacon
+* Sea Lantern
+* Glowstone
+* Redstone Lamp
+* Lever
+* Smithing Table
+
+Blocks associated with axes:
+* Cactus
+* Beds
+* Skulls
+* Heads
+* Cakes
+* Honeycomb Blocks
 
 === Shearless
 
@@ -718,7 +741,9 @@ for details.
 A diamond pick with Efficiency V, Sharpness V, and Breaking, a mythic
 enchantment that breaks certain blocks in a 3x3 pattern.
 
-Breaking does not activate while sneaking, nor when Unbreaking preserves a
+To toggle Breaking on or off, sneak while breaking a block.
+
+Breaking does not activate when Unbreaking preserves a
 tool's durability, nor when a broken block doesn't drop anything.
 
 === Treefeller
@@ -726,7 +751,9 @@ tool's durability, nor when a broken block doesn't drop anything.
 A diamond axe with Efficiency V, Fire Aspect III, and Breaking, a mythic
 enchantment that breaks certain blocks in a column 33 blocks high.
 
-Breaking does not activate while sneaking, nor when Unbreaking preserves a
+To toggle Breaking on or off, sneak while breaking a block.
+
+Breaking does not activate when Unbreaking preserves a
 tool's durability, nor when a broken block doesn't drop anything.
 
 === Gravedigger
@@ -734,7 +761,9 @@ tool's durability, nor when a broken block doesn't drop anything.
 A diamond shovel with Efficiency V, Sharpness V, and Breaking, a mythic
 enchantment that breaks certain blocks in a column 9 blocks high.
 
-Breaking does not activate while sneaking, nor when Unbreaking preserves a
+To toggle Breaking on or off, sneak while breaking a block.
+
+Breaking does not activate when Unbreaking preserves a
 tool's durability, nor when a broken block doesn't drop anything.
 
 === Herdsmacker
@@ -742,7 +771,9 @@ tool's durability, nor when a broken block doesn't drop anything.
 A diamond hoe with Efficiency V, Knockback V, and Breaking, a mythic
 enchantment that breaks certain blocks in a 3x3x3 sphere.
 
-Breaking does not activate while sneaking, nor when Unbreaking preserves a
+To toggle Breaking on or off, sneak while breaking a block.
+
+Breaking does not activate when Unbreaking preserves a
 tool's durability, nor when a broken block doesn't drop anything.
 
 === Vorpal Blade
@@ -822,7 +853,7 @@ Elytra with Unbreaking III, +3 Armor (equivalent to a Leather Chestplate), and
 Cloaking, a mythic enchantment that provides 8 minutes of invisibility when
 you take damage or eat food.
 
-=== Seeker''s Scope
+=== Seeker's Scope
 
 A spyglass with Infinity and Searching, a mythic enchantment that makes a
 *ding* sound while looking in the direction of a structure when you charge the

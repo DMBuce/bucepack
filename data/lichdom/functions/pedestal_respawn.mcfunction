@@ -10,7 +10,7 @@ scoreboard players set @s respawning 0
 
 # visual and sound effects
 particle minecraft:totem_of_undying ~ ~0.5 ~ 0.1 0.1 0.1 1 200
-playsound minecraft:item.totem.use player @s
+playsound minecraft:item.totem.use player @a
 
 # potion effects
 effect give @s minecraft:instant_damage 1 1 true

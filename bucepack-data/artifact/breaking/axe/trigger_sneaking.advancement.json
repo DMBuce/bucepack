@@ -4,10 +4,10 @@
 			"item": "minecraft:diamond_axe"
 		},
 		"title": {
-			"text": "Breaking"
+			"text": "Toggle Breaking"
 		},
 		"description": {
-			"text": "Activate Treefeller"
+			"text": "Toggle Treefeller"
 		},
 		"show_toast": false,
 		"announce_to_chat": false,
@@ -32,13 +32,13 @@
 				},
 				"player": {
 					"flags": {
-						"is_sneaking": false
+						"is_sneaking": true
 					}
 				}
 			}
 		}
 	},
 	"rewards": {
-		"function": "bucepack:artifact/breaking/axe/activate"
+		"function": "bucepack:artifact/breaking/toggle"
 	}
 }

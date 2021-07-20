@@ -1,14 +1,13 @@
 {
 	"display": {
 		"icon": {
-			"item": "minecraft:diamond_sword",
-			"nbt": "{Enchantments:[{id:unbreaking,lvl:3}]}"
+			"item": "minecraft:glass"
 		},
 		"title": {
-			"text": "Artifacts"
+			"text": "Mineable"
 		},
 		"description": {
-			"text": "Rare items"
+			"text": "Makes Efficiency work with more blocks"
 		},
 		"show_toast": false,
 		"announce_to_chat": false,
@@ -19,8 +18,5 @@
 		"tick": {
 			"trigger": "minecraft:tick"
 		}
-	},
-	"rewards": {
-		"function": "bucepack:artifact/artifact"
 	}
 }

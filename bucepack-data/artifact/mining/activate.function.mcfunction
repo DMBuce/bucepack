@@ -6,3 +6,6 @@ advancement revoke @s only bucepack:artifact/mining/trigger
 # give haste
 effect give @s haste 60 0 true
 
+# sound effect
+playsound minecraft:block.enchantment_table.use player @a
+

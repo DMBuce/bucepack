@@ -4,8 +4,8 @@
 advancement revoke @s only bucepack:artifact/breaking/pick/trigger
 
 # tag player
-tag @s add breaking_pick
+tag @s[tag=breaking_enabled] add breaking_pick
 
 # break blocks in 1t when the item will exist
-schedule function bucepack:artifact/breaking/pick/mine 1t append
+execute if entity @s[tag=breaking_enabled] run schedule function bucepack:artifact/breaking/pick/mine 1t append
 

@@ -15,6 +15,10 @@ data modify entity @s Health set value 60.0
 # give permanent glowing
 effect give @s glowing 1000000 0 true
 
+# visual and sound effects
+particle minecraft:totem_of_undying ~ ~0.5 ~ 0.1 0.1 0.1 1 200
+playsound minecraft:ui.toast.challenge_complete player @a
+
 # clean up
 tag @s remove clicked
 

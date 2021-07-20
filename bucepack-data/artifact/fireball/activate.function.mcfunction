@@ -1,5 +1,8 @@
 # runs as a player who charged their fireball bow
 
+# sound effect
+execute anchored eyes positioned ^ ^-0.5 ^2 unless entity @e[type=fireball,distance=..1] run playsound minecraft:entity.ghast.shoot player @a
+
 # summon fireball
 #title @s actionbar "Fireball!"
 execute anchored eyes positioned ^ ^-0.5 ^2 unless entity @e[type=fireball,distance=..1] run summon minecraft:fireball ~ ~ ~ {ExplosionPower:3}

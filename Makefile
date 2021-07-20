@@ -7,7 +7,7 @@ RESOURCEPACKFILES = painting_overhaul.zip note_guide.zip brew_guide.zip \
 	classic_moo.zip classic_twang.zip classic_sploosh.zip classic_crunch.zip
 DATAPACKFILES = gardener_endermen.zip climbable.zip speedy_paths.zip \
 	no_treasure_maps.zip fortunate_jungle.zip dragonproof.zip \
-	shearless.zip breeding_overhaul.zip smooth_cracked_stonecutting.zip \
+	mineable.zip shearless.zip breeding_overhaul.zip smooth_cracked_stonecutting.zip \
 	loot_overhaul.zip artifact_loot.zip more_shulker_shells.zip \
 	starter_bed.zip starter_book.zip starter_bucket.zip starter_map.zip \
 	starter_shulker.zip starter_artifact.zip starter_bonus_chest.zip \
@@ -524,28 +524,41 @@ artifact_FILES := $(DEFAULT_FILES) \
 	data/minecraft/loot_tables/entities/zombie.json \
 	data/minecraft/recipes/light.json \
 	data/minecraft/tags/functions/load-artifact.json \
+	data/bucepack/functions/artifact/artifact.mcfunction \
+	data/bucepack/advancements/artifact/breaking/axe/trigger_sneaking.json \
+	data/bucepack/advancements/artifact/breaking/hoe/trigger_sneaking.json \
+	data/bucepack/advancements/artifact/breaking/pick/trigger_sneaking.json \
+	data/bucepack/advancements/artifact/breaking/shovel/trigger_sneaking.json \
+	data/bucepack/functions/artifact/breaking/toggle.mcfunction \
+	data/bucepack/functions/artifact/breaking/off.mcfunction \
+	data/bucepack/functions/artifact/breaking/on.mcfunction \
 
 starter_artifact_FILES := $(DEFAULT_FILES) \
 	$(artifact_FILES) \
 	data/bucepack/advancements/artifact/artifact.json \
 	data/bucepack/advancements/artifact/starter_artifact.json \
 	data/bucepack/advancements/root.json \
-	data/bucepack/functions/artifact/starter_artifact.mcfunction
+	data/bucepack/functions/artifact/starter_artifact.mcfunction \
 
 artifact_loot_FILES := $(DEFAULT_FILES) \
 	$(artifact_FILES) \
 	data/bucepack/advancements/artifact/artifact.json \
 	data/bucepack/advancements/artifact/artifact_loot.json \
-	data/bucepack/advancements/root.json
+	data/bucepack/advancements/root.json \
 
 starter_bonus_chest_FILES := $(DEFAULT_FILES) \
 	data/bucepack/advancements/starter_bonus_chest.json \
 	data/bucepack/advancements/root.json \
-	data/bucepack/functions/starter_bonus_chest.mcfunction
+	data/bucepack/functions/starter_bonus_chest.mcfunction \
 
 dragonproof_FILES := $(DEFAULT_FILES) \
 	data/bucepack/advancements/dragonproof.json \
-	data/minecraft/tags/blocks/dragon_immune.json
+	data/minecraft/tags/blocks/dragon_immune.json \
+
+mineable_FILES := $(DEFAULT_FILES) \
+	data/minecraft/tags/blocks/mineable/axe.json \
+	data/minecraft/tags/blocks/mineable/pickaxe.json \
+	data/bucepack/advancements/mineable.json \
 
 shearless_FILES := $(DEFAULT_FILES) \
 	data/minecraft/tags/blocks/mineable/hoe.json \
@@ -566,7 +579,7 @@ shearless_FILES := $(DEFAULT_FILES) \
 	data/minecraft/loot_tables/blocks/vine.json \
 	data/minecraft/loot_tables/blocks/weeping_vines.json \
 	data/minecraft/loot_tables/blocks/weeping_vines_plant.json \
-	data/bucepack/advancements/shearless.json
+	data/bucepack/advancements/shearless.json \
 
 mixed_crafting_FILES := $(DEFAULT_FILES) \
 	data/minecraft/recipes/bed.json \
@@ -999,6 +1012,11 @@ artifact_loot.zip: $(artifact_loot_FILES)
 	printf "@ data/minecraft/tags/functions/load-artifact.json\n@=data/minecraft/tags/functions/load.json\n" | zipnote -w $@
 
 dragonproof.zip: $(dragonproof_FILES)
+	cp meta/$(@:.zip=.png) pack.png
+	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
+	zip $@ pack.png pack.mcmeta $^
+
+mineable.zip: $(mineable_FILES)
 	cp meta/$(@:.zip=.png) pack.png
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^

@@ -1,7 +1,7 @@
 # runs as a player who charged their searching spyglass
 
 # play sound
-playsound minecraft:entity.player.levelup player @s
+playsound minecraft:entity.player.levelup player @a
 
 # summon ender eye
 #execute anchored eyes positioned ^ ^-0.125 ^2 unless entity @e[type=snowball,tag=searching_eye,distance=50] run summon minecraft:snowball ~ ~ ~ {NoGravity:1b,Invulnerable:1b,Item:{id:"minecraft:eye_of_ender",Count:1b,Enchantments:[{id:infinity,lvl:1}]},Tags:["searching_eye"]}

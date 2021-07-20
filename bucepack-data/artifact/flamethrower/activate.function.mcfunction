@@ -19,7 +19,7 @@ data modify entity @e[type=small_fireball,tag=flame_thrown,limit=1] Owner set fr
 tag @e[tag=flame_thrown] remove flame_thrown
 
 # play sound
-playsound minecraft:entity.blaze.shoot player @s
+playsound minecraft:entity.blaze.shoot player @a
 
 # reset flamethrower charge
 scoreboard players set @s flame_charge 13

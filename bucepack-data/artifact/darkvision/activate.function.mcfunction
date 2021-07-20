@@ -6,3 +6,6 @@ advancement revoke @s only bucepack:artifact/darkvision/trigger
 # give night vision
 effect give @s night_vision 480 0 true
 
+# sound effect
+playsound minecraft:block.enchantment_table.use player @a
+

@@ -1,13 +1,13 @@
 {
 	"display": {
 		"icon": {
-			"item": "minecraft:diamond_axe"
+			"item": "minecraft:diamond_hoe"
 		},
 		"title": {
-			"text": "Breaking"
+			"text": "Toggle Breaking"
 		},
 		"description": {
-			"text": "Activate Treefeller"
+			"text": "Toggle Herdsmacker"
 		},
 		"show_toast": false,
 		"announce_to_chat": false,
@@ -21,24 +21,24 @@
 			"conditions": {
 				"item": {
 					"items": [
-						"minecraft:wooden_axe",
-						"minecraft:stone_axe",
-						"minecraft:iron_axe",
-						"minecraft:golden_axe",
-						"minecraft:diamond_axe",
-						"minecraft:netherite_axe"
+						"minecraft:wooden_hoe",
+						"minecraft:stone_hoe",
+						"minecraft:iron_hoe",
+						"minecraft:golden_hoe",
+						"minecraft:diamond_hoe",
+						"minecraft:netherite_hoe"
 					],
 					"nbt": "{breaking:1b}"
 				},
 				"player": {
 					"flags": {
-						"is_sneaking": false
+						"is_sneaking": true
 					}
 				}
 			}
 		}
 	},
 	"rewards": {
-		"function": "bucepack:artifact/breaking/axe/activate"
+		"function": "bucepack:artifact/breaking/toggle"
 	}
 }
