@@ -376,14 +376,17 @@ Build: `make shearless.zip`
 
 === More Shulker Shells
 
-Makes shulkers drop 0-2 shells. Looting increases your chance of getting more
-shells, as shown in the table below
+Gives shulkers a chance to drop 2 shulker shells when killed with looting.
+Higher levels increase the chance of two shells dropping, as shown in the
+table below.
 
- # Shells |  -  |  I  | II    | III
- ------------------------------------
-        0 | 33% | 33% | 25%   | 16.7%
-        1 | 33% | 33% | 33.3% | 33.3%
-        2 | 33% | 33% | 41.7% | 50%
+          |      Looting Level
+          |---------------------------
+ # Shells |  0  |   I   |  II   | III
+ -------------------------------------
+        0 | 50% | 37.0% | 10.9% |
+        1 | 50% | 50%   | 50%   | 50%
+        2 |     | 13.0% | 39.1% | 50%
 
 This datapack is not compatible with other datapacks that modify the Shulker
 loot table.
