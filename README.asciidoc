@@ -354,6 +354,10 @@ Blocks associated with axes:
 * Cakes
 * Honeycomb Blocks
 
+Download: https://github.com/DMBuce/bucepack/releases
+
+Build: `make mineable.zip`
+
 === Shearless
 
 Makes hoes able to harvest blocks that are normally obtained with shears.
