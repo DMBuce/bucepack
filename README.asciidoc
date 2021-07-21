@@ -97,10 +97,9 @@ Build: `make note_guide.zip`
 
 === Brew Guide
 
-
 Adds a simple cheat sheet to the brewing stand GUI to remind you how potions are made.
 
-image::https://i.imgur.com/edmhYeq.png[Brew Guide]
+image::https://i.imgur.com/hhyxHA2.png[Brew Guide]
 
 Download: https://github.com/DMBuce/bucepack/releases
 
@@ -413,6 +412,21 @@ Leaves loot table.
 Download: https://github.com/DMBuce/bucepack/releases
 
 Build: `make fortunate_jungle.zip`
+
+=== Lose HP & XP
+
+Keep inventory with downsides. Players keep their inventory and lose all
+experience when they die. The XP does not drop as orbs. In addition,
+saturation does not heal players.
+
+This datapack sets gamerules the first time it loads, so
+if you want food to heal normally and just want to lose your levels and not
+your inventory when you die, run `/gamerule naturalRegeneration true` after
+install.
+
+Download: https://github.com/DMBuce/bucepack/releases
+
+Build: `make lose_hp_xp.zip`
 
 === Loot Overhaul
 

@@ -7,7 +7,8 @@ RESOURCEPACKFILES = painting_overhaul.zip note_guide.zip brew_guide.zip \
 	classic_moo.zip classic_twang.zip classic_sploosh.zip classic_crunch.zip
 DATAPACKFILES = gardener_endermen.zip climbable.zip speedy_paths.zip \
 	no_treasure_maps.zip fortunate_jungle.zip dragonproof.zip \
-	mineable.zip shearless.zip breeding_overhaul.zip smooth_cracked_stonecutting.zip \
+	mineable.zip shearless.zip breeding_overhaul.zip \
+	smooth_cracked_stonecutting.zip lose_hp_xp.zip \
 	loot_overhaul.zip artifact_loot.zip more_shulker_shells.zip \
 	starter_bed.zip starter_book.zip starter_bucket.zip starter_map.zip \
 	starter_shulker.zip starter_artifact.zip starter_bonus_chest.zip \
@@ -322,6 +323,13 @@ fortunate_jungle_FILES := $(DEFAULT_FILES) \
 	data/minecraft/loot_tables/blocks/jungle_leaves.json \
 	data/bucepack/advancements/fortunate_jungle.json
 
+lose_hp_xp_FILES := $(DEFAULT_FILES) \
+	data/bucepack/advancements/lose_hp_xp/die.json \
+	data/bucepack/advancements/lose_hp_xp/root.json \
+	data/bucepack/functions/lose_hp_xp/load.mcfunction \
+	data/bucepack/functions/lose_hp_xp/die.mcfunction \
+	data/minecraft/tags/functions/load-lose_hp_xp.json \
+
 loot_overhaul_FILES := $(DEFAULT_FILES) \
 	data/bucepack/advancements/root.json \
 	data/bucepack/advancements/loot_overhaul/loot_overhaul.json \
@@ -387,9 +395,13 @@ loot_overhaul_FILES := $(DEFAULT_FILES) \
 artifact_FILES := $(DEFAULT_FILES) \
 	data/bucepack/advancements/artifact/absorbing/trigger.json \
 	data/bucepack/advancements/artifact/breaking/axe/trigger.json \
+	data/bucepack/advancements/artifact/breaking/axe/trigger_sneaking.json \
 	data/bucepack/advancements/artifact/breaking/hoe/trigger.json \
+	data/bucepack/advancements/artifact/breaking/hoe/trigger_sneaking.json \
 	data/bucepack/advancements/artifact/breaking/pick/trigger.json \
+	data/bucepack/advancements/artifact/breaking/pick/trigger_sneaking.json \
 	data/bucepack/advancements/artifact/breaking/shovel/trigger.json \
+	data/bucepack/advancements/artifact/breaking/shovel/trigger_sneaking.json \
 	data/bucepack/advancements/artifact/chromatic/trigger.json \
 	data/bucepack/advancements/artifact/cloaking/trigger.json \
 	data/bucepack/advancements/artifact/darkvision/trigger.json \
@@ -398,6 +410,7 @@ artifact_FILES := $(DEFAULT_FILES) \
 	data/bucepack/advancements/artifact/gravitation/trigger_sneaking.json \
 	data/bucepack/advancements/artifact/leaping/trigger.json \
 	data/bucepack/advancements/artifact/mining/trigger.json \
+	data/bucepack/advancements/artifact/root.json \
 	data/bucepack/advancements/artifact/searching/bastion_remnant/trigger.json \
 	data/bucepack/advancements/artifact/searching/buried_treasure/trigger.json \
 	data/bucepack/advancements/artifact/searching/desert_pyramid/trigger.json \
@@ -423,6 +436,7 @@ artifact_FILES := $(DEFAULT_FILES) \
 	data/bucepack/advancements/artifact/splendor/trigger.json \
 	data/bucepack/advancements/artifact/stormcalling/trigger.json \
 	data/bucepack/functions/artifact/absorbing/activate.mcfunction \
+	data/bucepack/functions/artifact/artifact.mcfunction \
 	data/bucepack/functions/artifact/breaking/axe/activate.mcfunction \
 	data/bucepack/functions/artifact/breaking/axe/break.mcfunction \
 	data/bucepack/functions/artifact/breaking/axe/chop.mcfunction \
@@ -433,6 +447,8 @@ artifact_FILES := $(DEFAULT_FILES) \
 	data/bucepack/functions/artifact/breaking/hoe/break_xz.mcfunction \
 	data/bucepack/functions/artifact/breaking/hoe/break_yz.mcfunction \
 	data/bucepack/functions/artifact/breaking/hoe/mine.mcfunction \
+	data/bucepack/functions/artifact/breaking/off.mcfunction \
+	data/bucepack/functions/artifact/breaking/on.mcfunction \
 	data/bucepack/functions/artifact/breaking/pick/activate.mcfunction \
 	data/bucepack/functions/artifact/breaking/pick/break_3x3.mcfunction \
 	data/bucepack/functions/artifact/breaking/pick/break.mcfunction \
@@ -440,6 +456,7 @@ artifact_FILES := $(DEFAULT_FILES) \
 	data/bucepack/functions/artifact/breaking/shovel/activate.mcfunction \
 	data/bucepack/functions/artifact/breaking/shovel/break.mcfunction \
 	data/bucepack/functions/artifact/breaking/shovel/mine.mcfunction \
+	data/bucepack/functions/artifact/breaking/toggle.mcfunction \
 	data/bucepack/functions/artifact/chromatic/activate.mcfunction \
 	data/bucepack/functions/artifact/chromatic/party.mcfunction \
 	data/bucepack/functions/artifact/cloaking/activate.mcfunction \
@@ -524,25 +541,15 @@ artifact_FILES := $(DEFAULT_FILES) \
 	data/minecraft/loot_tables/entities/zombie.json \
 	data/minecraft/recipes/light.json \
 	data/minecraft/tags/functions/load-artifact.json \
-	data/bucepack/functions/artifact/artifact.mcfunction \
-	data/bucepack/advancements/artifact/breaking/axe/trigger_sneaking.json \
-	data/bucepack/advancements/artifact/breaking/hoe/trigger_sneaking.json \
-	data/bucepack/advancements/artifact/breaking/pick/trigger_sneaking.json \
-	data/bucepack/advancements/artifact/breaking/shovel/trigger_sneaking.json \
-	data/bucepack/functions/artifact/breaking/toggle.mcfunction \
-	data/bucepack/functions/artifact/breaking/off.mcfunction \
-	data/bucepack/functions/artifact/breaking/on.mcfunction \
 
 starter_artifact_FILES := $(DEFAULT_FILES) \
 	$(artifact_FILES) \
-	data/bucepack/advancements/artifact/artifact.json \
 	data/bucepack/advancements/artifact/starter_artifact.json \
 	data/bucepack/advancements/root.json \
 	data/bucepack/functions/artifact/starter_artifact.mcfunction \
 
 artifact_loot_FILES := $(DEFAULT_FILES) \
 	$(artifact_FILES) \
-	data/bucepack/advancements/artifact/artifact.json \
 	data/bucepack/advancements/artifact/artifact_loot.json \
 	data/bucepack/advancements/root.json \
 
@@ -988,6 +995,12 @@ fortunate_jungle.zip: $(fortunate_jungle_FILES)
 	cp meta/$(@:.zip=.png) pack.png
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^
+
+lose_hp_xp.zip: $(lose_hp_xp_FILES)
+	cp meta/$(@:.zip=.png) pack.png
+	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
+	zip $@ pack.png pack.mcmeta $^
+	printf "@ data/minecraft/tags/functions/load-lose_hp_xp.json\n@=data/minecraft/tags/functions/load.json\n" | zipnote -w $@
 
 loot_overhaul.zip: $(loot_overhaul_FILES)
 	cp meta/$(@:.zip=.png) pack.png
