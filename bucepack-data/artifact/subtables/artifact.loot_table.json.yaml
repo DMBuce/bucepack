@@ -2,31 +2,31 @@ pools:
   - rolls: 1
     entries:
 #      - { type: item, weight: 1, item: diamond_pickaxe,
-#          nbt: '{artifact:1b,breaking:1b,display:{Name:\"{\\\"text\\\":\\\"Stonebreaker\\\",\\\"color\\\":\\\"light_purple\\\"}\",Lore:[\"\\\"§r§bSmashing\\\"\"]},Enchantments:[{id:efficiency,lvl:5},{id:sharpness,lvl:5}]}'
+#          nbt: '{artifact:1b,breaking:1b,display:{Name:\"{\\\"text\\\":\\\"Stonebreaker\\\",\\\"color\\\":\\\"light_purple\\\"}\",Lore:[\"\\\"§r§bSmashing\\\"\"]},Enchantments:[{id:sharpness,lvl:5}]}'
 #        }
 #      - { type: item, weight: 1, item: diamond_axe,
-#          nbt: '{artifact:1b,breaking:1b,display:{Name:\"{\\\"text\\\":\\\"Treefeller\\\",\\\"color\\\":\\\"light_purple\\\"}\",Lore:[\"\\\"§r§bBreaking\\\"\"]},Enchantments:[{id:efficiency,lvl:5},{id:fire_aspect,lvl:3}]}'
+#          nbt: '{artifact:1b,breaking:1b,display:{Name:\"{\\\"text\\\":\\\"Treefeller\\\",\\\"color\\\":\\\"light_purple\\\"}\",Lore:[\"\\\"§r§bBreaking\\\"\"]},Enchantments:[{id:fire_aspect,lvl:3}]}'
 #        }
 #      - { type: item, weight: 1, item: diamond_shovel,
-#          nbt: '{artifact:1b,breaking:1b,display:{Name:\"{\\\"text\\\":\\\"Sandripper\\\",\\\"color\\\":\\\"light_purple\\\"}\",Lore:[\"\\\"§r§bBreaking\\\"\"]},Enchantments:[{id:efficiency,lvl:5},{id:sharpness,lvl:5}]}'
+#          nbt: '{artifact:1b,breaking:1b,display:{Name:\"{\\\"text\\\":\\\"Sandripper\\\",\\\"color\\\":\\\"light_purple\\\"}\",Lore:[\"\\\"§r§bBreaking\\\"\"]},Enchantments:[{id:sharpness,lvl:5}]}'
 #        }
 #      - { type: item, weight: 1, item: diamond_hoe,
-#          nbt: '{artifact:1b,breaking:1b,display:{Name:\"{\\\"text\\\":\\\"Branchbiter\\\",\\\"color\\\":\\\"light_purple\\\"}\",Lore:[\"\\\"§r§bSmashing\\\"\"]},Enchantments:[{id:efficiency,lvl:5},{id:knockback,lvl:3}]}'
+#          nbt: '{artifact:1b,breaking:1b,display:{Name:\"{\\\"text\\\":\\\"Branchbiter\\\",\\\"color\\\":\\\"light_purple\\\"}\",Lore:[\"\\\"§r§bSmashing\\\"\"]},Enchantments:[{id:knockback,lvl:3}]}'
 #        }
       - { type: item, weight: 1, item: diamond_pickaxe,
-          nbt: '{artifact:1b,breaking:1b,display:{Name:\"{\\\"text\\\":\\\"Bonebreaker\\\",\\\"color\\\":\\\"light_purple\\\"}\",Lore:[\"\\\"§r§bBreaking\\\"\"]},Enchantments:[{id:efficiency,lvl:5},{id:sharpness,lvl:5}]}'
+          nbt: '{artifact:1b,breaking:1b,display:{Name:\"{\\\"text\\\":\\\"Bonebreaker\\\",\\\"color\\\":\\\"light_purple\\\"}\",Lore:[\"\\\"§r§bBreaking\\\"\"]},Enchantments:[{id:sharpness,lvl:5}]}'
         }
       - { type: item, weight: 1, item: diamond_axe,
-          nbt: '{artifact:1b,breaking:1b,display:{Name:\"{\\\"text\\\":\\\"Treefeller\\\",\\\"color\\\":\\\"light_purple\\\"}\",Lore:[\"\\\"§r§bBreaking\\\"\"]},Enchantments:[{id:efficiency,lvl:5},{id:fire_aspect,lvl:3}]}'
+          nbt: '{artifact:1b,breaking:1b,display:{Name:\"{\\\"text\\\":\\\"Treefeller\\\",\\\"color\\\":\\\"light_purple\\\"}\",Lore:[\"\\\"§r§bBreaking\\\"\"]},Enchantments:[{id:fire_aspect,lvl:3}]}'
         }
       - { type: item, weight: 1, item: diamond_shovel,
-          nbt: '{artifact:1b,breaking:1b,display:{Name:\"{\\\"text\\\":\\\"Gravedigger\\\",\\\"color\\\":\\\"light_purple\\\"}\",Lore:[\"\\\"§r§bBreaking\\\"\"]},Enchantments:[{id:efficiency,lvl:5},{id:sharpness,lvl:5}]}'
+          nbt: '{artifact:1b,breaking:1b,display:{Name:\"{\\\"text\\\":\\\"Gravedigger\\\",\\\"color\\\":\\\"light_purple\\\"}\",Lore:[\"\\\"§r§bBreaking\\\"\"]},Enchantments:[{id:sharpness,lvl:5}]}'
         }
       - { type: item, weight: 1, item: diamond_hoe,
-          nbt: '{artifact:1b,breaking:1b,display:{Name:\"{\\\"text\\\":\\\"Herdsmacker\\\",\\\"color\\\":\\\"light_purple\\\"}\",Lore:[\"\\\"§r§bBreaking\\\"\"]},Enchantments:[{id:efficiency,lvl:5},{id:knockback,lvl:5}]}'
+          nbt: '{artifact:1b,breaking:1b,display:{Name:\"{\\\"text\\\":\\\"Herdsmacker\\\",\\\"color\\\":\\\"light_purple\\\"}\",Lore:[\"\\\"§r§bBreaking\\\"\"]},Enchantments:[{id:knockback,lvl:5}]}'
         }
       - { type: item, weight: 1, item: diamond_sword,
-          nbt: '{artifact:1b,beheading:1b,display:{Name:\"{\\\"text\\\":\\\"Vorpal Blade\\\",\\\"color\\\":\\\"light_purple\\\"}\",Lore:[\"\\\"§r§bBeheading\\\"\"]},Enchantments:[{id:sharpness,lvl:4},{id:smite,lvl:4},{id:looting,lvl:3}]}'
+          nbt: '{artifact:1b,beheading:1b,display:{Name:\"{\\\"text\\\":\\\"Vorpal Blade\\\",\\\"color\\\":\\\"light_purple\\\"}\",Lore:[\"\\\"§r§bBeheading\\\"\"]},Enchantments:[{id:sharpness,lvl:4},{id:smite,lvl:4}]}'
         }
       - { type: item, weight: 1, item: trident,
           nbt: '{artifact:1b,stormcalling:1b,display:{Name:\"{\\\"text\\\":\\\"Stormcaller\\\",\\\"color\\\":\\\"light_purple\\\"}\",Lore:[\"\\\"§r§bStormcalling\\\"\"]},Enchantments:[{id:unbreaking,lvl:3}],AttributeModifiers:[{Slot:\"mainhand\",AttributeName:\"generic.attack_speed\",Name:\"generic.attack_speed\",Amount:1.4,Operation:0,UUID:[I;-45235323,1513374611,-1734752737,1340528507]},{Slot:\"mainhand\",AttributeName:\"generic.attack_damage\",Name:\"generic.attack_damage\",Amount:10,Operation:0,UUID:[I;-1119792990,-658945342,-1627897520,86954822]}]}'

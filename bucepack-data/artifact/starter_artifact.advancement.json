@@ -14,7 +14,7 @@
 		"announce_to_chat": false,
 		"frame": "task"
 	},
-	"parent": "bucepack:artifact/artifact",
+	"parent": "bucepack:artifact/root",
 	"criteria": {
 		"tick": {
 			"trigger": "minecraft:tick"

@@ -1,20 +1,19 @@
 {
 	"display": {
 		"icon": {
-			"item": "minecraft:diamond_chestplate",
-			"nbt": "{Enchantments:[{id:unbreaking,lvl:3}]}"
+			"item": "minecraft:ender_chest"
 		},
 		"title": {
-			"text": "Artifact Loot"
+			"text": "Lose Health & Levels"
 		},
 		"description": {
-			"text": "Artifact items in loot"
+			"text": "Keep inventory with downsides"
 		},
 		"show_toast": false,
 		"announce_to_chat": false,
 		"frame": "task"
 	},
-	"parent": "bucepack:artifact/root",
+	"parent": "bucepack:root",
 	"criteria": {
 		"tick": {
 			"trigger": "minecraft:tick"

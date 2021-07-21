@@ -14,7 +14,7 @@
 		"hidden": true,
 		"frame": "task"
 	},
-	"parent": "bucepack:artifact/artifact_loot",
+	"parent": "bucepack:artifact/root",
 	"criteria": {
 		"hold_item_offhand": {
 			"trigger": "minecraft:using_item",

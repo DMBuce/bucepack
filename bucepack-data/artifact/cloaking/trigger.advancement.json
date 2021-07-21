@@ -14,7 +14,7 @@
 		"hidden": true,
 		"frame": "task"
 	},
-	"parent": "bucepack:artifact/artifact_loot",
+	"parent": "bucepack:artifact/root",
 	"criteria": {
 		"get_hurt": {
 			"trigger": "minecraft:entity_hurt_player",
