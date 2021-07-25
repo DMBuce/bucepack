@@ -1,0 +1,52 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:barrier"
+		},
+		"title": {
+			"text": "Trigger Advancement"
+		},
+		"description": {
+			"text": "Something went wrong, you should revoke this advancement"
+		},
+		"show_toast": false,
+		"announce_to_chat": false,
+		"hidden": true,
+		"frame": "task"
+	},
+	"parent": "bucepack:relic/root",
+	"criteria": {
+		"attack": {
+			"trigger": "minecraft:player_hurt_entity",
+			"conditions": {
+				"player": [
+					{
+						"condition": "minecraft:entity_properties",
+						"entity": "this",
+						"predicate": {
+							"effects": {
+								"invisibility": {}
+							}
+						}
+					},
+					{
+						"condition": "minecraft:entity_properties",
+						"entity": "this",
+						"predicate": {
+							"equipment": {
+								"chest": {
+									"stored_enchantments": [
+										{ "enchantment":"cloaking" }
+									]
+								}
+							}
+						}
+					}
+				]
+			}
+		}
+	},
+	"rewards": {
+		"function": "bucepack:relic/cloaking/deactivate"
+	}
+}

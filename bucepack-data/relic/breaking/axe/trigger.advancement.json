@@ -1,0 +1,44 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:diamond_axe"
+		},
+		"title": {
+			"text": "Breaking"
+		},
+		"description": {
+			"text": "Activate Treefeller"
+		},
+		"show_toast": false,
+		"announce_to_chat": false,
+		"hidden": true,
+		"frame": "task"
+	},
+	"parent": "bucepack:relic/root",
+	"criteria": {
+		"break_block": {
+			"trigger": "minecraft:item_durability_changed",
+			"conditions": {
+				"item": {
+					"items": [
+						"minecraft:wooden_axe",
+						"minecraft:stone_axe",
+						"minecraft:iron_axe",
+						"minecraft:golden_axe",
+						"minecraft:diamond_axe",
+						"minecraft:netherite_axe"
+					],
+					"nbt": "{breaking:1b}"
+				},
+				"player": {
+					"flags": {
+						"is_sneaking": false
+					}
+				}
+			}
+		}
+	},
+	"rewards": {
+		"function": "bucepack:relic/breaking/axe/activate"
+	}
+}

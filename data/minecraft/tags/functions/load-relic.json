@@ -1,6 +1,6 @@
 {
 	"replace": false,
 	"values": [
-		"bucepack:artifact/load"
+		"bucepack:relic/load"
 	]
 }

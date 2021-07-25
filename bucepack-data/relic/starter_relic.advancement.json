@@ -1,0 +1,26 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:diamond_pickaxe",
+			"nbt": "{Enchantments:[{id:unbreaking,lvl:3}]}"
+		},
+		"title": {
+			"text": "Starter Relic"
+		},
+		"description": {
+			"text": "Start with an relic in your inventory"
+		},
+		"show_toast": false,
+		"announce_to_chat": false,
+		"frame": "task"
+	},
+	"parent": "bucepack:relic/root",
+	"criteria": {
+		"tick": {
+			"trigger": "minecraft:tick"
+		}
+	},
+	"rewards": {
+		"function": "bucepack:relic/starter_relic"
+	}
+}
