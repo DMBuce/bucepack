@@ -5,7 +5,7 @@ RESOURCEPACKFILES = painting_overhaul.zip note_guide.zip brew_guide.zip \
 	classic_netherrack.zip classic_lava.zip classic_gravel.zip classic_lapis.zip \
 	classic_rose.zip classic_food.zip \
 	classic_moo.zip classic_twang.zip classic_sploosh.zip classic_crunch.zip
-DATAPACKFILES = gardener_endermen.zip climbable.zip speedy_paths.zip \
+DATAPACKFILES = gardener_endermen.zip climbable.zip \
 	no_treasure_maps.zip fortunate_jungle.zip dragonproof.zip \
 	mineable.zip shearless.zip breeding_overhaul.zip \
 	smooth_cracked_stonecutting.zip lose_hp_xp.zip \
