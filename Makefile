@@ -393,46 +393,8 @@ loot_overhaul_FILES := $(DEFAULT_FILES) \
 	data/minecraft/recipes/saddle.json \
 
 relic_FILES := $(DEFAULT_FILES) \
-	data/bucepack/advancements/relic/breaking/axe/trigger.json \
-	data/bucepack/advancements/relic/breaking/axe/trigger_sneaking.json \
-	data/bucepack/advancements/relic/breaking/hoe/trigger.json \
-	data/bucepack/advancements/relic/breaking/hoe/trigger_sneaking.json \
-	data/bucepack/advancements/relic/breaking/pick/trigger.json \
-	data/bucepack/advancements/relic/breaking/pick/trigger_sneaking.json \
-	data/bucepack/advancements/relic/breaking/shovel/trigger.json \
-	data/bucepack/advancements/relic/breaking/shovel/trigger_sneaking.json \
-	data/bucepack/advancements/relic/chromatic/trigger.json \
-	data/bucepack/advancements/relic/cloaking/trigger.json \
-	data/bucepack/advancements/relic/darkvision/trigger.json \
-	data/bucepack/advancements/relic/gravitation/trigger.json \
-	data/bucepack/advancements/relic/gravitation/trigger_sneaking.json \
-	data/bucepack/advancements/relic/bounding/trigger.json \
-	data/bucepack/advancements/relic/mining/trigger.json \
 	data/bucepack/advancements/relic/root.json \
-	data/bucepack/advancements/relic/searching/bastion_remnant/trigger.json \
-	data/bucepack/advancements/relic/searching/buried_treasure/trigger.json \
-	data/bucepack/advancements/relic/searching/desert_pyramid/trigger.json \
-	data/bucepack/advancements/relic/searching/endcity/trigger.json \
-	data/bucepack/advancements/relic/searching/endcity/trigger.json \
-	data/bucepack/advancements/relic/searching/fortress/trigger.json \
-	data/bucepack/advancements/relic/searching/igloo/trigger.json \
-	data/bucepack/advancements/relic/searching/jungle_pyramid/trigger.json \
-	data/bucepack/advancements/relic/searching/mansion/trigger.json \
-	data/bucepack/advancements/relic/searching/mineshaft/trigger.json \
-	data/bucepack/advancements/relic/searching/monument/trigger.json \
-	data/bucepack/advancements/relic/searching/nether_fossil/trigger.json \
-	data/bucepack/advancements/relic/searching/ocean_ruin/trigger.json \
-	data/bucepack/advancements/relic/searching/pillager_outpost/trigger.json \
-	data/bucepack/advancements/relic/searching/ruined_portal/trigger.json \
-	data/bucepack/advancements/relic/searching/ruined_portal/trigger_nether.json \
-	data/bucepack/advancements/relic/searching/shipwreck/trigger.json \
-	data/bucepack/advancements/relic/searching/stronghold/trigger.json \
-	data/bucepack/advancements/relic/searching/swamp_hut/trigger.json \
-	data/bucepack/advancements/relic/searching/village/trigger.json \
-	data/bucepack/advancements/relic/splendor/glowing/trigger.json \
-	data/bucepack/advancements/relic/splendor/glowing/trigger_toggle.json \
-	data/bucepack/advancements/relic/splendor/trigger.json \
-	data/bucepack/functions/relic/relic.mcfunction \
+	data/bucepack/functions/relic/bounding/activate.mcfunction \
 	data/bucepack/functions/relic/breaking/axe/activate.mcfunction \
 	data/bucepack/functions/relic/breaking/axe/break.mcfunction \
 	data/bucepack/functions/relic/breaking/axe/chop.mcfunction \
@@ -456,23 +418,21 @@ relic_FILES := $(DEFAULT_FILES) \
 	data/bucepack/functions/relic/chromatic/activate.mcfunction \
 	data/bucepack/functions/relic/chromatic/party.mcfunction \
 	data/bucepack/functions/relic/cloaking/activate.mcfunction \
+	data/bucepack/functions/relic/cloaking/deactivate.mcfunction \
 	data/bucepack/functions/relic/darkvision/activate.mcfunction \
 	data/bucepack/functions/relic/gravitation/charge.mcfunction \
 	data/bucepack/functions/relic/gravitation/pull.mcfunction \
 	data/bucepack/functions/relic/gravitation/supercharge.mcfunction \
-	data/bucepack/functions/relic/bounding/activate.mcfunction \
 	data/bucepack/functions/relic/load.mcfunction \
 	data/bucepack/functions/relic/mining/activate.mcfunction \
-	data/bucepack/functions/relic/searching/activate.mcfunction \
+	data/bucepack/functions/relic/mining/charge.mcfunction \
+	data/bucepack/functions/relic/relic.mcfunction \
 	data/bucepack/functions/relic/searching/activate.mcfunction \
 	data/bucepack/functions/relic/searching/bastion_remnant/charge.mcfunction \
 	data/bucepack/functions/relic/searching/buried_treasure/charge.mcfunction \
 	data/bucepack/functions/relic/searching/charge.mcfunction \
-	data/bucepack/functions/relic/searching/charge.mcfunction \
 	data/bucepack/functions/relic/searching/desert_pyramid/charge.mcfunction \
 	data/bucepack/functions/relic/searching/ding.mcfunction \
-	data/bucepack/functions/relic/searching/ding.mcfunction \
-	data/bucepack/functions/relic/searching/endcity/charge.mcfunction \
 	data/bucepack/functions/relic/searching/endcity/charge.mcfunction \
 	data/bucepack/functions/relic/searching/fortress/charge.mcfunction \
 	data/bucepack/functions/relic/searching/igloo/charge.mcfunction \
@@ -496,40 +456,114 @@ relic_FILES := $(DEFAULT_FILES) \
 	data/bucepack/functions/relic/splendor/raycast.mcfunction \
 	data/bucepack/functions/relic/splendor/upgrade.mcfunction \
 	data/bucepack/loot_tables/relic/subtables/relic.json \
-	data/bucepack/loot_tables/relic/subtables/darkvision_helmet.json \
-	data/bucepack/loot_tables/relic/subtables/fireworks.json \
-	data/minecraft/loot_tables/entities/blaze.json \
-	data/minecraft/loot_tables/entities/blaze.json \
-	data/minecraft/loot_tables/entities/cave_spider.json \
-	data/minecraft/loot_tables/entities/cave_spider.json \
-	data/minecraft/loot_tables/entities/creeper.json \
-	data/minecraft/loot_tables/entities/creeper.json \
-	data/minecraft/loot_tables/entities/drowned.json \
-	data/minecraft/loot_tables/entities/drowned.json \
-	data/minecraft/loot_tables/entities/ender_dragon.json \
-	data/minecraft/loot_tables/entities/ender_dragon.json \
-	data/minecraft/loot_tables/entities/enderman.json \
-	data/minecraft/loot_tables/entities/enderman.json \
-	data/minecraft/loot_tables/entities/guardian.json \
-	data/minecraft/loot_tables/entities/guardian.json \
-	data/minecraft/loot_tables/entities/husk.json \
-	data/minecraft/loot_tables/entities/husk.json \
-	data/minecraft/loot_tables/entities/magma_cube.json \
-	data/minecraft/loot_tables/entities/magma_cube.json \
-	data/minecraft/loot_tables/entities/skeleton.json \
-	data/minecraft/loot_tables/entities/skeleton.json \
-	data/minecraft/loot_tables/entities/slime.json \
-	data/minecraft/loot_tables/entities/slime.json \
-	data/minecraft/loot_tables/entities/spider.json \
-	data/minecraft/loot_tables/entities/spider.json \
-	data/minecraft/loot_tables/entities/stray.json \
-	data/minecraft/loot_tables/entities/stray.json \
-	data/minecraft/loot_tables/entities/vex.json \
-	data/minecraft/loot_tables/entities/vex.json \
-	data/minecraft/loot_tables/entities/zombie.json \
-	data/minecraft/loot_tables/entities/zombie.json \
-	data/minecraft/recipes/light.json \
-	data/minecraft/tags/functions/load-relic.json \
+	data/bucepack/recipes/relic/smithing/barbed.json \
+	data/bucepack/recipes/relic/smithing/bounding.json \
+	data/bucepack/recipes/relic/smithing/endless.json \
+	data/bucepack/recipes/relic/smithing/knockback/diamond_hoe.json \
+	data/bucepack/recipes/relic/smithing/knockback/diamond_shovel.json \
+	data/bucepack/recipes/relic/smithing/knockback/golden_hoe.json \
+	data/bucepack/recipes/relic/smithing/knockback/golden_shovel.json \
+	data/bucepack/recipes/relic/smithing/knockback/iron_hoe.json \
+	data/bucepack/recipes/relic/smithing/knockback/iron_shovel.json \
+	data/bucepack/recipes/relic/smithing/knockback/netherite_hoe.json \
+	data/bucepack/recipes/relic/smithing/knockback/netherite_shovel.json \
+	data/bucepack/recipes/relic/smithing/knockback/stone_hoe.json \
+	data/bucepack/recipes/relic/smithing/knockback/stone_shovel.json \
+	data/bucepack/recipes/relic/smithing/knockback/wooden_hoe.json \
+	data/bucepack/recipes/relic/smithing/knockback/wooden_shovel.json \
+	data/bucepack/recipes/relic/smithing/protection.json \
+	data/bucepack/recipes/relic/smithing/sharpness/diamond_pickaxe.json \
+	data/bucepack/recipes/relic/smithing/sharpness/golden_pickaxe.json \
+	data/bucepack/recipes/relic/smithing/sharpness/iron_pickaxe.json \
+	data/bucepack/recipes/relic/smithing/sharpness/netherite_pickaxe.json \
+	data/bucepack/recipes/relic/smithing/sharpness/stone_pickaxe.json \
+	data/bucepack/recipes/relic/smithing/sharpness/trident.json \
+	data/bucepack/recipes/relic/smithing/sharpness/wooden_pickaxe.json \
+	data/bucepack/recipes/relic/smithing/smiting/diamond_axe.json \
+	data/bucepack/recipes/relic/smithing/smiting/diamond_sword.json \
+	data/bucepack/recipes/relic/smithing/smiting/golden_axe.json \
+	data/bucepack/recipes/relic/smithing/smiting/golden_sword.json \
+	data/bucepack/recipes/relic/smithing/smiting/iron_axe.json \
+	data/bucepack/recipes/relic/smithing/smiting/iron_sword.json \
+	data/bucepack/recipes/relic/smithing/smiting/netherite_axe.json \
+	data/bucepack/recipes/relic/smithing/smiting/netherite_sword.json \
+	data/bucepack/recipes/relic/smithing/smiting/stone_axe.json \
+	data/bucepack/recipes/relic/smithing/smiting/stone_sword.json \
+	data/bucepack/recipes/relic/smithing/smiting/wooden_axe.json \
+	data/bucepack/recipes/relic/smithing/smiting/wooden_sword.json \
+	data/bucepack/recipes/relic/smithing/striding/diamond_horse_armor.json \
+	data/bucepack/recipes/relic/smithing/striding/golden_horse_armor.json \
+	data/bucepack/recipes/relic/smithing/striding/iron_horse_armor.json \
+	data/bucepack/recipes/relic/smithing/striding/leather_horse_armor.json \
+	data/bucepack/recipes/relic/smithing/vitality.json \
+	#data/bucepack/loot_tables/relic/subtables/darkvision_helmet.json \
+	#data/bucepack/loot_tables/relic/subtables/fireworks.json \
+	#data/minecraft/loot_tables/entities/blaze.json \
+	#data/minecraft/loot_tables/entities/cave_spider.json \
+	#data/minecraft/loot_tables/entities/creeper.json \
+	#data/minecraft/loot_tables/entities/drowned.json \
+	#data/minecraft/loot_tables/entities/ender_dragon.json \
+	#data/minecraft/loot_tables/entities/enderman.json \
+	#data/minecraft/loot_tables/entities/guardian.json \
+	#data/minecraft/loot_tables/entities/husk.json \
+	#data/minecraft/loot_tables/entities/magma_cube.json \
+	#data/minecraft/loot_tables/entities/skeleton.json \
+	#data/minecraft/loot_tables/entities/slime.json \
+	#data/minecraft/loot_tables/entities/spider.json \
+	#data/minecraft/loot_tables/entities/stray.json \
+	#data/minecraft/loot_tables/entities/vex.json \
+	#data/minecraft/loot_tables/entities/zombie.json \
+	#data/minecraft/recipes/light.json \
+	#data/bucepack/recipes/relic/smithing/chromatic.json \
+	#data/bucepack/recipes/relic/smithing/cloaking/elytra.json \
+	#data/bucepack/recipes/relic/smithing/cloaking/leather_chestplate.json \
+	#data/bucepack/recipes/relic/smithing/gravitation.json \
+	#data/bucepack/recipes/relic/smithing/hovering.json \
+	#data/bucepack/recipes/relic/smithing/mining.json \
+	#data/bucepack/recipes/relic/smithing/searching.json \
+	#data/bucepack/recipes/relic/smithing/splendor.json \
+	#data/minecraft/tags/functions/load-relic.json \
+	#data/bucepack/advancements/relic/bounding/trigger.json \
+	#data/bucepack/advancements/relic/breaking/axe/trigger.json \
+	#data/bucepack/advancements/relic/breaking/axe/trigger_sneaking.json \
+	#data/bucepack/advancements/relic/breaking/hoe/trigger.json \
+	#data/bucepack/advancements/relic/breaking/hoe/trigger_sneaking.json \
+	#data/bucepack/advancements/relic/breaking/pick/trigger.json \
+	#data/bucepack/advancements/relic/breaking/pick/trigger_sneaking.json \
+	#data/bucepack/advancements/relic/breaking/shovel/trigger.json \
+	#data/bucepack/advancements/relic/breaking/shovel/trigger_sneaking.json \
+	#data/bucepack/advancements/relic/chromatic/trigger.json \
+	#data/bucepack/advancements/relic/cloaking/trigger_attack.json \
+	#data/bucepack/advancements/relic/cloaking/trigger.json \
+	#data/bucepack/advancements/relic/darkvision/trigger.json \
+	#data/bucepack/advancements/relic/gravitation/trigger.json \
+	#data/bucepack/advancements/relic/gravitation/trigger_sneaking.json \
+	#data/bucepack/advancements/relic/mining/trigger.json \
+	#data/bucepack/advancements/relic/searching/bastion_remnant/trigger.json \
+	#data/bucepack/advancements/relic/searching/buried_treasure/trigger.json \
+	#data/bucepack/advancements/relic/searching/desert_pyramid/trigger.json \
+	#data/bucepack/advancements/relic/searching/endcity/trigger.json \
+	#data/bucepack/advancements/relic/searching/fortress/trigger.json \
+	#data/bucepack/advancements/relic/searching/igloo/trigger.json \
+	#data/bucepack/advancements/relic/searching/jungle_pyramid/trigger.json \
+	#data/bucepack/advancements/relic/searching/mansion/trigger.json \
+	#data/bucepack/advancements/relic/searching/mineshaft/trigger.json \
+	#data/bucepack/advancements/relic/searching/monument/trigger.json \
+	#data/bucepack/advancements/relic/searching/nether_fossil/trigger.json \
+	#data/bucepack/advancements/relic/searching/ocean_ruin/trigger.json \
+	#data/bucepack/advancements/relic/searching/pillager_outpost/trigger.json \
+	#data/bucepack/advancements/relic/searching/ruined_portal/trigger.json \
+	#data/bucepack/advancements/relic/searching/ruined_portal/trigger_nether.json \
+	#data/bucepack/advancements/relic/searching/shipwreck/trigger.json \
+	#data/bucepack/advancements/relic/searching/stronghold/trigger.json \
+	#data/bucepack/advancements/relic/searching/swamp_hut/trigger.json \
+	#data/bucepack/advancements/relic/searching/the_end/trigger.json \
+	#data/bucepack/advancements/relic/searching/the_nether/trigger.json \
+	#data/bucepack/advancements/relic/searching/the_overworld/trigger.json \
+	#data/bucepack/advancements/relic/searching/village/trigger.json \
+	#data/bucepack/advancements/relic/splendor/glowing/trigger.json \
+	#data/bucepack/advancements/relic/splendor/glowing/trigger_toggle.json \
+	#data/bucepack/advancements/relic/splendor/trigger.json \
 
 starter_relic_FILES := $(DEFAULT_FILES) \
 	$(relic_FILES) \
@@ -781,6 +815,22 @@ data/bucepack/recipes/%.json: bucepack-data/%.recipe.json
 	mkdir -p $(dir $@)
 	cp -v $< $@
 
+data/minecraft/tags/blocks/%.json: minecraft-data/%.block.tag.json
+	mkdir -p $(dir $@)
+	cp -v $< $@
+
+data/bucepack/tags/blocks/%.json: bucepack-data/%.block.tag.json
+	mkdir -p $(dir $@)
+	cp -v $< $@
+
+data/minecraft/tags/items/%.json: minecraft-data/%.item.tag.json
+	mkdir -p $(dir $@)
+	cp -v $< $@
+
+data/bucepack/tags/items/%.json: bucepack-data/%.item.tag.json
+	mkdir -p $(dir $@)
+	cp -v $< $@
+
 data/minecraft/tags/functions/%.json: minecraft-data/%.function.tag.json
 	mkdir -p $(dir $@)
 	cp -v $< $@
@@ -1000,7 +1050,7 @@ starter_relic.zip: $(starter_relic_FILES)
 	cp meta/$(@:.zip=.png) pack.png
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^
-	printf "@ data/minecraft/tags/functions/load-relic.json\n@=data/minecraft/tags/functions/load.json\n" | zipnote -w $@
+	#printf "@ data/minecraft/tags/functions/load-relic.json\n@=data/minecraft/tags/functions/load.json\n" | zipnote -w $@
 
 starter_bonus_chest.zip: $(starter_bonus_chest_FILES)
 	cp meta/$(@:.zip=.png) pack.png
@@ -1011,7 +1061,7 @@ relic_loot.zip: $(relic_loot_FILES)
 	cp meta/$(@:.zip=.png) pack.png
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^
-	printf "@ data/minecraft/tags/functions/load-relic.json\n@=data/minecraft/tags/functions/load.json\n" | zipnote -w $@
+	#printf "@ data/minecraft/tags/functions/load-relic.json\n@=data/minecraft/tags/functions/load.json\n" | zipnote -w $@
 
 dragonproof.zip: $(dragonproof_FILES)
 	cp meta/$(@:.zip=.png) pack.png

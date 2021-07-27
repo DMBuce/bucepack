@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "base": {
+    "item": "minecraft:sugar"
+  },
+  "addition": {
+    "item": "minecraft:diamond_horse_armor"
+  },
+  "result": {
+    "item": "minecraft:diamond_horse_armor"
+  }
+}

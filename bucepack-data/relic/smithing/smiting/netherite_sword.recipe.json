@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "base": {
+    "item": "minecraft:bone"
+  },
+  "addition": {
+    "item": "minecraft:netherite_sword"
+  },
+  "result": {
+    "item": "minecraft:netherite_sword"
+  }
+}

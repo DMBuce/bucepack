@@ -8,7 +8,7 @@
 			"text": "Starter Relic"
 		},
 		"description": {
-			"text": "Start with an relic in your inventory"
+			"text": "Start with a relic in your inventory"
 		},
 		"show_toast": false,
 		"announce_to_chat": false,

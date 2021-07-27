@@ -1,13 +1,13 @@
 {
 	"display": {
 		"icon": {
-			"item": "minecraft:compass"
+			"item": "minecraft:barrier"
 		},
 		"title": {
-			"text": "Gravitation"
+			"text": "Trigger Advancement"
 		},
 		"description": {
-			"text": "Charge the Shield of Force"
+			"text": "Something went wrong, you should revoke this advancement"
 		},
 		"show_toast": false,
 		"announce_to_chat": false,

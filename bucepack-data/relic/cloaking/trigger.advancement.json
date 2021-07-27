@@ -38,9 +38,11 @@
 						"predicate": {
 							"equipment": {
 								"chest": {
-									"stored_enchantments": [
-										{ "enchantment":"cloaking" }
-									]
+									"items": [
+										"minecraft:elytra",
+										"minecraft:leather_chestplate"
+									],
+									"nbt": "{cloaking:1b}"
 								}
 							}
 						}

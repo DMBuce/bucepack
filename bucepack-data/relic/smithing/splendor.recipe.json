@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "base": {
+    "item": "minecraft:glowstone_dust"
+  },
+  "addition": {
+    "item": "minecraft:saddle"
+  },
+  "result": {
+    "item": "minecraft:saddle"
+  }
+}

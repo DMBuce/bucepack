@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "base": {
+    "item": "minecraft:stick"
+  },
+  "addition": {
+    "item": "minecraft:bow"
+  },
+  "result": {
+    "item": "minecraft:bow"
+  }
+}

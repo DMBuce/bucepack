@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "base": {
+    "item": "minecraft:gunpowder"
+  },
+  "addition": {
+    "item": "minecraft:crossbow"
+  },
+  "result": {
+    "item": "minecraft:crossbow"
+  }
+}

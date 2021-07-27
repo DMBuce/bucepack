@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "base": {
+    "item": "minecraft:rabbit_foot"
+  },
+  "addition": {
+    "item": "minecraft:leather_leggings"
+  },
+  "result": {
+    "item": "minecraft:leather_leggings"
+  }
+}

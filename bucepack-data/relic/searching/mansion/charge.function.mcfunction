@@ -1,7 +1,8 @@
 # runs while a player charges searching while looking for an mansion
 
 # revoke advancement
-advancement revoke @s only bucepack:relic/searching/mansion/trigger
+#advancement revoke @s only bucepack:relic/searching/mansion/trigger
+advancement revoke @s only bucepack:relic/searching/the_overworld/trigger
 
 # compute @s var - value between -10.3 and 10.3,
 #                  10.3 means player is directly facing structure,

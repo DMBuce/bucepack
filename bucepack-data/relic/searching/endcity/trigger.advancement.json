@@ -17,7 +17,7 @@
 	"parent": "bucepack:relic/root",
 	"criteria": {
 		"hold_item_offhand": {
-			"trigger": "minecraft:using_item",
+			"trigger": "minecraft:impossible",
 			"conditions": {
 				"item": {
 					"items": [ "minecraft:spyglass" ],
@@ -36,7 +36,7 @@
 			}
 		},
 		"stand_on_block": {
-			"trigger": "minecraft:using_item",
+			"trigger": "minecraft:impossible",
 			"conditions": {
 				"item": {
 					"items": [ "minecraft:spyglass" ],

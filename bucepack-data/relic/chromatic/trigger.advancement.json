@@ -1,13 +1,13 @@
 {
 	"display": {
 		"icon": {
-			"item": "minecraft:firework_rocket"
+			"item": "minecraft:barrier"
 		},
 		"title": {
-			"text": "Chromatic"
+			"text": "Trigger Advancement"
 		},
 		"description": {
-			"text": "Shoot the Partyblaster"
+			"text": "Something went wrong, you should revoke this advancement"
 		},
 		"show_toast": false,
 		"announce_to_chat": false,

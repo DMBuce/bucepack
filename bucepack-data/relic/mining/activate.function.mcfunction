@@ -1,7 +1,7 @@
 # runs when a player activates mining
 
-# revoke advancement
-advancement revoke @s only bucepack:relic/mining/trigger
+# reset charge
+scoreboard players set @s mining_charge 0
 
 # give haste
 effect give @s haste 60 0 true

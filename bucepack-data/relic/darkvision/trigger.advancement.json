@@ -16,80 +16,45 @@
 	},
 	"parent": "bucepack:relic/root",
 	"criteria": {
-		"get_hurt": {
-			"trigger": "minecraft:entity_hurt_player",
-			"conditions": {
-				"player": [
-					{
-						"condition": "minecraft:entity_properties",
-						"entity": "this",
-						"predicate": {
-							"equipment": {
-								"head": {
-									"nbt": "{darkvision:1b}"
-								}
-							}
-						}
-					}
-				]
-			}
-		},
-		"eat_carrot": {
-			"trigger": "minecraft:consume_item",
+		"use_tool": {
+			"trigger": "minecraft:item_used_on_block",
 			"conditions": {
 				"item": {
 					"items": [
-						"minecraft:apple",
-						"minecraft:baked_potato",
-						"minecraft:beef",
-						"minecraft:beetroot",
-						"minecraft:beetroot_soup",
-						"minecraft:bread",
-						"minecraft:cake",
-						"minecraft:carrot",
-						"minecraft:chicken",
-						"minecraft:chorus_fruit",
-						"minecraft:cod",
-						"minecraft:cooked_beef",
-						"minecraft:cooked_chicken",
-						"minecraft:cooked_cod",
-						"minecraft:cooked_mutton",
-						"minecraft:cooked_porkchop",
-						"minecraft:cooked_rabbit",
-						"minecraft:cooked_salmon",
-						"minecraft:cookie",
-						"minecraft:dried_kelp",
-						"minecraft:enchanted_golden_apple",
-						"minecraft:glow_berries",
-						"minecraft:golden_apple",
-						"minecraft:golden_carrot",
-						"minecraft:honey_bottle",
-						"minecraft:melon_slice",
-						"minecraft:mushroom_stew",
-						"minecraft:mutton",
-						"minecraft:poisonous_potato",
-						"minecraft:porkchop",
-						"minecraft:potato",
-						"minecraft:pufferfish",
-						"minecraft:pumpkin_pie",
-						"minecraft:rabbit",
-						"minecraft:rabbit_stew",
-						"minecraft:rotten_flesh",
-						"minecraft:salmon",
-						"minecraft:spider_eye",
-						"minecraft:suspicious_stew",
-						"minecraft:sweet_berries",
-						"minecraft:tropical_fish"
+						"minecraft:wooden_shovel",
+						"minecraft:stone_shovel",
+						"minecraft:iron_shovel",
+						"minecraft:golden_shovel",
+						"minecraft:diamond_shovel",
+						"minecraft:netherite_shovel",
+						"minecraft:wooden_hoe",
+						"minecraft:stone_hoe",
+						"minecraft:iron_hoe",
+						"minecraft:golden_hoe",
+						"minecraft:diamond_hoe",
+						"minecraft:netherite_hoe"
 					]
 				},
 				"player": [
 					{
+						"condition": "minecraft:inverted",
+						"term": {
+							"condition": "minecraft:entity_properties",
+							"entity": "this",
+							"predicate": {
+								"effects": {
+									"night_vision": {}
+								}
+							}
+						}
+					},
+					{
 						"condition": "minecraft:entity_properties",
 						"entity": "this",
 						"predicate": {
 							"equipment": {
 								"head": {
-									"nbt": "{darkvision:1b}"
+									"nbt": "{mining:1b}"
 								}
 							}
 						}
@@ -98,12 +63,6 @@
 			}
 		}
 	},
-	"requirements": [
-		[
-			"get_hurt",
-			"eat_carrot"
-		]
-	],
 	"rewards": {
 		"function": "bucepack:relic/darkvision/activate"
 	}

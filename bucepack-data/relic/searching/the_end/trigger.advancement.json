@@ -1,0 +1,37 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:spyglass"
+		},
+		"title": {
+			"text": "Finding"
+		},
+		"description": {
+			"text": "Charge the Seeker's Scope"
+		},
+		"show_toast": false,
+		"announce_to_chat": false,
+		"hidden": true,
+		"frame": "task"
+	},
+	"parent": "bucepack:relic/root",
+	"criteria": {
+		"in_the_end": {
+			"trigger": "minecraft:using_item",
+			"conditions": {
+				"item": {
+					"items": [ "minecraft:spyglass" ],
+					"nbt": "{searching:1b}"
+				},
+				"player": {
+					"location": {
+						"dimension": "minecraft:the_end"
+					}
+				}
+			}
+		}
+	},
+	"rewards": {
+		"function": "bucepack:relic/searching/endcity/charge"
+	}
+}

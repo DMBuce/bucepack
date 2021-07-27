@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "base": {
+    "item": "minecraft:diamond"
+  },
+  "addition": {
+    "item": "minecraft:wooden_pickaxe"
+  },
+  "result": {
+    "item": "minecraft:wooden_pickaxe"
+  }
+}

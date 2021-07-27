@@ -1,13 +1,13 @@
 {
 	"display": {
 		"icon": {
-			"item": "minecraft:rabbit_foot"
+			"item": "minecraft:barrier"
 		},
 		"title": {
-			"text": "Bounding"
+			"text": "Trigger Advancement"
 		},
 		"description": {
-			"text": "Activate the Boots of Frost and Flood"
+			"text": "Something went wrong, you should revoke this advancement"
 		},
 		"show_toast": false,
 		"announce_to_chat": false,
@@ -21,11 +21,23 @@
 			"conditions": {
 				"player": [
 					{
+						"condition": "minecraft:inverted",
+						"term": {
+							"condition": "minecraft:entity_properties",
+							"entity": "this",
+							"predicate": {
+								"effects": {
+									"jump_boost": {}
+								}
+							}
+						}
+					},
+					{
 						"condition": "minecraft:entity_properties",
 						"entity": "this",
 						"predicate": {
 							"equipment": {
-								"feet": {
+								"legs": {
 									"nbt": "{bounding:1b}"
 								}
 							}
@@ -34,7 +46,7 @@
 				]
 			}
 		},
-		"eat_carrot": {
+		"eat": {
 			"trigger": "minecraft:consume_item",
 			"conditions": {
 				"item": {
@@ -84,11 +96,23 @@
 				},
 				"player": [
 					{
+						"condition": "minecraft:inverted",
+						"term": {
+							"condition": "minecraft:entity_properties",
+							"entity": "this",
+							"predicate": {
+								"effects": {
+									"jump_boost": {}
+								}
+							}
+						}
+					},
+					{
 						"condition": "minecraft:entity_properties",
 						"entity": "this",
 						"predicate": {
 							"equipment": {
-								"feet": {
+								"legs": {
 									"nbt": "{bounding:1b}"
 								}
 							}
@@ -101,7 +125,7 @@
 	"requirements": [
 		[
 			"get_hurt",
-			"eat_carrot"
+			"eat"
 		]
 	],
 	"rewards": {

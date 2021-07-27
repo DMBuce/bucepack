@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "base": {
+    "item": "minecraft:bone"
+  },
+  "addition": {
+    "item": "minecraft:golden_axe"
+  },
+  "result": {
+    "item": "minecraft:golden_axe"
+  }
+}

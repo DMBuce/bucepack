@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "base": {
+    "item": "minecraft:glistering_melon_slice"
+  },
+  "addition": {
+    "item": "minecraft:netherite_chestplate"
+  },
+  "result": {
+    "item": "minecraft:netherite_chestplate"
+  }
+}

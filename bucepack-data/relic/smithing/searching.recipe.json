@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "base": {
+    "item": "minecraft:prismarine_crystals"
+  },
+  "addition": {
+    "item": "minecraft:spyglass"
+  },
+  "result": {
+    "item": "minecraft:spyglass"
+  }
+}
