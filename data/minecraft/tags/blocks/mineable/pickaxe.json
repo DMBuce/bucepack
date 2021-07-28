@@ -23,7 +23,6 @@
     "minecraft:sea_lantern",
     "minecraft:glowstone",
     "minecraft:redstone_lamp",
-    "minecraft:lever",
-    "minecraft:smithing_table"
+    "minecraft:lever"
   ]
 }
