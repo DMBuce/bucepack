@@ -1,0 +1,40 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:barrier"
+		},
+		"title": {
+			"text": "Trigger Advancement"
+		},
+		"description": {
+			"text": "Something went wrong, you should revoke this advancement"
+		},
+		"show_toast": false,
+		"announce_to_chat": false,
+		"hidden": true,
+		"frame": "task"
+	},
+	"parent": "bucepack:sleep_overhaul/root",
+	"criteria": {
+		"hit_end_crystal": {
+			"trigger": "minecraft:player_hurt_entity",
+			"conditions": {
+				"entity": [
+					{
+						"condition": "minecraft:entity_properties",
+						"predicate": {
+							"type": "minecraft:end_crystal",
+							"location": {
+								"biome": "the_end"
+							}
+						},
+						"entity": "this"
+					}
+				]
+			}
+		}
+	},
+	"rewards": {
+		"function": "bucepack:sleep_overhaul/phantom"
+	}
+}
