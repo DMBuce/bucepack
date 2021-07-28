@@ -1,7 +1,7 @@
 {
   "type": "minecraft:smithing",
   "base": {
-    "item": "minecraft:prismarine_crystals"
+    "item": "minecraft:amethyst_shard"
   },
   "addition": {
     "item": "minecraft:spyglass"

@@ -1,0 +1,57 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:dragon_head"
+		},
+		"title": {
+			"text": "Inventory Upgrade"
+		},
+		"description": {
+			"text": "Once the dragon or wither have been defeated, players stop losing their items when they die"
+		},
+		"show_toast": false,
+		"announce_to_chat": true,
+		"hidden": true,
+		"frame": "task"
+	},
+	"parent": "bucepack:lose_hp_xp/natregen",
+	"criteria": {
+		"killed_dragon": {
+			"trigger": "minecraft:player_killed_entity",
+			"conditions": {
+				"entity": [
+					{
+						"condition": "minecraft:entity_properties",
+						"predicate": {
+							"type": "minecraft:ender_dragon"
+						},
+						"entity": "this"
+					}
+				]
+			}
+		},
+		"killed_wither": {
+			"trigger": "minecraft:player_killed_entity",
+			"conditions": {
+				"entity": [
+					{
+						"condition": "minecraft:entity_properties",
+						"predicate": {
+							"type": "minecraft:wither"
+						},
+						"entity": "this"
+					}
+				]
+			}
+		}
+	},
+	"requirements": [
+		[
+			"killed_dragon",
+			"killed_wither"
+		]
+	],
+	"rewards": {
+		"function": "bucepack:lose_hp_xp/keepinv"
+	}
+}

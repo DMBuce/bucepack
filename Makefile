@@ -325,9 +325,14 @@ fortunate_jungle_FILES := $(DEFAULT_FILES) \
 
 lose_hp_xp_FILES := $(DEFAULT_FILES) \
 	data/bucepack/advancements/lose_hp_xp/die.json \
+	data/bucepack/advancements/lose_hp_xp/keepinv.json \
+	data/bucepack/advancements/lose_hp_xp/natregen.json \
 	data/bucepack/advancements/lose_hp_xp/root.json \
-	data/bucepack/functions/lose_hp_xp/load.mcfunction \
+	data/bucepack/advancements/root.json \
 	data/bucepack/functions/lose_hp_xp/die.mcfunction \
+	data/bucepack/functions/lose_hp_xp/keepinv.mcfunction \
+	data/bucepack/functions/lose_hp_xp/load.mcfunction \
+	data/bucepack/functions/lose_hp_xp/natregen.mcfunction \
 	data/minecraft/tags/functions/load-lose_hp_xp.json \
 
 loot_overhaul_FILES := $(DEFAULT_FILES) \
@@ -496,6 +501,8 @@ relic_FILES := $(DEFAULT_FILES) \
 	data/bucepack/recipes/relic/smithing/striding/iron_horse_armor.json \
 	data/bucepack/recipes/relic/smithing/striding/leather_horse_armor.json \
 	data/bucepack/recipes/relic/smithing/vitality.json \
+	data/bucepack/recipes/relic/smithing/frost_flood.json \
+	data/bucepack/recipes/relic/smithing/projectile_protection.json \
 	#data/bucepack/loot_tables/relic/subtables/darkvision_helmet.json \
 	#data/bucepack/loot_tables/relic/subtables/fireworks.json \
 	#data/minecraft/loot_tables/entities/blaze.json \
