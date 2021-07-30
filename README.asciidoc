@@ -424,6 +424,29 @@ Download: https://github.com/DMBuce/bucepack/releases
 
 Build: `make lose_hp_xp.zip`
 
+=== Sleep Overhaul
+
+Adds more rain, removes insomnia, and adds new spawning mechanics for
+phantoms.
+
+Whenever a player skips the night with a bed, there is an 11% chance of rain.
+
+In addition, phantoms don't spawn in the overworld. Instead, up to three
+Mother Phantoms spawn with the Ender Dragon when it's summoned with Ender
+Crystals. One Mother Phantom spawns the first time the dragon is summoned, two
+spawn the second time, and three Mother Phantoms spawn for each subsequent
+dragon fight.
+
+Mother Phantoms are larger than normal, and have extra health.
+Whenever a player hits a Mother Phantom, each Mother Phantom has a 25% chance
+to spawn a normal phantom.
+Mother Phantoms also have a chance to drop their head and/or broken Elytra
+enchanted with Curse of Vanishing. Looting increases the drop rate of both items.
+
+Download: https://github.com/DMBuce/bucepack/releases
+
+Build: `make sleep_overhaul.zip`
+
 === Loot Overhaul
 
 Overhauls the vanilla loot tables to make early-to-midgame exploration more
