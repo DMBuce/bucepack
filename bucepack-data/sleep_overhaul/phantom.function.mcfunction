@@ -1,11 +1,14 @@
-# runs when a player hits an end crystal
+# runs when a player hits a mama phantom
 
 # revoke advancement
 advancement revoke @s only bucepack:sleep_overhaul/phantom
 
-# debug
-execute as @e[type=end_crystal] run say ouch
+## debug
+#say little baby
+#execute as @e[type=end_crystal] run say ouch
 
-# summon phantom above ender dragon
-execute as @e[type=ender_dragon,limit=1] at @s run execute summon phantom ~ ~3 ~
+# summon phantom at each end crystal and each mama phantom with 25% chance
+#execute in minecraft:the_end positioned 0 90 0 as @e[type=end_crystal,predicate=bucepack:sleep_overhaul/baby_phantom_chance,distance=..50] at @s run summon phantom ~ ~2 ~ {Rotation:[0.0f,90.0f]}
+execute as @e[type=phantom,predicate=bucepack:sleep_overhaul/baby_phantom_chance,tag=mother] at @s run summon phantom ~ ~-1 ~ {Rotation:[0.0f,-90.0f]}
+#execute as @e[type=phantom,predicate=bucepack:sleep_overhaul/baby_phantom_chance,distance=..128,nbt={Size:12}] at @s facing ~ 0 ~ run summon phantom ~ ~-1 ~ {Rotation:[0.0f,-90.0f],Attributes:[{Name:"generic.follow_range",Base:2048.0F}]}
 

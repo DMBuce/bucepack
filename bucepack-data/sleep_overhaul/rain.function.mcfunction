@@ -3,9 +3,9 @@
 # get current time
 execute store result score #buce.time var run time query daytime
 
-# debug
-tellraw @a ["Time: ",{"score":{"name":"#buce.time","objective":"var"}}]
+## debug
+#tellraw @a ["Time: ",{"score":{"name":"#buce.time","objective":"var"}}]
 
 # start raining
-execute if score #buce.time var matches 0..3 if predicate bucepack:sleep_overhaul/rain_chance run weather rain 0
+execute if score #buce.time var matches 0..5 if predicate bucepack:sleep_overhaul/rain_chance run weather rain 0
 

@@ -651,14 +651,18 @@ breeding_overhaul_FILES := $(DEFAULT_FILES) \
 
 sleep_overhaul_FILES := $(DEFAULT_FILES) \
 	data/bucepack/advancements/root.json \
+	data/bucepack/advancements/sleep_overhaul/mama_phantom.json \
 	data/bucepack/advancements/sleep_overhaul/phantom.json \
 	data/bucepack/advancements/sleep_overhaul/root.json \
 	data/bucepack/advancements/sleep_overhaul/sleep.json \
 	data/bucepack/functions/sleep_overhaul/load.mcfunction \
+	data/bucepack/functions/sleep_overhaul/mama_phantom.mcfunction \
 	data/bucepack/functions/sleep_overhaul/phantom.mcfunction \
 	data/bucepack/functions/sleep_overhaul/rain.mcfunction \
 	data/bucepack/functions/sleep_overhaul/sleep.mcfunction \
+	data/bucepack/predicates/sleep_overhaul/baby_phantom_chance.json \
 	data/bucepack/predicates/sleep_overhaul/rain_chance.json \
+	data/minecraft/loot_tables/entities/phantom.json \
 	data/minecraft/tags/functions/load-sleep_overhaul.json \
 
 smooth_cracked_stonecutting_FILES := $(DEFAULT_FILES) \
@@ -1106,6 +1110,7 @@ sleep_overhaul.zip: $(sleep_overhaul_FILES)
 	cp meta/$(@:.zip=.png) pack.png
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^
+	printf "@ data/minecraft/tags/functions/load-sleep_overhaul.json\n@=data/minecraft/tags/functions/load.json\n" | zipnote -w $@
 
 breeding_overhaul.zip: $(breeding_overhaul_FILES)
 	cp meta/$(@:.zip=.png) pack.png
