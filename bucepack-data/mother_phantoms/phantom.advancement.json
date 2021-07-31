@@ -14,18 +14,19 @@
 		"hidden": true,
 		"frame": "task"
 	},
-	"parent": "bucepack:sleep_overhaul/sleep",
+	"parent": "bucepack:mother_phantoms/mama_phantom",
 	"criteria": {
 		"hit_end_crystal": {
-			"trigger": "minecraft:summoned_entity",
+			"trigger": "minecraft:player_hurt_entity",
 			"conditions": {
 				"entity": {
-					"type": "minecraft:ender_dragon"
+					"type": "minecraft:phantom",
+					"nbt": "{Size:12}"
 				}
 			}
 		}
 	},
 	"rewards": {
-		"function": "bucepack:sleep_overhaul/mama_phantom"
+		"function": "bucepack:mother_phantoms/phantom"
 	}
 }

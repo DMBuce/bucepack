@@ -1,7 +1,7 @@
 # runs when a player summons a dragon
 
 # revoke advancement
-advancement revoke @s only bucepack:sleep_overhaul/mama_phantom
+advancement revoke @s only bucepack:mother_phantoms/mama_phantom
 
 ## debug
 #say big momma

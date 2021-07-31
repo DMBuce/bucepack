@@ -7,8 +7,8 @@ RESOURCEPACKFILES = painting_overhaul.zip note_guide.zip brew_guide.zip \
 	classic_moo.zip classic_twang.zip classic_sploosh.zip classic_crunch.zip
 DATAPACKFILES = gardener_endermen.zip climbable.zip \
 	no_treasure_maps.zip fortunate_jungle.zip dragonproof.zip \
-	mineable.zip shearless.zip breeding_overhaul.zip sleep_overhaul.zip \
-	smooth_cracked_stonecutting.zip lose_hp_xp.zip \
+	mineable.zip shearless.zip breeding_overhaul.zip mother_phantoms.zip \
+	smooth_cracked_stonecutting.zip lose_hp_xp.zip more_rain.zip \
 	loot_overhaul.zip relic_loot.zip more_shulker_shells.zip \
 	starter_bed.zip starter_book.zip starter_bucket.zip starter_map.zip \
 	starter_shulker.zip starter_relic.zip starter_bonus_chest.zip \
@@ -649,21 +649,27 @@ breeding_overhaul_FILES := $(DEFAULT_FILES) \
 	data/bucepack/functions/breeding_overhaul/debug.mcfunction \
 	data/bucepack/functions/breeding_overhaul/load.mcfunction
 
-sleep_overhaul_FILES := $(DEFAULT_FILES) \
+more_rain_FILES := $(DEFAULT_FILES) \
 	data/bucepack/advancements/root.json \
-	data/bucepack/advancements/sleep_overhaul/mama_phantom.json \
-	data/bucepack/advancements/sleep_overhaul/phantom.json \
-	data/bucepack/advancements/sleep_overhaul/root.json \
-	data/bucepack/advancements/sleep_overhaul/sleep.json \
-	data/bucepack/functions/sleep_overhaul/load.mcfunction \
-	data/bucepack/functions/sleep_overhaul/mama_phantom.mcfunction \
-	data/bucepack/functions/sleep_overhaul/phantom.mcfunction \
-	data/bucepack/functions/sleep_overhaul/rain.mcfunction \
-	data/bucepack/functions/sleep_overhaul/sleep.mcfunction \
-	data/bucepack/predicates/sleep_overhaul/baby_phantom_chance.json \
-	data/bucepack/predicates/sleep_overhaul/rain_chance.json \
+	data/bucepack/functions/more_rain/rain.mcfunction \
+	data/bucepack/functions/more_rain/sleep.mcfunction \
+	data/bucepack/predicates/more_rain/rain_chance.json \
+	data/bucepack/advancements/more_rain/sleep.json \
+	data/bucepack/functions/more_rain/load.mcfunction \
+	data/minecraft/tags/functions/load-more_rain.json \
+	data/bucepack/advancements/more_rain/root.json \
+
+mother_phantoms_FILES := $(DEFAULT_FILES) \
+	data/bucepack/advancements/root.json \
+	data/bucepack/advancements/mother_phantoms/mama_phantom.json \
+	data/bucepack/advancements/mother_phantoms/phantom.json \
+	data/bucepack/advancements/mother_phantoms/root.json \
+	data/bucepack/functions/mother_phantoms/load.mcfunction \
+	data/bucepack/functions/mother_phantoms/mama_phantom.mcfunction \
+	data/bucepack/functions/mother_phantoms/phantom.mcfunction \
+	data/bucepack/predicates/mother_phantoms/baby_phantom_chance.json \
 	data/minecraft/loot_tables/entities/phantom.json \
-	data/minecraft/tags/functions/load-sleep_overhaul.json \
+	data/minecraft/tags/functions/load-mother_phantoms.json \
 
 smooth_cracked_stonecutting_FILES := $(DEFAULT_FILES) \
 	data/bucepack/advancements/smooth_cracked_stonecutting/root.json \
@@ -1058,6 +1064,12 @@ fortunate_jungle.zip: $(fortunate_jungle_FILES)
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^
 
+more_rain.zip: $(more_rain_FILES)
+	cp meta/$(@:.zip=.png) pack.png
+	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
+	zip $@ pack.png pack.mcmeta $^
+	printf "@ data/minecraft/tags/functions/load-more_rain.json\n@=data/minecraft/tags/functions/load.json\n" | zipnote -w $@
+
 lose_hp_xp.zip: $(lose_hp_xp_FILES)
 	cp meta/$(@:.zip=.png) pack.png
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
@@ -1106,11 +1118,11 @@ mixed_crafting.zip: $(mixed_crafting_FILES)
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^
 
-sleep_overhaul.zip: $(sleep_overhaul_FILES)
+mother_phantoms.zip: $(mother_phantoms_FILES)
 	cp meta/$(@:.zip=.png) pack.png
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^
-	printf "@ data/minecraft/tags/functions/load-sleep_overhaul.json\n@=data/minecraft/tags/functions/load.json\n" | zipnote -w $@
+	printf "@ data/minecraft/tags/functions/load-mother_phantoms.json\n@=data/minecraft/tags/functions/load.json\n" | zipnote -w $@
 
 breeding_overhaul.zip: $(breeding_overhaul_FILES)
 	cp meta/$(@:.zip=.png) pack.png

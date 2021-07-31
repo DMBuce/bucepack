@@ -1,13 +1,13 @@
 {
 	"display": {
 		"icon": {
-			"item": "minecraft:red_bed"
+			"item": "minecraft:blue_bed"
 		},
 		"title": {
-			"text": "Sleep Overhaul"
+			"text": "More Rain"
 		},
 		"description": {
-			"text": "More rain and fewer phantoms"
+			"text": "Adds a chance to rain overnight"
 		},
 		"show_toast": false,
 		"announce_to_chat": false,

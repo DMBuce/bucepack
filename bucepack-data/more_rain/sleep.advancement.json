@@ -14,7 +14,7 @@
 		"hidden": true,
 		"frame": "task"
 	},
-	"parent": "bucepack:sleep_overhaul/root",
+	"parent": "bucepack:more_rains/root",
 	"criteria": {
 		"sleep": {
 			"trigger": "minecraft:slept_in_bed",
@@ -23,6 +23,6 @@
 		}
 	},
 	"rewards": {
-		"function": "bucepack:sleep_overhaul/sleep"
+		"function": "bucepack:more_rains/sleep"
 	}
 }
