@@ -10,6 +10,8 @@ use area effect clouds over armor stands
 ordering target selectors: https://www.reddit.com/r/MinecraftCommands/comments/nw90u4/does_using_predicates_in_place_of_complicated/h18lr5u/
 raycast: https://www.reddit.com/r/MinecraftCommands/comments/9n1ghh/raycasting_in_1131/e7kxv2o/
 check if player is looking toward/away: https://www.reddit.com/r/MinecraftCommands/comments/akjyh5/help_any_way_to_execute_if_a_player_is_looking_at/ef5jehw/
+item nbt structure: https://minecraft.fandom.com/wiki/Player.dat_format#Item_structure
+json text components: https://minecraft.fandom.com/wiki/Raw_JSON_text_format#Component_resolution
 
 ## Best Practices
 

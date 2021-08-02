@@ -8,3 +8,7 @@ scoreboard objectives add var dummy
 #execute unless score #buce.insomnia var matches 1.. run gamerule doInsomnia false
 #scoreboard players set #buce.insomnia var 1
 
+# set up team with no collision
+team add phantasmal
+team modify phantasmal collisionrule never
+

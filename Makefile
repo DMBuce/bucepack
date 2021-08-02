@@ -7,7 +7,7 @@ RESOURCEPACKFILES = painting_overhaul.zip note_guide.zip brew_guide.zip \
 	classic_moo.zip classic_twang.zip classic_sploosh.zip classic_crunch.zip
 DATAPACKFILES = gardener_endermen.zip climbable.zip \
 	no_treasure_maps.zip fortunate_jungle.zip dragonproof.zip \
-	mineable.zip shearless.zip breeding_overhaul.zip mother_phantoms.zip \
+	mineable.zip shearless.zip breeding_overhaul.zip mother_phantoms.zip phantasmal.zip \
 	smooth_cracked_stonecutting.zip lose_hp_xp.zip more_rain.zip \
 	loot_overhaul.zip relic_loot.zip more_shulker_shells.zip \
 	starter_bed.zip starter_book.zip starter_bucket.zip starter_map.zip \
@@ -659,6 +659,17 @@ more_rain_FILES := $(DEFAULT_FILES) \
 	data/minecraft/tags/functions/load-more_rain.json \
 	data/bucepack/advancements/more_rain/root.json \
 
+phantasmal_FILES := $(DEFAULT_FILES) \
+	data/bucepack/advancements/phantasmal/cloak.json \
+	data/bucepack/functions/phantasmal/cloak.mcfunction \
+	data/bucepack/advancements/phantasmal/root.json \
+	data/bucepack/advancements/phantasmal/uncloak.json \
+	data/bucepack/functions/phantasmal/load.mcfunction \
+	data/bucepack/advancements/phantasmal/disappear.json \
+	data/bucepack/functions/phantasmal/uncloak.mcfunction \
+	data/bucepack/functions/phantasmal/disappear.mcfunction \
+	data/bucepack/functions/phantasmal/trigger.mcfunction \
+
 mother_phantoms_FILES := $(DEFAULT_FILES) \
 	data/bucepack/advancements/root.json \
 	data/bucepack/advancements/mother_phantoms/mama_phantom.json \
@@ -668,7 +679,8 @@ mother_phantoms_FILES := $(DEFAULT_FILES) \
 	data/bucepack/functions/mother_phantoms/mama_phantom.mcfunction \
 	data/bucepack/functions/mother_phantoms/phantom.mcfunction \
 	data/bucepack/predicates/mother_phantoms/baby_phantom_chance.json \
-	data/minecraft/loot_tables/entities/phantom.json \
+	data/minecraft/loot_tables/entities/phantom_mother.json \
+	data/minecraft/loot_tables/entities/phantom_carrot.json \
 	data/minecraft/tags/functions/load-mother_phantoms.json \
 
 smooth_cracked_stonecutting_FILES := $(DEFAULT_FILES) \
@@ -1117,6 +1129,12 @@ mixed_crafting.zip: $(mixed_crafting_FILES)
 	cp meta/$(@:.zip=.png) pack.png
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^
+
+phantasmal.zip: $(phantasmal_FILES)
+	cp meta/$(@:.zip=.png) pack.png
+	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
+	zip $@ pack.png pack.mcmeta $^
+	printf "@ data/minecraft/tags/functions/load-phantasmal.json\n@=data/minecraft/tags/functions/load.json\n" | zipnote -w $@
 
 mother_phantoms.zip: $(mother_phantoms_FILES)
 	cp meta/$(@:.zip=.png) pack.png

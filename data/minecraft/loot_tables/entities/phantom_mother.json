@@ -55,47 +55,6 @@
           "condition": "random_chance_with_looting",
           "chance": 0.3,
           "looting_multiplier": 0.01
-        },
-        {
-          "condition": "minecraft:entity_properties",
-          "entity": "this",
-          "predicate": {
-            "nbt": "{Size:12}"
-          }
-        }
-      ]
-    },
-    {
-      "rolls": 1.0,
-      "bonus_rolls": 0.0,
-      "entries": [
-        {
-          "type": "minecraft:item",
-          "functions": [
-            {
-              "function": "minecraft:set_damage",
-              "damage": 0
-            },
-            {
-              "function": "minecraft:enchant_randomly",
-              "enchantments": [ "vanishing_curse" ]
-            }
-          ],
-          "name": "minecraft:elytra"
-        }
-      ],
-      "conditions": [
-        {
-          "condition": "random_chance_with_looting",
-          "chance": 0.2,
-          "looting_multiplier": 0.015
-        },
-        {
-          "condition": "minecraft:entity_properties",
-          "entity": "this",
-          "predicate": {
-            "nbt": "{Size:12}"
-          }
         }
       ]
     }

@@ -435,25 +435,65 @@ Download: https://github.com/DMBuce/bucepack/releases
 
 Build: `make more_rain.zip`
 
+=== Phantasmal
+
+More phantasmal phantoms.
+
+When a phantom hits a player, it becomes incorporeal.
+Its attacks lose knockback,
+it stops colliding with and pushing entities,
+and its body turns invisible
+(although its eyes and smoke particles can still be seen).
+
+When a player hits a phantom, all nearby phantoms turn visible.
+
+When an invisible phantom hits a player, it disappears in a puff of smoke.
+
+All the above effects only apply to phantoms in the overworld.
+
+This pack is a companion to the <<mother-phantoms,Mother Phantoms>> datapack,
+which adds more corporeal phantoms to The End.
+
+Download: https://github.com/DMBuce/bucepack/releases
+
+Build: `make phantasmal.zip`
+
 === Mother Phantoms
 
-Removes insomnia, and adds phantom bosses to The End.
+Adds phantom bosses to The End.
 
-Up to three
-Mother Phantoms spawn with the Ender Dragon when it's summoned with Ender
-Crystals. One Mother Phantom spawns the first time the dragon is summoned, two
+When a player uses Ender Crystals to summon the Ender Dragon,
+up to three Mother Phantoms spawn with it.
+One Mother Phantom spawns the first time the dragon is summoned, two
 spawn the second time, and three Mother Phantoms spawn for each subsequent
 dragon fight.
 
 Mother Phantoms are larger than normal, deal extra damage, and have extra health.
-Whenever a player hits a Mother Phantom, each Mother Phantom has a 25% chance
-to spawn a normal phantom.
-Mother Phantoms also have a chance to drop their head and/or broken Elytra
-enchanted with Curse of Vanishing. Looting increases the drop rate of both items.
+Whenever a player hits a Mother Phantom, each Mother Phantom turns invisible
+and has a 25% chance to spawn a normal phantom.
+Mother Phantoms lose invisibility when they hit a player.
+They have a chance to drop their head when they die.
+
+//If the addon datapack <<illusionary,Illusionary>> is installed,
+//one Mother Phantom in each fight drops an enchanted golden carrot known as
+//the <<relic-of-illusions,Relic of Illusions>>.
+
+Mother Phantoms is a companion pack to the <<phantasmal,Phantasmal>> datapack,
+which makes phantoms in the Overworld more incorporeal.
 
 Download: https://github.com/DMBuce/bucepack/releases
 
 Build: `make mother_phantoms.zip`
+
+//=== Illusionary
+//
+//This is an addon datapack for the <<mother-phantoms,Mother Phantoms>> pack. It
+//makes one Mother Phantom in each fight drop an enchanted golden carrot known
+//as the <<relic-of-illusions,Relic of Illusions>>.
+//
+//Download: https://github.com/DMBuce/bucepack/releases
+//
+//Build: `make illusionary.zip`
 
 === Loot Overhaul
 
@@ -776,64 +816,184 @@ Download: https://github.com/DMBuce/bucepack/releases
 
 Build: `make no_treasure_maps.zip`
 
+== Spellsmithing
+
+Spellsmithing is the process of working magical enchantments onto an item in
+the smithing table.
+It works a little differently than traditional Minecraft smithing.
+
+Both forms of smithing require two input items and give you an output item.
+Both forms of smithing preserve the magic of the item in the left input slot,
+and destroy any magic on the item in the right output slot.
+
+In normal smithing, you apply the material on the right to the tool on the
+left to create a tool with the properties of the upgrade material. The magic
+of the tool from the left side is preserved.
+
+But when smithing with magical upgrade materials, the order is reversed
+because it's the magic of the
+upgrade item that needs to be preserved. So the upgrade item goes in the left
+slot, not the right slot. You apply the enchantments on
+the left to the tool on the right to upgrade it with the magic of the upgrade
+item.
+
+When spellsmithing, it can be a bit confusing and unintuitive to put the
+upgrade item and the tool in the opposite order. Just remember that
+the magic that you want to preserve is what goes in the left slot.
+//The Spellsmithing Guide resource pack can help with that.
+It can also be useful to shift-click items into the smithing GUI, which will
+always put the item into the correct slot.
+
+=== Boon Enchantments
+
+Boons are a type of enchantment that work a little differently
+from normal enchantments.
+
+Like all enchantments, they magically augment the tool they enchant.
+Like most enchantments, they're removed when repairing a tool in the crafting
+grid.
+
+Like curses, boons can't be removed in the grindstone,
+and their tooltip text isn't white like normal enchantments. Unlike curses,
+their tooltip isn't red.
+
+Like treasure enchantments, boons can't be obtained from the enchanting table,
+and must be found in the world.
+
+Unlike other enchantments, boons can't be obtained from trading, can't be
+worked in the anvil, and aren't found on books. Instead, they are usually
+found on small items such as shards, trinkets, gems, or nuggets. To put the
+boon on a tool, it needs to be worked in the smithing table.
+
+By default, item tooltips display boons with light green text.
+Boons with these light green tooltips require a datapack to obtain and apply
+to a tool, but they continue to function even without a datapack.
+
+=== Glamer Enchantments
+
+Glamers are enchantments that can be applied to item frames and/or armor
+stands in the smithing table to give them effects such as invisibility or
+illusory arms. They are identical to boons in every other way.
+
+=== Mythic Enchantments
+
+Mythic enchantments are boons with tooltips that are light blue instead of
+green. Their effects are often more powerful and/or complex than a typical
+boon, and require a datapack to function.
+
+If the datapack is uninstalled, or if it's incompatible with the version of
+Minecraft you're using (e.g. because you upgraded Minecraft and not the
+datapack), mythic enchantments continue to display their tooltip, but their
+effects cease to work, becoming mere myths.
+
 == Relics
 
 Relics are rare items added by the <<starter-items,Starter Relic>>
 and/or <<relic-loot,Relic Loot>> datapacks.
 
-A relic is a shard, trinket, or broken tool with impossible enchants or
-attribute modifiers. The latent magic within a relic can be upgraded in the
-smithing table with an appropriate tool to create a more useful item.
+A relic is a shard, trinket, or gem with impossible magic -- either a boon
+enchantment or some combination of mutually exclusive
+enchantments. A relic's enchantments can be applied to the appropriate tool in
+the smithing table.
 
 === Relic of Knockback
 
-This piece of flint can be upgraded to a Shovel or Hoe with Knockback V.
+This piece of flint can be upgraded in the smithing table to a Shovel or Hoe with Knockback V.
 
 === Relic of Endlessness
 
-This stick can be upgraded to a Bow with Infinity and Mending.
+This stick can be upgraded in the smithing table to a Bow with Infinity and Mending.
 
 === Relic of Vitality
 
-This glistering melon can be upgraded to a Netherite Chestplate with Vitality
+This glistering melon can be upgraded in the smithing table to a Netherite Chestplate with Vitality
 V, an enchantment that grants the wearer five extra hearts.
 
 === Relic of Speed
 
-This rabbit's foot can be upgraded to Leather Leggings with Speed II, and
+This rabbit's foot can be upgraded in the smithing table to Leather Leggings with Speed II, and
 enchantment that gives the same benefit as a Speed II potion effect.
 
 === Relic of Smiting
 
-This bone can be upgraded to a Sword or Axe with Sharpness IV and Smite IV.
+This bone can be upgraded in the smithing table to a Sword or Axe with Sharpness IV and Smite IV.
 
 === Relic of Sharpness
 
 The Relic of Sharpness has two forms.
 
-First, as a diamond that can be upgraded to a Pickaxe with Sharpness V.
+First, as a diamond that can be upgraded in the smithing table to a Pickaxe with Sharpness V.
 
-Second, as a prismarine shard that can be upgraded to a Trident with Sharpness
+Second, as a prismarine shard that can be upgraded in the smithing table to a Trident with Sharpness
 I.
 
 === Relic of Frost and Flood
 
-These prismarine crystals can be upgraded to Golden Boots with Frost Walker
+These prismarine crystals can be upgraded in the smithing table to Golden Boots with Frost Walker
 II and Depth Strider III.
 
 === Relic of Protection
 
-This scute can be upgraded to a Turtle Shell with Protection IV and Blast
+This scute can be upgraded in the smithing table to a Turtle Shell with Protection IV and Blast
 Protection II.
 
 === Relic of Striding
 
-This sugar cube can be upgraded to Horse Armor with Depth Strider III and Feather
-Falling IV.
+This sugar cube can be upgraded in the smithing table to Horse Armor with Depth Strider III and Feather Falling IV.
 
 === Relic of Projectile Protection
 
-This piece of leather can be upgraded to Elytra with Projectile Protection II.
+This piece of leather can be upgraded in the smithing table to Elytra with Projectile Protection II.
+
+== Mythic Relics
+
+Some relics have <<mythic-enchantments,Mythic Enchantments>>,
+powerful magic with unique abilities.
+Sometimes mythic relics are found as a shard, trinket,
+or gem that can be worked onto a tool in the smithing table.
+Others are found as a tool with the enchantment already applied.
+
+//=== Wings of Cloaking
+//
+//=== Seeker's Scope
+
+//=== Relic of Illusions
+//
+//This mythic relic drops from a boss mob in The End if the
+//<<mother-phantoms,Mother Phantoms>> and <<illusionary,Illusionary>> datapacks
+//are both installed.
+//
+//It's an enchanted golden carrot that gives permanent invisibility to the
+//player who eats it. The invisibility effect ends when the player hits a mob.
+//
+//It can be upgraded in the smithing table to what's colloquially known as the
+//Rod of Illusions, but technically is a Carrot on a Stick with Illusions, a
+//mythic enchantment that gives the following abilities:
+//
+//* Use it (right click) to make the nearest armor stand or item frame invisible
+//* Use while sneaking to make the nearest armor stand or item frame
+//  visible
+//* Use from the offhand to make nearby armor
+//  stands and item frames invisible
+//* Use from the offhand while sneaking to make nearby armor
+//  stands and item frames visible
+//* Eat a glowberry with it in the offhand to give nearby armor stands and
+//  item frames 3 seconds of glowing
+//* Eat a glowberry with it in the offhand while sneaking to give the nearest
+//  armor stand or item frame 3 seconds of glowing
+//
+//When an item frame is made visible with the rod, it toggles from being
+//illusory to real or vice versa. As an illusion, it can't be interacted
+//with in any way.
+//
+//Each time an armor stand is made visible with the rod, it gains a
+//different illusion. The first time, it gains the illusion of arms. The next
+//thirteen times, it gains one of thirteen unique illusions of posing, each
+//a different pose than the last. The time after that, it loses all illusions.
+//
+//The Rod of Illusions can take many guises. If the Illusionary datapack is
+//installed as a resource pack, the Rod takes another form that changes
+//depending on which version of the pack you've installed.
 
 ////
 

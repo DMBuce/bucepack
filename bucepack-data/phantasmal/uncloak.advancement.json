@@ -14,18 +14,21 @@
 		"hidden": true,
 		"frame": "task"
 	},
-	"parent": "bucepack:mother_phantoms/root",
+	"parent": "bucepack:phantasmal/cloak",
 	"criteria": {
 		"hit_end_crystal": {
-			"trigger": "minecraft:summoned_entity",
+			"trigger": "minecraft:player_hurt_entity",
 			"conditions": {
 				"entity": {
-					"type": "minecraft:ender_dragon"
+					"type": "minecraft:phantom",
+					"location": {
+						"dimension": "minecraft:overworld"
+					}
 				}
 			}
 		}
 	},
 	"rewards": {
-		"function": "bucepack:mother_phantoms/mama_phantom"
+		"function": "bucepack:phantasmal/uncloak"
 	}
 }
