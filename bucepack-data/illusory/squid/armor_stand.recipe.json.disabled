@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "base": {
+    "item": "minecraft:ink_sac"
+  },
+  "addition": {
+    "item": "minecraft:armor_stand"
+  },
+  "result": {
+    "item": "minecraft:armor_stand"
+  }
+}

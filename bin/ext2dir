@@ -11,6 +11,9 @@
 #
 
 sed -r '
+	/deleteme/d
+	/\.disabled$/d
+	s/.yaml$//
 	s,([^/ \t]*)-data,data/\1,g
 	s,data/([^/]*)/(.*)\.([^./]*)\.([^./]*),data/\1/\3s/\2.\4,g
 ' "$@"

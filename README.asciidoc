@@ -451,12 +451,25 @@ When an invisible phantom hits a player, it disappears in a puff of smoke.
 
 All the above effects only apply to phantoms in the overworld.
 
+Phantoms killed by a player have a chance to drop a membrane with
+Glamer of Invisibility, an enchantment that can be applied to an item
+frame in the smithing table to make an invisible item frame.
+
+//If you install this data pack as a resource pack, invisible item frames will
+//have a translucent item texture in the inventory
+
 This pack is a companion to the <<mother-phantoms,Mother Phantoms>> datapack,
-which adds more corporeal phantoms to The End.
+which adds more corporeal phantoms to The End; and the
+<<glow-squid-glamers,Glow Squid Glamers>> datapack, which lets you obtain
+armor stand glamers from glow squid.
 
 Download: https://github.com/DMBuce/bucepack/releases
 
 Build: `make phantasmal.zip`
+
+Known Issues: The Glamer of Invisibility can't be applied to armor stands
+because of link::https://bugs.mojang.com/browse/MC-66068[intended behavior]
+that prevents invisible armor stands from being broken.
 
 === Mother Phantoms
 
@@ -484,6 +497,67 @@ which makes phantoms in the Overworld more incorporeal.
 Download: https://github.com/DMBuce/bucepack/releases
 
 Build: `make mother_phantoms.zip`
+
+=== Glow Squid Glamers
+
+Adds custom glamer enchantments that drop from glow squid and can be used to
+give armor stands minor illusory effects.
+
+Glow squid with the glowing potion effect that die have a chance to drop a
+glow ink sac with one or more custom glamer enchantments on it. The
+enchantments can be applied to armor stands in the smithing table to give them
+minor illusory effects. The illusions are incredibly convincing and can be
+interacted with as if they are real.
+
+Each enchantment makes an armor stand's base invisible, gives it illusory
+arms, and provides one other effect as summarized below.
+
+* Glamer of Shrinking: Makes the armor stand appear smaller
+* Glamer of the Default Pose: Gives "default_pose" from bedrock edition (no effect)
+* Glamer of No Pose: Gives "no_pose" from bedrock edition
+* Glamer of the Solemn: Gives the "solemn_pose" from bedrock edition
+* Glamer of the Gesture: Gives the "athena_pose" from bedrock edition
+* Glamer of Brandishing: Gives the "brandish_pose" from bedrock edition
+* Glamer of Honor: Gives the "honor_pose" from bedrock edition
+* Glamer of Entertaining: Gives the "entertain_pose" from bedrock edition
+* Glamer of the Salute: Gives the "salute_pose" from bedrock edition
+* Glamer of the Hero: Gives the "hero_pose" from bedrock edition
+* Glamer of Riposte: Gives the "riposte_pose" from bedrock edition
+* Glamer of the Zombie: Gives the "zombie_pose" from bedrock edition
+* Glamer of the Leftward Cancan: Gives the "cancan_a_pose" from bedrock edition
+* Glamer of the Rightward Cancan: Gives the "cancan_b_pose" from bedrock edition
+
+//If you install this data pack as a resource pack, armor stands with poses will
+//have an appropriate item texture in the inventory
+
+This pack is a companion to the <<phantasmal,Phantasmal>> and
+<<squid-glamer,Squid Glamer>> datapacks,
+each of which let you obtain a glamer that makes item frames invisible.
+
+Download: https://github.com/DMBuce/bucepack/releases
+
+Build: `make glow_squid_glamers.zip`
+
+=== Invisible Squid Glamers
+
+Squid (but not glow squid) with invisibility that die have a chance to drop
+ink with Glamer of Invisibility, an enchantment that can be applied to an item
+frame in the smithing table to make an invisible item frame.
+
+//If you install this data pack as a resource pack, invisible item frames will
+//have a translucent item texture in the inventory
+
+This pack is a companion to the
+<<glow-squid-glamers,Glow Squid Glamers>> datapack, which lets you obtain
+armor stand glamers from glow squid.
+
+Download: https://github.com/DMBuce/bucepack/releases
+
+Build: `make squid_glamers.zip`
+
+Known Issues: The Glamer of Invisibility can't be applied to armor stands
+because of link::https://bugs.mojang.com/browse/MC-66068[intended behavior]
+that prevents invisible armor stands from being broken.
 
 //=== Illusionary
 //
@@ -865,15 +939,22 @@ worked in the anvil, and aren't found on books. Instead, they are usually
 found on small items such as shards, trinkets, gems, or nuggets. To put the
 boon on a tool, it needs to be worked in the smithing table.
 
-By default, item tooltips display boons with light green text.
+Boons also don't give items a shimmering enchantment sheen,
+and their item tooltip text is light green by default.
 Boons with these light green tooltips require a datapack to obtain and apply
 to a tool, but they continue to function even without a datapack.
 
 === Glamer Enchantments
 
-Glamers are enchantments that can be applied to item frames and/or armor
-stands in the smithing table to give them effects such as invisibility or
-illusory arms. They are identical to boons in every other way.
+Glamers are enchantments added by the <<phantasmal,Phantasmal>>,
+<<glow-squid-glamers,Glow Squid Glamers>>, and
+<<invisible-squid-glamer,Invisible Squid Glamer>> datapacks
+that can be applied to item frames and/or armor
+stands in the smithing table to give them visual effects such as invisibility
+or illusory arms. If an item frame or armor stand placed this way is broken,
+the glamer is destroyed.
+
+Glamers are identical to boons in all other ways.
 
 === Mythic Enchantments
 
