@@ -8,7 +8,7 @@ RESOURCEPACKFILES = painting_overhaul.zip note_guide.zip brew_guide.zip \
 DATAPACKFILES = gardener_endermen.zip climbable.zip \
 	no_treasure_maps.zip fortunate_jungle.zip dragonproof.zip \
 	mineable.zip shearless.zip breeding_overhaul.zip \
-	mother_phantoms.zip phantasmal.zip glow_squid_glamers.zip squid_glamer.zip \
+	mother_phantoms.zip phantasmal.zip glow_squid_glamers.zip invis_squid_glamer.zip \
 	smooth_cracked_stonecutting.zip lose_hp_xp.zip more_rain.zip \
 	loot_overhaul.zip relic_loot.zip more_shulker_shells.zip \
 	starter_bed.zip starter_book.zip starter_bucket.zip starter_map.zip \
@@ -654,7 +654,7 @@ glow_squid_glamers_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell find bucepack-data/illusory/glow_squid -type f | ./bin/ext2dir) \
 	data/minecraft/loot_tables/entities/glow_squid.json \
 
-squid_glamer_FILES := $(DEFAULT_DATA_FILES) \
+invis_squid_glamer_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell find bucepack-data/illusory/squid -type f | ./bin/ext2dir) \
 	data/minecraft/loot_tables/entities/squid.json \
 
@@ -1087,7 +1087,7 @@ mixed_crafting.zip: $(mixed_crafting_FILES)
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^
 
-squid_glamer.zip: $(squid_glamer_FILES)
+invis_squid_glamer.zip: $(invis_squid_glamer_FILES)
 	cp meta/$(@:.zip=.png) pack.png
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^

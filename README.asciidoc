@@ -530,7 +530,7 @@ Download: https://github.com/DMBuce/bucepack/releases
 
 Build: `make glow_squid_glamers.zip`
 
-=== Invisible Squid Glamers
+=== Invisible Squid Glamer
 
 Squid (but not glow squid) with invisibility that die have a chance to drop
 ink with Glamer of Invisibility, an enchantment that can be applied to an item
@@ -545,7 +545,7 @@ armor stand glamers from glow squid.
 
 Download: https://github.com/DMBuce/bucepack/releases
 
-Build: `make squid_glamers.zip`
+Build: `make invis_squid_glamers.zip`
 
 Known Issues: The Glamer of Invisibility can't be applied to armor stands
 because of https://bugs.mojang.com/browse/MC-66068[this works-as-intended bug]
