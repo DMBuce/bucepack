@@ -499,7 +499,8 @@ Glow squid with the glowing status effect that die have a chance to drop a
 glow ink sac with one or more custom glamer enchantments on it. The
 enchantments can be applied to armor stands in the smithing table to give them
 minor illusory effects. The illusions are incredibly convincing and can be
-interacted with as if they are real.
+interacted with as if they are real, but they're destroyed when the armor
+stand is broken.
 
 Each enchantment makes an armor stand's base invisible, gives it illusory
 arms, and provides one other effect as summarized below.
@@ -937,9 +938,10 @@ Glamers are enchantments added by the <<phantasmal,Phantasmal>>,
 <<glow-squid-glamers,Glow Squid Glamers>>, and
 <<invisible-squid-glamer,Invisible Squid Glamer>> datapacks
 that can be applied to item frames and/or armor
-stands in the smithing table to give them visual effects such as invisibility
-or illusory arms. If an item frame or armor stand placed this way is broken,
-the glamer is destroyed.
+stands in the smithing table to give them illusory effects such as
+invisibility or fake arms. The illusions are incredibly convincing and can be
+interacted with as if they are real, but they're destroyed when the armor
+stand is broken.
 
 Glamers are identical to boons in all other ways.
 
@@ -952,7 +954,7 @@ boon, and require a datapack to function.
 If the datapack is uninstalled, or if it's incompatible with the version of
 Minecraft you're using (e.g. because you upgraded Minecraft and not the
 datapack), mythic enchantments continue to display their tooltip, but their
-effects cease to work, becoming mere myths.
+effects cease to work and become mere myths.
 
 === Relics
 
