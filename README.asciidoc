@@ -524,7 +524,7 @@ arms, and provides one other effect as summarized below.
 //have an appropriate item texture in the inventory
 
 This pack is a companion to the <<phantasmal,Phantasmal>> and
-<<squid-glamer,Squid Glamer>> datapacks,
+<<invisible-squid-glamer,Invisible Squid Glamer>> datapacks,
 each of which let you obtain an enchantment that makes item frames invisible.
 
 Download: https://github.com/DMBuce/bucepack/releases
@@ -947,6 +947,11 @@ Minecraft you're using (e.g. because you upgraded Minecraft and not the
 datapack), mythic enchantments continue to display their tooltip, but their
 effects cease to work and become mere myths.
 
+//Below is a summary of mythic enchantments and the datapacks they can be found in.
+//
+//**Seeker's Scope**:
+//**Ephemeral Wings of Cloaking**:
+
 === Relics
 
 Relics are powerful items added by the <<starter-item,Starter Relic>>
@@ -982,20 +987,6 @@ The relics are described below.
   Falling IV that can be applied to horse armor
 * **Relic of Projectile Protection**: a piece of leather with Projectile
   Protection II that can be applied to elytra
-
-=== Mythic Relics
-
-Some relics have <<mythic-enchantments,Mythic Enchantments>>,
-powerful magic with unique abilities.
-Sometimes mythic relics are found as a shard, trinket,
-or gem that can be worked onto a tool in the smithing table.
-Others are found as a tool with the enchantment already applied.
-
-//Below is a summary of the data packs that mythic relics can be found in.
-//
-//* **Ephemeral Wings of Cloaking**: <<mother-phantoms,Mother Phantoms>>
-//* **Seeker's Scope**: <<escape-the-end,Escape the End>>
-
 
 ////
 
