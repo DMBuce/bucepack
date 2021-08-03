@@ -950,6 +950,7 @@ effects cease to work and become mere myths.
 //Below is a summary of mythic enchantments and the datapacks they can be found in.
 //
 //**Seeker's Scope**:
+//
 //**Ephemeral Wings of Cloaking**:
 
 === Relics
@@ -963,30 +964,40 @@ enchantment that can be put on a tool that normally couldn't have it.
 
 The relics are described below.
 
-* **Relic of Knockback**: a piece of flint with Knockback V that can be
-  applied to a shovel or hoe
-* **Relic of Endlessness**: a stick with Infinity and Mending that can be
-  applied to a bow
-* **Relic of Vitality**: a glistering melon with Boon of Vitality, a custom
-  enchantment that can be applied to a netherite chestplate to give five extra
-  hearts
-* **Relic of Speed**: a rabbit's foot with Boon of Speed, a custom enchantment
-  that can be applied to leather leggings to give a persistent Speed II effect
-* **Relic of Smiting**: a bone with Sharpness IV and Smite IV that can be
-  applied to a sword or axe
-* **Relic of Sharpness**: a diamond with Sharpness V that can be applied to a
-  pickaxe
-* **Relic of Quick Swing**: a prismarine shard with Boon of Quick Swinging, a
-  custom enchantment that that can be applied to a trident to give increased
-  attack speed
-* **Relic of Frost and Flood**: a prismarine crystal with Frost Walker II and
-  Depth Strider III that can be applied to golden boots
-* **Relic of Protection**: a scute with Protection IV and Blast Protection II
-  that can be applied to a turtle shell
-* **Relic of Striding**: a sugar cube with Depth Strider III and Feather
-  Falling IV that can be applied to horse armor
-* **Relic of Projectile Protection**: a piece of leather with Projectile
-  Protection II that can be applied to elytra
+**Relic of Knockback**: a piece of flint with Knockback V that can be
+applied to a shovel or hoe
+
+**Relic of Endlessness**: a stick with Infinity and Mending that can be
+applied to a bow
+
+**Relic of Vitality**: a glistering melon with Boon of Vitality, a custom
+enchantment that can be applied to a netherite chestplate to give five extra
+hearts
+
+**Relic of Speed**: a rabbit's foot with Boon of Speed, a custom enchantment
+that can be applied to leather leggings to give a persistent Speed II effect
+
+**Relic of Smiting**: a bone with Sharpness IV and Smite IV that can be
+applied to a sword or axe
+
+**Relic of Sharpness**: a diamond with Sharpness V that can be applied to a
+pickaxe
+
+**Relic of Quick Swing**: a prismarine shard with Boon of Quick Swinging, a
+custom enchantment that that can be applied to a trident to give increased
+attack speed
+
+**Relic of Frost and Flood**: a prismarine crystal with Frost Walker II and
+Depth Strider III that can be applied to golden boots
+
+**Relic of Protection**: a scute with Protection IV and Blast Protection II
+that can be applied to a turtle shell
+
+**Relic of Striding**: a sugar cube with Depth Strider III and Feather
+Falling IV that can be applied to horse armor
+
+**Relic of Projectile Protection**: a piece of leather with Projectile
+Protection II that can be applied to elytra
 
 ////
 
