@@ -334,6 +334,7 @@ lose_hp_xp_FILES := $(DEFAULT_FILES) \
 	data/bucepack/functions/lose_hp_xp/keepinv.mcfunction \
 	data/bucepack/functions/lose_hp_xp/load.mcfunction \
 	data/bucepack/functions/lose_hp_xp/natregen.mcfunction \
+	data/bucepack/functions/var.mcfunction \
 	data/minecraft/tags/functions/load-lose_hp_xp.json \
 
 loot_overhaul_FILES := $(DEFAULT_FILES) \
@@ -430,6 +431,7 @@ relic_FILES := $(DEFAULT_FILES) \
 	data/bucepack/functions/relic/gravitation/pull.mcfunction \
 	data/bucepack/functions/relic/gravitation/supercharge.mcfunction \
 	data/bucepack/functions/relic/load.mcfunction \
+	data/bucepack/functions/var.mcfunction \
 	data/bucepack/functions/relic/mining/activate.mcfunction \
 	data/bucepack/functions/relic/mining/charge.mcfunction \
 	data/bucepack/functions/relic/relic.mcfunction \
@@ -648,7 +650,7 @@ breeding_overhaul_FILES := $(DEFAULT_FILES) \
 	data/bucepack/functions/breeding_overhaul/breed.mcfunction \
 	data/bucepack/functions/breeding_overhaul/baby.mcfunction \
 	data/bucepack/functions/breeding_overhaul/debug.mcfunction \
-	data/bucepack/functions/breeding_overhaul/load.mcfunction
+	data/bucepack/functions/var.mcfunction
 
 more_rain_FILES := $(DEFAULT_FILES) \
 	data/bucepack/advancements/root.json \
@@ -656,8 +658,8 @@ more_rain_FILES := $(DEFAULT_FILES) \
 	data/bucepack/functions/more_rain/sleep.mcfunction \
 	data/bucepack/predicates/more_rain/rain_chance.json \
 	data/bucepack/advancements/more_rain/sleep.json \
-	data/bucepack/functions/more_rain/load.mcfunction \
 	data/minecraft/tags/functions/load-more_rain.json \
+	data/bucepack/functions/var.mcfunction \
 	data/bucepack/advancements/more_rain/root.json \
 
 glow_squid_glamers_FILES := $(DEFAULT_FILES) \
@@ -677,6 +679,7 @@ phantasmal_FILES := $(DEFAULT_FILES) \
 	data/bucepack/advancements/root.json \
 	data/minecraft/loot_tables/entities/phantom.json \
 	data/minecraft/tags/functions/load-phantasmal.json \
+	data/bucepack/functions/var.mcfunction \
 #	data/bucepack/recipes/phantasmal/armor_stand.json \
 #	data/bucepack/recipes/phantasmal/item_frame.json \
 #	data/bucepack/advancements/phantasmal/cloak.json \
@@ -694,13 +697,13 @@ mother_phantoms_FILES := $(DEFAULT_FILES) \
 	data/bucepack/advancements/mother_phantoms/mama_phantom.json \
 	data/bucepack/advancements/mother_phantoms/phantom.json \
 	data/bucepack/advancements/mother_phantoms/root.json \
-	data/bucepack/functions/mother_phantoms/load.mcfunction \
 	data/bucepack/functions/mother_phantoms/mama_phantom.mcfunction \
 	data/bucepack/functions/mother_phantoms/phantom.mcfunction \
 	data/bucepack/predicates/mother_phantoms/baby_phantom_chance.json \
 	data/minecraft/loot_tables/entities/phantom_mother.json \
 	data/minecraft/loot_tables/entities/phantom_carrot.json \
 	data/minecraft/tags/functions/load-mother_phantoms.json \
+	data/bucepack/functions/var.mcfunction \
 
 smooth_cracked_stonecutting_FILES := $(DEFAULT_FILES) \
 	data/bucepack/advancements/smooth_cracked_stonecutting/root.json \
