@@ -508,20 +508,20 @@ interacted with as if they are real.
 Each enchantment makes an armor stand's base invisible, gives it illusory
 arms, and provides one other effect as summarized below.
 
-* Glamer of Shrinking: Makes the armor stand appear smaller
-* Glamer of the Default Pose: Gives "default_pose" from bedrock edition (no effect)
-* Glamer of No Pose: Gives "no_pose" from bedrock edition
-* Glamer of the Solemn: Gives the "solemn_pose" from bedrock edition
-* Glamer of the Gesture: Gives the "athena_pose" from bedrock edition
-* Glamer of Brandishing: Gives the "brandish_pose" from bedrock edition
-* Glamer of Honor: Gives the "honor_pose" from bedrock edition
-* Glamer of Entertaining: Gives the "entertain_pose" from bedrock edition
-* Glamer of the Salute: Gives the "salute_pose" from bedrock edition
-* Glamer of the Hero: Gives the "hero_pose" from bedrock edition
-* Glamer of Riposte: Gives the "riposte_pose" from bedrock edition
-* Glamer of the Zombie: Gives the "zombie_pose" from bedrock edition
-* Glamer of the Leftward Cancan: Gives the "cancan_a_pose" from bedrock edition
-* Glamer of the Rightward Cancan: Gives the "cancan_b_pose" from bedrock edition
+* **Glamer of Shrinking**: Makes the armor stand appear smaller
+* **Glamer of the Default Pose**: Gives "default_pose" from bedrock edition (no effect)
+* **Glamer of No Pose**: Gives "no_pose" from bedrock edition
+* **Glamer of the Solemn**: Gives the "solemn_pose" from bedrock edition
+* **Glamer of the Gesture**: Gives the "athena_pose" from bedrock edition
+* **Glamer of Brandishing**: Gives the "brandish_pose" from bedrock edition
+* **Glamer of Honor**: Gives the "honor_pose" from bedrock edition
+* **Glamer of Entertaining**: Gives the "entertain_pose" from bedrock edition
+* **Glamer of the Salute**: Gives the "salute_pose" from bedrock edition
+* **Glamer of the Hero**: Gives the "hero_pose" from bedrock edition
+* **Glamer of Riposte**: Gives the "riposte_pose" from bedrock edition
+* **Glamer of the Zombie**: Gives the "zombie_pose" from bedrock edition
+* **Glamer of the Leftward Cancan**: Gives the "cancan_a_pose" from bedrock edition
+* **Glamer of the Rightward Cancan**: Gives the "cancan_b_pose" from bedrock edition
 
 //If you install this data pack as a resource pack, armor stands with poses will
 //have an appropriate item texture in the inventory
