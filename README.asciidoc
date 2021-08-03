@@ -168,10 +168,6 @@ this pack organizes them into "types" that determine the ore's shape.
 * "Gemlike" ores (Redstone, Diamond, Emerald) use the old emerald shape
 * "Lumpy" ores (Coal, Lapis) are shaped like modern coal ore
 
-As an originally unintended bonus,
-gemlike ores stick up one pixel above lava,
-so you can find them a bit more easily.
-
 Download: https://github.com/DMBuce/bucepack/releases
 
 Build: `make ore_types.zip`
@@ -468,7 +464,7 @@ Download: https://github.com/DMBuce/bucepack/releases
 Build: `make phantasmal.zip`
 
 Known Issues: The Glamer of Invisibility can't be applied to armor stands
-because of https://bugs.mojang.com/browse/MC-66068[intended behavior]
+because of https://bugs.mojang.com/browse/MC-66068[this works-as-intended bug]
 that prevents invisible armor stands from being broken.
 
 === Mother Phantoms
@@ -496,10 +492,10 @@ Build: `make mother_phantoms.zip`
 
 === Glow Squid Glamers
 
-Adds custom glamer enchantments that drop from glow squid and can be used to
+Adds custom enchantments that drop from glow squid and can be used to
 give armor stands minor illusory effects.
 
-Glow squid with the glowing potion effect that die have a chance to drop a
+Glow squid with the glowing status effect that die have a chance to drop a
 glow ink sac with one or more custom glamer enchantments on it. The
 enchantments can be applied to armor stands in the smithing table to give them
 minor illusory effects. The illusions are incredibly convincing and can be
@@ -509,7 +505,7 @@ Each enchantment makes an armor stand's base invisible, gives it illusory
 arms, and provides one other effect as summarized below.
 
 * **Glamer of Shrinking**: Makes the armor stand appear smaller
-* **Glamer of the Default Pose**: Gives "default_pose" from bedrock edition (no effect)
+* **Glamer of the Default Pose**: Gives the "default_pose" from bedrock edition (no effect)
 * **Glamer of No Pose**: Gives "no_pose" from bedrock edition
 * **Glamer of the Solemn**: Gives the "solemn_pose" from bedrock edition
 * **Glamer of the Gesture**: Gives the "athena_pose" from bedrock edition
@@ -520,15 +516,15 @@ arms, and provides one other effect as summarized below.
 * **Glamer of the Hero**: Gives the "hero_pose" from bedrock edition
 * **Glamer of Riposte**: Gives the "riposte_pose" from bedrock edition
 * **Glamer of the Zombie**: Gives the "zombie_pose" from bedrock edition
-* **Glamer of the Leftward Cancan**: Gives the "cancan_a_pose" from bedrock edition
-* **Glamer of the Rightward Cancan**: Gives the "cancan_b_pose" from bedrock edition
+* **Glamer of the Rightward Cancan**: Gives the "cancan_a_pose" from bedrock edition
+* **Glamer of the Leftward Cancan**: Gives the "cancan_b_pose" from bedrock edition
 
 //If you install this data pack as a resource pack, armor stands with poses will
 //have an appropriate item texture in the inventory
 
 This pack is a companion to the <<phantasmal,Phantasmal>> and
 <<squid-glamer,Squid Glamer>> datapacks,
-each of which let you obtain a glamer that makes item frames invisible.
+each of which let you obtain an enchantment that makes item frames invisible.
 
 Download: https://github.com/DMBuce/bucepack/releases
 
@@ -552,7 +548,7 @@ Download: https://github.com/DMBuce/bucepack/releases
 Build: `make squid_glamers.zip`
 
 Known Issues: The Glamer of Invisibility can't be applied to armor stands
-because of https://bugs.mojang.com/browse/MC-66068[intended behavior]
+because of https://bugs.mojang.com/browse/MC-66068[this works-as-intended bug]
 that prevents invisible armor stands from being broken.
 
 === Loot Overhaul
@@ -907,11 +903,12 @@ always put the item into the correct slot.
 === Boon Enchantments
 
 Boons are a type of enchantment that work a little differently
-from normal enchantments.
+from normal enchantments. They are a bit unintuitive and finnicky due to
+magic's unpredictable nature.
 
-Like all enchantments, they magically augment the tool they enchant.
-Like most enchantments, they're removed when repairing a tool in the crafting
-grid.
+Like all enchantments, boons magically augment the tool they enchant.
+Like most enchantments, they're destroyed when a tool is repaired in the
+crafting grid.
 
 Like curses, boons can't be removed in the grindstone,
 and their tooltip text isn't white like normal enchantments. Unlike curses,
@@ -920,10 +917,14 @@ their tooltip isn't red.
 Like treasure enchantments, boons can't be obtained from the enchanting table,
 and must be found in the world.
 
-Unlike other enchantments, boons can't be obtained from trading, can't be
-worked in the anvil, and aren't found on books. Instead, they are usually
+Unlike other enchantments, boons can't be obtained from trading
+and aren't found on books. Instead, they are usually
 found on small items such as shards, trinkets, gems, or nuggets. To put the
 boon on a tool, it needs to be worked in the smithing table.
+
+When combining tools in the anvil, a boon in the left slot will be preserved
+and a boon in the right slot will be destroyed. Applying ingots or enchanted
+books with the anvil works normally.
 
 Boons also don't give items a shimmering enchantment sheen,
 and their item tooltip text is light green by default.
