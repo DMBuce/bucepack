@@ -487,10 +487,6 @@ and has a 25% chance to spawn a normal phantom.
 Mother Phantoms lose invisibility when they hit a player.
 They have a chance to drop their head when they die.
 
-//If the addon datapack <<illusionary,Illusionary>> is installed,
-//one Mother Phantom in each fight drops an enchanted golden carrot known as
-//the <<relic-of-illusions,Relic of Illusions>>.
-
 Mother Phantoms is a companion pack to the <<phantasmal,Phantasmal>> datapack,
 which makes phantoms in the Overworld more incorporeal.
 
@@ -558,16 +554,6 @@ Build: `make squid_glamers.zip`
 Known Issues: The Glamer of Invisibility can't be applied to armor stands
 because of link::https://bugs.mojang.com/browse/MC-66068[intended behavior]
 that prevents invisible armor stands from being broken.
-
-//=== Illusionary
-//
-//This is an addon datapack for the <<mother-phantoms,Mother Phantoms>> pack. It
-//makes one Mother Phantom in each fight drop an enchanted golden carrot known
-//as the <<relic-of-illusions,Relic of Illusions>>.
-//
-//Download: https://github.com/DMBuce/bucepack/releases
-//
-//Build: `make illusionary.zip`
 
 === Loot Overhaul
 
@@ -977,54 +963,31 @@ enchantment or some combination of mutually exclusive
 enchantments. A relic's enchantments can be applied to the appropriate tool in
 the smithing table.
 
-=== Relic of Knockback
-
-This piece of flint can be upgraded in the smithing table to a Shovel or Hoe with Knockback V.
-
-=== Relic of Endlessness
-
-This stick can be upgraded in the smithing table to a Bow with Infinity and Mending.
-
-=== Relic of Vitality
-
-This glistering melon can be upgraded in the smithing table to a Netherite Chestplate with Vitality
-V, an enchantment that grants the wearer five extra hearts.
-
-=== Relic of Speed
-
-This rabbit's foot can be upgraded in the smithing table to Leather Leggings with Speed II, and
-enchantment that gives the same benefit as a Speed II potion effect.
-
-=== Relic of Smiting
-
-This bone can be upgraded in the smithing table to a Sword or Axe with Sharpness IV and Smite IV.
-
-=== Relic of Sharpness
-
-The Relic of Sharpness has two forms.
-
-First, as a diamond that can be upgraded in the smithing table to a Pickaxe with Sharpness V.
-
-Second, as a prismarine shard that can be upgraded in the smithing table to a Trident with Sharpness
-I.
-
-=== Relic of Frost and Flood
-
-These prismarine crystals can be upgraded in the smithing table to Golden Boots with Frost Walker
-II and Depth Strider III.
-
-=== Relic of Protection
-
-This scute can be upgraded in the smithing table to a Turtle Shell with Protection IV and Blast
-Protection II.
-
-=== Relic of Striding
-
-This sugar cube can be upgraded in the smithing table to Horse Armor with Depth Strider III and Feather Falling IV.
-
-=== Relic of Projectile Protection
-
-This piece of leather can be upgraded in the smithing table to Elytra with Projectile Protection II.
+* **Relic of Knockback**: a piece of flint with Knockback V that can be applied to
+  a shovel or hoe in the smithing table
+* **Relic of Endlessness**: a stick with Infinity and Mending that can be
+  applied to a bow in the smithing table
+* **Relic of Vitality**: a glistering melon with Boon of Vitality, a custom
+  enchantment that can be applied to a netherite chestplate in the smithing
+  table to give five extra hearts
+* **Relic of Speed**: a rabbit's foot with Boon of Speed, a custom enchantment
+  that can be applied to leather leggings in the smithing table to give a
+  persistent Speed II effect
+* **Relic of Smiting**: a bone with Sharpness IV and Smite IV that can be
+  applied to a sword or axe in the smithing table
+* **Relic of Sharpness**: a diamond with Sharpness V that that can be applied
+  to a pickaxe in the smithing table
+* **Relic of Quick Swing**: a prismarine shard with Boon of Quick Swinging, a
+  custom enchantment that that can be applied to a trident in the smithing
+  table to give increased attack speed
+* **Relic of Frost and Flood**: a prismarine crystal with Frost Walker II and
+  Depth Strider III that can be applied to golden boots in the smithing table
+* **Relic of Protection**: a scute with Protection IV and Blast Protection II
+  that can be applied to a turtle shell in the smithing table
+* **Relic of Striding**: a sugar cube with Depth Strider III and Feather
+  Falling IV that can be applied to horse armor in the smithing table
+* **Relic of Projectile Protection**: a piece of leather with Projectile
+  Protection II that can be applied to elytra in the smithing table
 
 == Mythic Relics
 
@@ -1034,47 +997,11 @@ Sometimes mythic relics are found as a shard, trinket,
 or gem that can be worked onto a tool in the smithing table.
 Others are found as a tool with the enchantment already applied.
 
-//=== Wings of Cloaking
+//Below is a summary of the data packs that mythic relics can be found in.
 //
-//=== Seeker's Scope
+//* **Ephemeral Wings of Cloaking**: <<mother-phantoms,Mother Phantoms>>
+//* **Seeker's Scope**: <<escape-the-end,Escape the End>>
 
-//=== Relic of Illusions
-//
-//This mythic relic drops from a boss mob in The End if the
-//<<mother-phantoms,Mother Phantoms>> and <<illusionary,Illusionary>> datapacks
-//are both installed.
-//
-//It's an enchanted golden carrot that gives permanent invisibility to the
-//player who eats it. The invisibility effect ends when the player hits a mob.
-//
-//It can be upgraded in the smithing table to what's colloquially known as the
-//Rod of Illusions, but technically is a Carrot on a Stick with Illusions, a
-//mythic enchantment that gives the following abilities:
-//
-//* Use it (right click) to make the nearest armor stand or item frame invisible
-//* Use while sneaking to make the nearest armor stand or item frame
-//  visible
-//* Use from the offhand to make nearby armor
-//  stands and item frames invisible
-//* Use from the offhand while sneaking to make nearby armor
-//  stands and item frames visible
-//* Eat a glowberry with it in the offhand to give nearby armor stands and
-//  item frames 3 seconds of glowing
-//* Eat a glowberry with it in the offhand while sneaking to give the nearest
-//  armor stand or item frame 3 seconds of glowing
-//
-//When an item frame is made visible with the rod, it toggles from being
-//illusory to real or vice versa. As an illusion, it can't be interacted
-//with in any way.
-//
-//Each time an armor stand is made visible with the rod, it gains a
-//different illusion. The first time, it gains the illusion of arms. The next
-//thirteen times, it gains one of thirteen unique illusions of posing, each
-//a different pose than the last. The time after that, it loses all illusions.
-//
-//The Rod of Illusions can take many guises. If the Illusionary datapack is
-//installed as a resource pack, the Rod takes another form that changes
-//depending on which version of the pack you've installed.
 
 ////
 
