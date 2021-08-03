@@ -44,7 +44,7 @@
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{CustomModelData:22183,EntityTags:{Invisible:1b,ShowArms:1b,NoBasePlate:1b},display:{Lore:[\"\\\"§r§aGlamer of Invisibility\\\"\"]}}"
+              "tag": "{CustomModelData:22183,EntityTag:{Invisible:1b,ShowArms:1b,NoBasePlate:1b},display:{Lore:[\"\\\"§r§aGlamer of Invisibility\\\"\"]}}"
             }
           ],
           "name": "minecraft:phantom_membrane"

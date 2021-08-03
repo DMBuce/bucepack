@@ -2,5 +2,5 @@
 
 # set up team with no collision
 team add phantasmal
-team modify phantasmal collisionrule never
+team modify phantasmal collisionRule never
 
