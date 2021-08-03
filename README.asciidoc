@@ -949,39 +949,39 @@ effects cease to work and become mere myths.
 
 === Relics
 
-Relics are rare items added by the <<starter-items,Starter Relic>>
+Relics are powerful items added by the <<starter-item,Starter Relic>>
 and/or <<relic-loot,Relic Loot>> datapacks.
 
 A relic is a shard, trinket, or gem with impossible magic -- either a boon
-enchantment or some combination of mutually exclusive
-enchantments. A relic's enchantments can be applied to the appropriate tool in
-the smithing table.
+enchantment, some combination of mutually exclusive enchantments, or an
+enchantment that can be put on a tool that normally couldn't have it.
 
-* **Relic of Knockback**: a piece of flint with Knockback V that can be applied to
-  a shovel or hoe in the smithing table
+The relics are described below.
+
+* **Relic of Knockback**: a piece of flint with Knockback V that can be
+  applied to a shovel or hoe
 * **Relic of Endlessness**: a stick with Infinity and Mending that can be
-  applied to a bow in the smithing table
+  applied to a bow
 * **Relic of Vitality**: a glistering melon with Boon of Vitality, a custom
-  enchantment that can be applied to a netherite chestplate in the smithing
-  table to give five extra hearts
+  enchantment that can be applied to a netherite chestplate to give five extra
+  hearts
 * **Relic of Speed**: a rabbit's foot with Boon of Speed, a custom enchantment
-  that can be applied to leather leggings in the smithing table to give a
-  persistent Speed II effect
+  that can be applied to leather leggings to give a persistent Speed II effect
 * **Relic of Smiting**: a bone with Sharpness IV and Smite IV that can be
-  applied to a sword or axe in the smithing table
-* **Relic of Sharpness**: a diamond with Sharpness V that that can be applied
-  to a pickaxe in the smithing table
+  applied to a sword or axe
+* **Relic of Sharpness**: a diamond with Sharpness V that can be applied to a
+  pickaxe
 * **Relic of Quick Swing**: a prismarine shard with Boon of Quick Swinging, a
-  custom enchantment that that can be applied to a trident in the smithing
-  table to give increased attack speed
+  custom enchantment that that can be applied to a trident to give increased
+  attack speed
 * **Relic of Frost and Flood**: a prismarine crystal with Frost Walker II and
-  Depth Strider III that can be applied to golden boots in the smithing table
+  Depth Strider III that can be applied to golden boots
 * **Relic of Protection**: a scute with Protection IV and Blast Protection II
-  that can be applied to a turtle shell in the smithing table
+  that can be applied to a turtle shell
 * **Relic of Striding**: a sugar cube with Depth Strider III and Feather
-  Falling IV that can be applied to horse armor in the smithing table
+  Falling IV that can be applied to horse armor
 * **Relic of Projectile Protection**: a piece of leather with Projectile
-  Protection II that can be applied to elytra in the smithing table
+  Protection II that can be applied to elytra
 
 === Mythic Relics
 
