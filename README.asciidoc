@@ -953,7 +953,7 @@ Minecraft you're using (e.g. because you upgraded Minecraft and not the
 datapack), mythic enchantments continue to display their tooltip, but their
 effects cease to work, becoming mere myths.
 
-== Relics
+=== Relics
 
 Relics are rare items added by the <<starter-items,Starter Relic>>
 and/or <<relic-loot,Relic Loot>> datapacks.
@@ -989,7 +989,7 @@ the smithing table.
 * **Relic of Projectile Protection**: a piece of leather with Projectile
   Protection II that can be applied to elytra in the smithing table
 
-== Mythic Relics
+=== Mythic Relics
 
 Some relics have <<mythic-enchantments,Mythic Enchantments>>,
 powerful magic with unique abilities.
