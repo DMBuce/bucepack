@@ -962,7 +962,7 @@ A relic is a shard, trinket, or gem with impossible magic -- either a boon
 enchantment, some combination of mutually exclusive enchantments, or an
 enchantment that can be put on a tool that normally couldn't have it.
 
-The relics are described below.
+The relics are summarized below.
 
 **Relic of Knockback**: a piece of flint with Knockback V that can be
 applied to a shovel or hoe
