@@ -882,7 +882,6 @@ It works a little differently than traditional Minecraft smithing.
 Both forms of smithing require two input items and give you an output item.
 Both forms of smithing preserve the magic of the item in the left input slot,
 and destroy any magic on the item in the right output slot.
-
 So in order to preserve the magic of an enchanted upgrade item, it needs to go
 in the left slot with the tool on the right, and the order is reversed compared to
 traditional smithing.
