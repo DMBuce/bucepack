@@ -883,19 +883,11 @@ Both forms of smithing require two input items and give you an output item.
 Both forms of smithing preserve the magic of the item in the left input slot,
 and destroy any magic on the item in the right output slot.
 
-In normal smithing, you apply the material on the right to the tool on the
-left to create a tool with the properties of the upgrade material. The magic
-of the tool from the left side is preserved.
+So in order to preserve the magic of an enchanted upgrade item, it needs to go
+in the left slot with the tool on the right, and the order is reversed compared to
+traditional smithing.
 
-But when smithing with magical upgrade materials, the order is reversed
-because it's the magic of the
-upgrade item that needs to be preserved. So the upgrade item goes in the left
-slot, not the right slot. You apply the enchantments on
-the left to the tool on the right to upgrade it with the magic of the upgrade
-item.
-
-When spellsmithing, it can be a bit confusing and unintuitive to put the
-upgrade item and the tool in the opposite order. Just remember that
+It can be a bit confusing and counterintuitive at first, but just remember that
 the magic that you want to preserve is what goes in the left slot.
 //The Spellsmithing Guide resource pack can help with that.
 It can also be useful to shift-click items into the smithing GUI, which will
