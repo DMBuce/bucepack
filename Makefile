@@ -345,7 +345,6 @@ relic_FILES := $(DEFAULT_DATA_FILES) \
 loot_overhaul_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell find bucepack-data/loot_overhaul -type f | ./bin/ext2dir) \
 	$(relic_FILES) \
-	data/bucepack/loot_tables/example.json \
 	data/minecraft/tags/functions/load-loot_overhaul.json \
 	data/minecraft/loot_tables/chests/abandoned_mineshaft.json \
 	data/minecraft/loot_tables/chests/bastion_bridge.json \
