@@ -337,10 +337,16 @@ lose_hp_xp_FILES := $(DEFAULT_DATA_FILES) \
 	data/bucepack/functions/var.mcfunction \
 	data/minecraft/tags/functions/load-lose_hp_xp.json \
 
+relic_FILES := $(DEFAULT_DATA_FILES) \
+	$(shell find bucepack-data/relic -type f | ./bin/ext2dir) \
+	$(spellsmithing_guide_FILES) \
+	data/bucepack/loot_tables/relic/all.json \
+
 loot_overhaul_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell find bucepack-data/loot_overhaul -type f | ./bin/ext2dir) \
+	$(relic_FILES) \
 	data/bucepack/loot_tables/example.json \
-	data/bucepack/loot_tables/relic/random.json \
+	data/minecraft/tags/functions/load-loot_overhaul.json \
 	data/minecraft/loot_tables/chests/abandoned_mineshaft.json \
 	data/minecraft/loot_tables/chests/bastion_bridge.json \
 	data/minecraft/loot_tables/chests/bastion_hoglin_stable.json \
@@ -397,44 +403,37 @@ loot_overhaul_FILES := $(DEFAULT_DATA_FILES) \
 
 plant_loot_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell ls bucepack-data/loot_addons/plant_loot* | ./bin/ext2dir) \
-	data/bucepack/advancements/loot_overhaul/root.json \
-
-relic_FILES := $(DEFAULT_DATA_FILES) \
-	$(shell find bucepack-data/relic -type f | ./bin/ext2dir) \
-	$(spellsmithing_guide_FILES) \
-	data/bucepack/loot_tables/relic/all.json \
 
 relic_loot_FILES := $(DEFAULT_DATA_FILES) \
+	$(shell ls bucepack-data/loot_addons/relic_loot* | ./bin/ext2dir) \
 	$(relic_FILES) \
-	data/bucepack/advancements/relic_loot.json \
 
 starter_relic_FILES := $(DEFAULT_DATA_FILES) \
 	$(relic_FILES) \
-	data/bucepack/advancements/starter_relic.json \
+	$(shell ls bucepack-data/loot_addons/starter_relic* | ./bin/ext2dir) \
 
 starter_bonus_chest_FILES := $(DEFAULT_DATA_FILES) \
-	data/bucepack/advancements/starter_bonus_chest.json \
-	data/bucepack/functions/starter_bonus_chest.mcfunction \
+	$(shell ls bucepack-data/starter_bonus_chest* | ./bin/ext2dir) \
 
 starter_bed_FILES := $(DEFAULT_DATA_FILES) \
 	data/minecraft/tags/items/starter_bed.json \
-	data/bucepack/advancements/starter_bed.json
+	data/bucepack/advancements/loot_addons/starter_bed.json
 
 starter_book_FILES := $(DEFAULT_DATA_FILES) \
 	data/minecraft/tags/items/starter_book.json \
-	data/bucepack/advancements/starter_book.json
+	data/bucepack/advancements/loot_addons/starter_book.json
 
 starter_bucket_FILES := $(DEFAULT_DATA_FILES) \
 	data/minecraft/tags/items/starter_bucket.json \
-	data/bucepack/advancements/starter_bucket.json
+	data/bucepack/advancements/loot_addons/starter_bucket.json
 
 starter_map_FILES := $(DEFAULT_DATA_FILES) \
 	data/minecraft/tags/items/starter_map.json \
-	data/bucepack/advancements/starter_map.json
+	data/bucepack/advancements/loot_addons/starter_map.json
 
 starter_shulker_FILES := $(DEFAULT_DATA_FILES) \
 	data/minecraft/tags/items/starter_shulker.json \
-	data/bucepack/advancements/starter_shulker.json
+	data/bucepack/advancements/loot_addons/starter_shulker.json
 
 dragonproof_FILES := $(DEFAULT_DATA_FILES) \
 	data/bucepack/advancements/dragonproof.json \
@@ -913,6 +912,7 @@ loot_overhaul.zip: $(loot_overhaul_FILES)
 	cp meta/$(@:.zip=.png) pack.png
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^
+	printf "@ data/minecraft/tags/functions/load-loot_overhaul.json\n@=data/minecraft/tags/functions/load.json\n" | zipnote -w $@
 
 plant_loot.zip: $(plant_loot_FILES)
 	cp meta/$(@:.zip=.png) pack.png

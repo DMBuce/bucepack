@@ -1,7 +1,8 @@
 {
 	"display": {
 		"icon": {
-			"item": "minecraft:chest"
+			"item": "minecraft:diamond_chestplate",
+			"nbt": "{Enchantments:[{id:unbreaking,lvl:3}]}"
 		},
 		"title": {
 			"text": "Relic Loot"

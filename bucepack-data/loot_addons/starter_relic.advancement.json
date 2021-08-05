@@ -21,6 +21,6 @@
 		}
 	},
 	"rewards": {
-		"loot": "bucepack:relic/random"
+		"function": "bucepack:loot_addons/starter_relic"
 	}
 }

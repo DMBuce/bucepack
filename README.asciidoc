@@ -1,5 +1,5 @@
 :toc: macro
-:sectlinks: 1
+:sectlinks: 2
 
 = Buce's Packs
 
@@ -484,8 +484,8 @@ image::https://i.imgur.com/uKTapeF.png[Snout Banner Pattern]
 Bonus spawn chests generate a more limited and curated set of starter items
 designed to jumpstart the tree-punching phase of a fresh world:
 3-5 cobble, 3-5 logs, and 2-3 bread. Additional items can be added to the
-bonus spawn chest with one or more of the <<starter-item,Starter Item>>
-datapacks below.
+bonus spawn chest with one or more <<starter-item,Starter Item>>
+datapacks, or the <<starter-relic,Starter Relic>> datapack.
 
 Food loot is themed according to the structure it spawns in.
 To give a few examples:
@@ -507,15 +507,6 @@ Temples can generate in Stronghold Libraries. And so on.
 
 End Cities generate only diamond gear rather than a mix of diamond and iron,
 and Woodland Mansions can rarely generate a conduit, beacon, or shulker box.
-
-Instead of generating seeds, End Cities and Woodland Mansions generate plant
-resources that you haven't used yet. Such resources include everything from
-berries, wheat seeds and potatoes to cactus, bamboo, and rose bushes. If you
-haven't eaten, planted, or otherwise used one of the items shown below, you
-have a chance to find it in End City and Woodland Mansion chests.
-
-image::https://i.imgur.com/gUnJW5S.png[Treasure Seeds]
-
 
 Enchanted books in most loot tables spawn with a 50% chance to be enchanted
 with multiple enchants instead of a single random enchant. Enchanted
@@ -539,11 +530,70 @@ Download: https://github.com/DMBuce/bucepack/releases
 
 Build: `make loot_overhaul.zip`
 
-=== Starter Item
+==== Plant Loot
 
-This is a series of addon datapacks for the
+This is an addon pack for the <<loot-overhaul,Loot Overhaul>> datapack that
+adds plant resources that you haven't used yet to the End City and Woodland
+Mansion loot tables. Such resources include everything from
+berries, wheat seeds and potatoes to cactus, bamboo, and rose bushes. If you
+haven't eaten, planted, or otherwise used one of the items shown below, you
+have a chance to find it in End City and Woodland Mansion chests.
+
+image::https://i.imgur.com/gUnJW5S.png[Treasure Seeds]
+
+Download: https://github.com/DMBuce/bucepack/releases
+
+Build: `make loot_overhaul.zip`
+
+Known Issues: Due to limitations in how Minecraft loot tables work, if you
+uninstall this pack and want to continue using Loot Overhaul, plant loot
+will continue to generate until you exit and re-enter the world, restart the
+server, or run `/function bucepack:loot_overhaul/reset`
+
+==== Relic Loot
+
+This is an addon pack for the
 <<loot-overhaul,Loot Overhaul>>
-pack above. Each pack adds one additional item to the bonus spawn chest.
+datapack that adds <<Relics>> to chest loot. The chance varies depending on
+the type of loot chest.
+
+.Click for a summary of relic loot spawn chance
+[%collapsible]
+====
+* 1/50 chance: Woodland Mansion chests
+* 1/500 chance: Abandonded Mineshaft chests, Bastion Treasure chests, Desert
+  Pyramid chests, Jungle Temple chests, Shipwreck Treasure chests, Armorer
+  chests, Toolsmith chests, and Weaponsmith chests
+* 1/1,000 chance: Most other chests
+====
+
+Download: https://github.com/DMBuce/bucepack/releases
+
+Build: `make relic_loot.zip`
+
+Known Issues: Due to limitations in how Minecraft loot tables work, if you
+uninstall this pack and want to continue using Loot Overhaul, relic loot
+will continue to generate until you exit and re-enter the world, restart the
+server, or run `/function bucepack:loot_overhaul/reset`
+
+==== Starter Relic
+
+This is an addon pack for the <<loot-overhaul,Loot Overhaul>> datapack that
+adds a random <<relics,Relic>> to the bonus spawn chest.
+
+If any other <<starter-item,Starter Item>> datapacks are installed,
+the starter relic is generated in addition to the starter item added by
+those packs.
+
+Download: https://github.com/DMBuce/bucepack/releases
+
+Build: `make starter_relic.zip`
+
+==== Starter Item
+
+This is a series of addon packs for the
+<<loot-overhaul,Loot Overhaul>>
+datapack above. Each pack adds one additional item to the bonus spawn chest.
 
 Starter Bed adds a Red Bed to the bonus spawn chest.
 
@@ -576,26 +626,6 @@ inventory the first time they join the world.
 Download: https://github.com/DMBuce/bucepack/releases
 
 Build: `make starter_bonus_chest.zip`
-
-=== Starter Relic
-
-Adds a random <<relics,Relic>> to each player's
-inventory the first time they join the world.
-
-Download: https://github.com/DMBuce/bucepack/releases
-
-Build: `make starter_relic.zip`
-
-//=== Relic Loot
-//
-//This is an addon pack for the
-//<<loot-overhaul,Loot Overhaul>>
-//datapack above. It adds <<Relics>> to the loot tables that spawn with a one
-//in a thousand chance in chests and a one in a million chance from fishing.
-//
-//Download: https://github.com/DMBuce/bucepack/releases
-//
-//Build: `make relic_loot.zip`
 
 === Glow Squid Glamers
 

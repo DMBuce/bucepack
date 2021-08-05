@@ -1,20 +1,19 @@
 {
 	"display": {
 		"icon": {
-			"item": "minecraft:diamond_chestplate",
-			"nbt": "{Enchantments:[{id:unbreaking,lvl:3}]}"
+			"item": "minecraft:filled_map"
 		},
 		"title": {
-			"text": "Relic Loot"
+			"text": "Starter Map"
 		},
 		"description": {
-			"text": "Relic items in loot"
+			"text": "Adds a map to Loot Overhaul's curated bonus chest"
 		},
 		"show_toast": false,
 		"announce_to_chat": false,
 		"frame": "task"
 	},
-	"parent": "bucepack:root",
+	"parent": "bucepack:loot_overhaul/root",
 	"criteria": {
 		"tick": {
 			"trigger": "minecraft:tick"

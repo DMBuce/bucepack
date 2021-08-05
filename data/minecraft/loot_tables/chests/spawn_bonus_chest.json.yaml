@@ -11,3 +11,6 @@ pools:
   - rolls: 1
     entries:
       - { type: tag,  weight: 1, expand: true, tag: starter_item }
+  - rolls: 1
+    entries:
+      - { type: loot_table, weight: 1, score: starter_relic, table: relic/random }
