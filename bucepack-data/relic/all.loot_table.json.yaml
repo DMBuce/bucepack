@@ -1,0 +1,56 @@
+pools:
+  - rolls: 1
+    entries:
+      - { type: item, weight: 1, item: flint,
+          nbt: '{relic:1b,CustomModelData:22183,display:{Name:\"{\\\"text\\\":\\\"Relic of Knockback\\\",\\\"color\\\":\\\"light_purple\\\"}\"},Enchantments:[{id:knockback,lvl:5}]}'
+        }
+  - rolls: 1
+    entries:
+      - { type: item, weight: 1, item: stick,
+          nbt: '{relic:1b,CustomModelData:22183,display:{Name:\"{\\\"text\\\":\\\"Relic of Endlessness\\\",\\\"color\\\":\\\"light_purple\\\"}\"},Enchantments:[{id:infinity,lvl:1},{id:mending,lvl:1}]}'
+        }
+  - rolls: 1
+    entries:
+      - { type: item, weight: 1, item: glistering_melon_slice,
+          nbt: '{relic:1b,CustomModelData:22183,display:{Name:\"{\\\"text\\\":\\\"Relic of Vitality\\\",\\\"color\\\":\\\"light_purple\\\"}\",Lore:[\"\\\"§r§aBoon of Vitality\\\"\"]},Enchantments:[{id:unbreaking,lvl:3}],AttributeModifiers:[{Slot:\"chest\",AttributeName:\"generic.max_health\",Name:\"generic.max_health\",Amount:10.0,Operation:0,UUID:[I;1986497455,1094009722,-1779243889,-277989848]},{Slot:\"chest\",AttributeName:\"generic.armor\",Name:\"generic.armor\",Amount:8.0,Operation:0,UUID:[I;717097559,423184775,-1334929543,1952788274]},{Slot:\"chest\",AttributeName:\"generic.armor_toughness\",Name:\"generic.armor_toughness\",Amount:3.0,Operation:0,UUID:[I;-354813259,1878082813,-1193018274,1873352094]},{Slot:\"chest\",AttributeName:\"generic.knockback_resistance\",Name:\"generic.knockback_resistance\",Amount:0.1,Operation:0,UUID:[I;1482885328,1686128884,-1613941574,-995666202]}]}'
+        }
+  - rolls: 1
+    entries:
+      - { type: item, weight: 1, item: rabbit_foot,
+          nbt: '{relic:1b,CustomModelData:22183,display:{Name:\"{\\\"text\\\":\\\"Relic of Speed\\\",\\\"color\\\":\\\"light_purple\\\"}\",Lore:[\"\\\"§r§aBoon of Speed\\\"\"]},Enchantments:[{id:unbreaking,lvl:3}],AttributeModifiers:[{Slot:\"legs\",AttributeName:\"generic.movement_speed\",Name:\"generic.movement_speed\",Amount:0.4,Operation:2,UUID:[I;-1739252648,-763214326,-1592923154,1933501344]},{Slot:\"legs\",AttributeName:\"generic.armor\",Name:\"generic.armor\",Amount:2.0,Operation:0,UUID:[I;1748112070,948193003,-1561903410,1308854036]}]}'
+        }
+  - rolls: 1
+    entries:
+      - { type: item, weight: 1, item: bone,
+          nbt: '{relic:1b,CustomModelData:22183,display:{Name:\"{\\\"text\\\":\\\"Relic of Smiting\\\",\\\"color\\\":\\\"light_purple\\\"}\"},Enchantments:[{id:sharpness,lvl:4},{id:smite,lvl:4}]}'
+        }
+  - rolls: 1
+    entries:
+      - { type: item, weight: 1, item: diamond,
+          nbt: '{relic:1b,CustomModelData:22183,display:{Name:\"{\\\"text\\\":\\\"Relic of Sharpness\\\",\\\"color\\\":\\\"light_purple\\\"}\"},Enchantments:[{id:sharpness,lvl:5}]}'
+        }
+  - rolls: 1
+    entries:
+      - { type: item, weight: 1, item: prismarine_shard,
+          nbt: '{relic:1b,CustomModelData:22183,HideFlags:2b,display:{Name:\"{\\\"text\\\":\\\"Relic of Quickness\\\",\\\"color\\\":\\\"light_purple\\\"}\",Lore:[\"\\\"§r§aBoon of Quickness\\\"\",\"\\\"\\\"\",\"\\\"§r§7When in Main Hand:\\\"\",\"\\\"§r§2 9 Attack Damage\\\"\",\"\\\"§r§2 1.3 Attack Speed\\\"\"]},Enchantments:[{id:unbreaking,lvl:3}],AttributeModifiers:[{Slot:\"mainhand\",AttributeName:\"generic.attack_damage\",Name:\"generic.attack_damage\",Amount:8.0,Operation:0,UUID:[I;45345856,-1140243102,-1841144530,-638218093]},{Slot:\"mainhand\",AttributeName:\"generic.attack_speed\",Name:\"generic.attack_speed\",Amount:-2.7,Operation:0,UUID:[I;107902100,1464878501,-1934334227,1114830228]}]}'
+        }
+  - rolls: 1
+    entries:
+      - { type: item, weight: 1, item: prismarine_crystals,
+          nbt: '{relic:1b,CustomModelData:22183,display:{Name:\"{\\\"text\\\":\\\"Relic of Frost and Flood\\\",\\\"color\\\":\\\"light_purple\\\"}\"},Enchantments:[{id:frost_walker,lvl:2},{id:depth_strider,lvl:3}]}'
+        }
+  - rolls: 1
+    entries:
+      - { type: item, weight: 1, item: scute,
+          nbt: '{relic:1b,CustomModelData:22183,display:{Name:\"{\\\"text\\\":\\\"Relic of Protection\\\",\\\"color\\\":\\\"light_purple\\\"}\"},Enchantments:[{id:protection,lvl:4},{id:blast_protection,lvl:2}]}'
+        }
+  - rolls: 1
+    entries:
+      - { type: item, weight: 1, item: sugar,
+          nbt: '{relic:1b,CustomModelData:22183,display:{Name:\"{\\\"text\\\":\\\"Relic of Striding\\\",\\\"color\\\":\\\"light_purple\\\"}\"},Enchantments:[{id:depth_strider,lvl:3},{id:feather_falling,lvl:4}]}'
+        }
+  - rolls: 1
+    entries:
+      - { type: item, weight: 1, item: leather,
+          nbt: '{relic:1b,CustomModelData:22183,display:{Name:\"{\\\"text\\\":\\\"Relic of Projectile Protection\\\",\\\"color\\\":\\\"light_purple\\\"}\"},Enchantments:[{id:projectile_protection,lvl:2}]}'
+        }

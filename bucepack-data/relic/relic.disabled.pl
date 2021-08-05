@@ -3,7 +3,7 @@
 use File::Basename;
 
 #print dirname($0)."/subtables/relic.json.yaml\n";
-open(FH, '<', dirname($0)."/subtables/relic.loot_table.json.yaml") or die $!;
+open(FH, '<', dirname($0)."/random.loot_table.json.yaml") or die $!;
 while (<FH>) {
 	if (!m/^#/ && m/Name:.*text\\\\\\":\\\\\\"([^\\]*)/) {
 		print $1;

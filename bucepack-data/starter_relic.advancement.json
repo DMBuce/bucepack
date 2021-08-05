@@ -1,23 +1,26 @@
 {
 	"display": {
 		"icon": {
-			"item": "minecraft:diamond_chestplate",
+			"item": "minecraft:diamond_pickaxe",
 			"nbt": "{Enchantments:[{id:unbreaking,lvl:3}]}"
 		},
 		"title": {
-			"text": "Relic Loot"
+			"text": "Starter Relic"
 		},
 		"description": {
-			"text": "Relic items in loot"
+			"text": "Start with a relic in your inventory"
 		},
 		"show_toast": false,
 		"announce_to_chat": false,
 		"frame": "task"
 	},
-	"parent": "bucepack:relic/root",
+	"parent": "bucepack:root",
 	"criteria": {
 		"tick": {
 			"trigger": "minecraft:tick"
 		}
+	},
+	"rewards": {
+		"loot": "bucepack:relic/random"
 	}
 }
