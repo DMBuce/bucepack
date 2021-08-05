@@ -478,12 +478,13 @@ loot tables to make room for other loot. This is to avoid changing the rarity
 of some entries like ore ingots. Nearly all loot table entries added by this
 pack are replacements for the entries that it removes.
 
-image::https://i.imgur.com/cSZtkTY.png[Saddle Recipe]
-image::https://i.imgur.com/cMT90oB.png[Name Tags]
-image::https://i.imgur.com/2rd1ZdZ.png[Iron Horse Armor]
-image::https://i.imgur.com/A1nTNnK.png[Gold Horse Armor]
-image::https://i.imgur.com/842M2eK.png[Diamond Horse Armor]
-image::https://i.imgur.com/uKTapeF.png[Snout Banner Pattern]
+//image::https://i.imgur.com/cSZtkTY.png[Saddle Recipe]
+//image::https://i.imgur.com/cMT90oB.png[Name Tags]
+//image::https://i.imgur.com/2rd1ZdZ.png[Iron Horse Armor]
+//image::https://i.imgur.com/A1nTNnK.png[Gold Horse Armor]
+//image::https://i.imgur.com/842M2eK.png[Diamond Horse Armor]
+//image::https://i.imgur.com/uKTapeF.png[Snout Banner Pattern]
+image::https://i.imgur.com/nJSQphs.png[Recipes]
 
 Bonus spawn chests generate a more limited and curated set of starter items
 designed to jumpstart the tree-punching phase of a fresh world:
