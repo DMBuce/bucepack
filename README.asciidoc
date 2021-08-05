@@ -299,16 +299,6 @@ Download: https://github.com/DMBuce/bucepack/releases
 
 Build: `make gardener_endermen.zip`
 
-=== Climbable
-
-Lets you climb chains and iron bars.
-
-image::https://i.imgur.com/N0l5B2c.png[Climbable]
-
-Download: https://github.com/DMBuce/bucepack/releases
-
-Build: `make climbable.zip`
-
 === Mineable
 
 In vanilla Minecraft, certain blocks like glass have no tool associated with
@@ -341,6 +331,16 @@ Download: https://github.com/DMBuce/bucepack/releases
 
 Build: `make mineable.zip`
 
+=== Climbable
+
+Lets you climb chains and iron bars.
+
+image::https://i.imgur.com/N0l5B2c.png[Climbable]
+
+Download: https://github.com/DMBuce/bucepack/releases
+
+Build: `make climbable.zip`
+
 === Shearless
 
 Makes hoes able to harvest blocks that are normally obtained with shears.
@@ -357,16 +357,24 @@ Download: https://github.com/DMBuce/bucepack/releases
 
 Build: `make shearless.zip`
 
-=== More Rain
+=== Fortunate Jungle
 
-Adds a chance of rain overnight.
+Increases the drop rate of jungle saplings harvested with fortune hoes.
+The table below summarizes the drop rates of jungle saplings with and without this pack,
+as well as the drop rate of other saplings.
 
-Whenever a player skips the night with a bed, there is an 11% chance of rain
-that morning.
+ Drop                     | Source        | No Fortune  | Fortune I     | Fortune II    | Fortune III  | Fortune IV+
+ -------------------------+---------------+-------------+---------------+---------------+--------------+------------
+ Vanilla Jungle Saplings  | Jungle Leaves | 2.5% (1⁄40) | 2.78% (1⁄36)  | 3.125% (1⁄32) | 4.17% (1⁄24) | 10% (1⁄10)
+ Datapack Jungle Saplings | Jungle Leaves | 2.5% (1⁄40) | 3.125% (1⁄32) | 4.17% (1⁄24)  | 5% (1⁄20)    | 10% (1⁄10)
+ Other Saplings           | Other Leaves  | 5% (1⁄20)   | 6.25% (1⁄16)  | 8.33% (1⁄12)  | 10% (1⁄10)   |
+
+This datapack is not compatible with other datapacks that modify the Jungle
+Leaves loot table.
 
 Download: https://github.com/DMBuce/bucepack/releases
 
-Build: `make more_rain.zip`
+Build: `make fortunate_jungle.zip`
 
 === More Shulker Shells
 
@@ -389,24 +397,16 @@ Download: https://github.com/DMBuce/bucepack/releases
 
 Build: `make more_shulker_shells.zip`
 
-=== Fortunate Jungle
+=== More Rain
 
-Increases the drop rate of jungle saplings harvested with fortune hoes.
-The table below summarizes the drop rates of jungle saplings with and without this pack,
-as well as the drop rate of other saplings.
+Adds a chance of rain overnight.
 
- Drop                     | Source        | No Fortune  | Fortune I     | Fortune II    | Fortune III  | Fortune IV+
- -------------------------+---------------+-------------+---------------+---------------+--------------+------------
- Vanilla Jungle Saplings  | Jungle Leaves | 2.5% (1⁄40) | 2.78% (1⁄36)  | 3.125% (1⁄32) | 4.17% (1⁄24) | 10% (1⁄10)
- Datapack Jungle Saplings | Jungle Leaves | 2.5% (1⁄40) | 3.125% (1⁄32) | 4.17% (1⁄24)  | 5% (1⁄20)    | 10% (1⁄10)
- Other Saplings           | Other Leaves  | 5% (1⁄20)   | 6.25% (1⁄16)  | 8.33% (1⁄12)  | 10% (1⁄10)   |
-
-This datapack is not compatible with other datapacks that modify the Jungle
-Leaves loot table.
+Whenever a player skips the night with a bed, there is an 11% chance of rain
+that morning.
 
 Download: https://github.com/DMBuce/bucepack/releases
 
-Build: `make fortunate_jungle.zip`
+Build: `make more_rain.zip`
 
 === No Treasure Maps
 
@@ -417,29 +417,9 @@ Download: https://github.com/DMBuce/bucepack/releases
 
 Build: `make no_treasure_maps.zip`
 
-=== Starter Bonus Chest
-
-Adds a bonus spawn chest to each player's
-inventory the first time they join the world.
-
-Download: https://github.com/DMBuce/bucepack/releases
-
-Build: `make starter_bonus_chest.zip`
-
 == Gameplay Data Packs
 
 Data packs that open up new possibilities for things to do in the game.
-
-=== Lose HP & XP
-
-Once any player enters the nether, all players stop healing from food.
-
-Once the dragon or wither have been defeated, players stop losing their items
-when they die, and lose all XP when they die. The XP does not drop as orbs.
-
-Download: https://github.com/DMBuce/bucepack/releases
-
-Build: `make lose_hp_xp.zip`
 
 === Breeding Overhaul
 
@@ -576,6 +556,15 @@ Build:
  make starter_bucket.zip
  make starter_map.zip
  make starter_shulker.zip
+
+=== Starter Bonus Chest
+
+Adds a bonus spawn chest to each player's
+inventory the first time they join the world.
+
+Download: https://github.com/DMBuce/bucepack/releases
+
+Build: `make starter_bonus_chest.zip`
 
 === Starter Relic
 
@@ -728,6 +717,17 @@ Build: `make invis_squid_glamer.zip`
 Known Issues: The Glamer of Invisibility can't be applied to armor stands
 because of https://bugs.mojang.com/browse/MC-66068[this works-as-intended bug]
 that prevents invisible armor stands from being broken.
+
+=== Lose HP & XP
+
+Once any player enters the nether, all players stop healing from food.
+
+Once the dragon or wither have been defeated, players stop losing their items
+when they die, and lose all XP when they die. The XP does not drop as orbs.
+
+Download: https://github.com/DMBuce/bucepack/releases
+
+Build: `make lose_hp_xp.zip`
 
 == Legacy Data Packs
 
