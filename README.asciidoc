@@ -20,9 +20,12 @@ Replaces the default paintings with more recognizable ones.
 //image::https://i.imgur.com/pXPHqgO.png[Painting Overhaul]
 image::https://i.imgur.com/WLFKdEM.png[Painting Overhaul]
 
-Below are the painting titles, organized by size,
-with links to their inspiration.
+//Below are the painting titles, organized by size,
+//with links to their inspiration.
 
+.Painting titles & inspiration
+[%collapsible]
+====
 1x1 Paintings:
 
 * https://en.wikipedia.org/wiki/Basket_of_Fruit_(Caravaggio)[Bowl of Fruit]
@@ -69,6 +72,7 @@ with links to their inspiration.
 * https://en.wikipedia.org/wiki/The_Creation_of_Adam[Creation of Steve]
 * https://en.wikipedia.org/wiki/Vitruvian_Man[The Ethonian Man]
 * https://en.wikipedia.org/wiki/Brig_%22Mercury%22_Attacked_by_Two_Turkish_Ships[Brig Mercury]
+====
 
 Download: https://github.com/DMBuce/bucepack/releases
 
