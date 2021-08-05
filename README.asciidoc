@@ -23,7 +23,7 @@ image::https://i.imgur.com/WLFKdEM.png[Painting Overhaul]
 //Below are the painting titles, organized by size,
 //with links to their inspiration.
 
-.Painting titles & inspiration
+.Click for painting titles & inspiration
 [%collapsible]
 ====
 1x1 Paintings:
@@ -216,8 +216,9 @@ and adds outlines to some food that's been added to the game since then.
 
 image::https://i.imgur.com/DorMwHO.png[Classic Food]
 
-Retextured food items:
-
+.Click for a list of retextured food items
+[%collapsible]
+====
 * Apples
 * Chicken
 * Pork
@@ -229,6 +230,7 @@ Retextured food items:
 * Cod
 * Salmon
 * Pumpkin Pie
+====
 
 Download: https://github.com/DMBuce/bucepack/releases
 
@@ -309,7 +311,11 @@ In vanilla Minecraft, certain blocks like glass have no tool associated with
 them, so their breaking speed is the same whether you're using your fist or a
 tool or an Efficiency tool. This pack gives more blocks an associated tool.
 
-Blocks associated with picks:
+.Click to see blocks with associated tools
+[%collapsible]
+====
+
+Picks:
 
 * Glass
 * Stained Glass
@@ -322,7 +328,7 @@ Blocks associated with picks:
 * Lever
 * Smithing Table
 
-Blocks associated with axes:
+Axes:
 
 * Cactus
 * Beds
@@ -330,6 +336,7 @@ Blocks associated with axes:
 * Heads
 * Cakes
 * Honeycomb Blocks
+====
 
 Download: https://github.com/DMBuce/bucepack/releases
 
@@ -603,8 +610,11 @@ interacted with as if they are real, but they're destroyed when the armor
 stand or item frame is broken.
 
 Each enchantment makes an armor stand's base invisible, gives it illusory
-arms, and provides one other effect as summarized below.
+arms, and provides one other effect.
 
+.Click for a summary of armor stand glamers
+[%collapsible]
+====
 * **Glamer of Shrinking**: Makes the armor stand appear smaller
 * **Glamer of the Default Pose**: Gives the "default_pose" from bedrock edition (no effect)
 * **Glamer of No Pose**: Gives "no_pose" from bedrock edition
@@ -619,6 +629,7 @@ arms, and provides one other effect as summarized below.
 * **Glamer of the Zombie**: Gives the "zombie_pose" from bedrock edition
 * **Glamer of the Rightward Cancan**: Gives the "cancan_a_pose" from bedrock edition
 * **Glamer of the Leftward Cancan**: Gives the "cancan_b_pose" from bedrock edition
+====
 
 If you install this data pack as a resource pack, armor stands with poses will
 have an appropriate item texture in the inventory
@@ -1004,7 +1015,9 @@ A relic is a shard, trinket, or gem with impossible magic -- either a boon
 enchantment, some combination of mutually exclusive enchantments, or an
 enchantment that can be put on a tool that normally couldn't have it.
 
-The relics are summarized below.
+.Click for a summary of relics
+[%collapsible]
+====
 
 **Relic of Knockback**: a piece of flint with Knockback V that can be
 applied to a shovel or hoe
@@ -1040,6 +1053,8 @@ Falling IV that can be applied to horse armor
 
 **Relic of Projectile Protection**: a piece of leather with Projectile
 Protection II that can be applied to elytra
+
+====
 
 ////
 
