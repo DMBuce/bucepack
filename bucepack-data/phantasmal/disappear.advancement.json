@@ -16,16 +16,19 @@
 	},
 	"parent": "bucepack:phantasmal/cloak",
 	"criteria": {
-		"hit_end_crystal": {
+		"hit_player": {
 			"trigger": "minecraft:entity_hurt_player",
 			"conditions": {
-				"entity": {
-					"type": "minecraft:phantom",
-					"effects": {
-						"invisibility": {}
-					},
-					"location": {
-						"dimension": "minecraft:overworld"
+				"damage": {
+					"source_entity": {
+						"type": "minecraft:phantom",
+						"location": {
+							"dimension": "minecraft:overworld"
+						},
+						"effects": {
+							"minecraft:invisibility": {
+							}
+						}
 					}
 				}
 			}

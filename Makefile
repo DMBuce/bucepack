@@ -4,7 +4,8 @@ RESOURCEPACKFILES = painting_overhaul.zip note_guide.zip brew_guide.zip \
 	discreet_pumpkin.zip stickier_piston.zip \
 	classic_netherrack.zip classic_lava.zip classic_gravel.zip classic_lapis.zip \
 	classic_rose.zip classic_food.zip \
-	classic_moo.zip classic_twang.zip classic_sploosh.zip classic_crunch.zip
+	classic_moo.zip classic_twang.zip classic_sploosh.zip classic_crunch.zip \
+	datapack_resources.zip
 DATAPACKFILES = gardener_endermen.zip climbable.zip \
 	no_treasure_maps.zip fortunate_jungle.zip dragonproof.zip \
 	mineable.zip shearless.zip breeding_overhaul.zip \
@@ -255,6 +256,13 @@ classic_food_FILES := $(DEFAULT_RESOURCE_FILES) \
 	assets/minecraft/textures/item/rabbit.png \
 	assets/minecraft/textures/item/salmon.png
 
+datapack_resources_FILES := $(DEFAULT_RESOURCE_FILES) \
+	$(wildcard assets/minecraft/models/item/armor_stand_*.json) \
+	$(wildcard assets/minecraft/textures/item/armor_stand_*.png) \
+	assets/minecraft/models/item/invis_item_frame.json \
+	assets/minecraft/models/item/item_frame.json \
+	assets/minecraft/textures/item/invis_item_frame.png \
+
 retronetherrack_FILES := $(DEFAULT_RESOURCE_FILES) \
 	assets/minecraft/textures/block/netherrack.png \
 	assets/minecraft/textures/block/nether_quartz_ore.png
@@ -383,7 +391,10 @@ loot_overhaul_FILES := $(DEFAULT_DATA_FILES) \
 	data/minecraft/recipes/piglin_banner_pattern.json \
 	data/minecraft/recipes/saddle.json \
 
+spellsmithing_FILES := assets/minecraft/textures/gui/container/smithing.png
+
 relic_FILES := $(DEFAULT_DATA_FILES) \
+	$(spellsmithing_FILES) \
 	data/bucepack/advancements/relic/root.json \
 	data/bucepack/functions/relic/bounding/activate.mcfunction \
 	data/bucepack/functions/relic/breaking/axe/activate.mcfunction \
@@ -651,23 +662,33 @@ more_rain_FILES := $(DEFAULT_DATA_FILES) \
 	data/bucepack/functions/var.mcfunction \
 
 glow_squid_glamers_FILES := $(DEFAULT_DATA_FILES) \
+	$(spellsmithing_FILES) \
 	$(shell find bucepack-data/illusory/glow_squid -type f | ./bin/ext2dir) \
+	$(wildcard assets/minecraft/models/item/armor_stand_*.json) \
+	$(wildcard assets/minecraft/textures/item/armor_stand_*.png) \
 	data/minecraft/loot_tables/entities/glow_squid.json \
 
 invis_squid_glamer_FILES := $(DEFAULT_DATA_FILES) \
+	$(spellsmithing_FILES) \
 	$(shell find bucepack-data/illusory/squid -type f | ./bin/ext2dir) \
 	data/minecraft/loot_tables/entities/squid.json \
+	assets/minecraft/models/item/invis_item_frame.json \
+	assets/minecraft/models/item/item_frame.json \
+	assets/minecraft/textures/item/invis_item_frame.png \
 
 phantasmal_FILES := $(DEFAULT_DATA_FILES) \
+	$(spellsmithing_FILES) \
 	$(shell find bucepack-data/phantasmal -type f | ./bin/ext2dir) \
 	data/minecraft/loot_tables/entities/phantom.json \
 	data/minecraft/tags/functions/load-phantasmal.json \
 	data/bucepack/functions/var.mcfunction \
+	assets/minecraft/models/item/invis_item_frame.json \
+	assets/minecraft/models/item/item_frame.json \
+	assets/minecraft/textures/item/invis_item_frame.png \
 
 mother_phantoms_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell find bucepack-data/mother_phantoms -type f | ./bin/ext2dir) \
-	data/minecraft/loot_tables/entities/phantom_mother.json \
-	data/minecraft/loot_tables/entities/phantom_carrot.json \
+	data/minecraft/loot_tables/entities/mother_phantom.json \
 	data/minecraft/tags/functions/load-mother_phantoms.json \
 	data/bucepack/functions/var.mcfunction \
 
@@ -963,6 +984,11 @@ classic_rose.zip: $(classic_rose_FILES)
 	zip $@ pack.png pack.mcmeta $^
 
 classic_food.zip: $(classic_food_FILES)
+	cp meta/$(@:.zip=.png) pack.png
+	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
+	zip $@ pack.png pack.mcmeta $^
+
+datapack_resources.zip: $(datapack_resources_FILES)
 	cp meta/$(@:.zip=.png) pack.png
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^

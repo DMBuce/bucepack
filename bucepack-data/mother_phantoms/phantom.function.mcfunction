@@ -7,8 +7,8 @@ advancement revoke @s only bucepack:mother_phantoms/phantom
 #say little baby
 #execute as @e[type=end_crystal] run say ouch
 
-# turn mother phantoms invisible
-effect give @e[type=phantom,tag=mother] invisibility 60 0 true
+## turn mother phantoms invisible
+#effect give @e[type=phantom,tag=mother] invisibility 60 0 true
 
 # summon phantom at each mother phantom with 25% chance
 #execute in minecraft:the_end positioned 0 90 0 as @e[type=end_crystal,predicate=bucepack:mother_phantoms/baby_phantom_chance,distance=..50] at @s run summon phantom ~ ~2 ~ {Rotation:[0.0f,90.0f]}

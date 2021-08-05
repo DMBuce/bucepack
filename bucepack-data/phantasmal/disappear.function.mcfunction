@@ -4,5 +4,5 @@
 advancement revoke @s only bucepack:phantasmal/disappear
 
 # make phantom "disappear"
-kill @e[type=phantom,distance=8,limit=1,sort=nearest]
+kill @e[type=phantom,distance=..8,limit=1,sort=nearest]
 

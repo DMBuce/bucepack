@@ -1,0 +1,164 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "minecraft:item/armor_stand"
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "custom_model_data": 22183
+      },
+      "model": "item/armor_stand_default"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 22184
+      },
+      "model": "item/armor_stand_no"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 22185
+      },
+      "model": "item/armor_stand_solemn"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 22186
+      },
+      "model": "item/armor_stand_athena"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 22187
+      },
+      "model": "item/armor_stand_brandish"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 22188
+      },
+      "model": "item/armor_stand_honor"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 22189
+      },
+      "model": "item/armor_stand_entertain"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 22190
+      },
+      "model": "item/armor_stand_salute"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 22191
+      },
+      "model": "item/armor_stand_hero"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 22192
+      },
+      "model": "item/armor_stand_riposte"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 22193
+      },
+      "model": "item/armor_stand_zombie"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 22194
+      },
+      "model": "item/armor_stand_cancan_a"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 22195
+      },
+      "model": "item/armor_stand_cancan_b"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 22196
+      },
+      "model": "item/armor_stand_default"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 22197
+      },
+      "model": "item/armor_stand_no"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 22198
+      },
+      "model": "item/armor_stand_solemn"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 22199
+      },
+      "model": "item/armor_stand_athena"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 22200
+      },
+      "model": "item/armor_stand_brandish"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 22201
+      },
+      "model": "item/armor_stand_honor"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 22202
+      },
+      "model": "item/armor_stand_entertain"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 22203
+      },
+      "model": "item/armor_stand_salute"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 22204
+      },
+      "model": "item/armor_stand_hero"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 22205
+      },
+      "model": "item/armor_stand_riposte"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 22206
+      },
+      "model": "item/armor_stand_zombie"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 22207
+      },
+      "model": "item/armor_stand_cancan_a"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 22208
+      },
+      "model": "item/armor_stand_cancan_b"
+    }
+  ]
+}

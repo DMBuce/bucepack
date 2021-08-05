@@ -14,21 +14,25 @@
 		"hidden": true,
 		"frame": "task"
 	},
-	"parent": "bucepack:phantasmal/cloak",
+	"parent": "bucepack:mother_phantoms/phantom",
 	"criteria": {
-		"hit_phantom": {
-			"trigger": "minecraft:player_hurt_entity",
+		"dyed": {
+			"trigger": "minecraft:player_interacted_with_entity",
 			"conditions": {
-				"entity": {
-					"type": "minecraft:phantom",
-					"location": {
-						"dimension": "minecraft:overworld"
+				"item": {
+					"items": [ "minecraft:lime_dye" ],
+					"nbt": "{unsleeping:1b,vitality:1b}"
+				},
+				"entity": [
+					{
+						"condition": "reference",
+						"name": "bucepack:mother_phantoms/dyeable"
 					}
-				}
+				]
 			}
 		}
 	},
 	"rewards": {
-		"function": "bucepack:phantasmal/uncloak"
+		"function": "bucepack:mother_phantoms/dye"
 	}
 }

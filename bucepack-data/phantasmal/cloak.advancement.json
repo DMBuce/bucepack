@@ -16,19 +16,21 @@
 	},
 	"parent": "bucepack:phantasmal/root",
 	"criteria": {
-		"hit_end_crystal": {
+		"hit_player": {
 			"trigger": "minecraft:entity_hurt_player",
 			"conditions": {
-				"entity": {
-					"type": "minecraft:phantom",
-					"location": {
-						"dimension": "minecraft:overworld"
+				"damage": {
+					"source_entity": {
+						"type": "minecraft:phantom",
+						"location": {
+							"dimension": "minecraft:overworld"
+						}
 					}
 				}
 			}
 		}
 	},
 	"rewards": {
-		"function": "bucepack:phantasmal/trigger"
+		"function": "bucepack:phantasmal/cloak"
 	}
 }

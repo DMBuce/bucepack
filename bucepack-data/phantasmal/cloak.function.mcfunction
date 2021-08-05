@@ -1,13 +1,8 @@
-# runs as a phantom that hit a player
+# runs when a player is hit by a phantom
 
-# give invis
-effect give @s invisibility 60 0 true
+# revoke advancement
+advancement revoke @s only bucepack:phantasmal/cloak
 
-# remove knockback
-attribute @s minecraft:generic.attack_knockback base set 0
+# turn phantom invisible
+effect give @e[type=phantom,distance=..8,limit=1,sort=nearest] invisibility 60 0 true
 
-# remove collision
-team join phantasmal @s
-
-## sound effect
-#playsound minecraft:block.enchantment_table.use player @a
