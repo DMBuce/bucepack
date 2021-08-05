@@ -249,6 +249,8 @@ Changes the smithing GUI to show that the left slot is where magic is
 preserved and magic in the right slot gets destroyed. Intended for use with
 datapacks that have <<spellsmithing>>.
 
+image::https://i.imgur.com/DH6v35X.png[Spellsmithing Guide]
+
 In addition, this pack contains textures for custom items in other datapacks
 on this page. These textures will only show up if you have such datapacks
 installed.
@@ -288,6 +290,8 @@ Simple data packs that make Minecraft life a little easier.
 === Smooth & Cracked Stonecutting
 
 Adds smooth and cracked variants of blocks to the stonecutter.
+
+image::https://i.imgur.com/vYQSLNB.png[Smooth & Cracked Stonecutting]
 
 Download: https://github.com/DMBuce/bucepack/releases
 
