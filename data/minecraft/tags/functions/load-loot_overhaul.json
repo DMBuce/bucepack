@@ -1,6 +1,6 @@
 {
 	"replace": false,
 	"values": [
-		"bucepack:loot_overhaul/reset"
+		"bucepack:loot_overhaul/load"
 	]
 }

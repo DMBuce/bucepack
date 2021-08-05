@@ -118,7 +118,7 @@
           "weight": {{entry.weight}},
           {%- endif %}
           "quality": {{ entry.quality if entry.quality is defined else 0 }},
-          "name": "bucepack:{{entry.table}}"
+          "name": "bucepack:{{entry.table}}"{{ "," if entry.score is defined }}
           {%- if entry.score is defined %}
           "conditions": [
             {
