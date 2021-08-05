@@ -9,6 +9,7 @@ pools:
       - { type: item_unused, weight: 99, score: plant_loot, item: beetroot_seeds, min: 2, max: 4 }
       - { type: item_unused, weight: 99, score: plant_loot, item: cocoa_beans   , min: 2, max: 4 }
       - { type: item_unused, weight: 99, score: plant_loot, item: sweet_berries , min: 2, max: 3 }
+      - { type: item_unused, weight: 99, score: plant_loot, item: glow_berries  , min: 2, max: 3 }
       - { type: item_unused, weight: 99, score: plant_loot, item: fern          , min: 2, max: 4 }
       - { type: item_unused, weight: 99, score: plant_loot, item: vine          , min: 2, max: 4 }
       - { type: item_unused, weight: 99, score: plant_loot, item: cactus        , min: 2, max: 4 }
