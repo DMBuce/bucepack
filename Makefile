@@ -258,8 +258,9 @@ classic_food_FILES := $(DEFAULT_RESOURCE_FILES) \
 	assets/minecraft/textures/item/salmon.png
 
 spellsmithing_guide_FILES := $(DEFAULT_RESOURCE_FILES) \
-	$(wildcard assets/minecraft/models/item/armor_stand_*.json) \
+	$(wildcard assets/minecraft/models/item/armor_stand*.json) \
 	$(wildcard assets/minecraft/textures/item/armor_stand_*.png) \
+	assets/minecraft/textures/item/light_15.png \
 	assets/minecraft/models/item/invis_item_frame.json \
 	assets/minecraft/models/item/item_frame.json \
 	assets/minecraft/textures/item/invis_item_frame.png \
@@ -491,7 +492,7 @@ more_rain_FILES := $(DEFAULT_DATA_FILES) \
 glow_squid_glamers_FILES := $(DEFAULT_DATA_FILES) \
 	$(spellsmithing_guide_FILES) \
 	$(shell find bucepack-data/illusory/glow_squid -type f | ./bin/ext2dir) \
-	$(wildcard assets/minecraft/models/item/armor_stand_*.json) \
+	$(wildcard assets/minecraft/models/item/armor_stand*.json) \
 	$(wildcard assets/minecraft/textures/item/armor_stand_*.png) \
 	data/minecraft/loot_tables/entities/glow_squid.json \
 

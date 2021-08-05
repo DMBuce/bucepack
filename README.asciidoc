@@ -320,7 +320,7 @@ Build: `make dragonproof.zip`
 
 Lets you climb chains and iron bars.
 
-//image::https://i.imgur.com/4yukdfV.png[Climbable]
+image::https://i.imgur.com/N0l5B2c.png[Climbable]
 
 Download: https://github.com/DMBuce/bucepack/releases
 
@@ -644,6 +644,8 @@ arms, and provides one other effect as summarized below.
 If you install this data pack as a resource pack, armor stands with poses will
 have an appropriate item texture in the inventory
 
+image::https://i.imgur.com/UMqUu72.png[Glow Squid Glamers]
+
 This pack is a companion to the <<phantasmal,Phantasmal>> and
 <<invisible-squid-glamer,Invisible Squid Glamer>> datapacks,
 each of which let you obtain an enchantment that makes item frames invisible.
@@ -651,27 +653,6 @@ each of which let you obtain an enchantment that makes item frames invisible.
 Download: https://github.com/DMBuce/bucepack/releases
 
 Build: `make glow_squid_glamers.zip`
-
-=== Invisible Squid Glamer
-
-Squid (but not glow squid) with invisibility that die have a chance to drop
-ink with Glamer of Invisibility, an enchantment that can be applied to an item
-frame in the smithing table to make an invisible item frame.
-
-If you install this data pack as a resource pack, invisible item frames will
-have a translucent item texture in the inventory
-
-This pack is a companion to the
-<<glow-squid-glamers,Glow Squid Glamers>> datapack, which lets you obtain
-armor stand glamers from glow squid.
-
-Download: https://github.com/DMBuce/bucepack/releases
-
-Build: `make invis_squid_glamer.zip`
-
-Known Issues: The Glamer of Invisibility can't be applied to armor stands
-because of https://bugs.mojang.com/browse/MC-66068[this works-as-intended bug]
-that prevents invisible armor stands from being broken.
 
 === Phantasmal
 
@@ -692,6 +673,8 @@ A Phantom Membrane can be crafted with an End Rod to make a pure Light item.
 In addition, phantoms killed by a player have a chance to drop a membrane with
 Glamer of Invisibility, an enchantment that can be applied to an item
 frame in the smithing table to make an invisible item frame.
+
+image::https://i.imgur.com/n6TAzur.png[Phantasmal]
 
 If you install this data pack as a resource pack, invisible item frames will
 have a translucent item texture in the inventory, and light will have a
@@ -720,6 +703,8 @@ One Mother Phantom spawns the first time the dragon is summoned, two
 spawn the second time, and three Mother Phantoms spawn for each subsequent
 dragon fight.
 
+image::https://i.imgur.com/d4lDWos.png[Mother Phantoms]
+
 Mother Phantoms are larger than normal, deal extra damage, and have extra health.
 Whenever a player hits a Mother Phantom,
 each Mother Phantom has a 25% chance to spawn a normal phantom.
@@ -736,6 +721,27 @@ which makes phantoms in the Overworld more incorporeal.
 Download: https://github.com/DMBuce/bucepack/releases
 
 Build: `make mother_phantoms.zip`
+
+=== Invisible Squid Glamer
+
+Squid (but not glow squid) with invisibility that die have a chance to drop
+ink with Glamer of Invisibility, an enchantment that can be applied to an item
+frame in the smithing table to make an invisible item frame.
+
+If you install this data pack as a resource pack, invisible item frames will
+have a translucent item texture in the inventory
+
+This pack is a companion to the
+<<glow-squid-glamers,Glow Squid Glamers>> datapack, which lets you obtain
+armor stand glamers from glow squid.
+
+Download: https://github.com/DMBuce/bucepack/releases
+
+Build: `make invis_squid_glamer.zip`
+
+Known Issues: The Glamer of Invisibility can't be applied to armor stands
+because of https://bugs.mojang.com/browse/MC-66068[this works-as-intended bug]
+that prevents invisible armor stands from being broken.
 
 == Heavy Data Packs
 
