@@ -261,6 +261,7 @@ classic_food_FILES := $(DEFAULT_RESOURCE_FILES) \
 spellsmithing_guide_FILES := $(DEFAULT_RESOURCE_FILES) \
 	$(wildcard assets/minecraft/models/item/armor_stand*.json) \
 	$(wildcard assets/minecraft/textures/item/armor_stand_*.png) \
+	assets/minecraft/textures/gui/container/smithing.png \
 	assets/minecraft/textures/item/light_15.png \
 	assets/minecraft/models/item/invis_item_frame.json \
 	assets/minecraft/models/item/item_frame.json \
