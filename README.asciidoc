@@ -275,10 +275,9 @@ Build:
  make classic_sploosh.zip
  make classic_crunch.zip
 
-== Light Data Packs
+== Quality of Life Data Packs
 
-These data packs only add recipes, change loot tables, or adjust tags.
-They don't run any commands and shouldn't lag your game.
+Simple data packs that make Minecraft life a little easier.
 
 === Smooth & Cracked Stonecutting
 
@@ -300,22 +299,6 @@ Download: https://github.com/DMBuce/bucepack/releases
 
 Build: `make gardener_endermen.zip`
 
-=== Dragonproof End
-
-Makes the Enderdragon phase through all blocks found in the end. In addition
-to the magenta glass and banners found in End Cities, this pack makes other
-magenta blocks dragonproof as well.
-
-The additional dragonproofed blocks are listed
-https://raw.githubusercontent.com/DMBuce/bucepack/master/data/minecraft/tags/blocks/dragon_immune.json[here].
-Many of them are shown below.
-
-image::https://i.imgur.com/c7kQFcp.png[Dragonproof Blocks]
-
-Download: https://github.com/DMBuce/bucepack/releases
-
-Build: `make dragonproof.zip`
-
 === Climbable
 
 Lets you climb chains and iron bars.
@@ -325,16 +308,6 @@ image::https://i.imgur.com/N0l5B2c.png[Climbable]
 Download: https://github.com/DMBuce/bucepack/releases
 
 Build: `make climbable.zip`
-
-=== Speedy Paths
-
-Makes soul speed work with path blocks.
-
-image::https://i.imgur.com/XafV8TN.png[Speedy Paths]
-
-Download: https://github.com/DMBuce/bucepack/releases
-
-Build: `make speedy_paths.zip`
 
 === Mineable
 
@@ -384,6 +357,17 @@ Download: https://github.com/DMBuce/bucepack/releases
 
 Build: `make shearless.zip`
 
+=== More Rain
+
+Adds a chance of rain overnight.
+
+Whenever a player skips the night with a bed, there is an 11% chance of rain
+that morning.
+
+Download: https://github.com/DMBuce/bucepack/releases
+
+Build: `make more_rain.zip`
+
 === More Shulker Shells
 
 Gives shulkers a chance to drop 2 shulker shells when killed with looting.
@@ -432,6 +416,62 @@ https://github.com/dmbuce/badlands-challenge#the-badlands-challenge[The Badlands
 Download: https://github.com/DMBuce/bucepack/releases
 
 Build: `make no_treasure_maps.zip`
+
+=== Starter Bonus Chest
+
+Adds a bonus spawn chest to each player's
+inventory the first time they join the world.
+
+Download: https://github.com/DMBuce/bucepack/releases
+
+Build: `make starter_bonus_chest.zip`
+
+== Gameplay Data Packs
+
+Data packs that open up new possibilities for things to do in the game.
+
+=== Lose HP & XP
+
+Once any player enters the nether, all players stop healing from food.
+
+Once the dragon or wither have been defeated, players stop losing their items
+when they die, and lose all XP when they die. The XP does not drop as orbs.
+
+Download: https://github.com/DMBuce/bucepack/releases
+
+Build: `make lose_hp_xp.zip`
+
+=== Breeding Overhaul
+
+Overhauls breeding mechanics for horses, donkeys, mules, and llamas.
+
+In vanilla Minecraft, the traits of these animals (health for llamas; health,
+speed, and jump strength for the rest) are determined by taking the
+average of the parents and a randomly generated creature.
+
+In this datapack, for each trait there is a 25% chance to use the vanilla
+algorithm, a 50% chance to use one of the parents' trait (25% for each
+parent), and a 25% chance to use a randomly generated trait.
+
+Download: https://github.com/DMBuce/bucepack/releases
+
+Build: `make breeding_overhaul.zip`
+
+=== Dragonproof End
+
+Makes the Enderdragon phase through all blocks found in the end. In addition
+to the magenta glass and banners found in End Cities, this pack makes other
+magenta blocks dragonproof as well.
+
+The additional dragonproofed blocks are listed
+https://raw.githubusercontent.com/DMBuce/bucepack/master/data/minecraft/tags/blocks/dragon_immune.json[here].
+Many of them are shown below.
+
+image::https://i.imgur.com/c7kQFcp.png[Dragonproof Blocks]
+
+Download: https://github.com/DMBuce/bucepack/releases
+
+Build: `make dragonproof.zip`
 
 === Loot Overhaul
 
@@ -508,17 +548,6 @@ Download: https://github.com/DMBuce/bucepack/releases
 
 Build: `make loot_overhaul.zip`
 
-//=== Relic Loot
-//
-//This is an addon pack for the
-//<<loot-overhaul,Loot Overhaul>>
-//datapack above. It adds <<Relics>> to the loot tables that spawn with a one
-//in a thousand chance in chests and a one in a million chance from fishing.
-//
-//Download: https://github.com/DMBuce/bucepack/releases
-//
-//Build: `make relic_loot.zip`
-
 === Starter Item
 
 This is a series of addon datapacks for the
@@ -548,68 +577,25 @@ Build:
  make starter_map.zip
  make starter_shulker.zip
 
-== Medium Data Packs
-
-These data packs keep NBT access to a minimum and only run commands when an
-event is triggered in an advancement.
-They don't run any ticking commands and shouldn't cause very much, if any,
-lag.
-
-=== Starter Bonus Chest
-
-Starter Bonus Chest adds a bonus spawn chest to each player's
-inventory the first time they join the world.
-
-Download: https://github.com/DMBuce/bucepack/releases
-
-Build: `make starter_bonus_chest.zip`
-
 === Starter Relic
 
-Starter Relic adds a random <<relics,Relic>> to each player's
+Adds a random <<relics,Relic>> to each player's
 inventory the first time they join the world.
 
 Download: https://github.com/DMBuce/bucepack/releases
 
 Build: `make starter_relic.zip`
 
-=== Lose HP & XP
-
-Once any player enters a nether portal, all players stop healing from food.
-
-Once the dragon or wither have been defeated, players stop losing their items
-when they die, and lose all XP when they die. The XP does not drop as orbs.
-
-Download: https://github.com/DMBuce/bucepack/releases
-
-Build: `make lose_hp_xp.zip`
-
-=== More Rain
-
-Adds a chance of rain overnight.
-
-Whenever a player skips the night with a bed, there is an 11% chance of rain
-that morning.
-
-Download: https://github.com/DMBuce/bucepack/releases
-
-Build: `make more_rain.zip`
-
-=== Breeding Overhaul
-
-Overhauls breeding mechanics for horses, donkeys, mules, and llamas.
-
-In vanilla Minecraft, the traits of these animals (health for llamas; health,
-speed, and jump strength for the rest) are determined by taking the
-average of the parents and a randomly generated creature.
-
-In this datapack, for each trait there is a 25% chance to use the vanilla
-algorithm, a 50% chance to use one of the parents' trait (25% for each
-parent), and a 25% chance to use a randomly generated trait.
-
-Download: https://github.com/DMBuce/bucepack/releases
-
-Build: `make breeding_overhaul.zip`
+//=== Relic Loot
+//
+//This is an addon pack for the
+//<<loot-overhaul,Loot Overhaul>>
+//datapack above. It adds <<Relics>> to the loot tables that spawn with a one
+//in a thousand chance in chests and a one in a million chance from fishing.
+//
+//Download: https://github.com/DMBuce/bucepack/releases
+//
+//Build: `make relic_loot.zip`
 
 === Glow Squid Glamers
 
@@ -621,7 +607,7 @@ glow ink sac with one or more custom glamer enchantments on it. The
 enchantments can be applied to armor stands in the smithing table to give them
 minor illusory effects. The illusions are incredibly convincing and can be
 interacted with as if they are real, but they're destroyed when the armor
-stand is broken.
+stand or item frame is broken.
 
 Each enchantment makes an armor stand's base invisible, gives it illusory
 arms, and provides one other effect as summarized below.
@@ -743,10 +729,12 @@ Known Issues: The Glamer of Invisibility can't be applied to armor stands
 because of https://bugs.mojang.com/browse/MC-66068[this works-as-intended bug]
 that prevents invisible armor stands from being broken.
 
-== Heavy Data Packs
+== Legacy Data Packs
 
-These data packs haven't been optimized very well yet.
-They access NBT data a lot and run commands every tick.
+These data packs haven't been updated for the most recent version of
+Minecraft.
+They also all happen to access NBT data a lot and run commands every tick,
+which means they're not optimized very well yet.
 Lower end devices might have trouble running them.
 
 === Escape the Nether
