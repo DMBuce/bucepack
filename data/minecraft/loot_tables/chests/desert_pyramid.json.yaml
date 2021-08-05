@@ -22,3 +22,7 @@ pools:
       - { type: item, weight: 10, min: 8, max: 16, item: sandstone }
       - { type: item, weight: 10, min: 1, max: 8, item: string }
       - { type: item, weight: 10, min: 1, max: 8, item: sand }
+  - rolls: 1
+    entries:
+      - { type: loot_table, weight: 1, score: relic_loot, table: relic/random }
+      - { type: empty, weight: 499 }

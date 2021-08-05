@@ -24,7 +24,7 @@ pools:
       - { type: item, weight: 10, min: 8,  max: 16, item: petrified_oak_slab }
       - { type: item, weight: 15, min: 1,  max: 4,  item: redstone }
       - { type: item, weight: 15, min: 1,  max: 4,  item: coal }
-      - { type: loot_table, weight: 20, table: loot_overhaul/treasure_seed }
+      - { type: loot_table, weight: 20, table: loot_overhaul/plant_loot }
       - { type: item, weight: 10,                  item: cake }
   - rolls: 3
     entries:
@@ -32,3 +32,7 @@ pools:
       - { type: item, weight: 10, min: 1, max: 8, item: gunpowder }
       - { type: item, weight: 10, min: 1, max: 8, item: arrow }
       - { type: item, weight: 10, min: 1, max: 8, item: string }
+  - rolls: 1
+    entries:
+      - { type: loot_table, weight: 1, score: relic_loot, table: relic/random }
+      - { type: empty, weight: 49 }

@@ -11,7 +11,8 @@ DATAPACKFILES = gardener_endermen.zip climbable.zip \
 	mineable.zip shearless.zip breeding_overhaul.zip \
 	mother_phantoms.zip phantasmal.zip glow_squid_glamers.zip invis_squid_glamer.zip \
 	smooth_cracked_stonecutting.zip lose_hp_xp.zip more_rain.zip \
-	loot_overhaul.zip relic_loot.zip more_shulker_shells.zip \
+	loot_overhaul.zip plant_loot.zip relic_loot.zip \
+	more_shulker_shells.zip \
 	starter_bed.zip starter_book.zip starter_bucket.zip starter_map.zip \
 	starter_shulker.zip starter_relic.zip starter_bonus_chest.zip \
 	escape_end.zip escape_nether.zip escape_grind.zip lichdom.zip
@@ -338,8 +339,8 @@ lose_hp_xp_FILES := $(DEFAULT_DATA_FILES) \
 
 loot_overhaul_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell find bucepack-data/loot_overhaul -type f | ./bin/ext2dir) \
-	data/minecraft/tags/items/starter_item.json \
-	data/minecraft/tags/items/creeper_drop_music_discs.json \
+	data/bucepack/loot_tables/example.json \
+	data/bucepack/loot_tables/relic/random.json \
 	data/minecraft/loot_tables/chests/abandoned_mineshaft.json \
 	data/minecraft/loot_tables/chests/bastion_bridge.json \
 	data/minecraft/loot_tables/chests/bastion_hoglin_stable.json \
@@ -381,17 +382,22 @@ loot_overhaul_FILES := $(DEFAULT_DATA_FILES) \
 	data/minecraft/loot_tables/chests/village/village_toolsmith.json \
 	data/minecraft/loot_tables/chests/village/village_weaponsmith.json \
 	data/minecraft/loot_tables/chests/woodland_mansion.json \
-	data/minecraft/loot_tables/gameplay/piglin_bartering.json \
 	data/minecraft/loot_tables/gameplay/fishing/fish.json \
 	data/minecraft/loot_tables/gameplay/fishing/junk.json \
 	data/minecraft/loot_tables/gameplay/fishing/treasure.json \
-	data/bucepack/loot_tables/example.json \
+	data/minecraft/loot_tables/gameplay/piglin_bartering.json \
 	data/minecraft/recipes/diamond_horse_armor.json \
 	data/minecraft/recipes/gold_horse_armor.json \
 	data/minecraft/recipes/iron_horse_armor.json \
 	data/minecraft/recipes/nametag.json \
 	data/minecraft/recipes/piglin_banner_pattern.json \
 	data/minecraft/recipes/saddle.json \
+	data/minecraft/tags/items/creeper_drop_music_discs.json \
+	data/minecraft/tags/items/starter_item.json \
+
+plant_loot_FILES := $(DEFAULT_DATA_FILES) \
+	$(shell ls bucepack-data/loot_addons/plant_loot* | ./bin/ext2dir) \
+	data/bucepack/advancements/loot_overhaul/root.json \
 
 relic_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell find bucepack-data/relic -type f | ./bin/ext2dir) \
@@ -904,6 +910,11 @@ lose_hp_xp.zip: $(lose_hp_xp_FILES)
 	printf "@ data/minecraft/tags/functions/load-lose_hp_xp.json\n@=data/minecraft/tags/functions/load.json\n" | zipnote -w $@
 
 loot_overhaul.zip: $(loot_overhaul_FILES)
+	cp meta/$(@:.zip=.png) pack.png
+	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
+	zip $@ pack.png pack.mcmeta $^
+
+plant_loot.zip: $(plant_loot_FILES)
 	cp meta/$(@:.zip=.png) pack.png
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^

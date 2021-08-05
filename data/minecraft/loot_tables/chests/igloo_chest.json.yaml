@@ -14,3 +14,7 @@ pools:
   - rolls: 1
     entries:
       - { type: item, weight: 1,                  item: golden_apple }
+  - rolls: 1
+    entries:
+      - { type: loot_table, weight: 1, score: relic_loot, table: relic/random }
+      - { type: empty, weight: 999 }

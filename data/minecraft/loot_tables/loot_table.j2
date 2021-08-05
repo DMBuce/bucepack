@@ -119,6 +119,17 @@
           {%- endif %}
           "quality": {{ entry.quality if entry.quality is defined else 0 }},
           "name": "bucepack:{{entry.table}}"
+          {%- if entry.score is defined %}
+          "conditions": [
+            {
+              "condition": "minecraft:entity_scores",
+              "entity": "this",
+              "scores": {
+                "{{ entry.score }}": { "min": 1 }
+              }
+            }
+          ]
+          {%- endif %}
         }{{ "," if not loop.last }}
         {%- elif entry.type == "empty" %}
         {
@@ -260,7 +271,15 @@
                   ]
                 }
               }
+            }{%- if entry.score is defined %},
+            {
+              "condition": "minecraft:entity_scores",
+              "entity": "this",
+              "scores": {
+                "{{ entry.score }}": { "min": 1 }
+              }
             }
+            {%- endif %}
           ]
         }{{ "," if not loop.last }}
         {%- elif entry.type == "crying_obsidian_drops" %}

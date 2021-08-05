@@ -19,3 +19,7 @@ pools:
       - { type: item, weight: 1,                  item: ender_eye }
       - { type: tag,  weight: 3, expand: true,    tag:  music_discs }
       - { type: loot_table, weight: 1, table: loot_overhaul/ench_book }
+  - rolls: 1
+    entries:
+      - { type: loot_table, weight: 1, score: relic_loot, table: relic/random }
+      - { type: empty, weight: 999 }

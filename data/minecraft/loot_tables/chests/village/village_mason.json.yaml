@@ -9,3 +9,7 @@ pools:
       - { type: item, weight: 1,                  item: experience_bottle }
       - { type: item, weight: 1, min: 8, max: 16, item: smooth_stone }
       - { type: item, weight: 1,                  item: emerald }
+  - rolls: 1
+    entries:
+      - { type: loot_table, weight: 1, score: relic_loot, table: relic/random }
+      - { type: empty, weight: 999 }

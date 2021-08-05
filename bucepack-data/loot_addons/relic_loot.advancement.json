@@ -1,0 +1,25 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:chest"
+		},
+		"title": {
+			"text": "Relic Loot"
+		},
+		"description": {
+			"text": "Rare relics in loot chests"
+		},
+		"show_toast": false,
+		"announce_to_chat": false,
+		"frame": "task"
+	},
+	"parent": "bucepack:loot_overhaul/root",
+	"criteria": {
+		"tick": {
+			"trigger": "minecraft:tick"
+		}
+	},
+	"rewards": {
+		"function": "bucepack:loot_addons/relic_loot"
+	}
+}

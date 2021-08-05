@@ -64,3 +64,7 @@ pools:
       - { type: item, weight: 1, min: 4, max: 6,  item: string }
       - { type: item, weight: 2, min: 5, max: 17, item: arrow }
       - { type: item, weight: 1, count: 1,        item: cooked_porkchop }
+  - rolls: 1
+    entries:
+      - { type: loot_table, weight: 1, score: relic_loot, table: relic/random }
+      - { type: empty, weight: 999 }

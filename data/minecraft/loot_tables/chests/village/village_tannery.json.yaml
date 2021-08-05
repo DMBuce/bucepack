@@ -9,3 +9,7 @@ pools:
       - { type: item, weight: 2,                 item: leather_leggings, enchant_lvl: { min: 15, max: 20 } }
       - { type: item, weight: 1,                 item: saddle }
       - { type: item, weight: 1, min: 1, max: 4, item: emerald }
+  - rolls: 1
+    entries:
+      - { type: loot_table, weight: 1, score: relic_loot, table: relic/random }
+      - { type: empty, weight: 999 }

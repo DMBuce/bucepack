@@ -9,3 +9,7 @@ pools:
       - { type: item, weight: 1,                 item: emerald }
       - { type: item, weight: 1,                 item: shears, enchant_rand: [] }
       - { type: item, weight: 6, min: 3, max: 8, item: cookie }
+  - rolls: 1
+    entries:
+      - { type: loot_table, weight: 1, score: relic_loot, table: relic/random }
+      - { type: empty, weight: 999 }

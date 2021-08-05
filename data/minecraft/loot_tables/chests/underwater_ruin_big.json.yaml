@@ -14,3 +14,7 @@ pools:
       - { type: item, weight: 1,                   item: scute }
       - { type: explorer_map, weight: 5, structure: ruined_portal, decor: target_point, display: "Bizarre Explorer Map", skipchunks: false }
       - { type: explorer_map, weight: 10, decor: red_x, skipchunks: false }
+  - rolls: 1
+    entries:
+      - { type: loot_table, weight: 1, score: relic_loot, table: relic/random }
+      - { type: empty, weight: 999 }

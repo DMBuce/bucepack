@@ -35,3 +35,7 @@ pools:
       - { type: item, weight: 1,  min: 9,  max: 18, item: iron_nugget }
       - { type: item, weight: 1,                    item: flint_and_steel }
       - { type: item, weight: 1,                    item: fire_charge }
+  - rolls: 1
+    entries:
+      - { type: loot_table, weight: 1, score: relic_loot, table: relic/random }
+      - { type: empty, weight: 999 }

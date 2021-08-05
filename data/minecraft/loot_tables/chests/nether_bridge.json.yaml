@@ -24,3 +24,7 @@ pools:
       - { type: explorer_map, weight: 5, structure: bastion_remnant, decor: target_point, display: "Nether Explorer Map", skipchunks: true }
       - { type: item, weight: 3, min: 2, max: 3,  item: diamond }
       - { type: item, weight: 2, min: 2, max: 4,  item: obsidian }
+  - rolls: 1
+    entries:
+      - { type: loot_table, weight: 1, score: relic_loot, table: relic/random }
+      - { type: empty, weight: 999 }

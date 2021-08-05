@@ -59,3 +59,7 @@ pools:
       - { type: item, weight: 1, min: 8,  max: 23, item: quartz }
       - { type: item, weight: 1, min: 5,  max: 15, item: gilded_blackstone }
       - { type: item, weight: 1, min: 3,  max: 8,  item: magma_cream }
+  - rolls: 1
+    entries:
+      - { type: loot_table, weight: 1, score: relic_loot, table: relic/random }
+      - { type: empty, weight: 499 }

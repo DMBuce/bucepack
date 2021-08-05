@@ -14,3 +14,7 @@ pools:
       - { type: item, weight: 1,                  item: feather }
       - { type: item, weight: 2,  min: 1, max: 4, item: emerald }
       - { type: tag,  weight: 5, expand: true, tag: saplings }
+  - rolls: 1
+    entries:
+      - { type: loot_table, weight: 1, score: relic_loot, table: relic/random }
+      - { type: empty, weight: 999 }

@@ -15,3 +15,7 @@ pools:
       - { type: tag,  weight: 5,  expand: true,   tag:  saplings }
       - { type: loot_table, weight: 3, table: loot_overhaul/biome_log }
       - { type: item, weight: 3,                  item: experience_bottle }
+  - rolls: 1
+    entries:
+      - { type: loot_table, weight: 1, score: relic_loot, table: relic/random }
+      - { type: empty, weight: 499 }

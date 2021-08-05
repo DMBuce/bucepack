@@ -17,3 +17,7 @@ pools:
       - { type: item, weight: 3,                   item: scute }
       - { type: item, weight: 3,                   item: nautilus_shell }
       - { type: item, weight: 6,                   item: fishing_rod, enchant_lvl: { min: 20, max: 25 } }
+  - rolls: 1
+    entries:
+      - { type: loot_table, weight: 1, score: relic_loot, table: relic/random }
+      - { type: empty, weight: 999 }

@@ -22,3 +22,7 @@ pools:
     entries:
       - { type: item, weight: 1,  min: 2, max: 4, item: cooked_cod }
       - { type: item, weight: 1,  min: 2, max: 4, item: cooked_salmon }
+  - rolls: 1
+    entries:
+      - { type: loot_table, weight: 1, score: relic_loot, table: relic/random }
+      - { type: empty, weight: 999 }

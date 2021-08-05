@@ -30,3 +30,7 @@ pools:
       - { type: item, weight: 1, min: 2, max: 5, item: cooked_porkchop }
       - { type: item, weight: 1, min: 2, max: 7, item: crimson_fungus }
       - { type: item, weight: 1, min: 2, max: 7, item: crimson_roots }
+  - rolls: 1
+    entries:
+      - { type: loot_table, weight: 1, score: relic_loot, table: relic/random }
+      - { type: empty, weight: 999 }
