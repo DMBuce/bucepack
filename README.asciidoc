@@ -111,7 +111,6 @@ Adds arrows to the top of hoppers and the side of observers so that you can
 see which direction they're pointing. The observer's arrows light up when they
 activate so that you can see signals passing through them.
 
-//image::https://i.imgur.com/RwOzhsR.png[Tech Arrows]
 image::https://i.imgur.com/EyBG6cG.png[Tech Arrows]
 
 Download: https://github.com/DMBuce/bucepack/releases
@@ -158,7 +157,6 @@ more variety in ore shapes.
 Nether and deepslate ores are left unchanged, while stone ores use a simple,
 classic-inspired aesthetic that pairs well with stone's clean texture.
 
-//image::https://i.imgur.com/kXCHAdS.png[Ore Types]
 image::https://i.imgur.com/G4xb3Q7.png[Ore Types]
 
 Rather than simply reverting the stone ores to their 1.16 version,
@@ -238,6 +236,20 @@ Build:
  make classic_lapis.zip
  make classic_rose.zip
  make classic_food.zip
+
+=== Spellsmithing Guide
+
+Changes the smithing GUI to show that the left slot is where magic is
+preserved and magic in the right slot gets destroyed. Intended for use with
+datapacks that have <<spellsmithing>>.
+
+In addition, this pack contains textures for custom items in other datapacks
+on this page. These textures will only show up if you have such datapacks
+installed.
+
+Download: https://github.com/DMBuce/bucepack/releases
+
+Build: `make spellsmithing_guide.zip`
 
 == Sound Packs
 
@@ -449,8 +461,8 @@ Phantoms killed by a player have a chance to drop a membrane with
 Glamer of Invisibility, an enchantment that can be applied to an item
 frame in the smithing table to make an invisible item frame.
 
-//If you install this data pack as a resource pack, invisible item frames will
-//have a translucent item texture in the inventory
+If you install this data pack as a resource pack, invisible item frames will
+have a translucent item texture in the inventory
 
 This pack is a companion to the <<mother-phantoms,Mother Phantoms>> datapack,
 which adds more corporeal phantoms to The End; and the
@@ -522,8 +534,8 @@ arms, and provides one other effect as summarized below.
 * **Glamer of the Rightward Cancan**: Gives the "cancan_a_pose" from bedrock edition
 * **Glamer of the Leftward Cancan**: Gives the "cancan_b_pose" from bedrock edition
 
-//If you install this data pack as a resource pack, armor stands with poses will
-//have an appropriate item texture in the inventory
+If you install this data pack as a resource pack, armor stands with poses will
+have an appropriate item texture in the inventory
 
 This pack is a companion to the <<phantasmal,Phantasmal>> and
 <<invisible-squid-glamer,Invisible Squid Glamer>> datapacks,
@@ -539,8 +551,8 @@ Squid (but not glow squid) with invisibility that die have a chance to drop
 ink with Glamer of Invisibility, an enchantment that can be applied to an item
 frame in the smithing table to make an invisible item frame.
 
-//If you install this data pack as a resource pack, invisible item frames will
-//have a translucent item texture in the inventory
+If you install this data pack as a resource pack, invisible item frames will
+have a translucent item texture in the inventory
 
 This pack is a companion to the
 <<glow-squid-glamers,Glow Squid Glamers>> datapack, which lets you obtain
@@ -548,7 +560,7 @@ armor stand glamers from glow squid.
 
 Download: https://github.com/DMBuce/bucepack/releases
 
-Build: `make invis_squid_glamers.zip`
+Build: `make invis_squid_glamer.zip`
 
 Known Issues: The Glamer of Invisibility can't be applied to armor stands
 because of https://bugs.mojang.com/browse/MC-66068[this works-as-intended bug]
@@ -675,6 +687,8 @@ Build:
  make starter_bucket.zip
  make starter_map.zip
  make starter_shulker.zip
+ make starter_bonus_chest.zip
+ make starter_relic.zip
 
 === Breeding Overhaul
 
@@ -890,7 +904,7 @@ traditional smithing.
 
 It can be a bit confusing and counterintuitive at first, but just remember that
 the magic that you want to preserve is what goes in the left slot.
-//The Spellsmithing Guide resource pack can help with that.
+The Spellsmithing Guide resource pack can help with that.
 It can also be useful to shift-click items into the smithing GUI, which will
 always put the item into the correct slot.
 

@@ -5,7 +5,7 @@ RESOURCEPACKFILES = painting_overhaul.zip note_guide.zip brew_guide.zip \
 	classic_netherrack.zip classic_lava.zip classic_gravel.zip classic_lapis.zip \
 	classic_rose.zip classic_food.zip \
 	classic_moo.zip classic_twang.zip classic_sploosh.zip classic_crunch.zip \
-	datapack_resources.zip
+	spellsmithing_guide.zip
 DATAPACKFILES = gardener_endermen.zip climbable.zip \
 	no_treasure_maps.zip fortunate_jungle.zip dragonproof.zip \
 	mineable.zip shearless.zip breeding_overhaul.zip \
@@ -256,7 +256,7 @@ classic_food_FILES := $(DEFAULT_RESOURCE_FILES) \
 	assets/minecraft/textures/item/rabbit.png \
 	assets/minecraft/textures/item/salmon.png
 
-datapack_resources_FILES := $(DEFAULT_RESOURCE_FILES) \
+spellsmithing_guide_FILES := $(DEFAULT_RESOURCE_FILES) \
 	$(wildcard assets/minecraft/models/item/armor_stand_*.json) \
 	$(wildcard assets/minecraft/textures/item/armor_stand_*.png) \
 	assets/minecraft/models/item/invis_item_frame.json \
@@ -988,7 +988,7 @@ classic_food.zip: $(classic_food_FILES)
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^
 
-datapack_resources.zip: $(datapack_resources_FILES)
+spellsmithing_guide.zip: $(spellsmithing_guide_FILES)
 	cp meta/$(@:.zip=.png) pack.png
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^
