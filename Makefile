@@ -26,7 +26,8 @@ CLEAN_TARGETS := $(PACKFILES) data/bucepack pack.mcmeta pack.png test.zip \
 	data/minecraft/loot_tables/gameplay/*.json \
 	data/minecraft/loot_tables/gameplay/*/*.json \
 	data/minecraft/loot_tables/subtables/*.json \
-	data/minecraft/loot_tables/subtables/*/*.json
+	data/minecraft/loot_tables/subtables/*/*.json \
+	bucepack-data/relic/all.loot_table.json.yaml \
 	#bucepack-data/*/subtables/*.json
 
 # needed by all pack targets
@@ -394,15 +395,15 @@ loot_overhaul_FILES := $(DEFAULT_DATA_FILES) \
 relic_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell find bucepack-data/relic -type f | ./bin/ext2dir) \
 	$(spellsmithing_guide_FILES) \
+	data/bucepack/loot_tables/relic/all.json \
 
 relic_loot_FILES := $(DEFAULT_DATA_FILES) \
 	$(relic_FILES) \
-	data/bucepack/advancements/relic/relic_loot.json \
+	data/bucepack/advancements/relic_loot.json \
 
 starter_relic_FILES := $(DEFAULT_DATA_FILES) \
 	$(relic_FILES) \
-	data/bucepack/advancements/relic/starter_relic.json \
-	data/bucepack/functions/relic/starter_relic.mcfunction \
+	data/bucepack/advancements/starter_relic.json \
 
 starter_bonus_chest_FILES := $(DEFAULT_DATA_FILES) \
 	data/bucepack/advancements/starter_bonus_chest.json \
@@ -511,6 +512,7 @@ phantasmal_FILES := $(DEFAULT_DATA_FILES) \
 	assets/minecraft/models/item/invis_item_frame.json \
 	assets/minecraft/models/item/item_frame.json \
 	assets/minecraft/textures/item/invis_item_frame.png \
+	assets/minecraft/textures/item/light_15.png \
 
 mother_phantoms_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell find bucepack-data/mother_phantoms -type f | ./bin/ext2dir) \
