@@ -14,7 +14,7 @@ pools:
       - { type: item, weight: 2,  item: shulker_box }
       - { type: item, weight: 15, item: diamond_axe, enchant_lvl: { min: 15, max: 20 } }
       - { type: item, weight: 5,  item: diamond_chestplate, enchant_lvl: { min: 15, max: 20 } }
-      - { type: loot_table, weight: 10, table: loot_overhaul/subtables/ench_book }
+      - { type: loot_table, weight: 10, table: loot_overhaul/ench_book }
   - rolls: { min: 1, max: 4 }
     entries:
       - { type: item, weight: 10, min: 1,  max: 4,  item: iron_ingot }
@@ -24,7 +24,7 @@ pools:
       - { type: item, weight: 10, min: 8,  max: 16, item: petrified_oak_slab }
       - { type: item, weight: 15, min: 1,  max: 4,  item: redstone }
       - { type: item, weight: 15, min: 1,  max: 4,  item: coal }
-      - { type: loot_table, weight: 20, table: loot_overhaul/subtables/treasure_seed }
+      - { type: loot_table, weight: 20, table: loot_overhaul/treasure_seed }
       - { type: item, weight: 10,                  item: cake }
   - rolls: 3
     entries:

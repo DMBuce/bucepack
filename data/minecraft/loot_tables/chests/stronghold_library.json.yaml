@@ -6,4 +6,4 @@ pools:
       - { type: item, weight: 20, min: 2, max: 7, item: paper }
       - { type: explorer_map, weight: 1, structure: jungle_pyramid, decor: target_x, display: "Jungle Explorer Map", skipchunks: false }
       - { type: item, weight: 1,                  item: experience_bottle }
-      - { type: loot_table, weight: 10, table: loot_overhaul/subtables/lib_book }
+      - { type: loot_table, weight: 10, table: loot_overhaul/lib_book }

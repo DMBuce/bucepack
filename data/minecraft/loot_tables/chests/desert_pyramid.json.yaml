@@ -11,7 +11,7 @@ pools:
       - { type: item,  weight: 25, min: 4, max: 6, item: honey_bottle }
       - { type: tag,  weight: 20, expand: true,    tag:  music_discs }
       - { type: item,       weight: 5,  item: ender_eye }
-      - { type: loot_table, weight: 20, table: loot_overhaul/subtables/ench_book }
+      - { type: loot_table, weight: 20, table: loot_overhaul/ench_book }
       - { type: item,       weight: 20, item: experience_bottle }
       - { type: item,       weight: 2,  item: enchanted_golden_apple }
       - { type: empty,      weight: 15 }

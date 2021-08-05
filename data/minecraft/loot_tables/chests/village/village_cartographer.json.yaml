@@ -6,6 +6,6 @@ pools:
       - { type: explorer_map, weight: 5, structure: desert_pyramid,
         decor: target_x, display: "Desert Explorer Map", skipchunks: false }
       - { type: item, weight: 15, min: 1, max: 5, item: paper }
-      - { type: loot_table, weight: 5, table: loot_overhaul/subtables/lib_book }
+      - { type: loot_table, weight: 5, table: loot_overhaul/lib_book }
       - { type: item, weight: 15, min: 1, max: 4, item: pumpkin_pie }
       - { type: tag,  weight: 5, expand: true, tag: saplings }

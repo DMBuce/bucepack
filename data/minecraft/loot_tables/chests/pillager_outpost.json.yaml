@@ -19,4 +19,4 @@ pools:
       - { type: item, weight: 4, min: 2, max: 7, item: arrow }
       - { type: item, weight: 3, min: 1, max: 3, item: tripwire_hook }
       - { type: item, weight: 3, min: 1, max: 3, item: iron_ingot }
-      - { type: loot_table, weight: 1, table: loot_overhaul/subtables/ench_book }
+      - { type: loot_table, weight: 1, table: loot_overhaul/ench_book }
