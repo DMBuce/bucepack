@@ -5,6 +5,7 @@ RESOURCEPACKFILES = painting_overhaul.zip note_guide.zip brew_guide.zip \
 	classic_netherrack.zip classic_lava.zip classic_gravel.zip classic_lapis.zip \
 	classic_rose.zip classic_food.zip \
 	classic_moo.zip classic_twang.zip classic_sploosh.zip classic_crunch.zip \
+	waterproof_tech.zip aggro_bastions.zip blue_fire.zip \
 	spellsmithing_guide.zip
 DATAPACKFILES = gardener_endermen.zip climbable.zip \
 	no_treasure_maps.zip fortunate_jungle.zip dragonproof.zip \
@@ -320,6 +321,10 @@ speedy_paths_FILES := $(DEFAULT_DATA_FILES) \
 waterproof_tech_FILES := $(DEFAULT_DATA_FILES) \
 	data/minecraft/tags/blocks/signs.json \
 	data/bucepack/advancements/waterproof_tech.json
+
+aggro_bastions_FILES := $(DEFAULT_DATA_FILES) \
+	data/minecraft/tags/blocks/guarded_by_piglins.json \
+	data/bucepack/advancements/aggro_bastions.json
 
 no_treasure_maps_FILES := $(DEFAULT_DATA_FILES) \
 	data/minecraft/loot_tables/chests/shipwreck_map_nomap.json \
@@ -876,6 +881,11 @@ speedy_paths.zip: $(speedy_paths_FILES)
 	zip $@ pack.png pack.mcmeta $^
 
 waterproof_tech.zip: $(waterproof_tech_FILES)
+	cp meta/$(@:.zip=.png) pack.png
+	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
+	zip $@ pack.png pack.mcmeta $^
+
+aggro_bastions.zip: $(aggro_bastions_FILES)
 	cp meta/$(@:.zip=.png) pack.png
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^

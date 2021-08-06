@@ -1,0 +1,20 @@
+{
+	"values": [
+		"minecraft:blackstone_slab",
+		"minecraft:blackstone_stairs",
+		"minecraft:blackstone_wall",
+		"minecraft:chiseled_polished_blackstone",
+		"minecraft:cracked_polished_blackstone_bricks",
+		"minecraft:polished_blackstone_bricks",
+		"minecraft:polished_blackstone_brick_stairs",
+		"minecraft:polished_basalt",
+		"minecraft:quartz_block",
+		"minecraft:quartz_slab",
+		"minecraft:smooth_quartz",
+		"minecraft:smooth_quartz_slab",
+		"minecraft:spawner",
+		"minecraft:nether_wart",
+		"minecraft:chain",
+		"minecraft:lantern"
+	]
+}

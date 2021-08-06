@@ -423,6 +423,26 @@ Download: https://github.com/DMBuce/bucepack/releases
 
 Build: `make more_rain.zip`
 
+=== Waterproof Tech
+
+Makes rails and redstone components waterproof.
+
+image::https://i.imgur.com/mXfFuET.png[Waterproof Tech]
+
+Download: https://github.com/DMBuce/bucepack/releases
+
+Build: `make waterproof_tech.zip`
+
+=== Blue Fire
+
+Lets you use blue shiny rocks to make blue fire.
+
+image::https://i.imgur.com/paceJ4Z.png[Blue Fire]
+
+Download: https://github.com/DMBuce/bucepack/releases
+
+Build: `make blue_fire.zip`
+
 === No Treasure Maps
 
 Replaces Treasure Maps with Hearts of the Sea in shipwreck chests as a workaround for an issue in
@@ -784,6 +804,14 @@ when they die, and lose all XP when they die. The XP does not drop as orbs.
 Download: https://github.com/DMBuce/bucepack/releases
 
 Build: `make lose_hp_xp.zip`
+
+=== Aggro Bastions
+
+Makes piglins hostile when you break blocks that bastions are made out of.
+
+Download: https://github.com/DMBuce/bucepack/releases
+
+Build: `make aggro_bastions.zip`
 
 == Legacy Data Packs
 
