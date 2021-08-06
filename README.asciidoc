@@ -425,9 +425,12 @@ Build: `make more_rain.zip`
 
 === Waterproof Tech
 
-Makes rails and redstone components waterproof.
+Makes redstone components waterproof.
 
 image::https://i.imgur.com/mXfFuET.png[Waterproof Tech]
+
+Note that rails are waterloggable since 1.17 and are not made waterproof by
+this datapack. The image above is outdated.
 
 Download: https://github.com/DMBuce/bucepack/releases
 
@@ -624,7 +627,7 @@ run `/function bucepack:loot_overhaul/disable/starter_relic`
 
 This is a series of addon packs for the
 <<loot-overhaul,Loot Overhaul>>
-datapack above. Each pack adds one additional item to the bonus spawn chest.
+datapack. Each pack adds one additional item to the bonus spawn chest.
 
 Starter Bed adds a Red Bed to the bonus spawn chest.
 
@@ -1001,7 +1004,6 @@ Spellsmithing is the process of working magical enchantments onto an item in
 the smithing table.
 It works a little differently than traditional Minecraft smithing.
 
-Both forms of smithing require two input items and give you an output item.
 Both forms of smithing preserve the magic of the item in the left input slot,
 and destroy any magic on the item in the right output slot.
 So in order to preserve the magic of an enchanted upgrade item, it needs to go
