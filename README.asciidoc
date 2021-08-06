@@ -1012,7 +1012,7 @@ traditional smithing.
 
 It can be a bit confusing and counterintuitive at first, but just remember that
 the magic that you want to preserve is what goes in the left slot.
-The Spellsmithing Guide resource pack can help with that.
+The <<spellsmithing-guide,Spellsmithing Guide>> resource pack can help with that.
 It can also be useful to shift-click items into the smithing GUI, which will
 always put the item into the correct slot.
 
