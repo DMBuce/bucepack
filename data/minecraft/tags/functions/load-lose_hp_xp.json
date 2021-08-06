@@ -1,6 +1,7 @@
 {
 	"replace": false,
 	"values": [
-		"bucepack:var"
+		"bucepack:var",
+		"bucepack:lose_hp_xp/load"
 	]
 }

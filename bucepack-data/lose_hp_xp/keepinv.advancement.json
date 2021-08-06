@@ -11,7 +11,7 @@
 		},
 		"show_toast": false,
 		"announce_to_chat": true,
-		"hidden": true,
+		"hidden": false,
 		"frame": "task"
 	},
 	"parent": "bucepack:lose_hp_xp/natregen",
