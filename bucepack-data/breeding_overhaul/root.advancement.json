@@ -4,10 +4,10 @@
 			"item": "minecraft:golden_horse_armor"
 		},
 		"title": {
-			"text": "Studly"
+			"text": "Breeding Overhaul"
 		},
 		"description": {
-			"text": "More diverse traits for horses, donkeys and mules"
+			"text": "More diverse traits for horses, donkeys, mules and llamas"
 		},
 		"show_toast": false,
 		"announce_to_chat": false,
