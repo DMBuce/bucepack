@@ -5,7 +5,6 @@ RESOURCEPACKFILES = painting_overhaul.zip note_guide.zip brew_guide.zip \
 	classic_netherrack.zip classic_lava.zip classic_gravel.zip classic_lapis.zip \
 	classic_rose.zip classic_food.zip \
 	classic_moo.zip classic_twang.zip classic_sploosh.zip classic_crunch.zip \
-	waterproof_tech.zip aggro_bastions.zip blue_fire.zip \
 	spellsmithing_guide.zip
 DATAPACKFILES = gardener_endermen.zip climbable.zip \
 	no_treasure_maps.zip fortunate_jungle.zip dragonproof.zip \
@@ -16,6 +15,7 @@ DATAPACKFILES = gardener_endermen.zip climbable.zip \
 	more_shulker_shells.zip \
 	starter_bed.zip starter_book.zip starter_bucket.zip starter_map.zip \
 	starter_shulker.zip starter_relic.zip starter_bonus_chest.zip \
+	waterproof_tech.zip aggro_bastions.zip blue_fire.zip \
 	escape_end.zip escape_nether.zip escape_grind.zip lichdom.zip
 
 PACKFILES = $(RESOURCEPACKFILES) $(DATAPACKFILES)
