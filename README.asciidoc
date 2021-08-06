@@ -757,7 +757,8 @@ One Mother Phantom spawns the first time the dragon is summoned, two
 spawn the second time, and three Mother Phantoms spawn for each subsequent
 dragon fight.
 
-image::https://i.imgur.com/d4lDWos.png[Mother Phantoms]
+//image::https://i.imgur.com/d4lDWos.png[Mother Phantoms]
+image::https://i.imgur.com/QKFth7u.png[Mother Phantoms]
 
 Mother Phantoms are larger than normal, deal extra damage, and have extra health.
 Whenever a player hits a Mother Phantom,
