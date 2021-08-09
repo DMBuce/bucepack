@@ -105,7 +105,8 @@ Build: `make note_guide.zip`
 Adds a simple cheat sheet to the brewing stand GUI to remind you how potions
 are made.
 
-image::https://i.imgur.com/hhyxHA2.png[Brew Guide]
+//image::https://i.imgur.com/hhyxHA2.png[Brew Guide]
+image::https://i.imgur.com/drQalxO.png[Brew Guide]
 
 There's also a dark mode version available that's adapted from
 https://www.curseforge.com/minecraft/texture-packs/default-dark-mode[nebulr's Default Dark Mode]
