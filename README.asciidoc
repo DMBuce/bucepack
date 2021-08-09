@@ -101,13 +101,21 @@ Build: `make note_guide.zip`
 
 === Brew Guide
 
-Adds a simple cheat sheet to the brewing stand GUI to remind you how potions are made.
+Adds a simple cheat sheet to the brewing stand GUI to remind you how potions
+are made.
 
 image::https://i.imgur.com/hhyxHA2.png[Brew Guide]
 
+There's also a dark mode version available that's adapted from
+https://www.curseforge.com/minecraft/texture-packs/default-dark-mode[nebulr's Default Dark Mode]
+resource pack.
+
 Download: https://github.com/DMBuce/bucepack/releases
 
-Build: `make brew_guide.zip`
+Build:
+
+ make brew_guide.zip
+ make brew_guide_darkmode.zip
 
 === Tech Arrows
 

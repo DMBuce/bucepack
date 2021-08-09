@@ -1,5 +1,6 @@
 
-RESOURCEPACKFILES = painting_overhaul.zip note_guide.zip brew_guide.zip \
+RESOURCEPACKFILES = painting_overhaul.zip note_guide.zip \
+	brew_guide.zip brew_guide_darkmode.zip \
 	tech_arrows.zip ravager.zip villager_mech.zip pig_armor.zip ore_types.zip \
 	discreet_pumpkin.zip stickier_piston.zip \
 	classic_netherrack.zip classic_lava.zip classic_gravel.zip classic_lapis.zip \
@@ -153,6 +154,9 @@ note_guide_adv_FILES := $(DEFAULT_RESOURCE_FILES) \
 
 brew_guide_FILES := $(DEFAULT_RESOURCE_FILES) \
 	assets/minecraft/textures/gui/container/brewing_stand.png
+
+brew_guide_darkmode_FILES := $(DEFAULT_RESOURCE_FILES) \
+	assets/minecraft/textures/gui/container/brewing_stand_darkmode.png
 
 tech_arrows_FILES := $(DEFAULT_RESOURCE_FILES) \
 	assets/minecraft/models/block/hopper_side.json \
@@ -759,6 +763,12 @@ brew_guide.zip: $(brew_guide_FILES)
 	cp meta/$(@:.zip=.png) pack.png
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^
+
+brew_guide_darkmode.zip: $(brew_guide_darkmode_FILES)
+	cp meta/$(@:.zip=.png) pack.png
+	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
+	zip $@ pack.png pack.mcmeta $^
+	printf "@ assets/minecraft/textures/gui/container/brewing_stand_darkmode.png\n@=assets/minecraft/textures/gui/container/brewing_stand.png\n" | zipnote -w $@
 
 tech_arrows.zip: $(tech_arrows_FILES)
 	cp meta/$(@:.zip=.png) pack.png
