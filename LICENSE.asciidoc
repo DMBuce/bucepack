@@ -5,10 +5,10 @@ All Minecraft textures are modified and/or distributed under the Minecraft
 Terms of Use <https://minecraft.net/terms> and Brand Guidelines
 <https://minecraft.net/brand> .
 
-Any textures belonging to me are released under the CC BY-SA 4.0 license
-<http://creativecommons.org/licenses/by-sa/4.0/> . Most of the textures I've
-created are modified versions of old Minecraft textures, so if you want to
-redistribute them you may need to also follow the Minecraft TOS and Brand
+Any textures belonging to me are released under the CC BY-NC-SA 4.0 license
+<https://creativecommons.org/licenses/by-nc-sa/4.0/> . Most of the textures
+I've created are modified versions of old Minecraft textures, so if you want
+to redistribute them you may need to also follow the Minecraft TOS and Brand
 Guidelines. I am not a lawyer so caveat emptor applies here.
 
 All code included in the BucePack git repository is released under the WTFPL
