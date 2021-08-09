@@ -1,5 +1,6 @@
 :toc: macro
 :sectlinks: 2
+:toclevels: 5
 
 = Buce's Packs
 
