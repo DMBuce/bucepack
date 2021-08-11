@@ -23,6 +23,6 @@
 		}
 	},
 	"rewards": {
-		"function": "bucepack:more_rains/sleep"
+		"function": "bucepack:more_rain/sleep"
 	}
 }
