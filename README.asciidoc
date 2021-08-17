@@ -209,6 +209,10 @@ Build: `make stickier_piston.zip`
 This is a series of texture packs that revert certain blocks and items to
 an older version.
 
+Classic Oak reverts oak to its texture from before 1.14.
+
+Classic Obsidian reverts obsidian to its smooth texture from before 1.14.
+
 Classic Netherrack reverts netherrack to its bloody texture from before 1.14.
 
 Classic Lava reverts lava to its less cheesy texture from before 1.5.

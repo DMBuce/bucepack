@@ -3,8 +3,8 @@ RESOURCEPACKFILES = painting_overhaul.zip note_guide.zip \
 	brew_guide.zip brew_guide_darkmode.zip \
 	tech_arrows.zip ravager.zip villager_mech.zip pig_armor.zip ore_types.zip \
 	discreet_pumpkin.zip stickier_piston.zip \
-	classic_netherrack.zip classic_lava.zip classic_gravel.zip classic_lapis.zip \
-	classic_rose.zip classic_food.zip \
+	classic_oak.zip classic_netherrack.zip classic_lava.zip classic_gravel.zip \
+	classic_obsidian.zip classic_lapis.zip classic_rose.zip classic_food.zip \
 	classic_moo.zip classic_twang.zip classic_sploosh.zip classic_crunch.zip \
 	spellsmithing_guide.zip
 DATAPACKFILES = gardener_endermen.zip climbable.zip \
@@ -214,6 +214,10 @@ stickier_piston_FILES := $(DEFAULT_RESOURCE_FILES) \
 	assets/minecraft/textures/block/piston_side_sticky.png \
 	assets/minecraft/textures/block/piston_top_sticky.png
 
+classic_oak_FILES := $(DEFAULT_RESOURCE_FILES) \
+	assets/minecraft/textures/block/oak_log.png \
+	#assets/minecraft/textures/block/oak_log_top.png \
+
 classic_netherrack_FILES := $(DEFAULT_RESOURCE_FILES) \
 	assets/minecraft/textures/block/netherrack.png \
 	assets/minecraft/textures/block/nether_quartz_ore.png \
@@ -229,6 +233,10 @@ classic_lava_FILES := $(DEFAULT_RESOURCE_FILES) \
 
 classic_gravel_FILES := $(DEFAULT_RESOURCE_FILES) \
 	assets/minecraft/textures/block/gravel.png
+
+classic_obsidian_FILES := $(DEFAULT_RESOURCE_FILES) \
+	assets/minecraft/textures/block/crying_obsidian.png \
+	assets/minecraft/textures/block/obsidian.png \
 
 classic_lapis_FILES := $(DEFAULT_RESOURCE_FILES) \
 	assets/minecraft/textures/block/lapis_block.png
@@ -810,6 +818,11 @@ stickier_piston.zip: $(stickier_piston_FILES)
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^
 
+classic_oak.zip: $(classic_oak_FILES)
+	cp meta/$(@:.zip=.png) pack.png
+	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
+	zip $@ pack.png pack.mcmeta $^
+
 classic_netherrack.zip: $(classic_netherrack_FILES)
 	cp meta/$(@:.zip=.png) pack.png
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
@@ -821,6 +834,11 @@ classic_lava.zip: $(classic_lava_FILES)
 	zip $@ pack.png pack.mcmeta $^
 
 classic_gravel.zip: $(classic_gravel_FILES)
+	cp meta/$(@:.zip=.png) pack.png
+	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
+	zip $@ pack.png pack.mcmeta $^
+
+classic_obsidian.zip: $(classic_obsidian_FILES)
 	cp meta/$(@:.zip=.png) pack.png
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^
