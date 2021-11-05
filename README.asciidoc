@@ -411,8 +411,8 @@ Increases the drop rate of crops when harvesting wheat and beetroots with
 fortune. Seeds harvested with fortune drop at a flat rate of 0-3 regardless of
 fortune level.
 
-This datapack is not compatible with other datapacks that modify the wheat
-or beetroot loot tables.
+This datapack is not compatible with other datapacks that modify the Wheat
+or Beetroot loot tables.
 
 Download: https://github.com/DMBuce/bucepack/releases
 
