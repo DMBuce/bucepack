@@ -1111,6 +1111,10 @@ mantrid: $(RESOURCEPACKFILES) $(DATAPACKFILES)
 	rsync -auv $(RESOURCEPACKFILES) mantrid:$(MCDIR)/resourcepacks
 	rsync -auv $(DATAPACKFILES) mantrid:$(MCDIR)/datapacks
 
+.PHONY: release
+release: $(RESOURCEPACKFILES) $(DATAPACKFILES)
+	./bin/release $(RESOURCEPACKFILES) $(DATAPACKFILES)
+
 .PHONY: uninstall
 uninstall:
 	cd $(MCDIR)/resourcepacks && rm -f $(PACKFILES)
