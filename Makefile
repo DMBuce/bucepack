@@ -8,7 +8,7 @@ RESOURCEPACKFILES = painting_overhaul.zip note_guide.zip \
 	classic_moo.zip classic_twang.zip classic_sploosh.zip classic_crunch.zip \
 	spellsmithing_guide.zip
 DATAPACKFILES = gardener_endermen.zip climbable.zip \
-	no_treasure_maps.zip fortunate_jungle.zip dragonproof.zip \
+	no_treasure_maps.zip fortunate_jungle.zip fortunate_crops.zip dragonproof.zip \
 	mineable.zip shearless.zip breeding_overhaul.zip \
 	mother_phantoms.zip phantasmal.zip glow_squid_glamers.zip invis_squid_glamer.zip \
 	smooth_cracked_stonecutting.zip lose_hp_xp.zip more_rain.zip \
@@ -349,6 +349,11 @@ blue_fire_FILES := $(DEFAULT_DATA_FILES) \
 fortunate_jungle_FILES := $(DEFAULT_DATA_FILES) \
 	data/minecraft/loot_tables/blocks/jungle_leaves.json \
 	data/bucepack/advancements/fortunate_jungle.json
+
+fortunate_crops_FILES := $(DEFAULT_DATA_FILES) \
+	data/minecraft/loot_tables/blocks/wheat.json \
+	data/minecraft/loot_tables/blocks/beetroots.json \
+	data/bucepack/advancements/fortunate_crops.json
 
 lose_hp_xp_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell find bucepack-data/lose_hp_xp -type f | ./bin/ext2dir) \
@@ -930,6 +935,11 @@ blue_fire.zip: $(blue_fire_FILES)
 	zip $@ pack.png pack.mcmeta $^
 
 fortunate_jungle.zip: $(fortunate_jungle_FILES)
+	cp meta/$(@:.zip=.png) pack.png
+	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
+	zip $@ pack.png pack.mcmeta $^
+
+fortunate_crops.zip: $(fortunate_crops_FILES)
 	cp meta/$(@:.zip=.png) pack.png
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^
