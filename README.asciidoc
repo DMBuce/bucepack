@@ -749,17 +749,16 @@ When a player hits a phantom, all nearby phantoms turn visible.
 
 All the above effects only apply to phantoms in the overworld.
 
-A Phantom Membrane can be crafted with an End Rod to make a pure Light item.
-
-In addition, phantoms killed by a player have a chance to drop a membrane with
-Glamer of Invisibility, an enchantment that can be applied to an item
-frame in the smithing table to make an invisible item frame.
+Phantom membranes have Glamer of Invisibility, an enchantment that can be
+applied to an item frame in the smithing table to make an invisible item
+frame. It can also be applied to a torch in the smithing table to make an
+invisible light block.
 
 image::https://i.imgur.com/n6TAzur.png[Phantasmal]
 
 If you install this data pack as a resource pack, invisible item frames will
-have a translucent item texture in the inventory, and light will have a
-different texture.
+have a translucent item texture in the inventory, and light items will have a
+translucent torch texture.
 
 This pack is a companion to the <<mother-phantoms,Mother Phantoms>> datapack,
 which adds more corporeal phantoms to The End; and the
@@ -773,6 +772,12 @@ Build: `make phantasmal.zip`
 Known Issues: The Glamer of Invisibility can't be applied to armor stands
 because of https://bugs.mojang.com/browse/MC-66068[this works-as-intended bug]
 that prevents invisible armor stands from being broken.
+
+=== Phantasmal End
+
+Adds phantoms to the dragon fight.
+
+TODO: document this, replace links to Mother Phantoms section
 
 === Mother Phantoms
 

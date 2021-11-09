@@ -9,6 +9,10 @@
           "type": "minecraft:item",
           "functions": [
             {
+              "function": "minecraft:set_nbt",
+              "tag": "{CustomModelData:22183,EntityTag:{Invisible:1b,ShowArms:1b,NoBasePlate:1b},display:{Lore:[\"\\\"§r§aGlamer of Invisibility\\\"\"]}}"
+            },
+            {
               "function": "minecraft:set_count",
               "count": {
                 "type": "minecraft:uniform",
@@ -32,32 +36,6 @@
       "conditions": [
         {
           "condition": "minecraft:killed_by_player"
-        }
-      ]
-    },
-    {
-      "rolls": 1.0,
-      "bonus_rolls": 0.0,
-      "entries": [
-        {
-          "type": "minecraft:item",
-          "functions": [
-            {
-              "function": "minecraft:set_nbt",
-              "tag": "{CustomModelData:22183,EntityTag:{Invisible:1b,ShowArms:1b,NoBasePlate:1b},display:{Lore:[\"\\\"§r§aGlamer of Invisibility\\\"\"]}}"
-            }
-          ],
-          "name": "minecraft:phantom_membrane"
-        }
-      ],
-      "conditions": [
-        {
-          "condition": "minecraft:killed_by_player"
-        },
-        {
-          "condition": "minecraft:random_chance_with_looting",
-          "chance": 0.1,
-          "looting_multiplier": 0.03
         }
       ]
     }

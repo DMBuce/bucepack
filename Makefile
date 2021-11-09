@@ -535,6 +535,7 @@ phantasmal_FILES := $(DEFAULT_DATA_FILES) \
 	$(spellsmithing_guide_FILES) \
 	$(shell find bucepack-data/phantasmal -type f | ./bin/ext2dir) \
 	data/minecraft/loot_tables/entities/phantom.json \
+	data/minecraft/loot_tables/gameplay/cat_morning_gift.json \
 	data/minecraft/tags/functions/load-phantasmal.json \
 	data/bucepack/functions/var.mcfunction \
 	assets/minecraft/models/item/invis_item_frame.json \
