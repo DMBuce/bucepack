@@ -1,7 +1,8 @@
 #!/usr/bin/python
 
 template="""\
-      - { type: item, weight: 1,  count: 1, item: glow_ink_sac,
+      - { type: item, min: 1, max: 3, item: glow_ink_sac,
+          looting: { min: 0, max: 1 },
           nbt: '{CustomModelData:%s,EntityTag:{ShowArms:1b,NoBasePlate:1b%s,Pose:{%s}},display:{Lore:[\\"\\\\\\"§r§a%s\\\\\\"\\"%s]}}'
         }\
 """

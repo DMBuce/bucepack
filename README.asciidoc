@@ -693,8 +693,7 @@ Build: `make starter_bonus_chest.zip`
 Adds custom enchantments that drop from glow squid and can be used to
 give armor stands minor illusory effects.
 
-Glow squid with the glowing status effect that die have a chance to drop a
-glow ink sac with one or more custom glamer enchantments on it. The
+Glow ink sacs have one or more custom glamer enchantments on them. The
 enchantments can be applied to armor stands in the smithing table to give them
 minor illusory effects. The illusions are incredibly convincing and can be
 interacted with as if they are real, but they're destroyed when the armor

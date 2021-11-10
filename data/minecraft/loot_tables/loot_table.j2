@@ -18,7 +18,7 @@
         {%- if entry.type == "item" %}
         {
           "type": "minecraft:item",
-          {%- if entry.weight != 1 %}
+          {%- if entry.weight is defined and entry.weight != 1 %}
           "weight": {{entry.weight}},
           {%- endif %}
           {%- if entry.min is defined 
@@ -90,8 +90,8 @@
             {
               "function": "minecraft:looting_enchant",
               "count": {
-                "min": {{entry.looting.min}},
-                "max": {{entry.looting.max}}
+                "min": {{entry.looting.min}}.0,
+                "max": {{entry.looting.max}}.0
               }
             }{{ "," if entry.nbt is defined }}
             {%- endif %}
