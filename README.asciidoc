@@ -760,8 +760,8 @@ If you install this data pack as a resource pack, invisible item frames will
 have a translucent item texture in the inventory, and light items will have a
 translucent torch texture.
 
-This pack is a companion to the <<mother-phantoms,Mother Phantoms>> datapack,
-which adds more corporeal phantoms to The End; and the
+This pack is a companion to the <<phantasmal-end,Phantasmal End>> datapack,
+which adds phantoms to the dragon fight; and the
 <<glow-squid-glamers,Glow Squid Glamers>> datapack, which lets you obtain
 armor stand glamers from glow squid.
 
@@ -777,36 +777,21 @@ that prevents invisible armor stands from being broken.
 
 Adds phantoms to the dragon fight.
 
-TODO: document this, replace links to Mother Phantoms section
+Whenever a player damages the dragon, each end crystal summons a phantom.
 
-=== Mother Phantoms
+When a player hits a phantom, its body turns invisible, and only its eyes and
+a faint trail of smoke coming off its wingtips can be seen.
 
-Adds phantom bosses to The End.
+When a phantom hits a player, all nearby phantoms turn visible.
 
-When a player uses Ender Crystals to summon the Ender Dragon,
-up to three Mother Phantoms spawn with it.
-One Mother Phantom spawns the first time the dragon is summoned, two
-spawn the second time, and three Mother Phantoms spawn for each subsequent
-dragon fight.
+All the above effects only apply to phantoms in the overworld.
 
-image::https://i.imgur.com/d4lDWos.png[Mother Phantoms]
-
-Mother Phantoms are larger than normal, deal extra damage, and have extra health.
-Whenever a player hits a Mother Phantom,
-each Mother Phantom has a 25% chance to spawn a normal phantom.
-
-When they die, Mother Phantoms have a chance to drop their head or lime dye
-enchanted with Boon of Unsleeping and Boon of Vitality. When applied to a
-cat's collar, Boon of Unsleeping toggles whether phantoms are allowed to spawn
-due to insomnia. When applied to a pet's collar or a sheep, Boon of Vitality
-gives the animal 5 extra hearts.
-
-Mother Phantoms is a companion pack to the <<phantasmal,Phantasmal>> datapack,
+Phantasmal End is a companion pack to the <<phantasmal,Phantasmal>> datapack,
 which makes phantoms in the Overworld more incorporeal.
 
 Download: https://github.com/DMBuce/bucepack/releases
 
-Build: `make mother_phantoms.zip`
+Build: `make phantasmal_end.zip`
 
 === Invisible Squid Glamer
 

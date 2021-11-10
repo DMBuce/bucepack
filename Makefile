@@ -10,7 +10,7 @@ RESOURCEPACKFILES = painting_overhaul.zip note_guide.zip \
 DATAPACKFILES = gardener_endermen.zip climbable.zip \
 	no_treasure_maps.zip fortunate_jungle.zip fortunate_crops.zip dragonproof.zip \
 	mineable.zip shearless.zip breeding_overhaul.zip \
-	mother_phantoms.zip phantasmal.zip glow_squid_glamers.zip invis_squid_glamer.zip \
+	phantasmal.zip phantasmal_end.zip glow_squid_glamers.zip invis_squid_glamer.zip \
 	smooth_cracked_stonecutting.zip lose_hp_xp.zip more_rain.zip \
 	loot_overhaul.zip plant_loot.zip relic_loot.zip \
 	more_shulker_shells.zip \
@@ -274,11 +274,11 @@ classic_food_FILES := $(DEFAULT_RESOURCE_FILES) \
 spellsmithing_guide_FILES := $(DEFAULT_RESOURCE_FILES) \
 	$(wildcard assets/minecraft/models/item/armor_stand*.json) \
 	$(wildcard assets/minecraft/textures/item/armor_stand_*.png) \
-	assets/minecraft/textures/gui/container/smithing.png \
-	assets/minecraft/textures/item/light_15.png \
 	assets/minecraft/models/item/invis_item_frame.json \
 	assets/minecraft/models/item/item_frame.json \
+	assets/minecraft/textures/gui/container/smithing.png \
 	assets/minecraft/textures/item/invis_item_frame.png \
+	assets/minecraft/textures/item/light_15.png \
 
 retronetherrack_FILES := $(DEFAULT_RESOURCE_FILES) \
 	assets/minecraft/textures/block/netherrack.png \
@@ -527,9 +527,6 @@ invis_squid_glamer_FILES := $(DEFAULT_DATA_FILES) \
 	$(spellsmithing_guide_FILES) \
 	$(shell find bucepack-data/illusory/squid -type f | ./bin/ext2dir) \
 	data/minecraft/loot_tables/entities/squid.json \
-	assets/minecraft/models/item/invis_item_frame.json \
-	assets/minecraft/models/item/item_frame.json \
-	assets/minecraft/textures/item/invis_item_frame.png \
 
 phantasmal_FILES := $(DEFAULT_DATA_FILES) \
 	$(spellsmithing_guide_FILES) \
@@ -538,16 +535,9 @@ phantasmal_FILES := $(DEFAULT_DATA_FILES) \
 	data/minecraft/loot_tables/gameplay/cat_morning_gift.json \
 	data/minecraft/tags/functions/load-phantasmal.json \
 	data/bucepack/functions/var.mcfunction \
-	assets/minecraft/models/item/invis_item_frame.json \
-	assets/minecraft/models/item/item_frame.json \
-	assets/minecraft/textures/item/invis_item_frame.png \
-	assets/minecraft/textures/item/light_15.png \
 
-mother_phantoms_FILES := $(DEFAULT_DATA_FILES) \
-	$(shell find bucepack-data/mother_phantoms -type f | ./bin/ext2dir) \
-	data/minecraft/loot_tables/entities/mother_phantom.json \
-	data/minecraft/tags/functions/load-mother_phantoms.json \
-	data/bucepack/functions/var.mcfunction \
+phantasmal_end_FILES := $(DEFAULT_DATA_FILES) \
+	$(shell find bucepack-data/phantasmal_end -type f | ./bin/ext2dir) \
 
 smooth_cracked_stonecutting_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell find bucepack-data/smooth_cracked_stonecutting -type f | ./bin/ext2dir) \
@@ -1021,11 +1011,10 @@ phantasmal.zip: $(phantasmal_FILES)
 	zip $@ pack.png pack.mcmeta $^
 	printf "@ data/minecraft/tags/functions/load-phantasmal.json\n@=data/minecraft/tags/functions/load.json\n" | zipnote -w $@
 
-mother_phantoms.zip: $(mother_phantoms_FILES)
+phantasmal_end.zip: $(phantasmal_end_FILES)
 	cp meta/$(@:.zip=.png) pack.png
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^
-	printf "@ data/minecraft/tags/functions/load-mother_phantoms.json\n@=data/minecraft/tags/functions/load.json\n" | zipnote -w $@
 
 breeding_overhaul.zip: $(breeding_overhaul_FILES)
 	cp meta/$(@:.zip=.png) pack.png
