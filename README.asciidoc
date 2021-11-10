@@ -166,8 +166,7 @@ Build: `make ravager.zip`
 
 === Ore Types
 
-Mixes classic ore textures with the modern ones introduced in 1.17 to provide
-more variety in ore shapes.
+Mixes classic ore textures with the modern ones introduced in 1.17.
 Nether and deepslate ores are left unchanged, while stone ores use a simple,
 classic-inspired aesthetic that pairs well with stone's clean texture.
 
