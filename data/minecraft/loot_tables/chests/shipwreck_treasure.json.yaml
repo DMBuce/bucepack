@@ -1,7 +1,8 @@
 pools:
   - rolls: { min: 3, max: 6 }
     entries:
-      - { type: item, weight: 90, min: 1, max: 5, item: iron_ingot }
+      - { type: item, weight: 80, min: 1, max: 5, item: iron_ingot }
+      - { type: item, weight: 10, min: 1, max: 5, item: copper_ingot }
       - { type: item, weight: 10, min: 1, max: 5, item: gold_ingot }
       - { type: item, weight: 40, min: 1, max: 5, item: emerald }
       - { type: item, weight: 5,                  item: diamond }

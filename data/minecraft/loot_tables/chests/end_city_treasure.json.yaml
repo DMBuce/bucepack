@@ -1,10 +1,11 @@
 pools:
   - rolls: { min: 2, max: 6 }
     entries:
-      - { type: item, weight: 5,  min: 2, max: 7,  item: diamond }
-      - { type: item, weight: 10, min: 4, max: 8,  item: iron_ingot }
-      - { type: item, weight: 15, min: 2, max: 7,  item: gold_ingot }
-      - { type: item, weight: 2,  min: 2, max: 6,  item: emerald }
+      - { type: item, weight: 5,  min: 2, max: 7, item: diamond }
+      - { type: item, weight: 10, min: 4, max: 8, item: iron_ingot }
+      - { type: item, weight: 10, min: 2, max: 7, item: gold_ingot }
+      - { type: item, weight: 5,  min: 4, max: 8, item: copper_ingot }
+      - { type: item, weight: 2,  min: 2, max: 6, item: emerald }
       - { type: loot_table, weight: 5, table: loot_overhaul/plant_loot }
       - { type: explorer_map, weight: 5, structure: endcity, decor: target_point, display: "End Island Explorer Map", skipchunks: true }
       - { type: item, weight: 6, enchant_lvl: { min: 25, max: 39 }, item: crossbow }
