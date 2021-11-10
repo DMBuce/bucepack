@@ -1,0 +1,12 @@
+type: gift
+pools:
+  - rolls: 1
+    entries:
+      - { type: item, weight: 10, item: rabbit_hide }
+      - { type: item, weight: 10, item: rabbit_foot }
+      - { type: item, weight: 10, item: chicken }
+      - { type: item, weight: 10, item: feather }
+      - { type: item, weight: 10, item: rotten_flesh }
+      - { type: item, weight: 10, item: string }
+      - { type: item, weight: 2,  item: phantom_membrane }
+
