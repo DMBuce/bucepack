@@ -3,6 +3,6 @@
 # revoke advancement
 advancement revoke @s only bucepack:phantasmal_end/uncloak
 
-# make all nearby phantoms visible
-effect clear @e[type=phantom,distance=..50] invisibility
+# make phantom visible
+effect clear @e[type=phantom,distance=..8,limit=1,sort=nearest] invisibility
 

@@ -777,15 +777,17 @@ Adds phantoms to the dragon fight.
 
 Whenever a player damages the dragon, each end crystal summons a phantom.
 
-When a player hits a phantom, its body turns invisible, and only its eyes and
-a faint trail of smoke coming off its wingtips can be seen.
+When a player hits a phantom, all phantoms near that player turn invisible,
+and only their eyes and a faint trail of smoke coming off their wingtips can
+be seen.
 
-When a phantom hits a player, all nearby phantoms turn visible.
+When a phantom hits a player, it turns visible.
 
-All the above effects only apply to phantoms in the overworld.
+All the above effects only apply to phantoms in The End.
 
 Phantasmal End is a companion pack to the <<phantasmal,Phantasmal>> datapack,
-which makes phantoms in the Overworld more incorporeal.
+which makes phantoms in the Overworld more incorporeal and lets you craft
+invisible item frames and light blocks with phantom membranes.
 
 Download: https://github.com/DMBuce/bucepack/releases
 

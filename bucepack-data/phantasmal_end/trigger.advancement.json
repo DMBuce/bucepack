@@ -16,7 +16,7 @@
 	},
 	"parent": "bucepack:phantasmal_end/root",
 	"criteria": {
-		"hit_end_crystal": {
+		"hit_dragon": {
 			"trigger": "minecraft:player_hurt_entity",
 			"conditions": {
 				"entity": {
