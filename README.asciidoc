@@ -551,6 +551,8 @@ Desert and jungle temples occasionally have honey.
 More chests spawn music discs, and it's possible to find every music disc in a
 chest instead of just Cat and 13.
 
+Copper generates alongside other ores in some chests.
+
 Some chests have custom explorer maps that lead to other structures. For
 example, Woodland Mansion chests have a chance to spawn a Reconnaissance Map
 that leads to a Pillager Outpost, and the chest in the outpost has a chance to
@@ -574,8 +576,8 @@ time.
 
 Most armor & tools are enchanted at an enchantment level determined by the
 area the structure spawns in. Aboveground structures have gear enchanted at
-levels 15-20, underground and ocean structures at levels 20-25, nether
-structures at levels 25-30, and end structures at levels 25-39.
+levels 15-19, underground and ocean structures at levels 20-24, nether
+structures at levels 25-29, and end structures at levels 30-39.
 
 This datapack is not compatible with other datapacks that modify the chest or
 fishing loot tables.
