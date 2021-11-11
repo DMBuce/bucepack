@@ -16,7 +16,7 @@ pools:
       - { type: item, weight: 10, count: 1,        item: golden_apple }
   - rolls: { min: 3, max: 4 }
     entries:
-      - { type: item, weight: 1, count: 1, item: golden_axe, enchant_lvl: { min: 25, max: 30 } }
+      - { type: item, weight: 1, count: 1, item: golden_axe, enchant_lvl: { min: 25, max: 29 } }
       - { type: item, weight: 1, min: 1, max: 5,  item: crying_obsidian }
       - { type: item, weight: 1, min: 3, max: 6,  item: glowstone }
       - { type: item, weight: 1, min: 2, max: 5,  item: gilded_blackstone }

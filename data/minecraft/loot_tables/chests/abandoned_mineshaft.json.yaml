@@ -6,8 +6,8 @@ pools:
       - { type: item, weight: 20, min: 2, max: 3, item: tnt }
       - { type: explorer_map, weight: 20, structure: ruined_portal, decor: target_point, display: "Bizarre Explorer Map", skipchunks: false }
       - { type: loot_table, weight: 10, table: loot_overhaul/ench_book }
-      - { type: item, weight: 5,  item: iron_pickaxe, enchant_lvl: { min: 20, max: 25 } }
-      - { type: item, weight: 5,  item: iron_shovel,  enchant_lvl: { min: 20, max: 25 } }
+      - { type: item, weight: 5,  item: iron_pickaxe, enchant_lvl: { min: 20, max: 24 } }
+      - { type: item, weight: 5,  item: iron_shovel,  enchant_lvl: { min: 20, max: 24 } }
   - rolls: { min: 2, max: 4 }
     entries:
       - { type: item, weight: 5,  min: 1, max: 5,  item: raw_iron }

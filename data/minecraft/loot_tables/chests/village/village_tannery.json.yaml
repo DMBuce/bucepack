@@ -2,11 +2,11 @@ pools:
   - rolls: { min: 1, max: 5 }
     entries:
       - { type: item, weight: 1, min: 1, max: 3, item: leather }
-      - { type: item, weight: 2,                 item: leather_chestplate, enchant_lvl: { min: 15, max: 20 } }
-      - { type: item, weight: 2,                 item: leather_boots, enchant_lvl: { min: 15, max: 20 } }
-      - { type: item, weight: 2,                 item: leather_helmet, enchant_lvl: { min: 15, max: 20 } }
+      - { type: item, weight: 2,                 item: leather_chestplate, enchant_lvl: { min: 15, max: 19 } }
+      - { type: item, weight: 2,                 item: leather_boots, enchant_lvl: { min: 15, max: 19 } }
+      - { type: item, weight: 2,                 item: leather_helmet, enchant_lvl: { min: 15, max: 19 } }
       - { type: item, weight: 5, min: 1, max: 4, item: pumpkin_pie }
-      - { type: item, weight: 2,                 item: leather_leggings, enchant_lvl: { min: 15, max: 20 } }
+      - { type: item, weight: 2,                 item: leather_leggings, enchant_lvl: { min: 15, max: 19 } }
       - { type: item, weight: 1,                 item: saddle }
       - { type: item, weight: 1, min: 1, max: 4, item: emerald }
   - rolls: 1

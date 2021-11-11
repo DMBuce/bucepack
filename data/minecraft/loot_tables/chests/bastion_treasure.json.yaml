@@ -8,32 +8,32 @@ pools:
       - type: item
         weight: 6
         damage: { min: 0.8, max: 1.0 }
-        enchant_lvl: { min: 25, max: 30 }
+        enchant_lvl: { min: 25, max: 29 }
         item: diamond_sword
       - type: item
         weight: 6
         damage: { min: 0.8, max: 1.0 }
-        enchant_lvl: { min: 25, max: 30 }
+        enchant_lvl: { min: 25, max: 29 }
         item: diamond_chestplate
       - type: item
         weight: 6
         damage: { min: 0.8, max: 1.0 }
-        enchant_lvl: { min: 25, max: 30 }
+        enchant_lvl: { min: 25, max: 29 }
         item: diamond_helmet
       - type: item
         weight: 6
         damage: { min: 0.8, max: 1.0 }
-        enchant_lvl: { min: 25, max: 30 }
+        enchant_lvl: { min: 25, max: 29 }
         item: diamond_leggings
       - type: item
         weight: 6
         damage: { min: 0.8, max: 1.0 }
-        enchant_lvl: { min: 25, max: 30 }
+        enchant_lvl: { min: 25, max: 29 }
         item: diamond_boots
       - type: item
         weight: 6
         damage: { min: 0.8, max: 1.0 }
-        enchant_lvl: { min: 25, max: 30 }
+        enchant_lvl: { min: 25, max: 29 }
         item: diamond_pickaxe
       - { type: tag,  weight: 5, expand: true,   tag:  music_discs }
       - { type: item, weight: 5, item: book, enchant_rand: [

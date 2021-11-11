@@ -12,7 +12,7 @@ pools:
     entries:
       - { type: item, weight: 1,                   item: nautilus_shell }
       - { type: item, weight: 1,                   item: scute }
-      - { type: item, weight: 5, item: fishing_rod, enchant_lvl: { min: 20, max: 25 } }
+      - { type: item, weight: 5, item: fishing_rod, enchant_lvl: { min: 20, max: 24 } }
       - { type: explorer_map, weight: 5, decor: red_x, skipchunks: false }
   - rolls: 1
     entries:

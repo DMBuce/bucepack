@@ -9,12 +9,12 @@ pools:
       - { type: item, weight: 10, min: 1, max: 3, item: potato }
       - { type: item, weight: 10, min: 1, max: 3, item: carrot }
       - { type: item, weight: 10, min: 8, max: 16, item: petrified_oak_slab }
-      - { type: item, weight: 5, item: iron_pickaxe   , enchant_lvl: { min: 20, max: 25 } }
-      - { type: item, weight: 5, item: iron_sword     , enchant_lvl: { min: 20, max: 25 } }
-      - { type: item, weight: 5, item: iron_chestplate, enchant_lvl: { min: 20, max: 25 } }
-      - { type: item, weight: 5, item: iron_helmet    , enchant_lvl: { min: 20, max: 25 } }
-      - { type: item, weight: 5, item: iron_leggings  , enchant_lvl: { min: 20, max: 25 } }
-      - { type: item, weight: 5, item: iron_boots     , enchant_lvl: { min: 20, max: 25 } }
+      - { type: item, weight: 5, item: iron_pickaxe   , enchant_lvl: { min: 20, max: 24 } }
+      - { type: item, weight: 5, item: iron_sword     , enchant_lvl: { min: 20, max: 24 } }
+      - { type: item, weight: 5, item: iron_chestplate, enchant_lvl: { min: 20, max: 24 } }
+      - { type: item, weight: 5, item: iron_helmet    , enchant_lvl: { min: 20, max: 24 } }
+      - { type: item, weight: 5, item: iron_leggings  , enchant_lvl: { min: 20, max: 24 } }
+      - { type: item, weight: 5, item: iron_boots     , enchant_lvl: { min: 20, max: 24 } }
       - { type: item, weight: 1,                  item: golden_apple }
       - { type: item, weight: 1,                  item: ender_eye }
       - { type: tag,  weight: 3, expand: true,    tag:  music_discs }

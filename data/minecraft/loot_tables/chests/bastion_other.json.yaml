@@ -6,7 +6,7 @@ pools:
         weight: 6
         item: crossbow
         damage: { min: 0.1, max: 0.9 }
-        enchant_lvl: { min: 25, max: 30 }
+        enchant_lvl: { min: 25, max: 29 }
       - { type: item, weight: 12, count: 1,         item: ancient_debris }
       - { type: item, weight: 4,  count: 1,         item: netherite_scrap }
       - { type: item, weight: 10, min: 10, max: 22, item: spectral_arrow }
@@ -41,16 +41,16 @@ pools:
             vanishing_curse,
             binding_curse
         ]
-      - { type: item, weight: 1, count: 1,       item: golden_axe, enchant_lvl: { min: 25, max: 30 } }
+      - { type: item, weight: 1, count: 1,       item: golden_axe, enchant_lvl: { min: 25, max: 29 } }
       - { type: item, weight: 2, count: 1,       item: gold_block }
-      - { type: item, weight: 1, count: 1,       item: crossbow, enchant_lvl: { min: 25, max: 30 } }
+      - { type: item, weight: 1, count: 1,       item: crossbow, enchant_lvl: { min: 25, max: 29 } }
       - { type: item, weight: 2, min: 1, max: 6, item: gold_ingot }
       - { type: item, weight: 2, min: 1, max: 6, item: iron_ingot }
-      - { type: item, weight: 1, count: 1,       item: golden_sword, enchant_lvl: {min: 25, max: 30 } }
-      - { type: item, weight: 1, count: 1,       item: golden_chestplate, enchant_lvl: {min: 25, max: 30 } }
-      - { type: item, weight: 1, count: 1,       item: golden_helmet, enchant_lvl: {min: 25, max: 30 } }
-      - { type: item, weight: 1, count: 1,       item: golden_leggings, enchant_lvl: {min: 25, max: 30 } }
-      - { type: item, weight: 1, count: 1,       item: golden_boots, enchant_lvl: {min: 25, max: 30 } }
+      - { type: item, weight: 1, count: 1,       item: golden_sword, enchant_lvl: {min: 25, max: 29 } }
+      - { type: item, weight: 1, count: 1,       item: golden_chestplate, enchant_lvl: {min: 25, max: 29 } }
+      - { type: item, weight: 1, count: 1,       item: golden_helmet, enchant_lvl: {min: 25, max: 29 } }
+      - { type: item, weight: 1, count: 1,       item: golden_leggings, enchant_lvl: {min: 25, max: 29 } }
+      - { type: item, weight: 1, count: 1,       item: golden_boots, enchant_lvl: {min: 25, max: 29 } }
       - { type: item, weight: 2, min: 1, max: 5, item: crying_obsidian }
   - rolls: { min: 3, max: 4 }
     entries:
