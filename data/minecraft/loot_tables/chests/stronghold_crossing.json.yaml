@@ -7,7 +7,10 @@ pools:
       - { type: item, weight: 10, min: 3, max: 8, item: coal }
       - { type: item, weight: 10, min: 1, max: 3, item: potato }
       - { type: item, weight: 10, min: 1, max: 3, item: carrot }
-      - { type: item, weight: 10, min: 8, max: 16, item: petrified_oak_slab }
+      - { type: item, weight: 4,  min: 8, max: 16, item: stone_bricks }
+      - { type: item, weight: 4,  min: 8, max: 16, item: mossy_stone_bricks }
+      - { type: item, weight: 1,  min: 8, max: 16, item: infested_stone_bricks }
+      - { type: item, weight: 1,  min: 8, max: 16, item: infested_mossy_stone_bricks }
       - { type: item, weight: 1,                  item: ender_eye }
       - { type: loot_table, weight: 1, table: loot_overhaul/ench_book }
   - rolls: 1

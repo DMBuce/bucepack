@@ -579,6 +579,12 @@ area the structure spawns in. Aboveground structures have gear enchanted at
 levels 15-19, underground and ocean structures at levels 20-24, nether
 structures at levels 25-29, and end structures at levels 30-39.
 
+Some unobtainable blocks can rarely be found in loot. In addition to the
+tall grass and large ferns that normally generate in savannah and taiga village
+chests, path blocks generate in snowy village chests, farmland in desert
+village chests, and petrified oak slabs in plains village chests. Petrified
+slabs also generate in dungeons. Infested bricks spawn in stronghold chests.
+
 This datapack is not compatible with other datapacks that modify the chest or
 fishing loot tables.
 

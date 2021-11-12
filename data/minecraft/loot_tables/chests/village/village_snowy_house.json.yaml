@@ -1,15 +1,15 @@
 pools:
   - rolls: { min: 3, max: 8 }
     entries:
-      - { type: item, weight: 1,                   item: blue_ice }
-      - { type: item, weight: 4,  min: 4, max: 8,  item: ice }
+      - { type: item, weight: 1,                   item: dirt_path }
+      - { type: item, weight: 4,  min: 2, max: 4,  item: blue_ice }
       - { type: item, weight: 10, min: 4, max: 8,  item: cookie }
       - { type: item, weight: 10, min: 1, max: 4,  item: pumpkin_pie }
       - { type: item, weight: 10,                  item: cake }
       - { type: explorer_map, weight: 1, structure: igloo, decor: target_x, display: "Snowy Explorer Map", skipchunks: false }
       - { type: tag,  weight: 1,  expand: true,    tag:  saplings }
       - { type: item, weight: 1,  min: 1, max: 4,  item: emerald }
-      - { type: item, weight: 10, min: 8, max: 16, item: snow_block }
+      - { type: item, weight: 10, min: 4, max: 8,  item: ice }
       - { type: item, weight: 5,  min: 1, max: 4,  item: coal }
   - rolls: 1
     entries:
