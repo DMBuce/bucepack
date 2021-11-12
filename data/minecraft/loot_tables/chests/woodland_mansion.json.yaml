@@ -9,9 +9,13 @@ pools:
       - { type: item, weight: 15, item: enchanting_table }
       - { type: tag,  weight: 15, expand: true, tag: music_discs }
       - { type: item, weight: 20, item: chipped_anvil }
-      - { type: item, weight: 3,  item: conduit }
+      - { type: item, weight: 2,  item: conduit }
       - { type: item, weight: 2,  item: beacon }
       - { type: item, weight: 2,  item: shulker_box }
+      - { type: item, weight: 1,  item: light,
+          min: 6, max: 12,
+          nbt: '{CustomModelData:22183,EntityTag:{Invisible:1b,ShowArms:1b,NoBasePlate:1b},display:{Lore:[\"\\\"§r§aGlamer of Invisibility\\\"\"]}}'
+        }
       - { type: item, weight: 15, item: diamond_axe, enchant_lvl: { min: 15, max: 19 } }
       - { type: item, weight: 5,  item: diamond_chestplate, enchant_lvl: { min: 15, max: 19 } }
       - { type: loot_table, weight: 10, table: loot_overhaul/ench_book }
@@ -21,7 +25,7 @@ pools:
       - { type: item, weight: 5,  min: 1,  max: 4,  item: gold_ingot }
       - { type: item, weight: 20, min: 12, max: 20, item: cookie }
       - { type: item, weight: 20, min: 2,  max: 4,  item: pumpkin_pie }
-      - { type: item, weight: 10, min: 8,  max: 16, item: petrified_oak_slab }
+      - { type: item, weight: 10, min: 8,  max: 16, item: dark_oak_log }
       - { type: item, weight: 15, min: 1,  max: 4,  item: redstone }
       - { type: item, weight: 15, min: 1,  max: 4,  item: coal }
       - { type: loot_table, weight: 20, table: loot_overhaul/plant_loot }

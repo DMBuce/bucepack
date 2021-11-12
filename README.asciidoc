@@ -584,6 +584,7 @@ tall grass and large ferns that normally generate in savannah and taiga village
 chests, path blocks generate in snowy village chests, farmland in desert
 village chests, and petrified oak slabs in plains village chests. Petrified
 slabs also generate in dungeons. Infested bricks spawn in stronghold chests.
+Light blocks spawn in woodland mansions.
 
 This datapack is not compatible with other datapacks that modify the chest or
 fishing loot tables.
