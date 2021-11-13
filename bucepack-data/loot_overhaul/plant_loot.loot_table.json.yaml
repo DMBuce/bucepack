@@ -22,8 +22,9 @@ pools:
       - { type: item_unused, weight: 99, score: plant_loot, item: lilac         , min: 2, max: 4 }
       - { type: item_unused, weight: 99, score: plant_loot, item: peony         , min: 2, max: 4 }
       - { type: item_unused, weight: 99, score: plant_loot, item: sunflower     , min: 2, max: 4 }
-      - { type: item_unused, weight: 99, score: plant_loot, item: dirt          , min: 1, max: 2 }
-      - { type: item_unused, weight: 99, score: plant_loot, item: sand          , min: 1, max: 2 }
+      - { type: item_unused, weight: 99, score: plant_loot, item: jungle_sapling, min: 2, max: 4 }
+      - { type: item_unused, weight: 99, score: plant_loot, item: mycelium      , min: 2, max: 3 }
+      - { type: item_unused, weight: 99, score: plant_loot, item: warped_hyphae , min: 4, max: 8 }
       - type: suspicious_stew
         weight: 1
         effects:
