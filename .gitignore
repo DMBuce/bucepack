@@ -8,3 +8,4 @@ data/minecraft/loot_tables/gameplay/*.json
 data/minecraft/loot_tables/gameplay/*/*.json
 data/minecraft/loot_tables/subtables/*.json
 data/minecraft/loot_tables/subtables/*/*.json
+bucepack-data/relic/all.loot_table.json.yaml
