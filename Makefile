@@ -517,19 +517,14 @@ more_rain_FILES := $(DEFAULT_DATA_FILES) \
 	data/bucepack/functions/var.mcfunction \
 
 glow_squid_glamers_FILES := $(DEFAULT_DATA_FILES) \
-	$(spellsmithing_guide_FILES) \
 	$(shell find bucepack-data/illusory/glow_squid -type f | ./bin/ext2dir) \
-	$(wildcard assets/minecraft/models/item/armor_stand*.json) \
-	$(wildcard assets/minecraft/textures/item/armor_stand_*.png) \
 	data/minecraft/loot_tables/entities/glow_squid.json \
 
 invis_squid_glamer_FILES := $(DEFAULT_DATA_FILES) \
-	$(spellsmithing_guide_FILES) \
 	$(shell find bucepack-data/illusory/squid -type f | ./bin/ext2dir) \
 	data/minecraft/loot_tables/entities/squid.json \
 
 phantasmal_FILES := $(DEFAULT_DATA_FILES) \
-	$(spellsmithing_guide_FILES) \
 	$(shell find bucepack-data/phantasmal -type f | ./bin/ext2dir) \
 	data/minecraft/loot_tables/entities/phantom.json \
 	data/minecraft/loot_tables/gameplay/cat_morning_gift.json \
