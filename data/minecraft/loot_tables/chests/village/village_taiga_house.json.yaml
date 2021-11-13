@@ -8,7 +8,7 @@ pools:
       - { type: item, weight: 5,  min: 1, max: 7, item: sweet_berries }
       - { type: item, weight: 10, min: 1, max: 4, item: pumpkin_pie }
       - { type: item, weight: 5,  min: 2, max: 3, item: pumpkin }
-      - { type: item, weight: 1,                  item: pumpkin_pie }
+      - { type: item, weight: 1,                  item: cake }
       - { type: item, weight: 2,  min: 1, max: 4, item: emerald }
       - { type: tag,  weight: 5,  expand: true,   tag:  saplings }
       - { type: item, weight: 1,                  item: experience_bottle }
