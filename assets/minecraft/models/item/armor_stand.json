@@ -8,7 +8,7 @@
       "predicate": {
         "custom_model_data": 22183
       },
-      "model": "item/armor_stand_default"
+      "model": "item/armor_stand_default_medium"
     },
     {
       "predicate": {
@@ -86,7 +86,7 @@
       "predicate": {
         "custom_model_data": 22196
       },
-      "model": "item/armor_stand_default"
+      "model": "item/armor_stand_default_small"
     },
     {
       "predicate": {
