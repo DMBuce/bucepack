@@ -42,15 +42,15 @@ biomes:
     - basalt_deltas
   warped_stem: &warped_stem
     - warped_forest
+    - the_end
+    - end_midlands
+    - end_highlands
+    - end_barrens
+    - small_end_islands
   stick: &stick
     - desert
     - desert_hills
     - desert_lakes
-    - the_end
-    - small_end_islands
-    - end_midlands
-    - end_highlands
-    - end_barrens
 pools:
   - rolls: 1
     entries:
