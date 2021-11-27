@@ -4,10 +4,10 @@
 			"item": "minecraft:smooth_stone"
 		},
 		"title": {
-			"text": "Smooth & Cracked Stonecutting"
+			"text": "More Cutting"
 		},
 		"description": {
-			"text": "Adds smooth and cracked variants to the stonecutter"
+			"text": "Adds wood, smooth and cracked recipes to the stonecutter"
 		},
 		"show_toast": false,
 		"announce_to_chat": false,

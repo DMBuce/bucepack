@@ -303,15 +303,16 @@ Build:
 
 Simple data packs that make Minecraft life a little easier.
 
-=== Smooth & Cracked Stonecutting
+=== More Cutting
 
-Adds smooth and cracked variants of blocks to the stonecutter.
+Lets you make wood slabs & stairs and smooth & cracked variants in the
+stonecutter.
 
-image::https://i.imgur.com/vYQSLNB.png[Smooth & Cracked Stonecutting]
+image::https://i.imgur.com/vYQSLNB.png[More Cutting]
 
 Download: https://github.com/DMBuce/bucepack/releases
 
-Build: `make smooth_cracked_stonecutting.zip`
+Build: `make more_cutting.zip`
 
 === Gardener Endermen
 
