@@ -1,0 +1,278 @@
+scattered notes from designing loot tables
+
+--
+enchants:
+bartering
+* boots are enchanted with a random treasure enchantment instead of soul speed
+* soul speed books are unchanged
+fishing
+* enchantments are unchanged
+nether
+* ruined portal tools and armor are unchanged
+* gold gear and crossbows are enchanted at levels 25-30
+* diamond gear in bastion treasure rooms are enchanted at levels 25-30
+* all other gear is enchanted with a single random enchantment of a random level
+books
+* soul speed books are replaced with treasure books (has any random enchantment)
+* other enchanted books have a 50% chance to generate as if enchanted
+  at level 30 instead of containing a single random enchantment
+* books in libraries and map chests have a 50% chance to generate at level 30
+  and a 50% chance to generate as a treasure book
+--
+gear:    leather, chainmail, iron, gold, diamond, turtle shell, elytra
+trseeds: carrots, potatoes, wheat/beetroot/melon/pumpkin seeds, cocoa, berries,
+         cactus, reeds, bamboo, kelp, mushrooms, rose bush, lilac, peony, sunflower
+seeds:   beetroot, pumpkin, cocoa, cactus, reed, bamboo, kelp, fungus
+         saplings, egg, 2x flower
+snacks:  carrot, potato, melon, berries, mushrooms
+meals:   gold carrots, gold apples, pumpkin pie, honey, cookies
+shiny:   treasure/enchanted tools/books, music discs,
+         gapple, potions, sus stew, xp bottles, chorus fruit, honey
+thorns:  hoe, fishn rod, flint+steel, shears, cake, stew, neg pots/stew
+         rotten flesh, spider eye, poison potato, pufferfish
+avoid:   leather/stone tier, saddles, horse armor, leads, nametags, banner patterns
+         wheat seeds, wheat, bread, apples, meat, fish, netherwart
+gamemodes: peaceful, adventure, skyblock, flatcore, nether/end/desert/badlands/sea
+sweep:   replace all underground/nether/end books with treasure enchants
+craftable: saddles, horse armor, nametags, banner patterns
+libraries: shipwreck, stronghold, villager
+test:    custom map names, if it doesn't work: filled_map.{{structure}}
+--
+9 aboveground
+blocks: depends on structure
+gear:   chainmail, ench lvl 15-20
+seeds:  cocoa, egg, sapling, biome(cactus, bamboo, sunflower)
+food:   berries, pumpkin pie, honey, cookies
+shiny:  music discs, gapple, potions, xp bottles
+thorns: cake, village(saddles, leads, nametags)
+--
+spawn_bonus_chest.json
+* 1st pool: 3-5 cobble
+* 2nd pool: 2-3 bread
+* 3rd pool: 3-5 logs (match biome)
+* 4th pool: book & quill
+desert_pyramid.json
+* 10 rotten flesh >> sandstone blocks
+* 20 ench book >> 50/50 random/lvl30 sans soul speed
+* 20 saddle >> any music disc
+* 20 gold apple >> xp bottle
+* 25 horse armor >> honey
+* 5 dhorse armor >> eye of ender
+igloo_chest.json
+* 15 apple >> ice blocks
+* 10 wheat >> cake
+* 10 rotten flesh >> rabbit stew
+* 2 axe >> 1 silk touch pick, 1 eye of ender
+jungle_temple.json
+* 16 rotten flesh (weight 16) >> mossy cobble (weight 8), honey (weight 8)
+* 3 saddle >> any music disc
+* 3 horse armor >> 1 gapple
+* 1 ench book >> 3 50/50 random/lvl30 sans soul speed
+jungle_temple_dispenser.json
+* 20% arrows
+* 20% poison arrows
+* 20% weakness arrows
+* 20% poison potion
+* 20% harming potion
+pillager_outpost.json
+* 1 dark oak logs >> 8-16 dark oak logs
+* 7 wheat >> cookies
+* 5 potato >> pumpkin pie
+* 5 carrot >> any sapling
+* 7 xp bottle >> explorer map(swamp_hut:mansion)
+* 1 crossbow >> enchanted
+* 1 ench book >> 50/50 random/lvl30 sans soul speed
+woodland_mansion.json
+* 57.8% 10 rotten flesh >> arrows
+* 34.1% 20 wheat >> pie
+* 34.1% 20 bread >> cookies
+* 34.1% 20 melon/pumpkin seeds >> treasure seeds
+* 18.5% 10 beetroot seeds >> cake
+* 18.5% 10 bucket >> 8-16 bookshelves
+* 28.3% 20 lead >> explorer map(pillager_outpost:mansion)
+* 28.3% 20 nametag >> damaged anvil
+* 21.8% 15 music disc >> enchanting table
+* 21.8% 15 music disc >> any music disc
+* 21.8% 15 gold apple >> ender chest
+* 21.8% 15 diamond hoe >> ench diamond axe
+* 14.9% 10 ench book >> 50/50 random/lvl30 sans soul speed
+* 7.7%  5 diamond chestplate >> enchanted
+* 14.9% chainmail chestplate (weight 10) >> conduit (weight 3), beacon (weight 2), shulker box (weight 2)
+* 3.1%  2 gapple >> 5 gapple
+village/village_*.json
+*      >> cobble, biome wood
+* gear >> chainmail
+* food >> pie, cookies, cake
+*      >> saplings, sunflower, xp bottles
+* library: paper, book, xp bottle, feathers, ink sac, ench book, explorer map(igloo:target_x, desert_pyramid:target_x)
+** lib_book
+creeper
+* music disc >> any music disc
+--
+3 underground
+blocks: cobble, stone brick
+gear:   iron, ench lvl 20-25
+seeds:  beetroot seeds
+food:   carrots, potatoes, gold apples
+shiny:  music discs, gapple, potions, xp bottles
+thorns: rotten flesh, spider eye, poisonous potato
+other:  tnt, 
+--
+abandoned_mineshaft.json
+* bread >> cobble
+* melon seeds >> carrot
+* pumpkin seeds >> potato
+* nothing >> any music disc
+* iron pickaxe >> enchanted
+* ench book >> 50/50 random/lvl30 sans soul speed
+* nametag (weight 30) >> tnt (weight 20), explorer map (weight 20)
+* changed gold apple weight from 20 to 10
+simple_dungeon.json
+* wheat >> cobble
+* bread >> mossy cobble
+* melon seeds >> carrot
+* pumpkin seeds >> potato
+* 20 nametag >> ench shield
+* 20 saddle >> zombie head
+* ench book >> 50/50 random/lvl30 sans soul speed
+* 15 ihorse armor >> skeleton skull
+* 10 ghorse armor >> creeper head
+* 5 dhorse armor >> petrified oak slabs
+* music discs >> any music disc
+stronghold_corridor.json
+* apple (weight 15) >> carrot (weight 10)
+* bread (weight 15) >> potato (weight 10), stone bricks (weight 10)
+* horse armor >> any music disc
+* saddle >> eye of ender
+* iron gear >> enchanted
+* ench book >> 50/50 random/lvl30 sans soul speed
+stronghold_crossing.json
+* apple (weight 15) >> carrot (weight 10)
+* bread (weight 15) >> potato (weight 10), stone bricks (weight 10)
+* iron pickaxe >> eye of ender
+* ench book >> 50/50 random/lvl30 sans soul speed
+stronghold_library.json
+* 20 book >> feathers, ink sac
+* 10 ench book >> 33/33/33 random/lvl30/treasure
+* 1 compass >> xp bottle
+* 1 empty map >> explorer map(jungle_pyramid:target_x)
+--
+4 ocean
+blocks: prismarine?
+gear:   turtle shell, diving cap, flippers, ench lvl 20-25
+seeds:  kelp
+food:   cooked/raw cod/salmon, gold apples
+shiny:  heart of sea, trident, gapple, potions, xp bottles
+thorns: fishing rod, pufferfish
+--
+buried_treasure.json
+* leather tunic >> diving cap
+* iron sword >> flippers
+* iron ingot (weight 20) >> iron ingot (weight 15), any music disc (weight 5)
+* changed heart of the sea weight from 1 to 9
+* added trident(weight 1) to heart of the sea's pool
+shipwreck_map.json
+* book >> xp bottle
+* clock >> ink sac
+* empty map >> 50/50 lvl30/treasure enchant
+shipwreck_treasure.json
+* xp bottles >> gold apple
+shipwreck_supply.json
+* suspicious stew >> raw salmon
+* wheat >> raw cod
+* carrot >> cooked cod
+* potato >> cooked salmon
+* pumpkin >> prismarine
+* poisonous potato >> pufferfish
+* rotten flesh >> clownfish
+* leather gear (weight 12) >> scute (weight 3), nautilus shell (weight 3), ench fishing rod (weight 6)
+underwater_ruin_big.json
+* wheat (weight 10) >> raw salmon/cod (weight 5/5)
+* leather tunic >> nautilus shell
+* gold helmet >> scute
+* ench book >> 50/50 random/lvl30 sans soul speed
+* fishing rod >> explorer map(ruined_portal:target_point)
+underwater_ruin_small.json
+* wheat (weight 10) >> raw salmon/cod (weight 5/5)
+* rotten flesh >> clownfish
+* stone axe (weight 2) >> diving cap (weight 1), flippers (weight 1)
+* leather tunic >> nautilus shell
+* gold helmet >> scute
+* ench fishing rod >> lvl 20-25
+gameplay/fishing/treasure.json
+* saddle >> any music disc
+gameplay/fishing/junk.json
+* water bottle >> glass bottle
+* changed leather boots weight from 10 to 6
+* changed string & stick weights from 5 to 7
+--
+5 nether
+blocks: soul sand, blackstone
+gear:   gold, ench lvl 25-30
+seeds:  fungus
+food:   mushrooms, gold carrots
+shiny:  treasure enchants, gapple, potions, xp bottles
+thorns: flint+steel, water bottles
+--
+bastion_bridge.json
+* gold sword >> enchanted
+* crossbow >> enchanted
+* ench gold gear >> lvl 25-30
+bastion_hoglin_stable.json
+* ench gold axe >> lvl 25-30
+* ench diamond shovel >> ench diamond pick
+* ench diamond pick >> diamonds
+* saddle >> any music disc
+bastion_other.json
+* ench gold axe >> lvl 25-30
+* ench book >> treasure book
+* snout banner pattern >> any music disc
+* music disc >> any music disc
+* crossbows >> enchanted
+* ench gold boots >> treasure ench
+* other gold gear >> enchanted
+* diamond shovel, pick >> diamonds
+bastion_treasure.json
+* ench diamond gear >> lvl25-30 enchants
+* unench diamond sword >> damaged ench diamond pick
+* unench diamond chestplate >> any music disc
+* unench diamond helmet >> treasure book
+* unench diamond boots >> explorer map(fortress:target_point)
+* unench diamond leggings >> 2-5 blocks of diamond
+nether_bridge.json
+* saddle (weight 10) >> string, leather (weight 5 each)
+* ghorse armor >> treasure book
+* ihorse armor >> explorer map(bastion_remnant:target_point)
+* dhorse armor >> diamonds
+* gold gear >> all types, enchanted
+ruined_portal.json
+* clock >> blackstone
+* pressure plate >> quartz
+* horse armor >> treasure book
+* bell >> fire resist potion
+* changed rolls from 4-8 to 1-3
+* removed obsidian, flint, iron nuggets, flint&steel, fire charge
+* added two new pools
+* 1st pool: 1 roll, 3-8 obsidian
+* 2nd pool: 1 roll, lava bucket, iron nuggets, flint&steel, fire charge
+gameplay/piglin_bartering.json
+* iron boots are enchanted with any treasure enchantment instead of just mending
+--
+1 end
+blocks: purpur, endstone brick
+gear:   diamond (inc. horse armor), ench lvl 25-39
+seeds:  pumpkin seeds
+food:   suspicious stew
+shiny:  gapple, potions, xp bottles
+thorns: all the nonstackable loot
+--
+end_city_treasure.json
+* beetroot seeds >> treasure seeds
+* saddle >> enchanted crossbow
+* horse armor >> fireworks
+* enchanted iron gear >> enchanted diamond gear
+* make all enchants lvl 25-39
+* add end island explorer map
+* redistribute weights amongst diamond gear, crossbow, and firework rockets, and end island explorer maps
+--
+
