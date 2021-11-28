@@ -1078,11 +1078,11 @@ to a tool, but they continue to function even without a datapack.
 Glamers are enchantments added by the <<phantasmal,Phantasmal>>,
 <<glow-squid-glamers,Glow Squid Glamers>>, and
 <<invisible-squid-glamer,Invisible Squid Glamer>> datapacks
-that can be applied to item frames and/or armor
+that can be applied to item frames or armor
 stands in the smithing table to give them illusory effects such as
 invisibility or fake arms. The illusions are incredibly convincing and can be
 interacted with as if they are real, but they're destroyed when the armor
-stand is broken.
+stand or item frame is broken.
 
 Glamers are identical to boons in all other ways.
 
@@ -1093,15 +1093,8 @@ green. Their effects are often more powerful and/or complex than a typical
 boon, and require a datapack to function.
 
 If the datapack is uninstalled, or if it's incompatible with the version of
-Minecraft you're using (e.g. because you upgraded Minecraft and not the
-datapack), mythic enchantments continue to display their tooltip, but their
-effects cease to work and become mere myths.
-
-//Below is a summary of mythic enchantments and the datapacks they can be found in.
-//
-//**Seeker's Scope**:
-//
-//**Ephemeral Wings of Cloaking**:
+Minecraft you're using, mythic enchantments continue to display their tooltip,
+but their effects cease to work and become mere myths.
 
 === Relics
 
@@ -1152,6 +1145,20 @@ Falling IV that can be applied to horse armor
 Protection II that can be applied to elytra
 
 ====
+
+//Some relics have mythic enchantments on them. Unlike other relics, if a mythic
+//relic's datapack is uninstalled, its effects cease to function, becoming mere
+//myth.
+//
+//.Click for a summary of mythic relics
+//[%collapsible]
+//====
+//
+//**Seeker's Scope**:
+//
+//**Ephemeral Wings of Cloaking**:
+//
+//====
 
 ////
 
