@@ -734,7 +734,7 @@ eats cooked or raw porkchop, they gain Levitation for 10 seconds.
 transforms into an illusioner. If killed by a player, the illusioner drops
 pink dye with Myth of Chromatic Blasts, a custom enchantment that can be
 applied to a crossbow in the smithing table.
-Rockets shot with such a crossbow gain two randomly generated firework stars.
+Rockets shot with the crossbow gain two randomly generated firework stars.
 
 ====
 
