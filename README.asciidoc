@@ -714,9 +714,9 @@ circumstances described below.
 **Relic of the Beast**: When a player hits a white rabbit with raw cod, it
 turns into a Killer Bunny. If killed with raw cod, the Killer
 Bunny drops a rabbit's foot with Myth of Bounding, a
-custom enchantment that can be applied to leather leggings in the smithing
+custom enchantment that can be applied to leather pants in the smithing
 table. When a player
-wearing the leggings takes damage, eats a carrot, or eats rabbit, they gain
+wearing the pants takes damage, eats a carrot, or eats rabbit, they gain
 Speed II and Jump Boost II for 90 seconds.
 
 **Relic of Poles**: When an iron golem is killed by a charged creeper, it
@@ -1168,7 +1168,7 @@ enchantment that can be applied to a netherite chestplate to give five extra
 hearts.
 
 **Relic of Speed**: A rabbit's foot with Boon of Speed, a custom enchantment
-that can be applied to leather leggings to give a persistent Speed II effect.
+that can be applied to leather pants to give a persistent Speed II effect.
 
 **Relic of Smiting**: A bone with Sharpness IV and Smite IV that can be
 applied to a sword or axe.
