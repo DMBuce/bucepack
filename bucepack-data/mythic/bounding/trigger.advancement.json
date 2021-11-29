@@ -14,7 +14,7 @@
 		"hidden": true,
 		"frame": "task"
 	},
-	"parent": "bucepack:relic/root",
+	"parent": "bucepack:mythic/root",
 	"criteria": {
 		"get_hurt": {
 			"trigger": "minecraft:entity_hurt_player",
@@ -27,7 +27,8 @@
 							"entity": "this",
 							"predicate": {
 								"effects": {
-									"jump_boost": {}
+									"jump_boost": {},
+									"speed": {}
 								}
 							}
 						}
@@ -51,47 +52,11 @@
 			"conditions": {
 				"item": {
 					"items": [
-						"minecraft:apple",
-						"minecraft:baked_potato",
-						"minecraft:beef",
-						"minecraft:beetroot",
-						"minecraft:beetroot_soup",
-						"minecraft:bread",
-						"minecraft:cake",
 						"minecraft:carrot",
-						"minecraft:chicken",
-						"minecraft:chorus_fruit",
-						"minecraft:cod",
-						"minecraft:cooked_beef",
-						"minecraft:cooked_chicken",
-						"minecraft:cooked_cod",
-						"minecraft:cooked_mutton",
-						"minecraft:cooked_porkchop",
-						"minecraft:cooked_rabbit",
-						"minecraft:cooked_salmon",
-						"minecraft:cookie",
-						"minecraft:dried_kelp",
-						"minecraft:enchanted_golden_apple",
-						"minecraft:glow_berries",
-						"minecraft:golden_apple",
 						"minecraft:golden_carrot",
-						"minecraft:honey_bottle",
-						"minecraft:melon_slice",
-						"minecraft:mushroom_stew",
-						"minecraft:mutton",
-						"minecraft:poisonous_potato",
-						"minecraft:porkchop",
-						"minecraft:potato",
-						"minecraft:pufferfish",
-						"minecraft:pumpkin_pie",
+						"minecraft:cooked_rabbit",
 						"minecraft:rabbit",
-						"minecraft:rabbit_stew",
-						"minecraft:rotten_flesh",
-						"minecraft:salmon",
-						"minecraft:spider_eye",
-						"minecraft:suspicious_stew",
-						"minecraft:sweet_berries",
-						"minecraft:tropical_fish"
+						"minecraft:rabbit_stew"
 					]
 				},
 				"player": [
@@ -102,7 +67,8 @@
 							"entity": "this",
 							"predicate": {
 								"effects": {
-									"jump_boost": {}
+									"jump_boost": {},
+									"speed": {}
 								}
 							}
 						}
@@ -129,6 +95,6 @@
 		]
 	],
 	"rewards": {
-		"function": "bucepack:relic/bounding/activate"
+		"function": "bucepack:mythic/bounding/activate"
 	}
 }

@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "bonus_rolls": 0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{relic:1b,chromatic:1b,CustomModelData:22183,display:{Name:\"{\\\"text\\\":\\\"Relic of Parties\\\",\\\"color\\\":\\\"light_purple\\\"}\",Lore:[\"\\\"§r§bMyth of Chromatic Blasts\\\"\"]},Enchantments:[{id:unbreaking,lvl:3}]}"
+            }
+          ],
+          "name": "minecraft:pink_dye"
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:killed_by_player"
+        }
+      ]
+    }
+  ]
+}

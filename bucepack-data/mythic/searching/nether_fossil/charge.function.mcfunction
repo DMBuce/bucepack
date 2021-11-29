@@ -1,7 +1,7 @@
 # runs while a player charges searching while looking for an nether_fossil
 
 # revoke advancement
-advancement revoke @s only bucepack:relic/searching/nether_fossil/trigger
+advancement revoke @s only bucepack:mythic/searching/nether_fossil/trigger
 
 # compute @s var - value between -10.3 and 10.3,
 #                  10.3 means player is directly facing structure,
@@ -11,5 +11,5 @@ execute anchored eyes positioned ^ ^ ^10 store result score #buce.searching_dist
 scoreboard players operation @s var -= #buce.searching_distance var
 
 # do other charge tasks
-function bucepack:relic/searching/charge
+function bucepack:mythic/searching/charge
 

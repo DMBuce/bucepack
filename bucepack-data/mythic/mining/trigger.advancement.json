@@ -14,7 +14,7 @@
 		"hidden": true,
 		"frame": "task"
 	},
-	"parent": "bucepack:relic/root",
+	"parent": "bucepack:mythic/root",
 	"criteria": {
 		"lose_durability": {
 			"trigger": "minecraft:item_durability_changed",
@@ -46,6 +46,6 @@
 		}
 	},
 	"rewards": {
-		"function": "bucepack:relic/mining/charge"
+		"function": "bucepack:mythic/mining/charge"
 	}
 }

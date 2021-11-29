@@ -14,7 +14,7 @@
 		"hidden": true,
 		"frame": "task"
 	},
-	"parent": "bucepack:relic/root",
+	"parent": "bucepack:mythic/root",
 	"criteria": {
 		"hold_item_offhand": {
 			"trigger": "minecraft:impossible",
@@ -67,6 +67,6 @@
 		]
 	],
 	"rewards": {
-		"function": "bucepack:relic/searching/pillager_outpost/charge"
+		"function": "bucepack:mythic/searching/pillager_outpost/charge"
 	}
 }

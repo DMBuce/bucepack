@@ -1,7 +1,7 @@
 # runs when a player deactivates cloaking
 
 # revoke advancement
-advancement revoke @s only bucepack:relic/cloaking/trigger_attack
+advancement revoke @s only bucepack:mythic/cloaking/trigger_attack
 
 # remove invis
 effect clear @s invisibility

@@ -9,4 +9,5 @@ scoreboard objectives add mining_charge dummy
 
 # reset objectives
 scoreboard players set * search_charge 0
+scoreboard players set * mythic_relics 1
 

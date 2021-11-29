@@ -14,7 +14,7 @@
 		"hidden": true,
 		"frame": "task"
 	},
-	"parent": "bucepack:relic/root",
+	"parent": "bucepack:mythic/root",
 	"criteria": {
 		"charging_flamethrower": {
 			"trigger": "minecraft:shot_crossbow",
@@ -26,6 +26,6 @@
 		}
 	},
 	"rewards": {
-		"function": "bucepack:relic/chromatic/activate"
+		"function": "bucepack:mythic/chromatic/activate"
 	}
 }

@@ -14,7 +14,7 @@
 		"hidden": true,
 		"frame": "task"
 	},
-	"parent": "bucepack:relic/root",
+	"parent": "bucepack:mythic/root",
 	"criteria": {
 		"break_block": {
 			"trigger": "minecraft:item_durability_changed",
@@ -39,6 +39,6 @@
 		}
 	},
 	"rewards": {
-		"function": "bucepack:relic/breaking/pick/activate"
+		"function": "bucepack:mythic/breaking/pick/activate"
 	}
 }

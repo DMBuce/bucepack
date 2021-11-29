@@ -14,7 +14,7 @@
 		"hidden": true,
 		"frame": "task"
 	},
-	"parent": "bucepack:relic/root",
+	"parent": "bucepack:mythic/root",
 	"criteria": {
 		"charging_gravitation": {
 			"trigger": "minecraft:using_item",
@@ -32,6 +32,6 @@
 		}
 	},
 	"rewards": {
-		"function": "bucepack:relic/gravitation/charge"
+		"function": "bucepack:mythic/gravitation/charge"
 	}
 }

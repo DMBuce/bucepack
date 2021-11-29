@@ -700,6 +700,51 @@ Download: https://github.com/DMBuce/bucepack/releases
 
 Build: `make starter_bonus_chest.zip`
 
+=== Mythic Relics
+
+Adds <<Relics>> with <<mythic-enchantments,Mythic Enchantments>>
+that can be applied to tools in the smithing table.
+Each relic added by this datapack can only be obtained under specific
+circumstances described below.
+
+.Click for a summary of mythic relics
+[%collapsible]
+====
+
+**Relic of the Beast**: When a player hits a white rabbit with raw cod, it
+turns into a Killer Bunny. If killed with raw cod, the Killer
+Bunny drops a rabbit's foot with Myth of Bounding, a
+custom enchantment that can be applied to leather leggings in the smithing
+table. When a player
+wearing the leggings takes damage, eats a carrot, or eats rabbit, they gain
+Speed II and Jump Boost II for 90 seconds.
+
+**Relic of Poles**: When an iron golem is killed by a charged creeper, it
+drops a compass with Myth of Magnetism, a custom enchantment that can be
+applied to a shield in the smithing table. A player blocking with the shield
+attracts the nearest item. A player that sneaks while blocking with the shield
+attracts all nearby items.
+
+**Relic of the Flying Pig**: When a pig with the Levitation effect dies, it drops a
+porkchop with Myth of Hovering, a custom enchantment that can be applied to a
+chainmail chestplate in the smithing table. When a player wearing the chestplate
+eats cooked or raw porkchop, they gain Levitation for 10 seconds.
+
+**Relic of Parties**: When a player channels lightning on a vex, it
+transforms into an illusioner. If killed by a player, the illusioner drops
+pink dye with Myth of Chromatic Blasts, a custom enchantment that can be
+applied to a crossbow in the smithing table.
+Rockets shot with such a crossbow gain two randomly generated firework stars.
+
+====
+
+This datapack is not compatible with other datapacks that modify the Iron
+Golem or Pig loot tables.
+
+Download: https://github.com/DMBuce/bucepack/releases
+
+Build: `make mythic_relics.zip`
+
 === Glow Squid Glamers
 
 Adds custom enchantments that drop from glow squid and can be used to
@@ -1098,67 +1143,56 @@ but their effects cease to work and become mere myths.
 
 === Relics
 
-Relics are powerful items added by the <<starter-item,Starter Relic>>
-and/or <<relic-loot,Relic Loot>> datapacks.
-
 A relic is a shard, trinket, or gem with impossible magic -- either a boon
-enchantment, some combination of mutually exclusive enchantments, or an
-enchantment that can be put on a tool that normally couldn't have it.
+enchantment, some combination of mutually exclusive enchantments,
+or an enchantment that can be put on a tool that normally couldn't have it.
+Relics can be applied to tools in the smithing table.
+
+Below is a description of the common relics added by the
+<<starter-item,Starter Relic>> and <<relic-loot,Relic Loot>> datapacks.
+For a list of mythic relics, see the <<mythic-relics,Mythic Relics>> datapack
+description.
 
 .Click for a summary of relics
 [%collapsible]
 ====
 
-**Relic of Knockback**: a piece of flint with Knockback V that can be
-applied to a shovel or hoe
+**Relic of Knockback**: A piece of flint with Knockback V that can be
+applied to a shovel or hoe.
 
-**Relic of Endlessness**: a stick with Infinity and Mending that can be
-applied to a bow
+**Relic of Endlessness**: A stick with Infinity and Mending that can be
+applied to a bow.
 
-**Relic of Vitality**: a glistering melon with Boon of Vitality, a custom
+**Relic of Vitality**: A glistering melon with Boon of Vitality, a custom
 enchantment that can be applied to a netherite chestplate to give five extra
-hearts
+hearts.
 
-**Relic of Speed**: a rabbit's foot with Boon of Speed, a custom enchantment
-that can be applied to leather leggings to give a persistent Speed II effect
+**Relic of Speed**: A rabbit's foot with Boon of Speed, a custom enchantment
+that can be applied to leather leggings to give a persistent Speed II effect.
 
-**Relic of Smiting**: a bone with Sharpness IV and Smite IV that can be
-applied to a sword or axe
+**Relic of Smiting**: A bone with Sharpness IV and Smite IV that can be
+applied to a sword or axe.
 
-**Relic of Sharpness**: a diamond with Sharpness V that can be applied to a
-pickaxe
+**Relic of Sharpness**: A diamond with Sharpness V that can be applied to a
+pickaxe.
 
-**Relic of Quickness**: a prismarine shard with Boon of Quickness, a
-custom enchantment that that can be applied to a trident to give increased
-attack speed
+**Relic of Quickness**: A prismarine shard with Boon of Quickness, a
+custom enchantment that can be applied to a trident to give increased
+attack speed.
 
-**Relic of Frost and Flood**: a prismarine crystal with Frost Walker II and
-Depth Strider III that can be applied to golden boots
+**Relic of Frost and Flood**: A prismarine crystal with Frost Walker II and
+Depth Strider III that can be applied to golden boots.
 
-**Relic of Protection**: a scute with Protection IV and Blast Protection II
-that can be applied to a turtle shell
+**Relic of Protection**: A scute with Protection IV and Blast Protection II
+that can be applied to a turtle shell.
 
-**Relic of Striding**: a sugar cube with Depth Strider III and Feather
-Falling IV that can be applied to horse armor
+**Relic of Striding**: A sugar cube with Depth Strider III and Feather
+Falling IV that can be applied to horse armor.
 
-**Relic of Projectile Protection**: a piece of leather with Projectile
-Protection II that can be applied to elytra
+**Relic of Projectile Protection**: A piece of leather with Projectile
+Protection II that can be applied to elytra.
 
 ====
-
-//Some relics have mythic enchantments on them. Unlike other relics, if a mythic
-//relic's datapack is uninstalled, its effects cease to function, becoming mere
-//myth.
-//
-//.Click for a summary of mythic relics
-//[%collapsible]
-//====
-//
-//**Seeker's Scope**:
-//
-//**Ephemeral Wings of Cloaking**:
-//
-//====
 
 ////
 

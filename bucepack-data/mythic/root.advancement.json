@@ -1,0 +1,26 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:diamond_sword",
+			"nbt": "{Enchantments:[{id:unbreaking,lvl:3}]}"
+		},
+		"title": {
+			"text": "Mythic Relics"
+		},
+		"description": {
+			"text": "Adds mythic relics to the game"
+		},
+		"show_toast": false,
+		"announce_to_chat": false,
+		"frame": "task"
+	},
+	"parent": "bucepack:root",
+	"criteria": {
+		"tick": {
+			"trigger": "minecraft:tick"
+		}
+	},
+	"rewards": {
+		"function": "bucepack:mythic/join"
+	}
+}

@@ -14,7 +14,7 @@
 		"hidden": true,
 		"frame": "task"
 	},
-	"parent": "bucepack:relic/root",
+	"parent": "bucepack:mythic/root",
 	"criteria": {
 		"use_tool": {
 			"trigger": "minecraft:item_used_on_block",
@@ -64,6 +64,6 @@
 		}
 	},
 	"rewards": {
-		"function": "bucepack:relic/darkvision/activate"
+		"function": "bucepack:mythic/darkvision/activate"
 	}
 }

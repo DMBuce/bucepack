@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "base": {
+    "item": "minecraft:cooked_porkchop"
+  },
+  "addition": {
+    "item": "minecraft:chainmail_chestplate"
+  },
+  "result": {
+    "item": "minecraft:chainmail_chestplate"
+  }
+}

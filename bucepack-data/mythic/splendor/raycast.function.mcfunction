@@ -14,5 +14,5 @@ scoreboard players remove @s var 1
 tag @e[type=horse,distance=..1.4,limit=1,nbt={ArmorItems:[{tag:{splendor:1b}}]}] add clicked
 
 # recurse if we didn't find horse
-execute unless entity @e[type=horse,distance=..1.4,tag=clicked] if entity @s[scores={var=0..}] positioned ^ ^ ^1.3965 run function bucepack:relic/splendor/raycast
+execute unless entity @e[type=horse,distance=..1.4,tag=clicked] if entity @s[scores={var=0..}] positioned ^ ^ ^1.3965 run function bucepack:mythic/splendor/raycast
 

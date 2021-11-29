@@ -1,9 +1,10 @@
 # runs when a player activates bounding
 
 # revoke advancement
-advancement revoke @s only bucepack:relic/bounding/trigger
+advancement revoke @s only bucepack:mythic/bounding/trigger
 
-# give jump boost
+# give speed and jump boost
+effect give @s speed 90 1 true
 effect give @s jump_boost 90 1 true
 
 # sound effect

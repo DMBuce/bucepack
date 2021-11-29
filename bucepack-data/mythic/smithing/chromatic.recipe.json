@@ -1,7 +1,7 @@
 {
   "type": "minecraft:smithing",
   "base": {
-    "item": "minecraft:gunpowder"
+    "item": "minecraft:pink_dye"
   },
   "addition": {
     "item": "minecraft:crossbow"

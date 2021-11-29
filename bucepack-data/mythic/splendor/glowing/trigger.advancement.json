@@ -14,7 +14,7 @@
 		"hidden": true,
 		"frame": "task"
 	},
-	"parent": "bucepack:relic/root",
+	"parent": "bucepack:mythic/root",
 	"criteria": {
 		"feed": {
 			"trigger": "minecraft:player_interacted_with_entity",
@@ -36,6 +36,6 @@
 		}
 	},
 	"rewards": {
-		"function": "bucepack:relic/splendor/glowing/activate"
+		"function": "bucepack:mythic/splendor/glowing/activate"
 	}
 }

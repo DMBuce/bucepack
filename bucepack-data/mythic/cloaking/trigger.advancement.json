@@ -14,7 +14,7 @@
 		"hidden": true,
 		"frame": "task"
 	},
-	"parent": "bucepack:relic/root",
+	"parent": "bucepack:mythic/root",
 	"criteria": {
 		"get_hurt": {
 			"trigger": "minecraft:entity_hurt_player",
@@ -52,6 +52,6 @@
 		}
 	},
 	"rewards": {
-		"function": "bucepack:relic/cloaking/activate"
+		"function": "bucepack:mythic/cloaking/activate"
 	}
 }

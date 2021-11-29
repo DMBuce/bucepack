@@ -12,7 +12,7 @@ DATAPACKFILES = gardener_endermen.zip climbable.zip \
 	mineable.zip shearless.zip breeding_overhaul.zip \
 	phantasmal.zip phantasmal_end.zip glow_squid_glamers.zip invis_squid_glamer.zip \
 	more_cutting.zip lose_hp_xp.zip more_rain.zip \
-	loot_overhaul.zip plant_loot.zip relic_loot.zip \
+	loot_overhaul.zip plant_loot.zip relic_loot.zip mythic_relics.zip \
 	more_shulker_shells.zip \
 	starter_bed.zip starter_book.zip starter_bucket.zip starter_map.zip \
 	starter_shulker.zip starter_relic.zip starter_bonus_chest.zip \
@@ -429,6 +429,11 @@ plant_loot_FILES := $(DEFAULT_DATA_FILES) \
 relic_loot_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell ls bucepack-data/loot_addons/relic_loot* | ./bin/ext2dir) \
 	$(relic_FILES) \
+
+mythic_relics_FILES := $(DEFAULT_DATA_FILES) \
+	$(shell find bucepack-data/mythic -type f | ./bin/ext2dir) \
+	data/minecraft/loot_tables/entities/iron_golem.json \
+	data/minecraft/loot_tables/entities/pig.json \
 
 starter_relic_FILES := $(DEFAULT_DATA_FILES) \
 	$(relic_FILES) \
@@ -969,6 +974,11 @@ relic_loot.zip: $(relic_loot_FILES)
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^
 	#printf "@ data/minecraft/tags/functions/load-relic.json\n@=data/minecraft/tags/functions/load.json\n" | zipnote -w $@
+
+mythic_relics.zip: $(mythic_relics_FILES)
+	cp meta/$(@:.zip=.png) pack.png
+	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
+	zip $@ pack.png pack.mcmeta $^
 
 dragonproof.zip: $(dragonproof_FILES)
 	cp meta/$(@:.zip=.png) pack.png
