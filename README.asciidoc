@@ -725,13 +725,12 @@ applied to a shield in the smithing table. A player blocking with the shield
 attracts the nearest item. A player that sneaks while blocking with the shield
 attracts all nearby items.
 
-**Relic of the Flying Pig**: When a pig with the Levitation effect dies, it
-drops a
+**Relic of the Flying Pig**: When a pig with Levitation dies, it drops a
 porkchop with Myth of Hovering, a custom enchantment that can be applied to a
 chainmail chestplate in the smithing table. When a player wearing the chestplate
 eats cooked or raw porkchop, they gain Levitation for 10 seconds.
 
-**Relic of Parties**: When a player channels lightning on a vex, it
+**Relic of Parties**: When a player channels lightning onto a vex, it
 transforms into an illusioner. If killed by a player, the illusioner drops
 pink dye with Myth of Chromatic Blasts, a custom enchantment that can be
 applied to a crossbow in the smithing table.
@@ -741,7 +740,7 @@ Rockets shot with the crossbow gain two randomly generated firework stars.
 point of damage, it drops a silverfish eye with Myth of Breaking, a custom
 enchantment that can be applied to a diamond pick, axe, shovel, or hoe in the
 smithing table. When a block broken by the tool drops an item and decreases the
-tool's durability, several extra blocks around the broken block will break.
+tool's durability, the tool will break several extra blocks.
 Picks break a 3x3 square, axes break a 32-block-high column,
 shovels break a 4-block column, and hoes break a 3x3x3 sphere.
 The extra broken blocks are not affected by fortune or silk touch and do not
@@ -784,10 +783,12 @@ Download: https://github.com/DMBuce/bucepack/releases
 
 Build: `make mythic_relics.zip`
 
-Known Issues: Due to limitations in how Minecraft loot tables work, if you
-uninstall this pack and want to continue using Loot Overhaul, Hearts of the
-Sea will continue to generate with Myth of Stormcalling until you
-run `/function bucepack:loot_overhaul/disable/mythic_relics`
+Known Issues: Due to limitations in how Minecraft loot tables work,
+if you uninstall this pack and want to continue using
+Loot Overhaul and/or Phantasmal,
+Hearts of the Sea will continue to generate with Myth of Stormcalling,
+and invisible Phantoms will continue to drop Relics of Disappearance,
+until you run `/function bucepack:loot_overhaul/disable/mythic_relics`
 
 === Glow Squid Glamers
 

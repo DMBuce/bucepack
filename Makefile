@@ -435,6 +435,7 @@ mythic_relics_FILES := $(DEFAULT_DATA_FILES) \
 	data/minecraft/loot_tables/blocks/deepslate_emerald_ore.json \
 	data/minecraft/loot_tables/entities/endermite.json \
 	data/minecraft/loot_tables/entities/iron_golem.json \
+	data/minecraft/loot_tables/entities/phantom.json \
 	data/minecraft/loot_tables/entities/pig.json \
 	data/minecraft/loot_tables/entities/silverfish.json \
 
