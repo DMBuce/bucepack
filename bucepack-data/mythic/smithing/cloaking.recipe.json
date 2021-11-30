@@ -1,7 +1,7 @@
 {
   "type": "minecraft:smithing",
   "base": {
-    "item": "minecraft:phantom_membrane"
+    "item": "minecraft:leather"
   },
   "addition": {
     "item": "minecraft:elytra"

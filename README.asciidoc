@@ -768,10 +768,17 @@ Stormcalling, a custom enchantment that can be applied to a trident in the
 smithing table. A player can summon a thunderstorm with the trident by looking
 skyward for several seconds while holding right click.
 
+**Relic of Disappearance**: When a player kills an invisible phantom, it
+drops leather with Curse of Vanishing and Myth of Cloaking, a custom
+enchantment that can be applied to elytra in the smithing table. When a player
+wearing the elytra takes damage, they gain 8 minutes of invisibility. The
+invisibility ends if the player damages a mob.
+
 ====
 
 This datapack is not compatible with other datapacks that modify the
-Pig, Silverfish, Endermite, Iron Golem, or Deepslate Emerald Ore loot tables.
+Pig, Silverfish, Endermite, Iron Golem, Phantom, or Deepslate Emerald Ore loot
+tables.
 
 Download: https://github.com/DMBuce/bucepack/releases
 
