@@ -4,11 +4,11 @@
 scoreboard players add @s storm_charge 1
 
 # start storm if charge exceeds threshold
-execute if entity @s[scores={storm_charge=10..}] run function bucepack:artifact/stormcalling/activate
+execute if entity @s[scores={storm_charge=10..}] run function bucepack:mythic/stormcalling/activate
 
-# debug
+## debug
 #tellraw @s ["Storm charge: ",{"score":{"name":"*","objective":"storm_charge"}}]
 
 # reset charge 4t i.e. 0.2s from the last time this function is called
-schedule function bucepack:artifact/stormcalling/reset 4t replace
+schedule function bucepack:mythic/stormcalling/reset 4t replace
 

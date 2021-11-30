@@ -18,5 +18,8 @@
 		"tick": {
 			"trigger": "minecraft:tick"
 		}
+	},
+	"rewards": {
+		"function": "bucepack:phantasmal/join"
 	}
 }

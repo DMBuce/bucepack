@@ -22,9 +22,15 @@
           "condition": "minecraft:damage_source_properties",
           "predicate": {
             "direct_entity": {
-              "nbt": "{Health:1.0f}",
               "player": {}
             }
+          }
+        },
+        {
+          "condition": "minecraft:entity_scores",
+          "entity": "killer_player",
+          "scores": {
+              "health": 1
           }
         }
       ]

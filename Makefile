@@ -368,6 +368,7 @@ relic_FILES := $(DEFAULT_DATA_FILES) \
 loot_overhaul_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell find bucepack-data/loot_overhaul -type f | ./bin/ext2dir) \
 	$(relic_FILES) \
+	data/bucepack/loot_tables/mythic/stormcalling/heart_of_the_sea.json \
 	data/minecraft/tags/functions/load-loot_overhaul.json \
 	data/minecraft/loot_tables/chests/abandoned_mineshaft.json \
 	data/minecraft/loot_tables/chests/bastion_bridge.json \
@@ -432,7 +433,9 @@ relic_loot_FILES := $(DEFAULT_DATA_FILES) \
 
 mythic_relics_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell find bucepack-data/mythic -type f | ./bin/ext2dir) \
+	data/minecraft/tags/functions/load-mythic.json \
 	data/minecraft/loot_tables/blocks/deepslate_emerald_ore.json \
+	data/minecraft/loot_tables/chests/buried_treasure.json \
 	data/minecraft/loot_tables/entities/endermite.json \
 	data/minecraft/loot_tables/entities/iron_golem.json \
 	data/minecraft/loot_tables/entities/phantom.json \
@@ -966,7 +969,6 @@ starter_relic.zip: $(starter_relic_FILES)
 	cp meta/$(@:.zip=.png) pack.png
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^
-	#printf "@ data/minecraft/tags/functions/load-relic.json\n@=data/minecraft/tags/functions/load.json\n" | zipnote -w $@
 
 starter_bonus_chest.zip: $(starter_bonus_chest_FILES)
 	cp meta/$(@:.zip=.png) pack.png
@@ -977,12 +979,12 @@ relic_loot.zip: $(relic_loot_FILES)
 	cp meta/$(@:.zip=.png) pack.png
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^
-	#printf "@ data/minecraft/tags/functions/load-relic.json\n@=data/minecraft/tags/functions/load.json\n" | zipnote -w $@
 
 mythic_relics.zip: $(mythic_relics_FILES)
 	cp meta/$(@:.zip=.png) pack.png
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^
+	printf "@ data/minecraft/tags/functions/load-mythic.json\n@=data/minecraft/tags/functions/load.json\n" | zipnote -w $@
 
 dragonproof.zip: $(dragonproof_FILES)
 	cp meta/$(@:.zip=.png) pack.png

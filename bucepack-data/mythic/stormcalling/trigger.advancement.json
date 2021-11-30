@@ -1,20 +1,20 @@
 {
 	"display": {
 		"icon": {
-			"item": "minecraft:trident"
+			"item": "minecraft:barrier"
 		},
 		"title": {
-			"text": "Stormcalling"
+			"text": "Trigger Advancement"
 		},
 		"description": {
-			"text": "Charge Stormcaller"
+			"text": "Something went wrong, you should revoke this advancement"
 		},
 		"show_toast": false,
 		"announce_to_chat": false,
 		"hidden": true,
 		"frame": "task"
 	},
-	"parent": "bucepack:artifact/root",
+	"parent": "bucepack:mythic/root",
 	"criteria": {
 		"in_water": {
 			"trigger": "minecraft:enter_block",
@@ -54,6 +54,6 @@
 		]
 	],
 	"rewards": {
-		"function": "bucepack:artifact/stormcalling/check"
+		"function": "bucepack:mythic/stormcalling/check"
 	}
 }

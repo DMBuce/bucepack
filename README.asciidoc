@@ -736,8 +736,8 @@ pink dye with Myth of Chromatic Blasts, a custom enchantment that can be
 applied to a crossbow in the smithing table.
 Rockets shot with the crossbow gain two randomly generated firework stars.
 
-**Relic of the Burrower**: When a player kills a silverfish with a single
-point of damage, it drops a silverfish eye with Myth of Breaking, a custom
+**Relic of the Burrower**: When a player kills a silverfish in melee without a
+weapon, it drops a silverfish eye with Myth of Breaking, a custom
 enchantment that can be applied to a diamond pick, axe, shovel, or hoe in the
 smithing table. When a block broken by the tool drops an item and decreases the
 tool's durability, the tool will break several extra blocks.
@@ -755,11 +755,11 @@ Myth of Mining charges every time a player's pickaxe loses
 durability. At 250 charge, the enchantment provides one minute of Haste I, and
 the charge resets.
 
-**Relic of the Lens**: When a player with 1 health (half a heart) kills an
-endermite in melee combat, it drops an amethyst shard with Myth of Seeking, a
+**Relic of the Lens**: When a player with 1 health (i.e. half a heart) kills an
+endermite in melee, it drops an amethyst shard with Myth of Seeking, a
 custom enchantment that can be applied to a spyglass in the smithing table.
 A player can use the spyglass to pinpoint the direction of the nearest
-Stronghold, End City, or Nether Fortress.
+Woodland Mansion, End City, or Nether Fortress.
 
 **Relic of Storms**: If the <<loot-overhaul,Loot Overhaul>> datapack is
 installed, hearts of the sea in buried treasure chests have Myth of
@@ -776,8 +776,8 @@ invisibility ends if the player damages a mob.
 ====
 
 This datapack is not compatible with other datapacks that modify the
-Pig, Silverfish, Endermite, Iron Golem, Phantom, or Deepslate Emerald Ore loot
-tables.
+Pig, Silverfish, Endermite, Iron Golem, Phantom, Deepslate Emerald Ore, or
+Buried Treasure loot tables.
 
 Download: https://github.com/DMBuce/bucepack/releases
 

@@ -90,6 +90,14 @@
       ],
       "conditions": [
         {
+          "condition": "minecraft:damage_source_properties",
+          "predicate": {
+            "direct_entity": {
+              "player": {}
+            }
+          }
+        },
+        {
           "condition": "minecraft:entity_properties",
           "entity": "killer_player",
           "predicate": {

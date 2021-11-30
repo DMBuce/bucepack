@@ -1,5 +1,9 @@
 # runs on server load
 
+# add objectives
+scoreboard objectives add phantasmal dummy
+scoreboard players set * phantasmal 1
+
 ## reset insomnia
 #gamerule doInsomnia true
 

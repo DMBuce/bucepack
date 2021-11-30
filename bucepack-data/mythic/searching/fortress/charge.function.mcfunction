@@ -2,6 +2,7 @@
 
 # revoke advancement
 advancement revoke @s only bucepack:mythic/searching/fortress/trigger
+advancement revoke @s only bucepack:mythic/searching/the_nether/trigger
 
 # compute @s var - value between -10.3 and 10.3,
 #                  10.3 means player is directly facing structure,

@@ -1,7 +1,7 @@
 # runs when a player summons a storm
 
 # reset storm charge
-function bucepack:artifact/stormcalling/reset
+function bucepack:mythic/stormcalling/reset
 
 # change weather to thunder 
 weather thunder
