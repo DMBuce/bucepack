@@ -14,7 +14,7 @@ scoreboard players add @s search_charge 1
 #execute if entity @s[scores={var=0..10}] anchored eyes run particle dust 0.93 0.96 0.71 0.5 ^ ^ ^1.5 0 0 0 1 1
 #execute if entity @s[scores={var=10..}] anchored eyes run particle dust 0.70 0.53 0.70 0.5 ^ ^ ^1.5 0 0 0 1 1
 
-# ping 1/s if looking towards structure or 2/s if looking directly at it
+# ping at different frequencies
 #execute if entity @s[scores={search_charge=20..,var=1..94}] run function bucepack:mythic/searching/ding
 ##execute if entity @s[scores={search_charge=15..,var=97..98}] run function bucepack:mythic/searching/ding
 #execute if entity @s[scores={search_charge=10..,var=95..99}] run function bucepack:mythic/searching/ding

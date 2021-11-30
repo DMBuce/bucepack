@@ -29,6 +29,7 @@
 						"minecraft:netherite_pickaxe"
 					]
 				},
+				"delta": { "max": -1 },
 				"player": [
 					{
 						"condition": "minecraft:entity_properties",

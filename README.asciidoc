@@ -725,7 +725,8 @@ applied to a shield in the smithing table. A player blocking with the shield
 attracts the nearest item. A player that sneaks while blocking with the shield
 attracts all nearby items.
 
-**Relic of the Flying Pig**: When a pig with the Levitation effect dies, it drops a
+**Relic of the Flying Pig**: When a pig with the Levitation effect dies, it
+drops a
 porkchop with Myth of Hovering, a custom enchantment that can be applied to a
 chainmail chestplate in the smithing table. When a player wearing the chestplate
 eats cooked or raw porkchop, they gain Levitation for 10 seconds.
@@ -736,14 +737,50 @@ pink dye with Myth of Chromatic Blasts, a custom enchantment that can be
 applied to a crossbow in the smithing table.
 Rockets shot with the crossbow gain two randomly generated firework stars.
 
+**Relic of the Burrower**: When a player kills a silverfish with a single
+point of damage, it drops a silverfish eye with Myth of Breaking, a custom
+enchantment that can be applied to a diamond pick, axe, shovel, or hoe in the
+smithing table. When a block broken by the tool drops an item and decreases the
+tool's durability, several extra blocks around the broken block will break.
+Picks break a 3x3 square, axes break a 32-block-high column,
+shovels break a 4-block column, and hoes break a 3x3x3 sphere.
+The extra broken blocks are not affected by fortune or silk touch and do not
+further decrease the tool's durability.
+
+**Relic of Ores**: Deepslate Emerald Ore drops a gold nugget with Myth of
+Darkvision and Myth of Mining, two custom enchantments that can be applied to
+a golden helmet in the smithing table. Myth of Darkvision provides eight minutes
+of Night Vision when a player tills soil with a hoe,
+creates a path with a shovel, or strips a log with an axe.
+Myth of Mining charges every time a player's pickaxe loses
+durability. At 250 charge, the enchantment provides one minute of Haste I, and
+the charge resets.
+
+**Relic of the Lens**: When a player with 1 health (half a heart) kills an
+endermite in melee combat, it drops an amethyst shard with Myth of Seeking, a
+custom enchantment that can be applied to a spyglass in the smithing table.
+A player can use the spyglass to pinpoint the direction of the nearest
+Stronghold, End City, or Nether Fortress.
+
+**Relic of Storms**: If the <<loot-overhaul,Loot Overhaul>> datapack is
+installed, hearts of the sea in buried treasure chests have Myth of
+Stormcalling, a custom enchantment that can be applied to a trident in the
+smithing table. A player can summon a thunderstorm with the trident by looking
+skyward for several seconds while holding right click.
+
 ====
 
-This datapack is not compatible with other datapacks that modify the Iron
-Golem or Pig loot tables.
+This datapack is not compatible with other datapacks that modify the
+Pig, Silverfish, Endermite, Iron Golem, or Deepslate Emerald Ore loot tables.
 
 Download: https://github.com/DMBuce/bucepack/releases
 
 Build: `make mythic_relics.zip`
+
+Known Issues: Due to limitations in how Minecraft loot tables work, if you
+uninstall this pack and want to continue using Loot Overhaul, Hearts of the
+Sea will continue to generate with Myth of Stormcalling until you
+run `/function bucepack:loot_overhaul/disable/mythic_relics`
 
 === Glow Squid Glamers
 

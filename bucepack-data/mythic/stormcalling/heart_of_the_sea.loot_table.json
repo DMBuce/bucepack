@@ -1,0 +1,40 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "rolls": 1.0,
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:alternatives",
+          "children": [
+            {
+              "type": "minecraft:item",
+              "functions": [
+                {
+                  "function": "minecraft:set_nbt",
+                  "tag": "{relic:1b,stormcalling:1b,CustomModelData:22183,display:{Name:\"{\\\"text\\\":\\\"Relic of Storms\\\",\\\"color\\\":\\\"light_purple\\\"}\",Lore:[\"\\\"§r§bMyth of Stormcalling\\\"\"]},Enchantments:[{id:unbreaking,lvl:3}]}",
+                  "add": false
+                }
+              ],
+              "conditions": [
+                {
+                  "condition": "minecraft:entity_scores",
+                  "entity": "this",
+                  "scores": {
+                    "mythic_relics": { "min": 1 }
+                  }
+                }
+              ],
+              "name": "minecraft:heart_of_the_sea"
+            },
+            {
+              "type": "minecraft:item",
+              "name": "minecraft:heart_of_the_sea"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

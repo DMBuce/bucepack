@@ -1,0 +1,72 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1.0,
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{relic:1b,breaking:1b,CustomModelData:22183,display:{Name:\"{\\\"text\\\":\\\"Relic of the Burrower\\\",\\\"color\\\":\\\"light_purple\\\"}\",Lore:[\"\\\"§r§bMyth of Breaking\\\"\"]}}",
+              "add": false
+            }
+          ],
+          "name": "minecraft:spider_eye"
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:damage_source_properties",
+          "predicate": {
+            "direct_entity": {
+              "player": {}
+            }
+          }
+        },
+        {
+          "condition": "minecraft:inverted",
+          "term": {
+            "condition": "minecraft:entity_properties",
+            "entity": "killer_player",
+            "predicate": {
+              "equipment": {
+                "mainhand": {
+                  "items": [
+                    "minecraft:wooden_sword",
+                    "minecraft:stone_sword",
+                    "minecraft:iron_sword",
+                    "minecraft:diamond_sword",
+                    "minecraft:golden_sword",
+                    "minecraft:netherite_sword",
+                    "minecraft:wooden_axe",
+                    "minecraft:stone_axe",
+                    "minecraft:iron_axe",
+                    "minecraft:diamond_axe",
+                    "minecraft:golden_axe",
+                    "minecraft:netherite_axe",
+                    "minecraft:wooden_pickaxe",
+                    "minecraft:stone_pickaxe",
+                    "minecraft:iron_pickaxe",
+                    "minecraft:diamond_pickaxe",
+                    "minecraft:golden_pickaxe",
+                    "minecraft:netherite_pickaxe",
+                    "minecraft:wooden_shovel",
+                    "minecraft:stone_shovel",
+                    "minecraft:iron_shovel",
+                    "minecraft:diamond_shovel",
+                    "minecraft:golden_shovel",
+                    "minecraft:netherite_shovel",
+                    "minecraft:trident"
+                  ]
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

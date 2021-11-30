@@ -30,6 +30,7 @@
 					],
 					"nbt": "{breaking:1b}"
 				},
+				"delta": { "max": -1 },
 				"player": {
 					"flags": {
 						"is_sneaking": true

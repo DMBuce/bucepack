@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "base": {
+    "item": "minecraft:spider_eye"
+  },
+  "addition": {
+    "item": "minecraft:diamond_shovel"
+  },
+  "result": {
+    "item": "minecraft:diamond_shovel"
+  }
+}

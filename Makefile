@@ -432,8 +432,11 @@ relic_loot_FILES := $(DEFAULT_DATA_FILES) \
 
 mythic_relics_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell find bucepack-data/mythic -type f | ./bin/ext2dir) \
+	data/minecraft/loot_tables/blocks/deepslate_emerald_ore.json \
+	data/minecraft/loot_tables/entities/endermite.json \
 	data/minecraft/loot_tables/entities/iron_golem.json \
 	data/minecraft/loot_tables/entities/pig.json \
+	data/minecraft/loot_tables/entities/silverfish.json \
 
 starter_relic_FILES := $(DEFAULT_DATA_FILES) \
 	$(relic_FILES) \
