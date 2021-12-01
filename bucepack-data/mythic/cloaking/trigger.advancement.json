@@ -19,6 +19,9 @@
 		"get_hurt": {
 			"trigger": "minecraft:entity_hurt_player",
 			"conditions": {
+				"damage": {
+					"source_entity": {}
+				},
 				"player": [
 					{
 						"condition": "minecraft:inverted",

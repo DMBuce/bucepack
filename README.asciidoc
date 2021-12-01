@@ -771,19 +771,21 @@ skyward for several seconds while holding right click.
 **Relic of Disappearance**: If the <<Phantasmal>> datapack is installed,
 invisible phantoms killed by a player drop leather with Curse of Vanishing and
 Myth of Cloaking, a custom
-enchantment that can be applied to elytra in the smithing table. When a player
-wearing the elytra takes damage, they gain 8 minutes of invisibility. The
-invisibility ends if the player damages a mob.
+enchantment that can be applied to elytra in the smithing table.
+When a player wearing the elytra is hit by a mob, they gain 8 minutes of
+invisibility. The invisibility ends if the player damages a mob.
 
 **Relic of Quicksilver**: When an iron golem kills a ghast, it drops a bead of
-quicksilver with Myth of Liquid Metal, a custom enchantment that can be
-applied to a shield or sword in the smithing table. When placed in the
-offhand, the sword transforms into a shield with Unbreaking III. When the
-shield is placed in the main hand or deals damage, it transforms into a sword
-with Sharpness V. Transforming resets all properties of the item including its
-durability, extra enchantments, name, and banner pattern.
+quicksilver with Sharpness V and Myth of Liquid Metal, a custom enchantment
+that can be applied to an iron sword in the smithing table. When placed in the
+offhand, the sword transforms into a shield with Unbreaking III. When
+placed in the main hand or dealing damage, it transforms back into its
+sword form. Transforming resets all properties of the item including its
+durability, enchantments, name, and banner pattern.
 
 ====
+
+image::https://i.imgur.com/CSfeSfC.png[Mythic Relics]
 
 This datapack is not compatible with other datapacks that modify the
 Pig, Silverfish, Endermite, Ghast, Iron Golem, or Deepslate Emerald Ore
