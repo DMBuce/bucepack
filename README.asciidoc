@@ -728,7 +728,8 @@ attracts all nearby items.
 **Relic of the Flying Pig**: When a pig with Levitation dies, it drops a
 porkchop with Myth of Hovering, a custom enchantment that can be applied to a
 chainmail chestplate in the smithing table. When a player wearing the chestplate
-eats cooked or raw porkchop, they gain Levitation for 10 seconds.
+eats cooked or raw porkchop, they gain Levitation and Slowness II
+for 1 minute and 30 seconds.
 
 **Relic of Parties**: When a player channels lightning onto a vex, it
 transforms into an illusioner. If killed by a player, the illusioner drops
@@ -767,17 +768,26 @@ Stormcalling, a custom enchantment that can be applied to a trident in the
 smithing table. A player can summon a thunderstorm with the trident by looking
 skyward for several seconds while holding right click.
 
-**Relic of Disappearance**: When a player kills an invisible phantom, it
-drops leather with Curse of Vanishing and Myth of Cloaking, a custom
+**Relic of Disappearance**: If the <<Phantasmal>> datapack is installed,
+invisible phantoms killed by a player drop leather with Curse of Vanishing and
+Myth of Cloaking, a custom
 enchantment that can be applied to elytra in the smithing table. When a player
 wearing the elytra takes damage, they gain 8 minutes of invisibility. The
 invisibility ends if the player damages a mob.
 
+**Relic of Quicksilver**: When an iron golem kills a ghast, it drops a bead of
+quicksilver with Myth of Liquid Metal, a custom enchantment that can be
+applied to a shield or sword in the smithing table. When placed in the
+offhand, the sword transforms into a shield with Unbreaking III. When the
+shield is placed in the main hand or deals damage, it transforms into a sword
+with Sharpness V. Transforming resets all properties of the item including its
+durability, extra enchantments, name, and banner pattern.
+
 ====
 
 This datapack is not compatible with other datapacks that modify the
-Pig, Silverfish, Endermite, Iron Golem, Phantom, Deepslate Emerald Ore, or
-Buried Treasure loot tables.
+Pig, Silverfish, Endermite, Ghast, Iron Golem, or Deepslate Emerald Ore
+loot tables.
 
 Download: https://github.com/DMBuce/bucepack/releases
 
@@ -788,7 +798,7 @@ if you uninstall this pack and want to continue using
 Loot Overhaul and/or Phantasmal,
 Hearts of the Sea will continue to generate with Myth of Stormcalling,
 and invisible Phantoms will continue to drop Relics of Disappearance,
-until you run `/function bucepack:loot_overhaul/disable/mythic_relics`
+until you run `/scoreboard players set * mythic_relics 0`
 
 === Glow Squid Glamers
 

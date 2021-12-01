@@ -435,10 +435,9 @@ mythic_relics_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell find bucepack-data/mythic -type f | ./bin/ext2dir) \
 	data/minecraft/tags/functions/load-mythic.json \
 	data/minecraft/loot_tables/blocks/deepslate_emerald_ore.json \
-	data/minecraft/loot_tables/chests/buried_treasure.json \
 	data/minecraft/loot_tables/entities/endermite.json \
+	data/minecraft/loot_tables/entities/ghast.json \
 	data/minecraft/loot_tables/entities/iron_golem.json \
-	data/minecraft/loot_tables/entities/phantom.json \
 	data/minecraft/loot_tables/entities/pig.json \
 	data/minecraft/loot_tables/entities/silverfish.json \
 
