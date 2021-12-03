@@ -27,6 +27,7 @@
               or entry.enchant_lvl is defined
               or entry.enchant_rand is defined
               or entry.looting is defined
+              or entry.potion is defined
               or entry.nbt is defined
           %}
           "functions": [
@@ -39,7 +40,7 @@
                 "max": {{entry.max}}.0
               },
               "add": false
-            }{{ "," if entry.damage is defined or entry.count is defined or entry.enchant_lvl is defined or entry.enchant_rand is defined or entry.looting is defined or entry.nbt is defined }}
+            }{{ "," if entry.damage is defined or entry.count is defined or entry.enchant_lvl is defined or entry.enchant_rand is defined or entry.looting is defined or entry.potion is defined or entry.nbt is defined }}
             {%- endif %}
             {%- if entry.damage is defined %}
             {
@@ -50,14 +51,14 @@
                 "max": {{entry.damage.max}}
               },
               "add": false
-            }{{ "," if entry.count is defined or entry.enchant_lvl is defined or entry.enchant_rand is defined or entry.looting is defined or entry.nbt is defined }}
+            }{{ "," if entry.count is defined or entry.enchant_lvl is defined or entry.enchant_rand is defined or entry.looting is defined or entry.potion is defined or entry.nbt is defined }}
             {%- endif %}
             {%- if entry.count is defined %}
             {
               "function": "minecraft:set_count",
               "count": {{entry.count}}.0,
               "add": false
-            }{{ "," if entry.enchant_lvl is defined or entry.enchant_rand is defined or entry.looting is defined or entry.nbt is defined }}
+            }{{ "," if entry.enchant_lvl is defined or entry.enchant_rand is defined or entry.looting is defined or entry.potion is defined or entry.nbt is defined }}
             {%- endif %}
             {%- if entry.enchant_lvl is defined %}
             {
@@ -72,7 +73,7 @@
               "levels": {{entry.enchant_lvl}}.0,
               {%- endif %}
               "treasure": true
-            }{{ "," if entry.enchant_rand is defined or entry.looting is defined or entry.nbt is defined }}
+            }{{ "," if entry.enchant_rand is defined or entry.looting is defined or entry.potion is defined or entry.nbt is defined }}
             {%- endif %}
             {%- if entry.enchant_rand is defined %}
             {
@@ -84,7 +85,7 @@
               {%- endfor %}
               ]
               {%- endif %}
-            }{{ "," if entry.looting is defined or entry.nbt is defined }}
+            }{{ "," if entry.looting is defined or entry.potion is defined or entry.nbt is defined }}
             {%- endif %}
             {%- if entry.looting is defined %}
             {
@@ -93,6 +94,12 @@
                 "min": {{entry.looting.min}}.0,
                 "max": {{entry.looting.max}}.0
               }
+            }{{ "," if entry.potion is defined or entry.nbt is defined }}
+            {%- endif %}
+            {%- if entry.potion is defined %}
+            {
+              "function": "minecraft:set_potion",
+              "id": "minecraft:{{entry.potion}}"
             }{{ "," if entry.nbt is defined }}
             {%- endif %}
             {%- if entry.nbt is defined %}

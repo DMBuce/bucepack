@@ -19,10 +19,6 @@ pools:
         item: bamboo
         biomes: [
           jungle,
-          jungle_hills,
-          jungle_edge,
-          bamboo_jungle,
-          modified_jungle,
-          modified_jungle_edge,
-          bamboo_jungle_hills
+          sparse_jungle,
+          bamboo_jungle
         ]

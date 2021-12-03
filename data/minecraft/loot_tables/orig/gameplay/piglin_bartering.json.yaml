@@ -4,9 +4,9 @@ pools:
     entries:
       - { type: item, weight: 5, enchant_rand: [ "soul_speed" ], item: book }
       - { type: item, weight: 8, enchant_rand: [ "soul_speed" ], item: iron_boots }
-      - { type: potion, weight: 8,  effect: fire_resistance }
-      - { type: potion, weight: 8,  effect: fire_resistance, item: splash_potion }
-      - { type: potion, weight: 10, effect: water }
+      - { type: item, weight: 8,  potion: fire_resistance, item: potion }
+      - { type: item, weight: 8,  potion: fire_resistance, item: splash_potion }
+      - { type: item, weight: 10, potion: water,    item: potion }
       - { type: item, weight: 10, min: 10, max: 36, item: iron_nugget }
       - { type: item, weight: 10, min: 2,  max: 4,  item: ender_pearl }
       - { type: item, weight: 20, min: 3,  max: 9,  item: string }

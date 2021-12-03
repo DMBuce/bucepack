@@ -4,6 +4,7 @@ pools:
       - { type: item, weight: 20,                  item: zombie_head }
       - { type: item, weight: 15,                  item: golden_apple }
       - { type: item, weight: 2,                   item: enchanted_golden_apple }
+      - { type: item, weight: 2,                   item: music_disc_otherside }
       - { type: tag,  weight: 30, expand: true,    tag: music_discs }
       - { type: item, weight: 20, enchant_rand: [], item: shield }
       - { type: item, weight: 10,                  item: creeper_head }

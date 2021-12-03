@@ -24,6 +24,9 @@ pools:
     entries:
       - { type: item, weight: 1,  min: 2, max: 4, item: cooked_cod }
       - { type: item, weight: 1,  min: 2, max: 4, item: cooked_salmon }
+  - rolls: { min: 0, max: 2 }
+    entries:
+      - { type: item, weight: 1, potion: water_breathing, item: potion }
   - rolls: 1
     entries:
       - { type: loot_table, weight: 1, score: relic_loot, table: relic/random }

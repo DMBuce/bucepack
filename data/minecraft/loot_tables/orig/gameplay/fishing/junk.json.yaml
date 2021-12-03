@@ -6,7 +6,7 @@ pools:
       - { type: item, weight: 10, item: leather_boots, damage: { min: 0.0, max: 0.9 } }
       - { type: item, weight: 10, item: leather }
       - { type: item, weight: 10, item: bone }
-      - { type: potion, weight: 10, effect: water }
+      - { type: item, weight: 10, item: potion, potion: water }
       - { type: item, weight: 5,  item: string }
       - { type: item, weight: 2,  item: fishing_rod, damage: { min: 0.0, max: 0.9 } }
       - { type: item, weight: 10, item: bowl }
@@ -19,10 +19,6 @@ pools:
         item: bamboo
         biomes: [
           jungle,
-          jungle_hills,
-          jungle_edge,
-          bamboo_jungle,
-          modified_jungle,
-          modified_jungle_edge,
-          bamboo_jungle_hills
+          sparse_jungle,
+          bamboo_jungle
         ]

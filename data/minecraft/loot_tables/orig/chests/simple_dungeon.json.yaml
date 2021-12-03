@@ -4,6 +4,7 @@ pools:
       - { type: item, weight: 20, item: saddle }
       - { type: item, weight: 15, item: golden_apple }
       - { type: item, weight: 2,  item: enchanted_golden_apple }
+      - { type: item, weight: 2,  item: music_disc_otherside }
       - { type: item, weight: 15, item: music_disc_13 }
       - { type: item, weight: 15, item: music_disc_cat }
       - { type: item, weight: 20, item: name_tag }
