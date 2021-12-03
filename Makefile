@@ -11,7 +11,7 @@ DATAPACKFILES = gardener_endermen.zip climbable.zip \
 	no_treasure_maps.zip fortunate_jungle.zip fortunate_crops.zip dragonproof.zip \
 	mineable.zip shearless.zip breeding_overhaul.zip \
 	phantasmal.zip phantasmal_end.zip glow_squid_glamers.zip invis_squid_glamer.zip \
-	more_cutting.zip lose_hp_xp.zip more_rain.zip \
+	more_cutting.zip lose_hp_xp.zip \
 	loot_overhaul.zip plant_loot.zip relic_loot.zip mythic_relics.zip \
 	more_shulker_shells.zip boss_loot.zip seasonal_loot.zip \
 	food_loot.zip decor_loot.zip modern_loot.zip \
@@ -525,11 +525,6 @@ breeding_overhaul_FILES := $(DEFAULT_DATA_FILES) \
 	data/minecraft/tags/functions/load-breeding_overhaul.json \
 	data/bucepack/functions/var.mcfunction
 
-more_rain_FILES := $(DEFAULT_DATA_FILES) \
-	$(shell find bucepack-data/more_rain -type f | ./bin/ext2dir) \
-	data/minecraft/tags/functions/load-more_rain.json \
-	data/bucepack/functions/var.mcfunction \
-
 glow_squid_glamers_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell find bucepack-data/illusory/glow_squid -type f | ./bin/ext2dir) \
 	data/minecraft/loot_tables/entities/glow_squid.json \
@@ -943,12 +938,6 @@ fortunate_crops.zip: $(fortunate_crops_FILES)
 	cp meta/$(@:.zip=.png) pack.png
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^
-
-more_rain.zip: $(more_rain_FILES)
-	cp meta/$(@:.zip=.png) pack.png
-	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
-	zip $@ pack.png pack.mcmeta $^
-	printf "@ data/minecraft/tags/functions/load-more_rain.json\n@=data/minecraft/tags/functions/load.json\n" | zipnote -w $@
 
 lose_hp_xp.zip: $(lose_hp_xp_FILES)
 	cp meta/$(@:.zip=.png) pack.png

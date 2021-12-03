@@ -442,17 +442,6 @@ Download: https://github.com/DMBuce/bucepack/releases
 
 Build: `make more_shulker_shells.zip`
 
-=== More Rain
-
-Adds a chance of rain overnight.
-
-Whenever a player skips the night with a bed, there is an 11% chance of rain
-that morning.
-
-Download: https://github.com/DMBuce/bucepack/releases
-
-Build: `make more_rain.zip`
-
 === Waterproof Tech
 
 Makes redstone components waterproof.
