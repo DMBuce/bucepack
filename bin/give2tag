@@ -1,0 +1,12 @@
+#!/bin/bash
+
+# converts /give player_head command to tag
+sed '/give.*player_head/ {
+	s/.*player_head//
+	s/ *[0-9]*$//
+	s,",\\",g
+	s,\\\\,\\\\\\,g
+	s,^,",
+	s,$,"\,,
+}' "$@"
+

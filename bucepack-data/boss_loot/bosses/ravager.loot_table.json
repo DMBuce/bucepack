@@ -1,0 +1,44 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1.0,
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:\"{\\\"text\\\":\\\"Jar of Enchanting\\\"}\"},SkullOwner:{Id:[I;-621177166,1552695608,-1728092707,54808766],Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNTVjOWQ3MzI5YjNiOTE4ZDBjMTU2ZWU2YzFkZDQxZTQzMjkyZmNhMGMzYTNkYWM0MGRkNjQzYTYzZjBiNjU1YiJ9fX0=\"}]}}}",
+              "add": false
+            }
+          ],
+          "name": "minecraft:player_head"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:\"{\\\"text\\\":\\\"Iron Cube\\\"}\"},SkullOwner:{Id:[I;-624435546,1814839720,-1309444382,761317994],Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNmZjNWUyODZkOWMxZDE5ZDZkNjA1OWQ2OWIzMzEzOWYxOGNlNjlmYWVmZjBmZWU4OTRkMDRlOTNlN2NiOTg2NyJ9fX0=\"}]}}}",
+              "add": false
+            }
+          ],
+          "name": "minecraft:player_head"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:\"{\\\"text\\\":\\\"Emerald Cube\\\"}\"},SkullOwner:{Id:[I;873894899,-973780808,-1837391352,470529672],Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjcyYzA1ZGQ3NjI4OGY0MzI4YTI0MzkxYmY0NzI1ZmQyMjYwNTkyZGIzY2Y5YjJiYzIwMzJkZDA1OTZjZjQ0MCJ9fX0=\"}]}}}",
+              "add": false
+            }
+          ],
+          "name": "minecraft:player_head"
+        }
+      ]
+    }
+  ]
+}

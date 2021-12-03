@@ -1,0 +1,25 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:snowball"
+		},
+		"title": {
+			"text": "Seasonal Loot"
+		},
+		"description": {
+			"text": "Makes bosses drop seasonal loot"
+		},
+		"show_toast": false,
+		"announce_to_chat": false,
+		"frame": "task"
+	},
+	"parent": "bucepack:boss_loot/root",
+	"criteria": {
+		"tick": {
+			"trigger": "minecraft:tick"
+		}
+	},
+	"rewards": {
+		"function": "bucepack:seasonal_addons/food_loot"
+	}
+}

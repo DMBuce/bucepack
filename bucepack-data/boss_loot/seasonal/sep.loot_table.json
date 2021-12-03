@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1.0,
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:\"{\\\"text\\\":\\\"Textbooks\\\"}\"},SkullOwner:{Id:[I;1793043554,235357503,-1709427527,1805661851],Properties:{textures:[{Value:\"ewogICJ0aW1lc3RhbXAiIDogMTYzODQ3OTEwMDQ2NiwKICAicHJvZmlsZUlkIiA6ICI2YWRmYWM2MjBlMDc0NTNmOWExYzM0Yjk2YmEwMzY5YiIsCiAgInByb2ZpbGVOYW1lIiA6ICJtYXR0aWpzIiwKICAic2lnbmF0dXJlUmVxdWlyZWQiIDogdHJ1ZSwKICAidGV4dHVyZXMiIDogewogICAgIlNLSU4iIDogewogICAgICAidXJsIiA6ICJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzIwZWFiYWU3NjI5NGRhYjUzNjYyN2RiMjE5N2VhNGM5MjVhYzZiZjdlYTAzZDk1ZDJmMTRlMTcyNTUxZWNiNGIiCiAgICB9CiAgfQp9\"}]}}}",
+              "add": false
+            }
+          ],
+          "name": "minecraft:player_head"
+        }
+      ]
+    }
+  ]
+}

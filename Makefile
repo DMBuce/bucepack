@@ -13,7 +13,8 @@ DATAPACKFILES = gardener_endermen.zip climbable.zip \
 	phantasmal.zip phantasmal_end.zip glow_squid_glamers.zip invis_squid_glamer.zip \
 	more_cutting.zip lose_hp_xp.zip more_rain.zip \
 	loot_overhaul.zip plant_loot.zip relic_loot.zip mythic_relics.zip \
-	more_shulker_shells.zip \
+	more_shulker_shells.zip boss_loot.zip seasonal_loot.zip \
+	food_loot.zip decor_loot.zip modern_loot.zip \
 	starter_bed.zip starter_book.zip starter_bucket.zip starter_map.zip \
 	starter_shulker.zip starter_relic.zip starter_bonus_chest.zip \
 	waterproof_tech.zip aggro_bastions.zip blue_fire.zip \
@@ -440,6 +441,27 @@ mythic_relics_FILES := $(DEFAULT_DATA_FILES) \
 	data/minecraft/loot_tables/entities/iron_golem.json \
 	data/minecraft/loot_tables/entities/pig.json \
 	data/minecraft/loot_tables/entities/silverfish.json \
+
+seasonal_loot_FILES := $(DEFAULT_DATA_FILES) \
+	$(shell ls bucepack-data/loot_addons/seasonal_loot* | ./bin/ext2dir) \
+
+food_loot_FILES := $(DEFAULT_DATA_FILES) \
+	$(shell ls bucepack-data/loot_addons/food_loot* | ./bin/ext2dir) \
+
+decor_loot_FILES := $(DEFAULT_DATA_FILES) \
+	$(shell ls bucepack-data/loot_addons/decor_loot* | ./bin/ext2dir) \
+
+modern_loot_FILES := $(DEFAULT_DATA_FILES) \
+	$(shell ls bucepack-data/loot_addons/modern_loot* | ./bin/ext2dir) \
+
+boss_loot_FILES := $(DEFAULT_DATA_FILES) \
+	$(shell find bucepack-data/boss_loot -type f | ./bin/ext2dir) \
+	data/minecraft/tags/functions/load-boss_loot.json \
+	data/minecraft/loot_tables/entities/elder_guardian.json \
+	data/minecraft/loot_tables/entities/ender_dragon.json \
+	data/minecraft/loot_tables/entities/ravager.json \
+	data/minecraft/loot_tables/entities/warden.json \
+	data/minecraft/loot_tables/entities/wither.json \
 
 starter_relic_FILES := $(DEFAULT_DATA_FILES) \
 	$(relic_FILES) \
@@ -984,6 +1006,32 @@ mythic_relics.zip: $(mythic_relics_FILES)
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^
 	printf "@ data/minecraft/tags/functions/load-mythic.json\n@=data/minecraft/tags/functions/load.json\n" | zipnote -w $@
+
+boss_loot.zip: $(boss_loot_FILES)
+	cp meta/$(@:.zip=.png) pack.png
+	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
+	zip $@ pack.png pack.mcmeta $^
+	printf "@ data/minecraft/tags/functions/load-boss_loot.json\n@=data/minecraft/tags/functions/load.json\n" | zipnote -w $@
+
+seasonal_loot.zip: $(seasonal_loot_FILES)
+	cp meta/$(@:.zip=.png) pack.png
+	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
+	zip $@ pack.png pack.mcmeta $^
+
+food_loot.zip: $(food_loot_FILES)
+	cp meta/$(@:.zip=.png) pack.png
+	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
+	zip $@ pack.png pack.mcmeta $^
+
+decor_loot.zip: $(decor_loot_FILES)
+	cp meta/$(@:.zip=.png) pack.png
+	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
+	zip $@ pack.png pack.mcmeta $^
+
+modern_loot.zip: $(modern_loot_FILES)
+	cp meta/$(@:.zip=.png) pack.png
+	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
+	zip $@ pack.png pack.mcmeta $^
 
 dragonproof.zip: $(dragonproof_FILES)
 	cp meta/$(@:.zip=.png) pack.png

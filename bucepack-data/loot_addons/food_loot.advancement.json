@@ -1,0 +1,25 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:bread"
+		},
+		"title": {
+			"text": "Food Loot"
+		},
+		"description": {
+			"text": "Makes bosses drop food"
+		},
+		"show_toast": false,
+		"announce_to_chat": false,
+		"frame": "task"
+	},
+	"parent": "bucepack:boss_loot/root",
+	"criteria": {
+		"tick": {
+			"trigger": "minecraft:tick"
+		}
+	},
+	"rewards": {
+		"function": "bucepack:loot_addons/food_loot"
+	}
+}

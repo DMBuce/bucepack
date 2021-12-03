@@ -1,0 +1,120 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1.0,
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:alternatives",
+          "weight": 1,
+          "children": [
+            {
+              "type": "minecraft:loot_table",
+              "conditions": [
+                {
+                  "condition": "minecraft:entity_properties",
+                  "entity": "this",
+                  "predicate": {
+                    "type": "minecraft:ender_dragon"
+                  }
+                }
+              ],
+              "name": "bucepack:boss_loot/bosses/ender_dragon"
+            },
+            {
+              "type": "minecraft:loot_table",
+              "conditions": [
+                {
+                  "condition": "minecraft:entity_properties",
+                  "entity": "this",
+                  "predicate": {
+                    "type": "minecraft:wither"
+                  }
+                }
+              ],
+              "name": "bucepack:boss_loot/bosses/wither"
+            },
+            {
+              "type": "minecraft:loot_table",
+              "conditions": [
+                {
+                  "condition": "minecraft:entity_properties",
+                  "entity": "this",
+                  "predicate": {
+                    "type": "minecraft:elder_guardian"
+                  }
+                }
+              ],
+              "name": "bucepack:boss_loot/bosses/elder_guardian"
+            },
+            {
+              "type": "minecraft:loot_table",
+              "conditions": [
+                {
+                  "condition": "minecraft:entity_properties",
+                  "entity": "this",
+                  "predicate": {
+                    "type": "minecraft:ravager"
+                  }
+                }
+              ],
+              "name": "bucepack:boss_loot/bosses/ravager"
+            },
+            {
+              "type": "minecraft:loot_table",
+              "name": "bucepack:boss_loot/bosses/warden"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:loot_table",
+          "weight": 1,
+          "name": "bucepack:boss_loot/decor",
+          "conditions": [
+            {
+              "condition": "minecraft:entity_scores",
+              "entity": "killer_player",
+              "scores": {
+                "decor_loot": { "min": 1 }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:loot_table",
+          "weight": 1,
+          "name": "bucepack:boss_loot/modern",
+          "conditions": [
+            {
+              "condition": "minecraft:entity_scores",
+              "entity": "killer_player",
+              "scores": {
+                "modern_loot": { "min": 1 }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:alternatives",
+          "weight": 4,
+          "children": [
+            {
+              "type": "minecraft:loot_table",
+              "name": "bucepack:boss_loot/food/loot",
+              "conditions": [
+                {
+                  "condition": "minecraft:entity_scores",
+                  "entity": "killer_player",
+                  "scores": {
+                    "food_loot": { "min": 1 }
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
