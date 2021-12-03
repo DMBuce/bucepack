@@ -1389,6 +1389,7 @@ Protection II that can be applied to elytra.
 TO DO AFTER MINECRAFT UPDATES
 =============================
 
+Bump pack_format in mcmeta if necessary
 Merge loot table changes with Loot Overhaul
 Add new food to relic predicate
 Add new plants to Gardener Endermen and Shearless packs
