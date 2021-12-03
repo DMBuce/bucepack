@@ -524,14 +524,13 @@ Build: `make dragonproof.zip`
 === Boss Loot
 
 Makes decorative player heads drop from the Dragon, Wither, Elder Guardian,
-and Ravager. Whenever a player kills one of these mobs, it drops one
-block chosen at random. Below is a summary of possible drops.
+and Ravager. Below is a summary of possible drops.
 
-* **Dragon**: Jar of Dragon's Breath, Portal in a Jar, Enderman Plushie
-* **Wither**: Jar of Nether Star, Jar of Magma Cream, Skull in a Jar
-* **Elder Guardian**: Jar of Pufferfish, Beach Ball, Coconut
-* **Ravager**: Jar of Enchanting, Iron Cube, Emerald Cube
-//* **Warden**: Jar of Lava, Gold Cube, Diamond Cube
+* **Dragon**: Dragon Heart, End Crystal Cube, Red Dragon Plushie
+* **Wither**: Wither Heart, Necronomicon, Block Buster
+* **Elder Guardian**: Fish Head, Clam, Coconut
+* **Ravager**: Iron Cube, Emerald Cube, Ravager Plushie
+//* **Warden**: Gold Cube, Diamond Cube
 
 Download: https://github.com/DMBuce/bucepack/releases
 
@@ -559,12 +558,6 @@ adds decorative blocks to boss loot.
 * Potted Marigold
 * Potted Camellia
 * Potted Plant
-* Brown Vase
-* Blue Vase
-* Red Vase
-* Victorian Vase
-* Porcelain Vase
-* Ming Vase
 
 ====
 
@@ -581,29 +574,21 @@ adds modern blocks to boss loot.
 [%collapsible]
 ====
 
-* Mailbox
-* Toilet Paper
 * Toaster
-* Clock
 * Monitor
 * Television
-* Recycle Bin
-* Trash Can
+* Towels
 * Warning Lamp
 * Rubik's Cube
 * Solved Rubik's Cube
-* Kirby Plushie
-* Goomba Plushie
-* Boo Plushie
-* Mario Plushie
-* Lucky Block
-* Sheep Plushie
-* Pig Plushie
-* Cow Plushie
-* Pikachu Plushie
-* Pokeball
 * Furby
 * Blue Furby
+* Pikachu Plushie
+* Pokeball
+* Goomba Plushie
+* Lucky Block
+* Pig Plushie
+* Squid Plushie
 
 ====
 
@@ -621,11 +606,11 @@ Some of the food only drops during dawn, daytime, dusk, or nighttime.
 [%collapsible]
 ====
 
-* **Anytime**: Cheese, Garlic, Red Onion, Lemon, Bread, Jam
-* **Dawn**: Coffee, Pancakes, Waffles, Donuts
-* **Daytime**: Soda, Sandwich, Sushi, Soup
-* **Dusk**: Pasta, Chocolate Cake, Burger, Picnic Basket
-* **Nighttime**: Popcorn, Fried Chicken, Grapes, Ice Cream
+* **Anytime**: Raw Fish, Grapes, Red Onion, Lemon, Lime, Bread, Jam
+* **Dawn**: Coffee, Donuts
+* **Daytime**: Cheese, Sushi, Sandwich
+* **Dusk**: Burger, Cooked Fish, Picnic Basket
+* **Nighttime**: Chocolate Cake, Fried Chicken, Ice Cream
 
 ====
 
@@ -640,6 +625,7 @@ adds blocks to boss loot based on the month and season within minecraft.
 A minecraft month is equal to one lunar cycle,
 which is equivalent to 8 in-game days.
 A season is three minecraft months, i.e. 24 in-game days.
+A new world starts at the beginning of spring on the first day of March.
 
 .Click for a summary of seasonal drops
 [%collapsible]
@@ -649,8 +635,8 @@ A season is three minecraft months, i.e. 24 in-game days.
 ** **March**: Pot of Gold
 ** **April**: Easter Basket
 ** **May**: R2-D2 Plushie
-* **Summer**: Hermit Crab, Lime, Key Lime Pie
-** **June**: Rainbow in a Jar
+* **Summer**: Hermit Crab, Kiwi, Turtle Plushie
+** **June**: Rainbow Slime Plushie
 ** **July**: Dynamite
 ** **August**: Hot Dog
 * **Fall**: Pecan Pie, Blueberry Pie, Apple Pie

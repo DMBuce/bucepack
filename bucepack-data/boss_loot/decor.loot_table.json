@@ -7,7 +7,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "weight": 30,
+          "weight": 60,
           "functions": [
             {
               "function": "minecraft:set_nbt",
@@ -156,78 +156,6 @@
             {
               "function": "minecraft:set_nbt",
               "tag": "{display:{Name:\"{\\\"text\\\":\\\"Potted Plant\\\"}\"},SkullOwner:{Id:[I;-1257827577,343099202,-1279997799,1352841244],Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjNiYTQ4NDQ4MTg5YmVmNGZkM2IzZTU2ZWU2ZjlmNWMxN2YxZWQ5NjQ4ZGE5NTU0NTFlZjFmZTY1NjAxYiJ9fX0=\"}]}}}",
-              "add": false
-            }
-          ],
-          "name": "minecraft:player_head"
-        },
-        {
-          "type": "minecraft:item",
-          "weight": 5,
-          "functions": [
-            {
-              "function": "minecraft:set_nbt",
-              "tag": "{display:{Name:\"{\\\"text\\\":\\\"Brown Vase\\\"}\"},SkullOwner:{Id:[I;-1548946127,-44087423,-1661738888,2101956482],Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZGRkY2M5N2M3MmQyZWI0YzNlOTRiZDVjZGJlMzU0N2FjZjRkZDU1YmJhMzc4NzU4YzBiYzNhZjM1ZjJiMGU3MiJ9fX0=\"}]}}}",
-              "add": false
-            }
-          ],
-          "name": "minecraft:player_head"
-        },
-        {
-          "type": "minecraft:item",
-          "weight": 5,
-          "functions": [
-            {
-              "function": "minecraft:set_nbt",
-              "tag": "{display:{Name:\"{\\\"text\\\":\\\"Blue Vase\\\"}\"},SkullOwner:{Id:[I;-1021483955,471158225,-1209873056,1082631834],Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjBlYWE5M2IxOThlZjA3MTRkOTlkY2JlNWYxNjA1YmY0OTVjZGE1ODkyNDYyMGJiZjgwNDk2Mjc5YTJjOThjZiJ9fX0=\"}]}}}",
-              "add": false
-            }
-          ],
-          "name": "minecraft:player_head"
-        },
-        {
-          "type": "minecraft:item",
-          "weight": 5,
-          "functions": [
-            {
-              "function": "minecraft:set_nbt",
-              "tag": "{display:{Name:\"{\\\"text\\\":\\\"Red Vase\\\"}\"},SkullOwner:{Id:[I;196976577,1462452455,-1572319848,-68944070],Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYTJiOGExNTJlZWNmYzAzMGI5OGQ1NzllMmMyN2Q3MzUzNzg0MGE0NzI4NjA3N2IwZjRmMTIzMWNmYWZlNTEwMyJ9fX0=\"}]}}}",
-              "add": false
-            }
-          ],
-          "name": "minecraft:player_head"
-        },
-        {
-          "type": "minecraft:item",
-          "weight": 5,
-          "functions": [
-            {
-              "function": "minecraft:set_nbt",
-              "tag": "{display:{Name:\"{\\\"text\\\":\\\"Victorian Vase\\\"}\"},SkullOwner:{Id:[I;-457686065,570967744,-1196764533,-1928218385],Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMDg0YTc0MmQ4ODg0YTIxNmFlYWJhNDVhOTZmYWU1NDFlMzI5MTYyYmM0MDg5M2E2M2JmYmRjY2Q3NzViZiJ9fX0=\"}]}}}",
-              "add": false
-            }
-          ],
-          "name": "minecraft:player_head"
-        },
-        {
-          "type": "minecraft:item",
-          "weight": 5,
-          "functions": [
-            {
-              "function": "minecraft:set_nbt",
-              "tag": "{display:{Name:\"{\\\"text\\\":\\\"Porcelain Vase\\\"}\"},SkullOwner:{Id:[I;-1069760934,-603502470,-1263067513,-97463415],Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNWY0NTA1NWZhNjQ4Y2RiYjJjNjIwYmE1NjUwYjI5ZWMwM2MwMzAyNmJhNGZhODhhZmYwNTUyOTc0NzM3YjJiNyJ9fX0=\"}]}}}",
-              "add": false
-            }
-          ],
-          "name": "minecraft:player_head"
-        },
-        {
-          "type": "minecraft:item",
-          "weight": 5,
-          "functions": [
-            {
-              "function": "minecraft:set_nbt",
-              "tag": "{display:{Name:\"{\\\"text\\\":\\\"Ming Vase\\\"}\"},SkullOwner:{Id:[I;56238401,-1354413620,-1632150118,586690387],Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNDVjYTVlODVjNGFlYTYwOGJkMzQ0M2NhYmRmMWMyYmRkZTNiNDMxYWQzYWEzOGZmZmUwNGEzMmViN2U1MjUifX19\"}]}}}",
               "add": false
             }
           ],

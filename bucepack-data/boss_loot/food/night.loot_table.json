@@ -10,17 +10,6 @@
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{display:{Name:\"{\\\"text\\\":\\\"Popcorn\\\"}\"},SkullOwner:{Id:[I;15765448,-1752284621,-1700181017,1872272031],Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMThmZTYxNmRmYmI0Y2M4MmRmMTlmNTY2NzYzM2FmMTU2YzdhNWI2MjE1ZWY5Y2ViMGI0NTVkY2U3MzkzOTUifX19\"}]}}}",
-              "add": false
-            }
-          ],
-          "name": "minecraft:player_head"
-        },
-        {
-          "type": "minecraft:item",
-          "functions": [
-            {
-              "function": "minecraft:set_nbt",
               "tag": "{display:{Name:\"{\\\"text\\\":\\\"Fried Chicken\\\"}\"},SkullOwner:{Id:[I;470081326,-349352083,-1182758031,195264822],Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjhmYjA1MDJhM2FhNWY4YmQzMmE1ZWE1ZTUxOWMzZGQzNTMyMzQxNzBkZmVmOTU5ZWU4YWRiOTQ4N2ZlYSJ9fX0=\"}]}}}",
               "add": false
             }
@@ -32,7 +21,7 @@
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{display:{Name:\"{\\\"text\\\":\\\"Grapes\\\"}\"},SkullOwner:{Id:[I;1787897658,660555017,-1213533806,-2096986500],Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDUxMWE1ZWU0ZDE3NjgyYTI1ZjdlOGE1ZGE2ZmY3Y2Q5YWQ5YzQ4NDRjMjU4YTZkZTIzZTdmODRmMjdmOWI0In19fQ==\"}]}}}",
+              "tag": "{display:{Name:\"{\\\"text\\\":\\\"Chocolate Cake\\\"}\"},SkullOwner:{Id:[I;2395023,1633372761,-1895614447,-845271872],Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTJlN2E1YzM3NDgyZGZhYzQxZWY3MTg0YmYwZjdjZTk3ZjI2Y2E4OGIxNzlmNDQ3ZjBlMTc0MjFmOGZjYmUifX19\"}]}}}",
               "add": false
             }
           ],

@@ -7,7 +7,6 @@
       "entries": [
         {
           "type": "minecraft:alternatives",
-          "weight": 1,
           "children": [
             {
               "type": "minecraft:loot_table",
@@ -69,7 +68,6 @@
         },
         {
           "type": "minecraft:loot_table",
-          "weight": 1,
           "name": "bucepack:boss_loot/decor",
           "conditions": [
             {
@@ -83,7 +81,6 @@
         },
         {
           "type": "minecraft:loot_table",
-          "weight": 1,
           "name": "bucepack:boss_loot/modern",
           "conditions": [
             {
@@ -94,23 +91,36 @@
               }
             }
           ]
+        }
+      ]
+    },
+    {
+      "rolls": 1.0,
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "name": "bucepack:boss_loot/food/loot",
+          "conditions": [
+            {
+              "condition": "minecraft:entity_scores",
+              "entity": "killer_player",
+              "scores": {
+                "food_loot": { "min": 1 }
+              }
+            }
+          ]
         },
         {
-          "type": "minecraft:alternatives",
-          "weight": 4,
-          "children": [
+          "type": "minecraft:loot_table",
+          "name": "bucepack:boss_loot/seasonal/loot",
+          "conditions": [
             {
-              "type": "minecraft:loot_table",
-              "name": "bucepack:boss_loot/food/loot",
-              "conditions": [
-                {
-                  "condition": "minecraft:entity_scores",
-                  "entity": "killer_player",
-                  "scores": {
-                    "food_loot": { "min": 1 }
-                  }
-                }
-              ]
+              "condition": "minecraft:entity_scores",
+              "entity": "killer_player",
+              "scores": {
+                "seasonal_loot": { "min": 1 }
+              }
             }
           ]
         }

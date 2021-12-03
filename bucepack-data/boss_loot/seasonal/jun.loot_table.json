@@ -10,7 +10,7 @@
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{display:{Name:\"{\\\"text\\\":\\\"Rainbow in a Jar\\\"}\"},SkullOwner:{Id:[I;47996796,-524072211,-1507206880,-1579062268],Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOWY4YjgyNDI3YjI2MGQwYTYxZTY0ODNmYzNiMmMzNWE1ODU4NTFlMDhhOWE5ZGYzNzI1NDhiNDE2OGNjODE3YyJ9fX0=\"}]}}}",
+              "tag": "{display:{Name:\"{\\\"text\\\":\\\"Rainbow Slime Plushie\\\"}\"},SkullOwner:{Id:[I;-1905901472,1198083774,-1754960159,1915408865],Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjhiZTFlNTQ2MjViYjFjNDc3ODMyZWQ0ZTVmOGQ3MjYxZWUzOGYxODBiMDg4M2QxMDYwYzIxMmI1YzhiNzEifX19\"}]}}}",
               "add": false
             }
           ],

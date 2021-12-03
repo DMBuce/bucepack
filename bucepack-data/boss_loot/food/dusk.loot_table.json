@@ -10,18 +10,7 @@
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{display:{Name:\"{\\\"text\\\":\\\"Pasta\\\"}\"},SkullOwner:{Id:[I;-1687505924,234700820,-1852609189,-1534908174],Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjIzZGZkNGNlNTc3ODY5MTQ5NjhhMmIzYmE4MjE3M2JhN2M2Y2I4YmMwODQ0MmQ0MTMwY2IwOWM0YTAwMDk4MCJ9fX0=\"}]}}}",
-              "add": false
-            }
-          ],
-          "name": "minecraft:player_head"
-        },
-        {
-          "type": "minecraft:item",
-          "functions": [
-            {
-              "function": "minecraft:set_nbt",
-              "tag": "{display:{Name:\"{\\\"text\\\":\\\"Chocolate Cake\\\"}\"},SkullOwner:{Id:[I;2395023,1633372761,-1895614447,-845271872],Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTJlN2E1YzM3NDgyZGZhYzQxZWY3MTg0YmYwZjdjZTk3ZjI2Y2E4OGIxNzlmNDQ3ZjBlMTc0MjFmOGZjYmUifX19\"}]}}}",
+              "tag": "{display:{Name:\"{\\\"text\\\":\\\"Cooked Fish\\\"}\"},SkullOwner:{Id:[I;1952030546,756105877,-1541046276,-1805171564],Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYzVjYzc3ODE5Yzk5M2MxOTZjM2E1NzhkZGNlMGVmNmIyMGVhMTc1ZDk5ZTYxNTRmNmI1NTRjMTFiODRmZDU0MiJ9fX0=\"}]}}}",
               "add": false
             }
           ],

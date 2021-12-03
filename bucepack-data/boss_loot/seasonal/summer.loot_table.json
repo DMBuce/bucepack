@@ -21,7 +21,7 @@
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{display:{Name:\"{\\\"text\\\":\\\"Lime\\\"}\"},SkullOwner:{Id:[I;-1708295443,1074900394,1990443587,-1019863502],Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjcyNWQ3OGJhMDlkN2E0YjkyNWMyYmQyMjM3ZTU5ZTVkYzgzYmVmMzJhNzAzOWMyZGE2ZGIzYjAxZTdjNmQ3In19fQ==\"}]}}}",
+              "tag": "{display:{Name:\"{\\\"text\\\":\\\"Turtle Plushie\\\"}\"},SkullOwner:{Id:[I;1554051074,-1757525105,-1159849462,-1086037152],Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZWFlOTAzNzEzN2I2Mjg4NDJhMjkzODBmODI4YzI2ZWM2NjE4NjY0YzM4MDJjOTk0NWY0YzAxYTk0M2FhNDBlOSJ9fX0=\"}]}}}",
               "add": false
             }
           ],
@@ -32,7 +32,7 @@
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{display:{Name:\"{\\\"text\\\":\\\"Key Lime Pie\\\"}\"},SkullOwner:{Id:[I;-2054797897,1552567232,-1533762427,-978661815],Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNGE1ZTdjZTNmM2FiYjcxMjZmZDM1MjFiOTBhYjc3ZTU5Njk0MDFkZGQxYjg0NmU2YmNkMzYyMjY3ZjRmMDZkZSJ9fX0=\"}]}}}",
+              "tag": "{display:{Name:\"{\\\"text\\\":\\\"Kiwi\\\"}\"},SkullOwner:{Id:[I;-586302015,556271428,-1329529723,-105000223],Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjAxNTVkNDFlNjg2NTc3M2YyYWQyZTlmZTRjZjgyZjJmODgwZTU0YWZlNzFhMTNiYmUyMzkwZDRhYTgxZjRmNCJ9fX0=\"}]}}}",
               "add": false
             }
           ],

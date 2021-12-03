@@ -11,30 +11,6 @@
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{display:{Name:\"{\\\"text\\\":\\\"Cheese\\\"}\"},SkullOwner:{Id:[I;1014281082,-50772094,-1324209230,-244709798],Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzZjMDFiZmZlY2ZkYWI2ZDNjMGYxYTdjNmRmNmFhMTkzNmYyYWE3YTUxYjU0YTRkMzIzZTFjYWNiYzUzOSJ9fX0=\"}]}}}",
-              "add": false
-            }
-          ],
-          "name": "minecraft:player_head"
-        },
-        {
-          "type": "minecraft:item",
-          "weight": 4,
-          "functions": [
-            {
-              "function": "minecraft:set_nbt",
-              "tag": "{display:{Name:\"{\\\"text\\\":\\\"Garlic\\\"}\"},SkullOwner:{Id:[I;1010335214,337002596,-1592746432,2140907966],Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvY2E1YjE1MzliNjk4YzIxN2NiM2I0MTYzYTAwZTMzNjEzMTA0MzMxMWI4M2IwOGRlMDJmMWE2NjUwNWJlNWIyOSJ9fX0=\"}]}}}",
-              "add": false
-            }
-          ],
-          "name": "minecraft:player_head"
-        },
-        {
-          "type": "minecraft:item",
-          "weight": 4,
-          "functions": [
-            {
-              "function": "minecraft:set_nbt",
               "tag": "{display:{Name:\"{\\\"text\\\":\\\"Red Onion\\\"}\"},SkullOwner:{Id:[I;569711604,-1928077983,-51774506,348583651],Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTI4YTZiYzhlNDllM2RkNjRkNWZkOTZhZTM2OTczMjIyZTQ5MjFjOGQ0N2I4YjFiYjlmZmZjYWM0NzAzNzgzIn19fQ==\"}]}}}",
               "add": false
             }
@@ -43,11 +19,47 @@
         },
         {
           "type": "minecraft:item",
-          "weight": 4,
+          "weight": 2,
           "functions": [
             {
               "function": "minecraft:set_nbt",
               "tag": "{display:{Name:\"{\\\"text\\\":\\\"Lemon\\\"}\"},SkullOwner:{Id:[I;1130556436,-863615501,-1178139477,-243530431],Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTY2ZmM1OGE2Mjk2YzQ0MGM0YTI3OGFjZjg0YWE2ZjllMjEyMTU1MWJmOGFjNjliZmFhZDdlYzZhYzljMWY4In19fQ==\"}]}}}",
+              "add": false
+            }
+          ],
+          "name": "minecraft:player_head"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 2,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:\"{\\\"text\\\":\\\"Lime\\\"}\"},SkullOwner:{Id:[I;-1708295443,1074900394,1990443587,-1019863502],Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjcyNWQ3OGJhMDlkN2E0YjkyNWMyYmQyMjM3ZTU5ZTVkYzgzYmVmMzJhNzAzOWMyZGE2ZGIzYjAxZTdjNmQ3In19fQ==\"}]}}}",
+              "add": false
+            }
+          ],
+          "name": "minecraft:player_head"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 4,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:\"{\\\"text\\\":\\\"Grapes\\\"}\"},SkullOwner:{Id:[I;1787897658,660555017,-1213533806,-2096986500],Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDUxMWE1ZWU0ZDE3NjgyYTI1ZjdlOGE1ZGE2ZmY3Y2Q5YWQ5YzQ4NDRjMjU4YTZkZTIzZTdmODRmMjdmOWI0In19fQ==\"}]}}}",
+              "add": false
+            }
+          ],
+          "name": "minecraft:player_head"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 4,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:\"{\\\"text\\\":\\\"Raw Fish\\\"}\"},SkullOwner:{Id:[I;2001614087,1150501068,-1425364622,902363271],Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZmVkMjljMGI0ZjE3NWI2NDBhZmNhYjQ0NWJkMTI5YzhmYjhiYTdjNDY1MTJjYTU2M2YxMDExOTU5MzJhZDdmNCJ9fX0=\"}]}}}",
               "add": false
             }
           ],
@@ -103,7 +115,7 @@
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{display:{Name:\"{\\\"text\\\":\\\"Pineapple Jam\\\"}\"},SkullOwner:{Id:[I;-1559130298,641027791,-1193861644,-1782555296],Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTAxOTJmMzMzNzNiOTE0YTZlMmQ1YTIzYzBkYWE1ZGI1Zjc3MjA0NDcxYTM2YjYxNjFhZTU1NmQzZTY2MyJ9fX0=\"}]}}}",
+              "tag": "{display:{Name:\"{\\\"text\\\":\\\"Mustard\\\"}\"},SkullOwner:{Id:[I;-1559130298,641027791,-1193861644,-1782555296],Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTAxOTJmMzMzNzNiOTE0YTZlMmQ1YTIzYzBkYWE1ZGI1Zjc3MjA0NDcxYTM2YjYxNjFhZTU1NmQzZTY2MyJ9fX0=\"}]}}}",
               "add": false
             }
           ],

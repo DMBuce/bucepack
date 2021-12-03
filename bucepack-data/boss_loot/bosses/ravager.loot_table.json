@@ -10,7 +10,7 @@
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{display:{Name:\"{\\\"text\\\":\\\"Jar of Enchanting\\\"}\"},SkullOwner:{Id:[I;-621177166,1552695608,-1728092707,54808766],Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNTVjOWQ3MzI5YjNiOTE4ZDBjMTU2ZWU2YzFkZDQxZTQzMjkyZmNhMGMzYTNkYWM0MGRkNjQzYTYzZjBiNjU1YiJ9fX0=\"}]}}}",
+              "tag": "{display:{Name:\"{\\\"text\\\":\\\"Ravager Plushie\\\"}\"},SkullOwner:{Id:[I;760283871,51924963,-1317570921,-1074365155],Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTBiNDM0NjhhY2FiMDNlYjUxY2M1ODIwZTAyZWY1NjBkZTNjMzY1NzI0MWI2MjdiYjkzNWU4NGI1MGM4MDgwNCJ9fX0=\"}]}}}",
               "add": false
             }
           ],

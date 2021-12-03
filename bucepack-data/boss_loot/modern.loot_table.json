@@ -10,51 +10,7 @@
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{display:{Name:\"{\\\"text\\\":\\\"Kirby Plushie\\\"}\"},SkullOwner:{Id:[I;-1886112521,1122518316,-1408572502,1585545495],Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDliZjUwODMyNzZjODMxNzlhOTJjY2U2MWE5ZTZjYmIxZjdhMmJlOWU4NjNiMjUyYWNjOTQ5NWE5ZDVkYiJ9fX0=\"}]}}}",
-              "add": false
-            }
-          ],
-          "name": "minecraft:player_head"
-        },
-        {
-          "type": "minecraft:item",
-          "functions": [
-            {
-              "function": "minecraft:set_nbt",
               "tag": "{display:{Name:\"{\\\"text\\\":\\\"Goomba Plushie\\\"}\"},SkullOwner:{Id:[I;899182775,-269008023,-1418772201,-426558082],Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYWVjZjk0ZjRiY2JiZjZlYWRjYjI1YWEzZDA2OWFhNjc4ZWJkYjUyNDFlYjgyZThlMjY4ODljYWYzMjc1NTcwIn19fQ==\"}]}}}",
-              "add": false
-            }
-          ],
-          "name": "minecraft:player_head"
-        },
-        {
-          "type": "minecraft:item",
-          "functions": [
-            {
-              "function": "minecraft:set_nbt",
-              "tag": "{display:{Name:\"{\\\"text\\\":\\\"Boo Plushie\\\"}\"},SkullOwner:{Id:[I;447085501,-1911470460,-1965318894,-267200014],Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOWUzNzNiYTljNzIwYWRlZDZhODEwNDc4ZTVlNzRjN2Y3MDk2ODExYmY5YTNjMzkyM2RlOWI5OWVmOTkyY2MifX19\"}]}}}",
-              "add": false
-            }
-          ],
-          "name": "minecraft:player_head"
-        },
-        {
-          "type": "minecraft:item",
-          "functions": [
-            {
-              "function": "minecraft:set_nbt",
-              "tag": "{display:{Name:\"{\\\"text\\\":\\\"Mario Plushie\\\"}\"},SkullOwner:{Id:[I;1246996366,-735625143,-2032499124,-1101144149],Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYTgwNTFiMTkyZTk3NjJkNTVhOWJiYTg5NTM5Yzk2YzljOTY0MWMyMzZlZGExMDA2N2Q5MGVlYjhkZWU3MzM5MyJ9fX0=\"}]}}}",
-              "add": false
-            }
-          ],
-          "name": "minecraft:player_head"
-        },
-        {
-          "type": "minecraft:item",
-          "functions": [
-            {
-              "function": "minecraft:set_nbt",
-              "tag": "{display:{Name:\"{\\\"text\\\":\\\"Sheep Plushie\\\"}\"},SkullOwner:{Id:[I;-1342830472,-1047641779,-2049386701,-559634392],Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzJiNmFkYjNiNmU4M2MwNzRlN2QwZWJhZmYxNGQ2YWNiYmFiZWIwNjY5NGQ2ZWUzOGNjOGRkMWJmNjYzMGJjNiJ9fX0=\"}]}}}",
               "add": false
             }
           ],
@@ -76,17 +32,6 @@
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{display:{Name:\"{\\\"text\\\":\\\"Cow Plushie\\\"}\"},SkullOwner:{Id:[I;971125897,992560611,-1327156472,-1510837966],Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNWJjNGY3NDc3ZDZiNTk2OWRiNGM4MWEzMWIxY2I3ZTZmMzczMGRlMTliNTBmNzhjOTYyMTdiOWQzOTJmMDk3YiJ9fX0=\"}]}}}",
-              "add": false
-            }
-          ],
-          "name": "minecraft:player_head"
-        },
-        {
-          "type": "minecraft:item",
-          "functions": [
-            {
-              "function": "minecraft:set_nbt",
               "tag": "{display:{Name:\"{\\\"text\\\":\\\"Pikachu Plushie\\\"}\"},SkullOwner:{Id:[I;468294682,-1037941705,-1478048391,2051975118],Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYWYyYzM2Njc5NTVjZjkzMzFkOGFkMTY4OGRhMzI2YzNlMTZiZDNlOWQyMjhhOTVmZWEyZDM5Mjc3YTNiMTRhYiJ9fX0=\"}]}}}",
               "add": false
             }
@@ -98,40 +43,7 @@
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{display:{Name:\"{\\\"text\\\":\\\"Mailbox\\\"}\"},SkullOwner:{Id:[I;-1549076723,-1372699400,-1622350430,2088033157],Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjRiZDlkZDEyOGM5NGMxMGM5NDVlYWRhYTM0MmZjNmQ5NzY1ZjM3YjNkZjJlMzhmN2IwNTZkYzdjOTI3ZWQifX19\"}]}}}",
-              "add": false
-            }
-          ],
-          "name": "minecraft:player_head"
-        },
-        {
-          "type": "minecraft:item",
-          "functions": [
-            {
-              "function": "minecraft:set_nbt",
-              "tag": "{display:{Name:\"{\\\"text\\\":\\\"Toilet Paper\\\"}\"},SkullOwner:{Id:[I;828335800,-1573632106,-1357724785,-151558674],Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYmM4YzIyOTg1YjAzMzZmODE3ZmMzMDdjYmE2YzE1ZGE0ODRiZjIzNjFjNjBmNWEzM2U2YTk1NTdlZTJkIn19fQ==\"}]}}}",
-              "add": false
-            }
-          ],
-          "name": "minecraft:player_head"
-        },
-        {
-          "type": "minecraft:item",
-          "functions": [
-            {
-              "function": "minecraft:set_nbt",
               "tag": "{display:{Name:\"{\\\"text\\\":\\\"Toaster\\\"}\"},SkullOwner:{Id:[I;2133494270,1536052191,-1816174987,142808181],Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZmM0NWUzNDNhODMzZTNhMGEzZWU0YjFhMThiNjEyMjk2MDYwNmY0Y2JlMjVjYjk3MTkxNGJjZWViZDkzMmYzZCJ9fX0=\"}]}}}",
-              "add": false
-            }
-          ],
-          "name": "minecraft:player_head"
-        },
-        {
-          "type": "minecraft:item",
-          "functions": [
-            {
-              "function": "minecraft:set_nbt",
-              "tag": "{display:{Name:\"{\\\"text\\\":\\\"Clock\\\"}\"},SkullOwner:{Id:[I;-1259248099,-1894234353,-1511430720,-908045432],Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODQ3N2RhZmM4YzllYTA3OTk2MzMzODE3OTM4NjZkMTQ2YzlhMzlmYWQ0YzY2ODRlNzExN2Q5N2U5YjZjMyJ9fX0=\"}]}}}",
               "add": false
             }
           ],
@@ -197,7 +109,7 @@
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{display:{Name:\"{\\\"text\\\":\\\"Monitor\\\"}\"},SkullOwner:{Id:[I;2079889555,1253590486,-1317019815,-1137527347],Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjMzYmY4YzI4MmMwMmRmYThjMzBlMjdjYmJiMGQ5NjJlNzc5NDMyNjdkOWEwMTdkYzcwNWE0YzFmZTk1YyJ9fX0=\"}]}}}",
+              "tag": "{display:{Name:\"{\\\"text\\\":\\\"Monitor\\\"}\"},SkullOwner:{Id:[I;-1045686192,-1281537362,-1138915443,-966023514],Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzkzZGFmZGRlNjcxNWI4MmRmYWJiODg4ZDE4ZDNhN2NmNGM0NGVjNzdjMGM0NDA3OTVhODJjMmQxZDlmZGJhIn19fQ==\"}]}}}",
               "add": false
             }
           ],
@@ -219,7 +131,7 @@
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{display:{Name:\"{\\\"text\\\":\\\"Recycle Bin\\\"}\"},SkullOwner:{Id:[I;167905438,439502606,-1887052953,842697187],Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYzA3NDI0ZWZiMzQ4MWUyMjY4ZjFhNjQ0OWRlOTQzZTMxYmJmNzIxZTQzZGNlYTE5OTYxYWE5MzFjODFkYjU2OCJ9fX0=\"}]}}}",
+              "tag": "{display:{Name:\"{\\\"text\\\":\\\"Squid Plushie\\\"}\"},SkullOwner:{Id:[I;1560298352,-742506134,-2117049298,1523060216],Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNDljMmM5Y2U2N2ViNTk3MWNjNTk1ODQ2M2U2YzlhYmFiOGU1OTlhZGMyOTVmNGQ0MjQ5OTM2YjAwOTU3NjlkZCJ9fX0=\"}]}}}",
               "add": false
             }
           ],
@@ -230,7 +142,7 @@
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{display:{Name:\"{\\\"text\\\":\\\"Trash Can\\\"}\"},SkullOwner:{Id:[I;1828478726,1725844116,-2097169976,-516360791],Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjMyYzE0NzJhN2JjNjk3NWRlZDdjMGM1MTY5Njk1OWI4OWFmNjFiNzVhZTk1NGNjNDAzNmJjMzg0YjNiODMwMSJ9fX0=\"}]}}}",
+              "tag": "{display:{Name:\"{\\\"text\\\":\\\"Pokeball\\\"}\"},SkullOwner:{Id:[I;1332757900,-1896854226,-1673809577,-1276478423],Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTNlNjg3NjhmNGZhYjgxYzk0ZGY3MzVlMjA1YzNiNDVlYzQ1YTY3YjU1OGYzODg0NDc5YTYyZGQzZjRiZGJmOCJ9fX0=\"}]}}}",
               "add": false
             }
           ],
@@ -241,7 +153,7 @@
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{display:{Name:\"{\\\"text\\\":\\\"Pokeball\\\"}\"},SkullOwner:{Id:[I;79594529,-936227592,-2098881656,-669748866],Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDQzZDRiN2FjMjRhMWQ2NTBkZGY3M2JkMTQwZjQ5ZmMxMmQyNzM2ZmMxNGE4ZGMyNWMwZjNmMjlkODVmOGYifX19\"}]}}}",
+              "tag": "{display:{Name:\"{\\\"text\\\":\\\"Towels\\\"}\"},SkullOwner:{Id:[I;1645403077,-1355199707,-1482328559,-500862078],Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZWZkOGJlZDJkZmU0YzMyMTY4Yzk3MjE1NGVlYTMzNWE4MDQyZTlkNjRiODUwNzY3YzZlYTA0Y2U4Zjg1ZjEyYSJ9fX0=\"}]}}}",
               "add": false
             }
           ],
@@ -249,6 +161,7 @@
         },
         {
           "type": "minecraft:item",
+          "weight": 2,
           "functions": [
             {
               "function": "minecraft:set_nbt",

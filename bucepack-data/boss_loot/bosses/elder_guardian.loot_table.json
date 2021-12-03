@@ -10,7 +10,7 @@
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{display:{Name:\"{\\\"text\\\":\\\"Jar of Pufferfish\\\"}\"},SkullOwner:{Id:[I;179050314,-1693233975,-1733827507,-258087747],Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNWEzMTZkNTg1Yjc4OWI1ODJmMmQ5OWU4ZTZjYjJkNzA0MzNlODk5NmZhYjAyNGE3NGJjNzkwZTIyYWVkY2RlYiJ9fX0=\"}]}}}",
+              "tag": "{display:{Name:\"{\\\"text\\\":\\\"Fish Head\\\"}\"},SkullOwner:{Id:[I;1068708244,-199802554,-1982071896,649342606],Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvY2M2ZWEzOTQzNTgxOGNjMTBjOTg0ZjE5MzVkYzZhNTRkZjFlNTQ3ZWVkZTM3ODljZmFhZmQyMDNjOWZhNmQxMyJ9fX0=\"}]}}}",
               "add": false
             }
           ],
@@ -21,7 +21,7 @@
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{display:{Name:\"{\\\"text\\\":\\\"Beach Ball\\\"}\"},SkullOwner:{Id:[I;-1569807234,664424082,-1393168100,1866424833],Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNWE1YWIwNWVhMjU0YzMyZTNjNDhmM2ZkY2Y5ZmQ5ZDc3ZDNjYmEwNGU2YjVlYzJlNjhiM2NiZGNmYWMzZmQifX19\"}]}}}",
+              "tag": "{display:{Name:\"{\\\"text\\\":\\\"Clam\\\"}\"},SkullOwner:{Id:[I;-1923804258,1369391695,-1438831921,642774059],Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYWQ4ODRhZTNkYzk2YmRmMmQ0Zjk4ZDQzOTVjZjVlMDRiYWMzODQ5NTAyODI0ODZlNGEyYjNlMWZhN2NiMThjMCJ9fX0=\"}]}}}",
               "add": false
             }
           ],
@@ -32,7 +32,7 @@
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{display:{Name:\"{\\\"text\\\":\\\"Coconut\\\"}\"},SkullOwner:{Id:[I;589452589,922449888,-585502813,-1629290705],Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjExNmI5ZDhkZjM0NmEyNWVkZDA1Zjg0MmU3YTkzNDViZWFmMTZkY2E0MTE4YWJmNWE2OGM3NWJjYWFlMTAifX19\"}]}}}",
+              "tag": "{display:{Name:\"{\\\"text\\\":\\\"Coconut\\\"}\"},SkullOwner:{Id:[I;-1567745914,-2029830026,-1372035745,-614386987],Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDRiNTRiYzM0OTgzOWY4ZmI4NWIwNDA3ZjQ5YjdlNmM3NTg0ZGRhM2Y3YzNiMmE1YjQxNjRlNWY3OTQ0OWI3NiJ9fX0=\"}]}}}",
               "add": false
             }
           ],
