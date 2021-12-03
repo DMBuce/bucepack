@@ -520,25 +520,6 @@ shearless_FILES := $(DEFAULT_DATA_FILES) \
 	data/minecraft/loot_tables/blocks/weeping_vines_plant.json \
 	data/bucepack/advancements/shearless.json \
 
-mixed_crafting_FILES := $(DEFAULT_DATA_FILES) \
-	data/minecraft/recipes/bed.json \
-	data/minecraft/recipes/dispenser.json \
-	data/minecraft/recipes/dropper.json \
-	data/minecraft/recipes/lever.json \
-	data/minecraft/recipes/observer.json \
-	data/minecraft/recipes/piston.json \
-	data/minecraft/recipes/wooden_boat.json \
-	data/minecraft/recipes/wooden_button.json \
-	data/minecraft/recipes/wooden_door.json \
-	data/minecraft/recipes/wooden_fence.json \
-	data/minecraft/recipes/wooden_fence_gate.json \
-	data/minecraft/recipes/wooden_pressure_plate.json \
-	data/minecraft/recipes/wooden_sign.json \
-	data/minecraft/recipes/wooden_trapdoor.json \
-	data/minecraft/tags/items/stone_crafting_materials.json \
-	data/minecraft/tags/items/stone_tool_materials.json \
-	data/bucepack/advancements/mixed_crafting.json
-
 breeding_overhaul_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell find bucepack-data/breeding_overhaul -type f | ./bin/ext2dir) \
 	data/minecraft/tags/functions/load-breeding_overhaul.json \
@@ -1044,11 +1025,6 @@ mineable.zip: $(mineable_FILES)
 	zip $@ pack.png pack.mcmeta $^
 
 shearless.zip: $(shearless_FILES)
-	cp meta/$(@:.zip=.png) pack.png
-	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
-	zip $@ pack.png pack.mcmeta $^
-
-mixed_crafting.zip: $(mixed_crafting_FILES)
 	cp meta/$(@:.zip=.png) pack.png
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^
