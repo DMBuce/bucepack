@@ -26,7 +26,7 @@ pools:
       - { type: item, weight: 5,  min: 4,  max: 12, item: golden_carrot }
       - { type: item, weight: 5,  min: 8,  max: 16, item: blackstone }
       - { type: item, weight: 5,  min: 2,  max: 8,  item: gold_ingot }
-      - { type: potion, weight: 1, item: splash_potion, effect: fire_resistance }
+      - { type: item, weight: 1, potion: fire_resistance, item: splash_potion }
       - { type: item, weight: 1,                    item: enchanted_golden_apple }
       - { type: item, weight: 1,  min: 1,  max: 2,  item: gold_block }
   - rolls: 1
