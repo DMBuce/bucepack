@@ -1,15 +1,17 @@
 pools:
   - rolls: { min: 1, max: 3 }
     entries:
-      - { type: item, weight: 20,                  item: zombie_head }
+      - { type: item, weight: 10, item: iron_shovel, enchant_lvl: { min: 20, max: 24 } }
+      - { type: item, weight: 10, item: iron_axe,    enchant_lvl: { min: 20, max: 24 } }
       - { type: item, weight: 15,                  item: golden_apple }
       - { type: item, weight: 2,                   item: enchanted_golden_apple }
-      - { type: item, weight: 2,                   item: music_disc_otherside }
+      - { type: item, weight: 2,  min: 8, max: 16, item: petrified_oak_slab }
       - { type: tag,  weight: 30, expand: true,    tag: music_discs }
-      - { type: item, weight: 20, enchant_rand: [], item: shield }
-      - { type: item, weight: 10,                  item: creeper_head }
-      - { type: item, weight: 15,                  item: skeleton_skull }
-      - { type: item, weight: 5,  min: 8, max: 16, item: petrified_oak_slab }
+      - { type: item, weight: 10, enchant_rand: [], item: shield }
+      - { type: item, weight: 10, item: iron_sword, enchant_lvl: { min: 20, max: 24 } }
+      - { type: item, weight: 10,                  item: skeleton_skull }
+      - { type: item, weight: 15,                  item: zombie_head }
+      - { type: item, weight: 5,                   item: creeper_head }
       - { type: loot_table, weight: 10, table: loot_overhaul/ench_book }
   - rolls: { min: 1, max: 4 }
     entries:

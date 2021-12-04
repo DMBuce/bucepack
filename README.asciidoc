@@ -712,8 +712,8 @@ village chests, and petrified oak slabs in plains village chests. Petrified
 slabs also generate in dungeons. Infested bricks spawn in stronghold chests.
 Light blocks spawn in woodland mansions.
 
-This datapack is not compatible with other datapacks that modify the chest or
-fishing loot tables.
+This datapack is not compatible with other datapacks that modify the chest,
+fishing, or bartering loot tables.
 
 Download: https://github.com/DMBuce/bucepack/releases
 
