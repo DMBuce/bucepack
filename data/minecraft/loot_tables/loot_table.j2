@@ -145,20 +145,6 @@
           "weight": {{entry.weight}}
           {%- endif %}
         }{{ "," if not loop.last }}
-        {%- elif entry.type == "potion" %}
-        {
-          "type": "minecraft:item",
-          {%- if entry.weight != 1 %}
-          "weight": {{entry.weight}},
-          {%- endif %}
-          "functions": [
-            {
-              "function": "minecraft:set_nbt",
-              "tag": "{Potion:\"minecraft:{{entry.effect}}\"}"
-            }
-          ],
-          "name": "minecraft:{{ entry.item if entry.item is defined else "potion" }}"
-        }{{ "," if not loop.last }}
         {%- elif entry.type == "explorer_map" %}
         {
           "type": "minecraft:item",
