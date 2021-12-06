@@ -310,10 +310,10 @@ them, craft them into planks, stairs, slabs, and sticks.
 
 Also lets you craft smooth and cracked stone variants in the stonecutter.
 
-Also makes crafting table output match the stonecutter recipes. Craft 6 planks
-into 6 stairs instead of just 4, and 4 logs into 4 wood instead of just 3.
-
 image::https://i.imgur.com/vJddlZU.png[More Cutting]
+
+In addition, the crafting table output for stairs, wood, and hyphae matches
+the stonecutter recipes.
 
 Download: https://github.com/DMBuce/bucepack/releases
 
