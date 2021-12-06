@@ -3,6 +3,6 @@
   "ingredient": {
     "item": "minecraft:acacia_planks"
   },
-  "result": "minecraft:acacia_slab",
-  "count": 2
+  "result": "minecraft:acacia_stairs",
+  "count": 1
 }
