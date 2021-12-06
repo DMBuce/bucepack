@@ -2,7 +2,7 @@
   "type": "minecraft:stonecutting",
   "ingredient": [
     { "item": "minecraft:warped_planks" }
-  ]
+  ],
   "result": "minecraft:warped_slab",
-  "count": 
+  "count": 2
 }

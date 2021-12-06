@@ -15,9 +15,9 @@ for logtype in $logtypes; do
 		for input in $inputs; do
 			echo "    { \"item\": \"minecraft:${input//%s/$logtype}\" },"
 		done | sed '$s/,$//' >> "$file"
-		echo "  ]
+		echo "  ],
   \"result\": \"minecraft:${output//%s/$logtype}\",
-  \"count\": $count
+  \"count\": $num
 }" >> "$file"
 		
 	done <<-EOF
@@ -42,9 +42,9 @@ for stemtype in $stemtypes; do
 		for input in $inputs; do
 			echo "    { \"item\": \"minecraft:${input//%s/$stemtype}\" },"
 		done | sed '$s/,$//' >> "$file"
-		echo "  ]
+		echo "  ],
   \"result\": \"minecraft:${output//%s/$stemtype}\",
-  \"count\": $count
+  \"count\": $num
 }" >> "$file"
 		
 	done <<-EOF
@@ -67,7 +67,7 @@ echo '{
 for input in {oak,spruce,birch,jungle,acacia,dark_oak,crimson,warped}_planks; do
 	echo "    { \"item\": \"minecraft:$input\" },"
 done | sed '$s/,$//' >> "$file"
-echo "  ]
+echo "  ],
   \"result\": \"minecraft:stick\",
   \"count\": 2
 }" >> "$file"
@@ -83,7 +83,7 @@ for input in \
 do
 	echo "    { \"item\": \"minecraft:$input\" },"
 done | sed '$s/,$//' >> "$file"
-echo "  ]
+echo "  ],
   \"result\": \"minecraft:stick\",
   \"count\": 8
 }" >> "$file"

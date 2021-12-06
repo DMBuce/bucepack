@@ -4,7 +4,7 @@
     { "item": "minecraft:acacia_log" },
     { "item": "minecraft:acacia_wood" },
     { "item": "minecraft:stripped_acacia_log" }
-  ]
+  ],
   "result": "minecraft:stripped_acacia_wood",
-  "count": 
+  "count": 1
 }

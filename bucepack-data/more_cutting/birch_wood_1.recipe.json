@@ -2,7 +2,7 @@
   "type": "minecraft:stonecutting",
   "ingredient": [
     { "item": "minecraft:birch_log" }
-  ]
+  ],
   "result": "minecraft:birch_wood",
-  "count": 
+  "count": 1
 }

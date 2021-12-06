@@ -305,10 +305,15 @@ Simple data packs that make Minecraft life a little easier.
 
 === More Cutting
 
-Lets you make wood slabs & stairs and smooth & cracked variants in the
-stonecutter.
+Lets you craft wood variants in the stonecutter. Turn logs into wood, strip
+them, craft them into planks, stairs, slabs, and sticks.
 
-image::https://i.imgur.com/vYQSLNB.png[More Cutting]
+Also lets you craft smooth and cracked stone variants in the stonecutter.
+
+Also makes crafting table output match the stonecutter recipes. Craft 6 planks
+into 6 stairs instead of just 4, and 4 logs into 4 wood instead of just 3.
+
+image::https://i.imgur.com/vJddlZU.png[More Cutting]
 
 Download: https://github.com/DMBuce/bucepack/releases
 
@@ -1384,7 +1389,7 @@ Add new plants to Gardener Endermen and Shearless packs
 Add new ores to Ore Types
 Add new End blocks to Dragonproof
 Add new potions to Brewing Guide
-Add new smooth, cracked, and plank blocks to stonecutter
+Add new smooth, cracked, wood, slab, and stair blocks to stonecutter
 
 HOW TO UPDATE LOOT TABLES AFTER MINECRAFT UPDATES
 =================================================

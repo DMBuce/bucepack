@@ -9,7 +9,7 @@
     { "item": "minecraft:dark_oak_planks" },
     { "item": "minecraft:crimson_planks" },
     { "item": "minecraft:warped_planks" }
-  ]
+  ],
   "result": "minecraft:stick",
   "count": 2
 }

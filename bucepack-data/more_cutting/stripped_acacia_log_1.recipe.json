@@ -2,7 +2,7 @@
   "type": "minecraft:stonecutting",
   "ingredient": [
     { "item": "minecraft:acacia_log" }
-  ]
+  ],
   "result": "minecraft:stripped_acacia_log",
-  "count": 
+  "count": 1
 }
