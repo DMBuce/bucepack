@@ -4,9 +4,9 @@
     "item": "minecraft:rabbit_foot"
   },
   "addition": {
-    "item": "minecraft:leather_leggings"
+    "item": "minecraft:leather_boots"
   },
   "result": {
-    "item": "minecraft:leather_leggings"
+    "item": "minecraft:leather_boots"
   }
 }

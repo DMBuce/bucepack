@@ -38,7 +38,7 @@
 						"entity": "this",
 						"predicate": {
 							"equipment": {
-								"legs": {
+								"feet": {
 									"nbt": "{bounding:1b}"
 								}
 							}
@@ -78,7 +78,7 @@
 						"entity": "this",
 						"predicate": {
 							"equipment": {
-								"legs": {
+								"feet": {
 									"nbt": "{bounding:1b}"
 								}
 							}
