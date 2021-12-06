@@ -979,7 +979,7 @@ a faint trail of smoke coming off its wingtips can be seen.
 When an invisible phantom hits a player, it disappears with a shriek in a puff
 of smoke.
 
-When a player hits a phantom, all nearby phantoms turn visible.
+When a player hits a phantom, it turns visible.
 
 All the above effects only apply to phantoms in the overworld.
 
@@ -1014,8 +1014,8 @@ Adds phantoms to the dragon fight.
 
 Whenever a player damages the dragon, each end crystal summons a phantom.
 
-When a player hits a phantom, all phantoms near that player turn invisible,
-and only their eyes and a faint trail of smoke coming off their wingtips can
+When a player hits a phantom, it turns invisible,
+and only its eyes and a faint trail of smoke coming off its wingtips can
 be seen.
 
 When a phantom hits a player, it turns visible.
