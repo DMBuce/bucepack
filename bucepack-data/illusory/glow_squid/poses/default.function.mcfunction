@@ -1,7 +1,7 @@
 # switches armor stand pose from cancan_b to default
 
-# debug
-say default
+## debug
+# say default
 
 # set pose
 data modify entity @s Pose set value {}
