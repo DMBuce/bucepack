@@ -6,7 +6,8 @@ RESOURCEPACKFILES = painting_overhaul.zip note_guide.zip \
 	classic_oak.zip classic_netherrack.zip classic_lava.zip classic_gravel.zip \
 	classic_obsidian.zip classic_lapis.zip classic_rose.zip classic_food.zip \
 	classic_moo.zip classic_twang.zip classic_sploosh.zip classic_crunch.zip \
-	spellsmithing_guide.zip
+	spellsmithing_guide.zip \
+	more_cutting.zip
 DATAPACKFILES = gardener_endermen.zip climbable.zip \
 	no_treasure_maps.zip fortunate_jungle.zip fortunate_crops.zip dragonproof.zip \
 	mineable.zip shearless.zip breeding_overhaul.zip \
@@ -244,7 +245,7 @@ classic_lapis_FILES := $(DEFAULT_RESOURCE_FILES) \
 
 classic_rose_FILES := $(DEFAULT_RESOURCE_FILES) \
 	assets/minecraft/textures/block/poppy.png \
-	assets/minecraft/lang/en_us.json
+	assets/minecraft/lang/en_us-classic_rose.json
 
 classic_food_FILES := $(DEFAULT_RESOURCE_FILES) \
 	assets/minecraft/textures/item/apple.png \
@@ -545,6 +546,7 @@ phantasmal_end_FILES := $(DEFAULT_DATA_FILES) \
 
 more_cutting_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell find bucepack-data/more_cutting -type f | ./bin/ext2dir) \
+	assets/minecraft/lang/en_us-more_cutting.json \
 
 more_shulker_shells_FILES := $(DEFAULT_DATA_FILES) \
 	data/minecraft/loot_tables/entities/shulker.json \
@@ -634,6 +636,11 @@ lichdom_FILES := $(DEFAULT_DATA_FILES) \
 	data/lichdom/advancements/drink_blood_4.json
 
 test_FILES = \
+	assets/minecraft/models/block/dispenser.json \
+	assets/minecraft/textures/block/dispenser_front.png \
+	assets/minecraft/textures/block/dispenser_side.png \
+	assets/minecraft/textures/block/iron_door_bottom.png \
+	assets/minecraft/textures/block/iron_door_top.png \
 	# nothing
 
 .PHONY: all
@@ -852,6 +859,7 @@ classic_rose.zip: $(classic_rose_FILES)
 	cp meta/$(@:.zip=.png) pack.png
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^
+	printf "@ assets/minecraft/lang/en_us-classic_rose.json\n@=assets/minecraft/lang/en_us.json\n" | zipnote -w $@
 
 classic_food.zip: $(classic_food_FILES)
 	cp meta/$(@:.zip=.png) pack.png
@@ -1048,6 +1056,7 @@ more_cutting.zip: $(more_cutting_FILES)
 	cp meta/$(@:.zip=.png) pack.png
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^
+	printf "@ assets/minecraft/lang/en_us-more_cutting.json\n@=assets/minecraft/lang/en_us.json\n" | zipnote -w $@
 
 more_shulker_shells.zip: $(more_shulker_shells_FILES)
 	cp meta/$(@:.zip=.png) pack.png

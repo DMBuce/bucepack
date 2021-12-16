@@ -221,6 +221,11 @@ Classic Gravel reverts gravel to its beta texture from before 1.0.0.
 Classic Lapis reverts the lapis block to its smooth texture from before 1.6.1.
 
 Classic Rose reverts the poppy to its rose texture from before 1.7.2.
+It also renames Poppies to Roses when
+American English is the selected language in the options menu.
+If you would like to add
+support for renaming them in other languages, please create a Pull
+Request if you know how or a GitHub Issue if you don't.
 
 image::https://i.imgur.com/9o75jWL.png[Classic Blocks]
 
@@ -314,6 +319,12 @@ image::https://i.imgur.com/vJddlZU.png[More Cutting]
 
 In addition, the crafting table output for stairs, wood, and hyphae matches
 the stonecutter recipes.
+
+When installed as a resource pack, Stonecutters are renamed to Saws when
+American English is the selected language in the options menu.
+If you would like to add
+support for renaming them in other languages, please create a Pull
+Request if you know how or a GitHub Issue if you don't.
 
 Download: https://github.com/DMBuce/bucepack/releases
 
