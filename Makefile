@@ -7,12 +7,12 @@ RESOURCEPACKFILES = painting_overhaul.zip note_guide.zip \
 	classic_obsidian.zip classic_lapis.zip classic_rose.zip classic_food.zip \
 	classic_moo.zip classic_twang.zip classic_sploosh.zip classic_crunch.zip \
 	spellsmithing_guide.zip \
-	more_cutting.zip
+	more_cutting.zip copper_tech.zip
 DATAPACKFILES = gardener_endermen.zip climbable.zip \
 	no_treasure_maps.zip fortunate_jungle.zip fortunate_crops.zip dragonproof.zip \
 	mineable.zip shearless.zip breeding_overhaul.zip \
 	phantasmal.zip phantasmal_end.zip glow_squid_glamers.zip invis_squid_glamer.zip \
-	more_cutting.zip lose_hp_xp.zip \
+	more_cutting.zip copper_tech.zip lose_hp_xp.zip \
 	loot_overhaul.zip plant_loot.zip relic_loot.zip mythic_relics.zip \
 	more_shulker_shells.zip boss_loot.zip seasonal_loot.zip \
 	food_loot.zip decor_loot.zip modern_loot.zip \
@@ -548,6 +548,15 @@ more_cutting_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell find bucepack-data/more_cutting -type f | ./bin/ext2dir) \
 	assets/minecraft/lang/en_us-more_cutting.json \
 
+copper_tech_FILES := $(DEFAULT_DATA_FILES) \
+	$(shell find bucepack-data/copper_tech -type f | ./bin/ext2dir) \
+	assets/minecraft/lang/en_us-copper_tech.json \
+	assets/minecraft/models/block/dispenser.json \
+	assets/minecraft/textures/block/dispenser_front.png \
+	assets/minecraft/textures/block/dispenser_side.png \
+	assets/minecraft/textures/block/iron_door_bottom.png \
+	assets/minecraft/textures/block/iron_door_top.png \
+
 more_shulker_shells_FILES := $(DEFAULT_DATA_FILES) \
 	data/minecraft/loot_tables/entities/shulker.json \
 	data/bucepack/advancements/more_shulker_shells.json
@@ -636,11 +645,6 @@ lichdom_FILES := $(DEFAULT_DATA_FILES) \
 	data/lichdom/advancements/drink_blood_4.json
 
 test_FILES = \
-	assets/minecraft/models/block/dispenser.json \
-	assets/minecraft/textures/block/dispenser_front.png \
-	assets/minecraft/textures/block/dispenser_side.png \
-	assets/minecraft/textures/block/iron_door_bottom.png \
-	assets/minecraft/textures/block/iron_door_top.png \
 	# nothing
 
 .PHONY: all
@@ -1057,6 +1061,12 @@ more_cutting.zip: $(more_cutting_FILES)
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^
 	printf "@ assets/minecraft/lang/en_us-more_cutting.json\n@=assets/minecraft/lang/en_us.json\n" | zipnote -w $@
+
+copper_tech.zip: $(copper_tech_FILES)
+	cp meta/$(@:.zip=.png) pack.png
+	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
+	zip $@ pack.png pack.mcmeta $^
+	printf "@ assets/minecraft/lang/en_us-copper_tech.json\n@=assets/minecraft/lang/en_us.json\n" | zipnote -w $@
 
 more_shulker_shells.zip: $(more_shulker_shells_FILES)
 	cp meta/$(@:.zip=.png) pack.png
