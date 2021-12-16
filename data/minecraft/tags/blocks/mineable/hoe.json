@@ -1,6 +1,8 @@
 {
   "replace": false,
   "values": [
+    "minecraft:player_head",
+    "minecraft:player_wall_head",
 	"minecraft:white_carpet",
 	"minecraft:orange_carpet",
 	"minecraft:magenta_carpet",
