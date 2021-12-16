@@ -532,8 +532,8 @@ Build: `make boss_loot.zip`
 
 ==== Decorative Loot
 
-This is an addon pack for the <<boss-loot,Boss Loot>> datapack that
-adds decorative blocks to boss loot.
+This is an addon pack that adds decorative drops to the
+<<boss-loot,Boss Loot>> datapack.
 
 .Click for a summary of decorative drops
 [%collapsible]
@@ -561,8 +561,8 @@ Build: `make decor_loot.zip`
 
 ==== Modern Loot
 
-This is an addon pack for the <<boss-loot,Boss Loot>> datapack that
-adds modern blocks to boss loot.
+This is an addon pack that adds modern blocks to the
+<<boss-loot,Boss Loot>> datapack.
 
 .Click for a summary of modern drops
 [%collapsible]
@@ -592,8 +592,8 @@ Build: `make modern_loot.zip`
 
 ==== Food Loot
 
-This is an addon pack for the <<boss-loot,Boss Loot>> datapack that
-adds food blocks to boss loot.
+This is an addon pack that adds food drops to the
+<<boss-loot,Boss Loot>> datapack.
 Some of the food only drops during dawn, daytime, dusk, or nighttime.
 
 .Click for a summary of food drops
@@ -614,8 +614,9 @@ Build: `make food_loot.zip`
 
 ==== Seasonal Loot
 
-This is an addon pack for the <<boss-loot,Boss Loot>> datapack that
-adds blocks to boss loot based on the month and season within minecraft.
+This is an addon pack that adds seasonal drops to the
+<<boss-loot,Boss Loot>> datapack.
+The drops are based on the month and season within minecraft.
 A minecraft month is equal to one lunar cycle,
 which is equivalent to 8 in-game days.
 A season is three minecraft months, i.e. 24 in-game days.
