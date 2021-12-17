@@ -561,8 +561,9 @@ copper_tech_FILES := $(DEFAULT_DATA_FILES) \
 	assets/minecraft/models/block/polished_blackstone_button_pressed.json \
 	assets/minecraft/models/block/polished_blackstone_pressure_plate_down.json \
 	assets/minecraft/models/block/polished_blackstone_pressure_plate.json \
-	assets/minecraft/textures/block/activator_rail_on.png \
-	assets/minecraft/textures/block/activator_rail.png \
+	assets/minecraft/textures/block/powered_rail_on.png \
+	assets/minecraft/textures/block/powered_rail.png \
+	assets/minecraft/textures/block/copper_block_lever.png \
 	assets/minecraft/textures/block/detector_rail_on.png \
 	assets/minecraft/textures/block/detector_rail.png \
 	assets/minecraft/textures/block/dispenser_front.png \
@@ -574,6 +575,8 @@ copper_tech_FILES := $(DEFAULT_DATA_FILES) \
 	assets/minecraft/textures/block/piston_side.png \
 	assets/minecraft/textures/block/piston_top.png \
 	assets/minecraft/textures/block/piston_top_sticky.png \
+	#assets/minecraft/textures/block/activator_rail_on.png \
+	#assets/minecraft/textures/block/activator_rail.png \
 
 more_shulker_shells_FILES := $(DEFAULT_DATA_FILES) \
 	data/minecraft/loot_tables/entities/shulker.json \

@@ -1,8 +1,8 @@
 {
     "ambientocclusion": false,
     "textures": {
-        "particle": "block/copper_block",
-        "base": "block/copper_block",
+        "particle": "block/copper_block_lever",
+        "base": "block/copper_block_lever",
         "lever": "block/lever"
     },
     "elements": [
