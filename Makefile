@@ -2,7 +2,7 @@
 RESOURCEPACKFILES = painting_overhaul.zip note_guide.zip \
 	brew_guide.zip brew_guide_darkmode.zip \
 	tech_arrows.zip ravager.zip villager_mech.zip pig_armor.zip ore_types.zip \
-	discreet_pumpkin.zip stickier_piston.zip \
+	discreet_pumpkin.zip \
 	classic_oak.zip classic_netherrack.zip classic_lava.zip classic_gravel.zip \
 	classic_obsidian.zip classic_lapis.zip classic_rose.zip classic_food.zip \
 	classic_moo.zip classic_twang.zip classic_sploosh.zip classic_crunch.zip \
@@ -552,10 +552,19 @@ copper_tech_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell find bucepack-data/copper_tech -type f | ./bin/ext2dir) \
 	assets/minecraft/lang/en_us-copper_tech.json \
 	assets/minecraft/models/block/dispenser.json \
+	assets/minecraft/models/block/dropper.json \
+	assets/minecraft/textures/block/activator_rail_on.png \
+	assets/minecraft/textures/block/activator_rail.png \
+	assets/minecraft/textures/block/detector_rail_on.png \
+	assets/minecraft/textures/block/detector_rail.png \
 	assets/minecraft/textures/block/dispenser_front.png \
 	assets/minecraft/textures/block/dispenser_side.png \
+	assets/minecraft/textures/block/dropper_front.png \
 	assets/minecraft/textures/block/iron_door_bottom.png \
 	assets/minecraft/textures/block/iron_door_top.png \
+	assets/minecraft/textures/block/piston_side.png \
+	assets/minecraft/textures/block/piston_top.png \
+	assets/minecraft/textures/block/piston_top_sticky.png \
 
 more_shulker_shells_FILES := $(DEFAULT_DATA_FILES) \
 	data/minecraft/loot_tables/entities/shulker.json \
