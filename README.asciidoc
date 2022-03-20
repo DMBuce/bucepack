@@ -1101,7 +1101,7 @@ the redstone components have copper in their recipes.
 **Copper Pistons** reskins pistons,
 and **More Copper Tech** reskins complex redstone components.
 
-image::https://i.imgur.com/U1wIfbI.png[Copper Tech]
+image::https://i.imgur.com/3fGJg0c.png[Copper Tech]
 
 .Click for a summary of Copper Tech redstone components
 [%collapsible]
