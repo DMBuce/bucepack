@@ -2,7 +2,7 @@
 RESOURCEPACKFILES = painting_overhaul.zip note_guide.zip \
 	brew_guide.zip brew_guide_darkmode.zip \
 	tech_arrows.zip ravager.zip villager_mech.zip pig_armor.zip ore_types.zip \
-	discreet_pumpkin.zip \
+	discreet_pumpkin.zip stickier_piston.zip \
 	classic_oak.zip classic_netherrack.zip classic_lava.zip classic_gravel.zip \
 	classic_obsidian.zip classic_lapis.zip classic_rose.zip classic_food.zip \
 	classic_moo.zip classic_twang.zip classic_sploosh.zip classic_crunch.zip \
