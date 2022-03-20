@@ -364,13 +364,13 @@ Picks:
 * Redstone Lamp
 * Lever
 * Smithing Table
+* Skulls
+* Heads
 
 Axes:
 
 * Cactus
 * Beds
-* Skulls
-* Heads
 * Cakes
 * Honeycomb Blocks
 ====
