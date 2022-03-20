@@ -1084,6 +1084,14 @@ Download: https://github.com/DMBuce/bucepack/releases
 
 Build: `make aggro_bastions.zip`
 
+== Data Resource Packs
+
+These packs can be installed as a resource pack, a data pack, or both.
+
+=== Copper Tech
+
+https://i.imgur.com/FvY3I6K.png
+
 == Legacy Data Packs
 
 These data packs haven't been updated for the most recent version of
