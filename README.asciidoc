@@ -1090,9 +1090,50 @@ These packs can be installed as a resource pack, a data pack, or both.
 
 === Copper Tech
 
-https://i.imgur.com/FvY3I6K.png
+This is a series of packs
+that replaces redstone components with copper variants.
+When installed as a resource pack,
+the redstone components have copper textures.
+When installed as a data pack,
+the redstone components have copper in their recipes.
 
-https://i.imgur.com/mHsz7R3.png
+**Copper Tech** reskins simple redstone components,
+**Copper Pistons** reskins pistons,
+and **More Copper Tech** reskins complex redstone components.
+
+//https://i.imgur.com/mHsz7R3.png
+//https://i.imgur.com/FvY3I6K.png
+image::https://i.imgur.com/PUu0IoJ.png[Copper Tech]
+
+.Click for a summary of Copper Tech redstone components
+[%collapsible]
+====
+* Lever
+* Iron Door
+* Iron Trapdoor
+* Light Weighted Pressure Plate
+* Polished Blackstone Button
+* Detector Rails
+* Powered Rails
+====
+
+.Click for a summary of More Copper Tech redstone components
+[%collapsible]
+====
+* Dispenser
+* Dropper
+* Observer
+
+In addition to adding copper to textures and recipes,
+More Copper Tech also replaces cobblestone with wood.
+====
+
+.Click for a summary of Copper Pistons redstone components
+[%collapsible]
+====
+* Pistons
+* Sticky Pistons
+====
 
 == Legacy Data Packs
 

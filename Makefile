@@ -7,12 +7,15 @@ RESOURCEPACKFILES = painting_overhaul.zip note_guide.zip \
 	classic_obsidian.zip classic_lapis.zip classic_rose.zip classic_food.zip \
 	classic_moo.zip classic_twang.zip classic_sploosh.zip classic_crunch.zip \
 	spellsmithing_guide.zip \
-	more_cutting.zip crates.zip copper_tech.zip
+	more_cutting.zip crates.zip \
+	copper_tech.zip copper_pistons.zip more_copper_tech.zip \
+
 DATAPACKFILES = gardener_endermen.zip climbable.zip \
 	no_treasure_maps.zip fortunate_jungle.zip fortunate_crops.zip dragonproof.zip \
 	mineable.zip shearless.zip breeding_overhaul.zip \
 	phantasmal.zip phantasmal_end.zip glow_squid_glamers.zip invis_squid_glamer.zip \
-	more_cutting.zip copper_tech.zip lose_hp_xp.zip \
+	more_cutting.zip lose_hp_xp.zip \
+	copper_tech.zip copper_pistons.zip more_copper_tech.zip \
 	loot_overhaul.zip plant_loot.zip relic_loot.zip mythic_relics.zip \
 	more_shulker_shells.zip boss_loot.zip seasonal_loot.zip \
 	food_loot.zip decor_loot.zip modern_loot.zip \
@@ -209,12 +212,6 @@ ore_types_FILES := $(DEFAULT_RESOURCE_FILES) \
 
 discreet_pumpkin_FILES := $(DEFAULT_RESOURCE_FILES) \
 	assets/minecraft/textures/misc/pumpkinblur.png
-
-stickier_piston_FILES := $(DEFAULT_RESOURCE_FILES) \
-	assets/minecraft/models/block/sticky_piston.json \
-	assets/minecraft/models/block/sticky_piston_inventory.json \
-	assets/minecraft/textures/block/piston_side_sticky.png \
-	assets/minecraft/textures/block/piston_top_sticky.png
 
 classic_oak_FILES := $(DEFAULT_RESOURCE_FILES) \
 	assets/minecraft/textures/block/oak_log.png \
@@ -558,40 +555,19 @@ crates_FILES := $(DEFAULT_DATA_FILES) \
 	assets/minecraft/models/block/barrel_open.json \
 	assets/minecraft/textures/block/barrel_bottom.png \
 
-copper_tech_FILES := $(DEFAULT_DATA_FILES) \
-	$(shell find bucepack-data/copper_tech -type f | ./bin/ext2dir) \
-	assets/minecraft/lang/en_us_copper_tech.json \
+more_copper_tech_FILES := $(DEFAULT_DATA_FILES) \
+	$(shell find bucepack-data/more_copper_tech -type f | ./bin/ext2dir) \
 	assets/minecraft/models/block/dispenser.json \
 	assets/minecraft/models/block/dispenser_vertical.json \
 	assets/minecraft/models/block/dropper.json \
 	assets/minecraft/models/block/dropper_vertical.json \
-	assets/minecraft/models/block/hopper_side.json \
-	assets/minecraft/models/block/lever.json \
-	assets/minecraft/models/block/lever_on.json \
-	assets/minecraft/models/block/light_weighted_pressure_plate_down.json \
-	assets/minecraft/models/block/light_weighted_pressure_plate.json \
 	assets/minecraft/models/block/observer_copper_tech.json \
 	assets/minecraft/models/block/observer_on_copper_tech.json \
-	assets/minecraft/models/block/piston_head_short_sticky.json \
-	assets/minecraft/models/block/piston_head_sticky.json \
-	assets/minecraft/models/block/polished_blackstone_button_inventory.json \
-	assets/minecraft/models/block/polished_blackstone_button.json \
-	assets/minecraft/models/block/polished_blackstone_button_pressed.json \
-	assets/minecraft/models/block/sticky_piston_inventory.json \
-	assets/minecraft/models/block/sticky_piston.json \
-	assets/minecraft/textures/block/copper_block_lever.png \
-	assets/minecraft/textures/block/detector_rail_on.png \
-	assets/minecraft/textures/block/detector_rail.png \
 	assets/minecraft/textures/block/dispenser_front.png \
 	assets/minecraft/textures/block/dispenser_front_vertical.png \
 	assets/minecraft/textures/block/dispenser_side.png \
 	assets/minecraft/textures/block/dropper_front.png \
 	assets/minecraft/textures/block/dropper_front_vertical.png \
-	assets/minecraft/textures/block/hopper_inside.png \
-	assets/minecraft/textures/block/hopper_inside_side.png \
-	assets/minecraft/textures/block/iron_door_bottom.png \
-	assets/minecraft/textures/block/iron_door_top.png \
-	assets/minecraft/textures/block/iron_trapdoor.png \
 	assets/minecraft/textures/block/observer_back_on_copper.png \
 	assets/minecraft/textures/block/observer_back_copper.png \
 	assets/minecraft/textures/block/observer_front_on_copper.png \
@@ -599,13 +575,48 @@ copper_tech_FILES := $(DEFAULT_DATA_FILES) \
 	assets/minecraft/textures/block/observer_side_on_copper.png \
 	assets/minecraft/textures/block/observer_side_copper.png \
 	assets/minecraft/textures/block/observer_top_copper.png \
+	data/minecraft/recipes/dispenser.json \
+	data/minecraft/recipes/dropper.json \
+	data/minecraft/recipes/observer.json \
+
+copper_pistons_FILES := $(DEFAULT_DATA_FILES) \
+	$(shell find bucepack-data/copper_pistons -type f | ./bin/ext2dir) \
+	assets/minecraft/models/block/piston_head_short_sticky.json \
+	assets/minecraft/models/block/piston_head_sticky.json \
+	assets/minecraft/models/block/sticky_piston_inventory.json \
+	assets/minecraft/models/block/sticky_piston.json \
 	assets/minecraft/textures/block/piston_side.png \
 	assets/minecraft/textures/block/piston_side_sticky.png \
 	assets/minecraft/textures/block/piston_top.png \
 	assets/minecraft/textures/block/piston_top_sticky.png \
+	data/minecraft/recipes/piston.json \
+
+copper_tech_FILES := $(DEFAULT_DATA_FILES) \
+	$(shell find bucepack-data/copper_tech -type f | ./bin/ext2dir) \
+	assets/minecraft/lang/en_us_copper_tech.json \
+	assets/minecraft/models/block/lever.json \
+	assets/minecraft/models/block/lever_on.json \
+	assets/minecraft/models/block/light_weighted_pressure_plate_down.json \
+	assets/minecraft/models/block/light_weighted_pressure_plate.json \
+	assets/minecraft/models/block/polished_blackstone_button_inventory.json \
+	assets/minecraft/models/block/polished_blackstone_button.json \
+	assets/minecraft/models/block/polished_blackstone_button_pressed.json \
+	assets/minecraft/textures/block/copper_block_lever.png \
+	assets/minecraft/textures/block/detector_rail_on.png \
+	assets/minecraft/textures/block/detector_rail.png \
+	assets/minecraft/textures/block/iron_door_bottom.png \
+	assets/minecraft/textures/block/iron_door_top.png \
+	assets/minecraft/textures/block/iron_trapdoor.png \
 	assets/minecraft/textures/block/powered_rail_on.png \
 	assets/minecraft/textures/block/powered_rail.png \
 	assets/minecraft/textures/item/iron_door.png \
+	data/minecraft/recipes/detector_rail.json \
+	data/minecraft/recipes/iron_door.json \
+	data/minecraft/recipes/iron_trapdoor.json \
+	data/minecraft/recipes/lever.json \
+	data/minecraft/recipes/light_weighted_pressure_plate.json \
+	data/minecraft/recipes/polished_blackstone_button.json \
+	data/minecraft/recipes/powered_rail.json \
 	#assets/minecraft/textures/block/activator_rail_on.png \
 	#assets/minecraft/textures/block/activator_rail.png \
 
@@ -876,11 +887,6 @@ discreet_pumpkin.zip: $(discreet_pumpkin_FILES)
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^
 
-stickier_piston.zip: $(stickier_piston_FILES)
-	cp meta/$(@:.zip=.png) pack.png
-	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
-	zip $@ pack.png pack.mcmeta $^
-
 classic_oak.zip: $(classic_oak_FILES)
 	cp meta/$(@:.zip=.png) pack.png
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
@@ -1118,6 +1124,18 @@ crates.zip: $(crates_FILES)
 	cp meta/$(@:.zip=.png) pack.png
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^
+
+copper_pistons.zip: $(copper_pistons_FILES)
+	cp meta/$(@:.zip=.png) pack.png
+	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
+	zip $@ pack.png pack.mcmeta $^
+	./bin/ziprename _$(@:.zip=) "" $@
+
+more_copper_tech.zip: $(more_copper_tech_FILES)
+	cp meta/$(@:.zip=.png) pack.png
+	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
+	zip $@ pack.png pack.mcmeta $^
+	./bin/ziprename _$(@:.zip=) "" $@
 
 copper_tech.zip: $(copper_tech_FILES)
 	cp meta/$(@:.zip=.png) pack.png
