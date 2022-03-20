@@ -2,12 +2,12 @@
 RESOURCEPACKFILES = painting_overhaul.zip note_guide.zip \
 	brew_guide.zip brew_guide_darkmode.zip \
 	tech_arrows.zip ravager.zip villager_mech.zip pig_armor.zip ore_types.zip \
-	discreet_pumpkin.zip stickier_piston.zip \
+	discreet_pumpkin.zip \
 	classic_oak.zip classic_netherrack.zip classic_lava.zip classic_gravel.zip \
 	classic_obsidian.zip classic_lapis.zip classic_rose.zip classic_food.zip \
 	classic_moo.zip classic_twang.zip classic_sploosh.zip classic_crunch.zip \
 	spellsmithing_guide.zip \
-	more_cutting.zip copper_tech.zip
+	more_cutting.zip crates.zip copper_tech.zip
 DATAPACKFILES = gardener_endermen.zip climbable.zip \
 	no_treasure_maps.zip fortunate_jungle.zip fortunate_crops.zip dragonproof.zip \
 	mineable.zip shearless.zip breeding_overhaul.zip \
@@ -553,6 +553,11 @@ more_cutting_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell find bucepack-data/more_cutting -type f | ./bin/ext2dir) \
 	assets/minecraft/lang/en_us-more_cutting.json \
 
+crates_FILES := $(DEFAULT_DATA_FILES) \
+	assets/minecraft/models/block/barrel.json \
+	assets/minecraft/models/block/barrel_open.json \
+	assets/minecraft/textures/block/barrel_bottom.png \
+
 copper_tech_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell find bucepack-data/copper_tech -type f | ./bin/ext2dir) \
 	assets/minecraft/lang/en_us-copper_tech.json \
@@ -1097,6 +1102,11 @@ more_cutting.zip: $(more_cutting_FILES)
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^
 	printf "@ assets/minecraft/lang/en_us-more_cutting.json\n@=assets/minecraft/lang/en_us.json\n" | zipnote -w $@
+
+crates.zip: $(crates_FILES)
+	cp meta/$(@:.zip=.png) pack.png
+	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
+	zip $@ pack.png pack.mcmeta $^
 
 copper_tech.zip: $(copper_tech_FILES)
 	cp meta/$(@:.zip=.png) pack.png
