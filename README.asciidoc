@@ -1135,6 +1135,14 @@ More Copper Tech also replaces cobblestone with wood.
 * Sticky Pistons
 ====
 
+Download: https://github.com/DMBuce/bucepack/releases
+
+Build:
+
+ make copper_tech.zip
+ make copper_pistons.zip
+ make more_copper_tech.zip
+
 == Legacy Data Packs
 
 These data packs haven't been updated for the most recent version of
