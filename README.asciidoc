@@ -1091,7 +1091,7 @@ These packs can be installed as a resource pack, a data pack, or both.
 === Copper Tech
 
 This is a series of packs
-that replaces redstone components with copper variants.
+that replace redstone components with copper variants.
 When installed as a resource pack,
 the redstone components have copper textures.
 When installed as a data pack,
