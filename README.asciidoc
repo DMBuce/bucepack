@@ -1092,6 +1092,8 @@ These packs can be installed as a resource pack, a data pack, or both.
 
 https://i.imgur.com/FvY3I6K.png
 
+https://i.imgur.com/mHsz7R3.png
+
 == Legacy Data Packs
 
 These data packs haven't been updated for the most recent version of

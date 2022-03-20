@@ -1,0 +1,25 @@
+#!/bin/bash
+
+# check args
+if [[ "$*" == *--help* ]]; then
+	echo "Usage: ${0##*/} FROM TO ZIPFILE [ZIPFILE2] [...]" >&2
+	exit
+elif (( $# < 3 )); then
+	echo "Usage: ${0##*/} FROM TO ZIPFILE [ZIPFILE2] [...]" >&2
+	exit 1
+fi
+
+# parse args
+from="${1//\//\\/}"
+to="${2//\//\\/}"
+shift 2
+
+# process zip files
+for file in "$@"; do
+	zipnote "$file" \
+		| sed "/$from/ { p; s/$from/$to/g; s/^@ /@=/ }" \
+		| zipnote -w "$file"
+		#> "$file.tmp"
+	#rm "$file.tmp"
+done
+

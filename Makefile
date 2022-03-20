@@ -560,52 +560,52 @@ crates_FILES := $(DEFAULT_DATA_FILES) \
 
 copper_tech_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell find bucepack-data/copper_tech -type f | ./bin/ext2dir) \
-	assets/minecraft/lang/en_us-copper_tech.json \
-	assets/minecraft/models/block/dispenser_vertical.json \
-	assets/minecraft/models/block/dropper_vertical.json \
-	assets/minecraft/textures/block/dropper_front_vertical.png \
-	assets/minecraft/textures/block/dispenser_front_vertical.png \
+	assets/minecraft/lang/en_us_copper_tech.json \
 	assets/minecraft/models/block/dispenser.json \
+	assets/minecraft/models/block/dispenser_vertical.json \
 	assets/minecraft/models/block/dropper.json \
+	assets/minecraft/models/block/dropper_vertical.json \
 	assets/minecraft/models/block/hopper_side.json \
 	assets/minecraft/models/block/lever.json \
 	assets/minecraft/models/block/lever_on.json \
-	assets/minecraft/models/block/observer.json \
-	assets/minecraft/models/block/observer_on.json \
-	assets/minecraft/models/block/polished_blackstone_button.json \
-	assets/minecraft/models/block/polished_blackstone_button_pressed.json \
-	assets/minecraft/models/block/polished_blackstone_button_inventory.json \
 	assets/minecraft/models/block/light_weighted_pressure_plate_down.json \
 	assets/minecraft/models/block/light_weighted_pressure_plate.json \
+	assets/minecraft/models/block/observer_copper_tech.json \
+	assets/minecraft/models/block/observer_on_copper_tech.json \
+	assets/minecraft/models/block/piston_head_short_sticky.json \
+	assets/minecraft/models/block/piston_head_sticky.json \
+	assets/minecraft/models/block/polished_blackstone_button_inventory.json \
+	assets/minecraft/models/block/polished_blackstone_button.json \
+	assets/minecraft/models/block/polished_blackstone_button_pressed.json \
 	assets/minecraft/models/block/sticky_piston_inventory.json \
 	assets/minecraft/models/block/sticky_piston.json \
 	assets/minecraft/textures/block/copper_block_lever.png \
 	assets/minecraft/textures/block/detector_rail_on.png \
 	assets/minecraft/textures/block/detector_rail.png \
 	assets/minecraft/textures/block/dispenser_front.png \
+	assets/minecraft/textures/block/dispenser_front_vertical.png \
 	assets/minecraft/textures/block/dispenser_side.png \
 	assets/minecraft/textures/block/dropper_front.png \
+	assets/minecraft/textures/block/dropper_front_vertical.png \
 	assets/minecraft/textures/block/hopper_inside.png \
 	assets/minecraft/textures/block/hopper_inside_side.png \
 	assets/minecraft/textures/block/iron_door_bottom.png \
 	assets/minecraft/textures/block/iron_door_top.png \
-	assets/minecraft/textures/item/iron_door.png \
-	assets/minecraft/models/block/piston_head_sticky.json \
-	assets/minecraft/models/block/piston_head_short_sticky.json \
 	assets/minecraft/textures/block/iron_trapdoor.png \
-	assets/minecraft/textures/block/observer_back_on.png \
-	assets/minecraft/textures/block/observer_back.png \
-	assets/minecraft/textures/block/observer_front_on.png \
-	assets/minecraft/textures/block/observer_front.png \
-	assets/minecraft/textures/block/observer_side_on.png \
-	assets/minecraft/textures/block/observer_side.png \
-	assets/minecraft/textures/block/observer_top.png \
+	assets/minecraft/textures/block/observer_back_on_copper.png \
+	assets/minecraft/textures/block/observer_back_copper.png \
+	assets/minecraft/textures/block/observer_front_on_copper.png \
+	assets/minecraft/textures/block/observer_front_copper.png \
+	assets/minecraft/textures/block/observer_side_on_copper.png \
+	assets/minecraft/textures/block/observer_side_copper.png \
+	assets/minecraft/textures/block/observer_top_copper.png \
 	assets/minecraft/textures/block/piston_side.png \
 	assets/minecraft/textures/block/piston_side_sticky.png \
 	assets/minecraft/textures/block/piston_top.png \
 	assets/minecraft/textures/block/piston_top_sticky.png \
 	assets/minecraft/textures/block/powered_rail_on.png \
 	assets/minecraft/textures/block/powered_rail.png \
+	assets/minecraft/textures/item/iron_door.png \
 	#assets/minecraft/textures/block/activator_rail_on.png \
 	#assets/minecraft/textures/block/activator_rail.png \
 
@@ -1123,7 +1123,8 @@ copper_tech.zip: $(copper_tech_FILES)
 	cp meta/$(@:.zip=.png) pack.png
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^
-	printf "@ assets/minecraft/lang/en_us-copper_tech.json\n@=assets/minecraft/lang/en_us.json\n" | zipnote -w $@
+	./bin/ziprename _$(@:.zip=) "" $@
+	#printf "@ assets/minecraft/lang/en_us-copper_tech.json\n@=assets/minecraft/lang/en_us.json\n" | zipnote -w $@
 
 more_shulker_shells.zip: $(more_shulker_shells_FILES)
 	cp meta/$(@:.zip=.png) pack.png
