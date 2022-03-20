@@ -248,10 +248,15 @@ classic_rose_FILES := $(DEFAULT_RESOURCE_FILES) \
 	assets/minecraft/lang/en_us-classic_rose.json
 
 classic_food_FILES := $(DEFAULT_RESOURCE_FILES) \
+	assets/minecraft/textures/block/cake_bottom.png \
+	assets/minecraft/textures/block/cake_inner.png \
+	assets/minecraft/textures/block/cake_side.png \
+	assets/minecraft/textures/block/cake_top.png \
 	assets/minecraft/textures/item/apple.png \
 	assets/minecraft/textures/item/baked_potato.png \
 	assets/minecraft/textures/item/beef.png \
 	assets/minecraft/textures/item/bread.png \
+	assets/minecraft/textures/item/cake.png \
 	assets/minecraft/textures/item/carrot.png \
 	assets/minecraft/textures/item/chicken.png \
 	assets/minecraft/textures/item/cod.png \
@@ -271,7 +276,7 @@ classic_food_FILES := $(DEFAULT_RESOURCE_FILES) \
 	assets/minecraft/textures/item/potato.png \
 	assets/minecraft/textures/item/pumpkin_pie.png \
 	assets/minecraft/textures/item/rabbit.png \
-	assets/minecraft/textures/item/salmon.png
+	assets/minecraft/textures/item/salmon.png \
 
 spellsmithing_guide_FILES := $(DEFAULT_RESOURCE_FILES) \
 	$(wildcard assets/minecraft/models/item/armor_stand*.json) \

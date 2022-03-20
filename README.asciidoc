@@ -248,6 +248,7 @@ image::https://i.imgur.com/DorMwHO.png[Classic Food]
 * Cod
 * Salmon
 * Pumpkin Pie
+* Cake
 ====
 
 Download: https://github.com/DMBuce/bucepack/releases
