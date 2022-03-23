@@ -818,6 +818,8 @@ Starter Map adds a Map to the bonus spawn chest.
 
 Starter Shulker adds a Shulker Box to the bonus spawn chest.
 
+Starter Spyglass adds a Spyglass to the bonus spawn chest.
+
 If several of these packs are installed, the bonus chest will spawn one
 starter item chosen at random.
 

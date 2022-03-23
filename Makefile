@@ -20,7 +20,7 @@ DATAPACKFILES = gardener_endermen.zip climbable.zip \
 	more_shulker_shells.zip boss_loot.zip seasonal_loot.zip \
 	food_loot.zip decor_loot.zip modern_loot.zip \
 	starter_bed.zip starter_book.zip starter_bucket.zip starter_map.zip \
-	starter_shulker.zip starter_relic.zip starter_bonus_chest.zip \
+	starter_shulker.zip starter_spyglass.zip starter_relic.zip starter_bonus_chest.zip \
 	waterproof_tech.zip aggro_bastions.zip blue_fire.zip \
 	escape_end.zip escape_nether.zip escape_grind.zip lichdom.zip
 
@@ -474,24 +474,28 @@ starter_bonus_chest_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell ls bucepack-data/starter_bonus_chest* | ./bin/ext2dir) \
 
 starter_bed_FILES := $(DEFAULT_DATA_FILES) \
-	data/minecraft/tags/items/starter_bed.json \
+	data/minecraft/tags/items/starter_item_starter_bed.json \
 	data/bucepack/advancements/loot_addons/starter_bed.json
 
 starter_book_FILES := $(DEFAULT_DATA_FILES) \
-	data/minecraft/tags/items/starter_book.json \
+	data/minecraft/tags/items/starter_item_starter_book.json \
 	data/bucepack/advancements/loot_addons/starter_book.json
 
 starter_bucket_FILES := $(DEFAULT_DATA_FILES) \
-	data/minecraft/tags/items/starter_bucket.json \
+	data/minecraft/tags/items/starter_item_starter_bucket.json \
 	data/bucepack/advancements/loot_addons/starter_bucket.json
 
 starter_map_FILES := $(DEFAULT_DATA_FILES) \
-	data/minecraft/tags/items/starter_map.json \
+	data/minecraft/tags/items/starter_item_starter_map.json \
 	data/bucepack/advancements/loot_addons/starter_map.json
 
 starter_shulker_FILES := $(DEFAULT_DATA_FILES) \
-	data/minecraft/tags/items/starter_shulker.json \
+	data/minecraft/tags/items/starter_item_starter_shulker.json \
 	data/bucepack/advancements/loot_addons/starter_shulker.json
+
+starter_spyglass_FILES := $(DEFAULT_DATA_FILES) \
+	data/minecraft/tags/items/starter_item_starter_spyglass.json \
+	data/bucepack/advancements/loot_addons/starter_spyglass.json
 
 dragonproof_FILES := $(DEFAULT_DATA_FILES) \
 	data/bucepack/advancements/dragonproof.json \
@@ -551,7 +555,6 @@ more_cutting_FILES := $(DEFAULT_DATA_FILES) \
 	assets/minecraft/lang/en_us-more_cutting.json \
 
 more_copper_tech_FILES := $(DEFAULT_DATA_FILES) \
-	$(shell find bucepack-data/more_copper_tech -type f | ./bin/ext2dir) \
 	assets/minecraft/models/block/dispenser.json \
 	assets/minecraft/models/block/dispenser_vertical.json \
 	assets/minecraft/models/block/dropper.json \
@@ -575,7 +578,6 @@ more_copper_tech_FILES := $(DEFAULT_DATA_FILES) \
 	data/minecraft/recipes/observer.json \
 
 copper_pistons_FILES := $(DEFAULT_DATA_FILES) \
-	$(shell find bucepack-data/copper_pistons -type f | ./bin/ext2dir) \
 	assets/minecraft/models/block/piston_head_short_sticky.json \
 	assets/minecraft/models/block/piston_head_sticky.json \
 	assets/minecraft/models/block/sticky_piston_inventory.json \
@@ -587,7 +589,6 @@ copper_pistons_FILES := $(DEFAULT_DATA_FILES) \
 	data/minecraft/recipes/piston.json \
 
 copper_tech_FILES := $(DEFAULT_DATA_FILES) \
-	$(shell find bucepack-data/copper_tech -type f | ./bin/ext2dir) \
 	assets/minecraft/lang/en_us_copper_tech.json \
 	assets/minecraft/models/block/lever.json \
 	assets/minecraft/models/block/lever_on.json \
@@ -1132,7 +1133,6 @@ copper_tech.zip: $(copper_tech_FILES)
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^
 	./bin/ziprename _$(@:.zip=) "" $@
-	#printf "@ assets/minecraft/lang/en_us-copper_tech.json\n@=assets/minecraft/lang/en_us.json\n" | zipnote -w $@
 
 more_shulker_shells.zip: $(more_shulker_shells_FILES)
 	cp meta/$(@:.zip=.png) pack.png
@@ -1172,31 +1172,43 @@ starter_bed.zip: $(starter_bed_FILES)
 	cp meta/$(@:.zip=.png) pack.png
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^
-	printf "@ data/minecraft/tags/items/starter_bed.json\n@=data/minecraft/tags/items/starter_item.json\n" | zipnote -w $@
+	./bin/ziprename _$(@:.zip=) "" $@
+	#printf "@ data/minecraft/tags/items/starter_bed.json\n@=data/minecraft/tags/items/starter_item.json\n" | zipnote -w $@
 
 starter_book.zip: $(starter_book_FILES)
 	cp meta/$(@:.zip=.png) pack.png
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^
-	printf "@ data/minecraft/tags/items/starter_book.json\n@=data/minecraft/tags/items/starter_item.json\n" | zipnote -w $@
+	./bin/ziprename _$(@:.zip=) "" $@
+	#printf "@ data/minecraft/tags/items/starter_book.json\n@=data/minecraft/tags/items/starter_item.json\n" | zipnote -w $@
 
 starter_bucket.zip: $(starter_bucket_FILES)
 	cp meta/$(@:.zip=.png) pack.png
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^
-	printf "@ data/minecraft/tags/items/starter_bucket.json\n@=data/minecraft/tags/items/starter_item.json\n" | zipnote -w $@
+	./bin/ziprename _$(@:.zip=) "" $@
+	#printf "@ data/minecraft/tags/items/starter_bucket.json\n@=data/minecraft/tags/items/starter_item.json\n" | zipnote -w $@
 
 starter_map.zip: $(starter_map_FILES)
 	cp meta/$(@:.zip=.png) pack.png
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^
-	printf "@ data/minecraft/tags/items/starter_map.json\n@=data/minecraft/tags/items/starter_item.json\n" | zipnote -w $@
+	./bin/ziprename _$(@:.zip=) "" $@
+	#printf "@ data/minecraft/tags/items/starter_map.json\n@=data/minecraft/tags/items/starter_item.json\n" | zipnote -w $@
 
 starter_shulker.zip: $(starter_shulker_FILES)
 	cp meta/$(@:.zip=.png) pack.png
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^
-	printf "@ data/minecraft/tags/items/starter_shulker.json\n@=data/minecraft/tags/items/starter_item.json\n" | zipnote -w $@
+	./bin/ziprename _$(@:.zip=) "" $@
+	#printf "@ data/minecraft/tags/items/starter_shulker.json\n@=data/minecraft/tags/items/starter_item.json\n" | zipnote -w $@
+
+starter_spyglass.zip: $(starter_spyglass_FILES)
+	cp meta/$(@:.zip=.png) pack.png
+	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
+	zip $@ pack.png pack.mcmeta $^
+	./bin/ziprename _$(@:.zip=) "" $@
+	#printf "@ data/minecraft/tags/items/starter_spyglass.json\n@=data/minecraft/tags/items/starter_item.json\n" | zipnote -w $@
 
 .PHONY: install
 install: $(RESOURCEPACKFILES) $(DATAPACKFILES)

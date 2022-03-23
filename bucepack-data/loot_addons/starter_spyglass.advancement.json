@@ -1,0 +1,22 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:spyglass"
+		},
+		"title": {
+			"text": "Starter Spyglass"
+		},
+		"description": {
+			"text": "Adds a spyglass to Loot Overhaul's curated bonus chest"
+		},
+		"show_toast": false,
+		"announce_to_chat": false,
+		"frame": "task"
+	},
+	"parent": "bucepack:loot_overhaul/root",
+	"criteria": {
+		"tick": {
+			"trigger": "minecraft:tick"
+		}
+	}
+}
