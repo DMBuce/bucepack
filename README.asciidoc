@@ -1078,6 +1078,16 @@ Download: https://github.com/DMBuce/bucepack/releases
 
 Build: `make lose_hp_xp.zip`
 
+=== Warmer Striders
+
+Makes more blocks warm enough to keep striders comfortable.
+
+image::https://i.imgur.com/f2xBoAA.png[Warmer Striders]
+
+The picture above shows just a few of the blocks that can warm striders.
+The full list of warm blocks is
+https://raw.githubusercontent.com/DMBuce/bucepack/master/data/minecraft/tags/blocks/strider_warm_blocks.json[here].
+
 === Aggro Bastions
 
 Makes piglins hostile when you break blocks that bastions are made out of.
@@ -1462,6 +1472,7 @@ Add new ores to Ore Types
 Add new End blocks to Dragonproof
 Add new potions to Brewing Guide
 Add new smooth, cracked, wood, slab, and stair blocks to stonecutter
+Add new warm blocks to Warmer Striders
 
 HOW TO UPDATE LOOT TABLES AFTER MINECRAFT UPDATES
 =================================================

@@ -1,0 +1,26 @@
+{
+  "replace": false,
+  "values": [
+	"minecraft:beacon",
+	"minecraft:blast_furnace",
+	"minecraft:campfire",
+	"#minecraft:candle_cakes",
+	"#minecraft:candles",
+	"minecraft:smoker",
+	"minecraft:fire",
+	"minecraft:furnace",
+	"minecraft:jack_o_lantern",
+	"minecraft:lantern",
+    "minecraft:lava",
+	"minecraft:lava_cauldron",
+	"minecraft:magma_block",
+	"minecraft:redstone_lamp",
+	"minecraft:soul_campfire",
+	"minecraft:soul_fire",
+	"minecraft:soul_lantern",
+	"minecraft:soul_torch",
+	"minecraft:torch",
+	"minecraft:soul_wall_torch",
+	"minecraft:wall_torch"
+  ]
+}

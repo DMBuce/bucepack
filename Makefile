@@ -21,7 +21,7 @@ DATAPACKFILES = gardener_endermen.zip climbable.zip \
 	food_loot.zip decor_loot.zip modern_loot.zip \
 	starter_bed.zip starter_book.zip starter_bucket.zip starter_map.zip \
 	starter_shulker.zip starter_spyglass.zip starter_relic.zip starter_bonus_chest.zip \
-	waterproof_tech.zip aggro_bastions.zip blue_fire.zip \
+	waterproof_tech.zip aggro_bastions.zip warmer_striders.zip blue_fire.zip \
 	escape_end.zip escape_nether.zip escape_grind.zip lichdom.zip
 
 PACKFILES = $(RESOURCEPACKFILES) $(DATAPACKFILES)
@@ -341,6 +341,9 @@ waterproof_tech_FILES := $(DEFAULT_DATA_FILES) \
 aggro_bastions_FILES := $(DEFAULT_DATA_FILES) \
 	data/minecraft/tags/blocks/guarded_by_piglins.json \
 	data/buce/advancements/aggro_bastions.json
+
+warmer_striders_FILES := $(DEFAULT_DATA_FILES) \
+	data/minecraft/tags/blocks/strider_warm_blocks.json \
 
 no_treasure_maps_FILES := $(DEFAULT_DATA_FILES) \
 	data/minecraft/loot_tables/chests/shipwreck_map_nomap.json \
@@ -975,6 +978,11 @@ speedy_paths.zip: $(speedy_paths_FILES)
 	zip $@ pack.png pack.mcmeta $^
 
 waterproof_tech.zip: $(waterproof_tech_FILES)
+	cp meta/$(@:.zip=.png) pack.png
+	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
+	zip $@ pack.png pack.mcmeta $^
+
+warmer_striders.zip: $(warmer_striders_FILES)
 	cp meta/$(@:.zip=.png) pack.png
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^
