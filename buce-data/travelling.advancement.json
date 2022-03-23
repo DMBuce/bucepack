@@ -4,10 +4,10 @@
 			"item": "minecraft:dirt_path"
 		},
 		"title": {
-			"text": "Speedy Paths"
+			"text": "Travelling"
 		},
 		"description": {
-			"text": "Soul speed works on path blocks"
+			"text": "Soul speed works on more blocks"
 		},
 		"show_toast": false,
 		"announce_to_chat": false,

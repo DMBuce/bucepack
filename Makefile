@@ -3,6 +3,7 @@ DATARESOURCEPACKFILES = \
 	copper_pistons.zip \
 	copper_tech.zip \
 	more_copper_tech.zip \
+	travelling.zip \
 
 RESOURCEPACKFILES = \
 	$(DATARESOURCEPACKFILES) \
@@ -73,6 +74,7 @@ DATAPACKFILES = \
 	starter_relic.zip \
 	starter_shulker.zip \
 	starter_spyglass.zip \
+	travelling.zip \
 	warmer_striders.zip \
 	waterproof_tech.zip \
 
@@ -382,9 +384,9 @@ climbable_FILES := $(DEFAULT_DATA_FILES) \
 	data/minecraft/tags/blocks/climbable.json \
 	data/buce/advancements/climbable.json \
 
-speedy_paths_FILES := $(DEFAULT_DATA_FILES) \
+travelling_FILES := $(DEFAULT_DATA_FILES) \
 	data/minecraft/tags/blocks/soul_speed_blocks.json \
-	data/buce/advancements/speedy_paths.json \
+	data/buce/advancements/travelling.json \
 
 waterproof_tech_FILES := $(DEFAULT_DATA_FILES) \
 	data/minecraft/tags/blocks/signs.json \
@@ -1024,7 +1026,7 @@ climbable.zip: $(climbable_FILES)
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^
 
-speedy_paths.zip: $(speedy_paths_FILES)
+travelling.zip: $(travelling_FILES)
 	cp meta/$(@:.zip=.png) pack.png
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^
