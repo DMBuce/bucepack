@@ -22,7 +22,7 @@ DATAPACKFILES = gardener_endermen.zip climbable.zip \
 	starter_bed.zip starter_book.zip starter_bucket.zip starter_map.zip \
 	starter_shulker.zip starter_spyglass.zip starter_relic.zip starter_bonus_chest.zip \
 	waterproof_tech.zip aggro_bastions.zip warmer_striders.zip blue_fire.zip \
-	escape_end.zip escape_nether.zip escape_grind.zip lichdom.zip
+	escape_end.zip escape_nether.zip escape_grind.zip lichdom.zip \
 
 PACKFILES = $(RESOURCEPACKFILES) $(DATAPACKFILES)
 MCDIR     = $(HOME)/.minecraft
@@ -45,7 +45,7 @@ DEFAULT_DATA_FILES = LICENSE.txt data/buce/advancements/root.json
 lcg_FILES := \
 	data/lcg/functions/load.mcfunction \
 	data/lcg/functions/random.mcfunction \
-	data/lcg/functions/get_seed.mcfunction
+	data/lcg/functions/get_seed.mcfunction \
 
 painting_overhaul_FILES := $(DEFAULT_RESOURCE_FILES) \
 	assets/minecraft/textures/painting/kebab.png \
@@ -73,7 +73,7 @@ painting_overhaul_FILES := $(DEFAULT_RESOURCE_FILES) \
 	assets/minecraft/textures/painting/donkey_kong.png \
 	assets/minecraft/textures/painting/burning_skull.png \
 	assets/minecraft/textures/painting/pigscene.png \
-	assets/minecraft/textures/painting/pointer.png
+	assets/minecraft/textures/painting/pointer.png \
 
 note_guide_FILES := $(DEFAULT_RESOURCE_FILES) \
 	assets/minecraft/textures/block/note_block_0.png \
@@ -101,7 +101,7 @@ note_guide_FILES := $(DEFAULT_RESOURCE_FILES) \
 	assets/minecraft/models/block/note_block_10.json \
 	assets/minecraft/models/block/note_block_11.json \
 	assets/minecraft/models/item/note_block.json \
-	assets/minecraft/blockstates/note_block.json
+	assets/minecraft/blockstates/note_block.json \
 
 note_guide_adv_FILES := $(DEFAULT_RESOURCE_FILES) \
 	assets/minecraft/textures/block/adv_note_block_0.png \
@@ -155,13 +155,13 @@ note_guide_adv_FILES := $(DEFAULT_RESOURCE_FILES) \
 	assets/minecraft/models/block/note_block_23.json \
 	assets/minecraft/models/block/note_block_24.json \
 	assets/minecraft/models/item/note_block.json \
-	assets/minecraft/blockstates/adv_note_block.json
+	assets/minecraft/blockstates/adv_note_block.json \
 
 brew_guide_FILES := $(DEFAULT_RESOURCE_FILES) \
-	assets/minecraft/textures/gui/container/brewing_stand.png
+	assets/minecraft/textures/gui/container/brewing_stand.png \
 
 brew_guide_darkmode_FILES := $(DEFAULT_RESOURCE_FILES) \
-	assets/minecraft/textures/gui/container/brewing_stand_darkmode.png
+	assets/minecraft/textures/gui/container/brewing_stand_darkmode.png \
 
 tech_arrows_FILES := $(DEFAULT_RESOURCE_FILES) \
 	assets/minecraft/models/block/hopper_side.json \
@@ -175,17 +175,17 @@ tech_arrows_FILES := $(DEFAULT_RESOURCE_FILES) \
 	assets/minecraft/textures/block/observer_front_on.png \
 
 ravager_FILES := $(DEFAULT_RESOURCE_FILES) \
-	assets/minecraft/textures/entity/illager/ravager.png
+	assets/minecraft/textures/entity/illager/ravager.png \
 
 villager_mech_FILES := $(DEFAULT_RESOURCE_FILES) \
 	assets/minecraft/textures/entity/iron_golem/iron_golem.png \
 	assets/minecraft/textures/entity/iron_golem/iron_golem_crackiness_low.png \
 	assets/minecraft/textures/entity/iron_golem/iron_golem_crackiness_medium.png \
-	assets/minecraft/textures/entity/iron_golem/iron_golem_crackiness_high.png
+	assets/minecraft/textures/entity/iron_golem/iron_golem_crackiness_high.png \
 
 candystrider_FILES := $(DEFAULT_RESOURCE_FILES) \
 	assets/minecraft/textures/entity/strider/strider_cold.png \
-	assets/minecraft/textures/entity/strider/strider.png
+	assets/minecraft/textures/entity/strider/strider.png \
 
 pig_armor_FILES := $(DEFAULT_RESOURCE_FILES) \
 	assets/minecraft/textures/entity/pig/pig_saddle.png \
@@ -198,7 +198,7 @@ ore_types_FILES := $(DEFAULT_RESOURCE_FILES) \
 	assets/minecraft/textures/block/emerald_ore.png \
 	assets/minecraft/textures/block/gold_ore.png \
 	assets/minecraft/textures/block/iron_ore.png \
-	assets/minecraft/textures/block/copper_ore.png
+	assets/minecraft/textures/block/copper_ore.png \
 	#assets/minecraft/blockstates/coal_ore.json \
 	#assets/minecraft/blockstates/lapis_ore.json \
 	#assets/minecraft/models/block/coal_ore_1.json \
@@ -211,7 +211,7 @@ ore_types_FILES := $(DEFAULT_RESOURCE_FILES) \
 	#assets/minecraft/textures/block/lapis_ore_2.png \
 
 discreet_pumpkin_FILES := $(DEFAULT_RESOURCE_FILES) \
-	assets/minecraft/textures/misc/pumpkinblur.png
+	assets/minecraft/textures/misc/pumpkinblur.png \
 
 classic_oak_FILES := $(DEFAULT_RESOURCE_FILES) \
 	assets/minecraft/textures/block/oak_log.png \
@@ -222,27 +222,27 @@ classic_netherrack_FILES := $(DEFAULT_RESOURCE_FILES) \
 	assets/minecraft/textures/block/nether_quartz_ore.png \
 	assets/minecraft/textures/block/nether_gold_ore.png \
 	assets/minecraft/textures/block/crimson_nylium_side.png \
-	assets/minecraft/textures/block/warped_nylium_side.png
+	assets/minecraft/textures/block/warped_nylium_side.png \
 
 classic_lava_FILES := $(DEFAULT_RESOURCE_FILES) \
 	assets/minecraft/textures/block/lava_still.png.mcmeta \
 	assets/minecraft/textures/block/lava_flow.png.mcmeta \
 	assets/minecraft/textures/block/lava_still.png \
-	assets/minecraft/textures/block/lava_flow.png
+	assets/minecraft/textures/block/lava_flow.png \
 
 classic_gravel_FILES := $(DEFAULT_RESOURCE_FILES) \
-	assets/minecraft/textures/block/gravel.png
+	assets/minecraft/textures/block/gravel.png \
 
 classic_obsidian_FILES := $(DEFAULT_RESOURCE_FILES) \
 	assets/minecraft/textures/block/crying_obsidian.png \
 	assets/minecraft/textures/block/obsidian.png \
 
 classic_lapis_FILES := $(DEFAULT_RESOURCE_FILES) \
-	assets/minecraft/textures/block/lapis_block.png
+	assets/minecraft/textures/block/lapis_block.png \
 
 classic_rose_FILES := $(DEFAULT_RESOURCE_FILES) \
 	assets/minecraft/textures/block/poppy.png \
-	assets/minecraft/lang/en_us-classic_rose.json
+	assets/minecraft/lang/en_us-classic_rose.json \
 
 classic_food_FILES := $(DEFAULT_RESOURCE_FILES) \
 	assets/minecraft/textures/block/cake_bottom.png \
@@ -286,10 +286,10 @@ spellsmithing_guide_FILES := $(DEFAULT_RESOURCE_FILES) \
 
 retronetherrack_FILES := $(DEFAULT_RESOURCE_FILES) \
 	assets/minecraft/textures/block/netherrack.png \
-	assets/minecraft/textures/block/nether_quartz_ore.png
+	assets/minecraft/textures/block/nether_quartz_ore.png \
 
 retroiron_FILES := $(DEFAULT_RESOURCE_FILES) \
-	assets/minecraft/textures/block/iron_block.png
+	assets/minecraft/textures/block/iron_block.png \
 
 classic_moo_FILES := $(DEFAULT_RESOURCE_FILES) \
 	assets/minecraft/sounds/mob/cow/hurt1.ogg \
@@ -298,13 +298,13 @@ classic_moo_FILES := $(DEFAULT_RESOURCE_FILES) \
 	assets/minecraft/sounds/mob/cow/say1.ogg \
 	assets/minecraft/sounds/mob/cow/say2.ogg \
 	assets/minecraft/sounds/mob/cow/say3.ogg \
-	assets/minecraft/sounds/mob/cow/say4.ogg
+	assets/minecraft/sounds/mob/cow/say4.ogg \
 
 classic_twang_FILES := $(DEFAULT_RESOURCE_FILES) \
 	assets/minecraft/sounds/random/bowhit4.ogg \
 	assets/minecraft/sounds/random/bowhit2.ogg \
 	assets/minecraft/sounds/random/bowhit1.ogg \
-	assets/minecraft/sounds/random/bowhit3.ogg
+	assets/minecraft/sounds/random/bowhit3.ogg \
 
 classic_sploosh_FILES := $(DEFAULT_RESOURCE_FILES) \
 	assets/minecraft/sounds/liquid/splash.ogg \
@@ -312,7 +312,7 @@ classic_sploosh_FILES := $(DEFAULT_RESOURCE_FILES) \
 	assets/minecraft/sounds/liquid/swim1.ogg \
 	assets/minecraft/sounds/liquid/swim2.ogg \
 	assets/minecraft/sounds/liquid/swim3.ogg \
-	assets/minecraft/sounds/liquid/swim4.ogg
+	assets/minecraft/sounds/liquid/swim4.ogg \
 
 classic_crunch_FILES := $(DEFAULT_RESOURCE_FILES) \
 	assets/minecraft/sounds/step/grass4.ogg \
@@ -320,47 +320,47 @@ classic_crunch_FILES := $(DEFAULT_RESOURCE_FILES) \
 	assets/minecraft/sounds/step/grass1.ogg \
 	assets/minecraft/sounds/step/grass2.ogg \
 	assets/minecraft/sounds/step/grass6.ogg \
-	assets/minecraft/sounds/step/grass3.ogg
+	assets/minecraft/sounds/step/grass3.ogg \
 
 gardener_endermen_FILES := $(DEFAULT_DATA_FILES) \
 	data/minecraft/tags/blocks/enderman_holdable.json \
-	data/buce/advancements/gardener_endermen.json
+	data/buce/advancements/gardener_endermen.json \
 
 climbable_FILES := $(DEFAULT_DATA_FILES) \
 	data/minecraft/tags/blocks/climbable.json \
-	data/buce/advancements/climbable.json
+	data/buce/advancements/climbable.json \
 
 speedy_paths_FILES := $(DEFAULT_DATA_FILES) \
 	data/minecraft/tags/blocks/soul_speed_blocks.json \
-	data/buce/advancements/speedy_paths.json
+	data/buce/advancements/speedy_paths.json \
 
 waterproof_tech_FILES := $(DEFAULT_DATA_FILES) \
 	data/minecraft/tags/blocks/signs.json \
-	data/buce/advancements/waterproof_tech.json
+	data/buce/advancements/waterproof_tech.json \
 
 aggro_bastions_FILES := $(DEFAULT_DATA_FILES) \
 	data/minecraft/tags/blocks/guarded_by_piglins.json \
-	data/buce/advancements/aggro_bastions.json
+	data/buce/advancements/aggro_bastions.json \
 
 warmer_striders_FILES := $(DEFAULT_DATA_FILES) \
 	data/minecraft/tags/blocks/strider_warm_blocks.json \
 
 no_treasure_maps_FILES := $(DEFAULT_DATA_FILES) \
 	data/minecraft/loot_tables/chests/shipwreck_map_nomap.json \
-	data/buce/advancements/no_treasure_maps.json
+	data/buce/advancements/no_treasure_maps.json \
 
 blue_fire_FILES := $(DEFAULT_DATA_FILES) \
 	data/minecraft/tags/blocks/soul_fire_base_blocks.json \
-	data/buce/advancements/blue_fire.json
+	data/buce/advancements/blue_fire.json \
 
 fortunate_jungle_FILES := $(DEFAULT_DATA_FILES) \
 	data/minecraft/loot_tables/blocks/jungle_leaves.json \
-	data/buce/advancements/fortunate_jungle.json
+	data/buce/advancements/fortunate_jungle.json \
 
 fortunate_crops_FILES := $(DEFAULT_DATA_FILES) \
 	data/minecraft/loot_tables/blocks/wheat.json \
 	data/minecraft/loot_tables/blocks/beetroots.json \
-	data/buce/advancements/fortunate_crops.json
+	data/buce/advancements/fortunate_crops.json \
 
 lose_hp_xp_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell find buce-data/lose_hp_xp -type f | ./bin/ext2dir) \
@@ -478,27 +478,27 @@ starter_bonus_chest_FILES := $(DEFAULT_DATA_FILES) \
 
 starter_bed_FILES := $(DEFAULT_DATA_FILES) \
 	data/minecraft/tags/items/starter_item_starter_bed.json \
-	data/buce/advancements/loot_addons/starter_bed.json
+	data/buce/advancements/loot_addons/starter_bed.json \
 
 starter_book_FILES := $(DEFAULT_DATA_FILES) \
 	data/minecraft/tags/items/starter_item_starter_book.json \
-	data/buce/advancements/loot_addons/starter_book.json
+	data/buce/advancements/loot_addons/starter_book.json \
 
 starter_bucket_FILES := $(DEFAULT_DATA_FILES) \
 	data/minecraft/tags/items/starter_item_starter_bucket.json \
-	data/buce/advancements/loot_addons/starter_bucket.json
+	data/buce/advancements/loot_addons/starter_bucket.json \
 
 starter_map_FILES := $(DEFAULT_DATA_FILES) \
 	data/minecraft/tags/items/starter_item_starter_map.json \
-	data/buce/advancements/loot_addons/starter_map.json
+	data/buce/advancements/loot_addons/starter_map.json \
 
 starter_shulker_FILES := $(DEFAULT_DATA_FILES) \
 	data/minecraft/tags/items/starter_item_starter_shulker.json \
-	data/buce/advancements/loot_addons/starter_shulker.json
+	data/buce/advancements/loot_addons/starter_shulker.json \
 
 starter_spyglass_FILES := $(DEFAULT_DATA_FILES) \
 	data/minecraft/tags/items/starter_item_starter_spyglass.json \
-	data/buce/advancements/loot_addons/starter_spyglass.json
+	data/buce/advancements/loot_addons/starter_spyglass.json \
 
 dragonproof_FILES := $(DEFAULT_DATA_FILES) \
 	data/buce/advancements/dragonproof.json \
@@ -533,7 +533,7 @@ shearless_FILES := $(DEFAULT_DATA_FILES) \
 breeding_overhaul_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell find buce-data/breeding_overhaul -type f | ./bin/ext2dir) \
 	data/minecraft/tags/functions/load-breeding_overhaul.json \
-	data/buce/functions/var.mcfunction
+	data/buce/functions/var.mcfunction \
 
 glow_squid_glamers_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell find buce-data/illusory/glow_squid -type f | ./bin/ext2dir) \
@@ -621,13 +621,13 @@ copper_tech_FILES := $(DEFAULT_DATA_FILES) \
 
 more_shulker_shells_FILES := $(DEFAULT_DATA_FILES) \
 	data/minecraft/loot_tables/entities/shulker.json \
-	data/buce/advancements/more_shulker_shells.json
+	data/buce/advancements/more_shulker_shells.json \
 
 escape_end_FILES := $(DEFAULT_DATA_FILES) \
 	data/minecraft/tags/functions/tick-escape.json \
 	data/escape/functions/end_respawn.mcfunction \
 	data/escape/functions/tick-end.mcfunction \
-	data/buce/advancements/escape_end.json
+	data/buce/advancements/escape_end.json \
 
 escape_nether_FILES := $(DEFAULT_DATA_FILES) \
 	data/minecraft/tags/functions/tick-escape.json \
@@ -635,7 +635,7 @@ escape_nether_FILES := $(DEFAULT_DATA_FILES) \
 	data/escape/functions/tick-nether.mcfunction \
 	data/escape/tags/blocks/airlava.json \
 	data/buce/advancements/escape_nether.json \
-	data/escape/advancements/kill_wither.json
+	data/escape/advancements/kill_wither.json \
 
 escape_grind_FILES := $(DEFAULT_DATA_FILES) \
 	data/minecraft/tags/functions/load-grind.json \
@@ -648,7 +648,7 @@ escape_grind_FILES := $(DEFAULT_DATA_FILES) \
 	data/escape/functions/tick_grind.mcfunction \
 	data/escape/functions/grind_respawn.mcfunction \
 	data/escape/functions/locate_city.mcfunction \
-	data/buce/advancements/escape_grind.json
+	data/buce/advancements/escape_grind.json \
 
 lichdom_FILES := $(DEFAULT_DATA_FILES) \
 	data/minecraft/tags/functions/load-lichdom.json \
@@ -704,7 +704,7 @@ lichdom_FILES := $(DEFAULT_DATA_FILES) \
 	data/lichdom/advancements/drink_blood_1.json \
 	data/lichdom/advancements/drink_blood_2.json \
 	data/lichdom/advancements/drink_blood_3.json \
-	data/lichdom/advancements/drink_blood_4.json
+	data/lichdom/advancements/drink_blood_4.json \
 
 test_FILES = \
 	# nothing
