@@ -16,7 +16,7 @@ template='{
 		"hidden": true,
 		"frame": "task"
 	},
-	"parent": "bucepack:artifact/artifact_loot",
+	"parent": "buce:artifact/artifact_loot",
 	"criteria": {
 		"hold_item_offhand": {
 			"trigger": "minecraft:using_item",
@@ -69,7 +69,7 @@ template='{
 		]
 	],
 	"rewards": {
-		"function": "bucepack:artifact/searching/%s/charge"
+		"function": "buce:artifact/searching/%s/charge"
 	}
 }'
 
@@ -96,10 +96,10 @@ params=(
 
 for param in "${params[@]}"; do
 	read structure dim block <<< "$param"
-	printf "$template" $dim $block $dim $block $structure > bucepack-data/artifact/searching/$structure/trigger.advancement.json || exit
+	printf "$template" $dim $block $dim $block $structure > buce-data/artifact/searching/$structure/trigger.advancement.json || exit
 done
 
 # ad hoc stuff
-cp bucepack-data/artifact/searching/ruined_portal/trigger.advancement.json bucepack-data/artifact/searching/ruined_portal/trigger_nether.advancement.json
-sed -i 's/overworld/the_nether/' bucepack-data/artifact/searching/ruined_portal/trigger_nether.advancement.json
+cp buce-data/artifact/searching/ruined_portal/trigger.advancement.json buce-data/artifact/searching/ruined_portal/trigger_nether.advancement.json
+sed -i 's/overworld/the_nether/' buce-data/artifact/searching/ruined_portal/trigger_nether.advancement.json
 

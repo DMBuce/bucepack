@@ -1,0 +1,25 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:torch"
+		},
+		"title": {
+			"text": "Starter Bonus Chest"
+		},
+		"description": {
+			"text": "Start with bonus chest loot in your inventory"
+		},
+		"show_toast": false,
+		"announce_to_chat": false,
+		"frame": "task"
+	},
+	"parent": "buce:root",
+	"criteria": {
+		"tick": {
+			"trigger": "minecraft:tick"
+		}
+	},
+	"rewards": {
+		"function": "buce:starter_bonus_chest"
+	}
+}

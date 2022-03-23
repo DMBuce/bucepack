@@ -1,13 +1,13 @@
 #!/bin/bash
 # converts paths like
 #
-#  data/bucepack/artifact/splendor/glowing/activate.function.mcfunction
-#  bucepack-data/artifact/splendor/glowing/trigger.advancement.json
+#  data/buce/artifact/splendor/glowing/activate.function.mcfunction
+#  buce-data/artifact/splendor/glowing/trigger.advancement.json
 #
 # to
 #
-#  data/bucepack/functions/artifact/splendor/glowing/activate.mcfunction
-#  data/bucepack/advancementsartifact/splendor/glowing/trigger.json
+#  data/buce/functions/artifact/splendor/glowing/activate.mcfunction
+#  data/buce/advancementsartifact/splendor/glowing/trigger.json
 #
 
 sed -r '

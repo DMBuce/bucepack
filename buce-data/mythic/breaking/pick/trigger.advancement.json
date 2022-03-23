@@ -1,0 +1,45 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:diamond_pickaxe"
+		},
+		"title": {
+			"text": "Breaking"
+		},
+		"description": {
+			"text": "Activate Bonebreaker"
+		},
+		"show_toast": false,
+		"announce_to_chat": false,
+		"hidden": true,
+		"frame": "task"
+	},
+	"parent": "buce:mythic/root",
+	"criteria": {
+		"break_block": {
+			"trigger": "minecraft:item_durability_changed",
+			"conditions": {
+				"item": {
+					"items": [
+						"minecraft:wooden_pickaxe",
+						"minecraft:stone_pickaxe",
+						"minecraft:iron_pickaxe",
+						"minecraft:golden_pickaxe",
+						"minecraft:diamond_pickaxe",
+						"minecraft:netherite_pickaxe"
+					],
+					"nbt": "{breaking:1b}"
+				},
+				"delta": { "max": -1 },
+				"player": {
+					"flags": {
+						"is_sneaking": false
+					}
+				}
+			}
+		}
+	},
+	"rewards": {
+		"function": "buce:mythic/breaking/pick/activate"
+	}
+}

@@ -755,7 +755,7 @@ Build: `make loot_overhaul.zip`
 Known Issues: Due to limitations in how Minecraft loot tables work, if you
 uninstall this pack and want to continue using Loot Overhaul, plant loot
 will continue to generate until you
-run `/function bucepack:loot_overhaul/disable/plant_loot`
+run `/function buce:loot_overhaul/disable/plant_loot`
 
 ==== Relic Loot
 
@@ -781,7 +781,7 @@ Build: `make relic_loot.zip`
 Known Issues: Due to limitations in how Minecraft loot tables work, if you
 uninstall this pack and want to continue using Loot Overhaul, relic loot
 will continue to generate until you
-run `/function bucepack:loot_overhaul/disable/relic_loot`
+run `/function buce:loot_overhaul/disable/relic_loot`
 
 ==== Starter Relic
 
@@ -800,7 +800,7 @@ Known Issues: Due to limitations in how Minecraft loot tables work, if you
 uninstall this pack and are using Loot Overhaul in conjunction with a datapack
 such as <<starter-spawn-chest,Starter Bonus Chest>> that adds new spawn chests
 to the world, relics will continue to generate in bonus spawn chests until you
-run `/function bucepack:loot_overhaul/disable/starter_relic`
+run `/function buce:loot_overhaul/disable/starter_relic`
 
 ==== Starter Item
 

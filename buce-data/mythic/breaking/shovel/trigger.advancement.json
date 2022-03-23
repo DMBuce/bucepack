@@ -1,0 +1,45 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:diamond_shovel"
+		},
+		"title": {
+			"text": "Breaking"
+		},
+		"description": {
+			"text": "Activate Gravedigger"
+		},
+		"show_toast": false,
+		"announce_to_chat": false,
+		"hidden": true,
+		"frame": "task"
+	},
+	"parent": "buce:mythic/root",
+	"criteria": {
+		"break_block": {
+			"trigger": "minecraft:item_durability_changed",
+			"conditions": {
+				"item": {
+					"items": [
+						"minecraft:wooden_shovel",
+						"minecraft:stone_shovel",
+						"minecraft:iron_shovel",
+						"minecraft:golden_shovel",
+						"minecraft:diamond_shovel",
+						"minecraft:netherite_shovel"
+					],
+					"nbt": "{breaking:1b}"
+				},
+				"delta": { "max": -1 },
+				"player": {
+					"flags": {
+						"is_sneaking": false
+					}
+				}
+			}
+		}
+	},
+	"rewards": {
+		"function": "buce:mythic/breaking/shovel/activate"
+	}
+}

@@ -1,0 +1,22 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:jungle_sapling"
+		},
+		"title": {
+			"text": "Fortunate Jungle"
+		},
+		"description": {
+			"text": "Jungle trees drop extra saplings when harvested with fortune"
+		},
+		"show_toast": false,
+		"announce_to_chat": false,
+		"frame": "task"
+	},
+	"parent": "buce:root",
+	"criteria": {
+		"tick": {
+			"trigger": "minecraft:tick"
+		}
+	}
+}

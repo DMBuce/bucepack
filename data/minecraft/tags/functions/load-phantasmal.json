@@ -1,7 +1,7 @@
 {
 	"replace": false,
 	"values": [
-		"bucepack:var",
-		"bucepack:phantasmal/load"
+		"buce:var",
+		"buce:phantasmal/load"
 	]
 }

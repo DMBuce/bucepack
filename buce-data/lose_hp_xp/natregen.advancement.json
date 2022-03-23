@@ -1,0 +1,29 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:netherrack"
+		},
+		"title": {
+			"text": "Corrupted Healing"
+		},
+		"description": {
+			"text": "Once any player enters a nether portal, all players stop healing from food"
+		},
+		"show_toast": false,
+		"announce_to_chat": true,
+		"hidden": false,
+		"frame": "task"
+	},
+	"parent": "buce:lose_hp_xp/root",
+	"criteria": {
+		"entered_nether": {
+			"trigger": "minecraft:changed_dimension",
+			"conditions": {
+				"to": "minecraft:the_nether"
+			}
+		}
+	},
+	"rewards": {
+		"function": "buce:lose_hp_xp/natregen"
+	}
+}

@@ -24,7 +24,7 @@
       "entries": [
         {
           "type": "minecraft:loot_table",
-          "name": "bucepack:boss_loot/loot",
+          "name": "buce:boss_loot/loot",
           "conditions": [
             {
               "condition": "minecraft:killed_by_player"

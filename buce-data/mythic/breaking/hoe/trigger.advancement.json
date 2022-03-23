@@ -1,0 +1,45 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:diamond_hoe"
+		},
+		"title": {
+			"text": "Breaking"
+		},
+		"description": {
+			"text": "Activate Herdsmacker"
+		},
+		"show_toast": false,
+		"announce_to_chat": false,
+		"hidden": true,
+		"frame": "task"
+	},
+	"parent": "buce:mythic/root",
+	"criteria": {
+		"break_block": {
+			"trigger": "minecraft:item_durability_changed",
+			"conditions": {
+				"item": {
+					"items": [
+						"minecraft:wooden_hoe",
+						"minecraft:stone_hoe",
+						"minecraft:iron_hoe",
+						"minecraft:golden_hoe",
+						"minecraft:diamond_hoe",
+						"minecraft:netherite_hoe"
+					],
+					"nbt": "{breaking:1b}"
+				},
+				"delta": { "max": -1 },
+				"player": {
+					"flags": {
+						"is_sneaking": false
+					}
+				}
+			}
+		}
+	},
+	"rewards": {
+		"function": "buce:mythic/breaking/hoe/activate"
+	}
+}

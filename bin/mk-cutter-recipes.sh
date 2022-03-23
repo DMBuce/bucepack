@@ -1,7 +1,7 @@
 #!/bin/bash
 
 gitroot="$(git rev-parse --show-toplevel)" || exit
-dir="$gitroot/bucepack-data/more_cutting"
+dir="$gitroot/buce-data/more_cutting"
 logtypes='oak spruce birch jungle acacia dark_oak'
 stemtypes='crimson warped'
 

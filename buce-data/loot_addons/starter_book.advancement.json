@@ -1,0 +1,22 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:writable_book"
+		},
+		"title": {
+			"text": "Starter Book"
+		},
+		"description": {
+			"text": "Adds a book and quill to Loot Overhaul's curated bonus chest"
+		},
+		"show_toast": false,
+		"announce_to_chat": false,
+		"frame": "task"
+	},
+	"parent": "buce:loot_overhaul/root",
+	"criteria": {
+		"tick": {
+			"trigger": "minecraft:tick"
+		}
+	}
+}

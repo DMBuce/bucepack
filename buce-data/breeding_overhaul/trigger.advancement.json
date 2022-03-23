@@ -1,0 +1,63 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:leather_horse_armor"
+		},
+		"title": {
+			"text": "Make'a da Baby"
+		},
+		"description": {
+			"text": "Breed a horse, donkey, or mule"
+		},
+		"show_toast": false,
+		"announce_to_chat": false,
+		"hidden": true,
+		"frame": "task"
+	},
+	"parent": "buce:breeding_overhaul/root",
+	"criteria": {
+		"horse": {
+			"trigger": "minecraft:bred_animals",
+			"conditions": {
+				"child": {
+					"type": "minecraft:horse"
+				}
+			}
+		},
+		"donkey": {
+			"trigger": "minecraft:bred_animals",
+			"conditions": {
+				"child": {
+					"type": "minecraft:donkey"
+				}
+			}
+		},
+		"mule": {
+			"trigger": "minecraft:bred_animals",
+			"conditions": {
+				"child": {
+					"type": "minecraft:mule"
+				}
+			}
+		},
+		"llama": {
+			"trigger": "minecraft:bred_animals",
+			"conditions": {
+				"child": {
+					"type": "minecraft:llama"
+				}
+			}
+		}
+	},
+	"requirements": [
+		[
+			"horse",
+			"donkey",
+			"mule",
+			"llama"
+		]
+	],
+	"rewards": {
+		"function": "buce:breeding_overhaul/activate"
+	}
+}

@@ -1,7 +1,7 @@
 {
 	"replace": false,
 	"values": [
-		"bucepack:var",
-		"bucepack:relic/load"
+		"buce:var",
+		"buce:relic/load"
 	]
 }

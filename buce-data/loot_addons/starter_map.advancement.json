@@ -1,0 +1,22 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:filled_map"
+		},
+		"title": {
+			"text": "Starter Map"
+		},
+		"description": {
+			"text": "Adds a map to Loot Overhaul's curated bonus chest"
+		},
+		"show_toast": false,
+		"announce_to_chat": false,
+		"frame": "task"
+	},
+	"parent": "buce:loot_overhaul/root",
+	"criteria": {
+		"tick": {
+			"trigger": "minecraft:tick"
+		}
+	}
+}

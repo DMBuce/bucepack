@@ -1,0 +1,26 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:diamond_chestplate",
+			"nbt": "{Enchantments:[{id:unbreaking,lvl:3}]}"
+		},
+		"title": {
+			"text": "Relic Loot"
+		},
+		"description": {
+			"text": "Rare relics in loot chests"
+		},
+		"show_toast": false,
+		"announce_to_chat": false,
+		"frame": "task"
+	},
+	"parent": "buce:loot_overhaul/root",
+	"criteria": {
+		"tick": {
+			"trigger": "minecraft:tick"
+		}
+	},
+	"rewards": {
+		"function": "buce:loot_addons/relic_loot"
+	}
+}

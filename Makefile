@@ -27,7 +27,7 @@ DATAPACKFILES = gardener_endermen.zip climbable.zip \
 PACKFILES = $(RESOURCEPACKFILES) $(DATAPACKFILES)
 MCDIR     = $(HOME)/.minecraft
 
-CLEAN_TARGETS := $(PACKFILES) data/bucepack pack.mcmeta pack.png test.zip \
+CLEAN_TARGETS := $(PACKFILES) data/buce pack.mcmeta pack.png test.zip \
 	data/minecraft/loot_tables/*.json \
 	data/minecraft/loot_tables/chests/*.json \
 	data/minecraft/loot_tables/chests/*/*.json \
@@ -35,12 +35,12 @@ CLEAN_TARGETS := $(PACKFILES) data/bucepack pack.mcmeta pack.png test.zip \
 	data/minecraft/loot_tables/gameplay/*/*.json \
 	data/minecraft/loot_tables/subtables/*.json \
 	data/minecraft/loot_tables/subtables/*/*.json \
-	bucepack-data/relic/all.loot_table.json.yaml \
-	#bucepack-data/*/subtables/*.json
+	buce-data/relic/all.loot_table.json.yaml \
+	#buce-data/*/subtables/*.json
 
 # needed by all pack targets
 DEFAULT_RESOURCE_FILES = LICENSE.txt
-DEFAULT_DATA_FILES = LICENSE.txt data/bucepack/advancements/root.json
+DEFAULT_DATA_FILES = LICENSE.txt data/buce/advancements/root.json
 
 lcg_FILES := \
 	data/lcg/functions/load.mcfunction \
@@ -324,55 +324,55 @@ classic_crunch_FILES := $(DEFAULT_RESOURCE_FILES) \
 
 gardener_endermen_FILES := $(DEFAULT_DATA_FILES) \
 	data/minecraft/tags/blocks/enderman_holdable.json \
-	data/bucepack/advancements/gardener_endermen.json
+	data/buce/advancements/gardener_endermen.json
 
 climbable_FILES := $(DEFAULT_DATA_FILES) \
 	data/minecraft/tags/blocks/climbable.json \
-	data/bucepack/advancements/climbable.json
+	data/buce/advancements/climbable.json
 
 speedy_paths_FILES := $(DEFAULT_DATA_FILES) \
 	data/minecraft/tags/blocks/soul_speed_blocks.json \
-	data/bucepack/advancements/speedy_paths.json
+	data/buce/advancements/speedy_paths.json
 
 waterproof_tech_FILES := $(DEFAULT_DATA_FILES) \
 	data/minecraft/tags/blocks/signs.json \
-	data/bucepack/advancements/waterproof_tech.json
+	data/buce/advancements/waterproof_tech.json
 
 aggro_bastions_FILES := $(DEFAULT_DATA_FILES) \
 	data/minecraft/tags/blocks/guarded_by_piglins.json \
-	data/bucepack/advancements/aggro_bastions.json
+	data/buce/advancements/aggro_bastions.json
 
 no_treasure_maps_FILES := $(DEFAULT_DATA_FILES) \
 	data/minecraft/loot_tables/chests/shipwreck_map_nomap.json \
-	data/bucepack/advancements/no_treasure_maps.json
+	data/buce/advancements/no_treasure_maps.json
 
 blue_fire_FILES := $(DEFAULT_DATA_FILES) \
 	data/minecraft/tags/blocks/soul_fire_base_blocks.json \
-	data/bucepack/advancements/blue_fire.json
+	data/buce/advancements/blue_fire.json
 
 fortunate_jungle_FILES := $(DEFAULT_DATA_FILES) \
 	data/minecraft/loot_tables/blocks/jungle_leaves.json \
-	data/bucepack/advancements/fortunate_jungle.json
+	data/buce/advancements/fortunate_jungle.json
 
 fortunate_crops_FILES := $(DEFAULT_DATA_FILES) \
 	data/minecraft/loot_tables/blocks/wheat.json \
 	data/minecraft/loot_tables/blocks/beetroots.json \
-	data/bucepack/advancements/fortunate_crops.json
+	data/buce/advancements/fortunate_crops.json
 
 lose_hp_xp_FILES := $(DEFAULT_DATA_FILES) \
-	$(shell find bucepack-data/lose_hp_xp -type f | ./bin/ext2dir) \
-	data/bucepack/functions/var.mcfunction \
+	$(shell find buce-data/lose_hp_xp -type f | ./bin/ext2dir) \
+	data/buce/functions/var.mcfunction \
 	data/minecraft/tags/functions/load-lose_hp_xp.json \
 
 relic_FILES := $(DEFAULT_DATA_FILES) \
-	$(shell find bucepack-data/relic -type f | ./bin/ext2dir) \
+	$(shell find buce-data/relic -type f | ./bin/ext2dir) \
 	$(spellsmithing_guide_FILES) \
-	data/bucepack/loot_tables/relic/all.json \
+	data/buce/loot_tables/relic/all.json \
 
 loot_overhaul_FILES := $(DEFAULT_DATA_FILES) \
-	$(shell find bucepack-data/loot_overhaul -type f | ./bin/ext2dir) \
+	$(shell find buce-data/loot_overhaul -type f | ./bin/ext2dir) \
 	$(relic_FILES) \
-	data/bucepack/loot_tables/mythic/stormcalling/heart_of_the_sea.json \
+	data/buce/loot_tables/mythic/stormcalling/heart_of_the_sea.json \
 	data/minecraft/tags/functions/load-loot_overhaul.json \
 	data/minecraft/loot_tables/chests/abandoned_mineshaft.json \
 	data/minecraft/loot_tables/chests/bastion_bridge.json \
@@ -429,14 +429,14 @@ loot_overhaul_FILES := $(DEFAULT_DATA_FILES) \
 	data/minecraft/tags/items/starter_item.json \
 
 plant_loot_FILES := $(DEFAULT_DATA_FILES) \
-	$(shell ls bucepack-data/loot_addons/plant_loot* | ./bin/ext2dir) \
+	$(shell ls buce-data/loot_addons/plant_loot* | ./bin/ext2dir) \
 
 relic_loot_FILES := $(DEFAULT_DATA_FILES) \
-	$(shell ls bucepack-data/loot_addons/relic_loot* | ./bin/ext2dir) \
+	$(shell ls buce-data/loot_addons/relic_loot* | ./bin/ext2dir) \
 	$(relic_FILES) \
 
 mythic_relics_FILES := $(DEFAULT_DATA_FILES) \
-	$(shell find bucepack-data/mythic -type f | ./bin/ext2dir) \
+	$(shell find buce-data/mythic -type f | ./bin/ext2dir) \
 	data/minecraft/tags/functions/load-mythic.json \
 	data/minecraft/loot_tables/blocks/deepslate_emerald_ore.json \
 	data/minecraft/loot_tables/entities/endermite.json \
@@ -446,19 +446,19 @@ mythic_relics_FILES := $(DEFAULT_DATA_FILES) \
 	data/minecraft/loot_tables/entities/silverfish.json \
 
 seasonal_loot_FILES := $(DEFAULT_DATA_FILES) \
-	$(shell ls bucepack-data/loot_addons/seasonal_loot* | ./bin/ext2dir) \
+	$(shell ls buce-data/loot_addons/seasonal_loot* | ./bin/ext2dir) \
 
 food_loot_FILES := $(DEFAULT_DATA_FILES) \
-	$(shell ls bucepack-data/loot_addons/food_loot* | ./bin/ext2dir) \
+	$(shell ls buce-data/loot_addons/food_loot* | ./bin/ext2dir) \
 
 decor_loot_FILES := $(DEFAULT_DATA_FILES) \
-	$(shell ls bucepack-data/loot_addons/decor_loot* | ./bin/ext2dir) \
+	$(shell ls buce-data/loot_addons/decor_loot* | ./bin/ext2dir) \
 
 modern_loot_FILES := $(DEFAULT_DATA_FILES) \
-	$(shell ls bucepack-data/loot_addons/modern_loot* | ./bin/ext2dir) \
+	$(shell ls buce-data/loot_addons/modern_loot* | ./bin/ext2dir) \
 
 boss_loot_FILES := $(DEFAULT_DATA_FILES) \
-	$(shell find bucepack-data/boss_loot -type f | ./bin/ext2dir) \
+	$(shell find buce-data/boss_loot -type f | ./bin/ext2dir) \
 	data/minecraft/tags/functions/load-boss_loot.json \
 	data/minecraft/loot_tables/entities/elder_guardian.json \
 	data/minecraft/loot_tables/entities/ender_dragon.json \
@@ -468,43 +468,43 @@ boss_loot_FILES := $(DEFAULT_DATA_FILES) \
 
 starter_relic_FILES := $(DEFAULT_DATA_FILES) \
 	$(relic_FILES) \
-	$(shell ls bucepack-data/loot_addons/starter_relic* | ./bin/ext2dir) \
+	$(shell ls buce-data/loot_addons/starter_relic* | ./bin/ext2dir) \
 
 starter_bonus_chest_FILES := $(DEFAULT_DATA_FILES) \
-	$(shell ls bucepack-data/starter_bonus_chest* | ./bin/ext2dir) \
+	$(shell ls buce-data/starter_bonus_chest* | ./bin/ext2dir) \
 
 starter_bed_FILES := $(DEFAULT_DATA_FILES) \
 	data/minecraft/tags/items/starter_item_starter_bed.json \
-	data/bucepack/advancements/loot_addons/starter_bed.json
+	data/buce/advancements/loot_addons/starter_bed.json
 
 starter_book_FILES := $(DEFAULT_DATA_FILES) \
 	data/minecraft/tags/items/starter_item_starter_book.json \
-	data/bucepack/advancements/loot_addons/starter_book.json
+	data/buce/advancements/loot_addons/starter_book.json
 
 starter_bucket_FILES := $(DEFAULT_DATA_FILES) \
 	data/minecraft/tags/items/starter_item_starter_bucket.json \
-	data/bucepack/advancements/loot_addons/starter_bucket.json
+	data/buce/advancements/loot_addons/starter_bucket.json
 
 starter_map_FILES := $(DEFAULT_DATA_FILES) \
 	data/minecraft/tags/items/starter_item_starter_map.json \
-	data/bucepack/advancements/loot_addons/starter_map.json
+	data/buce/advancements/loot_addons/starter_map.json
 
 starter_shulker_FILES := $(DEFAULT_DATA_FILES) \
 	data/minecraft/tags/items/starter_item_starter_shulker.json \
-	data/bucepack/advancements/loot_addons/starter_shulker.json
+	data/buce/advancements/loot_addons/starter_shulker.json
 
 starter_spyglass_FILES := $(DEFAULT_DATA_FILES) \
 	data/minecraft/tags/items/starter_item_starter_spyglass.json \
-	data/bucepack/advancements/loot_addons/starter_spyglass.json
+	data/buce/advancements/loot_addons/starter_spyglass.json
 
 dragonproof_FILES := $(DEFAULT_DATA_FILES) \
-	data/bucepack/advancements/dragonproof.json \
+	data/buce/advancements/dragonproof.json \
 	data/minecraft/tags/blocks/dragon_immune.json \
 
 mineable_FILES := $(DEFAULT_DATA_FILES) \
 	data/minecraft/tags/blocks/mineable/axe.json \
 	data/minecraft/tags/blocks/mineable/pickaxe.json \
-	data/bucepack/advancements/mineable.json \
+	data/buce/advancements/mineable.json \
 
 shearless_FILES := $(DEFAULT_DATA_FILES) \
 	data/minecraft/tags/blocks/mineable/hoe.json \
@@ -525,33 +525,33 @@ shearless_FILES := $(DEFAULT_DATA_FILES) \
 	data/minecraft/loot_tables/blocks/vine.json \
 	data/minecraft/loot_tables/blocks/weeping_vines.json \
 	data/minecraft/loot_tables/blocks/weeping_vines_plant.json \
-	data/bucepack/advancements/shearless.json \
+	data/buce/advancements/shearless.json \
 
 breeding_overhaul_FILES := $(DEFAULT_DATA_FILES) \
-	$(shell find bucepack-data/breeding_overhaul -type f | ./bin/ext2dir) \
+	$(shell find buce-data/breeding_overhaul -type f | ./bin/ext2dir) \
 	data/minecraft/tags/functions/load-breeding_overhaul.json \
-	data/bucepack/functions/var.mcfunction
+	data/buce/functions/var.mcfunction
 
 glow_squid_glamers_FILES := $(DEFAULT_DATA_FILES) \
-	$(shell find bucepack-data/illusory/glow_squid -type f | ./bin/ext2dir) \
+	$(shell find buce-data/illusory/glow_squid -type f | ./bin/ext2dir) \
 	data/minecraft/loot_tables/entities/glow_squid.json \
 
 invis_squid_glamer_FILES := $(DEFAULT_DATA_FILES) \
-	$(shell find bucepack-data/illusory/squid -type f | ./bin/ext2dir) \
+	$(shell find buce-data/illusory/squid -type f | ./bin/ext2dir) \
 	data/minecraft/loot_tables/entities/squid.json \
 
 phantasmal_FILES := $(DEFAULT_DATA_FILES) \
-	$(shell find bucepack-data/phantasmal -type f | ./bin/ext2dir) \
+	$(shell find buce-data/phantasmal -type f | ./bin/ext2dir) \
 	data/minecraft/loot_tables/entities/phantom.json \
 	data/minecraft/loot_tables/gameplay/cat_morning_gift.json \
 	data/minecraft/tags/functions/load-phantasmal.json \
-	data/bucepack/functions/var.mcfunction \
+	data/buce/functions/var.mcfunction \
 
 phantasmal_end_FILES := $(DEFAULT_DATA_FILES) \
-	$(shell find bucepack-data/phantasmal_end -type f | ./bin/ext2dir) \
+	$(shell find buce-data/phantasmal_end -type f | ./bin/ext2dir) \
 
 more_cutting_FILES := $(DEFAULT_DATA_FILES) \
-	$(shell find bucepack-data/more_cutting -type f | ./bin/ext2dir) \
+	$(shell find buce-data/more_cutting -type f | ./bin/ext2dir) \
 	assets/minecraft/lang/en_us-more_cutting.json \
 
 more_copper_tech_FILES := $(DEFAULT_DATA_FILES) \
@@ -618,20 +618,20 @@ copper_tech_FILES := $(DEFAULT_DATA_FILES) \
 
 more_shulker_shells_FILES := $(DEFAULT_DATA_FILES) \
 	data/minecraft/loot_tables/entities/shulker.json \
-	data/bucepack/advancements/more_shulker_shells.json
+	data/buce/advancements/more_shulker_shells.json
 
 escape_end_FILES := $(DEFAULT_DATA_FILES) \
 	data/minecraft/tags/functions/tick-escape.json \
 	data/escape/functions/end_respawn.mcfunction \
 	data/escape/functions/tick-end.mcfunction \
-	data/bucepack/advancements/escape_end.json
+	data/buce/advancements/escape_end.json
 
 escape_nether_FILES := $(DEFAULT_DATA_FILES) \
 	data/minecraft/tags/functions/tick-escape.json \
 	data/escape/functions/nether_respawn.mcfunction \
 	data/escape/functions/tick-nether.mcfunction \
 	data/escape/tags/blocks/airlava.json \
-	data/bucepack/advancements/escape_nether.json \
+	data/buce/advancements/escape_nether.json \
 	data/escape/advancements/kill_wither.json
 
 escape_grind_FILES := $(DEFAULT_DATA_FILES) \
@@ -645,7 +645,7 @@ escape_grind_FILES := $(DEFAULT_DATA_FILES) \
 	data/escape/functions/tick_grind.mcfunction \
 	data/escape/functions/grind_respawn.mcfunction \
 	data/escape/functions/locate_city.mcfunction \
-	data/bucepack/advancements/escape_grind.json
+	data/buce/advancements/escape_grind.json
 
 lichdom_FILES := $(DEFAULT_DATA_FILES) \
 	data/minecraft/tags/functions/load-lichdom.json \
@@ -719,7 +719,7 @@ data/minecraft/loot_tables/%.json: minecraft-data/%.loot_table.json
 	mkdir -p $(dir $@)
 	cp -v $< $@
 
-data/bucepack/loot_tables/%.json: bucepack-data/%.loot_table.json
+data/buce/loot_tables/%.json: buce-data/%.loot_table.json
 	mkdir -p $(dir $@)
 	cp -v $< $@
 
@@ -727,7 +727,7 @@ data/minecraft/functions/%.mcfunction: minecraft-data/%.function.mcfunction
 	mkdir -p $(dir $@)
 	cp -v $< $@
 
-data/bucepack/functions/%.mcfunction: bucepack-data/%.function.mcfunction
+data/buce/functions/%.mcfunction: buce-data/%.function.mcfunction
 	mkdir -p $(dir $@)
 	cp -v $< $@
 
@@ -735,7 +735,7 @@ data/minecraft/advancements/%.json: minecraft-data/%.advancement.json
 	mkdir -p $(dir $@)
 	cp -v $< $@
 
-data/bucepack/advancements/%.json: bucepack-data/%.advancement.json
+data/buce/advancements/%.json: buce-data/%.advancement.json
 	mkdir -p $(dir $@)
 	cp -v $< $@
 
@@ -743,7 +743,7 @@ data/minecraft/predicates/%.json: minecraft-data/%.predicate.json
 	mkdir -p $(dir $@)
 	cp -v $< $@
 
-data/bucepack/predicates/%.json: bucepack-data/%.predicate.json
+data/buce/predicates/%.json: buce-data/%.predicate.json
 	mkdir -p $(dir $@)
 	cp -v $< $@
 
@@ -751,7 +751,7 @@ data/minecraft/recipes/%.json: minecraft-data/%.recipe.json
 	mkdir -p $(dir $@)
 	cp -v $< $@
 
-data/bucepack/recipes/%.json: bucepack-data/%.recipe.json
+data/buce/recipes/%.json: buce-data/%.recipe.json
 	mkdir -p $(dir $@)
 	cp -v $< $@
 
@@ -759,7 +759,7 @@ data/minecraft/tags/blocks/%.json: minecraft-data/%.block.tag.json
 	mkdir -p $(dir $@)
 	cp -v $< $@
 
-data/bucepack/tags/blocks/%.json: bucepack-data/%.block.tag.json
+data/buce/tags/blocks/%.json: buce-data/%.block.tag.json
 	mkdir -p $(dir $@)
 	cp -v $< $@
 
@@ -767,7 +767,7 @@ data/minecraft/tags/items/%.json: minecraft-data/%.item.tag.json
 	mkdir -p $(dir $@)
 	cp -v $< $@
 
-data/bucepack/tags/items/%.json: bucepack-data/%.item.tag.json
+data/buce/tags/items/%.json: buce-data/%.item.tag.json
 	mkdir -p $(dir $@)
 	cp -v $< $@
 
@@ -775,20 +775,20 @@ data/minecraft/tags/functions/%.json: minecraft-data/%.function.tag.json
 	mkdir -p $(dir $@)
 	cp -v $< $@
 
-data/bucepack/tags/functions/%.json: bucepack-data/%.function.tag.json
+data/buce/tags/functions/%.json: buce-data/%.function.tag.json
 	mkdir -p $(dir $@)
 	cp -v $< $@
 
 #data/minecraft/loot_tables/%.json: data/minecraft/loot_tables/%.json.yaml data/minecraft/loot_tables/loot_table.j2
 #	j2 data/minecraft/loot_tables/loot_table.j2 $< -o $@
 #
-#data/bucepack/loot_tables/%.json: data/bucepack/loot_tables/%.json.yaml data/minecraft/loot_tables/loot_table.j2
+#data/buce/loot_tables/%.json: data/buce/loot_tables/%.json.yaml data/minecraft/loot_tables/loot_table.j2
 #	j2 data/minecraft/loot_tables/loot_table.j2 $< -o $@
 
 %.json: %.json.yaml data/minecraft/loot_tables/loot_table.j2
 	j2 data/minecraft/loot_tables/loot_table.j2 $< -o $@
 
-bucepack-data/relic/all.loot_table.json.yaml: bucepack-data/relic/random.loot_table.json.yaml
+buce-data/relic/all.loot_table.json.yaml: buce-data/relic/random.loot_table.json.yaml
 	sed '/^#/d; 5,$$ s/^      -/  - rolls: 1\n    entries:\n&/' $^ > $@
 
 test.zip: $(test_FILES)

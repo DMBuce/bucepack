@@ -13,7 +13,7 @@
 		"announce_to_chat": false,
 		"frame": "task"
 	},
-	"parent": "bucepack:root",
+	"parent": "buce:root",
 	"criteria": {
 		"tick": {
 			"trigger": "minecraft:tick"

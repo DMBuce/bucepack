@@ -1,0 +1,45 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:barrier"
+		},
+		"title": {
+			"text": "Trigger Advancement"
+		},
+		"description": {
+			"text": "Something went wrong, you should revoke this advancement"
+		},
+		"show_toast": false,
+		"announce_to_chat": false,
+		"hidden": true,
+		"frame": "task"
+	},
+	"parent": "buce:mythic/root",
+	"criteria": {
+		"hurt_entity": {
+			"trigger": "minecraft:player_hurt_entity",
+			"conditions": {
+				"player": [
+					{
+						"condition": "minecraft:entity_properties",
+						"entity": "this",
+						"predicate": {
+							"equipment": {
+								"mainhand": {
+									"items": [ "minecraft:cod" ]
+								}
+							}
+						}
+					}
+				],
+				"entity": {
+					"type": "minecraft:rabbit",
+					"nbt": "{RabbitType:1}"
+				}
+			}
+		}
+	},
+	"rewards": {
+		"function": "buce:mythic/bounding/slap"
+	}
+}
