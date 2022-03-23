@@ -1082,10 +1082,9 @@ Build: `make lose_hp_xp.zip`
 
 Makes more blocks warm enough to keep striders comfortable.
 
-image::https://i.imgur.com/f2xBoAA.png[Warmer Striders]
+image::https://i.imgur.com/FnDMksX.png[Warmer Striders]
 
-The picture above shows just a few of the blocks that can warm striders.
-The full list of warm blocks is
+The full list of blocks that can warm striders is
 https://raw.githubusercontent.com/DMBuce/bucepack/master/data/minecraft/tags/blocks/strider_warm_blocks.json[here].
 
 Download: https://github.com/DMBuce/bucepack/releases
