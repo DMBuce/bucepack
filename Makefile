@@ -385,8 +385,9 @@ climbable_FILES := $(DEFAULT_DATA_FILES) \
 	data/buce/advancements/climbable.json \
 
 travelling_FILES := $(DEFAULT_DATA_FILES) \
-	data/minecraft/tags/blocks/soul_speed_blocks.json \
+	assets/minecraft/lang/en_us_travelling.json \
 	data/buce/advancements/travelling.json \
+	data/minecraft/tags/blocks/soul_speed_blocks.json \
 
 waterproof_tech_FILES := $(DEFAULT_DATA_FILES) \
 	data/minecraft/tags/blocks/signs.json \

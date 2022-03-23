@@ -1156,6 +1156,16 @@ Build:
  make copper_pistons.zip
  make more_copper_tech.zip
 
+=== Travelling
+
+When installed as a resource pack,
+renames Soul Speed to Travelling.
+
+When installed as a data pack,
+makes Soul Speed / Travelling work with path blocks
+and any material that can be turned into slabs or stairs
+except for stone.
+
 == Legacy Data Packs
 
 These data packs haven't been updated for the most recent version of
