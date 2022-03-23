@@ -1,28 +1,80 @@
 
-RESOURCEPACKFILES = painting_overhaul.zip note_guide.zip \
-	brew_guide.zip brew_guide_darkmode.zip \
-	tech_arrows.zip ravager.zip villager_mech.zip pig_armor.zip ore_types.zip \
-	discreet_pumpkin.zip \
-	classic_oak.zip classic_netherrack.zip classic_lava.zip classic_gravel.zip \
-	classic_obsidian.zip classic_lapis.zip classic_rose.zip classic_food.zip \
-	classic_moo.zip classic_twang.zip classic_sploosh.zip classic_crunch.zip \
-	spellsmithing_guide.zip \
-	more_cutting.zip \
-	copper_tech.zip copper_pistons.zip more_copper_tech.zip \
+DATARESOURCEPACKFILES = \
+	copper_pistons.zip \
+	copper_tech.zip \
+	more_copper_tech.zip \
 
-DATAPACKFILES = gardener_endermen.zip climbable.zip \
-	no_treasure_maps.zip fortunate_jungle.zip fortunate_crops.zip dragonproof.zip \
-	mineable.zip shearless.zip breeding_overhaul.zip \
-	phantasmal.zip phantasmal_end.zip glow_squid_glamers.zip invis_squid_glamer.zip \
-	more_cutting.zip lose_hp_xp.zip \
-	copper_tech.zip copper_pistons.zip more_copper_tech.zip \
-	loot_overhaul.zip plant_loot.zip relic_loot.zip mythic_relics.zip \
-	more_shulker_shells.zip boss_loot.zip seasonal_loot.zip \
-	food_loot.zip decor_loot.zip modern_loot.zip \
-	starter_bed.zip starter_book.zip starter_bucket.zip starter_map.zip \
-	starter_shulker.zip starter_spyglass.zip starter_relic.zip starter_bonus_chest.zip \
-	waterproof_tech.zip aggro_bastions.zip warmer_striders.zip blue_fire.zip \
-	escape_end.zip escape_nether.zip escape_grind.zip lichdom.zip \
+RESOURCEPACKFILES = \
+	$(DATARESOURCEPACKFILES) \
+	brew_guide_darkmode.zip \
+	brew_guide.zip \
+	classic_crunch.zip \
+	classic_food.zip \
+	classic_gravel.zip \
+	classic_lapis.zip \
+	classic_lava.zip \
+	classic_moo.zip \
+	classic_netherrack.zip \
+	classic_oak.zip \
+	classic_obsidian.zip \
+	classic_rose.zip \
+	classic_sploosh.zip \
+	classic_twang.zip \
+	discreet_pumpkin.zip \
+	more_cutting.zip \
+	note_guide.zip \
+	ore_types.zip \
+	painting_overhaul.zip \
+	pig_armor.zip \
+	ravager.zip \
+	spellsmithing_guide.zip \
+	tech_arrows.zip \
+	villager_mech.zip \
+
+DATAPACKFILES = \
+	$(DATARESOURCEPACKFILES) \
+	aggro_bastions.zip \
+	blue_fire.zip \
+	boss_loot.zip \
+	breeding_overhaul.zip \
+	climbable.zip \
+	decor_loot.zip \
+	dragonproof.zip \
+	escape_end.zip \
+	escape_grind.zip \
+	escape_nether.zip \
+	food_loot.zip \
+	fortunate_crops.zip \
+	fortunate_jungle.zip \
+	gardener_endermen.zip \
+	glow_squid_glamers.zip \
+	invis_squid_glamer.zip \
+	lichdom.zip \
+	loot_overhaul.zip \
+	lose_hp_xp.zip \
+	mineable.zip \
+	modern_loot.zip \
+	more_copper_tech.zip \
+	more_cutting.zip \
+	more_shulker_shells.zip \
+	mythic_relics.zip \
+	no_treasure_maps.zip \
+	phantasmal_end.zip \
+	phantasmal.zip \
+	plant_loot.zip \
+	relic_loot.zip \
+	seasonal_loot.zip \
+	shearless.zip \
+	starter_bed.zip \
+	starter_bonus_chest.zip \
+	starter_book.zip \
+	starter_bucket.zip \
+	starter_map.zip \
+	starter_relic.zip \
+	starter_shulker.zip \
+	starter_spyglass.zip \
+	warmer_striders.zip \
+	waterproof_tech.zip \
 
 PACKFILES = $(RESOURCEPACKFILES) $(DATAPACKFILES)
 MCDIR     = $(HOME)/.minecraft
