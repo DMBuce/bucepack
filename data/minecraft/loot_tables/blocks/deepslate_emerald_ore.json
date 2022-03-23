@@ -54,7 +54,7 @@
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{relic:1b,mining:1b,darkvision:1b,CustomModelData:22183,display:{Name:\"{\\\"text\\\":\\\"Relic of Ores\\\",\\\"color\\\":\\\"light_purple\\\"}\",Lore:[\"\\\"§r§bMyth of Darkvision\\\"\",\"\\\"§r§bMyth of Mining\\\"\"]},Enchantments:[{id:unbreaking,lvl:3}]}",
+              "tag": "{relic:1b,mining:1b,darkvision:1b,CustomModelData:22183,display:{Name:\"{\\\"text\\\":\\\"Relic of Mining\\\",\\\"color\\\":\\\"light_purple\\\"}\",Lore:[\"\\\"§r§bMyth of Darkvision\\\"\",\"\\\"§r§bMyth of Greed\\\"\"]},Enchantments:[{id:unbreaking,lvl:3}]}",
               "add": false
             }
           ],

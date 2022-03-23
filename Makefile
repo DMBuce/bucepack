@@ -188,7 +188,7 @@ candystrider_FILES := $(DEFAULT_RESOURCE_FILES) \
 	assets/minecraft/textures/entity/strider/strider.png
 
 pig_armor_FILES := $(DEFAULT_RESOURCE_FILES) \
-	assets/minecraft/textures/entity/pig/pig_saddle.png
+	assets/minecraft/textures/entity/pig/pig_saddle.png \
 
 ore_types_FILES := $(DEFAULT_RESOURCE_FILES) \
 	assets/minecraft/textures/block/coal_ore.png \

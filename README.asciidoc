@@ -889,14 +889,14 @@ shovels break a 4-block column, and hoes break a 3x3x3 sphere.
 The extra broken blocks are not affected by fortune or silk touch and do not
 further decrease the tool's durability.
 
-**Relic of Ores**: Deepslate Emerald Ore drops a gold nugget with Myth of
-Darkvision and Myth of Mining, two custom enchantments that can be applied to
+**Relic of Mining**: Deepslate Emerald Ore drops a gold nugget with Myth of
+Darkvision and Myth of Greed, two custom enchantments that can be applied to
 a golden helmet in the smithing table. Myth of Darkvision provides eight minutes
 of Night Vision when a player tills soil with a hoe,
 creates a path with a shovel, or strips a log with an axe.
-Myth of Mining charges every time a player's pickaxe loses
-durability. At 250 charge, the enchantment provides one minute of Haste I, and
-the charge resets.
+Myth of Greed charges every time a player's pickaxe loses durability.
+At 250 charge, the enchantment provides one minute of Haste I,
+and the charge resets.
 
 **Relic of the Lens**: When a player with 1 health (i.e. half a heart) kills an
 endermite in melee, it drops an amethyst shard with Myth of Seeking, a
