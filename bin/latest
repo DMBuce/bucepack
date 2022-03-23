@@ -1,0 +1,17 @@
+#!/bin/bash
+
+latest="$(
+	curl -s 'https://launchermeta.mojang.com/mc/game/version_manifest.json' \
+	| jq -r .latest.release
+)"
+
+if [[ ! -d "$latest.jar" && -f ~/".minecraft/versions/$latest/$latest.jar" ]]; then
+	mkdir "$latest.jar"
+	cd "$latest.jar"
+	jar xf ~/".minecraft/versions/$latest/$latest.jar" assets data
+elif [[ ! -d "$latest.jar" ]]; then
+	printf "File not found: %s\n" ~/".minecraft/versions/$latest/$latest.jar" >&2
+fi
+
+echo "$latest"
+

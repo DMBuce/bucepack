@@ -1472,10 +1472,11 @@ Bump pack_format in mcmeta if necessary
 Merge loot table changes with Loot Overhaul
 Add new plants to Gardener Endermen and Shearless packs
 Add new ores to Ore Types
-Add new End blocks to Dragonproof
 Add new potions to Brewing Guide
 Add new smooth, cracked, wood, slab, and stair blocks to stonecutter
 Add new warm blocks to Warmer Striders
+Add new End blocks to mk-dragonproof.sh
+Run `make update`
 
 HOW TO UPDATE LOOT TABLES AFTER MINECRAFT UPDATES
 =================================================
