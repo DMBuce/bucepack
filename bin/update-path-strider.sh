@@ -7,6 +7,7 @@ latest="$(./bin/latest)"
 exec >data/minecraft/tags/blocks/soul_speed_blocks.json
 
 echo '{
+  "AUTO-GENERATED-BY": "'"${0##*/}"'",
   "replace": false,
   "values": [
     "minecraft:soul_sand",

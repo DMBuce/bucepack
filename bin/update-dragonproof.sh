@@ -7,6 +7,7 @@ latest="$(./bin/latest)"
 exec >data/minecraft/tags/blocks/dragon_immune.json
 
 echo '{
+  "AUTO-GENERATED-BY": "'"${0##*/}"'",
   "replace": false,
   "values": [
     "minecraft:end_stone_bricks",

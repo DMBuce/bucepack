@@ -1,4 +1,5 @@
 {
+  "AUTO-GENERATED-BY": "update-dragonproof.sh",
   "replace": false,
   "values": [
     "minecraft:end_stone_bricks",
