@@ -193,16 +193,6 @@ Download: https://github.com/DMBuce/bucepack/releases
 
 Build: `make discreet_pumpkin.zip`
 
-=== Stickier Piston
-
-Makes the heads of sticky pistons more green.
-
-image::https://i.imgur.com/b6jnTOt.png[Stickier Piston]
-
-Download: https://github.com/DMBuce/bucepack/releases
-
-Build: `make stickier_piston.zip`
-
 === Classic Textures
 
 This is a series of texture packs that revert certain blocks and items to
