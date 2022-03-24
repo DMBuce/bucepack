@@ -1158,13 +1158,13 @@ Build:
 
 === Path Strider
 
-When installed as a resource pack,
-renames Soul Speed to Path Strider.
-
 When installed as a data pack,
-makes Soul Speed / Path Strider work with path blocks
+makes Soul Speed work with path blocks
 and any material that can be turned into slabs or stairs
 except for stone.
+
+When installed as a resource pack,
+renames Soul Speed to Path Strider.
 
 Download: https://github.com/DMBuce/bucepack/releases
 
