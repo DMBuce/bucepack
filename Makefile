@@ -1295,6 +1295,10 @@ mantrid: $(RESOURCEPACKFILES) $(DATAPACKFILES)
 	rsync -auv $(RESOURCEPACKFILES) mantrid:$(MCDIR)/resourcepacks
 	rsync -auv $(DATAPACKFILES) mantrid:$(MCDIR)/datapacks
 
+.PHONY: update
+update:
+	find ./bin/update-* -exec {} \;
+
 .PHONY: release
 release: $(RESOURCEPACKFILES) $(DATAPACKFILES)
 	./bin/release $(RESOURCEPACKFILES) $(DATAPACKFILES)
