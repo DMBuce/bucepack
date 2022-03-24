@@ -3,7 +3,7 @@ DATARESOURCEPACKFILES = \
 	copper_pistons.zip \
 	copper_tech.zip \
 	more_copper_tech.zip \
-	travelling.zip \
+	path_strider.zip \
 
 RESOURCEPACKFILES = \
 	$(DATARESOURCEPACKFILES) \
@@ -55,7 +55,6 @@ DATAPACKFILES = \
 	lose_hp_xp.zip \
 	mineable.zip \
 	modern_loot.zip \
-	more_copper_tech.zip \
 	more_cutting.zip \
 	more_shulker_shells.zip \
 	mythic_relics.zip \
@@ -74,7 +73,6 @@ DATAPACKFILES = \
 	starter_relic.zip \
 	starter_shulker.zip \
 	starter_spyglass.zip \
-	travelling.zip \
 	warmer_striders.zip \
 	waterproof_tech.zip \
 
@@ -384,9 +382,21 @@ climbable_FILES := $(DEFAULT_DATA_FILES) \
 	data/minecraft/tags/blocks/climbable.json \
 	data/buce/advancements/climbable.json \
 
-travelling_FILES := $(DEFAULT_DATA_FILES) \
-	assets/minecraft/lang/en_us_travelling.json \
-	data/buce/advancements/travelling.json \
+path_strider_FILES := $(DEFAULT_DATA_FILES) \
+	assets/minecraft/sounds.json \
+	assets/minecraft/lang/en_us_path_strider.json \
+	assets/minecraft/textures/particle/soul_0.png \
+	assets/minecraft/textures/particle/soul_10.png \
+	assets/minecraft/textures/particle/soul_1.png \
+	assets/minecraft/textures/particle/soul_2.png \
+	assets/minecraft/textures/particle/soul_3.png \
+	assets/minecraft/textures/particle/soul_4.png \
+	assets/minecraft/textures/particle/soul_5.png \
+	assets/minecraft/textures/particle/soul_6.png \
+	assets/minecraft/textures/particle/soul_7.png \
+	assets/minecraft/textures/particle/soul_8.png \
+	assets/minecraft/textures/particle/soul_9.png \
+	data/buce/advancements/path_strider.json \
 	data/minecraft/tags/blocks/soul_speed_blocks.json \
 
 waterproof_tech_FILES := $(DEFAULT_DATA_FILES) \
@@ -1027,10 +1037,11 @@ climbable.zip: $(climbable_FILES)
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^
 
-travelling.zip: $(travelling_FILES)
+path_strider.zip: $(path_strider_FILES)
 	cp meta/$(@:.zip=.png) pack.png
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^
+	./bin/ziprename _$(@:.zip=) "" $@
 
 waterproof_tech.zip: $(waterproof_tech_FILES)
 	cp meta/$(@:.zip=.png) pack.png

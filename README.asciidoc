@@ -1156,15 +1156,19 @@ Build:
  make copper_pistons.zip
  make more_copper_tech.zip
 
-=== Travelling
+=== Path Strider
 
 When installed as a resource pack,
-renames Soul Speed to Travelling.
+renames Soul Speed to Path Strider.
 
 When installed as a data pack,
-makes Soul Speed / Travelling work with path blocks
+makes Soul Speed / Path Strider work with path blocks
 and any material that can be turned into slabs or stairs
 except for stone.
+
+Download: https://github.com/DMBuce/bucepack/releases
+
+Build: `make path_strider.zip`
 
 == Legacy Data Packs
 
