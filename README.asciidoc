@@ -1118,6 +1118,14 @@ image::https://i.imgur.com/3fGJg0c.png[Copper Tech]
 * Polished Blackstone Button
 * Detector Rails
 * Powered Rails
+
+When installed as a resource pack,
+Iron Doors, Iron Trapdoors, and Blackstone Buttons are renamed to Copper
+Doors/Trapdoors/Buttons when
+American English is the selected language in the options menu.
+If you would like to add
+support for renaming Soul Speed in other languages, please create a Pull
+Request if you know how or a GitHub Issue if you don't.
 ====
 
 .Click for a summary of More Copper Tech redstone components
@@ -1154,7 +1162,11 @@ and any material that can be turned into slabs or stairs
 except for stone.
 
 When installed as a resource pack,
-renames Soul Speed to Path Strider.
+Soul Speed is renamed to Path Strider when
+American English is the selected language in the options menu.
+If you would like to add
+support for renaming Soul Speed in other languages, please create a Pull
+Request if you know how or a GitHub Issue if you don't.
 
 Download: https://github.com/DMBuce/bucepack/releases
 
