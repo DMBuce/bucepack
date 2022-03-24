@@ -213,7 +213,7 @@ brew_guide_FILES := $(DEFAULT_RESOURCE_FILES) \
 	assets/minecraft/textures/gui/container/brewing_stand.png \
 
 brew_guide_darkmode_FILES := $(DEFAULT_RESOURCE_FILES) \
-	assets/minecraft/textures/gui/container/brewing_stand_darkmode.png \
+	assets/minecraft/textures/gui/container/brewing_stand_brew_guide_darkmode.png \
 
 tech_arrows_FILES := $(DEFAULT_RESOURCE_FILES) \
 	assets/minecraft/models/block/hopper_side.json \
@@ -294,7 +294,7 @@ classic_lapis_FILES := $(DEFAULT_RESOURCE_FILES) \
 
 classic_rose_FILES := $(DEFAULT_RESOURCE_FILES) \
 	assets/minecraft/textures/block/poppy.png \
-	assets/minecraft/lang/en_us-classic_rose.json \
+	assets/minecraft/lang/en_us_classic_rose.json \
 
 classic_food_FILES := $(DEFAULT_RESOURCE_FILES) \
 	assets/minecraft/textures/block/cake_bottom.png \
@@ -411,7 +411,7 @@ warmer_striders_FILES := $(DEFAULT_DATA_FILES) \
 	data/minecraft/tags/blocks/strider_warm_blocks.json \
 
 no_treasure_maps_FILES := $(DEFAULT_DATA_FILES) \
-	data/minecraft/loot_tables/chests/shipwreck_map_nomap.json \
+	data/minecraft/loot_tables/chests/shipwreck_map_no_treasure_maps.json \
 	data/buce/advancements/no_treasure_maps.json \
 
 blue_fire_FILES := $(DEFAULT_DATA_FILES) \
@@ -430,7 +430,7 @@ fortunate_crops_FILES := $(DEFAULT_DATA_FILES) \
 lose_hp_xp_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell find buce-data/lose_hp_xp -type f | ./bin/ext2dir) \
 	data/buce/functions/var.mcfunction \
-	data/minecraft/tags/functions/load-lose_hp_xp.json \
+	data/minecraft/tags/functions/load_lose_hp_xp.json \
 
 relic_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell find buce-data/relic -type f | ./bin/ext2dir) \
@@ -441,7 +441,7 @@ loot_overhaul_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell find buce-data/loot_overhaul -type f | ./bin/ext2dir) \
 	$(relic_FILES) \
 	data/buce/loot_tables/mythic/stormcalling/heart_of_the_sea.json \
-	data/minecraft/tags/functions/load-loot_overhaul.json \
+	data/minecraft/tags/functions/load_loot_overhaul.json \
 	data/minecraft/loot_tables/chests/abandoned_mineshaft.json \
 	data/minecraft/loot_tables/chests/bastion_bridge.json \
 	data/minecraft/loot_tables/chests/bastion_hoglin_stable.json \
@@ -505,7 +505,7 @@ relic_loot_FILES := $(DEFAULT_DATA_FILES) \
 
 mythic_relics_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell find buce-data/mythic -type f | ./bin/ext2dir) \
-	data/minecraft/tags/functions/load-mythic.json \
+	data/minecraft/tags/functions/load_mythic_relics.json \
 	data/minecraft/loot_tables/blocks/deepslate_emerald_ore.json \
 	data/minecraft/loot_tables/entities/endermite.json \
 	data/minecraft/loot_tables/entities/ghast.json \
@@ -527,7 +527,7 @@ modern_loot_FILES := $(DEFAULT_DATA_FILES) \
 
 boss_loot_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell find buce-data/boss_loot -type f | ./bin/ext2dir) \
-	data/minecraft/tags/functions/load-boss_loot.json \
+	data/minecraft/tags/functions/load_boss_loot.json \
 	data/minecraft/loot_tables/entities/elder_guardian.json \
 	data/minecraft/loot_tables/entities/ender_dragon.json \
 	data/minecraft/loot_tables/entities/ravager.json \
@@ -597,7 +597,7 @@ shearless_FILES := $(DEFAULT_DATA_FILES) \
 
 breeding_overhaul_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell find buce-data/breeding_overhaul -type f | ./bin/ext2dir) \
-	data/minecraft/tags/functions/load-breeding_overhaul.json \
+	data/minecraft/tags/functions/load_breeding_overhaul.json \
 	data/buce/functions/var.mcfunction \
 
 glow_squid_glamers_FILES := $(DEFAULT_DATA_FILES) \
@@ -612,7 +612,7 @@ phantasmal_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell find buce-data/phantasmal -type f | ./bin/ext2dir) \
 	data/minecraft/loot_tables/entities/phantom.json \
 	data/minecraft/loot_tables/gameplay/cat_morning_gift.json \
-	data/minecraft/tags/functions/load-phantasmal.json \
+	data/minecraft/tags/functions/load_phantasmal.json \
 	data/buce/functions/var.mcfunction \
 
 phantasmal_end_FILES := $(DEFAULT_DATA_FILES) \
@@ -620,7 +620,7 @@ phantasmal_end_FILES := $(DEFAULT_DATA_FILES) \
 
 more_cutting_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell find buce-data/more_cutting -type f | ./bin/ext2dir) \
-	assets/minecraft/lang/en_us-more_cutting.json \
+	assets/minecraft/lang/en_us_more_cutting.json \
 
 more_copper_tech_FILES := $(DEFAULT_DATA_FILES) \
 	assets/minecraft/models/block/dispenser.json \
@@ -689,23 +689,23 @@ more_shulker_shells_FILES := $(DEFAULT_DATA_FILES) \
 	data/buce/advancements/more_shulker_shells.json \
 
 escape_end_FILES := $(DEFAULT_DATA_FILES) \
-	data/minecraft/tags/functions/tick-escape.json \
+	data/minecraft/tags/functions/tick_escape_end.json \
 	data/escape/functions/end_respawn.mcfunction \
-	data/escape/functions/tick-end.mcfunction \
+	data/escape/functions/tick_end.mcfunction \
 	data/buce/advancements/escape_end.json \
 
 escape_nether_FILES := $(DEFAULT_DATA_FILES) \
-	data/minecraft/tags/functions/tick-escape.json \
+	data/minecraft/tags/functions/tick_escape_nether.json \
 	data/escape/functions/nether_respawn.mcfunction \
-	data/escape/functions/tick-nether.mcfunction \
+	data/escape/functions/tick_nether.mcfunction \
 	data/escape/tags/blocks/airlava.json \
 	data/buce/advancements/escape_nether.json \
 	data/escape/advancements/kill_wither.json \
 
 escape_grind_FILES := $(DEFAULT_DATA_FILES) \
-	data/minecraft/tags/functions/load-grind.json \
-	data/minecraft/tags/functions/tick-grind.json \
-	data/minecraft/loot_tables/blocks/crying_obsidian_lapis.json \
+	data/minecraft/tags/functions/load_escape_grind.json \
+	data/minecraft/tags/functions/tick_escape_grind.json \
+	data/minecraft/loot_tables/blocks/crying_obsidian_escape_grind.json \
 	data/minecraft/loot_tables/chests/end_city_treasure.json \
 	data/escape/recipes/grindstone.json \
 	data/escape/tags/functions/respawn.json \
@@ -716,8 +716,8 @@ escape_grind_FILES := $(DEFAULT_DATA_FILES) \
 	data/buce/advancements/escape_grind.json \
 
 lichdom_FILES := $(DEFAULT_DATA_FILES) \
-	data/minecraft/tags/functions/load-lichdom.json \
-	data/minecraft/tags/functions/tick-lichdom.json \
+	data/minecraft/tags/functions/load_lichdom.json \
+	data/minecraft/tags/functions/tick_lichdom.json \
 	data/lichdom/functions/fixme/load.mcfunction \
 	data/lichdom/functions/fixme/tick.mcfunction \
 	data/lichdom/tags/functions/death.json \
@@ -863,179 +863,181 @@ test.zip: $(test_FILES)
 	cp meta/$(@:.zip=.png) pack.png
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^
+	./bin/ziprename _$(@:.zip=) "" $@
 
 painting_overhaul.zip: $(painting_overhaul_FILES)
 	cp meta/$(@:.zip=.png) pack.png
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^
+	./bin/ziprename _$(@:.zip=) "" $@
 
 note_guide.zip: $(note_guide_FILES)
 	cp meta/$(@:.zip=.png) pack.png
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^
+	./bin/ziprename _$(@:.zip=) "" $@
 
 note_guide_adv.zip: $(note_guide_adv_FILES)
 	cp meta/$(@:.zip=.png) pack.png
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^
-	printf "@ assets/minecraft/blockstates/adv_note_block.json\n@=assets/minecraft/blockstates/note_block.json\n" | zipnote -w $@
-	printf "@ assets/minecraft/textures/block/adv_note_block_0.png\n@=assets/minecraft/textures/block/note_block_0.png\n" | zipnote -w $@
-	printf "@ assets/minecraft/textures/block/adv_note_block_1.png\n@=assets/minecraft/textures/block/note_block_1.png\n" | zipnote -w $@
-	printf "@ assets/minecraft/textures/block/adv_note_block_2.png\n@=assets/minecraft/textures/block/note_block_2.png\n" | zipnote -w $@
-	printf "@ assets/minecraft/textures/block/adv_note_block_3.png\n@=assets/minecraft/textures/block/note_block_3.png\n" | zipnote -w $@
-	printf "@ assets/minecraft/textures/block/adv_note_block_4.png\n@=assets/minecraft/textures/block/note_block_4.png\n" | zipnote -w $@
-	printf "@ assets/minecraft/textures/block/adv_note_block_5.png\n@=assets/minecraft/textures/block/note_block_5.png\n" | zipnote -w $@
-	printf "@ assets/minecraft/textures/block/adv_note_block_6.png\n@=assets/minecraft/textures/block/note_block_6.png\n" | zipnote -w $@
-	printf "@ assets/minecraft/textures/block/adv_note_block_7.png\n@=assets/minecraft/textures/block/note_block_7.png\n" | zipnote -w $@
-	printf "@ assets/minecraft/textures/block/adv_note_block_8.png\n@=assets/minecraft/textures/block/note_block_8.png\n" | zipnote -w $@
-	printf "@ assets/minecraft/textures/block/adv_note_block_9.png\n@=assets/minecraft/textures/block/note_block_9.png\n" | zipnote -w $@
-	printf "@ assets/minecraft/textures/block/adv_note_block_10.png\n@=assets/minecraft/textures/block/note_block_10.png\n" | zipnote -w $@
-	printf "@ assets/minecraft/textures/block/adv_note_block_11.png\n@=assets/minecraft/textures/block/note_block_11.png\n" | zipnote -w $@
-	printf "@ assets/minecraft/textures/block/adv_note_block_12.png\n@=assets/minecraft/textures/block/note_block_12.png\n" | zipnote -w $@
-	printf "@ assets/minecraft/textures/block/adv_note_block_13.png\n@=assets/minecraft/textures/block/note_block_13.png\n" | zipnote -w $@
-	printf "@ assets/minecraft/textures/block/adv_note_block_14.png\n@=assets/minecraft/textures/block/note_block_14.png\n" | zipnote -w $@
-	printf "@ assets/minecraft/textures/block/adv_note_block_15.png\n@=assets/minecraft/textures/block/note_block_15.png\n" | zipnote -w $@
-	printf "@ assets/minecraft/textures/block/adv_note_block_16.png\n@=assets/minecraft/textures/block/note_block_16.png\n" | zipnote -w $@
-	printf "@ assets/minecraft/textures/block/adv_note_block_17.png\n@=assets/minecraft/textures/block/note_block_17.png\n" | zipnote -w $@
-	printf "@ assets/minecraft/textures/block/adv_note_block_18.png\n@=assets/minecraft/textures/block/note_block_18.png\n" | zipnote -w $@
-	printf "@ assets/minecraft/textures/block/adv_note_block_19.png\n@=assets/minecraft/textures/block/note_block_19.png\n" | zipnote -w $@
-	printf "@ assets/minecraft/textures/block/adv_note_block_20.png\n@=assets/minecraft/textures/block/note_block_20.png\n" | zipnote -w $@
-	printf "@ assets/minecraft/textures/block/adv_note_block_21.png\n@=assets/minecraft/textures/block/note_block_21.png\n" | zipnote -w $@
-	printf "@ assets/minecraft/textures/block/adv_note_block_22.png\n@=assets/minecraft/textures/block/note_block_22.png\n" | zipnote -w $@
-	printf "@ assets/minecraft/textures/block/adv_note_block_23.png\n@=assets/minecraft/textures/block/note_block_23.png\n" | zipnote -w $@
-	printf "@ assets/minecraft/textures/block/adv_note_block_24.png\n@=assets/minecraft/textures/block/note_block_24.png\n" | zipnote -w $@
+	./bin/ziprename _$(@:.zip=) "" $@
 
 brew_guide.zip: $(brew_guide_FILES)
 	cp meta/$(@:.zip=.png) pack.png
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^
+	./bin/ziprename _$(@:.zip=) "" $@
 
 brew_guide_darkmode.zip: $(brew_guide_darkmode_FILES)
 	cp meta/$(@:.zip=.png) pack.png
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^
-	printf "@ assets/minecraft/textures/gui/container/brewing_stand_darkmode.png\n@=assets/minecraft/textures/gui/container/brewing_stand.png\n" | zipnote -w $@
+	./bin/ziprename _$(@:.zip=) "" $@
 
 tech_arrows.zip: $(tech_arrows_FILES)
 	cp meta/$(@:.zip=.png) pack.png
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^
+	./bin/ziprename _$(@:.zip=) "" $@
 
 ravager.zip: $(ravager_FILES)
 	cp meta/$(@:.zip=.png) pack.png
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^
+	./bin/ziprename _$(@:.zip=) "" $@
 
 villager_mech.zip: $(villager_mech_FILES)
 	cp meta/$(@:.zip=.png) pack.png
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^
+	./bin/ziprename _$(@:.zip=) "" $@
 
 candystrider.zip: $(candystrider_FILES)
 	cp meta/$(@:.zip=.png) pack.png
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^
+	./bin/ziprename _$(@:.zip=) "" $@
 
 pig_armor.zip: $(pig_armor_FILES)
 	cp meta/$(@:.zip=.png) pack.png
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^
+	./bin/ziprename _$(@:.zip=) "" $@
 
 ore_types.zip: $(ore_types_FILES)
 	cp meta/$(@:.zip=.png) pack.png
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^
+	./bin/ziprename _$(@:.zip=) "" $@
 
 discreet_pumpkin.zip: $(discreet_pumpkin_FILES)
 	cp meta/$(@:.zip=.png) pack.png
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^
+	./bin/ziprename _$(@:.zip=) "" $@
 
 classic_oak.zip: $(classic_oak_FILES)
 	cp meta/$(@:.zip=.png) pack.png
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^
+	./bin/ziprename _$(@:.zip=) "" $@
 
 classic_netherrack.zip: $(classic_netherrack_FILES)
 	cp meta/$(@:.zip=.png) pack.png
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^
+	./bin/ziprename _$(@:.zip=) "" $@
 
 classic_lava.zip: $(classic_lava_FILES)
 	cp meta/$(@:.zip=.png) pack.png
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^
+	./bin/ziprename _$(@:.zip=) "" $@
 
 classic_gravel.zip: $(classic_gravel_FILES)
 	cp meta/$(@:.zip=.png) pack.png
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^
+	./bin/ziprename _$(@:.zip=) "" $@
 
 classic_obsidian.zip: $(classic_obsidian_FILES)
 	cp meta/$(@:.zip=.png) pack.png
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^
+	./bin/ziprename _$(@:.zip=) "" $@
 
 classic_lapis.zip: $(classic_lapis_FILES)
 	cp meta/$(@:.zip=.png) pack.png
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^
+	./bin/ziprename _$(@:.zip=) "" $@
 
 classic_rose.zip: $(classic_rose_FILES)
 	cp meta/$(@:.zip=.png) pack.png
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^
-	printf "@ assets/minecraft/lang/en_us-classic_rose.json\n@=assets/minecraft/lang/en_us.json\n" | zipnote -w $@
+	./bin/ziprename _$(@:.zip=) "" $@
 
 classic_food.zip: $(classic_food_FILES)
 	cp meta/$(@:.zip=.png) pack.png
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^
+	./bin/ziprename _$(@:.zip=) "" $@
 
 spellsmithing_guide.zip: $(spellsmithing_guide_FILES)
 	cp meta/$(@:.zip=.png) pack.png
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^
+	./bin/ziprename _$(@:.zip=) "" $@
 
 retronetherrack.zip: $(retronetherrack_FILES)
 	cp meta/$(@:.zip=.png) pack.png
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^
+	./bin/ziprename _$(@:.zip=) "" $@
 
 retroiron.zip: $(retroiron_FILES)
 	cp meta/$(@:.zip=.png) pack.png
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^
+	./bin/ziprename _$(@:.zip=) "" $@
 
 classic_moo.zip: $(classic_moo_FILES)
 	cp meta/$(@:.zip=.png) pack.png
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^
+	./bin/ziprename _$(@:.zip=) "" $@
 
 classic_twang.zip: $(classic_twang_FILES)
 	cp meta/$(@:.zip=.png) pack.png
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^
+	./bin/ziprename _$(@:.zip=) "" $@
 
 classic_sploosh.zip: $(classic_sploosh_FILES)
 	cp meta/$(@:.zip=.png) pack.png
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^
+	./bin/ziprename _$(@:.zip=) "" $@
 
 classic_crunch.zip: $(classic_crunch_FILES)
 	cp meta/$(@:.zip=.png) pack.png
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^
+	./bin/ziprename _$(@:.zip=) "" $@
 
 gardener_endermen.zip: $(gardener_endermen_FILES)
 	cp meta/$(@:.zip=.png) pack.png
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^
+	./bin/ziprename _$(@:.zip=) "" $@
 
 climbable.zip: $(climbable_FILES)
 	cp meta/$(@:.zip=.png) pack.png
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^
+	./bin/ziprename _$(@:.zip=) "" $@
 
 path_strider.zip: $(path_strider_FILES)
 	cp meta/$(@:.zip=.png) pack.png
@@ -1047,148 +1049,169 @@ waterproof_tech.zip: $(waterproof_tech_FILES)
 	cp meta/$(@:.zip=.png) pack.png
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^
+	./bin/ziprename _$(@:.zip=) "" $@
 
 warmer_striders.zip: $(warmer_striders_FILES)
 	cp meta/$(@:.zip=.png) pack.png
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^
+	./bin/ziprename _$(@:.zip=) "" $@
 
 aggro_bastions.zip: $(aggro_bastions_FILES)
 	cp meta/$(@:.zip=.png) pack.png
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^
+	./bin/ziprename _$(@:.zip=) "" $@
 
 no_treasure_maps.zip: $(no_treasure_maps_FILES)
 	cp meta/$(@:.zip=.png) pack.png
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^
-	printf "@ data/minecraft/loot_tables/chests/shipwreck_map_nomap.json\n@=data/minecraft/loot_tables/chests/shipwreck_map.json\n" | zipnote -w $@
+	./bin/ziprename _$(@:.zip=) "" $@
 
 blue_fire.zip: $(blue_fire_FILES)
 	cp meta/$(@:.zip=.png) pack.png
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^
+	./bin/ziprename _$(@:.zip=) "" $@
 
 fortunate_jungle.zip: $(fortunate_jungle_FILES)
 	cp meta/$(@:.zip=.png) pack.png
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^
+	./bin/ziprename _$(@:.zip=) "" $@
 
 fortunate_crops.zip: $(fortunate_crops_FILES)
 	cp meta/$(@:.zip=.png) pack.png
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^
+	./bin/ziprename _$(@:.zip=) "" $@
 
 lose_hp_xp.zip: $(lose_hp_xp_FILES)
 	cp meta/$(@:.zip=.png) pack.png
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^
-	printf "@ data/minecraft/tags/functions/load-lose_hp_xp.json\n@=data/minecraft/tags/functions/load.json\n" | zipnote -w $@
+	./bin/ziprename _$(@:.zip=) "" $@
 
 loot_overhaul.zip: $(loot_overhaul_FILES)
 	cp meta/$(@:.zip=.png) pack.png
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^
-	printf "@ data/minecraft/tags/functions/load-loot_overhaul.json\n@=data/minecraft/tags/functions/load.json\n" | zipnote -w $@
+	./bin/ziprename _$(@:.zip=) "" $@
 
 plant_loot.zip: $(plant_loot_FILES)
 	cp meta/$(@:.zip=.png) pack.png
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^
+	./bin/ziprename _$(@:.zip=) "" $@
 
 starter_relic.zip: $(starter_relic_FILES)
 	cp meta/$(@:.zip=.png) pack.png
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^
+	./bin/ziprename _$(@:.zip=) "" $@
 
 starter_bonus_chest.zip: $(starter_bonus_chest_FILES)
 	cp meta/$(@:.zip=.png) pack.png
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^
+	./bin/ziprename _$(@:.zip=) "" $@
 
 relic_loot.zip: $(relic_loot_FILES)
 	cp meta/$(@:.zip=.png) pack.png
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^
+	./bin/ziprename _$(@:.zip=) "" $@
 
 mythic_relics.zip: $(mythic_relics_FILES)
 	cp meta/$(@:.zip=.png) pack.png
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^
-	printf "@ data/minecraft/tags/functions/load-mythic.json\n@=data/minecraft/tags/functions/load.json\n" | zipnote -w $@
+	./bin/ziprename _$(@:.zip=) "" $@
 
 boss_loot.zip: $(boss_loot_FILES)
 	cp meta/$(@:.zip=.png) pack.png
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^
-	printf "@ data/minecraft/tags/functions/load-boss_loot.json\n@=data/minecraft/tags/functions/load.json\n" | zipnote -w $@
+	./bin/ziprename _$(@:.zip=) "" $@
 
 seasonal_loot.zip: $(seasonal_loot_FILES)
 	cp meta/$(@:.zip=.png) pack.png
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^
+	./bin/ziprename _$(@:.zip=) "" $@
 
 food_loot.zip: $(food_loot_FILES)
 	cp meta/$(@:.zip=.png) pack.png
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^
+	./bin/ziprename _$(@:.zip=) "" $@
 
 decor_loot.zip: $(decor_loot_FILES)
 	cp meta/$(@:.zip=.png) pack.png
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^
+	./bin/ziprename _$(@:.zip=) "" $@
 
 modern_loot.zip: $(modern_loot_FILES)
 	cp meta/$(@:.zip=.png) pack.png
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^
+	./bin/ziprename _$(@:.zip=) "" $@
 
 dragonproof.zip: $(dragonproof_FILES)
 	cp meta/$(@:.zip=.png) pack.png
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^
+	./bin/ziprename _$(@:.zip=) "" $@
 
 mineable.zip: $(mineable_FILES)
 	cp meta/$(@:.zip=.png) pack.png
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^
+	./bin/ziprename _$(@:.zip=) "" $@
 
 shearless.zip: $(shearless_FILES)
 	cp meta/$(@:.zip=.png) pack.png
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^
+	./bin/ziprename _$(@:.zip=) "" $@
 
 invis_squid_glamer.zip: $(invis_squid_glamer_FILES)
 	cp meta/$(@:.zip=.png) pack.png
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^
+	./bin/ziprename _$(@:.zip=) "" $@
 
 glow_squid_glamers.zip: $(glow_squid_glamers_FILES)
 	cp meta/$(@:.zip=.png) pack.png
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^
+	./bin/ziprename _$(@:.zip=) "" $@
 
 phantasmal.zip: $(phantasmal_FILES)
 	cp meta/$(@:.zip=.png) pack.png
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^
-	printf "@ data/minecraft/tags/functions/load-phantasmal.json\n@=data/minecraft/tags/functions/load.json\n" | zipnote -w $@
+	./bin/ziprename _$(@:.zip=) "" $@
 
 phantasmal_end.zip: $(phantasmal_end_FILES)
 	cp meta/$(@:.zip=.png) pack.png
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^
+	./bin/ziprename _$(@:.zip=) "" $@
 
 breeding_overhaul.zip: $(breeding_overhaul_FILES)
 	cp meta/$(@:.zip=.png) pack.png
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^
+	./bin/ziprename _$(@:.zip=) "" $@
 
 more_cutting.zip: $(more_cutting_FILES)
 	cp meta/$(@:.zip=.png) pack.png
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^
-	printf "@ assets/minecraft/lang/en_us-more_cutting.json\n@=assets/minecraft/lang/en_us.json\n" | zipnote -w $@
+	./bin/ziprename _$(@:.zip=) "" $@
 
 copper_pistons.zip: $(copper_pistons_FILES)
 	cp meta/$(@:.zip=.png) pack.png
@@ -1212,77 +1235,67 @@ more_shulker_shells.zip: $(more_shulker_shells_FILES)
 	cp meta/$(@:.zip=.png) pack.png
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^
+	./bin/ziprename _$(@:.zip=) "" $@
 
 escape_end.zip: $(escape_end_FILES)
 	cp meta/$(@:.zip=.png) pack.png
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^
-	printf "@ data/minecraft/tags/functions/tick-escape.json\n@=data/minecraft/tags/functions/tick.json\n" | zipnote -w $@
-	printf "@ data/escape/functions/tick-end.mcfunction\n@=data/escape/functions/tick.mcfunction\n" | zipnote -w $@
+	./bin/ziprename _$(@:.zip=) "" $@
 
 escape_nether.zip: $(escape_nether_FILES)
 	cp meta/$(@:.zip=.png) pack.png
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^
-	printf "@ data/minecraft/tags/functions/tick-escape.json\n@=data/minecraft/tags/functions/tick.json\n" | zipnote -w $@
-	printf "@ data/escape/functions/tick-nether.mcfunction\n@=data/escape/functions/tick.mcfunction\n" | zipnote -w $@
+	./bin/ziprename _$(@:.zip=) "" $@
 
 escape_grind.zip: $(escape_grind_FILES)
 	cp meta/$(@:.zip=.png) pack.png
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^
-	printf "@ data/minecraft/tags/functions/load-grind.json\n@=data/minecraft/tags/functions/load.json\n" | zipnote -w $@
-	printf "@ data/minecraft/tags/functions/tick-grind.json\n@=data/minecraft/tags/functions/tick.json\n" | zipnote -w $@
-	printf "@ data/minecraft/loot_tables/blocks/crying_obsidian_lapis.json\n@=data/minecraft/loot_tables/blocks/crying_obsidian.json\n" | zipnote -w $@
+	./bin/ziprename _$(@:.zip=) "" $@
 
 lichdom.zip: $(lichdom_FILES)
 	cp meta/$(@:.zip=.png) pack.png
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^
-	printf "@ data/minecraft/tags/functions/tick-lichdom.json\n@=data/minecraft/tags/functions/tick.json\n" | zipnote -w $@
-	printf "@ data/minecraft/tags/functions/load-lichdom.json\n@=data/minecraft/tags/functions/load.json\n" | zipnote -w $@
+	./bin/ziprename _$(@:.zip=) "" $@
 
 starter_bed.zip: $(starter_bed_FILES)
 	cp meta/$(@:.zip=.png) pack.png
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^
 	./bin/ziprename _$(@:.zip=) "" $@
-	#printf "@ data/minecraft/tags/items/starter_bed.json\n@=data/minecraft/tags/items/starter_item.json\n" | zipnote -w $@
 
 starter_book.zip: $(starter_book_FILES)
 	cp meta/$(@:.zip=.png) pack.png
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^
 	./bin/ziprename _$(@:.zip=) "" $@
-	#printf "@ data/minecraft/tags/items/starter_book.json\n@=data/minecraft/tags/items/starter_item.json\n" | zipnote -w $@
 
 starter_bucket.zip: $(starter_bucket_FILES)
 	cp meta/$(@:.zip=.png) pack.png
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^
 	./bin/ziprename _$(@:.zip=) "" $@
-	#printf "@ data/minecraft/tags/items/starter_bucket.json\n@=data/minecraft/tags/items/starter_item.json\n" | zipnote -w $@
 
 starter_map.zip: $(starter_map_FILES)
 	cp meta/$(@:.zip=.png) pack.png
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^
 	./bin/ziprename _$(@:.zip=) "" $@
-	#printf "@ data/minecraft/tags/items/starter_map.json\n@=data/minecraft/tags/items/starter_item.json\n" | zipnote -w $@
 
 starter_shulker.zip: $(starter_shulker_FILES)
 	cp meta/$(@:.zip=.png) pack.png
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^
 	./bin/ziprename _$(@:.zip=) "" $@
-	#printf "@ data/minecraft/tags/items/starter_shulker.json\n@=data/minecraft/tags/items/starter_item.json\n" | zipnote -w $@
 
 starter_spyglass.zip: $(starter_spyglass_FILES)
 	cp meta/$(@:.zip=.png) pack.png
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^
 	./bin/ziprename _$(@:.zip=) "" $@
-	#printf "@ data/minecraft/tags/items/starter_spyglass.json\n@=data/minecraft/tags/items/starter_item.json\n" | zipnote -w $@
 
 .PHONY: install
 install: $(RESOURCEPACKFILES) $(DATAPACKFILES)
