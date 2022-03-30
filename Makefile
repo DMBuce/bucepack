@@ -1313,8 +1313,8 @@ update:
 	find ./bin/update-* -exec {} \;
 
 .PHONY: release
-release: $(RESOURCEPACKFILES) $(DATAPACKFILES)
-	./bin/release $(RESOURCEPACKFILES) $(DATAPACKFILES)
+release: $(sort $(RESOURCEPACKFILES) $(DATAPACKFILES) )
+	./bin/release $^
 
 .PHONY: uninstall
 uninstall:
