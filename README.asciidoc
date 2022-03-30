@@ -211,7 +211,7 @@ Classic Gravel reverts gravel to its beta texture from before 1.0.0.
 Classic Lapis reverts the lapis block to its smooth texture from before 1.6.1.
 
 Classic Rose reverts the poppy to its rose texture from before 1.7.2.
-It also renames Poppies to Roses when
+It also renames Poppies to Roses if
 American English is the selected language in the options menu.
 If you would like to add
 support for renaming them in other languages, please create a Pull
@@ -311,7 +311,7 @@ image::https://i.imgur.com/vJddlZU.png[More Cutting]
 In addition, the crafting table output for stairs, wood, and hyphae matches
 the stonecutter recipes.
 
-When installed as a resource pack, Stonecutters are renamed to Saws when
+When installed as a resource pack, Stonecutters are renamed to Saws if
 American English is the selected language in the options menu.
 If you would like to add
 support for renaming them in other languages, please create a Pull
@@ -1121,7 +1121,7 @@ image::https://i.imgur.com/3fGJg0c.png[Copper Tech]
 
 When installed as a resource pack,
 Iron Doors, Iron Trapdoors, and Blackstone Buttons are renamed to Copper
-Doors/Trapdoors/Buttons when
+Doors/Trapdoors/Buttons if
 American English is the selected language in the options menu.
 If you would like to add
 support for renaming Soul Speed in other languages, please create a Pull
@@ -1162,7 +1162,7 @@ and any material that can be turned into slabs or stairs
 except for stone.
 
 When installed as a resource pack,
-Soul Speed is renamed to Path Strider when
+Soul Speed is renamed to Path Strider if
 American English is the selected language in the options menu.
 If you would like to add
 support for renaming Soul Speed in other languages, please create a Pull
