@@ -1,10 +1,12 @@
 {
   "replace": false,
   "values": [
-    "minecraft:cactus",
     "#beds",
     "#candle_cakes",
+    "minecraft:cactus",
     "minecraft:cake",
-    "minecraft:honeycomb_block"
+    "minecraft:honeycomb_block",
+    "minecraft:player_head",
+    "minecraft:player_wall_head"
   ]
 }
