@@ -1,13 +1,13 @@
 {
 	"display": {
 		"icon": {
-			"item": "minecraft:apple"
+			"item": "minecraft:barrier"
 		},
 		"title": {
-			"text": "Splendor"
+			"text": "Trigger Advancement"
 		},
 		"description": {
-			"text": "Activate the Barding of Bounding with a Golden Carrot"
+			"text": "Something went wrong, you should revoke this advancement"
 		},
 		"show_toast": false,
 		"announce_to_chat": false,

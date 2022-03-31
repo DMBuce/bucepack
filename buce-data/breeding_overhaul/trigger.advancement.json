@@ -1,13 +1,13 @@
 {
 	"display": {
 		"icon": {
-			"item": "minecraft:leather_horse_armor"
+			"item": "minecraft:barrier"
 		},
 		"title": {
-			"text": "Make'a da Baby"
+			"text": "Trigger Advancement"
 		},
 		"description": {
-			"text": "Breed a horse, donkey, or mule"
+			"text": "Something went wrong, you should revoke this advancement"
 		},
 		"show_toast": false,
 		"announce_to_chat": false,

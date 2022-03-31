@@ -1,13 +1,13 @@
 {
 	"display": {
 		"icon": {
-			"item": "minecraft:spyglass"
+			"item": "minecraft:barrier"
 		},
 		"title": {
-			"text": "Finding"
+			"text": "Trigger Advancement"
 		},
 		"description": {
-			"text": "Charge the Seeker's Scope"
+			"text": "Something went wrong, you should revoke this advancement"
 		},
 		"show_toast": false,
 		"announce_to_chat": false,

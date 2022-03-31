@@ -1,13 +1,13 @@
 {
 	"display": {
 		"icon": {
-			"item": "minecraft:diamond_axe"
+			"item": "minecraft:barrier"
 		},
 		"title": {
-			"text": "Breaking"
+			"text": "Trigger Advancement"
 		},
 		"description": {
-			"text": "Activate Treefeller"
+			"text": "Something went wrong, you should revoke this advancement"
 		},
 		"show_toast": false,
 		"announce_to_chat": false,
