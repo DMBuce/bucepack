@@ -218,7 +218,9 @@ It also supports renaming Poppies to Roses.
 Full support is provided for several English languages
 and partial support is provided for many other languages.
 If you would like to help improve support for renaming poppies to roses,
-please create a Pull Request if you know how or a GitHub Issue if you don't.
+please create a Pull Request if you know how or
+link::https://github.com/DMBuce/bucepack/issues/new[open a new Issue]
+if you don't.
 
 image::https://i.imgur.com/9o75jWL.png[Classic Blocks]
 
@@ -318,7 +320,9 @@ When installed as a resource pack, Stonecutters are renamed to Saws if
 American English is the selected language in the options menu.
 If you would like to add
 support for renaming them in other languages, please create a Pull
-Request if you know how or a GitHub Issue if you don't.
+Request if you know how or
+link::https://github.com/DMBuce/bucepack/issues/new[open a new Issue]
+if you don't.
 
 Download: https://github.com/DMBuce/bucepack/releases
 
@@ -1128,7 +1132,9 @@ Doors/Trapdoors/Buttons if
 American English is the selected language in the options menu.
 If you would like to add
 support for renaming Soul Speed in other languages, please create a Pull
-Request if you know how or a GitHub Issue if you don't.
+Request if you know how or
+link::https://github.com/DMBuce/bucepack/issues/new[open a new Issue]
+if you don't.
 ====
 
 .Click for a summary of More Copper Tech redstone components
@@ -1169,7 +1175,9 @@ Soul Speed is renamed to Path Strider if
 American English is the selected language in the options menu.
 If you would like to add
 support for renaming Soul Speed in other languages, please create a Pull
-Request if you know how or a GitHub Issue if you don't.
+Request if you know how or
+link::https://github.com/DMBuce/bucepack/issues/new[open a new Issue]
+if you don't.
 
 Download: https://github.com/DMBuce/bucepack/releases
 
