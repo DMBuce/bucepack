@@ -263,12 +263,12 @@ datapacks that have <<spellsmithing>>.
 
 image::https://i.imgur.com/DH6v35X.png[Spellsmithing Guide]
 
-In addition, this pack contains textures for custom items in the following
-datapacks. These textures will only show up if you have one of them installed.
+In addition, this pack contains textures for custom items obtained with the
+following datapacks.
 
-* <<phantasmal,Phantasmal>>
-* <<glow-squid-glamers,Glow Squid Glamers>>
-* <<invisible-squid-glamer,Invisible Squid Glamer>>
+* <<glow-squid-glamers,Glow Squid Glamers>>: Poseable armor stands
+* <<invisible-squid-glamer,Invisible Squid Glamer>>: Invisible item frames
+* <<phantasmal,Phantasmal>>: Invisible item frames and light blocks
 
 Download: https://github.com/DMBuce/bucepack/releases
 
