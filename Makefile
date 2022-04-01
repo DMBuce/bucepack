@@ -294,8 +294,8 @@ classic_lapis_FILES := $(DEFAULT_RESOURCE_FILES) \
 	assets/minecraft/textures/block/lapis_block.png \
 
 classic_rose_FILES := $(DEFAULT_RESOURCE_FILES) \
+	$(wildcard assets/minecraft/lang/*_classic_rose.json) \
 	assets/minecraft/textures/block/poppy.png \
-	assets/minecraft/lang/en_us_classic_rose.json \
 
 classic_food_FILES := $(DEFAULT_RESOURCE_FILES) \
 	assets/minecraft/textures/block/cake_bottom.png \
@@ -385,8 +385,8 @@ climbable_FILES := $(DEFAULT_DATA_FILES) \
 	data/buce/advancements/climbable.json \
 
 path_strider_FILES := $(DEFAULT_DATA_FILES) \
+	$(wildcard assets/minecraft/lang/*_path_strider.json) \
 	assets/minecraft/sounds.json \
-	assets/minecraft/lang/en_us_path_strider.json \
 	assets/minecraft/textures/particle/soul_0.png \
 	assets/minecraft/textures/particle/soul_10.png \
 	assets/minecraft/textures/particle/soul_1.png \
@@ -622,7 +622,7 @@ phantasmal_end_FILES := $(DEFAULT_DATA_FILES) \
 
 more_cutting_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell find buce-data/more_cutting -type f | ./bin/ext2dir) \
-	assets/minecraft/lang/en_us_more_cutting.json \
+	$(wildcard assets/minecraft/lang/*_more_cutting.json) \
 
 more_copper_tech_FILES := $(DEFAULT_DATA_FILES) \
 	assets/minecraft/models/block/dispenser.json \
@@ -659,7 +659,7 @@ copper_pistons_FILES := $(DEFAULT_DATA_FILES) \
 	data/minecraft/recipes/piston.json \
 
 copper_tech_FILES := $(DEFAULT_DATA_FILES) \
-	assets/minecraft/lang/en_us_copper_tech.json \
+	$(wildcard assets/minecraft/lang/*_copper_tech.json) \
 	assets/minecraft/models/block/lever.json \
 	assets/minecraft/models/block/lever_on.json \
 	assets/minecraft/models/block/light_weighted_pressure_plate_down.json \
