@@ -1,17 +1,22 @@
 #!/bin/bash
 
-latest="$(
+# get latest minecraft version if latest.txt is over a day old
+if [[ ! -f latest.txt ]] || find latest.txt -mtime +1 | grep -q .; then
 	curl -s 'https://launchermeta.mojang.com/mc/game/version_manifest.json' \
-	| jq -r .latest.release
-)"
+	| jq -r .latest.release \
+	> latest.txt
+fi
 
-if [[ ! -d "$latest.jar" && -f ~/".minecraft/versions/$latest/$latest.jar" ]]; then
+# create folder with jar contents if necessary
+latest="$(<latest.txt)"
+if [[ ! -f ~/".minecraft/versions/$latest/$latest.jar" ]]; then
+	echo "File not found: ~/.minecraft/versions/$latest/$latest.jar" >&2
+elif [[ ! -d "$latest.jar" ]]; then
 	mkdir "$latest.jar"
 	cd "$latest.jar"
 	jar xf ~/".minecraft/versions/$latest/$latest.jar" assets data
-elif [[ ! -d "$latest.jar" ]]; then
-	printf "File not found: %s\n" ~/".minecraft/versions/$latest/$latest.jar" >&2
 fi
 
+# print latest version
 echo "$latest"
 
