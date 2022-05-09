@@ -1,22 +1,17 @@
 {
-  "AUTO-GENERATED-BY": "update-dragonproof.sh",
+  "AUTO-GENERATED-BY": "dragon_immune.json.sempl",
   "replace": false,
   "values": [
+    "minecraft:chorus_flower",
+    "minecraft:chorus_plant",
+    "minecraft:dragon_egg",
+    "minecraft:dragon_head",
+    "minecraft:ender_chest",
+    "minecraft:end_rod",
     "minecraft:end_stone_bricks",
     "minecraft:end_stone_brick_slab",
     "minecraft:end_stone_brick_stairs",
     "minecraft:end_stone_brick_wall",
-    "minecraft:purpur_block",
-    "minecraft:purpur_pillar",
-    "minecraft:purpur_slab",
-    "minecraft:purpur_stairs",
-    "minecraft:chorus_plant",
-    "minecraft:chorus_flower",
-    "minecraft:end_rod",
-    "minecraft:ender_chest",
-    "#minecraft:shulker_boxes",
-    "minecraft:dragon_egg",
-    "minecraft:dragon_head",
     "minecraft:magenta_banner",
     "minecraft:magenta_bed",
     "minecraft:magenta_candle_cake",
@@ -30,6 +25,11 @@
     "minecraft:magenta_stained_glass_pane",
     "minecraft:magenta_terracotta",
     "minecraft:magenta_wall_banner",
-    "minecraft:magenta_wool"
+    "minecraft:magenta_wool",
+    "minecraft:purpur_block",
+    "minecraft:purpur_pillar",
+    "minecraft:purpur_slab",
+    "minecraft:purpur_stairs",
+    "#minecraft:shulker_boxes"
   ]
 }

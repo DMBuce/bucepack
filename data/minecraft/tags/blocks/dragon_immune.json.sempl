@@ -1,0 +1,26 @@
+#!/usr/bin/env sempl
+# used by ./bin/latest to generate dragon_immune.json
+SEMPL_BRACES={{}}
+#!end sempl env
+{
+  "AUTO-GENERATED-BY": "{{!basename $SRC}}",
+  "replace": false,
+  "values": [
+    "minecraft:chorus_flower",
+    "minecraft:chorus_plant",
+    "minecraft:dragon_egg",
+    "minecraft:dragon_head",
+    "minecraft:ender_chest",
+    "minecraft:end_rod",
+    "minecraft:end_stone_bricks",
+    "minecraft:end_stone_brick_slab",
+    "minecraft:end_stone_brick_stairs",
+    "minecraft:end_stone_brick_wall",
+    "minecraft:{{!printf '%s\n' "$(./bin/latest).jar"/assets/minecraft/blockstates/* | sed -n '/magenta/ { s/.*\///; s/\..*$//; p; }'}}",
+    "minecraft:purpur_block",
+    "minecraft:purpur_pillar",
+    "minecraft:purpur_slab",
+    "minecraft:purpur_stairs",
+    "#minecraft:shulker_boxes"
+  ]
+}
