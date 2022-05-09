@@ -855,6 +855,9 @@ data/buce/tags/functions/%.json: buce-data/%.function.tag.json
 #data/buce/loot_tables/%.json: data/buce/loot_tables/%.json.yaml data/minecraft/loot_tables/loot_table.j2
 #	j2 data/minecraft/loot_tables/loot_table.j2 $< -o $@
 
+%: %.sempl
+	sempl $< $@
+
 %.json: %.json.yaml data/minecraft/loot_tables/loot_table.j2
 	j2 data/minecraft/loot_tables/loot_table.j2 $< -o $@
 

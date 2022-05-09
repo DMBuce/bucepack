@@ -1,0 +1,14 @@
+#!/usr/bin/env sempl
+SEMPL_BRACES='<>'
+types='0 1 2 4'
+flickers='0 1'
+trails='0 1'
+colors='15435844 14602026 4312372 6719955 12801229 14188952 15790320'
+fadecolors='15435844 14602026 4312372 6719955 12801229 14188952 15790320'
+#!end sempl env
+pools:
+  - rolls: 1
+    entries:
+      - { type: item, weight: 1,  count: 1, item: firework_rocket,<\>
+          nbt: "{Fireworks:{Flight:1,Explosions:[{Type:<!printf '%s\n' $types>,Flicker:<!printf '%s\n' $flickers>,Trail:<!printf '%s\n' $trails>,Colors:[I;<!printf '%s\n' $colors>],FadeColors:[I;<!printf '%s\n' $fadecolors>]}]}}"<\>
+        }
