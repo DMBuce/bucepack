@@ -1,22 +1,19 @@
 #!/bin/bash
 
-template="# switches armor stand pose from %s to %s
+while read from to nbt; do
+echo "# switches armor stand pose from $from to $to
 
-# debug
-say %s
+## debug
+# say $to
 
 # set pose
-data modify entity @s Pose set value {%s}
+data modify entity @s Pose set value {$nbt}
 
 # set tags
 tag @s add posed
-tag @s add %s
-tag @s remove %s
-
-"
-
-while read from to nbt; do
-	printf "$template" "$from" "$to" "$to" "$nbt" "$to" "$from" > "./buce-data/illusory/glow_squid/poses/$to.function.mcfunction"
+tag @s add $to
+tag @s remove $from
+" > "./buce-data/illusory/glow_squid/poses/$to.function.mcfunction"
 done <<- EOF
 default no        Body:[0f,0f,0f],Head:[0f,0f,0f],LeftArm:[0f,0f,0f],LeftLeg:[0f,0f,0f],RightArm:[0f,0f,0f],RightLeg:[0f,0f,0f]
 no solemn         Body:[0f,0f,2f],Head:[15f,0f,0f],LeftArm:[-30f,15f,15f],LeftLeg:[-1f,0f,-1f],RightArm:[-60f,-20f,-10f],RightLeg:[1f,0f,1f]
