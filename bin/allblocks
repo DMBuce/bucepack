@@ -2,8 +2,6 @@
 
 cd "$(git rev-parse --show-toplevel)"
 
-latest="$(./bin/latest)"
-
-printf '%s\n' "$(./bin/latest).jar/assets/minecraft/blockstates/"* \
-	| sed -n 's|.*/||; s|\..*$||; p'
+ls "$(./bin/latest).jar/assets/minecraft/blockstates/"* \
+	| ./bin/path2basename
 

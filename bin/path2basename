@@ -1,0 +1,5 @@
+#!/bin/sed -nf
+# prints basename minus extensions of each file path passed on stdin
+s|.*/||
+s|\..*$||
+p

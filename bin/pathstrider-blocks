@@ -1,0 +1,16 @@
+#!/bin/bash
+
+cd "$(git rev-parse --show-toplevel)"
+
+latest="$(./bin/latest)"
+
+./bin/allblocks \
+	| sed -nE 's/_(fence|stairs|slab|wall)$//p' \
+	| uniq \
+	| while read material; do
+		ls "$latest.jar/assets/minecraft/blockstates/"{,infested_}{,chiseled_,cracked_}"${material}"{,s,_bricks,_block,_pillar}{,_stairs,_slab}.json 2>/dev/null
+	done \
+	| ./bin/path2basename \
+	| grep -vx -estone{,_stairs,_slab} \
+	| sort -u \
+
