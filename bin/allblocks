@@ -1,0 +1,9 @@
+#!/bin/bash
+
+cd "$(git rev-parse --show-toplevel)"
+
+latest="$(./bin/latest)"
+
+printf '%s\n' "$(./bin/latest).jar/assets/minecraft/blockstates/"* \
+	| sed -n 's|.*/||; s|\..*$||; p'
+

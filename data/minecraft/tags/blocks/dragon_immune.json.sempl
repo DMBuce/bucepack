@@ -16,7 +16,7 @@ SEMPL_BRACES={{}}
     "minecraft:end_stone_brick_slab",
     "minecraft:end_stone_brick_stairs",
     "minecraft:end_stone_brick_wall",
-    "minecraft:{{!./bin/allblockstates | grep magenta}}",
+    "minecraft:{{!./bin/allblocks | grep magenta}}",
     "minecraft:purpur_block",
     "minecraft:purpur_pillar",
     "minecraft:purpur_slab",
