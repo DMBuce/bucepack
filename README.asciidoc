@@ -508,7 +508,7 @@ Download: https://github.com/DMBuce/bucepack/releases
 
 Build: `make breeding_overhaul.zip`
 
-=== Dragonproof End
+=== Dragonproof
 
 Makes the Enderdragon phase through all blocks found in the end. In addition
 to the magenta glass and banners found in End Cities, this pack makes other
