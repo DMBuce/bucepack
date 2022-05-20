@@ -1,10 +1,10 @@
 #!/usr/bin/env sempl
 SEMPL_BRACES = {{}}
-types = $'0\n1\n2\n4'
-flickers = $'0\n1'
-trails = $'0\n1'
-colors = $'15435844\n14602026\n4312372\n6719955\n12801229\n14188952\n15790320'
-fadecolors = $'15435844\n14602026\n4312372\n6719955\n12801229\n14188952\n15790320'
+types = "$(printf '%s\n' 0 1 2 4)"
+flickers = "$(printf '%s\n' 0 1)"
+trails = "$(printf '%s\n' 0 1)"
+colors = "$(printf '%s\n' 15435844 14602026 4312372 6719955 12801229 14188952 15790320)"
+fadecolors = "$(printf '%s\n' 15435844 14602026 4312372 6719955 12801229 14188952 15790320)"
 #!end sempl env
 pools:
   - rolls: 1
