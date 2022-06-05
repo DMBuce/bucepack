@@ -1477,7 +1477,7 @@ custom enchantment that can be applied to a trident to give increased
 attack speed.
 
 **Relic of Frost and Flood**: A prismarine crystal with Frost Walker II and
-Depth Strider III that can be applied to golden boots.
+Depth Strider III that can be applied to diamond boots.
 
 **Relic of Protection**: A scute with Protection IV and Blast Protection II
 that can be applied to a turtle shell.
