@@ -1333,4 +1333,5 @@ uninstall:
 .PHONY: clean
 clean:
 	rm -rf $(CLEAN_TARGETS)
+	git checkout data/buce/loot_tables/mythic/chromatic/fireworks.json
 
