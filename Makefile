@@ -509,6 +509,7 @@ relic_loot_FILES := $(DEFAULT_DATA_FILES) \
 
 mythic_relics_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell find buce-data/mythic -type f | ./bin/ext2dir) \
+	data/buce/functions/var.mcfunction \
 	data/minecraft/tags/functions/load_mythic_relics.json \
 	data/minecraft/loot_tables/blocks/deepslate_emerald_ore.json \
 	data/minecraft/loot_tables/entities/endermite.json \
@@ -614,10 +615,10 @@ invis_squid_glamer_FILES := $(DEFAULT_DATA_FILES) \
 
 phantasmal_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell find buce-data/phantasmal -type f | ./bin/ext2dir) \
+	data/buce/functions/var.mcfunction \
 	data/minecraft/loot_tables/entities/phantom.json \
 	data/minecraft/loot_tables/gameplay/cat_morning_gift.json \
 	data/minecraft/tags/functions/load_phantasmal.json \
-	data/buce/functions/var.mcfunction \
 
 phantasmal_end_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell find buce-data/phantasmal_end -type f | ./bin/ext2dir) \
