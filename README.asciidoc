@@ -726,7 +726,9 @@ tall grass and large ferns that normally generate in savannah and taiga village
 chests, path blocks generate in snowy village chests, farmland in desert
 village chests, and petrified oak slabs in plains village chests. Petrified
 slabs also generate in dungeons. Infested bricks spawn in stronghold chests.
-Light blocks spawn in woodland mansions.
+Light blocks spawn in woodland mansion chests,
+and have a custom texture if you have the
+<<spellsmithing-guide,Spellsmithing Guide>> resource pack installed.
 
 This datapack is not compatible with other datapacks that modify the chest,
 fishing, or bartering loot tables.
@@ -1005,8 +1007,8 @@ image::https://i.imgur.com/n6TAzur.png[Phantasmal]
 
 If you have the <<spellsmithing-guide,Spellsmithing Guide>> resource pack
 installed, invisible item frames will
-have a translucent item texture in the inventory, and light items will have a
-different texture.
+have a translucent item texture in the inventory,
+and invisible light items will have a custom texture.
 
 This pack is a companion to the <<phantasmal-end,Phantasmal End>> datapack,
 which adds phantoms to the dragon fight; and the
