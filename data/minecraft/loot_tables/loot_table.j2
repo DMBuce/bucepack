@@ -155,7 +155,7 @@
             {
               "function": "minecraft:exploration_map",
               {%- if entry.structure is defined %}
-              "destination": "{{entry.structure}}",
+              "destination": "on_{{entry.structure}}_explorer_maps",
               {%- endif %}
               "decoration": "{{entry.decor}}",
               "zoom": 1,

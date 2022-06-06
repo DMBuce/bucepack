@@ -441,6 +441,7 @@ relic_FILES := $(DEFAULT_DATA_FILES) \
 
 loot_overhaul_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell find buce-data/loot_overhaul -type f | ./bin/ext2dir) \
+	$(wildcard data/minecraft/tags/worldgen/configured_structure_feature/on_*_maps.json) \
 	$(relic_FILES) \
 	data/buce/loot_tables/mythic/stormcalling/heart_of_the_sea.json \
 	data/minecraft/tags/functions/load_loot_overhaul.json \
