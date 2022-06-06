@@ -271,6 +271,7 @@ following datapacks.
 * <<glow-squid-glamers,Glow Squid Glamers>>: Poseable armor stands
 * <<invisible-squid-glamer,Invisible Squid Glamer>>: Invisible item frames
 * <<phantasmal,Phantasmal>>: Invisible item frames and light blocks
+* <<loot-overhaul,Loot Overhaul>>: Invisible light blocks
 
 Download: https://github.com/DMBuce/bucepack/releases
 
