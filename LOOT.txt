@@ -5,7 +5,7 @@ explorer maps
 Bizarre Explorer Map:      abandoned_mineshaft   > ruined_portal
 Bizarre Explorer Map:      underwater_ruin_big   > ruined_portal
 Desert Explorer Map:       village_savanna_house > desert_pyramid
-End Island Explorer Map:   end_city_treasure     > endcity
+End Island Explorer Map:   end_city_treasure     > end_city
 Jungle Explorer Map:       stronghold_library    > jungle_pyramid
 Nether Explorer Map:       bastion_treasure      > fortress
 Nether Explorer Map:       nether_bridge         > bastion_remnant

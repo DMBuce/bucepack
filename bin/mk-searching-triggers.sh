@@ -3,23 +3,23 @@
 template='{
 	"display": {
 		"icon": {
-			"item": "minecraft:spyglass"
+			"item": "minecraft:barrier"
 		},
 		"title": {
-			"text": "Finding"
+			"text": "Trigger Advancement"
 		},
 		"description": {
-			"text": "Charge the Seeker'\''s Scope"
+			"text": "Something went wrong, you should revoke this advancement"
 		},
 		"show_toast": false,
 		"announce_to_chat": false,
 		"hidden": true,
 		"frame": "task"
 	},
-	"parent": "buce:artifact/artifact_loot",
+	"parent": "buce:mythic/root",
 	"criteria": {
 		"hold_item_offhand": {
-			"trigger": "minecraft:using_item",
+			"trigger": "minecraft:impossible",
 			"conditions": {
 				"item": {
 					"items": [ "minecraft:spyglass" ],
@@ -38,7 +38,7 @@ template='{
 			}
 		},
 		"stand_on_block": {
-			"trigger": "minecraft:using_item",
+			"trigger": "minecraft:impossible",
 			"conditions": {
 				"item": {
 					"items": [ "minecraft:spyglass" ],
@@ -69,37 +69,38 @@ template='{
 		]
 	],
 	"rewards": {
-		"function": "buce:artifact/searching/%s/charge"
+		"function": "buce:mythic/searching/%s/charge"
 	}
-}'
+}
+'
 
 params=(
 	'bastion_remnant the_nether blackstone'
 	'buried_treasure overworld sand'
 	'desert_pyramid overworld sandstone'
-	'endcity the_end end_stone'
+	'end_city the_end end_stone'
 	'fortress the_nether nether_bricks'
 	'nether_fossil the_nether soul_soil'
-	'ruined_portal overworld obsidian'
+	'#ruined_portal overworld obsidian'
 	'igloo overworld snow_block'
 	'jungle_pyramid overworld mossy_cobblestone'
 	'mansion overworld dark_oak_log'
-	'mineshaft overworld stone'
+	'#mineshaft overworld stone'
 	'monument overworld prismarine'
-	'ocean_ruin overworld gravel'
+	'#ocean_ruin overworld gravel'
 	'pillager_outpost overworld dark_oak_planks'
-	'shipwreck overworld oak_planks'
+	'#shipwreck overworld oak_planks'
 	'stronghold overworld mossy_stone_bricks'
 	'swamp_hut overworld spruce_planks'
-	'village overworld emerald_block'
+	'#village overworld emerald_block'
 )
 
 for param in "${params[@]}"; do
 	read structure dim block <<< "$param"
-	printf "$template" $dim $block $dim $block $structure > buce-data/artifact/searching/$structure/trigger.advancement.json || exit
+	printf "$template" $dim $block $dim $block ${structure#\#} > "buce-data/mythic/searching/${structure#\#}/trigger.advancement.json" || exit
 done
 
 # ad hoc stuff
-cp buce-data/artifact/searching/ruined_portal/trigger.advancement.json buce-data/artifact/searching/ruined_portal/trigger_nether.advancement.json
-sed -i 's/overworld/the_nether/' buce-data/artifact/searching/ruined_portal/trigger_nether.advancement.json
+cp buce-data/mythic/searching/ruined_portal/trigger.advancement.json buce-data/mythic/searching/ruined_portal/trigger_nether.advancement.json
+sed -i 's/overworld/the_nether/' buce-data/mythic/searching/ruined_portal/trigger_nether.advancement.json
 

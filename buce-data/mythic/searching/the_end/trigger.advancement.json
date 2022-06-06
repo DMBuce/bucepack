@@ -32,6 +32,6 @@
 		}
 	},
 	"rewards": {
-		"function": "buce:mythic/searching/endcity/charge"
+		"function": "buce:mythic/searching/end_city/charge"
 	}
 }
