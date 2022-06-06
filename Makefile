@@ -4,6 +4,7 @@ DATARESOURCEPACKFILES = \
 	copper_tech.zip \
 	more_copper_tech.zip \
 	path_strider.zip \
+	pig_armor.zip \
 
 RESOURCEPACKFILES = \
 	$(DATARESOURCEPACKFILES) \
@@ -26,7 +27,6 @@ RESOURCEPACKFILES = \
 	note_guide.zip \
 	ore_types.zip \
 	painting_overhaul.zip \
-	pig_armor.zip \
 	ravager.zip \
 	spellsmithing_guide.zip \
 	tech_arrows.zip \
