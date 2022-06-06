@@ -1,7 +1,7 @@
 pools:
   - rolls: 1
     entries:
-      - { type: explorer_map, weight: 1, decor: red_x, skipchunks: false }
+      - { type: explorer_map, weight: 1, decor: red_x, skipchunks: true }
   - rolls: 3
     entries:
       - { type: item, weight: 1,                   item: compass }

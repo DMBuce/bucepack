@@ -2,9 +2,9 @@ pools:
   - rolls: { min: 1, max: 5 }
     entries:
       - { type: explorer_map, weight: 5, structure: igloo,
-        decor: target_x, display: "Snowy Explorer Map",  skipchunks: false }
+        decor: target_x, display: "Snowy Explorer Map",  skipchunks: true }
       - { type: explorer_map, weight: 5, structure: desert_pyramid,
-        decor: target_x, display: "Desert Explorer Map", skipchunks: false }
+        decor: target_x, display: "Desert Explorer Map", skipchunks: true }
       - { type: item, weight: 15, min: 1, max: 5, item: paper }
       - { type: loot_table, weight: 5, table: loot_overhaul/lib_book }
       - { type: item, weight: 15, min: 1, max: 4, item: pumpkin_pie }
