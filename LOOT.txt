@@ -1,5 +1,23 @@
 scattered notes from designing loot tables
 
+explorer maps
+--
+Bizarre Explorer Map:      abandoned_mineshaft   > ruined_portal
+Bizarre Explorer Map:      underwater_ruin_big   > ruined_portal
+Desert Explorer Map:       village_savanna_house > desert_pyramid
+End Island Explorer Map:   end_city_treasure     > endcity
+Jungle Explorer Map:       stronghold_library    > jungle_pyramid
+Nether Explorer Map:       bastion_treasure      > fortress
+Nether Explorer Map:       nether_bridge         > bastion_remnant
+Reconnaissance Map:        woodland_mansion      > pillager_outpost
+Snowy/Desert Explorer Map: village_cartographer  > igloo/desert_pyramid
+Snowy/Desert Explorer Map: village_plains_house  > igloo/desert_pyramid
+Snowy Explorer Map:        village_snowy_house   > igloo
+Swamp Explorer Map:        pillager_outpost      > swamp_hut
+Buried Treasure Map:       shipwreck_map         > buried treasure
+Buried Treasure Map:       underwater_ruin_big   > buried treasure
+Buried Treasure Map:       underwater_ruin_small > buried treasure
+
 --
 enchants:
 bartering
