@@ -543,7 +543,7 @@ and Ravager. Below is a summary of possible drops.
 * **Wither**: Wither Heart, Necronomicon, Block Buster
 * **Elder Guardian**: Fish Head, Clam, Coconut
 * **Ravager**: Iron Cube, Emerald Cube, Ravager Plushie
-//* **Warden**: Gold Cube, Diamond Cube
+* **Warden**: Gold Cube, Diamond Cube, Jar of Lava
 
 Download: https://github.com/DMBuce/bucepack/releases
 
