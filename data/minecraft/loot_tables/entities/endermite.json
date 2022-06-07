@@ -30,7 +30,7 @@
           "condition": "minecraft:entity_scores",
           "entity": "killer_player",
           "scores": {
-              "health": 1
+            "health": 1
           }
         }
       ]
