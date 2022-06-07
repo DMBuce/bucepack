@@ -16,6 +16,7 @@ pools:
       - { type: item, weight: 10, item: book, enchant_rand: [
             mending,
             soul_speed,
+            swift_sneak,
             frost_walker,
             vanishing_curse,
             binding_curse
@@ -37,6 +38,7 @@ pools:
         enchant_rand: [ 
             mending,
             soul_speed,
+            swift_sneak,
             frost_walker,
             vanishing_curse,
             binding_curse
