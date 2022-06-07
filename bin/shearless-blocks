@@ -1,0 +1,4 @@
+#!/bin/bash
+
+./bin/shearless-files | ./bin/path2basename
+

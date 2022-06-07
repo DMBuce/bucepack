@@ -2,7 +2,6 @@
   "type": "minecraft:block",
   "pools": [
     {
-      "rolls": 1.0,
       "bonus_rolls": 0.0,
       "entries": [
         {
@@ -18,13 +17,7 @@
                       "condition": "minecraft:match_tool",
                       "predicate": {
                         "items": [
-                          "minecraft:shears",
-                          "minecraft:wooden_hoe",
-                          "minecraft:stone_hoe",
-                          "minecraft:iron_hoe",
-                          "minecraft:diamond_hoe",
-                          "minecraft:golden_hoe",
-                          "minecraft:netherite_hoe"
+                          "minecraft:wooden_hoe", "minecraft:stone_hoe", "minecraft:netherite_hoe", "minecraft:iron_hoe", "minecraft:golden_hoe", "minecraft:diamond_hoe", "minecraft:shears"
                         ]
                       }
                     },
@@ -57,7 +50,8 @@
             }
           ]
         }
-      ]
+      ],
+      "rolls": 1.0
     }
   ]
 }

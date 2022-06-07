@@ -2,7 +2,6 @@
   "type": "minecraft:block",
   "pools": [
     {
-      "rolls": 1.0,
       "bonus_rolls": 0.0,
       "entries": [
         {
@@ -18,13 +17,7 @@
                       "condition": "minecraft:match_tool",
                       "predicate": {
                         "items": [
-                          "minecraft:shears",
-                          "minecraft:wooden_hoe",
-                          "minecraft:stone_hoe",
-                          "minecraft:iron_hoe",
-                          "minecraft:diamond_hoe",
-                          "minecraft:golden_hoe",
-                          "minecraft:netherite_hoe"
+                          "minecraft:wooden_hoe", "minecraft:stone_hoe", "minecraft:netherite_hoe", "minecraft:iron_hoe", "minecraft:golden_hoe", "minecraft:diamond_hoe", "minecraft:shears"
                         ]
                       }
                     },
@@ -50,21 +43,22 @@
               "type": "minecraft:item",
               "conditions": [
                 {
-                  "condition": "minecraft:table_bonus",
-                  "enchantment": "minecraft:fortune",
                   "chances": [
                     0.33,
                     0.55,
                     0.77,
                     1.0
-                  ]
+                  ],
+                  "condition": "minecraft:table_bonus",
+                  "enchantment": "minecraft:fortune"
                 }
               ],
               "name": "minecraft:weeping_vines"
             }
           ]
         }
-      ]
+      ],
+      "rolls": 1.0
     }
   ]
 }

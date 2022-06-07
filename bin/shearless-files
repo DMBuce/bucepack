@@ -1,0 +1,9 @@
+#!/bin/bash
+
+cd "$(git rev-parse --show-toplevel)"
+latest="$(./bin/latest)"
+grep -rl shears "$latest.jar"/data/minecraft/loot_tables/blocks \
+    | grep -v leaves \
+    | sort \
+	| sed "s|$latest.jar/||"
+
