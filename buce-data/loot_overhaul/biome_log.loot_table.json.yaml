@@ -35,6 +35,9 @@ biomes:
   dark_oak_log: &dark_oak_log
     - dark_forest
     - dark_forest_hills
+  mangrove_log: &mangrove_log
+    - mangrove_swamp
+    - mangrove_swamp_hills
   crimson_stem: &crimson_stem
     - nether_wastes
     - crimson_forest
@@ -60,6 +63,7 @@ pools:
       - { type: item_biome, weight: 99, item: jungle_log,   min: 3, max: 5, biomes: *jungle_log }
       - { type: item_biome, weight: 99, item: acacia_log,   min: 3, max: 5, biomes: *acacia_log }
       - { type: item_biome, weight: 99, item: dark_oak_log, min: 3, max: 5, biomes: *dark_oak_log }
+      - { type: item_biome, weight: 99, item: mangrove_log, min: 3, max: 5, biomes: *mangrove_log }
       - { type: item_biome, weight: 99, item: crimson_stem, min: 3, max: 5, biomes: *crimson_stem }
       - { type: item_biome, weight: 99, item: warped_stem,  min: 3, max: 5, biomes: *warped_stem }
       - { type: item_biome, weight: 99, item: stick,        min: 2, max: 4, biomes: *stick }

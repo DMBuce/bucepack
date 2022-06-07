@@ -1547,7 +1547,7 @@ Repeat important steps as necessary
 
  find orig -name \*.yaml -exec ./yaml2json {} +
  diff -ruU10 orig orig.new/ | grep -v '^Only in' | vim -
- vim loot_table.j2 
+ vim loot_table.j2
 
 Commit changes in the usual way
 
