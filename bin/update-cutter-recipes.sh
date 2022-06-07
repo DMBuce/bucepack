@@ -21,6 +21,68 @@ stemtypes=(
 	)
 )
 
+# override wood recipes
+for t in "${logtypes[@]}"; do
+	cat > "data/minecraft/recipes/${t}_stairs.json" <<-EOF
+		{
+		  "type": "minecraft:crafting_shaped",
+		  "group": "wooden_stairs",
+		  "pattern": [
+		    "#  ",
+		    "## ",
+		    "###"
+		  ],
+		  "key": {
+		    "#": {
+		      "item": "minecraft:${t}_planks"
+		    }
+		  },
+		  "result": {
+		    "item": "minecraft:${t}_stairs",
+		    "count": 6
+		  }
+		}
+	EOF
+	cat > "data/minecraft/recipes/${t}_wood.json" <<-EOF
+		{
+		  "type": "minecraft:crafting_shaped",
+		  "group": "bark",
+		  "pattern": [
+		    "##",
+		    "##"
+		  ],
+		  "key": {
+		    "#": {
+		      "item": "minecraft:${t}_log"
+		    }
+		  },
+		  "result": {
+		    "item": "minecraft:${t}_wood",
+		    "count": 4
+		  }
+		}
+	EOF
+	cat > "data/minecraft/recipes/stripped_${t}_wood.json" <<-EOF
+		{
+		  "type": "minecraft:crafting_shaped",
+		  "group": "bark",
+		  "pattern": [
+		    "##",
+		    "##"
+		  ],
+		  "key": {
+		    "#": {
+		      "item": "minecraft:stripped_${t}_log"
+		    }
+		  },
+		  "result": {
+		    "item": "minecraft:stripped_${t}_wood",
+		    "count": 4
+		  }
+		}
+	EOF
+done
+
 # generate wood recipes
 for t in "${logtypes[@]}"; do
 	cat <<-EOF | while read num output inputs
@@ -44,7 +106,7 @@ for t in "${logtypes[@]}"; do
 			  ],
 			  "result": "minecraft:$output",
 			  "count": $num
-			} 
+			}
 		EOF
 	done
 done
@@ -72,19 +134,20 @@ for t in "${stemtypes[@]}"; do
 			  ],
 			  "result": "minecraft:$output",
 			  "count": $num
-			} 
+			}
 		EOF
 	done
 done
 
 # generate recipe for 2 sticks
-export inputs="$(echo {oak,spruce,birch,jungle,acacia,dark_oak,crimson,warped}_planks)"
+#export inputs="$(echo {oak,spruce,birch,jungle,acacia,dark_oak,crimson,warped}_planks)"
+export inputs="${logtypes[*]} ${stemtypes[*]}"
 sempl - "$dir/sticks_2.recipe.json" <<-EOF
 	{
 	  "type": "minecraft:stonecutting",
 	  "ingredient": [
-	    { "item": "minecraft:{!printf '%s\\n' \$inputs | head -n-1}" },
-	    { "item": "minecraft:{!printf '%s\\n' \$inputs | tail -n1}" }
+	    { "item": "minecraft:{!printf '%s\\n' \$inputs | head -n-1}_planks" },
+	    { "item": "minecraft:{!printf '%s\\n' \$inputs | tail -n1}_planks" }
 	  ],
 	  "result": "minecraft:stick",
 	  "count": 2
@@ -92,10 +155,22 @@ sempl - "$dir/sticks_2.recipe.json" <<-EOF
 EOF
 
 # generate recipe for 8 sticks
-export inputs="$(echo \
-	{,stripped_}{oak,spruce,birch,jungle,acacia,dark_oak}_{log,wood} \
-	{,stripped_}{crimson,warped}_{stem,hyphae}
-)"
+inputs=""
+for t in "${logtypes[@]}"; do
+	for pre in '' stripped_; do
+		for post in _log _wood; do
+			inputs="$inputs ${pre}${t}${post}"
+		done
+	done
+done
+for t in "${stemtypes[@]}"; do
+	for pre in '' stripped_; do
+		for post in _stem _hyphae; do
+			inputs="$inputs ${pre}${t}${post}"
+		done
+	done
+done
+export inputs
 sempl - "$dir/sticks_8.recipe.json" <<-EOF
 	{
 	  "type": "minecraft:stonecutting",

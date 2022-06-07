@@ -8,11 +8,11 @@
   ],
   "key": {
     "#": {
-      "item": "minecraft:dark_oak_planks"
+      "item": "minecraft:mangrove_planks"
     }
   },
   "result": {
-    "item": "minecraft:dark_oak_stairs",
+    "item": "minecraft:mangrove_stairs",
     "count": 6
   }
 }
