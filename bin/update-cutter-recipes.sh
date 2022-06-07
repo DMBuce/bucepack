@@ -22,51 +22,13 @@ stemtypes=(
 	)
 )
 
-# override stair recipes
+# override stair, wood, hyphae recipes
 cp "$latest.jar"/data/minecraft/recipes/*_stairs.json data/minecraft/recipes/
 sed -i '/"count":/ s/: 4/: 6/' data/minecraft/recipes/*_stairs.json
-
-# override wood recipes
-for t in "${logtypes[@]}"; do
-	cat > "data/minecraft/recipes/${t}_wood.json" <<-EOF
-		{
-		  "type": "minecraft:crafting_shaped",
-		  "group": "bark",
-		  "pattern": [
-		    "##",
-		    "##"
-		  ],
-		  "key": {
-		    "#": {
-		      "item": "minecraft:${t}_log"
-		    }
-		  },
-		  "result": {
-		    "item": "minecraft:${t}_wood",
-		    "count": 4
-		  }
-		}
-	EOF
-	cat > "data/minecraft/recipes/stripped_${t}_wood.json" <<-EOF
-		{
-		  "type": "minecraft:crafting_shaped",
-		  "group": "bark",
-		  "pattern": [
-		    "##",
-		    "##"
-		  ],
-		  "key": {
-		    "#": {
-		      "item": "minecraft:stripped_${t}_log"
-		    }
-		  },
-		  "result": {
-		    "item": "minecraft:stripped_${t}_wood",
-		    "count": 4
-		  }
-		}
-	EOF
-done
+cp "$latest.jar"/data/minecraft/recipes/*_wood.json data/minecraft/recipes/
+sed -i '/"count":/ s/: 3/: 4/' data/minecraft/recipes/*_wood.json
+cp "$latest.jar"/data/minecraft/recipes/*_hyphae.json data/minecraft/recipes/
+sed -i '/"count":/ s/: 3/: 4/' data/minecraft/recipes/*_hyphae.json
 
 # generate wood recipes
 for t in "${logtypes[@]}"; do

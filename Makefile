@@ -631,6 +631,9 @@ eyes_of_seeking_FILES := $(DEFAULT_DATA_FILES) \
 more_cutting_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell find buce-data/more_cutting -type f | ./bin/ext2dir) \
 	$(wildcard assets/minecraft/lang/*_more_cutting.json) \
+	$(wildcard data/minecraft/recipes/*_stairs.json) \
+	$(wildcard data/minecraft/recipes/*_wood.json) \
+	$(wildcard data/minecraft/recipes/*_hyphae.json) \
 
 more_copper_tech_FILES := $(DEFAULT_DATA_FILES) \
 	assets/minecraft/models/block/dispenser.json \
