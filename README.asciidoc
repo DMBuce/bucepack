@@ -329,6 +329,15 @@ Download: https://github.com/DMBuce/bucepack/releases
 
 Build: `make more_cutting.zip`
 
+=== Eyes of Seeking
+
+Lets you use ender eyes in The End and the Nether
+to find End Cities and Bastion Remnants.
+
+Download: https://github.com/DMBuce/bucepack/releases
+
+Build: `make eyes_of_seeking.zip`
+
 === Gardener Endermen
 
 Makes it so that endermen can't pick up blocks such as dirt and grass blocks,

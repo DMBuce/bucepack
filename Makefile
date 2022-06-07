@@ -56,6 +56,7 @@ DATAPACKFILES = \
 	mineable.zip \
 	modern_loot.zip \
 	more_cutting.zip \
+	eyes_of_seeking.zip \
 	more_shulker_shells.zip \
 	mythic_relics.zip \
 	no_treasure_maps.zip \
@@ -622,6 +623,10 @@ phantasmal_FILES := $(DEFAULT_DATA_FILES) \
 
 phantasmal_end_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell find buce-data/phantasmal_end -type f | ./bin/ext2dir) \
+
+eyes_of_seeking_FILES := $(DEFAULT_DATA_FILES) \
+	data/buce/advancements/eyes_of_seeking.json \
+	data/minecraft/tags/worldgen/configured_structure_feature/eye_of_ender_located.json \
 
 more_cutting_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell find buce-data/more_cutting -type f | ./bin/ext2dir) \
@@ -1213,6 +1218,12 @@ phantasmal_end.zip: $(phantasmal_end_FILES)
 	./bin/ziprename _$(@:.zip=) "" $@
 
 breeding_overhaul.zip: $(breeding_overhaul_FILES)
+	cp meta/$(@:.zip=.png) pack.png
+	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
+	zip $@ pack.png pack.mcmeta $^
+	./bin/ziprename _$(@:.zip=) "" $@
+
+eyes_of_seeking.zip: $(eyes_of_seeking_FILES)
 	cp meta/$(@:.zip=.png) pack.png
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^

@@ -1,0 +1,22 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:ender_eye"
+		},
+		"title": {
+			"text": "Eyes of Seeking"
+		},
+		"description": {
+			"text": "Ender Eyes can locate structures in more dimensions."
+		},
+		"show_toast": false,
+		"announce_to_chat": false,
+		"frame": "task"
+	},
+	"parent": "buce:root",
+	"criteria": {
+		"tick": {
+			"trigger": "minecraft:tick"
+		}
+	}
+}
