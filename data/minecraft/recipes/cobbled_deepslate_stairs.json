@@ -1,17 +1,17 @@
 {
   "type": "minecraft:crafting_shaped",
-  "pattern": [
-    "#  ",
-    "## ",
-    "###"
-  ],
   "key": {
     "#": {
       "item": "minecraft:cobbled_deepslate"
     }
   },
+  "pattern": [
+    "#  ",
+    "## ",
+    "###"
+  ],
   "result": {
-    "item": "minecraft:cobbled_deepslate_stairs",
-    "count": 6
+    "count": 6,
+    "item": "minecraft:cobbled_deepslate_stairs"
   }
 }

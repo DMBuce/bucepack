@@ -1,18 +1,18 @@
 {
   "type": "minecraft:crafting_shaped",
   "group": "wooden_stairs",
-  "pattern": [
-    "#  ",
-    "## ",
-    "###"
-  ],
   "key": {
     "#": {
       "item": "minecraft:birch_planks"
     }
   },
+  "pattern": [
+    "#  ",
+    "## ",
+    "###"
+  ],
   "result": {
-    "item": "minecraft:birch_stairs",
-    "count": 6
+    "count": 6,
+    "item": "minecraft:birch_stairs"
   }
 }

@@ -5,6 +5,7 @@ gitroot="$(git rev-parse --show-toplevel)" || exit
 cd "$gitroot"
 
 # define some data
+latest="$(./bin/latest)"
 dir="$gitroot/buce-data/more_cutting"
 logtypes=(
 	$(join -t _ \
@@ -21,28 +22,12 @@ stemtypes=(
 	)
 )
 
+# override stair recipes
+cp "$latest.jar"/data/minecraft/recipes/*_stairs.json data/minecraft/recipes/
+sed -i '/"count":/ s/: 4/: 6/' data/minecraft/recipes/*_stairs.json
+
 # override wood recipes
 for t in "${logtypes[@]}"; do
-	cat > "data/minecraft/recipes/${t}_stairs.json" <<-EOF
-		{
-		  "type": "minecraft:crafting_shaped",
-		  "group": "wooden_stairs",
-		  "pattern": [
-		    "#  ",
-		    "## ",
-		    "###"
-		  ],
-		  "key": {
-		    "#": {
-		      "item": "minecraft:${t}_planks"
-		    }
-		  },
-		  "result": {
-		    "item": "minecraft:${t}_stairs",
-		    "count": 6
-		  }
-		}
-	EOF
 	cat > "data/minecraft/recipes/${t}_wood.json" <<-EOF
 		{
 		  "type": "minecraft:crafting_shaped",
