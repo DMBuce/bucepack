@@ -14,7 +14,7 @@ pools:
       - { type: item, weight: 2,  min: 1, max: 3,  item: bamboo }
       - { type: item, weight: 3,  min: 1, max: 5,  item: gunpowder }
       - { type: item, weight: 1,  min: 1, max: 2,  item: tnt }
-      - { type: item, weight: 3,                   item: scute }
+      - { type: item, weight: 3,  min: 1, max: 2,  item: scute }
       - { type: item, weight: 3,                   item: nautilus_shell }
       - { type: item, weight: 6,                   item: fishing_rod, enchant_lvl: { min: 20, max: 24 } }
   - rolls: 1
