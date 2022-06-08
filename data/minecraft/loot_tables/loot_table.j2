@@ -188,8 +188,8 @@
               "function": "minecraft:set_stew_effect"
             }
           ],
-          "name": "minecraft:suspicious_stew",
-          {%- if entry.weight != 1 %}
+          "name": "minecraft:suspicious_stew"
+          {%- if entry.weight != 1 %},
           "weight": {{entry.weight}}
           {%- endif %}
         }{{ "," if not loop.last }}
