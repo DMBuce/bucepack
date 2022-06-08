@@ -331,8 +331,8 @@ Build: `make more_cutting.zip`
 
 === Eyes of Seeking
 
-Lets you use ender eyes in The End and the Nether
-to find End Cities and Bastion Remnants.
+Lets you use ender eyes to find Ancient Cities,
+End Cities, and Bastion Remnants in addition to Strongholds.
 
 Download: https://github.com/DMBuce/bucepack/releases
 
@@ -911,7 +911,7 @@ and the charge resets.
 endermite in melee, it drops an amethyst shard with Myth of Seeking, a
 custom enchantment that can be applied to a spyglass in the smithing table.
 A player can use the spyglass to pinpoint the direction of the nearest
-Ancient City, Nether Fortress, or End City.
+Woodland Mansion, Nether Fortress, or End City.
 
 **Relic of Storms**: If the <<loot-overhaul,Loot Overhaul>> datapack is
 installed, hearts of the sea in buried treasure chests have Myth of
