@@ -512,6 +512,7 @@ mythic_relics_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell find buce-data/mythic -type f | ./bin/ext2dir) \
 	data/buce/functions/var.mcfunction \
 	data/minecraft/tags/functions/load_mythic_relics.json \
+	data/minecraft/tags/worldgen/structure/seeking_located.json \
 	data/minecraft/loot_tables/blocks/deepslate_emerald_ore.json \
 	data/minecraft/loot_tables/entities/endermite.json \
 	data/minecraft/loot_tables/entities/ghast.json \

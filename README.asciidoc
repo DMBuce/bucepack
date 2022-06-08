@@ -911,7 +911,7 @@ and the charge resets.
 endermite in melee, it drops an amethyst shard with Myth of Seeking, a
 custom enchantment that can be applied to a spyglass in the smithing table.
 A player can use the spyglass to pinpoint the direction of the nearest
-Woodland Mansion, End City, or Nether Fortress.
+Ancient City, Nether Fortress, or End City.
 
 **Relic of Storms**: If the <<loot-overhaul,Loot Overhaul>> datapack is
 installed, hearts of the sea in buried treasure chests have Myth of
