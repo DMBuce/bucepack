@@ -1,4 +1,5 @@
 #!/bin/bash
+# TODO: automatically add smooth/cracked blocks to stonecutter
 
 # switch to git root
 gitroot="$(git rev-parse --show-toplevel)" || exit
