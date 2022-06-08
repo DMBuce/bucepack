@@ -1,17 +1,18 @@
 pools:
   - rolls: { min: 2, max: 6 }
     entries:
-      - { type: item, weight: 3,  min: 1, max: 3,  item: diamond }
-      - { type: item, weight: 5,  min: 1, max: 5,  item: iron_ingot }
-      - { type: item, weight: 5,  min: 2, max: 7,  item: copper_ingot }
-      - { type: item, weight: 15, min: 2, max: 7,  item: gold_ingot }
-      - { type: item, weight: 15, min: 1, max: 3,  item: bamboo }
-      - { type: item, weight: 2,  min: 1, max: 3,  item: emerald }
-      - { type: item, weight: 20, min: 4, max: 6,  item: bone }
-      - { type: item, weight: 8,  min: 8, max: 16, item: mossy_cobblestone }
-      - { type: item, weight: 8,  min: 4, max: 8,  item: honey_bottle }
-      - { type: tag,  weight: 3,  expand: true,    tag:  music_discs }
-      - { type: item, weight: 1,                   item: enchanted_golden_apple }
+      - { type: item, weight: 3,  min: 1, max: 3, item: diamond }
+      - { type: item, weight: 5,  min: 1, max: 5, item: iron_ingot }
+      - { type: item, weight: 5,  min: 2, max: 7, item: copper_ingot }
+      - { type: item, weight: 15, min: 2, max: 7, item: gold_ingot }
+      - { type: item, weight: 15, min: 1, max: 3, item: bamboo }
+      - { type: item, weight: 2,  min: 1, max: 3, item: emerald }
+      - { type: item, weight: 20, min: 4, max: 6, item: bone }
+      - { type: item, weight: 10, min: 8, max: 16,item: mossy_cobblestone }
+      - { type: item, weight: 5,  min: 1, max: 8, item: moss_block }
+      - { type: item, weight: 1,  min: 4, max: 8, item: honey_bottle }
+      - { type: tag,  weight: 3,  expand: true,   tag:  music_discs }
+      - { type: item, weight: 1,                  item: enchanted_golden_apple }
       - { type: loot_table, weight: 3, table: loot_overhaul/ench_book }
   - rolls: 1
     entries:

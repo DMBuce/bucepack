@@ -17,7 +17,8 @@ pools:
       - { type: item, weight: 5, item: iron_leggings  , enchant_lvl: { min: 20, max: 24 } }
       - { type: item, weight: 5, item: iron_boots     , enchant_lvl: { min: 20, max: 24 } }
       - { type: item, weight: 1,                  item: golden_apple }
-      - { type: item, weight: 2,                  item: ender_eye }
+      - { type: item, weight: 1,                  item: ender_eye }
+      - { type: item, weight: 1, min: 1, max: 4,  item: moss_block }
       - { type: item, weight: 1, min: 8, max: 16, item: infested_stone_bricks }
       - { type: item, weight: 1, min: 8, max: 16, item: infested_mossy_stone_bricks }
       - { type: tag,  weight: 1, expand: true,    tag:  music_discs }
