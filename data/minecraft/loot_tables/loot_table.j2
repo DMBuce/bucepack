@@ -19,7 +19,9 @@
               or entry.nbt is defined
           %}
           "functions": [
+		  	{%- set comma = "" %}
             {%- if entry.min is defined %}
+		  	{%- set comma = "," %}
             {
               "add": false,
               "count": {
@@ -28,9 +30,10 @@
                 "min": {{entry.min}}.0
               },
               "function": "minecraft:set_count"
-            }{{ "," if entry.damage is defined or entry.count is defined or entry.enchant_lvl is defined or entry.enchant_rand is defined or entry.looting is defined or entry.potion is defined or entry.nbt is defined }}
+            }
             {%- endif %}
-            {%- if entry.damage is defined %}
+            {%- if entry.damage is defined %}{{comma}}
+            {%- set comma = "," %}
             {
               "add": false,
               "damage": {
@@ -39,16 +42,18 @@
                 "min": {{entry.damage.min}}
               },
               "function": "minecraft:set_damage"
-            }{{ "," if entry.count is defined or entry.enchant_lvl is defined or entry.enchant_rand is defined or entry.looting is defined or entry.potion is defined or entry.nbt is defined }}
+            }
             {%- endif %}
-            {%- if entry.count is defined %}
+            {%- if entry.count is defined %}{{comma}}
+			{%- set comma = "," %}
             {
               "add": false,
               "count": {{entry.count}}.0,
               "function": "minecraft:set_count"
-            }{{ "," if entry.enchant_lvl is defined or entry.enchant_rand is defined or entry.looting is defined or entry.potion is defined or entry.nbt is defined }}
+            }
             {%- endif %}
-            {%- if entry.enchant_lvl is defined %}
+            {%- if entry.enchant_lvl is defined %}{{comma}}
+			{%- set comma = "," %}
             {
               "function": "minecraft:enchant_with_levels",
               {%- if entry.enchant_lvl is mapping %}
@@ -61,9 +66,10 @@
               "levels": {{entry.enchant_lvl}}.0,
               {%- endif %}
               "treasure": true
-            }{{ "," if entry.enchant_rand is defined or entry.looting is defined or entry.potion is defined or entry.nbt is defined }}
+            }
             {%- endif %}
-            {%- if entry.enchant_rand is defined %}
+            {%- if entry.enchant_rand is defined %}{{comma}}
+			{%- set comma = "," %}
             {
               {%- if entry.enchant_rand | length > 0 %}
               "enchantments": [
@@ -73,24 +79,27 @@
               ],
               {%- endif %}
               "function": "minecraft:enchant_randomly"
-            }{{ "," if entry.looting is defined or entry.potion is defined or entry.nbt is defined }}
+            }
             {%- endif %}
-            {%- if entry.looting is defined %}
+            {%- if entry.looting is defined %}{{comma}}
+			{%- set comma = "," %}
             {
               "function": "minecraft:looting_enchant",
               "count": {
                 "min": {{entry.looting.min}}.0,
                 "max": {{entry.looting.max}}.0
               }
-            }{{ "," if entry.potion is defined or entry.nbt is defined }}
+            }
             {%- endif %}
-            {%- if entry.potion is defined %}
+            {%- if entry.potion is defined %}{{comma}}
+			{%- set comma = "," %}
             {
               "function": "minecraft:set_potion",
               "id": "minecraft:{{entry.potion}}"
-            }{{ "," if entry.nbt is defined }}
+            }
             {%- endif %}
-            {%- if entry.nbt is defined %}
+            {%- if entry.nbt is defined %}{{comma}}
+			{%- set comma = "," %}
             {
               "function": "minecraft:set_nbt",
               "tag": "{{entry.nbt}}"
@@ -117,8 +126,8 @@
           "weight": {{entry.weight}},
           {%- endif %}
           "quality": {{ entry.quality if entry.quality is defined else 0 }},
-          "name": "buce:{{entry.table}}"{{ "," if entry.score is defined }}
-          {%- if entry.score is defined %}
+          "name": "buce:{{entry.table}}"
+          {%- if entry.score is defined %},
           "conditions": [
             {
               "condition": "minecraft:entity_scores",
@@ -187,6 +196,17 @@
               ],
               "function": "minecraft:set_stew_effect"
             }
+            {%- if entry.min is defined %},
+            {
+              "add": false,
+              "count": {
+                "type": "minecraft:uniform",
+                "max": {{entry.max}}.0,
+                "min": {{entry.min}}.0
+              },
+              "function": "minecraft:set_count"
+            }
+            {%- endif %}
           ],
           "name": "minecraft:suspicious_stew"
           {%- if entry.weight != 1 %},
@@ -353,11 +373,11 @@
         "type": "minecraft:uniform",
         "max": {{pool.rolls.max}}.0,
         "min": {{pool.rolls.min}}.0
-      }{{ "," if pool.conditions is defined }}
+      }
       {%- else %}
-      "rolls": {{pool.rolls}}.0{{ "," if pool.conditions is defined }}
+      "rolls": {{pool.rolls}}.0
       {%- endif %}
-      {%- if pool.conditions is defined %}
+      {%- if pool.conditions is defined %},
       "conditions": [
         {%- for condition in pool.conditions %}
         {%- if condition.condition == "skeleton_is_killer" %}
