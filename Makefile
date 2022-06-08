@@ -443,7 +443,7 @@ relic_FILES := $(DEFAULT_DATA_FILES) \
 
 loot_overhaul_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell find buce-data/loot_overhaul -type f | ./bin/ext2dir) \
-	$(wildcard data/minecraft/tags/worldgen/configured_structure_feature/on_*_maps.json) \
+	$(wildcard data/minecraft/tags/worldgen/structure/on_*_maps.json) \
 	$(relic_FILES) \
 	data/buce/loot_tables/mythic/stormcalling/heart_of_the_sea.json \
 	data/minecraft/tags/functions/load_loot_overhaul.json \
@@ -610,7 +610,7 @@ phantasmal_end_FILES := $(DEFAULT_DATA_FILES) \
 
 eyes_of_seeking_FILES := $(DEFAULT_DATA_FILES) \
 	data/buce/advancements/eyes_of_seeking.json \
-	data/minecraft/tags/worldgen/configured_structure_feature/eye_of_ender_located.json \
+	data/minecraft/tags/worldgen/structure/eye_of_ender_located.json \
 
 more_cutting_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell find buce-data/more_cutting -type f | ./bin/ext2dir) \
