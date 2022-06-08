@@ -13,6 +13,12 @@ check if player is looking toward/away: https://www.reddit.com/r/MinecraftComman
 item nbt structure: https://minecraft.fandom.com/wiki/Player.dat_format#Item_structure
 json text components: https://minecraft.fandom.com/wiki/Raw_JSON_text_format#Component_resolution
 
+### Version History
+
+In addition to the minecraft wiki,
+
+* 1.19: https://www.reddit.com/r/Minecraft/comments/v6xze8/minecraft_java_edition_119_the_wild_update_has/
+
 ## Best Practices
 
 Prefer @a over @e[type=player]
