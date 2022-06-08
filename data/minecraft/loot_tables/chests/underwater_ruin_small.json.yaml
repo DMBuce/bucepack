@@ -10,7 +10,7 @@ pools:
       - { type: item, weight: 5,  min: 2, max: 3, item: cooked_salmon }
   - rolls: 1
     entries:
-      - { type: item, weight: 1,                   item: nautilus_shell }
+      - { type: item, weight: 1, min: 2, max: 3,   item: nautilus_shell }
       - { type: item, weight: 1, min: 1, max: 2,   item: scute }
       - { type: item, weight: 5, item: fishing_rod, enchant_lvl: { min: 20, max: 24 } }
       - { type: explorer_map, weight: 5, decor: red_x, skipchunks: false, display: filled_map.buried_treasure }
