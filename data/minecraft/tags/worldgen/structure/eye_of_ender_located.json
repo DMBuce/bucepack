@@ -2,7 +2,6 @@
   "replace": false,
   "values": [
     "minecraft:stronghold",
-    "minecraft:ancient_city",
     "minecraft:end_city",
     "minecraft:bastion_remnant"
   ]
