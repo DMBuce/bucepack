@@ -1,7 +1,8 @@
 #!/usr/bin/env sempl
+SEMPL_BRACES={{}}
 #!end sempl env
 {
-  "AUTO-GENERATED-BY": "{!basename $SRC}",
+  "AUTO-GENERATED-BY": "{{!basename $SRC}}",
   "replace": false,
   "values": [
     "minecraft:dirt_path",
@@ -9,7 +10,7 @@
     "#minecraft:planks",
     "minecraft:soul_sand",
     "minecraft:soul_soil",
-    "minecraft:{!./bin/pathstrider-blocks}",
+    "minecraft:{{!./bin/pathstrider-blocks}}",
     "#minecraft:walls"
   ]
 }

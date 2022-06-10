@@ -1,7 +1,8 @@
-#!/usr/bin/sempl
+#!/usr/bin/env sempl
 SEMPL_BRACES={{}}
 #!end sempl env
 {
+	"AUTO-GENERATED-BY": "{{!basename $SRC}}",
 	"display": {
 		"icon": {
 			"item": "minecraft:barrier"

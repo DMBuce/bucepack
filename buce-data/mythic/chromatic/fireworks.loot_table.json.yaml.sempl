@@ -6,6 +6,7 @@ trails = "$(printf '%s\n' 0 1)"
 colors = "$(printf '%s\n' 15435844 14602026 4312372 6719955 12801229 14188952 15790320)"
 fadecolors = "$(printf '%s\n' 15435844 14602026 4312372 6719955 12801229 14188952 15790320)"
 #!end sempl env
+AUTO-GENERATED-BY: "{{!basename $SRC}}"
 pools:
   - rolls: 1
     entries:

@@ -1,5 +1,4 @@
 #!/usr/bin/env sempl
-# used by ./bin/latest to generate dragon_immune.json
 SEMPL_BRACES={{}}
 #!end sempl env
 {
