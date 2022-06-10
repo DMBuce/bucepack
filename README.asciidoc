@@ -1014,6 +1014,18 @@ Build: `make glow_squid_glamers.zip`
 
 === Phantasmal
 
+// Phantoms were so close to being a good addition,
+// yet somehow missed the mark.
+// I think they would have been better received
+// if their drops were a bit more useful
+// and fighting them was a bit more interesting.
+// I have a [couple datapacks](https://github.com/dmbuce/bucepack#phantasmal)
+// that do that by giving phantoms some invisibility-related abilities
+// and making their drops a crafting component for
+// invisible item frames and light blocks.
+// Playing with the packs has turned phantoms
+// from a nuisance into a welcome distraction.
+
 Makes phantoms more phantasmal.
 
 When a phantom hits a player, its body turns invisible, and only its eyes and
@@ -1026,10 +1038,13 @@ When a player hits a phantom, it turns visible.
 
 All the above effects only apply to phantoms in the overworld.
 
-Phantom membranes have Glamer of Invisibility, an enchantment that can be
-applied to an item frame in the smithing table to make an invisible item
-frame. It can also be applied to a torch in the smithing table to make an
-invisible light block.
+Phantom membranes have Glamer of Invisibility,
+an enchantment that can be applied to an item frame
+in the smithing table to make an invisible item frame.
+It can also be applied to a torch in the smithing table
+to make an invisible light block.
+// the light block is one light level higher than a torch because the stick,
+// when invisible, does not cast a shadow
 
 image::https://i.imgur.com/n6TAzur.png[Phantasmal]
 
