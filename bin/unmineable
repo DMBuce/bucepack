@@ -1,0 +1,8 @@
+#!/bin/bash
+
+latest="$(./bin/latest)"
+
+# list any blocks that aren't in a mineable tag
+./bin/tags {,"$latest.jar"/}data/minecraft/tags/blocks/mineable/* | sort -u \
+	| comm -13 - <(./bin/allblocks | sort -u)
+

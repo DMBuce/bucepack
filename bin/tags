@@ -1,0 +1,39 @@
+#!/usr/bin/env python
+
+import sys
+import os
+import subprocess
+import json
+
+latest = subprocess.check_output(['./bin/latest'], text=True).rstrip()
+
+def tags(file):
+    while not os.path.isfile(file):
+        #print(file)
+        if os.path.isfile(os.path.join(latest + ".jar", file)):
+            file = os.path.join(latest + ".jar", file)
+        else:
+            (dirname, basename) = os.path.split(file)
+            if dirname == "":
+                print(
+                    "Error: tag not found: " + basename.replace(".json",''),
+                    file=sys.stderr
+                )
+                return
+            dirname = os.path.split(dirname)[0]
+            file = os.path.join(dirname, basename)
+
+    with open(file) as f:
+        tag = json.load(f)
+        for block in tag['values']:
+            if block.startswith("#"):
+                newfile = block.replace('#','',1).replace("minecraft:",'',1) + ".json"
+                (dirname, basename) = os.path.split(file)
+                tags(os.path.join(dirname, newfile))
+            else:
+                print(block.replace("minecraft:", ''))
+
+for file in sys.argv[1:]:
+    tags(file)
+
+# vim: ft=python
