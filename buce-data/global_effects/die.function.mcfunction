@@ -1,7 +1,7 @@
 # runs when a player dies
 
 # revoke advancement
-advancement revoke @s only buce:lose_hp_xp/die
+advancement revoke @s only buce:global_effects/die
 
 # reset score
 scoreboard players set @s died 0

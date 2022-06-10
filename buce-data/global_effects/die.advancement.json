@@ -14,7 +14,7 @@
 		"hidden": true,
 		"frame": "task"
 	},
-	"parent": "buce:lose_hp_xp/root",
+	"parent": "buce:global_effects/root",
 	"criteria": {
 		"die": {
 			"trigger": "minecraft:entity_hurt_player",
@@ -32,6 +32,6 @@
 		}
 	},
 	"rewards": {
-		"function": "buce:lose_hp_xp/die"
+		"function": "buce:global_effects/die"
 	}
 }

@@ -4,10 +4,10 @@
 			"item": "minecraft:ender_chest"
 		},
 		"title": {
-			"text": "Lose Health & Levels"
+			"text": "Global Effects"
 		},
 		"description": {
-			"text": "Keep inventory with downsides"
+			"text": "Playable gamerules"
 		},
 		"show_toast": false,
 		"announce_to_chat": false,

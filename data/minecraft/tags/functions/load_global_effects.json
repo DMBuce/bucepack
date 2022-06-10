@@ -2,6 +2,6 @@
 	"replace": false,
 	"values": [
 		"buce:var",
-		"buce:lose_hp_xp/load"
+		"buce:global_effects/load"
 	]
 }

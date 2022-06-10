@@ -1050,6 +1050,8 @@ Build: `make phantasmal.zip`
 Known Issues: The Glamer of Invisibility can't be applied to armor stands
 because of https://bugs.mojang.com/browse/MC-66068[this works-as-intended bug]
 that prevents invisible armor stands from being broken.
+// just because mojang says it's a bug doesn't mean i have to agree with them
+// i think it's a bug
 
 === Phantasmal End
 
@@ -1094,17 +1096,30 @@ Build: `make invis_squid_glamer.zip`
 Known Issues: The Glamer of Invisibility can't be applied to armor stands
 because of https://bugs.mojang.com/browse/MC-66068[this works-as-intended bug]
 that prevents invisible armor stands from being broken.
+// just because mojang says it's a bug doesn't mean i have to agree with them
+// i think it's a bug
 
-=== Lose HP & XP
+=== Global Effects
 
 Once any player enters the nether, all players stop healing from food.
 
-Once the dragon or wither have been defeated, players stop losing their items
-when they die, and lose all XP when they die. The XP does not drop as orbs.
+The first time the wither has been defeated,
+the rate of growth and decay for many natural processes is increased.
+Examples of such processes include
+plant growth, leaf decay, fire growth, and ice decay due to light.
+
+Once the dragon has been defeated,
+players stop losing their items when they die,
+and lose all experience when they die.
+The XP does not drop as orbs.
+
+If the warden is defeated, neutral mobs become angrier.
+They will attack players other than the one who angered them
+and will continue to attack even if the player they're angry at are dead.
 
 Download: https://github.com/DMBuce/bucepack/releases
 
-Build: `make lose_hp_xp.zip`
+Build: `make global_effects.zip`
 
 === Warmer Striders
 

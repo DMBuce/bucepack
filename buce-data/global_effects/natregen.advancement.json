@@ -14,7 +14,7 @@
 		"hidden": false,
 		"frame": "task"
 	},
-	"parent": "buce:lose_hp_xp/root",
+	"parent": "buce:global_effects/root",
 	"criteria": {
 		"entered_nether": {
 			"trigger": "minecraft:changed_dimension",
@@ -24,6 +24,6 @@
 		}
 	},
 	"rewards": {
-		"function": "buce:lose_hp_xp/natregen"
+		"function": "buce:global_effects/natregen"
 	}
 }

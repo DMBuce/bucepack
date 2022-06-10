@@ -52,7 +52,7 @@ DATAPACKFILES = \
 	invis_squid_glamer.zip \
 	lichdom.zip \
 	loot_overhaul.zip \
-	lose_hp_xp.zip \
+	global_effects.zip \
 	mineable.zip \
 	modern_loot.zip \
 	more_allays.zip \
@@ -432,10 +432,10 @@ fortunate_crops_FILES := $(DEFAULT_DATA_FILES) \
 	data/minecraft/loot_tables/blocks/beetroots.json \
 	data/buce/advancements/fortunate_crops.json \
 
-lose_hp_xp_FILES := $(DEFAULT_DATA_FILES) \
-	$(shell find buce-data/lose_hp_xp -type f | ./bin/ext2dir) \
+global_effects_FILES := $(DEFAULT_DATA_FILES) \
+	$(shell find buce-data/global_effects -type f | ./bin/ext2dir) \
 	data/buce/functions/var.mcfunction \
-	data/minecraft/tags/functions/load_lose_hp_xp.json \
+	data/minecraft/tags/functions/load_global_effects.json \
 
 relic_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell find buce-data/relic -type f | ./bin/ext2dir) \
@@ -1096,7 +1096,7 @@ fortunate_crops.zip: $(fortunate_crops_FILES)
 	zip $@ pack.png pack.mcmeta $^
 	./bin/ziprename _$(@:.zip=) "" $@
 
-lose_hp_xp.zip: $(lose_hp_xp_FILES)
+global_effects.zip: $(global_effects_FILES)
 	cp meta/$(@:.zip=.png) pack.png
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^

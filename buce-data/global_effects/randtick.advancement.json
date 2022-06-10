@@ -1,0 +1,37 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:oak_leaves"
+		},
+		"title": {
+			"text": "Growth and Decay"
+		},
+		"description": {
+			"text": "The rate of natural growth and decay is increased the first time a player kills a wither"
+		},
+		"show_toast": false,
+		"announce_to_chat": true,
+		"hidden": false,
+		"frame": "task"
+	},
+	"parent": "buce:global_effects/root",
+	"criteria": {
+		"killed_warden": {
+			"trigger": "minecraft:player_killed_entity",
+			"conditions": {
+				"entity": [
+					{
+						"condition": "minecraft:entity_properties",
+						"predicate": {
+							"type": "minecraft:wither"
+						},
+						"entity": "this"
+					}
+				]
+			}
+		}
+	},
+	"rewards": {
+		"function": "buce:global_effects/randtick"
+	}
+}
