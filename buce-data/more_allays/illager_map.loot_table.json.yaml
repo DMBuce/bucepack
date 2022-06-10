@@ -1,0 +1,6 @@
+pools:
+  - rolls: 1
+    entries:
+      - { type: explorer_map, weight: 1, structure: pillager_outpost,
+          decor: mansion, display: "Reconnaissance Map", skipchunks: true
+        }
