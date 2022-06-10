@@ -10,7 +10,8 @@ pools:
       - { type: item, weight: 10, enchant_rand: [], item: shield }
       - { type: item, weight: 10, item: iron_sword, enchant_lvl: { min: 20, max: 24 } }
       - { type: item, weight: 10,                  item: skeleton_skull }
-      - { type: item, weight: 15,                  item: zombie_head }
+      - { type: item, weight: 10,                  item: zombie_head }
+      - { type: explorer_map, weight: 5, structure: ancient_city, decor: red_x, display: "Underground Explorer Map", skipchunks: true }
       - { type: item, weight: 5,                   item: creeper_head }
       - { type: loot_table, weight: 10, table: loot_overhaul/ench_book }
   - rolls: { min: 1, max: 4 }

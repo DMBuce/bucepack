@@ -127,7 +127,7 @@ village/village_*.json
 creeper
 * music disc >> any music disc
 --
-3 underground
+4 underground
 blocks: cobble, stone brick
 gear:   iron, ench lvl 20-25
 seeds:  beetroot seeds
@@ -174,6 +174,24 @@ stronghold_library.json
 * 10 ench book >> 33/33/33 random/lvl30/treasure
 * 1 compass >> xp bottle
 * 1 empty map >> explorer map(jungle_pyramid:target_x)
+ancient_city_ice_box.json
+* snowball >> ice
+ancient_city.json
+* 1 disc otherside >> light blocks
+* 2 nametag >> dia pick lvl 40-49
+* 2 dia hoe >> ench lvl 40-49
+* 2 lead >> dia axe lvl 40-49
+* 2 dia horse armor >> dia shovel lvl 40-49
+* 2 saddle >> dia sword lvl 40-49
+* 2 disc 13 >> any disc
+* 2 disc cat >> any disc
+* 2 dia leggings >> 2 dia helmet ench lvl 40-49
+* 3 ench book >> any treasure
+* 3 xp bottle? >> underground explorer map
+* 3 iron leggings >> 3 dia leggings ench lvl 40-49
+* 4 disc fragment >> quartz
+* 5 ench book >> 50/50 random/lvl30 sans soul speed
+* 5 book? >> 2/2 dia chestplate/boots ench lvl 40-49, 1 reinforced deepslate
 --
 4 ocean
 blocks: prismarine?
