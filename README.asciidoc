@@ -367,7 +367,7 @@ In vanilla Minecraft, certain blocks like glass have no tool associated with
 them, so their breaking speed is the same whether you're using your fist or a
 tool or an Efficiency tool. This pack gives more blocks an associated tool.
 
-The tools associations that this pack adds are listed here:
+The blocks that are given an associated tool are listed here:
 
 * https://raw.githubusercontent.com/DMBuce/bucepack/master/data/minecraft/tags/blocks/mineable/pickaxe.json[Pick]
 * https://raw.githubusercontent.com/DMBuce/bucepack/master/data/minecraft/tags/blocks/mineable/axe.json[Axe]
@@ -1097,6 +1097,8 @@ that prevents invisible armor stands from being broken.
 
 === Global Effects
 
+Adjusts various game rules as players make progress in the world.
+
 Once any player enters the nether, all players stop healing from food.
 
 The first time the wither has been defeated,
@@ -1111,7 +1113,7 @@ The XP does not drop as orbs.
 
 If the warden is defeated, neutral mobs become angrier.
 They will attack players other than the one who angered them
-and will continue to attack even if the player they're angry at are dead.
+and will continue to attack even if the player they're angry at is dead.
 
 Download: https://github.com/DMBuce/bucepack/releases
 
