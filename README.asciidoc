@@ -372,6 +372,8 @@ The tools associations that this pack adds are listed here:
 * https://raw.githubusercontent.com/DMBuce/bucepack/master/data/minecraft/tags/blocks/mineable/pickaxe.json[Pick]
 * https://raw.githubusercontent.com/DMBuce/bucepack/master/data/minecraft/tags/blocks/mineable/axe.json[Axe]
 
+This pack fixes https://bugs.mojang.com/browse/MC-199752[MC-199752].
+
 Download: https://github.com/DMBuce/bucepack/releases
 
 Build: `make mineable.zip`
