@@ -1333,11 +1333,13 @@ mantrid: $(RESOURCEPACKFILES) $(DATAPACKFILES)
 
 .PHONY: update
 update: $(shell find * -name \*.sempl | sed 's/.json$$//')
-	# extract necessary folders from new jar
+	@echo Extracting necessary folders from new jar
 	find ./bin/update-* -exec {} \;
-	# copy new loot tables to orig.new folder
+	@echo Copying new loot tables to orig.new folder
 	mkdir -p data/minecraft/loot_tables/orig.new
 	rsync -a `./bin/latest`.jar/data/minecraft/loot_tables/{gameplay,chests} data/minecraft/loot_tables/orig.new/
+	@echo Checking for manual updates required
+	@./bin/unmineable | grep . && echo New unmineable blocks detected || true
 
 .PHONY: release
 release: $(sort $(RESOURCEPACKFILES) $(DATAPACKFILES) )

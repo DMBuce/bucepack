@@ -3,7 +3,8 @@
   "values": [
     "#minecraft:wool_carpets",
     "#minecraft:wool",
-    "minecraft:bamboo_sapling",
+    "minecraft:player_head",
+    "minecraft:player_wall_head",
     "minecraft:cobweb",
     "minecraft:dead_bush",
     "minecraft:fern",
@@ -21,7 +22,6 @@
     "minecraft:vine",
     "minecraft:weeping_vines",
     "minecraft:weeping_vines_plant",
-    "minecraft:player_head",
-    "minecraft:player_wall_head"
+    "minecraft:bamboo_sapling"
   ]
 }
