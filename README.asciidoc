@@ -219,7 +219,7 @@ Full support is provided for several English languages
 and partial support is provided for many other languages.
 If you would like to help improve support for renaming poppies to roses,
 please create a Pull Request if you know how or
-link::https://github.com/DMBuce/bucepack/issues/new[open a new Issue]
+https://github.com/DMBuce/bucepack/issues/new[open a new Issue]
 if you don't.
 
 image::https://i.imgur.com/9o75jWL.png[Classic Blocks]
@@ -322,7 +322,7 @@ American English is the selected language in the options menu.
 If you would like to add
 support for renaming them in other languages, please create a Pull
 Request if you know how or
-link::https://github.com/DMBuce/bucepack/issues/new[open a new Issue]
+https://github.com/DMBuce/bucepack/issues/new[open a new Issue]
 if you don't.
 
 Download: https://github.com/DMBuce/bucepack/releases
@@ -1177,7 +1177,7 @@ American English is the selected language in the options menu.
 If you would like to add
 support for renaming Soul Speed in other languages, please create a Pull
 Request if you know how or
-link::https://github.com/DMBuce/bucepack/issues/new[open a new Issue]
+https://github.com/DMBuce/bucepack/issues/new[open a new Issue]
 if you don't.
 ====
 
@@ -1220,7 +1220,7 @@ American English is the selected language in the options menu.
 If you would like to add
 support for renaming Soul Speed in other languages, please create a Pull
 Request if you know how or
-link::https://github.com/DMBuce/bucepack/issues/new[open a new Issue]
+https://github.com/DMBuce/bucepack/issues/new[open a new Issue]
 if you don't.
 
 Download: https://github.com/DMBuce/bucepack/releases
