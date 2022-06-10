@@ -367,32 +367,10 @@ In vanilla Minecraft, certain blocks like glass have no tool associated with
 them, so their breaking speed is the same whether you're using your fist or a
 tool or an Efficiency tool. This pack gives more blocks an associated tool.
 
-.Click to see blocks with associated tools
-[%collapsible]
-====
+The tools associations that this pack adds are listed here:
 
-Picks:
-
-* Glass
-* Stained Glass
-* Glass Panes
-* Tinted Glass
-* Beacon
-* Sea Lantern
-* Glowstone
-* Redstone Lamp
-* Lever
-* Smithing Table
-* Skulls
-* Heads
-
-Axes:
-
-* Cactus
-* Beds
-* Cakes
-* Honeycomb Blocks
-====
+* https://raw.githubusercontent.com/DMBuce/bucepack/master/data/minecraft/tags/blocks/mineable/pickaxe.json[Pick]
+* https://raw.githubusercontent.com/DMBuce/bucepack/master/data/minecraft/tags/blocks/mineable/axe.json[Axe]
 
 Download: https://github.com/DMBuce/bucepack/releases
 
