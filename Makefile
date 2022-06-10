@@ -852,11 +852,9 @@ data/buce/tags/functions/%.json: buce-data/%.function.tag.json
 
 data/minecraft/tags/blocks/unmineable.json: data/minecraft/tags/blocks/mineable/*.json
 
-#data/minecraft/loot_tables/%.json: data/minecraft/loot_tables/%.json.yaml data/minecraft/loot_tables/loot_table.j2
-#	j2 data/minecraft/loot_tables/loot_table.j2 $< -o $@
-#
-#data/buce/loot_tables/%.json: data/buce/loot_tables/%.json.yaml data/minecraft/loot_tables/loot_table.j2
-#	j2 data/minecraft/loot_tables/loot_table.j2 $< -o $@
+# rebuild all templates when latest.txt updates
+TEMPLATES = $(shell find * -name \*.sempl)
+$(TEMPLATES:.sempl=): latest.txt
 
 %.yaml: %.yaml.sempl
 	sempl $< $@
@@ -1332,14 +1330,17 @@ mantrid: $(RESOURCEPACKFILES) $(DATAPACKFILES)
 	rsync -auv $(DATAPACKFILES) mantrid:$(MCDIR)/datapacks
 
 .PHONY: update
-update: $(shell find * -name \*.sempl | sed 's/.json$$//')
+update:
 	@echo Extracting necessary folders from new jar
 	find ./bin/update-* -exec {} \;
 	@echo Copying new loot tables to orig.new folder
 	mkdir -p data/minecraft/loot_tables/orig.new
 	rsync -a `./bin/latest`.jar/data/minecraft/loot_tables/{gameplay,chests} data/minecraft/loot_tables/orig.new/
-	@echo Checking for manual updates required
-	@./bin/unmineable | grep . && echo New unmineable blocks detected || true
+	@echo Rebuilding everything
+	touch $(TEMPLATES)
+	make -B all clean
+	git status
+	@echo Run '`git diff`' to review changes
 
 .PHONY: release
 release: $(sort $(RESOURCEPACKFILES) $(DATAPACKFILES) )
