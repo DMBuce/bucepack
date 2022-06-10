@@ -411,6 +411,7 @@ Build: `make climbable.zip`
 === Shearless
 
 Makes hoes able to harvest blocks that are normally obtained with shears.
+In addition, hoes harvest bamboo saplings faster than normal.
 
 image::https://i.imgur.com/7tN7Zij.png[Shearless]
 
@@ -1559,6 +1560,7 @@ TO DO AFTER MINECRAFT UPDATES
 Run `make update && make && make clean`
 Bump pack_format in mcmeta if necessary
 Merge loot table changes with Loot Overhaul
+Check data/minecraft/tags/blocks/unmineable.json
 Add new plants to Gardener Endermen
 Add new ores to Ore Types
 Add new potions to Brewing Guide

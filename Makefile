@@ -850,6 +850,8 @@ data/buce/tags/functions/%.json: buce-data/%.function.tag.json
 	mkdir -p $(dir $@)
 	cp -v $< $@
 
+data/minecraft/tags/blocks/unmineable.json: data/minecraft/tags/blocks/mineable/*.json
+
 #data/minecraft/loot_tables/%.json: data/minecraft/loot_tables/%.json.yaml data/minecraft/loot_tables/loot_table.j2
 #	j2 data/minecraft/loot_tables/loot_table.j2 $< -o $@
 #
@@ -1330,7 +1332,7 @@ mantrid: $(RESOURCEPACKFILES) $(DATAPACKFILES)
 	rsync -auv $(DATAPACKFILES) mantrid:$(MCDIR)/datapacks
 
 .PHONY: update
-update:
+update: $(shell find * -name \*.sempl | sed 's/.json$$//')
 	# extract necessary folders from new jar
 	find ./bin/update-* -exec {} \;
 	# copy new loot tables to orig.new folder

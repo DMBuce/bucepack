@@ -1,0 +1,11 @@
+#!/usr/bin/env sempl
+SEMPL_BRACES={{}}
+#!end sempl env
+{
+  "AUTO-GENERATED-BY": "{{!basename $SRC}}",
+  "replace": false,
+  "values": [
+    "minecraft:{{!./bin/unmineable | head -n-1}}",
+    "minecraft:{{!./bin/unmineable | tail -n1}}"
+  ]
+}
