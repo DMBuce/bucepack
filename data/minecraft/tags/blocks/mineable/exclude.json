@@ -1,18 +1,18 @@
 {
   "comments": [
-	"Blocks that are intentionally not in a mineable tag.",
-	"Blocks are grouped together in the 'values' array below,",
-	"with a blank line separating each group.",
-	"Below is a description of each group.",
+    "Blocks that are intentionally not in a mineable tag.",
+    "Blocks are grouped together in the 'values' array below,",
+    "with a blank line separating each group.",
+    "Below is a description of each group.",
 
     "Unbreakable blocks such as bedrock",
 
     "Blocks that lack a hitbox such as air",
 
-	"Blocks I've deliberately not added because of gameplay or verisimilitude",
+    "Blocks I've deliberately not added because of gameplay or verisimilitude",
 
     "Blocks that instantly break with no tool as documented on",
-	"row of https://minecraft.fandom.com/wiki/Instant_mining#Without_commands",
+    "row of https://minecraft.fandom.com/wiki/Instant_mining#Without_commands",
 
     "Blocks that instantly break that aren't documented in the link above"
   ],
