@@ -2,7 +2,7 @@
 DATARESOURCEPACKFILES = \
 	copper_pistons.zip \
 	copper_tech.zip \
-	more_copper_tech.zip \
+	copper_tech_more.zip \
 	path_strider.zip \
 	pig_armor.zip \
 
@@ -625,7 +625,7 @@ more_cutting_FILES := $(DEFAULT_DATA_FILES) \
 	$(wildcard data/minecraft/recipes/*_wood.json) \
 	$(wildcard data/minecraft/recipes/*_hyphae.json) \
 
-more_copper_tech_FILES := $(DEFAULT_DATA_FILES) \
+copper_tech_more_FILES := $(DEFAULT_DATA_FILES) \
 	assets/minecraft/models/block/dispenser.json \
 	assets/minecraft/models/block/dispenser_vertical.json \
 	assets/minecraft/models/block/dropper.json \
@@ -1240,7 +1240,7 @@ copper_pistons.zip: $(copper_pistons_FILES)
 	zip $@ pack.png pack.mcmeta $^
 	./bin/ziprename _$(@:.zip=) "" $@
 
-more_copper_tech.zip: $(more_copper_tech_FILES)
+copper_tech_more.zip: $(copper_tech_more_FILES)
 	cp meta/$(@:.zip=.png) pack.png
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^
