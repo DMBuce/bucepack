@@ -40,6 +40,7 @@
     "minecraft:void_air",
     "minecraft:water",
 
+    "#minecraft:candles",
     "minecraft:dragon_egg",
     "minecraft:frosted_ice",
     "minecraft:powder_snow",
@@ -92,6 +93,7 @@
     "minecraft:item_frame",
     "minecraft:kelp",
     "minecraft:kelp_plant",
+    "minecraft:sea_pickle",
     "minecraft:soul_fire"
   ]
 }
