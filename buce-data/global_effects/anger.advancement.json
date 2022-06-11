@@ -1,7 +1,7 @@
 {
 	"display": {
 		"icon": {
-			"item": "minecraft:netherrack"
+			"item": "minecraft:sculk"
 		},
 		"title": {
 			"text": "What Makes a Mob Turn Neutral?"
