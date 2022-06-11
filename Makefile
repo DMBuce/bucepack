@@ -1344,7 +1344,7 @@ update:
 
 .PHONY: release
 release: $(sort $(RESOURCEPACKFILES) $(DATAPACKFILES) )
-	./bin/release $^
+	git release $^
 
 .PHONY: uninstall
 uninstall:

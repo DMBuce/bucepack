@@ -1,0 +1,22 @@
+#!/bin/bash
+
+file="$1"
+oldver="$2"
+version="$3"
+
+sempl > "$file.new" <<-EOF
+Version $version
+
+Tested on Minecraft $(<latest.txt). May work on newer and/or older versions.
+
+Changelog:
+
+* {!tail -n+5 "$file"}
+
+See the README for a complete description: https://github.com/DMBuce/bucepack/tree/$version#buces-packs
+
+Note that the Hardcore Lichdom, Escape the End, Escape the Nether, and Escape the Grind packs haven't been updated and only work on Minecraft 1.16.
+EOF
+
+mv "$file.new" "$file"
+
