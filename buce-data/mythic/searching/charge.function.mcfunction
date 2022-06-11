@@ -10,9 +10,6 @@ execute anchored eyes store result score @s var run locate structure #seeking_lo
 execute anchored eyes positioned ^ ^ ^10 store result score #buce.searching_distance var run locate structure #seeking_located
 scoreboard players operation @s var -= #buce.searching_distance var
 
-# reset charge 2t i.e. 0.2s from the last time this function is called
-schedule function buce:mythic/uncharge 2t replace
-
 # increment charge
 scoreboard players add @s search_charge 1
 
