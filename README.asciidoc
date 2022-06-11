@@ -1111,7 +1111,7 @@ players stop losing their items when they die,
 and lose all experience when they die.
 The XP does not drop as orbs.
 
-If the warden is defeated, neutral mobs become angrier.
+If the warden is defeated, provoked neutral mobs become angrier.
 They will attack players other than the one who angered them
 and will continue to attack even if the player they're angry at is dead.
 
