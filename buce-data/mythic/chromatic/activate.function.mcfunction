@@ -1,5 +1,8 @@
 # runs when a player activates chromatic
 
+## debug
+#say chromatic: activate
+
 # revoke advancement
 advancement revoke @s only buce:mythic/chromatic/trigger
 

@@ -1,5 +1,8 @@
 # runs as a firework rocket shot by a chromatic crossbow
 
+## debug
+#say chromatic: party
+
 # spawn a random firework rocket
 loot spawn ~ ~ ~ loot buce:mythic/chromatic/fireworks
 

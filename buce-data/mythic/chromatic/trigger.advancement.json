@@ -16,7 +16,7 @@
 	},
 	"parent": "buce:mythic/root",
 	"criteria": {
-		"charging_flamethrower": {
+		"shoot_crossbow": {
 			"trigger": "minecraft:shot_crossbow",
 			"conditions": {
 				"item": {
