@@ -1,0 +1,9 @@
+pools:
+  - rolls: 1
+    entries:
+      - { type: item, weight: 4, min: 0, max: 1 , item: echo_shard,
+          nbt: '{relic:1b,reverb:1b,CustomModelData:22183,display:{Name:\"{\\\"text\\\":\\\"Relic of Echoes\\\",\\\"color\\\":\\\"light_purple\\\"}\",Lore:[\"\\\"§r§bMyth of Reverberation\\\"\"]},Enchantments:[{id:protection,lvl:4}]}'
+        }
+      #- { type: item, weight: 4, min: 0, max: 1 , item: echo_shard,
+      #    nbt: '{relic:1b,reflect:1b,CustomModelData:22184,display:{Name:\"{\\\"text\\\":\\\"Relic of The Void\\\",\\\"color\\\":\\\"light_purple\\\"}\",Lore:[\"\\\"§r§bMyth of Reflection\\\"\"]},Enchantments:[{id:protection,lvl:4}]}'
+      #  }

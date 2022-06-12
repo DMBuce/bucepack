@@ -511,15 +511,16 @@ relic_loot_FILES := $(DEFAULT_DATA_FILES) \
 
 mythic_relics_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell find buce-data/mythic -type f | ./bin/ext2dir) \
+	data/buce/loot_tables/loot_overhaul/echo_shards_mythic_relics.json \
 	data/buce/functions/var.mcfunction \
-	data/minecraft/tags/functions/load_mythic_relics.json \
-	data/minecraft/tags/worldgen/structure/seeking_located.json \
 	data/minecraft/loot_tables/blocks/deepslate_emerald_ore.json \
 	data/minecraft/loot_tables/entities/endermite.json \
 	data/minecraft/loot_tables/entities/ghast.json \
 	data/minecraft/loot_tables/entities/iron_golem.json \
 	data/minecraft/loot_tables/entities/pig.json \
 	data/minecraft/loot_tables/entities/silverfish.json \
+	data/minecraft/tags/functions/load_mythic_relics.json \
+	data/minecraft/tags/worldgen/structure/seeking_located.json \
 
 seasonal_loot_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell ls buce-data/loot_addons/seasonal_loot* | ./bin/ext2dir) \
