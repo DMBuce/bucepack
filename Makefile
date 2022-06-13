@@ -444,55 +444,9 @@ relic_FILES := $(DEFAULT_DATA_FILES) \
 
 loot_overhaul_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell find buce-data/loot_overhaul -type f | ./bin/ext2dir) \
+	$(shell find data/minecraft/loot_tables/orig/{chests,gameplay/{fishing,piglin_bartering.*}} -type f | sed 's|orig/||' | ./bin/ext2dir) \
 	$(wildcard data/minecraft/tags/worldgen/structure/on_*_maps.json) \
 	$(relic_FILES) \
-	data/buce/loot_tables/mythic/stormcalling/heart_of_the_sea.json \
-	data/minecraft/tags/functions/load_loot_overhaul.json \
-	data/minecraft/loot_tables/chests/abandoned_mineshaft.json \
-	data/minecraft/loot_tables/chests/bastion_bridge.json \
-	data/minecraft/loot_tables/chests/bastion_hoglin_stable.json \
-	data/minecraft/loot_tables/chests/bastion_other.json \
-	data/minecraft/loot_tables/chests/bastion_treasure.json \
-	data/minecraft/loot_tables/chests/buried_treasure.json \
-	data/minecraft/loot_tables/chests/desert_pyramid.json \
-	data/minecraft/loot_tables/chests/end_city_treasure.json \
-	data/minecraft/loot_tables/chests/igloo_chest.json \
-	data/minecraft/loot_tables/chests/jungle_temple_dispenser.json \
-	data/minecraft/loot_tables/chests/jungle_temple.json \
-	data/minecraft/loot_tables/chests/nether_bridge.json \
-	data/minecraft/loot_tables/chests/pillager_outpost.json \
-	data/minecraft/loot_tables/chests/ruined_portal.json \
-	data/minecraft/loot_tables/chests/shipwreck_map.json \
-	data/minecraft/loot_tables/chests/shipwreck_supply.json \
-	data/minecraft/loot_tables/chests/shipwreck_treasure.json \
-	data/minecraft/loot_tables/chests/simple_dungeon.json \
-	data/minecraft/loot_tables/chests/spawn_bonus_chest.json \
-	data/minecraft/loot_tables/chests/stronghold_corridor.json \
-	data/minecraft/loot_tables/chests/stronghold_crossing.json \
-	data/minecraft/loot_tables/chests/stronghold_library.json \
-	data/minecraft/loot_tables/chests/underwater_ruin_big.json \
-	data/minecraft/loot_tables/chests/underwater_ruin_small.json \
-	data/minecraft/loot_tables/chests/village/village_armorer.json \
-	data/minecraft/loot_tables/chests/village/village_butcher.json \
-	data/minecraft/loot_tables/chests/village/village_cartographer.json \
-	data/minecraft/loot_tables/chests/village/village_desert_house.json \
-	data/minecraft/loot_tables/chests/village/village_fisher.json \
-	data/minecraft/loot_tables/chests/village/village_fletcher.json \
-	data/minecraft/loot_tables/chests/village/village_mason.json \
-	data/minecraft/loot_tables/chests/village/village_plains_house.json \
-	data/minecraft/loot_tables/chests/village/village_savanna_house.json \
-	data/minecraft/loot_tables/chests/village/village_shepherd.json \
-	data/minecraft/loot_tables/chests/village/village_snowy_house.json \
-	data/minecraft/loot_tables/chests/village/village_taiga_house.json \
-	data/minecraft/loot_tables/chests/village/village_tannery.json \
-	data/minecraft/loot_tables/chests/village/village_temple.json \
-	data/minecraft/loot_tables/chests/village/village_toolsmith.json \
-	data/minecraft/loot_tables/chests/village/village_weaponsmith.json \
-	data/minecraft/loot_tables/chests/woodland_mansion.json \
-	data/minecraft/loot_tables/gameplay/fishing/fish.json \
-	data/minecraft/loot_tables/gameplay/fishing/junk.json \
-	data/minecraft/loot_tables/gameplay/fishing/treasure.json \
-	data/minecraft/loot_tables/gameplay/piglin_bartering.json \
 	data/minecraft/recipes/diamond_horse_armor.json \
 	data/minecraft/recipes/gold_horse_armor.json \
 	data/minecraft/recipes/iron_horse_armor.json \
@@ -504,14 +458,16 @@ loot_overhaul_FILES := $(DEFAULT_DATA_FILES) \
 
 plant_loot_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell ls buce-data/loot_addons/plant_loot* | ./bin/ext2dir) \
+	data/buce/loot_tables/loot_overhaul/sus_stew_plant_loot.json \
 
 relic_loot_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell ls buce-data/loot_addons/relic_loot* | ./bin/ext2dir) \
 	$(relic_FILES) \
+	data/buce/loot_tables/loot_overhaul/extra/epic_relic_loot.json \
 
 mythic_relics_FILES := $(DEFAULT_DATA_FILES) \
+	$(shell find buce-data/ -name '*mythic_relics*' | ./bin/ext2dir) \
 	$(shell find buce-data/mythic -type f | ./bin/ext2dir) \
-	data/buce/loot_tables/loot_overhaul/echo_shards_mythic_relics.json \
 	data/buce/functions/var.mcfunction \
 	data/minecraft/loot_tables/blocks/deepslate_emerald_ore.json \
 	data/minecraft/loot_tables/entities/endermite.json \
@@ -524,19 +480,22 @@ mythic_relics_FILES := $(DEFAULT_DATA_FILES) \
 
 seasonal_loot_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell ls buce-data/loot_addons/seasonal_loot* | ./bin/ext2dir) \
+	data/buce/loot_tables/boss_loot/seasonal/loot_seasonal_loot.json \
 
 food_loot_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell ls buce-data/loot_addons/food_loot* | ./bin/ext2dir) \
+	data/buce/loot_tables/boss_loot/food/loot_food_loot.json \
 
 decor_loot_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell ls buce-data/loot_addons/decor_loot* | ./bin/ext2dir) \
+	data/buce/loot_tables/boss_loot/decor_decor_loot.json \
 
 modern_loot_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell ls buce-data/loot_addons/modern_loot* | ./bin/ext2dir) \
+	data/buce/loot_tables/boss_loot/modern_modern_loot.json \
 
 boss_loot_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell find buce-data/boss_loot -type f | ./bin/ext2dir) \
-	data/minecraft/tags/functions/load_boss_loot.json \
 	data/minecraft/loot_tables/entities/elder_guardian.json \
 	data/minecraft/loot_tables/entities/ender_dragon.json \
 	data/minecraft/loot_tables/entities/ravager.json \
@@ -546,6 +505,7 @@ boss_loot_FILES := $(DEFAULT_DATA_FILES) \
 starter_relic_FILES := $(DEFAULT_DATA_FILES) \
 	$(relic_FILES) \
 	$(shell ls buce-data/loot_addons/starter_relic* | ./bin/ext2dir) \
+	data/buce/loot_tables/loot_overhaul/extra/structure/spawn_bonus_chest_starter_relic.json \
 
 starter_bonus_chest_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell ls buce-data/starter_bonus_chest* | ./bin/ext2dir) \
@@ -606,7 +566,6 @@ phantasmal_FILES := $(DEFAULT_DATA_FILES) \
 	data/buce/functions/var.mcfunction \
 	data/minecraft/loot_tables/entities/phantom.json \
 	data/minecraft/loot_tables/gameplay/cat_morning_gift.json \
-	data/minecraft/tags/functions/load_phantasmal.json \
 
 phantasmal_end_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell find buce-data/phantasmal_end -type f | ./bin/ext2dir) \
@@ -786,6 +745,18 @@ rpacks: $(RESOURCEPACKFILES)
 
 .PHONY: dpacks
 dpacks: $(DATAPACKFILES)
+
+.PHONY: list
+list:
+	printf '%s\n' $(sort $(RESOURCEPACKFILES) $(DATAPACKFILES))
+
+.PHONY: rlist
+rlist:
+	printf '%s\n' $(sort $(RESOURCEPACKFILES) $(DATARESOURCEPACKFILES))
+
+.PHONY: dlist
+dlist:
+	printf '%s\n' $(sort $(DATAPACKFILES) $(DATARESOURCEPACKFILES))
 
 data/minecraft/loot_tables/%.json: minecraft-data/%.loot_table.json
 	mkdir -p $(dir $@)

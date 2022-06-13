@@ -6,7 +6,7 @@ pools:
       - { type: item, weight: 10, min: 2, max: 7, item: gold_ingot }
       - { type: item, weight: 5,  min: 4, max: 8, item: copper_ingot }
       - { type: item, weight: 2,  min: 2, max: 6, item: emerald }
-      - { type: loot_table, weight: 5, table: loot_overhaul/plant_loot }
+      - { type: loot_table, weight: 5, table: loot_overhaul/sus_stew }
       - { type: explorer_map, weight: 5, structure: end_city, decor: target_point, display: "End Island Explorer Map", skipchunks: true }
       - { type: item, weight: 6, enchant_lvl: { min: 30, max: 39 }, item: crossbow }
       - { type: item, weight: 9,  min: 18, max: 36, item: firework_rocket,
@@ -19,7 +19,20 @@ pools:
       - { type: item, weight: 4, enchant_lvl: { min: 30, max: 39 }, item: diamond_helmet }
       - { type: item, weight: 4, enchant_lvl: { min: 30, max: 39 }, item: diamond_pickaxe }
       - { type: item, weight: 4, enchant_lvl: { min: 30, max: 39 }, item: diamond_axe }
+# extra treasure
   - rolls: 1
     entries:
-      - { type: loot_table, weight: 1, score: relic_loot, table: relic/random }
-      - { type: empty, weight: 999 }
+      - { type: loot_table, weight: 1,   table: loot_overhaul/extra/mythic }
+      - { type: loot_table, weight: 5,   table: loot_overhaul/extra/epic }
+      - { type: loot_table, weight: 10,  table: loot_overhaul/extra/rare }
+      - { type: loot_table, weight: 20,  table: loot_overhaul/extra/uncommon }
+      - { type: loot_table, weight: 100, table: loot_overhaul/extra/common }
+      - { type: empty, weight: 864 }
+# extra per-table loot
+  - rolls: 1
+    entries:
+      - { type: loot_table, weight: 1,   table: loot_overhaul/extra/structure/end_city_treasure }
+# extra global loot
+  - rolls: 1
+    entries:
+      - { type: loot_table, weight: 1,   table: loot_overhaul/extra/all }

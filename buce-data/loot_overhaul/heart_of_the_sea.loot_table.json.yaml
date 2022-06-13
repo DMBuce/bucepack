@@ -1,0 +1,4 @@
+pools:
+  - rolls: 1
+    entries:
+      - { type: item, weight: 9,                  item: heart_of_the_sea }

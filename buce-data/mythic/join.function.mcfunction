@@ -2,5 +2,4 @@
 
 # set score
 scoreboard players set @s search_charge 0
-scoreboard players set @s mythic_relics 1
 

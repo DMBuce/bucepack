@@ -28,7 +28,7 @@ pools:
       - { type: item, weight: 10, min: 8,  max: 16, item: dark_oak_log }
       - { type: item, weight: 15, min: 1,  max: 4,  item: redstone }
       - { type: item, weight: 15, min: 1,  max: 4,  item: coal }
-      - { type: loot_table, weight: 20, table: loot_overhaul/plant_loot }
+      - { type: loot_table, weight: 20, table: loot_overhaul/sus_stew }
       - { type: item, weight: 10,                  item: cake }
   - rolls: 3
     entries:
@@ -36,7 +36,20 @@ pools:
       - { type: item, weight: 10, min: 1, max: 8, item: gunpowder }
       - { type: item, weight: 10, min: 1, max: 8, item: arrow }
       - { type: item, weight: 10, min: 1, max: 8, item: string }
+# extra treasure
+  - rolls: { min: 2, max: 5 }
+    entries:
+      - { type: loot_table, weight: 1,   table: loot_overhaul/extra/mythic }
+      - { type: loot_table, weight: 5,   table: loot_overhaul/extra/epic }
+      - { type: loot_table, weight: 10,  table: loot_overhaul/extra/rare }
+      - { type: loot_table, weight: 20,  table: loot_overhaul/extra/uncommon }
+      - { type: loot_table, weight: 100, table: loot_overhaul/extra/common }
+      - { type: empty, weight: 864 }
+# extra per-table loot
   - rolls: 1
     entries:
-      - { type: loot_table, weight: 1, score: relic_loot, table: relic/random }
-      - { type: empty, weight: 49 }
+      - { type: loot_table, weight: 1,   table: loot_overhaul/extra/structure/woodland_mansion }
+# extra global loot
+  - rolls: 1
+    entries:
+      - { type: loot_table, weight: 1,   table: loot_overhaul/extra/all }

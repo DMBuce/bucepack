@@ -11,6 +11,11 @@ pools:
   - rolls: 1
     entries:
       - { type: tag,  weight: 1, expand: true, tag: starter_item }
+# extra per-table loot
   - rolls: 1
     entries:
-      - { type: loot_table, weight: 1, score: starter_relic, table: relic/random }
+      - { type: loot_table, weight: 1,   table: loot_overhaul/extra/structure/spawn_bonus_chest }
+# extra global loot
+  - rolls: 1
+    entries:
+      - { type: loot_table, weight: 1,   table: loot_overhaul/extra/all }

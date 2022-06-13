@@ -1,0 +1,38 @@
+pools:
+  - rolls: 1
+    entries:
+      - type: suspicious_stew
+        weight: 1
+        effects:
+          - { name: speed,               min: 7, max: 10 }
+          - { name: slowness,            min: 6, max: 8  }
+          #- { name: haste,               min: 6, max: 8  }
+          #- { name: mining_fatigue,      min: 6, max: 8  }
+          - { name: strength,            min: 7, max: 10 }
+          #- { name: instant_health,      min: 6, max: 8  }
+          #- { name: instant_damage,      min: 6, max: 8  }
+          - { name: jump_boost,          min: 7, max: 10 }
+          #- { name: nausea,              min: 6, max: 8  }
+          - { name: regeneration,        min: 7, max: 10 }
+          - { name: resistance,          min: 7, max: 10 }
+          - { name: fire_resistance,     min: 7, max: 10 }
+          - { name: water_breathing,     min: 7, max: 10 }
+          - { name: invisibility,        min: 7, max: 10 }
+          - { name: blindness,           min: 5, max: 7  }
+          - { name: night_vision,        min: 7, max: 10 }
+          #- { name: hunger,              min: 6, max: 8  }
+          - { name: weakness,            min: 6, max: 8  }
+          #- { name: poison,              min: 6, max: 8  }
+          #- { name: wither,              min: 6, max: 8  }
+          #- { name: health_boost,        min: 6, max: 8  }
+          - { name: absorption,          min: 7, max: 10 }
+          - { name: saturation,          min: 7, max: 10 }
+          - { name: glowing,             min: 6, max: 8  }
+          - { name: levitation,          min: 6, max: 8  }
+          #- { name: luck,                min: 6, max: 8  }
+          #- { name: unluck,              min: 6, max: 8  }
+          - { name: slow_falling,        min: 6, max: 8  }
+          #- { name: conduit_power,       min: 7, max: 10 }
+          #- { name: dolphins_grace,      min: 7, max: 10 }
+          #- { name: bad_omen,            min: 6, max: 8  }
+          #- { name: hero_of_the_village, min: 7, max: 10 }

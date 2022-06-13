@@ -574,14 +574,15 @@ https://github.com/DMBuce/bucepack/releases/latest/download/dragonproof.zip[`dra
 
 === Boss Loot
 
-Makes decorative player heads drop from the Dragon, Wither, Elder Guardian,
-and Ravager. Below is a summary of possible drops.
+Makes decorative player heads drop from the Dragon,
+Wither, Warden, Elder Guardian, and Ravager when killed by a player.
+Below is a summary of possible drops.
 
 * **Dragon**: Dragon Heart, End Crystal Cube, Red Dragon Plushie
 * **Wither**: Wither Heart, Necronomicon, Block Buster
+* **Warden**: Gold Cube, Diamond Cube, Jar of Lava
 * **Elder Guardian**: Fish Head, Clam, Coconut
 * **Ravager**: Iron Cube, Emerald Cube, Ravager Plushie
-* **Warden**: Gold Cube, Diamond Cube, Jar of Lava
 
 Download:
 https://github.com/DMBuce/bucepack/releases[All Releases]
@@ -591,8 +592,8 @@ https://github.com/DMBuce/bucepack/releases/latest/download/boss_loot.zip[`boss_
 
 ==== Decorative Loot
 
-This is an addon pack that adds decorative drops to the
-<<boss-loot,Boss Loot>> datapack.
+This is an addon pack that needs to be installed after <<boss-loot,Boss Loot>>.
+It adds decorative blocks to boss drops.
 
 .Click for a summary of decorative drops
 [%collapsible]
@@ -622,8 +623,8 @@ https://github.com/DMBuce/bucepack/releases/latest/download/decor_loot.zip[`deco
 
 ==== Modern Loot
 
-This is an addon pack that adds modern blocks to the
-<<boss-loot,Boss Loot>> datapack.
+This is an addon pack that needs to be installed after <<boss-loot,Boss Loot>>.
+It adds modern blocks to boss drops.
 
 .Click for a summary of modern drops
 [%collapsible]
@@ -655,8 +656,8 @@ https://github.com/DMBuce/bucepack/releases/latest/download/modern_loot.zip[`mod
 
 ==== Food Loot
 
-This is an addon pack that adds food drops to the
-<<boss-loot,Boss Loot>> datapack.
+This is an addon pack that needs to be installed after <<boss-loot,Boss Loot>>.
+It adds food to boss drops.
 Some of the food only drops during dawn, daytime, dusk, or nighttime.
 
 .Click for a summary of food drops
@@ -679,8 +680,8 @@ https://github.com/DMBuce/bucepack/releases/latest/download/food_loot.zip[`food_
 
 ==== Seasonal Loot
 
-This is an addon pack that adds seasonal drops to the
-<<boss-loot,Boss Loot>> datapack.
+This is an addon pack that needs to be installed after <<boss-loot,Boss Loot>>.
+It adds seasonal drops to bosses.
 The drops are based on the month and season within minecraft.
 A minecraft month is equal to one lunar cycle,
 which is equivalent to 8 in-game days.
@@ -806,8 +807,8 @@ https://github.com/DMBuce/bucepack/releases/latest/download/loot_overhaul.zip[`l
 
 ==== Plant Loot
 
-This is an addon pack for the <<loot-overhaul,Loot Overhaul>> datapack that
-adds plant resources that you haven't used yet to the End City and Woodland
+If this addon pack is installed after <<loot-overhaul,Loot Overhaul>>,
+it adds plant resources that you haven't used yet to the End City and Woodland
 Mansion loot tables. Such resources include everything from
 berries, wheat seeds and potatoes to cactus, bamboo, and rose bushes. If you
 haven't eaten, planted, or otherwise used one of the items shown below, you
@@ -821,16 +822,10 @@ https://github.com/DMBuce/bucepack/releases[All Releases]
 Direct Link:
 https://github.com/DMBuce/bucepack/releases/latest/download/loot_overhaul.zip[`loot_overhaul.zip`]
 
-Known Issues: Due to limitations in how Minecraft loot tables work, if you
-uninstall this pack and want to continue using Loot Overhaul, plant loot
-will continue to generate until you
-run `/function buce:loot_overhaul/disable/plant_loot`
-
 ==== Relic Loot
 
-This is an addon pack for the
-<<loot-overhaul,Loot Overhaul>>
-datapack that adds <<Relics>> to chest loot. The chance varies depending on
+If this addon pack is installed after <<loot-overhaul,Loot Overhaul>>,
+<<Relics>> rarely appear in chest loot. The chance varies depending on
 the type of loot chest.
 
 .Click for a summary of relic loot spawn chance
@@ -849,15 +844,10 @@ https://github.com/DMBuce/bucepack/releases[All Releases]
 Direct Link:
 https://github.com/DMBuce/bucepack/releases/latest/download/relic_loot.zip[`relic_loot.zip`]
 
-Known Issues: Due to limitations in how Minecraft loot tables work, if you
-uninstall this pack and want to continue using Loot Overhaul, relic loot
-will continue to generate until you
-run `/function buce:loot_overhaul/disable/relic_loot`
-
 ==== Starter Relic
 
-This is an addon pack for the <<loot-overhaul,Loot Overhaul>> datapack that
-adds a random <<relics,Relic>> to the bonus spawn chest.
+If this addon pack is installed after <<loot-overhaul,Loot Overhaul>>,
+it adds a random <<relics,Relic>> to the bonus spawn chest.
 
 If any other <<starter-item,Starter Item>> datapacks are installed,
 the starter relic is generated in addition to the starter item added by
@@ -868,12 +858,6 @@ https://github.com/DMBuce/bucepack/releases[All Releases]
 
 Direct Link:
 https://github.com/DMBuce/bucepack/releases/latest/download/starter_relic.zip[`starter_relic.zip`]
-
-Known Issues: Due to limitations in how Minecraft loot tables work, if you
-uninstall this pack and are using Loot Overhaul in conjunction with a datapack
-such as <<starter-spawn-chest,Starter Bonus Chest>> that adds new spawn chests
-to the world, relics will continue to generate in bonus spawn chests until you
-run `/function buce:loot_overhaul/disable/starter_relic`
 
 ==== Starter Item
 
@@ -981,7 +965,7 @@ A player can use the spyglass to pinpoint the direction of the nearest
 Woodland Mansion, Nether Fortress, or End City.
 
 **Relic of Storms**: If the <<loot-overhaul,Loot Overhaul>> datapack is
-installed, hearts of the sea in buried treasure chests have Myth of
+installed before this one, hearts of the sea in buried treasure chests have Myth of
 Stormcalling, a custom enchantment that can be applied to a trident in the
 smithing table. A player can summon a thunderstorm with the trident by looking
 skyward for several seconds while holding right click.
@@ -994,7 +978,8 @@ inventory is placed in their hand if one is available, and it's given the same
 enchantments. Then, there's a chance that an echo shard is created from
 the totem's reverberations.
 
-**Relic of Disappearance**: If the <<Phantasmal>> datapack is installed,
+**Relic of Disappearance**: If the <<Phantasmal>> datapack is installed before
+this one,
 invisible phantoms killed by a player drop leather with Curse of Vanishing and
 Myth of Cloaking, a custom
 enchantment that can be applied to elytra in the smithing table.

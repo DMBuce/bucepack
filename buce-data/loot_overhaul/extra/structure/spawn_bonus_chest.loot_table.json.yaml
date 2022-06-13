@@ -1,0 +1,5 @@
+pools:
+pools:
+  - rolls: 1
+    entries:
+      - { type: empty, weight: 1 }

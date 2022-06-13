@@ -19,8 +19,5 @@
 		"tick": {
 			"trigger": "minecraft:tick"
 		}
-	},
-	"rewards": {
-		"function": "buce:loot_addons/starter_relic"
 	}
 }

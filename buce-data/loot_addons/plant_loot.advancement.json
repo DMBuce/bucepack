@@ -18,8 +18,5 @@
 		"tick": {
 			"trigger": "minecraft:tick"
 		}
-	},
-	"rewards": {
-		"function": "buce:loot_addons/plant_loot"
 	}
 }

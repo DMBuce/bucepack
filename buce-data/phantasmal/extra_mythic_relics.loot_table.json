@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1.0,
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{relic:1b,cloaking:1b,CustomModelData:22183,display:{Name:\"{\\\"text\\\":\\\"Relic of Disappearance\\\",\\\"color\\\":\\\"light_purple\\\"}\",Lore:[\"\\\"§r§bMyth of Cloaking\\\"\"]},Enchantments:[{id:vanishing_curse,lvl:1}]}"
+            }
+          ],
+          "name": "minecraft:leather",
+          "weight": 1
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:killed_by_player"
+        },
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "effects": {
+              "minecraft:invisibility": {}
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

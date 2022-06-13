@@ -32,7 +32,20 @@ pools:
       - { type: item, weight: 10, min: 1, max: 8, item: gunpowder }
       - { type: item, weight: 10, min: 1, max: 4, item: moss_block }
       - { type: item, weight: 10, min: 1, max: 8, item: string }
+# extra treasure
   - rolls: 1
     entries:
-      - { type: loot_table, weight: 1, score: relic_loot, table: relic/random }
-      - { type: empty, weight: 999 }
+      - { type: loot_table, weight: 1,   table: loot_overhaul/extra/mythic }
+      - { type: loot_table, weight: 5,   table: loot_overhaul/extra/epic }
+      - { type: loot_table, weight: 10,  table: loot_overhaul/extra/rare }
+      - { type: loot_table, weight: 20,  table: loot_overhaul/extra/uncommon }
+      - { type: loot_table, weight: 100, table: loot_overhaul/extra/common }
+      - { type: empty, weight: 864 }
+# extra per-table loot
+  - rolls: 1
+    entries:
+      - { type: loot_table, weight: 1,   table: loot_overhaul/extra/structure/simple_dungeon }
+# extra global loot
+  - rolls: 1
+    entries:
+      - { type: loot_table, weight: 1,   table: loot_overhaul/extra/all }
