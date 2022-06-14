@@ -1,13 +1,13 @@
 {
 	"display": {
 		"icon": {
-			"item": "minecraft:command_block"
+			"item": "minecraft:snowball"
 		},
 		"title": {
-			"text": "Modern Loot"
+			"text": "Seasonal Loot"
 		},
 		"description": {
-			"text": "Makes bosses drop modern blocks"
+			"text": "Makes bosses drop seasonal loot"
 		},
 		"show_toast": false,
 		"announce_to_chat": false,
@@ -18,8 +18,5 @@
 		"tick": {
 			"trigger": "minecraft:tick"
 		}
-	},
-	"rewards": {
-		"function": "buce:loot_addons/modern_loot"
 	}
 }

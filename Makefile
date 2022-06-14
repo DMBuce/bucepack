@@ -39,12 +39,12 @@ DATAPACKFILES = \
 	boss_loot.zip \
 	breeding_overhaul.zip \
 	climbable.zip \
-	decor_loot.zip \
+	boss_loot_decor.zip \
 	dragonproof.zip \
 	escape_end.zip \
 	escape_grind.zip \
 	escape_nether.zip \
-	food_loot.zip \
+	boss_loot_food.zip \
 	fortunate_crops.zip \
 	fortunate_jungle.zip \
 	gardener_endermen.zip \
@@ -54,7 +54,7 @@ DATAPACKFILES = \
 	loot_overhaul.zip \
 	global_effects.zip \
 	mineable.zip \
-	modern_loot.zip \
+	boss_loot_modern.zip \
 	more_allays.zip \
 	more_cutting.zip \
 	eyes_of_seeking.zip \
@@ -65,7 +65,7 @@ DATAPACKFILES = \
 	phantasmal.zip \
 	plant_loot.zip \
 	relic_loot.zip \
-	seasonal_loot.zip \
+	boss_loot_seasonal.zip \
 	shearless.zip \
 	starter_bed.zip \
 	starter_bonus_chest.zip \
@@ -478,21 +478,21 @@ mythic_relics_FILES := $(DEFAULT_DATA_FILES) \
 	data/minecraft/tags/functions/load_mythic_relics.json \
 	data/minecraft/tags/worldgen/structure/seeking_located.json \
 
-seasonal_loot_FILES := $(DEFAULT_DATA_FILES) \
-	$(shell ls buce-data/loot_addons/seasonal_loot* | ./bin/ext2dir) \
-	data/buce/loot_tables/boss_loot/seasonal/loot_seasonal_loot.json \
+boss_loot_seasonal_FILES := $(DEFAULT_DATA_FILES) \
+	$(shell ls buce-data/loot_addons/boss_loot_seasonal* | ./bin/ext2dir) \
+	data/buce/loot_tables/boss_loot/seasonal/loot_boss_loot_seasonal.json \
 
-food_loot_FILES := $(DEFAULT_DATA_FILES) \
-	$(shell ls buce-data/loot_addons/food_loot* | ./bin/ext2dir) \
-	data/buce/loot_tables/boss_loot/food/loot_food_loot.json \
+boss_loot_food_FILES := $(DEFAULT_DATA_FILES) \
+	$(shell ls buce-data/loot_addons/boss_loot_food* | ./bin/ext2dir) \
+	data/buce/loot_tables/boss_loot/food/loot_boss_loot_food.json \
 
-decor_loot_FILES := $(DEFAULT_DATA_FILES) \
-	$(shell ls buce-data/loot_addons/decor_loot* | ./bin/ext2dir) \
-	data/buce/loot_tables/boss_loot/decor_decor_loot.json \
+boss_loot_decor_FILES := $(DEFAULT_DATA_FILES) \
+	$(shell ls buce-data/loot_addons/boss_loot_decor* | ./bin/ext2dir) \
+	data/buce/loot_tables/boss_loot/decor_boss_loot_decor.json \
 
-modern_loot_FILES := $(DEFAULT_DATA_FILES) \
-	$(shell ls buce-data/loot_addons/modern_loot* | ./bin/ext2dir) \
-	data/buce/loot_tables/boss_loot/modern_modern_loot.json \
+boss_loot_modern_FILES := $(DEFAULT_DATA_FILES) \
+	$(shell ls buce-data/loot_addons/boss_loot_modern* | ./bin/ext2dir) \
+	data/buce/loot_tables/boss_loot/modern_boss_loot_modern.json \
 
 boss_loot_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell find buce-data/boss_loot -type f | ./bin/ext2dir) \
@@ -1116,25 +1116,25 @@ boss_loot.zip: $(boss_loot_FILES)
 	zip $@ pack.png pack.mcmeta $^
 	./bin/ziprename _$(@:.zip=) "" $@
 
-seasonal_loot.zip: $(seasonal_loot_FILES)
+boss_loot_seasonal.zip: $(boss_loot_seasonal_FILES)
 	cp meta/$(@:.zip=.png) pack.png
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^
 	./bin/ziprename _$(@:.zip=) "" $@
 
-food_loot.zip: $(food_loot_FILES)
+boss_loot_food.zip: $(boss_loot_food_FILES)
 	cp meta/$(@:.zip=.png) pack.png
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^
 	./bin/ziprename _$(@:.zip=) "" $@
 
-decor_loot.zip: $(decor_loot_FILES)
+boss_loot_decor.zip: $(boss_loot_decor_FILES)
 	cp meta/$(@:.zip=.png) pack.png
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^
 	./bin/ziprename _$(@:.zip=) "" $@
 
-modern_loot.zip: $(modern_loot_FILES)
+boss_loot_modern.zip: $(boss_loot_modern_FILES)
 	cp meta/$(@:.zip=.png) pack.png
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^

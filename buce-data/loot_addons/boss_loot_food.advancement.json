@@ -1,13 +1,13 @@
 {
 	"display": {
 		"icon": {
-			"item": "minecraft:snowball"
+			"item": "minecraft:bread"
 		},
 		"title": {
-			"text": "Seasonal Loot"
+			"text": "Food Loot"
 		},
 		"description": {
-			"text": "Makes bosses drop seasonal loot"
+			"text": "Makes bosses drop food"
 		},
 		"show_toast": false,
 		"announce_to_chat": false,
@@ -18,8 +18,5 @@
 		"tick": {
 			"trigger": "minecraft:tick"
 		}
-	},
-	"rewards": {
-		"function": "buce:seasonal_addons/food_loot"
 	}
 }

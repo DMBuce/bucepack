@@ -1,13 +1,13 @@
 {
 	"display": {
 		"icon": {
-			"item": "minecraft:bread"
+			"item": "minecraft:bookshelf"
 		},
 		"title": {
-			"text": "Food Loot"
+			"text": "Decorative Loot"
 		},
 		"description": {
-			"text": "Makes bosses drop food"
+			"text": "Makes bosses drop decorations"
 		},
 		"show_toast": false,
 		"announce_to_chat": false,
@@ -18,8 +18,5 @@
 		"tick": {
 			"trigger": "minecraft:tick"
 		}
-	},
-	"rewards": {
-		"function": "buce:loot_addons/food_loot"
 	}
 }

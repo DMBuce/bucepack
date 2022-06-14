@@ -1,0 +1,8 @@
+#!/bin/bash
+
+old="$1"
+new="$2"
+
+find * -name "*$old*" -exec rename "$old" "$new" {} +
+sed -i "s/$old/$new/g" $(grep -rl "$old" *)
+

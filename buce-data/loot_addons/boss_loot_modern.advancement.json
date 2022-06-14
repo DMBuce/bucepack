@@ -1,13 +1,13 @@
 {
 	"display": {
 		"icon": {
-			"item": "minecraft:bookshelf"
+			"item": "minecraft:command_block"
 		},
 		"title": {
-			"text": "Decorative Loot"
+			"text": "Modern Loot"
 		},
 		"description": {
-			"text": "Makes bosses drop decorations"
+			"text": "Makes bosses drop modern blocks"
 		},
 		"show_toast": false,
 		"announce_to_chat": false,
@@ -18,8 +18,5 @@
 		"tick": {
 			"trigger": "minecraft:tick"
 		}
-	},
-	"rewards": {
-		"function": "buce:loot_addons/decor_loot"
 	}
 }

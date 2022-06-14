@@ -619,7 +619,7 @@ Download:
 https://github.com/DMBuce/bucepack/releases[All Releases]
 
 Direct Link:
-https://github.com/DMBuce/bucepack/releases/latest/download/decor_loot.zip[`decor_loot.zip`]
+https://github.com/DMBuce/bucepack/releases/latest/download/boss_loot_decor.zip[`boss_loot_decor.zip`]
 
 ==== Modern Loot
 
@@ -652,7 +652,7 @@ Download:
 https://github.com/DMBuce/bucepack/releases[All Releases]
 
 Direct Link:
-https://github.com/DMBuce/bucepack/releases/latest/download/modern_loot.zip[`modern_loot.zip`]
+https://github.com/DMBuce/bucepack/releases/latest/download/boss_loot_modern.zip[`boss_loot_modern.zip`]
 
 ==== Food Loot
 
@@ -676,7 +676,7 @@ Download:
 https://github.com/DMBuce/bucepack/releases[All Releases]
 
 Direct Link:
-https://github.com/DMBuce/bucepack/releases/latest/download/food_loot.zip[`food_loot.zip`]
+https://github.com/DMBuce/bucepack/releases/latest/download/boss_loot_food.zip[`boss_loot_food.zip`]
 
 ==== Seasonal Loot
 
@@ -715,7 +715,7 @@ Download:
 https://github.com/DMBuce/bucepack/releases[All Releases]
 
 Direct Link:
-https://github.com/DMBuce/bucepack/releases/latest/download/seasonal_loot.zip[`seasonal_loot.zip`]
+https://github.com/DMBuce/bucepack/releases/latest/download/boss_loot_seasonal.zip[`boss_loot_seasonal.zip`]
 
 === Loot Overhaul
 
