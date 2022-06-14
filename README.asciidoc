@@ -1314,6 +1314,34 @@ https://github.com/DMBuce/bucepack/releases[All Releases]
 Direct Link:
 https://github.com/DMBuce/bucepack/releases/latest/download/path_strider.zip[`path_strider.zip`]
 
+== Experimental Data Packs
+
+These data packs need more playtesting and might be rough around the edges.
+
+=== SkyBarrel
+
+Spawn on an island in the void with a barrel on it.
+Inside the barrel is loot from two random loot tables and another barrel
+which has loot from two random loot tables and another barrel
+which has loot from two random loot tables and another barrel
+which has loot from two random loot tables and another barrel...
+
+image::https://i.imgur.com/HawYvc3.png[SkyBarrel]
+
+The first barrel also has a water source 75% of the time
+and a lava bucket 100% of the time.
+
+To create a void world with this pack,
+you will need to enter a superflat world with a preset of
+`minecraft:air;minecraft:jungle` .
+You can of course replace `jungle` with a biome of your choosing.
+
+Download:
+https://github.com/DMBuce/bucepack/releases[All Releases]
+
+Direct Link:
+https://github.com/DMBuce/bucepack/releases/latest/download/skybarrel.zip[`skybarrel.zip`]
+
 == Legacy Data Packs
 
 These data packs haven't been updated for the most recent version of

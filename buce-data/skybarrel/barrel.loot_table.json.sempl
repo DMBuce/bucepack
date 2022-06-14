@@ -1,0 +1,50 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "entries": [
+        {{\}
+          "type": "minecraft:loot_table",{\}
+          "name": "{!./bin/allloottables | egrep -v ':(blocks|entities)/' | head -n-1}"{\}
+        },
+        {{\}
+          "type": "minecraft:loot_table",{\}
+          "name": "{!./bin/allloottables | egrep -v ':(blocks|entities)/' | tail -n1}"{\}
+        }
+      ],
+      "rolls": 1.0{\}
+    },
+    {
+      "bonus_rolls": 0.0,
+      "entries": [
+        {{\}
+          "type": "minecraft:loot_table",{\}
+          "name": "{!./bin/allloottables | egrep ':(blocks|entities)/' | head -n-1}"{\}
+        },
+        {{\}
+          "type": "minecraft:loot_table",{\}
+          "name": "{!./bin/allloottables | egrep ':(blocks|entities)/' | tail -n1}"{\}
+        }
+      ],
+      "rolls": 1.0{\}
+    },
+    {
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{BlockEntityTag:{LootTable:\"buce:skybarrel/barrel\"}}",
+              "add": false
+            }
+          ],
+          "name": "minecraft:barrel"
+        }
+      ],
+      "rolls": 1.0
+    }
+  ]
+}

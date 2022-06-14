@@ -1,0 +1,7 @@
+#!/bin/bash
+
+latest="$(./bin/latest)"
+
+find "$latest.jar"/data/minecraft/loot_tables -name \*.json \
+	| sed 's|.*loot_tables/|minecraft:|; s|\.json||'
+

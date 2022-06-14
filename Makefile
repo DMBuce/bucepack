@@ -67,6 +67,7 @@ DATAPACKFILES = \
 	loot_overhaul_relics.zip \
 	boss_loot_seasonal.zip \
 	shearless.zip \
+	skybarrel.zip \
 	starter_bed.zip \
 	starter_bonus_chest.zip \
 	starter_book.zip \
@@ -542,6 +543,9 @@ mineable_FILES := $(DEFAULT_DATA_FILES) \
 	data/minecraft/tags/blocks/mineable/axe.json \
 	data/minecraft/tags/blocks/mineable/pickaxe.json \
 	data/buce/advancements/mineable.json \
+
+skybarrel_FILES := $(DEFAULT_DATA_FILES) \
+	$(shell find buce-data/skybarrel -type f | ./bin/ext2dir) \
 
 shearless_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell ./bin/shearless-files) \
@@ -1150,6 +1154,12 @@ dragonproof.zip: $(dragonproof_FILES)
 	./bin/ziprename _$(@:.zip=) "" $@
 
 mineable.zip: $(mineable_FILES)
+	cp meta/$(@:.zip=.png) pack.png
+	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
+	zip $@ pack.png pack.mcmeta $^
+	./bin/ziprename _$(@:.zip=) "" $@
+
+skybarrel.zip: $(skybarrel_FILES)
 	cp meta/$(@:.zip=.png) pack.png
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^
