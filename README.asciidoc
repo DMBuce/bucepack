@@ -264,6 +264,8 @@ Download:
 https://github.com/DMBuce/bucepack/releases[All Releases]
 
 Direct Links:
+https://github.com/DMBuce/bucepack/releases/latest/download/classic_oak.zip[`classic_oak.zip`]
+https://github.com/DMBuce/bucepack/releases/latest/download/classic_obsidian.zip[`classic_obsidian.zip`]
 https://github.com/DMBuce/bucepack/releases/latest/download/classic_netherrack.zip[`classic_netherrack.zip`]
 https://github.com/DMBuce/bucepack/releases/latest/download/classic_lava.zip[`classic_lava.zip`]
 https://github.com/DMBuce/bucepack/releases/latest/download/classic_gravel.zip[`classic_gravel.zip`]
@@ -805,13 +807,14 @@ https://github.com/DMBuce/bucepack/releases[All Releases]
 Direct Link:
 https://github.com/DMBuce/bucepack/releases/latest/download/loot_overhaul.zip[`loot_overhaul.zip`]
 
-==== Plant Loot
+==== Treasure Seeds
 
 If this addon pack is installed after <<loot-overhaul,Loot Overhaul>>,
-it adds plant resources that you haven't used yet to the End City and Woodland
-Mansion loot tables. Such resources include everything from
-berries, wheat seeds and potatoes to cactus, bamboo, and rose bushes. If you
-haven't eaten, planted, or otherwise used one of the items shown below, you
+it adds so-called "treasure seeds" to the End City and Woodland Mansion loot tables.
+Treasure seed are plant resources that you haven't used yet.
+Such resources include everything from berries, wheat seeds and potatoes
+to cactus, bamboo, and rose bushes. If you haven't eaten, planted,
+or otherwise used one of the items shown below, you
 have a chance to find it in End City and Woodland Mansion chests.
 
 image::https://i.imgur.com/gUnJW5S.png[Treasure Seeds]
@@ -820,7 +823,7 @@ Download:
 https://github.com/DMBuce/bucepack/releases[All Releases]
 
 Direct Link:
-https://github.com/DMBuce/bucepack/releases/latest/download/loot_overhaul.zip[`loot_overhaul.zip`]
+https://github.com/DMBuce/bucepack/releases/latest/download/loot_overhaul_treasure_seeds.zip[`loot_overhaul_treasure_seeds.zip`]
 
 ==== Relic Loot
 
