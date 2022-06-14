@@ -748,15 +748,15 @@ dpacks: $(DATAPACKFILES)
 
 .PHONY: list
 list:
-	printf '%s\n' $(sort $(RESOURCEPACKFILES) $(DATAPACKFILES))
+	@printf '%s\n' $(sort $(RESOURCEPACKFILES) $(DATAPACKFILES))
 
 .PHONY: rlist
 rlist:
-	printf '%s\n' $(sort $(RESOURCEPACKFILES) $(DATARESOURCEPACKFILES))
+	@printf '%s\n' $(sort $(RESOURCEPACKFILES) $(DATARESOURCEPACKFILES))
 
 .PHONY: dlist
 dlist:
-	printf '%s\n' $(sort $(DATAPACKFILES) $(DATARESOURCEPACKFILES))
+	@printf '%s\n' $(sort $(DATAPACKFILES) $(DATARESOURCEPACKFILES))
 
 data/minecraft/loot_tables/%.json: minecraft-data/%.loot_table.json
 	mkdir -p $(dir $@)
@@ -832,6 +832,9 @@ $(TEMPLATES:.sempl=): latest.txt
 	sempl $< $@
 
 %.json: %.json.sempl
+	sempl $< $@
+
+%.asciidoc: %.asciidoc.sempl
 	sempl $< $@
 
 %.json: %.json.yaml data/minecraft/loot_tables/loot_table.j2

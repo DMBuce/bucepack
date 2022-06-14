@@ -1514,15 +1514,10 @@ and in the *reverse* of this order in the Select Data Packs screen.
 loot_overhaul.zip
 phantasmal.zip
 relics_mythic.zip
-loot_overhaul_relics.zip
-loot_overhaul_starter_relic.zip
-loot_overhaul_treasure_seeds.zip
+{!make dlist | grep loot_overhaul_}
 
 boss_loot.zip
-boss_loot_decor.zip
-boss_loot_food.zip
-boss_loot_modern.zip
-boss_loot_seasonal.zip
+{!make dlist | grep boss_loot_}
 ----
 
 == Spellsmithing
