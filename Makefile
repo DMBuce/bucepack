@@ -59,12 +59,12 @@ DATAPACKFILES = \
 	more_cutting.zip \
 	eyes_of_seeking.zip \
 	more_shulker_shells.zip \
-	mythic_relics.zip \
+	relics_mythic.zip \
 	no_treasure_maps.zip \
 	phantasmal_end.zip \
 	phantasmal.zip \
-	plant_loot.zip \
-	relic_loot.zip \
+	loot_overhaul_treasure_seeds.zip \
+	loot_overhaul_relics.zip \
 	boss_loot_seasonal.zip \
 	shearless.zip \
 	starter_bed.zip \
@@ -72,7 +72,7 @@ DATAPACKFILES = \
 	starter_book.zip \
 	starter_bucket.zip \
 	starter_map.zip \
-	starter_relic.zip \
+	loot_overhaul_starter_relic.zip \
 	starter_shulker.zip \
 	starter_spyglass.zip \
 	warmer_striders.zip \
@@ -456,17 +456,17 @@ loot_overhaul_FILES := $(DEFAULT_DATA_FILES) \
 	data/minecraft/tags/items/creeper_drop_music_discs.json \
 	data/minecraft/tags/items/starter_item.json \
 
-plant_loot_FILES := $(DEFAULT_DATA_FILES) \
-	$(shell ls buce-data/loot_addons/plant_loot* | ./bin/ext2dir) \
-	data/buce/loot_tables/loot_overhaul/sus_stew_plant_loot.json \
+loot_overhaul_treasure_seeds_FILES := $(DEFAULT_DATA_FILES) \
+	$(shell ls buce-data/loot_addons/loot_overhaul_treasure_seeds* | ./bin/ext2dir) \
+	data/buce/loot_tables/loot_overhaul/sus_stew_loot_overhaul_treasure_seeds.json \
 
-relic_loot_FILES := $(DEFAULT_DATA_FILES) \
-	$(shell ls buce-data/loot_addons/relic_loot* | ./bin/ext2dir) \
+loot_overhaul_relics_FILES := $(DEFAULT_DATA_FILES) \
+	$(shell ls buce-data/loot_addons/loot_overhaul_relics* | ./bin/ext2dir) \
 	$(relic_FILES) \
-	data/buce/loot_tables/loot_overhaul/extra/epic_relic_loot.json \
+	data/buce/loot_tables/loot_overhaul/extra/epic_loot_overhaul_relics.json \
 
-mythic_relics_FILES := $(DEFAULT_DATA_FILES) \
-	$(shell find buce-data/ -name '*mythic_relics*' | ./bin/ext2dir) \
+relics_mythic_FILES := $(DEFAULT_DATA_FILES) \
+	$(shell find buce-data/ -name '*relics_mythic*' | ./bin/ext2dir) \
 	$(shell find buce-data/mythic -type f | ./bin/ext2dir) \
 	data/buce/functions/var.mcfunction \
 	data/minecraft/loot_tables/blocks/deepslate_emerald_ore.json \
@@ -475,7 +475,7 @@ mythic_relics_FILES := $(DEFAULT_DATA_FILES) \
 	data/minecraft/loot_tables/entities/iron_golem.json \
 	data/minecraft/loot_tables/entities/pig.json \
 	data/minecraft/loot_tables/entities/silverfish.json \
-	data/minecraft/tags/functions/load_mythic_relics.json \
+	data/minecraft/tags/functions/load_relics_mythic.json \
 	data/minecraft/tags/worldgen/structure/seeking_located.json \
 
 boss_loot_seasonal_FILES := $(DEFAULT_DATA_FILES) \
@@ -502,10 +502,10 @@ boss_loot_FILES := $(DEFAULT_DATA_FILES) \
 	data/minecraft/loot_tables/entities/warden.json \
 	data/minecraft/loot_tables/entities/wither.json \
 
-starter_relic_FILES := $(DEFAULT_DATA_FILES) \
+loot_overhaul_starter_relic_FILES := $(DEFAULT_DATA_FILES) \
 	$(relic_FILES) \
-	$(shell ls buce-data/loot_addons/starter_relic* | ./bin/ext2dir) \
-	data/buce/loot_tables/loot_overhaul/extra/structure/spawn_bonus_chest_starter_relic.json \
+	$(shell ls buce-data/loot_addons/loot_overhaul_starter_relic* | ./bin/ext2dir) \
+	data/buce/loot_tables/loot_overhaul/extra/structure/spawn_bonus_chest_loot_overhaul_starter_relic.json \
 
 starter_bonus_chest_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell ls buce-data/starter_bonus_chest* | ./bin/ext2dir) \
@@ -1080,13 +1080,13 @@ loot_overhaul.zip: $(loot_overhaul_FILES)
 	zip $@ pack.png pack.mcmeta $^
 	./bin/ziprename _$(@:.zip=) "" $@
 
-plant_loot.zip: $(plant_loot_FILES)
+loot_overhaul_treasure_seeds.zip: $(loot_overhaul_treasure_seeds_FILES)
 	cp meta/$(@:.zip=.png) pack.png
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^
 	./bin/ziprename _$(@:.zip=) "" $@
 
-starter_relic.zip: $(starter_relic_FILES)
+loot_overhaul_starter_relic.zip: $(loot_overhaul_starter_relic_FILES)
 	cp meta/$(@:.zip=.png) pack.png
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^
@@ -1098,13 +1098,13 @@ starter_bonus_chest.zip: $(starter_bonus_chest_FILES)
 	zip $@ pack.png pack.mcmeta $^
 	./bin/ziprename _$(@:.zip=) "" $@
 
-relic_loot.zip: $(relic_loot_FILES)
+loot_overhaul_relics.zip: $(loot_overhaul_relics_FILES)
 	cp meta/$(@:.zip=.png) pack.png
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^
 	./bin/ziprename _$(@:.zip=) "" $@
 
-mythic_relics.zip: $(mythic_relics_FILES)
+relics_mythic.zip: $(relics_mythic_FILES)
 	cp meta/$(@:.zip=.png) pack.png
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^
