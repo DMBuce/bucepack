@@ -1380,14 +1380,14 @@ reverse, i.e. if you want to beat The End to gain access to the Nether and
 then beat the Nether to gain access to the overworld, install them both in the
 usual way and then run these commands:
 
-    /datapack disable "file/escape_end.zip"
-    /datapack enable "file/escape_end.zip" after "file/escape_nether.zip"
+    /datapack disable "file/escape_the_end.zip"
+    /datapack enable "file/escape_the_end.zip" after "file/escape_nether.zip"
 
 Download:
 https://github.com/DMBuce/bucepack/releases[All Releases]
 
 Direct Link:
-https://github.com/DMBuce/bucepack/releases/latest/download/escape_end.zip[`escape_end.zip`]
+https://github.com/DMBuce/bucepack/releases/latest/download/escape_the_end.zip[`escape_the_end.zip`]
 
 === Escape the Grind
 

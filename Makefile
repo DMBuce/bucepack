@@ -41,7 +41,7 @@ DATAPACKFILES = \
 	climbable.zip \
 	boss_loot_decor.zip \
 	dragonproof.zip \
-	escape_end.zip \
+	escape_the_end.zip \
 	escape_grind.zip \
 	escape_nether.zip \
 	boss_loot_food.zip \
@@ -655,13 +655,13 @@ more_shulker_shells_FILES := $(DEFAULT_DATA_FILES) \
 	data/minecraft/loot_tables/entities/shulker.json \
 	data/buce/advancements/more_shulker_shells.json \
 
-escape_end_FILES := $(DEFAULT_DATA_FILES) \
+escape_the_end_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell find buce-data/escape/end -type f | ./bin/ext2dir) \
-	#data/minecraft/tags/functions/load_escape_end.json \
-	#data/minecraft/tags/functions/tick_escape_end.json \
+	#data/minecraft/tags/functions/load_escape_the_end.json \
+	#data/minecraft/tags/functions/tick_escape_the_end.json \
 	#data/escape/functions/end_respawn.mcfunction \
 	#data/escape/functions/tick_end.mcfunction \
-	#data/buce/advancements/escape_end.json \
+	#data/buce/advancements/escape_the_end.json \
 
 escape_nether_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell find buce-data/escape/nether -type f | ./bin/ext2dir) \
@@ -1247,7 +1247,7 @@ more_shulker_shells.zip: $(more_shulker_shells_FILES)
 	zip $@ pack.png pack.mcmeta $^
 	./bin/ziprename _$(@:.zip=) "" $@
 
-escape_end.zip: $(escape_end_FILES)
+escape_the_end.zip: $(escape_the_end_FILES)
 	cp meta/$(@:.zip=.png) pack.png
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^
