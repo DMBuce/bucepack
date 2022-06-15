@@ -656,18 +656,22 @@ more_shulker_shells_FILES := $(DEFAULT_DATA_FILES) \
 	data/buce/advancements/more_shulker_shells.json \
 
 escape_end_FILES := $(DEFAULT_DATA_FILES) \
-	data/minecraft/tags/functions/tick_escape_end.json \
-	data/escape/functions/end_respawn.mcfunction \
-	data/escape/functions/tick_end.mcfunction \
-	data/buce/advancements/escape_end.json \
+	$(shell find buce-data/escape/end -type f | ./bin/ext2dir) \
+	#data/minecraft/tags/functions/load_escape_end.json \
+	#data/minecraft/tags/functions/tick_escape_end.json \
+	#data/escape/functions/end_respawn.mcfunction \
+	#data/escape/functions/tick_end.mcfunction \
+	#data/buce/advancements/escape_end.json \
 
 escape_nether_FILES := $(DEFAULT_DATA_FILES) \
-	data/minecraft/tags/functions/tick_escape_nether.json \
-	data/escape/functions/nether_respawn.mcfunction \
-	data/escape/functions/tick_nether.mcfunction \
-	data/escape/tags/blocks/airlava.json \
-	data/buce/advancements/escape_nether.json \
-	data/escape/advancements/kill_wither.json \
+	$(shell find buce-data/escape/nether -type f | ./bin/ext2dir) \
+	data/minecraft/tags/blocks/nether_platform_column_replaceables.json \
+	#data/minecraft/tags/functions/tick_escape_nether.json \
+	#data/escape/functions/nether_respawn.mcfunction \
+	#data/escape/functions/tick_nether.mcfunction \
+	#data/escape/tags/blocks/airlava.json \
+	#data/escape/advancements/kill_wither.json \
+	##data/buce/advancements/escape_nether.json \
 
 escape_grind_FILES := $(DEFAULT_DATA_FILES) \
 	data/minecraft/tags/functions/load_escape_grind.json \
@@ -680,7 +684,7 @@ escape_grind_FILES := $(DEFAULT_DATA_FILES) \
 	data/escape/functions/tick_grind.mcfunction \
 	data/escape/functions/grind_respawn.mcfunction \
 	data/escape/functions/locate_city.mcfunction \
-	data/buce/advancements/escape_grind.json \
+	#data/buce/advancements/escape_grind.json \
 
 lichdom_FILES := $(DEFAULT_DATA_FILES) \
 	data/minecraft/tags/functions/load_lichdom.json \

@@ -1353,7 +1353,7 @@ Lower end devices might have trouble running them.
 === Escape the Nether
 
 A 1.16.x survival challenge that starts you in the Nether.
-The overworld is inaccessible to you until you defeat the wither.
+The overworld is inaccessible to you until you summon the wither.
 Until you do that, you'll respawn in the Nether in a cage made of fungus and
 netherbrick.
 

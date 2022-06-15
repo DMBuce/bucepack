@@ -1,0 +1,5 @@
+# runs as a player that joined the world
+
+# respawn in the end if player is in the overworld
+execute in minecraft:overworld as @s[x=0] run function buce:escape/end/respawn
+
