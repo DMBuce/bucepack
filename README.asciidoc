@@ -1314,7 +1314,7 @@ https://github.com/DMBuce/bucepack/releases[All Releases]
 Direct Link:
 https://github.com/DMBuce/bucepack/releases/latest/download/path_strider.zip[`path_strider.zip`]
 
-== Experimental Data Packs
+== Challenge Data Packs
 
 These data packs need more playtesting and might be rough around the edges.
 
@@ -1341,14 +1341,6 @@ https://github.com/DMBuce/bucepack/releases[All Releases]
 
 Direct Link:
 https://github.com/DMBuce/bucepack/releases/latest/download/skybarrel.zip[`skybarrel.zip`]
-
-== Legacy Data Packs
-
-These data packs haven't been updated for the most recent version of
-Minecraft.
-They also all happen to access NBT data a lot and run commands every tick,
-which means they're not optimized very well yet.
-Lower end devices might have trouble running them.
 
 === Escape the Nether
 
@@ -1423,6 +1415,14 @@ https://github.com/DMBuce/bucepack/releases[All Releases]
 
 Direct Link:
 https://github.com/DMBuce/bucepack/releases/latest/download/escape_grind.zip[`escape_grind.zip`]
+
+== Legacy Data Packs
+
+These data packs haven't been updated for the most recent version of
+Minecraft.
+They also all happen to access NBT data a lot and run commands every tick,
+which means they're not optimized very well yet.
+Lower end devices might have trouble running them.
 
 === Hardcore Lichdom
 
