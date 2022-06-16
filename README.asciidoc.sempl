@@ -1367,14 +1367,6 @@ that you can use to travel to the outer end islands.
 
 //image::[Escape the End]
 
-If you want to use this pack and Escape the Nether to play minecraft in
-reverse, i.e. if you want to beat The End to gain access to the Nether and
-then beat the Nether to gain access to the overworld, install them both in the
-usual way and then run these commands:
-
-    /datapack disable "file/escape_the_end.zip"
-    /datapack enable "file/escape_the_end.zip" after "file/escape_nether.zip"
-
 Download:
 https://github.com/DMBuce/bucepack/releases[All Releases]
 
