@@ -1316,7 +1316,7 @@ https://github.com/DMBuce/bucepack/releases/latest/download/path_strider.zip[`pa
 
 == Challenge Data Packs
 
-These data packs need more playtesting and might be rough around the edges.
+Data packs that create new ways to play Minecraft.
 
 === SkyBarrel
 
@@ -1345,7 +1345,7 @@ https://github.com/DMBuce/bucepack/releases/latest/download/skybarrel.zip[`skyba
 === Escape the Nether
 
 A 1.16.x survival challenge that starts you in the Nether.
-The overworld is inaccessible to you until you summon the wither.
+The overworld is inaccessible to you until you defeat the wither.
 Until you do that, you'll respawn in the Nether in a cage made of fungus and
 netherbrick.
 

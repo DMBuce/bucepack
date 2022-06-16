@@ -1314,13 +1314,33 @@ https://github.com/DMBuce/bucepack/releases[All Releases]
 Direct Link:
 https://github.com/DMBuce/bucepack/releases/latest/download/path_strider.zip[`path_strider.zip`]
 
-== Legacy Data Packs
+== Challenge Data Packs
 
-These data packs haven't been updated for the most recent version of
-Minecraft.
-They also all happen to access NBT data a lot and run commands every tick,
-which means they're not optimized very well yet.
-Lower end devices might have trouble running them.
+Data packs that create new ways to play Minecraft.
+
+=== SkyBarrel
+
+Spawn on an island in the void with a barrel on it.
+Inside the barrel is loot from two random loot tables and another barrel
+which has loot from two random loot tables and another barrel
+which has loot from two random loot tables and another barrel
+which has loot from two random loot tables and another barrel...
+
+image::https://i.imgur.com/HawYvc3.png[SkyBarrel]
+
+The first barrel also has a water source 75% of the time
+and a lava bucket 100% of the time.
+
+To create a void world with this pack,
+you will need to enter a superflat world with a preset of
+`minecraft:air;minecraft:jungle` .
+You can of course replace `jungle` with a biome of your choosing.
+
+Download:
+https://github.com/DMBuce/bucepack/releases[All Releases]
+
+Direct Link:
+https://github.com/DMBuce/bucepack/releases/latest/download/skybarrel.zip[`skybarrel.zip`]
 
 === Escape the Nether
 
@@ -1382,10 +1402,11 @@ Changes that facilitate survival in Nether:
 Changes that facilitate survival in The End:
 
 * In addition to slimestone materials, you're given TNT whenever you respawn
-* While holding ender pearls in both your main hand and offhand, purple
-  particles indicate you're looking in the direction of an end city and sandy
-  particles indicate you're looking within 90 degrees of one
-* End city loot includes fireworks and enchanted crossbows
+* You can obtain the Relic of the Lens from <<mythic-relics,Mythic Relics>>
+* End cities include loot from <<loot-overhaul,Loot Overhaul>>
+  and <<treasure-seeds,Treasure Seeds>>,
+  including fireworks and enchanted crossbows to server as a ranged weapon,
+  plus copper and warped stems to craft the Relic of the Lens with
 
 //image::[Escape the Grind]
 
@@ -1394,6 +1415,14 @@ https://github.com/DMBuce/bucepack/releases[All Releases]
 
 Direct Link:
 https://github.com/DMBuce/bucepack/releases/latest/download/escape_grind.zip[`escape_grind.zip`]
+
+== Legacy Data Packs
+
+These data packs haven't been updated for the most recent version of
+Minecraft.
+They also all happen to access NBT data a lot and run commands every tick,
+which means they're not optimized very well yet.
+Lower end devices might have trouble running them.
 
 === Hardcore Lichdom
 
