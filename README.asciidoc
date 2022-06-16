@@ -1410,10 +1410,11 @@ Changes that facilitate survival in Nether:
 Changes that facilitate survival in The End:
 
 * In addition to slimestone materials, you're given TNT whenever you respawn
-* While holding ender pearls in both your main hand and offhand, purple
-  particles indicate you're looking in the direction of an end city and sandy
-  particles indicate you're looking within 90 degrees of one
-* End city loot includes fireworks and enchanted crossbows
+* You can obtain the Relic of the Lens from <<mythic-relics,Mythic Relics>>
+* End cities include loot from <<loot-overhaul,Loot Overhaul>>
+  and <<treasure-seeds,Treasure Seeds>>,
+  including fireworks and enchanted crossbows to server as a ranged weapon,
+  plus copper and warped stems to craft the Relic of the Lens with
 
 //image::[Escape the Grind]
 

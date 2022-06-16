@@ -7,6 +7,3 @@ execute in minecraft:the_nether run fill -2 51 -2 2 51 2 minecraft:netherrack re
 execute in minecraft:the_nether run fill -2 47 -2 2 47 2 minecraft:crimson_stem replace
 execute in minecraft:the_nether run fill -1 46 -1 1 0 1 minecraft:netherrack replace #minecraft:nether_platform_column_replaceables
 
-# run addon respawn functions
-execute as @s at @s run function #buce:escape/nether/respawn
-

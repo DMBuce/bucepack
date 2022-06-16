@@ -657,34 +657,34 @@ more_shulker_shells_FILES := $(DEFAULT_DATA_FILES) \
 
 escape_the_end_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell find buce-data/escape/end -type f | ./bin/ext2dir) \
-	#data/minecraft/tags/functions/load_escape_the_end.json \
-	#data/minecraft/tags/functions/tick_escape_the_end.json \
-	#data/escape/functions/end_respawn.mcfunction \
-	#data/escape/functions/tick_end.mcfunction \
-	#data/buce/advancements/escape_the_end.json \
 
 escape_nether_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell find buce-data/escape/nether -type f | ./bin/ext2dir) \
 	data/minecraft/tags/blocks/nether_platform_column_replaceables.json \
-	#data/minecraft/tags/functions/tick_escape_nether.json \
-	#data/escape/functions/nether_respawn.mcfunction \
-	#data/escape/functions/tick_nether.mcfunction \
-	#data/escape/tags/blocks/airlava.json \
-	#data/escape/advancements/kill_wither.json \
-	##data/buce/advancements/escape_nether.json \
+	data/minecraft/tags/functions/load_escape_nether.json \
 
 escape_grind_FILES := $(DEFAULT_DATA_FILES) \
-	data/minecraft/tags/functions/load_escape_grind.json \
-	data/minecraft/tags/functions/tick_escape_grind.json \
+	$(shell find buce-data/escape/grind -type f | ./bin/ext2dir) \
+	$(shell find buce-data/mythic/searching -type f | ./bin/ext2dir) \
+	data/buce/advancements/mythic/root.json \
+	data/buce/functions/var.mcfunction \
+	data/buce/loot_tables/loot_overhaul/extra/all.json \
+	data/buce/loot_tables/loot_overhaul/extra/common.json \
+	data/buce/loot_tables/loot_overhaul/extra/epic.json \
+	data/buce/loot_tables/loot_overhaul/extra/mythic.json \
+	data/buce/loot_tables/loot_overhaul/extra/rare.json \
+	data/buce/loot_tables/loot_overhaul/extra/structure/end_city_treasure.json \
+	data/buce/loot_tables/loot_overhaul/extra/uncommon.json \
+	data/buce/loot_tables/loot_overhaul/sus_stew_escape_grind.json \
+	data/buce/recipes/escape/grind/grindstone.json \
+	data/buce/recipes/mythic/smithing/searching.json \
 	data/minecraft/loot_tables/blocks/crying_obsidian_escape_grind.json \
 	data/minecraft/loot_tables/chests/end_city_treasure.json \
-	data/escape/recipes/grindstone.json \
-	data/escape/tags/functions/respawn.json \
-	data/escape/functions/load.mcfunction \
-	data/escape/functions/tick_grind.mcfunction \
-	data/escape/functions/grind_respawn.mcfunction \
-	data/escape/functions/locate_city.mcfunction \
-	#data/buce/advancements/escape_grind.json \
+	data/minecraft/loot_tables/entities/endermite.json \
+	data/minecraft/tags/functions/load_escape_grind.json \
+	data/minecraft/tags/functions/respawn_end.json \
+	data/minecraft/tags/functions/respawn_nether.json \
+	data/minecraft/tags/worldgen/structure/seeking_located.json \
 
 lichdom_FILES := $(DEFAULT_DATA_FILES) \
 	data/minecraft/tags/functions/load_lichdom.json \

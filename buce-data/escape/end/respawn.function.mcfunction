@@ -12,8 +12,12 @@ effect give @s levitation 1 255 true
 schedule function buce:escape/end/platform 1t append
 
 # give slimestone materials
-give @p minecraft:slime_block 64
-give @p minecraft:piston 64
-give @p minecraft:observer 64
-give @p minecraft:birch_boat
+give @s minecraft:slime_block 64
+give @s minecraft:piston 64
+give @s minecraft:observer 64
+give @s minecraft:birch_boat
+
+# run addon respawn functions
+#execute as @s at @s run function #minecraft:respawn_end
+function #minecraft:respawn_end
 

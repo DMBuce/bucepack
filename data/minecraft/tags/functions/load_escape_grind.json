@@ -1,6 +1,7 @@
 {
 	"replace": false,
 	"values": [
-		"escape:load"
+		"buce:escape/grind/load",
+		"buce:var"
 	]
 }
