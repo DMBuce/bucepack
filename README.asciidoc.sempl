@@ -1367,6 +1367,11 @@ that you can use to travel to the outer end islands.
 
 //image::[Escape the End]
 
+This datapack is compatible with <<escape-the-nether,Escape the Nether>>.
+If both are installed, you will play minecraft in reverse,
+i.e. you will have to defeat The End to gain access to the Nether
+and then defeat the Nether to gain access to the overworld.
+
 Download:
 https://github.com/DMBuce/bucepack/releases[All Releases]
 
