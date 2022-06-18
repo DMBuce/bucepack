@@ -1,0 +1,11 @@
+#!/bin/bash
+
+food="$1"
+effect="$2"
+
+cd "$(dirname "$0")"
+
+rsync -av glow_berries/ "$food/"
+sed -i "s/glow_berries/$food/g" "$food"/*
+sed -i "s/darkness/$effect/g" "$food"/*
+

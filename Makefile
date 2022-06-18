@@ -35,6 +35,7 @@ RESOURCEPACKFILES = \
 DATAPACKFILES = \
 	$(DATARESOURCEPACKFILES) \
 	aggro_bastions.zip \
+	antidote.zip \
 	blue_fire.zip \
 	boss_loot.zip \
 	breeding_overhaul.zip \
@@ -412,6 +413,9 @@ waterproof_tech_FILES := $(DEFAULT_DATA_FILES) \
 aggro_bastions_FILES := $(DEFAULT_DATA_FILES) \
 	data/minecraft/tags/blocks/guarded_by_piglins.json \
 	data/buce/advancements/aggro_bastions.json \
+
+antidote_FILES := $(DEFAULT_DATA_FILES) \
+	$(shell find buce-data/antidote -type f | ./bin/ext2dir) \
 
 warmer_striders_FILES := $(DEFAULT_DATA_FILES) \
 	data/minecraft/tags/blocks/strider_warm_blocks.json \
@@ -1050,6 +1054,12 @@ warmer_striders.zip: $(warmer_striders_FILES)
 	./bin/ziprename _$(@:.zip=) "" $@
 
 aggro_bastions.zip: $(aggro_bastions_FILES)
+	cp meta/$(@:.zip=.png) pack.png
+	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
+	zip $@ pack.png pack.mcmeta $^
+	./bin/ziprename _$(@:.zip=) "" $@
+
+antidote.zip: $(antidote_FILES)
 	cp meta/$(@:.zip=.png) pack.png
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^
