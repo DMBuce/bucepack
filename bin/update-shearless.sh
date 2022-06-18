@@ -1,5 +1,9 @@
 #!/bin/bash
 
+# switch to git root
+gitroot="$(git rev-parse --show-toplevel)" || exit
+cd "$gitroot"
+
 latest="$(./bin/latest)"
 hoes=( $(./bin/allitems | grep '_hoe$') )
 
