@@ -1,0 +1,25 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:barrier"
+		},
+		"title": {
+			"text": "Skyblock"
+		},
+		"description": {
+			"text": "Sky world with biomes"
+		},
+		"show_toast": false,
+		"announce_to_chat": false,
+		"frame": "task"
+	},
+	"parent": "buce:root",
+	"criteria": {
+		"tick": {
+			"trigger": "minecraft:tick"
+		}
+	},
+	"rewards": {
+		"function": "buce:skyblock/join"
+	}
+}

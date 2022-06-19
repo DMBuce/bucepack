@@ -70,6 +70,7 @@ DATAPACKFILES = \
 	boss_loot_seasonal.zip \
 	shearless.zip \
 	skybarrel.zip \
+	skyblock.zip \
 	starter_bed.zip \
 	starter_bonus_chest.zip \
 	starter_book.zip \
@@ -548,6 +549,15 @@ mineable_FILES := $(DEFAULT_DATA_FILES) \
 	data/minecraft/tags/blocks/mineable/axe.json \
 	data/minecraft/tags/blocks/mineable/pickaxe.json \
 	data/buce/advancements/mineable.json \
+
+skyblock_FILES := $(DEFAULT_DATA_FILES) \
+	$(shell find buce-data/skyblock -type f | ./bin/ext2dir) \
+	$(shell find \
+		data/minecraft/tags/worldgen/biome/has_structure \
+		data/minecraft/worldgen/configured_carver \
+		data/minecraft/worldgen/noise_settings \
+		-type f ) \
+	data/minecraft/tags/functions/load_skyblock.json \
 
 dripblock_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell find buce-data/dripblock -type f | ./bin/ext2dir) \
@@ -1187,6 +1197,12 @@ dripblock.zip: $(dripblock_FILES)
 	./bin/ziprename _$(@:.zip=) "" $@
 
 skybarrel.zip: $(skybarrel_FILES)
+	cp meta/$(@:.zip=.png) pack.png
+	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
+	zip $@ pack.png pack.mcmeta $^
+	./bin/ziprename _$(@:.zip=) "" $@
+
+skyblock.zip: $(skyblock_FILES)
 	cp meta/$(@:.zip=.png) pack.png
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^
