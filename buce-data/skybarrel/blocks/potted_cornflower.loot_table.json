@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "name": "minecraft:blocks/potted_cornflower"
+        }
+      ],
+      "rolls": { "min": 4.0, "max": 12.0 }
+    }
+  ]
+}
