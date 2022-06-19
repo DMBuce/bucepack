@@ -1,0 +1,22 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:pointed_dripstone"
+		},
+		"title": {
+			"text": "Drip Block"
+		},
+		"description": {
+			"text": "Dripstone skyblock"
+		},
+		"show_toast": false,
+		"announce_to_chat": false,
+		"frame": "task"
+	},
+	"parent": "buce:root",
+	"criteria": {
+		"tick": {
+			"trigger": "minecraft:tick"
+		}
+	}
+}

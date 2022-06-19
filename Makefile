@@ -42,6 +42,7 @@ DATAPACKFILES = \
 	climbable.zip \
 	boss_loot_decor.zip \
 	dragonproof.zip \
+	dripblock.zip \
 	escape_the_end.zip \
 	escape_grind.zip \
 	escape_nether.zip \
@@ -547,6 +548,12 @@ mineable_FILES := $(DEFAULT_DATA_FILES) \
 	data/minecraft/tags/blocks/mineable/axe.json \
 	data/minecraft/tags/blocks/mineable/pickaxe.json \
 	data/buce/advancements/mineable.json \
+
+dripblock_FILES := $(DEFAULT_DATA_FILES) \
+	$(shell find buce-data/dripblock -type f | ./bin/ext2dir) \
+	data/minecraft/loot_tables/entities/creeper.json \
+	data/minecraft/tags/blocks/moss_replaceable.json \
+	data/minecraft/tags/functions/load_dripblock.json \
 
 skybarrel_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell find buce-data/skybarrel -type f | ./bin/ext2dir) \
@@ -1168,6 +1175,12 @@ dragonproof.zip: $(dragonproof_FILES)
 	./bin/ziprename _$(@:.zip=) "" $@
 
 mineable.zip: $(mineable_FILES)
+	cp meta/$(@:.zip=.png) pack.png
+	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
+	zip $@ pack.png pack.mcmeta $^
+	./bin/ziprename _$(@:.zip=) "" $@
+
+dripblock.zip: $(dripblock_FILES)
 	cp meta/$(@:.zip=.png) pack.png
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^
