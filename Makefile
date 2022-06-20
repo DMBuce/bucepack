@@ -563,6 +563,7 @@ dripblock_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell find buce-data/dripblock -type f | ./bin/ext2dir) \
 	data/minecraft/loot_tables/entities/creeper.json \
 	data/minecraft/tags/blocks/moss_replaceable.json \
+	data/minecraft/tags/functions/island_dripblock.json \
 	data/minecraft/tags/functions/load_dripblock.json \
 
 skybarrel_FILES := $(DEFAULT_DATA_FILES) \

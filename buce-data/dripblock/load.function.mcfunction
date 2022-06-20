@@ -1,5 +1,5 @@
 # runs on server load
 
-# increase randomTickSpeed
+# set randomTickSpeed
 gamerule randomTickSpeed 500
 
