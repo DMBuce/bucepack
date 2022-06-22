@@ -1318,29 +1318,36 @@ https://github.com/DMBuce/bucepack/releases/latest/download/path_strider.zip[`pa
 
 Data packs that create new ways to play Minecraft.
 
-=== SkyBarrel
+=== SkyBlock
 
-Spawn on an island in the void with a barrel on it.
-Inside the barrel is loot from two random loot tables and another barrel
-which has loot from two random loot tables and another barrel
-which has loot from two random loot tables and another barrel
-which has loot from two random loot tables and another barrel...
+Turns the overworld into a sky world with biomes.
+Spawn is set to 0, 0 where there is a single bedrock block to stand on.
+No other terrain generates.
 
-image::https://i.imgur.com/HawYvc3.png[SkyBarrel]
-
-The first barrel also has a water source 75% of the time
-and a lava bucket 100% of the time.
-
-To create a void world with this pack,
-you will need to enter a superflat world with a preset of
-`minecraft:air;minecraft:jungle` .
-You can of course replace `jungle` with a biome of your choosing.
+Intended for use with packs like <<dripblock,DripBlock>> that add a custom
+skyblock experience to the game.
 
 Download:
 https://github.com/DMBuce/bucepack/releases[All Releases]
 
 Direct Link:
-https://github.com/DMBuce/bucepack/releases/latest/download/skybarrel.zip[`skybarrel.zip`]
+https://github.com/DMBuce/bucepack/releases/latest/download/skyblock.zip[`skyblock.zip`]
+
+=== DripBlock
+
+Spawn in a sky world on a small island made of dripstone and water.
+Several changes enable survival skyblock gameplay:
+
+* Dripstone farming is made easier by setting `randomTickSpeed` to 500
+* Creepers drop moss when killed by a player, and moss spreads to dripstone
+* Grass blocks can be crafted from 4 dirt blocks and 2 moss carpet
+* Buckets can be crafted from iron nuggets instead of ingots
+
+Download:
+https://github.com/DMBuce/bucepack/releases[All Releases]
+
+Direct Link:
+https://github.com/DMBuce/bucepack/releases/latest/download/dripblock.zip[`dripblock.zip`]
 
 === Escape the Nether
 

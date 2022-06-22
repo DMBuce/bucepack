@@ -69,7 +69,6 @@ DATAPACKFILES = \
 	loot_overhaul_relics.zip \
 	boss_loot_seasonal.zip \
 	shearless.zip \
-	skybarrel.zip \
 	skyblock.zip \
 	starter_bed.zip \
 	starter_bonus_chest.zip \
