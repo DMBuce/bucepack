@@ -1,7 +1,7 @@
 {
   "aquifers_enabled": true,
   "default_block": {
-    "Name": "minecraft:void_air"
+    "Name": "minecraft:air"
   },
   "default_fluid": {
     "Name": "minecraft:water",
