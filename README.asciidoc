@@ -1333,9 +1333,11 @@ https://github.com/DMBuce/bucepack/releases[All Releases]
 Direct Link:
 https://github.com/DMBuce/bucepack/releases/latest/download/skyblock.zip[`skyblock.zip`]
 
-=== DripBlock
+==== DripBlock
 
-Spawn in a sky world on a small island made of dripstone and water.
+When used with the <<skyblock,SkyBlock>> datapack,
+this pack spawns you in a skyblock world on
+a small island made of dripstone and water.
 Several changes enable survival skyblock gameplay:
 
 * Dripstone farming is made easier by setting `randomTickSpeed` to 500
@@ -1348,6 +1350,17 @@ https://github.com/DMBuce/bucepack/releases[All Releases]
 
 Direct Link:
 https://github.com/DMBuce/bucepack/releases/latest/download/dripblock.zip[`dripblock.zip`]
+
+// ==== SkyBlock Resources
+// ==== Wandering Loot
+// ==== Craftable End Portals
+// ==== Hover Mode
+//
+// Makes more resources available in skyblock worlds where structures don't
+// generate.
+//
+// * Wandering trader llamas drop a barrel containing loot from a random structure
+// * End portal frames are craftable from 9 enderchests
 
 === Escape the Nether
 
