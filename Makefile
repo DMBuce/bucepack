@@ -787,6 +787,10 @@ rlist:
 dlist:
 	@printf '%s\n' $(sort $(DATAPACKFILES) $(DATARESOURCEPACKFILES))
 
+.PHONY: drlist
+drlist:
+	@printf '%s\n' $(sort $(DATARESOURCEPACKFILES))
+
 data/minecraft/loot_tables/%.json: minecraft-data/%.loot_table.json
 	mkdir -p $(dir $@)
 	cp -v $< $@
