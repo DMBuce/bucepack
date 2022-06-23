@@ -1618,18 +1618,18 @@ this is the order packs should be loaded in,
 i.e. the _reverse_ of their relative priority.
 
 ----
-loot_overhaul.zip
-phantasmal.zip
-relics_mythic.zip
-loot_overhaul_relics.zip
-loot_overhaul_starter_relic.zip
-loot_overhaul_treasure_seeds.zip
-
 boss_loot.zip
 boss_loot_decor.zip
 boss_loot_food.zip
 boss_loot_modern.zip
 boss_loot_seasonal.zip
+
+loot_overhaul.zip
+loot_overhaul_relics.zip
+loot_overhaul_starter_relic.zip
+loot_overhaul_treasure_seeds.zip
+phantasmal.zip
+relics_mythic.zip
 ----
 
 Data packs should be in this order in the output of `/datapack list`.

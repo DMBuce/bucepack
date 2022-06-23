@@ -1618,13 +1618,13 @@ this is the order packs should be loaded in,
 i.e. the _reverse_ of their relative priority.
 
 ----
-loot_overhaul.zip
-phantasmal.zip
-relics_mythic.zip
-{!make dlist | grep loot_overhaul_}
-
 boss_loot.zip
 {!make dlist | grep boss_loot_}
+
+loot_overhaul.zip
+{!make dlist | grep loot_overhaul_}
+phantasmal.zip
+relics_mythic.zip
 ----
 
 Data packs should be in this order in the output of `/datapack list`.
