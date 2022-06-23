@@ -1637,7 +1637,7 @@ In the Select Data Packs screen,
 they should be ordered this way from _bottom to top_,
 NOT top to bottom as one might intuitively expect.
 
-To reorder datapacks after they're installed, use
+To reorder datapacks, use
 https://minecraft.fandom.com/wiki/Commands/datapack[the `/datapack` command].
 
 == Spellsmithing
