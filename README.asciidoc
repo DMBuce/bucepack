@@ -875,7 +875,7 @@ https://github.com/DMBuce/bucepack/releases/latest/download/loot_overhaul_treasu
 Known Issues:
 If a chest is broken instead of opened by a player,
 treasure seeds won't generate due to
-technical limitations[https://bugs.mojang.com/browse/MC-156411].
+https://bugs.mojang.com/browse/MC-156411[technical limitations].
 
 ==== Relic Loot
 
