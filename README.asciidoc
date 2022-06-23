@@ -545,6 +545,30 @@ https://github.com/DMBuce/bucepack/releases[All Releases]
 Direct Link:
 https://github.com/DMBuce/bucepack/releases/latest/download/breeding_overhaul.zip[`breeding_overhaul.zip`]
 
+=== Antidote
+
+Makes more food negate potion effects
+the same way honey negates poison.
+
+* Apples negate nausea
+* Carrots negate blindness
+* Glow berries negate darkness
+* Dark berries negate glowing
+* Cake negates levitation
+* Pumpkin pie negates slow falling
+* Dried kelp negates dolphin's grace
+* Cookies negate slowness and resistance
+* Beetroot soup negates weakness
+* Mushroom stew negates bad omen, luck, and unluck
+* Rabbit stew negates mining fatigue
+* Melons negate withering
+
+Download:
+https://github.com/DMBuce/bucepack/releases[All Releases]
+
+Direct Link:
+https://github.com/DMBuce/bucepack/releases/latest/download/antidote.zip[`antidote.zip`]
+
 === Dragonproof
 
 Makes the Enderdragon phase through all blocks found in the end. In addition
@@ -565,7 +589,7 @@ https://github.com/DMBuce/bucepack/releases/latest/download/dragonproof.zip[`dra
 
 === Hover Mode
 
-Adds basic survival mode flight.
+Adds basic flight.
 Lets players walk on air by sneaking,
 ascend through air with the jump key,
 and slowly descend while falling.
