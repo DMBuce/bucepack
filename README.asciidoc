@@ -1613,7 +1613,8 @@ Known Issues:
 == Ordering Data Packs
 
 The following shows the preferred order of datapacks that depend on each other.
-This is the order packs should be loaded in,
+If you want all features available,
+this is the order packs should be loaded in,
 i.e. the _reverse_ of their relative priority.
 
 ----
