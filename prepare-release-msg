@@ -13,7 +13,7 @@ Changelog:
 
 * {!tail -n+5 "$file"}
 
-See the README for a complete description: https://github.com/DMBuce/bucepack/tree/$version#buces-packs
+See the README for a complete description of all packs: https://github.com/DMBuce/bucepack/tree/$version#buces-packs
 
 Note that Hardcore Lichdom hasn't been updated and only works on Minecraft 1.16.
 EOF
