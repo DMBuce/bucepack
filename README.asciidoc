@@ -1318,26 +1318,12 @@ https://github.com/DMBuce/bucepack/releases/latest/download/path_strider.zip[`pa
 
 Data packs that create new ways to play Minecraft.
 
-=== SkyBlock
-
-Turns the overworld into a sky world with biomes.
-Spawn is set to 0, 0 where there is a single bedrock block to stand on.
-No other terrain generates.
-
-Intended for use with packs like <<dripblock,DripBlock>> that add a custom
-skyblock experience to the game.
-
-Download:
-https://github.com/DMBuce/bucepack/releases[All Releases]
-
-Direct Link:
-https://github.com/DMBuce/bucepack/releases/latest/download/skyblock.zip[`skyblock.zip`]
-
 ==== DripBlock
 
-When used with the <<skyblock,SkyBlock>> datapack,
-this pack spawns you in a skyblock world on
-a small island made of dripstone and water.
+Turns the overworld into a skyblock world with
+a small island at 0, 0.
+The only available resources at first are dripstone, water, and glow berries.
+A cauldron on the island provides access to lava later on.
 Several changes enable survival skyblock gameplay:
 
 * Dripstone farming is made easier by setting `randomTickSpeed` to 500

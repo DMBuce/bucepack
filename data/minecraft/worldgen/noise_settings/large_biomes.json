@@ -1,7 +1,7 @@
 {
   "aquifers_enabled": true,
   "default_block": {
-    "Name": "minecraft:stone"
+    "Name": "minecraft:air"
   },
   "default_fluid": {
     "Name": "minecraft:water",
@@ -51,7 +51,7 @@
     "vein_toggle": 0
   },
   "ore_veins_enabled": true,
-  "sea_level": 63,
+  "sea_level": -128,
   "spawn_target": [
     {
       "continentalness": [
@@ -108,7 +108,7 @@
       {
         "type": "minecraft:block",
         "result_state": {
-          "Name": "minecraft:stone"
+          "Name": "minecraft:air"
         }
       }
     ]

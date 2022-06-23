@@ -108,7 +108,7 @@
       {
         "type": "minecraft:block",
         "result_state": {
-          "Name": "minecraft:void_air"
+          "Name": "minecraft:air"
         }
       }
     ]
