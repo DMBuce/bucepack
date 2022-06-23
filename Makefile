@@ -44,6 +44,7 @@ DATAPACKFILES = \
 	boss_loot.zip \
 	breeding_overhaul.zip \
 	climbable.zip \
+	hover_mode.zip \
 	dragonproof.zip \
 	dripblock.zip \
 	escape_grind.zip \
@@ -387,8 +388,12 @@ gardener_endermen_FILES := $(DEFAULT_DATA_FILES) \
 	data/buce/advancements/gardener_endermen.json \
 
 climbable_FILES := $(DEFAULT_DATA_FILES) \
+	$(shell ls buce-data/climbable* | ./bin/ext2dir) \
 	data/minecraft/tags/blocks/climbable.json \
-	data/buce/advancements/climbable.json \
+
+hover_mode_FILES := $(DEFAULT_DATA_FILES) \
+	$(shell ls buce-data/hover_mode* | ./bin/ext2dir) \
+	data/minecraft/tags/blocks/climbable_hover_mode.json \
 
 path_strider_FILES := $(DEFAULT_DATA_FILES) \
 	$(wildcard assets/minecraft/lang/*_path_strider.json) \
@@ -1042,6 +1047,12 @@ classic_crunch.zip: $(classic_crunch_FILES)
 	./bin/ziprename _$(@:.zip=) "" $@
 
 gardener_endermen.zip: $(gardener_endermen_FILES)
+	cp meta/$(@:.zip=.png) pack.png
+	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
+	zip $@ pack.png pack.mcmeta $^
+	./bin/ziprename _$(@:.zip=) "" $@
+
+hover_mode.zip: $(hover_mode_FILES)
 	cp meta/$(@:.zip=.png) pack.png
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^

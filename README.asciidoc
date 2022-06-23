@@ -733,6 +733,23 @@ https://github.com/DMBuce/bucepack/releases[All Releases]
 Direct Link:
 https://github.com/DMBuce/bucepack/releases/latest/download/wandering_loot.zip[`wandering_loot.zip`]
 
+=== Hover Mode
+
+Adds basic survival mode flight.
+Lets players walk on air by sneaking,
+ascend through air with the jump key,
+and slowly descend while falling.
+
+Basically, air is treated like vines and other climbable blocks.
+
+Best enjoyed in skyblock worlds such as <<dripblock,DripBlock>>.
+
+Download:
+https://github.com/DMBuce/bucepack/releases[All Releases]
+
+Direct Link:
+https://github.com/DMBuce/bucepack/releases/latest/download/hover_mode.zip[`hover_mode.zip`]
+
 === Loot Overhaul
 
 Overhauls the vanilla loot tables to make early-to-midgame exploration more
@@ -1346,21 +1363,14 @@ Several changes enable survival skyblock gameplay:
 
 Several companion packs are available to enhance your DripBlock experience.
 <<wandering-loot,Wandering Loot>> gives access to The End
-and loot found in structure chests.
-//<<hover-mode,Hover Mode>> adds a primitive form of flight.
+and loot found in structure chests,
+and <<hover-mode,Hover Mode>> adds a primitive form of flight.
 
 Download:
 https://github.com/DMBuce/bucepack/releases[All Releases]
 
 Direct Link:
 https://github.com/DMBuce/bucepack/releases/latest/download/dripblock.zip[`dripblock.zip`]
-
-// === Hover Mode
-//
-// Lets players walk on air and ascend/descend with the jump/sneak keys.
-// Basically, air is treated like vines and other climbable blocks.
-//
-// Best enjoyed in skyblock worlds such as <<dripblock,DripBlock>>.
 
 === Escape the Nether
 
