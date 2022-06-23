@@ -1260,6 +1260,13 @@ https://github.com/DMBuce/bucepack/releases/latest/download/aggro_bastions.zip[`
 
 These packs can be installed as a resource pack, a data pack, or both.
 
+Due to limitations in data/resource pack versioning,
+these packs will display a false incompatibility warning
+when installed as a datapack in the "Create New World" screen.
+If you grabbed the correct version of the pack from the
+https://github.com/DMBuce/bucepack/releases[Releases] page,
+you can safely ignore this warning.
+
 === Copper Tech
 
 This is a series of packs
