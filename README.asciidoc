@@ -545,6 +545,24 @@ https://github.com/DMBuce/bucepack/releases[All Releases]
 Direct Link:
 https://github.com/DMBuce/bucepack/releases/latest/download/breeding_overhaul.zip[`breeding_overhaul.zip`]
 
+=== Dragonproof
+
+Makes the Enderdragon phase through all blocks found in the end. In addition
+to the magenta glass and banners found in End Cities, this pack makes other
+magenta blocks dragonproof as well.
+
+The additional dragonproofed blocks are listed
+https://raw.githubusercontent.com/DMBuce/bucepack/master/data/minecraft/tags/blocks/dragon_immune.json[here].
+Many of them are shown below.
+
+image::https://i.imgur.com/c7kQFcp.png[Dragonproof Blocks]
+
+Download:
+https://github.com/DMBuce/bucepack/releases[All Releases]
+
+Direct Link:
+https://github.com/DMBuce/bucepack/releases/latest/download/dragonproof.zip[`dragonproof.zip`]
+
 === Antidote
 
 Makes more food negate potion effects
@@ -572,24 +590,6 @@ https://github.com/DMBuce/bucepack/releases[All Releases]
 
 Direct Link:
 https://github.com/DMBuce/bucepack/releases/latest/download/antidote.zip[`antidote.zip`]
-
-=== Dragonproof
-
-Makes the Enderdragon phase through all blocks found in the end. In addition
-to the magenta glass and banners found in End Cities, this pack makes other
-magenta blocks dragonproof as well.
-
-The additional dragonproofed blocks are listed
-https://raw.githubusercontent.com/DMBuce/bucepack/master/data/minecraft/tags/blocks/dragon_immune.json[here].
-Many of them are shown below.
-
-image::https://i.imgur.com/c7kQFcp.png[Dragonproof Blocks]
-
-Download:
-https://github.com/DMBuce/bucepack/releases[All Releases]
-
-Direct Link:
-https://github.com/DMBuce/bucepack/releases/latest/download/dragonproof.zip[`dragonproof.zip`]
 
 === Hover Mode
 
@@ -858,7 +858,7 @@ https://github.com/DMBuce/bucepack/releases/latest/download/loot_overhaul.zip[`l
 
 If this addon pack is installed after <<loot-overhaul,Loot Overhaul>>,
 it adds so-called "treasure seeds" to the End City and Woodland Mansion loot tables.
-Treasure seed are plant resources that you haven't used yet.
+Treasure seeds are plant resources that you haven't used yet.
 Such resources include everything from berries, wheat seeds and potatoes
 to cactus, bamboo, and rose bushes. If you haven't eaten, planted,
 or otherwise used one of the items shown below, you
@@ -875,7 +875,7 @@ https://github.com/DMBuce/bucepack/releases/latest/download/loot_overhaul_treasu
 Known Issues:
 If a chest is broken instead of opened by a player,
 treasure seeds won't generate due to
-[technical limitations](https://bugs.mojang.com/browse/MC-156411).
+technical limitations[https://bugs.mojang.com/browse/MC-156411].
 
 ==== Relic Loot
 
