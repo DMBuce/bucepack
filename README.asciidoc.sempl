@@ -1379,7 +1379,8 @@ Data packs that create new ways to play Minecraft.
 
 === DripBlock
 
-Turns the overworld into a skyblock world with a small island at 0, 0.
+If you create a Default or Large Biomes world with this datapack installed,
+it generates a skyblock overworld with a small spawn island at 0, 0.
 The only available resources at first are dripstone, water, and glow berries.
 A cauldron on the island provides access to lava later on.
 
@@ -1454,7 +1455,7 @@ isn't possible using only materials found in the Nether.
 Escape the Grind is an addon data pack that's designed to reduce the grind of,
 and add possibilities to, a Nether-only or End-only survival experience.
 
-Changes that facilitate survival in Nether:
+Changes that facilitate survival in the Nether:
 
 * You're given a saddle and a mushroom on a stick when you respawn in the
   Nether
