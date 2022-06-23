@@ -1,8 +1,8 @@
 
 DATARESOURCEPACKFILES = \
 	copper_pistons.zip \
-	copper_tech.zip \
 	copper_tech_more.zip \
+	copper_tech.zip \
 	path_strider.zip \
 	pig_armor.zip \
 
@@ -37,44 +37,44 @@ DATAPACKFILES = \
 	aggro_bastions.zip \
 	antidote.zip \
 	blue_fire.zip \
+	boss_loot_decor.zip \
+	boss_loot_food.zip \
+	boss_loot_modern.zip \
+	boss_loot_seasonal.zip \
 	boss_loot.zip \
 	breeding_overhaul.zip \
 	climbable.zip \
-	boss_loot_decor.zip \
 	dragonproof.zip \
 	dripblock.zip \
-	escape_the_end.zip \
 	escape_grind.zip \
 	escape_nether.zip \
-	boss_loot_food.zip \
+	escape_the_end.zip \
+	eyes_of_seeking.zip \
 	fortunate_crops.zip \
 	fortunate_jungle.zip \
 	gardener_endermen.zip \
+	global_effects.zip \
 	glow_squid_glamers.zip \
 	invis_squid_glamer.zip \
 	lichdom.zip \
+	loot_overhaul_relics.zip \
+	loot_overhaul_starter_relic.zip \
+	loot_overhaul_treasure_seeds.zip \
 	loot_overhaul.zip \
-	global_effects.zip \
 	mineable.zip \
-	boss_loot_modern.zip \
 	more_allays.zip \
 	more_cutting.zip \
-	eyes_of_seeking.zip \
 	more_shulker_shells.zip \
-	relics_mythic.zip \
 	no_treasure_maps.zip \
 	phantasmal_end.zip \
 	phantasmal.zip \
-	loot_overhaul_treasure_seeds.zip \
-	loot_overhaul_relics.zip \
-	boss_loot_seasonal.zip \
+	relics_mythic.zip \
 	shearless.zip \
 	starter_bed.zip \
 	starter_bonus_chest.zip \
 	starter_book.zip \
 	starter_bucket.zip \
 	starter_map.zip \
-	loot_overhaul_starter_relic.zip \
 	starter_shulker.zip \
 	starter_spyglass.zip \
 	warmer_striders.zip \

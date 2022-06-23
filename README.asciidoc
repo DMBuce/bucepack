@@ -1318,10 +1318,9 @@ https://github.com/DMBuce/bucepack/releases/latest/download/path_strider.zip[`pa
 
 Data packs that create new ways to play Minecraft.
 
-==== DripBlock
+=== DripBlock
 
-Turns the overworld into a skyblock world with
-a small island at 0, 0.
+Turns the overworld into a skyblock world with a small island at 0, 0.
 The only available resources at first are dripstone, water, and glow berries.
 A cauldron on the island provides access to lava later on.
 Several changes enable survival skyblock gameplay:
@@ -1337,16 +1336,23 @@ https://github.com/DMBuce/bucepack/releases[All Releases]
 Direct Link:
 https://github.com/DMBuce/bucepack/releases/latest/download/dripblock.zip[`dripblock.zip`]
 
-// ==== SkyBlock Resources
-// ==== Wandering Loot
-// ==== Craftable End Portals
-// ==== Hover Mode
-//
-// Makes more resources available in skyblock worlds where structures don't
-// generate.
-//
-// * Wandering trader llamas drop a barrel containing loot from a random structure
-// * End portal frames are craftable from 9 enderchests
+// === Wandering Loot
+// 
+// Makes wandering traders' llamas have a 50% chance to drop a barrel containing
+// loot from a random structure.
+// 
+// If <<loot-overhaul,Loot Overhaul>> is installed before? after? ... TODO: finish
+// end city chests have a chance to generate with 0-12 end portal blocks.
+// 
+// Best enjoyed in worlds such as <<dripblock,DripBlock>>
+// where structures don't generate.
+// 
+// === Hover Mode
+// 
+// Lets players walk on air and ascend/descend with the jump/sneak keys.
+// Basically, air is treated like vines and other climbable blocks.
+// 
+// Best enjoyed in skyblock worlds such as <<dripblock,DripBlock>>.
 
 === Escape the Nether
 
