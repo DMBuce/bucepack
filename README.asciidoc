@@ -1376,7 +1376,7 @@ and loot found in structure chests,
 <<loot-overhaul,Loot Overhaul>> makes the loot in those chests more exciting,
 <<treasure-seeds,Treasure Seeds>>
 makes certain resources obtainable through said loot,
-and <<hover-mode,Hover Mode>> adds a primitive form of flight.
+and <<hover-mode,Hover Mode>> adds basic flight.
 
 Download:
 https://github.com/DMBuce/bucepack/releases[All Releases]
