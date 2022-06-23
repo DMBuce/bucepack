@@ -1063,19 +1063,6 @@ https://github.com/DMBuce/bucepack/releases[All Releases]
 Direct Link:
 https://github.com/DMBuce/bucepack/releases/latest/download/relics_mythic.zip[`relics_mythic.zip`]
 
-Known Issues: Due to limitations in how Minecraft loot tables work,
-if you uninstall this pack and want to continue using
-Loot Overhaul and/or Phantasmal,
-Hearts of the Sea will continue to generate with Myth of Stormcalling,
-and invisible Phantoms will continue to drop Relics of Disappearance,
-until you run `/scoreboard players set * relics_mythic 0`
-
-Troubleshooting: If you have Loot Overhaul installed with this pack and echo
-shards aren't generating with enchantments in ancient city loot, run
-
- /datapack disable "file/relics_mythic.zip"
- /datapack enable "file/relics_mythic.zip" after "file/loot_overhaul.zip"
-
 === Glow Squid Glamers
 
 Adds custom enchantments that drop from glow squid and can be used to
