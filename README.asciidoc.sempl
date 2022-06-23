@@ -523,17 +523,6 @@ https://github.com/DMBuce/bucepack/releases[All Releases]
 Direct Link:
 https://github.com/DMBuce/bucepack/releases/latest/download/blue_fire.zip[`blue_fire.zip`]
 
-=== No Treasure Maps
-
-Replaces Treasure Maps with Hearts of the Sea in shipwreck chests as a workaround for an issue in
-https://github.com/dmbuce/badlands-challenge#the-badlands-challenge[The Badlands Challenge].
-
-Download:
-https://github.com/DMBuce/bucepack/releases[All Releases]
-
-Direct Link:
-https://github.com/DMBuce/bucepack/releases/latest/download/no_treasure_maps.zip[`no_treasure_maps.zip`]
-
 == Gameplay Data Packs
 
 Data packs that open up new possibilities for things to do in the game.
@@ -1454,6 +1443,20 @@ https://github.com/DMBuce/bucepack/releases[All Releases]
 
 Direct Link:
 https://github.com/DMBuce/bucepack/releases/latest/download/escape_grind.zip[`escape_grind.zip`]
+
+=== No Treasure Maps
+
+https://github.com/dmbuce/badlands-challenge#the-badlands-challenge[The Badlands Challenge]
+is a challenge map for Minecraft where the nearest trees and passive mobs
+are 1km away from spawn.
+This datapack works around an issue in the challenge by
+replacing Treasure Maps with Hearts of the Sea in shipwreck chests.
+
+Download:
+https://github.com/DMBuce/bucepack/releases[All Releases]
+
+Direct Link:
+https://github.com/DMBuce/bucepack/releases/latest/download/no_treasure_maps.zip[`no_treasure_maps.zip`]
 
 == Legacy Data Packs
 
