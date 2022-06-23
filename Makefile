@@ -60,6 +60,7 @@ DATAPACKFILES = \
 	loot_overhaul_relics.zip \
 	loot_overhaul_starter_relic.zip \
 	loot_overhaul_treasure_seeds.zip \
+	wandering_loot.zip \
 	loot_overhaul.zip \
 	mineable.zip \
 	more_allays.zip \
@@ -469,6 +470,10 @@ loot_overhaul_relics_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell ls buce-data/loot_addons/loot_overhaul_relics* | ./bin/ext2dir) \
 	$(relic_FILES) \
 	data/buce/loot_tables/loot_overhaul/extra/epic_loot_overhaul_relics.json \
+
+wandering_loot_FILES := $(DEFAULT_DATA_FILES) \
+	$(shell ls buce-data/wandering_loot* | ./bin/ext2dir) \
+	data/minecraft/loot_tables/entities/trader_llama.json \
 
 relics_mythic_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell find buce-data/ -name '*relics_mythic*' | ./bin/ext2dir) \
@@ -1127,6 +1132,12 @@ loot_overhaul_starter_relic.zip: $(loot_overhaul_starter_relic_FILES)
 	./bin/ziprename _$(@:.zip=) "" $@
 
 starter_bonus_chest.zip: $(starter_bonus_chest_FILES)
+	cp meta/$(@:.zip=.png) pack.png
+	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
+	zip $@ pack.png pack.mcmeta $^
+	./bin/ziprename _$(@:.zip=) "" $@
+
+wandering_loot.zip: $(wandering_loot_FILES)
 	cp meta/$(@:.zip=.png) pack.png
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^

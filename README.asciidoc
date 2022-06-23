@@ -719,6 +719,20 @@ https://github.com/DMBuce/bucepack/releases[All Releases]
 Direct Link:
 https://github.com/DMBuce/bucepack/releases/latest/download/boss_loot_seasonal.zip[`boss_loot_seasonal.zip`]
 
+=== Wandering Loot
+
+Makes wandering traders' llamas have a 50% chance to drop a barrel containing
+loot from a random structure or 4-8 end portal frames.
+
+Best enjoyed in worlds such as <<dripblock,DripBlock>>
+where structures don't generate.
+
+Download:
+https://github.com/DMBuce/bucepack/releases[All Releases]
+
+Direct Link:
+https://github.com/DMBuce/bucepack/releases/latest/download/wandering_loot.zip[`wandering_loot.zip`]
+
 === Loot Overhaul
 
 Overhauls the vanilla loot tables to make early-to-midgame exploration more
@@ -1330,28 +1344,22 @@ Several changes enable survival skyblock gameplay:
 * Grass blocks can be crafted from 4 dirt blocks and 2 moss carpet
 * Buckets can be crafted from iron nuggets instead of ingots
 
+Several companion packs are available to enhance your DripBlock experience.
+<<wandering-loot,Wandering Loot>> gives access to The End
+and loot found in structure chests.
+//<<hover-mode,Hover Mode>> adds a primitive form of flight.
+
 Download:
 https://github.com/DMBuce/bucepack/releases[All Releases]
 
 Direct Link:
 https://github.com/DMBuce/bucepack/releases/latest/download/dripblock.zip[`dripblock.zip`]
 
-// === Wandering Loot
-// 
-// Makes wandering traders' llamas have a 50% chance to drop a barrel containing
-// loot from a random structure.
-// 
-// If <<loot-overhaul,Loot Overhaul>> is installed before? after? ... TODO: finish
-// end city chests have a chance to generate with 0-12 end portal blocks.
-// 
-// Best enjoyed in worlds such as <<dripblock,DripBlock>>
-// where structures don't generate.
-// 
 // === Hover Mode
-// 
+//
 // Lets players walk on air and ascend/descend with the jump/sneak keys.
 // Basically, air is treated like vines and other climbable blocks.
-// 
+//
 // Best enjoyed in skyblock worlds such as <<dripblock,DripBlock>>.
 
 === Escape the Nether

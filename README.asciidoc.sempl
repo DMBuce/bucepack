@@ -719,6 +719,20 @@ https://github.com/DMBuce/bucepack/releases[All Releases]
 Direct Link:
 https://github.com/DMBuce/bucepack/releases/latest/download/boss_loot_seasonal.zip[`boss_loot_seasonal.zip`]
 
+=== Wandering Loot
+
+Makes wandering traders' llamas have a 50% chance to drop a barrel containing
+loot from a random structure or 4-8 end portal frames.
+
+Best enjoyed in worlds such as <<dripblock,DripBlock>>
+where structures don't generate.
+
+Download:
+https://github.com/DMBuce/bucepack/releases[All Releases]
+
+Direct Link:
+https://github.com/DMBuce/bucepack/releases/latest/download/wandering_loot.zip[`wandering_loot.zip`]
+
 === Loot Overhaul
 
 Overhauls the vanilla loot tables to make early-to-midgame exploration more
@@ -1318,10 +1332,9 @@ https://github.com/DMBuce/bucepack/releases/latest/download/path_strider.zip[`pa
 
 Data packs that create new ways to play Minecraft.
 
-==== DripBlock
+=== DripBlock
 
-Turns the overworld into a skyblock world with
-a small island at 0, 0.
+Turns the overworld into a skyblock world with a small island at 0, 0.
 The only available resources at first are dripstone, water, and glow berries.
 A cauldron on the island provides access to lava later on.
 Several changes enable survival skyblock gameplay:
@@ -1331,22 +1344,23 @@ Several changes enable survival skyblock gameplay:
 * Grass blocks can be crafted from 4 dirt blocks and 2 moss carpet
 * Buckets can be crafted from iron nuggets instead of ingots
 
+Several companion packs are available to enhance your DripBlock experience.
+<<wandering-loot,Wandering Loot>> gives access to The End
+and loot found in structure chests.
+//<<hover-mode,Hover Mode>> adds a primitive form of flight.
+
 Download:
 https://github.com/DMBuce/bucepack/releases[All Releases]
 
 Direct Link:
 https://github.com/DMBuce/bucepack/releases/latest/download/dripblock.zip[`dripblock.zip`]
 
-// ==== SkyBlock Resources
-// ==== Wandering Loot
-// ==== Craftable End Portals
-// ==== Hover Mode
+// === Hover Mode
 //
-// Makes more resources available in skyblock worlds where structures don't
-// generate.
+// Lets players walk on air and ascend/descend with the jump/sneak keys.
+// Basically, air is treated like vines and other climbable blocks.
 //
-// * Wandering trader llamas drop a barrel containing loot from a random structure
-// * End portal frames are craftable from 9 enderchests
+// Best enjoyed in skyblock worlds such as <<dripblock,DripBlock>>.
 
 === Escape the Nether
 
