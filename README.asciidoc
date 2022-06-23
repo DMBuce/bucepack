@@ -1613,8 +1613,8 @@ Known Issues:
 == Ordering Data Packs
 
 The following shows the priority of datapacks that depend on each other.
-They should be in this order in the Select Data Packs screen,
-and in the _reverse_ of this order in the output of `/datapack list`.
+They should be in this order (from top to bottom) in the Select Data Packs screen,
+and in the _reverse_ of this order (left to right) in the output of `/datapack list`.
 
 ----
 loot_overhaul_relics.zip
