@@ -1615,7 +1615,7 @@ Known Issues:
 The following shows the preferred order of datapacks that depend on each other.
 If you want all features available,
 this is the order packs should be loaded in,
-i.e. the _reverse_ of their relative priority.
+i.e. this is the _reverse_ of their relative priority.
 
 ----
 boss_loot.zip
