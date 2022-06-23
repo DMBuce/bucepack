@@ -15,7 +15,7 @@ Changelog:
 
 See the README for a complete description: https://github.com/DMBuce/bucepack/tree/$version#buces-packs
 
-Note that the Hardcore Lichdom pack hasn't been updated and only work on Minecraft 1.16.
+Note that Hardcore Lichdom hasn't been updated and only works on Minecraft 1.16.
 EOF
 
 mv "$file.new" "$file"
