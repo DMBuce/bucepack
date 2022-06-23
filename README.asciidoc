@@ -1468,7 +1468,7 @@ Changes that facilitate survival in The End:
 * You can obtain the Relic of the Lens from <<mythic-relics,Mythic Relics>>
 * End cities include loot from <<loot-overhaul,Loot Overhaul>>
   and <<treasure-seeds,Treasure Seeds>>,
-  including fireworks and enchanted crossbows to serve as a ranged weapon,
+  including enchanted crossbows to use as a ranged weapon, fireworks for ammo,
   plus copper and warped stems to craft the Relic of the Lens with
 
 //image::[Escape the Grind]
@@ -1613,22 +1613,22 @@ Known Issues:
 == Ordering Data Packs
 
 The following shows the priority of datapacks that depend on each other.
-They should be in this order in the output of `/datapack list`,
-and in the _reverse_ of this order in the Select Data Packs screen.
+They should be in this order in the Select Data Packs screen,
+and in the _reverse_ of this order in the output of `/datapack list`.
 
 ----
-loot_overhaul.zip
-phantasmal.zip
-relics_mythic.zip
 loot_overhaul_relics.zip
 loot_overhaul_starter_relic.zip
 loot_overhaul_treasure_seeds.zip
+relics_mythic.zip
+phantasmal.zip
+loot_overhaul.zip
 
-boss_loot.zip
 boss_loot_decor.zip
 boss_loot_food.zip
 boss_loot_modern.zip
 boss_loot_seasonal.zip
+boss_loot.zip
 ----
 
 == Spellsmithing
