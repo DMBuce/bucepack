@@ -574,6 +574,37 @@ https://github.com/DMBuce/bucepack/releases[All Releases]
 Direct Link:
 https://github.com/DMBuce/bucepack/releases/latest/download/dragonproof.zip[`dragonproof.zip`]
 
+=== Hover Mode
+
+Adds basic survival mode flight.
+Lets players walk on air by sneaking,
+ascend through air with the jump key,
+and slowly descend while falling.
+
+Basically, air is treated like vines and other climbable blocks.
+
+Best enjoyed in skyblock worlds such as <<dripblock,DripBlock>>.
+
+Download:
+https://github.com/DMBuce/bucepack/releases[All Releases]
+
+Direct Link:
+https://github.com/DMBuce/bucepack/releases/latest/download/hover_mode.zip[`hover_mode.zip`]
+
+=== Wandering Loot
+
+Makes wandering traders' llamas have a 50% chance to drop a barrel containing
+loot from a random structure or 4-8 end portal frames.
+
+Best enjoyed in worlds such as <<dripblock,DripBlock>>
+where structures don't generate.
+
+Download:
+https://github.com/DMBuce/bucepack/releases[All Releases]
+
+Direct Link:
+https://github.com/DMBuce/bucepack/releases/latest/download/wandering_loot.zip[`wandering_loot.zip`]
+
 === Boss Loot
 
 Makes decorative player heads drop from the Dragon,
@@ -718,37 +749,6 @@ https://github.com/DMBuce/bucepack/releases[All Releases]
 
 Direct Link:
 https://github.com/DMBuce/bucepack/releases/latest/download/boss_loot_seasonal.zip[`boss_loot_seasonal.zip`]
-
-=== Wandering Loot
-
-Makes wandering traders' llamas have a 50% chance to drop a barrel containing
-loot from a random structure or 4-8 end portal frames.
-
-Best enjoyed in worlds such as <<dripblock,DripBlock>>
-where structures don't generate.
-
-Download:
-https://github.com/DMBuce/bucepack/releases[All Releases]
-
-Direct Link:
-https://github.com/DMBuce/bucepack/releases/latest/download/wandering_loot.zip[`wandering_loot.zip`]
-
-=== Hover Mode
-
-Adds basic survival mode flight.
-Lets players walk on air by sneaking,
-ascend through air with the jump key,
-and slowly descend while falling.
-
-Basically, air is treated like vines and other climbable blocks.
-
-Best enjoyed in skyblock worlds such as <<dripblock,DripBlock>>.
-
-Download:
-https://github.com/DMBuce/bucepack/releases[All Releases]
-
-Direct Link:
-https://github.com/DMBuce/bucepack/releases/latest/download/hover_mode.zip[`hover_mode.zip`]
 
 === Loot Overhaul
 
