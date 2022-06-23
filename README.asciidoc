@@ -1374,7 +1374,8 @@ Several companion packs are available to enhance your DripBlock experience.
 <<wandering-loot,Wandering Loot>> gives access to The End
 and loot found in structure chests,
 <<loot-overhaul,Loot Overhaul>> makes the loot in those chests more exciting,
-<<treasure-seeds,Treasure Seeds>> adds more resources to said loot,
+<<treasure-seeds,Treasure Seeds>>
+makes certain resources obtainable through said loot,
 and <<hover-mode,Hover Mode>> adds a primitive form of flight.
 
 Download:
@@ -1571,11 +1572,11 @@ Known Issues:
 * If a player in turtle form dies from their shell breaking, other players who
   die in the same tick will have their death messages suppressed
 
-== Addon Packs and Data Pack Order
+== Ordering Data Packs
 
 The following shows the priority of datapacks that depend on each other.
 They should be in this order in the output of `/datapack list`,
-and in the *reverse* of this order in the Select Data Packs screen.
+and in the _reverse_ of this order in the Select Data Packs screen.
 
 ----
 loot_overhaul.zip
