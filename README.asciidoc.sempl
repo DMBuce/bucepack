@@ -1626,6 +1626,9 @@ loot_overhaul.zip
 boss_loot.zip
 ----
 
+To reorder datapacks, use
+https://minecraft.fandom.com/wiki/Commands/datapack[the `/datapack` command].
+
 == Spellsmithing
 
 Spellsmithing is the process of working magical enchantments onto an item in
