@@ -550,6 +550,9 @@ https://github.com/DMBuce/bucepack/releases/latest/download/breeding_overhaul.zi
 Makes more food negate potion effects
 the same way honey negates poison.
 
+.Click for a summary of negated potion effects
+[%collapsible]
+====
 * Apples negate nausea
 * Carrots negate blindness
 * Glow berries negate darkness
@@ -562,6 +565,7 @@ the same way honey negates poison.
 * Mushroom stew negates bad omen, luck, and unluck
 * Rabbit stew negates mining fatigue
 * Melons negate withering
+====
 
 Download:
 https://github.com/DMBuce/bucepack/releases[All Releases]
