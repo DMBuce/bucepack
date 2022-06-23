@@ -1612,21 +1612,25 @@ Known Issues:
 
 == Ordering Data Packs
 
-The following shows the priority of datapacks that depend on each other.
-They should be in this order (from top to bottom) in the Select Data Packs screen,
-and in the _reverse_ of this order (left to right) in the output of `/datapack list`.
+The following shows the preferred order of datapacks that depend on each other.
+This is the order packs should be loaded in, not their relative priority.
 
 ----
-{!make dlist | grep loot_overhaul_}
-relics_mythic.zip
-phantasmal.zip
 loot_overhaul.zip
+phantasmal.zip
+relics_mythic.zip
+{!make dlist | grep loot_overhaul_}
 
-{!make dlist | grep boss_loot_}
 boss_loot.zip
+{!make dlist | grep boss_loot_}
 ----
 
-To reorder datapacks, use
+Data packs should be in this order in the output of `/datapack list`.
+In the Select Data Packs screen,
+they should be ordered this way from _bottom to top_,
+NOT top to bottom as one might intuitively expect.
+
+To reorder datapacks after they're installed, use
 https://minecraft.fandom.com/wiki/Commands/datapack[the `/datapack` command].
 
 == Spellsmithing
