@@ -1360,6 +1360,9 @@ Data packs that create new ways to play Minecraft.
 Turns the overworld into a skyblock world with a small island at 0, 0.
 The only available resources at first are dripstone, water, and glow berries.
 A cauldron on the island provides access to lava later on.
+
+image::https://i.imgur.com/t66BrqO.png[DripBlock]
+
 Several changes enable survival skyblock gameplay:
 
 * Dripstone farming is made faster by setting `randomTickSpeed` to 500
