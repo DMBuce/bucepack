@@ -1448,7 +1448,7 @@ https://github.com/DMBuce/bucepack/releases/latest/download/escape_grind.zip[`es
 
 https://github.com/dmbuce/badlands-challenge#the-badlands-challenge[The Badlands Challenge]
 is a challenge map for Minecraft where the nearest trees and passive mobs
-are 1km away from spawn.
+are 10km away from spawn.
 This datapack works around an issue in the challenge by
 replacing Treasure Maps with Hearts of the Sea in shipwreck chests.
 
