@@ -641,8 +641,9 @@ https://github.com/DMBuce/bucepack/releases/latest/download/boss_loot.zip[`boss_
 
 ==== Decorative Loot
 
-This is an addon pack that needs to be installed after <<boss-loot,Boss Loot>>.
-It adds decorative blocks to boss drops.
+If this <<ordering-data-packs,addon pack>>
+is enabled and loaded after <<boss-loot,Boss Loot>>,
+it adds decorative blocks to boss drops.
 
 .Click for a summary of decorative drops
 [%collapsible]
@@ -672,8 +673,9 @@ https://github.com/DMBuce/bucepack/releases/latest/download/boss_loot_decor.zip[
 
 ==== Modern Loot
 
-This is an addon pack that needs to be installed after <<boss-loot,Boss Loot>>.
-It adds modern blocks to boss drops.
+If this <<ordering-data-packs,addon pack>>
+is enabled and loaded after <<boss-loot,Boss Loot>>,
+it adds modern blocks to boss drops.
 
 .Click for a summary of modern drops
 [%collapsible]
@@ -705,8 +707,9 @@ https://github.com/DMBuce/bucepack/releases/latest/download/boss_loot_modern.zip
 
 ==== Food Loot
 
-This is an addon pack that needs to be installed after <<boss-loot,Boss Loot>>.
-It adds food to boss drops.
+If this <<ordering-data-packs,addon pack>>
+is enabled and loaded after <<boss-loot,Boss Loot>>,
+it adds food to boss drops.
 Some of the food only drops during dawn, daytime, dusk, or nighttime.
 
 .Click for a summary of food drops
@@ -729,8 +732,9 @@ https://github.com/DMBuce/bucepack/releases/latest/download/boss_loot_food.zip[`
 
 ==== Seasonal Loot
 
-This is an addon pack that needs to be installed after <<boss-loot,Boss Loot>>.
-It adds seasonal drops to bosses.
+If this <<ordering-data-packs,addon pack>>
+is enabled and loaded after <<boss-loot,Boss Loot>>,
+it adds seasonal drops to boss drops.
 The drops are based on the month and season within minecraft.
 A minecraft month is equal to one lunar cycle,
 which is equivalent to 8 in-game days.
@@ -856,7 +860,8 @@ https://github.com/DMBuce/bucepack/releases/latest/download/loot_overhaul.zip[`l
 
 ==== Treasure Seeds
 
-If this addon pack is installed after <<loot-overhaul,Loot Overhaul>>,
+If this <<ordering-data-packs,addon pack>>
+is enabled and loaded after <<loot-overhaul,Loot Overhaul>>,
 it adds so-called "treasure seeds" to the End City and Woodland Mansion loot tables.
 Treasure seeds are plant resources that you haven't used yet.
 Such resources include everything from berries, wheat seeds and potatoes
@@ -879,7 +884,8 @@ https://bugs.mojang.com/browse/MC-156411[technical limitations].
 
 ==== Relic Loot
 
-If this addon pack is installed after <<loot-overhaul,Loot Overhaul>>,
+If this <<ordering-data-packs,addon pack>>
+is enabled and loaded after <<loot-overhaul,Loot Overhaul>>,
 <<Relics>> rarely appear in chest loot. The chance varies depending on
 the type of loot chest.
 
@@ -901,7 +907,8 @@ https://github.com/DMBuce/bucepack/releases/latest/download/loot_overhaul_relics
 
 ==== Starter Relic
 
-If this addon pack is installed after <<loot-overhaul,Loot Overhaul>>,
+If this <<ordering-data-packs,addon pack>>
+is enabled and loaded after <<loot-overhaul,Loot Overhaul>>,
 it adds a random <<relics,Relic>> to the bonus spawn chest.
 
 If any other <<starter-item,Starter Item>> datapacks are installed,
@@ -946,9 +953,10 @@ https://github.com/DMBuce/bucepack/releases/latest/download/starter_map.zip[`sta
 https://github.com/DMBuce/bucepack/releases/latest/download/starter_shulker.zip[`starter_shulker.zip`]
 https://github.com/DMBuce/bucepack/releases/latest/download/starter_spyglass.zip[`starter_spyglass.zip`]
 
-=== Starter Bonus Chest
+==== Starter Bonus Chest
 
-Adds a bonus spawn chest to each player's
+This is a companion pack for the <<loot-overhaul,Loot Overhaul>> datapack
+that adds a bonus spawn chest to each player's
 inventory the first time they join the world.
 
 Download:
@@ -1052,6 +1060,10 @@ durability, enchantments, name, and banner pattern.
 ====
 
 image::https://i.imgur.com/CSfeSfC.png[Mythic Relics]
+
+This is a <<ordering-data-packs,companion pack>> for the
+<<loot-overhaul,Loot Overhaul>> and <<phantasmal,Phantasmal>> datapacks,
+which provide access to some of the relics.
 
 This datapack is not compatible with other datapacks that modify the
 Pig, Silverfish, Endermite, Ghast, Iron Golem, or Deepslate Emerald Ore
@@ -1600,6 +1612,8 @@ Known Issues:
 
 == Ordering Data Packs
 
+Some, though not all, addon & companion datapacks have features that require
+another pack to be enabled and loaded before them.
 The following shows the preferred order of datapacks that depend on each other.
 If you want all features available,
 this is the order packs should be enabled and loaded in,
@@ -1620,8 +1634,9 @@ In the Select Data Packs screen,
 they should be ordered this way from _bottom to top_,
 NOT top to bottom as one might intuitively expect.
 
-To reorder datapacks, use
-https://minecraft.fandom.com/wiki/Commands/datapack[the `/datapack` command].
+To reorder datapacks, use the
+https://minecraft.fandom.com/wiki/Commands/datapack[`/datapack`]
+command.
 
 == Spellsmithing
 
