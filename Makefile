@@ -59,6 +59,7 @@ DATAPACKFILES = \
 	invis_squid_glamer.zip \
 	lichdom.zip \
 	loot_overhaul_relics.zip \
+	loot_overhaul_barrel_of_treasure.zip \
 	loot_overhaul_starter_relic.zip \
 	loot_overhaul_treasure_seeds.zip \
 	wandering_loot.zip \
@@ -470,6 +471,10 @@ loot_overhaul_FILES := $(DEFAULT_DATA_FILES) \
 loot_overhaul_treasure_seeds_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell ls buce-data/loot_addons/loot_overhaul_treasure_seeds* | ./bin/ext2dir) \
 	data/buce/loot_tables/loot_overhaul/sus_stew_loot_overhaul_treasure_seeds.json \
+
+loot_overhaul_barrel_of_treasure_FILES := $(DEFAULT_DATA_FILES) \
+	$(shell ls buce-data/loot_addons/loot_overhaul_barrel_of_treasure* | ./bin/ext2dir) \
+	data/buce/loot_tables/loot_overhaul/buried_treasure_loot_overhaul_barrel_of_treasure.json \
 
 loot_overhaul_relics_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell ls buce-data/loot_addons/loot_overhaul_relics* | ./bin/ext2dir) \
@@ -1125,6 +1130,12 @@ global_effects.zip: $(global_effects_FILES)
 	./bin/ziprename _$(@:.zip=) "" $@
 
 loot_overhaul.zip: $(loot_overhaul_FILES)
+	cp meta/$(@:.zip=.png) pack.png
+	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
+	zip $@ pack.png pack.mcmeta $^
+	./bin/ziprename _$(@:.zip=) "" $@
+
+loot_overhaul_barrel_of_treasure.zip: $(loot_overhaul_barrel_of_treasure_FILES)
 	cp meta/$(@:.zip=.png) pack.png
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^

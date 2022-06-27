@@ -1,0 +1,22 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:heart_of_the_sea"
+		},
+		"title": {
+			"text": "Unburied Treasure"
+		},
+		"description": {
+			"text": "Replaces Treasure Maps with treasure chests"
+		},
+		"show_toast": false,
+		"announce_to_chat": false,
+		"frame": "task"
+	},
+	"parent": "buce:loot_overhaul/root",
+	"criteria": {
+		"tick": {
+			"trigger": "minecraft:tick"
+		}
+	}
+}

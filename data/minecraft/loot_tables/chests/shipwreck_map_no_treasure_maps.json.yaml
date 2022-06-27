@@ -1,7 +1,10 @@
 pools:
   - rolls: 1
     entries:
-      - { type: item, weight: 1, item: heart_of_the_sea }
+      - { type: item, weight: 1, item: barrel,
+        nbt: '{display:{Name:\"\\\"Barrel o'' Treasure\\\"\"},BlockEntityTag:{LootTable:\"minecraft:chests/buried_treasure\"}}'
+        }
+      - { type: empty, weight: 2 }
   - rolls: 3
     entries:
       - { type: item, weight: 1,                   item: compass }
