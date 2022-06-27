@@ -129,6 +129,9 @@ activate so that you can see signals passing through them.
 
 image::https://i.imgur.com/EyBG6cG.png[Tech Arrows]
 
+// In addition,
+// the face of observers briefly change expressions when they observe.
+
 Download:
 https://github.com/DMBuce/bucepack/releases[All Releases]
 
@@ -140,6 +143,8 @@ https://github.com/DMBuce/bucepack/releases/latest/download/tech_arrows.zip[`tec
 Turns iron golems into mechsuit-wearing villagers.
 
 image::https://i.imgur.com/oF0MLK9.png[Village Mech]
+
+// In addition, the villager's expression changes as he takes damage.
 
 Download:
 https://github.com/DMBuce/bucepack/releases[All Releases]
@@ -181,7 +186,7 @@ https://github.com/DMBuce/bucepack/releases/latest/download/ravager.zip[`ravager
 
 Mixes classic ore textures with the modern ones introduced in 1.17.
 Nether and deepslate ores are left unchanged, while stone ores use a simple,
-classic-inspired aesthetic that pairs well with stone's clean texture.
+classic-inspired aesthetic.
 
 image::https://i.imgur.com/G4xb3Q7.png[Ore Types]
 
@@ -996,7 +1001,7 @@ chainmail chestplate in the smithing table. When a player wearing the chestplate
 eats cooked or raw porkchop, they gain Levitation and Slowness II
 for 1 minute and 30 seconds.
 
-**Relic of Parties**: When a player channels lightning onto a vex, it
+**Relic of Parties**: When a player channels lightning on a vex, it
 transforms into an illusioner. If killed by a player, the illusioner drops
 pink dye with Myth of Chromatic Blasts, a custom enchantment that can be
 applied to a crossbow in the smithing table.
@@ -1515,6 +1520,92 @@ the proper rituals, you can cheat death and become a lich, a powerful
 undead that can use a phylactery pedestal to regenerate your body and restore
 your ghost form to life.
 
+//Hardcore Lichdom is a datapack designed for hardcore mode.
+//With this pack, players who conquer
+//the Illagers, the Ocean, the Nether, The End, and the Deep Dark
+//without dying can gain immortality and keep their world forever.
+//
+//When you die in minecraft hardcore mode
+//you are given the option to spectate the world as a ghost.
+//If you use rare materials to perform the proper rituals,
+//you can cheat death and become a lich,
+//a powerful undead that can use a phylactery pedestal
+//to regenerate your body and restore your ghost form to life.
+//
+//This data pack is documented with mildly cryptic advancements
+//that reward the player with sparks of insight.
+//For more comprehensive documentation, expand the spoiler below.
+//
+//.Click for lichdom instructions
+//[%collapsible]
+//====
+//
+//Becoming a lich is a multi-step process.
+//
+//**Use magic to defeat magic**
+//
+//The rites of lichdom appear whenever one skilled mage defeats another.
+//If you kill an evoker with a harming potion,
+//it will drop the Relic of Rites, a tome enchanted with
+// // Curse of Vanishing and
+//Myth of Lichdom.
+//When used, the knowledge gained from this tome
+//gives you the ability to become a lich
+//and reveals the rest of the required steps in your advancements.
+//
+//**Slay the dragon while wearing its grin**
+//
+//Bind the dragon's power to you.
+//If you kill the dragon while wearing a dragon head,
+//the head is transformed into the Relic of Draconic Might,
+//gaining Power X
+// //, Curse of Binding,
+//and Boon of the Dragon,
+//a custom enchantment that increases your max health by 10 hearts.
+//
+//**Channel the sea's elders**
+//
+//Obtain a vessel for your soul.
+//If you channel lightning on an elder guardian and then kill it,
+//it will drop a Relic of the Empty Vessel with Myth of the Phylactery.
+//
+//**Use spellsmithing to create a phylactery**
+//
+//Combine the Relic of the Empty Vessel with a totem, a star, or a sword.
+//That is, create a phylactery by combining the relic with a totem of undying,
+//a nether star, or a netherite sword.
+//
+//**Harness the effects of a wither**
+//
+//Obtain a nether star and craft a beacon with it.
+//That's it.
+//It's a straightforward step, but an important one.
+//
+//**Build a pedestal**
+//
+//Construct a phylactery pedestal with a golden beacon, 8 endstone, 8 dark
+//prismarine slabs, a sculk shrieker, and a phylactery.
+//Create a beacon with a gold base,
+//surround the beacon with endstone,
+//place the shrieker on the beacon
+//and surround it with dark prismarine slabs.
+//Tossing the phylactery on the shrieker completes the pedestal.
+//
+//**Absorb the ancient force of the warden**
+//
+//You might want to cover your ears.
+//When you're attacked with the Warden's sonic boom,
+//you become a lich.
+//If you've completed the other steps,
+//surviving the attack is optional.
+//
+//**Enjoy lichdom**
+//
+//As a lich, you can regenerate your body at a phylactery pedestal
+//and enjoy the debilitating effects of undeath!
+//
+//====
+
 To become a lich, you will need:
 
 * Totem of Undying
@@ -1627,6 +1718,7 @@ boss_loot_modern.zip
 boss_loot_seasonal.zip
 
 loot_overhaul.zip
+loot_overhaul_barrel_of_treasure.zip
 loot_overhaul_relics.zip
 loot_overhaul_starter_relic.zip
 loot_overhaul_treasure_seeds.zip
