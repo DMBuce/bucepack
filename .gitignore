@@ -11,3 +11,4 @@ data/minecraft/loot_tables/subtables/*/*.json
 buce-data/relic/all.loot_table.json.yaml
 buce-data/mythic/chromatic/fireworks.loot_table.json.yaml
 data/minecraft/loot_tables/entities/trader_llama.json
+data/buce/*/
