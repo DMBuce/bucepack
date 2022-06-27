@@ -4,10 +4,10 @@
 			"item": "minecraft:heart_of_the_sea"
 		},
 		"title": {
-			"text": "Unburied Treasure"
+			"text": "Barrel o' Treasure"
 		},
 		"description": {
-			"text": "Replaces Treasure Maps with treasure chests"
+			"text": "Replaces treasure maps with treasure"
 		},
 		"show_toast": false,
 		"announce_to_chat": false,
