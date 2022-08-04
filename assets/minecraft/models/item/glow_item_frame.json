@@ -1,0 +1,14 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "minecraft:item/glow_item_frame"
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "custom_model_data": 22183
+      },
+      "model": "item/invis_glow_item_frame"
+    }
+  ]
+}
