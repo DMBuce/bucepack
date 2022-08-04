@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "base": {
+    "item": "minecraft:phantom_membrane"
+  },
+  "addition": {
+    "item": "minecraft:glow_item_frame"
+  },
+  "result": {
+    "item": "minecraft:glow_item_frame"
+  }
+}
