@@ -1,8 +1,8 @@
 {
   "type": "minecraft:stonecutting",
-  "ingredient": {
-    "item": "minecraft:sandstone"
-  },
+  "ingredient": [
+    { "item": "minecraft:sandstone" }
+  ],
   "result": "minecraft:smooth_sandstone",
   "count": 1
 }

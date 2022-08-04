@@ -1,5 +1,4 @@
 #!/bin/bash
-# TODO: automatically add smooth/cracked blocks to stonecutter
 
 # switch to git root
 gitroot="$(git rev-parse --show-toplevel)" || exit
@@ -130,4 +129,72 @@ sempl - "$dir/sticks_8.recipe.json" <<-EOF
 	  "count": 8
 	}
 EOF
+
+# generate smooth/cracked recipes
+./bin/allblocks \
+	| grep -e^{smooth,cracked}_ \
+	| grep -v -e_{slab,stairs}$ \
+	| while read output
+do
+	num=1
+	inputs="${output#cracked_}"
+	inputs="${inputs#smooth_}"
+	if [[ -f "$latest.jar/assets/minecraft/blockstates/${inputs}_block.json" ]]; then
+		inputs="${inputs}_block"
+	fi
+
+	export num output inputs
+	sempl - "$dir/${output}_${num}.recipe.json" <<-EOF
+		{
+		  "type": "minecraft:stonecutting",
+		  "ingredient": [
+		    { "item": "minecraft:$inputs" }
+		  ],
+		  "result": "minecraft:$output",
+		  "count": $num
+		}
+	EOF
+
+	# stairs
+	if [[ -f "$latest.jar/assets/minecraft/blockstates/${output}_stairs.json" ]]; then
+	(
+	num=1
+	inputs="$inputs"
+	output="${output}_stairs"
+
+	export num output inputs
+	sempl - "$dir/${output}_${num}.recipe.json" <<-EOF
+		{
+		  "type": "minecraft:stonecutting",
+		  "ingredient": [
+		    { "item": "minecraft:$inputs" }
+		  ],
+		  "result": "minecraft:$output",
+		  "count": $num
+		}
+	EOF
+	)
+	fi
+
+	# slabs
+	if [[ -f "$latest.jar/assets/minecraft/blockstates/${output}_slab.json" ]]; then
+	(
+	num=2
+	inputs="$inputs"
+	output="${output}_slab"
+
+	export num output inputs
+	sempl - "$dir/${output}_${num}.recipe.json" <<-EOF
+		{
+		  "type": "minecraft:stonecutting",
+		  "ingredient": [
+		    { "item": "minecraft:$inputs" }
+		  ],
+		  "result": "minecraft:$output",
+		  "count": $num
+		}
+	EOF
+	)
+	fi
+done
 
