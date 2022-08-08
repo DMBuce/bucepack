@@ -44,9 +44,11 @@ DATAPACKFILES = \
 	boss_loot.zip \
 	breeding_overhaul.zip \
 	climbable.zip \
-	hover_mode.zip \
 	dragonproof.zip \
 	dripblock.zip \
+	heads_fae.zip \
+	heads_golem.zip \
+	hover_mode.zip \
 	escape_grind.zip \
 	escape_nether.zip \
 	escape_the_end.zip \
@@ -85,6 +87,9 @@ DATAPACKFILES = \
 
 PACKFILES = $(RESOURCEPACKFILES) $(DATAPACKFILES)
 MCDIR     = $(HOME)/.minecraft
+
+.PHONY: all
+all: $(PACKFILES)
 
 CLEAN_TARGETS := $(PACKFILES) data/buce pack.mcmeta pack.png test.zip \
 	data/minecraft/loot_tables/*.json \
@@ -599,8 +604,8 @@ invis_squid_glamer_FILES := $(DEFAULT_DATA_FILES) \
 phantasmal_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell find buce-data/phantasmal -type f | ./bin/ext2dir) \
 	data/buce/functions/var.mcfunction \
+	data/buce/loot_tables/heads/phantom_membrane_phantasmal.json \
 	data/minecraft/loot_tables/entities/phantom.json \
-	data/minecraft/loot_tables/gameplay/cat_morning_gift.json \
 
 phantasmal_end_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell find buce-data/phantasmal_end -type f | ./bin/ext2dir) \
@@ -685,6 +690,21 @@ copper_tech_FILES := $(DEFAULT_DATA_FILES) \
 more_shulker_shells_FILES := $(DEFAULT_DATA_FILES) \
 	data/minecraft/loot_tables/entities/shulker.json \
 	data/buce/advancements/more_shulker_shells.json \
+
+buce-data/heads/*.loot_table.json.yaml: buce-data/heads/heads.dat
+
+heads_fae_FILES := $(DEFAULT_DATA_FILES) \
+	data/minecraft/loot_tables/gameplay/cat_morning_gift.json \
+	data/buce/loot_tables/heads/fae.json \
+	data/buce/loot_tables/heads/phantom_membrane.json \
+	#data/buce/loot_tables/heads/test.json \
+
+data/minecraft/loot_tables/gameplay/hero_of_the_village/%_gift.json.yaml: buce-data/heads/heads.dat
+	./bin/update-villager-gifts.sh
+
+heads_golem_FILES := $(DEFAULT_DATA_FILES) \
+	$(shell find data/minecraft/loot_tables/{,orig/}gameplay/hero_of_the_village -type f | ./bin/ext2dir) \
+	#$(shell find buce-data/heads/golem -type f | ./bin/ext2dir) \
 
 escape_the_end_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell find buce-data/escape/end -type f | ./bin/ext2dir) \
@@ -775,9 +795,6 @@ lichdom_FILES := $(DEFAULT_DATA_FILES) \
 
 test_FILES = \
 	# nothing
-
-.PHONY: all
-all: $(PACKFILES)
 
 .PHONY: rpacks
 rpacks: $(RESOURCEPACKFILES)
@@ -1307,6 +1324,18 @@ copper_tech.zip: $(copper_tech_FILES)
 	./bin/ziprename _$(@:.zip=) "" $@
 
 more_shulker_shells.zip: $(more_shulker_shells_FILES)
+	cp meta/$(@:.zip=.png) pack.png
+	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
+	zip $@ pack.png pack.mcmeta $^
+	./bin/ziprename _$(@:.zip=) "" $@
+
+heads_fae.zip: $(heads_fae_FILES)
+	cp meta/$(@:.zip=.png) pack.png
+	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
+	zip $@ pack.png pack.mcmeta $^
+	./bin/ziprename _$(@:.zip=) "" $@
+
+heads_golem.zip: $(heads_golem_FILES)
 	cp meta/$(@:.zip=.png) pack.png
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^

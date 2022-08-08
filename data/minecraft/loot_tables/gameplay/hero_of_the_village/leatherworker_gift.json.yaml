@@ -1,0 +1,15 @@
+type: gift
+pools:
+  #- rolls: 1
+  #  entries:
+  #    - { type: loot_table, weight: 1, table: "minecraft:orig/gameplay/hero_of_the_village/armorer_gift" }
+  - rolls: 1
+    entries:
+      - { type: item, weight: 1, item: player_head, nbt: '{SkullOwner:{Name:\"Gift Basket Golem\",Id:[I;-704728475,-2099232569,-1468850908,-478721968],Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODNjMjVhN2ExODgxOTZiMTg3MTcyNjRmZmU4MzdjYTM0OGNmNzE5ZTgyNzE3OWVkYzRiNzhjYmNiOGM3ZGQ4In19fQ==\"}]}}}' }
+      - { type: item, weight: 1, item: player_head, nbt: '{SkullOwner:{Name:\"Gift Golem\",Id:[I;-1416197734,-1469166178,-1235289788,36457177],Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNmZkNDUyODcwZDQ5MzcxOGViNjM2NDdhZDgwZTAwZjUwYjc3NDYwMWNiMDY3Nzc1ZjkwZmMxZWFhZGE4ZmNlZiJ9fX0=\"}]}}}' }
+      - { type: item, weight: 1, item: player_head, nbt: '{SkullOwner:{Name:\"Gift Golem\",Id:[I;291468683,1666991970,-2136400114,-1116041864],Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvY2IzYzE3YjJkZGVjMmI3MjZkNzE3YThiNWE3ZDY4Yjc3NzJmYmQ5YzA5YTNmZjRiZDJhNDEyZDI0Y2NkNDkxYyJ9fX0=\"}]}}}' }
+      - { type: item, weight: 1, item: player_head, nbt: '{SkullOwner:{Name:\"Gift Golem\",Id:[I;1833366945,-1473035956,-1173514174,-883347090],Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjU2MTJkYzdiODZkNzFhZmMxMTk3MzAxYzE1ZmQ5NzllOWYzOWU3YjFmNDFkOGYxZWJkZjgxMTU1NzZlMmUifX19\"}]}}}' }
+      - { type: item, weight: 1, item: player_head, nbt: '{SkullOwner:{Name:\"Cauldron Golem\",Id:[I;-1452975663,2109359565,-1385381595,-557629624],Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNDIyNzY4ZGI2NTczNjUxNjI2NTUyYmIyNjQ0MjYwOWE3Mjc5Yzc4NDNjYjY5YjhlNjAzZDJjMWRiNjQ1ZDAifX19\"}]}}}' }
+      - { type: item, weight: 1, item: player_head, nbt: '{SkullOwner:{Name:\"Cauldron Golem\",Id:[I;-19056178,1576616548,-1553260818,-720007008],Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYTA2NGU1MDQzNGJiNzMyZGRjMThiNTc5NTYxYTdjYWJlYTAxMDdkZDE4NTg1OGZhYjZiOTQ5MDVkNzA2M2I2YiJ9fX0=\"}]}}}' }
+      - { type: item, weight: 1, item: player_head, nbt: '{SkullOwner:{Name:\"Cauldron Golem\",Id:[I;-1664420362,-474592067,-1400945144,-1373162755],Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYWQ4NjkwZTJjNmFmZTMwM2I3YjQyYmNjMGFkZmFhZmE0Y2JlNjA4NDY2ZDAyMWFhNDRkNzAyZDIxOTcwMmFjNyJ9fX0=\"}]}}}' }
+      - { type: item, weight: 1, item: player_head, nbt: '{SkullOwner:{Name:\"Cauldron Golem\",Id:[I;212787032,-1430959584,-1105095455,7016105],Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzVmYjI0NWYxMTMwOGZlZjdiMWM5NzBmODk1NzUwNzk3NzhmODNhZTY1MmZjMjNjNTI0YjUwNjA1ZGQzMWMyNSJ9fX0=\"}]}}}' }

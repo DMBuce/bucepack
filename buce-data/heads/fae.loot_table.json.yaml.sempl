@@ -1,0 +1,9 @@
+#!/usr/bin/env sempl
+SEMPL_BRACES = {{}}
+#!end sempl env
+pools:
+  - rolls: 1
+    entries:
+{{<!sed -n '/BEGIN FAE/,/END FAE/ { /^[^#]/p }' buce-data/heads/heads.dat}}{{\\}}
+      - { type: item, weight: 1, item: player_head, nbt: '{SkullOwner:{Name:\"{{3:}}\",Id:{{1}},Properties:{textures:[{Value:\"{{2}}\"}]}}}' }
+# vim: ft=yaml

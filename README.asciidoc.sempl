@@ -626,6 +626,101 @@ https://github.com/DMBuce/bucepack/releases[All Releases]
 Direct Link:
 https://github.com/DMBuce/bucepack/releases/latest/download/wandering_loot.zip[`wandering_loot.zip`]
 
+=== Heads
+
+Below is a series of datapacks that adds decorative player heads to the game.
+
+==== Fae Heads
+
+Adds fae such as dwarves, goblins, elves, gnomes, and gremlins.
+These fae are mysterious creatures
+that transform into a block whenever a player is near.
+The transformation renders them indistinguishible from normal blocks,
+making it impossible for players to identify them.
+
+Their only natural predators are cats, who hunt them at night.
+When a tamed cat sleeps with a player in a bed,
+it has a chance to give its owner a fae head as a gift in the morning.
+These heads replace raw chicken in the cat gift loot table.
+
+.Click for a summary of heads
+[%collapsible]
+====
+
+* {!./bin/heads fae | ./bin/variants}
+
+====
+
+Download:
+https://github.com/DMBuce/bucepack/releases[All Releases]
+
+Direct Link:
+https://github.com/DMBuce/bucepack/releases/latest/download/heads_fae.zip[`heads_fae.zip`]
+
+==== Golem Heads
+
+Makes villagers give golem heads as gifts to a player with Hero of the Village
+instead of their normal gifts.
+The heads are a vestige of a time long gone,
+when villagers could create golems out of materials other than iron.
+
+// To create a golem with the head, place it on an armor stand.
+// The golem can't move, but can display armor and scare crows away.
+
+.Click for a summary of heads
+[%collapsible]
+====
+
+Any Profession:
+* {!./bin/heads gifts | ./bin/variants}
+
+Armorer:
+* {!./bin/heads armorer | ./bin/variants}
+
+Butcher:
+* {!./bin/heads butcher | ./bin/variants}
+
+Cartographer:
+* {!./bin/heads cartographer | ./bin/variants}
+
+Cleric:
+* {!./bin/heads cleric | ./bin/variants}
+
+Farmer:
+* {!./bin/heads farmer | ./bin/variants}
+
+Fisherman:
+* {!./bin/heads fisherman | ./bin/variants}
+
+Fletcher:
+* {!./bin/heads fletcher | ./bin/variants}
+
+Leatherworker:
+* {!./bin/heads leatherworker | ./bin/variants}
+
+Librarian:
+* {!./bin/heads librarian | ./bin/variants}
+
+Mason:
+* {!./bin/heads mason | ./bin/variants}
+
+Shepherd:
+* {!./bin/heads shepherd | ./bin/variants}
+
+Toolsmith:
+* {!./bin/heads toolsmith | ./bin/variants}
+
+Weaponsmith:
+* {!./bin/heads weaponsmith | ./bin/variants}
+
+====
+
+Download:
+https://github.com/DMBuce/bucepack/releases[All Releases]
+
+Direct Link:
+https://github.com/DMBuce/bucepack/releases/latest/download/heads_golem.zip[`heads_golem.zip`]
+
 === Boss Loot
 
 Makes decorative player heads drop from the Dragon,
@@ -1166,7 +1261,7 @@ When a player hits a phantom, it turns visible.
 
 All the above effects only apply to phantoms in the overworld.
 
-Phantom membranes have Glamer of Invisibility,
+Phantom membranes dropped by phantoms have Glamer of Invisibility,
 an enchantment that can be applied to an item frame
 in the smithing table to make an invisible item frame.
 It can also be applied to a torch in the smithing table
@@ -1175,6 +1270,10 @@ to make an invisible light block.
 // when invisible, does not cast a shadow
 
 image::https://i.imgur.com/n6TAzur.png[Phantasmal]
+
+If the <<fae-heads,Fae Heads>> datapack is
+installed before this one,
+phantom membranes from cat gifts have Glamer of Invisibility as well.
 
 If you have the <<spellsmithing-guide,Spellsmithing Guide>> resource pack
 installed, invisible item frames will
@@ -1736,6 +1835,7 @@ i.e. this is the _reverse_ of their relative priority.
 boss_loot.zip
 {!make dlist | grep boss_loot_}
 
+heads_fae.zip
 loot_overhaul.zip
 {!make dlist | grep loot_overhaul_}
 phantasmal.zip

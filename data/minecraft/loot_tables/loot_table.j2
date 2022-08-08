@@ -126,7 +126,7 @@
           "weight": {{entry.weight}},
           {%- endif %}
           "quality": {{ entry.quality if entry.quality is defined else 0 }},
-          "name": "buce:{{entry.table}}"
+          "name": "{{ "buce:" if ":" not in entry.table else "" }}{{entry.table}}"
           {%- if entry.score is defined %},
           "conditions": [
             {

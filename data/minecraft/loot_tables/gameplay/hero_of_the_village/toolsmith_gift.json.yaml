@@ -1,0 +1,12 @@
+type: gift
+pools:
+  #- rolls: 1
+  #  entries:
+  #    - { type: loot_table, weight: 1, table: "minecraft:orig/gameplay/hero_of_the_village/armorer_gift" }
+  - rolls: 1
+    entries:
+      - { type: item, weight: 1, item: player_head, nbt: '{SkullOwner:{Name:\"Gift Basket Golem\",Id:[I;-704728475,-2099232569,-1468850908,-478721968],Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODNjMjVhN2ExODgxOTZiMTg3MTcyNjRmZmU4MzdjYTM0OGNmNzE5ZTgyNzE3OWVkYzRiNzhjYmNiOGM3ZGQ4In19fQ==\"}]}}}' }
+      - { type: item, weight: 1, item: player_head, nbt: '{SkullOwner:{Name:\"Gift Golem\",Id:[I;-1416197734,-1469166178,-1235289788,36457177],Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNmZkNDUyODcwZDQ5MzcxOGViNjM2NDdhZDgwZTAwZjUwYjc3NDYwMWNiMDY3Nzc1ZjkwZmMxZWFhZGE4ZmNlZiJ9fX0=\"}]}}}' }
+      - { type: item, weight: 1, item: player_head, nbt: '{SkullOwner:{Name:\"Gift Golem\",Id:[I;291468683,1666991970,-2136400114,-1116041864],Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvY2IzYzE3YjJkZGVjMmI3MjZkNzE3YThiNWE3ZDY4Yjc3NzJmYmQ5YzA5YTNmZjRiZDJhNDEyZDI0Y2NkNDkxYyJ9fX0=\"}]}}}' }
+      - { type: item, weight: 1, item: player_head, nbt: '{SkullOwner:{Name:\"Gift Golem\",Id:[I;1833366945,-1473035956,-1173514174,-883347090],Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjU2MTJkYzdiODZkNzFhZmMxMTk3MzAxYzE1ZmQ5NzllOWYzOWU3YjFmNDFkOGYxZWJkZjgxMTU1NzZlMmUifX19\"}]}}}' }
+      - { type: item, weight: 1, item: player_head, nbt: '{SkullOwner:{Name:\"Smith Golem\",Id:[I;-2000096328,-54505731,-1104823870,732283982],Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjcyZDFiZTQ4OGQyNjdlY2JlY2Y3ZmJjMzE0MzkwNjM2ZTk0MmI2NDYwNjI4YjAyMTA0YTgzODE4NGI3ZTczNyJ9fX0=\"}]}}}' }

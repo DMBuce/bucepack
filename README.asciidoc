@@ -626,6 +626,191 @@ https://github.com/DMBuce/bucepack/releases[All Releases]
 Direct Link:
 https://github.com/DMBuce/bucepack/releases/latest/download/wandering_loot.zip[`wandering_loot.zip`]
 
+=== Heads
+
+Below is a series of datapacks that adds decorative player heads to the game.
+
+==== Fae Heads
+
+Adds fae such as dwarves, goblins, elves, gnomes, and gremlins.
+These fae are mysterious creatures
+that transform into a block whenever a player is near.
+The transformation renders them indistinguishible from normal blocks,
+making it impossible for players to identify them.
+
+Their only natural predators are cats, who hunt them at night.
+When a tamed cat sleeps with a player in a bed,
+it has a chance to give its owner a fae head as a gift in the morning.
+These heads replace raw chicken in the cat gift loot table.
+
+.Click for a summary of heads
+[%collapsible]
+====
+
+* Bee
+* Slime
+* Spider
+* Amethyst Dwarf
+* Blue Dwarf (3 variants)
+* Coal Dwarf (3 variants)
+* Diamond Dwarf (3 variants)
+* Emerald Dwarf (3 variants)
+* Gold Dwarf (3 variants)
+* Iron Dwarf (3 variants)
+* Red Dwarf (3 variants)
+* Copper Dwarf (4 variants)
+* Tree Elf
+* Bush Elf (2 variants)
+* Cactus Elf (2 variants)
+* Acacia Elf (3 variants)
+* Birch Elf (3 variants)
+* Crimson Elf (3 variants)
+* Dark Elf (3 variants)
+* Jungle Elf (3 variants)
+* Mangrove Elf (3 variants)
+* Oak Elf (3 variants)
+* Spruce Elf (3 variants)
+* Warped Elf (3 variants)
+* Cave Gnome
+* Desert Gnome
+* Forest Gnome
+* Island Gnome
+* Mesa Gnome
+* Mountain Gnome
+* Plains Gnome
+* Savanna Gnome
+* Tundra Gnome (2 variants)
+* Cobble Goblin
+* Deep Goblin
+* Geode Goblin
+* Granite Goblin
+* Gray Goblin
+* Moss Goblin
+* Red Goblin
+* Sand Goblin
+* Stone Goblin
+* Tuff Goblin
+* White Goblin
+* Bedrock Gremlin
+* Chest Gremlin
+* Crafty Gremlin
+* Furnace Gremlin
+* Scrap Gremlin
+* TNT Gremlin
+* Bone Gremlin (2 variants)
+* Ice Gremlin (2 variants)
+* Lava Gremlin (2 variants)
+* Dark Kelpie
+* Prismarine Kelpie (2 variants)
+
+====
+
+Download:
+https://github.com/DMBuce/bucepack/releases[All Releases]
+
+Direct Link:
+https://github.com/DMBuce/bucepack/releases/latest/download/heads_fae.zip[`heads_fae.zip`]
+
+==== Golem Heads
+
+Makes villagers give golem heads as gifts to a player with Hero of the Village
+instead of their normal gifts.
+The heads are a vestige of a time long gone,
+when villagers could create golems out of materials other than iron.
+
+// To create a golem with the head, place it on an armor stand.
+// The golem can't move, but can display armor and scare crows away.
+
+.Click for a summary of heads
+[%collapsible]
+====
+
+Any Profession:
+* Gift Basket Golem
+* Gift Golem (3 variants)
+
+Armorer:
+* Metal Golem
+* Copper Golem (3 variants)
+
+Butcher:
+* Cow
+* Sheep
+* Pig (2 variants)
+* Ham Golem
+* Meat Golem
+
+Cartographer:
+* Coconut Golem
+* Kiwi Golem
+* Lemon Golem
+* Lime Golem
+* Map Golem
+
+Cleric:
+* Ender Golem
+* Honey Golem
+* Onion Golem
+* Tome Golem
+
+Farmer:
+* Cheese Golem
+* Grape Golem
+* Melon Golem
+* Picnic Golem
+* Pumpkin Golem
+* Sandwich Golem
+* Jam Golem (4 variants)
+* Pie Golem (5 variants)
+
+Fisherman:
+* Fish
+* Guardian
+* Pufferfish
+* Squid
+* Clam (3 variants)
+* Tail Golem
+* Fish Golem (2 variants)
+* Storage Golem (3 variants)
+* Glow Squid
+
+Fletcher:
+* Fletching Golem
+* Target Golem
+* Straw Golem (2 variants)
+
+Leatherworker:
+* Cauldron Golem (4 variants)
+
+Librarian:
+* Enchanted Golem (2 variants)
+* Book Golem (3 variants)
+
+Mason:
+* Brick Golem
+* Clay Golem (17 variants)
+* Quartz Golem (3 variants)
+* Stone Golem (7 variants)
+
+Shepherd:
+* Cloth Golem
+* Loom Golem
+* Wool Golem (16 variants)
+
+Toolsmith:
+* Smith Golem
+
+Weaponsmith:
+* Grind Golem (2 variants)
+
+====
+
+Download:
+https://github.com/DMBuce/bucepack/releases[All Releases]
+
+Direct Link:
+https://github.com/DMBuce/bucepack/releases/latest/download/heads_golem.zip[`heads_golem.zip`]
+
 === Boss Loot
 
 Makes decorative player heads drop from the Dragon,
@@ -1166,7 +1351,7 @@ When a player hits a phantom, it turns visible.
 
 All the above effects only apply to phantoms in the overworld.
 
-Phantom membranes have Glamer of Invisibility,
+Phantom membranes dropped by phantoms have Glamer of Invisibility,
 an enchantment that can be applied to an item frame
 in the smithing table to make an invisible item frame.
 It can also be applied to a torch in the smithing table
@@ -1175,6 +1360,10 @@ to make an invisible light block.
 // when invisible, does not cast a shadow
 
 image::https://i.imgur.com/n6TAzur.png[Phantasmal]
+
+If the <<fae-heads,Fae Heads>> datapack is
+installed before this one,
+phantom membranes from cat gifts have Glamer of Invisibility as well.
 
 If you have the <<spellsmithing-guide,Spellsmithing Guide>> resource pack
 installed, invisible item frames will
@@ -1739,6 +1928,7 @@ boss_loot_food.zip
 boss_loot_modern.zip
 boss_loot_seasonal.zip
 
+heads_fae.zip
 loot_overhaul.zip
 loot_overhaul_barrel_of_treasure.zip
 loot_overhaul_relics.zip

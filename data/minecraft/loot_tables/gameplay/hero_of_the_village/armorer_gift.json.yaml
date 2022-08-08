@@ -1,0 +1,15 @@
+type: gift
+pools:
+  #- rolls: 1
+  #  entries:
+  #    - { type: loot_table, weight: 1, table: "minecraft:orig/gameplay/hero_of_the_village/armorer_gift" }
+  - rolls: 1
+    entries:
+      - { type: item, weight: 1, item: player_head, nbt: '{SkullOwner:{Name:\"Gift Basket Golem\",Id:[I;-704728475,-2099232569,-1468850908,-478721968],Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODNjMjVhN2ExODgxOTZiMTg3MTcyNjRmZmU4MzdjYTM0OGNmNzE5ZTgyNzE3OWVkYzRiNzhjYmNiOGM3ZGQ4In19fQ==\"}]}}}' }
+      - { type: item, weight: 1, item: player_head, nbt: '{SkullOwner:{Name:\"Gift Golem\",Id:[I;-1416197734,-1469166178,-1235289788,36457177],Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNmZkNDUyODcwZDQ5MzcxOGViNjM2NDdhZDgwZTAwZjUwYjc3NDYwMWNiMDY3Nzc1ZjkwZmMxZWFhZGE4ZmNlZiJ9fX0=\"}]}}}' }
+      - { type: item, weight: 1, item: player_head, nbt: '{SkullOwner:{Name:\"Gift Golem\",Id:[I;291468683,1666991970,-2136400114,-1116041864],Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvY2IzYzE3YjJkZGVjMmI3MjZkNzE3YThiNWE3ZDY4Yjc3NzJmYmQ5YzA5YTNmZjRiZDJhNDEyZDI0Y2NkNDkxYyJ9fX0=\"}]}}}' }
+      - { type: item, weight: 1, item: player_head, nbt: '{SkullOwner:{Name:\"Gift Golem\",Id:[I;1833366945,-1473035956,-1173514174,-883347090],Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjU2MTJkYzdiODZkNzFhZmMxMTk3MzAxYzE1ZmQ5NzllOWYzOWU3YjFmNDFkOGYxZWJkZjgxMTU1NzZlMmUifX19\"}]}}}' }
+      - { type: item, weight: 1, item: player_head, nbt: '{SkullOwner:{Name:\"Metal Golem\",Id:[I;-1144659552,-1291893845,-1296389709,542358665],Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOWZiYjZlZWE1NzU0N2IyNTg4YmFmOGFmNjQ5ZDkxMTZmZjA4Y2FjNTZkZDIxNDBiM2M0OTU3Nzc5OWJhZDdjIn19fQ==\"}]}}}' }
+      - { type: item, weight: 1, item: player_head, nbt: '{SkullOwner:{Name:\"Copper Golem\",Id:[I;-1236355992,1364609155,-1776448767,-1594498045],Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZGE1N2U0NmViMWVhZDkwNzFjZDhkNjEzYTgxY2Q1NWM1OTMxY2I2ZGJhZTRkZmJmMTQ1OGYyOGY5OWVlN2Y0NCJ9fX0=\"}]}}}' }
+      - { type: item, weight: 1, item: player_head, nbt: '{SkullOwner:{Name:\"Copper Golem\",Id:[I;-611265577,2063615213,-1816888055,-220974486],Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNDhmZDk4NzlmODZlMjI5ZmU4MDNkNjFkOTNlYmVjYTk2M2IyMzIzZmM5YTU5NGIxMjFiMjI5YjVjOTI1NzBlIn19fQ==\"}]}}}' }
+      - { type: item, weight: 1, item: player_head, nbt: '{SkullOwner:{Name:\"Copper Golem\",Id:[I;663806804,-1541061926,-1519850471,-978680676],Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZmIyYzk2YjY5NjFmZjViNTMwNzUxMTZhYTk0MzMxYzQ3MTg1MWRlNTAwOGJhMDU5NGMzODdiNDZhNDI5ZWJjNCJ9fX0=\"}]}}}' }
