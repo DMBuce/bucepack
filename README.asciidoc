@@ -641,7 +641,8 @@ making it impossible for players to identify them.
 Their only natural predators are cats, who hunt them at night.
 When a tamed cat sleeps with a player in a bed,
 it has a chance to give its owner a fae head as a gift in the morning.
-These heads replace raw chicken in the cat gift loot table.
+These heads replace raw chicken in the cat gift loot table
+and look like tiny blocks.
 
 .Click for a summary of heads
 [%collapsible]
@@ -715,7 +716,7 @@ https://github.com/DMBuce/bucepack/releases/latest/download/heads_fae.zip[`heads
 
 Makes villagers give golem heads as gifts to a player with Hero of the Village
 instead of their normal gifts.
-The heads are a vestige of a time long gone,
+The heads look like tiny blocks and are a vestige of a time long gone,
 when villagers could create golems out of materials other than iron.
 
 // To create a golem with the head, place it on an armor stand.
@@ -737,8 +738,7 @@ Butcher:
 * Cow
 * Sheep
 * Pig (2 variants)
-* Ham Golem
-* Meat Golem
+* Meat Golem (2 variants)
 
 Cartographer:
 * Coconut Golem
@@ -846,155 +846,6 @@ https://github.com/DMBuce/bucepack/releases[All Releases]
 
 Direct Link:
 https://github.com/DMBuce/bucepack/releases/latest/download/heads_player.zip[`heads_player.zip`]
-
-=== Boss Loot
-
-Makes decorative player heads drop from the Dragon,
-Wither, Warden, Elder Guardian, and Ravager when killed by a player.
-Below is a summary of possible drops.
-
-* **Dragon**: Dragon Heart, End Crystal Cube, Red Dragon Plushie
-* **Wither**: Wither Heart, Necronomicon, Block Buster
-* **Warden**: Gold Cube, Diamond Cube, Jar of Lava
-* **Elder Guardian**: Fish Head, Clam, Coconut
-* **Ravager**: Iron Cube, Emerald Cube, Ravager Plushie
-
-Download:
-https://github.com/DMBuce/bucepack/releases[All Releases]
-
-Direct Link:
-https://github.com/DMBuce/bucepack/releases/latest/download/boss_loot.zip[`boss_loot.zip`]
-
-==== Decorative Loot
-
-If this <<ordering-data-packs,addon pack>>
-is enabled and loaded after <<boss-loot,Boss Loot>>,
-it adds decorative blocks to boss drops.
-
-.Click for a summary of decorative drops
-[%collapsible]
-====
-
-* Crate
-* Books
-* Book Pile
-* Stump
-* Bush
-* Leadwort Bush
-* Small Cactus
-* Flowering Cactus
-* Potted Dahlia
-* Potted Lavender
-* Potted Marigold
-* Potted Camellia
-* Potted Plant
-
-====
-
-Download:
-https://github.com/DMBuce/bucepack/releases[All Releases]
-
-Direct Link:
-https://github.com/DMBuce/bucepack/releases/latest/download/boss_loot_decor.zip[`boss_loot_decor.zip`]
-
-==== Modern Loot
-
-If this <<ordering-data-packs,addon pack>>
-is enabled and loaded after <<boss-loot,Boss Loot>>,
-it adds modern blocks to boss drops.
-
-.Click for a summary of modern drops
-[%collapsible]
-====
-
-* Toaster
-* Monitor
-* Television
-* Towels
-* Warning Lamp
-* Rubik's Cube
-* Solved Rubik's Cube
-* Furby
-* Blue Furby
-* Pikachu Plushie
-* Pokeball
-* Goomba Plushie
-* Lucky Block
-* Pig Plushie
-* Squid Plushie
-
-====
-
-Download:
-https://github.com/DMBuce/bucepack/releases[All Releases]
-
-Direct Link:
-https://github.com/DMBuce/bucepack/releases/latest/download/boss_loot_modern.zip[`boss_loot_modern.zip`]
-
-==== Food Loot
-
-If this <<ordering-data-packs,addon pack>>
-is enabled and loaded after <<boss-loot,Boss Loot>>,
-it adds food to boss drops.
-Some of the food only drops during dawn, daytime, dusk, or nighttime.
-
-.Click for a summary of food drops
-[%collapsible]
-====
-
-* **Anytime**: Raw Fish, Grapes, Red Onion, Lemon, Lime, Bread, Jam
-* **Dawn**: Coffee, Donuts
-* **Daytime**: Cheese, Sushi, Sandwich
-* **Dusk**: Burger, Cooked Fish, Picnic Basket
-* **Nighttime**: Chocolate Cake, Fried Chicken, Ice Cream
-
-====
-
-Download:
-https://github.com/DMBuce/bucepack/releases[All Releases]
-
-Direct Link:
-https://github.com/DMBuce/bucepack/releases/latest/download/boss_loot_food.zip[`boss_loot_food.zip`]
-
-==== Seasonal Loot
-
-If this <<ordering-data-packs,addon pack>>
-is enabled and loaded after <<boss-loot,Boss Loot>>,
-it adds seasonal drops to boss drops.
-The drops are based on the month and season within minecraft.
-A minecraft month is equal to one lunar cycle,
-which is equivalent to 8 in-game days.
-A season is three minecraft months, i.e. 24 in-game days.
-A new world starts at the beginning of spring on the first day of March.
-
-.Click for a summary of seasonal drops
-[%collapsible]
-====
-
-* **Spring**: Chick Plushie, Pot of Honey, Cherry Pie
-** **March**: Pot of Gold
-** **April**: Easter Basket
-** **May**: R2-D2 Plushie
-* **Summer**: Hermit Crab, Kiwi, Turtle Plushie
-** **June**: Rainbow Slime Plushie
-** **July**: Dynamite
-** **August**: Hot Dog
-* **Fall**: Pecan Pie, Blueberry Pie, Apple Pie
-** **September**: Textbooks
-** **October**: Creeper Pumpkin
-** **November**: Pumpkin Pie
-* **Winter**: Gifts, Penguin Plushie, Snowman Plushie
-** **December**: Santa Plushie
-** **January**: Ham
-** **February**: Companion Cube
-
-====
-
-Download:
-https://github.com/DMBuce/bucepack/releases[All Releases]
-
-Direct Link:
-https://github.com/DMBuce/bucepack/releases/latest/download/boss_loot_seasonal.zip[`boss_loot_seasonal.zip`]
 
 === Loot Overhaul
 
@@ -1959,10 +1810,6 @@ i.e. this is the _reverse_ of their relative priority.
 
 ----
 boss_loot.zip
-boss_loot_decor.zip
-boss_loot_food.zip
-boss_loot_modern.zip
-boss_loot_seasonal.zip
 
 heads_fae.zip
 loot_overhaul.zip

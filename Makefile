@@ -37,11 +37,6 @@ DATAPACKFILES = \
 	aggro_bastions.zip \
 	antidote.zip \
 	blue_fire.zip \
-	boss_loot_decor.zip \
-	boss_loot_food.zip \
-	boss_loot_modern.zip \
-	boss_loot_seasonal.zip \
-	boss_loot.zip \
 	breeding_overhaul.zip \
 	climbable.zip \
 	dragonproof.zip \
