@@ -48,6 +48,7 @@ DATAPACKFILES = \
 	dripblock.zip \
 	heads_fae.zip \
 	heads_golem.zip \
+	heads_player.zip \
 	hover_mode.zip \
 	escape_grind.zip \
 	escape_nether.zip \
@@ -704,7 +705,10 @@ data/minecraft/loot_tables/gameplay/hero_of_the_village/%_gift.json.yaml: buce-d
 
 heads_golem_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell find data/minecraft/loot_tables/{,orig/}gameplay/hero_of_the_village -type f | ./bin/ext2dir) \
-	#$(shell find buce-data/heads/golem -type f | ./bin/ext2dir) \
+
+heads_player_FILES := $(DEFAULT_DATA_FILES) \
+	data/minecraft/loot_tables/entities/player.json \
+	data/buce/loot_tables/heads/ancients.json \
 
 escape_the_end_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell find buce-data/escape/end -type f | ./bin/ext2dir) \
@@ -1336,6 +1340,12 @@ heads_fae.zip: $(heads_fae_FILES)
 	./bin/ziprename _$(@:.zip=) "" $@
 
 heads_golem.zip: $(heads_golem_FILES)
+	cp meta/$(@:.zip=.png) pack.png
+	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
+	zip $@ pack.png pack.mcmeta $^
+	./bin/ziprename _$(@:.zip=) "" $@
+
+heads_player.zip: $(heads_player_FILES)
 	cp meta/$(@:.zip=.png) pack.png
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^

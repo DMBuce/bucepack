@@ -811,6 +811,42 @@ https://github.com/DMBuce/bucepack/releases[All Releases]
 Direct Link:
 https://github.com/DMBuce/bucepack/releases/latest/download/heads_golem.zip[`heads_golem.zip`]
 
+==== Player Heads
+
+Makes players drop their head when killed
+by a player, dragon, wither, elder guardian, ravager, or polar bear.
+
+When a warden kills a player, it captures that player's soul
+and releases the soul of one of The Ancients.
+The head of that Ancient is dropped instead of the player's.
+
+.Click for a summary of heads
+[%collapsible]
+====
+
+* Computron
+* ToasterBot
+* Zip
+* Rubik (2 variants)
+* TV Boy
+* Companion Cube
+* Donut Girl (2 variants)
+* Piston Guy (2 variants)
+* Jukebox Hero
+* Safety Joe
+* Lamp Lover
+* Silent Observer
+* Dispenser of Justice
+* Amp Roadie
+
+====
+
+Download:
+https://github.com/DMBuce/bucepack/releases[All Releases]
+
+Direct Link:
+https://github.com/DMBuce/bucepack/releases/latest/download/heads_player.zip[`heads_player.zip`]
+
 === Boss Loot
 
 Makes decorative player heads drop from the Dragon,
