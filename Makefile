@@ -63,7 +63,6 @@ DATAPACKFILES = \
 	wandering_loot.zip \
 	loot_overhaul.zip \
 	mineable.zip \
-	more_allays.zip \
 	more_cutting.zip \
 	more_shulker_shells.zip \
 	no_treasure_maps.zip \
