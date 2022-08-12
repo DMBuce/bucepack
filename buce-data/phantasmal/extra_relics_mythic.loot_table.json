@@ -27,6 +27,9 @@
           "predicate": {
             "effects": {
               "minecraft:invisibility": {}
+            },
+            "location": {
+              "dimension": "minecraft:the_end"
             }
           }
         }
