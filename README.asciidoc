@@ -1226,12 +1226,16 @@ When a player hits a phantom, it turns visible.
 All the above effects only apply to phantoms in the overworld.
 
 Phantom membranes dropped by phantoms have Glamer of Invisibility,
-an enchantment that can be applied to an item frame
+an enchantment that can be applied to an item frame or glow item frame
 in the smithing table to make an invisible item frame.
 It can also be applied to a torch in the smithing table
 to make an invisible light block.
 // the light block is one light level higher than a torch because the stick,
 // when invisible, does not cast a shadow
+
+While holding an item frame,
+a glass particle effect indicates
+the position of nearby invisible item frames.
 
 image::https://i.imgur.com/n6TAzur.png[Phantasmal]
 

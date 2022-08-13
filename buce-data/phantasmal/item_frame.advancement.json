@@ -1,0 +1,38 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:barrier"
+		},
+		"title": {
+			"text": "Trigger Advancement"
+		},
+		"description": {
+			"text": "Something went wrong, you should revoke this advancement"
+		},
+		"show_toast": false,
+		"announce_to_chat": false,
+		"hidden": true,
+		"frame": "task"
+	},
+	"parent": "buce:phantasmal/root",
+	"criteria": {
+		"holding_item_frame": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player": {
+					"equipment": {
+						"mainhand": {
+							"items": [
+								"minecraft:item_frame",
+								"minecraft:glow_item_frame"
+							]
+						}
+					}
+				}
+			}
+		}
+	},
+	"rewards": {
+		"function": "buce:phantasmal/item_frame"
+	}
+}
