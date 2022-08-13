@@ -1803,8 +1803,6 @@ this is the order packs should be enabled and loaded in,
 i.e. this is the _reverse_ of their relative priority.
 
 ----
-boss_loot.zip
-
 heads_fae.zip
 loot_overhaul.zip
 loot_overhaul_barrel_of_treasure.zip
