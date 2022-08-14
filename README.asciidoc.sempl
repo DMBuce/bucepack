@@ -324,60 +324,12 @@ https://github.com/DMBuce/bucepack/releases/latest/download/classic_twang.zip[`c
 https://github.com/DMBuce/bucepack/releases/latest/download/classic_sploosh.zip[`classic_sploosh.zip`]
 https://github.com/DMBuce/bucepack/releases/latest/download/classic_crunch.zip[`classic_crunch.zip`]
 
-== Quality of Life Data Packs
+== Tag Data Packs
 
-Simple data packs that make Minecraft life a little easier.
-
-=== More Cutting
-
-Lets you craft wood variants in the stonecutter. Turn logs into wood, strip
-them, craft them into planks, stairs, slabs, and sticks.
-
-Also lets you craft smooth and cracked stone variants in the stonecutter.
-
-image::https://i.imgur.com/vJddlZU.png[More Cutting]
-
-In addition, the crafting table output for stairs, wood, and hyphae matches
-the stonecutter recipes.
-
-When installed as a resource pack, Stonecutters are renamed to Saws if
-American English is the selected language in the options menu.
-If you would like to add
-support for renaming them in other languages, please create a Pull
-Request if you know how or
-https://github.com/DMBuce/bucepack/issues/new[open a new Issue]
-if you don't.
-
-Download:
-https://github.com/DMBuce/bucepack/releases[All Releases]
-
-Direct Link:
-https://github.com/DMBuce/bucepack/releases/latest/download/more_cutting.zip[`more_cutting.zip`]
-
-=== Eyes of Seeking
-
-Lets you use ender eyes to find End Cities and Bastion Remnants
-in addition to Strongholds.
-
-Download:
-https://github.com/DMBuce/bucepack/releases[All Releases]
-
-Direct Link:
-https://github.com/DMBuce/bucepack/releases/latest/download/eyes_of_seeking.zip[`eyes_of_seeking.zip`]
-
-=== Gardener Endermen
-
-Makes it so that endermen can't pick up blocks such as dirt and grass blocks,
-and can pick up more plants and fungi.
-
-All the blocks that endermen can pick up are listed
-https://raw.githubusercontent.com/DMBuce/bucepack/master/data/minecraft/tags/blocks/enderman_holdable.json[here].
-
-Download:
-https://github.com/DMBuce/bucepack/releases[All Releases]
-
-Direct Link:
-https://github.com/DMBuce/bucepack/releases/latest/download/gardener_endermen.zip[`gardener_endermen.zip`]
+These are simple yet powerful commandless data packs that work by modifying
+https://minecraft.fandom.com/wiki/Tag[tags]
+in the vanilla game.
+They shouldn't add any lag to your game.
 
 === Mineable
 
@@ -409,6 +361,153 @@ https://github.com/DMBuce/bucepack/releases[All Releases]
 
 Direct Link:
 https://github.com/DMBuce/bucepack/releases/latest/download/climbable.zip[`climbable.zip`]
+
+=== Dragonproof
+
+Makes the Enderdragon phase through all blocks found in the end. In addition
+to the magenta glass and banners found in End Cities, this pack makes other
+magenta blocks dragonproof as well.
+
+The additional dragonproofed blocks are listed
+https://raw.githubusercontent.com/DMBuce/bucepack/master/data/minecraft/tags/blocks/dragon_immune.json[here].
+Many of them are shown below.
+
+image::https://i.imgur.com/c7kQFcp.png[Dragonproof Blocks]
+
+Download:
+https://github.com/DMBuce/bucepack/releases[All Releases]
+
+Direct Link:
+https://github.com/DMBuce/bucepack/releases/latest/download/dragonproof.zip[`dragonproof.zip`]
+
+=== Gardener Endermen
+
+Makes it so that endermen can't pick up blocks such as dirt and grass blocks,
+and can pick up more plants and fungi.
+
+All the blocks that endermen can pick up are listed
+https://raw.githubusercontent.com/DMBuce/bucepack/master/data/minecraft/tags/blocks/enderman_holdable.json[here].
+
+Download:
+https://github.com/DMBuce/bucepack/releases[All Releases]
+
+Direct Link:
+https://github.com/DMBuce/bucepack/releases/latest/download/gardener_endermen.zip[`gardener_endermen.zip`]
+
+=== Eyes of Seeking
+
+Lets you use ender eyes to find End Cities and Bastion Remnants
+in addition to Strongholds.
+
+Download:
+https://github.com/DMBuce/bucepack/releases[All Releases]
+
+Direct Link:
+https://github.com/DMBuce/bucepack/releases/latest/download/eyes_of_seeking.zip[`eyes_of_seeking.zip`]
+
+=== Warmer Striders
+
+Makes more blocks warm enough to keep striders comfortable.
+
+image::https://i.imgur.com/FnDMksX.png[Warmer Striders]
+
+The full list of blocks that can warm striders is
+https://raw.githubusercontent.com/DMBuce/bucepack/master/data/minecraft/tags/blocks/strider_warm_blocks.json[here].
+
+Download:
+https://github.com/DMBuce/bucepack/releases[All Releases]
+
+Direct Link:
+https://github.com/DMBuce/bucepack/releases/latest/download/warmer_striders.zip[`warmer_striders.zip`]
+
+=== Aggro Bastions
+
+Makes piglins hostile when you break blocks that bastions are made out of.
+
+Download:
+https://github.com/DMBuce/bucepack/releases[All Releases]
+
+Direct Link:
+https://github.com/DMBuce/bucepack/releases/latest/download/aggro_bastions.zip[`aggro_bastions.zip`]
+
+=== Hover Mode
+
+Adds basic flight.
+Lets players walk on air by sneaking,
+ascend through air with the jump key,
+and slowly descend while falling.
+Basically, air is treated like vines and other climbable blocks.
+
+Best enjoyed in skyblock worlds such as <<dripblock,DripBlock>>.
+
+Download:
+https://github.com/DMBuce/bucepack/releases[All Releases]
+
+Direct Link:
+https://github.com/DMBuce/bucepack/releases/latest/download/hover_mode.zip[`hover_mode.zip`]
+
+=== Waterproof Tech
+
+Makes redstone components waterproof.
+
+image::https://i.imgur.com/mXfFuET.png[Waterproof Tech]
+
+Note that rails are waterloggable since 1.17 and are not made waterproof by
+this datapack. The image above is outdated.
+
+Download:
+https://github.com/DMBuce/bucepack/releases[All Releases]
+
+Direct Link:
+https://github.com/DMBuce/bucepack/releases/latest/download/waterproof_tech.zip[`waterproof_tech.zip`]
+
+=== Blue Fire
+
+Lets you use blue shiny rocks to make blue fire.
+
+image::https://i.imgur.com/paceJ4Z.png[Blue Fire]
+
+Download:
+https://github.com/DMBuce/bucepack/releases[All Releases]
+
+Direct Link:
+https://github.com/DMBuce/bucepack/releases/latest/download/blue_fire.zip[`blue_fire.zip`]
+
+== Recipe Data Packs
+
+These packs add or modify recipes in the vanilla game.
+They shouldn't add any lag to your game.
+
+=== More Cutting
+
+Lets you craft wood variants in the stonecutter. Turn logs into wood, strip
+them, craft them into planks, stairs, slabs, and sticks.
+
+Also lets you craft smooth and cracked stone variants in the stonecutter.
+
+image::https://i.imgur.com/vJddlZU.png[More Cutting]
+
+In addition, the crafting table output for stairs, wood, and hyphae matches
+the stonecutter recipes.
+
+When installed as a resource pack, Stonecutters are renamed to Saws if
+American English is the selected language in the options menu.
+If you would like to add
+support for renaming them in other languages, please create a Pull
+Request if you know how or
+https://github.com/DMBuce/bucepack/issues/new[open a new Issue]
+if you don't.
+
+Download:
+https://github.com/DMBuce/bucepack/releases[All Releases]
+
+Direct Link:
+https://github.com/DMBuce/bucepack/releases/latest/download/more_cutting.zip[`more_cutting.zip`]
+
+== Loot Data Packs
+
+These data packs work by modifying loot tables in the vanilla game.
+They shouldn't add any lag to your game.
 
 === Shearless
 
@@ -488,119 +587,23 @@ https://github.com/DMBuce/bucepack/releases[All Releases]
 Direct Link:
 https://github.com/DMBuce/bucepack/releases/latest/download/more_shulker_shells.zip[`more_shulker_shells.zip`]
 
-=== Waterproof Tech
+=== No Treasure Maps
 
-Makes redstone components waterproof.
+Removes buried treasure maps in shipwrecks. There is a
+1/3 chance for the map chest to have a barrel containing buried
+treasure loot instead.
 
-image::https://i.imgur.com/mXfFuET.png[Waterproof Tech]
-
-Note that rails are waterloggable since 1.17 and are not made waterproof by
-this datapack. The image above is outdated.
-
-Download:
-https://github.com/DMBuce/bucepack/releases[All Releases]
-
-Direct Link:
-https://github.com/DMBuce/bucepack/releases/latest/download/waterproof_tech.zip[`waterproof_tech.zip`]
-
-=== Blue Fire
-
-Lets you use blue shiny rocks to make blue fire.
-
-image::https://i.imgur.com/paceJ4Z.png[Blue Fire]
+This is a workaround for
+https://bugs.mojang.com/browse/MC-218156[MC-218156],
+which can affect challenge maps such as
+https://github.com/dmbuce/badlands-challenge#the-badlands-challenge[The Badlands Challenge]
+or even default worldgen.
 
 Download:
 https://github.com/DMBuce/bucepack/releases[All Releases]
 
 Direct Link:
-https://github.com/DMBuce/bucepack/releases/latest/download/blue_fire.zip[`blue_fire.zip`]
-
-== Gameplay Data Packs
-
-Data packs that open up new possibilities for things to do in the game.
-
-=== Breeding Overhaul
-
-Overhauls breeding mechanics for horses, donkeys, mules, llamas.
-
-In vanilla Minecraft, the traits of these animals (health for llamas; health,
-speed, and jump strength for the rest) are determined by taking the
-average of the parents and a randomly generated creature.
-
-In this datapack, for each trait there is a 25% chance to use the vanilla
-algorithm, a 50% chance to use one of the parents' trait (25% for each
-parent), and a 25% chance to use a randomly generated trait.
-
-In addition, when breeding hoglins,
-baby hoglins born in the Overworld are immune to zombification.
-
-Download:
-https://github.com/DMBuce/bucepack/releases[All Releases]
-
-Direct Link:
-https://github.com/DMBuce/bucepack/releases/latest/download/breeding_overhaul.zip[`breeding_overhaul.zip`]
-
-=== Dragonproof
-
-Makes the Enderdragon phase through all blocks found in the end. In addition
-to the magenta glass and banners found in End Cities, this pack makes other
-magenta blocks dragonproof as well.
-
-The additional dragonproofed blocks are listed
-https://raw.githubusercontent.com/DMBuce/bucepack/master/data/minecraft/tags/blocks/dragon_immune.json[here].
-Many of them are shown below.
-
-image::https://i.imgur.com/c7kQFcp.png[Dragonproof Blocks]
-
-Download:
-https://github.com/DMBuce/bucepack/releases[All Releases]
-
-Direct Link:
-https://github.com/DMBuce/bucepack/releases/latest/download/dragonproof.zip[`dragonproof.zip`]
-
-=== Antidote
-
-Makes more food negate potion effects
-the same way honey negates poison.
-
-.Click for a summary of negated potion effects
-[%collapsible]
-====
-* Apples negate nausea
-* Carrots negate blindness
-* Glow berries negate darkness
-* Dark berries negate glowing
-* Cake negates levitation
-* Pumpkin pie negates slow falling
-* Dried kelp negates dolphin's grace
-* Cookies negate slowness and resistance
-* Beetroot soup negates weakness
-* Mushroom stew negates bad omen, luck, and unluck
-* Rabbit stew negates mining fatigue
-* Melons negate withering
-====
-
-Download:
-https://github.com/DMBuce/bucepack/releases[All Releases]
-
-Direct Link:
-https://github.com/DMBuce/bucepack/releases/latest/download/antidote.zip[`antidote.zip`]
-
-=== Hover Mode
-
-Adds basic flight.
-Lets players walk on air by sneaking,
-ascend through air with the jump key,
-and slowly descend while falling.
-Basically, air is treated like vines and other climbable blocks.
-
-Best enjoyed in skyblock worlds such as <<dripblock,DripBlock>>.
-
-Download:
-https://github.com/DMBuce/bucepack/releases[All Releases]
-
-Direct Link:
-https://github.com/DMBuce/bucepack/releases/latest/download/hover_mode.zip[`hover_mode.zip`]
+https://github.com/DMBuce/bucepack/releases/latest/download/no_treasure_maps.zip[`no_treasure_maps.zip`]
 
 === Wandering Loot
 
@@ -948,6 +951,86 @@ https://github.com/DMBuce/bucepack/releases[All Releases]
 Direct Link:
 https://github.com/DMBuce/bucepack/releases/latest/download/loot_overhaul_barrel_of_treasure.zip[`loot_overhaul_barrel_of_treasure.zip`]
 
+== Trigger Data Packs
+
+These data packs include advancement triggers
+that run commands when certain conditions are met.
+
+=== Antidote
+
+Makes more food negate potion effects
+the same way honey negates poison.
+
+.Click for a summary of negated potion effects
+[%collapsible]
+====
+* Apples negate nausea
+* Carrots negate blindness
+* Glow berries negate darkness
+* Dark berries negate glowing
+* Cake negates levitation
+* Pumpkin pie negates slow falling
+* Dried kelp negates dolphin's grace
+* Cookies negate slowness and resistance
+* Beetroot soup negates weakness
+* Mushroom stew negates bad omen, luck, and unluck
+* Rabbit stew negates mining fatigue
+* Melons negate withering
+====
+
+Download:
+https://github.com/DMBuce/bucepack/releases[All Releases]
+
+Direct Link:
+https://github.com/DMBuce/bucepack/releases/latest/download/antidote.zip[`antidote.zip`]
+
+=== Global Effects
+
+Adjusts various game rules as players make progress in the world.
+
+Once any player enters the nether, all players stop healing from food.
+
+The first time the wither has been defeated,
+the rate of growth and decay for many natural processes is increased.
+Examples of such processes include
+plant growth, leaf decay, fire growth, and ice decay due to light.
+
+Once the dragon has been defeated,
+players stop losing their items when they die,
+and lose all experience when they die.
+The XP does not drop as orbs.
+
+If the warden is defeated, provoked neutral mobs become angrier.
+They will attack players other than the one who angered them
+and will continue to attack even if the player they're angry at is dead.
+
+Download:
+https://github.com/DMBuce/bucepack/releases[All Releases]
+
+Direct Link:
+https://github.com/DMBuce/bucepack/releases/latest/download/global_effects.zip[`global_effects.zip`]
+
+=== Breeding Overhaul
+
+Overhauls breeding mechanics for horses, donkeys, mules, llamas.
+
+In vanilla Minecraft, the traits of these animals (health for llamas; health,
+speed, and jump strength for the rest) are determined by taking the
+average of the parents and a randomly generated creature.
+
+In this datapack, for each trait there is a 25% chance to use the vanilla
+algorithm, a 50% chance to use one of the parents' trait (25% for each
+parent), and a 25% chance to use a randomly generated trait.
+
+In addition, when breeding hoglins,
+baby hoglins born in the Overworld are immune to zombification.
+
+Download:
+https://github.com/DMBuce/bucepack/releases[All Releases]
+
+Direct Link:
+https://github.com/DMBuce/bucepack/releases/latest/download/breeding_overhaul.zip[`breeding_overhaul.zip`]
+
 === Mythic Relics
 
 Adds <<Relics>> with <<mythic-enchantments,Mythic Enchantments>>
@@ -1223,57 +1306,6 @@ that prevents invisible armor stands from being broken.
 // just because mojang says it's a bug doesn't mean i have to agree with them
 // i think it's a bug
 
-=== Global Effects
-
-Adjusts various game rules as players make progress in the world.
-
-Once any player enters the nether, all players stop healing from food.
-
-The first time the wither has been defeated,
-the rate of growth and decay for many natural processes is increased.
-Examples of such processes include
-plant growth, leaf decay, fire growth, and ice decay due to light.
-
-Once the dragon has been defeated,
-players stop losing their items when they die,
-and lose all experience when they die.
-The XP does not drop as orbs.
-
-If the warden is defeated, provoked neutral mobs become angrier.
-They will attack players other than the one who angered them
-and will continue to attack even if the player they're angry at is dead.
-
-Download:
-https://github.com/DMBuce/bucepack/releases[All Releases]
-
-Direct Link:
-https://github.com/DMBuce/bucepack/releases/latest/download/global_effects.zip[`global_effects.zip`]
-
-=== Warmer Striders
-
-Makes more blocks warm enough to keep striders comfortable.
-
-image::https://i.imgur.com/FnDMksX.png[Warmer Striders]
-
-The full list of blocks that can warm striders is
-https://raw.githubusercontent.com/DMBuce/bucepack/master/data/minecraft/tags/blocks/strider_warm_blocks.json[here].
-
-Download:
-https://github.com/DMBuce/bucepack/releases[All Releases]
-
-Direct Link:
-https://github.com/DMBuce/bucepack/releases/latest/download/warmer_striders.zip[`warmer_striders.zip`]
-
-=== Aggro Bastions
-
-Makes piglins hostile when you break blocks that bastions are made out of.
-
-Download:
-https://github.com/DMBuce/bucepack/releases[All Releases]
-
-Direct Link:
-https://github.com/DMBuce/bucepack/releases/latest/download/aggro_bastions.zip[`aggro_bastions.zip`]
-
 == Data Resource Packs
 
 These packs can be installed as a resource pack, a data pack, or both.
@@ -1476,24 +1508,6 @@ https://github.com/DMBuce/bucepack/releases[All Releases]
 
 Direct Link:
 https://github.com/DMBuce/bucepack/releases/latest/download/escape_grind.zip[`escape_grind.zip`]
-
-=== No Treasure Maps
-
-Removes buried treasure maps in shipwrecks. There is a
-1/3 chance for the map chest to have a barrel containing buried
-treasure loot instead.
-
-This is a workaround for
-https://bugs.mojang.com/browse/MC-218156[MC-218156],
-which can affect challenge maps such as
-https://github.com/dmbuce/badlands-challenge#the-badlands-challenge[The Badlands Challenge]
-or even default worldgen.
-
-Download:
-https://github.com/DMBuce/bucepack/releases[All Releases]
-
-Direct Link:
-https://github.com/DMBuce/bucepack/releases/latest/download/no_treasure_maps.zip[`no_treasure_maps.zip`]
 
 == Legacy Data Packs
 
