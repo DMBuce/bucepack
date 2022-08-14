@@ -937,7 +937,7 @@ Removes buried treasure maps in shipwrecks. There is a
 treasure loot instead.
 
 This is a workaround for
-[MC-218156](https://bugs.mojang.com/browse/MC-218156),
+https://bugs.mojang.com/browse/MC-218156[MC-218156],
 which can affect challenge maps such as
 https://github.com/dmbuce/badlands-challenge#the-badlands-challenge[The Badlands Challenge]
 or even default worldgen.
@@ -1484,7 +1484,7 @@ Removes buried treasure maps in shipwrecks. There is a
 treasure loot instead.
 
 This is a workaround for
-[MC-218156](https://bugs.mojang.com/browse/MC-218156),
+https://bugs.mojang.com/browse/MC-218156[MC-218156],
 which can affect challenge maps such as
 https://github.com/dmbuce/badlands-challenge#the-badlands-challenge[The Badlands Challenge]
 or even default worldgen.
