@@ -454,14 +454,13 @@ global_effects_FILES := $(DEFAULT_DATA_FILES) \
 
 relic_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell find buce-data/relic -type f | ./bin/ext2dir) \
-	$(spellsmithing_guide_FILES) \
 	data/buce/loot_tables/relic/all.json \
+	#$(spellsmithing_guide_FILES) \
 
 loot_overhaul_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell find buce-data/loot_overhaul -type f | ./bin/ext2dir) \
 	$(shell find data/minecraft/loot_tables/orig/{chests,gameplay/{fishing,piglin_bartering.*}} -type f | sed 's|orig/||' | ./bin/ext2dir) \
 	$(wildcard data/minecraft/tags/worldgen/structure/on_*_maps.json) \
-	$(relic_FILES) \
 	data/minecraft/recipes/diamond_horse_armor.json \
 	data/minecraft/recipes/gold_horse_armor.json \
 	data/minecraft/recipes/iron_horse_armor.json \
@@ -470,6 +469,7 @@ loot_overhaul_FILES := $(DEFAULT_DATA_FILES) \
 	data/minecraft/recipes/saddle.json \
 	data/minecraft/tags/items/creeper_drop_music_discs.json \
 	data/minecraft/tags/items/starter_item.json \
+	#$(relic_FILES) \
 
 loot_overhaul_treasure_seeds_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell ls buce-data/loot_addons/loot_overhaul_treasure_seeds* | ./bin/ext2dir) \
