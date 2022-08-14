@@ -1066,7 +1066,7 @@ turns into a Killer Bunny. If killed with raw cod, the Killer
 Bunny drops a rabbit's foot with Myth of Bounding, a
 custom enchantment that can be applied to leather boots in the smithing
 table. When a player
-wearing the pants takes damage, eats a carrot, or eats rabbit, they gain
+wearing the boots falls 5 blocks, eats a carrot, or eats rabbit, they gain
 Speed II and Jump Boost II for 90 seconds.
 
 **Relic of Poles**: When an iron golem is killed by a charged creeper, it
