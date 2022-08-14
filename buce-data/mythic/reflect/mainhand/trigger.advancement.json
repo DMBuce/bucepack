@@ -21,7 +21,7 @@
 			"conditions": {
 				"player": {
 					"equipment": {
-						"offhand": {
+						"mainhand": {
 							"items": [ "minecraft:totem_of_undying" ],
 							"nbt": "{reflect:1b}"
 						}
@@ -80,6 +80,6 @@
 		]
 	],
 	"rewards": {
-		"function": "buce:mythic/reflect/offhand/activate"
+		"function": "buce:mythic/reflect/mainhand/activate"
 	}
 }

@@ -1017,12 +1017,19 @@ smithing table. A player can summon a thunderstorm with the trident by looking
 skyward for several seconds while holding right click.
 
 **Relic of Echoes**: If the <<loot-overhaul,Loot Overhaul>> datapack is
-installed before this one, echo shards in ancient city chests have Myth of
+installed before this one, some echo shards in ancient city chests have Myth of
 Reverberation, a custom enchantment that can be applied to a totem in the
 smithing table. When the totem is used, another totem from the player's
 inventory is placed in their hand if one is available, and it's given the same
 enchantments. Then, there's a chance that an echo shard is created from
 the totem's reverberations.
+
+**Relic of the Void**: If the <<loot-overhaul,Loot Overhaul>> datapack is
+installed before this one, some echo shards in ancient city chests have Myth of
+Reflection, a custom enchantment that can be applied to a totem in the
+smithing table. When a player holding the totem takes damage in the void,
+the totem activates and gives the player Levitation in addition to its other
+effects.
 
 **Relic of Disappearance**: If the <<Phantasmal>> datapack is installed before
 this one,
