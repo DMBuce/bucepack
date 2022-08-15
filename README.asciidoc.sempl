@@ -1111,8 +1111,7 @@ the totem's reverberations.
 installed before this one, some echo shards in ancient city chests have Myth of
 Reflection, a custom enchantment that can be applied to a totem in the
 smithing table. When a player holding the totem takes damage in the void,
-the totem activates and gives the player Levitation in addition to its other
-effects.
+the totem activates and the player bounces off the void.
 
 **Relic of Disappearance**: If the <<Phantasmal>> datapack is installed before
 this one,
