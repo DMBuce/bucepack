@@ -68,6 +68,7 @@ DATAPACKFILES = \
 	no_treasure_maps.zip \
 	phantasmal_end.zip \
 	phantasmal.zip \
+	crafting_loot.zip \
 	relics_mythic.zip \
 	shearless.zip \
 	smart_allays.zip \
@@ -458,6 +459,15 @@ relic_FILES := $(DEFAULT_DATA_FILES) \
 	data/buce/loot_tables/relic/all.json \
 	#$(spellsmithing_guide_FILES) \
 
+crafting_loot_FILES := $(DEFAULT_DATA_FILES) \
+	data/minecraft/recipes/diamond_horse_armor.json \
+	data/minecraft/recipes/gold_horse_armor.json \
+	data/minecraft/recipes/iron_horse_armor.json \
+	data/minecraft/recipes/leather_horse_armor.json \
+	data/minecraft/recipes/nametag.json \
+	data/minecraft/recipes/piglin_banner_pattern.json \
+	data/minecraft/recipes/saddle.json \
+
 loot_overhaul_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell find buce-data/loot_overhaul -type f | ./bin/ext2dir) \
 	$(shell find data/minecraft/loot_tables/orig/{chests,gameplay/{fishing,piglin_bartering.*}} -type f | sed 's|orig/||' | ./bin/ext2dir) \
@@ -465,6 +475,7 @@ loot_overhaul_FILES := $(DEFAULT_DATA_FILES) \
 	data/minecraft/recipes/diamond_horse_armor.json \
 	data/minecraft/recipes/gold_horse_armor.json \
 	data/minecraft/recipes/iron_horse_armor.json \
+	data/minecraft/recipes/leather_horse_armor.json \
 	data/minecraft/recipes/nametag.json \
 	data/minecraft/recipes/piglin_banner_pattern.json \
 	data/minecraft/recipes/saddle.json \
@@ -1146,6 +1157,12 @@ fortunate_crops.zip: $(fortunate_crops_FILES)
 	./bin/ziprename _$(@:.zip=) "" $@
 
 global_effects.zip: $(global_effects_FILES)
+	cp meta/$(@:.zip=.png) pack.png
+	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
+	zip $@ pack.png pack.mcmeta $^
+	./bin/ziprename _$(@:.zip=) "" $@
+
+crafting_loot.zip: $(crafting_loot_FILES)
 	cp meta/$(@:.zip=.png) pack.png
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^

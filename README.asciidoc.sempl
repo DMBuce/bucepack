@@ -478,6 +478,21 @@ https://github.com/DMBuce/bucepack/releases/latest/download/blue_fire.zip[`blue_
 These packs add or modify recipes in the vanilla game.
 They shouldn't add any lag to your game.
 
+=== Loot Crafting
+
+Adds recipes for uncraftable chest loot items:
+saddles, nametags, horse armor, and snout banner patterns.
+
+image::https://i.imgur.com/A6dYFhf.png[Recipes]
+
+The leather horse armor recipe is changed as well.
+
+Download:
+https://github.com/DMBuce/bucepack/releases[All Releases]
+
+Direct Link:
+https://github.com/DMBuce/bucepack/releases/latest/download/crafting_loot.zip[`crafting_loot.zip`]
+
 === More Cutting
 
 Lets you craft wood variants in the stonecutter. Turn logs into wood, strip
@@ -762,18 +777,13 @@ https://github.com/DMBuce/bucepack/releases/latest/download/heads_player.zip[`he
 Overhauls the vanilla loot tables to make early-to-midgame exploration more
 exciting. Many, though not all, of the loot changes are described below.
 
-Saddles, horse armor, nametags and leads are craftable and removed from the
-loot tables to make room for other loot. This is to avoid changing the rarity
-of some entries like ore ingots. Nearly all loot table entries added by this
-pack are replacements for the entries that it removes.
-
-//image::https://i.imgur.com/cSZtkTY.png[Saddle Recipe]
-//image::https://i.imgur.com/cMT90oB.png[Name Tags]
-//image::https://i.imgur.com/2rd1ZdZ.png[Iron Horse Armor]
-//image::https://i.imgur.com/A1nTNnK.png[Gold Horse Armor]
-//image::https://i.imgur.com/842M2eK.png[Diamond Horse Armor]
-//image::https://i.imgur.com/uKTapeF.png[Snout Banner Pattern]
-image::https://i.imgur.com/nJSQphs.png[Recipes]
+Saddles, nametags, horse armor, and snout banner patterns are craftable
+using the same recipes as the <<loot-crafting,Loot Crafting>> datapack.
+These items and leads are removed from the loot tables
+to make room for other loot.
+This is to avoid changing the rarity of some entries like ore ingots.
+Nearly all loot table entries added by this pack are replacements
+for the entries that it removes.
 
 Bonus spawn chests generate a more limited and curated set of starter items
 designed to jumpstart the tree-punching phase of a fresh world:

@@ -1,16 +1,16 @@
 {
   "type": "minecraft:crafting_shaped",
+  "key": {
+    "X": {
+      "item": "minecraft:leather"
+    }
+  },
   "pattern": [
     "  X",
     "XXX",
     "X X"
   ],
-  "key": {
-    "X": {
-      "item": "minecraft:iron_ingot"
-    }
-  },
   "result": {
-    "item": "minecraft:iron_horse_armor"
+    "item": "minecraft:leather_horse_armor"
   }
 }
