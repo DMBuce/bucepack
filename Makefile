@@ -70,6 +70,7 @@ DATAPACKFILES = \
 	phantasmal.zip \
 	relics_mythic.zip \
 	shearless.zip \
+	smart_allays.zip \
 	starter_bed.zip \
 	starter_bonus_chest.zip \
 	starter_book.zip \
@@ -577,6 +578,9 @@ dripblock_FILES := $(DEFAULT_DATA_FILES) \
 
 skybarrel_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell find buce-data/skybarrel -type f | ./bin/ext2dir) \
+
+smart_allays_FILES := $(DEFAULT_DATA_FILES) \
+	$(shell find buce-data/smart_allays -type f | ./bin/ext2dir) \
 
 shearless_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell ./bin/shearless-files) \
@@ -1244,6 +1248,12 @@ dripblock.zip: $(dripblock_FILES)
 	./bin/ziprename _$(@:.zip=) "" $@
 
 skybarrel.zip: $(skybarrel_FILES)
+	cp meta/$(@:.zip=.png) pack.png
+	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
+	zip $@ pack.png pack.mcmeta $^
+	./bin/ziprename _$(@:.zip=) "" $@
+
+smart_allays.zip: $(smart_allays_FILES)
 	cp meta/$(@:.zip=.png) pack.png
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^

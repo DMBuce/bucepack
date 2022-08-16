@@ -1,0 +1,22 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:cookie"
+		},
+		"title": {
+			"text": "Smart Allays"
+		},
+		"description": {
+			"text": "Bind allays to note blocks with shift-right-click"
+		},
+		"show_toast": false,
+		"announce_to_chat": false,
+		"frame": "task"
+	},
+	"parent": "buce:root",
+	"criteria": {
+		"tick": {
+			"trigger": "minecraft:tick"
+		}
+	}
+}

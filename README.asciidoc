@@ -1084,6 +1084,23 @@ https://github.com/DMBuce/bucepack/releases/latest/download/loot_overhaul_barrel
 These data packs include advancement triggers
 that run commands when certain conditions are met.
 
+=== Smart Allays
+
+When a player places a hopper against a note block,
+allays within 8 blocks of the player that are assigned to a note block
+become permanently assigned to their note block.
+
+To break an allay's assignment,
+you can break the note block,
+reassign it to its note block,
+or assign it to a new note block.
+
+Download:
+https://github.com/DMBuce/bucepack/releases[All Releases]
+
+Direct Link:
+https://github.com/DMBuce/bucepack/releases/latest/download/smart_allays.zip[`smart_allays.zip`]
+
 === Antidote
 
 Makes more food negate potion effects
