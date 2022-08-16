@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": [
+    { "item": "minecraft:crimson_button" },
+    { "item": "minecraft:crimson_door" },
+    { "item": "minecraft:crimson_fence_gate" },
+    { "item": "minecraft:crimson_fence" },
+    { "item": "minecraft:crimson_sign" },
+    { "item": "minecraft:crimson_slab" },
+    { "item": "minecraft:crimson_stairs" },
+    { "item": "minecraft:crimson_trapdoor" }
+  ],
+  "result": "minecraft:crimson_pressure_plate",
+  "count": 1
+}

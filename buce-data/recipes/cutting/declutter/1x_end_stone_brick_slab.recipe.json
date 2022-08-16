@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": [
+    { "item": "minecraft:end_stone_brick_stairs" },
+    { "item": "minecraft:end_stone_brick_wall" }
+  ],
+  "result": "minecraft:end_stone_brick_slab",
+  "count": 1
+}

@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": [
+    { "item": "minecraft:polished_blackstone_button" },
+    { "item": "minecraft:polished_blackstone_slab" },
+    { "item": "minecraft:polished_blackstone_stairs" },
+    { "item": "minecraft:polished_blackstone_wall" }
+  ],
+  "result": "minecraft:polished_blackstone_pressure_plate",
+  "count": 1
+}

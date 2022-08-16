@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": [
+    { "item": "minecraft:red_sandstone_slab" },
+    { "item": "minecraft:red_sandstone_stairs" }
+  ],
+  "result": "minecraft:red_sandstone_wall",
+  "count": 1
+}

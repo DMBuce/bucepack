@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": [
+    { "item": "minecraft:iron_door" }
+  ],
+  "result": "minecraft:iron_trapdoor",
+  "count": 1
+}

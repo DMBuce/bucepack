@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": [
+    { "item": "minecraft:stone_pressure_plate" },
+    { "item": "minecraft:stone_slab" },
+    { "item": "minecraft:stone_stairs" }
+  ],
+  "result": "minecraft:stone_button",
+  "count": 1
+}

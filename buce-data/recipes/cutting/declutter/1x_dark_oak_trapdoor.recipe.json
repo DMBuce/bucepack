@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": [
+    { "item": "minecraft:dark_oak_button" },
+    { "item": "minecraft:dark_oak_door" },
+    { "item": "minecraft:dark_oak_fence_gate" },
+    { "item": "minecraft:dark_oak_fence" },
+    { "item": "minecraft:dark_oak_pressure_plate" },
+    { "item": "minecraft:dark_oak_sign" },
+    { "item": "minecraft:dark_oak_slab" },
+    { "item": "minecraft:dark_oak_stairs" }
+  ],
+  "result": "minecraft:dark_oak_trapdoor",
+  "count": 1
+}

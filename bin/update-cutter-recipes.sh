@@ -198,3 +198,30 @@ do
 	fi
 done
 
+# generate oddball conversion recipes
+./bin/allblocks \
+	| sed -nE '/wall_sign$/d; s/_(slab|stairs|fence|fence_gate|wall|button|pressure_plate|door|trapdoor|sign)$//p' \
+	| sort -u \
+	| while read material
+do
+	blocks="$(./bin/allblocks | grep -x -e"${material}"_{slab,stairs,fence,fence_gate,wall,button,pressure_plate,door,trapdoor,sign})"
+	num=1
+	for output in $blocks; do
+		inputs="$(grep -vx "$output" <<< "$blocks")"
+		[[ -z "$inputs" ]] && break
+
+		export num output inputs
+		sempl - "$dir/declutter/${num}x_${output}.recipe.json" <<-EOF
+			{
+			  "type": "minecraft:stonecutting",
+			  "ingredient": [
+			    { "item": "minecraft:{!printf '%s\\n' \$inputs | head -n-1}" },
+			    { "item": "minecraft:{!printf '%s\\n' \$inputs | tail -n1}" }
+			  ],
+			  "result": "minecraft:$output",
+			  "count": $num
+			}
+		EOF
+	done
+done
+

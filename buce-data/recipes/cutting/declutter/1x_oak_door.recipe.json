@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": [
+    { "item": "minecraft:oak_button" },
+    { "item": "minecraft:oak_fence_gate" },
+    { "item": "minecraft:oak_fence" },
+    { "item": "minecraft:oak_pressure_plate" },
+    { "item": "minecraft:oak_sign" },
+    { "item": "minecraft:oak_slab" },
+    { "item": "minecraft:oak_stairs" },
+    { "item": "minecraft:oak_trapdoor" }
+  ],
+  "result": "minecraft:oak_door",
+  "count": 1
+}

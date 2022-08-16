@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": [
+    { "item": "minecraft:mud_brick_stairs" },
+    { "item": "minecraft:mud_brick_wall" }
+  ],
+  "result": "minecraft:mud_brick_slab",
+  "count": 1
+}
