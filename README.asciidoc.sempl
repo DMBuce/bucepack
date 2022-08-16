@@ -493,17 +493,41 @@ https://github.com/DMBuce/bucepack/releases[All Releases]
 Direct Link:
 https://github.com/DMBuce/bucepack/releases/latest/download/crafting_loot.zip[`crafting_loot.zip`]
 
-=== More Cutting
+=== Plentiful Crafting
+
+Makes some crafting recipes cheaper.
+
+.Click for a summary of recipes
+[%collapsible]
+====
+
+* 6 blocks => 6 stairs
+* 4 logs/stems => 4 wood/hyphae
+
+====
+
+Download:
+https://github.com/DMBuce/bucepack/releases[All Releases]
+
+Direct Link:
+https://github.com/DMBuce/bucepack/releases/latest/download/crafting_plentiful.zip[`crafting_plentiful.zip`]
+
+=== Smooth & Cracked Stonecutting
+
+Lets you craft smooth and cracked stone variants in the stonecutter.
+
+Download:
+https://github.com/DMBuce/bucepack/releases[All Releases]
+
+Direct Link:
+https://github.com/DMBuce/bucepack/releases/latest/download/cutting_smooth_cracked.zip[`cutting_smooth_cracked.zip`]
+
+=== Wood Stonecutting
 
 Lets you craft wood variants in the stonecutter. Turn logs into wood, strip
 them, craft them into planks, stairs, slabs, and sticks.
 
-Also lets you craft smooth and cracked stone variants in the stonecutter.
-
-image::https://i.imgur.com/vJddlZU.png[More Cutting]
-
-In addition, the crafting table output for stairs, wood, and hyphae matches
-the stonecutter recipes.
+image::https://i.imgur.com/vJddlZU.png[Wood Cutting]
 
 When installed as a resource pack, Stonecutters are renamed to Saws if
 American English is the selected language in the options menu.
@@ -517,7 +541,7 @@ Download:
 https://github.com/DMBuce/bucepack/releases[All Releases]
 
 Direct Link:
-https://github.com/DMBuce/bucepack/releases/latest/download/more_cutting.zip[`more_cutting.zip`]
+https://github.com/DMBuce/bucepack/releases/latest/download/cutting_wood.zip[`cutting_wood.zip`]
 
 == Loot Data Packs
 

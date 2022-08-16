@@ -3,6 +3,7 @@ DATARESOURCEPACKFILES = \
 	copper_pistons.zip \
 	copper_tech_more.zip \
 	copper_tech.zip \
+	cutting_wood.zip \
 	path_strider.zip \
 	pig_armor.zip \
 
@@ -22,8 +23,9 @@ RESOURCEPACKFILES = \
 	classic_rose.zip \
 	classic_sploosh.zip \
 	classic_twang.zip \
+	crafting_plentiful.zip \
+	cutting_smooth_cracked.zip \
 	discreet_pumpkin.zip \
-	more_cutting.zip \
 	note_guide.zip \
 	ore_types.zip \
 	painting_overhaul.zip \
@@ -63,7 +65,6 @@ DATAPACKFILES = \
 	wandering_loot.zip \
 	loot_overhaul.zip \
 	mineable.zip \
-	more_cutting.zip \
 	more_shulker_shells.zip \
 	no_treasure_maps.zip \
 	phantasmal_end.zip \
@@ -628,12 +629,18 @@ more_allays_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell find buce-data/more_allays -type f | ./bin/ext2dir) \
 	data/minecraft/tags/worldgen/structure/on_ancient_city_explorer_maps.json \
 
-more_cutting_FILES := $(DEFAULT_DATA_FILES) \
-	$(shell find buce-data/more_cutting -type f | ./bin/ext2dir) \
-	$(wildcard assets/minecraft/lang/*_more_cutting.json) \
+crafting_plentiful_FILES := $(DEFAULT_DATA_FILES) \
+	$(shell find buce-data/recipes/cutting/plentiful -type f | ./bin/ext2dir) \
 	$(wildcard data/minecraft/recipes/*_stairs.json) \
 	$(wildcard data/minecraft/recipes/*_wood.json) \
 	$(wildcard data/minecraft/recipes/*_hyphae.json) \
+
+cutting_smooth_cracked_FILES := $(DEFAULT_DATA_FILES) \
+	$(shell find buce-data/recipes/cutting/smooth_cracked -type f | ./bin/ext2dir) \
+
+cutting_wood_FILES := $(DEFAULT_DATA_FILES) \
+	$(shell find buce-data/recipes/cutting/wood -type f | ./bin/ext2dir) \
+	$(wildcard assets/minecraft/lang/*_cutting_wood.json) \
 
 copper_tech_more_FILES := $(DEFAULT_DATA_FILES) \
 	assets/minecraft/models/block/dispenser.json \
@@ -1162,7 +1169,25 @@ global_effects.zip: $(global_effects_FILES)
 	zip $@ pack.png pack.mcmeta $^
 	./bin/ziprename _$(@:.zip=) "" $@
 
+crafting_plentiful.zip: $(crafting_plentiful_FILES)
+	cp meta/$(@:.zip=.png) pack.png
+	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
+	zip $@ pack.png pack.mcmeta $^
+	./bin/ziprename _$(@:.zip=) "" $@
+
 crafting_loot.zip: $(crafting_loot_FILES)
+	cp meta/$(@:.zip=.png) pack.png
+	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
+	zip $@ pack.png pack.mcmeta $^
+	./bin/ziprename _$(@:.zip=) "" $@
+
+cutting_smooth_cracked.zip: $(cutting_smooth_cracked_FILES)
+	cp meta/$(@:.zip=.png) pack.png
+	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
+	zip $@ pack.png pack.mcmeta $^
+	./bin/ziprename _$(@:.zip=) "" $@
+
+cutting_wood.zip: $(cutting_wood_FILES)
 	cp meta/$(@:.zip=.png) pack.png
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^

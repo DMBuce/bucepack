@@ -6,7 +6,7 @@ cd "$gitroot"
 
 # define some data
 latest="$(./bin/latest)"
-dir="$gitroot/buce-data/more_cutting"
+dir="$gitroot/buce-data/recipes/cutting"
 logtypes=(
 	$(join -t _ \
 		<(./bin/allblocks | grep _log) \
@@ -44,7 +44,7 @@ for t in "${logtypes[@]}"; do
 	EOF
 	do
 		export num output inputs
-		sempl - "$dir/${output}_${num}.recipe.json" <<-EOF
+		sempl - "$dir/wood/${num}x_${output}.recipe.json" <<-EOF
 			{
 			  "type": "minecraft:stonecutting",
 			  "ingredient": [
@@ -72,7 +72,7 @@ for t in "${stemtypes[@]}"; do
 	EOF
 	do
 		export num output inputs
-		sempl - "$dir/${output}_${num}.recipe.json" <<-EOF
+		sempl - "$dir/wood/${num}x_${output}.recipe.json" <<-EOF
 			{
 			  "type": "minecraft:stonecutting",
 			  "ingredient": [
@@ -89,7 +89,7 @@ done
 # generate recipe for 2 sticks
 #export inputs="$(echo {oak,spruce,birch,jungle,acacia,dark_oak,crimson,warped}_planks)"
 export inputs="${logtypes[*]} ${stemtypes[*]}"
-sempl - "$dir/sticks_2.recipe.json" <<-EOF
+sempl - "$dir/wood/2x_sticks.recipe.json" <<-EOF
 	{
 	  "type": "minecraft:stonecutting",
 	  "ingredient": [
@@ -118,7 +118,7 @@ for t in "${stemtypes[@]}"; do
 	done
 done
 export inputs
-sempl - "$dir/sticks_8.recipe.json" <<-EOF
+sempl - "$dir/wood/8x_sticks.recipe.json" <<-EOF
 	{
 	  "type": "minecraft:stonecutting",
 	  "ingredient": [
@@ -144,7 +144,7 @@ do
 	fi
 
 	export num output inputs
-	sempl - "$dir/${output}_${num}.recipe.json" <<-EOF
+	sempl - "$dir/smooth_cracked/${num}x_${output}.recipe.json" <<-EOF
 		{
 		  "type": "minecraft:stonecutting",
 		  "ingredient": [
@@ -163,7 +163,7 @@ do
 	output="${output}_stairs"
 
 	export num output inputs
-	sempl - "$dir/${output}_${num}.recipe.json" <<-EOF
+	sempl - "$dir/smooth_cracked/${num}x_${output}.recipe.json" <<-EOF
 		{
 		  "type": "minecraft:stonecutting",
 		  "ingredient": [
@@ -184,7 +184,7 @@ do
 	output="${output}_slab"
 
 	export num output inputs
-	sempl - "$dir/${output}_${num}.recipe.json" <<-EOF
+	sempl - "$dir/smooth_cracked/${num}x_${output}.recipe.json" <<-EOF
 		{
 		  "type": "minecraft:stonecutting",
 		  "ingredient": [
