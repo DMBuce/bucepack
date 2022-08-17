@@ -512,7 +512,7 @@ https://github.com/DMBuce/bucepack/releases[All Releases]
 Direct Link:
 https://github.com/DMBuce/bucepack/releases/latest/download/crafting_plentiful.zip[`crafting_plentiful.zip`]
 
-=== Declutter Stonecutting
+=== Declutter Cutting
 
 Lets you use the stonecutter to convert oddball scraps of the same material
 into the same block so that they can be stacked together.
@@ -535,7 +535,7 @@ The following blocks can be freely crafted into each other.
 
 ====
 
-image::https://i.imgur.com/wTSA89p.png[Declutter Stonecutting]
+image::https://i.imgur.com/wTSA89p.png[Declutter Cutting]
 
 Download:
 https://github.com/DMBuce/bucepack/releases[All Releases]
@@ -543,11 +543,11 @@ https://github.com/DMBuce/bucepack/releases[All Releases]
 Direct Link:
 https://github.com/DMBuce/bucepack/releases/latest/download/cutting_declutter.zip[`cutting_declutter.zip`]
 
-=== Smooth & Cracked Stonecutting
+=== Smooth & Cracked Cutting
 
 Lets you craft smooth and cracked stone variants in the stonecutter.
 
-image::https://i.imgur.com/tJy4jop.png[Smooth & Cracked Stonecutting]
+image::https://i.imgur.com/tJy4jop.png[Smooth & Cracked Cutting]
 
 Download:
 https://github.com/DMBuce/bucepack/releases[All Releases]
@@ -555,7 +555,7 @@ https://github.com/DMBuce/bucepack/releases[All Releases]
 Direct Link:
 https://github.com/DMBuce/bucepack/releases/latest/download/cutting_smooth_cracked.zip[`cutting_smooth_cracked.zip`]
 
-=== Wood Stonecutting
+=== Wood Cutting
 
 Lets you craft wood variants in the stonecutter. Turn logs into wood, strip
 them, craft them into planks, stairs, slabs, and sticks.
