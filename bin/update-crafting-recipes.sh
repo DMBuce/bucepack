@@ -85,7 +85,7 @@ while read input output; do
 		}
 	EOF
 done <<< '
-	clay clay_block
+	clay clay_ball
 	glowstone glowstone_dust
 	magma_block magma_cream
 	prismarine prismarine_shard
