@@ -638,6 +638,12 @@ crafting_parity_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell find buce-data/recipes/crafting/parity -type f | ./bin/ext2dir) \
 	data/minecraft/recipes/*_bed.json \
 	data/minecraft/recipes/*_wool.json \
+	data/minecraft/recipes/*_candle.json \
+	data/minecraft/recipes/*_terracotta.json \
+	data/minecraft/recipes/*_stained_glass.json \
+	data/minecraft/recipes/*_glass_pane.json \
+	data/minecraft/tags/items/glass.json \
+	data/minecraft/tags/items/glass_panes.json \
 
 crafting_plentiful_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell find buce-data/recipes/crafting/plentiful -type f | ./bin/ext2dir) \

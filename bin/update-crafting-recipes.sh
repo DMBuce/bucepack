@@ -120,12 +120,37 @@ done <<< '
 # create recipes for dying any wool
 cp "$latest.jar"/data/minecraft/recipes/*_wool.json data/minecraft/recipes/
 sed -i '
-	/minecraft:white_wool/ s/.*/      "tag": "minecraft:wool"/
+	/minecraft:white_wool/ s/".*/"tag": "minecraft:wool"/
 ' data/minecraft/recipes/*_wool.json
 
 # create recipes for dying any bed
 cp "$latest.jar"/data/minecraft/recipes/*_bed_from_white_bed.json data/minecraft/recipes/
 sed -i '
-	/minecraft:white_bed/ s/.*/      "tag": "minecraft:beds"/
+	/minecraft:white_bed/ s/".*/"tag": "minecraft:beds"/
 ' data/minecraft/recipes/*_bed.json
+
+# create recipes for dying any candle
+cp "$latest.jar"/data/minecraft/recipes/*_candle.json data/minecraft/recipes/
+sed -i '
+	/minecraft:candle/ s/".*/"tag": "minecraft:candles"/
+' data/minecraft/recipes/*_candle.json
+
+# create recipes for dying any mixture of terracotta
+cp "$latest.jar"/data/minecraft/recipes/*_terracotta.json data/minecraft/recipes/
+rm data/minecraft/recipes/*_glazed_terracotta.json
+sed -i '
+	/minecraft:terracotta/ s/".*/"tag": "minecraft:terracotta"/
+' data/minecraft/recipes/*_terracotta.json
+
+# create recipes for dying any mixture of stained_glass
+cp "$latest.jar"/data/minecraft/recipes/*_stained_glass.json data/minecraft/recipes/
+sed -i '
+	/minecraft:glass/ s/".*/"tag": "minecraft:glass"/
+' data/minecraft/recipes/*_stained_glass.json
+
+# create recipes for dying any mixture of stained_glass_pane
+cp "$latest.jar"/data/minecraft/recipes/*_stained_glass_pane_from_glass_pane.json data/minecraft/recipes/
+sed -i '
+	/minecraft:glass_pane/ s/".*/"tag": "minecraft:glass_panes"/
+' data/minecraft/recipes/*_glass_pane.json
 
