@@ -640,14 +640,14 @@ crafting_plentiful_FILES := $(DEFAULT_DATA_FILES) \
 	data/minecraft/recipes/shield.json \
 	data/minecraft/recipes/stick_from_bamboo_item.json \
 
+crafting_split_FILES := $(DEFAULT_DATA_FILES) \
+	$(shell find buce-data/recipes/crafting/split -type f | ./bin/ext2dir) \
+
 cutting_declutter_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell find buce-data/recipes/cutting/declutter -type f | ./bin/ext2dir) \
 
 cutting_smooth_cracked_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell find buce-data/recipes/cutting/smooth_cracked -type f | ./bin/ext2dir) \
-
-crafting_split := $(DEFAULT_DATA_FILES) \
-	$(shell find buce-data/recipes/crafting/split -type f | ./bin/ext2dir) \
 
 cutting_wood_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell find buce-data/recipes/cutting/wood -type f | ./bin/ext2dir) \
