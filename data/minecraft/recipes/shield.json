@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "D": {
+      "tag": "buce:recipes/crafting/plentiful/solid_door"
+    },
+    ".": {
+      "item": "minecraft:iron_nugget"
+    }
+  },
+  "pattern": [
+    "...",
+    ".D.",
+    "..."
+  ],
+  "result": {
+    "item": "minecraft:shield"
+  }
+}

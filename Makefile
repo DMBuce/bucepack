@@ -635,6 +635,9 @@ crafting_plentiful_FILES := $(DEFAULT_DATA_FILES) \
 	$(wildcard data/minecraft/recipes/*_stairs.json) \
 	$(wildcard data/minecraft/recipes/*_wood.json) \
 	$(wildcard data/minecraft/recipes/*_hyphae.json) \
+	data/minecraft/recipes/hopper.json \
+	data/minecraft/recipes/shield.json \
+	data/minecraft/recipes/stick_from_bamboo_item.json \
 
 cutting_declutter_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell find buce-data/recipes/cutting/declutter -type f | ./bin/ext2dir) \
@@ -842,15 +845,7 @@ dlist:
 drlist:
 	@printf '%s\n' $(sort $(DATARESOURCEPACKFILES))
 
-data/minecraft/loot_tables/%.json: minecraft-data/%.loot_table.json
-	mkdir -p $(dir $@)
-	cp -v $< $@
-
 data/buce/loot_tables/%.json: buce-data/%.loot_table.json
-	mkdir -p $(dir $@)
-	cp -v $< $@
-
-data/minecraft/functions/%.mcfunction: minecraft-data/%.function.mcfunction
 	mkdir -p $(dir $@)
 	cp -v $< $@
 
@@ -858,15 +853,7 @@ data/buce/functions/%.mcfunction: buce-data/%.function.mcfunction
 	mkdir -p $(dir $@)
 	cp -v $< $@
 
-data/minecraft/advancements/%.json: minecraft-data/%.advancement.json
-	mkdir -p $(dir $@)
-	cp -v $< $@
-
 data/buce/advancements/%.json: buce-data/%.advancement.json
-	mkdir -p $(dir $@)
-	cp -v $< $@
-
-data/minecraft/predicates/%.json: minecraft-data/%.predicate.json
 	mkdir -p $(dir $@)
 	cp -v $< $@
 
@@ -874,15 +861,7 @@ data/buce/predicates/%.json: buce-data/%.predicate.json
 	mkdir -p $(dir $@)
 	cp -v $< $@
 
-data/minecraft/recipes/%.json: minecraft-data/%.recipe.json
-	mkdir -p $(dir $@)
-	cp -v $< $@
-
 data/buce/recipes/%.json: buce-data/%.recipe.json
-	mkdir -p $(dir $@)
-	cp -v $< $@
-
-data/minecraft/tags/blocks/%.json: minecraft-data/%.block.tag.json
 	mkdir -p $(dir $@)
 	cp -v $< $@
 
@@ -890,15 +869,7 @@ data/buce/tags/blocks/%.json: buce-data/%.block.tag.json
 	mkdir -p $(dir $@)
 	cp -v $< $@
 
-data/minecraft/tags/items/%.json: minecraft-data/%.item.tag.json
-	mkdir -p $(dir $@)
-	cp -v $< $@
-
 data/buce/tags/items/%.json: buce-data/%.item.tag.json
-	mkdir -p $(dir $@)
-	cp -v $< $@
-
-data/minecraft/tags/functions/%.json: minecraft-data/%.function.tag.json
 	mkdir -p $(dir $@)
 	cp -v $< $@
 
