@@ -34,13 +34,14 @@ done <<< '
 '
 
 # add 2x2 stairs recipes
-cp "$latest.jar"/data/minecraft/recipes/*_stairs.json buce-data/recipes/crafting/plentiful/
+cp "$latest.jar"/data/minecraft/recipes/*_stairs.json $dir/plentiful/
+rename .json .recipe.json $dir/plentiful/*_stairs.json
 sed -Ei '
 	s/"#  ",$/"# ",/
 	s/"## ",$/"##"/
 	/"###"/d
 	/"count":/ s/: [0-9]+,/: 3,/
-' buce-data/recipes/crafting/plentiful/*_stairs.json
+' $dir/plentiful/*_stairs.recipe.json
 
 # generate 3x3 uncrafting recipes
 while read input output; do
