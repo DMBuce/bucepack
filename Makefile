@@ -703,9 +703,9 @@ copper_tech_FILES := $(DEFAULT_DATA_FILES) \
 	assets/minecraft/textures/item/iron_door.png \
 	data/minecraft/recipes/detector_rail.json \
 	data/minecraft/recipes/iron_door.json \
-	data/minecraft/recipes/iron_trapdoor.json \
+	data/minecraft/recipes/iron_trapdoor_copper_tech.json \
 	data/minecraft/recipes/lever.json \
-	data/minecraft/recipes/light_weighted_pressure_plate.json \
+	data/minecraft/recipes/light_weighted_pressure_plate_copper_tech.json \
 	data/minecraft/recipes/polished_blackstone_button.json \
 	data/minecraft/recipes/powered_rail.json \
 	#assets/minecraft/textures/block/activator_rail_on.png \

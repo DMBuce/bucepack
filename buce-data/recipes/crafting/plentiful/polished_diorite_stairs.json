@@ -2,14 +2,15 @@
   "type": "minecraft:crafting_shaped",
   "key": {
     "#": {
-      "item": "minecraft:iron_ingot"
+      "item": "minecraft:polished_diorite"
     }
   },
   "pattern": [
-    "##",
+    "# ",
     "##"
   ],
   "result": {
-    "item": "minecraft:iron_trapdoor"
+    "count": 3,
+    "item": "minecraft:polished_diorite_stairs"
   }
 }

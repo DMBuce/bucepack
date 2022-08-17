@@ -1,14 +1,14 @@
 {
   "type": "minecraft:crafting_shaped",
-  "key": {
-    "#": {
-      "item": "minecraft:iron_ingot"
-    }
-  },
   "pattern": [
     "##",
     "##"
   ],
+  "key": {
+    "#": {
+      "item": "minecraft:copper_ingot"
+    }
+  },
   "result": {
     "item": "minecraft:iron_trapdoor"
   }

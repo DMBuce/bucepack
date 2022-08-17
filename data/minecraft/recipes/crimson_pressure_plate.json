@@ -1,8 +1,9 @@
 {
   "type": "minecraft:crafting_shaped",
+  "group": "wooden_pressure_plate",
   "key": {
     "#": {
-      "item": "minecraft:gold_ingot"
+      "item": "minecraft:crimson_planks"
     }
   },
   "pattern": [
@@ -10,6 +11,6 @@
   ],
   "result": {
     "count": 2,
-    "item": "minecraft:light_weighted_pressure_plate"
+    "item": "minecraft:crimson_pressure_plate"
   }
 }

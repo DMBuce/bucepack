@@ -6,10 +6,10 @@
     }
   },
   "pattern": [
-    "##",
     "##"
   ],
   "result": {
-    "item": "minecraft:iron_trapdoor"
+    "count": 2,
+    "item": "minecraft:heavy_weighted_pressure_plate"
   }
 }

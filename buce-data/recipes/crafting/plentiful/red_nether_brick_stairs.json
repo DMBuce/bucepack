@@ -2,14 +2,15 @@
   "type": "minecraft:crafting_shaped",
   "key": {
     "#": {
-      "item": "minecraft:iron_ingot"
+      "item": "minecraft:red_nether_bricks"
     }
   },
   "pattern": [
-    "##",
+    "# ",
     "##"
   ],
   "result": {
-    "item": "minecraft:iron_trapdoor"
+    "count": 3,
+    "item": "minecraft:red_nether_brick_stairs"
   }
 }

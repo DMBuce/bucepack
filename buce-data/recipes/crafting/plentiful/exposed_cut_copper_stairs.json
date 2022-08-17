@@ -2,14 +2,15 @@
   "type": "minecraft:crafting_shaped",
   "key": {
     "#": {
-      "item": "minecraft:iron_ingot"
+      "item": "minecraft:exposed_cut_copper"
     }
   },
   "pattern": [
-    "##",
+    "# ",
     "##"
   ],
   "result": {
-    "item": "minecraft:iron_trapdoor"
+    "count": 3,
+    "item": "minecraft:exposed_cut_copper_stairs"
   }
 }

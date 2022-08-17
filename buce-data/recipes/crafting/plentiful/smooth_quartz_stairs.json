@@ -2,14 +2,15 @@
   "type": "minecraft:crafting_shaped",
   "key": {
     "#": {
-      "item": "minecraft:iron_ingot"
+      "item": "minecraft:smooth_quartz"
     }
   },
   "pattern": [
-    "##",
+    "# ",
     "##"
   ],
   "result": {
-    "item": "minecraft:iron_trapdoor"
+    "count": 3,
+    "item": "minecraft:smooth_quartz_stairs"
   }
 }

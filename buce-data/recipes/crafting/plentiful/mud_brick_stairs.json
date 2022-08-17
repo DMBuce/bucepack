@@ -2,14 +2,15 @@
   "type": "minecraft:crafting_shaped",
   "key": {
     "#": {
-      "item": "minecraft:iron_ingot"
+      "item": "minecraft:mud_bricks"
     }
   },
   "pattern": [
-    "##",
+    "# ",
     "##"
   ],
   "result": {
-    "item": "minecraft:iron_trapdoor"
+    "count": 3,
+    "item": "minecraft:mud_brick_stairs"
   }
 }
