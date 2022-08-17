@@ -9,15 +9,15 @@ latest="$(./bin/latest)"
 dir="$gitroot/buce-data/recipes/cutting"
 logtypes=(
 	$(join -t _ \
-		<(./bin/allblocks | grep _log) \
-		<(./bin/allblocks | grep _planks) \
+		<(./bin/allitems | grep _log) \
+		<(./bin/allitems | grep _planks) \
 		| sed 's/_log.*_planks//'
 	)
 )
 stemtypes=(
 	$(join -t _ \
-		<(./bin/allblocks | grep _stem) \
-		<(./bin/allblocks | grep _planks) \
+		<(./bin/allitems | grep _stem) \
+		<(./bin/allitems | grep _planks) \
 		| sed 's/_stem.*_planks//'
 	)
 )
@@ -123,7 +123,7 @@ sempl - "$dir/wood/8x_sticks.recipe.json" <<-EOF
 EOF
 
 # generate smooth/cracked recipes
-./bin/allblocks \
+./bin/allitems \
 	| grep -e^{smooth,cracked}_ \
 	| grep -v -e_{slab,stairs}$ \
 	| while read output
@@ -191,12 +191,12 @@ do
 done
 
 # generate oddball conversion recipes
-./bin/allblocks \
+./bin/allitems \
 	| sed -nE '/wall_sign$/d; s/_(slab|stairs|fence|fence_gate|wall|button|pressure_plate|door|trapdoor|sign)$//p' \
 	| sort -u \
 	| while read material
 do
-	blocks="$(./bin/allblocks | grep -x -e"${material}"_{slab,stairs,fence,fence_gate,wall,button,pressure_plate,door,trapdoor,sign})"
+	blocks="$(./bin/allitems | grep -x -e"${material}"_{slab,stairs,fence,fence_gate,wall,button,pressure_plate,door,trapdoor,sign})"
 	num=1
 	for output in $blocks; do
 		inputs="$(grep -vx "$output" <<< "$blocks")"
