@@ -40,6 +40,7 @@ DATAPACKFILES = \
 	breeding_overhaul.zip \
 	climbable.zip \
 	crafting_loot.zip \
+	crafting_parity.zip \
 	crafting_plentiful.zip \
 	crafting_split.zip \
 	crafting_turtle_box.zip \
@@ -633,6 +634,11 @@ more_allays_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell find buce-data/more_allays -type f | ./bin/ext2dir) \
 	data/minecraft/tags/worldgen/structure/on_ancient_city_explorer_maps.json \
 
+crafting_parity_FILES := $(DEFAULT_DATA_FILES) \
+	$(shell find buce-data/recipes/crafting/parity -type f | ./bin/ext2dir) \
+	data/minecraft/recipes/*_bed.json \
+	data/minecraft/recipes/*_wool.json \
+
 crafting_plentiful_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell find buce-data/recipes/crafting/plentiful -type f | ./bin/ext2dir) \
 	$(wildcard data/minecraft/recipes/*_stairs.json) \
@@ -1166,6 +1172,12 @@ global_effects.zip: $(global_effects_FILES)
 	./bin/ziprename _$(@:.zip=) "" $@
 
 crafting_loot.zip: $(crafting_loot_FILES)
+	cp meta/$(@:.zip=.png) pack.png
+	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
+	zip $@ pack.png pack.mcmeta $^
+	./bin/ziprename _$(@:.zip=) "" $@
+
+crafting_parity.zip: $(crafting_parity_FILES)
 	cp meta/$(@:.zip=.png) pack.png
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^

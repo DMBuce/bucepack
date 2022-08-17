@@ -117,3 +117,15 @@ done <<< '
 	book paper
 '
 
+# create recipes for dying any wool
+cp "$latest.jar"/data/minecraft/recipes/*_wool.json data/minecraft/recipes/
+sed -i '
+	/minecraft:white_wool/ s/.*/      "tag": "minecraft:wool"/
+' data/minecraft/recipes/*_wool.json
+
+# create recipes for dying any bed
+cp "$latest.jar"/data/minecraft/recipes/*_bed_from_white_bed.json data/minecraft/recipes/
+sed -i '
+	/minecraft:white_bed/ s/.*/      "tag": "minecraft:beds"/
+' data/minecraft/recipes/*_bed.json
+
