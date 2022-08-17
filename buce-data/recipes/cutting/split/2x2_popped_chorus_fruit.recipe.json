@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:purpur_block"
+    }
+  ],
+  "result": {
+    "count": 4,
+    "item": "minecraft:popped_chorus_fruit"
+  }
+}
