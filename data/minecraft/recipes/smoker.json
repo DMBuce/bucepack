@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "+": {
+      "tag": "minecraft:logs"
+    },
+    "#": {
+      "tag": "minecraft:stone_crafting_materials"
+    },
+    "X": {
+      "item": "minecraft:furnace"
+    }
+  },
+  "pattern": [
+    "+#+",
+    "#X#",
+    "+#+"
+  ],
+  "result": {
+    "item": "minecraft:smoker"
+  }
+}

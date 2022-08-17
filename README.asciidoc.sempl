@@ -549,6 +549,25 @@ https://github.com/DMBuce/bucepack/releases[All Releases]
 Direct Link:
 https://github.com/DMBuce/bucepack/releases/latest/download/cutting_split.zip[`cutting_split.zip`]
 
+=== Workstation Crafting
+
+Provides alternative recipes for workstations.
+The fletching table, cartography table, and smithing table
+have loom-like 2x2 recipes.
+Stone and smoothstone are interchangeable in the
+grindstone, stonecutter, and blast furnace recipes.
+The barrel recipe uses slabs in place of planks.
+Smoker recipes use cobblestone in addition to logs.
+Lecterns use two extra slabs.
+
+image::https://i.imgur.com/PSSyLL4.png[Workstation Crafting]
+
+Download:
+https://github.com/DMBuce/bucepack/releases[All Releases]
+
+Direct Link:
+https://github.com/DMBuce/bucepack/releases/latest/download/crafting_workstation.zip[`crafting_workstation.zip`]
+
 === Declutter Cutting
 
 Lets you use the stonecutter to convert oddball scraps of the same material

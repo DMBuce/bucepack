@@ -39,8 +39,10 @@ DATAPACKFILES = \
 	blue_fire.zip \
 	breeding_overhaul.zip \
 	climbable.zip \
+	crafting_loot.zip \
 	crafting_plentiful.zip \
 	crafting_split.zip \
+	crafting_workstation.zip \
 	cutting_declutter.zip \
 	cutting_smooth_cracked.zip \
 	dragonproof.zip \
@@ -71,7 +73,6 @@ DATAPACKFILES = \
 	no_treasure_maps.zip \
 	phantasmal_end.zip \
 	phantasmal.zip \
-	crafting_loot.zip \
 	relics_mythic.zip \
 	shearless.zip \
 	smart_allays.zip \
@@ -643,6 +644,18 @@ crafting_plentiful_FILES := $(DEFAULT_DATA_FILES) \
 crafting_split_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell find buce-data/recipes/crafting/split -type f | ./bin/ext2dir) \
 
+crafting_workstation_FILES := $(DEFAULT_DATA_FILES) \
+	$(shell find buce-data/recipes/crafting/workstation -type f | ./bin/ext2dir) \
+	data/minecraft/recipes/barrel.json \
+	data/minecraft/recipes/blast_furnace.json \
+	data/minecraft/recipes/cartography_table.json \
+	data/minecraft/recipes/fletching_table.json \
+	data/minecraft/recipes/grindstone.json \
+	data/minecraft/recipes/lectern.json \
+	data/minecraft/recipes/smithing_table.json \
+	data/minecraft/recipes/smoker.json \
+	data/minecraft/recipes/stonecutter.json \
+
 cutting_declutter_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell find buce-data/recipes/cutting/declutter -type f | ./bin/ext2dir) \
 
@@ -1148,13 +1161,19 @@ global_effects.zip: $(global_effects_FILES)
 	zip $@ pack.png pack.mcmeta $^
 	./bin/ziprename _$(@:.zip=) "" $@
 
+crafting_loot.zip: $(crafting_loot_FILES)
+	cp meta/$(@:.zip=.png) pack.png
+	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
+	zip $@ pack.png pack.mcmeta $^
+	./bin/ziprename _$(@:.zip=) "" $@
+
 crafting_plentiful.zip: $(crafting_plentiful_FILES)
 	cp meta/$(@:.zip=.png) pack.png
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^
 	./bin/ziprename _$(@:.zip=) "" $@
 
-crafting_loot.zip: $(crafting_loot_FILES)
+crafting_workstation.zip: $(crafting_workstation_FILES)
 	cp meta/$(@:.zip=.png) pack.png
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^
