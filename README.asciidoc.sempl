@@ -495,17 +495,23 @@ https://github.com/DMBuce/bucepack/releases/latest/download/crafting_loot.zip[`c
 
 === Plentiful Crafting
 
-Makes some crafting recipes cheaper.
+Makes the following crafting recipes cheaper.
 
 .Click for a summary of recipes
 [%collapsible]
 ====
 
-* 6 blocks => 6 stairs
-* 4 logs/stems => 4 wood/hyphae
-* chest + 3 iron => hopper
-* 1 bamboo > 1 stick
-* solid door + 8 iron nuggets => shield
+* Stairs
+* Fences
+* Gates
+* Pressure Plates
+* Signs
+* Trapdoors
+* Wood
+* Hyphae
+* Hoppers
+* Shields
+* Sticks crafted from bamboo
 
 ====
 
@@ -557,6 +563,34 @@ https://github.com/DMBuce/bucepack/releases[All Releases]
 
 Direct Link:
 https://github.com/DMBuce/bucepack/releases/latest/download/cutting_smooth_cracked.zip[`cutting_smooth_cracked.zip`]
+
+=== Split Crafting
+
+Lets you uncraft the following blocks so that they can be used as convenient
+storage.
+
+.Click for a summary of recipes
+[%collapsible]
+====
+
+* Blue & Packed Ice
+* Prismarine Bricks & Blocks
+* Melons
+* Clay
+* Glowstone
+* Magma
+* Purpur
+* Sandstone & Red Sandstone
+* Snow
+* Books & Bookshelves
+
+====
+
+Download:
+https://github.com/DMBuce/bucepack/releases[All Releases]
+
+Direct Link:
+https://github.com/DMBuce/bucepack/releases/latest/download/cutting_split.zip[`cutting_split.zip`]
 
 === Wood Cutting
 

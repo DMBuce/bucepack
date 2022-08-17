@@ -40,8 +40,9 @@ DATAPACKFILES = \
 	breeding_overhaul.zip \
 	climbable.zip \
 	crafting_plentiful.zip \
-	cutting_smooth_cracked.zip \
+	crafting_split.zip \
 	cutting_declutter.zip \
+	cutting_smooth_cracked.zip \
 	dragonproof.zip \
 	dripblock.zip \
 	heads_fae.zip \
@@ -645,6 +646,9 @@ cutting_declutter_FILES := $(DEFAULT_DATA_FILES) \
 cutting_smooth_cracked_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell find buce-data/recipes/cutting/smooth_cracked -type f | ./bin/ext2dir) \
 
+crafting_split := $(DEFAULT_DATA_FILES) \
+	$(shell find buce-data/recipes/crafting/split -type f | ./bin/ext2dir) \
+
 cutting_wood_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell find buce-data/recipes/cutting/wood -type f | ./bin/ext2dir) \
 	$(wildcard assets/minecraft/lang/*_cutting_wood.json) \
@@ -1163,6 +1167,12 @@ cutting_declutter.zip: $(cutting_declutter_FILES)
 	./bin/ziprename _$(@:.zip=) "" $@
 
 cutting_smooth_cracked.zip: $(cutting_smooth_cracked_FILES)
+	cp meta/$(@:.zip=.png) pack.png
+	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
+	zip $@ pack.png pack.mcmeta $^
+	./bin/ziprename _$(@:.zip=) "" $@
+
+crafting_split.zip: $(crafting_split_FILES)
 	cp meta/$(@:.zip=.png) pack.png
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^
