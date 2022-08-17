@@ -22,14 +22,6 @@ stemtypes=(
 	)
 )
 
-# override stair, wood, hyphae recipes
-cp "$latest.jar"/data/minecraft/recipes/*_stairs.json data/minecraft/recipes/
-sed -i '/"count":/ s/: 4/: 6/' data/minecraft/recipes/*_stairs.json
-cp "$latest.jar"/data/minecraft/recipes/*_wood.json data/minecraft/recipes/
-sed -i '/"count":/ s/: 3/: 4/' data/minecraft/recipes/*_wood.json
-cp "$latest.jar"/data/minecraft/recipes/*_hyphae.json data/minecraft/recipes/
-sed -i '/"count":/ s/: 3/: 4/' data/minecraft/recipes/*_hyphae.json
-
 # generate wood recipes
 for t in "${logtypes[@]}"; do
 	cat <<-EOF | while read num output inputs
