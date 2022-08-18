@@ -2,25 +2,22 @@
   "type": "minecraft:crafting_shaped",
   "key": {
     "#": {
-      "item": "minecraft:stone_pressure_plate"
+      "item": "minecraft:redstone_torch"
     },
     "S": {
       "item": "minecraft:stick"
-    },
-    "R": {
-      "item": "minecraft:redstone"
     },
     "X": {
       "item": "minecraft:iron_ingot"
     }
   },
   "pattern": [
-    "X#X",
+    "X X",
     "XSX",
-    "XRX"
+    "X#X"
   ],
   "result": {
     "count": 6,
-    "item": "minecraft:detector_rail"
+    "item": "minecraft:activator_rail"
   }
 }

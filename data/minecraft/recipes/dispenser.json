@@ -1,24 +1,21 @@
 {
   "type": "minecraft:crafting_shaped",
-  "pattern": [
-    "###",
-    "#X#",
-    "CRC"
-  ],
   "key": {
+    "#": {
+      "item": "minecraft:cobblestone"
+    },
     "R": {
       "item": "minecraft:redstone"
     },
-    "C": {
-      "item": "minecraft:copper_ingot"
-    },
-    "#": {
-      "tag": "minecraft:planks"
-    },
     "X": {
-      "item": "minecraft:bow"
+      "item": "minecraft:tripwire_hook"
     }
   },
+  "pattern": [
+    "###",
+    "#X#",
+    "#R#"
+  ],
   "result": {
     "item": "minecraft:dispenser"
   }

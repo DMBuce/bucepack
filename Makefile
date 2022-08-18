@@ -42,6 +42,7 @@ DATAPACKFILES = \
 	crafting_loot.zip \
 	crafting_parity.zip \
 	crafting_plentiful.zip \
+	crafting_redstone.zip \
 	crafting_split.zip \
 	crafting_turtle_box.zip \
 	crafting_workstation.zip \
@@ -654,6 +655,11 @@ crafting_plentiful_FILES := $(DEFAULT_DATA_FILES) \
 	data/minecraft/recipes/shield.json \
 	data/minecraft/recipes/stick_from_bamboo_item.json \
 
+crafting_redstone_FILES := $(DEFAULT_DATA_FILES) \
+	data/minecraft/recipes/activator_rail.json \
+	data/minecraft/recipes/detector_rail.json \
+	data/minecraft/recipes/dispenser.json \
+
 crafting_turtle_box_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell find buce-data/recipes/crafting/turtle -type f | ./bin/ext2dir) \
 
@@ -701,9 +707,9 @@ copper_tech_more_FILES := $(DEFAULT_DATA_FILES) \
 	assets/minecraft/textures/block/observer_side_on_copper.png \
 	assets/minecraft/textures/block/observer_side_copper.png \
 	assets/minecraft/textures/block/observer_top_copper.png \
-	data/minecraft/recipes/dispenser.json \
+	data/minecraft/recipes/dispenser_copper_tech_more.json \
 	data/minecraft/recipes/dropper.json \
-	data/minecraft/recipes/observer.json \
+	data/minecraft/recipes/observer_copper_tech_more.json \
 
 copper_pistons_FILES := $(DEFAULT_DATA_FILES) \
 	assets/minecraft/models/block/piston_head_short_sticky.json \
@@ -734,7 +740,7 @@ copper_tech_FILES := $(DEFAULT_DATA_FILES) \
 	assets/minecraft/textures/block/powered_rail_on.png \
 	assets/minecraft/textures/block/powered_rail.png \
 	assets/minecraft/textures/item/iron_door.png \
-	data/minecraft/recipes/detector_rail.json \
+	data/minecraft/recipes/detector_rail_copper_tech.json \
 	data/minecraft/recipes/iron_door.json \
 	data/minecraft/recipes/iron_trapdoor_copper_tech.json \
 	data/minecraft/recipes/lever.json \
@@ -1190,6 +1196,12 @@ crafting_parity.zip: $(crafting_parity_FILES)
 	./bin/ziprename _$(@:.zip=) "" $@
 
 crafting_plentiful.zip: $(crafting_plentiful_FILES)
+	cp meta/$(@:.zip=.png) pack.png
+	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
+	zip $@ pack.png pack.mcmeta $^
+	./bin/ziprename _$(@:.zip=) "" $@
+
+crafting_redstone.zip: $(crafting_redstone_FILES)
 	cp meta/$(@:.zip=.png) pack.png
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^
