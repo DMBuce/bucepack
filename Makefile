@@ -42,7 +42,6 @@ DATAPACKFILES = \
 	crafting_loot.zip \
 	crafting_parity.zip \
 	crafting_plentiful.zip \
-	crafting_redstone.zip \
 	crafting_split.zip \
 	crafting_turtle_box.zip \
 	crafting_workstation.zip \

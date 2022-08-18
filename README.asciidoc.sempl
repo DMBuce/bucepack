@@ -532,18 +532,6 @@ https://github.com/DMBuce/bucepack/releases[All Releases]
 Direct Link:
 https://github.com/DMBuce/bucepack/releases/latest/download/crafting_plentiful.zip[`crafting_plentiful.zip`]
 
-=== Redstone Crafting
-
-Changes the recipes of some redstone components.
-Dispensers use tripwire hooks instead of bows,
-and the recipes for activator & detector rails have a stick in the middle.
-
-Download:
-https://github.com/DMBuce/bucepack/releases[All Releases]
-
-Direct Link:
-https://github.com/DMBuce/bucepack/releases/latest/download/crafting_plentiful.zip[`crafting_plentiful.zip`]
-
 === Split Crafting
 
 Lets you uncraft the following blocks so that they can be used as convenient
