@@ -646,6 +646,11 @@ crafting_parity_FILES := $(DEFAULT_DATA_FILES) \
 crafting_plentiful_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell find buce-data/recipes/crafting/plentiful -type f | ./bin/ext2dir) \
 	$(wildcard data/minecraft/recipes/*_stairs.json) \
+	$(wildcard data/minecraft/recipes/*_fence.json) \
+	$(wildcard data/minecraft/recipes/*_fence_gate.json) \
+	$(wildcard data/minecraft/recipes/*_pressure_plate.json) \
+	$(wildcard data/minecraft/recipes/*_sign.json) \
+	$(wildcard data/minecraft/recipes/*_trapdoor.json) \
 	$(wildcard data/minecraft/recipes/*_wood.json) \
 	$(wildcard data/minecraft/recipes/*_hyphae.json) \
 	data/minecraft/recipes/hopper.json \
@@ -708,8 +713,8 @@ copper_overhaul_FILES := $(DEFAULT_DATA_FILES) \
 	data/minecraft/recipes/detector_rail.json \
 	data/minecraft/recipes/dispenser.json \
 	data/minecraft/recipes/iron_door.json \
-	data/minecraft/recipes/iron_trapdoor.json \
-	data/minecraft/recipes/light_weighted_pressure_plate.json \
+	data/minecraft/recipes/iron_trapdoor_copper_overhaul.json \
+	data/minecraft/recipes/light_weighted_pressure_plate_copper_overhaul.json \
 	data/minecraft/recipes/polished_blackstone_button.json \
 	data/minecraft/recipes/stone_axe.json \
 	data/minecraft/recipes/stone_hoe.json \

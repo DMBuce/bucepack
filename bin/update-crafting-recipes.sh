@@ -12,7 +12,6 @@ dir="$gitroot/buce-data/recipes/crafting"
 while read block count; do
 	[[ -z "$block$count" ]] && continue
 	cp "$latest.jar"/data/minecraft/recipes/*_$block.json data/minecraft/recipes/
-	[[ "$block" == trapdoor ]] && git checkout data/minecraft/recipes/iron_trapdoor.json
 
 	if egrep -q '"count":' data/minecraft/recipes/*_$block.json; then
 		sed -Ei "
@@ -33,6 +32,11 @@ done <<< '
 	wood           4
 	hyphae         4
 '
+
+# remove some files
+rm data/minecraft/recipes/iron_trapdoor.json
+rm data/minecraft/recipes/light_weighted_pressure_plate.json
+rm data/minecraft/recipes/heavy_weighted_pressure_plate.json
 
 # add 2x2 stairs recipes
 cp "$latest.jar"/data/minecraft/recipes/*_stairs.json $dir/plentiful/
