@@ -1,8 +1,6 @@
 
 DATARESOURCEPACKFILES = \
-	copper_pistons.zip \
-	copper_tech_more.zip \
-	copper_tech.zip \
+	copper_overhaul.zip \
 	cutting_wood.zip \
 	path_strider.zip \
 	pig_armor.zip \
@@ -654,11 +652,6 @@ crafting_plentiful_FILES := $(DEFAULT_DATA_FILES) \
 	data/minecraft/recipes/shield.json \
 	data/minecraft/recipes/stick_from_bamboo_item.json \
 
-crafting_redstone_FILES := $(DEFAULT_DATA_FILES) \
-	data/minecraft/recipes/activator_rail.json \
-	data/minecraft/recipes/detector_rail.json \
-	data/minecraft/recipes/dispenser.json \
-
 crafting_turtle_box_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell find buce-data/recipes/crafting/turtle -type f | ./bin/ext2dir) \
 
@@ -686,6 +679,45 @@ cutting_smooth_cracked_FILES := $(DEFAULT_DATA_FILES) \
 cutting_wood_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell find buce-data/recipes/cutting/wood -type f | ./bin/ext2dir) \
 	$(wildcard assets/minecraft/lang/*_cutting_wood.json) \
+
+copper_overhaul_FILES := $(DEFAULT_DATA_FILES) \
+	$(wildcard assets/minecraft/models/item/stone_*.json) \
+	$(wildcard assets/minecraft/models/item/wooden_*.json) \
+	$(wildcard assets/minecraft/textures/item/chainmail_*.png) \
+	$(wildcard assets/minecraft/textures/item/copper_*.png) \
+	$(wildcard assets/minecraft/textures/item/iron_*.png) \
+	$(wildcard assets/minecraft/textures/models/armor/chainmail_*.png) \
+	$(wildcard assets/minecraft/textures/models/armor/iron_*.png) \
+	$(wildcard data/minecraft/recipes/copper_*.json) \
+	$(wildcard data/minecraft/recipes/wooden_*.json) \
+	$(wildcard data/minecraft/tags/items/stone_*_materials.json) \
+	assets/minecraft/lang/en_us_copper_overhaul.json \
+	assets/minecraft/models/block/light_weighted_pressure_plate_down.json \
+	assets/minecraft/models/block/light_weighted_pressure_plate.json \
+	assets/minecraft/models/block/polished_blackstone_button_inventory.json \
+	assets/minecraft/models/block/polished_blackstone_button.json \
+	assets/minecraft/models/block/polished_blackstone_button_pressed.json \
+	assets/minecraft/textures/block/detector_rail_on.png \
+	assets/minecraft/textures/block/detector_rail.png \
+	assets/minecraft/textures/block/iron_door_bottom.png \
+	assets/minecraft/textures/block/iron_door_top.png \
+	assets/minecraft/textures/block/iron_trapdoor.png \
+	assets/minecraft/textures/block/tripwire_hook.png \
+	assets/minecraft/textures/item/iron_door.png \
+	data/minecraft/recipes/activator_rail.json \
+	data/minecraft/recipes/detector_rail.json \
+	data/minecraft/recipes/dispenser.json \
+	data/minecraft/recipes/iron_door.json \
+	data/minecraft/recipes/iron_trapdoor.json \
+	data/minecraft/recipes/light_weighted_pressure_plate.json \
+	data/minecraft/recipes/polished_blackstone_button.json \
+	data/minecraft/recipes/stone_axe.json \
+	data/minecraft/recipes/stone_hoe.json \
+	data/minecraft/recipes/stone_pickaxe.json \
+	data/minecraft/recipes/stone_shovel.json \
+	data/minecraft/recipes/stone_sword.json \
+	data/minecraft/recipes/tripwire_hook.json \
+	data/minecraft/tags/blocks/needs_stone_tool.json \
 
 copper_tech_more_FILES := $(DEFAULT_DATA_FILES) \
 	assets/minecraft/models/block/dispenser.json \
@@ -725,26 +757,10 @@ copper_tech_FILES := $(DEFAULT_DATA_FILES) \
 	$(wildcard assets/minecraft/lang/*_copper_tech.json) \
 	assets/minecraft/models/block/lever.json \
 	assets/minecraft/models/block/lever_on.json \
-	assets/minecraft/models/block/light_weighted_pressure_plate_down.json \
-	assets/minecraft/models/block/light_weighted_pressure_plate.json \
-	assets/minecraft/models/block/polished_blackstone_button_inventory.json \
-	assets/minecraft/models/block/polished_blackstone_button.json \
-	assets/minecraft/models/block/polished_blackstone_button_pressed.json \
 	assets/minecraft/textures/block/copper_block_lever.png \
-	assets/minecraft/textures/block/detector_rail_on.png \
-	assets/minecraft/textures/block/detector_rail.png \
-	assets/minecraft/textures/block/iron_door_bottom.png \
-	assets/minecraft/textures/block/iron_door_top.png \
-	assets/minecraft/textures/block/iron_trapdoor.png \
 	assets/minecraft/textures/block/powered_rail_on.png \
 	assets/minecraft/textures/block/powered_rail.png \
-	assets/minecraft/textures/item/iron_door.png \
-	data/minecraft/recipes/detector_rail_copper_tech.json \
-	data/minecraft/recipes/iron_door.json \
-	data/minecraft/recipes/iron_trapdoor_copper_tech.json \
 	data/minecraft/recipes/lever.json \
-	data/minecraft/recipes/light_weighted_pressure_plate_copper_tech.json \
-	data/minecraft/recipes/polished_blackstone_button.json \
 	data/minecraft/recipes/powered_rail.json \
 	#assets/minecraft/textures/block/activator_rail_on.png \
 	#assets/minecraft/textures/block/activator_rail.png \
@@ -1200,12 +1216,6 @@ crafting_plentiful.zip: $(crafting_plentiful_FILES)
 	zip $@ pack.png pack.mcmeta $^
 	./bin/ziprename _$(@:.zip=) "" $@
 
-crafting_redstone.zip: $(crafting_redstone_FILES)
-	cp meta/$(@:.zip=.png) pack.png
-	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
-	zip $@ pack.png pack.mcmeta $^
-	./bin/ziprename _$(@:.zip=) "" $@
-
 crafting_workstation.zip: $(crafting_workstation_FILES)
 	cp meta/$(@:.zip=.png) pack.png
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
@@ -1405,6 +1415,12 @@ more_cutting.zip: $(more_cutting_FILES)
 	./bin/ziprename _$(@:.zip=) "" $@
 
 copper_pistons.zip: $(copper_pistons_FILES)
+	cp meta/$(@:.zip=.png) pack.png
+	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
+	zip $@ pack.png pack.mcmeta $^
+	./bin/ziprename _$(@:.zip=) "" $@
+
+copper_overhaul.zip: $(copper_overhaul_FILES)
 	cp meta/$(@:.zip=.png) pack.png
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^

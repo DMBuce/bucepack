@@ -1,16 +1,15 @@
 {
   "type": "minecraft:crafting_shaped",
   "key": {
-    "#": {
+    "X": {
       "item": "minecraft:copper_ingot"
     }
   },
   "pattern": [
-    "###",
-    "###"
+    "X X",
+    "X X"
   ],
   "result": {
-    "count": 6,
-    "item": "minecraft:iron_trapdoor"
+    "item": "minecraft:chainmail_boots"
   }
 }

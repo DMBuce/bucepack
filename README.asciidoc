@@ -1607,68 +1607,30 @@ If you grabbed the correct version of the pack from the
 https://github.com/DMBuce/bucepack/releases[Releases] page,
 you can safely ignore this warning.
 
-=== Copper Tech
+=== Copper Overhaul
 
-This is a series of packs
-that replace redstone components with copper variants.
-When installed as a resource pack,
-the redstone components have copper textures.
-When installed as a data pack,
-the redstone components have copper in their recipes.
+Incorporates copper throughout the game's progression.
 
-**Copper Tech** reskins simple redstone components,
-**Copper Pistons** reskins pistons,
-and **More Copper Tech** reskins complex redstone components.
+Wood tools are reskinned as stone tools,
+and stone tools are reskinned as copper tools.
+To craft your first stone pick, you can use flint.
 
-image::https://i.imgur.com/3fGJg0c.png[Copper Tech]
+Chainmail armor is reskinned as copper armor.
+Iron armor is reskinned as chainmail,
+but is still craftable using iron.
 
-.Click for a summary of Copper Tech redstone components
-[%collapsible]
-====
-* Lever
-* Iron Door
-* Iron Trapdoor
-* Light Weighted Pressure Plate
-* Polished Blackstone Button
-* Detector Rails
-* Powered Rails
+Iron doors, iron trapdoors, gold pressure plates, and blackstone buttons
+are replaced with copper variants.
 
-When installed as a resource pack,
-Iron Doors, Iron Trapdoors, and Blackstone Buttons are renamed to Copper
-Doors/Trapdoors/Buttons if
-American English is the selected language in the options menu.
-If you would like to add
-support for renaming Soul Speed in other languages, please create a Pull
-Request if you know how or
-https://github.com/DMBuce/bucepack/issues/new[open a new Issue]
-if you don't.
-====
-
-.Click for a summary of More Copper Tech redstone components
-[%collapsible]
-====
-* Dispenser
-* Dropper
-* Observer
-
-In addition to adding copper to textures and recipes,
-More Copper Tech also replaces cobblestone with wood.
-====
-
-.Click for a summary of Copper Pistons redstone components
-[%collapsible]
-====
-* Pistons
-* Sticky Pistons
-====
+Copper is used to craft detector rails.
+Tripwire hooks are crafted with copper instead of iron,
+and replace bows in the dispenser recipe.
 
 Download:
 https://github.com/DMBuce/bucepack/releases[All Releases]
 
 Direct Links:
-https://github.com/DMBuce/bucepack/releases/latest/download/copper_tech.zip[`copper_tech.zip`]
-https://github.com/DMBuce/bucepack/releases/latest/download/copper_pistons.zip[`copper_pistons.zip`]
-https://github.com/DMBuce/bucepack/releases/latest/download/copper_tech_more.zip[`copper_tech_more.zip`]
+https://github.com/DMBuce/bucepack/releases/latest/download/copper_overhaul.zip[`copper_overhaul.zip`]
 
 === Path Strider
 

@@ -2,15 +2,18 @@
   "type": "minecraft:crafting_shaped",
   "key": {
     "#": {
+      "item": "minecraft:stick"
+    },
+    "X": {
       "item": "minecraft:copper_ingot"
     }
   },
   "pattern": [
-    "###",
-    "###"
+    "X",
+    "#",
+    "#"
   ],
   "result": {
-    "count": 6,
-    "item": "minecraft:iron_trapdoor"
+    "item": "minecraft:stone_shovel"
   }
 }

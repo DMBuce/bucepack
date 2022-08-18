@@ -12,6 +12,7 @@ dir="$gitroot/buce-data/recipes/crafting"
 while read block count; do
 	[[ -z "$block$count" ]] && continue
 	cp "$latest.jar"/data/minecraft/recipes/*_$block.json data/minecraft/recipes/
+	[[ "$block" == trapdoor ]] && git checkout data/minecraft/recipes/iron_trapdoor.json
 
 	if egrep -q '"count":' data/minecraft/recipes/*_$block.json; then
 		sed -Ei "
