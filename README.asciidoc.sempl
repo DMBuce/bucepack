@@ -1509,13 +1509,12 @@ you can safely ignore this warning.
 
 Incorporates copper throughout the game's progression.
 
-Wood tools are reskinned as stone tools,
-and stone tools are reskinned as copper tools.
-To craft your first stone pick, you can use flint.
+Stone tools are reskinned as copper tools.
+Wood tools are reskinned as stone tools
+and can be crafted with flint in addition to cobblestone.
 
-Chainmail armor is reskinned as copper armor.
-Iron armor is reskinned as chainmail,
-but is still craftable using iron.
+Chainmail armor is reskinned as copper armor
+and iron armor is reskinned as chainmail.
 
 Iron doors, iron trapdoors, gold pressure plates, and blackstone buttons
 are replaced with copper variants.
