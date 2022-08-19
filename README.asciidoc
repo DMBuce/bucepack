@@ -475,6 +475,17 @@ https://github.com/DMBuce/bucepack/releases/latest/download/blue_fire.zip[`blue_
 These packs add or modify recipes in the vanilla game.
 They shouldn't add any lag to your game.
 
+=== Colorful Crafting
+
+Lets you dye any color of bed, wool, or candle.
+You can also dye any combination of terracotta, glass, or glass panes.
+
+Download:
+https://github.com/DMBuce/bucepack/releases[All Releases]
+
+Direct Link:
+https://github.com/DMBuce/bucepack/releases/latest/download/crafting_colorful.zip[`crafting_colorful.zip`]
+
 === Loot Crafting
 
 Adds recipes for uncraftable chest loot items:
@@ -489,17 +500,6 @@ https://github.com/DMBuce/bucepack/releases[All Releases]
 
 Direct Link:
 https://github.com/DMBuce/bucepack/releases/latest/download/crafting_loot.zip[`crafting_loot.zip`]
-
-=== Colorful Crafting
-
-Lets you dye any color of bed, wool, or candle.
-You can also dye any combination of terracotta, glass, or glass panes.
-
-Download:
-https://github.com/DMBuce/bucepack/releases[All Releases]
-
-Direct Link:
-https://github.com/DMBuce/bucepack/releases/latest/download/crafting_colorful.zip[`crafting_colorful.zip`]
 
 === Plentiful Crafting
 
@@ -1619,9 +1619,10 @@ and iron armor is reskinned as chainmail.
 Iron doors, iron trapdoors, gold pressure plates, and blackstone buttons
 are replaced with copper variants.
 
-Copper is used to craft detector rails.
 Tripwire hooks are crafted with copper instead of iron,
-and replace bows in the dispenser recipe.
+and the dispenser recipe uses tripwire hooks instead of bows.
+Copper is used to craft detector rails,
+and all rail recipes are adjusted to have a stick in the middle.
 
 Download:
 https://github.com/DMBuce/bucepack/releases[All Releases]
