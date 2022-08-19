@@ -1503,7 +1503,9 @@ Wood tools are reskinned as stone tools
 and can be crafted with flint in addition to cobblestone.
 
 Chainmail armor is reskinned as copper armor
-and iron armor is reskinned as chainmail.
+and some iron armor is reskinned as chainmail.
+
+image::https://i.imgur.com/wdWOFyJ.png[Copper Overhaul]
 
 Iron doors, iron trapdoors, gold pressure plates, and blackstone buttons
 are replaced with copper variants.
@@ -1512,6 +1514,8 @@ Tripwire hooks are crafted with copper instead of iron,
 and the dispenser recipe uses tripwire hooks instead of bows.
 Copper is used to craft detector rails,
 and all rail recipes are adjusted to have a stick in the middle.
+
+image::https://i.imgur.com/IeJHUPu.png[Copper Overhaul]
 
 Partial support is provided for renaming
 wooden and stone tools, chainmail and iron armor,
