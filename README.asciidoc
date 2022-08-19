@@ -1507,7 +1507,7 @@ While holding an item frame,
 a glass particle effect indicates
 the position of nearby invisible item frames.
 
-image::https://i.imgur.com/n6TAzur.png[Phantasmal]
+image::https://i.imgur.com/qR2I580.png[Phantasmal]
 
 If the <<fae-heads,Fae Heads>> datapack is
 installed before this one,
