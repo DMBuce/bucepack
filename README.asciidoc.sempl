@@ -1915,8 +1915,9 @@ Like most enchantments, they're destroyed when a tool is repaired in the
 crafting grid.
 
 Like curses, boons can't be removed in the grindstone,
-and their tooltip text isn't white like normal enchantments. Unlike curses,
-their tooltip isn't red.
+and their tooltip text isn't white like normal enchantments.
+Unlike curses, the grindstone removes their sheen,
+and their tooltip isn't red.
 
 Like treasure enchantments, boons can't be obtained from the enchanting table,
 and must be found in the world.
@@ -1930,8 +1931,7 @@ When combining tools in the anvil, a boon in the left slot will be preserved
 and a boon in the right slot will be destroyed. Applying ingots or enchanted
 books with the anvil works normally.
 
-Boons also don't give items a shimmering enchantment sheen,
-and their item tooltip text is light green by default.
+Boons have a light green tooltip by default.
 Boons with these light green tooltips require a datapack to obtain and apply
 to a tool, but they continue to function even without a datapack.
 

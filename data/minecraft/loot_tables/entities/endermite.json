@@ -10,7 +10,7 @@
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{relic:1b,searching:1b,CustomModelData:22183,display:{Name:\"{\\\"text\\\":\\\"Relic of the Lens\\\",\\\"color\\\":\\\"light_purple\\\"}\",Lore:[\"\\\"§r§bMyth of Seeking\\\"\"]},Enchantments:[{id:infinity,lvl:1}]}",
+              "tag": "{relic:1b,searching:1b,CustomModelData:22183,display:{Name:\"{\\\"text\\\":\\\"Relic of the Lens\\\",\\\"color\\\":\\\"light_purple\\\"}\",Lore:[\"\\\"§r§bMyth of Seeking\\\"\"]},Enchantments:[{}]}",
               "add": false
             }
           ],
