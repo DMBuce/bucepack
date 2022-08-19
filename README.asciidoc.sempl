@@ -233,13 +233,8 @@ Classic Gravel reverts gravel to its beta texture from before 1.0.0.
 Classic Lapis reverts the lapis block to its smooth texture from before 1.6.1.
 
 Classic Rose reverts the poppy to its rose texture from before 1.7.2.
-It also supports renaming Poppies to Roses.
-Full support is provided for several English languages
-and partial support is provided for many other languages.
-If you would like to help improve support for renaming poppies to roses,
-please create a Pull Request if you know how or
-https://github.com/DMBuce/bucepack/issues/new[open a new Issue]
-if you don't.
+It also provides partial support for renaming Poppies to Roses.
+See <<language-support,Language Support>> for details.
 
 image::https://i.imgur.com/9o75jWL.png[Classic Blocks]
 
@@ -627,13 +622,9 @@ them, craft them into planks, stairs, slabs, and sticks.
 
 image::https://i.imgur.com/vJddlZU.png[Wood Cutting]
 
-When installed as a resource pack, Stonecutters are renamed to Saws if
-American English is the selected language in the options menu.
-If you would like to add
-support for renaming them in other languages, please create a Pull
-Request if you know how or
-https://github.com/DMBuce/bucepack/issues/new[open a new Issue]
-if you don't.
+When installed as a resource pack,
+it also provides partial support for renaming Stonecutters to Saws.
+See <<language-support,Language Support>> for details.
 
 Download:
 https://github.com/DMBuce/bucepack/releases[All Releases]
@@ -1522,6 +1513,11 @@ and the dispenser recipe uses tripwire hooks instead of bows.
 Copper is used to craft detector rails,
 and all rail recipes are adjusted to have a stick in the middle.
 
+Partial support is provided for renaming
+wooden and stone tools, chainmail and iron armor,
+iron doors and trapdoors, and blackstone buttons.
+See <<language-support,Language Support>> for details.
+
 Download:
 https://github.com/DMBuce/bucepack/releases[All Releases]
 
@@ -1536,13 +1532,8 @@ and any material that can be turned into slabs or stairs
 except for stone.
 
 When installed as a resource pack,
-Soul Speed is renamed to Path Strider if
-American English is the selected language in the options menu.
-If you would like to add
-support for renaming Soul Speed in other languages, please create a Pull
-Request if you know how or
-https://github.com/DMBuce/bucepack/issues/new[open a new Issue]
-if you don't.
+provides partial support for renaming Soul Speed to Path Strider.
+See <<language-support,Language Support>> for details.
 
 Download:
 https://github.com/DMBuce/bucepack/releases[All Releases]
@@ -1885,6 +1876,27 @@ NOT top to bottom as one might intuitively expect.
 To reorder datapacks, use the
 https://minecraft.fandom.com/wiki/Commands/datapack[`/datapack`]
 command.
+
+== Language Support
+
+Some resource packs rename certain blocks or items.
+Renaming in languages other than `en_us` (US English)
+is done on a best effort basis.
+Below is a summary of resource packs that support other language codes.
+You can use
+https://minecraft.fandom.com/wiki/Language#Languages[the Language page]
+on the Minecraft Wiki to look up a language code.
+
+.Click for a summary of language support
+[%collapsible]
+====
+
+{!./bin/lang-support}
+
+====
+
+If you want to help add support for other languages to my resource packs,
+please reach out to me!
 
 == Spellsmithing
 

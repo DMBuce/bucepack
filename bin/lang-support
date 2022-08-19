@@ -1,0 +1,10 @@
+#!/bin/bash
+
+ls assets/minecraft/lang/ \
+	| grep -v ^en_us_ \
+	| sed -E 's/([^_]*)_([^_]*)_(.*)\.json/\3.zip \1_\2/' \
+	| awk '
+		$1 != pack {print $1 ":"}
+		{pack = $1; print "*", $2}
+	'
+
