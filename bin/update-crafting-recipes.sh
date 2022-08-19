@@ -70,6 +70,7 @@ done <<< '
 	packed_ice        ice
 	prismarine_bricks prismarine_shard
 	melon             melon_slice
+	cobweb            string
 '
 
 # generate 2x2 uncrafting recipes
