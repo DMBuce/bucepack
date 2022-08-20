@@ -1292,7 +1292,8 @@ https://github.com/DMBuce/bucepack/releases/latest/download/global_effects.zip[`
 
 === Breeding Overhaul
 
-Overhauls breeding mechanics for horses, donkeys, mules, llamas.
+Overhauls breeding mechanics for
+horses, donkeys, mules, llamas, and trader llamas.
 
 In vanilla Minecraft, the traits of these animals (health for llamas; health,
 speed, and jump strength for the rest) are determined by taking the

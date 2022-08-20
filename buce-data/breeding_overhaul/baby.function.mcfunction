@@ -25,8 +25,8 @@ teleport @e[type=horse,tag=mutation,limit=1] ~ ~ ~
 
 # set stats
 data modify entity @s Attributes[{Name:"minecraft:generic.max_health"}].Base set from entity @e[predicate=buce:breeding_overhaul/equine,tag=genes,distance=..2.1,limit=1,sort=random] Attributes[{Name:"minecraft:generic.max_health"}].Base
-execute unless entity @s[type=llama] run data modify entity @s Attributes[{Name:"minecraft:generic.movement_speed"}].Base set from entity @e[predicate=buce:breeding_overhaul/equine,tag=genes,distance=..2.1,limit=1,sort=random] Attributes[{Name:"minecraft:generic.movement_speed"}].Base
-execute unless entity @s[type=llama] run data modify entity @s Attributes[{Name:"minecraft:horse.jump_strength"}].Base set from entity @e[predicate=buce:breeding_overhaul/equine,tag=genes,distance=..2.1,limit=1,sort=random] Attributes[{Name:"minecraft:horse.jump_strength"}].Base
+execute if entity @s[type=!llama,type=!trader_llama] run data modify entity @s Attributes[{Name:"minecraft:generic.movement_speed"}].Base set from entity @e[predicate=buce:breeding_overhaul/equine,tag=genes,distance=..2.1,limit=1,sort=random] Attributes[{Name:"minecraft:generic.movement_speed"}].Base
+execute if entity @s[type=!llama,type=!trader_llama] run data modify entity @s Attributes[{Name:"minecraft:horse.jump_strength"}].Base set from entity @e[predicate=buce:breeding_overhaul/equine,tag=genes,distance=..2.1,limit=1,sort=random] Attributes[{Name:"minecraft:horse.jump_strength"}].Base
 data modify entity @s Health set from entity @s Attributes[{Name:"minecraft:generic.max_health"}].Base
 
 ## debug

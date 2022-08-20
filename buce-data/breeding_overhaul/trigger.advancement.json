@@ -47,6 +47,14 @@
 					"type": "minecraft:llama"
 				}
 			}
+		},
+		"trader_llama": {
+			"trigger": "minecraft:bred_animals",
+			"conditions": {
+				"child": {
+					"type": "minecraft:trader_llama"
+				}
+			}
 		}
 	},
 	"requirements": [
@@ -54,7 +62,8 @@
 			"horse",
 			"donkey",
 			"mule",
-			"llama"
+			"llama",
+			"trader_llama"
 		]
 	],
 	"rewards": {
