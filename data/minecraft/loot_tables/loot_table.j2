@@ -122,7 +122,7 @@
         {%- elif entry.type == "loot_table" %}
         {
           "type": "minecraft:loot_table",
-          {%- if entry.weight != 1 %}
+          {%- if entry.weight is defined and entry.weight != 1 %}
           "weight": {{entry.weight}},
           {%- endif %}
           "quality": {{ entry.quality if entry.quality is defined else 0 }},

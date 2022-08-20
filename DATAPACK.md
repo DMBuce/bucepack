@@ -7,7 +7,10 @@ scheduler: https://www.reddit.com/r/MinecraftCommands/comments/c939nx/best_ways_
 avoid @e and nbt
 use area effect clouds over armor stands
 * /summon minecraft:area_effect_cloud ~ ~ ~ {Age:-2147483648,Duration:-1,WaitTime:-2147483648}
-ordering target selectors: https://www.reddit.com/r/MinecraftCommands/comments/nw90u4/does_using_predicates_in_place_of_complicated/h18lr5u/
+ordering target selectors:
+* https://github.com/MinecraftCommands/commanders-handbook/blob/3b5c82231397cee1e4dfe51caa523c180892b3f5/docs/_posts/2018-09-07-selector-argument-order.md
+* foo_
+* https://www.reddit.com/r/MinecraftCommands/comments/nw90u4/does_using_predicates_in_place_of_complicated/h18lr5u/
 raycast: https://www.reddit.com/r/MinecraftCommands/comments/9n1ghh/raycasting_in_1131/e7kxv2o/
 check if player is looking toward/away: https://www.reddit.com/r/MinecraftCommands/comments/akjyh5/help_any_way_to_execute_if_a_player_is_looking_at/ef5jehw/
 item nbt structure: https://minecraft.fandom.com/wiki/Player.dat_format#Item_structure
@@ -26,6 +29,8 @@ Prefer predicates over nbt
 *Don't* prefer predicates over non-nbt selectors
 Prefer area effect clouds over armor stands
 Order target selectors efficiently: https://www.reddit.com/r/MinecraftCommands/comments/nw90u4/does_using_predicates_in_place_of_complicated/h18lr5u/
+* https://github.com/MinecraftCommands/commanders-handbook/blob/3b5c82231397cee1e4dfe51caa523c180892b3f5/docs/_posts/2018-09-07-selector-argument-order.md
+* foo_
 
 ## Good to Know
 

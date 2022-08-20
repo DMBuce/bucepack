@@ -501,8 +501,7 @@ loot_overhaul_relics_FILES := $(DEFAULT_DATA_FILES) \
 	data/buce/loot_tables/loot_overhaul/extra/epic_loot_overhaul_relics.json \
 
 wandering_loot_FILES := $(DEFAULT_DATA_FILES) \
-	$(shell ls buce-data/wandering_loot* | ./bin/ext2dir) \
-	data/minecraft/loot_tables/entities/trader_llama.json \
+	$(shell find buce-data/wandering -type f | ./bin/ext2dir) \
 
 relics_mythic_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell find buce-data/ -name '*relics_mythic*' | ./bin/ext2dir) \
