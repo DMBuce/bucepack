@@ -1,4 +1,5 @@
 {
+	"replace": false,
 	"values": [
 		"buce:escape/grind/respawn_nether"
 	]

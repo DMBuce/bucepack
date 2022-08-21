@@ -1,4 +1,5 @@
 {
+	"replace": false,
 	"values": [
 		"minecraft:blackstone_slab",
 		"minecraft:blackstone_stairs",

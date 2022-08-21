@@ -1,4 +1,5 @@
 {
+  "replace": false,
   "values": [
     "minecraft:glass_pane",
     "minecraft:white_stained_glass_pane",
