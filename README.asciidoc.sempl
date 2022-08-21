@@ -400,20 +400,25 @@ https://github.com/DMBuce/bucepack/releases[All Releases]
 Direct Link:
 https://github.com/DMBuce/bucepack/releases/latest/download/eyes_of_seeking.zip[`eyes_of_seeking.zip`]
 
-=== Warmer Striders
+=== Acclimated
 
-Makes more blocks warm enough to keep striders comfortable.
+Prevents mobs from sinking into powdered snow
+if they are light enough, surefooted enough, or immune to fall damage.
+The list of mobs that don't sink is
+https://raw.githubusercontent.com/DMBuce/bucepack/master/data/minecraft/tags/entity_types/powder_snow_walkable_mobs.json[here].
 
-image::https://i.imgur.com/FnDMksX.png[Warmer Striders]
+In addition, more blocks are warm enough to keep striders comfortable.
 
-The full list of blocks that can warm striders is
+image::https://i.imgur.com/FnDMksX.png[Acclimated]
+
+The list of blocks that can warm striders is
 https://raw.githubusercontent.com/DMBuce/bucepack/master/data/minecraft/tags/blocks/strider_warm_blocks.json[here].
 
 Download:
 https://github.com/DMBuce/bucepack/releases[All Releases]
 
 Direct Link:
-https://github.com/DMBuce/bucepack/releases/latest/download/warmer_striders.zip[`warmer_striders.zip`]
+https://github.com/DMBuce/bucepack/releases/latest/download/acclimated.zip[`acclimated.zip`]
 
 === Aggro Bastions
 

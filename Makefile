@@ -84,7 +84,7 @@ DATAPACKFILES = \
 	starter_shulker.zip \
 	starter_spyglass.zip \
 	wandering_loot.zip \
-	warmer_striders.zip \
+	acclimated.zip \
 	waterproof_tech.zip \
 
 PACKFILES = $(RESOURCEPACKFILES) $(DATAPACKFILES)
@@ -434,10 +434,9 @@ aggro_bastions_FILES := $(DEFAULT_DATA_FILES) \
 antidote_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell find buce-data/antidote -type f | ./bin/ext2dir) \
 
-warmer_striders_FILES := $(DEFAULT_DATA_FILES) \
+acclimated_FILES := $(DEFAULT_DATA_FILES) \
 	data/minecraft/tags/blocks/strider_warm_blocks.json \
 	data/minecraft/tags/entity_types/powder_snow_walkable_mobs.json \
-	data/minecraft/tags/entity_types/freeze_immune_entity_types.json \
 
 no_treasure_maps_FILES := $(DEFAULT_DATA_FILES) \
 	data/minecraft/loot_tables/chests/shipwreck_map_no_treasure_maps.json \
@@ -1164,7 +1163,7 @@ waterproof_tech.zip: $(waterproof_tech_FILES)
 	zip $@ pack.png pack.mcmeta $^
 	./bin/ziprename _$(@:.zip=) "" $@
 
-warmer_striders.zip: $(warmer_striders_FILES)
+acclimated.zip: $(acclimated_FILES)
 	cp meta/$(@:.zip=.png) pack.png
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^
