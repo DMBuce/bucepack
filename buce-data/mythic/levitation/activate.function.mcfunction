@@ -7,9 +7,9 @@ advancement revoke @s only buce:mythic/levitation/trigger
 #say arise, chicken
 
 # give levitation
-effect give @s levitation 90 255 true
-effect give @s slowness 90 1 true
-effect give @s slow_falling 150 0 true
+effect give @s levitation 10 1 true
+effect give @s slowness 10 1 true
+effect give @s slow_falling 20 0 true
 
 # sound effect
 playsound minecraft:block.enchantment_table.use player @a
