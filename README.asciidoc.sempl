@@ -1188,6 +1188,21 @@ https://github.com/DMBuce/bucepack/releases[All Releases]
 Direct Link:
 https://github.com/DMBuce/bucepack/releases/latest/download/global_effects.zip[`global_effects.zip`]
 
+=== Leashed
+
+Lets you leash mobs to Allays, Snow Golems, Iron Golems, Donkeys, and Mules.
+Attaching a lead to one of these creatures while sneaking leashes other
+leashed creatures to them.
+Unattaching a lead while sneaking leashes their creatures to you.
+
+image::https://i.imgur.com/xQh03yw.png[Leashed]
+
+Download:
+https://github.com/DMBuce/bucepack/releases[All Releases]
+
+Direct Link:
+https://github.com/DMBuce/bucepack/releases/latest/download/leashed.zip[`leashed.zip`]
+
 === Breeding Overhaul
 
 Overhauls breeding mechanics for
@@ -2046,6 +2061,7 @@ Add new warm blocks to Warmer Striders
 Add new potions to Brewing Guide
 Add new ores to Ore Types
 Add new End blocks to mk-dragonproof.sh
+Add new leashable mobs to #buce:leashed/leashable
 
 HOW TO UPDATE LOOT TABLES AFTER MINECRAFT UPDATES
 =================================================

@@ -1,0 +1,10 @@
+{
+	"replace": false,
+	"values": [
+		"minecraft:allay",
+		"minecraft:donkey",
+		"minecraft:iron_golem",
+		"minecraft:mule",
+		"minecraft:snow_golem"
+	]
+}

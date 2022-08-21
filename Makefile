@@ -37,8 +37,8 @@ DATAPACKFILES = \
 	blue_fire.zip \
 	breeding_overhaul.zip \
 	climbable.zip \
-	crafting_loot.zip \
 	crafting_colorful.zip \
+	crafting_loot.zip \
 	crafting_plentiful.zip \
 	crafting_split.zip \
 	crafting_turtle_box.zip \
@@ -47,10 +47,6 @@ DATAPACKFILES = \
 	cutting_smooth_cracked.zip \
 	dragonproof.zip \
 	dripblock.zip \
-	heads_fae.zip \
-	heads_golem.zip \
-	heads_player.zip \
-	hover_mode.zip \
 	escape_grind.zip \
 	escape_nether.zip \
 	escape_the_end.zip \
@@ -60,13 +56,17 @@ DATAPACKFILES = \
 	gardener_endermen.zip \
 	global_effects.zip \
 	glow_squid_glamers.zip \
+	heads_fae.zip \
+	heads_golem.zip \
+	heads_player.zip \
+	hover_mode.zip \
 	invis_squid_glamer.zip \
+	leashed.zip \
 	lichdom.zip \
-	loot_overhaul_relics.zip \
 	loot_overhaul_barrel_of_treasure.zip \
+	loot_overhaul_relics.zip \
 	loot_overhaul_starter_relic.zip \
 	loot_overhaul_treasure_seeds.zip \
-	wandering_loot.zip \
 	loot_overhaul.zip \
 	mineable.zip \
 	more_shulker_shells.zip \
@@ -83,6 +83,7 @@ DATAPACKFILES = \
 	starter_map.zip \
 	starter_shulker.zip \
 	starter_spyglass.zip \
+	wandering_loot.zip \
 	warmer_striders.zip \
 	waterproof_tech.zip \
 
@@ -435,6 +436,8 @@ antidote_FILES := $(DEFAULT_DATA_FILES) \
 
 warmer_striders_FILES := $(DEFAULT_DATA_FILES) \
 	data/minecraft/tags/blocks/strider_warm_blocks.json \
+	data/minecraft/tags/entity_types/powder_snow_walkable_mobs.json \
+	data/minecraft/tags/entity_types/freeze_immune_entity_types.json \
 
 no_treasure_maps_FILES := $(DEFAULT_DATA_FILES) \
 	data/minecraft/loot_tables/chests/shipwreck_map_no_treasure_maps.json \
@@ -575,6 +578,10 @@ starter_spyglass_FILES := $(DEFAULT_DATA_FILES) \
 dragonproof_FILES := $(DEFAULT_DATA_FILES) \
 	data/buce/advancements/dragonproof.json \
 	data/minecraft/tags/blocks/dragon_immune.json \
+
+leashed_FILES := $(DEFAULT_DATA_FILES) \
+	$(shell find buce-data/leashed -type f | ./bin/ext2dir) \
+	data/buce/functions/var.mcfunction \
 
 mineable_FILES := $(DEFAULT_DATA_FILES) \
 	data/minecraft/tags/blocks/mineable/axe.json \
@@ -919,6 +926,10 @@ data/buce/predicates/%.json: buce-data/%.predicate.json
 	cp -v $< $@
 
 data/buce/recipes/%.json: buce-data/%.recipe.json
+	mkdir -p $(dir $@)
+	cp -v $< $@
+
+data/buce/tags/entity_types/%.json: buce-data/%.entity_type.tag.json
 	mkdir -p $(dir $@)
 	cp -v $< $@
 
@@ -1334,6 +1345,12 @@ boss_loot_modern.zip: $(boss_loot_modern_FILES)
 	./bin/ziprename _$(@:.zip=) "" $@
 
 dragonproof.zip: $(dragonproof_FILES)
+	cp meta/$(@:.zip=.png) pack.png
+	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
+	zip $@ pack.png pack.mcmeta $^
+	./bin/ziprename _$(@:.zip=) "" $@
+
+leashed.zip: $(leashed_FILES)
 	cp meta/$(@:.zip=.png) pack.png
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^
