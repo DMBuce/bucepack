@@ -32,6 +32,7 @@ RESOURCEPACKFILES = \
 
 DATAPACKFILES = \
 	$(DATARESOURCEPACKFILES) \
+	acclimated.zip \
 	aggro_bastions.zip \
 	antidote.zip \
 	blue_fire.zip \
@@ -83,8 +84,8 @@ DATAPACKFILES = \
 	starter_map.zip \
 	starter_shulker.zip \
 	starter_spyglass.zip \
+	storage_orbs.zip \
 	wandering_loot.zip \
-	acclimated.zip \
 	waterproof_tech.zip \
 
 PACKFILES = $(RESOURCEPACKFILES) $(DATAPACKFILES)
@@ -501,6 +502,10 @@ loot_overhaul_relics_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell ls buce-data/loot_addons/loot_overhaul_relics* | ./bin/ext2dir) \
 	$(relic_FILES) \
 	data/buce/loot_tables/loot_overhaul/extra/epic_loot_overhaul_relics.json \
+
+storage_orbs_FILES := $(DEFAULT_DATA_FILES) \
+	$(shell find buce-data/orb -type f | ./bin/ext2dir) \
+	data/minecraft/tags/items/shulker_boxes.json \
 
 wandering_loot_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell find buce-data/wandering -type f | ./bin/ext2dir) \
@@ -1290,6 +1295,12 @@ loot_overhaul_starter_relic.zip: $(loot_overhaul_starter_relic_FILES)
 	./bin/ziprename _$(@:.zip=) "" $@
 
 starter_bonus_chest.zip: $(starter_bonus_chest_FILES)
+	cp meta/$(@:.zip=.png) pack.png
+	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
+	zip $@ pack.png pack.mcmeta $^
+	./bin/ziprename _$(@:.zip=) "" $@
+
+storage_orbs.zip: $(storage_orbs_FILES)
 	cp meta/$(@:.zip=.png) pack.png
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^

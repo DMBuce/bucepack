@@ -1504,6 +1504,22 @@ that prevents invisible armor stands from being broken.
 // just because mojang says it's a bug doesn't mean i have to agree with them
 // i think it's a bug
 
+=== Storage Orbs
+
+Lets you stack shulker boxes with the same contents in orb form.
+
+Store a shulker box in an eye of ender
+by combining them in the smithing table.
+Any dye on the box is destroyed,
+but its contents and name are preserved in the eye.
+Right clicking the orb restores the shulker box and destroys the eye.
+
+Download:
+https://github.com/DMBuce/bucepack/releases[All Releases]
+
+Direct Link:
+https://github.com/DMBuce/bucepack/releases/latest/download/storage_orbs.zip[`storage_orbs.zip`]
+
 == Data Resource Packs
 
 These packs can be installed as a resource pack, a data pack, or both.
