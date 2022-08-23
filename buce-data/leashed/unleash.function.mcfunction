@@ -16,7 +16,7 @@ execute store result score #buce.leasher var run data get entity @e[type=#buce:l
 # tag each mob leashed by leader
 execute as @e[type=#buce:leashed/leader,tag=leader] at @s as @e[type=!#buce:leashed/leader,distance=..12] run function buce:leashed/check
 
-execute as @e[type=!#buce:leashed/leader,tag=leashed] run say unleashed
+#execute as @e[type=!#buce:leashed/leader,tag=leashed] run say unleashed
 
 # tag player
 tag @s add leashplayer
