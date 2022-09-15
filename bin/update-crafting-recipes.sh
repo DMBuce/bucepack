@@ -13,7 +13,7 @@ while read block count; do
 	[[ -z "$block$count" ]] && continue
 	cp "$latest.jar"/data/minecraft/recipes/*_$block.json data/minecraft/recipes/
 
-	if egrep -q '"count":' data/minecraft/recipes/*_$block.json; then
+	if grep -E -q '"count":' data/minecraft/recipes/*_$block.json; then
 		sed -Ei "
 			/\"count\":/ s/: [0-9]+,/: $count,/
 		" data/minecraft/recipes/*_$block.json
@@ -24,7 +24,7 @@ while read block count; do
 	fi
 done <<< '
 	stairs         6
-	fence          5
+	fence          4
 	fence_gate     4
 	pressure_plate 2
 	sign           6

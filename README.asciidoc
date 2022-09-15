@@ -561,6 +561,9 @@ https://github.com/DMBuce/bucepack/releases/latest/download/crafting_split.zip[`
 === Workstation Crafting
 
 Provides alternative recipes for workstations.
+
+image::https://i.imgur.com/PSSyLL4.png[Workstation Crafting]
+
 The fletching table, cartography table, and smithing table
 have loom-like 2x2 recipes.
 Stone and smoothstone are interchangeable in the
@@ -568,8 +571,6 @@ grindstone, stonecutter, and blast furnace recipes.
 The barrel recipe uses slabs in place of planks.
 Smoker recipes use cobblestone in addition to logs.
 Lecterns use two extra slabs.
-
-image::https://i.imgur.com/PSSyLL4.png[Workstation Crafting]
 
 Download:
 https://github.com/DMBuce/bucepack/releases[All Releases]
@@ -625,7 +626,7 @@ https://github.com/DMBuce/bucepack/releases/latest/download/cutting_smooth_crack
 Lets you craft wood variants in the stonecutter. Turn logs into wood, strip
 them, craft them into planks, stairs, slabs, and sticks.
 
-image::https://i.imgur.com/vJddlZU.png[Wood Cutting]
+image::https://i.imgur.com/4lFcw2o.png[Wood Cutting]
 
 When installed as a resource pack,
 it also provides partial support for renaming Stonecutters to Saws.

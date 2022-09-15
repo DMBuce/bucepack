@@ -57,7 +57,7 @@ fi
 #		echo "Adding $verfile to commit..."
 #		git add "$verfile"
 #	# update the version and check if it changed
-#	elif updatever; git diff "$verfile" | egrep -q '^[+-].*version\s*='; then
+#	elif updatever; git diff "$verfile" | grep -E -q '^[+-].*version\s*='; then
 #		# prompt user to add the updated version to the commit
 #		echo "Add the version change with \`git add -p $verfile\` before committing."
 #		exit 1
@@ -74,7 +74,7 @@ git add README.asciidoc
 
 ## bail if changes match one or more patterns
 #patterns="$(printf '%s\n' bin/git-sghetti--* | sed 's/.*--/git /; p; s/git /git sghetti ssh /')"
-#if git diff --cached | sed -n '/^+++/d; /^+/s/+//p' | egrep -f <(echo "$patterns"); then
+#if git diff --cached | sed -n '/^+++/d; /^+/s/+//p' | grep -E -f <(echo "$patterns"); then
 #	echo "Found bad lines. Fix them before committing."
 #	exit 1
 #fi
