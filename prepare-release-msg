@@ -7,8 +7,6 @@ version="$3"
 sempl > "$file.new" <<-EOF
 Version $version
 
-Tested on Minecraft $(<latest.txt). May work on newer and/or older versions.
-
 Changelog:
 
 * {!tail -n+5 "$file"}
