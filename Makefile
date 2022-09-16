@@ -493,6 +493,7 @@ loot_overhaul_FILES := $(DEFAULT_DATA_FILES) \
 loot_overhaul_treasure_seeds_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell ls buce-data/loot_addons/loot_overhaul_treasure_seeds* | ./bin/ext2dir) \
 	data/buce/loot_tables/loot_overhaul/sus_stew_loot_overhaul_treasure_seeds.json \
+	data/buce/loot_tables/loot_overhaul/cake_loot_overhaul_treasure_seeds.json \
 
 loot_overhaul_barrel_of_treasure_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell ls buce-data/loot_addons/loot_overhaul_barrel_of_treasure* | ./bin/ext2dir) \
@@ -821,7 +822,7 @@ escape_grind_FILES := $(DEFAULT_DATA_FILES) \
 	data/buce/loot_tables/loot_overhaul/extra/rare.json \
 	data/buce/loot_tables/loot_overhaul/extra/structure/end_city_treasure.json \
 	data/buce/loot_tables/loot_overhaul/extra/uncommon.json \
-	data/buce/loot_tables/loot_overhaul/sus_stew_escape_grind.json \
+	data/buce/loot_tables/loot_overhaul/cake_escape_grind.json \
 	data/buce/recipes/escape/grind/grindstone.json \
 	data/buce/recipes/mythic/smithing/searching.json \
 	data/minecraft/loot_tables/blocks/crying_obsidian_escape_grind.json \

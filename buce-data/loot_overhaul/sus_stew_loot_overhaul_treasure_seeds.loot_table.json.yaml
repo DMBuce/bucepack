@@ -24,7 +24,7 @@ pools:
       - { type: item_unused, weight: 99, item: sunflower     , min: 2, max: 4 }
       - { type: item_unused, weight: 99, item: jungle_sapling, min: 2, max: 4 }
       - { type: item_unused, weight: 99, item: mycelium      , min: 2, max: 3 }
-      - { type: item_unused, weight: 99, item: warped_hyphae , min: 4, max: 8 }
+      #- { type: item_unused, weight: 99, item: warped_hyphae , min: 4, max: 8 }
       - type: suspicious_stew
         weight: 1
         effects:
