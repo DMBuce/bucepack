@@ -355,6 +355,13 @@ spellsmithing_guide_FILES := $(DEFAULT_RESOURCE_FILES) \
 	assets/minecraft/models/item/item_frame.json \
 	assets/minecraft/models/item/leather_boots.json \
 	assets/minecraft/models/item/crossbow.json \
+	assets/minecraft/models/item/crossbow_firework.json \
+	assets/minecraft/models/item/elytra.json \
+	assets/minecraft/models/item/diamond_pickaxe.json \
+	assets/minecraft/models/item/diamond_hoe.json \
+	assets/minecraft/models/item/diamond_shovel.json \
+	assets/minecraft/models/item/diamond_axe.json \
+	assets/minecraft/models/item/iron_sword.json \
 	assets/minecraft/models/item/light.json \
 	assets/minecraft/models/item/spyglass.json \
 	assets/minecraft/models/item/trident.json \

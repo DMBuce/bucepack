@@ -1,0 +1,20 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "item/elytra"
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "broken": 1
+      },
+      "model": "item/broken_elytra"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 22183
+      },
+      "model": "item/relic_elytra"
+    }
+  ]
+}
