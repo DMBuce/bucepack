@@ -288,6 +288,7 @@ following datapacks.
 * <<invisible-squid-glamer,Invisible Squid Glamer>>: Invisible item frames
 * <<phantasmal,Phantasmal>>: Invisible item frames and light blocks
 * <<loot-overhaul,Loot Overhaul>>: Invisible light blocks
+* <<mythic-relics,Mythic Relics>>, <<relic-loot,Relic Loot>>, and <<starter-relic,Starter Relic>>: Relics
 
 Download:
 https://github.com/DMBuce/bucepack/releases[All Releases]
@@ -1129,6 +1130,9 @@ the type of loot chest.
 * 1/1,000 chance: Most other chests
 ====
 
+If you have the <<spellsmithing-guide,Spellsmithing Guide>> resource pack
+installed, relics have custom item textures in the inventory.
+
 Download:
 https://github.com/DMBuce/bucepack/releases[All Releases]
 
@@ -1144,6 +1148,9 @@ it adds a random <<relics,Relic>> to the bonus spawn chest.
 If any other <<starter-item,Starter Item>> datapacks are installed,
 the starter relic is generated in addition to the starter item added by
 those packs.
+
+If you have the <<spellsmithing-guide,Spellsmithing Guide>> resource pack
+installed, relics have custom item textures in the inventory.
 
 Download:
 https://github.com/DMBuce/bucepack/releases[All Releases]
@@ -1434,7 +1441,11 @@ durability, enchantments, name, and banner pattern.
 
 ====
 
-image::https://i.imgur.com/Rm2NtDa.png[Mythic Relics]
+//image::https://i.imgur.com/Rm2NtDa.png[Mythic Relics]
+image::https://i.imgur.com/PLjL62m.png[Mythic Relics]
+
+If you have the <<spellsmithing-guide,Spellsmithing Guide>> resource pack
+installed, relics have custom item textures in the inventory.
 
 This is a <<ordering-data-packs,companion pack>> for the
 <<loot-overhaul,Loot Overhaul>> and <<phantasmal,Phantasmal>> datapacks,
@@ -2237,7 +2248,11 @@ Protection II that can be applied to elytra.
 
 ====
 
-image::https://i.imgur.com/VkbB90K.png[Common Relics]
+//image::https://i.imgur.com/VkbB90K.png[Common Relics]
+image::https://i.imgur.com/XvvQIMr.png[Common Relics]
+
+If you have the <<spellsmithing-guide,Spellsmithing Guide>> resource pack
+installed, relics have custom item textures in the inventory.
 
 ////
 
