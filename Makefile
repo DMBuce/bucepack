@@ -345,17 +345,18 @@ classic_food_FILES := $(DEFAULT_RESOURCE_FILES) \
 
 spellsmithing_guide_FILES := $(DEFAULT_RESOURCE_FILES) \
 	$(wildcard assets/minecraft/models/item/armor_stand*.json) \
+	$(wildcard assets/minecraft/models/item/invis_*.json) \
+	$(wildcard assets/minecraft/models/item/relic_*.json) \
 	$(wildcard assets/minecraft/textures/item/armor_stand_*.png) \
-	assets/minecraft/models/item/invis_glow_item_frame.json \
-	assets/minecraft/models/item/invis_item_frame.json \
-	assets/minecraft/models/item/invis_light.json \
+	$(wildcard assets/minecraft/textures/item/invis_*.png) \
+	$(wildcard assets/minecraft/textures/item/relic_*.png) \
 	assets/minecraft/models/item/glow_item_frame.json \
+	assets/minecraft/models/item/golden_helmet.json \
 	assets/minecraft/models/item/item_frame.json \
 	assets/minecraft/models/item/light.json \
+	assets/minecraft/models/item/spyglass.json \
+	assets/minecraft/models/item/trident.json \
 	assets/minecraft/textures/gui/container/smithing.png \
-	assets/minecraft/textures/item/invis_glow_item_frame.png \
-	assets/minecraft/textures/item/invis_item_frame.png \
-	assets/minecraft/textures/item/invis_light.png \
 
 retronetherrack_FILES := $(DEFAULT_RESOURCE_FILES) \
 	assets/minecraft/textures/block/netherrack.png \
