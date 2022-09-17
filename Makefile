@@ -353,6 +353,7 @@ spellsmithing_guide_FILES := $(DEFAULT_RESOURCE_FILES) \
 	assets/minecraft/models/item/glow_item_frame.json \
 	assets/minecraft/models/item/golden_helmet.json \
 	assets/minecraft/models/item/item_frame.json \
+	assets/minecraft/models/item/leather_boots.json \
 	assets/minecraft/models/item/light.json \
 	assets/minecraft/models/item/spyglass.json \
 	assets/minecraft/models/item/trident.json \

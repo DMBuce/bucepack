@@ -1,0 +1,15 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "item/leather_boots",
+    "layer1": "item/leather_boots_overlay"
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "custom_model_data": 22183
+      },
+      "model": "item/relic_leather_boots"
+    }
+  ]
+}
