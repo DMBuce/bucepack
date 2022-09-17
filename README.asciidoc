@@ -2248,11 +2248,11 @@ Protection II that can be applied to elytra.
 
 ====
 
-//image::https://i.imgur.com/VkbB90K.png[Common Relics]
-image::https://i.imgur.com/XvvQIMr.png[Common Relics]
-
 If you have the <<spellsmithing-guide,Spellsmithing Guide>> resource pack
 installed, relics have custom item textures in the inventory.
+
+//image::https://i.imgur.com/VkbB90K.png[Common Relics]
+image::https://i.imgur.com/XvvQIMr.png[Common Relics]
 
 ////
 
