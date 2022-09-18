@@ -1,7 +1,7 @@
 {
   "type": "minecraft:smithing",
   "base": {
-    "item": "minecraft:iron_nugget"
+    "item": "minecraft:honeycomb"
   },
   "addition": {
     "item": "minecraft:leather_leggings"

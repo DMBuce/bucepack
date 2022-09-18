@@ -1,0 +1,23 @@
+{
+	"replace": false,
+	"values": [
+		"minecraft:cat",
+		"minecraft:chicken",
+		"minecraft:cow",
+		"minecraft:fox",
+		"minecraft:frog",
+		"minecraft:glow_squid",
+		"minecraft:goat",
+		"minecraft:hoglin",
+		"minecraft:mooshroom",
+		"minecraft:ocelot",
+		"minecraft:parrot",
+		"minecraft:pig",
+		"minecraft:rabbit",
+		"minecraft:sheep",
+		"minecraft:squid",
+		"minecraft:strider",
+		"minecraft:wolf",
+		"minecraft:zoglin"
+	]
+}

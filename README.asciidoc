@@ -1308,7 +1308,8 @@ https://github.com/DMBuce/bucepack/releases/latest/download/global_effects.zip[`
 Lets you leash mobs to Allays, Snow Golems, Iron Golems, Donkeys, and Mules.
 Attaching a lead to one of these creatures while sneaking leashes your other
 leashed creatures to them.
-Unattaching a lead while sneaking leashes their creatures to you.
+Unattaching a lead while holding another lead and sneaking
+leashes their creatures to you.
 
 image::https://i.imgur.com/xQh03yw.png[Leashed]
 
@@ -1407,12 +1408,16 @@ enchantment that can be applied to elytra in the smithing table.
 When a player wearing the elytra is hit by a mob, they gain 8 minutes of
 invisibility. The invisibility ends if the player damages a mob.
 
-**Relic of Rodeos**: When a frog eats a silverfish,
-it drops a belt buckle with Myth of the Lasso,
-a custom enchantment that can be applied to leather chaps in the smithing
-table. When a player wearing the chaps hits one of
+**Relic of the Rodeo Clown**: When a frog eats a bee,
+it drops a belt buckle with Myth of the Lasso and Myth of Balloon Animals,
+two custom enchantments that can be applied to leather pants in the smithing
+table. When a player wearing the pants hits one of
 https://raw.githubusercontent.com/DMBuce/bucepack/master/data/buce/tags/entity_types/mythic/leashing/leashable.json[these mobs]
 with a lead, the lead attaches to the mob.
+When a player wearing the pants attaches a lead to one of
+https://raw.githubusercontent.com/DMBuce/bucepack/master/data/buce/tags/entity_types/mythic/balloons/balloons.json[these creatures]
+with right click,
+it gains levitation until a player unleashes it.
 
 **Relic of Quicksilver**: When an iron golem kills a ghast, it drops a bead of
 quicksilver with Sharpness V and Myth of Liquid Metal, a custom enchantment
