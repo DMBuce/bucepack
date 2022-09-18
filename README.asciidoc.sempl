@@ -1275,16 +1275,6 @@ pink dye with Myth of Chromatic Blasts, a custom enchantment that can be
 applied to a crossbow in the smithing table.
 Rockets shot with the crossbow gain two randomly generated firework stars.
 
-**Relic of the Burrower**: When a player kills a silverfish in melee without a
-weapon, it drops a silverfish eye with Myth of Breaking, a custom
-enchantment that can be applied to a diamond pick, axe, shovel, or hoe in the
-smithing table. When a block broken by the tool drops an item and decreases the
-tool's durability, the tool will break several extra blocks.
-Picks break a 3x3 square, axes break a 32-block-high column,
-shovels break a 4-block column, and hoes break a 3x3x3 sphere.
-The extra broken blocks are not affected by fortune or silk touch and do not
-further decrease the tool's durability.
-
 **Relic of Mining**: Deepslate Emerald Ore drops a gold nugget with Myth of
 Darkvision and Myth of Greed, two custom enchantments that can be applied to
 a golden helmet in the smithing table. Myth of Darkvision provides eight minutes
@@ -1307,6 +1297,39 @@ smithing table. A player can summon a thunderstorm with the trident
 by standing in water, looking skyward, and holding right click for several
 seconds.
 
+**Relic of Disappearance**: If the <<Phantasmal>> datapack is installed before
+this one,
+invisible phantoms killed by a player in The End drop leather with Curse of Vanishing and
+Myth of Cloaking, a custom
+enchantment that can be applied to elytra in the smithing table.
+When a player wearing the elytra is hit by a mob, they gain 8 minutes of
+invisibility. The invisibility ends if the player damages a mob.
+
+**Relic of Rodeos**: When a frog eats a silverfish,
+it drops a belt buckle with Myth of Roping,
+a custom enchantment that can be applied to leather chaps in the smithing
+table. When a player wearing the chaps hits one of
+https://raw.githubusercontent.com/DMBuce/bucepack/master/data/buce/tags/entity_types/mythic/leashing/leashable.json[these mobs]
+with a lead, the lead attaches to the mob.
+
+**Relic of Quicksilver**: When an iron golem kills a ghast, it drops a bead of
+quicksilver with Sharpness V and Myth of Liquid Metal, a custom enchantment
+that can be applied to an iron sword in the smithing table. When placed in the
+offhand, the sword transforms into a shield with Unbreaking III. When
+placed in the main hand or dealing damage, it transforms back into its
+sword form. Transforming resets all properties of the item including its
+durability, enchantments, name, and banner pattern.
+
+**Relic of the Burrower**: When a player kills a silverfish in melee without a
+weapon, it drops a silverfish eye with Myth of Breaking, a custom
+enchantment that can be applied to a diamond pick, axe, shovel, or hoe in the
+smithing table. When a block broken by the tool drops an item and decreases the
+tool's durability, the tool will break several extra blocks.
+Picks break a 3x3 square, axes break a 32-block-high column,
+shovels break a 4-block column, and hoes break a 3x3x3 sphere.
+The extra broken blocks are not affected by fortune or silk touch and do not
+further decrease the tool's durability.
+
 **Relic of Echoes**: If the <<loot-overhaul,Loot Overhaul>> datapack is
 installed before this one, some echo shards in ancient city chests have Myth of
 Reverberation, a custom enchantment that can be applied to a totem in the
@@ -1320,22 +1343,6 @@ installed before this one, some echo shards in ancient city chests have Myth of
 Reflection, a custom enchantment that can be applied to a totem in the
 smithing table. When a player holding the totem takes damage in the void,
 the totem activates and the player bounces off the void.
-
-**Relic of Disappearance**: If the <<Phantasmal>> datapack is installed before
-this one,
-invisible phantoms killed by a player in The End drop leather with Curse of Vanishing and
-Myth of Cloaking, a custom
-enchantment that can be applied to elytra in the smithing table.
-When a player wearing the elytra is hit by a mob, they gain 8 minutes of
-invisibility. The invisibility ends if the player damages a mob.
-
-**Relic of Quicksilver**: When an iron golem kills a ghast, it drops a bead of
-quicksilver with Sharpness V and Myth of Liquid Metal, a custom enchantment
-that can be applied to an iron sword in the smithing table. When placed in the
-offhand, the sword transforms into a shield with Unbreaking III. When
-placed in the main hand or dealing damage, it transforms back into its
-sword form. Transforming resets all properties of the item including its
-durability, enchantments, name, and banner pattern.
 
 ====
 

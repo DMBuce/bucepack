@@ -1,0 +1,30 @@
+{
+	"replace": false,
+	"values": [
+		"minecraft:bat",
+		"minecraft:cod",
+		"minecraft:panda",
+		"minecraft:pufferfish",
+		"minecraft:salmon",
+		"minecraft:tadpole",
+		"minecraft:tropical_fish",
+		"minecraft:turtle",
+		"minecraft:blaze",
+		"minecraft:cave_spider",
+		"minecraft:creeper",
+		"minecraft:drowned",
+		"minecraft:enderman",
+		"minecraft:endermite",
+		"minecraft:guardian",
+		"minecraft:husk",
+		"minecraft:silverfish",
+		"minecraft:skeleton",
+		"minecraft:spider",
+		"minecraft:stray",
+		"minecraft:vex",
+		"minecraft:wither_skeleton",
+		"minecraft:zombie",
+		"minecraft:zombie_villager",
+		"minecraft:zombified_piglin"
+	]
+}

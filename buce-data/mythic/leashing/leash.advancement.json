@@ -1,0 +1,48 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:barrier"
+		},
+		"title": {
+			"text": "Trigger Advancement"
+		},
+		"description": {
+			"text": "Something went wrong, you should revoke this advancement"
+		},
+		"show_toast": false,
+		"announce_to_chat": false,
+		"hidden": true,
+		"frame": "task"
+	},
+	"parent": "buce:mythic/root",
+	"criteria": {
+		"leash": {
+			"trigger": "minecraft:player_hurt_entity",
+			"conditions": {
+				"player": {
+					"equipment": {
+						"mainhand": {
+							"items": [ "minecraft:lead" ]
+						},
+						"legs": {
+							"items": [ "minecraft:leather_leggings" ],
+							"nbt": "{leashing:1b}"
+						}
+					}
+				},
+				"entity": [
+					{
+						"condition": "minecraft:entity_properties",
+						"entity": "this",
+						"predicate": {
+							"type": "#buce:mythic/leashing/leashable"
+						}
+					}
+				]
+			}
+		}
+	},
+	"rewards": {
+		"function": "buce:mythic/leashing/leash"
+	}
+}
