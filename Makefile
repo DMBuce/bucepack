@@ -352,7 +352,6 @@ spellsmithing_guide_FILES := $(DEFAULT_RESOURCE_FILES) \
 	$(wildcard assets/minecraft/textures/item/invis_*.png) \
 	$(wildcard assets/minecraft/textures/item/relic_*.png) \
 	$(wildcard assets/minecraft/textures/item/mythic_*.png) \
-	assets/minecraft/models/item/crossbow_firework.json \
 	assets/minecraft/models/item/crossbow.json \
 	assets/minecraft/models/item/diamond_axe.json \
 	assets/minecraft/models/item/diamond_boots.json \
