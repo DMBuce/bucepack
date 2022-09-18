@@ -31,9 +31,9 @@ pools:
       - { type: item, weight: 1, item: diamond,
           nbt: '{relic:1b,CustomModelData:22183,display:{Name:\"{\\\"text\\\":\\\"Relic of Sharpness\\\",\\\"color\\\":\\\"light_purple\\\"}\"},Enchantments:[{id:sharpness,lvl:5}]}'
         }
-      - { type: item, weight: 1, item: prismarine_shard,
-          nbt: '{relic:1b,CustomModelData:22183,HideFlags:2b,display:{Name:\"{\\\"text\\\":\\\"Relic of Quickness\\\",\\\"color\\\":\\\"light_purple\\\"}\",Lore:[\"\\\"§r§aBoon of Quickness\\\"\",\"\\\"\\\"\",\"\\\"§r§7When in Main Hand:\\\"\",\"\\\"§r§2 9 Attack Damage\\\"\",\"\\\"§r§2 1.3 Attack Speed\\\"\"]},Enchantments:[{id:unbreaking,lvl:3}],AttributeModifiers:[{Slot:\"mainhand\",AttributeName:\"generic.attack_damage\",Name:\"generic.attack_damage\",Amount:8.0,Operation:0,UUID:[I;45345856,-1140243102,-1841144530,-638218093]},{Slot:\"mainhand\",AttributeName:\"generic.attack_speed\",Name:\"generic.attack_speed\",Amount:-2.7,Operation:0,UUID:[I;107902100,1464878501,-1934334227,1114830228]}]}'
-        }
+#      - { type: item, weight: 1, item: prismarine_shard,
+#          nbt: '{relic:1b,CustomModelData:22183,HideFlags:2b,display:{Name:\"{\\\"text\\\":\\\"Relic of Quickness\\\",\\\"color\\\":\\\"light_purple\\\"}\",Lore:[\"\\\"§r§aBoon of Quickness\\\"\",\"\\\"\\\"\",\"\\\"§r§7When in Main Hand:\\\"\",\"\\\"§r§2 9 Attack Damage\\\"\",\"\\\"§r§2 1.3 Attack Speed\\\"\"]},Enchantments:[{id:unbreaking,lvl:3}],AttributeModifiers:[{Slot:\"mainhand\",AttributeName:\"generic.attack_damage\",Name:\"generic.attack_damage\",Amount:8.0,Operation:0,UUID:[I;45345856,-1140243102,-1841144530,-638218093]},{Slot:\"mainhand\",AttributeName:\"generic.attack_speed\",Name:\"generic.attack_speed\",Amount:-2.7,Operation:0,UUID:[I;107902100,1464878501,-1934334227,1114830228]}]}'
+#        }
       - { type: item, weight: 1, item: prismarine_crystals,
           nbt: '{relic:1b,CustomModelData:22183,display:{Name:\"{\\\"text\\\":\\\"Relic of Frost and Flood\\\",\\\"color\\\":\\\"light_purple\\\"}\"},Enchantments:[{id:frost_walker,lvl:2},{id:depth_strider,lvl:3}]}'
         }
