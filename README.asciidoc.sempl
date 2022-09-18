@@ -288,7 +288,7 @@ following datapacks.
 * <<invisible-squid-glamer,Invisible Squid Glamer>>: Invisible item frames
 * <<phantasmal,Phantasmal>>: Invisible item frames and light blocks
 * <<loot-overhaul,Loot Overhaul>>: Invisible light blocks
-* <<mythic-relics,Mythic Relics>>, <<relic-loot,Relic Loot>>, and <<starter-relic,Starter Relic>>: Relics
+* <<mythic-relics,Mythic Relics>>, <<relic-loot,Relic Loot>>, and <<starter-relic,Starter Relic>>: Some relics
 
 Download:
 https://github.com/DMBuce/bucepack/releases[All Releases]
@@ -1029,7 +1029,7 @@ the type of loot chest.
 ====
 
 If you have the <<spellsmithing-guide,Spellsmithing Guide>> resource pack
-installed, relics have custom item textures in the inventory.
+installed, some relics have custom item textures in the inventory.
 
 Download:
 https://github.com/DMBuce/bucepack/releases[All Releases]
@@ -1048,7 +1048,7 @@ the starter relic is generated in addition to the starter item added by
 those packs.
 
 If you have the <<spellsmithing-guide,Spellsmithing Guide>> resource pack
-installed, relics have custom item textures in the inventory.
+installed, some relics have custom item textures in the inventory.
 
 Download:
 https://github.com/DMBuce/bucepack/releases[All Releases]
@@ -1306,7 +1306,7 @@ When a player wearing the elytra is hit by a mob, they gain 8 minutes of
 invisibility. The invisibility ends if the player damages a mob.
 
 **Relic of Rodeos**: When a frog eats a silverfish,
-it drops a belt buckle with Myth of Roping,
+it drops a belt buckle with Myth of the Lasso,
 a custom enchantment that can be applied to leather chaps in the smithing
 table. When a player wearing the chaps hits one of
 https://raw.githubusercontent.com/DMBuce/bucepack/master/data/buce/tags/entity_types/mythic/leashing/leashable.json[these mobs]
@@ -1350,7 +1350,7 @@ the totem activates and the player bounces off the void.
 image::https://i.imgur.com/e0I8doV.png[Mythic Relics]
 
 If you have the <<spellsmithing-guide,Spellsmithing Guide>> resource pack
-installed, relics have custom item textures in the inventory.
+installed, some relics have custom item textures in the inventory.
 
 This is a <<ordering-data-packs,companion pack>> for the
 <<loot-overhaul,Loot Overhaul>> and <<phantasmal,Phantasmal>> datapacks,
@@ -2085,7 +2085,7 @@ Protection II that can be applied to elytra.
 ====
 
 If you have the <<spellsmithing-guide,Spellsmithing Guide>> resource pack
-installed, relics have custom item textures in the inventory.
+installed, some relics have custom item textures in the inventory.
 
 //image::https://i.imgur.com/VkbB90K.png[Common Relics]
 image::https://i.imgur.com/yCHfql9.png[Common Relics]

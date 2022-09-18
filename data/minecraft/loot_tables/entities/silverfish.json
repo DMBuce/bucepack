@@ -20,7 +20,7 @@
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{relic:1b,leashing:1b,CustomModelData:22183,display:{Name:\"{\\\"text\\\":\\\"Relic of Rodeos\\\",\\\"color\\\":\\\"light_purple\\\"}\",Lore:[\"\\\"§r§bMyth of Roping\\\"\"]},Enchantments:[{}]}",
+              "tag": "{relic:1b,leashing:1b,CustomModelData:22183,display:{Name:\"{\\\"text\\\":\\\"Relic of Rodeos\\\",\\\"color\\\":\\\"light_purple\\\"}\",Lore:[\"\\\"§r§bMyth of the Lasso\\\"\"]},Enchantments:[{}]}",
               "add": false
             },
             {
