@@ -1,7 +1,7 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "item/crossbow_standby"
+    "layer0": "item/relic_crossbow_standby"
   },
   "display": {
     "thirdperson_righthand": {
@@ -102,14 +102,6 @@
     },
     {
       "predicate": {
-        "charged": 1,
-        "firework": 1
-      },
-      "model": "item/crossbow_firework"
-    },
-    {
-      "predicate": {
-        "custom_model_data": 22183,
         "charged": 1,
         "firework": 1
       },
