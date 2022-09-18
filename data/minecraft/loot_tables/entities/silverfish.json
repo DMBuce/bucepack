@@ -10,7 +10,7 @@
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{relic:1b,breaking:1b,CustomModelData:22183,display:{Name:\"{\\\"text\\\":\\\"Relic of the Burrower\\\",\\\"color\\\":\\\"light_purple\\\"}\",Lore:[\"\\\"§r§bMyth of Breaking\\\"\"]},Enchantments:[{id:mending,lvl:1}]}",
+              "tag": "{relic:1b,breaking:1b,CustomModelData:22184,display:{Name:\"{\\\"text\\\":\\\"Relic of the Burrower\\\",\\\"color\\\":\\\"light_purple\\\"}\",Lore:[\"\\\"§r§bMyth of Breaking\\\"\"]},Enchantments:[{id:mending,lvl:1}]}",
               "add": false
             }
           ],

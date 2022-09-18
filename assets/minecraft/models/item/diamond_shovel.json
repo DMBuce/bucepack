@@ -9,6 +9,12 @@
         "custom_model_data": 22183
       },
       "model": "item/relic_diamond_shovel"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 22184
+      },
+      "model": "item/mythic_diamond_shovel"
     }
   ]
 }

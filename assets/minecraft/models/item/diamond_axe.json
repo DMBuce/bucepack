@@ -9,6 +9,12 @@
         "custom_model_data": 22183
       },
       "model": "item/relic_diamond_axe"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 22184
+      },
+      "model": "item/mythic_diamond_axe"
     }
   ]
 }
