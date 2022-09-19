@@ -60,6 +60,6 @@
 		]
 	],
 	"rewards": {
-		"function": "buce:mythic/bounding/activate"
+		"function": "buce:mythic/bounding/check"
 	}
 }
