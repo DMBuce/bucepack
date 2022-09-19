@@ -348,23 +348,19 @@ spellsmithing_guide_FILES := $(DEFAULT_RESOURCE_FILES) \
 	$(wildcard assets/minecraft/models/item/invis_*.json) \
 	$(wildcard assets/minecraft/models/item/relic_*.json) \
 	$(wildcard assets/minecraft/models/item/mythic_*.json) \
+	$(wildcard assets/minecraft/models/item/leather_*.json) \
+	$(wildcard assets/minecraft/models/item/diamond_*.json) \
+	$(wildcard assets/minecraft/models/item/netherite_*.json) \
 	$(wildcard assets/minecraft/textures/item/armor_stand_*.png) \
 	$(wildcard assets/minecraft/textures/item/invis_*.png) \
 	$(wildcard assets/minecraft/textures/item/relic_*.png) \
 	$(wildcard assets/minecraft/textures/item/mythic_*.png) \
 	assets/minecraft/models/item/crossbow.json \
-	assets/minecraft/models/item/diamond_axe.json \
-	assets/minecraft/models/item/diamond_boots.json \
-	assets/minecraft/models/item/diamond_hoe.json \
-	assets/minecraft/models/item/diamond_pickaxe.json \
-	assets/minecraft/models/item/diamond_shovel.json \
-	assets/minecraft/models/item/diamond_sword.json \
 	assets/minecraft/models/item/elytra.json \
 	assets/minecraft/models/item/glow_item_frame.json \
 	assets/minecraft/models/item/golden_helmet.json \
 	assets/minecraft/models/item/iron_sword.json \
 	assets/minecraft/models/item/item_frame.json \
-	assets/minecraft/models/item/leather_boots.json \
 	assets/minecraft/models/item/light.json \
 	assets/minecraft/models/item/netherite_chestplate.json \
 	assets/minecraft/models/item/spyglass.json \

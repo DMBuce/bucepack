@@ -1,20 +1,20 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "minecraft:item/netherite_chestplate"
+    "layer0": "minecraft:item/netherite_boots"
   },
   "overrides": [
     {
       "predicate": {
         "custom_model_data": 22183
       },
-      "model": "item/relic_netherite_chestplate"
+      "model": "item/relic_netherite_boots"
     },
     {
       "predicate": {
         "custom_model_data": 22184
       },
-      "model": "item/mythic_netherite_chestplate"
+      "model": "item/mythic_netherite_boots"
     }
   ]
 }

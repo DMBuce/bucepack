@@ -2106,6 +2106,7 @@ Check and resolve automatic changes with `git status && git diff`
 Bump pack_format in mcmeta if necessary
 Merge loot table changes with Loot Overhaul
 Check for new Mineable blocks in data/minecraft/tags/blocks/unmineable.json
+Add new mobs to leashable pack, lasso/balloon enchantments
 Add new plants to Gardener Endermen
 Add new smooth and cracked blocks to More Cutting
 Add new warm blocks to Warmer Striders
