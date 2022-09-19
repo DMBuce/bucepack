@@ -1366,11 +1366,13 @@ applied to a shield in the smithing table. A player blocking with the shield
 attracts the nearest item. A player that sneaks while blocking with the shield
 attracts all nearby items.
 
-**Relic of the Flying Pig**: When a pig with Levitation dies, it drops a
-porkchop with Myth of Hovering, a custom enchantment that can be applied to a
-chainmail chestplate in the smithing table. When a player wearing the chestplate
-eats cooked or raw porkchop, they gain Levitation II and Slowness II
-for 10 seconds.
+**Relic of the Flying Pig**: When a pig with Levitation dies,
+it drops a porkchop with Myth of Hovering,
+a custom enchantment that can be applied
+to a chainmail chestplate in the smithing table.
+When a player wearing the chestplate eats cooked or raw porkchop,
+they gain Levitation II and Slowness II for 10 seconds,
+and saddling a pig while wearing the chestplate makes it hover.
 
 **Relic of Parties**: When a player channels lightning on a vex, it
 transforms into an illusioner. If killed by a player, the illusioner drops
