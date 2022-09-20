@@ -20,7 +20,7 @@
 			"trigger": "minecraft:fall_from_height",
 			"conditions": {
 				"distance": {
-					"y": { "min": 5 }
+					"y": { "min": 3.5 }
 				},
 				"player": {
 					"equipment": {
