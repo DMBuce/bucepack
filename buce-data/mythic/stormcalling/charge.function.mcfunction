@@ -4,7 +4,7 @@
 scoreboard players add @s storm_charge 1
 
 # start storm if charge exceeds threshold
-execute if entity @s[scores={storm_charge=10..}] run function buce:mythic/stormcalling/activate
+execute if entity @s[scores={storm_charge=15..}] run function buce:mythic/stormcalling/activate
 
 ## debug
 #tellraw @s ["Storm charge: ",{"score":{"name":"*","objective":"storm_charge"}}]

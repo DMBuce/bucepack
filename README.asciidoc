@@ -1398,7 +1398,7 @@ Woodland Mansion, Nether Fortress, or End City.
 **Relic of Storms**: If the <<loot-overhaul,Loot Overhaul>> datapack is
 installed before this one, hearts of the sea in buried treasure chests have Myth of
 Stormcalling, a custom enchantment that can be applied to a trident in the
-smithing table. A player can summon a thunderstorm with the trident
+smithing table. A player can summon rain with the trident
 by standing in water, looking skyward, and holding right click for several
 seconds.
 
