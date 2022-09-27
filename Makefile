@@ -345,16 +345,17 @@ classic_food_FILES := $(DEFAULT_RESOURCE_FILES) \
 
 spellsmithing_guide_FILES := $(DEFAULT_RESOURCE_FILES) \
 	$(wildcard assets/minecraft/models/item/armor_stand*.json) \
-	$(wildcard assets/minecraft/models/item/invis_*.json) \
-	$(wildcard assets/minecraft/models/item/relic_*.json) \
-	$(wildcard assets/minecraft/models/item/mythic_*.json) \
-	$(wildcard assets/minecraft/models/item/leather_*.json) \
 	$(wildcard assets/minecraft/models/item/diamond_*.json) \
+	$(wildcard assets/minecraft/models/item/invis_*.json) \
+	$(wildcard assets/minecraft/models/item/leather_*.json) \
+	$(wildcard assets/minecraft/models/item/mythic_*.json) \
 	$(wildcard assets/minecraft/models/item/netherite_*.json) \
+	$(wildcard assets/minecraft/models/item/relic_*.json) \
 	$(wildcard assets/minecraft/textures/item/armor_stand_*.png) \
 	$(wildcard assets/minecraft/textures/item/invis_*.png) \
-	$(wildcard assets/minecraft/textures/item/relic_*.png) \
 	$(wildcard assets/minecraft/textures/item/mythic_*.png) \
+	$(wildcard assets/minecraft/textures/item/relic_*.png) \
+	assets/minecraft/models/item/bow.json \
 	assets/minecraft/models/item/crossbow.json \
 	assets/minecraft/models/item/elytra.json \
 	assets/minecraft/models/item/glow_item_frame.json \
