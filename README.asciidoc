@@ -1434,7 +1434,7 @@ enchantment that can be applied to a diamond pick, axe, shovel, or hoe in the
 smithing table. When a block broken by the tool drops an item and decreases the
 tool's durability, the tool will break several extra blocks.
 Picks break a 3x3 square, axes break a 32-block-high column,
-shovels break a 4-block column, and hoes break a 3x3x3 sphere.
+shovels break a 9-block column, and hoes break a 3x3x3 sphere.
 The extra broken blocks are not affected by fortune or silk touch and do not
 further decrease the tool's durability.
 
