@@ -2,7 +2,7 @@ pools:
   - rolls: 1
     entries:
       - { type: item, weight: 1, item: barrel,
-        nbt: '{display:{Name:\"\\\"Barrel o'' Treasure\\\"\"},BlockEntityTag:{LootTable:\"minecraft:chests/buried_treasure\"}}'
+        nbt: '{display:{Lore:[\"\\\"§r§7Treasure\\\"\"]},BlockEntityTag:{LootTable:\"minecraft:chests/buried_treasure\"}}'
         }
       - { type: empty, weight: 2 }
   - rolls: 3

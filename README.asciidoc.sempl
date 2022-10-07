@@ -744,7 +744,7 @@ Removes buried treasure maps in shipwrecks. There is a
 1/3 chance for the map chest to have a barrel containing buried
 treasure loot instead.
 
-image::https://i.imgur.com/2ZXAjNt.png[Barrel o' Treasure]
+image::https://i.imgur.com/ZHAbtU9.png[Treasure Barrel]
 
 This is a workaround for
 https://bugs.mojang.com/browse/MC-218156[MC-218156],
@@ -752,7 +752,7 @@ which can affect challenge maps such as
 https://github.com/dmbuce/badlands-challenge#the-badlands-challenge[The Badlands Challenge]
 or even default worldgen.
 
-See <<barrel-o-treasure,Barrel o' Treasure>> for a version of this pack that's
+See <<treasure-barrels,Treasure Barrels>> for a version of this pack that's
 compatible with <<loot-overhaul,Loot Overhaul>>.
 
 Download:
@@ -1108,7 +1108,7 @@ Direct Links:
 https://github.com/DMBuce/bucepack/releases/latest/download/starter_bonus_chest.zip[`starter_bonus_chest.zip`]
 https://github.com/DMBuce/bucepack/releases/latest/download/starter_bonus_box.zip[`starter_bonus_box.zip`]
 
-==== Barrel o' Treasure
+==== Treasure Barrels
 
 If this <<ordering-data-packs,addon pack>>
 is enabled and loaded after <<loot-overhaul,Loot Overhaul>>,
@@ -1116,7 +1116,7 @@ it removes buried treasure maps in shipwrecks. There is a
 1/3 chance for the map chest to have a barrel containing buried
 treasure loot instead.
 
-image::https://i.imgur.com/2ZXAjNt.png[Barrel o' Treasure]
+image::https://i.imgur.com/ZHAbtU9.png[Treasure Barrel]
 
 This is a workaround for
 https://bugs.mojang.com/browse/MC-218156[MC-218156],
@@ -1131,7 +1131,7 @@ Download:
 https://github.com/DMBuce/bucepack/releases[All Releases]
 
 Direct Link:
-https://github.com/DMBuce/bucepack/releases/latest/download/loot_overhaul_barrel_of_treasure.zip[`loot_overhaul_barrel_of_treasure.zip`]
+https://github.com/DMBuce/bucepack/releases/latest/download/loot_overhaul_treasure_barrels.zip[`loot_overhaul_treasure_barrels.zip`]
 
 == Trigger Data Packs
 
