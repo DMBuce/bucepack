@@ -512,7 +512,7 @@ Makes some crafting recipes cheaper.
 
 * Stairs: 6 blocks → 6 stairs, or 3 blocks → 3 stairs
 * Fences: 4 planks + 2 sticks → 4 fences
-* Gates: 2 planks + 4 sticks  4 gates
+* Gates: 2 planks + 4 sticks → 4 gates
 * Pressure Plates: 2 planks → 2 pressure plates
 * Signs: 6 planks + 1 stick → 6 signs
 * Trapdoors: 6 planks → 6 trapdoors
