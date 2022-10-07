@@ -78,6 +78,7 @@ DATAPACKFILES = \
 	shearless.zip \
 	smart_allays.zip \
 	starter_bed.zip \
+	starter_bonus_box.zip \
 	starter_bonus_chest.zip \
 	starter_book.zip \
 	starter_bucket.zip \
@@ -565,6 +566,9 @@ loot_overhaul_starter_relic_FILES := $(DEFAULT_DATA_FILES) \
 	$(relic_FILES) \
 	$(shell ls buce-data/loot_addons/loot_overhaul_starter_relic* | ./bin/ext2dir) \
 	data/buce/loot_tables/loot_overhaul/extra/structure/spawn_bonus_chest_loot_overhaul_starter_relic.json \
+
+starter_bonus_box_FILES := $(DEFAULT_DATA_FILES) \
+	$(shell find buce-data/starter_bonus_box -type f | ./bin/ext2dir) \
 
 starter_bonus_chest_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell ls buce-data/starter_bonus_chest* | ./bin/ext2dir) \
@@ -1304,6 +1308,12 @@ loot_overhaul_treasure_seeds.zip: $(loot_overhaul_treasure_seeds_FILES)
 	./bin/ziprename _$(@:.zip=) "" $@
 
 loot_overhaul_starter_relic.zip: $(loot_overhaul_starter_relic_FILES)
+	cp meta/$(@:.zip=.png) pack.png
+	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
+	zip $@ pack.png pack.mcmeta $^
+	./bin/ziprename _$(@:.zip=) "" $@
+
+starter_bonus_box.zip: $(starter_bonus_box_FILES)
 	cp meta/$(@:.zip=.png) pack.png
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^

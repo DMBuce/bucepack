@@ -1092,17 +1092,21 @@ https://github.com/DMBuce/bucepack/releases/latest/download/starter_map.zip[`sta
 https://github.com/DMBuce/bucepack/releases/latest/download/starter_shulker.zip[`starter_shulker.zip`]
 https://github.com/DMBuce/bucepack/releases/latest/download/starter_spyglass.zip[`starter_spyglass.zip`]
 
-==== Starter Bonus Chest
+==== Starter Bonus Loot
 
-This is a companion pack for the <<loot-overhaul,Loot Overhaul>> datapack
-that adds a bonus spawn chest to each player's
+This is a pair of companion packs for the <<loot-overhaul,Loot Overhaul>>
+datapack.
+**Starter Bonus Chest** adds a bonus spawn chest to each player's
+inventory the first time they join the world.
+**Starter Bonus Box** adds a shulker box with bonus spawn loot to each player's
 inventory the first time they join the world.
 
 Download:
 https://github.com/DMBuce/bucepack/releases[All Releases]
 
-Direct Link:
+Direct Links:
 https://github.com/DMBuce/bucepack/releases/latest/download/starter_bonus_chest.zip[`starter_bonus_chest.zip`]
+https://github.com/DMBuce/bucepack/releases/latest/download/starter_bonus_box.zip[`starter_bonus_box.zip`]
 
 ==== Barrel o' Treasure
 
@@ -1592,7 +1596,7 @@ See <<language-support,Language Support>> for details.
 Download:
 https://github.com/DMBuce/bucepack/releases[All Releases]
 
-Direct Links:
+Direct Link:
 https://github.com/DMBuce/bucepack/releases/latest/download/copper_overhaul.zip[`copper_overhaul.zip`]
 
 === Path Strider
