@@ -99,6 +99,10 @@ done <<< '
 	sandstone sand
 	red_sandstone red_sand
 	snow_block snowball
+	bricks brick
+	nether_bricks nether_brick
+	amethyst_block amethyst_shard
+	dripstone_block pointed_dripstone
 '
 
 # generate 3x uncrafting recipes
