@@ -48,6 +48,7 @@ DATAPACKFILES = \
 	cutting_smooth_cracked.zip \
 	dragonproof.zip \
 	dripblock.zip \
+	ender_relic.zip \
 	escape_grind.zip \
 	escape_nether.zip \
 	escape_the_end.zip \
@@ -618,6 +619,11 @@ dripblock_FILES := $(DEFAULT_DATA_FILES) \
 	data/minecraft/tags/functions/island_dripblock.json \
 	data/minecraft/tags/functions/load_dripblock.json \
 	data/minecraft/worldgen/noise_settings/overworld.json \
+
+ender_relic_FILES := $(DEFAULT_DATA_FILES) \
+	$(shell find buce-data/ender_relic -type f | ./bin/ext2dir) \
+	data/buce/functions/var.mcfunction \
+	data/buce/loot_tables/relic/random.json \
 
 skybarrel_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell find buce-data/skybarrel -type f | ./bin/ext2dir) \
@@ -1392,6 +1398,12 @@ leashed.zip: $(leashed_FILES)
 	./bin/ziprename _$(@:.zip=) "" $@
 
 mineable.zip: $(mineable_FILES)
+	cp meta/$(@:.zip=.png) pack.png
+	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
+	zip $@ pack.png pack.mcmeta $^
+	./bin/ziprename _$(@:.zip=) "" $@
+
+ender_relic.zip: $(ender_relic_FILES)
 	cp meta/$(@:.zip=.png) pack.png
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^

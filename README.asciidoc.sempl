@@ -288,7 +288,7 @@ following datapacks.
 * <<invisible-squid-glamer,Invisible Squid Glamer>>: Invisible item frames
 * <<phantasmal,Phantasmal>>: Invisible item frames and light blocks
 * <<loot-overhaul,Loot Overhaul>>: Invisible light blocks
-* <<mythic-relics,Mythic Relics>>, <<relic-loot,Relic Loot>>, and <<starter-relic,Starter Relic>>: Some relics
+* <<mythic-relics,Mythic Relics>>, <<relic-loot,Relic Loot>>, <<starter-relic,Starter Relic>>, <<ender-relic,Ender Relic>>: Some relics
 
 Download:
 https://github.com/DMBuce/bucepack/releases[All Releases]
@@ -1052,7 +1052,7 @@ the starter relic is generated in addition to the starter item added by
 those packs.
 
 If you have the <<spellsmithing-guide,Spellsmithing Guide>> resource pack
-installed, some relics have custom item textures in the inventory.
+enabled, some relics have custom item textures in the inventory.
 
 Download:
 https://github.com/DMBuce/bucepack/releases[All Releases]
@@ -1247,6 +1247,21 @@ https://github.com/DMBuce/bucepack/releases[All Releases]
 Direct Link:
 https://github.com/DMBuce/bucepack/releases/latest/download/breeding_overhaul.zip[`breeding_overhaul.zip`]
 
+=== Ender Relic
+
+Adds a random <<relics,Relic>> to each player's enderchest.
+The relic is added to the ender chest's middle slot.
+If that slot is occupied, the relic is given to the player instead.
+
+If you have the <<spellsmithing-guide,Spellsmithing Guide>> resource pack
+enabled, some relics have custom item textures in the inventory.
+
+Download:
+https://github.com/DMBuce/bucepack/releases[All Releases]
+
+Direct Link:
+https://github.com/DMBuce/bucepack/releases/latest/download/ender_relic.zip[`ender_relic.zip`]
+
 === Mythic Relics
 
 Adds <<Relics>> with <<mythic-enchantments,Mythic Enchantments>>
@@ -1343,6 +1358,23 @@ Picks break a 3x3 square, axes break a 32-block-high column,
 shovels break a 9-block column, and hoes break a 3x3x3 sphere.
 The extra broken blocks are not affected by fortune or silk touch and do not
 further decrease the tool's durability.
+
+// some things to note about Breaking, Silk Touch, and Fortune
+//
+// getting a mix of drops for ores and stone is really annoying with
+// silk touch + breaking
+//
+// fortune axes only work on melons
+//
+// fortune shovels only work on gravel
+//
+// silk hoes and fortune hoes are both useful for leaves
+//
+// so my preferred tool loadout is:
+// * picks: fortune + breaking, silk touch + unbreaking
+// * axe: silk touch + breaking
+// * shovel: silk touch + breaking
+// * hoe: fortune, silk touch, not sure about breaking vs unbreaking on them
 
 **Relic of Echoes**: If the <<loot-overhaul,Loot Overhaul>> datapack is
 installed before this one, some echo shards in ancient city chests have Myth of

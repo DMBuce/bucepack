@@ -1,13 +1,13 @@
 {
 	"display": {
 		"icon": {
-			"item": "minecraft:brown_shulker_box"
+			"item": "minecraft:ender_chest"
 		},
 		"title": {
-			"text": "Starter Bonus Box"
+			"text": "Ender Relic"
 		},
 		"description": {
-			"text": "Start with a shulker of bonus loot in your inventory"
+			"text": "Adds a relic to your ender chest"
 		},
 		"show_toast": false,
 		"announce_to_chat": false,
@@ -20,6 +20,6 @@
 		}
 	},
 	"rewards": {
-		"function": "buce:starter_bonus_box/join"
+		"function": "buce:ender_relic/join"
 	}
 }
