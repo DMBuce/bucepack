@@ -519,8 +519,9 @@ Makes some crafting recipes cheaper.
 * Wood: 4 logs → 4 wood
 * Hyphae: 4 stems → 4 hyphae
 * Hoppers: 3 ingots + 1 chest → 1 hopper
+* Chains: 3 iron nuggets → 1 chain
 * Shields: 1 windowless door + 8 iron nuggets → 1 shield
-* Sticks crafted from bamboo: 1 bamboo → 1 stick
+* Sticks: 1 bamboo → 1 stick
 
 ====
 
@@ -539,17 +540,20 @@ storage.
 [%collapsible]
 ====
 
+* Amethyst
 * Blue & Packed Ice
-* Prismarine Bricks & Blocks
-* Melons
+* Books & Bookshelves
+* Bricks & Nether Bricks
 * Clay
+* Cobweb
+* Dripstone
 * Glowstone
 * Magma
+* Melons
+* Prismarine Bricks & Blocks
 * Purpur
 * Sandstone & Red Sandstone
 * Snow
-* Cobweb
-* Books & Bookshelves
 
 ====
 
