@@ -678,6 +678,7 @@ crafting_plentiful_FILES := $(DEFAULT_DATA_FILES) \
 	$(wildcard data/minecraft/recipes/*_hyphae.json) \
 	data/minecraft/recipes/hopper.json \
 	data/minecraft/recipes/shield.json \
+	data/minecraft/recipes/chain.json \
 	data/minecraft/recipes/stick_from_bamboo_item.json \
 
 crafting_turtle_box_FILES := $(DEFAULT_DATA_FILES) \
