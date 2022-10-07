@@ -41,7 +41,7 @@ DATAPACKFILES = \
 	crafting_colorful.zip \
 	crafting_loot.zip \
 	crafting_plentiful.zip \
-	crafting_split.zip \
+	crafting_unpacked.zip \
 	crafting_turtle_box.zip \
 	crafting_workstation.zip \
 	cutting_declutter.zip \
@@ -694,8 +694,8 @@ crafting_plentiful_FILES := $(DEFAULT_DATA_FILES) \
 crafting_turtle_box_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell find buce-data/recipes/crafting/turtle -type f | ./bin/ext2dir) \
 
-crafting_split_FILES := $(DEFAULT_DATA_FILES) \
-	$(shell find buce-data/recipes/crafting/split -type f | ./bin/ext2dir) \
+crafting_unpacked_FILES := $(DEFAULT_DATA_FILES) \
+	$(shell find buce-data/recipes/crafting/unpacked -type f | ./bin/ext2dir) \
 
 crafting_workstation_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell find buce-data/recipes/crafting/workstation -type f | ./bin/ext2dir) \
@@ -1277,7 +1277,7 @@ cutting_smooth_cracked.zip: $(cutting_smooth_cracked_FILES)
 	zip $@ pack.png pack.mcmeta $^
 	./bin/ziprename _$(@:.zip=) "" $@
 
-crafting_split.zip: $(crafting_split_FILES)
+crafting_unpacked.zip: $(crafting_unpacked_FILES)
 	cp meta/$(@:.zip=.png) pack.png
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^
