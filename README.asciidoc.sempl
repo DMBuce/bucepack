@@ -504,23 +504,23 @@ https://github.com/DMBuce/bucepack/releases/latest/download/crafting_loot.zip[`c
 
 === Plentiful Crafting
 
-Makes the following crafting recipes cheaper.
+Makes some crafting recipes cheaper.
 
 .Click for a summary of recipes
 [%collapsible]
 ====
 
-* Stairs
-* Fences
-* Gates
-* Pressure Plates
-* Signs
-* Trapdoors
-* Wood
-* Hyphae
-* Hoppers
-* Shields
-* Sticks crafted from bamboo
+* Stairs: 6 blocks → 6 stairs, or 3 blocks → 3 stairs
+* Fences: 4 planks + 2 sticks → 4 fences
+* Gates: 2 planks + 4 sticks  4 gates
+* Pressure Plates: 2 planks → 2 pressure plates
+* Signs: 6 planks + 1 stick → 6 signs
+* Trapdoors: 6 planks → 6 trapdoors
+* Wood: 4 logs → 4 wood
+* Hyphae: 4 stems → 4 hyphae
+* Hoppers: 3 ingots + 1 chest → 1 hopper
+* Shields: 1 windowless door + 8 iron nuggets → 1 shield
+* Sticks crafted from bamboo: 1 bamboo → 1 stick
 
 ====
 
