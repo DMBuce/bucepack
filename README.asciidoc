@@ -476,6 +476,17 @@ https://github.com/DMBuce/bucepack/releases/latest/download/blue_fire.zip[`blue_
 These packs add or modify recipes in the vanilla game.
 They shouldn't add any lag to your game.
 
+=== Cart Crafting
+
+Lets you remove the minecart from chest/furnace/hopper/tnt minecarts in the
+crafting grid, or smelt them into minecarts.
+
+Download:
+https://github.com/DMBuce/bucepack/releases[All Releases]
+
+Direct Link:
+https://github.com/DMBuce/bucepack/releases/latest/download/crafting_cart.zip[`crafting_cart.zip`]
+
 === Colorful Crafting
 
 Lets you dye any color of bed, wool, or candle.

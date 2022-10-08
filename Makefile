@@ -38,6 +38,7 @@ DATAPACKFILES = \
 	blue_fire.zip \
 	breeding_overhaul.zip \
 	climbable.zip \
+	crafting_cart.zip \
 	crafting_colorful.zip \
 	crafting_loot.zip \
 	crafting_plentiful.zip \
@@ -666,6 +667,9 @@ more_allays_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell find buce-data/more_allays -type f | ./bin/ext2dir) \
 	data/minecraft/tags/worldgen/structure/on_ancient_city_explorer_maps.json \
 
+crafting_cart_FILES := $(DEFAULT_DATA_FILES) \
+	$(shell find buce-data/recipes/crafting/carts -type f | ./bin/ext2dir) \
+
 crafting_colorful_FILES := $(DEFAULT_DATA_FILES) \
 	data/minecraft/recipes/*_bed.json \
 	data/minecraft/recipes/*_wool.json \
@@ -1242,6 +1246,12 @@ global_effects.zip: $(global_effects_FILES)
 	./bin/ziprename _$(@:.zip=) "" $@
 
 crafting_loot.zip: $(crafting_loot_FILES)
+	cp meta/$(@:.zip=.png) pack.png
+	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
+	zip $@ pack.png pack.mcmeta $^
+	./bin/ziprename _$(@:.zip=) "" $@
+
+crafting_cart.zip: $(crafting_cart_FILES)
 	cp meta/$(@:.zip=.png) pack.png
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^
