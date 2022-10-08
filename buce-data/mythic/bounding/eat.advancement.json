@@ -1,0 +1,44 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:barrier"
+		},
+		"title": {
+			"text": "Trigger Advancement"
+		},
+		"description": {
+			"text": "Something went wrong, you should revoke this advancement"
+		},
+		"show_toast": false,
+		"announce_to_chat": false,
+		"hidden": true,
+		"frame": "task"
+	},
+	"parent": "buce:mythic/root",
+	"criteria": {
+		"eat": {
+			"trigger": "minecraft:consume_item",
+			"conditions": {
+				"item": {
+					"items": [
+						"minecraft:carrot",
+						"minecraft:golden_carrot",
+						"minecraft:cooked_rabbit",
+						"minecraft:rabbit",
+						"minecraft:rabbit_stew"
+					]
+				},
+				"player": {
+					"equipment": {
+						"feet": {
+							"nbt": "{bounding:1b}"
+						}
+					}
+				}
+			}
+		}
+	},
+	"rewards": {
+		"function": "buce:mythic/bounding/activate"
+	}
+}

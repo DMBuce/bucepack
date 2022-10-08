@@ -1,5 +1,8 @@
 # runs when a player activates bounding
 
+# revoke advancement
+advancement revoke @s only buce:mythic/bounding/eat
+
 # give speed and jump boost
 effect give @s speed 90 1 true
 effect give @s jump_boost 90 1 true

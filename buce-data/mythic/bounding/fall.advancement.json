@@ -30,35 +30,8 @@
 					}
 				}
 			}
-		},
-		"eat": {
-			"trigger": "minecraft:consume_item",
-			"conditions": {
-				"item": {
-					"items": [
-						"minecraft:carrot",
-						"minecraft:golden_carrot",
-						"minecraft:cooked_rabbit",
-						"minecraft:rabbit",
-						"minecraft:rabbit_stew"
-					]
-				},
-				"player": {
-					"equipment": {
-						"feet": {
-							"nbt": "{bounding:1b}"
-						}
-					}
-				}
-			}
 		}
 	},
-	"requirements": [
-		[
-			"fall",
-			"eat"
-		]
-	],
 	"rewards": {
 		"function": "buce:mythic/bounding/check"
 	}
