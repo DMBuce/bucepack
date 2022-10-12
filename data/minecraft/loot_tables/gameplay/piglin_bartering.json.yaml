@@ -6,7 +6,6 @@ pools:
       - { type: item, weight: 8, item: iron_boots, enchant_rand: [
             mending,
             soul_speed,
-            swift_sneak,
             frost_walker,
             vanishing_curse,
             binding_curse
