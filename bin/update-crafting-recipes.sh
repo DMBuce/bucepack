@@ -51,7 +51,7 @@ sed -Ei '
 # generate 3x3 uncrafting recipes
 while read input output; do
 	[[ -z "$input$output" ]] && continue
-	sempl - "$dir/split/3x3_${output}.recipe.json" <<-EOF
+	sempl - "$dir/unpacked/3x3_${output}.recipe.json" <<-EOF
 		{
 		  "type": "minecraft:crafting_shapeless",
 		  "ingredients": [
@@ -76,7 +76,7 @@ done <<< '
 # generate 2x2 uncrafting recipes
 while read input output; do
 	[[ -z "$input$output" ]] && continue
-	sempl - "$dir/split/2x2_${output}.recipe.json" <<-EOF
+	sempl - "$dir/unpacked/2x2_${output}.recipe.json" <<-EOF
 		{
 		  "type": "minecraft:crafting_shapeless",
 		  "ingredients": [
@@ -103,12 +103,13 @@ done <<< '
 	nether_bricks nether_brick
 	amethyst_block amethyst_shard
 	dripstone_block pointed_dripstone
+	honeycomb_block honeycomb
 '
 
 # generate 3x uncrafting recipes
 while read input output; do
 	[[ -z "$input$output" ]] && continue
-	sempl - "$dir/split/3x_${output}.recipe.json" <<-EOF
+	sempl - "$dir/unpacked/3x_${output}.recipe.json" <<-EOF
 		{
 		  "type": "minecraft:crafting_shapeless",
 		  "ingredients": [

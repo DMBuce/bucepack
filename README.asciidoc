@@ -542,7 +542,7 @@ https://github.com/DMBuce/bucepack/releases[All Releases]
 Direct Link:
 https://github.com/DMBuce/bucepack/releases/latest/download/crafting_plentiful.zip[`crafting_plentiful.zip`]
 
-=== Split Crafting
+=== Unpacked Crafting
 
 Lets you uncraft the following blocks so that they can be used as convenient
 storage.
