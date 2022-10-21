@@ -1154,7 +1154,7 @@ that run commands when certain conditions are met.
 === Smart Allays
 
 When a player places a hopper against a note block,
-allays within 8 blocks of the player that are assigned to a note block
+allays within 16 blocks of the player that are assigned to a note block
 become permanently assigned to their note block.
 
 To break an allay's assignment,
