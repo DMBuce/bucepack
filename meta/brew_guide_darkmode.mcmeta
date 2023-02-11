@@ -1,1 +1,6 @@
-brew_guide.mcmeta
+{
+  "pack": {
+    "pack_format": 12,
+    "description": "Buce\u0027s Brew Guide: Puts hints in the brewing stand GUI"
+  }
+}
