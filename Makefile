@@ -1636,3 +1636,9 @@ clean:
 	rm -rf $(CLEAN_TARGETS)
 	git checkout data/buce/loot_tables/mythic/chromatic/fireworks.json
 
+export DATARESOURCEPACKFILES RESOURCEPACKFILES DATAPACKFILES
+.PHONY: check
+check:
+	@echo Running tests
+	find ./bin/test-* -print0 | xargs -0 bash
+

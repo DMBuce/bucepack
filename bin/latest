@@ -14,7 +14,7 @@ if [[ ! -f ~/".minecraft/versions/$latest/$latest.jar" ]]; then
 elif [[ ! -d "$latest.jar" ]]; then
 	mkdir "$latest.jar"
 	cd "$latest.jar"
-	jar xf ~/".minecraft/versions/$latest/$latest.jar" assets data
+	jar xf ~/".minecraft/versions/$latest/$latest.jar" assets data version.json
 fi
 
 # print latest version
