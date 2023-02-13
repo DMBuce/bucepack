@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": [
+    { "item": "minecraft:bamboo_mosaic_stairs" }
+  ],
+  "result": "minecraft:bamboo_mosaic_slab",
+  "count": 1
+}
