@@ -1450,10 +1450,10 @@ invisibility. The invisibility ends if the player damages a mob.
 it drops a belt buckle with Myth of the Lasso and Myth of Balloon Animals,
 two custom enchantments that can be applied to leather pants in the smithing
 table. When a player wearing the pants hits one of
-https://raw.githubusercontent.com/DMBuce/bucepack/master/data/buce/tags/entity_types/mythic/leashing/leashable.json[these mobs]
+https://raw.githubusercontent.com/DMBuce/bucepack/master/buce-data/mythic/leashing/leashable.entity_type.tag.json[these mobs]
 with a lead, the lead attaches to the mob.
 When a player wearing the pants right clicks a lead on one of
-https://raw.githubusercontent.com/DMBuce/bucepack/master/data/buce/tags/entity_types/mythic/balloons/balloons.json[these creatures],
+https://raw.githubusercontent.com/DMBuce/bucepack/master/buce-data/mythic/balloons/balloons.entity_type.tag.json[these creatures],
 it gains levitation until a player unleashes it or it reaches y=350.
 
 **Relic of Quicksilver**: When an iron golem kills a ghast, it drops a bead of
@@ -2329,7 +2329,6 @@ Run `make update`
 Check and resolve automatic changes with `git status && git diff`
 Merge loot table changes with Loot Overhaul
 Check for new Mineable blocks in data/minecraft/tags/blocks/unmineable.json
-Add new mobs to leashable pack, lasso/balloon enchantments
 Add new plants to Gardener Endermen
 Add new smooth and cracked blocks to More Cutting
 Add new warm blocks to Warmer Striders
@@ -2337,6 +2336,8 @@ Add new potions to Brewing Guide
 Add new ores to Ore Types
 Add new End blocks to mk-dragonproof.sh
 Add new leashable mobs to #buce:leashed/leashable
+Add new leashable mobs to #buce:mythic/leashing/leashable
+Add new floating mobs to #buce:mythic/balloons/balloons
 
 HOW TO UPDATE LOOT TABLES AFTER MINECRAFT UPDATES
 =================================================
@@ -2353,7 +2354,7 @@ Convert the original tables from YAML to JSON
 
 Compare the new and old tables using diff
 
- diff -ruU10 orig orig.new/ | grep -v '^Only in' | vim -
+ diff -ruU10 orig orig.new/ | grep -v '^Only in.*yaml$' | vim -
 
 If diff complains about newlines, append newlines to the new tables
 
@@ -2367,7 +2368,7 @@ changes Mojang made to the JSON
 Repeat important steps as necessary
 
  find orig -name \*.yaml -exec ./yaml2json {} +
- diff -ruU10 orig orig.new/ | grep -v '^Only in' | vim -
+ diff -ruU10 orig orig.new/ | grep -v '^Only in.*yaml$' | vim -
  vim loot_table.j2
 
 Commit changes in the usual way
