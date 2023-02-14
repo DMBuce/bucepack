@@ -15,6 +15,15 @@ elif [[ ! -d "$latest.jar" ]]; then
 	mkdir "$latest.jar"
 	cd "$latest.jar"
 	jar xf ~/".minecraft/versions/$latest/$latest.jar" assets data version.json
+	cd -
+fi
+
+# copy sounds.json
+if [[ ! -f ~/".minecraft/assets/indexes/${latest%.*}.json" ]]; then
+	echo "File not found: ~/.minecraft/assets/indexes/${latest%.*}.json" >&2
+elif [[ ! -f "$latest.jar/assets/minecraft/sounds.json" ]]; then
+	soundhash="$(jq -r '.objects."minecraft/sounds.json".hash' ~/.minecraft/assets/indexes/1.19.json)"
+	cp -v ~/".minecraft/assets/objects/${soundhash:0:2}/$soundhash" "$latest.jar/assets/minecraft/sounds.json" >&2
 fi
 
 # print latest version

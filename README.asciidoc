@@ -320,6 +320,21 @@ https://github.com/DMBuce/bucepack/releases/latest/download/classic_twang.zip[`c
 https://github.com/DMBuce/bucepack/releases/latest/download/classic_sploosh.zip[`classic_sploosh.zip`]
 https://github.com/DMBuce/bucepack/releases/latest/download/classic_crunch.zip[`classic_crunch.zip`]
 
+=== Discreet Sounds
+
+This is a series of packs that makes some sounds less annoying.
+
+Discreet Meow makes cats meow less often.
+
+Discreet Cart makes minecarts quieter.
+
+Download:
+https://github.com/DMBuce/bucepack/releases[All Releases]
+
+Direct Links:
+https://github.com/DMBuce/bucepack/releases/latest/download/discreet_meow.zip[`discreet_meow.zip`]
+https://github.com/DMBuce/bucepack/releases/latest/download/discreet_cart.zip[`discreet_cart.zip`]
+
 == Tag Data Packs
 
 These are simple yet powerful commandless data packs that work by modifying

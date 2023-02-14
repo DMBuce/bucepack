@@ -21,6 +21,8 @@ RESOURCEPACKFILES = \
 	classic_rose.zip \
 	classic_sploosh.zip \
 	classic_twang.zip \
+	discreet_cart.zip \
+	discreet_meow.zip \
 	discreet_pumpkin.zip \
 	note_guide.zip \
 	ore_types.zip \
@@ -408,6 +410,13 @@ classic_crunch_FILES := $(DEFAULT_RESOURCE_FILES) \
 	assets/minecraft/sounds/step/grass2.ogg \
 	assets/minecraft/sounds/step/grass6.ogg \
 	assets/minecraft/sounds/step/grass3.ogg \
+
+discreet_cart_FILES := $(DEFAULT_RESOURCE_FILES) \
+	assets/minecraft/sounds_discreet_cart.json \
+
+discreet_meow_FILES := $(DEFAULT_RESOURCE_FILES) \
+	assets/minecraft/sounds/silence.mp3 \
+	assets/minecraft/sounds_discreet_meow.json \
 
 gardener_endermen_FILES := $(DEFAULT_DATA_FILES) \
 	data/minecraft/tags/blocks/enderman_holdable.json \
@@ -1162,6 +1171,18 @@ classic_sploosh.zip: $(classic_sploosh_FILES)
 	./bin/ziprename _$(@:.zip=) "" $@
 
 classic_crunch.zip: $(classic_crunch_FILES)
+	cp meta/$(@:.zip=.png) pack.png
+	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
+	zip $@ pack.png pack.mcmeta $^
+	./bin/ziprename _$(@:.zip=) "" $@
+
+discreet_cart.zip: $(discreet_cart_FILES)
+	cp meta/$(@:.zip=.png) pack.png
+	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
+	zip $@ pack.png pack.mcmeta $^
+	./bin/ziprename _$(@:.zip=) "" $@
+
+discreet_meow.zip: $(discreet_meow_FILES)
 	cp meta/$(@:.zip=.png) pack.png
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^

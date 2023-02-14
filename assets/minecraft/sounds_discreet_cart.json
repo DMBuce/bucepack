@@ -1,0 +1,11 @@
+{
+  "entity.minecart.riding": {
+    "sounds": [
+      {
+        "name": "minecart/base",
+        "volume": 0.5
+      }
+    ],
+    "subtitle": "subtitles.entity.minecart.riding"
+  }
+}
