@@ -1,5 +1,8 @@
+#!/usr/bin/env sempl
+SEMPL_BRACES = {{}}
+#!end sempl env
 {
-  "replace": false,
+  "replace": true,
   "values": [
     "minecraft:beacon",
     "minecraft:black_stained_glass_pane",
@@ -36,6 +39,8 @@
     "minecraft:wither_skeleton_wall_skull",
     "minecraft:yellow_stained_glass_pane",
     "minecraft:zombie_head",
-    "minecraft:zombie_wall_head"
+    "minecraft:zombie_wall_head",
+
+	{{!grep minecraft: "$(./bin/latest)".jar/data/minecraft/tags/blocks/mineable/pickaxe.json | grep -v -e spawner -e budding_amethyst}}
   ]
 }
