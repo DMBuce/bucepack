@@ -412,10 +412,10 @@ classic_crunch_FILES := $(DEFAULT_RESOURCE_FILES) \
 	assets/minecraft/sounds/step/grass3.ogg \
 
 discreet_cart_FILES := $(DEFAULT_RESOURCE_FILES) \
-	assets/minecraft/sounds_discreet_cart.json \
+	assets/minecraft/sounds/minecart/base.ogg \
 
 discreet_meow_FILES := $(DEFAULT_RESOURCE_FILES) \
-	assets/minecraft/sounds/silence.mp3 \
+	assets/minecraft/sounds/silence.ogg \
 	assets/minecraft/sounds_discreet_meow.json \
 
 gardener_endermen_FILES := $(DEFAULT_DATA_FILES) \

@@ -2,28 +2,36 @@
   "entity.cat.ambient": {
     "sounds": [
       {
-        "name": "silence"
+        "name": "silence",
+        "volume": 0.1
       },
       {
-        "name": "silence"
+        "name": "silence",
+        "volume": 0.2
       },
       {
-        "name": "silence"
+        "name": "silence",
+        "volume": 0.3
       },
       {
-        "name": "silence"
+        "name": "silence",
+        "volume": 0.4
       },
       {
-        "name": "silence"
+        "name": "silence",
+        "volume": 0.5
       },
       {
-        "name": "silence"
+        "name": "silence",
+        "volume": 0.6
       },
       {
-        "name": "silence"
+        "name": "silence",
+        "volume": 0.7
       },
       {
-        "name": "silence"
+        "name": "silence",
+        "volume": 0.8
       },
       {
         "name": "mob/cat/meow1",
