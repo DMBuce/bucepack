@@ -660,10 +660,6 @@ eyes_of_seeking_FILES := $(DEFAULT_DATA_FILES) \
 	data/buce/advancements/eyes_of_seeking.json \
 	data/minecraft/tags/worldgen/structure/eye_of_ender_located.json \
 
-more_allays_FILES := $(DEFAULT_DATA_FILES) \
-	$(shell find buce-data/more_allays -type f | ./bin/ext2dir) \
-	data/minecraft/tags/worldgen/structure/on_ancient_city_explorer_maps.json \
-
 crafting_cart_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell find buce-data/recipes/crafting/carts -type f | ./bin/ext2dir) \
 
@@ -1497,12 +1493,6 @@ breeding_overhaul.zip: $(breeding_overhaul_FILES)
 	./bin/ziprename _$(@:.zip=) "" $@
 
 eyes_of_seeking.zip: $(eyes_of_seeking_FILES)
-	cp meta/$(@:.zip=.png) pack.png
-	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
-	zip $@ pack.png pack.mcmeta $^
-	./bin/ziprename _$(@:.zip=) "" $@
-
-more_allays.zip: $(more_allays_FILES)
 	cp meta/$(@:.zip=.png) pack.png
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^
