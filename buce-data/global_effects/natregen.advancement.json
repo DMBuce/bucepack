@@ -1,7 +1,7 @@
 {
 	"display": {
 		"icon": {
-			"item": "minecraft:netherrack"
+			"item": "minecraft:crying_obsidian"
 		},
 		"title": {
 			"text": "Corrupted Healing"

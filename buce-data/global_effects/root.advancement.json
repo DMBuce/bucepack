@@ -1,7 +1,7 @@
 {
 	"display": {
 		"icon": {
-			"item": "minecraft:ender_chest"
+			"item": "minecraft:grass_block"
 		},
 		"title": {
 			"text": "Global Effects"

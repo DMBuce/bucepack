@@ -571,7 +571,7 @@ starter_bonus_box_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell find buce-data/starter_bonus_box -type f | ./bin/ext2dir) \
 
 starter_bonus_chest_FILES := $(DEFAULT_DATA_FILES) \
-	$(shell ls buce-data/starter_bonus_chest* | ./bin/ext2dir) \
+	$(shell find buce-data/starter_bonus_chest -type f | ./bin/ext2dir) \
 
 starter_bed_FILES := $(DEFAULT_DATA_FILES) \
 	data/minecraft/tags/items/starter_item_starter_bed.json \
