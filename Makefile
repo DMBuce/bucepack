@@ -1674,7 +1674,5 @@ export PACKFILES DATARESOURCEPACKFILES RESOURCEPACKFILES DATAPACKFILES
 .PHONY: check
 check:
 	@echo Running tests
-	@for script in ./bin/test-* ; do \
-		$$script; \
-	done
+	find ./bin/test-* -print0 | xargs -0 -n1 bash
 

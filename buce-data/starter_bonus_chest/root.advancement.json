@@ -20,6 +20,6 @@
 		}
 	},
 	"rewards": {
-		"function": "buce:starter_bonus_chest"
+		"function": "buce:starter_bonus_chest/join"
 	}
 }
