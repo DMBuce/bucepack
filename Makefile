@@ -243,7 +243,7 @@ candystrider_FILES := $(DEFAULT_RESOURCE_FILES) \
 	assets/minecraft/textures/entity/strider/strider_cold.png \
 	assets/minecraft/textures/entity/strider/strider.png \
 
-pig_armor_FILES := $(DEFAULT_RESOURCE_FILES) \
+pig_armor_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell find buce-data/pig_armor -type f | ./bin/ext2dir) \
 	assets/minecraft/textures/entity/pig/pig_saddle.png \
 

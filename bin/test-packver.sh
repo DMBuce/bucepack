@@ -14,7 +14,7 @@ rskip=( )
 # datapack vars
 data_packver="$(jq .pack_version.data "$latest.jar/version.json")"
 dfiles=( ${DATAPACKFILES//.zip/} )
-dskip=( ${DATARESOURCEPACKFILES//.zip/} lichdom )
+dskip=( ${DATARESOURCEPACKFILES//.zip/} $(<cache/skip.packs) )
 
 echo "Checking resource pack_format is $resource_packver..." >&2
 for pack in "${rfiles[@]}"; do
