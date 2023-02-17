@@ -604,6 +604,7 @@ dragonproof_FILES := $(DEFAULT_DATA_FILES) \
 leashed_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell find buce-data/leashed -type f | ./bin/ext2dir) \
 	data/buce/functions/var.mcfunction \
+	data/minecraft/tags/functions/load_leashed.json \
 
 mineable_FILES := $(DEFAULT_DATA_FILES) \
 	data/minecraft/tags/blocks/mineable/axe.json \
@@ -621,7 +622,6 @@ dripblock_FILES := $(DEFAULT_DATA_FILES) \
 
 ender_relic_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell find buce-data/ender_relic -type f | ./bin/ext2dir) \
-	data/buce/functions/var.mcfunction \
 	data/buce/loot_tables/relic/random.json \
 
 skybarrel_FILES := $(DEFAULT_DATA_FILES) \
@@ -650,7 +650,6 @@ invis_squid_glamer_FILES := $(DEFAULT_DATA_FILES) \
 
 phantasmal_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell find buce-data/phantasmal -type f | ./bin/ext2dir) \
-	data/buce/functions/var.mcfunction \
 	data/buce/loot_tables/heads/phantom_membrane_phantasmal.json \
 	data/minecraft/loot_tables/entities/phantom.json \
 
