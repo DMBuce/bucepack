@@ -1,0 +1,45 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:barrier"
+		},
+		"title": {
+			"text": "Trigger Advancement"
+		},
+		"description": {
+			"text": "Something went wrong, you should revoke this advancement"
+		},
+		"show_toast": false,
+		"announce_to_chat": false,
+		"hidden": true,
+		"frame": "task"
+	},
+	"parent": "buce:friender/root",
+	"criteria": {
+		"note_block": {
+			"trigger": "minecraft:item_used_on_block",
+			"conditions": {
+				"location": {
+					"block": {
+						"blocks": [
+							"minecraft:ender_chest"
+						]
+					}
+				},
+				"item": {
+					"items": [
+						"minecraft:ender_pearl"
+					]
+				},
+				"player": {
+					"location": {
+						"dimension": "minecraft:overworld"
+					}
+				}
+			}
+		}
+	},
+	"rewards": {
+		"function": "buce:friender/enter"
+	}
+}

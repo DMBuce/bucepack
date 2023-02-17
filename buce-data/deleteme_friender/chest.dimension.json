@@ -1,0 +1,27 @@
+{
+  "type": "buce:friender/chest",
+  "generator": {
+    "settings": {
+      "biome": "minecraft:the_void",
+      "structure_overrides": [
+      ],
+      "layers": [
+        {
+          "height": 64,
+          "block": "minecraft:bedrock"
+        },
+        {
+          "height": 16,
+          "block": "minecraft:obsidian"
+        },
+        {
+          "height": 64,
+          "block": "minecraft:bedrock"
+        }
+      ],
+      "lakes": false,
+      "features": false
+    },
+    "type": "minecraft:flat"
+  }
+}
