@@ -58,6 +58,7 @@ DATAPACKFILES = \
 	eyes_of_seeking.zip \
 	fortunate_crops.zip \
 	fortunate_jungle.zip \
+	frienderchest.zip \
 	gardener_endermen.zip \
 	global_effects.zip \
 	glow_squid_glamers.zip \
@@ -478,6 +479,11 @@ fortunate_crops_FILES := $(DEFAULT_DATA_FILES) \
 	data/minecraft/loot_tables/blocks/wheat.json \
 	data/minecraft/loot_tables/blocks/beetroots.json \
 	data/buce/advancements/fortunate_crops.json \
+
+frienderchest_FILES := $(DEFAULT_DATA_FILES) \
+	$(shell find buce-data/frienderchest -type f | ./bin/ext2dir) \
+	data/minecraft/tags/functions/load_frienderchest.json \
+	data/buce/functions/var.mcfunction \
 
 global_effects_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell find buce-data/global_effects -type f | ./bin/ext2dir) \
@@ -987,6 +993,14 @@ data/buce/tags/functions/%.json: buce-data/%.function.tag.json
 	mkdir -p $(dir $@)
 	cp -v $< $@
 
+data/buce/dimension_type/%.json: buce-data/%.dimension_type.json
+	mkdir -p $(dir $@)
+	cp -v $< $@
+
+data/buce/dimension/%.json: buce-data/%.dimension.json
+	mkdir -p $(dir $@)
+	cp -v $< $@
+
 data/minecraft/tags/blocks/unmineable.json: data/minecraft/tags/blocks/mineable/*.json
 
 # rebuild all templates when latest.txt updates
@@ -1255,6 +1269,12 @@ fortunate_jungle.zip: $(fortunate_jungle_FILES)
 	./bin/ziprename _$(@:.zip=) "" $@
 
 fortunate_crops.zip: $(fortunate_crops_FILES)
+	cp meta/$(@:.zip=.png) pack.png
+	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
+	zip $@ pack.png pack.mcmeta $^
+	./bin/ziprename _$(@:.zip=) "" $@
+
+frienderchest.zip: $(frienderchest_FILES)
 	cp meta/$(@:.zip=.png) pack.png
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^

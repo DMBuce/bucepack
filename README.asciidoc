@@ -1704,6 +1704,24 @@ that prevents invisible armor stands from being broken.
 // just because mojang says it's a bug doesn't mean i have to agree with them
 // i think it's a bug
 
+=== Frienderchest
+
+A shared pocket dimension.
+Players can enter the Frienderchest
+by right-clicking an enderchest with an ender pearl.
+
+Download:
+https://github.com/DMBuce/bucepack/releases[All Releases]
+
+Direct Link:
+https://github.com/DMBuce/bucepack/releases/latest/download/frienderchest.zip[`frienderchest.zip`]
+
+//Known Issues:
+//Ideally, the frienderchest would have a world border,
+//but due to
+//https://bugs.mojang.com/browse/MC-246429[MC-246429]
+//it's surrounded by bedrock instead.
+
 === Storage Orbs
 
 Lets you stack shulker boxes with the same contents in orb form.

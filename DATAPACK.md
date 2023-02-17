@@ -28,6 +28,7 @@ Prefer @a over @e[type=player]
 Prefer predicates over nbt
 *Don't* prefer predicates over non-nbt selectors
 Prefer area effect clouds over armor stands
+Pick the right marker entity: https://imgur.com/VTYb4xM
 Order target selectors efficiently: https://www.reddit.com/r/MinecraftCommands/comments/nw90u4/does_using_predicates_in_place_of_complicated/h18lr5u/
 * https://github.com/MinecraftCommands/commanders-handbook/blob/3b5c82231397cee1e4dfe51caa523c180892b3f5/docs/_posts/2018-09-07-selector-argument-order.md
 * foo_
