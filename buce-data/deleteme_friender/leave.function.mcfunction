@@ -7,9 +7,9 @@ execute store result entity @s Pos[2] double 1 run scoreboard players get @a[tag
 #execute in minecraft:overworld run tp @s ~ ~ ~
 #tp @s @s
 execute in minecraft:overworld positioned as @s run tp @a[tag=leaving,limit=1] ~ ~ ~
-tellraw @a ["x: ", {"nbt": "Pos[0]", "entity": "@s"}]
-tellraw @a ["y: ", {"nbt": "Pos[1]", "entity": "@s"}]
-tellraw @a ["z: ", {"nbt": "Pos[2]", "entity": "@s"}]
+#tellraw @a ["x: ", {"nbt": "Pos[0]", "entity": "@s"}]
+#tellraw @a ["y: ", {"nbt": "Pos[1]", "entity": "@s"}]
+#tellraw @a ["z: ", {"nbt": "Pos[2]", "entity": "@s"}]
 #execute as @a[tag=leaving,limit=1] at @s in minecraft:overworld run tp @s ~ ~ ~
 kill @s
 

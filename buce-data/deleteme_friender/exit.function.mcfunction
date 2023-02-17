@@ -3,8 +3,8 @@
 # revoke advancement
 advancement revoke @s only buce:friender/exit
 
-# debug
-say exit
+## debug
+#say exit
 
 # teleport player to exit location
 execute at @s run summon area_effect_cloud ~ ~ ~ {Tags:["exit"], Duration:2}

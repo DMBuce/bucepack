@@ -1,0 +1,1 @@
+data/lichdom/functions/death.mcfunction:execute as @s[team=turtle,scores={shell_broke=1}] run tellraw @a [{"selector":"@s"},{"text":" lost their shell"}]
