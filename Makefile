@@ -94,31 +94,14 @@ DATAPACKFILES = \
 	wandering_loot.zip \
 	waterproof_tech.zip \
 
-PACKFILES = $(RESOURCEPACKFILES) $(DATAPACKFILES)
-MCDIR     = $(HOME)/.minecraft
+PACKFILES = $(sort $(RESOURCEPACKFILES) $(DATAPACKFILES))
 
 .PHONY: all
 all: $(PACKFILES)
 
-CLEAN_TARGETS := $(PACKFILES) data/buce pack.mcmeta pack.png test.zip \
-	data/minecraft/loot_tables/*.json \
-	data/minecraft/loot_tables/chests/*.json \
-	data/minecraft/loot_tables/chests/*/*.json \
-	data/minecraft/loot_tables/gameplay/*.json \
-	data/minecraft/loot_tables/gameplay/*/*.json \
-	data/minecraft/loot_tables/subtables/*.json \
-	data/minecraft/loot_tables/subtables/*/*.json \
-	buce-data/relic/all.loot_table.json.yaml \
-	#buce-data/*/subtables/*.json
-
 # needed by all pack targets
 DEFAULT_RESOURCE_FILES = LICENSE.txt
 DEFAULT_DATA_FILES = LICENSE.txt data/buce/advancements/root.json
-
-lcg_FILES := \
-	data/lcg/functions/load.mcfunction \
-	data/lcg/functions/random.mcfunction \
-	data/lcg/functions/get_seed.mcfunction \
 
 painting_overhaul_FILES := $(DEFAULT_RESOURCE_FILES) \
 	assets/minecraft/textures/painting/kebab.png \
@@ -943,19 +926,19 @@ dpacks: $(DATAPACKFILES)
 
 .PHONY: list
 list:
-	@printf '%s\n' $(sort $(RESOURCEPACKFILES) $(DATAPACKFILES))
+	@printf '%s\n' $(PACKFILES)
 
 .PHONY: rlist
 rlist:
-	@printf '%s\n' $(sort $(RESOURCEPACKFILES) $(DATARESOURCEPACKFILES))
+	@printf '%s\n' $(RESOURCEPACKFILES)
 
 .PHONY: dlist
 dlist:
-	@printf '%s\n' $(sort $(DATAPACKFILES) $(DATARESOURCEPACKFILES))
+	@printf '%s\n' $(DATAPACKFILES)
 
 .PHONY: drlist
 drlist:
-	@printf '%s\n' $(sort $(DATARESOURCEPACKFILES))
+	@printf '%s\n' $(DATARESOURCEPACKFILES)
 
 data/buce/loot_tables/%.json: buce-data/%.loot_table.json
 	mkdir -p $(dir $@)
@@ -1641,10 +1624,15 @@ starter_spyglass.zip: $(starter_spyglass_FILES)
 	./bin/ziprename _$(@:.zip=) "" $@
 
 .PHONY: install
+MCDIR     = $(HOME)/.minecraft
 install: $(RESOURCEPACKFILES) $(DATAPACKFILES)
 	cp $(RESOURCEPACKFILES) $(MCDIR)/resourcepacks
 	mkdir -p $(MCDIR)/datapacks
 	cp $(DATAPACKFILES) $(MCDIR)/datapacks
+
+.PHONY: uninstall
+uninstall:
+	cd $(MCDIR)/resourcepacks && rm -f $(PACKFILES)
 
 .PHONY: mantrid
 mantrid: $(RESOURCEPACKFILES) $(DATAPACKFILES)
@@ -1665,19 +1653,25 @@ update:
 	@echo Run '`git diff`' to review changes
 
 .PHONY: release
-release: $(sort $(RESOURCEPACKFILES) $(DATAPACKFILES) )
+release: $(PACKFILES)
 	git release $^
 
-.PHONY: uninstall
-uninstall:
-	cd $(MCDIR)/resourcepacks && rm -f $(PACKFILES)
-
 .PHONY: clean
+CLEAN_TARGETS := $(PACKFILES) data/buce pack.mcmeta pack.png test.zip \
+	data/minecraft/loot_tables/*.json \
+	data/minecraft/loot_tables/chests/*.json \
+	data/minecraft/loot_tables/chests/*/*.json \
+	data/minecraft/loot_tables/gameplay/*.json \
+	data/minecraft/loot_tables/gameplay/*/*.json \
+	data/minecraft/loot_tables/subtables/*.json \
+	data/minecraft/loot_tables/subtables/*/*.json \
+	buce-data/relic/all.loot_table.json.yaml \
+	#buce-data/*/subtables/*.json
 clean:
 	rm -rf $(CLEAN_TARGETS)
 	git checkout data/buce/loot_tables/mythic/chromatic/fireworks.json
 
-export DATARESOURCEPACKFILES RESOURCEPACKFILES DATAPACKFILES
+export PACKFILES DATARESOURCEPACKFILES RESOURCEPACKFILES DATAPACKFILES
 .PHONY: check
 check:
 	@echo Running tests

@@ -15,11 +15,13 @@ to="${2//\//\\/}"
 shift 2
 
 # process zip files
+mkdir -p cache
 for file in "$@"; do
 	zipnote "$file" \
 		| sed "/$from/ { p; s/$from/$to/g; s/^@ /@=/ }" \
 		| zipnote -w "$file"
 		#> "$file.tmp"
 	#rm "$file.tmp"
+	zipinfo -1 "$file" | sort > "cache/${file%.zip}.files"
 done
 

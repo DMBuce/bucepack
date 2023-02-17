@@ -1,6 +1,7 @@
 *.zip
 pack.mcmeta
 pack.png
+cache/
 data/minecraft/loot_tables/*.json
 data/minecraft/loot_tables/chests/*.json
 data/minecraft/loot_tables/chests/*/*.json
