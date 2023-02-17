@@ -1,0 +1,14 @@
+#!/bin/bash
+# called with no arguments by 'git sghetti release'
+#
+# if necessary, stops the commit by exiting with a non-zero exit status
+
+# redirect all output to stderr
+exec 1>&2
+
+# bail if a command fails
+set -e
+
+# run tests
+make -kB check
+

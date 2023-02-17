@@ -69,8 +69,8 @@ fi
 make README.asciidoc
 git add README.asciidoc
 
-# run tests
-make -kB check
+## run tests
+#make -kB check
 
 ## bail if changes match one or more patterns
 #patterns="$(printf '%s\n' bin/git-sghetti--* | sed 's/.*--/git /; p; s/git /git sghetti ssh /')"
