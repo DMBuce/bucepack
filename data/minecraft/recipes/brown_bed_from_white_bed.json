@@ -4,7 +4,7 @@
   "group": "dyed_bed",
   "ingredients": [
     {
-      "tag": "minecraft:beds"
+      "tag": "minecraft:beds_without_brown"
     },
     {
       "item": "minecraft:brown_dye"

@@ -7,7 +7,7 @@
       "item": "minecraft:orange_dye"
     },
     {
-      "tag": "minecraft:wool"
+      "tag": "minecraft:wool_without_orange"
     }
   ],
   "result": {

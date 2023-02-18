@@ -4,7 +4,7 @@
   "group": "dyed_candle",
   "ingredients": [
     {
-      "tag": "minecraft:candles"
+      "tag": "minecraft:candles_without_red"
     },
     {
       "item": "minecraft:red_dye"

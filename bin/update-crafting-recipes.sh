@@ -128,40 +128,77 @@ done <<< '
 	book paper
 '
 
-# create recipes for dying any wool
-cp "$latest.jar"/data/minecraft/recipes/*_wool.json data/minecraft/recipes/
-sed -i '
-	/minecraft:white_wool/ s/".*/"tag": "minecraft:wool"/
-' data/minecraft/recipes/*_wool.json
+# generate colorful crafting recipes
+for color in \
+	red \
+	orange \
+	yellow \
+	lime \
+	green \
+	cyan \
+	light_blue \
+	blue \
+	purple \
+	magenta \
+	pink \
+	brown \
+	black \
+	gray \
+	light_gray \
+	white
+do
+	# create tags for colorful blocks w/o that color
+	for tag in beds candles terracotta wool; do
+		cp "$latest.jar/data/minecraft/tags/items/$tag.json" "data/minecraft/tags/items/${tag}_without_$color.json"
+		sed -i "/minecraft:${color}_/d" "data/minecraft/tags/items/${tag}_without_$color.json"
+		sed -i -E -n 'H; x; s:,(\s*\n\s*[]}]):\1:; P; ${x; p}' "data/minecraft/tags/items/${tag}_without_$color.json"
+		sed -i 1d "data/minecraft/tags/items/${tag}_without_$color.json"
+	done
+	for tag in glass glass_panes; do
+		cp "data/minecraft/tags/items/$tag.json" "data/minecraft/tags/items/${tag}_without_$color.json"
+		sed -i "/minecraft:${color}_/d" "data/minecraft/tags/items/${tag}_without_$color.json"
+		sed -i -E -n 'H; x; s:,(\s*\n\s*[]}]):\1:; P; ${x; p}' "data/minecraft/tags/items/${tag}_without_$color.json"
+		sed -i 1d "data/minecraft/tags/items/${tag}_without_$color.json"
+	done
 
-# create recipes for dying any bed
-cp "$latest.jar"/data/minecraft/recipes/*_bed_from_white_bed.json data/minecraft/recipes/
-sed -i '
-	/minecraft:white_bed/ s/".*/"tag": "minecraft:beds"/
-' data/minecraft/recipes/*_bed.json
+	# skip generation of recipes for items that don't have vanilla dye recipes
+	if [[ $color != white ]]; then
+		# create recipes for dying any wool
+		cp "$latest.jar/data/minecraft/recipes/${color}_wool.json" data/minecraft/recipes/
+		sed -i "
+			/minecraft:white_wool/ s/\".*/\"tag\": \"minecraft:wool_without_$color\"/
+		" "data/minecraft/recipes/${color}_wool.json"
 
-# create recipes for dying any candle
-cp "$latest.jar"/data/minecraft/recipes/*_candle.json data/minecraft/recipes/
-sed -i '
-	/minecraft:candle/ s/".*/"tag": "minecraft:candles"/
-' data/minecraft/recipes/*_candle.json
+		# create recipes for dying any bed
+		cp "$latest.jar/data/minecraft/recipes/${color}_bed_from_white_bed.json" data/minecraft/recipes/
+		sed -i "
+			/minecraft:white_bed/ s/\".*/\"tag\": \"minecraft:beds_without_$color\"/
+		" "data/minecraft/recipes/${color}_bed_from_white_bed.json"
+	fi
 
-# create recipes for dying any mixture of terracotta
-cp "$latest.jar"/data/minecraft/recipes/*_terracotta.json data/minecraft/recipes/
-rm data/minecraft/recipes/*_glazed_terracotta.json
-sed -i '
-	/minecraft:terracotta/ s/".*/"tag": "minecraft:terracotta"/
-' data/minecraft/recipes/*_terracotta.json
+	# create recipes for dying any candle
+	cp "$latest.jar/data/minecraft/recipes/${color}_candle.json" data/minecraft/recipes/
+	sed -i "
+		/minecraft:candle/ s/\".*/\"tag\": \"minecraft:candles_without_$color\"/
+	" "data/minecraft/recipes/${color}_candle.json"
 
-# create recipes for dying any mixture of stained_glass
-cp "$latest.jar"/data/minecraft/recipes/*_stained_glass.json data/minecraft/recipes/
-sed -i '
-	/minecraft:glass/ s/".*/"tag": "minecraft:glass"/
-' data/minecraft/recipes/*_stained_glass.json
+	# create recipes for dying any mixture of terracotta
+	cp "$latest.jar/data/minecraft/recipes/${color}_terracotta.json" data/minecraft/recipes/
+	sed -i "
+		/minecraft:terracotta/ s/\".*/\"tag\": \"minecraft:terracotta_without_$color\"/
+	" "data/minecraft/recipes/${color}_terracotta.json"
 
-# create recipes for dying any mixture of stained_glass_pane
-cp "$latest.jar"/data/minecraft/recipes/*_stained_glass_pane_from_glass_pane.json data/minecraft/recipes/
-sed -i '
-	/minecraft:glass_pane/ s/".*/"tag": "minecraft:glass_panes"/
-' data/minecraft/recipes/*_glass_pane.json
+	# create recipes for dying any mixture of stained_glass
+	cp "$latest.jar/data/minecraft/recipes/${color}_stained_glass.json" data/minecraft/recipes/
+	sed -i "
+		/minecraft:glass/ s/\".*/\"tag\": \"minecraft:glass_without_$color\"/
+	" "data/minecraft/recipes/${color}_stained_glass.json"
+
+	# create recipes for dying any mixture of stained_glass_pane
+	cp "$latest.jar/data/minecraft/recipes/${color}_stained_glass_pane_from_glass_pane.json" data/minecraft/recipes/
+	sed -i "
+		/minecraft:glass_pane/ s/\".*/\"tag\": \"minecraft:glass_panes_without_$color\"/
+	" "data/minecraft/recipes/${color}_stained_glass_pane_from_glass_pane.json"
+
+done
 

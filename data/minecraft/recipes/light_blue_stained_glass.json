@@ -4,7 +4,7 @@
   "group": "stained_glass",
   "key": {
     "#": {
-      "tag": "minecraft:glass"
+      "tag": "minecraft:glass_without_light_blue"
     },
     "X": {
       "item": "minecraft:light_blue_dye"

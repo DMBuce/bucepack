@@ -4,7 +4,7 @@
   "group": "stained_terracotta",
   "key": {
     "#": {
-      "tag": "minecraft:terracotta"
+      "tag": "minecraft:terracotta_without_black"
     },
     "X": {
       "item": "minecraft:black_dye"

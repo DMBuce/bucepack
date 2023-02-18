@@ -7,7 +7,7 @@
       "item": "minecraft:pink_dye"
     },
     {
-      "tag": "minecraft:wool"
+      "tag": "minecraft:wool_without_pink"
     }
   ],
   "result": {

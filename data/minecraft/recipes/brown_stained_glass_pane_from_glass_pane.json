@@ -4,7 +4,7 @@
   "group": "stained_glass_pane",
   "key": {
     "#": {
-      "tag": "minecraft:glass_panes"
+      "tag": "minecraft:glass_panes_without_brown"
     },
     "$": {
       "item": "minecraft:brown_dye"

@@ -7,7 +7,7 @@
       "item": "minecraft:brown_dye"
     },
     {
-      "tag": "minecraft:wool"
+      "tag": "minecraft:wool_without_brown"
     }
   ],
   "result": {

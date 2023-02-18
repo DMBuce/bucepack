@@ -7,7 +7,7 @@
       "item": "minecraft:cyan_dye"
     },
     {
-      "tag": "minecraft:wool"
+      "tag": "minecraft:wool_without_cyan"
     }
   ],
   "result": {
