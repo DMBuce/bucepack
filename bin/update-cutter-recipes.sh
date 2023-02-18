@@ -190,6 +190,29 @@ do
 	fi
 done
 
+# generate cobbled recipes
+#
+# for each cobbled block
+./bin/allitems \
+	| grep ^cobble \
+	| grep -v -e_{slab,stairs,wall}$ \
+	| while read block
+do
+	input="${block#cobbled_}"
+	input="${input#cobble}"
+
+	# for each stonecutter recipe with the cobbled block as input
+	for recipe in \
+		"$latest.jar"/data/minecraft/recipes/*_from_"$block"_stonecutting.json
+	do
+		# generate a recipe with the uncobbled block as input
+		num="$(jq -r .count "$recipe")"
+		output="$(jq -r .result "$recipe" | sed 's/^minecraft://')"
+		cp "$recipe" "$dir/smooth_cracked/${num}x_${output}.recipe.json"
+		sed -i "/item/ s/$block/$input/g" "$dir/smooth_cracked/${num}x_${output}.recipe.json"
+	done
+done
+
 # generate oddball conversion recipes
 ./bin/allitems \
 	| sed -nE '/wall_sign$/d; s/_(slab|stairs|fence|fence_gate|wall|button|pressure_plate|door|trapdoor|sign)$//p' \
