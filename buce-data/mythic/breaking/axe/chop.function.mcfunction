@@ -3,6 +3,10 @@
 # die if this block is unmineable
 execute unless block ~ ~1 ~ #mineable/axe run kill @s
 
+# visual and sound effects
+execute if block ~ ~1 ~ #mineable/axe run particle minecraft:end_rod ~ ~ ~ 0.1 0.1 0.1 0.03 8
+#execute if block ~ ~1 ~ #mineable/axe run playsound minecraft:entity.silverfish.ambient player @a ~ ~ ~
+
 # break block
 execute if block ~ ~1 ~ #mineable/axe run setblock ~ ~1 ~ air destroy
 
