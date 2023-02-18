@@ -5,6 +5,6 @@ pools:
       - { type: item, weight: 4, item: echo_shard,
           nbt: '{relic:1b,reverb:1b,CustomModelData:22183,display:{Name:\"{\\\"text\\\":\\\"Relic of Echoes\\\",\\\"color\\\":\\\"light_purple\\\"}\",Lore:[\"\\\"§r§bMyth of Reverberation\\\"\"]},Enchantments:[{}]}'
         }
-      - { type: item, weight: 4, item: echo_shard,
-          nbt: '{relic:1b,reflect:1b,CustomModelData:22184,display:{Name:\"{\\\"text\\\":\\\"Relic of The Void\\\",\\\"color\\\":\\\"light_purple\\\"}\",Lore:[\"\\\"§r§bMyth of Reflection\\\"\"]},Enchantments:[{}]}'
-        }
+      #- { type: item, weight: 4, item: echo_shard,
+      #    nbt: '{relic:1b,reflect:1b,CustomModelData:22184,display:{Name:\"{\\\"text\\\":\\\"Relic of The Void\\\",\\\"color\\\":\\\"light_purple\\\"}\",Lore:[\"\\\"§r§bMyth of Reflection\\\"\"]},Enchantments:[{}]}'
+      #  }
