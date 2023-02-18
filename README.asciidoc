@@ -2321,11 +2321,11 @@ applied to a shovel or hoe.
 **Relic of Endlessness**: A stick with Infinity and Mending that can be
 applied to a bow.
 
-**Relic of Vitality**: A glistering melon with Boon of Vitality, a custom
+**Relic of Vitality**: A glistering melon with Boon of Health V, a custom
 enchantment that can be applied to a netherite chestplate to give five extra
 hearts.
 
-**Relic of Speed**: A rabbit's foot with Boon of Speed, a custom enchantment
+**Relic of Swiftness**: A rabbit's foot with Boon of Speed II, a custom enchantment
 that can be applied to leather boots to give a persistent Speed II effect.
 
 **Relic of Smiting**: A bone with Sharpness IV and Smite IV that can be
