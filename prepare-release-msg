@@ -4,6 +4,10 @@ file="$1"
 oldver="$2"
 version="$3"
 
+if [[ $version != "$(<latest.txt)"* ]]; then
+	version="$(<latest.txt)-1"
+fi
+
 sempl > "$file.new" <<-EOF
 Version $version
 

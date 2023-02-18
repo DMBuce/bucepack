@@ -350,7 +350,7 @@ tool or an Efficiency tool. This pack gives more blocks an associated tool.
 
 The blocks that are given an associated tool are listed here:
 
-* https://raw.githubusercontent.com/DMBuce/bucepack/master/data/minecraft/tags/blocks/mineable/pickaxe.json[Pick]
+* https://raw.githubusercontent.com/DMBuce/bucepack/master/data/minecraft/tags/blocks/mineable/pickaxe.json.sempl[Pick]
 * https://raw.githubusercontent.com/DMBuce/bucepack/master/data/minecraft/tags/blocks/mineable/axe.json[Axe]
 
 In addition,
@@ -2135,7 +2135,8 @@ or an enchantment that can be put on a tool that normally couldn't have it.
 Relics can be applied to tools in the smithing table.
 
 Below is a description of the common relics added by the
-<<starter-item,Starter Relic>> and <<relic-loot,Relic Loot>> datapacks.
+<<starter-item,Starter Relic>>, <<ender-relic,Ender Relic>>,
+and <<relic-loot,Relic Loot>> datapacks.
 For a list of mythic relics, see the <<mythic-relics,Mythic Relics>> datapack
 description.
 
