@@ -1809,11 +1809,27 @@ https://github.com/DMBuce/bucepack/releases[All Releases]
 Direct Link:
 https://github.com/DMBuce/bucepack/releases/latest/download/dripblock.zip[`dripblock.zip`]
 
+//=== Overworld
+//
+//Piglins and hoglins don't zombify in the overworld.
+//
+//Download:
+//https://github.com/DMBuce/bucepack/releases[All Releases]
+//
+//Direct Link:
+//https://github.com/DMBuce/bucepack/releases/latest/download/worldgen_overworld.zip[`worldgen_overworld.zip`]
+
 === Trees
 
 Makes trees generate with Wood blocks instead of Logs.
 Wood drops Logs unless mined with Silk Touch,
 and Logs can be crafted from 2 Wood.
+
+Download:
+https://github.com/DMBuce/bucepack/releases[All Releases]
+
+Direct Link:
+https://github.com/DMBuce/bucepack/releases/latest/download/worldgen_trees.zip[`worldgen_trees.zip`]
 
 == Legacy Data Packs
 

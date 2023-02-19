@@ -94,6 +94,7 @@ DATAPACKFILES = \
 	storage_orbs.zip \
 	wandering_loot.zip \
 	waterproof_tech.zip \
+	#worldgen_overworld.zip \
 
 PACKFILES = $(sort $(RESOURCEPACKFILES) $(DATAPACKFILES))
 
@@ -611,6 +612,10 @@ mineable_FILES := $(DEFAULT_DATA_FILES) \
 	data/minecraft/tags/blocks/mineable/axe.json \
 	data/minecraft/tags/blocks/mineable/pickaxe.json \
 	data/buce/advancements/mineable.json \
+
+worldgen_overworld_FILES := $(DEFAULT_DATA_FILES) \
+	data/minecraft/dimension_type/overworld_caves.json \
+	data/minecraft/dimension_type/overworld.json \
 
 worldgen_trees_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell find buce-data/recipes/crafting/trees/ -type f | ./bin/ext2dir) \
@@ -1442,6 +1447,12 @@ mineable.zip: $(mineable_FILES)
 	./bin/ziprename _$(@:.zip=) "" $@
 
 ender_relic.zip: $(ender_relic_FILES)
+	cp meta/$(@:.zip=.png) pack.png
+	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
+	zip $@ pack.png pack.mcmeta $^
+	./bin/ziprename _$(@:.zip=) "" $@
+
+worldgen_overworld.zip: $(worldgen_overworld_FILES)
 	cp meta/$(@:.zip=.png) pack.png
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^
