@@ -1702,36 +1702,6 @@ https://github.com/DMBuce/bucepack/releases/latest/download/path_strider.zip[`pa
 
 Data packs that create new ways to play Minecraft.
 
-=== DripBlock
-
-If you create a Default or Large Biomes world with this datapack installed,
-it generates a skyblock overworld with a small spawn island at 0, 0.
-The only available resources at first are dripstone, water, and glow berries.
-A cauldron on the island provides access to lava later on.
-
-image::https://i.imgur.com/t66BrqO.png[DripBlock]
-
-Several changes enable survival skyblock gameplay:
-
-* Dripstone farming is made faster by setting `randomTickSpeed` to 500
-* Creepers drop moss when killed by a player, and moss spreads to dripstone
-* Grass blocks can be crafted from 4 dirt blocks and 2 moss carpet
-* Buckets can be crafted from iron nuggets instead of ingots
-
-Several companion packs are available to enhance your DripBlock experience.
-<<wandering-loot,Wandering Loot>> gives access to The End
-and loot found in structure chests,
-<<loot-overhaul,Loot Overhaul>> makes the loot in those chests more exciting,
-<<treasure-seeds,Treasure Seeds>>
-makes certain resources obtainable through said loot,
-and <<hover-mode,Hover Mode>> adds basic flight.
-
-Download:
-https://github.com/DMBuce/bucepack/releases[All Releases]
-
-Direct Link:
-https://github.com/DMBuce/bucepack/releases/latest/download/dripblock.zip[`dripblock.zip`]
-
 === Escape the Nether
 
 A survival challenge that starts you in the Nether.
@@ -1804,6 +1774,46 @@ https://github.com/DMBuce/bucepack/releases[All Releases]
 
 Direct Link:
 https://github.com/DMBuce/bucepack/releases/latest/download/escape_grind.zip[`escape_grind.zip`]
+
+== WorldGen Data Packs
+
+These packs rely on experimental worldgen features.
+
+=== DripBlock
+
+If you create a Default or Large Biomes world with this datapack installed,
+it generates a skyblock overworld with a small spawn island at 0, 0.
+The only available resources at first are dripstone, water, and glow berries.
+A cauldron on the island provides access to lava later on.
+
+image::https://i.imgur.com/t66BrqO.png[DripBlock]
+
+Several changes enable survival skyblock gameplay:
+
+* Dripstone farming is made faster by setting `randomTickSpeed` to 500
+* Creepers drop moss when killed by a player, and moss spreads to dripstone
+* Grass blocks can be crafted from 4 dirt blocks and 2 moss carpet
+* Buckets can be crafted from iron nuggets instead of ingots
+
+Several companion packs are available to enhance your DripBlock experience.
+<<wandering-loot,Wandering Loot>> gives access to The End
+and loot found in structure chests,
+<<loot-overhaul,Loot Overhaul>> makes the loot in those chests more exciting,
+<<treasure-seeds,Treasure Seeds>>
+makes certain resources obtainable through said loot,
+and <<hover-mode,Hover Mode>> adds basic flight.
+
+Download:
+https://github.com/DMBuce/bucepack/releases[All Releases]
+
+Direct Link:
+https://github.com/DMBuce/bucepack/releases/latest/download/dripblock.zip[`dripblock.zip`]
+
+=== Trees
+
+Makes trees generate with Wood blocks instead of Logs.
+Wood drops Logs unless mined with Silk Touch,
+and Logs can be crafted from 2 Wood.
 
 == Legacy Data Packs
 

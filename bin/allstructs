@@ -1,0 +1,7 @@
+#!/bin/bash
+
+cd "$(git rev-parse --show-toplevel)"
+
+ls -d "$(./bin/latest).jar/data/minecraft/structures/"* \
+	| ./bin/path2basename
+

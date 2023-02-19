@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": [
+    { "item": "minecraft:jungle_wood" }
+  ],
+  "result": "minecraft:jungle_log",
+  "count": 1
+}

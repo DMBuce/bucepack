@@ -26,7 +26,8 @@ stemtypes=(
 for t in "${logtypes[@]}"; do
 	cat <<-EOF | while read num output inputs
 		1 ${t}_wood          ${t}_log
-		1 stripped_${t}_log  ${t}_log
+		1 ${t}_log           ${t}_wood
+		1 stripped_${t}_log  ${t}_log ${t}_wood stripped_${t}_wood
 		1 stripped_${t}_wood ${t}_log ${t}_wood stripped_${t}_log
 		4 ${t}_planks        ${t}_log ${t}_wood stripped_${t}_log stripped_${t}_wood
 		4 ${t}_stairs        ${t}_log ${t}_wood stripped_${t}_log stripped_${t}_wood
@@ -54,7 +55,8 @@ done
 for t in "${stemtypes[@]}"; do
 	cat <<-EOF | while read num output inputs
 		1 ${t}_hyphae          ${t}_stem
-		1 stripped_${t}_stem   ${t}_stem
+		1 ${t}_stem            ${t}_hyphae
+		1 stripped_${t}_stem   ${t}_stem ${t}_hyphae stripped_${t}_hyphae
 		1 stripped_${t}_hyphae ${t}_stem ${t}_hyphae stripped_${t}_stem
 		4 ${t}_planks          ${t}_stem ${t}_hyphae stripped_${t}_stem stripped_${t}_hyphae
 		4 ${t}_stairs          ${t}_stem ${t}_hyphae stripped_${t}_stem stripped_${t}_hyphae

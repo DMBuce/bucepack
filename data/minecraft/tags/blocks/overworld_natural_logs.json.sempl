@@ -1,0 +1,8 @@
+#!/usr/bin/env sempl
+#!end sempl env
+{
+  "values": [
+	"minecraft:{!./bin/allblocks | grep -e_{log,wood} | grep -v ^stripped_ | head -n-1}",
+	"minecraft:{!./bin/allblocks | grep -e_{log,wood} | grep -v ^stripped_ | tail -n1}"
+  ]
+}

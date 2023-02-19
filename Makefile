@@ -77,7 +77,7 @@ DATAPACKFILES = \
 	mineable.zip \
 	more_shulker_shells.zip \
 	no_treasure_maps.zip \
-	overworld.zip \
+	worldgen_trees.zip \
 	phantasmal_end.zip \
 	phantasmal.zip \
 	relics_mythic.zip \
@@ -612,8 +612,12 @@ mineable_FILES := $(DEFAULT_DATA_FILES) \
 	data/minecraft/tags/blocks/mineable/pickaxe.json \
 	data/buce/advancements/mineable.json \
 
-overworld_FILES := $(DEFAULT_DATA_FILES) \
-	data/minecraft/worldgen/noise_settings/overworld.json \
+worldgen_trees_FILES := $(DEFAULT_DATA_FILES) \
+	$(shell find buce-data/recipes/crafting/trees/ -type f | ./bin/ext2dir) \
+	$(shell ls data/minecraft/loot_tables/blocks/*_{wood,hyphae}.json | ./bin/ext2dir) \
+	$(shell grep -rl data/minecraft/worldgen/configured_feature/ -e'"minecraft:.*_'{wood,hyphae}'"' | ./bin/ext2dir) \
+	data/minecraft/tags/blocks/overworld_natural_logs.json \
+	#data/minecraft/worldgen/noise_settings/overworld.json \
 
 dripblock_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell find buce-data/dripblock -type f | ./bin/ext2dir) \
@@ -1443,7 +1447,7 @@ ender_relic.zip: $(ender_relic_FILES)
 	zip $@ pack.png pack.mcmeta $^
 	./bin/ziprename _$(@:.zip=) "" $@
 
-overworld.zip: $(overworld_FILES)
+worldgen_trees.zip: $(worldgen_trees_FILES)
 	cp meta/$(@:.zip=.png) pack.png
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^

@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": [
+    { "item": "minecraft:crimson_hyphae" }
+  ],
+  "result": "minecraft:crimson_stem",
+  "count": 1
+}
