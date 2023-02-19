@@ -77,6 +77,7 @@ DATAPACKFILES = \
 	mineable.zip \
 	more_shulker_shells.zip \
 	no_treasure_maps.zip \
+	overworld.zip \
 	phantasmal_end.zip \
 	phantasmal.zip \
 	relics_mythic.zip \
@@ -611,6 +612,9 @@ mineable_FILES := $(DEFAULT_DATA_FILES) \
 	data/minecraft/tags/blocks/mineable/pickaxe.json \
 	data/buce/advancements/mineable.json \
 
+overworld_FILES := $(DEFAULT_DATA_FILES) \
+	data/minecraft/worldgen/noise_settings/overworld.json \
+
 dripblock_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell find buce-data/dripblock -type f | ./bin/ext2dir) \
 	$(shell find data/minecraft/tags/worldgen/biome/has_structure -type f) \
@@ -618,7 +622,7 @@ dripblock_FILES := $(DEFAULT_DATA_FILES) \
 	data/minecraft/tags/blocks/moss_replaceable.json \
 	data/minecraft/tags/functions/island_dripblock.json \
 	data/minecraft/tags/functions/load_dripblock.json \
-	data/minecraft/worldgen/noise_settings/overworld.json \
+	data/minecraft/worldgen/noise_settings/overworld_dripblock.json \
 
 ender_relic_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell find buce-data/ender_relic -type f | ./bin/ext2dir) \
@@ -1434,6 +1438,12 @@ mineable.zip: $(mineable_FILES)
 	./bin/ziprename _$(@:.zip=) "" $@
 
 ender_relic.zip: $(ender_relic_FILES)
+	cp meta/$(@:.zip=.png) pack.png
+	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
+	zip $@ pack.png pack.mcmeta $^
+	./bin/ziprename _$(@:.zip=) "" $@
+
+overworld.zip: $(overworld_FILES)
 	cp meta/$(@:.zip=.png) pack.png
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^
