@@ -697,6 +697,9 @@ In addition, hoes harvest bamboo saplings faster than normal.
 
 image::https://i.imgur.com/7tN7Zij.png[Shearless]
 
+In addition, grass drops dead bushes when harvested
+with a hoe or shears in badlands biomes.
+
 Note that shears are still required to shear sheep, mooshroom, snow golems,
 pumpkins, beehives, and bee nests.
 
