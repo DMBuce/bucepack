@@ -1609,19 +1609,13 @@ a works-as-intended bug that prevents invisible armor stands from being broken.
 
 A shared pocket dimension.
 Players can enter the Frienderchest
-by right-clicking an enderchest with an ender pearl.
+by right-clicking an enderchest with an ender pearl in the overworld.
 
 Download:
 https://github.com/DMBuce/bucepack/releases[All Releases]
 
 Direct Link:
 https://github.com/DMBuce/bucepack/releases/latest/download/frienderchest.zip[`frienderchest.zip`]
-
-//Known Issues:
-//Ideally, the frienderchest would have a world border,
-//but due to
-//https://bugs.mojang.com/browse/MC-246429[MC-246429]
-//it's surrounded by bedrock instead.
 
 === Storage Orbs
 

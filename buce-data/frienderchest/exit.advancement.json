@@ -14,32 +14,21 @@
 		"hidden": true,
 		"frame": "task"
 	},
-	"parent": "buce:friender/root",
+	"parent": "buce:frienderchest/root",
 	"criteria": {
-		"note_block": {
-			"trigger": "minecraft:item_used_on_block",
+		"exitblock": {
+			"trigger": "minecraft:enter_block",
 			"conditions": {
-				"location": {
-					"block": {
-						"blocks": [
-							"minecraft:ender_chest"
-						]
-					}
-				},
-				"item": {
-					"items": [
-						"minecraft:ender_pearl"
-					]
-				},
+				"block": "minecraft:end_gateway",
 				"player": {
 					"location": {
-						"dimension": "minecraft:overworld"
+						"dimension": "buce:frienderchest/chest"
 					}
 				}
 			}
 		}
 	},
 	"rewards": {
-		"function": "buce:friender/enter"
+		"function": "buce:frienderchest/exit"
 	}
 }

@@ -3,9 +3,12 @@
 # revoke advancement
 advancement revoke @s only buce:frienderchest/enter
 
-# try to remove pearl from inventory
-execute store result score @s var run clear @s minecraft:ender_pearl 1
+# store exit location
+execute store result score @s exit_x run data get entity @s Pos[0] 1
+execute store result score @s exit_y run data get entity @s Pos[1] 1
+execute store result score @s exit_z run data get entity @s Pos[2] 1
 
-# enter frienderchestchest if we did
-execute if score @s var matches 1.. in minecraft:the_end positioned 29977810 1 29977810 run teleport @s ~ ~ ~
+# remove pearl from inventory and enter frienderchest
+execute store result score @s var run clear @s minecraft:ender_pearl 1
+execute if score @s var matches 1.. in buce:frienderchest/chest positioned 2 0 2 run teleport @s ~ ~ ~
 

@@ -1,5 +1,5 @@
 {
-  "type": "buce:friender/chest",
+  "type": "buce:frienderchest/chest",
   "generator": {
     "settings": {
       "biome": "minecraft:the_void",
@@ -7,15 +7,15 @@
       ],
       "layers": [
         {
-          "height": 64,
+          "height": 63,
           "block": "minecraft:bedrock"
         },
         {
-          "height": 16,
-          "block": "minecraft:obsidian"
+          "height": 18,
+          "block": "minecraft:reinforced_deepslate"
         },
         {
-          "height": 64,
+          "height": 63,
           "block": "minecraft:bedrock"
         }
       ],

@@ -1,7 +1,15 @@
 # runs on server load
 
-# create frienderchestchest if necessary
-execute in minecraft:the_end run forceload add 29977806 29977806 29977826 29977826
-execute in minecraft:the_end positioned 29977808 1 29977808 unless block ~1 0 ~1 minecraft:end_portal run function buce:frienderchest/init
-execute in minecraft:the_end run forceload remove 29977806 29977806 29977826 29977826
+# carve out spawn point if necessary
+execute in buce:frienderchest/chest run forceload add -1 -1 1 1
+execute in buce:frienderchest/chest positioned 0 0 0 if block 1 -1 1 minecraft:reinforced_deepslate run function buce:frienderchest/init
+execute in buce:frienderchest/chest run forceload remove -1 -1 1 1
+
+# add objectives
+scoreboard objectives add exit_x dummy
+scoreboard objectives add exit_y dummy
+scoreboard objectives add exit_z dummy
+
+## reset objectives
+#scoreboard players set * exit_d 0
 

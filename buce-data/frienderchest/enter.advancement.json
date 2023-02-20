@@ -16,7 +16,7 @@
 	},
 	"parent": "buce:frienderchest/root",
 	"criteria": {
-		"enter": {
+		"note_block": {
 			"trigger": "minecraft:item_used_on_block",
 			"conditions": {
 				"location": {
@@ -30,6 +30,11 @@
 					"items": [
 						"minecraft:ender_pearl"
 					]
+				},
+				"player": {
+					"location": {
+						"dimension": "minecraft:overworld"
+					}
 				}
 			}
 		}

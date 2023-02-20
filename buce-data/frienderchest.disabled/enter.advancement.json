@@ -14,17 +14,27 @@
 		"hidden": true,
 		"frame": "task"
 	},
-	"parent": "buce:friender/root",
+	"parent": "buce:frienderchest/root",
 	"criteria": {
-		"note_block": {
-			"trigger": "minecraft:changed_dimension",
+		"enter": {
+			"trigger": "minecraft:item_used_on_block",
 			"conditions": {
-				"from": "buce:friender/chest",
-				"to": "minecraft:the_end"
+				"location": {
+					"block": {
+						"blocks": [
+							"minecraft:ender_chest"
+						]
+					}
+				},
+				"item": {
+					"items": [
+						"minecraft:ender_pearl"
+					]
+				}
 			}
 		}
 	},
 	"rewards": {
-		"function": "buce:friender/exit"
+		"function": "buce:frienderchest/enter"
 	}
 }
