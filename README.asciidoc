@@ -1707,18 +1707,6 @@ a works-as-intended bug that prevents invisible armor stands from being broken.
 // just because mojang says it's a bug doesn't mean i have to agree with them
 // i think it's a bug
 
-=== Frienderchest
-
-A shared pocket dimension.
-Players can enter the Frienderchest
-by right-clicking an enderchest with an ender pearl in the overworld.
-
-Download:
-https://github.com/DMBuce/bucepack/releases[All Releases]
-
-Direct Link:
-https://github.com/DMBuce/bucepack/releases/latest/download/frienderchest.zip[`frienderchest.zip`]
-
 === Storage Orbs
 
 Lets you stack shulker boxes with the same contents in orb form.
@@ -1908,6 +1896,18 @@ https://github.com/DMBuce/bucepack/releases[All Releases]
 Direct Link:
 https://github.com/DMBuce/bucepack/releases/latest/download/dripblock.zip[`dripblock.zip`]
 
+=== Frienderchest
+
+A shared pocket dimension.
+Players can enter the Frienderchest
+by right-clicking an enderchest with an ender pearl in the overworld.
+
+Download:
+https://github.com/DMBuce/bucepack/releases[All Releases]
+
+Direct Link:
+https://github.com/DMBuce/bucepack/releases/latest/download/frienderchest.zip[`frienderchest.zip`]
+
 //=== Overworld
 //
 //Piglins and hoglins don't zombify in the overworld.
@@ -1917,6 +1917,20 @@ https://github.com/DMBuce/bucepack/releases/latest/download/dripblock.zip[`dripb
 //
 //Direct Link:
 //https://github.com/DMBuce/bucepack/releases/latest/download/worldgen_overworld.zip[`worldgen_overworld.zip`]
+
+=== Renewable Structures
+
+Makes desert pyramids and mineshafts a renewable source of sand and cobwebs.
+
+Only husks spawn in desert pyramids, and they drop sand.
+
+Cave spiders drop cobwebs.
+
+Download:
+https://github.com/DMBuce/bucepack/releases[All Releases]
+
+Direct Link:
+https://github.com/DMBuce/bucepack/releases/latest/download/worldgen_renewable_structures.zip[`worldgen_renewable_structures.zip`]
 
 === Trees
 

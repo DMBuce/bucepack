@@ -77,6 +77,7 @@ DATAPACKFILES = \
 	mineable.zip \
 	more_shulker_shells.zip \
 	no_treasure_maps.zip \
+	worldgen_renewable_structures.zip \
 	worldgen_trees.zip \
 	phantasmal_end.zip \
 	phantasmal.zip \
@@ -616,6 +617,11 @@ mineable_FILES := $(DEFAULT_DATA_FILES) \
 worldgen_overworld_FILES := $(DEFAULT_DATA_FILES) \
 	data/minecraft/dimension_type/overworld_caves.json \
 	data/minecraft/dimension_type/overworld.json \
+
+worldgen_renewable_structures_FILES := $(DEFAULT_DATA_FILES) \
+	data/minecraft/worldgen/structure/desert_pyramid.json \
+	data/minecraft/loot_tables/entities/husk.json \
+	data/minecraft/loot_tables/entities/cave_spider.json \
 
 worldgen_trees_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell find buce-data/recipes/crafting/trees/ -type f | ./bin/ext2dir) \
@@ -1462,6 +1468,12 @@ ender_relic.zip: $(ender_relic_FILES)
 	./bin/ziprename _$(@:.zip=) "" $@
 
 worldgen_overworld.zip: $(worldgen_overworld_FILES)
+	cp meta/$(@:.zip=.png) pack.png
+	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
+	zip $@ pack.png pack.mcmeta $^
+	./bin/ziprename _$(@:.zip=) "" $@
+
+worldgen_renewable_structures.zip: $(worldgen_renewable_structures_FILES)
 	cp meta/$(@:.zip=.png) pack.png
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^
