@@ -949,6 +949,7 @@ dlist:
 drlist:
 	@printf '%s\n' $(DATARESOURCEPACKFILES)
 
+# data/buce/loot_tables/loot_overhaul/extra/structures/buried_treasure.json
 data/buce/loot_tables/%.json: buce-data/%.loot_table.json
 	mkdir -p $(dir $@)
 	cp -v $< $@
@@ -982,6 +983,14 @@ data/buce/tags/items/%.json: buce-data/%.item.tag.json
 	cp -v $< $@
 
 data/buce/tags/functions/%.json: buce-data/%.function.tag.json
+	mkdir -p $(dir $@)
+	cp -v $< $@
+
+data/buce/worldgen/processor_list/%.json: buce-data/%.processor_list.worldgen.json
+	mkdir -p $(dir $@)
+	cp -v $< $@
+
+data/buce/structures/%.nbt: buce-data/%.structure.nbt
 	mkdir -p $(dir $@)
 	cp -v $< $@
 

@@ -18,9 +18,12 @@ sed -r '
 	s/.sempl$//
 	s/.yaml$//
 	s,([^/ \t]*)-data,data/\1,g
-	s,data/([^/]*)/(.*)\.([^./]*)\.([^./]*),data/\1/\3s/\2.\4,g
-	/\/tags\// s,/tags/(.*)\.([^.]*)\.([^.]*),/tags/\2s/\1.\3,
-	s,/dimensions/,/dimension/,
-	s,/dimension_types/,/dimension_type/,
+	s,data/([^/]*)/(.*)\.([^./]*)\.([^./]*),data/\1/\3/\2.\4,g
+	/\/tag\// s,/tag/(.*)\.([^.]*)\.([^.]*),/tag/\2/\1.\3,
+	/\/worldgen\// s,/worldgen/(.*)\.([^.]*)\.([^.]*),/worldgen/\2/\1.\3,
+	s,buce/(advancement|datapack|loot_table|recipe|structure|tag|function|predicate),buce/\1s,g
+	s,buce/tags/(block|entity_type|fluid|game_event|item),buce/tags/\1s,g
+	#s,/dimensions/,/dimension/,
+	#s,/dimension_types/,/dimension_type/,
 ' "$@"
 
