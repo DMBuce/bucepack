@@ -1,0 +1,47 @@
+#!/usr/bin/python
+
+import os
+import sys
+import requests
+import json
+
+# get auth token from config
+with open(os.getenv("HOME") + '/.config/bucepack-modrinth.token') as f:
+    token = f.readline().rstrip('\n')
+
+url = "https://api.modrinth.com/v2/project"
+headers = {
+    'User-Agent': 'dmbuce/bucepack (dmbuce@gmail.com)',
+    'Authorization': token,
+}
+# use loader: "minecraft" for datapacks/resourcepacks
+payload = {
+    'data': ( None, json.dumps(
+        {
+            'slug': 'buces-test',
+            'title': "Buce's Test",
+            'description': "Buce's Test: Testing modrinth API",
+            'categories': [],
+            'client_side': "optional", # "required", "optional", or "unsupported"
+            'server_side': "optional", # "required", "optional", or "unsupported"
+            'body': "Test project please ignore.",
+            'issues_url': 'https://github.com/DMBuce/bucepack/issues',
+            'source_url': 'https://github.com/DMBuce/bucepack',
+            'wiki_url': 'https://github.com/DMBuce/bucepack#readme',
+            'license_id': "LicenseRef-BucePack",
+            'project_type': 'datapack',
+            'is_draft': True,
+            'initial_versions': [],
+        }
+    ) )
+}
+
+r = requests.post(
+    url,
+    headers = headers,
+    files = payload,
+)
+
+print(r.text)
+
+# vim: ft=python
