@@ -9,12 +9,16 @@ import json
 with open(os.getenv("HOME") + '/.config/bucepack-modrinth.token') as f:
     token = f.readline().rstrip('\n')
 
-url = "https://api.modrinth.com/v2/project"
 headers = {
     'User-Agent': 'dmbuce/bucepack (dmbuce@gmail.com)',
     'Authorization': token,
 }
-# use loader: "minecraft" for datapacks/resourcepacks
+
+# create a project
+# TODO: reach out to @ModrinthMail before bulk creating/uploading
+# https://docs.modrinth.com/api-spec/#tag/projects/operation/createProject
+# https://docs.modrinth.com/api-spec/#tag/project_model
+url = "https://api.modrinth.com/v2/project"
 payload = {
     'data': ( None, json.dumps(
         {
@@ -22,6 +26,7 @@ payload = {
             'title': "Buce's Test",
             'description': "Buce's Test: Testing modrinth API",
             'categories': [],
+            #'additional_categories': [],
             'client_side': "optional", # "required", "optional", or "unsupported"
             'server_side': "optional", # "required", "optional", or "unsupported"
             'body': "Test project please ignore.",
@@ -29,18 +34,45 @@ payload = {
             'source_url': 'https://github.com/DMBuce/bucepack',
             'wiki_url': 'https://github.com/DMBuce/bucepack#readme',
             'license_id': "LicenseRef-BucePack",
-            'project_type': 'datapack',
+            'project_type': 'mod',
             'is_draft': True,
             'initial_versions': [],
         }
     ) )
 }
 
+# create a version
+# https://docs.modrinth.com/api-spec/#tag/versions/operation/createVersion
+# https://docs.modrinth.com/api-spec/#tag/version_model
+url = "https://api.modrinth.com/v2/project"
+payload = {
+    'data': ( None, json.dumps(
+        {
+            'name': "Buce's Test v1.19.3-1",
+            'version_number': '1.19.3-1',
+            #'changelog': 'TODO: add changelog',
+            'dependencies': [], # TODO: figure this out?
+            'game_versions': [
+                '1.19.3',
+            ],
+            'version_type': 'release',
+            'loaders': [
+                "minecraft",
+            ]
+        }
+    ) )
+}
+
+# create icon
+# TODO: upscale to 144x144px, or maybe that's not necessary?
+
 r = requests.post(
     url,
     headers = headers,
     files = payload,
 )
+
+# use loader: "minecraft" for datapacks/resourcepacks
 
 print(r.text)
 
