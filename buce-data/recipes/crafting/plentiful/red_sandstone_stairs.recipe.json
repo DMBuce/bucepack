@@ -21,5 +21,6 @@
   "result": {
     "count": 3,
     "item": "minecraft:red_sandstone_stairs"
-  }
+  },
+  "show_notification": true
 }

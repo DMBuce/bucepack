@@ -15,5 +15,6 @@
   "result": {
     "count": 6,
     "item": "minecraft:acacia_stairs"
-  }
+  },
+  "show_notification": true
 }

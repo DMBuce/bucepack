@@ -20,7 +20,7 @@ while read old; do
 	sed -i 's/"minecraft:shears"/'"$shears"'/g; $a\' "$new"
 done < <(
 	grep -rl shears "$latest.jar"/data/minecraft/loot_tables/blocks \
-	| grep -v leaves \
+	| grep -v -e{_leaves,/grass,/tall_grass} \
 	| sort
 )
 
@@ -37,3 +37,4 @@ sempl - data/minecraft/tags/blocks/mineable/hoe.json <<-EOF
 	  ]
 	}
 EOF
+

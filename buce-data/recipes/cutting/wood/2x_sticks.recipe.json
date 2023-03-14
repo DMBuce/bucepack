@@ -3,6 +3,7 @@
   "ingredient": [
     { "item": "minecraft:acacia_planks" },
     { "item": "minecraft:birch_planks" },
+    { "item": "minecraft:cherry_planks" },
     { "item": "minecraft:dark_oak_planks" },
     { "item": "minecraft:jungle_planks" },
     { "item": "minecraft:mangrove_planks" },

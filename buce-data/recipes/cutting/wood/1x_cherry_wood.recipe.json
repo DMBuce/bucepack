@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": [
+    { "item": "minecraft:cherry_log" }
+  ],
+  "result": "minecraft:cherry_wood",
+  "count": 1
+}

@@ -19,5 +19,6 @@
   "result": {
     "count": 6,
     "item": "minecraft:purpur_stairs"
-  }
+  },
+  "show_notification": true
 }

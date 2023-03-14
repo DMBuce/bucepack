@@ -14,5 +14,6 @@
   "result": {
     "count": 6,
     "item": "minecraft:diorite_stairs"
-  }
+  },
+  "show_notification": true
 }

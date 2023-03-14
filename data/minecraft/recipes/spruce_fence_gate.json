@@ -17,5 +17,6 @@
   "result": {
     "count": 4,
     "item": "minecraft:spruce_fence_gate"
-  }
+  },
+  "show_notification": true
 }

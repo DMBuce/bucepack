@@ -13,5 +13,6 @@
   "result": {
     "count": 3,
     "item": "minecraft:stone_stairs"
-  }
+  },
+  "show_notification": true
 }

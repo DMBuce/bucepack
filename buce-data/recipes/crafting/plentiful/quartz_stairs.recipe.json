@@ -21,5 +21,6 @@
   "result": {
     "count": 3,
     "item": "minecraft:quartz_stairs"
-  }
+  },
+  "show_notification": true
 }

@@ -14,5 +14,6 @@
   "result": {
     "count": 6,
     "item": "minecraft:crimson_trapdoor"
-  }
+  },
+  "show_notification": true
 }
