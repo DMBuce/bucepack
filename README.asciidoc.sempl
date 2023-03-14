@@ -1259,28 +1259,6 @@ https://github.com/DMBuce/bucepack/releases[All Releases]
 Direct Link:
 https://github.com/DMBuce/bucepack/releases/latest/download/leashed.zip[`leashed.zip`]
 
-=== Breeding Overhaul
-
-Overhauls breeding mechanics for
-horses, donkeys, mules, llamas, and trader llamas.
-
-In vanilla Minecraft, the traits of these animals (health for llamas; health,
-speed, and jump strength for the rest) are determined by taking the
-average of the parents and a randomly generated creature.
-
-In this datapack, for each trait there is a 25% chance to use the vanilla
-algorithm, a 50% chance to use one of the parents' trait (25% for each
-parent), and a 25% chance to use a randomly generated trait.
-
-In addition, when breeding hoglins,
-baby hoglins born in the Overworld are immune to zombification.
-
-Download:
-https://github.com/DMBuce/bucepack/releases[All Releases]
-
-Direct Link:
-https://github.com/DMBuce/bucepack/releases/latest/download/breeding_overhaul.zip[`breeding_overhaul.zip`]
-
 === Ender Relic
 
 Adds a random <<relics,Relic>> to each player's enderchest.

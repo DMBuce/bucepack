@@ -38,7 +38,6 @@ DATAPACKFILES = \
 	aggro_bastions.zip \
 	antidote.zip \
 	blue_fire.zip \
-	breeding_overhaul.zip \
 	climbable.zip \
 	crafting_cart.zip \
 	crafting_colorful.zip \
