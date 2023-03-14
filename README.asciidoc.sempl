@@ -422,19 +422,22 @@ https://github.com/DMBuce/bucepack/releases/latest/download/eyes_of_seeking.zip[
 
 === Acclimated
 
-Prevents mobs from sinking into powdered snow
-if they are light enough, surefooted enough, or immune to fall damage.
+Makes certain mobs more resilient to certain hazards.
+
+Rabbits don't take fall damage.
+
+Mobs don't dismount their riders when underwater.
+
+Mobs that are light enough, surefooted enough, or immune to fall damage
+don't sink into powdered snow.
 The list of mobs that don't sink is
 https://raw.githubusercontent.com/DMBuce/bucepack/master/data/minecraft/tags/entity_types/powder_snow_walkable_mobs.json[here].
 
-In addition,
-mobs don't dismount their riders when underwater,
-and more blocks are warm enough to keep striders comfortable.
-
-image::https://i.imgur.com/FnDMksX.png[Acclimated]
-
+More blocks are warm enough to keep striders comfortable.
 The list of blocks that can warm striders is
 https://raw.githubusercontent.com/DMBuce/bucepack/master/data/minecraft/tags/blocks/strider_warm_blocks.json[here].
+
+image::https://i.imgur.com/FnDMksX.png[Acclimated]
 
 Download:
 https://github.com/DMBuce/bucepack/releases[All Releases]
