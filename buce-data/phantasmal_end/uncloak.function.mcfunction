@@ -4,5 +4,6 @@
 advancement revoke @s only buce:phantasmal_end/uncloak
 
 # make phantom visible
-effect clear @e[type=phantom,distance=..8,limit=1,sort=nearest] invisibility
+#effect clear @e[type=phantom,distance=..8,limit=1,sort=nearest] invisibility
+execute on attacker run effect clear @s invisibility
 
