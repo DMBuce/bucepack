@@ -447,6 +447,7 @@ antidote_FILES := $(DEFAULT_DATA_FILES) \
 acclimated_FILES := $(DEFAULT_DATA_FILES) \
 	data/minecraft/tags/blocks/strider_warm_blocks.json \
 	data/minecraft/tags/entity_types/powder_snow_walkable_mobs.json \
+	data/minecraft/tags/entity_types/dismounts_underwater.json \
 
 no_treasure_maps_FILES := $(DEFAULT_DATA_FILES) \
 	data/minecraft/loot_tables/chests/shipwreck_map_no_treasure_maps.json \

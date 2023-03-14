@@ -427,7 +427,9 @@ if they are light enough, surefooted enough, or immune to fall damage.
 The list of mobs that don't sink is
 https://raw.githubusercontent.com/DMBuce/bucepack/master/data/minecraft/tags/entity_types/powder_snow_walkable_mobs.json[here].
 
-In addition, more blocks are warm enough to keep striders comfortable.
+In addition,
+mobs don't dismount their riders when underwater,
+and more blocks are warm enough to keep striders comfortable.
 
 image::https://i.imgur.com/FnDMksX.png[Acclimated]
 
