@@ -1,6 +1,7 @@
 {
   "type": "minecraft:stonecutting",
   "ingredient": [
+    { "item": "minecraft:stone" },
     { "item": "minecraft:stone_bricks" }
   ],
   "result": "minecraft:cracked_stone_bricks",

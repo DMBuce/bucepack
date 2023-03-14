@@ -142,6 +142,7 @@ do
 		{
 		  "type": "minecraft:stonecutting",
 		  "ingredient": [
+		    { "item": "{!jq -r .ingredient.item $latest.jar/data/minecraft/recipes/${inputs}_from_*_stonecutting.json 2>/dev/null}" },
 		    { "item": "minecraft:$inputs" }
 		  ],
 		  "result": "minecraft:$output",
