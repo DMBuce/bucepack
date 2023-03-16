@@ -1333,7 +1333,7 @@ Once any player enters the nether, all players stop healing from food.
 The first time the wither has been defeated,
 the rate of growth and decay for many natural processes is increased.
 Examples of such processes include
-plant growth, leaf decay, fire growth, and ice decay due to light.
+plant growth, leaf decay, fire growth, and ice melting.
 
 Once the dragon has been defeated,
 players stop losing their items when they die,
