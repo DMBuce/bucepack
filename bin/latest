@@ -11,6 +11,7 @@ fi
 latest="$(<latest.txt)"
 if [[ ! -f ~/".minecraft/versions/$latest/$latest.jar" ]]; then
 	echo "File not found: ~/.minecraft/versions/$latest/$latest.jar" >&2
+	exit 1
 elif [[ ! -d "$latest.jar" ]]; then
 	mkdir "$latest.jar"
 	cd "$latest.jar"
@@ -21,10 +22,21 @@ fi
 # copy sounds.json
 if [[ ! -f ~/".minecraft/assets/indexes/${latest%.*}.json" ]]; then
 	echo "File not found: ~/.minecraft/assets/indexes/${latest%.*}.json" >&2
+	exit 1
 elif [[ ! -f "$latest.jar/assets/minecraft/sounds.json" ]]; then
 	soundhash="$(jq -r '.objects."minecraft/sounds.json".hash' ~/.minecraft/assets/indexes/1.19.json)"
 	cp -v ~/".minecraft/assets/objects/${soundhash:0:2}/$soundhash" "$latest.jar/assets/minecraft/sounds.json" >&2
 fi
+
+## copy missing data files from mcmeta repo
+#cd ../mcmeta
+#branch="$(git branch --show-current)"
+#if [[ $branch != $latest-data ]]; then
+#	git pull --tags
+#	git checkout -b "$latest-data" "$latest-data"
+#	cd -
+#	rsync -a ../mcmeta/data/minecraft/dimension/ "$latest.jar/data/minecraft/dimension/"
+#fi
 
 # print latest version
 echo "$latest"
