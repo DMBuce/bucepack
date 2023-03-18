@@ -1,0 +1,29 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:barrier"
+		},
+		"title": {
+			"text": "Trigger Advancement"
+		},
+		"description": {
+			"text": "Something went wrong, you should revoke this advancement"
+		},
+		"show_toast": false,
+		"announce_to_chat": false,
+		"hidden": true,
+		"frame": "task"
+	},
+	"parent": "buce:portal/nether/root",
+	"criteria": {
+		"c1": {
+			"trigger": "minecraft:enter_block",
+			"conditions": {
+				"block": "minecraft:nether_portal"
+			}
+		}
+	},
+	"rewards": {
+		"function": "buce:portal/nether/enter"
+	}
+}

@@ -1550,6 +1550,10 @@ https://github.com/DMBuce/bucepack/releases[All Releases]
 Direct Link:
 https://github.com/DMBuce/bucepack/releases/latest/download/relics_mythic.zip[`relics_mythic.zip`]
 
+Known Issues:
+Myth of Seeking can behave in unexpected ways
+due to https://bugs.mojang.com/browse/MC-138887[MC-138887].
+
 === Phantasmal
 
 // Phantoms were so close to being a good addition,
@@ -1637,6 +1641,32 @@ https://github.com/DMBuce/bucepack/releases[All Releases]
 
 Direct Link:
 https://github.com/DMBuce/bucepack/releases/latest/download/phantasmal_end.zip[`phantasmal_end.zip`]
+
+=== Nether Portal Network
+
+Limits nether travel to ruined portals.
+
+With this datapack, there is a nexus near each ruined portal
+that weakens the fabric of reality between the overworld and nether.
+If a player tries to use a nether portal that's too far away from a nexus,
+the portal will break.
+
+//Nexuses near overworld ruined portals provide a 204 block radius area in the
+//overworld and a 25.5 block radius area in the nether where portals work.
+//Nexuses near nether ruined portals provide a 362 block radius area in the
+//overworld and a 46 block radius area in the nether where portals work.
+
+Nether portal mechanics are unchanged for entities other than players.
+
+Download:
+https://github.com/DMBuce/bucepack/releases[All Releases]
+
+Direct Link:
+https://github.com/DMBuce/bucepack/releases/latest/download/network_nether.zip[`network_nether.zip`]
+
+Known Issues:
+Nexuses don't allow nether portal usage outside of their own Anvil regions
+due to https://bugs.mojang.com/browse/MC-138887[MC-138887].
 
 === Storage Orbs
 

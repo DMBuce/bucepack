@@ -73,6 +73,7 @@ DATAPACKFILES = \
 	loot_overhaul.zip \
 	mineable.zip \
 	more_shulker_shells.zip \
+	network_nether.zip \
 	no_treasure_maps.zip \
 	worldgen_renewable_structures.zip \
 	worldgen_trees.zip \
@@ -448,6 +449,11 @@ acclimated_FILES := $(DEFAULT_DATA_FILES) \
 	data/minecraft/tags/entity_types/dismounts_underwater.json \
 	data/minecraft/tags/entity_types/fall_damage_immune.json \
 	data/minecraft/tags/entity_types/powder_snow_walkable_mobs.json \
+
+network_nether_FILES := $(DEFAULT_DATA_FILES) \
+	$(shell find buce-data/portal/nether -type f | ./bin/ext2dir) \
+	data/minecraft/tags/functions/load_network_nether.json \
+	data/buce/functions/var.mcfunction \
 
 no_treasure_maps_FILES := $(DEFAULT_DATA_FILES) \
 	data/minecraft/loot_tables/chests/shipwreck_map_no_treasure_maps.json \
@@ -1256,6 +1262,12 @@ aggro_bastions.zip: $(aggro_bastions_FILES)
 	./bin/ziprename _$(@:.zip=) "" $@
 
 antidote.zip: $(antidote_FILES)
+	cp meta/$(@:.zip=.png) pack.png
+	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
+	zip $@ pack.png pack.mcmeta $^
+	./bin/ziprename _$(@:.zip=) "" $@
+
+network_nether.zip: $(network_nether_FILES)
 	cp meta/$(@:.zip=.png) pack.png
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^

@@ -1,0 +1,56 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:barrier"
+		},
+		"title": {
+			"text": "Trigger Advancement"
+		},
+		"description": {
+			"text": "Something went wrong, you should revoke this advancement"
+		},
+		"show_toast": false,
+		"announce_to_chat": false,
+		"hidden": true,
+		"frame": "task"
+	},
+	"parent": "buce:portal/nether/root",
+	"criteria": {
+		"exitblock": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player": [
+					{
+						"condition": "minecraft:inverted",
+						"term": {
+							"condition": "minecraft:entity_properties",
+							"entity": "this",
+							"predicate": {
+								"location": {
+									"block": {
+										"blocks": [ "minecraft:nether_portal" ]
+									}
+								}
+							}
+						}
+					},
+					{
+						"condition": "minecraft:entity_properties",
+						"entity": "this",
+						"predicate": {
+							"type_specific": {
+								"type": "player",
+								"advancements": {
+									"buce:portal/nether/enter": true
+								}
+							}
+						}
+					}
+				]
+			}
+		}
+	},
+	"rewards": {
+		"function": "buce:portal/nether/exit"
+	}
+}

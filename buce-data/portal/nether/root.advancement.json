@@ -1,0 +1,22 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:crying_obsidian"
+		},
+		"title": {
+			"text": "Nether Portal Network"
+		},
+		"description": {
+			"text": "Limits nether travel to ruined portals"
+		},
+		"show_toast": false,
+		"announce_to_chat": false,
+		"frame": "task"
+	},
+	"parent": "buce:root",
+	"criteria": {
+		"tick": {
+			"trigger": "minecraft:tick"
+		}
+	}
+}
