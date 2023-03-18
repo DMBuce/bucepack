@@ -284,8 +284,6 @@ image::https://i.imgur.com/DH6v35X.png[Spellsmithing Guide]
 In addition, this pack contains textures for custom items obtained with the
 following datapacks.
 
-* <<glow-squid-glamers,Glow Squid Glamers>>: Poseable armor stands
-* <<invisible-squid-glamer,Invisible Squid Glamer>>: Invisible item frames
 * <<phantasmal,Phantasmal>>: Invisible item frames and light blocks
 * <<loot-overhaul,Loot Overhaul>>: Invisible light blocks
 * <<mythic-relics,Mythic Relics>>, <<relic-loot,Relic Loot>>, <<starter-relic,Starter Relic>>, <<ender-relic,Ender Relic>>: Some relics
@@ -1444,48 +1442,6 @@ https://github.com/DMBuce/bucepack/releases[All Releases]
 Direct Link:
 https://github.com/DMBuce/bucepack/releases/latest/download/relics_mythic.zip[`relics_mythic.zip`]
 
-=== Glow Squid Glamers
-
-Adds custom enchantments that drop from glow squid and can be used to
-give armor stands minor illusory effects.
-
-Glow ink sacs drop with one or two custom glamer enchantments on them. The
-enchantments can be applied to armor stands in the smithing table to give them
-minor illusory effects. The illusions are incredibly convincing and can be
-interacted with as if they are real, but they're destroyed when the armor
-stand is broken.
-
-Each enchantment makes an armor stand's base invisible, gives it illusory
-arms, and provides one other effect.
-
-.Click for a summary of armor stand glamers
-[%collapsible]
-====
-
-**Glamer of Posing**: When a player interacts with an armor stand by right
-clicking it while sneaking, the nearest armor stand with this enchantment
-assumes a new pose
-
-**Glamer of Shrinking**: Makes the armor stand appear smaller
-
-====
-
-If you have the <<spellsmithing-guide,Spellsmithing Guide>> resource pack
-installed, armor stands with glamers will have an appropriate item texture in
-the inventory.
-
-//image::https://i.imgur.com/UMqUu72.png[Glow Squid Glamers]
-
-This pack is a companion to the <<phantasmal,Phantasmal>> and
-<<invisible-squid-glamer,Invisible Squid Glamer>> datapacks,
-each of which let you obtain an enchantment that makes item frames invisible.
-
-Download:
-https://github.com/DMBuce/bucepack/releases[All Releases]
-
-Direct Link:
-https://github.com/DMBuce/bucepack/releases/latest/download/glow_squid_glamers.zip[`glow_squid_glamers.zip`]
-
 === Phantasmal
 
 // Phantoms were so close to being a good addition,
@@ -1536,9 +1492,7 @@ have a translucent item texture in the inventory,
 and invisible light items will have a custom texture.
 
 This pack is a companion to the <<phantasmal-end,Phantasmal End>> datapack,
-which adds phantoms to the dragon fight; and the
-<<glow-squid-glamers,Glow Squid Glamers>> datapack, which lets you obtain
-armor stand glamers from glow squid.
+which adds phantoms to the dragon fight.
 
 Download:
 https://github.com/DMBuce/bucepack/releases[All Releases]
@@ -1575,32 +1529,6 @@ https://github.com/DMBuce/bucepack/releases[All Releases]
 
 Direct Link:
 https://github.com/DMBuce/bucepack/releases/latest/download/phantasmal_end.zip[`phantasmal_end.zip`]
-
-=== Invisible Squid Glamer
-
-Squid (but not glow squid) with invisibility that die drop
-ink with Glamer of Invisibility, an enchantment that can be applied to an item
-frame in the smithing table to make an invisible item frame.
-
-If you have the <<spellsmithing-guide,Spellsmithing Guide>> resource pack
-installed, invisible item frames will
-have a translucent item texture in the inventory
-
-This pack is a companion to the
-<<glow-squid-glamers,Glow Squid Glamers>> datapack, which lets you obtain
-armor stand glamers from glow squid.
-
-Download:
-https://github.com/DMBuce/bucepack/releases[All Releases]
-
-Direct Link:
-https://github.com/DMBuce/bucepack/releases/latest/download/invis_squid_glamer.zip[`invis_squid_glamer.zip`]
-
-Known Issues: The Glamer of Invisibility can't be applied to armor stands
-because of https://bugs.mojang.com/browse/MC-66068[MC-66068],
-a works-as-intended bug that prevents invisible armor stands from being broken.
-// just because mojang says it's a bug doesn't mean i have to agree with them
-// i think it's a bug
 
 === Storage Orbs
 
@@ -2140,14 +2068,12 @@ to a tool, but they continue to function even without a datapack.
 
 === Glamer Enchantments
 
-Glamers are enchantments added by the <<phantasmal,Phantasmal>>,
-<<glow-squid-glamers,Glow Squid Glamers>>, and
-<<invisible-squid-glamer,Invisible Squid Glamer>> datapacks
-that can be applied to item frames or armor
-stands in the smithing table to give them illusory effects such as
-invisibility or fake arms. The illusions are incredibly convincing and can be
-interacted with as if they are real, but they're destroyed when the armor
-stand or item frame is broken.
+Glamers are enchantments added by the <<phantasmal,Phantasmal>> datapack
+that can be applied to item frames
+in the smithing table to give them illusory effects such as invisibility.
+The illusions are incredibly convincing and can be
+interacted with as if they are real, but they're destroyed when the
+item frame is broken.
 
 Glamers are identical to boons in all other ways.
 

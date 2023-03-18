@@ -60,12 +60,10 @@ DATAPACKFILES = \
 	frienderchest.zip \
 	gardener_endermen.zip \
 	global_effects.zip \
-	glow_squid_glamers.zip \
 	heads_fae.zip \
 	heads_golem.zip \
 	heads_player.zip \
 	hover_mode.zip \
-	invis_squid_glamer.zip \
 	leashed.zip \
 	lichdom.zip \
 	loot_overhaul_treasure_barrels.zip \
