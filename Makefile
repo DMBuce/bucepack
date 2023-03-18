@@ -531,12 +531,13 @@ relics_mythic_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell find buce-data/mythic -type f | ./bin/ext2dir) \
 	data/buce/functions/var.mcfunction \
 	data/minecraft/loot_tables/blocks/deepslate_emerald_ore.json \
+	data/minecraft/loot_tables/entities/bee.json \
 	data/minecraft/loot_tables/entities/endermite.json \
 	data/minecraft/loot_tables/entities/ghast.json \
+	data/minecraft/loot_tables/entities/glow_squid.json \
 	data/minecraft/loot_tables/entities/iron_golem.json \
 	data/minecraft/loot_tables/entities/pig.json \
 	data/minecraft/loot_tables/entities/silverfish.json \
-	data/minecraft/loot_tables/entities/bee.json \
 	data/minecraft/tags/entity_types/frog_food.json \
 	data/minecraft/tags/functions/load_relics_mythic.json \
 	data/minecraft/tags/worldgen/structure/seeking_located.json \

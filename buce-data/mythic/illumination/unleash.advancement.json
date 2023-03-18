@@ -42,6 +42,6 @@
 		}
 	},
 	"rewards": {
-		"function": "buce:mythic/leashing/unleash"
+		"function": "buce:mythic/illumination/unleash"
 	}
 }

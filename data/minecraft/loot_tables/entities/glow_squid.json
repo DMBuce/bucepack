@@ -2,62 +2,47 @@
   "type": "minecraft:entity",
   "pools": [
     {
-      "rolls": 1.0,
-      "bonus_rolls": 0.0,
+      "bonus_rolls": 0,
       "entries": [
         {
           "type": "minecraft:item",
           "functions": [
             {
-              "function": "minecraft:set_count",
+              "function": "minecraft:set_nbt",
+              "conditions": [
+                {
+                  "condition": "minecraft:damage_source_properties",
+                  "predicate": {
+                    "source_entity": {
+                      "type": "minecraft:frog"
+                    }
+                  }
+                }
+              ],
+              "tag": "{relic:1b,illumination:1b,CustomModelData:22183,display:{Name:\"{\\\"text\\\":\\\"Relic of Glowing\\\",\\\"color\\\":\\\"light_purple\\\"}\",Lore:[\"\\\"§r§aMyth of Lightning Bugs\\\"\"]},Enchantments:[{}]}"
+            },
+            {
+              "add": false,
               "count": {
                 "type": "minecraft:uniform",
-                "min": 1.0,
-                "max": 3.0
+                "max": 3,
+                "min": 1
               },
-              "add": false
+              "function": "minecraft:set_count"
             },
             {
-              "function": "minecraft:looting_enchant",
-              "count": {
-                "min": 0.0,
-                "max": 1.0
-              }
-            },
-            {
-              "function": "minecraft:set_nbt",
-              "tag": "{CustomModelData:22183,EntityTag:{Tags:[\"pose\",\"default\"],ShowArms:1b,NoBasePlate:1b,Pose:{}},display:{Lore:[\"\\\"§r§aGlamer of Posing\\\"\"]}}"
-            }
-          ],
-          "name": "minecraft:glow_ink_sac"
-        },
-        {
-          "type": "minecraft:item",
-          "functions": [
-            {
-              "function": "minecraft:set_count",
               "count": {
                 "type": "minecraft:uniform",
-                "min": 1.0,
-                "max": 3.0
+                "max": 1,
+                "min": 0
               },
-              "add": false
-            },
-            {
-              "function": "minecraft:looting_enchant",
-              "count": {
-                "min": 0.0,
-                "max": 1.0
-              }
-            },
-            {
-              "function": "minecraft:set_nbt",
-              "tag": "{CustomModelData:22196,EntityTag:{Tags:[\"pose\",\"default\"],ShowArms:1b,NoBasePlate:1b,Small:1b,Pose:{}},display:{Lore:[\"\\\"§r§aGlamer of Posing\\\"\",\"\\\"§r§aGlamer of Shrinking\\\"\"]}}"
+              "function": "minecraft:looting_enchant"
             }
           ],
           "name": "minecraft:glow_ink_sac"
         }
-      ]
+      ],
+      "rolls": 1
     }
   ]
 }

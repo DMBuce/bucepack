@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
-    "minecraft:bee"
+    "minecraft:bee",
+    "minecraft:glow_squid"
   ]
 }

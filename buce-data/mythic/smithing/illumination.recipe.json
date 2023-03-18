@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "base": {
+    "item": "minecraft:glow_ink_sac"
+  },
+  "addition": {
+    "item": "minecraft:trident"
+  },
+  "result": {
+    "item": "minecraft:trident"
+  }
+}

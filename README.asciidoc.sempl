@@ -1361,6 +1361,12 @@ enchantment that can be applied to elytra in the smithing table.
 When a player wearing the elytra is hit by a mob, they gain 8 minutes of
 invisibility. The invisibility ends if the player damages a mob.
 
+**Relic of Glowing**: When a frog eats a glow squid,
+it drops glow ink with Myth of Lightning Bus,
+a custom enchantment that can be applied to a trident in the smithing table.
+When the trident is thrown and hits a mob,
+it creates a Light block if there is space to do so.
+
 **Relic of the Rodeo Clown**: When a frog eats a bee,
 it drops a belt buckle with Myth of the Lasso and Myth of Balloon Animals,
 two custom enchantments that can be applied to leather pants in the smithing
