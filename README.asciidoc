@@ -1296,6 +1296,21 @@ https://github.com/DMBuce/bucepack/releases[All Releases]
 Direct Link:
 https://github.com/DMBuce/bucepack/releases/latest/download/smart_allays.zip[`smart_allays.zip`]
 
+=== Poseable
+
+Lets you pose armor stands.
+
+Armor stands placed while sneaking have arms and no base plate.
+
+Sneaking while adding or removing an item from an armor stand changes its
+pose.
+
+Download:
+https://github.com/DMBuce/bucepack/releases[All Releases]
+
+Direct Link:
+https://github.com/DMBuce/bucepack/releases/latest/download/poseable.zip[`poseable.zip`]
+
 === Antidote
 
 Makes more food negate potion effects

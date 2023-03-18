@@ -80,6 +80,7 @@ DATAPACKFILES = \
 	worldgen_trees.zip \
 	phantasmal_end.zip \
 	phantasmal.zip \
+	poseable.zip \
 	relics_mythic.zip \
 	shearless.zip \
 	smart_allays.zip \
@@ -659,6 +660,9 @@ breeding_overhaul_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell find buce-data/breeding_overhaul -type f | ./bin/ext2dir) \
 	data/minecraft/tags/functions/load_breeding_overhaul.json \
 	data/buce/functions/var.mcfunction \
+
+poseable_FILES := $(DEFAULT_DATA_FILES) \
+	$(shell find buce-data/poseable -type f | ./bin/ext2dir) \
 
 glow_squid_glamers_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell find buce-data/illusory/glow_squid -type f | ./bin/ext2dir) \
@@ -1511,6 +1515,12 @@ shearless.zip: $(shearless_FILES)
 	./bin/ziprename _$(@:.zip=) "" $@
 
 invis_squid_glamer.zip: $(invis_squid_glamer_FILES)
+	cp meta/$(@:.zip=.png) pack.png
+	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
+	zip $@ pack.png pack.mcmeta $^
+	./bin/ziprename _$(@:.zip=) "" $@
+
+poseable.zip: $(poseable_FILES)
 	cp meta/$(@:.zip=.png) pack.png
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^
