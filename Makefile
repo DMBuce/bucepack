@@ -21,6 +21,7 @@ RESOURCEPACKFILES = \
 	classic_sploosh.zip \
 	classic_twang.zip \
 	discreet_cart.zip \
+	discreet_hrrm.zip \
 	discreet_meow.zip \
 	discreet_pumpkin.zip \
 	note_guide.zip \
@@ -400,6 +401,10 @@ classic_crunch_FILES := $(DEFAULT_RESOURCE_FILES) \
 
 discreet_cart_FILES := $(DEFAULT_RESOURCE_FILES) \
 	assets/minecraft/sounds/minecart/base.ogg \
+
+discreet_hrrm_FILES := $(DEFAULT_RESOURCE_FILES) \
+	assets/minecraft/sounds/silence.ogg \
+	assets/minecraft/sounds_discreet_hrrm.json \
 
 discreet_meow_FILES := $(DEFAULT_RESOURCE_FILES) \
 	assets/minecraft/sounds/silence.ogg \
@@ -1216,6 +1221,12 @@ classic_crunch.zip: $(classic_crunch_FILES)
 	./bin/ziprename _$(@:.zip=) "" $@
 
 discreet_cart.zip: $(discreet_cart_FILES)
+	cp meta/$(@:.zip=.png) pack.png
+	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
+	zip $@ pack.png pack.mcmeta $^
+	./bin/ziprename _$(@:.zip=) "" $@
+
+discreet_hrrm.zip: $(discreet_hrrm_FILES)
 	cp meta/$(@:.zip=.png) pack.png
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^

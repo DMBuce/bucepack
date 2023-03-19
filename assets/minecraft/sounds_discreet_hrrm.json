@@ -1,0 +1,52 @@
+{
+  "entity.wandering_trader.ambient": {
+    "sounds": [
+      {
+        "name": "silence",
+        "volume": 0.1
+      },
+      {
+        "name": "silence",
+        "volume": 0.2
+      },
+      {
+        "name": "silence",
+        "volume": 0.3
+      },
+      {
+        "name": "silence",
+        "volume": 0.4
+      },
+      {
+        "name": "silence",
+        "volume": 0.5
+      },
+      {
+        "name": "silence",
+        "volume": 0.6
+      },
+      {
+        "name": "silence",
+        "volume": 0.7
+      },
+      {
+        "name": "silence",
+        "volume": 0.8
+      },
+      {
+        "name": "silence",
+        "volume": 0.9
+      },
+      {
+        "name": "silence",
+        "volume": 1.0
+      },
+      "mob/wandering_trader/idle1",
+      "mob/wandering_trader/idle2",
+      "mob/wandering_trader/idle3",
+      "mob/wandering_trader/idle4",
+      "mob/wandering_trader/idle5"
+    ],
+    "subtitle": "subtitles.entity.wandering_trader.ambient"
+  }
+}
