@@ -2,7 +2,6 @@
 DATARESOURCEPACKFILES = \
 	copper_overhaul.zip \
 	cutting_wood.zip \
-	path_strider.zip \
 	pig_armor.zip \
 
 RESOURCEPACKFILES = \
@@ -83,6 +82,7 @@ DATAPACKFILES = \
 	relics_mythic.zip \
 	shearless.zip \
 	smart_allays.zip \
+	speedy_paths.zip \
 	starter_bed.zip \
 	starter_bonus_box.zip \
 	starter_bonus_chest.zip \
@@ -652,6 +652,9 @@ ender_relic_FILES := $(DEFAULT_DATA_FILES) \
 
 skybarrel_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell find buce-data/skybarrel -type f | ./bin/ext2dir) \
+
+speedy_paths_FILES := $(DEFAULT_DATA_FILES) \
+	$(shell find buce-data/speedy_paths -type f | ./bin/ext2dir) \
 
 smart_allays_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell find buce-data/smart_allays -type f | ./bin/ext2dir) \
@@ -1508,6 +1511,12 @@ dripblock.zip: $(dripblock_FILES)
 	./bin/ziprename _$(@:.zip=) "" $@
 
 skybarrel.zip: $(skybarrel_FILES)
+	cp meta/$(@:.zip=.png) pack.png
+	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
+	zip $@ pack.png pack.mcmeta $^
+	./bin/ziprename _$(@:.zip=) "" $@
+
+speedy_paths.zip: $(speedy_paths_FILES)
 	cp meta/$(@:.zip=.png) pack.png
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^

@@ -1277,6 +1277,21 @@ https://github.com/DMBuce/bucepack/releases[All Releases]
 Direct Link:
 https://github.com/DMBuce/bucepack/releases/latest/download/leashed.zip[`leashed.zip`]
 
+=== Speedy Paths
+
+Makes path blocks extend Speed effects.
+
+When a player's Speed II effect runs out,
+the player gains Speed I if they're on a path.
+
+Paths extend Speed I effects for players in a manner similar to beacons.
+
+Download:
+https://github.com/DMBuce/bucepack/releases[All Releases]
+
+Direct Link:
+https://github.com/DMBuce/bucepack/releases/latest/download/speedy_paths.zip[`speedy_paths.zip`]
+
 === Ender Relic
 
 Adds a random <<relics,Relic>> to each player's enderchest.

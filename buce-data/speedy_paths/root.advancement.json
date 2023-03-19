@@ -4,10 +4,10 @@
 			"item": "minecraft:dirt_path"
 		},
 		"title": {
-			"text": "Path Strider"
+			"text": "Speedy Paths"
 		},
 		"description": {
-			"text": "Soul speed works on more blocks"
+			"text": "Path blocks extend Speed effects"
 		},
 		"show_toast": false,
 		"announce_to_chat": false,

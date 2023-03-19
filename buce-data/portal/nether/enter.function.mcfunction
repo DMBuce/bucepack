@@ -10,10 +10,10 @@
 execute in minecraft:overworld store result score #buce.owp var run locate structure #minecraft:ruined_portal
 execute in minecraft:the_nether store result score #buce.ntp var run locate structure #minecraft:ruined_portal
 
-# debug
-say enter portal
-tellraw @a ["overworld : ",{"score":{"name":"#buce.owp","objective":"var"}}]
-tellraw @a ["nether : ",{"score":{"name":"#buce.ntp","objective":"var"}}]
+## debug
+#say enter portal
+#tellraw @a ["overworld : ",{"score":{"name":"#buce.owp","objective":"var"}}]
+#tellraw @a ["nether : ",{"score":{"name":"#buce.ntp","objective":"var"}}]
 
 # break portal if nearest ruined portal is too far away
 #

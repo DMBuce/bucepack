@@ -1,0 +1,39 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:barrier"
+		},
+		"title": {
+			"text": "Trigger Advancement"
+		},
+		"description": {
+			"text": "Something went wrong, you should revoke this advancement"
+		},
+		"show_toast": false,
+		"announce_to_chat": false,
+		"hidden": true,
+		"frame": "task"
+	},
+	"parent": "buce:speedy_paths/root",
+	"criteria": {
+		"c1": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player": {
+					"location": {
+						"block": {
+							"blocks": [ "minecraft:dirt_path" ]
+						}
+					},
+					"effects": {
+						"minecraft:speed": {
+						}
+					}
+				}
+			}
+		}
+	},
+	"rewards": {
+		"function": "buce:speedy_paths/activate"
+	}
+}
