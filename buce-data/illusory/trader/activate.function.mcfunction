@@ -6,7 +6,7 @@ execute as @e[type=trader_llama,distance=..12] at @s run function buce:illusory/
 # turn self into illusioner
 summon minecraft:illusioner ~ ~ ~ {Tags:["new"],DeathLootTable:"buce:illusory/trader/illusioner",CanJoinRaid:1b,LeftHanded:1b,HandItems:[{id:"minecraft:bow",Count:1b,tag:{Damage:0}},{}]}
 data modify entity @e[type=minecraft:illusioner,tag=new,limit=1] Rotation set from entity @s Rotation
-tag @e[type=minecraft:illusioner,tag=new] remove new
+tag @e[type=minecraft:illusioner,tag=new,limit=1] remove new
 
 # cleanup
 tp @s ~ ~-768 ~
