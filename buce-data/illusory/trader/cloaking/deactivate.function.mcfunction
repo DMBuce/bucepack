@@ -1,7 +1,7 @@
 # runs when a player deactivates cloaking
 
 # revoke advancement
-advancement revoke @s only buce:mythic/cloaking/trigger_attack
+advancement revoke @s only buce:illusory/trader/cloaking/trigger_attack
 
 # remove invis
 effect clear @s invisibility

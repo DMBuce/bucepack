@@ -14,18 +14,24 @@
 		"hidden": true,
 		"frame": "task"
 	},
-	"parent": "buce:mythic/root",
+	"parent": "buce:illusory/trader/root",
 	"criteria": {
-		"attack": {
-			"trigger": "minecraft:player_hurt_entity",
+		"get_hurt": {
+			"trigger": "minecraft:entity_hurt_player",
 			"conditions": {
+				"damage": {
+					"source_entity": {}
+				},
 				"player": [
 					{
-						"condition": "minecraft:entity_properties",
-						"entity": "this",
-						"predicate": {
-							"effects": {
-								"invisibility": {}
+						"condition": "minecraft:inverted",
+						"term": {
+							"condition": "minecraft:entity_properties",
+							"entity": "this",
+							"predicate": {
+								"effects": {
+									"invisibility": {}
+								}
 							}
 						}
 					},
@@ -49,6 +55,6 @@
 		}
 	},
 	"rewards": {
-		"function": "buce:mythic/cloaking/deactivate"
+		"function": "buce:illusory/trader/cloaking/activate"
 	}
 }

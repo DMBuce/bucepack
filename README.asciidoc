@@ -1409,6 +1409,25 @@ https://github.com/DMBuce/bucepack/releases[All Releases]
 Direct Link:
 https://github.com/DMBuce/bucepack/releases/latest/download/ender_relic.zip[`ender_relic.zip`]
 
+=== Illusory Traders
+
+Gives each wandering trader a chance to be an illusioner in disguise.
+If a player attacks a disguised illusioner or its llama,
+the illusioner drops the disguise
+and turns any nearby trader llamas into ravagers.
+
+When killed by a player,
+the illusioner drops leather enchanted with Myth of Cloaking,
+a custom enchantment that can be applied to elytra in the smithing table.
+When a player wearing the elytra is hit by a mob, they gain 8 minutes of
+invisibility. The invisibility ends if the player damages a mob.
+
+Download:
+https://github.com/DMBuce/bucepack/releases[All Releases]
+
+Direct Link:
+https://github.com/DMBuce/bucepack/releases/latest/download/illusory_trader.zip[`illusory_trader.zip`]
+
 === Mythic Relics
 
 Adds <<Relics>> with <<mythic-enchantments,Mythic Enchantments>>
@@ -1470,14 +1489,6 @@ Stormcalling, a custom enchantment that can be applied to a trident in the
 smithing table. A player can summon rain with the trident
 by standing in water, looking skyward, and holding right click for several
 seconds.
-
-**Relic of Disappearance**: If the <<Phantasmal>> datapack is installed before
-this one,
-invisible phantoms killed by a player in The End drop leather with Curse of Vanishing and
-Myth of Cloaking, a custom
-enchantment that can be applied to elytra in the smithing table.
-When a player wearing the elytra is hit by a mob, they gain 8 minutes of
-invisibility. The invisibility ends if the player damages a mob.
 
 **Relic of Glowing**: When a frog eats a glow squid,
 it drops glow ink with Myth of Lightning Bus,
