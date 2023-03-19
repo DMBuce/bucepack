@@ -63,6 +63,7 @@ DATAPACKFILES = \
 	heads_golem.zip \
 	heads_player.zip \
 	hover_mode.zip \
+	illusory_trader.zip \
 	leashed.zip \
 	lichdom.zip \
 	loot_overhaul_treasure_barrels.zip \
@@ -411,6 +412,9 @@ gardener_endermen_FILES := $(DEFAULT_DATA_FILES) \
 climbable_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell ls buce-data/climbable* | ./bin/ext2dir) \
 	data/minecraft/tags/blocks/climbable.json \
+
+illusory_trader_FILES := $(DEFAULT_DATA_FILES) \
+	$(shell find buce-data/illusory/trader -type f | ./bin/ext2dir) \
 
 hover_mode_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell ls buce-data/hover_mode* | ./bin/ext2dir) \
@@ -1223,6 +1227,12 @@ discreet_meow.zip: $(discreet_meow_FILES)
 	./bin/ziprename _$(@:.zip=) "" $@
 
 gardener_endermen.zip: $(gardener_endermen_FILES)
+	cp meta/$(@:.zip=.png) pack.png
+	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
+	zip $@ pack.png pack.mcmeta $^
+	./bin/ziprename _$(@:.zip=) "" $@
+
+illusory_trader.zip: $(illusory_trader_FILES)
 	cp meta/$(@:.zip=.png) pack.png
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^
