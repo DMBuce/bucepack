@@ -1242,6 +1242,8 @@ https://github.com/DMBuce/bucepack/releases/latest/download/antidote.zip[`antido
 
 Adjusts various game rules as players make progress in the world.
 
+Snowy weather generates up to three layers of snow instead of one.
+
 Once any player enters the nether, all players stop healing from food.
 
 The first time the wither has been defeated,
