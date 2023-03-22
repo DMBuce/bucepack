@@ -15,3 +15,6 @@ setblock 1 -1 1 minecraft:end_gateway
 # add a minor hazard
 setblock ~15 1 ~15 minecraft:spawner{SpawnData:{entity:{id:"minecraft:endermite"}}}
 
+# carve out safety hole in overworld
+execute in minecraft:overworld at 1 0 1 run fill ~ ~ ~ ~ ~1 ~ minecraft:air replace #minecraft:lush_ground_replaceable
+
