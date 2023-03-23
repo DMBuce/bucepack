@@ -10,5 +10,5 @@ execute store result score @s exit_z run data get entity @s Pos[2] 1
 
 # remove pearl from inventory and enter frienderchest
 execute store result score @s var run clear @s minecraft:ender_pearl 1
-execute if score @s var matches 1.. in buce:frienderchest/chest positioned 2 0 2 run teleport @s ~ ~ ~
+execute if score @s var matches 1.. in buce:frienderchest/chest positioned 2 0 2 run teleport @s ~ ~1 ~
 
