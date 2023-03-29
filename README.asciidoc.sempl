@@ -799,22 +799,6 @@ https://github.com/DMBuce/bucepack/releases[All Releases]
 Direct Link:
 https://github.com/DMBuce/bucepack/releases/latest/download/no_treasure_maps.zip[`no_treasure_maps.zip`]
 
-=== Wandering Loot
-
-For 6 emeralds, wandering traders sell a barrel containing loot
-from a random structure or 4-8 end portal frames.
-
-image::https://i.imgur.com/gVEJ2zi.png[Wandering Loot]
-
-Best enjoyed in worlds such as <<dripblock,DripBlock>>
-where structures don't generate.
-
-Download:
-https://github.com/DMBuce/bucepack/releases[All Releases]
-
-Direct Link:
-https://github.com/DMBuce/bucepack/releases/latest/download/wandering_loot.zip[`wandering_loot.zip`]
-
 === Heads
 
 Below is a series of datapacks that adds decorative player heads to the game.
@@ -1281,6 +1265,22 @@ https://github.com/DMBuce/bucepack/releases[All Releases]
 
 Direct Link:
 https://github.com/DMBuce/bucepack/releases/latest/download/leashed.zip[`leashed.zip`]
+
+=== Wandering Loot
+
+For 6 emeralds, wandering traders sell a barrel containing loot
+from a random structure or 4-8 end portal frames.
+
+image::https://i.imgur.com/gVEJ2zi.png[Wandering Loot]
+
+Best enjoyed in worlds such as <<dripblock,DripBlock>>
+where structures don't generate.
+
+Download:
+https://github.com/DMBuce/bucepack/releases[All Releases]
+
+Direct Link:
+https://github.com/DMBuce/bucepack/releases/latest/download/wandering_loot.zip[`wandering_loot.zip`]
 
 === Speedy Paths
 
