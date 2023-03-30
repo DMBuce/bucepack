@@ -4,10 +4,10 @@
 			"item": "minecraft:wheat"
 		},
 		"title": {
-			"text": "Fortunate Crops"
+			"text": "Husbandry"
 		},
 		"description": {
-			"text": "Wheat and beetroots drop extra crops instead of seeds when harvested with fortune"
+			"text": "More farmable drops"
 		},
 		"show_toast": false,
 		"announce_to_chat": false,

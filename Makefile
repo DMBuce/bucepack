@@ -55,8 +55,6 @@ DATAPACKFILES = \
 	escape_nether.zip \
 	escape_the_end.zip \
 	eyes_of_seeking.zip \
-	fortunate_crops.zip \
-	fortunate_jungle.zip \
 	frienderchest.zip \
 	gardener_endermen.zip \
 	global_effects.zip \
@@ -64,6 +62,7 @@ DATAPACKFILES = \
 	heads_golem.zip \
 	heads_player.zip \
 	hover_mode.zip \
+	husbandry.zip \
 	illusory_trader.zip \
 	leashed.zip \
 	lichdom.zip \
@@ -73,7 +72,6 @@ DATAPACKFILES = \
 	loot_overhaul_treasure_seeds.zip \
 	loot_overhaul.zip \
 	mineable.zip \
-	more_shulker_shells.zip \
 	network_nether.zip \
 	no_treasure_maps.zip \
 	worldgen_renewable_structures.zip \
@@ -472,14 +470,13 @@ blue_fire_FILES := $(DEFAULT_DATA_FILES) \
 	data/minecraft/tags/blocks/soul_fire_base_blocks.json \
 	data/buce/advancements/blue_fire.json \
 
-fortunate_jungle_FILES := $(DEFAULT_DATA_FILES) \
-	data/minecraft/loot_tables/blocks/jungle_leaves.json \
-	data/buce/advancements/fortunate_jungle.json \
-
-fortunate_crops_FILES := $(DEFAULT_DATA_FILES) \
-	data/minecraft/loot_tables/blocks/wheat.json \
+husbandry_FILES := $(DEFAULT_DATA_FILES) \
+	data/buce/advancements/husbandry.json \
 	data/minecraft/loot_tables/blocks/beetroots.json \
-	data/buce/advancements/fortunate_crops.json \
+	data/minecraft/loot_tables/blocks/jungle_leaves.json \
+	data/minecraft/loot_tables/blocks/wheat.json \
+	data/minecraft/loot_tables/entities/goat.json \
+	data/minecraft/loot_tables/entities/shulker.json \
 
 frienderchest_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell find buce-data/frienderchest -type f | ./bin/ext2dir) \
@@ -843,10 +840,6 @@ copper_tech_FILES := $(DEFAULT_DATA_FILES) \
 	data/minecraft/recipes/powered_rail.json \
 	#assets/minecraft/textures/block/activator_rail_on.png \
 	#assets/minecraft/textures/block/activator_rail.png \
-
-more_shulker_shells_FILES := $(DEFAULT_DATA_FILES) \
-	data/minecraft/loot_tables/entities/shulker.json \
-	data/buce/advancements/more_shulker_shells.json \
 
 buce-data/heads/*.loot_table.json.yaml: buce-data/heads/heads.dat
 
@@ -1310,13 +1303,7 @@ blue_fire.zip: $(blue_fire_FILES)
 	zip $@ pack.png pack.mcmeta $^
 	./bin/ziprename _$(@:.zip=) "" $@
 
-fortunate_jungle.zip: $(fortunate_jungle_FILES)
-	cp meta/$(@:.zip=.png) pack.png
-	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
-	zip $@ pack.png pack.mcmeta $^
-	./bin/ziprename _$(@:.zip=) "" $@
-
-fortunate_crops.zip: $(fortunate_crops_FILES)
+husbandry.zip: $(husbandry_FILES)
 	cp meta/$(@:.zip=.png) pack.png
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^
