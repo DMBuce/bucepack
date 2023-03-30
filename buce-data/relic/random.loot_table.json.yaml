@@ -52,7 +52,7 @@ pools:
       - { type: item, weight: 1, item: sugar,
           nbt: '{relic:1b,CustomModelData:22183,display:{Name:\"{\\\"text\\\":\\\"Relic of Striding\\\",\\\"color\\\":\\\"light_purple\\\"}\"},Enchantments:[{id:depth_strider,lvl:3},{id:feather_falling,lvl:4}]}'
         }
-      - { type: item, weight: 1, item: leather,
+      - { type: item, weight: 1, item: feather,
           nbt: '{relic:1b,CustomModelData:22183,display:{Name:\"{\\\"text\\\":\\\"Relic of Projectile Protection\\\",\\\"color\\\":\\\"light_purple\\\"}\"},Enchantments:[{id:projectile_protection,lvl:2}]}'
         }
 #      - { type: item, weight: 1, item: gold_nugget,

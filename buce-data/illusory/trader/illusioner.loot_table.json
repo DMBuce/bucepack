@@ -34,7 +34,7 @@
               "tag": "{relic:1b,cloaking:1b,CustomModelData:22183,display:{Name:\"{\\\"text\\\":\\\"Relic of Invisibility\\\",\\\"color\\\":\\\"light_purple\\\"}\",Lore:[\"\\\"§r§bMyth of Cloaking\\\"\"]},Enchantments:[{}]}"
             }
           ],
-          "name": "minecraft:leather",
+          "name": "minecraft:feather",
           "weight": 1
         }
       ],

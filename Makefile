@@ -1045,6 +1045,9 @@ $(TEMPLATES:.sempl=): latest.txt
 buce-data/relic/all.loot_table.json.yaml: buce-data/relic/random.loot_table.json.yaml
 	sed '/^#/d; 5,$$ s/^      -/  - rolls: 1\n    entries:\n&/' $^ > $@
 
+buce-data/loot_overhaul/extra/structure/spawn_bonus_chest_loot_overhaul_starter_relic.loot_table.json.yaml: buce-data/relic/random.loot_table.json.yaml
+	cp -v $^ $@
+
 test.zip: $(test_FILES)
 	cp meta/$(@:.zip=.png) pack.png
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
