@@ -347,7 +347,11 @@ They shouldn't add any lag to your game.
 
 Makes more blocks work with the enchantment table.
 Chiseled bookshelves power the enchantment table,
-and these blocks don't block bookshelves from boosting the enchantment table.
+and
+https://raw.githubusercontent.com/DMBuce/bucepack/master/data/minecraft/tags/blocks/enchantment_power_transmitter.json[these blocks]
+don't block bookshelves from boosting the enchantment table.
+
+image::https://i.imgur.com/w9MQeFL.png[Enchanting]
 
 Download:
 https://github.com/DMBuce/bucepack/releases[All Releases]
