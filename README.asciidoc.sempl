@@ -343,6 +343,18 @@ https://minecraft.fandom.com/wiki/Tag[tags]
 in the vanilla game.
 They shouldn't add any lag to your game.
 
+=== Enchanting
+
+Makes more blocks work with the enchantment table.
+Chiseled bookshelves power the enchantment table,
+and these blocks don't block bookshelves from boosting the enchantment table.
+
+Download:
+https://github.com/DMBuce/bucepack/releases[All Releases]
+
+Direct Link:
+https://github.com/DMBuce/bucepack/releases/latest/download/enchanting.zip[`enchanting.zip`]
+
 === Mineable
 
 In vanilla Minecraft, certain blocks like glass have no tool associated with
@@ -1537,6 +1549,44 @@ https://github.com/DMBuce/bucepack/releases[All Releases]
 
 Direct Link:
 https://github.com/DMBuce/bucepack/releases/latest/download/phantasmal_end.zip[`phantasmal_end.zip`]
+
+//=== Deep Gate Network
+//
+//A lodestone compass and ender pearl can be applied to a goat horn in a
+//smithing table.
+//Playing the horn near the lodestone that the compass was linked to teleports
+//the player to the lodestone.
+//
+//Playing the horn near a deep gate amplifies the horn's tune,
+//allowing the player to teleport to the lodestone from any ancient city.
+//
+//Download:
+//https://github.com/DMBuce/bucepack/releases[All Releases]
+//
+//Direct Link:
+//https://github.com/DMBuce/bucepack/releases/latest/download/network_deep.zip[`network_deep.zip`]
+
+//=== Deep Broadcast Network
+//
+//Turns the reinforced deepslate structures at the center of ancient cities
+//into broadcast devices
+//that interact with shrieker sounds so as to summon players instead of wardens.
+//
+//These broadcast devices convert the sounds of nearby shriekers
+//into a signal that compasses can modulate. The modulated signal resonates
+//with the compass' corresponding spawn location, death point, or lodestone.
+//
+//When a player holding a recovery compass, compass, or lodestone compass
+//steps on a shrieker near a broadcast device,
+//the shrieker summons the player
+//at the corresponding death point, lodestone, or world spawn.
+//Shriekers can only summon players in the overworld this way.
+//
+//Download:
+//https://github.com/DMBuce/bucepack/releases[All Releases]
+//
+//Direct Link:
+//https://github.com/DMBuce/bucepack/releases/latest/download/network_deep.zip[`network_deep.zip`]
 
 === Nether Portal Network
 

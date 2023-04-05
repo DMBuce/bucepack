@@ -1,0 +1,25 @@
+{
+  "replace": false,
+  "values": [
+    "#minecraft:wool_carpets",
+    "#minecraft:candles",
+    "#minecraft:flower_pots",
+    "#minecraft:small_flowers",
+    "minecraft:azalea",
+    "minecraft:flowering_azalea",
+    "minecraft:mangrove_propagule",
+    "minecraft:pink_petals",
+    "minecraft:moss_carpet",
+    "minecraft:skeleton_skull",
+    "minecraft:wither_skeleton_skull",
+    "minecraft:dragon_head",
+    "minecraft:piglin_head",
+    "minecraft:creeper_head",
+    "minecraft:zombie_head",
+    "minecraft:player_head",
+    "minecraft:amethyst_cluster",
+    "minecraft:small_amethyst_bud",
+    "minecraft:medium_amethyst_bud",
+    "minecraft:large_amethyst_bud"
+  ]
+}

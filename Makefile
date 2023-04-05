@@ -50,6 +50,7 @@ DATAPACKFILES = \
 	cutting_smooth_cracked.zip \
 	dragonproof.zip \
 	dripblock.zip \
+	enchanting.zip \
 	ender_relic.zip \
 	escape_grind.zip \
 	escape_nether.zip \
@@ -652,6 +653,10 @@ dripblock_FILES := $(DEFAULT_DATA_FILES) \
 	data/minecraft/tags/functions/island_dripblock.json \
 	data/minecraft/tags/functions/load_dripblock.json \
 	data/minecraft/worldgen/noise_settings/overworld_dripblock.json \
+
+enchanting_FILES := $(DEFAULT_DATA_FILES) \
+	data/minecraft/tags/blocks/enchantment_power_provider.json \
+	data/minecraft/tags/blocks/enchantment_power_transmitter.json \
 
 ender_relic_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell find buce-data/ender_relic -type f | ./bin/ext2dir) \
@@ -1487,6 +1492,12 @@ leashed.zip: $(leashed_FILES)
 	./bin/ziprename _$(@:.zip=) "" $@
 
 mineable.zip: $(mineable_FILES)
+	cp meta/$(@:.zip=.png) pack.png
+	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
+	zip $@ pack.png pack.mcmeta $^
+	./bin/ziprename _$(@:.zip=) "" $@
+
+enchanting.zip: $(enchanting_FILES)
 	cp meta/$(@:.zip=.png) pack.png
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^
