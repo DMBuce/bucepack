@@ -16,7 +16,7 @@
 	},
 	"parent": "buce:antidote/root",
 	"criteria": {
-		"use_tool": {
+		"c1": {
 			"trigger": "minecraft:consume_item",
 			"conditions": {
 				"item": {

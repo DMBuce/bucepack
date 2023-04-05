@@ -16,7 +16,7 @@
 	},
 	"parent": "buce:antidote/root",
 	"criteria": {
-		"eat_cake": {
+		"c1": {
 			"trigger": "minecraft:item_used_on_block",
 			"conditions": {
 				"location": {

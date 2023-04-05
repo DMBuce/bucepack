@@ -17,28 +17,20 @@
 	"parent": "buce:antidote/root",
 	"criteria": {
 		"c1": {
-			"trigger": "minecraft:consume_item",
+			"trigger": "minecraft:player_interacted_with_entity",
 			"conditions": {
 				"item": {
 					"items": [
-						"minecraft:dried_kelp"
+						"minecraft:crimson_fungus"
 					]
 				},
-				"player": [
-					{
-						"condition": "minecraft:entity_properties",
-						"entity": "this",
-						"predicate": {
-							"effects": {
-								"minecraft:dolphins_grace": {}
-							}
-						}
-					}
-				]
+				"entity": {
+					"type": "minecraft:hoglin"
+				}
 			}
 		}
 	},
 	"rewards": {
-		"function": "buce:antidote/dried_kelp/activate"
+		"function": "buce:antidote/crimson_fungus/feed"
 	}
 }

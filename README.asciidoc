@@ -1299,6 +1299,8 @@ the same way honey negates poison.
 * Melons negate withering
 ====
 
+In addition, crimson fungus immunizes hoglins against zombification.
+
 Download:
 https://github.com/DMBuce/bucepack/releases[All Releases]
 

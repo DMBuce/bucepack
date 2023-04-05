@@ -16,29 +16,16 @@
 	},
 	"parent": "buce:antidote/root",
 	"criteria": {
-		"c1": {
-			"trigger": "minecraft:consume_item",
+		"hoglin": {
+			"trigger": "minecraft:bred_animals",
 			"conditions": {
-				"item": {
-					"items": [
-						"minecraft:dried_kelp"
-					]
-				},
-				"player": [
-					{
-						"condition": "minecraft:entity_properties",
-						"entity": "this",
-						"predicate": {
-							"effects": {
-								"minecraft:dolphins_grace": {}
-							}
-						}
-					}
-				]
+				"child": {
+					"type": "minecraft:hoglin"
+				}
 			}
 		}
 	},
 	"rewards": {
-		"function": "buce:antidote/dried_kelp/activate"
+		"function": "buce:antidote/crimson_fungus/breed"
 	}
 }
