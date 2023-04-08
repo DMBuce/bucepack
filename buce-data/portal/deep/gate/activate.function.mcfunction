@@ -4,8 +4,7 @@
 effect give @s minecraft:darkness 4 0 true
 
 # particles
-#particle minecraft:sonic_boom ~ ~ ~ 0.5 0.5 0.5 1 8 force @a
-schedule function buce:portal/deep/gate/particles 1.5s append
+schedule function buce:portal/deep/particles 1.5s append
 
 # tp to surface
 tag @s add tp_surface

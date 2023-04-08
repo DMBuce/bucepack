@@ -91,6 +91,6 @@
 		]
 	],
 	"rewards": {
-		"function": "buce:portal/deep/mountain"
+		"function": "buce:portal/deep/mountain/activate"
 	}
 }

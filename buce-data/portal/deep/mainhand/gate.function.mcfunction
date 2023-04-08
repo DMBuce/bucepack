@@ -1,7 +1,7 @@
 # runs when a player toots a horn in an ancient city
 
-# debug
-say gate
+## debug
+#say gate
 
 # if deep gate is nearby, link goat horn
 execute store result score @s var run locate structure minecraft:ancient_city

@@ -34,7 +34,7 @@
 					"type_specific": {
 						"type": "player",
 						"advancements": {
-							"buce:portal/deep/mountain": false
+							"buce:portal/deep/mountain/trigger": false
 						}
 					}
 				}
