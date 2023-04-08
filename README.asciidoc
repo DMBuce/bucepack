@@ -2038,10 +2038,13 @@ image::https://i.imgur.com/gUnJW5S.png[Treasure Seeds]
 ====
 ====
 
-Known Issues:
+.Known Issues
+[%collapsible]
+====
 If a chest is broken instead of opened by a player,
 treasure seeds won't generate due to
 https://bugs.mojang.com/browse/MC-156411[MC-156411].
+====
 
 ==== Relic Loot
 
@@ -2610,9 +2613,12 @@ data/minecraft/tags/entity_types/frog_food.json
 ====
 ====
 
-Known Issues:
+.Known Issues
+[%collapsible]
+====
 Myth of Seeking can behave in unexpected ways
 due to https://bugs.mojang.com/browse/MC-138887[MC-138887].
+====
 
 === Phantasmal
 
@@ -2683,11 +2689,15 @@ data/minecraft/loot_tables/entities/phantom.json
 ====
 ====
 
-Known Issues: The Glamer of Invisibility can't be applied to armor stands
+.Known Issues
+[%collapsible]
+====
+The Glamer of Invisibility can't be applied to armor stands
 because of https://bugs.mojang.com/browse/MC-66068[MC-66068],
 a works-as-intended bug that prevents invisible armor stands from being broken.
 // just because mojang says it's a bug doesn't mean i have to agree with them
 // i think it's a bug
+====
 
 === Phantasmal End
 
@@ -2783,9 +2793,12 @@ Nether portal mechanics are unchanged for entities other than players.
 ====
 ====
 
-Known Issues:
+.Known Issues
+[%collapsible]
+====
 Nexuses don't allow nether portal usage outside of their own Anvil regions
 due to https://bugs.mojang.com/browse/MC-138887[MC-138887].
+====
 
 === Storage Orbs
 
@@ -3448,7 +3461,9 @@ pedestal.
 ====
 ====
 
-Known Issues:
+.Known Issues
+[%collapsible]
+====
 
 * This pack uses teams and is incompatible with other data packs that use
   teams
@@ -3459,6 +3474,7 @@ Known Issues:
   possible with hacky shulker box workarounds
 * If a player in turtle form dies from their shell breaking, other players who
   die in the same tick will have their death messages suppressed
+====
 
 == Ordering Data Packs
 
