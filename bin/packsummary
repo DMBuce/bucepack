@@ -1,0 +1,19 @@
+#!/bin/bash -a
+
+packs="$(printf '%s\n' "$@" | sed 's/\.zip$//')"
+header='Direct Link'
+(( $# > 1 )) && header='Direct Links'
+
+sempl <<-EOF
+	Download:
+	https://github.com/DMBuce/bucepack/releases[All Releases]
+
+	$header:
+	{<\$packs}https://github.com/DMBuce/bucepack/releases/latest/download/{0}.zip[\`{0}.zip\`]
+EOF
+
+for pack in "$@"; do
+	echo
+	./bin/packfiles "$pack"
+done
+

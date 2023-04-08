@@ -9,10 +9,10 @@ if [[ -f cache/$pack.files ]]; then
 		if [[ -f "$latest.jar/$file" ]]; then
 			output+=("$file")
 		fi
-	done < <(grep '^data/minecraft' "cache/$pack.files")
+	done < <(grep -E '^(data|assets)/minecraft' "cache/$pack.files")
 	if [[ -n "$output" ]]; then
 		cat <<-EOF
-			.Minecraft files included
+			.Minecraft files included in \`$pack.zip\`
 			[%collapsible]
 			====
 

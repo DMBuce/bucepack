@@ -74,11 +74,7 @@ image::https://i.imgur.com/WLFKdEM.png[Painting Overhaul]
 * https://en.wikipedia.org/wiki/Brig_%22Mercury%22_Attacked_by_Two_Turkish_Ships[Brig Mercury]
 ====
 
-Download:
-https://github.com/DMBuce/bucepack/releases[All Releases]
-
-Direct Link:
-https://github.com/DMBuce/bucepack/releases/latest/download/painting_overhaul.zip[`painting_overhaul.zip`]
+{!./bin/packsummary painting_overhaul}
 
 === Note Guide
 
@@ -96,11 +92,7 @@ block underneath:
 * Facing South: cow_bell, chime, flute, bell (soul sand/packed ice/clay/gold)
 * Facing East: didgeridoo, pling, banjo, bit (pumpkin/glowstone/hay/emerald)
 
-Download:
-https://github.com/DMBuce/bucepack/releases[All Releases]
-
-Direct Link:
-https://github.com/DMBuce/bucepack/releases/latest/download/note_guide.zip[`note_guide.zip`]
+{!./bin/packsummary note_guide}
 
 === Brew Guide
 
@@ -114,12 +106,7 @@ There's also a dark mode version available that's adapted from
 https://www.curseforge.com/minecraft/texture-packs/default-dark-mode[nebulr's Default Dark Mode]
 resource pack.
 
-Download:
-https://github.com/DMBuce/bucepack/releases[All Releases]
-
-Direct Links:
-https://github.com/DMBuce/bucepack/releases/latest/download/brew_guide.zip[`brew_guide.zip`]
-https://github.com/DMBuce/bucepack/releases/latest/download/brew_guide_darkmode.zip[`brew_guide_darkmode.zip`]
+{!./bin/packsummary brew_guide brew_guide_darkmode}
 
 === Tech Arrows
 
@@ -132,11 +119,7 @@ image::https://i.imgur.com/EyBG6cG.png[Tech Arrows]
 // In addition,
 // the face of observers briefly change expressions when they observe.
 
-Download:
-https://github.com/DMBuce/bucepack/releases[All Releases]
-
-Direct Link:
-https://github.com/DMBuce/bucepack/releases/latest/download/tech_arrows.zip[`tech_arrows.zip`]
+{!./bin/packsummary tech_arrows}
 
 === Villager Mech
 
@@ -146,11 +129,7 @@ image::https://i.imgur.com/oF0MLK9.png[Village Mech]
 
 // In addition, the villager's expression changes as he takes damage.
 
-Download:
-https://github.com/DMBuce/bucepack/releases[All Releases]
-
-Direct Link:
-https://github.com/DMBuce/bucepack/releases/latest/download/villager_mech.zip[`villager_mech.zip`]
+{!./bin/packsummary villager_mech}
 
 === Pig Armor
 
@@ -164,11 +143,7 @@ When installed as a data pack,
 saddling a pig gives it 4 armor defense points
 (the same amount that an iron helmet and boots provide to players).
 
-Download:
-https://github.com/DMBuce/bucepack/releases[All Releases]
-
-Direct Link:
-https://github.com/DMBuce/bucepack/releases/latest/download/pig_armor.zip[`pig_armor.zip`]
+{!./bin/packsummary pig_armor}
 
 === Ravager
 
@@ -176,11 +151,7 @@ Moves the ravager's eyes to the side of its face.
 
 image::https://i.imgur.com/bJEeUdc.png[Ravager]
 
-Download:
-https://github.com/DMBuce/bucepack/releases[All Releases]
-
-Direct Link:
-https://github.com/DMBuce/bucepack/releases/latest/download/ravager.zip[`ravager.zip`]
+{!./bin/packsummary ravager}
 
 === Ore Types
 
@@ -197,11 +168,7 @@ this pack organizes them into "types" that determine the ore's shape.
 * "Gemlike" ores (Redstone, Diamond, Emerald) use the old emerald shape
 * "Lumpy" ores (Coal, Lapis) are shaped like modern coal ore
 
-Download:
-https://github.com/DMBuce/bucepack/releases[All Releases]
-
-Direct Link:
-https://github.com/DMBuce/bucepack/releases/latest/download/ore_types.zip[`ore_types.zip`]
+{!./bin/packsummary ore_types}
 
 === Discreet Pumpkin
 
@@ -209,11 +176,7 @@ Makes the pumpkin helmet gui less obtrusive.
 
 image::https://i.imgur.com/2RWgrPq.png[Discreet Pumpkin]
 
-Download:
-https://github.com/DMBuce/bucepack/releases[All Releases]
-
-Direct Link:
-https://github.com/DMBuce/bucepack/releases/latest/download/discreet_pumpkin.zip[`discreet_pumpkin.zip`]
+{!./bin/packsummary discreet_pumpkin}
 
 === Classic Textures
 
@@ -260,18 +223,7 @@ image::https://i.imgur.com/DorMwHO.png[Classic Food]
 * Cake
 ====
 
-Download:
-https://github.com/DMBuce/bucepack/releases[All Releases]
-
-Direct Links:
-https://github.com/DMBuce/bucepack/releases/latest/download/classic_oak.zip[`classic_oak.zip`]
-https://github.com/DMBuce/bucepack/releases/latest/download/classic_obsidian.zip[`classic_obsidian.zip`]
-https://github.com/DMBuce/bucepack/releases/latest/download/classic_netherrack.zip[`classic_netherrack.zip`]
-https://github.com/DMBuce/bucepack/releases/latest/download/classic_lava.zip[`classic_lava.zip`]
-https://github.com/DMBuce/bucepack/releases/latest/download/classic_gravel.zip[`classic_gravel.zip`]
-https://github.com/DMBuce/bucepack/releases/latest/download/classic_lapis.zip[`classic_lapis.zip`]
-https://github.com/DMBuce/bucepack/releases/latest/download/classic_rose.zip[`classic_rose.zip`]
-https://github.com/DMBuce/bucepack/releases/latest/download/classic_food.zip[`classic_food.zip`]
+{!./bin/packsummary classic_oak classic_obsidian classic_netherrack classic_lava classic_gravel classic_lapis classic_rose classic_food}
 
 === Spellsmithing Guide
 
@@ -288,11 +240,7 @@ following datapacks.
 * <<loot-overhaul,Loot Overhaul>>: Invisible light blocks
 * <<mythic-relics,Mythic Relics>>, <<relic-loot,Relic Loot>>, <<starter-relic,Starter Relic>>, <<ender-relic,Ender Relic>>: Some relics
 
-Download:
-https://github.com/DMBuce/bucepack/releases[All Releases]
-
-Direct Link:
-https://github.com/DMBuce/bucepack/releases/latest/download/spellsmithing_guide.zip[`spellsmithing_guide.zip`]
+{!./bin/packsummary spellsmithing_guide}
 
 == Sound Packs
 
@@ -309,14 +257,7 @@ Classic Sploosh reverts water noise so it has a *sploosh* sound.
 
 Classic Crunch reverts grass noise so it has a *crunch* sound when stepping on it.
 
-Download:
-https://github.com/DMBuce/bucepack/releases[All Releases]
-
-Direct Links:
-https://github.com/DMBuce/bucepack/releases/latest/download/classic_moo.zip[`classic_moo.zip`]
-https://github.com/DMBuce/bucepack/releases/latest/download/classic_twang.zip[`classic_twang.zip`]
-https://github.com/DMBuce/bucepack/releases/latest/download/classic_sploosh.zip[`classic_sploosh.zip`]
-https://github.com/DMBuce/bucepack/releases/latest/download/classic_crunch.zip[`classic_crunch.zip`]
+{!./bin/packsummary classic_moo classic_twang classic_sploosh classic_crunch}
 
 === Discreet Sounds
 
@@ -328,13 +269,7 @@ Discreet Hrrm makes wandering traders "hrrm" less often.
 
 Discreet Meow makes cats meow less often.
 
-Download:
-https://github.com/DMBuce/bucepack/releases[All Releases]
-
-Direct Links:
-https://github.com/DMBuce/bucepack/releases/latest/download/discreet_cart.zip[`discreet_cart.zip`]
-https://github.com/DMBuce/bucepack/releases/latest/download/discreet_hrrm.zip[`discreet_hrrm.zip`]
-https://github.com/DMBuce/bucepack/releases/latest/download/discreet_meow.zip[`discreet_meow.zip`]
+{!./bin/packsummary discreet_cart discreet_hrrm discreet_meow}
 
 == Tag Data Packs
 
@@ -353,11 +288,7 @@ don't block bookshelves from boosting the enchantment table.
 
 image::https://i.imgur.com/w9MQeFL.png[Enchanting]
 
-Download:
-https://github.com/DMBuce/bucepack/releases[All Releases]
-
-Direct Link:
-https://github.com/DMBuce/bucepack/releases/latest/download/enchanting.zip[`enchanting.zip`]
+{!./bin/packsummary enchanting}
 
 === Mineable
 
@@ -376,11 +307,7 @@ so that it's more difficult to accidentally break these blocks.
 
 This pack fixes https://bugs.mojang.com/browse/MC-199752[MC-199752].
 
-Download:
-https://github.com/DMBuce/bucepack/releases[All Releases]
-
-Direct Link:
-https://github.com/DMBuce/bucepack/releases/latest/download/mineable.zip[`mineable.zip`]
+{!./bin/packsummary mineable}
 
 === Climbable
 
@@ -388,11 +315,7 @@ Lets you climb chains and iron bars.
 
 image::https://i.imgur.com/N0l5B2c.png[Climbable]
 
-Download:
-https://github.com/DMBuce/bucepack/releases[All Releases]
-
-Direct Link:
-https://github.com/DMBuce/bucepack/releases/latest/download/climbable.zip[`climbable.zip`]
+{!./bin/packsummary climbable}
 
 === Dragonproof
 
@@ -406,11 +329,7 @@ Many of them are shown below.
 
 image::https://i.imgur.com/c7kQFcp.png[Dragonproof Blocks]
 
-Download:
-https://github.com/DMBuce/bucepack/releases[All Releases]
-
-Direct Link:
-https://github.com/DMBuce/bucepack/releases/latest/download/dragonproof.zip[`dragonproof.zip`]
+{!./bin/packsummary dragonproof}
 
 === Gardener Endermen
 
@@ -420,22 +339,14 @@ and can pick up more plants and fungi.
 All the blocks that endermen can pick up are listed
 https://raw.githubusercontent.com/DMBuce/bucepack/master/data/minecraft/tags/blocks/enderman_holdable.json[here].
 
-Download:
-https://github.com/DMBuce/bucepack/releases[All Releases]
-
-Direct Link:
-https://github.com/DMBuce/bucepack/releases/latest/download/gardener_endermen.zip[`gardener_endermen.zip`]
+{!./bin/packsummary gardener_endermen}
 
 === Eyes of Seeking
 
 Lets you use ender eyes to find End Cities and Bastion Remnants
 in addition to Strongholds.
 
-Download:
-https://github.com/DMBuce/bucepack/releases[All Releases]
-
-Direct Link:
-https://github.com/DMBuce/bucepack/releases/latest/download/eyes_of_seeking.zip[`eyes_of_seeking.zip`]
+{!./bin/packsummary eyes_of_seeking}
 
 === Acclimated
 
@@ -456,21 +367,13 @@ https://raw.githubusercontent.com/DMBuce/bucepack/master/data/minecraft/tags/blo
 
 image::https://i.imgur.com/FnDMksX.png[Acclimated]
 
-Download:
-https://github.com/DMBuce/bucepack/releases[All Releases]
-
-Direct Link:
-https://github.com/DMBuce/bucepack/releases/latest/download/acclimated.zip[`acclimated.zip`]
+{!./bin/packsummary acclimated}
 
 === Aggro Bastions
 
 Makes piglins hostile when you break blocks that bastions are made out of.
 
-Download:
-https://github.com/DMBuce/bucepack/releases[All Releases]
-
-Direct Link:
-https://github.com/DMBuce/bucepack/releases/latest/download/aggro_bastions.zip[`aggro_bastions.zip`]
+{!./bin/packsummary aggro_bastions}
 
 === Hover Mode
 
@@ -482,11 +385,7 @@ Basically, air is treated like vines and other climbable blocks.
 
 Best enjoyed in skyblock worlds such as <<dripblock,DripBlock>>.
 
-Download:
-https://github.com/DMBuce/bucepack/releases[All Releases]
-
-Direct Link:
-https://github.com/DMBuce/bucepack/releases/latest/download/hover_mode.zip[`hover_mode.zip`]
+{!./bin/packsummary hover_mode}
 
 === Waterproof Tech
 
@@ -494,11 +393,7 @@ Makes redstone components waterproof.
 
 image::https://i.imgur.com/aZKvCrc.png[Waterproof Tech]
 
-Download:
-https://github.com/DMBuce/bucepack/releases[All Releases]
-
-Direct Link:
-https://github.com/DMBuce/bucepack/releases/latest/download/waterproof_tech.zip[`waterproof_tech.zip`]
+{!./bin/packsummary waterproof_tech}
 
 === Blue Fire
 
@@ -506,11 +401,7 @@ Lets you use blue shiny rocks to make blue fire.
 
 image::https://i.imgur.com/paceJ4Z.png[Blue Fire]
 
-Download:
-https://github.com/DMBuce/bucepack/releases[All Releases]
-
-Direct Link:
-https://github.com/DMBuce/bucepack/releases/latest/download/blue_fire.zip[`blue_fire.zip`]
+{!./bin/packsummary blue_fire}
 
 == Recipe Data Packs
 
@@ -522,22 +413,14 @@ They shouldn't add any lag to your game.
 Lets you remove the minecart from chest/furnace/hopper/tnt minecarts in the
 crafting grid, or smelt them into minecarts.
 
-Download:
-https://github.com/DMBuce/bucepack/releases[All Releases]
-
-Direct Link:
-https://github.com/DMBuce/bucepack/releases/latest/download/crafting_cart.zip[`crafting_cart.zip`]
+{!./bin/packsummary crafting_cart}
 
 === Colorful Crafting
 
 Lets you dye any color of bed, wool, or candle.
 You can also dye any combination of terracotta, glass, or glass panes.
 
-Download:
-https://github.com/DMBuce/bucepack/releases[All Releases]
-
-Direct Link:
-https://github.com/DMBuce/bucepack/releases/latest/download/crafting_colorful.zip[`crafting_colorful.zip`]
+{!./bin/packsummary crafting_colorful}
 
 === Loot Crafting
 
@@ -548,11 +431,7 @@ image::https://i.imgur.com/A6dYFhf.png[Recipes]
 
 The leather horse armor recipe is changed to match other horse armor as well.
 
-Download:
-https://github.com/DMBuce/bucepack/releases[All Releases]
-
-Direct Link:
-https://github.com/DMBuce/bucepack/releases/latest/download/crafting_loot.zip[`crafting_loot.zip`]
+{!./bin/packsummary crafting_loot}
 
 === Plentiful Crafting
 
@@ -577,11 +456,7 @@ Makes some crafting recipes cheaper.
 
 ====
 
-Download:
-https://github.com/DMBuce/bucepack/releases[All Releases]
-
-Direct Link:
-https://github.com/DMBuce/bucepack/releases/latest/download/crafting_plentiful.zip[`crafting_plentiful.zip`]
+{!./bin/packsummary crafting_plentiful}
 
 === Unpacked Crafting
 
@@ -609,11 +484,7 @@ storage.
 
 ====
 
-Download:
-https://github.com/DMBuce/bucepack/releases[All Releases]
-
-Direct Link:
-https://github.com/DMBuce/bucepack/releases/latest/download/crafting_unpacked.zip[`crafting_unpacked.zip`]
+{!./bin/packsummary crafting_unpacked}
 
 === Workstation Crafting
 
@@ -629,11 +500,7 @@ The barrel recipe uses slabs in place of planks.
 Smoker recipes use cobblestone in addition to logs.
 Lecterns use two extra slabs.
 
-Download:
-https://github.com/DMBuce/bucepack/releases[All Releases]
-
-Direct Link:
-https://github.com/DMBuce/bucepack/releases/latest/download/crafting_workstation.zip[`crafting_workstation.zip`]
+{!./bin/packsummary crafting_workstation}
 
 === Declutter Cutting
 
@@ -660,11 +527,7 @@ The following blocks can be freely crafted into each other.
 
 image::https://i.imgur.com/wTSA89p.png[Declutter Cutting]
 
-Download:
-https://github.com/DMBuce/bucepack/releases[All Releases]
-
-Direct Link:
-https://github.com/DMBuce/bucepack/releases/latest/download/cutting_declutter.zip[`cutting_declutter.zip`]
+{!./bin/packsummary cutting_declutter}
 
 === Smooth & Cracked Cutting
 
@@ -672,11 +535,7 @@ Lets you craft smooth, cracked, and cobbled stone variants in the stonecutter.
 
 image::https://i.imgur.com/tJy4jop.png[Smooth & Cracked Cutting]
 
-Download:
-https://github.com/DMBuce/bucepack/releases[All Releases]
-
-Direct Link:
-https://github.com/DMBuce/bucepack/releases/latest/download/cutting_smooth_cracked.zip[`cutting_smooth_cracked.zip`]
+{!./bin/packsummary cutting_smooth_cracked}
 
 === Wood Cutting
 
@@ -689,11 +548,7 @@ When installed as a resource pack,
 it also provides partial support for renaming Stonecutters to Saws.
 See <<language-support,Language Support>> for details.
 
-Download:
-https://github.com/DMBuce/bucepack/releases[All Releases]
-
-Direct Link:
-https://github.com/DMBuce/bucepack/releases/latest/download/cutting_wood.zip[`cutting_wood.zip`]
+{!./bin/packsummary cutting_wood}
 
 === Turtle Boxes
 
@@ -701,11 +556,7 @@ Lets you craft green shulker boxes from turtle shells.
 
 image::https://i.imgur.com/4GLS89K.png[Turtle Boxes]
 
-Download:
-https://github.com/DMBuce/bucepack/releases[All Releases]
-
-Direct Link:
-https://github.com/DMBuce/bucepack/releases/latest/download/crafting_turtle_box.zip[`crafting_turtle_box.zip`]
+{!./bin/packsummary crafting_turtle_box}
 
 == Loot Data Packs
 
@@ -727,11 +578,7 @@ pumpkins, beehives, and bee nests.
 This datapack is not compatible with other datapacks that modify the
 loot tables of the blocks shown above.
 
-Download:
-https://github.com/DMBuce/bucepack/releases[All Releases]
-
-Direct Link:
-https://github.com/DMBuce/bucepack/releases/latest/download/shearless.zip[`shearless.zip`]
+{!./bin/packsummary shearless}
 
 === Husbandry
 
@@ -750,11 +597,7 @@ Shulkers have a chance to drop 2 shulker shells when killed with Looting.
 With Looting III, there is a 50% chance to drop 1 shell and a 50% chance to
 drop 2 shells.
 
-Download:
-https://github.com/DMBuce/bucepack/releases[All Releases]
-
-Direct Link:
-https://github.com/DMBuce/bucepack/releases/latest/download/husbandry.zip[`husbandry.zip`]
+{!./bin/packsummary husbandry}
 
 {!./bin/packfiles husbandry}
 
@@ -775,11 +618,7 @@ or even default worldgen.
 See <<treasure-barrels,Treasure Barrels>> for a version of this pack that's
 compatible with <<loot-overhaul,Loot Overhaul>>.
 
-Download:
-https://github.com/DMBuce/bucepack/releases[All Releases]
-
-Direct Link:
-https://github.com/DMBuce/bucepack/releases/latest/download/no_treasure_maps.zip[`no_treasure_maps.zip`]
+{!./bin/packsummary no_treasure_maps}
 
 === Heads
 
@@ -812,11 +651,7 @@ and look like tiny blocks.
 
 ====
 
-Download:
-https://github.com/DMBuce/bucepack/releases[All Releases]
-
-Direct Link:
-https://github.com/DMBuce/bucepack/releases/latest/download/heads_fae.zip[`heads_fae.zip`]
+{!./bin/packsummary heads_fae}
 
 ==== Golem Heads
 
@@ -881,11 +716,7 @@ image::https://i.imgur.com/vRRuepp.png[Golem Heads]
 Shown above are the heads of a copper golem, storage golem, straw golem,
 enchanted golem, pie golem, lime golem, and honey golem.
 
-Download:
-https://github.com/DMBuce/bucepack/releases[All Releases]
-
-Direct Link:
-https://github.com/DMBuce/bucepack/releases/latest/download/heads_golem.zip[`heads_golem.zip`]
+{!./bin/packsummary heads_golem}
 
 ==== Player Heads
 
@@ -908,11 +739,7 @@ image::https://i.imgur.com/M53dr3U.png[Ancient Heads]
 
 Shown above are the heads of Computron, TV Boy, Donut Girl, and Rubik.
 
-Download:
-https://github.com/DMBuce/bucepack/releases[All Releases]
-
-Direct Link:
-https://github.com/DMBuce/bucepack/releases/latest/download/heads_player.zip[`heads_player.zip`]
+{!./bin/packsummary heads_player}
 
 === Loot Overhaul
 
@@ -991,11 +818,7 @@ and have a custom texture if you have the
 This datapack is not compatible with other datapacks that modify the chest,
 fishing, or bartering loot tables.
 
-Download:
-https://github.com/DMBuce/bucepack/releases[All Releases]
-
-Direct Link:
-https://github.com/DMBuce/bucepack/releases/latest/download/loot_overhaul.zip[`loot_overhaul.zip`]
+{!./bin/packsummary loot_overhaul}
 
 ==== Treasure Seeds
 
@@ -1010,11 +833,7 @@ have a chance to find it in End City and Woodland Mansion chests.
 
 image::https://i.imgur.com/gUnJW5S.png[Treasure Seeds]
 
-Download:
-https://github.com/DMBuce/bucepack/releases[All Releases]
-
-Direct Link:
-https://github.com/DMBuce/bucepack/releases/latest/download/loot_overhaul_treasure_seeds.zip[`loot_overhaul_treasure_seeds.zip`]
+{!./bin/packsummary loot_overhaul_treasure_seeds}
 
 Known Issues:
 If a chest is broken instead of opened by a player,
@@ -1041,11 +860,7 @@ the type of loot chest.
 If you have the <<spellsmithing-guide,Spellsmithing Guide>> resource pack
 installed, some relics have custom item textures in the inventory.
 
-Download:
-https://github.com/DMBuce/bucepack/releases[All Releases]
-
-Direct Link:
-https://github.com/DMBuce/bucepack/releases/latest/download/loot_overhaul_relics.zip[`loot_overhaul_relics.zip`]
+{!./bin/packsummary loot_overhaul_relics}
 
 ==== Starter Relic
 
@@ -1060,11 +875,7 @@ those packs.
 If you have the <<spellsmithing-guide,Spellsmithing Guide>> resource pack
 enabled, some relics have custom item textures in the inventory.
 
-Download:
-https://github.com/DMBuce/bucepack/releases[All Releases]
-
-Direct Link:
-https://github.com/DMBuce/bucepack/releases/latest/download/loot_overhaul_starter_relic.zip[`loot_overhaul_starter_relic.zip`]
+{!./bin/packsummary loot_overhaul_starter_relic}
 
 ==== Starter Item
 
@@ -1087,16 +898,7 @@ Starter Spyglass adds a Spyglass to the bonus spawn chest.
 If several of these packs are installed, the bonus chest will spawn one
 starter item chosen at random.
 
-Download:
-https://github.com/DMBuce/bucepack/releases[All Releases]
-
-Direct Links:
-https://github.com/DMBuce/bucepack/releases/latest/download/starter_bed.zip[`starter_bed.zip`]
-https://github.com/DMBuce/bucepack/releases/latest/download/starter_book.zip[`starter_book.zip`]
-https://github.com/DMBuce/bucepack/releases/latest/download/starter_bucket.zip[`starter_bucket.zip`]
-https://github.com/DMBuce/bucepack/releases/latest/download/starter_map.zip[`starter_map.zip`]
-https://github.com/DMBuce/bucepack/releases/latest/download/starter_shulker.zip[`starter_shulker.zip`]
-https://github.com/DMBuce/bucepack/releases/latest/download/starter_spyglass.zip[`starter_spyglass.zip`]
+{!./bin/packsummary starter_bed starter_book starter_bucket starter_map starter_shulker starter_spyglass}
 
 ==== Starter Bonus Loot
 
@@ -1107,12 +909,7 @@ inventory the first time they join the world.
 **Starter Bonus Box** adds a shulker box with bonus spawn loot to each player's
 inventory the first time they join the world.
 
-Download:
-https://github.com/DMBuce/bucepack/releases[All Releases]
-
-Direct Links:
-https://github.com/DMBuce/bucepack/releases/latest/download/starter_bonus_chest.zip[`starter_bonus_chest.zip`]
-https://github.com/DMBuce/bucepack/releases/latest/download/starter_bonus_box.zip[`starter_bonus_box.zip`]
+{!./bin/packsummary starter_bonus_chest starter_bonus_box}
 
 ==== Treasure Barrels
 
@@ -1133,11 +930,7 @@ or even default worldgen.
 See <<no-treasure-maps,No Treasure Maps>> for a version of this pack that
 doesn't require <<loot-overhaul,Loot Overhaul>>.
 
-Download:
-https://github.com/DMBuce/bucepack/releases[All Releases]
-
-Direct Link:
-https://github.com/DMBuce/bucepack/releases/latest/download/loot_overhaul_treasure_barrels.zip[`loot_overhaul_treasure_barrels.zip`]
+{!./bin/packsummary loot_overhaul_treasure_barrels}
 
 == Trigger Data Packs
 
@@ -1155,11 +948,7 @@ you can break the note block,
 reassign it to its note block,
 or assign it to a new note block.
 
-Download:
-https://github.com/DMBuce/bucepack/releases[All Releases]
-
-Direct Link:
-https://github.com/DMBuce/bucepack/releases/latest/download/smart_allays.zip[`smart_allays.zip`]
+{!./bin/packsummary smart_allays}
 
 === Poseable
 
@@ -1170,11 +959,7 @@ Armor stands placed while sneaking have arms and no base plate.
 Sneaking while adding or removing an item from an armor stand changes its
 pose.
 
-Download:
-https://github.com/DMBuce/bucepack/releases[All Releases]
-
-Direct Link:
-https://github.com/DMBuce/bucepack/releases/latest/download/poseable.zip[`poseable.zip`]
+{!./bin/packsummary poseable}
 
 === Antidote
 
@@ -1200,11 +985,7 @@ the same way honey negates poison.
 
 In addition, crimson fungus immunizes hoglins against zombification.
 
-Download:
-https://github.com/DMBuce/bucepack/releases[All Releases]
-
-Direct Link:
-https://github.com/DMBuce/bucepack/releases/latest/download/antidote.zip[`antidote.zip`]
+{!./bin/packsummary antidote}
 
 === Global Effects
 
@@ -1228,11 +1009,7 @@ If the warden is defeated, provoked neutral mobs become angrier.
 They will attack players other than the one who angered them
 and will continue to attack even if the player they're angry at is dead.
 
-Download:
-https://github.com/DMBuce/bucepack/releases[All Releases]
-
-Direct Link:
-https://github.com/DMBuce/bucepack/releases/latest/download/global_effects.zip[`global_effects.zip`]
+{!./bin/packsummary global_effects}
 
 === Leashed
 
@@ -1244,11 +1021,7 @@ leashes their creatures to you.
 
 image::https://i.imgur.com/xQh03yw.png[Leashed]
 
-Download:
-https://github.com/DMBuce/bucepack/releases[All Releases]
-
-Direct Link:
-https://github.com/DMBuce/bucepack/releases/latest/download/leashed.zip[`leashed.zip`]
+{!./bin/packsummary leashed}
 
 === Wandering Loot
 
@@ -1260,11 +1033,7 @@ image::https://i.imgur.com/gVEJ2zi.png[Wandering Loot]
 Best enjoyed in worlds such as <<dripblock,DripBlock>>
 where structures don't generate.
 
-Download:
-https://github.com/DMBuce/bucepack/releases[All Releases]
-
-Direct Link:
-https://github.com/DMBuce/bucepack/releases/latest/download/wandering_loot.zip[`wandering_loot.zip`]
+{!./bin/packsummary wandering_loot}
 
 === Speedy Paths
 
@@ -1275,11 +1044,7 @@ the player gains Speed I if they're on a path.
 
 Paths extend Speed I effects for players in a manner similar to beacons.
 
-Download:
-https://github.com/DMBuce/bucepack/releases[All Releases]
-
-Direct Link:
-https://github.com/DMBuce/bucepack/releases/latest/download/speedy_paths.zip[`speedy_paths.zip`]
+{!./bin/packsummary speedy_paths}
 
 === Ender Relic
 
@@ -1290,11 +1055,7 @@ If that slot is occupied, the relic is given to the player instead.
 If you have the <<spellsmithing-guide,Spellsmithing Guide>> resource pack
 enabled, some relics have custom item textures in the inventory.
 
-Download:
-https://github.com/DMBuce/bucepack/releases[All Releases]
-
-Direct Link:
-https://github.com/DMBuce/bucepack/releases/latest/download/ender_relic.zip[`ender_relic.zip`]
+{!./bin/packsummary ender_relic}
 
 === Illusory Traders
 
@@ -1309,11 +1070,7 @@ a custom enchantment that can be applied to elytra in the smithing table.
 When a player wearing the elytra is hit by a mob, they gain 8 minutes of
 invisibility. The invisibility ends if the player damages a mob.
 
-Download:
-https://github.com/DMBuce/bucepack/releases[All Releases]
-
-Direct Link:
-https://github.com/DMBuce/bucepack/releases/latest/download/illusory_trader.zip[`illusory_trader.zip`]
+{!./bin/packsummary illusory_trader}
 
 === Mythic Relics
 
@@ -1458,11 +1215,7 @@ This datapack is not compatible with other datapacks that modify the
 Pig, Silverfish, Endermite, Ghast, Iron Golem, or Deepslate Emerald Ore
 loot tables.
 
-Download:
-https://github.com/DMBuce/bucepack/releases[All Releases]
-
-Direct Link:
-https://github.com/DMBuce/bucepack/releases/latest/download/relics_mythic.zip[`relics_mythic.zip`]
+{!./bin/packsummary relics_mythic}
 
 Known Issues:
 Myth of Seeking can behave in unexpected ways
@@ -1520,11 +1273,7 @@ and invisible light items will have a custom texture.
 This pack is a companion to the <<phantasmal-end,Phantasmal End>> datapack,
 which adds phantoms to the dragon fight.
 
-Download:
-https://github.com/DMBuce/bucepack/releases[All Releases]
-
-Direct Link:
-https://github.com/DMBuce/bucepack/releases/latest/download/phantasmal.zip[`phantasmal.zip`]
+{!./bin/packsummary phantasmal}
 
 Known Issues: The Glamer of Invisibility can't be applied to armor stands
 because of https://bugs.mojang.com/browse/MC-66068[MC-66068],
@@ -1550,11 +1299,7 @@ Phantasmal End is a companion pack to the <<phantasmal,Phantasmal>> datapack,
 which makes phantoms in the Overworld more incorporeal and lets you craft
 invisible item frames and light blocks with phantom membranes.
 
-Download:
-https://github.com/DMBuce/bucepack/releases[All Releases]
-
-Direct Link:
-https://github.com/DMBuce/bucepack/releases/latest/download/phantasmal_end.zip[`phantasmal_end.zip`]
+{!./bin/packsummary phantasmal_end}
 
 //Relic of Harmony:
 //When a player kills a Warden, it drops a sculk catalyst with
@@ -1580,11 +1325,7 @@ to the last deep gate that horn was played at.
 
 //The transportation effect requires standing on one of [these blocks] to work.
 
-Download:
-https://github.com/DMBuce/bucepack/releases[All Releases]
-
-Direct Link:
-https://github.com/DMBuce/bucepack/releases/latest/download/network_deep.zip[`network_deep.zip`]
+{!./bin/packsummary network_deep}
 
 === Nether Portal Network
 
@@ -1602,11 +1343,7 @@ the portal will break.
 
 Nether portal mechanics are unchanged for entities other than players.
 
-Download:
-https://github.com/DMBuce/bucepack/releases[All Releases]
-
-Direct Link:
-https://github.com/DMBuce/bucepack/releases/latest/download/network_nether.zip[`network_nether.zip`]
+{!./bin/packsummary network_nether}
 
 Known Issues:
 Nexuses don't allow nether portal usage outside of their own Anvil regions
@@ -1622,11 +1359,7 @@ Any dye on the box is destroyed,
 but its contents and name are preserved in the eye.
 Right clicking the orb restores the shulker box and destroys the eye.
 
-Download:
-https://github.com/DMBuce/bucepack/releases[All Releases]
-
-Direct Link:
-https://github.com/DMBuce/bucepack/releases/latest/download/storage_orbs.zip[`storage_orbs.zip`]
+{!./bin/packsummary storage_orbs}
 
 == Data Resource Packs
 
@@ -1667,11 +1400,7 @@ wooden and stone tools, chainmail and iron armor,
 iron doors and trapdoors, and blackstone buttons.
 See <<language-support,Language Support>> for details.
 
-Download:
-https://github.com/DMBuce/bucepack/releases[All Releases]
-
-Direct Link:
-https://github.com/DMBuce/bucepack/releases/latest/download/copper_overhaul.zip[`copper_overhaul.zip`]
+{!./bin/packsummary copper_overhaul}
 
 === Path Strider
 
@@ -1684,11 +1413,7 @@ When installed as a resource pack,
 provides partial support for renaming Soul Speed to Path Strider.
 See <<language-support,Language Support>> for details.
 
-Download:
-https://github.com/DMBuce/bucepack/releases[All Releases]
-
-Direct Link:
-https://github.com/DMBuce/bucepack/releases/latest/download/path_strider.zip[`path_strider.zip`]
+{!./bin/packsummary path_strider}
 
 == Challenge Data Packs
 
@@ -1703,11 +1428,7 @@ you'll respawn in the Nether in a cage made of fungus and netherbrick.
 
 //image::[Escape the Nether]
 
-Download:
-https://github.com/DMBuce/bucepack/releases[All Releases]
-
-Direct Link:
-https://github.com/DMBuce/bucepack/releases/latest/download/escape_nether.zip[`escape_nether.zip`]
+{!./bin/packsummary escape_nether}
 
 === Escape the End
 
@@ -1724,11 +1445,7 @@ If both are installed, you will play minecraft in reverse,
 i.e. you will have to defeat The End to gain access to the Nether
 and then defeat the Nether to gain access to the overworld.
 
-Download:
-https://github.com/DMBuce/bucepack/releases[All Releases]
-
-Direct Link:
-https://github.com/DMBuce/bucepack/releases/latest/download/escape_the_end.zip[`escape_the_end.zip`]
+{!./bin/packsummary escape_the_end}
 
 === Escape the Grind
 
@@ -1761,11 +1478,7 @@ Changes that facilitate survival in The End:
 
 //image::[Escape the Grind]
 
-Download:
-https://github.com/DMBuce/bucepack/releases[All Releases]
-
-Direct Link:
-https://github.com/DMBuce/bucepack/releases/latest/download/escape_grind.zip[`escape_grind.zip`]
+{!./bin/packsummary escape_grind}
 
 == WorldGen Data Packs
 
@@ -1795,11 +1508,7 @@ and loot found in structure chests,
 makes certain resources obtainable through said loot,
 and <<hover-mode,Hover Mode>> adds basic flight.
 
-Download:
-https://github.com/DMBuce/bucepack/releases[All Releases]
-
-Direct Link:
-https://github.com/DMBuce/bucepack/releases/latest/download/dripblock.zip[`dripblock.zip`]
+{!./bin/packsummary dripblock}
 
 === Frienderchest
 
@@ -1807,21 +1516,13 @@ A shared pocket dimension.
 Players can enter the Frienderchest
 by right-clicking an enderchest with an ender pearl in the overworld.
 
-Download:
-https://github.com/DMBuce/bucepack/releases[All Releases]
-
-Direct Link:
-https://github.com/DMBuce/bucepack/releases/latest/download/frienderchest.zip[`frienderchest.zip`]
+{!./bin/packsummary frienderchest}
 
 //=== Overworld
 //
 //Piglins and hoglins don't zombify in the overworld.
 //
-//Download:
-//https://github.com/DMBuce/bucepack/releases[All Releases]
-//
-//Direct Link:
-//https://github.com/DMBuce/bucepack/releases/latest/download/worldgen_overworld.zip[`worldgen_overworld.zip`]
+//{!./bin/packsummary worldgen_overworld}
 
 === Renewable Structures
 
@@ -1831,11 +1532,7 @@ Only husks spawn in desert pyramids, and they drop sand.
 
 Cave spiders drop cobwebs.
 
-Download:
-https://github.com/DMBuce/bucepack/releases[All Releases]
-
-Direct Link:
-https://github.com/DMBuce/bucepack/releases/latest/download/worldgen_renewable_structures.zip[`worldgen_renewable_structures.zip`]
+{!./bin/packsummary worldgen_renewable_structures}
 
 === Trees
 
@@ -1843,11 +1540,7 @@ Makes trees generate with Wood blocks instead of Logs.
 Wood drops Logs unless mined with Silk Touch,
 and Logs can be crafted from 2 Wood.
 
-Download:
-https://github.com/DMBuce/bucepack/releases[All Releases]
-
-Direct Link:
-https://github.com/DMBuce/bucepack/releases/latest/download/worldgen_trees.zip[`worldgen_trees.zip`]
+{!./bin/packsummary worldgen_trees}
 
 == Legacy Data Packs
 
@@ -2034,11 +1727,7 @@ pedestal.
 * All other food rots in your hands
 * Turtles become more turtley when they're near you
 
-Download:
-https://github.com/DMBuce/bucepack/releases[All Releases]
-
-Direct Link:
-https://github.com/DMBuce/bucepack/releases/latest/download/lichdom.zip[`lichdom.zip`]
+{!./bin/packsummary lichdom}
 
 Known Issues:
 

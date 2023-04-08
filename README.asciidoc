@@ -80,6 +80,41 @@ https://github.com/DMBuce/bucepack/releases[All Releases]
 Direct Link:
 https://github.com/DMBuce/bucepack/releases/latest/download/painting_overhaul.zip[`painting_overhaul.zip`]
 
+.Minecraft files included in `painting_overhaul.zip`
+[%collapsible]
+====
+
+```
+assets/minecraft/textures/painting/alban.png
+assets/minecraft/textures/painting/aztec2.png
+assets/minecraft/textures/painting/aztec.png
+assets/minecraft/textures/painting/bomb.png
+assets/minecraft/textures/painting/burning_skull.png
+assets/minecraft/textures/painting/bust.png
+assets/minecraft/textures/painting/courbet.png
+assets/minecraft/textures/painting/creebet.png
+assets/minecraft/textures/painting/donkey_kong.png
+assets/minecraft/textures/painting/fighters.png
+assets/minecraft/textures/painting/graham.png
+assets/minecraft/textures/painting/kebab.png
+assets/minecraft/textures/painting/match.png
+assets/minecraft/textures/painting/pigscene.png
+assets/minecraft/textures/painting/plant.png
+assets/minecraft/textures/painting/pointer.png
+assets/minecraft/textures/painting/pool.png
+assets/minecraft/textures/painting/sea.png
+assets/minecraft/textures/painting/skeleton.png
+assets/minecraft/textures/painting/skull_and_roses.png
+assets/minecraft/textures/painting/stage.png
+assets/minecraft/textures/painting/sunset.png
+assets/minecraft/textures/painting/void.png
+assets/minecraft/textures/painting/wanderer.png
+assets/minecraft/textures/painting/wasteland.png
+assets/minecraft/textures/painting/wither.png
+```
+
+====
+
 === Note Guide
 
 Adds a display to the top of note blocks that shows the note it's tuned to
@@ -102,6 +137,17 @@ https://github.com/DMBuce/bucepack/releases[All Releases]
 Direct Link:
 https://github.com/DMBuce/bucepack/releases/latest/download/note_guide.zip[`note_guide.zip`]
 
+.Minecraft files included in `note_guide.zip`
+[%collapsible]
+====
+
+```
+assets/minecraft/blockstates/note_block.json
+assets/minecraft/models/item/note_block.json
+```
+
+====
+
 === Brew Guide
 
 Adds a simple cheat sheet to the brewing stand GUI to remind you how potions
@@ -121,6 +167,26 @@ Direct Links:
 https://github.com/DMBuce/bucepack/releases/latest/download/brew_guide.zip[`brew_guide.zip`]
 https://github.com/DMBuce/bucepack/releases/latest/download/brew_guide_darkmode.zip[`brew_guide_darkmode.zip`]
 
+.Minecraft files included in `brew_guide.zip`
+[%collapsible]
+====
+
+```
+assets/minecraft/textures/gui/container/brewing_stand.png
+```
+
+====
+
+.Minecraft files included in `brew_guide_darkmode.zip`
+[%collapsible]
+====
+
+```
+assets/minecraft/textures/gui/container/brewing_stand.png
+```
+
+====
+
 === Tech Arrows
 
 Adds arrows to the top of hoppers and the side of observers so that you can
@@ -138,6 +204,21 @@ https://github.com/DMBuce/bucepack/releases[All Releases]
 Direct Link:
 https://github.com/DMBuce/bucepack/releases/latest/download/tech_arrows.zip[`tech_arrows.zip`]
 
+.Minecraft files included in `tech_arrows.zip`
+[%collapsible]
+====
+
+```
+assets/minecraft/models/block/hopper_side.json
+assets/minecraft/models/block/observer.json
+assets/minecraft/models/block/observer_on.json
+assets/minecraft/textures/block/hopper_inside.png
+assets/minecraft/textures/block/observer_back_on.png
+assets/minecraft/textures/block/observer_side.png
+```
+
+====
+
 === Villager Mech
 
 Turns iron golems into mechsuit-wearing villagers.
@@ -151,6 +232,19 @@ https://github.com/DMBuce/bucepack/releases[All Releases]
 
 Direct Link:
 https://github.com/DMBuce/bucepack/releases/latest/download/villager_mech.zip[`villager_mech.zip`]
+
+.Minecraft files included in `villager_mech.zip`
+[%collapsible]
+====
+
+```
+assets/minecraft/textures/entity/iron_golem/iron_golem_crackiness_high.png
+assets/minecraft/textures/entity/iron_golem/iron_golem_crackiness_low.png
+assets/minecraft/textures/entity/iron_golem/iron_golem_crackiness_medium.png
+assets/minecraft/textures/entity/iron_golem/iron_golem.png
+```
+
+====
 
 === Pig Armor
 
@@ -170,6 +264,16 @@ https://github.com/DMBuce/bucepack/releases[All Releases]
 Direct Link:
 https://github.com/DMBuce/bucepack/releases/latest/download/pig_armor.zip[`pig_armor.zip`]
 
+.Minecraft files included in `pig_armor.zip`
+[%collapsible]
+====
+
+```
+assets/minecraft/textures/entity/pig/pig_saddle.png
+```
+
+====
+
 === Ravager
 
 Moves the ravager's eyes to the side of its face.
@@ -181,6 +285,16 @@ https://github.com/DMBuce/bucepack/releases[All Releases]
 
 Direct Link:
 https://github.com/DMBuce/bucepack/releases/latest/download/ravager.zip[`ravager.zip`]
+
+.Minecraft files included in `ravager.zip`
+[%collapsible]
+====
+
+```
+assets/minecraft/textures/entity/illager/ravager.png
+```
+
+====
 
 === Ore Types
 
@@ -203,6 +317,23 @@ https://github.com/DMBuce/bucepack/releases[All Releases]
 Direct Link:
 https://github.com/DMBuce/bucepack/releases/latest/download/ore_types.zip[`ore_types.zip`]
 
+.Minecraft files included in `ore_types.zip`
+[%collapsible]
+====
+
+```
+assets/minecraft/textures/block/coal_ore.png
+assets/minecraft/textures/block/copper_ore.png
+assets/minecraft/textures/block/diamond_ore.png
+assets/minecraft/textures/block/emerald_ore.png
+assets/minecraft/textures/block/gold_ore.png
+assets/minecraft/textures/block/iron_ore.png
+assets/minecraft/textures/block/lapis_ore.png
+assets/minecraft/textures/block/redstone_ore.png
+```
+
+====
+
 === Discreet Pumpkin
 
 Makes the pumpkin helmet gui less obtrusive.
@@ -214,6 +345,16 @@ https://github.com/DMBuce/bucepack/releases[All Releases]
 
 Direct Link:
 https://github.com/DMBuce/bucepack/releases/latest/download/discreet_pumpkin.zip[`discreet_pumpkin.zip`]
+
+.Minecraft files included in `discreet_pumpkin.zip`
+[%collapsible]
+====
+
+```
+assets/minecraft/textures/misc/pumpkinblur.png
+```
+
+====
 
 === Classic Textures
 
@@ -273,6 +414,123 @@ https://github.com/DMBuce/bucepack/releases/latest/download/classic_lapis.zip[`c
 https://github.com/DMBuce/bucepack/releases/latest/download/classic_rose.zip[`classic_rose.zip`]
 https://github.com/DMBuce/bucepack/releases/latest/download/classic_food.zip[`classic_food.zip`]
 
+.Minecraft files included in `classic_oak.zip`
+[%collapsible]
+====
+
+```
+assets/minecraft/textures/block/oak_log.png
+```
+
+====
+
+.Minecraft files included in `classic_obsidian.zip`
+[%collapsible]
+====
+
+```
+assets/minecraft/textures/block/crying_obsidian.png
+assets/minecraft/textures/block/obsidian.png
+```
+
+====
+
+.Minecraft files included in `classic_netherrack.zip`
+[%collapsible]
+====
+
+```
+assets/minecraft/textures/block/crimson_nylium_side.png
+assets/minecraft/textures/block/nether_gold_ore.png
+assets/minecraft/textures/block/nether_quartz_ore.png
+assets/minecraft/textures/block/netherrack.png
+assets/minecraft/textures/block/warped_nylium_side.png
+```
+
+====
+
+.Minecraft files included in `classic_lava.zip`
+[%collapsible]
+====
+
+```
+assets/minecraft/textures/block/lava_flow.png
+assets/minecraft/textures/block/lava_flow.png.mcmeta
+assets/minecraft/textures/block/lava_still.png
+assets/minecraft/textures/block/lava_still.png.mcmeta
+```
+
+====
+
+.Minecraft files included in `classic_gravel.zip`
+[%collapsible]
+====
+
+```
+assets/minecraft/textures/block/gravel.png
+```
+
+====
+
+.Minecraft files included in `classic_lapis.zip`
+[%collapsible]
+====
+
+```
+assets/minecraft/textures/block/lapis_block.png
+```
+
+====
+
+.Minecraft files included in `classic_rose.zip`
+[%collapsible]
+====
+
+```
+assets/minecraft/lang/en_us.json
+assets/minecraft/textures/block/poppy.png
+```
+
+====
+
+.Minecraft files included in `classic_food.zip`
+[%collapsible]
+====
+
+```
+assets/minecraft/textures/block/cake_bottom.png
+assets/minecraft/textures/block/cake_inner.png
+assets/minecraft/textures/block/cake_side.png
+assets/minecraft/textures/block/cake_top.png
+assets/minecraft/textures/item/apple.png
+assets/minecraft/textures/item/baked_potato.png
+assets/minecraft/textures/item/beef.png
+assets/minecraft/textures/item/bread.png
+assets/minecraft/textures/item/cake.png
+assets/minecraft/textures/item/carrot.png
+assets/minecraft/textures/item/chicken.png
+assets/minecraft/textures/item/cod.png
+assets/minecraft/textures/item/cooked_beef.png
+assets/minecraft/textures/item/cooked_chicken.png
+assets/minecraft/textures/item/cooked_cod.png
+assets/minecraft/textures/item/cooked_mutton.png
+assets/minecraft/textures/item/cooked_porkchop.png
+assets/minecraft/textures/item/cooked_rabbit.png
+assets/minecraft/textures/item/cooked_salmon.png
+assets/minecraft/textures/item/cookie.png
+assets/minecraft/textures/item/golden_apple.png
+assets/minecraft/textures/item/golden_carrot.png
+assets/minecraft/textures/item/mutton.png
+assets/minecraft/textures/item/poisonous_potato.png
+assets/minecraft/textures/item/porkchop.png
+assets/minecraft/textures/item/potato.png
+assets/minecraft/textures/item/pumpkin_pie.png
+assets/minecraft/textures/item/rabbit.png
+assets/minecraft/textures/item/salmon.png
+```
+
+====
+
 === Spellsmithing Guide
 
 Changes the smithing GUI to show that the left slot is where magic is
@@ -293,6 +551,42 @@ https://github.com/DMBuce/bucepack/releases[All Releases]
 
 Direct Link:
 https://github.com/DMBuce/bucepack/releases/latest/download/spellsmithing_guide.zip[`spellsmithing_guide.zip`]
+
+.Minecraft files included in `spellsmithing_guide.zip`
+[%collapsible]
+====
+
+```
+assets/minecraft/models/item/armor_stand.json
+assets/minecraft/models/item/bow.json
+assets/minecraft/models/item/crossbow.json
+assets/minecraft/models/item/diamond_axe.json
+assets/minecraft/models/item/diamond_boots.json
+assets/minecraft/models/item/diamond_hoe.json
+assets/minecraft/models/item/diamond_pickaxe.json
+assets/minecraft/models/item/diamond_shovel.json
+assets/minecraft/models/item/diamond_sword.json
+assets/minecraft/models/item/elytra.json
+assets/minecraft/models/item/glow_item_frame.json
+assets/minecraft/models/item/golden_helmet.json
+assets/minecraft/models/item/iron_sword.json
+assets/minecraft/models/item/item_frame.json
+assets/minecraft/models/item/leather_boots.json
+assets/minecraft/models/item/leather_leggings.json
+assets/minecraft/models/item/light.json
+assets/minecraft/models/item/netherite_axe.json
+assets/minecraft/models/item/netherite_boots.json
+assets/minecraft/models/item/netherite_chestplate.json
+assets/minecraft/models/item/netherite_hoe.json
+assets/minecraft/models/item/netherite_pickaxe.json
+assets/minecraft/models/item/netherite_shovel.json
+assets/minecraft/models/item/netherite_sword.json
+assets/minecraft/models/item/spyglass.json
+assets/minecraft/models/item/trident.json
+assets/minecraft/textures/gui/container/smithing.png
+```
+
+====
 
 == Sound Packs
 
@@ -318,6 +612,10 @@ https://github.com/DMBuce/bucepack/releases/latest/download/classic_twang.zip[`c
 https://github.com/DMBuce/bucepack/releases/latest/download/classic_sploosh.zip[`classic_sploosh.zip`]
 https://github.com/DMBuce/bucepack/releases/latest/download/classic_crunch.zip[`classic_crunch.zip`]
 
+
+
+
+
 === Discreet Sounds
 
 This is a series of packs that makes some sounds less annoying.
@@ -335,6 +633,27 @@ Direct Links:
 https://github.com/DMBuce/bucepack/releases/latest/download/discreet_cart.zip[`discreet_cart.zip`]
 https://github.com/DMBuce/bucepack/releases/latest/download/discreet_hrrm.zip[`discreet_hrrm.zip`]
 https://github.com/DMBuce/bucepack/releases/latest/download/discreet_meow.zip[`discreet_meow.zip`]
+
+
+.Minecraft files included in `discreet_hrrm.zip`
+[%collapsible]
+====
+
+```
+assets/minecraft/sounds.json
+```
+
+====
+
+.Minecraft files included in `discreet_meow.zip`
+[%collapsible]
+====
+
+```
+assets/minecraft/sounds.json
+```
+
+====
 
 == Tag Data Packs
 
@@ -359,6 +678,7 @@ https://github.com/DMBuce/bucepack/releases[All Releases]
 Direct Link:
 https://github.com/DMBuce/bucepack/releases/latest/download/enchanting.zip[`enchanting.zip`]
 
+
 === Mineable
 
 In vanilla Minecraft, certain blocks like glass have no tool associated with
@@ -382,6 +702,17 @@ https://github.com/DMBuce/bucepack/releases[All Releases]
 Direct Link:
 https://github.com/DMBuce/bucepack/releases/latest/download/mineable.zip[`mineable.zip`]
 
+.Minecraft files included in `mineable.zip`
+[%collapsible]
+====
+
+```
+data/minecraft/tags/blocks/mineable/axe.json
+data/minecraft/tags/blocks/mineable/pickaxe.json
+```
+
+====
+
 === Climbable
 
 Lets you climb chains and iron bars.
@@ -393,6 +724,16 @@ https://github.com/DMBuce/bucepack/releases[All Releases]
 
 Direct Link:
 https://github.com/DMBuce/bucepack/releases/latest/download/climbable.zip[`climbable.zip`]
+
+.Minecraft files included in `climbable.zip`
+[%collapsible]
+====
+
+```
+data/minecraft/tags/blocks/climbable.json
+```
+
+====
 
 === Dragonproof
 
@@ -412,6 +753,16 @@ https://github.com/DMBuce/bucepack/releases[All Releases]
 Direct Link:
 https://github.com/DMBuce/bucepack/releases/latest/download/dragonproof.zip[`dragonproof.zip`]
 
+.Minecraft files included in `dragonproof.zip`
+[%collapsible]
+====
+
+```
+data/minecraft/tags/blocks/dragon_immune.json
+```
+
+====
+
 === Gardener Endermen
 
 Makes it so that endermen can't pick up blocks such as dirt and grass blocks,
@@ -426,6 +777,16 @@ https://github.com/DMBuce/bucepack/releases[All Releases]
 Direct Link:
 https://github.com/DMBuce/bucepack/releases/latest/download/gardener_endermen.zip[`gardener_endermen.zip`]
 
+.Minecraft files included in `gardener_endermen.zip`
+[%collapsible]
+====
+
+```
+data/minecraft/tags/blocks/enderman_holdable.json
+```
+
+====
+
 === Eyes of Seeking
 
 Lets you use ender eyes to find End Cities and Bastion Remnants
@@ -436,6 +797,16 @@ https://github.com/DMBuce/bucepack/releases[All Releases]
 
 Direct Link:
 https://github.com/DMBuce/bucepack/releases/latest/download/eyes_of_seeking.zip[`eyes_of_seeking.zip`]
+
+.Minecraft files included in `eyes_of_seeking.zip`
+[%collapsible]
+====
+
+```
+data/minecraft/tags/worldgen/structure/eye_of_ender_located.json
+```
+
+====
 
 === Acclimated
 
@@ -462,6 +833,19 @@ https://github.com/DMBuce/bucepack/releases[All Releases]
 Direct Link:
 https://github.com/DMBuce/bucepack/releases/latest/download/acclimated.zip[`acclimated.zip`]
 
+.Minecraft files included in `acclimated.zip`
+[%collapsible]
+====
+
+```
+data/minecraft/tags/blocks/strider_warm_blocks.json
+data/minecraft/tags/entity_types/dismounts_underwater.json
+data/minecraft/tags/entity_types/fall_damage_immune.json
+data/minecraft/tags/entity_types/powder_snow_walkable_mobs.json
+```
+
+====
+
 === Aggro Bastions
 
 Makes piglins hostile when you break blocks that bastions are made out of.
@@ -471,6 +855,16 @@ https://github.com/DMBuce/bucepack/releases[All Releases]
 
 Direct Link:
 https://github.com/DMBuce/bucepack/releases/latest/download/aggro_bastions.zip[`aggro_bastions.zip`]
+
+.Minecraft files included in `aggro_bastions.zip`
+[%collapsible]
+====
+
+```
+data/minecraft/tags/blocks/guarded_by_piglins.json
+```
+
+====
 
 === Hover Mode
 
@@ -488,6 +882,16 @@ https://github.com/DMBuce/bucepack/releases[All Releases]
 Direct Link:
 https://github.com/DMBuce/bucepack/releases/latest/download/hover_mode.zip[`hover_mode.zip`]
 
+.Minecraft files included in `hover_mode.zip`
+[%collapsible]
+====
+
+```
+data/minecraft/tags/blocks/climbable.json
+```
+
+====
+
 === Waterproof Tech
 
 Makes redstone components waterproof.
@@ -500,6 +904,16 @@ https://github.com/DMBuce/bucepack/releases[All Releases]
 Direct Link:
 https://github.com/DMBuce/bucepack/releases/latest/download/waterproof_tech.zip[`waterproof_tech.zip`]
 
+.Minecraft files included in `waterproof_tech.zip`
+[%collapsible]
+====
+
+```
+data/minecraft/tags/blocks/signs.json
+```
+
+====
+
 === Blue Fire
 
 Lets you use blue shiny rocks to make blue fire.
@@ -511,6 +925,16 @@ https://github.com/DMBuce/bucepack/releases[All Releases]
 
 Direct Link:
 https://github.com/DMBuce/bucepack/releases/latest/download/blue_fire.zip[`blue_fire.zip`]
+
+.Minecraft files included in `blue_fire.zip`
+[%collapsible]
+====
+
+```
+data/minecraft/tags/blocks/soul_fire_base_blocks.json
+```
+
+====
 
 == Recipe Data Packs
 
@@ -528,6 +952,7 @@ https://github.com/DMBuce/bucepack/releases[All Releases]
 Direct Link:
 https://github.com/DMBuce/bucepack/releases/latest/download/crafting_cart.zip[`crafting_cart.zip`]
 
+
 === Colorful Crafting
 
 Lets you dye any color of bed, wool, or candle.
@@ -538,6 +963,109 @@ https://github.com/DMBuce/bucepack/releases[All Releases]
 
 Direct Link:
 https://github.com/DMBuce/bucepack/releases/latest/download/crafting_colorful.zip[`crafting_colorful.zip`]
+
+.Minecraft files included in `crafting_colorful.zip`
+[%collapsible]
+====
+
+```
+data/minecraft/recipes/black_bed_from_white_bed.json
+data/minecraft/recipes/black_candle.json
+data/minecraft/recipes/black_stained_glass.json
+data/minecraft/recipes/black_stained_glass_pane_from_glass_pane.json
+data/minecraft/recipes/black_terracotta.json
+data/minecraft/recipes/black_wool.json
+data/minecraft/recipes/blue_bed_from_white_bed.json
+data/minecraft/recipes/blue_candle.json
+data/minecraft/recipes/blue_stained_glass.json
+data/minecraft/recipes/blue_stained_glass_pane_from_glass_pane.json
+data/minecraft/recipes/blue_terracotta.json
+data/minecraft/recipes/blue_wool.json
+data/minecraft/recipes/brown_bed_from_white_bed.json
+data/minecraft/recipes/brown_candle.json
+data/minecraft/recipes/brown_stained_glass.json
+data/minecraft/recipes/brown_stained_glass_pane_from_glass_pane.json
+data/minecraft/recipes/brown_terracotta.json
+data/minecraft/recipes/brown_wool.json
+data/minecraft/recipes/cyan_bed_from_white_bed.json
+data/minecraft/recipes/cyan_candle.json
+data/minecraft/recipes/cyan_stained_glass.json
+data/minecraft/recipes/cyan_stained_glass_pane_from_glass_pane.json
+data/minecraft/recipes/cyan_terracotta.json
+data/minecraft/recipes/cyan_wool.json
+data/minecraft/recipes/gray_bed_from_white_bed.json
+data/minecraft/recipes/gray_candle.json
+data/minecraft/recipes/gray_stained_glass.json
+data/minecraft/recipes/gray_stained_glass_pane_from_glass_pane.json
+data/minecraft/recipes/gray_terracotta.json
+data/minecraft/recipes/gray_wool.json
+data/minecraft/recipes/green_bed_from_white_bed.json
+data/minecraft/recipes/green_candle.json
+data/minecraft/recipes/green_stained_glass.json
+data/minecraft/recipes/green_stained_glass_pane_from_glass_pane.json
+data/minecraft/recipes/green_terracotta.json
+data/minecraft/recipes/green_wool.json
+data/minecraft/recipes/light_blue_bed_from_white_bed.json
+data/minecraft/recipes/light_blue_candle.json
+data/minecraft/recipes/light_blue_stained_glass.json
+data/minecraft/recipes/light_blue_stained_glass_pane_from_glass_pane.json
+data/minecraft/recipes/light_blue_terracotta.json
+data/minecraft/recipes/light_blue_wool.json
+data/minecraft/recipes/light_gray_bed_from_white_bed.json
+data/minecraft/recipes/light_gray_candle.json
+data/minecraft/recipes/light_gray_stained_glass.json
+data/minecraft/recipes/light_gray_stained_glass_pane_from_glass_pane.json
+data/minecraft/recipes/light_gray_terracotta.json
+data/minecraft/recipes/light_gray_wool.json
+data/minecraft/recipes/lime_bed_from_white_bed.json
+data/minecraft/recipes/lime_candle.json
+data/minecraft/recipes/lime_stained_glass.json
+data/minecraft/recipes/lime_stained_glass_pane_from_glass_pane.json
+data/minecraft/recipes/lime_terracotta.json
+data/minecraft/recipes/lime_wool.json
+data/minecraft/recipes/magenta_bed_from_white_bed.json
+data/minecraft/recipes/magenta_candle.json
+data/minecraft/recipes/magenta_stained_glass.json
+data/minecraft/recipes/magenta_stained_glass_pane_from_glass_pane.json
+data/minecraft/recipes/magenta_terracotta.json
+data/minecraft/recipes/magenta_wool.json
+data/minecraft/recipes/orange_bed_from_white_bed.json
+data/minecraft/recipes/orange_candle.json
+data/minecraft/recipes/orange_stained_glass.json
+data/minecraft/recipes/orange_stained_glass_pane_from_glass_pane.json
+data/minecraft/recipes/orange_terracotta.json
+data/minecraft/recipes/orange_wool.json
+data/minecraft/recipes/pink_bed_from_white_bed.json
+data/minecraft/recipes/pink_candle.json
+data/minecraft/recipes/pink_stained_glass.json
+data/minecraft/recipes/pink_stained_glass_pane_from_glass_pane.json
+data/minecraft/recipes/pink_terracotta.json
+data/minecraft/recipes/pink_wool.json
+data/minecraft/recipes/purple_bed_from_white_bed.json
+data/minecraft/recipes/purple_candle.json
+data/minecraft/recipes/purple_stained_glass.json
+data/minecraft/recipes/purple_stained_glass_pane_from_glass_pane.json
+data/minecraft/recipes/purple_terracotta.json
+data/minecraft/recipes/purple_wool.json
+data/minecraft/recipes/red_bed_from_white_bed.json
+data/minecraft/recipes/red_candle.json
+data/minecraft/recipes/red_stained_glass.json
+data/minecraft/recipes/red_stained_glass_pane_from_glass_pane.json
+data/minecraft/recipes/red_terracotta.json
+data/minecraft/recipes/red_wool.json
+data/minecraft/recipes/white_candle.json
+data/minecraft/recipes/white_stained_glass.json
+data/minecraft/recipes/white_stained_glass_pane_from_glass_pane.json
+data/minecraft/recipes/white_terracotta.json
+data/minecraft/recipes/yellow_bed_from_white_bed.json
+data/minecraft/recipes/yellow_candle.json
+data/minecraft/recipes/yellow_stained_glass.json
+data/minecraft/recipes/yellow_stained_glass_pane_from_glass_pane.json
+data/minecraft/recipes/yellow_terracotta.json
+data/minecraft/recipes/yellow_wool.json
+```
+
+====
 
 === Loot Crafting
 
@@ -553,6 +1081,16 @@ https://github.com/DMBuce/bucepack/releases[All Releases]
 
 Direct Link:
 https://github.com/DMBuce/bucepack/releases/latest/download/crafting_loot.zip[`crafting_loot.zip`]
+
+.Minecraft files included in `crafting_loot.zip`
+[%collapsible]
+====
+
+```
+data/minecraft/recipes/leather_horse_armor.json
+```
+
+====
 
 === Plentiful Crafting
 
@@ -582,6 +1120,135 @@ https://github.com/DMBuce/bucepack/releases[All Releases]
 
 Direct Link:
 https://github.com/DMBuce/bucepack/releases/latest/download/crafting_plentiful.zip[`crafting_plentiful.zip`]
+
+.Minecraft files included in `crafting_plentiful.zip`
+[%collapsible]
+====
+
+```
+data/minecraft/recipes/acacia_fence_gate.json
+data/minecraft/recipes/acacia_fence.json
+data/minecraft/recipes/acacia_pressure_plate.json
+data/minecraft/recipes/acacia_sign.json
+data/minecraft/recipes/acacia_stairs.json
+data/minecraft/recipes/acacia_trapdoor.json
+data/minecraft/recipes/acacia_wood.json
+data/minecraft/recipes/andesite_stairs.json
+data/minecraft/recipes/birch_fence_gate.json
+data/minecraft/recipes/birch_fence.json
+data/minecraft/recipes/birch_pressure_plate.json
+data/minecraft/recipes/birch_sign.json
+data/minecraft/recipes/birch_stairs.json
+data/minecraft/recipes/birch_trapdoor.json
+data/minecraft/recipes/birch_wood.json
+data/minecraft/recipes/blackstone_stairs.json
+data/minecraft/recipes/brick_stairs.json
+data/minecraft/recipes/chain.json
+data/minecraft/recipes/cobbled_deepslate_stairs.json
+data/minecraft/recipes/cobblestone_stairs.json
+data/minecraft/recipes/crimson_fence_gate.json
+data/minecraft/recipes/crimson_fence.json
+data/minecraft/recipes/crimson_hyphae.json
+data/minecraft/recipes/crimson_pressure_plate.json
+data/minecraft/recipes/crimson_sign.json
+data/minecraft/recipes/crimson_stairs.json
+data/minecraft/recipes/crimson_trapdoor.json
+data/minecraft/recipes/cut_copper_stairs.json
+data/minecraft/recipes/dark_oak_fence_gate.json
+data/minecraft/recipes/dark_oak_fence.json
+data/minecraft/recipes/dark_oak_pressure_plate.json
+data/minecraft/recipes/dark_oak_sign.json
+data/minecraft/recipes/dark_oak_stairs.json
+data/minecraft/recipes/dark_oak_trapdoor.json
+data/minecraft/recipes/dark_oak_wood.json
+data/minecraft/recipes/dark_prismarine_stairs.json
+data/minecraft/recipes/deepslate_brick_stairs.json
+data/minecraft/recipes/deepslate_tile_stairs.json
+data/minecraft/recipes/diorite_stairs.json
+data/minecraft/recipes/end_stone_brick_stairs.json
+data/minecraft/recipes/exposed_cut_copper_stairs.json
+data/minecraft/recipes/granite_stairs.json
+data/minecraft/recipes/hopper.json
+data/minecraft/recipes/jungle_fence_gate.json
+data/minecraft/recipes/jungle_fence.json
+data/minecraft/recipes/jungle_pressure_plate.json
+data/minecraft/recipes/jungle_sign.json
+data/minecraft/recipes/jungle_stairs.json
+data/minecraft/recipes/jungle_trapdoor.json
+data/minecraft/recipes/jungle_wood.json
+data/minecraft/recipes/mangrove_fence_gate.json
+data/minecraft/recipes/mangrove_fence.json
+data/minecraft/recipes/mangrove_pressure_plate.json
+data/minecraft/recipes/mangrove_sign.json
+data/minecraft/recipes/mangrove_stairs.json
+data/minecraft/recipes/mangrove_trapdoor.json
+data/minecraft/recipes/mangrove_wood.json
+data/minecraft/recipes/mossy_cobblestone_stairs.json
+data/minecraft/recipes/mossy_stone_brick_stairs.json
+data/minecraft/recipes/mud_brick_stairs.json
+data/minecraft/recipes/nether_brick_fence.json
+data/minecraft/recipes/nether_brick_stairs.json
+data/minecraft/recipes/oak_fence_gate.json
+data/minecraft/recipes/oak_fence.json
+data/minecraft/recipes/oak_pressure_plate.json
+data/minecraft/recipes/oak_sign.json
+data/minecraft/recipes/oak_stairs.json
+data/minecraft/recipes/oak_trapdoor.json
+data/minecraft/recipes/oak_wood.json
+data/minecraft/recipes/oxidized_cut_copper_stairs.json
+data/minecraft/recipes/polished_andesite_stairs.json
+data/minecraft/recipes/polished_blackstone_brick_stairs.json
+data/minecraft/recipes/polished_blackstone_pressure_plate.json
+data/minecraft/recipes/polished_blackstone_stairs.json
+data/minecraft/recipes/polished_deepslate_stairs.json
+data/minecraft/recipes/polished_diorite_stairs.json
+data/minecraft/recipes/polished_granite_stairs.json
+data/minecraft/recipes/prismarine_brick_stairs.json
+data/minecraft/recipes/prismarine_stairs.json
+data/minecraft/recipes/purpur_stairs.json
+data/minecraft/recipes/quartz_stairs.json
+data/minecraft/recipes/red_nether_brick_stairs.json
+data/minecraft/recipes/red_sandstone_stairs.json
+data/minecraft/recipes/sandstone_stairs.json
+data/minecraft/recipes/shield.json
+data/minecraft/recipes/smooth_quartz_stairs.json
+data/minecraft/recipes/smooth_red_sandstone_stairs.json
+data/minecraft/recipes/smooth_sandstone_stairs.json
+data/minecraft/recipes/spruce_fence_gate.json
+data/minecraft/recipes/spruce_fence.json
+data/minecraft/recipes/spruce_pressure_plate.json
+data/minecraft/recipes/spruce_sign.json
+data/minecraft/recipes/spruce_stairs.json
+data/minecraft/recipes/spruce_trapdoor.json
+data/minecraft/recipes/spruce_wood.json
+data/minecraft/recipes/stick_from_bamboo_item.json
+data/minecraft/recipes/stone_brick_stairs.json
+data/minecraft/recipes/stone_pressure_plate.json
+data/minecraft/recipes/stone_stairs.json
+data/minecraft/recipes/stripped_acacia_wood.json
+data/minecraft/recipes/stripped_birch_wood.json
+data/minecraft/recipes/stripped_crimson_hyphae.json
+data/minecraft/recipes/stripped_dark_oak_wood.json
+data/minecraft/recipes/stripped_jungle_wood.json
+data/minecraft/recipes/stripped_mangrove_wood.json
+data/minecraft/recipes/stripped_oak_wood.json
+data/minecraft/recipes/stripped_spruce_wood.json
+data/minecraft/recipes/stripped_warped_hyphae.json
+data/minecraft/recipes/warped_fence_gate.json
+data/minecraft/recipes/warped_fence.json
+data/minecraft/recipes/warped_hyphae.json
+data/minecraft/recipes/warped_pressure_plate.json
+data/minecraft/recipes/warped_sign.json
+data/minecraft/recipes/warped_stairs.json
+data/minecraft/recipes/warped_trapdoor.json
+data/minecraft/recipes/waxed_cut_copper_stairs.json
+data/minecraft/recipes/waxed_exposed_cut_copper_stairs.json
+data/minecraft/recipes/waxed_oxidized_cut_copper_stairs.json
+data/minecraft/recipes/waxed_weathered_cut_copper_stairs.json
+data/minecraft/recipes/weathered_cut_copper_stairs.json
+```
+
+====
 
 === Unpacked Crafting
 
@@ -615,6 +1282,7 @@ https://github.com/DMBuce/bucepack/releases[All Releases]
 Direct Link:
 https://github.com/DMBuce/bucepack/releases/latest/download/crafting_unpacked.zip[`crafting_unpacked.zip`]
 
+
 === Workstation Crafting
 
 Provides alternative recipes for workstations.
@@ -634,6 +1302,24 @@ https://github.com/DMBuce/bucepack/releases[All Releases]
 
 Direct Link:
 https://github.com/DMBuce/bucepack/releases/latest/download/crafting_workstation.zip[`crafting_workstation.zip`]
+
+.Minecraft files included in `crafting_workstation.zip`
+[%collapsible]
+====
+
+```
+data/minecraft/recipes/barrel.json
+data/minecraft/recipes/blast_furnace.json
+data/minecraft/recipes/cartography_table.json
+data/minecraft/recipes/fletching_table.json
+data/minecraft/recipes/grindstone.json
+data/minecraft/recipes/lectern.json
+data/minecraft/recipes/smithing_table.json
+data/minecraft/recipes/smoker.json
+data/minecraft/recipes/stonecutter.json
+```
+
+====
 
 === Declutter Cutting
 
@@ -666,6 +1352,7 @@ https://github.com/DMBuce/bucepack/releases[All Releases]
 Direct Link:
 https://github.com/DMBuce/bucepack/releases/latest/download/cutting_declutter.zip[`cutting_declutter.zip`]
 
+
 === Smooth & Cracked Cutting
 
 Lets you craft smooth, cracked, and cobbled stone variants in the stonecutter.
@@ -677,6 +1364,7 @@ https://github.com/DMBuce/bucepack/releases[All Releases]
 
 Direct Link:
 https://github.com/DMBuce/bucepack/releases/latest/download/cutting_smooth_cracked.zip[`cutting_smooth_cracked.zip`]
+
 
 === Wood Cutting
 
@@ -695,6 +1383,16 @@ https://github.com/DMBuce/bucepack/releases[All Releases]
 Direct Link:
 https://github.com/DMBuce/bucepack/releases/latest/download/cutting_wood.zip[`cutting_wood.zip`]
 
+.Minecraft files included in `cutting_wood.zip`
+[%collapsible]
+====
+
+```
+assets/minecraft/lang/en_us.json
+```
+
+====
+
 === Turtle Boxes
 
 Lets you craft green shulker boxes from turtle shells.
@@ -706,6 +1404,7 @@ https://github.com/DMBuce/bucepack/releases[All Releases]
 
 Direct Link:
 https://github.com/DMBuce/bucepack/releases/latest/download/crafting_turtle_box.zip[`crafting_turtle_box.zip`]
+
 
 == Loot Data Packs
 
@@ -733,6 +1432,33 @@ https://github.com/DMBuce/bucepack/releases[All Releases]
 Direct Link:
 https://github.com/DMBuce/bucepack/releases/latest/download/shearless.zip[`shearless.zip`]
 
+.Minecraft files included in `shearless.zip`
+[%collapsible]
+====
+
+```
+data/minecraft/loot_tables/blocks/cobweb.json
+data/minecraft/loot_tables/blocks/dead_bush.json
+data/minecraft/loot_tables/blocks/fern.json
+data/minecraft/loot_tables/blocks/glow_lichen.json
+data/minecraft/loot_tables/blocks/grass.json
+data/minecraft/loot_tables/blocks/hanging_roots.json
+data/minecraft/loot_tables/blocks/large_fern.json
+data/minecraft/loot_tables/blocks/nether_sprouts.json
+data/minecraft/loot_tables/blocks/seagrass.json
+data/minecraft/loot_tables/blocks/small_dripleaf.json
+data/minecraft/loot_tables/blocks/tall_grass.json
+data/minecraft/loot_tables/blocks/tall_seagrass.json
+data/minecraft/loot_tables/blocks/twisting_vines.json
+data/minecraft/loot_tables/blocks/twisting_vines_plant.json
+data/minecraft/loot_tables/blocks/vine.json
+data/minecraft/loot_tables/blocks/weeping_vines.json
+data/minecraft/loot_tables/blocks/weeping_vines_plant.json
+data/minecraft/tags/blocks/mineable/hoe.json
+```
+
+====
+
 === Husbandry
 
 Adds more farmable drops.
@@ -756,7 +1482,21 @@ https://github.com/DMBuce/bucepack/releases[All Releases]
 Direct Link:
 https://github.com/DMBuce/bucepack/releases/latest/download/husbandry.zip[`husbandry.zip`]
 
-.Minecraft files included
+.Minecraft files included in `husbandry.zip`
+[%collapsible]
+====
+
+```
+data/minecraft/loot_tables/blocks/beetroots.json
+data/minecraft/loot_tables/blocks/jungle_leaves.json
+data/minecraft/loot_tables/blocks/wheat.json
+data/minecraft/loot_tables/entities/goat.json
+data/minecraft/loot_tables/entities/shulker.json
+```
+
+====
+
+.Minecraft files included in `husbandry.zip`
 [%collapsible]
 ====
 
@@ -792,6 +1532,16 @@ https://github.com/DMBuce/bucepack/releases[All Releases]
 
 Direct Link:
 https://github.com/DMBuce/bucepack/releases/latest/download/no_treasure_maps.zip[`no_treasure_maps.zip`]
+
+.Minecraft files included in `no_treasure_maps.zip`
+[%collapsible]
+====
+
+```
+data/minecraft/loot_tables/chests/shipwreck_map.json
+```
+
+====
 
 === Heads
 
@@ -883,6 +1633,16 @@ https://github.com/DMBuce/bucepack/releases[All Releases]
 
 Direct Link:
 https://github.com/DMBuce/bucepack/releases/latest/download/heads_fae.zip[`heads_fae.zip`]
+
+.Minecraft files included in `heads_fae.zip`
+[%collapsible]
+====
+
+```
+data/minecraft/loot_tables/gameplay/cat_morning_gift.json
+```
+
+====
 
 ==== Golem Heads
 
@@ -988,6 +1748,28 @@ https://github.com/DMBuce/bucepack/releases[All Releases]
 Direct Link:
 https://github.com/DMBuce/bucepack/releases/latest/download/heads_golem.zip[`heads_golem.zip`]
 
+.Minecraft files included in `heads_golem.zip`
+[%collapsible]
+====
+
+```
+data/minecraft/loot_tables/gameplay/hero_of_the_village/armorer_gift.json
+data/minecraft/loot_tables/gameplay/hero_of_the_village/butcher_gift.json
+data/minecraft/loot_tables/gameplay/hero_of_the_village/cartographer_gift.json
+data/minecraft/loot_tables/gameplay/hero_of_the_village/cleric_gift.json
+data/minecraft/loot_tables/gameplay/hero_of_the_village/farmer_gift.json
+data/minecraft/loot_tables/gameplay/hero_of_the_village/fisherman_gift.json
+data/minecraft/loot_tables/gameplay/hero_of_the_village/fletcher_gift.json
+data/minecraft/loot_tables/gameplay/hero_of_the_village/leatherworker_gift.json
+data/minecraft/loot_tables/gameplay/hero_of_the_village/librarian_gift.json
+data/minecraft/loot_tables/gameplay/hero_of_the_village/mason_gift.json
+data/minecraft/loot_tables/gameplay/hero_of_the_village/shepherd_gift.json
+data/minecraft/loot_tables/gameplay/hero_of_the_village/toolsmith_gift.json
+data/minecraft/loot_tables/gameplay/hero_of_the_village/weaponsmith_gift.json
+```
+
+====
+
 ==== Player Heads
 
 Makes players drop their head when killed
@@ -1027,6 +1809,16 @@ https://github.com/DMBuce/bucepack/releases[All Releases]
 
 Direct Link:
 https://github.com/DMBuce/bucepack/releases/latest/download/heads_player.zip[`heads_player.zip`]
+
+.Minecraft files included in `heads_player.zip`
+[%collapsible]
+====
+
+```
+data/minecraft/loot_tables/entities/player.json
+```
+
+====
 
 === Loot Overhaul
 
@@ -1111,6 +1903,64 @@ https://github.com/DMBuce/bucepack/releases[All Releases]
 Direct Link:
 https://github.com/DMBuce/bucepack/releases/latest/download/loot_overhaul.zip[`loot_overhaul.zip`]
 
+.Minecraft files included in `loot_overhaul.zip`
+[%collapsible]
+====
+
+```
+data/minecraft/loot_tables/chests/abandoned_mineshaft.json
+data/minecraft/loot_tables/chests/ancient_city_ice_box.json
+data/minecraft/loot_tables/chests/ancient_city.json
+data/minecraft/loot_tables/chests/bastion_bridge.json
+data/minecraft/loot_tables/chests/bastion_hoglin_stable.json
+data/minecraft/loot_tables/chests/bastion_other.json
+data/minecraft/loot_tables/chests/bastion_treasure.json
+data/minecraft/loot_tables/chests/buried_treasure.json
+data/minecraft/loot_tables/chests/desert_pyramid.json
+data/minecraft/loot_tables/chests/end_city_treasure.json
+data/minecraft/loot_tables/chests/igloo_chest.json
+data/minecraft/loot_tables/chests/jungle_temple_dispenser.json
+data/minecraft/loot_tables/chests/jungle_temple.json
+data/minecraft/loot_tables/chests/nether_bridge.json
+data/minecraft/loot_tables/chests/pillager_outpost.json
+data/minecraft/loot_tables/chests/ruined_portal.json
+data/minecraft/loot_tables/chests/shipwreck_map.json
+data/minecraft/loot_tables/chests/shipwreck_supply.json
+data/minecraft/loot_tables/chests/shipwreck_treasure.json
+data/minecraft/loot_tables/chests/simple_dungeon.json
+data/minecraft/loot_tables/chests/spawn_bonus_chest.json
+data/minecraft/loot_tables/chests/stronghold_corridor.json
+data/minecraft/loot_tables/chests/stronghold_crossing.json
+data/minecraft/loot_tables/chests/stronghold_library.json
+data/minecraft/loot_tables/chests/underwater_ruin_big.json
+data/minecraft/loot_tables/chests/underwater_ruin_small.json
+data/minecraft/loot_tables/chests/village/village_armorer.json
+data/minecraft/loot_tables/chests/village/village_butcher.json
+data/minecraft/loot_tables/chests/village/village_cartographer.json
+data/minecraft/loot_tables/chests/village/village_desert_house.json
+data/minecraft/loot_tables/chests/village/village_fisher.json
+data/minecraft/loot_tables/chests/village/village_fletcher.json
+data/minecraft/loot_tables/chests/village/village_mason.json
+data/minecraft/loot_tables/chests/village/village_plains_house.json
+data/minecraft/loot_tables/chests/village/village_savanna_house.json
+data/minecraft/loot_tables/chests/village/village_shepherd.json
+data/minecraft/loot_tables/chests/village/village_snowy_house.json
+data/minecraft/loot_tables/chests/village/village_taiga_house.json
+data/minecraft/loot_tables/chests/village/village_tannery.json
+data/minecraft/loot_tables/chests/village/village_temple.json
+data/minecraft/loot_tables/chests/village/village_toolsmith.json
+data/minecraft/loot_tables/chests/village/village_weaponsmith.json
+data/minecraft/loot_tables/chests/woodland_mansion.json
+data/minecraft/loot_tables/gameplay/fishing/fish.json
+data/minecraft/loot_tables/gameplay/fishing/junk.json
+data/minecraft/loot_tables/gameplay/fishing/treasure.json
+data/minecraft/loot_tables/gameplay/piglin_bartering.json
+data/minecraft/recipes/leather_horse_armor.json
+data/minecraft/tags/items/creeper_drop_music_discs.json
+```
+
+====
+
 ==== Treasure Seeds
 
 If this <<ordering-data-packs,addon pack>>
@@ -1129,6 +1979,7 @@ https://github.com/DMBuce/bucepack/releases[All Releases]
 
 Direct Link:
 https://github.com/DMBuce/bucepack/releases/latest/download/loot_overhaul_treasure_seeds.zip[`loot_overhaul_treasure_seeds.zip`]
+
 
 Known Issues:
 If a chest is broken instead of opened by a player,
@@ -1161,6 +2012,7 @@ https://github.com/DMBuce/bucepack/releases[All Releases]
 Direct Link:
 https://github.com/DMBuce/bucepack/releases/latest/download/loot_overhaul_relics.zip[`loot_overhaul_relics.zip`]
 
+
 ==== Starter Relic
 
 If this <<ordering-data-packs,addon pack>>
@@ -1179,6 +2031,7 @@ https://github.com/DMBuce/bucepack/releases[All Releases]
 
 Direct Link:
 https://github.com/DMBuce/bucepack/releases/latest/download/loot_overhaul_starter_relic.zip[`loot_overhaul_starter_relic.zip`]
+
 
 ==== Starter Item
 
@@ -1212,6 +2065,12 @@ https://github.com/DMBuce/bucepack/releases/latest/download/starter_map.zip[`sta
 https://github.com/DMBuce/bucepack/releases/latest/download/starter_shulker.zip[`starter_shulker.zip`]
 https://github.com/DMBuce/bucepack/releases/latest/download/starter_spyglass.zip[`starter_spyglass.zip`]
 
+
+
+
+
+
+
 ==== Starter Bonus Loot
 
 This is a pair of companion packs for the <<loot-overhaul,Loot Overhaul>>
@@ -1227,6 +2086,8 @@ https://github.com/DMBuce/bucepack/releases[All Releases]
 Direct Links:
 https://github.com/DMBuce/bucepack/releases/latest/download/starter_bonus_chest.zip[`starter_bonus_chest.zip`]
 https://github.com/DMBuce/bucepack/releases/latest/download/starter_bonus_box.zip[`starter_bonus_box.zip`]
+
+
 
 ==== Treasure Barrels
 
@@ -1253,6 +2114,7 @@ https://github.com/DMBuce/bucepack/releases[All Releases]
 Direct Link:
 https://github.com/DMBuce/bucepack/releases/latest/download/loot_overhaul_treasure_barrels.zip[`loot_overhaul_treasure_barrels.zip`]
 
+
 == Trigger Data Packs
 
 These data packs include advancement triggers
@@ -1275,6 +2137,7 @@ https://github.com/DMBuce/bucepack/releases[All Releases]
 Direct Link:
 https://github.com/DMBuce/bucepack/releases/latest/download/smart_allays.zip[`smart_allays.zip`]
 
+
 === Poseable
 
 Lets you pose armor stands.
@@ -1289,6 +2152,7 @@ https://github.com/DMBuce/bucepack/releases[All Releases]
 
 Direct Link:
 https://github.com/DMBuce/bucepack/releases/latest/download/poseable.zip[`poseable.zip`]
+
 
 === Antidote
 
@@ -1320,6 +2184,7 @@ https://github.com/DMBuce/bucepack/releases[All Releases]
 Direct Link:
 https://github.com/DMBuce/bucepack/releases/latest/download/antidote.zip[`antidote.zip`]
 
+
 === Global Effects
 
 Adjusts various game rules as players make progress in the world.
@@ -1348,6 +2213,7 @@ https://github.com/DMBuce/bucepack/releases[All Releases]
 Direct Link:
 https://github.com/DMBuce/bucepack/releases/latest/download/global_effects.zip[`global_effects.zip`]
 
+
 === Leashed
 
 Lets you leash mobs to Allays, Snow Golems, Iron Golems, Donkeys, and Mules.
@@ -1363,6 +2229,7 @@ https://github.com/DMBuce/bucepack/releases[All Releases]
 
 Direct Link:
 https://github.com/DMBuce/bucepack/releases/latest/download/leashed.zip[`leashed.zip`]
+
 
 === Wandering Loot
 
@@ -1380,6 +2247,7 @@ https://github.com/DMBuce/bucepack/releases[All Releases]
 Direct Link:
 https://github.com/DMBuce/bucepack/releases/latest/download/wandering_loot.zip[`wandering_loot.zip`]
 
+
 === Speedy Paths
 
 Makes path blocks extend Speed effects.
@@ -1395,6 +2263,7 @@ https://github.com/DMBuce/bucepack/releases[All Releases]
 Direct Link:
 https://github.com/DMBuce/bucepack/releases/latest/download/speedy_paths.zip[`speedy_paths.zip`]
 
+
 === Ender Relic
 
 Adds a random <<relics,Relic>> to each player's enderchest.
@@ -1409,6 +2278,7 @@ https://github.com/DMBuce/bucepack/releases[All Releases]
 
 Direct Link:
 https://github.com/DMBuce/bucepack/releases/latest/download/ender_relic.zip[`ender_relic.zip`]
+
 
 === Illusory Traders
 
@@ -1428,6 +2298,7 @@ https://github.com/DMBuce/bucepack/releases[All Releases]
 
 Direct Link:
 https://github.com/DMBuce/bucepack/releases/latest/download/illusory_trader.zip[`illusory_trader.zip`]
+
 
 === Mythic Relics
 
@@ -1578,6 +2449,25 @@ https://github.com/DMBuce/bucepack/releases[All Releases]
 Direct Link:
 https://github.com/DMBuce/bucepack/releases/latest/download/relics_mythic.zip[`relics_mythic.zip`]
 
+.Minecraft files included in `relics_mythic.zip`
+[%collapsible]
+====
+
+```
+data/minecraft/loot_tables/blocks/deepslate_emerald_ore.json
+data/minecraft/loot_tables/entities/bee.json
+data/minecraft/loot_tables/entities/endermite.json
+data/minecraft/loot_tables/entities/ghast.json
+data/minecraft/loot_tables/entities/glow_squid.json
+data/minecraft/loot_tables/entities/iron_golem.json
+data/minecraft/loot_tables/entities/pig.json
+data/minecraft/loot_tables/entities/sheep.json
+data/minecraft/loot_tables/entities/silverfish.json
+data/minecraft/tags/entity_types/frog_food.json
+```
+
+====
+
 Known Issues:
 Myth of Seeking can behave in unexpected ways
 due to https://bugs.mojang.com/browse/MC-138887[MC-138887].
@@ -1640,6 +2530,16 @@ https://github.com/DMBuce/bucepack/releases[All Releases]
 Direct Link:
 https://github.com/DMBuce/bucepack/releases/latest/download/phantasmal.zip[`phantasmal.zip`]
 
+.Minecraft files included in `phantasmal.zip`
+[%collapsible]
+====
+
+```
+data/minecraft/loot_tables/entities/phantom.json
+```
+
+====
+
 Known Issues: The Glamer of Invisibility can't be applied to armor stands
 because of https://bugs.mojang.com/browse/MC-66068[MC-66068],
 a works-as-intended bug that prevents invisible armor stands from being broken.
@@ -1669,6 +2569,7 @@ https://github.com/DMBuce/bucepack/releases[All Releases]
 
 Direct Link:
 https://github.com/DMBuce/bucepack/releases/latest/download/phantasmal_end.zip[`phantasmal_end.zip`]
+
 
 //Relic of Harmony:
 //When a player kills a Warden, it drops a sculk catalyst with
@@ -1700,6 +2601,7 @@ https://github.com/DMBuce/bucepack/releases[All Releases]
 Direct Link:
 https://github.com/DMBuce/bucepack/releases/latest/download/network_deep.zip[`network_deep.zip`]
 
+
 === Nether Portal Network
 
 Limits nether travel to ruined portals.
@@ -1722,6 +2624,7 @@ https://github.com/DMBuce/bucepack/releases[All Releases]
 Direct Link:
 https://github.com/DMBuce/bucepack/releases/latest/download/network_nether.zip[`network_nether.zip`]
 
+
 Known Issues:
 Nexuses don't allow nether portal usage outside of their own Anvil regions
 due to https://bugs.mojang.com/browse/MC-138887[MC-138887].
@@ -1741,6 +2644,7 @@ https://github.com/DMBuce/bucepack/releases[All Releases]
 
 Direct Link:
 https://github.com/DMBuce/bucepack/releases/latest/download/storage_orbs.zip[`storage_orbs.zip`]
+
 
 == Data Resource Packs
 
@@ -1787,6 +2691,69 @@ https://github.com/DMBuce/bucepack/releases[All Releases]
 Direct Link:
 https://github.com/DMBuce/bucepack/releases/latest/download/copper_overhaul.zip[`copper_overhaul.zip`]
 
+.Minecraft files included in `copper_overhaul.zip`
+[%collapsible]
+====
+
+```
+assets/minecraft/lang/en_us.json
+assets/minecraft/models/block/light_weighted_pressure_plate_down.json
+assets/minecraft/models/block/light_weighted_pressure_plate.json
+assets/minecraft/models/block/polished_blackstone_button_inventory.json
+assets/minecraft/models/block/polished_blackstone_button.json
+assets/minecraft/models/block/polished_blackstone_button_pressed.json
+assets/minecraft/models/item/stone_axe.json
+assets/minecraft/models/item/stone_hoe.json
+assets/minecraft/models/item/stone_pickaxe.json
+assets/minecraft/models/item/stone_shovel.json
+assets/minecraft/models/item/stone_sword.json
+assets/minecraft/models/item/wooden_axe.json
+assets/minecraft/models/item/wooden_hoe.json
+assets/minecraft/models/item/wooden_pickaxe.json
+assets/minecraft/models/item/wooden_shovel.json
+assets/minecraft/models/item/wooden_sword.json
+assets/minecraft/textures/block/detector_rail_on.png
+assets/minecraft/textures/block/detector_rail.png
+assets/minecraft/textures/block/iron_door_bottom.png
+assets/minecraft/textures/block/iron_door_top.png
+assets/minecraft/textures/block/iron_trapdoor.png
+assets/minecraft/textures/block/tripwire_hook.png
+assets/minecraft/textures/item/chainmail_boots.png
+assets/minecraft/textures/item/chainmail_chestplate.png
+assets/minecraft/textures/item/chainmail_helmet.png
+assets/minecraft/textures/item/chainmail_leggings.png
+assets/minecraft/textures/item/iron_chestplate.png
+assets/minecraft/textures/item/iron_door.png
+assets/minecraft/textures/item/iron_leggings.png
+assets/minecraft/textures/models/armor/chainmail_layer_1.png
+assets/minecraft/textures/models/armor/chainmail_layer_2.png
+assets/minecraft/textures/models/armor/iron_layer_1.png
+assets/minecraft/textures/models/armor/iron_layer_2.png
+data/minecraft/recipes/activator_rail.json
+data/minecraft/recipes/detector_rail.json
+data/minecraft/recipes/dispenser.json
+data/minecraft/recipes/iron_door.json
+data/minecraft/recipes/iron_trapdoor.json
+data/minecraft/recipes/light_weighted_pressure_plate.json
+data/minecraft/recipes/polished_blackstone_button.json
+data/minecraft/recipes/stone_axe.json
+data/minecraft/recipes/stone_hoe.json
+data/minecraft/recipes/stone_pickaxe.json
+data/minecraft/recipes/stone_shovel.json
+data/minecraft/recipes/stone_sword.json
+data/minecraft/recipes/tripwire_hook.json
+data/minecraft/recipes/wooden_axe.json
+data/minecraft/recipes/wooden_hoe.json
+data/minecraft/recipes/wooden_pickaxe.json
+data/minecraft/recipes/wooden_shovel.json
+data/minecraft/recipes/wooden_sword.json
+data/minecraft/tags/blocks/needs_stone_tool.json
+data/minecraft/tags/items/stone_crafting_materials.json
+data/minecraft/tags/items/stone_tool_materials.json
+```
+
+====
+
 === Path Strider
 
 When installed as a data pack,
@@ -1803,6 +2770,31 @@ https://github.com/DMBuce/bucepack/releases[All Releases]
 
 Direct Link:
 https://github.com/DMBuce/bucepack/releases/latest/download/path_strider.zip[`path_strider.zip`]
+
+.Minecraft files included in `path_strider.zip`
+[%collapsible]
+====
+
+```
+assets/minecraft/lang/en_us.json
+assets/minecraft/lang/en_us.json
+assets/minecraft/lang/en_us.json
+assets/minecraft/sounds.json
+assets/minecraft/textures/particle/soul_0.png
+assets/minecraft/textures/particle/soul_10.png
+assets/minecraft/textures/particle/soul_1.png
+assets/minecraft/textures/particle/soul_2.png
+assets/minecraft/textures/particle/soul_3.png
+assets/minecraft/textures/particle/soul_4.png
+assets/minecraft/textures/particle/soul_5.png
+assets/minecraft/textures/particle/soul_6.png
+assets/minecraft/textures/particle/soul_7.png
+assets/minecraft/textures/particle/soul_8.png
+assets/minecraft/textures/particle/soul_9.png
+data/minecraft/tags/blocks/soul_speed_blocks.json
+```
+
+====
 
 == Challenge Data Packs
 
@@ -1822,6 +2814,7 @@ https://github.com/DMBuce/bucepack/releases[All Releases]
 
 Direct Link:
 https://github.com/DMBuce/bucepack/releases/latest/download/escape_nether.zip[`escape_nether.zip`]
+
 
 === Escape the End
 
@@ -1843,6 +2836,7 @@ https://github.com/DMBuce/bucepack/releases[All Releases]
 
 Direct Link:
 https://github.com/DMBuce/bucepack/releases/latest/download/escape_the_end.zip[`escape_the_end.zip`]
+
 
 === Escape the Grind
 
@@ -1881,6 +2875,18 @@ https://github.com/DMBuce/bucepack/releases[All Releases]
 Direct Link:
 https://github.com/DMBuce/bucepack/releases/latest/download/escape_grind.zip[`escape_grind.zip`]
 
+.Minecraft files included in `escape_grind.zip`
+[%collapsible]
+====
+
+```
+data/minecraft/loot_tables/blocks/crying_obsidian.json
+data/minecraft/loot_tables/chests/end_city_treasure.json
+data/minecraft/loot_tables/entities/endermite.json
+```
+
+====
+
 == WorldGen Data Packs
 
 These packs rely on experimental worldgen features.
@@ -1915,6 +2921,46 @@ https://github.com/DMBuce/bucepack/releases[All Releases]
 Direct Link:
 https://github.com/DMBuce/bucepack/releases/latest/download/dripblock.zip[`dripblock.zip`]
 
+.Minecraft files included in `dripblock.zip`
+[%collapsible]
+====
+
+```
+data/minecraft/loot_tables/entities/creeper.json
+data/minecraft/tags/blocks/moss_replaceable.json
+data/minecraft/tags/worldgen/biome/has_structure/ancient_city.json
+data/minecraft/tags/worldgen/biome/has_structure/buried_treasure.json
+data/minecraft/tags/worldgen/biome/has_structure/desert_pyramid.json
+data/minecraft/tags/worldgen/biome/has_structure/igloo.json
+data/minecraft/tags/worldgen/biome/has_structure/jungle_temple.json
+data/minecraft/tags/worldgen/biome/has_structure/mineshaft.json
+data/minecraft/tags/worldgen/biome/has_structure/mineshaft_mesa.json
+data/minecraft/tags/worldgen/biome/has_structure/ocean_monument.json
+data/minecraft/tags/worldgen/biome/has_structure/ocean_ruin_cold.json
+data/minecraft/tags/worldgen/biome/has_structure/ocean_ruin_warm.json
+data/minecraft/tags/worldgen/biome/has_structure/pillager_outpost.json
+data/minecraft/tags/worldgen/biome/has_structure/ruined_portal_desert.json
+data/minecraft/tags/worldgen/biome/has_structure/ruined_portal_jungle.json
+data/minecraft/tags/worldgen/biome/has_structure/ruined_portal_mountain.json
+data/minecraft/tags/worldgen/biome/has_structure/ruined_portal_nether.json
+data/minecraft/tags/worldgen/biome/has_structure/ruined_portal_ocean.json
+data/minecraft/tags/worldgen/biome/has_structure/ruined_portal_standard.json
+data/minecraft/tags/worldgen/biome/has_structure/ruined_portal_swamp.json
+data/minecraft/tags/worldgen/biome/has_structure/shipwreck_beached.json
+data/minecraft/tags/worldgen/biome/has_structure/shipwreck.json
+data/minecraft/tags/worldgen/biome/has_structure/stronghold.json
+data/minecraft/tags/worldgen/biome/has_structure/swamp_hut.json
+data/minecraft/tags/worldgen/biome/has_structure/village_desert.json
+data/minecraft/tags/worldgen/biome/has_structure/village_plains.json
+data/minecraft/tags/worldgen/biome/has_structure/village_savanna.json
+data/minecraft/tags/worldgen/biome/has_structure/village_snowy.json
+data/minecraft/tags/worldgen/biome/has_structure/village_taiga.json
+data/minecraft/tags/worldgen/biome/has_structure/woodland_mansion.json
+data/minecraft/worldgen/noise_settings/overworld.json
+```
+
+====
+
 === Frienderchest
 
 A shared pocket dimension.
@@ -1927,6 +2973,7 @@ https://github.com/DMBuce/bucepack/releases[All Releases]
 Direct Link:
 https://github.com/DMBuce/bucepack/releases/latest/download/frienderchest.zip[`frienderchest.zip`]
 
+
 //=== Overworld
 //
 //Piglins and hoglins don't zombify in the overworld.
@@ -1936,6 +2983,17 @@ https://github.com/DMBuce/bucepack/releases/latest/download/frienderchest.zip[`f
 //
 //Direct Link:
 //https://github.com/DMBuce/bucepack/releases/latest/download/worldgen_overworld.zip[`worldgen_overworld.zip`]
+//
+//.Minecraft files included in `worldgen_overworld.zip`
+//[%collapsible]
+//====
+//
+//```
+//data/minecraft/dimension_type/overworld_caves.json
+//data/minecraft/dimension_type/overworld.json
+//```
+//
+//====
 
 === Renewable Structures
 
@@ -1951,6 +3009,18 @@ https://github.com/DMBuce/bucepack/releases[All Releases]
 Direct Link:
 https://github.com/DMBuce/bucepack/releases/latest/download/worldgen_renewable_structures.zip[`worldgen_renewable_structures.zip`]
 
+.Minecraft files included in `worldgen_renewable_structures.zip`
+[%collapsible]
+====
+
+```
+data/minecraft/loot_tables/entities/cave_spider.json
+data/minecraft/loot_tables/entities/husk.json
+data/minecraft/worldgen/structure/desert_pyramid.json
+```
+
+====
+
 === Trees
 
 Makes trees generate with Wood blocks instead of Logs.
@@ -1962,6 +3032,61 @@ https://github.com/DMBuce/bucepack/releases[All Releases]
 
 Direct Link:
 https://github.com/DMBuce/bucepack/releases/latest/download/worldgen_trees.zip[`worldgen_trees.zip`]
+
+.Minecraft files included in `worldgen_trees.zip`
+[%collapsible]
+====
+
+```
+data/minecraft/loot_tables/blocks/acacia_wood.json
+data/minecraft/loot_tables/blocks/birch_wood.json
+data/minecraft/loot_tables/blocks/cherry_wood.json
+data/minecraft/loot_tables/blocks/crimson_hyphae.json
+data/minecraft/loot_tables/blocks/dark_oak_wood.json
+data/minecraft/loot_tables/blocks/jungle_wood.json
+data/minecraft/loot_tables/blocks/mangrove_wood.json
+data/minecraft/loot_tables/blocks/oak_wood.json
+data/minecraft/loot_tables/blocks/spruce_wood.json
+data/minecraft/loot_tables/blocks/warped_hyphae.json
+data/minecraft/tags/blocks/overworld_natural_logs.json
+data/minecraft/worldgen/configured_feature/acacia.json
+data/minecraft/worldgen/configured_feature/azalea_tree.json
+data/minecraft/worldgen/configured_feature/birch_bees_0002.json
+data/minecraft/worldgen/configured_feature/birch_bees_002.json
+data/minecraft/worldgen/configured_feature/birch_bees_005.json
+data/minecraft/worldgen/configured_feature/birch.json
+data/minecraft/worldgen/configured_feature/cherry_bees_005.json
+data/minecraft/worldgen/configured_feature/cherry.json
+data/minecraft/worldgen/configured_feature/crimson_fungus.json
+data/minecraft/worldgen/configured_feature/crimson_fungus_planted.json
+data/minecraft/worldgen/configured_feature/dark_oak.json
+data/minecraft/worldgen/configured_feature/fancy_oak_bees_0002.json
+data/minecraft/worldgen/configured_feature/fancy_oak_bees_002.json
+data/minecraft/worldgen/configured_feature/fancy_oak_bees_005.json
+data/minecraft/worldgen/configured_feature/fancy_oak_bees.json
+data/minecraft/worldgen/configured_feature/fancy_oak.json
+data/minecraft/worldgen/configured_feature/jungle_bush.json
+data/minecraft/worldgen/configured_feature/jungle_tree.json
+data/minecraft/worldgen/configured_feature/jungle_tree_no_vine.json
+data/minecraft/worldgen/configured_feature/mangrove.json
+data/minecraft/worldgen/configured_feature/mega_jungle_tree.json
+data/minecraft/worldgen/configured_feature/mega_pine.json
+data/minecraft/worldgen/configured_feature/mega_spruce.json
+data/minecraft/worldgen/configured_feature/oak_bees_0002.json
+data/minecraft/worldgen/configured_feature/oak_bees_002.json
+data/minecraft/worldgen/configured_feature/oak_bees_005.json
+data/minecraft/worldgen/configured_feature/oak.json
+data/minecraft/worldgen/configured_feature/pine.json
+data/minecraft/worldgen/configured_feature/spruce.json
+data/minecraft/worldgen/configured_feature/super_birch_bees_0002.json
+data/minecraft/worldgen/configured_feature/super_birch_bees.json
+data/minecraft/worldgen/configured_feature/swamp_oak.json
+data/minecraft/worldgen/configured_feature/tall_mangrove.json
+data/minecraft/worldgen/configured_feature/warped_fungus.json
+data/minecraft/worldgen/configured_feature/warped_fungus_planted.json
+```
+
+====
 
 == Legacy Data Packs
 
@@ -2153,6 +3278,7 @@ https://github.com/DMBuce/bucepack/releases[All Releases]
 
 Direct Link:
 https://github.com/DMBuce/bucepack/releases/latest/download/lichdom.zip[`lichdom.zip`]
+
 
 Known Issues:
 
