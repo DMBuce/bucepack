@@ -23,7 +23,7 @@ image::https://i.imgur.com/WLFKdEM.png[Painting Overhaul]
 //Below are the painting titles, organized by size,
 //with links to their inspiration.
 
-.Click for painting titles & inspiration
+.List of painting titles & inspiration
 [%collapsible]
 ====
 1x1 Paintings:
@@ -206,7 +206,7 @@ and adds outlines to some food that's been added to the game since then.
 
 image::https://i.imgur.com/DorMwHO.png[Classic Food]
 
-.Click for a list of retextured food items
+.List of retextured food items
 [%collapsible]
 ====
 * Apples
@@ -284,7 +284,7 @@ Makes more blocks work with the enchantment table.
 Chiseled bookshelves power the enchantment table,
 and
 https://raw.githubusercontent.com/DMBuce/bucepack/master/data/minecraft/tags/blocks/enchantment_power_transmitter.json[these blocks]
-don't block bookshelves from boosting the enchantment table.
+don't block bookshelves from powering the enchantment table.
 
 image::https://i.imgur.com/w9MQeFL.png[Enchanting]
 
@@ -437,7 +437,7 @@ The leather horse armor recipe is changed to match other horse armor as well.
 
 Makes some crafting recipes cheaper.
 
-.Click for a summary of recipes
+.List of recipes
 [%collapsible]
 ====
 
@@ -463,7 +463,7 @@ Makes some crafting recipes cheaper.
 Lets you uncraft the following blocks so that they can be used as convenient
 storage.
 
-.Click for a summary of recipes
+.List of recipes
 [%collapsible]
 ====
 
@@ -508,7 +508,7 @@ Lets you use the stonecutter to convert oddball scraps of the same material
 into the same block so that they can be stacked together.
 The following blocks can be freely crafted into each other.
 
-.Click for a summary of recipes
+.List of recipes
 [%collapsible]
 ====
 
@@ -638,7 +638,7 @@ it has a chance to give its owner a fae head as a gift in the morning.
 These heads replace raw chicken in the cat gift loot table
 and look like tiny blocks.
 
-.Click for a summary of heads
+.List of heads
 [%collapsible]
 ====
 
@@ -658,7 +658,7 @@ when villagers could create golems out of materials other than iron.
 // To create a golem with the head, place it on an armor stand.
 // The golem can't move, but can display armor and scare crows away.
 
-.Click for a summary of heads
+.List of heads
 [%collapsible]
 ====
 
@@ -722,7 +722,7 @@ When a warden kills a player, it captures that player's soul
 and releases the soul of one of The Ancients.
 The head of that Ancient is dropped instead of the player's.
 
-.Click for a summary of heads
+.List of heads
 [%collapsible]
 ====
 
@@ -842,7 +842,7 @@ is enabled and loaded after <<loot-overhaul,Loot Overhaul>>,
 <<Relics>> rarely appear in chest loot. The chance varies depending on
 the type of loot chest.
 
-.Click for a summary of relic loot spawn chance
+.Summary of relic loot
 [%collapsible]
 ====
 * 1/50 chance: Woodland Mansion chests
@@ -961,7 +961,7 @@ pose.
 Makes more food negate potion effects
 the same way honey negates poison.
 
-.Click for a summary of negated potion effects
+.List of potion negations
 [%collapsible]
 ====
 * Apples negate nausea
@@ -1074,7 +1074,7 @@ that can be applied to tools in the smithing table.
 Each relic added by this datapack can only be obtained under specific
 circumstances described below.
 
-.Click for a summary of mythic relics
+.Summary of mythic relics
 [%collapsible]
 ====
 
@@ -1775,7 +1775,7 @@ You can use
 https://minecraft.fandom.com/wiki/Language#Languages[the Language page]
 on the Minecraft Wiki to look up a language code.
 
-.Click for a summary of language support
+.List of language support
 [%collapsible]
 ====
 
@@ -1869,7 +1869,7 @@ and <<relic-loot,Relic Loot>> datapacks.
 For a list of mythic relics, see the <<mythic-relics,Mythic Relics>> datapack
 description.
 
-.Click for a summary of relics
+.Summary of relics
 [%collapsible]
 ====
 
