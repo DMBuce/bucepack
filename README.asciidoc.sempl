@@ -1556,43 +1556,35 @@ https://github.com/DMBuce/bucepack/releases[All Releases]
 Direct Link:
 https://github.com/DMBuce/bucepack/releases/latest/download/phantasmal_end.zip[`phantasmal_end.zip`]
 
-//=== Deep Gate Network
-//
-//A lodestone compass and ender pearl can be applied to a goat horn in a
-//smithing table.
-//Playing the horn near the lodestone that the compass was linked to teleports
-//the player to the lodestone.
-//
-//Playing the horn near a deep gate amplifies the horn's tune,
-//allowing the player to teleport to the lodestone from any ancient city.
-//
-//Download:
-//https://github.com/DMBuce/bucepack/releases[All Releases]
-//
-//Direct Link:
-//https://github.com/DMBuce/bucepack/releases/latest/download/network_deep.zip[`network_deep.zip`]
+//Relic of Harmony:
+//When a player kills a Warden, it drops a sculk catalyst with
+//Myth of Deep Gates, a custom enchantment that can be applied to
+//a goat horn in the smithing table.
+//Playing the horn at the center of an ancient city transports the player to the world's surface.
+//Playing the horn on a mountaintop transports the player back to the last
+//ancient city the player played the horn at.
 
-//=== Deep Broadcast Network
-//
-//Turns the reinforced deepslate structures at the center of ancient cities
-//into broadcast devices
-//that interact with shrieker sounds so as to summon players instead of wardens.
-//
-//These broadcast devices convert the sounds of nearby shriekers
-//into a signal that compasses can modulate. The modulated signal resonates
-//with the compass' corresponding spawn location, death point, or lodestone.
-//
-//When a player holding a recovery compass, compass, or lodestone compass
-//steps on a shrieker near a broadcast device,
-//the shrieker summons the player
-//at the corresponding death point, lodestone, or world spawn.
-//Shriekers can only summon players in the overworld this way.
-//
-//Download:
-//https://github.com/DMBuce/bucepack/releases[All Releases]
-//
-//Direct Link:
-//https://github.com/DMBuce/bucepack/releases/latest/download/network_deep.zip[`network_deep.zip`]
+=== Deep Gate Network
+
+Turns the reinforced deepslate structures at the center of ancient cities
+into _deep gates_ in a network that spans the overworld.
+Deep gates resonate with and amplify the melody of loud instruments.
+A deep gate that detects such a melody echoing through the mountaintops
+or playing nearby can transport a player far and wide.
+
+Playing a goat horn near a deep gate transports the player
+to the world's surface.
+
+Playing a goat horn on a mountain peak transports the player back
+to the last deep gate that horn was played at.
+
+//The transportation effect requires standing on one of [these blocks] to work.
+
+Download:
+https://github.com/DMBuce/bucepack/releases[All Releases]
+
+Direct Link:
+https://github.com/DMBuce/bucepack/releases/latest/download/network_deep.zip[`network_deep.zip`]
 
 === Nether Portal Network
 

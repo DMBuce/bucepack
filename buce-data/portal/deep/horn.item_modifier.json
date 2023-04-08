@@ -1,0 +1,20 @@
+[
+  {
+    "function": "minecraft:set_nbt",
+    "tag": "{gate:1b,Enchantments:[{}]}"
+  },
+  {
+    "function": "minecraft:copy_nbt",
+    "source": {
+      "type": "context",
+      "target": "this"
+    },
+    "ops": [
+      {
+        "source": "Pos",
+        "target": "GatePos",
+        "op": "replace"
+      }
+    ]
+  }
+]

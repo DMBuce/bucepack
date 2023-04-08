@@ -1,0 +1,22 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:goat_horn"
+		},
+		"title": {
+			"text": "Deep Gate Network"
+		},
+		"description": {
+			"text": "Activate deep gates in ancient cities"
+		},
+		"show_toast": false,
+		"announce_to_chat": false,
+		"frame": "task"
+	},
+	"parent": "buce:root",
+	"criteria": {
+		"tick": {
+			"trigger": "minecraft:tick"
+		}
+	}
+}

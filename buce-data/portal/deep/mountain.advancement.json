@@ -1,0 +1,114 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:barrier"
+		},
+		"title": {
+			"text": "Trigger Advancement"
+		},
+		"description": {
+			"text": "Something went wrong, you should revoke this advancement"
+		},
+		"show_toast": false,
+		"announce_to_chat": false,
+		"hidden": true,
+		"frame": "task"
+	},
+	"parent": "buce:portal/deep/root",
+	"criteria": {
+		"c1": {
+			"trigger": "minecraft:using_item",
+			"conditions": {
+				"item": {
+					"items": [ "minecraft:goat_horn" ],
+					"nbt": "{gate:1b}"
+				},
+				"player": {
+					"equipment": {
+						"mainhand": {
+							"items": [ "minecraft:goat_horn" ]
+						}
+					},
+					"location": {
+						"biome": "minecraft:jagged_peaks"
+					}
+				}
+			}
+		},
+		"c2": {
+			"trigger": "minecraft:using_item",
+			"conditions": {
+				"item": {
+					"items": [ "minecraft:goat_horn" ],
+					"nbt": "{gate:1b}"
+				},
+				"player": {
+					"equipment": {
+						"mainhand": {
+							"items": [ "minecraft:goat_horn" ]
+						}
+					},
+					"location": {
+						"biome": "minecraft:frozen_peaks"
+					}
+				}
+			}
+		},
+		"c3": {
+			"trigger": "minecraft:using_item",
+			"conditions": {
+				"item": {
+					"items": [ "minecraft:goat_horn" ],
+					"nbt": "{gate:1b}"
+				},
+				"player": {
+					"equipment": {
+						"mainhand": {
+							"items": [ "minecraft:goat_horn" ]
+						}
+					},
+					"location": {
+						"biome": "minecraft:stony_peaks"
+					}
+				}
+			}
+		},
+		"c4": {
+			"trigger": "minecraft:using_item",
+			"conditions": {
+				"item": {
+					"items": [ "minecraft:goat_horn" ],
+					"nbt": "{gate:1b}"
+				},
+				"player": {
+
+					"equipment": {
+						"mainhand": {
+							"items": [ "minecraft:goat_horn" ]
+						}
+					},
+					"location": {
+						"biome": "minecraft:windswept_savanna"
+					},
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"buce:portal/deep/mainhand/gate": false
+						}
+					}
+				}
+			}
+		}
+	},
+	"requirements": [
+		[
+			"c1",
+			"c2",
+			"c3",
+			"c4"
+		]
+	],
+	"rewards": {
+		"function": "buce:portal/deep/mountain"
+	}
+}

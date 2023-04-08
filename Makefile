@@ -73,6 +73,7 @@ DATAPACKFILES = \
 	loot_overhaul_treasure_seeds.zip \
 	loot_overhaul.zip \
 	mineable.zip \
+	network_deep.zip \
 	network_nether.zip \
 	no_treasure_maps.zip \
 	worldgen_renewable_structures.zip \
@@ -457,6 +458,11 @@ acclimated_FILES := $(DEFAULT_DATA_FILES) \
 	data/minecraft/tags/entity_types/dismounts_underwater.json \
 	data/minecraft/tags/entity_types/fall_damage_immune.json \
 	data/minecraft/tags/entity_types/powder_snow_walkable_mobs.json \
+
+network_deep_FILES := $(DEFAULT_DATA_FILES) \
+	$(shell find buce-data/portal/deep -type f | ./bin/ext2dir) \
+	data/minecraft/tags/functions/load_network_deep.json \
+	data/buce/functions/var.mcfunction \
 
 network_nether_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell find buce-data/portal/nether -type f | ./bin/ext2dir) \
@@ -989,6 +995,10 @@ data/buce/advancements/%.json: buce-data/%.advancement.json
 	mkdir -p $(dir $@)
 	cp -v $< $@
 
+data/buce/item_modifiers/%.json: buce-data/%.item_modifier.json
+	mkdir -p $(dir $@)
+	cp -v $< $@
+
 data/buce/predicates/%.json: buce-data/%.predicate.json
 	mkdir -p $(dir $@)
 	cp -v $< $@
@@ -1288,6 +1298,12 @@ aggro_bastions.zip: $(aggro_bastions_FILES)
 	./bin/ziprename _$(@:.zip=) "" $@
 
 antidote.zip: $(antidote_FILES)
+	cp meta/$(@:.zip=.png) pack.png
+	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
+	zip $@ pack.png pack.mcmeta $^
+	./bin/ziprename _$(@:.zip=) "" $@
+
+network_deep.zip: $(network_deep_FILES)
 	cp meta/$(@:.zip=.png) pack.png
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^

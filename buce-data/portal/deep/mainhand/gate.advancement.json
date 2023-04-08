@@ -1,0 +1,47 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:barrier"
+		},
+		"title": {
+			"text": "Trigger Advancement"
+		},
+		"description": {
+			"text": "Something went wrong, you should revoke this advancement"
+		},
+		"show_toast": false,
+		"announce_to_chat": false,
+		"hidden": true,
+		"frame": "task"
+	},
+	"parent": "buce:portal/deep/root",
+	"criteria": {
+		"c1": {
+			"trigger": "minecraft:using_item",
+			"conditions": {
+				"item": {
+					"items": [ "minecraft:goat_horn" ]
+				},
+				"player": {
+					"equipment": {
+						"mainhand": {
+							"items": [ "minecraft:goat_horn" ]
+						}
+					},
+					"location": {
+						"structure": "minecraft:ancient_city"
+					},
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"buce:portal/deep/mountain": false
+						}
+					}
+				}
+			}
+		}
+	},
+	"rewards": {
+		"function": "buce:portal/deep/mainhand/gate"
+	}
+}
