@@ -30,7 +30,7 @@ for pack in "$@"; do
 	if [[ -n "$output" ]]; then
 		echo
 		echo "\`\`\`"
-		echo "Minecraft files included:"
+		echo "Minecraft files modified:"
 		echo "$output"
 		echo "\`\`\`"
 		echo
