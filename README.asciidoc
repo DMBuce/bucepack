@@ -1142,18 +1142,19 @@ Makes some crafting recipes cheaper.
 [%collapsible]
 ====
 
-* Stairs: 6 blocks → 6 stairs, or 3 blocks → 3 stairs
-* Fences: 4 planks + 2 sticks → 4 fences
-* Gates: 2 planks + 4 sticks → 4 gates
-* Pressure Plates: 2 planks → 2 pressure plates
-* Signs: 6 planks + 1 stick → 6 signs
-* Trapdoors: 6 planks → 6 trapdoors
-* Wood: 4 logs → 4 wood
-* Hyphae: 4 stems → 4 hyphae
-* Hoppers: 3 ingots + 1 chest → 1 hopper
-* Chains: 3 iron nuggets → 1 chain
-* Shields: 1 windowless door + 8 iron nuggets → 1 shield
-* Sticks: 1 bamboo → 1 stick
+* 6 block → 6 stairs
+* 3 block → 3 stairs
+* 4 planks + 2 sticks → 4 fence
+* 2 planks + 4 sticks → 4 gate
+* 2 planks → 2 pressure plate
+* 6 planks + stick → 6 sign
+* 6 planks → 6 trapdoor
+* 4 log → 4 wood
+* 4 stem → 4 hyphae
+* 3 iron nugget → chain
+* chest + 3 iron ingot → hopper
+* solid door + 8 iron nugget → shield
+* bamboo → stick
 
 ====
 
@@ -1302,20 +1303,26 @@ storage.
 [%collapsible]
 ====
 
-* Amethyst
-* Blue & Packed Ice
-* Books & Bookshelves
-* Bricks & Nether Bricks
-* Clay
-* Cobweb
-* Dripstone
-* Glowstone
-* Magma
-* Melons
-* Prismarine Bricks & Blocks
-* Purpur
-* Sandstone & Red Sandstone
-* Snow
+* amethyst block → 4 amethyst shard
+* bricks → 4 brick
+* clay → 4 clay ball
+* glowstone → 4 glowstone dust
+* honeycomb block → 4 honeycomb
+* magma block → 4 magma cream
+* nether bricks → 4 nether brick
+* dripstone block → 4 pointed dripstone
+* purpur block → 4 popped chorus fruit
+* prismarine → 4 prismarine shard
+* red sandstone → 4 red sand
+* sandstone → 4 sand
+* snow block → 4 snowball
+* packed ice → 9 ice
+* melon → 9 melon slice
+* blue ice → 9 packed ice
+* prismarine bricks → 9 prismarine shard
+* cobweb → 9 string
+* bookshelf → 3 book
+* book → 3 paper
 
 ====
 
@@ -1380,16 +1387,38 @@ The following blocks can be freely crafted into each other.
 [%collapsible]
 ====
 
-* Buttons
-* Doors
-* Fences
-* Gates
-* Pressure Plates
-* Signs
-* Slabs
-* Stairs
-* Trapdoors
-* Walls
+* blackstone slab
+* blackstone stairs
+* blackstone wall
+* button
+* door
+* fence
+* fence gate
+* nether brick fence
+* nether brick slab
+* nether brick stairs
+* nether brick wall
+* polished blackslab
+* polished blackstairs
+* polished blackstone button
+* polished blackstone pressure plate
+* polished blackstone slab
+* polished blackstone stairs
+* polished blackstone wall
+* polished blackwall
+* pressure plate
+* red nether brick slab
+* red nether brick stairs
+* red nether brick wall
+* sign
+* slab
+* stairs
+* stone button
+* stone pressure plate
+* stone slab
+* stone stairs
+* trapdoor
+* wall
 
 ====
 
@@ -3515,7 +3544,7 @@ You can use
 https://minecraft.fandom.com/wiki/Language#Languages[the Language page]
 on the Minecraft Wiki to look up a language code.
 
-.List of language support
+.Summary of language support
 [%collapsible]
 ====
 

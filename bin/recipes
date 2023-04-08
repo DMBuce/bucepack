@@ -1,0 +1,84 @@
+#!/usr/bin/python
+
+import os
+import sys
+import json
+
+# parse args
+if len(sys.argv) == 2:
+    pack = sys.argv[1].split(".")[0]
+else:
+    sys.exit(f"Usage: {sys.argv[0]} <packname>")
+
+# turns an item id into a human-readable string
+def tr(itemjson):
+    if 'item' in itemjson:
+        return itemjson['item'].removeprefix("minecraft:").replace('_', ' ')
+    else:
+        return itemjson['tag'].split("/")[-1].replace('_', ' ')
+
+# prints a shapeless crafting recipe
+def crafting_shapeless(r):
+    ingredients = {}
+    for i in r['ingredients']:
+        item = i['item']
+        ingredients.setdefault(item, 0)
+        ingredients[item] += 1
+
+    inputstrs = []
+    for i in ingredients:
+        count = ingredients[i]
+        item = tr({'item': i})
+        inputstrs.append( f"{count} {item}" )
+
+    count = r['result']['count']
+    output = tr(r['result'])
+    outputs = f"{count} {output}".removeprefix("1 ")
+    inputs = " + ".join(inputstrs).removeprefix("1 ")
+    print(f"* {inputs} → {outputs}")
+
+# prints a shaped crafting recipe
+def crafting_shaped(r):
+    pattern = "".join(r['pattern'])
+    inputstrs = []
+    for key in r['key']:
+        count = pattern.count(key)
+        if isinstance(r['key'][key], dict):
+            item = tr(r['key'][key])
+            inputstrs.append( f"{count} {item}" )
+        else:
+            item = min([ tr(x) for x in r['key'][key] ], key=len)
+            inputstrs.append( f"{count} {item}" )
+
+    count = r['result']['count'] if count in r['result'] else 1
+    output = tr(r['result'])
+    outputs = f"{count} {output}".removeprefix("1 ")
+    inputs = " + ".join(inputstrs).removeprefix("1 ")
+    print(f"* {inputs} → {outputs}")
+
+# prints a stonecutting recipe
+def stonecutting(r):
+    for x in r['ingredient']:
+        inputs = tr(x)
+        count = r['result']['count'] if "count" in r['result'] else 1
+        output = tr({"item":r['result']})
+        outputs = f"{count} {output}".removeprefix("1 ")
+        print(f"* {inputs} → {outputs}")
+
+# mapping of recipe types to recipe handler functions
+rhandler = {
+    'minecraft:crafting_shapeless': crafting_shapeless,
+    'minecraft:crafting_shaped':    crafting_shaped,
+    'minecraft:stonecutting':       stonecutting,
+}
+
+# print each recipe in datapack
+with open(f"cache/{pack}.files") as recipe:
+    for line in recipe:
+        file = line.rstrip()
+        if file.startswith("data/minecraft/recipes/") or file.startswith("data/buce/recipes/"):
+            #print(file)
+            with open(file) as f:
+                r = json.load(f)
+                rhandler[r['type']](r)
+

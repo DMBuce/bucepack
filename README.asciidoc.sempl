@@ -441,18 +441,16 @@ Makes some crafting recipes cheaper.
 [%collapsible]
 ====
 
-* Stairs: 6 blocks → 6 stairs, or 3 blocks → 3 stairs
-* Fences: 4 planks + 2 sticks → 4 fences
-* Gates: 2 planks + 4 sticks → 4 gates
-* Pressure Plates: 2 planks → 2 pressure plates
-* Signs: 6 planks + 1 stick → 6 signs
-* Trapdoors: 6 planks → 6 trapdoors
-* Wood: 4 logs → 4 wood
-* Hyphae: 4 stems → 4 hyphae
-* Hoppers: 3 ingots + 1 chest → 1 hopper
-* Chains: 3 iron nuggets → 1 chain
-* Shields: 1 windowless door + 8 iron nuggets → 1 shield
-* Sticks: 1 bamboo → 1 stick
+* 6 block → 6 stairs
+* 3 block → 3 stairs
+* 4 planks + 2 sticks → 4 fence
+* 2 planks + 4 sticks → 4 gate
+* 2 planks → 2 pressure plate
+* 6 planks + stick → 6 sign
+* 6 planks → 6 trapdoor
+* 4 log → 4 wood
+* 4 stem → 4 hyphae
+{!./bin/recipes crafting_plentiful | grep -Ev ' (stairs|fence|gate|plate|sign|door|trapdoor|wood|hyphae)$'}
 
 ====
 
@@ -467,20 +465,7 @@ storage.
 [%collapsible]
 ====
 
-* Amethyst
-* Blue & Packed Ice
-* Books & Bookshelves
-* Bricks & Nether Bricks
-* Clay
-* Cobweb
-* Dripstone
-* Glowstone
-* Magma
-* Melons
-* Prismarine Bricks & Blocks
-* Purpur
-* Sandstone & Red Sandstone
-* Snow
+{!./bin/recipes crafting_unpacked}
 
 ====
 
@@ -512,16 +497,7 @@ The following blocks can be freely crafted into each other.
 [%collapsible]
 ====
 
-* Buttons
-* Doors
-* Fences
-* Gates
-* Pressure Plates
-* Signs
-* Slabs
-* Stairs
-* Trapdoors
-* Walls
+{!./bin/recipes cutting_declutter | ./bin/stripmats | sed 's/ →.*//' | sort -u}
 
 ====
 
@@ -1775,7 +1751,7 @@ You can use
 https://minecraft.fandom.com/wiki/Language#Languages[the Language page]
 on the Minecraft Wiki to look up a language code.
 
-.List of language support
+.Summary of language support
 [%collapsible]
 ====
 

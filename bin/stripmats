@@ -1,0 +1,18 @@
+#!/bin/bash
+
+pattern=''
+while read material; do
+	[[ $material == stone ]] && continue
+	[[ $material == nether* ]] && continue
+	[[ $material == *blackstone* ]] && continue
+	pattern="$pattern|${material//_/.}"
+	#echo "$pattern"
+done < <(
+./bin/allblocks \
+    | sed -nE 's/_(fence|stairs|slab|wall|door)$//p' \
+    | uniq \
+)
+
+pattern="(${pattern#|})."
+sed -E "/nether/! s/$pattern//g"
+
