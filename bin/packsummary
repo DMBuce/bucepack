@@ -4,12 +4,7 @@ latest="$(<latest.txt)"
 #header='Direct Link'
 #(( $# > 1 )) && header='Direct Links'
 
-echo "Download:"
-echo ""
-echo ".https://github.com/DMBuce/bucepack/releases[All Releases]"
-echo "[%collapsible]"
-echo "===="
-echo "===="
+echo "**Download**"
 #echo ""
 #echo "$header:"
 
@@ -40,4 +35,9 @@ for pack in "$@"; do
 	fi
 	echo "===="
 done
+echo ""
+echo ".https://github.com/DMBuce/bucepack/releases[All Releases]"
+echo "[%collapsible]"
+echo "===="
+echo "===="
 
