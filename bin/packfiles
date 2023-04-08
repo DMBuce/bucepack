@@ -1,0 +1,27 @@
+#!/bin/bash
+
+latest="$(./bin/latest)"
+pack="${1%.zip}"
+
+if [[ -f cache/$pack.files ]]; then
+	output=()
+	while read file; do
+		if [[ -f "$latest.jar/$file" ]]; then
+			output+=("$file")
+		fi
+	done < <(grep '^data/minecraft' "cache/$pack.files")
+	if [[ -n "$output" ]]; then
+		cat <<-EOF
+			.Minecraft files included
+			[%collapsible]
+			====
+
+			\`\`\`
+			$(printf "%s\n" "${output[@]}")
+			\`\`\`
+
+			====
+		EOF
+	fi
+fi
+

@@ -750,14 +750,13 @@ Shulkers have a chance to drop 2 shulker shells when killed with Looting.
 With Looting III, there is a 50% chance to drop 1 shell and a 50% chance to
 drop 2 shells.
 
-{!./bin/loot husbandry}
-
-
 Download:
 https://github.com/DMBuce/bucepack/releases[All Releases]
 
 Direct Link:
 https://github.com/DMBuce/bucepack/releases/latest/download/husbandry.zip[`husbandry.zip`]
+
+{!./bin/packfiles husbandry}
 
 === No Treasure Maps
 
