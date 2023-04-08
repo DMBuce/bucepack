@@ -9,9 +9,9 @@ echo "https://github.com/DMBuce/bucepack/releases[All Releases]"
 echo ""
 echo "$header:"
 
-for pack in "$@"; do
-	echo ""https://github.com/DMBuce/bucepack/releases/latest/download/$pack.zip[\`$pack.zip\`]""
-done
+#for pack in "$@"; do
+#	echo "https://github.com/DMBuce/bucepack/releases/latest/download/$pack.zip[\`$pack.zip\`]"
+#done
 
 for pack in "$@"; do
 	pack="${pack%.zip}"
@@ -26,7 +26,7 @@ for pack in "$@"; do
 	done < "cache/$pack.files"
 	echo
 	if [[ -n "$output" ]]; then
-		echo ".Minecraft files included in \`$pack.zip\`"
+		echo ".https://github.com/DMBuce/bucepack/releases/latest/download/$pack.zip[\`$pack.zip\`]"
 		echo "[%collapsible]"
 		echo "===="
 		echo

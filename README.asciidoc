@@ -78,9 +78,8 @@ Download:
 https://github.com/DMBuce/bucepack/releases[All Releases]
 
 Direct Link:
-https://github.com/DMBuce/bucepack/releases/latest/download/painting_overhaul.zip[`painting_overhaul.zip`]
 
-.Minecraft files included in `painting_overhaul.zip`
+.https://github.com/DMBuce/bucepack/releases/latest/download/painting_overhaul.zip[`painting_overhaul.zip`]
 [%collapsible]
 ====
 
@@ -135,9 +134,8 @@ Download:
 https://github.com/DMBuce/bucepack/releases[All Releases]
 
 Direct Link:
-https://github.com/DMBuce/bucepack/releases/latest/download/note_guide.zip[`note_guide.zip`]
 
-.Minecraft files included in `note_guide.zip`
+.https://github.com/DMBuce/bucepack/releases/latest/download/note_guide.zip[`note_guide.zip`]
 [%collapsible]
 ====
 
@@ -164,10 +162,8 @@ Download:
 https://github.com/DMBuce/bucepack/releases[All Releases]
 
 Direct Links:
-https://github.com/DMBuce/bucepack/releases/latest/download/brew_guide.zip[`brew_guide.zip`]
-https://github.com/DMBuce/bucepack/releases/latest/download/brew_guide_darkmode.zip[`brew_guide_darkmode.zip`]
 
-.Minecraft files included in `brew_guide.zip`
+.https://github.com/DMBuce/bucepack/releases/latest/download/brew_guide.zip[`brew_guide.zip`]
 [%collapsible]
 ====
 
@@ -177,7 +173,7 @@ assets/minecraft/textures/gui/container/brewing_stand.png
 
 ====
 
-.Minecraft files included in `brew_guide_darkmode.zip`
+.https://github.com/DMBuce/bucepack/releases/latest/download/brew_guide_darkmode.zip[`brew_guide_darkmode.zip`]
 [%collapsible]
 ====
 
@@ -202,9 +198,8 @@ Download:
 https://github.com/DMBuce/bucepack/releases[All Releases]
 
 Direct Link:
-https://github.com/DMBuce/bucepack/releases/latest/download/tech_arrows.zip[`tech_arrows.zip`]
 
-.Minecraft files included in `tech_arrows.zip`
+.https://github.com/DMBuce/bucepack/releases/latest/download/tech_arrows.zip[`tech_arrows.zip`]
 [%collapsible]
 ====
 
@@ -231,9 +226,8 @@ Download:
 https://github.com/DMBuce/bucepack/releases[All Releases]
 
 Direct Link:
-https://github.com/DMBuce/bucepack/releases/latest/download/villager_mech.zip[`villager_mech.zip`]
 
-.Minecraft files included in `villager_mech.zip`
+.https://github.com/DMBuce/bucepack/releases/latest/download/villager_mech.zip[`villager_mech.zip`]
 [%collapsible]
 ====
 
@@ -262,9 +256,8 @@ Download:
 https://github.com/DMBuce/bucepack/releases[All Releases]
 
 Direct Link:
-https://github.com/DMBuce/bucepack/releases/latest/download/pig_armor.zip[`pig_armor.zip`]
 
-.Minecraft files included in `pig_armor.zip`
+.https://github.com/DMBuce/bucepack/releases/latest/download/pig_armor.zip[`pig_armor.zip`]
 [%collapsible]
 ====
 
@@ -284,9 +277,8 @@ Download:
 https://github.com/DMBuce/bucepack/releases[All Releases]
 
 Direct Link:
-https://github.com/DMBuce/bucepack/releases/latest/download/ravager.zip[`ravager.zip`]
 
-.Minecraft files included in `ravager.zip`
+.https://github.com/DMBuce/bucepack/releases/latest/download/ravager.zip[`ravager.zip`]
 [%collapsible]
 ====
 
@@ -315,9 +307,8 @@ Download:
 https://github.com/DMBuce/bucepack/releases[All Releases]
 
 Direct Link:
-https://github.com/DMBuce/bucepack/releases/latest/download/ore_types.zip[`ore_types.zip`]
 
-.Minecraft files included in `ore_types.zip`
+.https://github.com/DMBuce/bucepack/releases/latest/download/ore_types.zip[`ore_types.zip`]
 [%collapsible]
 ====
 
@@ -344,9 +335,8 @@ Download:
 https://github.com/DMBuce/bucepack/releases[All Releases]
 
 Direct Link:
-https://github.com/DMBuce/bucepack/releases/latest/download/discreet_pumpkin.zip[`discreet_pumpkin.zip`]
 
-.Minecraft files included in `discreet_pumpkin.zip`
+.https://github.com/DMBuce/bucepack/releases/latest/download/discreet_pumpkin.zip[`discreet_pumpkin.zip`]
 [%collapsible]
 ====
 
@@ -405,16 +395,8 @@ Download:
 https://github.com/DMBuce/bucepack/releases[All Releases]
 
 Direct Links:
-https://github.com/DMBuce/bucepack/releases/latest/download/classic_oak.zip[`classic_oak.zip`]
-https://github.com/DMBuce/bucepack/releases/latest/download/classic_obsidian.zip[`classic_obsidian.zip`]
-https://github.com/DMBuce/bucepack/releases/latest/download/classic_netherrack.zip[`classic_netherrack.zip`]
-https://github.com/DMBuce/bucepack/releases/latest/download/classic_lava.zip[`classic_lava.zip`]
-https://github.com/DMBuce/bucepack/releases/latest/download/classic_gravel.zip[`classic_gravel.zip`]
-https://github.com/DMBuce/bucepack/releases/latest/download/classic_lapis.zip[`classic_lapis.zip`]
-https://github.com/DMBuce/bucepack/releases/latest/download/classic_rose.zip[`classic_rose.zip`]
-https://github.com/DMBuce/bucepack/releases/latest/download/classic_food.zip[`classic_food.zip`]
 
-.Minecraft files included in `classic_oak.zip`
+.https://github.com/DMBuce/bucepack/releases/latest/download/classic_oak.zip[`classic_oak.zip`]
 [%collapsible]
 ====
 
@@ -424,7 +406,7 @@ assets/minecraft/textures/block/oak_log.png
 
 ====
 
-.Minecraft files included in `classic_obsidian.zip`
+.https://github.com/DMBuce/bucepack/releases/latest/download/classic_obsidian.zip[`classic_obsidian.zip`]
 [%collapsible]
 ====
 
@@ -435,7 +417,7 @@ assets/minecraft/textures/block/obsidian.png
 
 ====
 
-.Minecraft files included in `classic_netherrack.zip`
+.https://github.com/DMBuce/bucepack/releases/latest/download/classic_netherrack.zip[`classic_netherrack.zip`]
 [%collapsible]
 ====
 
@@ -449,7 +431,7 @@ assets/minecraft/textures/block/warped_nylium_side.png
 
 ====
 
-.Minecraft files included in `classic_lava.zip`
+.https://github.com/DMBuce/bucepack/releases/latest/download/classic_lava.zip[`classic_lava.zip`]
 [%collapsible]
 ====
 
@@ -462,7 +444,7 @@ assets/minecraft/textures/block/lava_still.png.mcmeta
 
 ====
 
-.Minecraft files included in `classic_gravel.zip`
+.https://github.com/DMBuce/bucepack/releases/latest/download/classic_gravel.zip[`classic_gravel.zip`]
 [%collapsible]
 ====
 
@@ -472,7 +454,7 @@ assets/minecraft/textures/block/gravel.png
 
 ====
 
-.Minecraft files included in `classic_lapis.zip`
+.https://github.com/DMBuce/bucepack/releases/latest/download/classic_lapis.zip[`classic_lapis.zip`]
 [%collapsible]
 ====
 
@@ -482,7 +464,7 @@ assets/minecraft/textures/block/lapis_block.png
 
 ====
 
-.Minecraft files included in `classic_rose.zip`
+.https://github.com/DMBuce/bucepack/releases/latest/download/classic_rose.zip[`classic_rose.zip`]
 [%collapsible]
 ====
 
@@ -493,7 +475,7 @@ assets/minecraft/textures/block/poppy.png
 
 ====
 
-.Minecraft files included in `classic_food.zip`
+.https://github.com/DMBuce/bucepack/releases/latest/download/classic_food.zip[`classic_food.zip`]
 [%collapsible]
 ====
 
@@ -550,9 +532,8 @@ Download:
 https://github.com/DMBuce/bucepack/releases[All Releases]
 
 Direct Link:
-https://github.com/DMBuce/bucepack/releases/latest/download/spellsmithing_guide.zip[`spellsmithing_guide.zip`]
 
-.Minecraft files included in `spellsmithing_guide.zip`
+.https://github.com/DMBuce/bucepack/releases/latest/download/spellsmithing_guide.zip[`spellsmithing_guide.zip`]
 [%collapsible]
 ====
 
@@ -607,10 +588,6 @@ Download:
 https://github.com/DMBuce/bucepack/releases[All Releases]
 
 Direct Links:
-https://github.com/DMBuce/bucepack/releases/latest/download/classic_moo.zip[`classic_moo.zip`]
-https://github.com/DMBuce/bucepack/releases/latest/download/classic_twang.zip[`classic_twang.zip`]
-https://github.com/DMBuce/bucepack/releases/latest/download/classic_sploosh.zip[`classic_sploosh.zip`]
-https://github.com/DMBuce/bucepack/releases/latest/download/classic_crunch.zip[`classic_crunch.zip`]
 
 
 
@@ -630,12 +607,9 @@ Download:
 https://github.com/DMBuce/bucepack/releases[All Releases]
 
 Direct Links:
-https://github.com/DMBuce/bucepack/releases/latest/download/discreet_cart.zip[`discreet_cart.zip`]
-https://github.com/DMBuce/bucepack/releases/latest/download/discreet_hrrm.zip[`discreet_hrrm.zip`]
-https://github.com/DMBuce/bucepack/releases/latest/download/discreet_meow.zip[`discreet_meow.zip`]
 
 
-.Minecraft files included in `discreet_hrrm.zip`
+.https://github.com/DMBuce/bucepack/releases/latest/download/discreet_hrrm.zip[`discreet_hrrm.zip`]
 [%collapsible]
 ====
 
@@ -645,7 +619,7 @@ assets/minecraft/sounds.json
 
 ====
 
-.Minecraft files included in `discreet_meow.zip`
+.https://github.com/DMBuce/bucepack/releases/latest/download/discreet_meow.zip[`discreet_meow.zip`]
 [%collapsible]
 ====
 
@@ -676,7 +650,6 @@ Download:
 https://github.com/DMBuce/bucepack/releases[All Releases]
 
 Direct Link:
-https://github.com/DMBuce/bucepack/releases/latest/download/enchanting.zip[`enchanting.zip`]
 
 
 === Mineable
@@ -700,9 +673,8 @@ Download:
 https://github.com/DMBuce/bucepack/releases[All Releases]
 
 Direct Link:
-https://github.com/DMBuce/bucepack/releases/latest/download/mineable.zip[`mineable.zip`]
 
-.Minecraft files included in `mineable.zip`
+.https://github.com/DMBuce/bucepack/releases/latest/download/mineable.zip[`mineable.zip`]
 [%collapsible]
 ====
 
@@ -723,9 +695,8 @@ Download:
 https://github.com/DMBuce/bucepack/releases[All Releases]
 
 Direct Link:
-https://github.com/DMBuce/bucepack/releases/latest/download/climbable.zip[`climbable.zip`]
 
-.Minecraft files included in `climbable.zip`
+.https://github.com/DMBuce/bucepack/releases/latest/download/climbable.zip[`climbable.zip`]
 [%collapsible]
 ====
 
@@ -751,9 +722,8 @@ Download:
 https://github.com/DMBuce/bucepack/releases[All Releases]
 
 Direct Link:
-https://github.com/DMBuce/bucepack/releases/latest/download/dragonproof.zip[`dragonproof.zip`]
 
-.Minecraft files included in `dragonproof.zip`
+.https://github.com/DMBuce/bucepack/releases/latest/download/dragonproof.zip[`dragonproof.zip`]
 [%collapsible]
 ====
 
@@ -775,9 +745,8 @@ Download:
 https://github.com/DMBuce/bucepack/releases[All Releases]
 
 Direct Link:
-https://github.com/DMBuce/bucepack/releases/latest/download/gardener_endermen.zip[`gardener_endermen.zip`]
 
-.Minecraft files included in `gardener_endermen.zip`
+.https://github.com/DMBuce/bucepack/releases/latest/download/gardener_endermen.zip[`gardener_endermen.zip`]
 [%collapsible]
 ====
 
@@ -796,9 +765,8 @@ Download:
 https://github.com/DMBuce/bucepack/releases[All Releases]
 
 Direct Link:
-https://github.com/DMBuce/bucepack/releases/latest/download/eyes_of_seeking.zip[`eyes_of_seeking.zip`]
 
-.Minecraft files included in `eyes_of_seeking.zip`
+.https://github.com/DMBuce/bucepack/releases/latest/download/eyes_of_seeking.zip[`eyes_of_seeking.zip`]
 [%collapsible]
 ====
 
@@ -831,9 +799,8 @@ Download:
 https://github.com/DMBuce/bucepack/releases[All Releases]
 
 Direct Link:
-https://github.com/DMBuce/bucepack/releases/latest/download/acclimated.zip[`acclimated.zip`]
 
-.Minecraft files included in `acclimated.zip`
+.https://github.com/DMBuce/bucepack/releases/latest/download/acclimated.zip[`acclimated.zip`]
 [%collapsible]
 ====
 
@@ -854,9 +821,8 @@ Download:
 https://github.com/DMBuce/bucepack/releases[All Releases]
 
 Direct Link:
-https://github.com/DMBuce/bucepack/releases/latest/download/aggro_bastions.zip[`aggro_bastions.zip`]
 
-.Minecraft files included in `aggro_bastions.zip`
+.https://github.com/DMBuce/bucepack/releases/latest/download/aggro_bastions.zip[`aggro_bastions.zip`]
 [%collapsible]
 ====
 
@@ -880,9 +846,8 @@ Download:
 https://github.com/DMBuce/bucepack/releases[All Releases]
 
 Direct Link:
-https://github.com/DMBuce/bucepack/releases/latest/download/hover_mode.zip[`hover_mode.zip`]
 
-.Minecraft files included in `hover_mode.zip`
+.https://github.com/DMBuce/bucepack/releases/latest/download/hover_mode.zip[`hover_mode.zip`]
 [%collapsible]
 ====
 
@@ -902,9 +867,8 @@ Download:
 https://github.com/DMBuce/bucepack/releases[All Releases]
 
 Direct Link:
-https://github.com/DMBuce/bucepack/releases/latest/download/waterproof_tech.zip[`waterproof_tech.zip`]
 
-.Minecraft files included in `waterproof_tech.zip`
+.https://github.com/DMBuce/bucepack/releases/latest/download/waterproof_tech.zip[`waterproof_tech.zip`]
 [%collapsible]
 ====
 
@@ -924,9 +888,8 @@ Download:
 https://github.com/DMBuce/bucepack/releases[All Releases]
 
 Direct Link:
-https://github.com/DMBuce/bucepack/releases/latest/download/blue_fire.zip[`blue_fire.zip`]
 
-.Minecraft files included in `blue_fire.zip`
+.https://github.com/DMBuce/bucepack/releases/latest/download/blue_fire.zip[`blue_fire.zip`]
 [%collapsible]
 ====
 
@@ -950,7 +913,6 @@ Download:
 https://github.com/DMBuce/bucepack/releases[All Releases]
 
 Direct Link:
-https://github.com/DMBuce/bucepack/releases/latest/download/crafting_cart.zip[`crafting_cart.zip`]
 
 
 === Colorful Crafting
@@ -962,9 +924,8 @@ Download:
 https://github.com/DMBuce/bucepack/releases[All Releases]
 
 Direct Link:
-https://github.com/DMBuce/bucepack/releases/latest/download/crafting_colorful.zip[`crafting_colorful.zip`]
 
-.Minecraft files included in `crafting_colorful.zip`
+.https://github.com/DMBuce/bucepack/releases/latest/download/crafting_colorful.zip[`crafting_colorful.zip`]
 [%collapsible]
 ====
 
@@ -1080,9 +1041,8 @@ Download:
 https://github.com/DMBuce/bucepack/releases[All Releases]
 
 Direct Link:
-https://github.com/DMBuce/bucepack/releases/latest/download/crafting_loot.zip[`crafting_loot.zip`]
 
-.Minecraft files included in `crafting_loot.zip`
+.https://github.com/DMBuce/bucepack/releases/latest/download/crafting_loot.zip[`crafting_loot.zip`]
 [%collapsible]
 ====
 
@@ -1119,9 +1079,8 @@ Download:
 https://github.com/DMBuce/bucepack/releases[All Releases]
 
 Direct Link:
-https://github.com/DMBuce/bucepack/releases/latest/download/crafting_plentiful.zip[`crafting_plentiful.zip`]
 
-.Minecraft files included in `crafting_plentiful.zip`
+.https://github.com/DMBuce/bucepack/releases/latest/download/crafting_plentiful.zip[`crafting_plentiful.zip`]
 [%collapsible]
 ====
 
@@ -1280,7 +1239,6 @@ Download:
 https://github.com/DMBuce/bucepack/releases[All Releases]
 
 Direct Link:
-https://github.com/DMBuce/bucepack/releases/latest/download/crafting_unpacked.zip[`crafting_unpacked.zip`]
 
 
 === Workstation Crafting
@@ -1301,9 +1259,8 @@ Download:
 https://github.com/DMBuce/bucepack/releases[All Releases]
 
 Direct Link:
-https://github.com/DMBuce/bucepack/releases/latest/download/crafting_workstation.zip[`crafting_workstation.zip`]
 
-.Minecraft files included in `crafting_workstation.zip`
+.https://github.com/DMBuce/bucepack/releases/latest/download/crafting_workstation.zip[`crafting_workstation.zip`]
 [%collapsible]
 ====
 
@@ -1350,7 +1307,6 @@ Download:
 https://github.com/DMBuce/bucepack/releases[All Releases]
 
 Direct Link:
-https://github.com/DMBuce/bucepack/releases/latest/download/cutting_declutter.zip[`cutting_declutter.zip`]
 
 
 === Smooth & Cracked Cutting
@@ -1363,7 +1319,6 @@ Download:
 https://github.com/DMBuce/bucepack/releases[All Releases]
 
 Direct Link:
-https://github.com/DMBuce/bucepack/releases/latest/download/cutting_smooth_cracked.zip[`cutting_smooth_cracked.zip`]
 
 
 === Wood Cutting
@@ -1381,9 +1336,8 @@ Download:
 https://github.com/DMBuce/bucepack/releases[All Releases]
 
 Direct Link:
-https://github.com/DMBuce/bucepack/releases/latest/download/cutting_wood.zip[`cutting_wood.zip`]
 
-.Minecraft files included in `cutting_wood.zip`
+.https://github.com/DMBuce/bucepack/releases/latest/download/cutting_wood.zip[`cutting_wood.zip`]
 [%collapsible]
 ====
 
@@ -1403,7 +1357,6 @@ Download:
 https://github.com/DMBuce/bucepack/releases[All Releases]
 
 Direct Link:
-https://github.com/DMBuce/bucepack/releases/latest/download/crafting_turtle_box.zip[`crafting_turtle_box.zip`]
 
 
 == Loot Data Packs
@@ -1430,9 +1383,8 @@ Download:
 https://github.com/DMBuce/bucepack/releases[All Releases]
 
 Direct Link:
-https://github.com/DMBuce/bucepack/releases/latest/download/shearless.zip[`shearless.zip`]
 
-.Minecraft files included in `shearless.zip`
+.https://github.com/DMBuce/bucepack/releases/latest/download/shearless.zip[`shearless.zip`]
 [%collapsible]
 ====
 
@@ -1480,9 +1432,8 @@ Download:
 https://github.com/DMBuce/bucepack/releases[All Releases]
 
 Direct Link:
-https://github.com/DMBuce/bucepack/releases/latest/download/husbandry.zip[`husbandry.zip`]
 
-.Minecraft files included in `husbandry.zip`
+.https://github.com/DMBuce/bucepack/releases/latest/download/husbandry.zip[`husbandry.zip`]
 [%collapsible]
 ====
 
@@ -1517,9 +1468,8 @@ Download:
 https://github.com/DMBuce/bucepack/releases[All Releases]
 
 Direct Link:
-https://github.com/DMBuce/bucepack/releases/latest/download/no_treasure_maps.zip[`no_treasure_maps.zip`]
 
-.Minecraft files included in `no_treasure_maps.zip`
+.https://github.com/DMBuce/bucepack/releases/latest/download/no_treasure_maps.zip[`no_treasure_maps.zip`]
 [%collapsible]
 ====
 
@@ -1618,9 +1568,8 @@ Download:
 https://github.com/DMBuce/bucepack/releases[All Releases]
 
 Direct Link:
-https://github.com/DMBuce/bucepack/releases/latest/download/heads_fae.zip[`heads_fae.zip`]
 
-.Minecraft files included in `heads_fae.zip`
+.https://github.com/DMBuce/bucepack/releases/latest/download/heads_fae.zip[`heads_fae.zip`]
 [%collapsible]
 ====
 
@@ -1732,9 +1681,8 @@ Download:
 https://github.com/DMBuce/bucepack/releases[All Releases]
 
 Direct Link:
-https://github.com/DMBuce/bucepack/releases/latest/download/heads_golem.zip[`heads_golem.zip`]
 
-.Minecraft files included in `heads_golem.zip`
+.https://github.com/DMBuce/bucepack/releases/latest/download/heads_golem.zip[`heads_golem.zip`]
 [%collapsible]
 ====
 
@@ -1794,9 +1742,8 @@ Download:
 https://github.com/DMBuce/bucepack/releases[All Releases]
 
 Direct Link:
-https://github.com/DMBuce/bucepack/releases/latest/download/heads_player.zip[`heads_player.zip`]
 
-.Minecraft files included in `heads_player.zip`
+.https://github.com/DMBuce/bucepack/releases/latest/download/heads_player.zip[`heads_player.zip`]
 [%collapsible]
 ====
 
@@ -1887,9 +1834,8 @@ Download:
 https://github.com/DMBuce/bucepack/releases[All Releases]
 
 Direct Link:
-https://github.com/DMBuce/bucepack/releases/latest/download/loot_overhaul.zip[`loot_overhaul.zip`]
 
-.Minecraft files included in `loot_overhaul.zip`
+.https://github.com/DMBuce/bucepack/releases/latest/download/loot_overhaul.zip[`loot_overhaul.zip`]
 [%collapsible]
 ====
 
@@ -1964,7 +1910,6 @@ Download:
 https://github.com/DMBuce/bucepack/releases[All Releases]
 
 Direct Link:
-https://github.com/DMBuce/bucepack/releases/latest/download/loot_overhaul_treasure_seeds.zip[`loot_overhaul_treasure_seeds.zip`]
 
 
 Known Issues:
@@ -1996,7 +1941,6 @@ Download:
 https://github.com/DMBuce/bucepack/releases[All Releases]
 
 Direct Link:
-https://github.com/DMBuce/bucepack/releases/latest/download/loot_overhaul_relics.zip[`loot_overhaul_relics.zip`]
 
 
 ==== Starter Relic
@@ -2016,7 +1960,6 @@ Download:
 https://github.com/DMBuce/bucepack/releases[All Releases]
 
 Direct Link:
-https://github.com/DMBuce/bucepack/releases/latest/download/loot_overhaul_starter_relic.zip[`loot_overhaul_starter_relic.zip`]
 
 
 ==== Starter Item
@@ -2044,12 +1987,6 @@ Download:
 https://github.com/DMBuce/bucepack/releases[All Releases]
 
 Direct Links:
-https://github.com/DMBuce/bucepack/releases/latest/download/starter_bed.zip[`starter_bed.zip`]
-https://github.com/DMBuce/bucepack/releases/latest/download/starter_book.zip[`starter_book.zip`]
-https://github.com/DMBuce/bucepack/releases/latest/download/starter_bucket.zip[`starter_bucket.zip`]
-https://github.com/DMBuce/bucepack/releases/latest/download/starter_map.zip[`starter_map.zip`]
-https://github.com/DMBuce/bucepack/releases/latest/download/starter_shulker.zip[`starter_shulker.zip`]
-https://github.com/DMBuce/bucepack/releases/latest/download/starter_spyglass.zip[`starter_spyglass.zip`]
 
 
 
@@ -2070,8 +2007,6 @@ Download:
 https://github.com/DMBuce/bucepack/releases[All Releases]
 
 Direct Links:
-https://github.com/DMBuce/bucepack/releases/latest/download/starter_bonus_chest.zip[`starter_bonus_chest.zip`]
-https://github.com/DMBuce/bucepack/releases/latest/download/starter_bonus_box.zip[`starter_bonus_box.zip`]
 
 
 
@@ -2098,7 +2033,6 @@ Download:
 https://github.com/DMBuce/bucepack/releases[All Releases]
 
 Direct Link:
-https://github.com/DMBuce/bucepack/releases/latest/download/loot_overhaul_treasure_barrels.zip[`loot_overhaul_treasure_barrels.zip`]
 
 
 == Trigger Data Packs
@@ -2121,7 +2055,6 @@ Download:
 https://github.com/DMBuce/bucepack/releases[All Releases]
 
 Direct Link:
-https://github.com/DMBuce/bucepack/releases/latest/download/smart_allays.zip[`smart_allays.zip`]
 
 
 === Poseable
@@ -2137,7 +2070,6 @@ Download:
 https://github.com/DMBuce/bucepack/releases[All Releases]
 
 Direct Link:
-https://github.com/DMBuce/bucepack/releases/latest/download/poseable.zip[`poseable.zip`]
 
 
 === Antidote
@@ -2168,7 +2100,6 @@ Download:
 https://github.com/DMBuce/bucepack/releases[All Releases]
 
 Direct Link:
-https://github.com/DMBuce/bucepack/releases/latest/download/antidote.zip[`antidote.zip`]
 
 
 === Global Effects
@@ -2197,7 +2128,6 @@ Download:
 https://github.com/DMBuce/bucepack/releases[All Releases]
 
 Direct Link:
-https://github.com/DMBuce/bucepack/releases/latest/download/global_effects.zip[`global_effects.zip`]
 
 
 === Leashed
@@ -2214,7 +2144,6 @@ Download:
 https://github.com/DMBuce/bucepack/releases[All Releases]
 
 Direct Link:
-https://github.com/DMBuce/bucepack/releases/latest/download/leashed.zip[`leashed.zip`]
 
 
 === Wandering Loot
@@ -2231,7 +2160,6 @@ Download:
 https://github.com/DMBuce/bucepack/releases[All Releases]
 
 Direct Link:
-https://github.com/DMBuce/bucepack/releases/latest/download/wandering_loot.zip[`wandering_loot.zip`]
 
 
 === Speedy Paths
@@ -2247,7 +2175,6 @@ Download:
 https://github.com/DMBuce/bucepack/releases[All Releases]
 
 Direct Link:
-https://github.com/DMBuce/bucepack/releases/latest/download/speedy_paths.zip[`speedy_paths.zip`]
 
 
 === Ender Relic
@@ -2263,7 +2190,6 @@ Download:
 https://github.com/DMBuce/bucepack/releases[All Releases]
 
 Direct Link:
-https://github.com/DMBuce/bucepack/releases/latest/download/ender_relic.zip[`ender_relic.zip`]
 
 
 === Illusory Traders
@@ -2283,7 +2209,6 @@ Download:
 https://github.com/DMBuce/bucepack/releases[All Releases]
 
 Direct Link:
-https://github.com/DMBuce/bucepack/releases/latest/download/illusory_trader.zip[`illusory_trader.zip`]
 
 
 === Mythic Relics
@@ -2433,9 +2358,8 @@ Download:
 https://github.com/DMBuce/bucepack/releases[All Releases]
 
 Direct Link:
-https://github.com/DMBuce/bucepack/releases/latest/download/relics_mythic.zip[`relics_mythic.zip`]
 
-.Minecraft files included in `relics_mythic.zip`
+.https://github.com/DMBuce/bucepack/releases/latest/download/relics_mythic.zip[`relics_mythic.zip`]
 [%collapsible]
 ====
 
@@ -2514,9 +2438,8 @@ Download:
 https://github.com/DMBuce/bucepack/releases[All Releases]
 
 Direct Link:
-https://github.com/DMBuce/bucepack/releases/latest/download/phantasmal.zip[`phantasmal.zip`]
 
-.Minecraft files included in `phantasmal.zip`
+.https://github.com/DMBuce/bucepack/releases/latest/download/phantasmal.zip[`phantasmal.zip`]
 [%collapsible]
 ====
 
@@ -2554,7 +2477,6 @@ Download:
 https://github.com/DMBuce/bucepack/releases[All Releases]
 
 Direct Link:
-https://github.com/DMBuce/bucepack/releases/latest/download/phantasmal_end.zip[`phantasmal_end.zip`]
 
 
 //Relic of Harmony:
@@ -2585,7 +2507,6 @@ Download:
 https://github.com/DMBuce/bucepack/releases[All Releases]
 
 Direct Link:
-https://github.com/DMBuce/bucepack/releases/latest/download/network_deep.zip[`network_deep.zip`]
 
 
 === Nether Portal Network
@@ -2608,7 +2529,6 @@ Download:
 https://github.com/DMBuce/bucepack/releases[All Releases]
 
 Direct Link:
-https://github.com/DMBuce/bucepack/releases/latest/download/network_nether.zip[`network_nether.zip`]
 
 
 Known Issues:
@@ -2629,7 +2549,6 @@ Download:
 https://github.com/DMBuce/bucepack/releases[All Releases]
 
 Direct Link:
-https://github.com/DMBuce/bucepack/releases/latest/download/storage_orbs.zip[`storage_orbs.zip`]
 
 
 == Data Resource Packs
@@ -2675,9 +2594,8 @@ Download:
 https://github.com/DMBuce/bucepack/releases[All Releases]
 
 Direct Link:
-https://github.com/DMBuce/bucepack/releases/latest/download/copper_overhaul.zip[`copper_overhaul.zip`]
 
-.Minecraft files included in `copper_overhaul.zip`
+.https://github.com/DMBuce/bucepack/releases/latest/download/copper_overhaul.zip[`copper_overhaul.zip`]
 [%collapsible]
 ====
 
@@ -2755,9 +2673,8 @@ Download:
 https://github.com/DMBuce/bucepack/releases[All Releases]
 
 Direct Link:
-https://github.com/DMBuce/bucepack/releases/latest/download/path_strider.zip[`path_strider.zip`]
 
-.Minecraft files included in `path_strider.zip`
+.https://github.com/DMBuce/bucepack/releases/latest/download/path_strider.zip[`path_strider.zip`]
 [%collapsible]
 ====
 
@@ -2799,7 +2716,6 @@ Download:
 https://github.com/DMBuce/bucepack/releases[All Releases]
 
 Direct Link:
-https://github.com/DMBuce/bucepack/releases/latest/download/escape_nether.zip[`escape_nether.zip`]
 
 
 === Escape the End
@@ -2821,7 +2737,6 @@ Download:
 https://github.com/DMBuce/bucepack/releases[All Releases]
 
 Direct Link:
-https://github.com/DMBuce/bucepack/releases/latest/download/escape_the_end.zip[`escape_the_end.zip`]
 
 
 === Escape the Grind
@@ -2859,9 +2774,8 @@ Download:
 https://github.com/DMBuce/bucepack/releases[All Releases]
 
 Direct Link:
-https://github.com/DMBuce/bucepack/releases/latest/download/escape_grind.zip[`escape_grind.zip`]
 
-.Minecraft files included in `escape_grind.zip`
+.https://github.com/DMBuce/bucepack/releases/latest/download/escape_grind.zip[`escape_grind.zip`]
 [%collapsible]
 ====
 
@@ -2905,9 +2819,8 @@ Download:
 https://github.com/DMBuce/bucepack/releases[All Releases]
 
 Direct Link:
-https://github.com/DMBuce/bucepack/releases/latest/download/dripblock.zip[`dripblock.zip`]
 
-.Minecraft files included in `dripblock.zip`
+.https://github.com/DMBuce/bucepack/releases/latest/download/dripblock.zip[`dripblock.zip`]
 [%collapsible]
 ====
 
@@ -2957,7 +2870,6 @@ Download:
 https://github.com/DMBuce/bucepack/releases[All Releases]
 
 Direct Link:
-https://github.com/DMBuce/bucepack/releases/latest/download/frienderchest.zip[`frienderchest.zip`]
 
 
 === Renewable Structures
@@ -2972,9 +2884,8 @@ Download:
 https://github.com/DMBuce/bucepack/releases[All Releases]
 
 Direct Link:
-https://github.com/DMBuce/bucepack/releases/latest/download/worldgen_renewable_structures.zip[`worldgen_renewable_structures.zip`]
 
-.Minecraft files included in `worldgen_renewable_structures.zip`
+.https://github.com/DMBuce/bucepack/releases/latest/download/worldgen_renewable_structures.zip[`worldgen_renewable_structures.zip`]
 [%collapsible]
 ====
 
@@ -2996,9 +2907,8 @@ Download:
 https://github.com/DMBuce/bucepack/releases[All Releases]
 
 Direct Link:
-https://github.com/DMBuce/bucepack/releases/latest/download/worldgen_trees.zip[`worldgen_trees.zip`]
 
-.Minecraft files included in `worldgen_trees.zip`
+.https://github.com/DMBuce/bucepack/releases/latest/download/worldgen_trees.zip[`worldgen_trees.zip`]
 [%collapsible]
 ====
 
@@ -3242,7 +3152,6 @@ Download:
 https://github.com/DMBuce/bucepack/releases[All Releases]
 
 Direct Link:
-https://github.com/DMBuce/bucepack/releases/latest/download/lichdom.zip[`lichdom.zip`]
 
 
 Known Issues:
