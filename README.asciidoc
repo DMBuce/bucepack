@@ -80,6 +80,8 @@ image::https://i.imgur.com/WLFKdEM.png[Painting Overhaul]
 [%collapsible]
 ====
 
+Minecraft files included:
+
 ```
 assets/minecraft/textures/painting/alban.png
 assets/minecraft/textures/painting/aztec2.png
@@ -138,6 +140,8 @@ block underneath:
 [%collapsible]
 ====
 
+Minecraft files included:
+
 ```
 assets/minecraft/blockstates/note_block.json
 assets/minecraft/models/item/note_block.json
@@ -168,6 +172,8 @@ resource pack.
 [%collapsible]
 ====
 
+Minecraft files included:
+
 ```
 assets/minecraft/textures/gui/container/brewing_stand.png
 ```
@@ -177,6 +183,8 @@ assets/minecraft/textures/gui/container/brewing_stand.png
 .https://github.com/DMBuce/bucepack/releases/latest/download/brew_guide_darkmode.zip[`brew_guide_darkmode.zip`]
 [%collapsible]
 ====
+
+Minecraft files included:
 
 ```
 assets/minecraft/textures/gui/container/brewing_stand.png
@@ -205,6 +213,8 @@ image::https://i.imgur.com/EyBG6cG.png[Tech Arrows]
 .https://github.com/DMBuce/bucepack/releases/latest/download/tech_arrows.zip[`tech_arrows.zip`]
 [%collapsible]
 ====
+
+Minecraft files included:
 
 ```
 assets/minecraft/models/block/hopper_side.json
@@ -235,6 +245,8 @@ image::https://i.imgur.com/oF0MLK9.png[Village Mech]
 .https://github.com/DMBuce/bucepack/releases/latest/download/villager_mech.zip[`villager_mech.zip`]
 [%collapsible]
 ====
+
+Minecraft files included:
 
 ```
 assets/minecraft/textures/entity/iron_golem/iron_golem_crackiness_high.png
@@ -268,6 +280,8 @@ saddling a pig gives it 4 armor defense points
 [%collapsible]
 ====
 
+Minecraft files included:
+
 ```
 assets/minecraft/textures/entity/pig/pig_saddle.png
 ```
@@ -290,6 +304,8 @@ image::https://i.imgur.com/bJEeUdc.png[Ravager]
 .https://github.com/DMBuce/bucepack/releases/latest/download/ravager.zip[`ravager.zip`]
 [%collapsible]
 ====
+
+Minecraft files included:
 
 ```
 assets/minecraft/textures/entity/illager/ravager.png
@@ -323,6 +339,8 @@ this pack organizes them into "types" that determine the ore's shape.
 [%collapsible]
 ====
 
+Minecraft files included:
+
 ```
 assets/minecraft/textures/block/coal_ore.png
 assets/minecraft/textures/block/copper_ore.png
@@ -352,6 +370,8 @@ image::https://i.imgur.com/2RWgrPq.png[Discreet Pumpkin]
 .https://github.com/DMBuce/bucepack/releases/latest/download/discreet_pumpkin.zip[`discreet_pumpkin.zip`]
 [%collapsible]
 ====
+
+Minecraft files included:
 
 ```
 assets/minecraft/textures/misc/pumpkinblur.png
@@ -415,6 +435,8 @@ image::https://i.imgur.com/DorMwHO.png[Classic Food]
 [%collapsible]
 ====
 
+Minecraft files included:
+
 ```
 assets/minecraft/textures/block/oak_log.png
 ```
@@ -424,6 +446,8 @@ assets/minecraft/textures/block/oak_log.png
 .https://github.com/DMBuce/bucepack/releases/latest/download/classic_obsidian.zip[`classic_obsidian.zip`]
 [%collapsible]
 ====
+
+Minecraft files included:
 
 ```
 assets/minecraft/textures/block/crying_obsidian.png
@@ -435,6 +459,8 @@ assets/minecraft/textures/block/obsidian.png
 .https://github.com/DMBuce/bucepack/releases/latest/download/classic_netherrack.zip[`classic_netherrack.zip`]
 [%collapsible]
 ====
+
+Minecraft files included:
 
 ```
 assets/minecraft/textures/block/crimson_nylium_side.png
@@ -450,6 +476,8 @@ assets/minecraft/textures/block/warped_nylium_side.png
 [%collapsible]
 ====
 
+Minecraft files included:
+
 ```
 assets/minecraft/textures/block/lava_flow.png
 assets/minecraft/textures/block/lava_flow.png.mcmeta
@@ -463,6 +491,8 @@ assets/minecraft/textures/block/lava_still.png.mcmeta
 [%collapsible]
 ====
 
+Minecraft files included:
+
 ```
 assets/minecraft/textures/block/gravel.png
 ```
@@ -472,6 +502,8 @@ assets/minecraft/textures/block/gravel.png
 .https://github.com/DMBuce/bucepack/releases/latest/download/classic_lapis.zip[`classic_lapis.zip`]
 [%collapsible]
 ====
+
+Minecraft files included:
 
 ```
 assets/minecraft/textures/block/lapis_block.png
@@ -483,6 +515,8 @@ assets/minecraft/textures/block/lapis_block.png
 [%collapsible]
 ====
 
+Minecraft files included:
+
 ```
 assets/minecraft/lang/en_us.json
 assets/minecraft/textures/block/poppy.png
@@ -493,6 +527,8 @@ assets/minecraft/textures/block/poppy.png
 .https://github.com/DMBuce/bucepack/releases/latest/download/classic_food.zip[`classic_food.zip`]
 [%collapsible]
 ====
+
+Minecraft files included:
 
 ```
 assets/minecraft/textures/block/cake_bottom.png
@@ -553,6 +589,8 @@ following datapacks.
 .https://github.com/DMBuce/bucepack/releases/latest/download/spellsmithing_guide.zip[`spellsmithing_guide.zip`]
 [%collapsible]
 ====
+
+Minecraft files included:
 
 ```
 assets/minecraft/models/item/armor_stand.json
@@ -654,6 +692,8 @@ Discreet Meow makes cats meow less often.
 [%collapsible]
 ====
 
+Minecraft files included:
+
 ```
 assets/minecraft/sounds.json
 ```
@@ -663,6 +703,8 @@ assets/minecraft/sounds.json
 .https://github.com/DMBuce/bucepack/releases/latest/download/discreet_meow.zip[`discreet_meow.zip`]
 [%collapsible]
 ====
+
+Minecraft files included:
 
 ```
 assets/minecraft/sounds.json
@@ -727,6 +769,8 @@ This pack fixes https://bugs.mojang.com/browse/MC-199752[MC-199752].
 [%collapsible]
 ====
 
+Minecraft files included:
+
 ```
 data/minecraft/tags/blocks/mineable/axe.json
 data/minecraft/tags/blocks/mineable/pickaxe.json
@@ -750,6 +794,8 @@ image::https://i.imgur.com/N0l5B2c.png[Climbable]
 .https://github.com/DMBuce/bucepack/releases/latest/download/climbable.zip[`climbable.zip`]
 [%collapsible]
 ====
+
+Minecraft files included:
 
 ```
 data/minecraft/tags/blocks/climbable.json
@@ -780,6 +826,8 @@ image::https://i.imgur.com/c7kQFcp.png[Dragonproof Blocks]
 [%collapsible]
 ====
 
+Minecraft files included:
+
 ```
 data/minecraft/tags/blocks/dragon_immune.json
 ```
@@ -805,6 +853,8 @@ https://raw.githubusercontent.com/DMBuce/bucepack/master/data/minecraft/tags/blo
 [%collapsible]
 ====
 
+Minecraft files included:
+
 ```
 data/minecraft/tags/blocks/enderman_holdable.json
 ```
@@ -826,6 +876,8 @@ in addition to Strongholds.
 .https://github.com/DMBuce/bucepack/releases/latest/download/eyes_of_seeking.zip[`eyes_of_seeking.zip`]
 [%collapsible]
 ====
+
+Minecraft files included:
 
 ```
 data/minecraft/tags/worldgen/structure/eye_of_ender_located.json
@@ -863,6 +915,8 @@ image::https://i.imgur.com/FnDMksX.png[Acclimated]
 [%collapsible]
 ====
 
+Minecraft files included:
+
 ```
 data/minecraft/tags/blocks/strider_warm_blocks.json
 data/minecraft/tags/entity_types/dismounts_underwater.json
@@ -886,6 +940,8 @@ Makes piglins hostile when you break blocks that bastions are made out of.
 .https://github.com/DMBuce/bucepack/releases/latest/download/aggro_bastions.zip[`aggro_bastions.zip`]
 [%collapsible]
 ====
+
+Minecraft files included:
 
 ```
 data/minecraft/tags/blocks/guarded_by_piglins.json
@@ -914,6 +970,8 @@ Best enjoyed in skyblock worlds such as <<dripblock,DripBlock>>.
 [%collapsible]
 ====
 
+Minecraft files included:
+
 ```
 data/minecraft/tags/blocks/climbable.json
 ```
@@ -937,6 +995,8 @@ image::https://i.imgur.com/aZKvCrc.png[Waterproof Tech]
 [%collapsible]
 ====
 
+Minecraft files included:
+
 ```
 data/minecraft/tags/blocks/signs.json
 ```
@@ -959,6 +1019,8 @@ image::https://i.imgur.com/paceJ4Z.png[Blue Fire]
 .https://github.com/DMBuce/bucepack/releases/latest/download/blue_fire.zip[`blue_fire.zip`]
 [%collapsible]
 ====
+
+Minecraft files included:
 
 ```
 data/minecraft/tags/blocks/soul_fire_base_blocks.json
@@ -1003,6 +1065,8 @@ You can also dye any combination of terracotta, glass, or glass panes.
 .https://github.com/DMBuce/bucepack/releases/latest/download/crafting_colorful.zip[`crafting_colorful.zip`]
 [%collapsible]
 ====
+
+Minecraft files included:
 
 ```
 data/minecraft/recipes/black_bed_from_white_bed.json
@@ -1123,6 +1187,8 @@ The leather horse armor recipe is changed to match other horse armor as well.
 [%collapsible]
 ====
 
+Minecraft files included:
+
 ```
 data/minecraft/recipes/leather_horse_armor.json
 ```
@@ -1162,6 +1228,8 @@ Makes some crafting recipes cheaper.
 .https://github.com/DMBuce/bucepack/releases/latest/download/crafting_plentiful.zip[`crafting_plentiful.zip`]
 [%collapsible]
 ====
+
+Minecraft files included:
 
 ```
 data/minecraft/recipes/acacia_fence_gate.json
@@ -1351,6 +1419,8 @@ Lecterns use two extra slabs.
 [%collapsible]
 ====
 
+Minecraft files included:
+
 ```
 data/minecraft/recipes/barrel.json
 data/minecraft/recipes/blast_furnace.json
@@ -1442,6 +1512,8 @@ See <<language-support,Language Support>> for details.
 [%collapsible]
 ====
 
+Minecraft files included:
+
 ```
 assets/minecraft/lang/en_us.json
 ```
@@ -1497,6 +1569,8 @@ loot tables of the blocks shown above.
 [%collapsible]
 ====
 
+Minecraft files included:
+
 ```
 data/minecraft/loot_tables/blocks/cobweb.json
 data/minecraft/loot_tables/blocks/dead_bush.json
@@ -1548,6 +1622,8 @@ drop 2 shells.
 [%collapsible]
 ====
 
+Minecraft files included:
+
 ```
 data/minecraft/loot_tables/blocks/beetroots.json
 data/minecraft/loot_tables/blocks/jungle_leaves.json
@@ -1585,6 +1661,8 @@ compatible with <<loot-overhaul,Loot Overhaul>>.
 .https://github.com/DMBuce/bucepack/releases/latest/download/no_treasure_maps.zip[`no_treasure_maps.zip`]
 [%collapsible]
 ====
+
+Minecraft files included:
 
 ```
 data/minecraft/loot_tables/chests/shipwreck_map.json
@@ -1687,6 +1765,8 @@ and look like tiny blocks.
 .https://github.com/DMBuce/bucepack/releases/latest/download/heads_fae.zip[`heads_fae.zip`]
 [%collapsible]
 ====
+
+Minecraft files included:
 
 ```
 data/minecraft/loot_tables/gameplay/cat_morning_gift.json
@@ -1803,6 +1883,8 @@ enchanted golem, pie golem, lime golem, and honey golem.
 [%collapsible]
 ====
 
+Minecraft files included:
+
 ```
 data/minecraft/loot_tables/gameplay/hero_of_the_village/armorer_gift.json
 data/minecraft/loot_tables/gameplay/hero_of_the_village/butcher_gift.json
@@ -1865,6 +1947,8 @@ Shown above are the heads of Computron, TV Boy, Donut Girl, and Rubik.
 .https://github.com/DMBuce/bucepack/releases/latest/download/heads_player.zip[`heads_player.zip`]
 [%collapsible]
 ====
+
+Minecraft files included:
 
 ```
 data/minecraft/loot_tables/entities/player.json
@@ -1959,6 +2043,8 @@ fishing, or bartering loot tables.
 .https://github.com/DMBuce/bucepack/releases/latest/download/loot_overhaul.zip[`loot_overhaul.zip`]
 [%collapsible]
 ====
+
+Minecraft files included:
 
 ```
 data/minecraft/loot_tables/chests/abandoned_mineshaft.json
@@ -2600,6 +2686,8 @@ loot tables.
 [%collapsible]
 ====
 
+Minecraft files included:
+
 ```
 data/minecraft/loot_tables/blocks/deepslate_emerald_ore.json
 data/minecraft/loot_tables/entities/bee.json
@@ -2681,6 +2769,8 @@ which adds phantoms to the dragon fight.
 .https://github.com/DMBuce/bucepack/releases/latest/download/phantasmal.zip[`phantasmal.zip`]
 [%collapsible]
 ====
+
+Minecraft files included:
 
 ```
 data/minecraft/loot_tables/entities/phantom.json
@@ -2864,6 +2954,8 @@ See <<language-support,Language Support>> for details.
 [%collapsible]
 ====
 
+Minecraft files included:
+
 ```
 assets/minecraft/lang/en_us.json
 assets/minecraft/models/block/light_weighted_pressure_plate_down.json
@@ -2944,6 +3036,8 @@ See <<language-support,Language Support>> for details.
 .https://github.com/DMBuce/bucepack/releases/latest/download/path_strider.zip[`path_strider.zip`]
 [%collapsible]
 ====
+
+Minecraft files included:
 
 ```
 assets/minecraft/lang/en_us.json
@@ -3060,6 +3154,8 @@ Changes that facilitate survival in The End:
 [%collapsible]
 ====
 
+Minecraft files included:
+
 ```
 data/minecraft/loot_tables/blocks/crying_obsidian.json
 data/minecraft/loot_tables/chests/end_city_treasure.json
@@ -3106,6 +3202,8 @@ and <<hover-mode,Hover Mode>> adds basic flight.
 .https://github.com/DMBuce/bucepack/releases/latest/download/dripblock.zip[`dripblock.zip`]
 [%collapsible]
 ====
+
+Minecraft files included:
 
 ```
 data/minecraft/loot_tables/entities/creeper.json
@@ -3180,6 +3278,8 @@ Cave spiders drop cobwebs.
 [%collapsible]
 ====
 
+Minecraft files included:
+
 ```
 data/minecraft/loot_tables/entities/cave_spider.json
 data/minecraft/loot_tables/entities/husk.json
@@ -3204,6 +3304,8 @@ and Logs can be crafted from 2 Wood.
 .https://github.com/DMBuce/bucepack/releases/latest/download/worldgen_trees.zip[`worldgen_trees.zip`]
 [%collapsible]
 ====
+
+Minecraft files included:
 
 ```
 data/minecraft/loot_tables/blocks/acacia_wood.json
