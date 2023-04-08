@@ -1,19 +1,39 @@
-#!/bin/bash -a
+#!/bin/bash
 
-packs="$(printf '%s\n' "$@" | sed 's/\.zip$//')"
+latest="$(<latest.txt)"
 header='Direct Link'
 (( $# > 1 )) && header='Direct Links'
 
-sempl <<-EOF
-	Download:
-	https://github.com/DMBuce/bucepack/releases[All Releases]
-
-	$header:
-	{<\$packs}https://github.com/DMBuce/bucepack/releases/latest/download/{0}.zip[\`{0}.zip\`]
-EOF
+echo "Download:"
+echo "https://github.com/DMBuce/bucepack/releases[All Releases]"
+echo ""
+echo "$header:"
 
 for pack in "$@"; do
+	echo ""https://github.com/DMBuce/bucepack/releases/latest/download/$pack.zip[\`$pack.zip\`]""
+done
+
+for pack in "$@"; do
+	pack="${pack%.zip}"
+
+	output=""
+	while read file; do
+		if [[ $file == data/minecraft/* || $file == assets/minecraft/* ]] \
+			&& [[ -f "$latest.jar/$file" ]]
+		then
+			output="$output"$'\n'"$file"
+		fi
+	done < "cache/$pack.files"
 	echo
-	./bin/packfiles "$pack"
+	if [[ -n "$output" ]]; then
+		echo ".Minecraft files included in \`$pack.zip\`"
+		echo "[%collapsible]"
+		echo "===="
+		echo
+		echo "\`\`\`$output"
+		echo "\`\`\`"
+		echo
+		echo "===="
+	fi
 done
 

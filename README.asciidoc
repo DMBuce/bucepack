@@ -1496,20 +1496,6 @@ data/minecraft/loot_tables/entities/shulker.json
 
 ====
 
-.Minecraft files included in `husbandry.zip`
-[%collapsible]
-====
-
-```
-data/minecraft/loot_tables/blocks/beetroots.json
-data/minecraft/loot_tables/blocks/jungle_leaves.json
-data/minecraft/loot_tables/blocks/wheat.json
-data/minecraft/loot_tables/entities/goat.json
-data/minecraft/loot_tables/entities/shulker.json
-```
-
-====
-
 === No Treasure Maps
 
 Removes buried treasure maps in shipwrecks. There is a
@@ -2973,27 +2959,6 @@ https://github.com/DMBuce/bucepack/releases[All Releases]
 Direct Link:
 https://github.com/DMBuce/bucepack/releases/latest/download/frienderchest.zip[`frienderchest.zip`]
 
-
-//=== Overworld
-//
-//Piglins and hoglins don't zombify in the overworld.
-//
-//Download:
-//https://github.com/DMBuce/bucepack/releases[All Releases]
-//
-//Direct Link:
-//https://github.com/DMBuce/bucepack/releases/latest/download/worldgen_overworld.zip[`worldgen_overworld.zip`]
-//
-//.Minecraft files included in `worldgen_overworld.zip`
-//[%collapsible]
-//====
-//
-//```
-//data/minecraft/dimension_type/overworld_caves.json
-//data/minecraft/dimension_type/overworld.json
-//```
-//
-//====
 
 === Renewable Structures
 

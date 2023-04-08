@@ -599,8 +599,6 @@ drop 2 shells.
 
 {!./bin/packsummary husbandry}
 
-{!./bin/packfiles husbandry}
-
 === No Treasure Maps
 
 Removes buried treasure maps in shipwrecks. There is a
@@ -1517,12 +1515,6 @@ Players can enter the Frienderchest
 by right-clicking an enderchest with an ender pearl in the overworld.
 
 {!./bin/packsummary frienderchest}
-
-//=== Overworld
-//
-//Piglins and hoglins don't zombify in the overworld.
-//
-//{!./bin/packsummary worldgen_overworld}
 
 === Renewable Structures
 
