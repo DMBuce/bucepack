@@ -1387,36 +1387,14 @@ The following blocks can be freely crafted into each other.
 [%collapsible]
 ====
 
-* blackstone slab
-* blackstone stairs
-* blackstone wall
 * button
 * door
 * fence
 * fence gate
-* nether brick fence
-* nether brick slab
-* nether brick stairs
-* nether brick wall
-* polished blackslab
-* polished blackstairs
-* polished blackstone button
-* polished blackstone pressure plate
-* polished blackstone slab
-* polished blackstone stairs
-* polished blackstone wall
-* polished blackwall
 * pressure plate
-* red nether brick slab
-* red nether brick stairs
-* red nether brick wall
 * sign
 * slab
 * stairs
-* stone button
-* stone pressure plate
-* stone slab
-* stone stairs
 * trapdoor
 * wall
 
