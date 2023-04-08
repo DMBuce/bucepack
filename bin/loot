@@ -1,0 +1,23 @@
+#!/bin/bash
+
+pack="${1%.zip}"
+
+if [[ -f cache/$pack.files ]]; then
+	output="$(
+		grep '^data/minecraft.*/loot_tables/' "cache/$pack.files" \
+			| ./bin/path2res \
+			| sed 's/.*/* `&`/'
+	)"
+	if [[ -n "$output" ]]; then
+		cat <<-EOF
+			.This datapack is not compatible with other datapacks that modify the following loot tables.
+			[%collapsible]
+			====
+
+			$output
+
+			====
+		EOF
+	fi
+fi
+

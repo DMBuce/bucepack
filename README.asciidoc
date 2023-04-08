@@ -750,6 +750,17 @@ Shulkers have a chance to drop 2 shulker shells when killed with Looting.
 With Looting III, there is a 50% chance to drop 1 shell and a 50% chance to
 drop 2 shells.
 
+.This datapack is not compatible with other datapacks that modify the following loot tables.
+[%collapsible]
+====
+
+* `minecraft:blocks/beetroots`
+* `minecraft:blocks/jungle_leaves`
+* `minecraft:blocks/wheat`
+* `minecraft:entities/goat`
+* `minecraft:entities/shulker`
+
+====
 
 Download:
 https://github.com/DMBuce/bucepack/releases[All Releases]
