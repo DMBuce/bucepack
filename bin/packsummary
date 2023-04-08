@@ -29,9 +29,7 @@ for pack in "$@"; do
 	echo "===="
 	if [[ -n "$output" ]]; then
 		echo
-		echo "\`\`\`"
-		echo "Modified resources/data:"
-		echo "$output"
+		echo "\`\`\`$output"
 		echo "\`\`\`"
 		echo
 	fi

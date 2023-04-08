@@ -81,8 +81,6 @@ image::https://i.imgur.com/WLFKdEM.png[Painting Overhaul]
 ====
 
 ```
-Modified resources/data:
-
 assets/minecraft/textures/painting/alban.png
 assets/minecraft/textures/painting/aztec2.png
 assets/minecraft/textures/painting/aztec.png
@@ -141,8 +139,6 @@ block underneath:
 ====
 
 ```
-Modified resources/data:
-
 assets/minecraft/blockstates/note_block.json
 assets/minecraft/models/item/note_block.json
 ```
@@ -173,8 +169,6 @@ resource pack.
 ====
 
 ```
-Modified resources/data:
-
 assets/minecraft/textures/gui/container/brewing_stand.png
 ```
 
@@ -185,8 +179,6 @@ assets/minecraft/textures/gui/container/brewing_stand.png
 ====
 
 ```
-Modified resources/data:
-
 assets/minecraft/textures/gui/container/brewing_stand.png
 ```
 
@@ -215,8 +207,6 @@ image::https://i.imgur.com/EyBG6cG.png[Tech Arrows]
 ====
 
 ```
-Modified resources/data:
-
 assets/minecraft/models/block/hopper_side.json
 assets/minecraft/models/block/observer.json
 assets/minecraft/models/block/observer_on.json
@@ -247,8 +237,6 @@ image::https://i.imgur.com/oF0MLK9.png[Village Mech]
 ====
 
 ```
-Modified resources/data:
-
 assets/minecraft/textures/entity/iron_golem/iron_golem_crackiness_high.png
 assets/minecraft/textures/entity/iron_golem/iron_golem_crackiness_low.png
 assets/minecraft/textures/entity/iron_golem/iron_golem_crackiness_medium.png
@@ -281,8 +269,6 @@ saddling a pig gives it 4 armor defense points
 ====
 
 ```
-Modified resources/data:
-
 assets/minecraft/textures/entity/pig/pig_saddle.png
 ```
 
@@ -306,8 +292,6 @@ image::https://i.imgur.com/bJEeUdc.png[Ravager]
 ====
 
 ```
-Modified resources/data:
-
 assets/minecraft/textures/entity/illager/ravager.png
 ```
 
@@ -340,8 +324,6 @@ this pack organizes them into "types" that determine the ore's shape.
 ====
 
 ```
-Modified resources/data:
-
 assets/minecraft/textures/block/coal_ore.png
 assets/minecraft/textures/block/copper_ore.png
 assets/minecraft/textures/block/diamond_ore.png
@@ -372,8 +354,6 @@ image::https://i.imgur.com/2RWgrPq.png[Discreet Pumpkin]
 ====
 
 ```
-Modified resources/data:
-
 assets/minecraft/textures/misc/pumpkinblur.png
 ```
 
@@ -436,8 +416,6 @@ image::https://i.imgur.com/DorMwHO.png[Classic Food]
 ====
 
 ```
-Modified resources/data:
-
 assets/minecraft/textures/block/oak_log.png
 ```
 
@@ -448,8 +426,6 @@ assets/minecraft/textures/block/oak_log.png
 ====
 
 ```
-Modified resources/data:
-
 assets/minecraft/textures/block/crying_obsidian.png
 assets/minecraft/textures/block/obsidian.png
 ```
@@ -461,8 +437,6 @@ assets/minecraft/textures/block/obsidian.png
 ====
 
 ```
-Modified resources/data:
-
 assets/minecraft/textures/block/crimson_nylium_side.png
 assets/minecraft/textures/block/nether_gold_ore.png
 assets/minecraft/textures/block/nether_quartz_ore.png
@@ -477,8 +451,6 @@ assets/minecraft/textures/block/warped_nylium_side.png
 ====
 
 ```
-Modified resources/data:
-
 assets/minecraft/textures/block/lava_flow.png
 assets/minecraft/textures/block/lava_flow.png.mcmeta
 assets/minecraft/textures/block/lava_still.png
@@ -492,8 +464,6 @@ assets/minecraft/textures/block/lava_still.png.mcmeta
 ====
 
 ```
-Modified resources/data:
-
 assets/minecraft/textures/block/gravel.png
 ```
 
@@ -504,8 +474,6 @@ assets/minecraft/textures/block/gravel.png
 ====
 
 ```
-Modified resources/data:
-
 assets/minecraft/textures/block/lapis_block.png
 ```
 
@@ -516,8 +484,6 @@ assets/minecraft/textures/block/lapis_block.png
 ====
 
 ```
-Modified resources/data:
-
 assets/minecraft/lang/en_us.json
 assets/minecraft/textures/block/poppy.png
 ```
@@ -529,8 +495,6 @@ assets/minecraft/textures/block/poppy.png
 ====
 
 ```
-Modified resources/data:
-
 assets/minecraft/textures/block/cake_bottom.png
 assets/minecraft/textures/block/cake_inner.png
 assets/minecraft/textures/block/cake_side.png
@@ -591,8 +555,6 @@ following datapacks.
 ====
 
 ```
-Modified resources/data:
-
 assets/minecraft/models/item/armor_stand.json
 assets/minecraft/models/item/bow.json
 assets/minecraft/models/item/crossbow.json
@@ -693,8 +655,6 @@ Discreet Meow makes cats meow less often.
 ====
 
 ```
-Modified resources/data:
-
 assets/minecraft/sounds.json
 ```
 
@@ -705,8 +665,6 @@ assets/minecraft/sounds.json
 ====
 
 ```
-Modified resources/data:
-
 assets/minecraft/sounds.json
 ```
 
@@ -770,8 +728,6 @@ This pack fixes https://bugs.mojang.com/browse/MC-199752[MC-199752].
 ====
 
 ```
-Modified resources/data:
-
 data/minecraft/tags/blocks/mineable/axe.json
 data/minecraft/tags/blocks/mineable/pickaxe.json
 ```
@@ -796,8 +752,6 @@ image::https://i.imgur.com/N0l5B2c.png[Climbable]
 ====
 
 ```
-Modified resources/data:
-
 data/minecraft/tags/blocks/climbable.json
 ```
 
@@ -827,8 +781,6 @@ image::https://i.imgur.com/c7kQFcp.png[Dragonproof Blocks]
 ====
 
 ```
-Modified resources/data:
-
 data/minecraft/tags/blocks/dragon_immune.json
 ```
 
@@ -854,8 +806,6 @@ https://raw.githubusercontent.com/DMBuce/bucepack/master/data/minecraft/tags/blo
 ====
 
 ```
-Modified resources/data:
-
 data/minecraft/tags/blocks/enderman_holdable.json
 ```
 
@@ -878,8 +828,6 @@ in addition to Strongholds.
 ====
 
 ```
-Modified resources/data:
-
 data/minecraft/tags/worldgen/structure/eye_of_ender_located.json
 ```
 
@@ -916,8 +864,6 @@ image::https://i.imgur.com/FnDMksX.png[Acclimated]
 ====
 
 ```
-Modified resources/data:
-
 data/minecraft/tags/blocks/strider_warm_blocks.json
 data/minecraft/tags/entity_types/dismounts_underwater.json
 data/minecraft/tags/entity_types/fall_damage_immune.json
@@ -942,8 +888,6 @@ Makes piglins hostile when you break blocks that bastions are made out of.
 ====
 
 ```
-Modified resources/data:
-
 data/minecraft/tags/blocks/guarded_by_piglins.json
 ```
 
@@ -971,8 +915,6 @@ Best enjoyed in skyblock worlds such as <<dripblock,DripBlock>>.
 ====
 
 ```
-Modified resources/data:
-
 data/minecraft/tags/blocks/climbable.json
 ```
 
@@ -996,8 +938,6 @@ image::https://i.imgur.com/aZKvCrc.png[Waterproof Tech]
 ====
 
 ```
-Modified resources/data:
-
 data/minecraft/tags/blocks/signs.json
 ```
 
@@ -1021,8 +961,6 @@ image::https://i.imgur.com/paceJ4Z.png[Blue Fire]
 ====
 
 ```
-Modified resources/data:
-
 data/minecraft/tags/blocks/soul_fire_base_blocks.json
 ```
 
@@ -1067,8 +1005,6 @@ You can also dye any combination of terracotta, glass, or glass panes.
 ====
 
 ```
-Modified resources/data:
-
 data/minecraft/recipes/black_bed_from_white_bed.json
 data/minecraft/recipes/black_candle.json
 data/minecraft/recipes/black_stained_glass.json
@@ -1188,8 +1124,6 @@ The leather horse armor recipe is changed to match other horse armor as well.
 ====
 
 ```
-Modified resources/data:
-
 data/minecraft/recipes/leather_horse_armor.json
 ```
 
@@ -1230,8 +1164,6 @@ Makes some crafting recipes cheaper.
 ====
 
 ```
-Modified resources/data:
-
 data/minecraft/recipes/acacia_fence_gate.json
 data/minecraft/recipes/acacia_fence.json
 data/minecraft/recipes/acacia_pressure_plate.json
@@ -1420,8 +1352,6 @@ Lecterns use two extra slabs.
 ====
 
 ```
-Modified resources/data:
-
 data/minecraft/recipes/barrel.json
 data/minecraft/recipes/blast_furnace.json
 data/minecraft/recipes/cartography_table.json
@@ -1513,8 +1443,6 @@ See <<language-support,Language Support>> for details.
 ====
 
 ```
-Modified resources/data:
-
 assets/minecraft/lang/en_us.json
 ```
 
@@ -1567,8 +1495,6 @@ pumpkins, beehives, and bee nests.
 ====
 
 ```
-Modified resources/data:
-
 data/minecraft/loot_tables/blocks/cobweb.json
 data/minecraft/loot_tables/blocks/dead_bush.json
 data/minecraft/loot_tables/blocks/fern.json
@@ -1620,8 +1546,6 @@ drop 2 shells.
 ====
 
 ```
-Modified resources/data:
-
 data/minecraft/loot_tables/blocks/beetroots.json
 data/minecraft/loot_tables/blocks/jungle_leaves.json
 data/minecraft/loot_tables/blocks/wheat.json
@@ -1660,8 +1584,6 @@ compatible with <<loot-overhaul,Loot Overhaul>>.
 ====
 
 ```
-Modified resources/data:
-
 data/minecraft/loot_tables/chests/shipwreck_map.json
 ```
 
@@ -1764,8 +1686,6 @@ and look like tiny blocks.
 ====
 
 ```
-Modified resources/data:
-
 data/minecraft/loot_tables/gameplay/cat_morning_gift.json
 ```
 
@@ -1881,8 +1801,6 @@ enchanted golem, pie golem, lime golem, and honey golem.
 ====
 
 ```
-Modified resources/data:
-
 data/minecraft/loot_tables/gameplay/hero_of_the_village/armorer_gift.json
 data/minecraft/loot_tables/gameplay/hero_of_the_village/butcher_gift.json
 data/minecraft/loot_tables/gameplay/hero_of_the_village/cartographer_gift.json
@@ -1946,8 +1864,6 @@ Shown above are the heads of Computron, TV Boy, Donut Girl, and Rubik.
 ====
 
 ```
-Modified resources/data:
-
 data/minecraft/loot_tables/entities/player.json
 ```
 
@@ -2039,8 +1955,6 @@ and have a custom texture if you have the
 ====
 
 ```
-Modified resources/data:
-
 data/minecraft/loot_tables/chests/abandoned_mineshaft.json
 data/minecraft/loot_tables/chests/ancient_city_ice_box.json
 data/minecraft/loot_tables/chests/ancient_city.json
@@ -2677,8 +2591,6 @@ which provide access to some of the relics.
 ====
 
 ```
-Modified resources/data:
-
 data/minecraft/loot_tables/blocks/deepslate_emerald_ore.json
 data/minecraft/loot_tables/entities/bee.json
 data/minecraft/loot_tables/entities/endermite.json
@@ -2761,8 +2673,6 @@ which adds phantoms to the dragon fight.
 ====
 
 ```
-Modified resources/data:
-
 data/minecraft/loot_tables/entities/phantom.json
 ```
 
@@ -2945,8 +2855,6 @@ See <<language-support,Language Support>> for details.
 ====
 
 ```
-Modified resources/data:
-
 assets/minecraft/lang/en_us.json
 assets/minecraft/models/block/light_weighted_pressure_plate_down.json
 assets/minecraft/models/block/light_weighted_pressure_plate.json
@@ -3028,8 +2936,6 @@ See <<language-support,Language Support>> for details.
 ====
 
 ```
-Modified resources/data:
-
 assets/minecraft/lang/en_us.json
 assets/minecraft/lang/en_us.json
 assets/minecraft/lang/en_us.json
@@ -3145,8 +3051,6 @@ Changes that facilitate survival in The End:
 ====
 
 ```
-Modified resources/data:
-
 data/minecraft/loot_tables/blocks/crying_obsidian.json
 data/minecraft/loot_tables/chests/end_city_treasure.json
 data/minecraft/loot_tables/entities/endermite.json
@@ -3194,8 +3098,6 @@ and <<hover-mode,Hover Mode>> adds basic flight.
 ====
 
 ```
-Modified resources/data:
-
 data/minecraft/loot_tables/entities/creeper.json
 data/minecraft/tags/blocks/moss_replaceable.json
 data/minecraft/tags/worldgen/biome/has_structure/ancient_city.json
@@ -3269,8 +3171,6 @@ Cave spiders drop cobwebs.
 ====
 
 ```
-Modified resources/data:
-
 data/minecraft/loot_tables/entities/cave_spider.json
 data/minecraft/loot_tables/entities/husk.json
 data/minecraft/worldgen/structure/desert_pyramid.json
@@ -3296,8 +3196,6 @@ and Logs can be crafted from 2 Wood.
 ====
 
 ```
-Modified resources/data:
-
 data/minecraft/loot_tables/blocks/acacia_wood.json
 data/minecraft/loot_tables/blocks/birch_wood.json
 data/minecraft/loot_tables/blocks/cherry_wood.json
