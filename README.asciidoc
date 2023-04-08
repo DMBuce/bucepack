@@ -111,7 +111,7 @@ assets/minecraft/textures/painting/wither.png
 
 ====
 
-.https://github.com/DMBuce/bucepack/releases[All Releases]
+.https://github.com/DMBuce/bucepack/releases[All Releases & Changelogs]
 [%collapsible]
 ====
 ====
@@ -145,7 +145,7 @@ assets/minecraft/models/item/note_block.json
 
 ====
 
-.https://github.com/DMBuce/bucepack/releases[All Releases]
+.https://github.com/DMBuce/bucepack/releases[All Releases & Changelogs]
 [%collapsible]
 ====
 ====
@@ -184,7 +184,7 @@ assets/minecraft/textures/gui/container/brewing_stand.png
 
 ====
 
-.https://github.com/DMBuce/bucepack/releases[All Releases]
+.https://github.com/DMBuce/bucepack/releases[All Releases & Changelogs]
 [%collapsible]
 ====
 ====
@@ -217,7 +217,7 @@ assets/minecraft/textures/block/observer_side.png
 
 ====
 
-.https://github.com/DMBuce/bucepack/releases[All Releases]
+.https://github.com/DMBuce/bucepack/releases[All Releases & Changelogs]
 [%collapsible]
 ====
 ====
@@ -245,7 +245,7 @@ assets/minecraft/textures/entity/iron_golem/iron_golem.png
 
 ====
 
-.https://github.com/DMBuce/bucepack/releases[All Releases]
+.https://github.com/DMBuce/bucepack/releases[All Releases & Changelogs]
 [%collapsible]
 ====
 ====
@@ -274,7 +274,7 @@ assets/minecraft/textures/entity/pig/pig_saddle.png
 
 ====
 
-.https://github.com/DMBuce/bucepack/releases[All Releases]
+.https://github.com/DMBuce/bucepack/releases[All Releases & Changelogs]
 [%collapsible]
 ====
 ====
@@ -297,7 +297,7 @@ assets/minecraft/textures/entity/illager/ravager.png
 
 ====
 
-.https://github.com/DMBuce/bucepack/releases[All Releases]
+.https://github.com/DMBuce/bucepack/releases[All Releases & Changelogs]
 [%collapsible]
 ====
 ====
@@ -336,7 +336,7 @@ assets/minecraft/textures/block/redstone_ore.png
 
 ====
 
-.https://github.com/DMBuce/bucepack/releases[All Releases]
+.https://github.com/DMBuce/bucepack/releases[All Releases & Changelogs]
 [%collapsible]
 ====
 ====
@@ -359,7 +359,7 @@ assets/minecraft/textures/misc/pumpkinblur.png
 
 ====
 
-.https://github.com/DMBuce/bucepack/releases[All Releases]
+.https://github.com/DMBuce/bucepack/releases[All Releases & Changelogs]
 [%collapsible]
 ====
 ====
@@ -528,7 +528,7 @@ assets/minecraft/textures/item/salmon.png
 
 ====
 
-.https://github.com/DMBuce/bucepack/releases[All Releases]
+.https://github.com/DMBuce/bucepack/releases[All Releases & Changelogs]
 [%collapsible]
 ====
 ====
@@ -586,7 +586,7 @@ assets/minecraft/textures/gui/container/smithing.png
 
 ====
 
-.https://github.com/DMBuce/bucepack/releases[All Releases]
+.https://github.com/DMBuce/bucepack/releases[All Releases & Changelogs]
 [%collapsible]
 ====
 ====
@@ -628,7 +628,7 @@ Classic Crunch reverts grass noise so it has a *crunch* sound when stepping on i
 ====
 ====
 
-.https://github.com/DMBuce/bucepack/releases[All Releases]
+.https://github.com/DMBuce/bucepack/releases[All Releases & Changelogs]
 [%collapsible]
 ====
 ====
@@ -670,7 +670,7 @@ assets/minecraft/sounds.json
 
 ====
 
-.https://github.com/DMBuce/bucepack/releases[All Releases]
+.https://github.com/DMBuce/bucepack/releases[All Releases & Changelogs]
 [%collapsible]
 ====
 ====
@@ -699,7 +699,7 @@ image::https://i.imgur.com/w9MQeFL.png[Enchanting]
 ====
 ====
 
-.https://github.com/DMBuce/bucepack/releases[All Releases]
+.https://github.com/DMBuce/bucepack/releases[All Releases & Changelogs]
 [%collapsible]
 ====
 ====
@@ -734,7 +734,7 @@ data/minecraft/tags/blocks/mineable/pickaxe.json
 
 ====
 
-.https://github.com/DMBuce/bucepack/releases[All Releases]
+.https://github.com/DMBuce/bucepack/releases[All Releases & Changelogs]
 [%collapsible]
 ====
 ====
@@ -757,7 +757,7 @@ data/minecraft/tags/blocks/climbable.json
 
 ====
 
-.https://github.com/DMBuce/bucepack/releases[All Releases]
+.https://github.com/DMBuce/bucepack/releases[All Releases & Changelogs]
 [%collapsible]
 ====
 ====
@@ -786,7 +786,7 @@ data/minecraft/tags/blocks/dragon_immune.json
 
 ====
 
-.https://github.com/DMBuce/bucepack/releases[All Releases]
+.https://github.com/DMBuce/bucepack/releases[All Releases & Changelogs]
 [%collapsible]
 ====
 ====
@@ -811,7 +811,7 @@ data/minecraft/tags/blocks/enderman_holdable.json
 
 ====
 
-.https://github.com/DMBuce/bucepack/releases[All Releases]
+.https://github.com/DMBuce/bucepack/releases[All Releases & Changelogs]
 [%collapsible]
 ====
 ====
@@ -833,7 +833,7 @@ data/minecraft/tags/worldgen/structure/eye_of_ender_located.json
 
 ====
 
-.https://github.com/DMBuce/bucepack/releases[All Releases]
+.https://github.com/DMBuce/bucepack/releases[All Releases & Changelogs]
 [%collapsible]
 ====
 ====
@@ -872,7 +872,7 @@ data/minecraft/tags/entity_types/powder_snow_walkable_mobs.json
 
 ====
 
-.https://github.com/DMBuce/bucepack/releases[All Releases]
+.https://github.com/DMBuce/bucepack/releases[All Releases & Changelogs]
 [%collapsible]
 ====
 ====
@@ -893,7 +893,7 @@ data/minecraft/tags/blocks/guarded_by_piglins.json
 
 ====
 
-.https://github.com/DMBuce/bucepack/releases[All Releases]
+.https://github.com/DMBuce/bucepack/releases[All Releases & Changelogs]
 [%collapsible]
 ====
 ====
@@ -920,7 +920,7 @@ data/minecraft/tags/blocks/climbable.json
 
 ====
 
-.https://github.com/DMBuce/bucepack/releases[All Releases]
+.https://github.com/DMBuce/bucepack/releases[All Releases & Changelogs]
 [%collapsible]
 ====
 ====
@@ -943,7 +943,7 @@ data/minecraft/tags/blocks/signs.json
 
 ====
 
-.https://github.com/DMBuce/bucepack/releases[All Releases]
+.https://github.com/DMBuce/bucepack/releases[All Releases & Changelogs]
 [%collapsible]
 ====
 ====
@@ -966,7 +966,7 @@ data/minecraft/tags/blocks/soul_fire_base_blocks.json
 
 ====
 
-.https://github.com/DMBuce/bucepack/releases[All Releases]
+.https://github.com/DMBuce/bucepack/releases[All Releases & Changelogs]
 [%collapsible]
 ====
 ====
@@ -988,7 +988,7 @@ crafting grid, or smelt them into minecarts.
 ====
 ====
 
-.https://github.com/DMBuce/bucepack/releases[All Releases]
+.https://github.com/DMBuce/bucepack/releases[All Releases & Changelogs]
 [%collapsible]
 ====
 ====
@@ -1103,7 +1103,7 @@ data/minecraft/recipes/yellow_wool.json
 
 ====
 
-.https://github.com/DMBuce/bucepack/releases[All Releases]
+.https://github.com/DMBuce/bucepack/releases[All Releases & Changelogs]
 [%collapsible]
 ====
 ====
@@ -1129,7 +1129,7 @@ data/minecraft/recipes/leather_horse_armor.json
 
 ====
 
-.https://github.com/DMBuce/bucepack/releases[All Releases]
+.https://github.com/DMBuce/bucepack/releases[All Releases & Changelogs]
 [%collapsible]
 ====
 ====
@@ -1288,7 +1288,7 @@ data/minecraft/recipes/weathered_cut_copper_stairs.json
 
 ====
 
-.https://github.com/DMBuce/bucepack/releases[All Releases]
+.https://github.com/DMBuce/bucepack/releases[All Releases & Changelogs]
 [%collapsible]
 ====
 ====
@@ -1326,7 +1326,7 @@ storage.
 ====
 ====
 
-.https://github.com/DMBuce/bucepack/releases[All Releases]
+.https://github.com/DMBuce/bucepack/releases[All Releases & Changelogs]
 [%collapsible]
 ====
 ====
@@ -1365,7 +1365,7 @@ data/minecraft/recipes/stonecutter.json
 
 ====
 
-.https://github.com/DMBuce/bucepack/releases[All Releases]
+.https://github.com/DMBuce/bucepack/releases[All Releases & Changelogs]
 [%collapsible]
 ====
 ====
@@ -1402,7 +1402,7 @@ image::https://i.imgur.com/wTSA89p.png[Declutter Cutting]
 ====
 ====
 
-.https://github.com/DMBuce/bucepack/releases[All Releases]
+.https://github.com/DMBuce/bucepack/releases[All Releases & Changelogs]
 [%collapsible]
 ====
 ====
@@ -1420,7 +1420,7 @@ image::https://i.imgur.com/tJy4jop.png[Smooth & Cracked Cutting]
 ====
 ====
 
-.https://github.com/DMBuce/bucepack/releases[All Releases]
+.https://github.com/DMBuce/bucepack/releases[All Releases & Changelogs]
 [%collapsible]
 ====
 ====
@@ -1448,7 +1448,7 @@ assets/minecraft/lang/en_us.json
 
 ====
 
-.https://github.com/DMBuce/bucepack/releases[All Releases]
+.https://github.com/DMBuce/bucepack/releases[All Releases & Changelogs]
 [%collapsible]
 ====
 ====
@@ -1466,7 +1466,7 @@ image::https://i.imgur.com/4GLS89K.png[Turtle Boxes]
 ====
 ====
 
-.https://github.com/DMBuce/bucepack/releases[All Releases]
+.https://github.com/DMBuce/bucepack/releases[All Releases & Changelogs]
 [%collapsible]
 ====
 ====
@@ -1517,7 +1517,7 @@ data/minecraft/tags/blocks/mineable/hoe.json
 
 ====
 
-.https://github.com/DMBuce/bucepack/releases[All Releases]
+.https://github.com/DMBuce/bucepack/releases[All Releases & Changelogs]
 [%collapsible]
 ====
 ====
@@ -1555,7 +1555,7 @@ data/minecraft/loot_tables/entities/shulker.json
 
 ====
 
-.https://github.com/DMBuce/bucepack/releases[All Releases]
+.https://github.com/DMBuce/bucepack/releases[All Releases & Changelogs]
 [%collapsible]
 ====
 ====
@@ -1589,7 +1589,7 @@ data/minecraft/loot_tables/chests/shipwreck_map.json
 
 ====
 
-.https://github.com/DMBuce/bucepack/releases[All Releases]
+.https://github.com/DMBuce/bucepack/releases[All Releases & Changelogs]
 [%collapsible]
 ====
 ====
@@ -1691,7 +1691,7 @@ data/minecraft/loot_tables/gameplay/cat_morning_gift.json
 
 ====
 
-.https://github.com/DMBuce/bucepack/releases[All Releases]
+.https://github.com/DMBuce/bucepack/releases[All Releases & Changelogs]
 [%collapsible]
 ====
 ====
@@ -1818,7 +1818,7 @@ data/minecraft/loot_tables/gameplay/hero_of_the_village/weaponsmith_gift.json
 
 ====
 
-.https://github.com/DMBuce/bucepack/releases[All Releases]
+.https://github.com/DMBuce/bucepack/releases[All Releases & Changelogs]
 [%collapsible]
 ====
 ====
@@ -1869,7 +1869,7 @@ data/minecraft/loot_tables/entities/player.json
 
 ====
 
-.https://github.com/DMBuce/bucepack/releases[All Releases]
+.https://github.com/DMBuce/bucepack/releases[All Releases & Changelogs]
 [%collapsible]
 ====
 ====
@@ -2008,7 +2008,7 @@ data/minecraft/tags/items/creeper_drop_music_discs.json
 
 ====
 
-.https://github.com/DMBuce/bucepack/releases[All Releases]
+.https://github.com/DMBuce/bucepack/releases[All Releases & Changelogs]
 [%collapsible]
 ====
 ====
@@ -2033,7 +2033,7 @@ image::https://i.imgur.com/gUnJW5S.png[Treasure Seeds]
 ====
 ====
 
-.https://github.com/DMBuce/bucepack/releases[All Releases]
+.https://github.com/DMBuce/bucepack/releases[All Releases & Changelogs]
 [%collapsible]
 ====
 ====
@@ -2073,7 +2073,7 @@ installed, some relics have custom item textures in the inventory.
 ====
 ====
 
-.https://github.com/DMBuce/bucepack/releases[All Releases]
+.https://github.com/DMBuce/bucepack/releases[All Releases & Changelogs]
 [%collapsible]
 ====
 ====
@@ -2098,7 +2098,7 @@ enabled, some relics have custom item textures in the inventory.
 ====
 ====
 
-.https://github.com/DMBuce/bucepack/releases[All Releases]
+.https://github.com/DMBuce/bucepack/releases[All Releases & Changelogs]
 [%collapsible]
 ====
 ====
@@ -2156,7 +2156,7 @@ starter item chosen at random.
 ====
 ====
 
-.https://github.com/DMBuce/bucepack/releases[All Releases]
+.https://github.com/DMBuce/bucepack/releases[All Releases & Changelogs]
 [%collapsible]
 ====
 ====
@@ -2182,7 +2182,7 @@ inventory the first time they join the world.
 ====
 ====
 
-.https://github.com/DMBuce/bucepack/releases[All Releases]
+.https://github.com/DMBuce/bucepack/releases[All Releases & Changelogs]
 [%collapsible]
 ====
 ====
@@ -2213,7 +2213,7 @@ doesn't require <<loot-overhaul,Loot Overhaul>>.
 ====
 ====
 
-.https://github.com/DMBuce/bucepack/releases[All Releases]
+.https://github.com/DMBuce/bucepack/releases[All Releases & Changelogs]
 [%collapsible]
 ====
 ====
@@ -2241,7 +2241,7 @@ or assign it to a new note block.
 ====
 ====
 
-.https://github.com/DMBuce/bucepack/releases[All Releases]
+.https://github.com/DMBuce/bucepack/releases[All Releases & Changelogs]
 [%collapsible]
 ====
 ====
@@ -2262,7 +2262,7 @@ pose.
 ====
 ====
 
-.https://github.com/DMBuce/bucepack/releases[All Releases]
+.https://github.com/DMBuce/bucepack/releases[All Releases & Changelogs]
 [%collapsible]
 ====
 ====
@@ -2298,7 +2298,7 @@ In addition, crimson fungus immunizes hoglins against zombification.
 ====
 ====
 
-.https://github.com/DMBuce/bucepack/releases[All Releases]
+.https://github.com/DMBuce/bucepack/releases[All Releases & Changelogs]
 [%collapsible]
 ====
 ====
@@ -2332,7 +2332,7 @@ and will continue to attack even if the player they're angry at is dead.
 ====
 ====
 
-.https://github.com/DMBuce/bucepack/releases[All Releases]
+.https://github.com/DMBuce/bucepack/releases[All Releases & Changelogs]
 [%collapsible]
 ====
 ====
@@ -2354,7 +2354,7 @@ image::https://i.imgur.com/xQh03yw.png[Leashed]
 ====
 ====
 
-.https://github.com/DMBuce/bucepack/releases[All Releases]
+.https://github.com/DMBuce/bucepack/releases[All Releases & Changelogs]
 [%collapsible]
 ====
 ====
@@ -2376,7 +2376,7 @@ where structures don't generate.
 ====
 ====
 
-.https://github.com/DMBuce/bucepack/releases[All Releases]
+.https://github.com/DMBuce/bucepack/releases[All Releases & Changelogs]
 [%collapsible]
 ====
 ====
@@ -2397,7 +2397,7 @@ Paths extend Speed I effects for players in a manner similar to beacons.
 ====
 ====
 
-.https://github.com/DMBuce/bucepack/releases[All Releases]
+.https://github.com/DMBuce/bucepack/releases[All Releases & Changelogs]
 [%collapsible]
 ====
 ====
@@ -2418,7 +2418,7 @@ enabled, some relics have custom item textures in the inventory.
 ====
 ====
 
-.https://github.com/DMBuce/bucepack/releases[All Releases]
+.https://github.com/DMBuce/bucepack/releases[All Releases & Changelogs]
 [%collapsible]
 ====
 ====
@@ -2443,7 +2443,7 @@ invisibility. The invisibility ends if the player damages a mob.
 ====
 ====
 
-.https://github.com/DMBuce/bucepack/releases[All Releases]
+.https://github.com/DMBuce/bucepack/releases[All Releases & Changelogs]
 [%collapsible]
 ====
 ====
@@ -2608,7 +2608,7 @@ data/minecraft/tags/entity_types/frog_food.json
 
 ====
 
-.https://github.com/DMBuce/bucepack/releases[All Releases]
+.https://github.com/DMBuce/bucepack/releases[All Releases & Changelogs]
 [%collapsible]
 ====
 ====
@@ -2684,7 +2684,7 @@ data/minecraft/loot_tables/entities/phantom.json
 
 ====
 
-.https://github.com/DMBuce/bucepack/releases[All Releases]
+.https://github.com/DMBuce/bucepack/releases[All Releases & Changelogs]
 [%collapsible]
 ====
 ====
@@ -2724,7 +2724,7 @@ invisible item frames and light blocks with phantom membranes.
 ====
 ====
 
-.https://github.com/DMBuce/bucepack/releases[All Releases]
+.https://github.com/DMBuce/bucepack/releases[All Releases & Changelogs]
 [%collapsible]
 ====
 ====
@@ -2760,7 +2760,7 @@ to the last deep gate that horn was played at.
 ====
 ====
 
-.https://github.com/DMBuce/bucepack/releases[All Releases]
+.https://github.com/DMBuce/bucepack/releases[All Releases & Changelogs]
 [%collapsible]
 ====
 ====
@@ -2788,7 +2788,7 @@ Nether portal mechanics are unchanged for entities other than players.
 ====
 ====
 
-.https://github.com/DMBuce/bucepack/releases[All Releases]
+.https://github.com/DMBuce/bucepack/releases[All Releases & Changelogs]
 [%collapsible]
 ====
 ====
@@ -2817,7 +2817,7 @@ Right clicking the orb restores the shulker box and destroys the eye.
 ====
 ====
 
-.https://github.com/DMBuce/bucepack/releases[All Releases]
+.https://github.com/DMBuce/bucepack/releases[All Releases & Changelogs]
 [%collapsible]
 ====
 ====
@@ -2926,7 +2926,7 @@ data/minecraft/tags/items/stone_tool_materials.json
 
 ====
 
-.https://github.com/DMBuce/bucepack/releases[All Releases]
+.https://github.com/DMBuce/bucepack/releases[All Releases & Changelogs]
 [%collapsible]
 ====
 ====
@@ -2969,7 +2969,7 @@ data/minecraft/tags/blocks/soul_speed_blocks.json
 
 ====
 
-.https://github.com/DMBuce/bucepack/releases[All Releases]
+.https://github.com/DMBuce/bucepack/releases[All Releases & Changelogs]
 [%collapsible]
 ====
 ====
@@ -2994,7 +2994,7 @@ you'll respawn in the Nether in a cage made of fungus and netherbrick.
 ====
 ====
 
-.https://github.com/DMBuce/bucepack/releases[All Releases]
+.https://github.com/DMBuce/bucepack/releases[All Releases & Changelogs]
 [%collapsible]
 ====
 ====
@@ -3021,7 +3021,7 @@ and then defeat the Nether to gain access to the overworld.
 ====
 ====
 
-.https://github.com/DMBuce/bucepack/releases[All Releases]
+.https://github.com/DMBuce/bucepack/releases[All Releases & Changelogs]
 [%collapsible]
 ====
 ====
@@ -3071,7 +3071,7 @@ data/minecraft/loot_tables/entities/endermite.json
 
 ====
 
-.https://github.com/DMBuce/bucepack/releases[All Releases]
+.https://github.com/DMBuce/bucepack/releases[All Releases & Changelogs]
 [%collapsible]
 ====
 ====
@@ -3146,7 +3146,7 @@ data/minecraft/worldgen/noise_settings/overworld.json
 
 ====
 
-.https://github.com/DMBuce/bucepack/releases[All Releases]
+.https://github.com/DMBuce/bucepack/releases[All Releases & Changelogs]
 [%collapsible]
 ====
 ====
@@ -3164,7 +3164,7 @@ by right-clicking an enderchest with an ender pearl in the overworld.
 ====
 ====
 
-.https://github.com/DMBuce/bucepack/releases[All Releases]
+.https://github.com/DMBuce/bucepack/releases[All Releases & Changelogs]
 [%collapsible]
 ====
 ====
@@ -3191,7 +3191,7 @@ data/minecraft/worldgen/structure/desert_pyramid.json
 
 ====
 
-.https://github.com/DMBuce/bucepack/releases[All Releases]
+.https://github.com/DMBuce/bucepack/releases[All Releases & Changelogs]
 [%collapsible]
 ====
 ====
@@ -3259,7 +3259,7 @@ data/minecraft/worldgen/configured_feature/warped_fungus_planted.json
 
 ====
 
-.https://github.com/DMBuce/bucepack/releases[All Releases]
+.https://github.com/DMBuce/bucepack/releases[All Releases & Changelogs]
 [%collapsible]
 ====
 ====
@@ -3456,7 +3456,7 @@ pedestal.
 ====
 ====
 
-.https://github.com/DMBuce/bucepack/releases[All Releases]
+.https://github.com/DMBuce/bucepack/releases[All Releases & Changelogs]
 [%collapsible]
 ====
 ====

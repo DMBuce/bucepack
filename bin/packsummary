@@ -27,7 +27,7 @@ for pack in "$@"; do
 	echo "===="
 done
 echo ""
-echo ".https://github.com/DMBuce/bucepack/releases[All Releases]"
+echo ".https://github.com/DMBuce/bucepack/releases[All Releases & Changelogs]"
 echo "[%collapsible]"
 echo "===="
 echo "===="
