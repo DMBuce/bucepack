@@ -1560,9 +1560,6 @@ image::https://i.imgur.com/7tN7Zij.png[Shearless]
 Note that shears are still required to shear sheep, mooshroom, snow golems,
 pumpkins, beehives, and bee nests.
 
-This datapack is not compatible with other datapacks that modify the
-loot tables of the blocks shown above.
-
 **Downloads:**
 
 .https://github.com/DMBuce/bucepack/releases/latest/download/shearless.zip[`shearless.zip`]
@@ -2034,9 +2031,6 @@ and a single reinforced deepslate rarely spawns in ancient cities.
 Light blocks spawn in woodland mansion and ancient city chests,
 and have a custom texture if you have the
 <<spellsmithing-guide,Spellsmithing Guide>> resource pack installed.
-
-This datapack is not compatible with other datapacks that modify the chest,
-fishing, or bartering loot tables.
 
 **Downloads:**
 
@@ -2675,10 +2669,6 @@ installed, some relics have custom item textures in the inventory.
 This is a <<ordering-data-packs,companion pack>> for the
 <<loot-overhaul,Loot Overhaul>> and <<phantasmal,Phantasmal>> datapacks,
 which provide access to some of the relics.
-
-This datapack is not compatible with other datapacks that modify the
-Pig, Silverfish, Endermite, Ghast, Iron Golem, or Deepslate Emerald Ore
-loot tables.
 
 **Downloads:**
 
