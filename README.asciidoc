@@ -77,6 +77,7 @@ image::https://i.imgur.com/WLFKdEM.png[Painting Overhaul]
 Download:
 
 .https://github.com/DMBuce/bucepack/releases[All Releases]
+[%collapsible]
 ====
 ====
 
@@ -134,6 +135,7 @@ block underneath:
 Download:
 
 .https://github.com/DMBuce/bucepack/releases[All Releases]
+[%collapsible]
 ====
 ====
 
@@ -163,6 +165,7 @@ resource pack.
 Download:
 
 .https://github.com/DMBuce/bucepack/releases[All Releases]
+[%collapsible]
 ====
 ====
 
@@ -200,6 +203,7 @@ image::https://i.imgur.com/EyBG6cG.png[Tech Arrows]
 Download:
 
 .https://github.com/DMBuce/bucepack/releases[All Releases]
+[%collapsible]
 ====
 ====
 
@@ -229,6 +233,7 @@ image::https://i.imgur.com/oF0MLK9.png[Village Mech]
 Download:
 
 .https://github.com/DMBuce/bucepack/releases[All Releases]
+[%collapsible]
 ====
 ====
 
@@ -260,6 +265,7 @@ saddling a pig gives it 4 armor defense points
 Download:
 
 .https://github.com/DMBuce/bucepack/releases[All Releases]
+[%collapsible]
 ====
 ====
 
@@ -282,6 +288,7 @@ image::https://i.imgur.com/bJEeUdc.png[Ravager]
 Download:
 
 .https://github.com/DMBuce/bucepack/releases[All Releases]
+[%collapsible]
 ====
 ====
 
@@ -313,6 +320,7 @@ this pack organizes them into "types" that determine the ore's shape.
 Download:
 
 .https://github.com/DMBuce/bucepack/releases[All Releases]
+[%collapsible]
 ====
 ====
 
@@ -342,6 +350,7 @@ image::https://i.imgur.com/2RWgrPq.png[Discreet Pumpkin]
 Download:
 
 .https://github.com/DMBuce/bucepack/releases[All Releases]
+[%collapsible]
 ====
 ====
 
@@ -403,6 +412,7 @@ image::https://i.imgur.com/DorMwHO.png[Classic Food]
 Download:
 
 .https://github.com/DMBuce/bucepack/releases[All Releases]
+[%collapsible]
 ====
 ====
 
@@ -541,6 +551,7 @@ following datapacks.
 Download:
 
 .https://github.com/DMBuce/bucepack/releases[All Releases]
+[%collapsible]
 ====
 ====
 
@@ -598,6 +609,7 @@ Classic Crunch reverts grass noise so it has a *crunch* sound when stepping on i
 Download:
 
 .https://github.com/DMBuce/bucepack/releases[All Releases]
+[%collapsible]
 ====
 ====
 
@@ -634,6 +646,7 @@ Discreet Meow makes cats meow less often.
 Download:
 
 .https://github.com/DMBuce/bucepack/releases[All Releases]
+[%collapsible]
 ====
 ====
 
@@ -682,6 +695,7 @@ image::https://i.imgur.com/w9MQeFL.png[Enchanting]
 Download:
 
 .https://github.com/DMBuce/bucepack/releases[All Releases]
+[%collapsible]
 ====
 ====
 
@@ -710,6 +724,7 @@ This pack fixes https://bugs.mojang.com/browse/MC-199752[MC-199752].
 Download:
 
 .https://github.com/DMBuce/bucepack/releases[All Releases]
+[%collapsible]
 ====
 ====
 
@@ -733,6 +748,7 @@ image::https://i.imgur.com/N0l5B2c.png[Climbable]
 Download:
 
 .https://github.com/DMBuce/bucepack/releases[All Releases]
+[%collapsible]
 ====
 ====
 
@@ -761,6 +777,7 @@ image::https://i.imgur.com/c7kQFcp.png[Dragonproof Blocks]
 Download:
 
 .https://github.com/DMBuce/bucepack/releases[All Releases]
+[%collapsible]
 ====
 ====
 
@@ -785,6 +802,7 @@ https://raw.githubusercontent.com/DMBuce/bucepack/master/data/minecraft/tags/blo
 Download:
 
 .https://github.com/DMBuce/bucepack/releases[All Releases]
+[%collapsible]
 ====
 ====
 
@@ -806,6 +824,7 @@ in addition to Strongholds.
 Download:
 
 .https://github.com/DMBuce/bucepack/releases[All Releases]
+[%collapsible]
 ====
 ====
 
@@ -841,6 +860,7 @@ image::https://i.imgur.com/FnDMksX.png[Acclimated]
 Download:
 
 .https://github.com/DMBuce/bucepack/releases[All Releases]
+[%collapsible]
 ====
 ====
 
@@ -864,6 +884,7 @@ Makes piglins hostile when you break blocks that bastions are made out of.
 Download:
 
 .https://github.com/DMBuce/bucepack/releases[All Releases]
+[%collapsible]
 ====
 ====
 
@@ -890,6 +911,7 @@ Best enjoyed in skyblock worlds such as <<dripblock,DripBlock>>.
 Download:
 
 .https://github.com/DMBuce/bucepack/releases[All Releases]
+[%collapsible]
 ====
 ====
 
@@ -912,6 +934,7 @@ image::https://i.imgur.com/aZKvCrc.png[Waterproof Tech]
 Download:
 
 .https://github.com/DMBuce/bucepack/releases[All Releases]
+[%collapsible]
 ====
 ====
 
@@ -934,6 +957,7 @@ image::https://i.imgur.com/paceJ4Z.png[Blue Fire]
 Download:
 
 .https://github.com/DMBuce/bucepack/releases[All Releases]
+[%collapsible]
 ====
 ====
 
@@ -960,6 +984,7 @@ crafting grid, or smelt them into minecarts.
 Download:
 
 .https://github.com/DMBuce/bucepack/releases[All Releases]
+[%collapsible]
 ====
 ====
 
@@ -976,6 +1001,7 @@ You can also dye any combination of terracotta, glass, or glass panes.
 Download:
 
 .https://github.com/DMBuce/bucepack/releases[All Releases]
+[%collapsible]
 ====
 ====
 
@@ -1094,6 +1120,7 @@ The leather horse armor recipe is changed to match other horse armor as well.
 Download:
 
 .https://github.com/DMBuce/bucepack/releases[All Releases]
+[%collapsible]
 ====
 ====
 
@@ -1133,6 +1160,7 @@ Makes some crafting recipes cheaper.
 Download:
 
 .https://github.com/DMBuce/bucepack/releases[All Releases]
+[%collapsible]
 ====
 ====
 
@@ -1294,6 +1322,7 @@ storage.
 Download:
 
 .https://github.com/DMBuce/bucepack/releases[All Releases]
+[%collapsible]
 ====
 ====
 
@@ -1319,6 +1348,7 @@ Lecterns use two extra slabs.
 Download:
 
 .https://github.com/DMBuce/bucepack/releases[All Releases]
+[%collapsible]
 ====
 ====
 
@@ -1368,6 +1398,7 @@ image::https://i.imgur.com/wTSA89p.png[Declutter Cutting]
 Download:
 
 .https://github.com/DMBuce/bucepack/releases[All Releases]
+[%collapsible]
 ====
 ====
 
@@ -1385,6 +1416,7 @@ image::https://i.imgur.com/tJy4jop.png[Smooth & Cracked Cutting]
 Download:
 
 .https://github.com/DMBuce/bucepack/releases[All Releases]
+[%collapsible]
 ====
 ====
 
@@ -1407,6 +1439,7 @@ See <<language-support,Language Support>> for details.
 Download:
 
 .https://github.com/DMBuce/bucepack/releases[All Releases]
+[%collapsible]
 ====
 ====
 
@@ -1429,6 +1462,7 @@ image::https://i.imgur.com/4GLS89K.png[Turtle Boxes]
 Download:
 
 .https://github.com/DMBuce/bucepack/releases[All Releases]
+[%collapsible]
 ====
 ====
 
@@ -1460,6 +1494,7 @@ loot tables of the blocks shown above.
 Download:
 
 .https://github.com/DMBuce/bucepack/releases[All Releases]
+[%collapsible]
 ====
 ====
 
@@ -1510,6 +1545,7 @@ drop 2 shells.
 Download:
 
 .https://github.com/DMBuce/bucepack/releases[All Releases]
+[%collapsible]
 ====
 ====
 
@@ -1547,6 +1583,7 @@ compatible with <<loot-overhaul,Loot Overhaul>>.
 Download:
 
 .https://github.com/DMBuce/bucepack/releases[All Releases]
+[%collapsible]
 ====
 ====
 
@@ -1648,6 +1685,7 @@ and look like tiny blocks.
 Download:
 
 .https://github.com/DMBuce/bucepack/releases[All Releases]
+[%collapsible]
 ====
 ====
 
@@ -1762,6 +1800,7 @@ enchanted golem, pie golem, lime golem, and honey golem.
 Download:
 
 .https://github.com/DMBuce/bucepack/releases[All Releases]
+[%collapsible]
 ====
 ====
 
@@ -1824,6 +1863,7 @@ Shown above are the heads of Computron, TV Boy, Donut Girl, and Rubik.
 Download:
 
 .https://github.com/DMBuce/bucepack/releases[All Releases]
+[%collapsible]
 ====
 ====
 
@@ -1917,6 +1957,7 @@ fishing, or bartering loot tables.
 Download:
 
 .https://github.com/DMBuce/bucepack/releases[All Releases]
+[%collapsible]
 ====
 ====
 
@@ -1994,6 +2035,7 @@ image::https://i.imgur.com/gUnJW5S.png[Treasure Seeds]
 Download:
 
 .https://github.com/DMBuce/bucepack/releases[All Releases]
+[%collapsible]
 ====
 ====
 
@@ -2030,6 +2072,7 @@ installed, some relics have custom item textures in the inventory.
 Download:
 
 .https://github.com/DMBuce/bucepack/releases[All Releases]
+[%collapsible]
 ====
 ====
 
@@ -2054,6 +2097,7 @@ enabled, some relics have custom item textures in the inventory.
 Download:
 
 .https://github.com/DMBuce/bucepack/releases[All Releases]
+[%collapsible]
 ====
 ====
 
@@ -2086,6 +2130,7 @@ starter item chosen at random.
 Download:
 
 .https://github.com/DMBuce/bucepack/releases[All Releases]
+[%collapsible]
 ====
 ====
 
@@ -2131,6 +2176,7 @@ inventory the first time they join the world.
 Download:
 
 .https://github.com/DMBuce/bucepack/releases[All Releases]
+[%collapsible]
 ====
 ====
 
@@ -2166,6 +2212,7 @@ doesn't require <<loot-overhaul,Loot Overhaul>>.
 Download:
 
 .https://github.com/DMBuce/bucepack/releases[All Releases]
+[%collapsible]
 ====
 ====
 
@@ -2193,6 +2240,7 @@ or assign it to a new note block.
 Download:
 
 .https://github.com/DMBuce/bucepack/releases[All Releases]
+[%collapsible]
 ====
 ====
 
@@ -2213,6 +2261,7 @@ pose.
 Download:
 
 .https://github.com/DMBuce/bucepack/releases[All Releases]
+[%collapsible]
 ====
 ====
 
@@ -2248,6 +2297,7 @@ In addition, crimson fungus immunizes hoglins against zombification.
 Download:
 
 .https://github.com/DMBuce/bucepack/releases[All Releases]
+[%collapsible]
 ====
 ====
 
@@ -2281,6 +2331,7 @@ and will continue to attack even if the player they're angry at is dead.
 Download:
 
 .https://github.com/DMBuce/bucepack/releases[All Releases]
+[%collapsible]
 ====
 ====
 
@@ -2302,6 +2353,7 @@ image::https://i.imgur.com/xQh03yw.png[Leashed]
 Download:
 
 .https://github.com/DMBuce/bucepack/releases[All Releases]
+[%collapsible]
 ====
 ====
 
@@ -2323,6 +2375,7 @@ where structures don't generate.
 Download:
 
 .https://github.com/DMBuce/bucepack/releases[All Releases]
+[%collapsible]
 ====
 ====
 
@@ -2343,6 +2396,7 @@ Paths extend Speed I effects for players in a manner similar to beacons.
 Download:
 
 .https://github.com/DMBuce/bucepack/releases[All Releases]
+[%collapsible]
 ====
 ====
 
@@ -2363,6 +2417,7 @@ enabled, some relics have custom item textures in the inventory.
 Download:
 
 .https://github.com/DMBuce/bucepack/releases[All Releases]
+[%collapsible]
 ====
 ====
 
@@ -2387,6 +2442,7 @@ invisibility. The invisibility ends if the player damages a mob.
 Download:
 
 .https://github.com/DMBuce/bucepack/releases[All Releases]
+[%collapsible]
 ====
 ====
 
@@ -2541,6 +2597,7 @@ loot tables.
 Download:
 
 .https://github.com/DMBuce/bucepack/releases[All Releases]
+[%collapsible]
 ====
 ====
 
@@ -2622,6 +2679,7 @@ which adds phantoms to the dragon fight.
 Download:
 
 .https://github.com/DMBuce/bucepack/releases[All Releases]
+[%collapsible]
 ====
 ====
 
@@ -2662,6 +2720,7 @@ invisible item frames and light blocks with phantom membranes.
 Download:
 
 .https://github.com/DMBuce/bucepack/releases[All Releases]
+[%collapsible]
 ====
 ====
 
@@ -2697,6 +2756,7 @@ to the last deep gate that horn was played at.
 Download:
 
 .https://github.com/DMBuce/bucepack/releases[All Releases]
+[%collapsible]
 ====
 ====
 
@@ -2724,6 +2784,7 @@ Nether portal mechanics are unchanged for entities other than players.
 Download:
 
 .https://github.com/DMBuce/bucepack/releases[All Releases]
+[%collapsible]
 ====
 ====
 
@@ -2749,6 +2810,7 @@ Right clicking the orb restores the shulker box and destroys the eye.
 Download:
 
 .https://github.com/DMBuce/bucepack/releases[All Releases]
+[%collapsible]
 ====
 ====
 
@@ -2799,6 +2861,7 @@ See <<language-support,Language Support>> for details.
 Download:
 
 .https://github.com/DMBuce/bucepack/releases[All Releases]
+[%collapsible]
 ====
 ====
 
@@ -2879,6 +2942,7 @@ See <<language-support,Language Support>> for details.
 Download:
 
 .https://github.com/DMBuce/bucepack/releases[All Releases]
+[%collapsible]
 ====
 ====
 
@@ -2923,6 +2987,7 @@ you'll respawn in the Nether in a cage made of fungus and netherbrick.
 Download:
 
 .https://github.com/DMBuce/bucepack/releases[All Releases]
+[%collapsible]
 ====
 ====
 
@@ -2949,6 +3014,7 @@ and then defeat the Nether to gain access to the overworld.
 Download:
 
 .https://github.com/DMBuce/bucepack/releases[All Releases]
+[%collapsible]
 ====
 ====
 
@@ -2991,6 +3057,7 @@ Changes that facilitate survival in The End:
 Download:
 
 .https://github.com/DMBuce/bucepack/releases[All Releases]
+[%collapsible]
 ====
 ====
 
@@ -3037,6 +3104,7 @@ and <<hover-mode,Hover Mode>> adds basic flight.
 Download:
 
 .https://github.com/DMBuce/bucepack/releases[All Releases]
+[%collapsible]
 ====
 ====
 
@@ -3089,6 +3157,7 @@ by right-clicking an enderchest with an ender pearl in the overworld.
 Download:
 
 .https://github.com/DMBuce/bucepack/releases[All Releases]
+[%collapsible]
 ====
 ====
 
@@ -3108,6 +3177,7 @@ Cave spiders drop cobwebs.
 Download:
 
 .https://github.com/DMBuce/bucepack/releases[All Releases]
+[%collapsible]
 ====
 ====
 
@@ -3132,6 +3202,7 @@ and Logs can be crafted from 2 Wood.
 Download:
 
 .https://github.com/DMBuce/bucepack/releases[All Releases]
+[%collapsible]
 ====
 ====
 
@@ -3378,6 +3449,7 @@ pedestal.
 Download:
 
 .https://github.com/DMBuce/bucepack/releases[All Releases]
+[%collapsible]
 ====
 ====
 
