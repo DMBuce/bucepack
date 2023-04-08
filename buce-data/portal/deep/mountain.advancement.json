@@ -29,67 +29,6 @@
 							"items": [ "minecraft:goat_horn" ]
 						}
 					},
-					"location": {
-						"biome": "minecraft:jagged_peaks"
-					}
-				}
-			}
-		},
-		"c2": {
-			"trigger": "minecraft:using_item",
-			"conditions": {
-				"item": {
-					"items": [ "minecraft:goat_horn" ],
-					"nbt": "{gate:1b}"
-				},
-				"player": {
-					"equipment": {
-						"mainhand": {
-							"items": [ "minecraft:goat_horn" ]
-						}
-					},
-					"location": {
-						"biome": "minecraft:frozen_peaks"
-					}
-				}
-			}
-		},
-		"c3": {
-			"trigger": "minecraft:using_item",
-			"conditions": {
-				"item": {
-					"items": [ "minecraft:goat_horn" ],
-					"nbt": "{gate:1b}"
-				},
-				"player": {
-					"equipment": {
-						"mainhand": {
-							"items": [ "minecraft:goat_horn" ]
-						}
-					},
-					"location": {
-						"biome": "minecraft:stony_peaks"
-					}
-				}
-			}
-		},
-		"c4": {
-			"trigger": "minecraft:using_item",
-			"conditions": {
-				"item": {
-					"items": [ "minecraft:goat_horn" ],
-					"nbt": "{gate:1b}"
-				},
-				"player": {
-
-					"equipment": {
-						"mainhand": {
-							"items": [ "minecraft:goat_horn" ]
-						}
-					},
-					"location": {
-						"biome": "minecraft:windswept_savanna"
-					},
 					"type_specific": {
 						"type": "player",
 						"advancements": {
@@ -98,14 +37,57 @@
 					}
 				}
 			}
+		},
+		"b1": {
+			"trigger": "minecraft:using_item",
+			"conditions": {
+				"player": {
+					"location": {
+						"biome": "minecraft:jagged_peaks"
+					}
+				}
+			}
+		},
+		"b2": {
+			"trigger": "minecraft:using_item",
+			"conditions": {
+				"player": {
+					"location": {
+						"biome": "minecraft:frozen_peaks"
+					}
+				}
+			}
+		},
+		"b3": {
+			"trigger": "minecraft:using_item",
+			"conditions": {
+				"player": {
+					"location": {
+						"biome": "minecraft:stony_peaks"
+					}
+				}
+			}
+		},
+		"b4": {
+			"trigger": "minecraft:using_item",
+			"conditions": {
+				"player": {
+					"location": {
+						"biome": "minecraft:windswept_savanna"
+					}
+				}
+			}
 		}
 	},
 	"requirements": [
 		[
-			"c1",
-			"c2",
-			"c3",
-			"c4"
+			"c1"
+		],
+		[
+			"b1",
+			"b2",
+			"b3",
+			"b4"
 		]
 	],
 	"rewards": {
