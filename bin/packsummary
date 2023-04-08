@@ -28,8 +28,10 @@ for pack in "$@"; do
 	echo "[%collapsible]"
 	echo "===="
 	if [[ -n "$output" ]]; then
+		echo
+		echo "\`\`\`"
 		echo "Minecraft files included:"
-		echo "\`\`\`$output"
+		echo "$output"
 		echo "\`\`\`"
 		echo
 	fi
