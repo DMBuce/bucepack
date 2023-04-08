@@ -28,9 +28,7 @@ for pack in "$@"; do
 	echo "[%collapsible]"
 	echo "===="
 	if [[ -n "$output" ]]; then
-		echo
 		echo "Minecraft files included:"
-		echo
 		echo "\`\`\`$output"
 		echo "\`\`\`"
 		echo
