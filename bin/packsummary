@@ -1,13 +1,15 @@
 #!/bin/bash
 
 latest="$(<latest.txt)"
-header='Direct Link'
-(( $# > 1 )) && header='Direct Links'
+#header='Direct Link'
+#(( $# > 1 )) && header='Direct Links'
 
 echo "Download:"
-echo "https://github.com/DMBuce/bucepack/releases[All Releases]"
-echo ""
-echo "$header:"
+echo ".https://github.com/DMBuce/bucepack/releases[All Releases]"
+echo "===="
+echo "===="
+#echo ""
+#echo "$header:"
 
 #for pack in "$@"; do
 #	echo "https://github.com/DMBuce/bucepack/releases/latest/download/$pack.zip[\`$pack.zip\`]"
