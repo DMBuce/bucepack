@@ -10,9 +10,10 @@ if [[ -f cache/$pack.files ]]; then
 	)"
 	if [[ -n "$output" ]]; then
 		cat <<-EOF
-			.This datapack is not compatible with other datapacks that modify the following loot tables.
+			.Click for a summary of loot tables
 			[%collapsible]
 			====
+			This datapack modifies the following loot tables:
 
 			$output
 
