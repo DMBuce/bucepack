@@ -5,6 +5,7 @@ latest="$(<latest.txt)"
 #(( $# > 1 )) && header='Direct Links'
 
 echo "Download:"
+echo ""
 echo ".https://github.com/DMBuce/bucepack/releases[All Releases]"
 echo "===="
 echo "===="
@@ -27,15 +28,15 @@ for pack in "$@"; do
 		fi
 	done < "cache/$pack.files"
 	echo
+	echo ".https://github.com/DMBuce/bucepack/releases/latest/download/$pack.zip[\`$pack.zip\`]"
+	echo "[%collapsible]"
+	echo "===="
 	if [[ -n "$output" ]]; then
-		echo ".https://github.com/DMBuce/bucepack/releases/latest/download/$pack.zip[\`$pack.zip\`]"
-		echo "[%collapsible]"
-		echo "===="
 		echo
 		echo "\`\`\`$output"
 		echo "\`\`\`"
 		echo
-		echo "===="
 	fi
+	echo "===="
 done
 
