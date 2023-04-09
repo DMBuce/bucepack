@@ -1,0 +1,39 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:barrier"
+		},
+		"title": {
+			"text": "Trigger Advancement"
+		},
+		"description": {
+			"text": "Something went wrong, you should revoke this advancement"
+		},
+		"show_toast": false,
+		"announce_to_chat": false,
+		"hidden": true,
+		"frame": "task"
+	},
+	"parent": "buce:locomotive/root",
+	"criteria": {
+		"c1": {
+			"trigger": "minecraft:player_interacted_with_entity",
+			"conditions": {
+				"item": {
+					"items": [ "minecraft:coal" ]
+				},
+				"entity": {
+					"type": "minecraft:furnace_minecart"
+				},
+				"player": {
+					"vehicle": {
+						"type": "minecraft:minecart"
+					}
+				}
+			}
+		}
+	},
+	"rewards": {
+		"function": "buce:locomotive/check"
+	}
+}

@@ -67,6 +67,7 @@ DATAPACKFILES = \
 	illusory_trader.zip \
 	leashed.zip \
 	lichdom.zip \
+	locomotive.zip \
 	loot_overhaul_treasure_barrels.zip \
 	loot_overhaul_relics.zip \
 	loot_overhaul_starter_relic.zip \
@@ -82,6 +83,7 @@ DATAPACKFILES = \
 	phantasmal.zip \
 	poseable.zip \
 	relics_mythic.zip \
+	relics_deep.zip \
 	shearless.zip \
 	smart_allays.zip \
 	speedy_paths.zip \
@@ -545,6 +547,11 @@ storage_orbs_FILES := $(DEFAULT_DATA_FILES) \
 wandering_loot_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell find buce-data/wandering -type f | ./bin/ext2dir) \
 
+relics_deep_FILES := $(DEFAULT_DATA_FILES) \
+	$(shell find buce-data/ -name '*relics_deep*' | ./bin/ext2dir) \
+	$(shell find buce-data/deep -type f | ./bin/ext2dir) \
+	data/buce/functions/var.mcfunction \
+
 relics_mythic_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell find buce-data/ -name '*relics_mythic*' | ./bin/ext2dir) \
 	$(shell find buce-data/mythic -type f | ./bin/ext2dir) \
@@ -900,6 +907,9 @@ escape_grind_FILES := $(DEFAULT_DATA_FILES) \
 	data/minecraft/tags/functions/respawn_end.json \
 	data/minecraft/tags/functions/respawn_nether.json \
 	data/minecraft/tags/worldgen/structure/seeking_located.json \
+
+locomotive_FILES := $(DEFAULT_DATA_FILES) \
+	$(shell find buce-data/locomotive -type f | ./bin/ext2dir) \
 
 lichdom_FILES := $(DEFAULT_DATA_FILES) \
 	data/minecraft/tags/functions/load_lichdom.json \
@@ -1459,6 +1469,12 @@ loot_overhaul_relics.zip: $(loot_overhaul_relics_FILES)
 	zip $@ pack.png pack.mcmeta $^
 	./bin/ziprename _$(@:.zip=) "" $@
 
+relics_deep.zip: $(relics_deep_FILES)
+	cp meta/$(@:.zip=.png) pack.png
+	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
+	zip $@ pack.png pack.mcmeta $^
+	./bin/ziprename _$(@:.zip=) "" $@
+
 relics_mythic.zip: $(relics_mythic_FILES)
 	cp meta/$(@:.zip=.png) pack.png
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
@@ -1682,6 +1698,12 @@ escape_nether.zip: $(escape_nether_FILES)
 	./bin/ziprename _$(@:.zip=) "" $@
 
 escape_grind.zip: $(escape_grind_FILES)
+	cp meta/$(@:.zip=.png) pack.png
+	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
+	zip $@ pack.png pack.mcmeta $^
+	./bin/ziprename _$(@:.zip=) "" $@
+
+locomotive.zip: $(locomotive_FILES)
 	cp meta/$(@:.zip=.png) pack.png
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^

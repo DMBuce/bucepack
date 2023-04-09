@@ -1,0 +1,22 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:furnace_minecart"
+		},
+		"title": {
+			"text": "Locomotive"
+		},
+		"description": {
+			"text": "Furnace carts move towards players in minecarts when powered"
+		},
+		"show_toast": false,
+		"announce_to_chat": false,
+		"frame": "task"
+	},
+	"parent": "buce:root",
+	"criteria": {
+		"tick": {
+			"trigger": "minecraft:tick"
+		}
+	}
+}

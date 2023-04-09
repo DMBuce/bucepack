@@ -921,6 +921,15 @@ or assign it to a new note block.
 
 {!./bin/packsummary smart_allays}
 
+=== Locomotive
+
+Makes furnace minecart useable as train engines.
+
+When a player in a minecart fuels a furnace cart,
+the furnace cart moves towards the player instead of away from them.
+
+{!./bin/packsummary locomotive}
+
 === Poseable
 
 Lets you pose armor stands.

@@ -2253,6 +2253,25 @@ or assign it to a new note block.
 ====
 ====
 
+=== Locomotive
+
+Makes furnace minecart useable as train engines.
+
+When a player in a minecart fuels a furnace cart,
+the furnace cart moves towards the player instead of away from them.
+
+**Downloads**
+
+.https://github.com/DMBuce/bucepack/releases/latest/download/locomotive.zip[`locomotive.zip`]
+[%collapsible]
+====
+====
+
+.https://github.com/DMBuce/bucepack/releases[All Releases & Changelogs]
+[%collapsible]
+====
+====
+
 === Poseable
 
 Lets you pose armor stands.
@@ -2876,6 +2895,7 @@ See <<language-support,Language Support>> for details.
 
 ```
 assets/minecraft/lang/en_us.json
+assets/minecraft/lang/en_us.json
 assets/minecraft/models/block/light_weighted_pressure_plate_down.json
 assets/minecraft/models/block/light_weighted_pressure_plate.json
 assets/minecraft/models/block/polished_blackstone_button_inventory.json
@@ -2913,6 +2933,8 @@ data/minecraft/recipes/detector_rail.json
 data/minecraft/recipes/dispenser.json
 data/minecraft/recipes/iron_door.json
 data/minecraft/recipes/iron_trapdoor.json
+data/minecraft/recipes/iron_trapdoor.json
+data/minecraft/recipes/light_weighted_pressure_plate.json
 data/minecraft/recipes/light_weighted_pressure_plate.json
 data/minecraft/recipes/polished_blackstone_button.json
 data/minecraft/recipes/stone_axe.json
