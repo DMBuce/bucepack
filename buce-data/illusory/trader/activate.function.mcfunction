@@ -9,6 +9,6 @@ data modify entity @e[type=minecraft:illusioner,tag=new,limit=1] Rotation set fr
 tag @e[type=minecraft:illusioner,tag=new,limit=1] remove new
 
 # cleanup
-tp @s ~ ~-768 ~
+teleport @s ~ ~-768 ~
 kill @s
 
