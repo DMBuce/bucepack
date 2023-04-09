@@ -23,9 +23,13 @@
 					"items": [ "minecraft:goat_horn" ]
 				},
 				"player": {
-					"equipment": {
-						"mainhand": {
-							"items": [ "minecraft:goat_horn" ]
+					"location": {
+						"structure": "minecraft:ancient_city"
+					},
+					"type_specific": {
+						"type": "player",
+						"advancements": {
+							"buce:portal/deep/mountain/trigger": false
 						}
 					}
 				}
@@ -33,6 +37,6 @@
 		}
 	},
 	"rewards": {
-		"function": "buce:portal/deep/mainhand/horn"
+		"function": "buce:portal/deep/gate/check"
 	}
 }

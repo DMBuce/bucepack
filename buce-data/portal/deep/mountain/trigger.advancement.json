@@ -24,15 +24,10 @@
 					"nbt": "{gate:1b}"
 				},
 				"player": {
-					"equipment": {
-						"mainhand": {
-							"items": [ "minecraft:goat_horn" ]
-						}
-					},
 					"type_specific": {
 						"type": "player",
 						"advancements": {
-							"buce:portal/deep/mainhand/gate": false
+							"buce:portal/deep/gate/trigger": false
 						}
 					}
 				}

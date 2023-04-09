@@ -3,8 +3,7 @@
 ## debug
 #say reset
 
-# revoke advancement
-advancement revoke @a only buce:portal/deep/mainhand/gate
-#advancement revoke @a only buce:portal/deep/offhand/gate
+# revoke advancements
+advancement revoke @a only buce:portal/deep/gate/trigger
 advancement revoke @a only buce:portal/deep/mountain/trigger
 
