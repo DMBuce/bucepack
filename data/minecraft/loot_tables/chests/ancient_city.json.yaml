@@ -50,7 +50,7 @@ pools:
         }
       - { type: item, weight: 5, min: 1, max: 15, item: bone }
       - { type: item, weight: 5, min: 1, max: 15, item: soul_torch }
-      - { type: item, weight: 7, min: 6, max: 15, item: coal }
+      - { type: loot_table, weight: 7,            table: loot_overhaul/coal }
 # extra treasure
   - rolls: { min: 2, max: 3 }
     entries:

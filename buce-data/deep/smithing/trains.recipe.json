@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "base": {
+    "item": "minecraft:coal"
+  },
+  "addition": {
+    "item": "minecraft:golden_helmet"
+  },
+  "result": {
+    "item": "minecraft:golden_helmet"
+  }
+}

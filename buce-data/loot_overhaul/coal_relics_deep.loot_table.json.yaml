@@ -1,0 +1,7 @@
+pools:
+  - rolls: 1
+    entries:
+       - { type: item, weight: 7, min: 6, max: 15, item: coal }
+       - { type: item, weight: 7,                  item: coal,
+         nbt: '{relic:1b,tunnels:1b,CustomModelData:22183,display:{Name:\"{\\\"text\\\":\\\"Relic of Puncheons\\\",\\\"color\\\":\\\"light_purple\\\"}\",Lore:[\"\\\"§r§bMyth of Train Tunnels\\\"\"]},Enchantments:[{}]}'
+         }

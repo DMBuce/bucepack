@@ -1,0 +1,47 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:barrier"
+		},
+		"title": {
+			"text": "Trigger Advancement"
+		},
+		"description": {
+			"text": "Something went wrong, you should revoke this advancement"
+		},
+		"show_toast": false,
+		"announce_to_chat": false,
+		"hidden": true,
+		"frame": "task"
+	},
+	"parent": "buce:deep/root",
+	"criteria": {
+		"c1": {
+			"trigger": "minecraft:tick",
+			"conditions": {
+				"player": {
+					"vehicle": {
+						"type": "minecraft:minecart"
+					},
+					"location": {
+						"block": {
+							"tag": "minecraft:rail",
+							"state": "north_south"
+						}
+					},
+					"equipment": {
+						"head": {
+							"items": {
+								"item": [ "minecraft:golden_helmet" ],
+								"nbt": "{tunnels:1b}"
+							}
+						}
+					}
+				}
+			}
+		}
+	},
+	"rewards": {
+		"function": "buce:deep/tunnels/check"
+	}
+}

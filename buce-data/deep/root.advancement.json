@@ -1,0 +1,22 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:echo_shard"
+		},
+		"title": {
+			"text": "Deep Relics"
+		},
+		"description": {
+			"text": "Adds mythic devices to ancient city loot"
+		},
+		"show_toast": false,
+		"announce_to_chat": false,
+		"frame": "task"
+	},
+	"parent": "buce:root",
+	"criteria": {
+		"tick": {
+			"trigger": "minecraft:tick"
+		}
+	}
+}

@@ -2646,6 +2646,10 @@ Myth of Seeking can behave in unexpected ways
 due to https://bugs.mojang.com/browse/MC-138887[MC-138887].
 ====
 
+//=== Deep Relics
+//
+//image::https://i.imgur.com/anthmAo.png[Relic of Puncheons]
+
 === Phantasmal
 
 // Phantoms were so close to being a good addition,
