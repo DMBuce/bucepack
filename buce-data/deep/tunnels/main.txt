@@ -3,7 +3,9 @@
 # generates tunnel along the northsouth axis
 function buce:deep/tunnels/northsouth
 
+
 # generates tunnel along the eastwest axis
 function buce:deep/tunnels/eastwest
+
 
 # vim: ft=conf:

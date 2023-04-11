@@ -1,0 +1,67 @@
+#!/usr/bin/perl
+
+use strict;
+use warnings;
+
+use File::Path qw(make_path);
+use File::Basename qw(dirname);
+
+# defaults
+my $template = "data/%s/functions/%s.mcfunction";
+my $preprocessor = "./bin/sempl";
+my $ext = "\\.sempl";
+
+# config
+#
+# comment out the line below to generate files in normal datapack locations
+$template = "%s-data/%s.function.mcfunction";
+
+foreach my $infile (@ARGV) {
+	# use open file with preprocessor if necessary
+	my $in;
+	if ($preprocessor eq "") {
+		open($in, "<", $infile) or die "$!";
+	} else {
+		open($in, "-|", "$preprocessor '$infile'") or die "$!";
+	}
+
+	# open output file
+	my @fhstack = ();
+	my $outfile = "$infile.out";
+	$outfile =~ s/$ext\.out$//;
+	print STDERR "Writing file: $outfile\n";
+	open(my $out, ">", $outfile) or die "$!";
+	push @fhstack, $out;
+
+	# read input lines
+	while (my $line = <$in>) {
+		# figure out what to do
+		chomp $line;
+		my $op = "";
+		if ($line =~ /function ([^:]+):([^ :]+).*{\s*$/) {
+			$outfile = sprintf "$template", $1, $2;
+			$op = "push";
+		} elsif ($line =~ /}\s*$/) {
+			$op = "pop";
+		}
+
+		# adjust line
+		$line =~ s/^\s*//g;
+		$line =~ s/\s*[{}]\s*$//g;
+		$line =~ s/\s+/ /g if ! $line =~ /^#/;
+		print { $fhstack[-1] } "$line\n";
+		#print "\t$line\n";
+
+		# add/remove handle to/from fhstack if necessary
+		if ($op eq "push") {
+			# open file handle and add it to the stack
+			print STDERR "Writing file: $outfile\n";
+			-e dirname($outfile) or make_path(dirname($outfile)) or die "$!";
+			open(my $fh, ">", $outfile) or die "$!";
+			push @fhstack, $fh;
+		} elsif ($op eq "pop") {
+			pop @fhstack;
+		}
+	}
+}
+

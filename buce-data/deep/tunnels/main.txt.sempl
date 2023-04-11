@@ -16,8 +16,7 @@ coord_index = null
 {%	fi }{\\}
 
 # generates tunnel along the {$axis} axis
-function buce:deep/tunnels/{$axis}
-{%	exec >buce-data/deep/tunnels/$axis.function.mcfunction}{\\}
+function buce:deep/tunnels/{$axis} {
 	# runs every tick while a player wears a tunnel helmet in a minecart
 
 	# revoke advancement
@@ -43,53 +42,49 @@ function buce:deep/tunnels/{$axis}
 	#execute on vehicle at @s facing {$facing} if @s[predicate=buce:deep/tunnels/below] run function buce:deep/tunnels/below
 	#execute on vehicle at @s facing {$facing} if dimension minecraft:overworld @s[predicate=!buce:deep/tunnels/above,predicate=!buce:deep/tunnels/below] run function buce:deep/tunnels/middle
 	#execute on vehicle at @s facing {$facing} if dimension minecraft:the_end run function buce:deep/tunnels/end
-	execute on vehicle at @s facing {$facing} if dimension minecraft:the_nether run function buce:deep/tunnels/nether/build
-{%		exec >buce-data/deep/tunnels/nether/build.function.mcfunction}{\\}
+	execute on vehicle at @s facing {$facing} if dimension minecraft:the_nether run function buce:deep/tunnels/nether/build {
 		# runs as a minecart in the nether
 
 		# place sculk
 		execute positioned ^ ^ ^3 run function buce:deep/tunnels/sculk
-		execute positioned ^ ^ ^-3 run function buce:deep/tunnels/sculk
-{%			exec >buce-data/deep/tunnels/sculk.function.mcfunction}{\\}
+		execute positioned ^ ^ ^-3 run function buce:deep/tunnels/sculk {
 			# runs as a minecart building a tunnel
 			setblock ^2 ^1 ^ minecraft:sculk keep
 			setblock ^-2 ^1 ^ minecraft:sculk keep
 			setblock ^2 ^-1 ^ minecraft:sculk keep
 			setblock ^-2 ^-1 ^ minecraft:sculk keep
+		}
 
-{%		exec >>buce-data/deep/tunnels/nether/build.function.mcfunction}{\\}
 		# place blocks against bottom sculk lines
 		execute if score @s var matches 1 positioned ^ ^ ^2 run function buce:deep/tunnels/nether/bottom
-		execute if score @s var matches 5 run positioned ^ ^ ^-2 function buce:deep/tunnels/nether/bottom
-{%			exec >buce-data/deep/tunnels/nether/bottom.function.mcfunction}{\\}
+		execute if score @s var matches 5 run positioned ^ ^ ^-2 function buce:deep/tunnels/nether/bottom {
 			# runs as a minecart building a tunnel
 			setblock ^2 ^ ^ minecraft:polished_blackstone keep
 			setblock ^-2 ^ ^ minecraft:polished_blackstone keep
 			setblock ^1 ^-1 ^ minecraft:polished_blackstone_brick_slab keep
 			setblock ^-1 ^-1 ^ minecraft:polished_blackstone_brick_slab keep
+		}
 
-{%		exec >>buce-data/deep/tunnels/nether/build.function.mcfunction}{\\}
 		# place blocks against top sculk lines
 		execute if score @s var matches 2 positioned ^ ^ ^1 run function buce:deep/tunnels/nether/top
-		execute if score @s var matches 4 run positioned ^ ^ ^-1 function buce:deep/tunnels/nether/top
-{%			exec >buce-data/deep/tunnels/nether/top.function.mcfunction}{\\}
+		execute if score @s var matches 4 run positioned ^ ^ ^-1 function buce:deep/tunnels/nether/top {
 			# runs as a minecart building a tunnel
 			setblock ^2 ^2 ^ minecraft:polished_blackstone keep
 			setblock ^-2 ^2 ^ minecraft:polished_blackstone keep
 			setblock ^1 ^4 ^ minecraft:polished_blackstone keep
 			setblock ^-1 ^4 ^ minecraft:polished_blackstone keep
+		}
 
-{%		exec >>buce-data/deep/tunnels/nether/build.function.mcfunction}{\\}
 		# fill in middle gaps
-		execute if score @s var matches 3 run function buce:deep/tunnels/nether/middle
-{%			exec >buce-data/deep/tunnels/nether/middle.function.mcfunction}{\\}
+		execute if score @s var matches 3 run function buce:deep/tunnels/nether/middle {
 			# runs as a minecart building a tunnel
 			setblock ^2 ^2 ^ minecraft:chiseled_polished_blackstone keep
 			setblock ^-2 ^2 ^ minecraft:chiseled_polished_blackstone keep
 			setblock ^ ^4 ^ minecraft:polished_blackstone keep
+		}
+	}
+}
 
-{%exec >>"$DEST"}{\\}
 {%done}{\\}
-{%find buce-data/deep/tunnels/ -type f -name \*.function.mcfunction | xargs sed -i 's/^\t*//'}{\\}
 
 # vim: ft=conf:

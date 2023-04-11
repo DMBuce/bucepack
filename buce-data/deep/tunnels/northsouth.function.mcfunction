@@ -24,3 +24,4 @@ execute on vehicle scoreboard players operation @s var %= #buce.tunnel.length va
 #execute on vehicle at @s facing ~ ~ ~1 if dimension minecraft:overworld @s[predicate=!buce:deep/tunnels/above,predicate=!buce:deep/tunnels/below] run function buce:deep/tunnels/middle
 #execute on vehicle at @s facing ~ ~ ~1 if dimension minecraft:the_end run function buce:deep/tunnels/end
 execute on vehicle at @s facing ~ ~ ~1 if dimension minecraft:the_nether run function buce:deep/tunnels/nether/build
+
