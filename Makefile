@@ -1051,6 +1051,18 @@ data/buce/dimension/%.json: buce-data/%.dimension.json
 
 data/minecraft/tags/blocks/unmineable.json: data/minecraft/tags/blocks/mineable/*.json
 
+# set mccurly options
+MCCURLY_FN_PATH_FMT := %s-data/%s.function.mcfunction
+MCCURLY_PREPROCESSOR := sempl
+MCCURLY_STRIP_EXT := \.mccurly
+export MCCURLY_FN_PATH_FMT MCCURLY_PREPROCESSOR MCCURLY_STRIP_EXT
+
+%.txt: %.txt.mccurly
+
+.PHONY: mccurly
+mccurly:
+	find buce-data -name \*.mccurly -exec ./bin/mccurly {} +
+
 # rebuild all templates when latest.txt updates
 TEMPLATES = $(shell find * -name \*.sempl)
 $(TEMPLATES:.sempl=): latest.txt

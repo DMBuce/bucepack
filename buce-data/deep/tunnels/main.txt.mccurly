@@ -1,8 +1,5 @@
 #!/usr/bin/env sempl
-# declare variables
-axis = null
-facing = null
-coord_index = null
+SEMPL_EXPERIMENTAL=1
 #!end sempl env
 # advancement reward functions in this folder:
 {\\}
