@@ -1,7 +1,7 @@
 # runs as a minecart building a tunnel
 
-# debug
-tellraw @a ["Pos: ", {"nbt": "Pos", "entity": "@s"}]
+## debug
+#tellraw @a ["Pos: ", {"nbt": "Pos", "entity": "@s"}]
 
 # let var = coord % 6
 #
@@ -13,7 +13,9 @@ tellraw @a ["Pos: ", {"nbt": "Pos", "entity": "@s"}]
 # 0123450123450123450  <- var
 #
 execute store result score @s var run data get entity @s Pos[0]
+tellraw @a ["var0 : ",{"score":{"name":"@s","objective":"var"}}]
 scoreboard players operation @s var %= #buce.tunnel.length var
+tellraw @a ["var1 : ",{"score":{"name":"@s","objective":"var"}}]
 
 ## set facing along rail and figure out which tunnel to build
 #execute on vehicle at @s facing ~1 ~ ~ if @s[predicate=buce:deep/tunnels/above] run function buce:deep/tunnels/above

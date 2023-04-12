@@ -548,7 +548,7 @@ wandering_loot_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell find buce-data/wandering -type f | ./bin/ext2dir) \
 
 relics_deep_FILES := $(DEFAULT_DATA_FILES) \
-	$(shell find buce-data/ -name '*relics_deep*' | ./bin/ext2dir) \
+	$(shell find buce-data/ data/minecraft/ -name '*relics_deep*' | ./bin/ext2dir) \
 	$(shell find buce-data/deep -type f | ./bin/ext2dir) \
 	data/buce/functions/var.mcfunction \
 
