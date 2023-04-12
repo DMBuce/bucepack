@@ -2,7 +2,6 @@
 SEMPL_EXPERIMENTAL=1
 #!end sempl env
 # runs every tick while a player wears a tunnel helmet in a minecart
-{\\}
 {%for axis in north_south east_west; do}{\\}
 {%	if [[ $axis == north_south ]]; then }{\\}
 {%		facing='~ ~ ~1' }{\\}
@@ -32,68 +31,151 @@ execute on vehicle at @s if block ~ ~ ~ #minecraft:rails[shape={$axis}] facing {
 	# 0123450123450123450  <- var
 	#
 	execute on vehicle store result score @s var run data get entity @s Pos[{$coord_index}]
-	#tellraw @a ["var0 : ",{"score":{"name":"@s","objective":"var"}}]
 	execute on vehicle run scoreboard players operation @s var %= #buce.tunnel.length var
-	#tellraw @a ["var1 : ",{"score":{"name":"@s","objective":"var"}}]
+	#tellraw @a ["var : ",{"score":{"name":"@s","objective":"var"}}]
 
-	## set facing along rail and figure out which tunnel to build
-	#execute on vehicle at @s facing {$facing} if @s[predicate=buce:deep/tunnels/above] run function buce:deep/tunnels/above
-	#execute on vehicle at @s facing {$facing} if @s[predicate=buce:deep/tunnels/below] run function buce:deep/tunnels/below
-	#execute on vehicle at @s facing {$facing} if dimension minecraft:overworld @s[predicate=!buce:deep/tunnels/above,predicate=!buce:deep/tunnels/below] run function buce:deep/tunnels/middle
-	#execute on vehicle at @s facing {$facing} if dimension minecraft:the_end run function buce:deep/tunnels/end
-	execute on vehicle at @s facing {$facing} if dimension minecraft:the_nether run function buce:deep/tunnels/nether/build {
-		# runs as a minecart in the nether
+	# set facing along rail and figure out which tunnel to build
+{%	for location in nether below; do}{\\}
+{%		if [[ $location == nether ]]; then }{\\}
+{%			desc='the nether' }{\\}
+{%			condition='if dimension minecraft:the_nether' }{\\}
+{%			block=polished_blackstone }{\\}
+{%			block_chiseled=chiseled_polished_blackstone }{\\}
+{%			block_slab=polished_blackstone_brick_slab }{\\}
+{%		elif [[ $location == below ]]; then }{\\}
+{%			desc='below y=0' }{\\}
+{%			condition='if entity @s[predicate=buce:deep/tunnels/below]' }{\\}
+{%			block=deepslate_bricks }{\\}
+{%			block_chiseled=chiseled_deepslate }{\\}
+{%			block_slab=deepslate_tile_slab }{\\}
+{%		fi }{\\}
+	execute on vehicle at @s facing {$facing} {$condition} run function buce:deep/tunnels/{$location}/build {
+		# runs as a minecart in {$desc}
+
+		## debug
+		#fill ^-2 ^-1 ^4  ^2 ^3  ^4  minecraft:air replace #minecraft:sculk_replaceable
+		#fill ^-2 ^-1 ^-4 ^2 ^3  ^-4 minecraft:air replace #minecraft:sculk_replaceable
+		#fill ^-2 ^-1 ^4  ^2 ^3  ^4  minecraft:air replace #minecraft:snaps_goat_horn
+		#fill ^-2 ^-1 ^-4 ^2 ^3  ^-4 minecraft:air replace #minecraft:snaps_goat_horn
+		##fill ^   ^-1 ^-4 ^  ^-1 ^4  minecraft:blue_ice
+		#fill ^   ^-1 ^-4 ^  ^-1 ^4  minecraft:redstone_block
+		#fill ^   ^   ^-4 ^  ^   ^4  minecraft:powered_rail
 
 		# place sculk
-		execute positioned ^ ^ ^3 run function buce:deep/tunnels/sculk
+		execute positioned ^ ^ ^3  run function buce:deep/tunnels/sculk
 		execute positioned ^ ^ ^-3 run function buce:deep/tunnels/sculk {
+			# runs as a minecart building a tunnel
+
 			## debug
 			#say sculk
 
-			# runs as a minecart building a tunnel
-			setblock ^2 ^3 ^ minecraft:sculk keep
-			setblock ^-2 ^3 ^ minecraft:sculk keep
-			setblock ^2 ^-1 ^ minecraft:sculk keep
+			# set blocks
+			setblock ^2  ^3  ^ minecraft:sculk keep
+			setblock ^-2 ^3  ^ minecraft:sculk keep
+			setblock ^2  ^-1 ^ minecraft:sculk keep
 			setblock ^-2 ^-1 ^ minecraft:sculk keep
 		}
 
-		# place blocks against bottom sculk lines
-		execute if score @s var matches 1 positioned ^ ^ ^2 run function buce:deep/tunnels/nether/bottom
-		execute if score @s var matches 5 positioned ^ ^ ^-2 run function buce:deep/tunnels/nether/bottom {
-			## debug
-			#say bottom
-
+		# place blocks against sculk lines
+		execute if score @s var matches 1 positioned ^ ^ ^2  run function buce:deep/tunnels/{$location}/sides
+		execute if score @s var matches 5 positioned ^ ^ ^-2 run function buce:deep/tunnels/{$location}/sides {
 			# runs as a minecart building a tunnel
-			setblock ^2 ^ ^ minecraft:polished_blackstone keep
-			setblock ^-2 ^ ^ minecraft:polished_blackstone keep
-			setblock ^1 ^-1 ^ minecraft:polished_blackstone_brick_slab keep
-			setblock ^-1 ^-1 ^ minecraft:polished_blackstone_brick_slab keep
-		}
 
-		# place blocks against top sculk lines
-		execute if score @s var matches 2 positioned ^ ^ ^1 run function buce:deep/tunnels/nether/top
-		execute if score @s var matches 4 positioned ^ ^ ^-1 run function buce:deep/tunnels/nether/top {
 			## debug
-			#say top
+			#say corners
 
-			# runs as a minecart building a tunnel
-			setblock ^2 ^2 ^ minecraft:polished_blackstone keep
-			setblock ^-2 ^2 ^ minecraft:polished_blackstone keep
-			setblock ^1 ^3 ^ minecraft:polished_blackstone keep
-			setblock ^-1 ^3 ^ minecraft:polished_blackstone keep
+			# set blocks
+			setblock ^2  ^2  ^ minecraft:{$block} keep
+			setblock ^-2 ^2  ^ minecraft:{$block} keep
+			setblock ^2  ^   ^ minecraft:{$block} keep
+			setblock ^-2 ^   ^ minecraft:{$block} keep
 		}
+		execute if score @s var matches 2 positioned ^ ^ ^1  run function buce:deep/tunnels/{$location}/floorroof
+		execute if score @s var matches 4 positioned ^ ^ ^-1 run function buce:deep/tunnels/{$location}/floorroof {
+			# runs as a minecart building a tunnel
 
-		# fill in middle gaps
-		execute if score @s var matches 3 run function buce:deep/tunnels/nether/middle {
 			## debug
 			#say middle
 
+			# set blocks
+			setblock ^1  ^3  ^ minecraft:{$block} keep
+			setblock ^-1 ^3  ^ minecraft:{$block} keep
+			setblock ^1  ^-1 ^ minecraft:{$block_slab} keep
+			setblock ^-1 ^-1 ^ minecraft:{$block_slab} keep
+		}
+
+		# fill in middle gaps
+		execute if score @s var matches 3 run function buce:deep/tunnels/{$location}/middle {
 			# runs as a minecart building a tunnel
-			setblock ^2 ^1 ^ minecraft:chiseled_polished_blackstone keep
-			setblock ^-2 ^1 ^ minecraft:chiseled_polished_blackstone keep
-			setblock ^ ^3 ^ minecraft:polished_blackstone keep
+
+			## debug
+			#say middle
+			#setblock ^   ^3 ^ minecraft:sea_lantern keep
+
+			# set blocks
+			setblock ^2  ^1 ^ minecraft:{$block_chiseled} keep
+			setblock ^-2 ^1 ^ minecraft:{$block_chiseled} keep
+			setblock ^   ^3 ^ minecraft:{$block} keep
 		}
 	}
+{%	done}{\\}
+{%	location=middle }{\\}
+{%	desc='between y=0 and sea level' }{\\}
+{%	condition='if dimension minecraft:overworld if entity @s[predicate=!buce:deep/tunnels/above,predicate=!buce:deep/tunnels/below]' }{\\}
+	execute on vehicle at @s facing {$facing} {$condition} run function buce:deep/tunnels/{$location}/build {
+		# runs as a minecart in {$desc}
+
+		## debug
+		#fill ^-1 ^-1 ^4  ^1 ^2  ^4  minecraft:air replace #minecraft:sculk_replaceable
+		#fill ^-1 ^-1 ^-4 ^1 ^2  ^-4 minecraft:air replace #minecraft:sculk_replaceable
+		#fill ^-1 ^-1 ^4  ^1 ^2  ^4  minecraft:air replace #minecraft:snaps_goat_horn
+		#fill ^-1 ^-1 ^-4 ^1 ^2  ^-4 minecraft:air replace #minecraft:snaps_goat_horn
+		##fill ^   ^-1 ^-4 ^  ^-1 ^4  minecraft:blue_ice
+		#fill ^   ^-1 ^-4 ^  ^-1 ^4  minecraft:redstone_block
+		#fill ^   ^   ^-4 ^  ^   ^4  minecraft:powered_rail
+
+		# place floor
+		execute positioned ^ ^ ^3  run function buce:deep/tunnels/{$location}/floor
+		execute positioned ^ ^ ^-3 run function buce:deep/tunnels/{$location}/floor {
+			# runs as a minecart building a tunnel
+
+			## debug
+			#say sculk
+
+			# set blocks
+			setblock ^1  ^-1 ^ minecraft:oak_planks keep
+			setblock ^-1 ^-1 ^ minecraft:oak_planks keep
+		}
+
+		# place fences
+		execute if score @s var matches 1 positioned ^ ^  ^2  run function buce:deep/tunnels/{$location}/fences
+		execute if score @s var matches 5 positioned ^ ^  ^-2 run function buce:deep/tunnels/{$location}/fences
+		execute if score @s var matches 2 positioned ^ ^1 ^1  run function buce:deep/tunnels/{$location}/fences
+		execute if score @s var matches 4 positioned ^ ^1 ^-1 run function buce:deep/tunnels/{$location}/fences {
+			# runs as a minecart building a tunnel
+
+			## debug
+			#say corners
+
+			# set blocks
+			setblock ^1  ^ ^ minecraft:oak_fence keep
+			setblock ^-1 ^ ^ minecraft:oak_fence keep
+		}
+
+		# place beam
+		execute if score @s var matches 3 run function buce:deep/tunnels/{$location}/beam {
+			# runs as a minecart building a tunnel
+
+			## debug
+			#say middle
+			#setblock ^ ^2 ^1 minecraft:torch keep
+
+			# set blocks
+			fill ^-1 ^2 ^ ^1 ^2 ^ minecraft:oak_planks keep
+		}
+	}
+	#execute on vehicle at @s facing {$facing} if @s[predicate=buce:deep/tunnels/above] run function buce:deep/tunnels/above
+	#execute on vehicle at @s facing {$facing} if dimension minecraft:the_end run function buce:deep/tunnels/end
 }
 {%done}{\\}
 

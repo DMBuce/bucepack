@@ -1,4 +1,4 @@
-# runs as a minecart in the nether
+# runs as a minecart in below y=0
 
 ## debug
 #fill ^-2 ^-1 ^4  ^2 ^3  ^4  minecraft:air replace #minecraft:sculk_replaceable
@@ -14,11 +14,11 @@ execute positioned ^ ^ ^3 run function buce:deep/tunnels/sculk
 execute positioned ^ ^ ^-3 run function buce:deep/tunnels/sculk
 
 # place blocks against sculk lines
-execute if score @s var matches 1 positioned ^ ^ ^2 run function buce:deep/tunnels/nether/sides
-execute if score @s var matches 5 positioned ^ ^ ^-2 run function buce:deep/tunnels/nether/sides
-execute if score @s var matches 2 positioned ^ ^ ^1 run function buce:deep/tunnels/nether/floorroof
-execute if score @s var matches 4 positioned ^ ^ ^-1 run function buce:deep/tunnels/nether/floorroof
+execute if score @s var matches 1 positioned ^ ^ ^2 run function buce:deep/tunnels/below/sides
+execute if score @s var matches 5 positioned ^ ^ ^-2 run function buce:deep/tunnels/below/sides
+execute if score @s var matches 2 positioned ^ ^ ^1 run function buce:deep/tunnels/below/floorroof
+execute if score @s var matches 4 positioned ^ ^ ^-1 run function buce:deep/tunnels/below/floorroof
 
 # fill in middle gaps
-execute if score @s var matches 3 run function buce:deep/tunnels/nether/middle
+execute if score @s var matches 3 run function buce:deep/tunnels/below/middle
 

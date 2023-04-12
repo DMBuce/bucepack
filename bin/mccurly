@@ -44,7 +44,7 @@ foreach my $infile (@ARGV) {
 		# adjust line
 		$line =~ s/\s*[{}]\s*$//g;
 		$line =~ s/^\s*//g;
-		$line =~ s/\s+/ /g if ! $line =~ /^#/;
+		$line =~ s/\s+/ /g if not $line =~ /^#/;
 		print { $fhstack[-1] } "$line\n";
 
 		# add/remove handle to/from fhstack if necessary
