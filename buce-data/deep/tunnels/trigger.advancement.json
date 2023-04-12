@@ -21,20 +21,20 @@
 			"conditions": {
 				"player": {
 					"vehicle": {
-						"type": "minecraft:minecart"
-					},
-					"location": {
-						"block": {
-							"tag": "minecraft:rail",
-							"state": "north_south"
+						"type": "minecraft:minecart",
+						"location": {
+							"block": {
+								"tag": "minecraft:rails",
+								"state": {
+									"shape": "north_south"
+								}
+							}
 						}
 					},
 					"equipment": {
 						"head": {
-							"items": {
-								"item": [ "minecraft:golden_helmet" ],
-								"nbt": "{tunnels:1b}"
-							}
+							"items": [ "minecraft:golden_helmet" ],
+							"nbt": "{tunnels:1b}"
 						}
 					}
 				}

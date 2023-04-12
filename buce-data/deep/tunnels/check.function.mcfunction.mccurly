@@ -1,26 +1,26 @@
 #!/usr/bin/env sempl
 SEMPL_EXPERIMENTAL=1
 #!end sempl env
-# advancement reward functions in this folder:
+# runs every tick while a player wears a tunnel helmet in a minecart
+
+# revoke advancement
+advancement revoke @s only buce:deep/tunnels/trigger
+
 {\\}
-{%for axis in northsouth eastwest; do}{\\}
-{%	if [[ $axis == northsouth ]]; then }{\\}
+{%for axis in north_south east_west; do}{\\}
+{%	if [[ $axis == north_south ]]; then }{\\}
 {%		facing='~ ~ ~1' }{\\}
 {%		coord_index=2 }{\\}
 {%	else }{\\}
 {%		facing='~1 ~ ~' }{\\}
 {%		coord_index=0 }{\\}
 {%	fi }{\\}
-
-# generates tunnel along the {$axis} axis
-function buce:deep/tunnels/{$axis} {
-	# runs every tick while a player wears a tunnel helmet in a minecart
-
-	# revoke advancement
-	advancement revoke @s only buce:deep/tunnels/trigger
+# generate the tunnel
+execute on vehicle at @s if block ~ ~ ~ #minecraft:rails[shape={$axis}] facing {$facing} run function buce:deep/tunnels/{$axis} {
+	# runs as a minecart building a tunnel
 
 	# debug
-	say check
+	tellraw @a ["Pos: ", {"nbt": "Pos", "entity": "@s"}]
 
 	# let var = coord % 6
 	#
@@ -31,30 +31,30 @@ function buce:deep/tunnels/{$axis} {
 	# -------------------  <- rail
 	# 0123450123450123450  <- var
 	#
-	execute on vehicle store result score @s var run data get entity @s Pos[{$coord_index}]
-	execute on vehicle scoreboard players operation @s var %= #buce.tunnel.length var
+	execute store result score @s var run data get entity @s Pos[{$coord_index}]
+	scoreboard players operation @s var %= #buce.tunnel.length var
 
 	## set facing along rail and figure out which tunnel to build
 	#execute on vehicle at @s facing {$facing} if @s[predicate=buce:deep/tunnels/above] run function buce:deep/tunnels/above
 	#execute on vehicle at @s facing {$facing} if @s[predicate=buce:deep/tunnels/below] run function buce:deep/tunnels/below
 	#execute on vehicle at @s facing {$facing} if dimension minecraft:overworld @s[predicate=!buce:deep/tunnels/above,predicate=!buce:deep/tunnels/below] run function buce:deep/tunnels/middle
 	#execute on vehicle at @s facing {$facing} if dimension minecraft:the_end run function buce:deep/tunnels/end
-	execute on vehicle at @s facing {$facing} if dimension minecraft:the_nether run function buce:deep/tunnels/nether/build {
+	execute if dimension minecraft:the_nether run function buce:deep/tunnels/nether/build {
 		# runs as a minecart in the nether
 
 		# place sculk
 		execute positioned ^ ^ ^3 run function buce:deep/tunnels/sculk
 		execute positioned ^ ^ ^-3 run function buce:deep/tunnels/sculk {
 			# runs as a minecart building a tunnel
-			setblock ^2 ^1 ^ minecraft:sculk keep
-			setblock ^-2 ^1 ^ minecraft:sculk keep
+			setblock ^2 ^3 ^ minecraft:sculk keep
+			setblock ^-2 ^3 ^ minecraft:sculk keep
 			setblock ^2 ^-1 ^ minecraft:sculk keep
 			setblock ^-2 ^-1 ^ minecraft:sculk keep
 		}
 
 		# place blocks against bottom sculk lines
 		execute if score @s var matches 1 positioned ^ ^ ^2 run function buce:deep/tunnels/nether/bottom
-		execute if score @s var matches 5 run positioned ^ ^ ^-2 function buce:deep/tunnels/nether/bottom {
+		execute if score @s var matches 5 positioned ^ ^ ^-2 run function buce:deep/tunnels/nether/bottom {
 			# runs as a minecart building a tunnel
 			setblock ^2 ^ ^ minecraft:polished_blackstone keep
 			setblock ^-2 ^ ^ minecraft:polished_blackstone keep
@@ -64,7 +64,7 @@ function buce:deep/tunnels/{$axis} {
 
 		# place blocks against top sculk lines
 		execute if score @s var matches 2 positioned ^ ^ ^1 run function buce:deep/tunnels/nether/top
-		execute if score @s var matches 4 run positioned ^ ^ ^-1 function buce:deep/tunnels/nether/top {
+		execute if score @s var matches 4 positioned ^ ^ ^-1 run function buce:deep/tunnels/nether/top {
 			# runs as a minecart building a tunnel
 			setblock ^2 ^2 ^ minecraft:polished_blackstone keep
 			setblock ^-2 ^2 ^ minecraft:polished_blackstone keep
@@ -84,4 +84,3 @@ function buce:deep/tunnels/{$axis} {
 
 {%done}{\\}
 
-# vim: ft=conf:

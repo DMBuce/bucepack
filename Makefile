@@ -1057,11 +1057,14 @@ MCCURLY_PREPROCESSOR := sempl
 MCCURLY_STRIP_EXT := \.mccurly
 export MCCURLY_FN_PATH_FMT MCCURLY_PREPROCESSOR MCCURLY_STRIP_EXT
 
-%.txt: %.txt.mccurly
+MCCURLY_TARGETS := $(shell cat cache/mccurly.files)
+$(MCCURLY_TARGETS): $(shell find buce-data -name \*.mccurly)
+	find buce-data -name \*.mccurly -exec ./bin/mccurly {} + | sort -u > cache/mccurly.files
 
 .PHONY: mccurly
-mccurly:
-	find buce-data -name \*.mccurly -exec ./bin/mccurly {} +
+mccurly: $(MCCURLY_TARGETS)
+
+%.function.mcfunction: %.function.mcfunction.mccurly
 
 # rebuild all templates when latest.txt updates
 TEMPLATES = $(shell find * -name \*.sempl)

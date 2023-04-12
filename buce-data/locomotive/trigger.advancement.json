@@ -20,7 +20,10 @@
 			"trigger": "minecraft:player_interacted_with_entity",
 			"conditions": {
 				"item": {
-					"items": [ "minecraft:coal" ]
+					"items": [
+						"minecraft:coal",
+						"minecraft:charcoal"
+					]
 				},
 				"entity": {
 					"type": "minecraft:furnace_minecart"

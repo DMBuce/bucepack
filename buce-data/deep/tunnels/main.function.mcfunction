@@ -8,4 +8,3 @@ function buce:deep/tunnels/northsouth
 function buce:deep/tunnels/eastwest
 
 
-# vim: ft=conf:

@@ -16,6 +16,7 @@ sed -r '
 	/deleteme/d
 	/disabled/d
 	s/.sempl$//
+	s/.mccurly$//
 	s/.yaml$//
 	s,([^/ \t]*)-data,data/\1,g
 	s,data/([^/]*)/(.*)\.([^./]*)\.([^./]*),data/\1/\3/\2.\4,g

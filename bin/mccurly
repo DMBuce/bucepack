@@ -25,7 +25,7 @@ foreach my $infile (@ARGV) {
 	my @fhstack = ();
 	my $outfile = "$infile.out";
 	$outfile =~ s/$ext\.out$//;
-	print STDERR "Writing file: $outfile\n";
+	print "$outfile\n";
 	open(my $out, ">", $outfile) or die "$!";
 	push @fhstack, $out;
 
@@ -51,7 +51,7 @@ foreach my $infile (@ARGV) {
 		if ($op eq "push") {
 			# open file handle and add it to the stack
 			-e dirname($outfile) or make_path(dirname($outfile)) or die "$!";
-			print STDERR "Writing file: $outfile\n";
+			print "$outfile\n";
 			open(my $fh, ">", $outfile) or die "$!";
 			push @fhstack, $fh;
 		} elsif ($op eq "pop") {
