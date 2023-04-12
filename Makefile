@@ -454,6 +454,8 @@ aggro_bastions_FILES := $(DEFAULT_DATA_FILES) \
 
 antidote_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell find buce-data/antidote -type f | ./bin/ext2dir) \
+	data/buce/functions/var.mcfunction \
+	data/minecraft/tags/functions/load_antidote.json \
 
 acclimated_FILES := $(DEFAULT_DATA_FILES) \
 	data/minecraft/tags/blocks/strider_warm_blocks.json \
