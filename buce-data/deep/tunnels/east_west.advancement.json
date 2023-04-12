@@ -26,7 +26,7 @@
 							"block": {
 								"tag": "minecraft:rails",
 								"state": {
-									"shape": "north_south"
+									"shape": "east_west"
 								}
 							}
 						}
@@ -42,6 +42,6 @@
 		}
 	},
 	"rewards": {
-		"function": "buce:deep/tunnels/check"
+		"function": "buce:deep/tunnels/east_west"
 	}
 }

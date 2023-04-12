@@ -1,10 +1,8 @@
-# advancement reward functions in this folder:
+# runs every tick while a player wears a tunnel helmet in a minecart
 
-# generates tunnel along the northsouth axis
-function buce:deep/tunnels/northsouth
+# generate the tunnel
+execute on vehicle at @s if block ~ ~ ~ #minecraft:rails[shape=north_south] facing ~ ~ ~1 run function buce:deep/tunnels/north_south
 
-
-# generates tunnel along the eastwest axis
-function buce:deep/tunnels/eastwest
-
+# generate the tunnel
+execute on vehicle at @s if block ~ ~ ~ #minecraft:rails[shape=east_west] facing ~1 ~ ~ run function buce:deep/tunnels/east_west
 
