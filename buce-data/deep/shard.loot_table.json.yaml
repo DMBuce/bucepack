@@ -1,7 +1,6 @@
 pools:
   - rolls: 1
     entries:
-      - { type: empty }
       - { type: item, weight: 4, item: echo_shard,
           nbt: '{relic:1b,reverb:1b,CustomModelData:22183,display:{Name:\"{\\\"text\\\":\\\"Relic of Echoes\\\",\\\"color\\\":\\\"light_purple\\\"}\",Lore:[\"\\\"§r§bMyth of Reverberation\\\"\"]},Enchantments:[{}]}'
         }
