@@ -19,7 +19,7 @@
                   }
                 }
               ],
-              "tag": "{relic:1b,illumination:1b,CustomModelData:22183,display:{Name:\"{\\\"text\\\":\\\"Relic of Glowing\\\",\\\"color\\\":\\\"light_purple\\\"}\",Lore:[\"\\\"§r§aMyth of Lightning Bugs\\\"\"]},Enchantments:[{}]}"
+              "tag": "{relic:1b,illumination:1b,CustomModelData:22183,display:{Name:\"{\\\"text\\\":\\\"Relic of Glowing\\\",\\\"color\\\":\\\"light_purple\\\"}\",Lore:[\"\\\"§r§bMyth of Lightning Bugs\\\"\"]},Enchantments:[{}]}"
             },
             {
               "add": false,
