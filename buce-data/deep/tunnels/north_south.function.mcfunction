@@ -1,4 +1,4 @@
-# runs as a minecart building a tunnel
+# runs as a player wearing a tunnel relic in a minecart
 
 # revoke advancement
 advancement revoke @s only buce:deep/tunnels/north_south
@@ -6,7 +6,7 @@ advancement revoke @s only buce:deep/tunnels/north_south
 ## debug
 #tellraw @a ["Pos: ", {"nbt": "Pos", "entity": "@s"}]
 
-# let var = coord % 6
+# let minecart var = coord % 6
 #
 # side view w/ value of var as cart moves across rail:
 #

@@ -11,9 +11,9 @@ SEMPL_EXPERIMENTAL=1
 {%		coord_index=0 }{\\}
 {%	fi }{\\}
 
-# generate the tunnel
-execute on vehicle at @s if block ~ ~ ~ #minecraft:rails[shape={$axis}] facing {$facing} run function buce:deep/tunnels/{$axis} {
-	# runs as a minecart building a tunnel
+# generate a tunnel in the {$axis} direction
+function buce:deep/tunnels/{$axis} {
+	# runs as a player wearing a tunnel relic in a minecart
 
 	# revoke advancement
 	advancement revoke @s only buce:deep/tunnels/{$axis}
@@ -21,7 +21,7 @@ execute on vehicle at @s if block ~ ~ ~ #minecraft:rails[shape={$axis}] facing {
 	## debug
 	#tellraw @a ["Pos: ", {"nbt": "Pos", "entity": "@s"}]
 
-	# let var = coord % 6
+	# let minecart var = coord % 6
 	#
 	# side view w/ value of var as cart moves across rail:
 	#
@@ -37,7 +37,7 @@ execute on vehicle at @s if block ~ ~ ~ #minecraft:rails[shape={$axis}] facing {
 	# set facing along rail and figure out which tunnel to build
 {%	for location in nether below; do}{\\}
 {%		if [[ $location == nether ]]; then }{\\}
-{%			desc='the nether' }{\\}
+{%			desc='in the nether' }{\\}
 {%			condition='if dimension minecraft:the_nether' }{\\}
 {%			block=polished_blackstone }{\\}
 {%			block_chiseled=chiseled_polished_blackstone }{\\}
@@ -50,7 +50,7 @@ execute on vehicle at @s if block ~ ~ ~ #minecraft:rails[shape={$axis}] facing {
 {%			block_slab=deepslate_tile_slab }{\\}
 {%		fi }{\\}
 	execute on vehicle at @s facing {$facing} {$condition} run function buce:deep/tunnels/{$location}/build {
-		# runs as a minecart in {$desc}
+		# runs as a minecart {$desc}
 
 		## debug
 		#fill ^-2 ^-1 ^4  ^2 ^3  ^4  minecraft:air replace #minecraft:sculk_replaceable
@@ -61,9 +61,12 @@ execute on vehicle at @s if block ~ ~ ~ #minecraft:rails[shape={$axis}] facing {
 		#fill ^   ^-1 ^-4 ^  ^-1 ^4  minecraft:redstone_block
 		#fill ^   ^   ^-4 ^  ^   ^4  minecraft:powered_rail
 
+		# consume sculk
+		execute on passengers store result score #buce.tunnel.fuel var run clear @s minecraft:sculk 2
+
 		# place sculk
-		execute positioned ^ ^ ^3  run function buce:deep/tunnels/sculk
-		execute positioned ^ ^ ^-3 run function buce:deep/tunnels/sculk {
+		execute if score #buce.tunnel.fuel var matches 1.. positioned ^ ^ ^3  run function buce:deep/tunnels/sculk
+		execute if score #buce.tunnel.fuel var matches 1.. positioned ^ ^ ^-3 run function buce:deep/tunnels/sculk {
 			# runs as a minecart building a tunnel
 
 			## debug
@@ -77,8 +80,8 @@ execute on vehicle at @s if block ~ ~ ~ #minecraft:rails[shape={$axis}] facing {
 		}
 
 		# place blocks against sculk lines
-		execute if score @s var matches 1 positioned ^ ^ ^2  run function buce:deep/tunnels/{$location}/sides
-		execute if score @s var matches 5 positioned ^ ^ ^-2 run function buce:deep/tunnels/{$location}/sides {
+		execute if score @s var matches 1 if score #buce.tunnel.fuel var matches 2.. positioned ^ ^ ^2  run function buce:deep/tunnels/{$location}/sides
+		execute if score @s var matches 5 if score #buce.tunnel.fuel var matches 2.. positioned ^ ^ ^-2 run function buce:deep/tunnels/{$location}/sides {
 			# runs as a minecart building a tunnel
 
 			## debug
@@ -90,8 +93,8 @@ execute on vehicle at @s if block ~ ~ ~ #minecraft:rails[shape={$axis}] facing {
 			setblock ^2  ^   ^ minecraft:{$block} keep
 			setblock ^-2 ^   ^ minecraft:{$block} keep
 		}
-		execute if score @s var matches 2 positioned ^ ^ ^1  run function buce:deep/tunnels/{$location}/floorroof
-		execute if score @s var matches 4 positioned ^ ^ ^-1 run function buce:deep/tunnels/{$location}/floorroof {
+		execute if score @s var matches 2 if score #buce.tunnel.fuel var matches 2.. positioned ^ ^ ^1  run function buce:deep/tunnels/{$location}/floorroof
+		execute if score @s var matches 4 if score #buce.tunnel.fuel var matches 2.. positioned ^ ^ ^-1 run function buce:deep/tunnels/{$location}/floorroof {
 			# runs as a minecart building a tunnel
 
 			## debug
@@ -105,7 +108,7 @@ execute on vehicle at @s if block ~ ~ ~ #minecraft:rails[shape={$axis}] facing {
 		}
 
 		# fill in middle gaps
-		execute if score @s var matches 3 run function buce:deep/tunnels/{$location}/middle {
+		execute if score @s var matches 3 if score #buce.tunnel.fuel var matches 2.. run function buce:deep/tunnels/{$location}/middle {
 			# runs as a minecart building a tunnel
 
 			## debug
@@ -123,7 +126,7 @@ execute on vehicle at @s if block ~ ~ ~ #minecraft:rails[shape={$axis}] facing {
 {%	desc='between y=0 and sea level' }{\\}
 {%	condition='if dimension minecraft:overworld if entity @s[predicate=!buce:deep/tunnels/above,predicate=!buce:deep/tunnels/below]' }{\\}
 	execute on vehicle at @s facing {$facing} {$condition} run function buce:deep/tunnels/{$location}/build {
-		# runs as a minecart in {$desc}
+		# runs as a minecart {$desc}
 
 		## debug
 		#fill ^-1 ^-1 ^4  ^1 ^2  ^4  minecraft:air replace #minecraft:sculk_replaceable
@@ -134,9 +137,12 @@ execute on vehicle at @s if block ~ ~ ~ #minecraft:rails[shape={$axis}] facing {
 		#fill ^   ^-1 ^-4 ^  ^-1 ^4  minecraft:redstone_block
 		#fill ^   ^   ^-4 ^  ^   ^4  minecraft:powered_rail
 
+		# consume sculk
+		execute on passengers store result score #buce.tunnel.fuel var run clear @s minecraft:sculk 1
+
 		# place floor
-		execute positioned ^ ^ ^3  run function buce:deep/tunnels/{$location}/floor
-		execute positioned ^ ^ ^-3 run function buce:deep/tunnels/{$location}/floor {
+		execute if score #buce.tunnel.fuel var matches 1.. positioned ^ ^ ^3  run function buce:deep/tunnels/{$location}/floor
+		execute if score #buce.tunnel.fuel var matches 1.. positioned ^ ^ ^-3 run function buce:deep/tunnels/{$location}/floor {
 			# runs as a minecart building a tunnel
 
 			## debug
@@ -148,10 +154,10 @@ execute on vehicle at @s if block ~ ~ ~ #minecraft:rails[shape={$axis}] facing {
 		}
 
 		# place fences
-		execute if score @s var matches 1 positioned ^ ^  ^2  run function buce:deep/tunnels/{$location}/fences
-		execute if score @s var matches 5 positioned ^ ^  ^-2 run function buce:deep/tunnels/{$location}/fences
-		execute if score @s var matches 2 positioned ^ ^1 ^1  run function buce:deep/tunnels/{$location}/fences
-		execute if score @s var matches 4 positioned ^ ^1 ^-1 run function buce:deep/tunnels/{$location}/fences {
+		execute if score @s var matches 1 if score #buce.tunnel.fuel var matches 1.. positioned ^ ^  ^2  run function buce:deep/tunnels/{$location}/fences
+		execute if score @s var matches 5 if score #buce.tunnel.fuel var matches 1.. positioned ^ ^  ^-2 run function buce:deep/tunnels/{$location}/fences
+		execute if score @s var matches 2 if score #buce.tunnel.fuel var matches 1.. positioned ^ ^1 ^1  run function buce:deep/tunnels/{$location}/fences
+		execute if score @s var matches 4 if score #buce.tunnel.fuel var matches 1.. positioned ^ ^1 ^-1 run function buce:deep/tunnels/{$location}/fences {
 			# runs as a minecart building a tunnel
 
 			## debug
@@ -163,7 +169,7 @@ execute on vehicle at @s if block ~ ~ ~ #minecraft:rails[shape={$axis}] facing {
 		}
 
 		# place beam
-		execute if score @s var matches 3 run function buce:deep/tunnels/{$location}/beam {
+		execute if score @s var matches 3 if score #buce.tunnel.fuel var matches 1.. run function buce:deep/tunnels/{$location}/beam {
 			# runs as a minecart building a tunnel
 
 			## debug

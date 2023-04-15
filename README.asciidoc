@@ -2646,9 +2646,44 @@ Myth of Seeking can behave in unexpected ways
 due to https://bugs.mojang.com/browse/MC-138887[MC-138887].
 ====
 
-//=== Deep Relics
-//
-//image::https://i.imgur.com/anthmAo.png[Relic of Puncheons]
+=== Deep Relics
+
+If this <<ordering-data-packs,addon pack>>
+is enabled and loaded after <<loot-overhaul,Loot Overhaul>>,
+it adds <<Relics>> with <<mythic-enchantments,Mythic Enchantments>>
+to ancient city loot
+that can be applied to tools in the smithing table.
+Many of the relics require sculk to power them.
+
+.Summary of deep relics
+[%collapsible]
+====
+
+**Relic of Puncheons**:
+This lump of coal can be applied to a golden helmet in the smithing table
+to give it a custom enchantment called Myth of Train Tunnels.
+While riding a minecart in the nether or below y=63 in the overworld,
+the helmet consumes sculk from the player's inventory
+and creates tunnel supports around the minecart track.
+
+====
+
+//image::https://i.imgur.com/anthmAo.png[Deep Relics]
+
+If you have the <<spellsmithing-guide,Spellsmithing Guide>> resource pack
+installed, some relics have custom item textures in the inventory.
+
+**Downloads**
+
+.https://github.com/DMBuce/bucepack/releases/latest/download/relics_deep.zip[`relics_deep.zip`]
+[%collapsible]
+====
+====
+
+.https://github.com/DMBuce/bucepack/releases[All Releases & Changelogs]
+[%collapsible]
+====
+====
 
 === Phantasmal
 
@@ -3526,6 +3561,7 @@ loot_overhaul_relics.zip
 loot_overhaul_starter_relic.zip
 loot_overhaul_treasure_seeds.zip
 phantasmal.zip
+relics_deep.zip
 relics_mythic.zip
 ----
 
