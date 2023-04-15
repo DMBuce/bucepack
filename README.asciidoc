@@ -2663,7 +2663,7 @@ Many of the relics require sculk to power them.
 This lump of coal can be applied to a golden helmet in the smithing table
 to give it a custom enchantment called Myth of Train Tunnels.
 While riding a minecart in the nether or below y=63 in the overworld,
-the helmet consumes sculk from the player's inventory
+the enchantment consumes sculk from the player's inventory
 and creates tunnel supports around the minecart track.
 
 ====

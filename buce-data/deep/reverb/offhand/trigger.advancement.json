@@ -14,7 +14,7 @@
 		"hidden": true,
 		"frame": "task"
 	},
-	"parent": "buce:mythic/root",
+	"parent": "buce:deep/root",
 	"criteria": {
 		"used_totem": {
 			"trigger": "minecraft:used_totem",
@@ -39,6 +39,6 @@
 		}
 	},
 	"rewards": {
-		"function": "buce:mythic/reverb/offhand/activate"
+		"function": "buce:deep/reverb/offhand/activate"
 	}
 }

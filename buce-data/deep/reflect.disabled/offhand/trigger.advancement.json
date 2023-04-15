@@ -14,7 +14,7 @@
 		"hidden": true,
 		"frame": "task"
 	},
-	"parent": "buce:mythic/root",
+	"parent": "buce:deep/root",
 	"criteria": {
 		"void_totem": {
 			"trigger": "minecraft:entity_hurt_player",
@@ -80,6 +80,6 @@
 		]
 	],
 	"rewards": {
-		"function": "buce:mythic/reflect/offhand/activate"
+		"function": "buce:deep/reflect/offhand/activate"
 	}
 }
