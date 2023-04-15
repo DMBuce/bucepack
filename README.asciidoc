@@ -2587,20 +2587,6 @@ further decrease the tool's durability.
 // * shovel: silk touch + breaking
 // * hoe: fortune, silk touch, not sure about breaking vs unbreaking on them
 
-**Relic of Echoes**: If the <<loot-overhaul,Loot Overhaul>> datapack is
-installed before this one, some echo shards in ancient city chests have Myth of
-Reverberation, a custom enchantment that can be applied to a totem in the
-smithing table. When the totem is used, another totem from the player's
-inventory is placed in their hand if one is available, and it's given the same
-enchantments. Then, there's a chance that an echo shard is created from
-the totem's reverberations.
-
-//**Relic of the Void**: If the <<loot-overhaul,Loot Overhaul>> datapack is
-//installed before this one, some echo shards in ancient city chests have Myth of
-//Reflection, a custom enchantment that can be applied to a totem in the
-//smithing table. When a player holding the totem takes damage in the void,
-//the totem activates and the player bounces off the void.
-
 ====
 
 //image::https://i.imgur.com/Rm2NtDa.png[Mythic Relics]
@@ -2660,11 +2646,32 @@ Many of the relics require sculk to power them.
 ====
 
 **Relic of Puncheons**:
-This lump of coal can be applied to a golden helmet in the smithing table
-to give it a custom enchantment called Myth of Train Tunnels.
+Some coal in ancient city chests have Myth of Train Tunnels,
+a custom enchantment that can be applied to a golden helmet in the smithing table.
 While riding a minecart in the nether or below y=63 in the overworld,
 the enchantment consumes sculk from the player's inventory
 and creates tunnel supports around the minecart track.
+
+**Relic of Echoes**:
+Some echo shards have Myth of Reverberation,
+a custom enchantment that can be applied to a totem in the smithing table.
+When the totem is used, it creates an echo shard,
+another totem from the player's inventory
+is placed in their hand if one is available,
+and it's given the same enchantment.
+
+**Relic of Rebirth**:
+Some echo shards have Myth of Reincarnation,
+a custom enchantment that can be applied to a totem in the smithing table.
+When the totem is used, it creates an echo shard,
+teleports the player to a random location,
+and sets their spawn point to that location.
+
+**Relic of Rebuke**:
+Some echo shards have Myth of Retribution,
+a custom enchantment that can be applied to a totem in the smithing table.
+When the totem is used, it creates an echo shard
+and deals damage to the last mob that damaged the player in the previous 5 seconds.
 
 ====
 

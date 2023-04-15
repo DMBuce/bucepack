@@ -1,9 +1,0 @@
-#!/usr/bin/env sempl
-SEMPL_BRACES=<>
-#!end sempl env
-pools:
-  - rolls: 1
-    entries:
-      - { type: empty }
-<!sed -n '/^      / {s/min: *[0-9]* *,//; s/max: *[0-9]* *,//; s/,  */, /g; p}' buce-data/loot_overhaul/echo_shards_relics_deep.loot_table.json.yaml>
-# vim: ft=yaml
