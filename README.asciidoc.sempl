@@ -238,7 +238,7 @@ following datapacks.
 
 * <<phantasmal,Phantasmal>>: Invisible item frames and light blocks
 * <<loot-overhaul,Loot Overhaul>>: Invisible light blocks
-* <<mythic-relics,Mythic Relics>>, <<relic-loot,Relic Loot>>, <<starter-relic,Starter Relic>>, <<ender-relic,Ender Relic>>: Some relics
+* <<mythic-relics,Mythic Relics>>, <<deep-relics,Deep Relics>>, <<relic-loot,Relic Loot>>, <<starter-relic,Starter Relic>>, <<ender-relic,Ender Relic>>: Some relics
 
 {!./bin/packsummary spellsmithing_guide}
 
@@ -1424,19 +1424,6 @@ See <<language-support,Language Support>> for details.
 
 {!./bin/packsummary copper_overhaul}
 
-=== Path Strider
-
-When installed as a data pack,
-makes Soul Speed work with path blocks
-and any material that can be turned into slabs or stairs
-except for stone.
-
-When installed as a resource pack,
-provides partial support for renaming Soul Speed to Path Strider.
-See <<language-support,Language Support>> for details.
-
-{!./bin/packsummary path_strider}
-
 == Challenge Data Packs
 
 Data packs that create new ways to play Minecraft.
@@ -1861,10 +1848,8 @@ to a tool, but they continue to function even without a datapack.
 
 Glamers are enchantments added by the <<phantasmal,Phantasmal>> datapack
 that can be applied to item frames
-in the smithing table to give them illusory effects such as invisibility.
-The illusions are incredibly convincing and can be
-interacted with as if they are real, but they're destroyed when the
-item frame is broken.
+in the smithing table to give them an illusory invisibility effect.
+The illusion is destroyed when the item frame is broken.
 
 Glamers are identical to boons in all other ways.
 
@@ -1888,8 +1873,8 @@ Relics can be applied to tools in the smithing table.
 Below is a description of the common relics added by the
 <<starter-item,Starter Relic>>, <<ender-relic,Ender Relic>>,
 and <<relic-loot,Relic Loot>> datapacks.
-For a list of mythic relics, see the <<mythic-relics,Mythic Relics>> datapack
-description.
+For a list of mythic relics, see the <<mythic-relics,Mythic Relics>>
+and <<deep-relics,Deep Relics>> datapack descriptions.
 
 .Summary of relics
 [%collapsible]
