@@ -359,9 +359,12 @@ spellsmithing_guide_FILES := $(DEFAULT_RESOURCE_FILES) \
 	assets/minecraft/models/item/item_frame.json \
 	assets/minecraft/models/item/light.json \
 	assets/minecraft/models/item/netherite_chestplate.json \
+	assets/minecraft/models/item/relic_totem.json \
 	assets/minecraft/models/item/spyglass.json \
+	assets/minecraft/models/item/totem_of_undying.json \
 	assets/minecraft/models/item/trident.json \
 	assets/minecraft/textures/gui/container/smithing.png \
+	assets/minecraft/textures/item/relic_totem.png \
 
 retronetherrack_FILES := $(DEFAULT_RESOURCE_FILES) \
 	assets/minecraft/textures/block/netherrack.png \

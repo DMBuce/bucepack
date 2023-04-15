@@ -908,22 +908,9 @@ doesn't require <<loot-overhaul,Loot Overhaul>>.
 These data packs include advancement triggers
 that run commands when certain conditions are met.
 
-=== Smart Allays
-
-When a player places a hopper against a note block,
-allays within 16 blocks of the player that are assigned to a note block
-become permanently assigned to their note block.
-
-To break an allay's assignment,
-you can break the note block,
-reassign it to its note block,
-or assign it to a new note block.
-
-{!./bin/packsummary smart_allays}
-
 === Locomotive
 
-Makes furnace minecart useable as train engines.
+Makes furnace minecarts useable as train engines.
 
 When a player in a minecart fuels a furnace cart,
 the furnace cart moves towards the player instead of away from them.
@@ -940,6 +927,19 @@ Sneaking while adding or removing an item from an armor stand changes its
 pose.
 
 {!./bin/packsummary poseable}
+
+=== Smart Allays
+
+When a player places a hopper against a note block,
+allays within 16 blocks of the player that are assigned to a note block
+become permanently assigned to their note block.
+
+To break an allay's assignment,
+you can break the note block,
+reassign it to its note block,
+or assign it to a new note block.
+
+{!./bin/packsummary smart_allays}
 
 === Antidote
 
