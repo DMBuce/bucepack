@@ -21,24 +21,11 @@
 			"conditions": {
 				"item": {
 					"nbt": "{reverb:1b}"
-				},
-				"player": [
-					{
-						"condition": "minecraft:entity_properties",
-						"entity": "this",
-						"predicate": {
-							"equipment": {
-								"offhand": {
-									"items": [ "minecraft:air" ]
-								}
-							}
-						}
-					}
-				]
+				}
 			}
 		}
 	},
 	"rewards": {
-		"function": "buce:deep/reverb/offhand/activate"
+		"function": "buce:deep/reverb/activate"
 	}
 }
