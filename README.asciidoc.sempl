@@ -1567,6 +1567,22 @@ and Logs can be crafted from 2 Wood.
 
 {!./bin/packsummary worldgen_trees}
 
+=== Overworld Overhaul
+
+Currently, this datapack just adds volcanic Molten Peaks biomes.
+Molten peaks replace stony peaks near jungles.
+They generate with several layers of smooth basalt on the surface
+and several layers of tuff under that.
+
+//image::https://i.imgur.com/2XApont.png[Volcanic Stony Peaks]
+//image::https://i.imgur.com/l3PVJ3p.png[Volcanic Stony Peaks]
+image::https://i.imgur.com/mwejgdG.png[Volcanic Stony Peaks]
+
+In the future, this datapack will have other features
+that require sweeping changes to the overworld.
+
+{!./bin/packsummary worldgen_overworld}
+
 == Legacy Data Packs
 
 These data packs haven't been updated for the most recent version of
