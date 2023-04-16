@@ -3220,6 +3220,36 @@ by right-clicking an enderchest with an ender pearl in the overworld.
 ====
 ====
 
+=== Apocalypse
+
+Makes all villages generate as zombie villages.
+
+In order to access villager-based game mechanics
+such as trading, raids, and iron farms,
+the player needs to either cure zombie villagers
+or find an igloo with a basement.
+
+**Downloads**
+
+.https://github.com/DMBuce/bucepack/releases/latest/download/worldgen_apocalypse.zip[`worldgen_apocalypse.zip`]
+[%collapsible]
+====
+
+```
+data/minecraft/worldgen/template_pool/village/desert/town_centers.json
+data/minecraft/worldgen/template_pool/village/plains/town_centers.json
+data/minecraft/worldgen/template_pool/village/savanna/town_centers.json
+data/minecraft/worldgen/template_pool/village/snowy/town_centers.json
+data/minecraft/worldgen/template_pool/village/taiga/town_centers.json
+```
+
+====
+
+.https://github.com/DMBuce/bucepack/releases[All Releases & Changelogs]
+[%collapsible]
+====
+====
+
 === Renewable Structures
 
 Makes desert pyramids and mineshafts a renewable source of sand and cobwebs.

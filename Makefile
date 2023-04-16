@@ -78,8 +78,6 @@ DATAPACKFILES = \
 	network_deep.zip \
 	network_nether.zip \
 	no_treasure_maps.zip \
-	worldgen_renewable_structures.zip \
-	worldgen_trees.zip \
 	phantasmal_end.zip \
 	phantasmal.zip \
 	poseable.zip \
@@ -99,6 +97,9 @@ DATAPACKFILES = \
 	storage_orbs.zip \
 	wandering_loot.zip \
 	waterproof_tech.zip \
+	worldgen_renewable_structures.zip \
+	worldgen_trees.zip \
+	worldgen_apocalypse.zip \
 	#worldgen_overworld.zip \
 
 PACKFILES = $(sort $(RESOURCEPACKFILES) $(DATAPACKFILES))
@@ -651,6 +652,9 @@ mineable_FILES := $(DEFAULT_DATA_FILES) \
 	data/minecraft/tags/blocks/mineable/axe.json \
 	data/minecraft/tags/blocks/mineable/pickaxe.json \
 	data/buce/advancements/mineable.json \
+
+worldgen_apocalypse_FILES := $(DEFAULT_DATA_FILES) \
+	$(wildcard data/minecraft/worldgen/template_pool/village/*/town_centers.json) \
 
 worldgen_overworld_FILES := $(DEFAULT_DATA_FILES) \
 	data/minecraft/dimension_type/overworld_caves.json \
@@ -1567,6 +1571,12 @@ enchanting.zip: $(enchanting_FILES)
 	./bin/ziprename _$(@:.zip=) "" $@
 
 ender_relic.zip: $(ender_relic_FILES)
+	cp meta/$(@:.zip=.png) pack.png
+	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
+	zip $@ pack.png pack.mcmeta $^
+	./bin/ziprename _$(@:.zip=) "" $@
+
+worldgen_apocalypse.zip: $(worldgen_apocalypse_FILES)
 	cp meta/$(@:.zip=.png) pack.png
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^

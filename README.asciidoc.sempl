@@ -1538,6 +1538,17 @@ by right-clicking an enderchest with an ender pearl in the overworld.
 
 {!./bin/packsummary frienderchest}
 
+=== Apocalypse
+
+Makes all villages generate as zombie villages.
+
+In order to access villager-based game mechanics
+such as trading, raids, and iron farms,
+the player needs to either cure zombie villagers
+or find an igloo with a basement.
+
+{!./bin/packsummary worldgen_apocalypse}
+
 === Renewable Structures
 
 Makes desert pyramids and mineshafts a renewable source of sand and cobwebs.
