@@ -62,6 +62,7 @@ DATAPACKFILES = \
 	heads_fae.zip \
 	heads_golem.zip \
 	heads_player.zip \
+	heirlooms.zip \
 	hover_mode.zip \
 	husbandry.zip \
 	illusory_trader.zip \
@@ -425,6 +426,10 @@ climbable_FILES := $(DEFAULT_DATA_FILES) \
 
 illusory_trader_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell find buce-data/illusory/trader -type f | ./bin/ext2dir) \
+
+heirlooms_FILES := $(DEFAULT_DATA_FILES) \
+	$(shell find data/minecraft -name '*heirlooms*' | ./bin/ext2dir) \
+	$(shell find buce-data/heirlooms -type f | ./bin/ext2dir) \
 
 hover_mode_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell ls buce-data/hover_mode* | ./bin/ext2dir) \
@@ -1286,6 +1291,12 @@ gardener_endermen.zip: $(gardener_endermen_FILES)
 	./bin/ziprename _$(@:.zip=) "" $@
 
 illusory_trader.zip: $(illusory_trader_FILES)
+	cp meta/$(@:.zip=.png) pack.png
+	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
+	zip $@ pack.png pack.mcmeta $^
+	./bin/ziprename _$(@:.zip=) "" $@
+
+heirlooms.zip: $(heirlooms_FILES)
 	cp meta/$(@:.zip=.png) pack.png
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^

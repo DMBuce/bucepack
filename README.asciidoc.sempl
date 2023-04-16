@@ -928,6 +928,14 @@ pose.
 
 {!./bin/packsummary poseable}
 
+=== Heirlooms
+
+Prevents items from despawning when dropped on death.
+
+Items dropped in other ways despawn after 5 minutes like normal.
+
+{!./bin/packsummary heirlooms}
+
 === Smart Allays
 
 When a player places a hopper against a note block,
