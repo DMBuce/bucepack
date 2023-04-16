@@ -2356,6 +2356,9 @@ Snowy weather generates up to three layers of snow instead of one.
 
 Once any player enters the nether, all players stop healing from food.
 
+Once any player channels lightning on a creeper,
+mob explosions break blocks without destroying them.
+
 The first time the wither has been defeated,
 the rate of growth and decay for many natural processes is increased.
 Examples of such processes include
@@ -2960,7 +2963,6 @@ See <<language-support,Language Support>> for details.
 
 ```
 assets/minecraft/lang/en_us.json
-assets/minecraft/lang/en_us.json
 assets/minecraft/models/block/light_weighted_pressure_plate_down.json
 assets/minecraft/models/block/light_weighted_pressure_plate.json
 assets/minecraft/models/block/polished_blackstone_button_inventory.json
@@ -2998,8 +3000,6 @@ data/minecraft/recipes/detector_rail.json
 data/minecraft/recipes/dispenser.json
 data/minecraft/recipes/iron_door.json
 data/minecraft/recipes/iron_trapdoor.json
-data/minecraft/recipes/iron_trapdoor.json
-data/minecraft/recipes/light_weighted_pressure_plate.json
 data/minecraft/recipes/light_weighted_pressure_plate.json
 data/minecraft/recipes/polished_blackstone_button.json
 data/minecraft/recipes/stone_axe.json

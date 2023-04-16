@@ -983,6 +983,9 @@ Snowy weather generates up to three layers of snow instead of one.
 
 Once any player enters the nether, all players stop healing from food.
 
+Once any player channels lightning on a creeper,
+mob explosions break blocks without destroying them.
+
 The first time the wither has been defeated,
 the rate of growth and decay for many natural processes is increased.
 Examples of such processes include

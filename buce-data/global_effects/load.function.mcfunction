@@ -3,6 +3,7 @@
 # add objectives
 scoreboard objectives add died deathCount
 
-# snowier snow
-gamerule snowAccumulationHeight 3
+# set gamerule, but only once
+execute unless score #buce.snow var matches 1.. run gamerule snowAccumulationHeight 3
+scoreboard players set #buce.snow var 1
 

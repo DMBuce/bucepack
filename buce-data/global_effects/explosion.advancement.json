@@ -1,0 +1,33 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:creeper_head"
+		},
+		"title": {
+			"text": "Blast Resistant Blocks"
+		},
+		"description": {
+			"text": "Once any player channels lightning on a creeper, mob explosions break blocks without destroying them"
+		},
+		"show_toast": false,
+		"announce_to_chat": true,
+		"hidden": false,
+		"frame": "task"
+	},
+	"parent": "buce:global_effects/root",
+	"criteria": {
+		"c1": {
+			"trigger": "minecraft:channeled_lightning",
+			"conditions": {
+				"victims": [
+					{
+						"type": "minecraft:creeper"
+					}
+				]
+			}
+		}
+	},
+	"rewards": {
+		"function": "buce:global_effects/explosion"
+	}
+}
