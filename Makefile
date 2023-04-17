@@ -657,9 +657,13 @@ worldgen_apocalypse_FILES := $(DEFAULT_DATA_FILES) \
 	$(wildcard data/minecraft/worldgen/template_pool/village/*/town_centers.json) \
 
 worldgen_overworld_FILES := $(DEFAULT_DATA_FILES) \
-	data/minecraft/worldgen/noise_settings/overworld_worldgen_overworld.json \
 	data/minecraft/dimension/overworld.json \
 	data/minecraft/worldgen/biome/molten_peaks.json \
+	data/minecraft/worldgen/configured_feature/lake_lava_volcano.json \
+	data/minecraft/worldgen/configured_feature/spring_lava_volcano.json \
+	data/minecraft/worldgen/noise_settings/overworld_worldgen_overworld.json \
+	data/minecraft/worldgen/placed_feature/lake_lava_volcano.json \
+	data/minecraft/worldgen/placed_feature/spring_lava_volcano.json \
 
 worldgen_renewable_structures_FILES := $(DEFAULT_DATA_FILES) \
 	data/minecraft/worldgen/structure/desert_pyramid.json \

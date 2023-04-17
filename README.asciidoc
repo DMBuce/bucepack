@@ -3347,14 +3347,14 @@ data/minecraft/worldgen/configured_feature/warped_fungus_planted.json
 
 === Overworld Overhaul
 
-Currently, this datapack just adds volcanic Molten Peaks biomes.
-Molten peaks replace stony peaks near jungles.
-They generate with several layers of smooth basalt on the surface
+Currently, this datapack just adds volcanic Molten Peaks biomes
+that generate with several layers of smooth basalt on the surface
 and several layers of tuff under that.
 
 //image::https://i.imgur.com/2XApont.png[Volcanic Stony Peaks]
 //image::https://i.imgur.com/l3PVJ3p.png[Volcanic Stony Peaks]
-image::https://i.imgur.com/mwejgdG.png[Volcanic Stony Peaks]
+//image::https://i.imgur.com/mwejgdG.png[Volcanic Stony Peaks]
+image::https://i.imgur.com/DlPJoSW.jpg[Volcanic Stony Peaks]
 
 In the future, this datapack will have other features
 that require sweeping changes to the overworld.
