@@ -1576,9 +1576,15 @@ Changes the overworld in various ways.
 //image::https://i.imgur.com/mwejgdG.png[Volcanic Stony Peaks]
 image::https://i.imgur.com/DlPJoSW.jpg[Volcanic Stony Peaks]
 
-A new Molten Peaks biome generates
-with several layers of smooth basalt on the surface
+A new Molten Peaks biome tends to generate near jungles.
+It has several layers of smooth basalt on the surface
 and several layers of tuff under that.
+
+//image::https://i.imgur.com/oA8tFr7.png[Granite Peaks]
+image::https://i.imgur.com/MGQJ8kc.png[Granite Peaks]
+
+A new Granite Peaks biome tends to generate near savannas.
+It generates mountains of granite with occasional strips of andesite.
 
 image::https://i.imgur.com/0tWoCVh.png[Stony Shore]
 
@@ -1586,7 +1592,7 @@ Stony Peaks and Stony Shores generate with andesite on the surface.
 
 image::https://i.imgur.com/OjqRTNZ.png[Stony Peaks Cave]
 
-Caves above sea level in Stony Peaks, Stony Shores, and Molten Peaks
+Caves above sea level in Stony Shores, Stony Peaks, Granite Peaks, and Molten Peaks
 generate with granite and diorite instead of stone.
 
 //sediments, minerals, and rocks
