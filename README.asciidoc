@@ -2963,6 +2963,7 @@ See <<language-support,Language Support>> for details.
 
 ```
 assets/minecraft/lang/en_us.json
+assets/minecraft/lang/en_us.json
 assets/minecraft/models/block/light_weighted_pressure_plate_down.json
 assets/minecraft/models/block/light_weighted_pressure_plate.json
 assets/minecraft/models/block/polished_blackstone_button_inventory.json
@@ -3000,6 +3001,8 @@ data/minecraft/recipes/detector_rail.json
 data/minecraft/recipes/dispenser.json
 data/minecraft/recipes/iron_door.json
 data/minecraft/recipes/iron_trapdoor.json
+data/minecraft/recipes/iron_trapdoor.json
+data/minecraft/recipes/light_weighted_pressure_plate.json
 data/minecraft/recipes/light_weighted_pressure_plate.json
 data/minecraft/recipes/polished_blackstone_button.json
 data/minecraft/recipes/stone_axe.json
@@ -3347,8 +3350,14 @@ data/minecraft/worldgen/configured_feature/warped_fungus_planted.json
 
 === Overworld Overhaul
 
-Currently, this datapack just adds volcanic Molten Peaks biomes
-that generate with several layers of smooth basalt on the surface
+Changes the overworld in various ways.
+
+Stony Peaks and Stony Shores generate with andesite on the surface.
+
+image::https://i.imgur.com/0tWoCVh.png[Stony Shore]
+
+A new Molten Peaks biome generates
+with several layers of smooth basalt on the surface
 and several layers of tuff under that.
 
 //image::https://i.imgur.com/2XApont.png[Volcanic Stony Peaks]
@@ -3356,8 +3365,12 @@ and several layers of tuff under that.
 //image::https://i.imgur.com/mwejgdG.png[Volcanic Stony Peaks]
 image::https://i.imgur.com/DlPJoSW.jpg[Volcanic Stony Peaks]
 
-In the future, this datapack will have other features
-that require sweeping changes to the overworld.
+Stony Peaks, Stony Shores, and Molten Peaks generate
+with granite and diorite instead of stone above sea level.
+
+image::https://i.imgur.com/OjqRTNZ.png[Stony Peaks Cave]
+
+//sediments, minerals, and rocks
 
 **Downloads**
 

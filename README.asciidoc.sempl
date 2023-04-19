@@ -1569,8 +1569,14 @@ and Logs can be crafted from 2 Wood.
 
 === Overworld Overhaul
 
-Currently, this datapack just adds volcanic Molten Peaks biomes
-that generate with several layers of smooth basalt on the surface
+Changes the overworld in various ways.
+
+Stony Peaks and Stony Shores generate with andesite on the surface.
+
+image::https://i.imgur.com/0tWoCVh.png[Stony Shore]
+
+A new Molten Peaks biome generates
+with several layers of smooth basalt on the surface
 and several layers of tuff under that.
 
 //image::https://i.imgur.com/2XApont.png[Volcanic Stony Peaks]
@@ -1578,8 +1584,12 @@ and several layers of tuff under that.
 //image::https://i.imgur.com/mwejgdG.png[Volcanic Stony Peaks]
 image::https://i.imgur.com/DlPJoSW.jpg[Volcanic Stony Peaks]
 
-In the future, this datapack will have other features
-that require sweeping changes to the overworld.
+Stony Peaks, Stony Shores, and Molten Peaks generate
+with granite and diorite instead of stone above sea level.
+
+image::https://i.imgur.com/OjqRTNZ.png[Stony Peaks Cave]
+
+//sediments, minerals, and rocks
 
 {!./bin/packsummary worldgen_overworld}
 

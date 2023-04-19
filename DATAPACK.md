@@ -1,6 +1,7 @@
 
 ## Resources
 
+https://github.com/TheForsakenFurby/Surface-Rules-Guide-Minecraft-JE-1.18/blob/main/Guide.md
 https://www.reddit.com/r/MinecraftCommands/wiki/questions
 https://www.reddit.com/r/MinecraftCommands/wiki/optimising
 scheduler: https://www.reddit.com/r/MinecraftCommands/comments/c939nx/best_ways_to_optimize_datapacks/
