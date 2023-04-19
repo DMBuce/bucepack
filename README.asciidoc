@@ -3352,23 +3352,23 @@ data/minecraft/worldgen/configured_feature/warped_fungus_planted.json
 
 Changes the overworld in various ways.
 
-Stony Peaks and Stony Shores generate with andesite on the surface.
-
-image::https://i.imgur.com/0tWoCVh.png[Stony Shore]
-
-A new Molten Peaks biome generates
-with several layers of smooth basalt on the surface
-and several layers of tuff under that.
-
 //image::https://i.imgur.com/2XApont.png[Volcanic Stony Peaks]
 //image::https://i.imgur.com/l3PVJ3p.png[Volcanic Stony Peaks]
 //image::https://i.imgur.com/mwejgdG.png[Volcanic Stony Peaks]
 image::https://i.imgur.com/DlPJoSW.jpg[Volcanic Stony Peaks]
 
-Stony Peaks, Stony Shores, and Molten Peaks generate
-with granite and diorite instead of stone above sea level.
+A new Molten Peaks biome generates
+with several layers of smooth basalt on the surface
+and several layers of tuff under that.
+
+image::https://i.imgur.com/0tWoCVh.png[Stony Shore]
+
+Stony Peaks and Stony Shores generate with andesite on the surface.
 
 image::https://i.imgur.com/OjqRTNZ.png[Stony Peaks Cave]
+
+Caves above sea level in Stony Peaks, Stony Shores, and Molten Peaks
+generate with granite and diorite instead of stone.
 
 //sediments, minerals, and rocks
 
