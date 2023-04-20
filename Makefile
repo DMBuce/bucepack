@@ -658,6 +658,8 @@ worldgen_apocalypse_FILES := $(DEFAULT_DATA_FILES) \
 
 worldgen_overworld_FILES := $(DEFAULT_DATA_FILES) \
 	data/minecraft/dimension/overworld.json \
+	data/minecraft/tags/blocks/deepslate_ore_replaceables.json \
+	data/minecraft/tags/blocks/stone_ore_replaceables.json \
 	data/minecraft/worldgen/biome/granite_peaks.json \
 	data/minecraft/worldgen/biome/molten_peaks.json \
 	data/minecraft/worldgen/configured_feature/lake_lava_volcano.json \

@@ -1595,6 +1595,9 @@ image::https://i.imgur.com/OjqRTNZ.png[Stony Peaks Cave]
 Caves above sea level in Stony Shores, Stony Peaks, Granite Peaks, and Molten Peaks
 generate with granite and diorite instead of stone.
 
+Stone ores generate in tuff instead of deepslate ores
+so that some stone ore variants are easier to obtain.
+
 //sediments, minerals, and rocks
 
 {!./bin/packsummary worldgen_overworld}

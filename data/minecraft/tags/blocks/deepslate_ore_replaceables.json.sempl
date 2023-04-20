@@ -1,0 +1,9 @@
+#!/usr/bin/env sempl
+SEMPL_BRACES = {{}}
+#!end sempl env
+{
+  "replace": true,
+  "values": [
+{{!grep minecraft: "$(./bin/latest)".jar/data/minecraft/tags/blocks/deepslate_ore_replaceables.json | grep -v -etuff | sed '$s/,$//'}}
+  ]
+}
