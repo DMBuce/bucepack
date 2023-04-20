@@ -1571,14 +1571,16 @@ and Logs can be crafted from 2 Wood.
 
 Changes the overworld in various ways.
 
-//image::https://i.imgur.com/2XApont.png[Volcanic Stony Peaks]
-//image::https://i.imgur.com/l3PVJ3p.png[Volcanic Stony Peaks]
-//image::https://i.imgur.com/mwejgdG.png[Volcanic Stony Peaks]
-image::https://i.imgur.com/DlPJoSW.jpg[Volcanic Stony Peaks]
+//image::https://i.imgur.com/2XApont.png[Molten Peaks]
+//image::https://i.imgur.com/l3PVJ3p.png[Molten Peaks]
+//image::https://i.imgur.com/mwejgdG.png[Molten Peaks]
+//image::https://i.imgur.com/DlPJoSW.jpg[Molten Peaks]
+image::https://i.imgur.com/GIoBPRQ.png[Molten Peaks]
 
 A new Molten Peaks biome tends to generate near jungles.
-It has several layers of smooth basalt on the surface
-and several layers of tuff under that.
+It has several layers of tuff on the surface
+and several layers of andesite under that.
+Features made out of lava and smooth basalt can be found here.
 
 //image::https://i.imgur.com/oA8tFr7.png[Granite Peaks]
 image::https://i.imgur.com/MGQJ8kc.png[Granite Peaks]

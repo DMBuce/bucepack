@@ -14,4 +14,5 @@ buce-data/heads/ancients.loot_table.json.yaml
 buce-data/relic/all.loot_table.json.yaml
 buce-data/mythic/chromatic/fireworks.loot_table.json.yaml
 data/minecraft/loot_tables/entities/trader_llama.json
+data/minecraft/tags/blocks/deepslate_ore_replaceables.json
 data/buce/*/
