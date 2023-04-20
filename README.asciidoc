@@ -3375,8 +3375,8 @@ Stony Peaks and Stony Shores generate with andesite on the surface.
 
 image::https://i.imgur.com/OjqRTNZ.png[Stony Peaks Cave]
 
-Caves above sea level in Stony Shores, Stony Peaks, Granite Peaks, and Molten Peaks
-generate with granite and diorite instead of stone.
+Granite and diorite generate instead of stone between sea level and and the surface
+of Stony Shores, Stony Peaks, Granite Peaks, and Molten Peaks biomes.
 Granite and diorite blobs don't generate exposed to air.
 
 Diamonds generate with increased air exposure,
@@ -3398,6 +3398,14 @@ so that some stone ore variants are easier to obtain.
 data/minecraft/dimension/overworld.json
 data/minecraft/tags/blocks/deepslate_ore_replaceables.json
 data/minecraft/tags/blocks/stone_ore_replaceables.json
+data/minecraft/worldgen/configured_feature/ore_coal_buried.json
+data/minecraft/worldgen/configured_feature/ore_diamond_buried.json
+data/minecraft/worldgen/configured_feature/ore_diamond_large.json
+data/minecraft/worldgen/configured_feature/ore_diamond_small.json
+data/minecraft/worldgen/configured_feature/ore_diorite.json
+data/minecraft/worldgen/configured_feature/ore_gold_buried.json
+data/minecraft/worldgen/configured_feature/ore_granite.json
+data/minecraft/worldgen/configured_feature/ore_lapis_buried.json
 data/minecraft/worldgen/noise_settings/overworld.json
 ```
 
