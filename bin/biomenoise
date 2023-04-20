@@ -1,0 +1,23 @@
+#!/bin/bash
+
+biome="$1"
+
+if [[ -z "$biome" ]]; then
+	echo "Usage: ${0##*/} <biome>"
+	exit 1
+fi
+
+#set -x
+for param in \
+	"continentalness" \
+	"depth" \
+	"erosion" \
+	"humidity" \
+	"offset" \
+	"temperature" \
+	"weirdness"
+do
+	echo "$param"
+	jq -c ".generator.biome_source.biomes[]|select(.biome==\"minecraft:$biome\").parameters.$param" data/minecraft/dimension/overworld.json | sort | uniq -c | sort -h
+done
+

@@ -3377,8 +3377,13 @@ image::https://i.imgur.com/OjqRTNZ.png[Stony Peaks Cave]
 
 Caves above sea level in Stony Shores, Stony Peaks, Granite Peaks, and Molten Peaks
 generate with granite and diorite instead of stone.
+Granite and diorite blobs don't generate exposed to air.
 
-Stone ores generate in tuff instead of deepslate ores
+Diamonds generate with increased air exposure,
+and the reduced air exposure that 1.18 introduced
+is removed for other ores.
+
+Ores generate in tuff as stone ores instead of deepslate ores
 so that some stone ore variants are easier to obtain.
 
 //sediments, minerals, and rocks
