@@ -1633,8 +1633,8 @@ your ghost form to life.
 
 //Hardcore Lichdom is a datapack designed for hardcore mode.
 //With this pack, players who conquer
-//the Illagers, the Ocean, the Nether, The End, and the Deep Dark
-//without dying can gain immortality and keep their world forever.
+//the Illagers, the Ocean, the Deep Dark, the Nether and The End
+//can gain immortality and keep their world forever.
 //
 //When you die in minecraft hardcore mode
 //you are given the option to spectate the world as a ghost.
@@ -1643,36 +1643,24 @@ your ghost form to life.
 //a powerful undead that can use a phylactery pedestal
 //to regenerate your body and restore your ghost form to life.
 //
-//This data pack is documented with mildly cryptic advancements
-//that reward the player with sparks of insight.
-//For more comprehensive documentation, expand the spoiler below.
+//This data pack is documented with cryptic advancements
+//that are explained in detail below.
 //
-//.Click for lichdom instructions
+//.Lichdom instructions
 //[%collapsible]
 //====
 //
 //Becoming a lich is a multi-step process.
 //
-//**Use magic to defeat magic**
+//**Bind the dragon's power to you**
 //
-//The rites of lichdom appear whenever one skilled mage defeats another.
-//If you kill an evoker with a harming potion,
-//it will drop the Relic of Rites, a tome enchanted with
-// // Curse of Vanishing and
-//Myth of Lichdom.
-//When used, the knowledge gained from this tome
-//gives you the ability to become a lich
-//and reveals the rest of the required steps in your advancements.
-//
-//**Slay the dragon while wearing its grin**
-//
-//Bind the dragon's power to you.
+//Slay the dragon while wearing its grin.
 //If you kill the dragon while wearing a dragon head,
-//the head is transformed into the Relic of Draconic Might,
-//gaining Power X
-// //, Curse of Binding,
-//and Boon of the Dragon,
-//a custom enchantment that increases your max health by 10 hearts.
+//the head is transformed into the Relic of Dragon Form.
+//It gains Boon of Vitality X
+//and Myth of the Red Dragon,
+//two custom enchantments that give you 10 hearts
+//and turn arrows you shoot from bows into fiery dragon breath.
 //
 //**Channel the sea's elders**
 //
@@ -1682,40 +1670,63 @@ your ghost form to life.
 //
 //**Use spellsmithing to create a phylactery**
 //
-//Combine the Relic of the Empty Vessel with a totem, a star, or a sword.
-//That is, create a phylactery by combining the relic with a totem of undying,
-//a nether star, or a netherite sword.
+//Apply the Relic of the Empty Vessel to a totem in a smithing table.
 //
 //**Harness the effects of a wither**
 //
 //Obtain a nether star and craft a beacon with it.
-//That's it.
-//It's a straightforward step, but an important one.
+//
+//If you kill the wither while wearing the Relic of Dragon Form,
+//it gains Myth of Explosions,
+//a custom enchantment that lets you upgrade your dragon breath
+//with fire charges or TNT in the offhand.
 //
 //**Build a pedestal**
 //
 //Construct a phylactery pedestal with a golden beacon, 8 endstone, 8 dark
-//prismarine slabs, a sculk shrieker, and a phylactery.
+//prismarine slabs, and a sculk shrieker.
 //Create a beacon with a gold base,
 //surround the beacon with endstone,
 //place the shrieker on the beacon
 //and surround it with dark prismarine slabs.
-//Tossing the phylactery on the shrieker completes the pedestal.
 //
-//**Absorb the ancient force of the warden**
+//**Sacrifice a loved one**
+//
+//Toss the phylactery on the shrieker of the pedestal,
+//then kill a tamed wolf, cat, or parrot near it.
+//This will complete the formation of the phylactery pedestal.
+//
+//Choose the location for your phylactery pedestal carefully.
+//The pedestal block can't be moved or destroyed once created.
+//The phylactery item can't despawn or be picked up,
+//but it's otherwise a normal item that can be destroyed by fire and explosions.
+//
+//**Sacrifice yourself to an ancient horror**
 //
 //You might want to cover your ears.
-//When you're attacked with the Warden's sonic boom,
+//When you're killed by a Warden,
 //you become a lich.
-//If you've completed the other steps,
-//surviving the attack is optional.
 //
 //**Enjoy lichdom**
 //
 //As a lich, you can regenerate your body at a phylactery pedestal
 //and enjoy the debilitating effects of undeath!
 //
+//You lose 9 hearts.
+//
+//Food poisons you.
+//
+//Killing the undead provides sustenance.
+//
+//Each phylactery pedestal you build lets you regenerate your body once.
+//
 //====
+//
+//==== Wimpcore Lichdom
+//
+//With this addon datapack for <<hardcore-lichdom,Hardcore Lichdom>>,
+//you lose only only 5 hearts as a lich
+//and can regenerate your body at a phylactery pedestal any number of times.
 
 To become a lich, you will need:
 
