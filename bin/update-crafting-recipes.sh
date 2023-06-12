@@ -12,6 +12,7 @@ dir="$gitroot/buce-data/recipes/crafting"
 while read block count; do
 	[[ -z "$block$count" ]] && continue
 	cp "$latest.jar"/data/minecraft/recipes/*_$block.json data/minecraft/recipes/
+	[[ "$block" == sign ]] && rm data/minecraft/recipes/*_hanging_sign.json
 
 	if grep -E -q '"count":' data/minecraft/recipes/*_$block.json; then
 		sed -Ei "
