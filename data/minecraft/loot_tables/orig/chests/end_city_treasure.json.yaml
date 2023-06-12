@@ -24,3 +24,8 @@ pools:
       - { type: item, weight: 3, enchant_lvl: { min: 20, max: 39 }, item: iron_helmet }
       - { type: item, weight: 3, enchant_lvl: { min: 20, max: 39 }, item: iron_pickaxe }
       - { type: item, weight: 3, enchant_lvl: { min: 20, max: 39 }, item: iron_shovel }
+  - rolls: 1
+    entries:
+      - { type: empty, weight: 14 }
+      - { type: item, item: spire_armor_trim_smithing_template }
+random_sequence: "minecraft:chests/end_city_treasure"

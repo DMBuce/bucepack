@@ -16,3 +16,4 @@ pools:
         enchant_lvl: 30
       - { type: item, weight: 1, item: book, enchant_lvl: 30 }
       - { type: item, weight: 1, item: nautilus_shell }
+random_sequence: "minecraft:gameplay/fishing/treasure"

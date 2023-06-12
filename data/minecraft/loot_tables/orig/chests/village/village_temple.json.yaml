@@ -7,3 +7,4 @@ pools:
       - { type: item, weight: 1, min: 1, max: 4, item: lapis_lazuli }
       - { type: item, weight: 1, min: 1, max: 4, item: gold_ingot }
       - { type: item, weight: 1, min: 1, max: 4, item: emerald }
+random_sequence: "minecraft:chests/village/village_temple"

@@ -12,3 +12,4 @@ pools:
       - { type: item, weight: 1, min: 1, max: 10, item: baked_potato }
       - { type: item, weight: 2, min: 2, max: 6 , item: packed_ice }
       - { type: item, weight: 4, min: 2, max: 6 , item: snowball }
+random_sequence: "minecraft:chests/ancient_city_ice_box"

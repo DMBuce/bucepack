@@ -12,3 +12,4 @@ pools:
       - { type: item, weight: 1,                   item: golden_helmet }
       - { type: item, weight: 5, enchant_rand: [], item: fishing_rod }
       - { type: explorer_map, weight: 5, decor: red_x, skipchunks: false, display: filled_map.buried_treasure }
+random_sequence: "minecraft:chests/underwater_ruin_small"

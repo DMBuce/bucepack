@@ -161,21 +161,6 @@ do
 		sed -i 1d "data/minecraft/tags/items/${tag}_without_$color.json"
 	done
 
-	# skip generation of recipes for items that don't have vanilla dye recipes
-	if [[ $color != white ]]; then
-		# create recipes for dying any wool
-		cp "$latest.jar/data/minecraft/recipes/${color}_wool.json" data/minecraft/recipes/
-		sed -i "
-			/minecraft:white_wool/ s/\".*/\"tag\": \"minecraft:wool_without_$color\"/
-		" "data/minecraft/recipes/${color}_wool.json"
-
-		# create recipes for dying any bed
-		cp "$latest.jar/data/minecraft/recipes/${color}_bed_from_white_bed.json" data/minecraft/recipes/
-		sed -i "
-			/minecraft:white_bed/ s/\".*/\"tag\": \"minecraft:beds_without_$color\"/
-		" "data/minecraft/recipes/${color}_bed_from_white_bed.json"
-	fi
-
 	# create recipes for dying any candle
 	cp "$latest.jar/data/minecraft/recipes/${color}_candle.json" data/minecraft/recipes/
 	sed -i "

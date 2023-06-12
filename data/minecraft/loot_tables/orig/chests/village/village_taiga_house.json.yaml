@@ -13,3 +13,4 @@ pools:
       - { type: item, weight: 5,  min: 1, max: 5, item: spruce_sapling }
       - { type: item, weight: 1,                  item: spruce_sign }
       - { type: item, weight: 10, min: 1, max: 5, item: spruce_log }
+random_sequence: "minecraft:chests/village/village_taiga_house"

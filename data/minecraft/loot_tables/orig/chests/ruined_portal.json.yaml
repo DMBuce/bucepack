@@ -26,3 +26,4 @@ pools:
       - { type: item, weight: 1,                    item: bell }
       - { type: item, weight: 1,                    item: enchanted_golden_apple }
       - { type: item, weight: 1,  min: 1,  max: 2,  item: gold_block }
+random_sequence: "minecraft:chests/ruined_portal"

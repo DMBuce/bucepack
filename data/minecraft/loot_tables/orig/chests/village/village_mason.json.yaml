@@ -9,3 +9,4 @@ pools:
       - { type: item, weight: 1,                 item: yellow_dye }
       - { type: item, weight: 1,                 item: smooth_stone }
       - { type: item, weight: 1,                 item: emerald }
+random_sequence: "minecraft:chests/village/village_mason"

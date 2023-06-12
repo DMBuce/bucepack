@@ -24,3 +24,4 @@ pools:
     potion: water_breathing
     entries:
       - { type: item, weight: 1, item: potion }
+random_sequence: "minecraft:chests/buried_treasure"

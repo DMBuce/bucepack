@@ -35,3 +35,12 @@ pools:
       - { type: item, weight: 1, min: 2, max: 5, item: cooked_porkchop }
       - { type: item, weight: 1, min: 2, max: 7, item: crimson_fungus }
       - { type: item, weight: 1, min: 2, max: 7, item: crimson_roots }
+  - rolls: 1
+    entries:
+      - { type: empty, weight: 11 }
+      - { type: item, item: snout_armor_trim_smithing_template }
+  - rolls: 1
+    entries:
+      - { type: empty, weight: 9 }
+      - { type: item, item: netherite_upgrade_smithing_template }
+random_sequence: "minecraft:chests/bastion_hoglin_stable"

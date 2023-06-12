@@ -13,3 +13,8 @@ pools:
       - { type: item, weight: 5,                  item: iron_horse_armor }
       - { type: item, weight: 3,                  item: diamond_horse_armor }
       - { type: item, weight: 2, min: 2, max: 4,  item: obsidian }
+  - rolls: 1
+    entries:
+      - { type: empty, weight: 14 }
+      - { type: item, item: rib_armor_trim_smithing_template }
+random_sequence: "minecraft:chests/nether_bridge"

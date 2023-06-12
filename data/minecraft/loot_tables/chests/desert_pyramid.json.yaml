@@ -23,6 +23,10 @@ pools:
       - { type: item, weight: 10, min: 8, max: 16, item: sandstone }
       - { type: item, weight: 10, min: 1, max: 8, item: string }
       - { type: item, weight: 10, min: 1, max: 8, item: sand }
+  - rolls: 1
+    entries:
+      - { type: empty, weight: 6 }
+      - { type: item, count: 2, item: dune_armor_trim_smithing_template }
 # extra treasure
   - rolls: 2
     entries:
@@ -40,3 +44,4 @@ pools:
   - rolls: 1
     entries:
       - { type: loot_table, weight: 1,   table: loot_overhaul/extra/all }
+random_sequence: "minecraft:chests/desert_pyramid"

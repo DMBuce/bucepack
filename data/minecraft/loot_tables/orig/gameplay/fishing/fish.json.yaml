@@ -6,3 +6,4 @@ pools:
       - { type: item, weight: 25, item: salmon }
       - { type: item, weight: 2,  item: tropical_fish }
       - { type: item, weight: 13, item: pufferfish }
+random_sequence: "minecraft:gameplay/fishing/fish"

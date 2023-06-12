@@ -9,3 +9,4 @@ pools:
       - { type: item, weight: 15, min: 1, max: 3, item: apple }
       - { type: item, weight: 1,                  item: iron_pickaxe }
       - { type: item, weight: 1, enchant_lvl: 30, item: book }
+random_sequence: "minecraft:chests/stronghold_crossing"

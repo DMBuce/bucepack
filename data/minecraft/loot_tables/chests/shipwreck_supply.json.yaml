@@ -17,6 +17,10 @@ pools:
       - { type: item, weight: 3,  min: 1, max: 2,  item: scute }
       - { type: item, weight: 3,  min: 1, max: 2,  item: nautilus_shell }
       - { type: item, weight: 6,                   item: fishing_rod, enchant_lvl: { min: 20, max: 24 } }
+  - rolls: 1
+    entries:
+      - { type: empty, weight: 5 }
+      - { type: item, count: 2, item: coast_armor_trim_smithing_template }
 # extra treasure
   - rolls: 1
     entries:
@@ -34,3 +38,4 @@ pools:
   - rolls: 1
     entries:
       - { type: loot_table, weight: 1,   table: loot_overhaul/extra/all }
+random_sequence: "minecraft:chests/shipwreck_supply"

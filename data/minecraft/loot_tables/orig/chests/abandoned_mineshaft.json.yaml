@@ -27,3 +27,4 @@ pools:
       - { type: item, weight: 5,  min: 1, max: 4,  item: detector_rail }
       - { type: item, weight: 5,  min: 1, max: 4,  item: activator_rail }
       - { type: item, weight: 15, min: 1, max: 16, item: torch }
+random_sequence: "minecraft:chests/abandoned_mineshaft"

@@ -48,6 +48,14 @@ pools:
       - { type: item, weight: 1, min: 5, max: 17, item: arrow }
       - { type: item, weight: 1, min: 2, max: 6,  item: iron_nugget }
       - { type: item, weight: 1, min: 2, max: 6,  item: gold_nugget }
+  - rolls: 1
+    entries:
+      - { type: empty, weight: 11 }
+      - { type: item, item: snout_armor_trim_smithing_template }
+  - rolls: 1
+    entries:
+      - { type: empty, weight: 9 }
+      - { type: item, item: netherite_upgrade_smithing_template }
 # extra treasure
   - rolls: 1
     entries:
@@ -65,3 +73,4 @@ pools:
   - rolls: 1
     entries:
       - { type: loot_table, weight: 1,   table: loot_overhaul/extra/all }
+random_sequence: "minecraft:chests/bastion_bridge"

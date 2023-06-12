@@ -7,6 +7,9 @@ pools:
       - { type: explorer_map, weight: 1, structure: jungle_pyramid, decor: target_x, display: "Jungle Explorer Map", skipchunks: true }
       - { type: explorer_map, weight: 1, structure: ancient_city, decor: red_x, display: "Underground Explorer Map", skipchunks: true }
       - { type: loot_table, weight: 10, table: loot_overhaul/lib_book }
+  - rolls: 1
+    entries:
+      - { type: item, item: eye_armor_trim_smithing_template }
 # extra treasure
   - rolls: 1
     entries:
@@ -24,3 +27,4 @@ pools:
   - rolls: 1
     entries:
       - { type: loot_table, weight: 1,   table: loot_overhaul/extra/all }
+random_sequence: "minecraft:chests/stronghold_library"

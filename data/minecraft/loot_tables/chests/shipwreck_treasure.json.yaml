@@ -12,6 +12,10 @@ pools:
       - { type: item, weight: 50, min: 1, max: 10, item: iron_nugget }
       - { type: item, weight: 10, min: 1, max: 10, item: gold_nugget }
       - { type: item, weight: 20, min: 1, max: 10, item: lapis_lazuli }
+  - rolls: 1
+    entries:
+      - { type: empty, weight: 5 }
+      - { type: item, count: 2, item: coast_armor_trim_smithing_template }
 # extra treasure
   - rolls: 2
     entries:
@@ -29,3 +33,4 @@ pools:
   - rolls: 1
     entries:
       - { type: loot_table, weight: 1,   table: loot_overhaul/extra/all }
+random_sequence: "minecraft:chests/shipwreck_treasure"

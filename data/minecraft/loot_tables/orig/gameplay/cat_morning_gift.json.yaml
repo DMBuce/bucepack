@@ -10,3 +10,4 @@ pools:
       - { type: item, weight: 10, item: string }
       - { type: item, weight: 2,  item: phantom_membrane }
 
+random_sequence: "minecraft:gameplay/cat_morning_gift"

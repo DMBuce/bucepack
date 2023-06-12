@@ -22,3 +22,8 @@ pools:
     instrument: regular_goat_horns
     entries:
       - { type: item, weight: 1, item: goat_horn }
+  - rolls: 1
+    entries:
+      - { type: empty, weight: 3 }
+      - { type: item, count: 2, item: sentry_armor_trim_smithing_template }
+random_sequence: "minecraft:chests/pillager_outpost"

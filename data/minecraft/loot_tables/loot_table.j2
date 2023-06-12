@@ -231,7 +231,7 @@
           {%- endif %}
           "conditions": [
             {
-              "condition": "minecraft:alternative",
+              "condition": "minecraft:any_of",
               "terms": [
                 {%- for biome in entry.biomes %}
                 {
@@ -395,5 +395,8 @@
     }{{ "," if not loop.last }}
     {%- endfor %}
   ]
+  {%- if random_sequence is defined %},
+  "random_sequence": "{{ random_sequence }}"
+  {%- endif %}
 }
 {#- vim: set ft=j2: #}

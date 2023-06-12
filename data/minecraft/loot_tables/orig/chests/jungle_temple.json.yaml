@@ -13,3 +13,8 @@ pools:
       - { type: item, weight: 1,                  item: golden_horse_armor }
       - { type: item, weight: 1,                  item: diamond_horse_armor }
       - { type: item, weight: 1, enchant_lvl: 30, item: book }
+  - rolls: 1
+    entries:
+      - { type: empty, weight: 2 }
+      - { type: item, count: 2, item: wild_armor_trim_smithing_template }
+random_sequence: "minecraft:chests/jungle_temple"

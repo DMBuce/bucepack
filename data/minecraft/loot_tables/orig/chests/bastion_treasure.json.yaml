@@ -48,3 +48,11 @@ pools:
       - { type: item, weight: 1, min: 8,  max: 23, item: quartz }
       - { type: item, weight: 1, min: 5,  max: 15, item: gilded_blackstone }
       - { type: item, weight: 1, min: 3,  max: 8,  item: magma_cream }
+  - rolls: 1
+    entries:
+      - { type: empty, weight: 11 }
+      - { type: item, item: snout_armor_trim_smithing_template }
+  - rolls: 1
+    entries:
+      - { type: item, item: netherite_upgrade_smithing_template }
+random_sequence: "minecraft:chests/bastion_treasure"

@@ -6,3 +6,4 @@ pools:
       - { type: item, weight: 30, min: 2, max: 7, item: tipped_arrow,  potion: weakness }
       - { type: item, weight: 30,                 item: splash_potion, potion: poison }
       - { type: item, weight: 30,                 item: splash_potion, potion: harming }
+random_sequence: "minecraft:chests/jungle_temple_dispenser"

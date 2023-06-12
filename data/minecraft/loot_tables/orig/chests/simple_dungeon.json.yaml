@@ -30,3 +30,4 @@ pools:
       - { type: item, weight: 10, min: 1, max: 8, item: gunpowder }
       - { type: item, weight: 10, min: 1, max: 8, item: rotten_flesh }
       - { type: item, weight: 10, min: 1, max: 8, item: string }
+random_sequence: "minecraft:chests/simple_dungeon"

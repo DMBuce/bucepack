@@ -11,3 +11,4 @@ pools:
   - rolls: 1
     entries:
       - { type: item, weight: 1,                  item: golden_apple }
+random_sequence: "minecraft:chests/igloo_chest"

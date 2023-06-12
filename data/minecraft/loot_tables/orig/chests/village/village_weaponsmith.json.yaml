@@ -18,3 +18,4 @@ pools:
       - { type: item, weight: 1,                  item: iron_horse_armor }
       - { type: item, weight: 1,                  item: golden_horse_armor }
       - { type: item, weight: 1,                  item: diamond_horse_armor }
+random_sequence: "minecraft:chests/village/village_weaponsmith"

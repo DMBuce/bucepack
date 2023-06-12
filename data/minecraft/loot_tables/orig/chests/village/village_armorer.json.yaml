@@ -5,3 +5,4 @@ pools:
       - { type: item, weight: 4, min: 1, max: 4, item: bread }
       - { type: item, weight: 1,                 item: iron_helmet }
       - { type: item, weight: 1,                 item: emerald }
+random_sequence: "minecraft:chests/village/village_armorer"

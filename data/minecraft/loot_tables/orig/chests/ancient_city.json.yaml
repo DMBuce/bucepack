@@ -35,3 +35,9 @@ pools:
       - { type: item, weight: 5, min: 1, max: 15, item: bone }
       - { type: item, weight: 5, min: 1, max: 15, item: soul_torch }
       - { type: item, weight: 7, min: 6, max: 15, item: coal }
+  - rolls: 1
+    entries:
+      - { type: empty, weight: 75 }
+      - { type: item, weight: 4, item: ward_armor_trim_smithing_template }
+      - { type: item,            item: silence_armor_trim_smithing_template }
+random_sequence: "minecraft:chests/ancient_city"

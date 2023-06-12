@@ -9,3 +9,4 @@ pools:
       - { type: item, weight: 1,                 item: emerald }
       - { type: item, weight: 1,                 item: shears }
       - { type: item, weight: 6, min: 1, max: 6, item: wheat }
+random_sequence: "minecraft:chests/village/village_shepherd"

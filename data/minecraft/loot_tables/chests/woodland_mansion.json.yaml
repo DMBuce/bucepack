@@ -36,6 +36,10 @@ pools:
       - { type: item, weight: 10, min: 1, max: 8, item: gunpowder }
       - { type: item, weight: 10, min: 1, max: 8, item: arrow }
       - { type: item, weight: 10, min: 1, max: 8, item: string }
+  - rolls: 1
+    entries:
+      - { type: empty }
+      - { type: item, item: vex_armor_trim_smithing_template }
 # extra treasure
   - rolls: { min: 2, max: 5 }
     entries:
@@ -53,3 +57,4 @@ pools:
   - rolls: 1
     entries:
       - { type: loot_table, weight: 1,   table: loot_overhaul/extra/all }
+random_sequence: "minecraft:chests/woodland_mansion"

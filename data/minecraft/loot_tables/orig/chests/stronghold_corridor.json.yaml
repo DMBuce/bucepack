@@ -21,3 +21,8 @@ pools:
       - { type: item, weight: 1,                  item: diamond_horse_armor }
       - { type: item, weight: 1,                  item: music_disc_otherside }
       - { type: item, weight: 1, enchant_lvl: 30, item: book }
+  - rolls: 1
+    entries:
+      - { type: empty, weight: 9 }
+      - { type: item, item: eye_armor_trim_smithing_template }
+random_sequence: "minecraft:chests/stronghold_corridor"

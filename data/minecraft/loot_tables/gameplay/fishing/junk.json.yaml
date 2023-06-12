@@ -22,3 +22,4 @@ pools:
           sparse_jungle,
           bamboo_jungle
         ]
+random_sequence: "minecraft:gameplay/fishing/junk"

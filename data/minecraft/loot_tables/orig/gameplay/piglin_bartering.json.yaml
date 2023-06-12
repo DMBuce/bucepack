@@ -20,3 +20,4 @@ pools:
       - { type: item, weight: 40, min: 6,  max: 12, item: spectral_arrow }
       - { type: item, weight: 40, min: 8,  max: 16, item: gravel }
       - { type: item, weight: 40, min: 8,  max: 16, item: blackstone }
+random_sequence: "minecraft:gameplay/piglin_bartering"

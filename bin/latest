@@ -22,10 +22,11 @@ fi
 
 # copy sounds.json
 if [[ ! -f ~/".minecraft/assets/indexes/${latest%.*}.json" ]]; then
-	echo "File not found: ~/.minecraft/assets/indexes/${latest%.*}.json" >&2
-	exit 1
+	:
+	#echo "File not found: ~/.minecraft/assets/indexes/${latest%.*}.json" >&2
+	#exit 1
 elif [[ ! -f "$latest.jar/assets/minecraft/sounds.json" ]]; then
-	soundhash="$(jq -r '.objects."minecraft/sounds.json".hash' ~/.minecraft/assets/indexes/1.19.json)"
+	soundhash="$(jq -r '.objects."minecraft/sounds.json".hash' ~/.minecraft/assets/indexes/${latest%.*}.json)"
 	cp -v ~/".minecraft/assets/objects/${soundhash:0:2}/$soundhash" "$latest.jar/assets/minecraft/sounds.json" >&2
 fi
 

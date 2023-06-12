@@ -6,3 +6,4 @@ pools:
       - { type: item, weight: 5,                  item: compass }
       - { type: item, weight: 15, min: 1, max: 4, item: bread }
       - { type: item, weight: 5,  min: 1, max: 2, item: stick }
+random_sequence: "minecraft:chests/village/village_cartographer"

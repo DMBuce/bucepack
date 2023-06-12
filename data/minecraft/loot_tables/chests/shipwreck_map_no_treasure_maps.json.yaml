@@ -13,3 +13,4 @@ pools:
       - { type: item, weight: 20, min: 1, max: 10, item: paper }
       - { type: item, weight: 10, min: 1, max: 5,  item: feather }
       - { type: item, weight: 5,  min: 1, max: 5,  item: book }
+random_sequence: "minecraft:chests/shipwreck_map_no_treasure_maps"

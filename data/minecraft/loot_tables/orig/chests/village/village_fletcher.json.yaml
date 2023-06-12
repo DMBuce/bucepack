@@ -7,3 +7,4 @@ pools:
       - { type: item, weight: 2, min: 1, max: 3, item: egg }
       - { type: item, weight: 6, min: 1, max: 3, item: flint }
       - { type: item, weight: 6, min: 1, max: 3, item: stick }
+random_sequence: "minecraft:chests/village/village_fletcher"
