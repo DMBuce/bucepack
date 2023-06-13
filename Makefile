@@ -704,9 +704,6 @@ ender_relic_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell find buce-data/ender_relic -type f | ./bin/ext2dir) \
 	data/buce/loot_tables/relic/random.json \
 
-skybarrel_FILES := $(DEFAULT_DATA_FILES) \
-	$(shell find buce-data/skybarrel -type f | ./bin/ext2dir) \
-
 speedy_paths_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell find buce-data/speedy_paths -type f | ./bin/ext2dir) \
 
@@ -1616,12 +1613,6 @@ worldgen_trees.zip: $(worldgen_trees_FILES)
 	./bin/ziprename _$(@:.zip=) "" $@
 
 dripblock.zip: $(dripblock_FILES)
-	cp meta/$(@:.zip=.png) pack.png
-	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
-	zip $@ pack.png pack.mcmeta $^
-	./bin/ziprename _$(@:.zip=) "" $@
-
-skybarrel.zip: $(skybarrel_FILES)
 	cp meta/$(@:.zip=.png) pack.png
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^
