@@ -1,5 +1,5 @@
 {
-  "type": "minecraft:smithing",
+  "type": "minecraft:smithing_transform",
   "base": {
     "item": "minecraft:amethyst_shard"
   },
@@ -8,5 +8,6 @@
   },
   "result": {
     "item": "minecraft:spyglass"
-  }
+  },
+  "template": []
 }

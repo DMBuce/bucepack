@@ -1,5 +1,5 @@
 {
-  "type": "minecraft:smithing",
+  "type": "minecraft:smithing_transform",
   "base": {
     "item": "minecraft:flint"
   },
@@ -8,5 +8,6 @@
   },
   "result": {
     "item": "minecraft:wooden_shovel"
-  }
+  },
+  "template": []
 }
