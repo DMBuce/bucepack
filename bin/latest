@@ -21,24 +21,30 @@ elif [[ ! -d "$latest.jar" ]]; then
 fi
 
 # copy sounds.json
-if [[ ! -f ~/".minecraft/assets/indexes/${latest%.*}.json" ]]; then
-	:
-	#echo "File not found: ~/.minecraft/assets/indexes/${latest%.*}.json" >&2
-	#exit 1
-elif [[ ! -f "$latest.jar/assets/minecraft/sounds.json" ]]; then
+if [[ -f ~/.minecraft/assets/indexes/${latest%.*}.json && ! -f "$latest.jar/assets/minecraft/sounds.json" ]]; then
 	soundhash="$(jq -r '.objects."minecraft/sounds.json".hash' ~/.minecraft/assets/indexes/${latest%.*}.json)"
+	cp -v ~/".minecraft/assets/objects/${soundhash:0:2}/$soundhash" "$latest.jar/assets/minecraft/sounds.json" >&2
+elif [[ ! -f "$latest.jar/assets/minecraft/sounds.json" ]]; then
+	curl -s -o cache/version_manifest.json 'https://launchermeta.mojang.com/mc/game/version_manifest.json'
+	url="$(jq -r '.versions[]|select(.id=="1.20.1").url' cache/version_manifest.json)"
+
+	idxurl="$(curl -s "$url" | jq -r '.assetIndex.url')"
+	curl -s -o "$latest.jar/$latest.json" "$idxurl"
+
+	soundhash="$(jq -r '.objects."minecraft/sounds.json".hash' "$latest.jar/$latest.json")"
 	cp -v ~/".minecraft/assets/objects/${soundhash:0:2}/$soundhash" "$latest.jar/assets/minecraft/sounds.json" >&2
 fi
 
-## copy missing data files from mcmeta repo
-#cd ../mcmeta
-#branch="$(git branch --show-current)"
-#if [[ $branch != $latest-data ]]; then
-#	git pull --tags
-#	git checkout -b "$latest-data" "$latest-data"
-#	cd -
-#	rsync -a ../mcmeta/data/minecraft/dimension/ "$latest.jar/data/minecraft/dimension/"
-#fi
+# copy missing data files from mcmeta repo
+cd ../mcmeta
+branch="$(git branch --show-current)"
+if [[ $branch != $latest-data ]]; then
+	#git pull --tags
+	git fetch --tags
+	git checkout -b "$latest-data" "$latest-data"
+	cd -
+	rsync -a ../mcmeta/data/minecraft/dimension/ "$latest.jar/data/minecraft/dimension/"
+fi
 
 # print latest version
 echo "$latest"
