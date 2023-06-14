@@ -19,18 +19,26 @@
 		"note_block": {
 			"trigger": "minecraft:item_used_on_block",
 			"conditions": {
-				"location": {
-					"block": {
-						"blocks": [
-							"minecraft:note_block"
-						]
+				"location": [
+					{
+						"condition": "minecraft:location_check",
+						"predicate": {
+							"block": {
+								"blocks": [
+									"minecraft:note_block"
+								]
+							}
+						}
+					},
+					{
+						"condition": "minecraft:match_tool",
+						"predicate": {
+							"items": [
+								"minecraft:hopper"
+							]
+						}
 					}
-				},
-				"item": {
-					"items": [
-						"minecraft:hopper"
-					]
-				},
+				],
 				"player": {
 					"flags": {
 						"is_sneaking": true

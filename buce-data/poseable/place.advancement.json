@@ -16,14 +16,19 @@
 	},
 	"parent": "buce:poseable/root",
 	"criteria": {
-		"hit_dragon": {
+		"c1": {
 			"trigger": "minecraft:item_used_on_block",
 			"conditions": {
-				"item": {
-					"items": [
-						"minecraft:armor_stand"
-					]
-				},
+				"location": [
+					{
+						"condition": "minecraft:match_tool",
+						"predicate": {
+							"items": [
+								"minecraft:armor_stand"
+							]
+						}
+					}
+				],
 				"player": {
 					"flags": {
 						"is_sneaking": true

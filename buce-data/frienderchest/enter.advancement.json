@@ -19,18 +19,26 @@
 		"note_block": {
 			"trigger": "minecraft:item_used_on_block",
 			"conditions": {
-				"location": {
-					"block": {
-						"blocks": [
-							"minecraft:ender_chest"
-						]
+				"location": [
+					{
+						"condition": "minecraft:location_check",
+						"predicate": {
+							"block": {
+								"blocks": [
+									"minecraft:ender_chest"
+								]
+							}
+						}
+					},
+					{
+						"condition": "minecraft:match_tool",
+						"predicate": {
+							"items": [
+								"minecraft:ender_pearl"
+							]
+						}
 					}
-				},
-				"item": {
-					"items": [
-						"minecraft:ender_pearl"
-					]
-				},
+				],
 				"player": {
 					"location": {
 						"dimension": "minecraft:overworld"

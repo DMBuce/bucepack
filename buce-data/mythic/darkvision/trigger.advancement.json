@@ -19,28 +19,33 @@
 		"use_tool": {
 			"trigger": "minecraft:item_used_on_block",
 			"conditions": {
-				"item": {
-					"items": [
-						"minecraft:wooden_hoe",
-						"minecraft:stone_hoe",
-						"minecraft:iron_hoe",
-						"minecraft:golden_hoe",
-						"minecraft:diamond_hoe",
-						"minecraft:netherite_hoe",
-						"minecraft:wooden_shovel",
-						"minecraft:stone_shovel",
-						"minecraft:iron_shovel",
-						"minecraft:golden_shovel",
-						"minecraft:diamond_shovel",
-						"minecraft:netherite_shovel",
-						"minecraft:wooden_axe",
-						"minecraft:stone_axe",
-						"minecraft:iron_axe",
-						"minecraft:golden_axe",
-						"minecraft:diamond_axe",
-						"minecraft:netherite_axe"
-					]
-				},
+				"location": [
+					{
+						"condition": "minecraft:match_tool",
+						"predicate": {
+							"items": [
+								"minecraft:wooden_hoe",
+								"minecraft:stone_hoe",
+								"minecraft:iron_hoe",
+								"minecraft:golden_hoe",
+								"minecraft:diamond_hoe",
+								"minecraft:netherite_hoe",
+								"minecraft:wooden_shovel",
+								"minecraft:stone_shovel",
+								"minecraft:iron_shovel",
+								"minecraft:golden_shovel",
+								"minecraft:diamond_shovel",
+								"minecraft:netherite_shovel",
+								"minecraft:wooden_axe",
+								"minecraft:stone_axe",
+								"minecraft:iron_axe",
+								"minecraft:golden_axe",
+								"minecraft:diamond_axe",
+								"minecraft:netherite_axe"
+							]
+						}
+					}
+				],
 				"player": [
 					{
 						"condition": "minecraft:inverted",

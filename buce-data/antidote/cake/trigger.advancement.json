@@ -19,13 +19,18 @@
 		"c1": {
 			"trigger": "minecraft:item_used_on_block",
 			"conditions": {
-				"location": {
-					"block": {
-						"blocks": [
-							"minecraft:cake"
-						]
+				"location": [
+					{
+						"condition": "minecraft:location_check",
+						"predicate": {
+							"block": {
+								"block": [
+									"minecraft:cake"
+								]
+							}
+						}
 					}
-				},
+				],
 				"player": [
 					{
 						"condition": "minecraft:entity_properties",
