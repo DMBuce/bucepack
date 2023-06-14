@@ -535,14 +535,14 @@ assets/minecraft/textures/item/salmon.png
 
 === Spellsmithing Guide
 
-Changes the smithing GUI to show that the left slot is where magic is
-preserved and magic in the right slot gets destroyed. Intended for use with
-datapacks that have <<spellsmithing>>.
+//Changes the smithing GUI to show that the left slot is where magic is
+//preserved and magic in the right slot gets destroyed. Intended for use with
+//datapacks that have <<spellsmithing>>.
+//
+//image::https://i.imgur.com/DH6v35X.png[Spellsmithing Guide]
 
-image::https://i.imgur.com/DH6v35X.png[Spellsmithing Guide]
-
-In addition, this pack contains textures for custom items obtained with the
-following datapacks.
+This pack contains textures for custom items obtained with
+datapacks that use <<spellsmithing>>.
 
 * <<phantasmal,Phantasmal>>: Invisible item frames and light blocks
 * <<loot-overhaul,Loot Overhaul>>: Invisible light blocks
@@ -582,7 +582,6 @@ assets/minecraft/models/item/netherite_sword.json
 assets/minecraft/models/item/spyglass.json
 assets/minecraft/models/item/totem_of_undying.json
 assets/minecraft/models/item/trident.json
-assets/minecraft/textures/gui/container/smithing.png
 ```
 
 ====
@@ -654,11 +653,21 @@ Discreet Meow makes cats meow less often.
 .https://github.com/DMBuce/bucepack/releases/latest/download/discreet_hrrm.zip[`discreet_hrrm.zip`]
 [%collapsible]
 ====
+
+```
+assets/minecraft/sounds.json
+```
+
 ====
 
 .https://github.com/DMBuce/bucepack/releases/latest/download/discreet_meow.zip[`discreet_meow.zip`]
 [%collapsible]
 ====
+
+```
+assets/minecraft/sounds.json
+```
+
 ====
 
 .https://github.com/DMBuce/bucepack/releases[All Releases & Changelogs]
@@ -1134,7 +1143,6 @@ Makes some crafting recipes cheaper.
 ```
 data/minecraft/recipes/acacia_fence_gate.json
 data/minecraft/recipes/acacia_fence.json
-data/minecraft/recipes/acacia_hanging_sign.json
 data/minecraft/recipes/acacia_pressure_plate.json
 data/minecraft/recipes/acacia_sign.json
 data/minecraft/recipes/acacia_stairs.json
@@ -1143,7 +1151,6 @@ data/minecraft/recipes/acacia_wood.json
 data/minecraft/recipes/andesite_stairs.json
 data/minecraft/recipes/bamboo_fence_gate.json
 data/minecraft/recipes/bamboo_fence.json
-data/minecraft/recipes/bamboo_hanging_sign.json
 data/minecraft/recipes/bamboo_mosaic_stairs.json
 data/minecraft/recipes/bamboo_pressure_plate.json
 data/minecraft/recipes/bamboo_sign.json
@@ -1151,7 +1158,6 @@ data/minecraft/recipes/bamboo_stairs.json
 data/minecraft/recipes/bamboo_trapdoor.json
 data/minecraft/recipes/birch_fence_gate.json
 data/minecraft/recipes/birch_fence.json
-data/minecraft/recipes/birch_hanging_sign.json
 data/minecraft/recipes/birch_pressure_plate.json
 data/minecraft/recipes/birch_sign.json
 data/minecraft/recipes/birch_stairs.json
@@ -1162,7 +1168,6 @@ data/minecraft/recipes/brick_stairs.json
 data/minecraft/recipes/chain.json
 data/minecraft/recipes/cherry_fence_gate.json
 data/minecraft/recipes/cherry_fence.json
-data/minecraft/recipes/cherry_hanging_sign.json
 data/minecraft/recipes/cherry_pressure_plate.json
 data/minecraft/recipes/cherry_sign.json
 data/minecraft/recipes/cherry_stairs.json
@@ -1172,7 +1177,6 @@ data/minecraft/recipes/cobbled_deepslate_stairs.json
 data/minecraft/recipes/cobblestone_stairs.json
 data/minecraft/recipes/crimson_fence_gate.json
 data/minecraft/recipes/crimson_fence.json
-data/minecraft/recipes/crimson_hanging_sign.json
 data/minecraft/recipes/crimson_hyphae.json
 data/minecraft/recipes/crimson_pressure_plate.json
 data/minecraft/recipes/crimson_sign.json
@@ -1181,7 +1185,6 @@ data/minecraft/recipes/crimson_trapdoor.json
 data/minecraft/recipes/cut_copper_stairs.json
 data/minecraft/recipes/dark_oak_fence_gate.json
 data/minecraft/recipes/dark_oak_fence.json
-data/minecraft/recipes/dark_oak_hanging_sign.json
 data/minecraft/recipes/dark_oak_pressure_plate.json
 data/minecraft/recipes/dark_oak_sign.json
 data/minecraft/recipes/dark_oak_stairs.json
@@ -1197,7 +1200,6 @@ data/minecraft/recipes/granite_stairs.json
 data/minecraft/recipes/hopper.json
 data/minecraft/recipes/jungle_fence_gate.json
 data/minecraft/recipes/jungle_fence.json
-data/minecraft/recipes/jungle_hanging_sign.json
 data/minecraft/recipes/jungle_pressure_plate.json
 data/minecraft/recipes/jungle_sign.json
 data/minecraft/recipes/jungle_stairs.json
@@ -1205,7 +1207,6 @@ data/minecraft/recipes/jungle_trapdoor.json
 data/minecraft/recipes/jungle_wood.json
 data/minecraft/recipes/mangrove_fence_gate.json
 data/minecraft/recipes/mangrove_fence.json
-data/minecraft/recipes/mangrove_hanging_sign.json
 data/minecraft/recipes/mangrove_pressure_plate.json
 data/minecraft/recipes/mangrove_sign.json
 data/minecraft/recipes/mangrove_stairs.json
@@ -1218,7 +1219,6 @@ data/minecraft/recipes/nether_brick_fence.json
 data/minecraft/recipes/nether_brick_stairs.json
 data/minecraft/recipes/oak_fence_gate.json
 data/minecraft/recipes/oak_fence.json
-data/minecraft/recipes/oak_hanging_sign.json
 data/minecraft/recipes/oak_pressure_plate.json
 data/minecraft/recipes/oak_sign.json
 data/minecraft/recipes/oak_stairs.json
@@ -1245,7 +1245,6 @@ data/minecraft/recipes/smooth_red_sandstone_stairs.json
 data/minecraft/recipes/smooth_sandstone_stairs.json
 data/minecraft/recipes/spruce_fence_gate.json
 data/minecraft/recipes/spruce_fence.json
-data/minecraft/recipes/spruce_hanging_sign.json
 data/minecraft/recipes/spruce_pressure_plate.json
 data/minecraft/recipes/spruce_sign.json
 data/minecraft/recipes/spruce_stairs.json
@@ -1267,7 +1266,6 @@ data/minecraft/recipes/stripped_spruce_wood.json
 data/minecraft/recipes/stripped_warped_hyphae.json
 data/minecraft/recipes/warped_fence_gate.json
 data/minecraft/recipes/warped_fence.json
-data/minecraft/recipes/warped_hanging_sign.json
 data/minecraft/recipes/warped_hyphae.json
 data/minecraft/recipes/warped_pressure_plate.json
 data/minecraft/recipes/warped_sign.json
@@ -3384,6 +3382,7 @@ so that some stone ore variants are easier to obtain.
 ====
 
 ```
+data/minecraft/dimension/overworld.json
 data/minecraft/tags/blocks/deepslate_ore_replaceables.json
 data/minecraft/tags/blocks/stone_ore_replaceables.json
 data/minecraft/worldgen/configured_feature/ore_coal_buried.json
@@ -3749,18 +3748,10 @@ please reach out to me!
 Spellsmithing is the process of working magical enchantments onto an item in
 the smithing table.
 It works a little differently than traditional Minecraft smithing.
-
-Both forms of smithing preserve the magic of the item in the left input slot,
-and destroy any magic on the item in the right output slot.
-So in order to preserve the magic of an enchanted upgrade item, it needs to go
-in the left slot with the tool on the right, and the order is reversed compared to
-traditional smithing.
-
-It can be a bit confusing and counterintuitive at first, but just remember that
-the magic that you want to preserve is what goes in the left slot.
-The <<spellsmithing-guide,Spellsmithing Guide>> resource pack can help with that.
-It can also be useful to shift-click items into the smithing GUI, which will
-always put the item into the correct slot.
+Simply place a <<relic>> in the rightmost slot in the smithing table,
+and a compatible item in the center slot.
+No template is needed.
+The enchantment(s) from the relic will be transferred to the item.
 
 === Boon Enchantments
 
