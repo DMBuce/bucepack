@@ -13,7 +13,7 @@ pools:
       - { type: item, weight: 1, min: 1, max: 2,  item: nautilus_shell }
       - { type: item, weight: 1, min: 2, max: 3,  item: scute }
       - { type: explorer_map, weight: 5, structure: ancient_city, decor: red_x, display: "Underground Explorer Map", skipchunks: false }
-      - { type: explorer_map, weight: 10, decor: red_x, skipchunks: false, display: filled_map.buried_treasure }
+      - { type: loot_table, weight: 10,   table: loot_overhaul/buried_treasure }
 # extra treasure
   - rolls: 1
     entries:

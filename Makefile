@@ -482,8 +482,7 @@ network_nether_FILES := $(DEFAULT_DATA_FILES) \
 	data/buce/functions/var.mcfunction \
 
 no_treasure_maps_FILES := $(DEFAULT_DATA_FILES) \
-	data/minecraft/loot_tables/chests/shipwreck_map_no_treasure_maps.json \
-	data/buce/advancements/no_treasure_maps.json \
+	$(shell find buce-data/ data/minecraft/ -name '*no_treasure_maps*' | ./bin/ext2dir | sort -u) \
 
 blue_fire_FILES := $(DEFAULT_DATA_FILES) \
 	data/minecraft/tags/blocks/soul_fire_base_blocks.json \
@@ -544,6 +543,7 @@ loot_overhaul_treasure_seeds_FILES := $(DEFAULT_DATA_FILES) \
 loot_overhaul_treasure_barrels_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell ls buce-data/loot_addons/loot_overhaul_treasure_barrels* | ./bin/ext2dir) \
 	data/buce/loot_tables/loot_overhaul/buried_treasure_loot_overhaul_treasure_barrels.json \
+	#$(shell find buce-data/ data/minecraft/ -name '*no_treasure_maps*' | ./bin/ext2dir | sort -u) \
 
 loot_overhaul_relics_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell ls buce-data/loot_addons/loot_overhaul_relics* | ./bin/ext2dir) \

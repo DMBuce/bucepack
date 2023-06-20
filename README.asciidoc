@@ -1583,6 +1583,8 @@ compatible with <<loot-overhaul,Loot Overhaul>>.
 
 ```
 data/minecraft/loot_tables/chests/shipwreck_map.json
+data/minecraft/loot_tables/chests/underwater_ruin_big.json
+data/minecraft/loot_tables/chests/underwater_ruin_small.json
 ```
 
 ====

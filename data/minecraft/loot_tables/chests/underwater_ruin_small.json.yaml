@@ -13,7 +13,7 @@ pools:
       - { type: item, weight: 1, min: 1, max: 2,   item: nautilus_shell }
       - { type: item, weight: 1, min: 1, max: 2,   item: scute }
       - { type: item, weight: 5, item: fishing_rod, enchant_lvl: { min: 20, max: 24 } }
-      - { type: explorer_map, weight: 5, decor: red_x, skipchunks: false, display: filled_map.buried_treasure }
+      - { type: loot_table, weight: 5,   table: loot_overhaul/buried_treasure }
 # extra treasure
   - rolls: 1
     entries:
