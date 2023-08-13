@@ -692,6 +692,8 @@ don't block bookshelves from powering the enchantment table.
 
 image::https://i.imgur.com/w9MQeFL.png[Enchanting]
 
+In addition, chiseled bookshelves are crafted with leather instead of planks.
+
 **Downloads**
 
 .https://github.com/DMBuce/bucepack/releases/latest/download/enchanting.zip[`enchanting.zip`]
@@ -699,6 +701,7 @@ image::https://i.imgur.com/w9MQeFL.png[Enchanting]
 ====
 
 ```
+data/minecraft/recipes/chiseled_bookshelf.json
 data/minecraft/tags/blocks/enchantment_power_provider.json
 data/minecraft/tags/blocks/enchantment_power_transmitter.json
 ```

@@ -694,6 +694,7 @@ dripblock_FILES := $(DEFAULT_DATA_FILES) \
 enchanting_FILES := $(DEFAULT_DATA_FILES) \
 	data/minecraft/tags/blocks/enchantment_power_provider.json \
 	data/minecraft/tags/blocks/enchantment_power_transmitter.json \
+	data/minecraft/recipes/chiseled_bookshelf.json \
 
 ender_relic_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell find buce-data/ender_relic -type f | ./bin/ext2dir) \

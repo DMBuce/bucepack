@@ -288,6 +288,8 @@ don't block bookshelves from powering the enchantment table.
 
 image::https://i.imgur.com/w9MQeFL.png[Enchanting]
 
+In addition, chiseled bookshelves are crafted with leather instead of planks.
+
 {!./bin/packsummary enchanting}
 
 === Mineable
