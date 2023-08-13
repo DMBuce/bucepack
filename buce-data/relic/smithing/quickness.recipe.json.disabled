@@ -9,5 +9,7 @@
   "result": {
     "item": "minecraft:trident"
   },
-  "template": []
+  "template": {
+    "item": "minecraft:experience_bottle"
+  }
 }

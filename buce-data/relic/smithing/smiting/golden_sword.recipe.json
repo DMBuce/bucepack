@@ -9,5 +9,7 @@
   "result": {
     "item": "minecraft:golden_sword"
   },
-  "template": []
+  "template": {
+    "item": "minecraft:experience_bottle"
+  }
 }

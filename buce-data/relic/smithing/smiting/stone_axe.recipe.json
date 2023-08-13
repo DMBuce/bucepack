@@ -9,5 +9,7 @@
   "result": {
     "item": "minecraft:stone_axe"
   },
-  "template": []
+  "template": {
+    "item": "minecraft:experience_bottle"
+  }
 }

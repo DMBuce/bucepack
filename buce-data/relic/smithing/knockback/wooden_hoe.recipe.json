@@ -9,5 +9,7 @@
   "result": {
     "item": "minecraft:wooden_hoe"
   },
-  "template": []
+  "template": {
+    "item": "minecraft:experience_bottle"
+  }
 }

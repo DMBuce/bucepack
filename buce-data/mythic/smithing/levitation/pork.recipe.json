@@ -9,5 +9,7 @@
   "result": {
     "item": "minecraft:chainmail_chestplate"
   },
-  "template": []
+  "template": {
+    "item": "minecraft:experience_bottle"
+  }
 }
