@@ -1542,6 +1542,11 @@ Shulkers have a chance to drop 2 shulker shells when killed with Looting.
 With Looting III, there is a 50% chance to drop 1 shell and a 50% chance to
 drop 2 shells.
 
+image::https://i.imgur.com/5bFaiZC.png[Husbandry]
+
+Many plants can be placed and grown on cauldrons, composters, and decorated
+pots.
+
 **Downloads**
 
 .https://github.com/DMBuce/bucepack/releases/latest/download/husbandry.zip[`husbandry.zip`]
@@ -1554,6 +1559,9 @@ data/minecraft/loot_tables/blocks/jungle_leaves.json
 data/minecraft/loot_tables/blocks/wheat.json
 data/minecraft/loot_tables/entities/goat.json
 data/minecraft/loot_tables/entities/shulker.json
+data/minecraft/tags/blocks/dirt.json
+data/minecraft/tags/blocks/mushroom_grow_block.json
+data/minecraft/tags/blocks/small_dripleaf_placeable.json
 ```
 
 ====

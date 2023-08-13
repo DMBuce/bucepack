@@ -495,6 +495,9 @@ husbandry_FILES := $(DEFAULT_DATA_FILES) \
 	data/minecraft/loot_tables/blocks/wheat.json \
 	data/minecraft/loot_tables/entities/goat.json \
 	data/minecraft/loot_tables/entities/shulker.json \
+	data/minecraft/tags/blocks/dirt.json \
+	data/minecraft/tags/blocks/mushroom_grow_block.json \
+	data/minecraft/tags/blocks/small_dripleaf_placeable.json \
 
 frienderchest_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell find buce-data/frienderchest -type f | ./bin/ext2dir) \
