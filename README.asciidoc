@@ -2290,7 +2290,9 @@ become permanently assigned to their note block.
 To break an allay's assignment,
 you can break the note block,
 reassign it to its note block,
-or assign it to a new note block.
+assign it to a new note block,
+give it an item,
+or take an item from it.
 
 **Downloads**
 
@@ -2955,6 +2957,7 @@ See <<language-support,Language Support>> for details.
 
 ```
 assets/minecraft/lang/en_us.json
+assets/minecraft/lang/en_us.json
 assets/minecraft/models/block/light_weighted_pressure_plate_down.json
 assets/minecraft/models/block/light_weighted_pressure_plate.json
 assets/minecraft/models/block/polished_blackstone_button_inventory.json
@@ -2992,6 +2995,8 @@ data/minecraft/recipes/detector_rail.json
 data/minecraft/recipes/dispenser.json
 data/minecraft/recipes/iron_door.json
 data/minecraft/recipes/iron_trapdoor.json
+data/minecraft/recipes/iron_trapdoor.json
+data/minecraft/recipes/light_weighted_pressure_plate.json
 data/minecraft/recipes/light_weighted_pressure_plate.json
 data/minecraft/recipes/polished_blackstone_button.json
 data/minecraft/recipes/stone_axe.json
@@ -3395,6 +3400,7 @@ data/minecraft/worldgen/configured_feature/ore_diorite.json
 data/minecraft/worldgen/configured_feature/ore_gold_buried.json
 data/minecraft/worldgen/configured_feature/ore_granite.json
 data/minecraft/worldgen/configured_feature/ore_lapis_buried.json
+data/minecraft/worldgen/noise_settings/overworld.json
 data/minecraft/worldgen/noise_settings/overworld.json
 ```
 
