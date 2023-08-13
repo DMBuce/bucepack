@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": [
+    { "item": "minecraft:bamboo_planks" }
+  ],
+  "result": "minecraft:bamboo_slab",
+  "count": 2
+}

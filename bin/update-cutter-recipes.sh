@@ -80,9 +80,40 @@ for t in "${stemtypes[@]}"; do
 	done
 done
 
+# generate bamboo recipes
+t=bamboo
+cat <<-EOF | while read num output inputs
+	1 stripped_${t}_block  ${t}_block
+	1 ${t}_mosaic          ${t}_planks
+	2 ${t}_planks          ${t}_block stripped_${t}_block
+	2 ${t}_mosaic          ${t}_block stripped_${t}_block
+	2 ${t}_stairs          ${t}_block stripped_${t}_block
+	2 ${t}_mosaic_stairs   ${t}_block stripped_${t}_block
+	4 ${t}_slab            ${t}_block stripped_${t}_block
+	4 ${t}_mosaic_slab     ${t}_block stripped_${t}_block
+	1 ${t}_stairs          ${t}_planks
+	2 ${t}_slab            ${t}_planks
+	1 ${t}_mosaic_stairs   ${t}_planks ${t}_mosaic
+	2 ${t}_mosaic_slab     ${t}_planks ${t}_mosaic
+EOF
+do
+	export num output inputs
+	sempl - "$dir/wood/${num}x_${output}.recipe.json" <<-EOF
+		{
+		  "type": "minecraft:stonecutting",
+		  "ingredient": [
+		    { "item": "minecraft:{!printf "%s\\n" \$inputs | head -n-1}" },
+		    { "item": "minecraft:{!printf "%s\\n" \$inputs | tail -n1}" }
+		  ],
+		  "result": "minecraft:$output",
+		  "count": $num
+		}
+	EOF
+done
+
 # generate recipe for 2 sticks
 #export inputs="$(echo {oak,spruce,birch,jungle,acacia,dark_oak,crimson,warped}_planks)"
-export inputs="${logtypes[*]} ${stemtypes[*]}"
+export inputs="bamboo ${logtypes[*]} ${stemtypes[*]}"
 sempl - "$dir/wood/2x_sticks.recipe.json" <<-EOF
 	{
 	  "type": "minecraft:stonecutting",
@@ -92,6 +123,20 @@ sempl - "$dir/wood/2x_sticks.recipe.json" <<-EOF
 	  ],
 	  "result": "minecraft:stick",
 	  "count": 2
+	}
+EOF
+
+# generate recipe for 4 sticks
+export inputs="bamboo_block stripped_bamboo_block"
+sempl - "$dir/wood/4x_sticks.recipe.json" <<-EOF
+	{
+	  "type": "minecraft:stonecutting",
+	  "ingredient": [
+	    { "item": "minecraft:{!printf '%s\\n' \$inputs | head -n-1}" },
+	    { "item": "minecraft:{!printf '%s\\n' \$inputs | tail -n1}" }
+	  ],
+	  "result": "minecraft:stick",
+	  "count": 4
 	}
 EOF
 

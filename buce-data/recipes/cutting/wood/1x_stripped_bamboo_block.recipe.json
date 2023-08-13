@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": [
+    { "item": "minecraft:bamboo_block" }
+  ],
+  "result": "minecraft:stripped_bamboo_block",
+  "count": 1
+}
