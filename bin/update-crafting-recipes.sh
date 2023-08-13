@@ -72,6 +72,7 @@ done <<< '
 	prismarine_bricks prismarine_shard
 	melon             melon_slice
 	cobweb            string
+	bamboo_block      bamboo
 '
 
 # generate 2x2 uncrafting recipes
