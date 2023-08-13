@@ -1001,8 +1001,8 @@ crafting grid, or smelt them into minecarts.
 
 === Colorful Crafting
 
-Lets you dye any color of bed, wool, or candle.
-You can also dye any combination of terracotta, glass, or glass panes.
+Lets you dye any color of candle
+and any combination of terracotta, glass, or glass panes.
 
 **Downloads**
 
@@ -1307,6 +1307,7 @@ storage.
 * red sandstone → 4 red sand
 * sandstone → 4 sand
 * snow block → 4 snowball
+* 2 bamboo block → 18 bamboo
 * packed ice → 9 ice
 * melon → 9 melon slice
 * blue ice → 9 packed ice
@@ -1441,6 +1442,7 @@ See <<language-support,Language Support>> for details.
 ====
 
 ```
+assets/minecraft/lang/en_us.json
 assets/minecraft/lang/en_us.json
 ```
 

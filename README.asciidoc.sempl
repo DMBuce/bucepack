@@ -417,8 +417,8 @@ crafting grid, or smelt them into minecarts.
 
 === Colorful Crafting
 
-Lets you dye any color of bed, wool, or candle.
-You can also dye any combination of terracotta, glass, or glass panes.
+Lets you dye any color of candle
+and any combination of terracotta, glass, or glass panes.
 
 {!./bin/packsummary crafting_colorful}
 

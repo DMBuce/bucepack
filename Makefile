@@ -742,8 +742,6 @@ crafting_cart_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell find buce-data/recipes/crafting/carts -type f | ./bin/ext2dir) \
 
 crafting_colorful_FILES := $(DEFAULT_DATA_FILES) \
-	data/minecraft/recipes/*_bed.json \
-	data/minecraft/recipes/*_wool.json \
 	data/minecraft/recipes/*_candle.json \
 	data/minecraft/recipes/*_terracotta.json \
 	data/minecraft/recipes/*_stained_glass.json \
@@ -751,6 +749,8 @@ crafting_colorful_FILES := $(DEFAULT_DATA_FILES) \
 	data/minecraft/tags/items/*_without_*.json \
 	data/minecraft/tags/items/glass.json \
 	data/minecraft/tags/items/glass_panes.json \
+	#data/minecraft/recipes/*_bed.json \
+	#data/minecraft/recipes/*_wool.json \
 
 crafting_plentiful_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell find buce-data/recipes/crafting/plentiful -type f | ./bin/ext2dir) \
