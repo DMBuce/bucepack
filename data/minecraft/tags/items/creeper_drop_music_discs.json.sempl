@@ -1,0 +1,7 @@
+{
+  "replace": true,
+  "values": [
+    "minecraft:{!./bin/allitems | grep '^music_disc_' | head -n-1}",
+    "minecraft:{!./bin/allitems | grep '^music_disc_' | tail -n1}"
+  ]
+}
