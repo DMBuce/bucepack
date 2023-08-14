@@ -498,9 +498,10 @@ farmable_FILES := $(DEFAULT_DATA_FILES) \
 	data/minecraft/tags/blocks/dirt.json \
 	data/minecraft/tags/blocks/mushroom_grow_block.json \
 	data/minecraft/tags/blocks/small_dripleaf_placeable.json \
-	data/minecraft/tags/items/sniffer_food.json \
 	data/minecraft/loot_tables/entities/sniffer.json \
 	data/minecraft/loot_tables/blocks/cherry_leaves.json \
+	data/minecraft/loot_tables/gameplay/sniffer_digging.json \
+	data/minecraft/tags/items/sniffer_food.json \
 
 frienderchest_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell find buce-data/frienderchest -type f | ./bin/ext2dir) \

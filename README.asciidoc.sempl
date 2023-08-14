@@ -577,7 +577,8 @@ pots.
 image::https://i.imgur.com/5bFaiZC.png[Farmable]
 
 Sniffers have a small chance to drop moss when killed by a player.
-They also dig up spore blossoms and small dripleaves.
+They also dig up spore blossoms and small dripleaves,
+and can eat both types of dripleaves.
 
 Shulkers have a chance to drop 2 shulker shells when killed with Looting.
 With Looting III, there is a 50% chance to drop 1 shell and a 50% chance to
