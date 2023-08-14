@@ -2,9 +2,7 @@
   "replace": false,
   "values": [
     "#beds",
-    "#candle_cakes",
     "minecraft:cactus",
-    "minecraft:cake",
     "minecraft:honeycomb_block",
     "minecraft:player_head",
     "minecraft:player_wall_head",

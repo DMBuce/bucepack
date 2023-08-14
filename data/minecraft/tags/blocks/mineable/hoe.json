@@ -1,8 +1,6 @@
 {
   "replace": false,
   "values": [
-    "#minecraft:wool_carpets",
-    "#minecraft:wool",
     "minecraft:player_head",
     "minecraft:player_wall_head",
     "minecraft:cobweb",

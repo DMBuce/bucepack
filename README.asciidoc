@@ -724,6 +724,7 @@ The blocks that are given an associated tool are listed here:
 
 * https://raw.githubusercontent.com/DMBuce/bucepack/master/data/minecraft/tags/blocks/mineable/pickaxe.json.sempl[Pick]
 * https://raw.githubusercontent.com/DMBuce/bucepack/master/data/minecraft/tags/blocks/mineable/axe.json[Axe]
+* https://raw.githubusercontent.com/DMBuce/bucepack/master/data/minecraft/tags/blocks/sword_efficient.json[Sword]
 
 In addition,
 pickaxes are no longer the associated tool for spawners or budding amethyst,
@@ -1606,10 +1607,7 @@ compatible with <<loot-overhaul,Loot Overhaul>>.
 
 ```
 data/minecraft/loot_tables/chests/shipwreck_map.json
-data/minecraft/loot_tables/chests/shipwreck_map.json
 data/minecraft/loot_tables/chests/underwater_ruin_big.json
-data/minecraft/loot_tables/chests/underwater_ruin_big.json
-data/minecraft/loot_tables/chests/underwater_ruin_small.json
 data/minecraft/loot_tables/chests/underwater_ruin_small.json
 ```
 
@@ -3108,7 +3106,6 @@ See <<language-support,Language Support>> for details.
 
 ```
 assets/minecraft/lang/en_us.json
-assets/minecraft/lang/en_us.json
 assets/minecraft/models/block/light_weighted_pressure_plate_down.json
 assets/minecraft/models/block/light_weighted_pressure_plate.json
 assets/minecraft/models/block/polished_blackstone_button_inventory.json
@@ -3146,8 +3143,6 @@ data/minecraft/recipes/detector_rail.json
 data/minecraft/recipes/dispenser.json
 data/minecraft/recipes/iron_door.json
 data/minecraft/recipes/iron_trapdoor.json
-data/minecraft/recipes/iron_trapdoor.json
-data/minecraft/recipes/light_weighted_pressure_plate.json
 data/minecraft/recipes/light_weighted_pressure_plate.json
 data/minecraft/recipes/polished_blackstone_button.json
 data/minecraft/recipes/stone_axe.json
@@ -3263,7 +3258,6 @@ Changes that facilitate survival in The End:
 ====
 
 ```
-data/minecraft/loot_tables/blocks/crying_obsidian.json
 data/minecraft/loot_tables/blocks/crying_obsidian.json
 data/minecraft/loot_tables/chests/end_city_treasure.json
 data/minecraft/loot_tables/entities/endermite.json
@@ -3552,7 +3546,6 @@ data/minecraft/worldgen/configured_feature/ore_diorite.json
 data/minecraft/worldgen/configured_feature/ore_gold_buried.json
 data/minecraft/worldgen/configured_feature/ore_granite.json
 data/minecraft/worldgen/configured_feature/ore_lapis_buried.json
-data/minecraft/worldgen/noise_settings/overworld.json
 data/minecraft/worldgen/noise_settings/overworld.json
 ```
 

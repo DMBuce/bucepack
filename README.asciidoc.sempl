@@ -303,6 +303,7 @@ The blocks that are given an associated tool are listed here:
 
 * https://raw.githubusercontent.com/DMBuce/bucepack/master/data/minecraft/tags/blocks/mineable/pickaxe.json.sempl[Pick]
 * https://raw.githubusercontent.com/DMBuce/bucepack/master/data/minecraft/tags/blocks/mineable/axe.json[Axe]
+* https://raw.githubusercontent.com/DMBuce/bucepack/master/data/minecraft/tags/blocks/sword_efficient.json[Sword]
 
 In addition,
 pickaxes are no longer the associated tool for spawners or budding amethyst,

@@ -41,10 +41,12 @@
     "minecraft:water",
 
     "#minecraft:candles",
+    "minecraft:decorated_pot",
     "minecraft:dragon_egg",
     "minecraft:frosted_ice",
     "minecraft:powder_snow",
     "minecraft:reinforced_deepslate",
+    "minecraft:sniffer_egg",
     "minecraft:turtle_egg",
 
     "minecraft:brown_mushroom",
