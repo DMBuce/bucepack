@@ -70,7 +70,6 @@ DATAPACKFILES = \
 	lichdom.zip \
 	locomotive.zip \
 	loot_overhaul_treasure_barrels.zip \
-	loot_overhaul_relics.zip \
 	loot_overhaul_starter_relic.zip \
 	loot_overhaul_treasure_seeds.zip \
 	loot_overhaul.zip \

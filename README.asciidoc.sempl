@@ -239,7 +239,7 @@ datapacks that use <<spellsmithing>>.
 * <<phantasmal,Phantasmal>>: Invisible item frames and light blocks
 * <<loot-overhaul,Loot Overhaul>>: Invisible light blocks
 * <<mythic-relics,Mythic Relics>>, <<deep-relics,Deep Relics>>, <<illusory-traders,Illusory Traders>>: Some relics
-* <<archaeological-relics,Archaeological Relics>>, <<relic-loot,Relic Loot>>, <<starter-relic,Starter Relic>>, <<ender-relic,Ender Relic>>: Some relics
+* <<archaeological-relics,Archaeological Relics>>, <<starter-relic,Starter Relic>>, <<ender-relic,Ender Relic>>: Some relics
 
 {!./bin/packsummary spellsmithing_guide}
 
@@ -896,27 +896,27 @@ treasure seeds won't generate due to
 https://bugs.mojang.com/browse/MC-156411[MC-156411].
 ====
 
-==== Relic Loot
-
-If this <<ordering-data-packs,addon pack>>
-is enabled and loaded after <<loot-overhaul,Loot Overhaul>>,
-<<archaeological-relic,Archaeological Relics>> rarely appear in chest loot. The chance varies depending on
-the type of loot chest.
-
-.Summary of relic loot
-[%collapsible]
-====
-* 1/50 chance: Woodland Mansion chests
-* 1/500 chance: Abandonded Mineshaft chests, Bastion Treasure chests, Desert
-  Pyramid chests, Jungle Temple chests, Shipwreck Treasure chests, Armorer
-  chests, Toolsmith chests, and Weaponsmith chests
-* 1/1,000 chance: Most other chests
-====
-
-If you have the <<spellsmithing-guide,Spellsmithing Guide>> resource pack
-installed, some relics have custom item textures in the inventory.
-
-{!./bin/packsummary loot_overhaul_relics}
+//==== Relic Loot
+//
+//If this <<ordering-data-packs,addon pack>>
+//is enabled and loaded after <<loot-overhaul,Loot Overhaul>>,
+//<<archaeological-relic,Archaeological Relics>> rarely appear in chest loot. The chance varies depending on
+//the type of loot chest.
+//
+//.Summary of relic loot
+//[%collapsible]
+//====
+//* 1/50 chance: Woodland Mansion chests
+//* 1/500 chance: Abandonded Mineshaft chests, Bastion Treasure chests, Desert
+//  Pyramid chests, Jungle Temple chests, Shipwreck Treasure chests, Armorer
+//  chests, Toolsmith chests, and Weaponsmith chests
+//* 1/1,000 chance: Most other chests
+//====
+//
+//If you have the <<spellsmithing-guide,Spellsmithing Guide>> resource pack
+//installed, some relics have custom item textures in the inventory.
+//
+//{!./bin/packsummary loot_overhaul_relics}
 
 ==== Starter Relic
 
@@ -2066,7 +2066,6 @@ Relics are added by the following datapacks:
 * <<illusory-traders,Illusory Traders>>
 * <<starter-item,Starter Relic>>
 * <<ender-relic,Ender Relic>>
-* <<relic-loot,Relic Loot>>
 
 ////
 
