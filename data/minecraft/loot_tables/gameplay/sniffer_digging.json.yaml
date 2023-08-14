@@ -1,0 +1,10 @@
+type: gift
+pools:
+  - rolls: 1
+    entries:
+      - { type: item, item: torchflower_seeds }
+      - { type: item, item: pitcher_pod }
+      - { type: item, item: small_dripleaf }
+      - { type: item, item: spore_blossom }
+
+random_sequence: "minecraft:gameplay/sniffer_digging"
