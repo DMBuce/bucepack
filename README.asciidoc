@@ -546,7 +546,8 @@ datapacks that use <<spellsmithing>>.
 
 * <<phantasmal,Phantasmal>>: Invisible item frames and light blocks
 * <<loot-overhaul,Loot Overhaul>>: Invisible light blocks
-* <<mythic-relics,Mythic Relics>>, <<deep-relics,Deep Relics>>, <<relic-loot,Relic Loot>>, <<starter-relic,Starter Relic>>, <<ender-relic,Ender Relic>>: Some relics
+* <<archaeological-relics,Archaeological Relics>>, <<mythic-relics,Mythic Relics>>, <<deep-relics,Deep Relics>>: Some relics
+* <<relic-loot,Relic Loot>>, <<starter-relic,Starter Relic>>, <<ender-relic,Ender Relic>>: Some relics
 
 **Downloads**
 
@@ -1595,7 +1596,10 @@ compatible with <<loot-overhaul,Loot Overhaul>>.
 
 ```
 data/minecraft/loot_tables/chests/shipwreck_map.json
+data/minecraft/loot_tables/chests/shipwreck_map.json
 data/minecraft/loot_tables/chests/underwater_ruin_big.json
+data/minecraft/loot_tables/chests/underwater_ruin_big.json
+data/minecraft/loot_tables/chests/underwater_ruin_small.json
 data/minecraft/loot_tables/chests/underwater_ruin_small.json
 ```
 
@@ -1886,6 +1890,103 @@ data/minecraft/loot_tables/entities/player.json
 ====
 ====
 
+=== Archaeological Relics
+
+Adds <<Relics>> to archaeology loot.
+
+Relics can be applied to tools in the smithing table.
+A Bottle o' Enchanting is placed in the template (left) slot,
+the relic is placed in the middle slot,
+and the item to apply the relic's magic to is placed in the right slot.
+
+.Summary of relics
+[%collapsible]
+====
+
+**Relic of Knockback**:
+A piece of flint with Knockback V that can be applied to a shovel or hoe.
+//with a bottle o' enchanting in the smithing table.
+
+**Relic of Endlessness**:
+A stick with Infinity and Mending that can be applied to a bow.
+//with a bottle o' enchanting in the smithing table.
+
+**Relic of Vitality**:
+A glistering melon with Boon of Health V,
+a custom enchantment that can be applied to a netherite chestplate
+//with a bottle o' enchanting in the smithing table
+to give five extra hearts.
+
+**Relic of Swiftness**:
+A rabbit's foot with Boon of Speed II,
+a custom enchantment that can be applied to leather boots
+//with a bottle o' enchanting in the smithing table
+to give a persistent Speed II effect.
+
+**Relic of Smiting**:
+A bone with Sharpness IV and Smite IV that can be applied to a sword or axe.
+//with a bottle o' enchanting in the smithing table.
+
+**Relic of Sharpness**:
+A diamond with Sharpness V that can be applied to a pickaxe.
+//with a bottle o' enchanting in the smithing table.
+
+//**Relic of Quickness**:
+//A prismarine shard with Boon of Quickness,
+//a custom enchantment that can be applied to a trident
+// //with a bottle o' enchanting in the smithing table
+//to give increased attack speed.
+
+**Relic of Frost and Flood**:
+A prismarine crystal with Frost Walker II and Depth Strider III
+that can be applied to diamond boots.
+//with a bottle o' enchanting in the smithing table.
+
+**Relic of Protection**:
+A scute with Protection IV and Blast Protection II
+that can be applied to a turtle shell.
+//with a bottle o' enchanting in the smithing table.
+
+**Relic of Striding**:
+A sugar cube with Depth Strider III and Feather Falling IV
+that can be applied to horse armor.
+//with a bottle o' enchanting in the smithing table.
+
+**Relic of Projectile Protection**:
+A piece of leather with Projectile Protection II
+that can be applied to elytra.
+//with a bottle o' enchanting in the smithing table.
+
+====
+
+//image::https://i.imgur.com/VkbB90K.png[Common Relics]
+image::https://i.imgur.com/yCHfql9.png[Common Relics]
+
+If you have the <<spellsmithing-guide,Spellsmithing Guide>> resource pack
+installed, some relics have custom item textures in the inventory.
+
+**Downloads**
+
+.https://github.com/DMBuce/bucepack/releases/latest/download/relics_archy.zip[`relics_archy.zip`]
+[%collapsible]
+====
+
+```
+data/minecraft/loot_tables/archaeology/desert_pyramid.json
+data/minecraft/loot_tables/archaeology/desert_well.json
+data/minecraft/loot_tables/archaeology/ocean_ruin_cold.json
+data/minecraft/loot_tables/archaeology/ocean_ruin_warm.json
+data/minecraft/loot_tables/archaeology/trail_ruins_common.json
+data/minecraft/loot_tables/archaeology/trail_ruins_rare.json
+```
+
+====
+
+.https://github.com/DMBuce/bucepack/releases[All Releases & Changelogs]
+[%collapsible]
+====
+====
+
 === Loot Overhaul
 
 Overhauls the vanilla loot tables to make early-to-midgame exploration more
@@ -2062,7 +2163,7 @@ https://bugs.mojang.com/browse/MC-156411[MC-156411].
 
 If this <<ordering-data-packs,addon pack>>
 is enabled and loaded after <<loot-overhaul,Loot Overhaul>>,
-<<Relics>> rarely appear in chest loot. The chance varies depending on
+<<archaeological-relic,Archaeological Relics>> rarely appear in chest loot. The chance varies depending on
 the type of loot chest.
 
 .Summary of relic loot
@@ -2094,7 +2195,8 @@ installed, some relics have custom item textures in the inventory.
 
 If this <<ordering-data-packs,addon pack>>
 is enabled and loaded after <<loot-overhaul,Loot Overhaul>>,
-it adds a random <<relics,Relic>> to the bonus spawn chest.
+it adds a random <<archaeological-relics,Archaeological Relic>>
+to the bonus spawn chest.
 
 If any other <<starter-item,Starter Item>> datapacks are installed,
 the starter relic is generated in addition to the starter item added by
@@ -2458,7 +2560,7 @@ Paths extend Speed I effects for players in a manner similar to beacons.
 
 === Ender Relic
 
-Adds a random <<relics,Relic>> to each player's enderchest.
+Adds a random <<archaeological-relic,Archaeological Relic>> to each player's enderchest.
 The relic is added to the ender chest's middle slot.
 If that slot is occupied, the relic is given to the player instead.
 
@@ -2505,9 +2607,13 @@ invisibility. The invisibility ends if the player damages a mob.
 
 === Mythic Relics
 
-Adds <<Relics>> with <<mythic-enchantments,Mythic Enchantments>>
-that can be applied to tools
-with a bottle o' enchanting in the smithing table.
+Adds <<Relics>> with <<mythic-enchantments,Mythic Enchantments>>.
+
+Relics can be applied to tools in the smithing table.
+A Bottle o' Enchanting is placed in the template (left) slot,
+the relic is placed in the middle slot,
+and the item to apply the relic's magic to is placed in the right slot.
+
 Each relic added by this datapack can only be obtained under specific
 circumstances described below.
 
@@ -2679,10 +2785,13 @@ due to https://bugs.mojang.com/browse/MC-138887[MC-138887].
 If this <<ordering-data-packs,addon pack>>
 is enabled and loaded after <<loot-overhaul,Loot Overhaul>>,
 it adds <<Relics>> with <<mythic-enchantments,Mythic Enchantments>>
-to ancient city loot
-that can be applied to tools
-with a bottle o' enchanting in the smithing table.
-Many of the relics require sculk to power them.
+to ancient city loot.
+//Many of the relics require sculk to power them.
+
+Relics can be applied to tools in the smithing table.
+A Bottle o' Enchanting is placed in the template (left) slot,
+the relic is placed in the middle slot,
+and the item to apply the relic's magic to is placed in the right slot.
 
 .Summary of deep relics
 [%collapsible]
@@ -3141,6 +3250,7 @@ Changes that facilitate survival in The End:
 ====
 
 ```
+data/minecraft/loot_tables/blocks/crying_obsidian.json
 data/minecraft/loot_tables/blocks/crying_obsidian.json
 data/minecraft/loot_tables/chests/end_city_treasure.json
 data/minecraft/loot_tables/entities/endermite.json
@@ -3849,72 +3959,17 @@ or an enchantment that can be put on a tool that normally couldn't have it.
 
 Relics can be applied to tools in the smithing table.
 A Bottle o' Enchanting is placed in the template (left) slot,
-the relic is placed in the center slot,
+the relic is placed in the middle slot,
 and the item to apply the relic's magic to is placed in the right slot.
 
-Below is a description of the common relics added by the
-<<starter-item,Starter Relic>>, <<ender-relic,Ender Relic>>,
-and <<relic-loot,Relic Loot>> datapacks.
-For a list of mythic relics, see the <<mythic-relics,Mythic Relics>>
-and <<deep-relics,Deep Relics>> datapack descriptions.
+Relics are added by the following datapacks:
 
-.Summary of relics
-[%collapsible]
-====
-
-**Relic of Knockback**: A piece of flint with Knockback V that can be
-applied to a shovel or hoe
-with a bottle o' enchanting in the smithing table.
-
-**Relic of Endlessness**: A stick with Infinity and Mending that can be
-applied to a bow
-with a bottle o' enchanting in the smithing table.
-
-**Relic of Vitality**: A glistering melon with Boon of Health V, a custom
-enchantment that can be applied to a netherite chestplate
-with a bottle o' enchanting in the smithing table to give five extra
-hearts.
-
-**Relic of Swiftness**: A rabbit's foot with Boon of Speed II, a custom enchantment
-that can be applied to leather boots
-with a bottle o' enchanting in the smithing table to give a persistent Speed II effect.
-
-**Relic of Smiting**: A bone with Sharpness IV and Smite IV that can be
-applied to a sword or axe
-with a bottle o' enchanting in the smithing table.
-
-**Relic of Sharpness**: A diamond with Sharpness V that can be applied to a
-pickaxe
-with a bottle o' enchanting in the smithing table.
-
-//**Relic of Quickness**: A prismarine shard with Boon of Quickness, a
-//custom enchantment that can be applied to a trident
-//with a bottle o' enchanting in the smithing table to give increased
-//attack speed.
-
-**Relic of Frost and Flood**: A prismarine crystal with Frost Walker II and
-Depth Strider III that can be applied to diamond boots
-with a bottle o' enchanting in the smithing table.
-
-**Relic of Protection**: A scute with Protection IV and Blast Protection II
-that can be applied to a turtle shell
-with a bottle o' enchanting in the smithing table.
-
-**Relic of Striding**: A sugar cube with Depth Strider III and Feather
-Falling IV that can be applied to horse armor
-with a bottle o' enchanting in the smithing table.
-
-**Relic of Projectile Protection**: A piece of leather with Projectile
-Protection II that can be applied to elytra
-with a bottle o' enchanting in the smithing table.
-
-====
-
-If you have the <<spellsmithing-guide,Spellsmithing Guide>> resource pack
-installed, some relics have custom item textures in the inventory.
-
-//image::https://i.imgur.com/VkbB90K.png[Common Relics]
-image::https://i.imgur.com/yCHfql9.png[Common Relics]
+* <<archaeological-relics,Archaeological Relics>>
+* <<mythic-relics,Mythic Relics>>
+* <<deep-relics,Deep Relics>>
+* <<starter-item,Starter Relic>>
+* <<ender-relic,Ender Relic>>
+* <<relic-loot,Relic Loot>>
 
 ////
 

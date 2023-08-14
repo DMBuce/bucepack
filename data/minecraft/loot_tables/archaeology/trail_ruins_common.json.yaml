@@ -1,0 +1,37 @@
+type: archaeology
+pools:
+  - rolls: 1
+    entries:
+      - { type: item,  weight: 2,  item: emerald }
+      - { type: item,  weight: 1,  item: wheat }
+      - { type: loot_table, weight: 1, table: relic/random }
+      - { type: item,  weight: 2,  item: wooden_hoe }
+      - { type: item,  weight: 2,  item: clay }
+      - { type: item,  weight: 2,  item: brick }
+      - { type: item,  weight: 2,  item: yellow_dye }
+      - { type: item,  weight: 2,  item: blue_dye }
+      - { type: item,  weight: 2,  item: light_blue_dye }
+      - { type: item,  weight: 2,  item: white_dye }
+      - { type: item,  weight: 2,  item: orange_dye }
+      - { type: item,  weight: 2,  item: red_candle }
+      - { type: item,  weight: 2,  item: green_candle }
+      - { type: item,  weight: 2,  item: purple_candle }
+      - { type: item,  weight: 2,  item: brown_candle }
+      - { type: item,              item: magenta_stained_glass_pane }
+      - { type: item,              item: pink_stained_glass_pane }
+      - { type: item,              item: blue_stained_glass_pane }
+      - { type: item,              item: light_blue_stained_glass_pane }
+      - { type: item,              item: red_stained_glass_pane }
+      - { type: item,              item: yellow_stained_glass_pane }
+      - { type: item,              item: purple_stained_glass_pane }
+      - { type: item,              item: spruce_hanging_sign }
+      - { type: item,              item: oak_hanging_sign }
+      - { type: item,              item: gold_nugget }
+      - { type: item,              item: coal }
+      - { type: item,              item: wheat_seeds }
+      - { type: item,              item: beetroot_seeds }
+      - { type: item,              item: dead_bush }
+      - { type: item,              item: flower_pot }
+      - { type: item,              item: string }
+      - { type: item,              item: lead }
+random_sequence: "minecraft:archaeology/trail_ruins_common"

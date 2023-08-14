@@ -209,7 +209,7 @@
             {%- endif %}
           ],
           "name": "minecraft:suspicious_stew"
-          {%- if entry.weight != 1 %},
+          {%- if entry.weight is defined and entry.weight != 1 %},
           "weight": {{entry.weight}}
           {%- endif %}
         }{{ "," if not loop.last }}

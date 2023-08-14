@@ -81,6 +81,7 @@ DATAPACKFILES = \
 	phantasmal_end.zip \
 	phantasmal.zip \
 	poseable.zip \
+	relics_archy.zip \
 	relics_mythic.zip \
 	relics_deep.zip \
 	shearless.zip \
@@ -560,6 +561,10 @@ relics_deep_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell find buce-data/ data/minecraft/ -name '*relics_deep*' | ./bin/ext2dir) \
 	$(shell find buce-data/deep -type f | ./bin/ext2dir) \
 	data/buce/functions/var.mcfunction \
+
+relics_archy_FILES := $(DEFAULT_DATA_FILES) \
+	$(shell find data/minecraft/loot_tables/archaeology/ -name \*.json | ./bin/ext2dir) \
+	$(relic_FILES) \
 
 relics_mythic_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell find buce-data/ -name '*relics_mythic*' | ./bin/ext2dir) \
@@ -1496,6 +1501,12 @@ wandering_loot.zip: $(wandering_loot_FILES)
 	./bin/ziprename _$(@:.zip=) "" $@
 
 loot_overhaul_relics.zip: $(loot_overhaul_relics_FILES)
+	cp meta/$(@:.zip=.png) pack.png
+	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
+	zip $@ pack.png pack.mcmeta $^
+	./bin/ziprename _$(@:.zip=) "" $@
+
+relics_archy.zip: $(relics_archy_FILES)
 	cp meta/$(@:.zip=.png) pack.png
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^

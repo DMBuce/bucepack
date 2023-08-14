@@ -1,0 +1,14 @@
+type: archaeology
+pools:
+  - rolls: 1
+    entries:
+      - { type: item, item: archer_pottery_sherd }
+      - { type: item, item: miner_pottery_sherd }
+      - { type: item, item: prize_pottery_sherd }
+      - { type: item, item: skull_pottery_sherd }
+      - { type: item, item: diamond }
+      - { type: item, item: tnt }
+      #- { type: item, item: gunpowder }
+      - { type: loot_table, weight: 1, table: relic/random }
+      - { type: item, item: emerald }
+random_sequence: "minecraft:archaeology/desert_pyramid"
