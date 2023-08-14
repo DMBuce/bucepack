@@ -1,0 +1,17 @@
+type: archaeology
+pools:
+  - rolls: 1
+    entries:
+      - { type: item,  item: burn_pottery_sherd }
+      - { type: item,  item: danger_pottery_sherd }
+      - { type: item,  item: friend_pottery_sherd }
+      - { type: item,  item: heart_pottery_sherd }
+      - { type: item,  item: heartbreak_pottery_sherd }
+      - { type: item,  item: howl_pottery_sherd }
+      - { type: item,  item: sheaf_pottery_sherd }
+      - { type: item,  item: wayfinder_armor_trim_smithing_template }
+      - { type: item,  item: raiser_armor_trim_smithing_template }
+      - { type: item,  item: shaper_armor_trim_smithing_template }
+      - { type: item,  item: host_armor_trim_smithing_template }
+      - { type: item,  item: music_disc_relic }
+random_sequence: "minecraft:archaeology/trail_ruins_rare"
