@@ -34,7 +34,10 @@
 				],
 				"entity": {
 					"type": "minecraft:rabbit",
-					"nbt": "{RabbitType:1}"
+					"type_specific": {
+						"type": "rabbit",
+						"variant": "white"
+					}
 				}
 			}
 		}
