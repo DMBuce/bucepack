@@ -64,7 +64,7 @@ DATAPACKFILES = \
 	heads_player.zip \
 	heirlooms.zip \
 	hover_mode.zip \
-	husbandry.zip \
+	farmable.zip \
 	illusory_trader.zip \
 	leashed.zip \
 	lichdom.zip \
@@ -488,8 +488,8 @@ blue_fire_FILES := $(DEFAULT_DATA_FILES) \
 	data/minecraft/tags/blocks/soul_fire_base_blocks.json \
 	data/buce/advancements/blue_fire.json \
 
-husbandry_FILES := $(DEFAULT_DATA_FILES) \
-	data/buce/advancements/husbandry.json \
+farmable_FILES := $(DEFAULT_DATA_FILES) \
+	data/buce/advancements/farmable.json \
 	data/minecraft/loot_tables/blocks/beetroots.json \
 	data/minecraft/loot_tables/blocks/jungle_leaves.json \
 	data/minecraft/loot_tables/blocks/wheat.json \
@@ -498,6 +498,9 @@ husbandry_FILES := $(DEFAULT_DATA_FILES) \
 	data/minecraft/tags/blocks/dirt.json \
 	data/minecraft/tags/blocks/mushroom_grow_block.json \
 	data/minecraft/tags/blocks/small_dripleaf_placeable.json \
+	data/minecraft/tags/items/sniffer_food.json \
+	data/minecraft/loot_tables/entities/sniffer.json \
+	data/minecraft/loot_tables/blocks/cherry_leaves.json \
 
 frienderchest_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell find buce-data/frienderchest -type f | ./bin/ext2dir) \
@@ -1379,7 +1382,7 @@ blue_fire.zip: $(blue_fire_FILES)
 	zip $@ pack.png pack.mcmeta $^
 	./bin/ziprename _$(@:.zip=) "" $@
 
-husbandry.zip: $(husbandry_FILES)
+farmable.zip: $(farmable_FILES)
 	cp meta/$(@:.zip=.png) pack.png
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^

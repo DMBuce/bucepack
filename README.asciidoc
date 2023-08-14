@@ -1525,7 +1525,7 @@ data/minecraft/tags/blocks/mineable/hoe.json
 ====
 ====
 
-=== Husbandry
+=== Farmable
 
 Adds more farmable drops.
 
@@ -1533,35 +1533,43 @@ Crops drop more wheat or beetroots when harvested with Fortune,
 and the seeds of these crops drop at a flat rate of 0-3 regardless of
 Fortune level.
 
-Goats drop mutton.
-
 The drop rate of jungle saplings is slightly increased when harvested with
 Fortune, to a maximum of 5% with Fortune III.
+
+Cherry leaves have a chance to drop pink petals.
+
+Goats drop mutton.
+
+Many plants can be placed and grown on cauldrons, composters, and decorated
+pots.
+
+image::https://i.imgur.com/5bFaiZC.png[Farmable]
+
+Sniffers have a small chance to drop moss when killed by a player.
+They also dig up spore blossoms and small dripleaves.
 
 Shulkers have a chance to drop 2 shulker shells when killed with Looting.
 With Looting III, there is a 50% chance to drop 1 shell and a 50% chance to
 drop 2 shells.
 
-image::https://i.imgur.com/5bFaiZC.png[Husbandry]
-
-Many plants can be placed and grown on cauldrons, composters, and decorated
-pots.
-
 **Downloads**
 
-.https://github.com/DMBuce/bucepack/releases/latest/download/husbandry.zip[`husbandry.zip`]
+.https://github.com/DMBuce/bucepack/releases/latest/download/farmable.zip[`farmable.zip`]
 [%collapsible]
 ====
 
 ```
 data/minecraft/loot_tables/blocks/beetroots.json
+data/minecraft/loot_tables/blocks/cherry_leaves.json
 data/minecraft/loot_tables/blocks/jungle_leaves.json
 data/minecraft/loot_tables/blocks/wheat.json
 data/minecraft/loot_tables/entities/goat.json
 data/minecraft/loot_tables/entities/shulker.json
+data/minecraft/loot_tables/entities/sniffer.json
 data/minecraft/tags/blocks/dirt.json
 data/minecraft/tags/blocks/mushroom_grow_block.json
 data/minecraft/tags/blocks/small_dripleaf_placeable.json
+data/minecraft/tags/items/sniffer_food.json
 ```
 
 ====

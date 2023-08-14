@@ -556,7 +556,7 @@ pumpkins, beehives, and bee nests.
 
 {!./bin/packsummary shearless}
 
-=== Husbandry
+=== Farmable
 
 Adds more farmable drops.
 
@@ -564,21 +564,26 @@ Crops drop more wheat or beetroots when harvested with Fortune,
 and the seeds of these crops drop at a flat rate of 0-3 regardless of
 Fortune level.
 
-Goats drop mutton.
-
 The drop rate of jungle saplings is slightly increased when harvested with
 Fortune, to a maximum of 5% with Fortune III.
+
+Cherry leaves have a chance to drop pink petals.
+
+Goats drop mutton.
+
+Many plants can be placed and grown on cauldrons, composters, and decorated
+pots.
+
+image::https://i.imgur.com/5bFaiZC.png[Farmable]
+
+Sniffers have a small chance to drop moss when killed by a player.
+They also dig up spore blossoms and small dripleaves.
 
 Shulkers have a chance to drop 2 shulker shells when killed with Looting.
 With Looting III, there is a 50% chance to drop 1 shell and a 50% chance to
 drop 2 shells.
 
-image::https://i.imgur.com/5bFaiZC.png[Husbandry]
-
-Many plants can be placed and grown on cauldrons, composters, and decorated
-pots.
-
-{!./bin/packsummary husbandry}
+{!./bin/packsummary farmable}
 
 === No Treasure Maps
 
