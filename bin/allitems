@@ -3,5 +3,6 @@
 cd "$(git rev-parse --show-toplevel)"
 
 ls "$(./bin/latest).jar/assets/minecraft/models/item/"* \
-	| ./bin/path2basename
+	| ./bin/path2basename \
+	| sort -u
 
