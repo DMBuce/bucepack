@@ -897,7 +897,7 @@ data/minecraft/loot_tables/gameplay/hero_of_the_village/%_gift.json.yaml: buce-d
 	./bin/update-villager-gifts.sh
 
 heads_golem_FILES := $(DEFAULT_DATA_FILES) \
-	$(shell find data/minecraft/loot_tables/{,orig/}gameplay/hero_of_the_village -type f | ./bin/ext2dir) \
+	$(shell find data/minecraft/loot_tables/gameplay/hero_of_the_village -type f | ./bin/ext2dir) \
 
 heads_player_FILES := $(DEFAULT_DATA_FILES) \
 	data/minecraft/loot_tables/entities/player.json \
