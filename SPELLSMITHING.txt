@@ -1,0 +1,38 @@
+archy relics
+--
+stick+bow: infinity, mending
+glist.melon+netherite.chestplate: health
+leather+elytra: projectile protection
+flint+shovel/hoe: knockback
+bone+sword/axe: sharpness, smite
+rabbit.foot+boots: speed
+sugar+horse.armor: depth strider, feather falling
+diamond+pick: sharpness
+pris.crystal+boots: frostwalk, depth strider
+scute+helmet: prot, blast prot
+
+mythic relics
+--
+rabbit.foot+boots: bounding
+compass+shield: magnetism
+porkchop+chestplate: hovering
+pink.dye+crossbow: chromatic blasts
+gold.nugget+helmet: darkvision, greed
+amethyst.shard+spyglass: seeking
+heart+trident: stormcalling
+glow.ink+trident: lightning bug
+honeycomb+pants: lasso, balloon animals
+tear+shield: liquid metal
+eye+tool: breaking
+
+deep relics
+--
+coal+helmet: puncheons
+echo.shard+totem: reverb
+echo.shard+totem: rebirth
+echo.shard+totem: retribution
+
+illusioner relics
+--
+leather+elytra: cloaking
+

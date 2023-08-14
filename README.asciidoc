@@ -546,8 +546,8 @@ datapacks that use <<spellsmithing>>.
 
 * <<phantasmal,Phantasmal>>: Invisible item frames and light blocks
 * <<loot-overhaul,Loot Overhaul>>: Invisible light blocks
-* <<archaeological-relics,Archaeological Relics>>, <<mythic-relics,Mythic Relics>>, <<deep-relics,Deep Relics>>: Some relics
-* <<relic-loot,Relic Loot>>, <<starter-relic,Starter Relic>>, <<ender-relic,Ender Relic>>: Some relics
+* <<mythic-relics,Mythic Relics>>, <<deep-relics,Deep Relics>>, <<illusory-traders,Illusory Traders>>: Some relics
+* <<archaeological-relics,Archaeological Relics>>, <<relic-loot,Relic Loot>>, <<starter-relic,Starter Relic>>, <<ender-relic,Ender Relic>>: Some relics
 
 **Downloads**
 
@@ -3967,6 +3967,7 @@ Relics are added by the following datapacks:
 * <<archaeological-relics,Archaeological Relics>>
 * <<mythic-relics,Mythic Relics>>
 * <<deep-relics,Deep Relics>>
+* <<illusory-traders,Illusory Traders>>
 * <<starter-item,Starter Relic>>
 * <<ender-relic,Ender Relic>>
 * <<relic-loot,Relic Loot>>
