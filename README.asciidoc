@@ -1529,7 +1529,7 @@ data/minecraft/tags/blocks/mineable/hoe.json
 
 === Farmable
 
-Enhanced farming of crops and mobs.
+Enhances farming of crops and mobs.
 
 Crops drop more wheat or beetroots when harvested with Fortune,
 and the seeds of these crops drop at a flat rate of 0-3 regardless of
@@ -1546,6 +1546,10 @@ pots.
 image::https://i.imgur.com/5bFaiZC.png[Farmable]
 
 Goats drop mutton.
+
+Husks drop sand instead of rotten flesh.
+
+Cave spiders drop cobwebs instead of string.
 
 Sniffers have a small chance to drop moss when killed by a player.
 They also dig up spore blossoms and small dripleaves,
@@ -1939,16 +1943,6 @@ installed, some relics have custom item textures in the inventory.
 .https://github.com/DMBuce/bucepack/releases/latest/download/relics_archy.zip[`relics_archy.zip`]
 [%collapsible]
 ====
-
-```
-data/minecraft/loot_tables/archaeology/desert_pyramid.json
-data/minecraft/loot_tables/archaeology/desert_well.json
-data/minecraft/loot_tables/archaeology/ocean_ruin_cold.json
-data/minecraft/loot_tables/archaeology/ocean_ruin_warm.json
-data/minecraft/loot_tables/archaeology/trail_ruins_common.json
-data/minecraft/loot_tables/archaeology/trail_ruins_rare.json
-```
-
 ====
 
 .https://github.com/DMBuce/bucepack/releases[All Releases & Changelogs]
@@ -3358,9 +3352,10 @@ data/minecraft/worldgen/template_pool/village/taiga/town_centers.json
 
 Makes desert pyramids and mineshafts a renewable source of sand and cobwebs.
 
-Only husks spawn in desert pyramids, and they drop sand.
+Only husks spawn in desert pyramids,
+and they drop sand instead of rotten flesh.
 
-Cave spiders drop cobwebs.
+Cave spiders drop cobwebs instead of string.
 
 **Downloads**
 

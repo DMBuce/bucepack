@@ -559,7 +559,7 @@ pumpkins, beehives, and bee nests.
 
 === Farmable
 
-Enhanced farming of crops and mobs.
+Enhances farming of crops and mobs.
 
 Crops drop more wheat or beetroots when harvested with Fortune,
 and the seeds of these crops drop at a flat rate of 0-3 regardless of
@@ -576,6 +576,10 @@ pots.
 image::https://i.imgur.com/5bFaiZC.png[Farmable]
 
 Goats drop mutton.
+
+Husks drop sand instead of rotten flesh.
+
+Cave spiders drop cobwebs instead of string.
 
 Sniffers have a small chance to drop moss when killed by a player.
 They also dig up spore blossoms and small dripleaves,
@@ -1675,9 +1679,10 @@ or find an igloo with a basement.
 
 Makes desert pyramids and mineshafts a renewable source of sand and cobwebs.
 
-Only husks spawn in desert pyramids, and they drop sand.
+Only husks spawn in desert pyramids,
+and they drop sand instead of rotten flesh.
 
-Cave spiders drop cobwebs.
+Cave spiders drop cobwebs instead of string.
 
 {!./bin/packsummary worldgen_renewable_structures}
 
