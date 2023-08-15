@@ -5,5 +5,5 @@ pools:
   - rolls: 1
     entries:
 {{<!sed -n '/BEGIN FAE/,/END FAE/ { /^[^#]/p }' buce-data/heads/heads.dat}}{{\\}}
-      - { type: item, weight: 1, item: player_head, nbt: '{SkullOwner:{Name:\"{{3:}}\",Id:{{1}},Properties:{textures:[{Value:\"{{2}}\"}]}}}' }
+      - { type: item, weight: 1, item: player_head, nbt: '{SkullOwner:{Name:\"{{4:}}\",Id:{{1}},Properties:{textures:[{Value:\"{{2}}\"}]}},BlockEntityTag:{note_block_sound:\"minecraft:{{3}}\"}}' }
 # vim: ft=yaml
