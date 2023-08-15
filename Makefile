@@ -568,7 +568,7 @@ relics_deep_FILES := $(DEFAULT_DATA_FILES) \
 	data/buce/functions/var.mcfunction \
 
 relics_archy_FILES := $(DEFAULT_DATA_FILES) \
-	$(shell find data/minecraft/loot_tables/archaeology/ -name \*.json | ./bin/ext2dir) \
+	$(shell find data/minecraft/loot_tables/archaeology/ -name \*.yaml | ./bin/ext2dir) \
 	$(relic_FILES) \
 
 relics_mythic_FILES := $(DEFAULT_DATA_FILES) \
