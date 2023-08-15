@@ -1,6 +1,9 @@
 {
 	"multipart": [
 		{
+			"apply": { "model": "block/note_block" }
+		},
+		{
 			"when": { "OR": [
 				{ "note": "0", "instrument": "bell" },
 				{ "note": "0", "instrument": "chime" },
