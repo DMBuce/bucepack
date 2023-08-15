@@ -10,6 +10,6 @@
     "item": "minecraft:netherite_chestplate"
   },
   "template": {
-    "item": "minecraft:experience_bottle"
+    "tag": "buce:relic/templates"
   }
 }

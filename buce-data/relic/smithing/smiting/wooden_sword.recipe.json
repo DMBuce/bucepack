@@ -10,6 +10,6 @@
     "item": "minecraft:wooden_sword"
   },
   "template": {
-    "item": "minecraft:experience_bottle"
+    "tag": "buce:relic/templates"
   }
 }

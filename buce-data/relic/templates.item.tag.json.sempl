@@ -1,0 +1,9 @@
+#!/usr/bin/env sempl
+#!end sempl env
+{
+  "replace": false,
+  "values": [
+    "minecraft:{!./bin/allitems | grep '_smithing_template$'}",
+    "tag": "buce:relic/templates"
+  ]
+}

@@ -10,6 +10,6 @@
     "item": "minecraft:totem_of_undying"
   },
   "template": {
-    "item": "minecraft:experience_bottle"
+    "tag": "buce:relic/templates"
   }
 }

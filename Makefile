@@ -426,6 +426,7 @@ climbable_FILES := $(DEFAULT_DATA_FILES) \
 
 illusory_trader_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell find buce-data/illusory/trader -type f | ./bin/ext2dir) \
+	data/buce/tags/items/relic/templates.json \
 
 heirlooms_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell find data/minecraft -name '*heirlooms*' | ./bin/ext2dir) \
@@ -565,6 +566,7 @@ wandering_loot_FILES := $(DEFAULT_DATA_FILES) \
 relics_deep_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell find buce-data/ data/minecraft/ -name '*relics_deep*' | ./bin/ext2dir) \
 	$(shell find buce-data/deep -type f | ./bin/ext2dir) \
+	data/buce/tags/items/relic/templates.json \
 	data/buce/functions/var.mcfunction \
 
 relics_archy_FILES := $(DEFAULT_DATA_FILES) \
@@ -587,6 +589,7 @@ relics_mythic_FILES := $(DEFAULT_DATA_FILES) \
 	data/minecraft/tags/entity_types/frog_food.json \
 	data/minecraft/tags/functions/load_relics_mythic.json \
 	data/minecraft/tags/worldgen/structure/seeking_located.json \
+	data/buce/tags/items/relic/templates.json \
 
 boss_loot_seasonal_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell ls buce-data/loot_addons/boss_loot_seasonal* | ./bin/ext2dir) \
@@ -737,6 +740,7 @@ phantasmal_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell find buce-data/phantasmal -type f | ./bin/ext2dir) \
 	data/buce/loot_tables/heads/phantom_membrane_phantasmal.json \
 	data/minecraft/loot_tables/entities/phantom.json \
+	data/buce/tags/items/relic/templates.json \
 
 phantasmal_end_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell find buce-data/phantasmal_end -type f | ./bin/ext2dir) \
@@ -935,6 +939,7 @@ escape_grind_FILES := $(DEFAULT_DATA_FILES) \
 	data/minecraft/tags/functions/respawn_end.json \
 	data/minecraft/tags/functions/respawn_nether.json \
 	data/minecraft/tags/worldgen/structure/seeking_located.json \
+	data/buce/tags/items/relic/templates.json \
 
 locomotive_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell find buce-data/locomotive -type f | ./bin/ext2dir) \

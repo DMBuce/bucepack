@@ -1,13 +1,13 @@
 {
   "type": "minecraft:smithing_transform",
   "base": {
-    "item": "minecraft:bone"
+    "item": "minecraft:phantom_membrane"
   },
   "addition": {
-    "item": "minecraft:netherite_axe"
+    "item": "minecraft:torch"
   },
   "result": {
-    "item": "minecraft:netherite_axe"
+    "item": "minecraft:light"
   },
   "template": {
     "tag": "buce:relic/templates"

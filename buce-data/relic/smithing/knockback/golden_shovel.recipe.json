@@ -10,6 +10,6 @@
     "item": "minecraft:golden_shovel"
   },
   "template": {
-    "item": "minecraft:experience_bottle"
+    "tag": "buce:relic/templates"
   }
 }

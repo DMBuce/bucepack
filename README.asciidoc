@@ -546,8 +546,8 @@ datapacks that use <<spellsmithing>>.
 
 * <<phantasmal,Phantasmal>>: Invisible item frames and light blocks
 * <<loot-overhaul,Loot Overhaul>>: Invisible light blocks
-* <<mythic-relics,Mythic Relics>>, <<deep-relics,Deep Relics>>, <<illusory-traders,Illusory Traders>>: Some relics
-* <<archaeological-relics,Archaeological Relics>>, <<starter-relic,Starter Relic>>, <<ender-relic,Ender Relic>>: Some relics
+* <<mythic-relics,Mythic Relics>>, <<deep-relics,Deep Relics>>, <<illusory-traders,Illusory Traders>>: Relics
+* <<archaeological-relics,Archaeological Relics>>, <<starter-relic,Starter Relic>>, <<ender-relic,Ender Relic>>: Relics
 
 **Downloads**
 
@@ -1570,7 +1570,9 @@ data/minecraft/loot_tables/blocks/beetroots.json
 data/minecraft/loot_tables/blocks/cherry_leaves.json
 data/minecraft/loot_tables/blocks/jungle_leaves.json
 data/minecraft/loot_tables/blocks/wheat.json
+data/minecraft/loot_tables/entities/cave_spider.json
 data/minecraft/loot_tables/entities/goat.json
+data/minecraft/loot_tables/entities/husk.json
 data/minecraft/loot_tables/entities/shulker.json
 data/minecraft/loot_tables/entities/sniffer.json
 data/minecraft/loot_tables/gameplay/sniffer_digging.json
@@ -1943,6 +1945,16 @@ installed, some relics have custom item textures in the inventory.
 .https://github.com/DMBuce/bucepack/releases/latest/download/relics_archy.zip[`relics_archy.zip`]
 [%collapsible]
 ====
+
+```
+data/minecraft/loot_tables/archaeology/desert_pyramid.json
+data/minecraft/loot_tables/archaeology/desert_well.json
+data/minecraft/loot_tables/archaeology/ocean_ruin_cold.json
+data/minecraft/loot_tables/archaeology/ocean_ruin_warm.json
+data/minecraft/loot_tables/archaeology/trail_ruins_common.json
+data/minecraft/loot_tables/archaeology/trail_ruins_rare.json
+```
+
 ====
 
 .https://github.com/DMBuce/bucepack/releases[All Releases & Changelogs]
@@ -3214,6 +3226,8 @@ Changes that facilitate survival in The End:
 
 ```
 data/minecraft/loot_tables/blocks/crying_obsidian.json
+data/minecraft/loot_tables/blocks/crying_obsidian.json
+data/minecraft/loot_tables/blocks/crying_obsidian.json
 data/minecraft/loot_tables/chests/end_city_treasure.json
 data/minecraft/loot_tables/entities/endermite.json
 ```
@@ -3857,9 +3871,9 @@ please reach out to me!
 Spellsmithing is the process of working magical enchantments onto an item in
 the smithing table.
 It works a little differently than traditional Minecraft smithing.
-Simply place a <<relic>> in the rightmost slot in the smithing table,
-and a compatible item in the center slot.
-No template is needed.
+Simply place a Bottle o' Enchanting in the left slot of the smithing table,
+a <<relic>> in the middle slot,
+and a compatible item in the right slot.
 The enchantment(s) from the relic will be transferred to the item.
 
 === Boon Enchantments

@@ -10,6 +10,6 @@
     "item": "minecraft:diamond_horse_armor"
   },
   "template": {
-    "item": "minecraft:experience_bottle"
+    "tag": "buce:relic/templates"
   }
 }

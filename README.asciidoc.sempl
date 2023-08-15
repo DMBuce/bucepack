@@ -238,8 +238,8 @@ datapacks that use <<spellsmithing>>.
 
 * <<phantasmal,Phantasmal>>: Invisible item frames and light blocks
 * <<loot-overhaul,Loot Overhaul>>: Invisible light blocks
-* <<mythic-relics,Mythic Relics>>, <<deep-relics,Deep Relics>>, <<illusory-traders,Illusory Traders>>: Some relics
-* <<archaeological-relics,Archaeological Relics>>, <<starter-relic,Starter Relic>>, <<ender-relic,Ender Relic>>: Some relics
+* <<mythic-relics,Mythic Relics>>, <<deep-relics,Deep Relics>>, <<illusory-traders,Illusory Traders>>: Relics
+* <<archaeological-relics,Archaeological Relics>>, <<starter-relic,Starter Relic>>, <<ender-relic,Ender Relic>>: Relics
 
 {!./bin/packsummary spellsmithing_guide}
 
@@ -2003,9 +2003,9 @@ please reach out to me!
 Spellsmithing is the process of working magical enchantments onto an item in
 the smithing table.
 It works a little differently than traditional Minecraft smithing.
-Simply place a <<relic>> in the rightmost slot in the smithing table,
-and a compatible item in the center slot.
-No template is needed.
+Simply place a Bottle o' Enchanting in the left slot of the smithing table,
+a <<relic>> in the middle slot,
+and a compatible item in the right slot.
 The enchantment(s) from the relic will be transferred to the item.
 
 === Boon Enchantments

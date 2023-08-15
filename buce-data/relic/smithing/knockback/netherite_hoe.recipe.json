@@ -10,6 +10,6 @@
     "item": "minecraft:netherite_hoe"
   },
   "template": {
-    "item": "minecraft:experience_bottle"
+    "tag": "buce:relic/templates"
   }
 }
