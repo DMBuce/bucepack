@@ -741,6 +741,7 @@ This pack fixes https://bugs.mojang.com/browse/MC-199752[MC-199752].
 ```
 data/minecraft/tags/blocks/mineable/axe.json
 data/minecraft/tags/blocks/mineable/pickaxe.json
+data/minecraft/tags/blocks/sword_efficient.json
 ```
 
 ====
@@ -1528,7 +1529,7 @@ data/minecraft/tags/blocks/mineable/hoe.json
 
 === Farmable
 
-Adds more farmable drops.
+Enhanced farming of crops and mobs.
 
 Crops drop more wheat or beetroots when harvested with Fortune,
 and the seeds of these crops drop at a flat rate of 0-3 regardless of
@@ -1539,12 +1540,12 @@ Fortune, to a maximum of 5% with Fortune III.
 
 Cherry leaves have a chance to drop pink petals.
 
-Goats drop mutton.
-
 Many plants can be placed and grown on cauldrons, composters, and decorated
 pots.
 
 image::https://i.imgur.com/5bFaiZC.png[Farmable]
+
+Goats drop mutton.
 
 Sniffers have a small chance to drop moss when killed by a player.
 They also dig up spore blossoms and small dripleaves,
@@ -1645,61 +1646,15 @@ and look like tiny blocks.
 [%collapsible]
 ====
 
-* Bee
-* Slime
-* Spider
-* Amethyst Dwarf
-* Blue Dwarf (3 variants)
-* Coal Dwarf (3 variants)
-* Diamond Dwarf (3 variants)
-* Emerald Dwarf (3 variants)
-* Gold Dwarf (3 variants)
-* Iron Dwarf (3 variants)
-* Red Dwarf (3 variants)
-* Copper Dwarf (4 variants)
-* Tree Elf
-* Bush Elf (2 variants)
-* Cactus Elf (2 variants)
-* Acacia Elf (3 variants)
-* Birch Elf (3 variants)
-* Crimson Elf (3 variants)
-* Dark Elf (3 variants)
-* Jungle Elf (3 variants)
-* Mangrove Elf (3 variants)
-* Oak Elf (3 variants)
-* Spruce Elf (3 variants)
-* Warped Elf (3 variants)
-* Cave Gnome
-* Desert Gnome
-* Forest Gnome
-* Island Gnome
-* Mesa Gnome
-* Mountain Gnome
-* Plains Gnome
-* Savanna Gnome
-* Tundra Gnome (2 variants)
-* Cobble Goblin
-* Deep Goblin
-* Geode Goblin
-* Granite Goblin
-* Gray Goblin
-* Moss Goblin
-* Red Goblin
-* Sand Goblin
-* Stone Goblin
-* Tuff Goblin
-* White Goblin
-* Bedrock Gremlin
-* Chest Gremlin
-* Crafty Gremlin
-* Furnace Gremlin
-* Scrap Gremlin
-* TNT Gremlin
-* Bone Gremlin (2 variants)
-* Ice Gremlin (2 variants)
-* Lava Gremlin (2 variants)
-* Dark Kelpie
-* Prismarine Kelpie (2 variants)
+* block.stone.step Bedrock Gremlin
+* block.bone_block.place Bone Gremlin (2 variants)
+* block.chest.open Chest Gremlin
+* ui.stonecutter.take_result Crafty Gremlin
+* block.furnace.fire_crackle Furnace Gremlin
+* block.glass.break Ice Gremlin (2 variants)
+* block.stone.place Lava Gremlin (2 variants)
+* block.ancient_debris.place Scrap Gremlin
+* entity.generic.explode TNT Gremlin
 
 ====
 
@@ -1735,81 +1690,87 @@ when villagers could create golems out of materials other than iron.
 ====
 
 Any Profession:
-* Gift Basket Golem
-* Gift Golem (3 variants)
+* block.grass.place Gift Basket Golem
+* item.book.page_turn Gift Golem (3 variants)
 
 Armorer:
-* Metal Golem
-* Copper Golem (3 variants)
+* block.copper.break Copper Golem (3 variants)
+* block.blastfurnace.fire_crackle Metal Golem
 
 Butcher:
-* Cow
-* Sheep
-* Pig (2 variants)
-* Meat Golem (2 variants)
+* entity.cow.ambient Cow
+* block.smoker.smoke Meat Golem
+* entity.pig.ambient Meat Golem
+* entity.pig.ambient Pig (2 variants)
+* entity.sheep.ambient Sheep
 
 Cartographer:
-* Coconut Golem
-* Kiwi Golem
-* Lemon Golem
-* Lime Golem
-* Map Golem
+* entity.generic.drink Coconut Golem
+* entity.generic.eat Kiwi Golem
+* entity.generic.eat Lemon Golem
+* entity.generic.eat Lime Golem
+* block.grindstone.use Map Golem
 
 Cleric:
-* Ender Golem
-* Honey Golem
-* Onion Golem
-* Tome Golem
+* block.ender_chest.open Ender Golem
+* block.honey_block.place Honey Golem
+* entity.generic.eat Onion Golem
+* ui.cartography_table.take_result Tome Golem
 
 Farmer:
-* Cheese Golem
-* Grape Golem
-* Melon Golem
-* Picnic Golem
-* Pumpkin Golem
-* Sandwich Golem
-* Jam Golem (4 variants)
-* Pie Golem (5 variants)
+* entity.generic.eat Cheese Golem
+* entity.generic.eat Grape Golem
+* block.honey_block.slide Jam Golem (4 variants)
+* block.wood.place Melon Golem
+* entity.generic.eat Picnic Golem
+* entity.generic.eat Pie Golem (5 variants)
+* block.wood.place Pumpkin Golem
+* entity.generic.eat Sandwich Golem
 
 Fisherman:
-* Fish
-* Guardian
-* Pufferfish
-* Squid
-* Clam (3 variants)
-* Tail Golem
-* Fish Golem (2 variants)
-* Storage Golem (3 variants)
-* Glow Squid
+* block.conduit.ambient.short Clam (3 variants)
+* entity.cod.flop Fish
+* entity.cod.flop Fish Golem (2 variants)
+* entity.glow_squid.ambient Glow Squid
+* entity.guardian.ambient_land Guardian
+* entity.puffer_fish.blow_up Pufferfish
+* entity.squid.ambient Squid
+* block.barrel.close Storage Golem
+* block.barrel.open Storage Golem (2 variants)
+* entity.cod.flop Tail Golem
 
 Fletcher:
-* Fletching Golem
-* Target Golem
-* Straw Golem (2 variants)
+* entity.arrow.shoot Fletching Golem
+* block.grass.place Straw Golem (2 variants)
+* entity.arrow.hit Target Golem
 
 Leatherworker:
-* Cauldron Golem (4 variants)
+* block.stone.place Cauldron Golem
+* item.bucket.empty Cauldron Golem
+* item.bucket.empty_lava Cauldron Golem
+* item.bucket.empty_powder_snow Cauldron Golem
 
 Librarian:
-* Enchanted Golem (2 variants)
-* Book Golem (3 variants)
+* ui.cartography_table.take_result Book Golem (3 variants)
+* block.enchantment_table.use Enchanted Golem (2 variants)
 
 Mason:
-* Brick Golem
-* Clay Golem (17 variants)
-* Quartz Golem (3 variants)
-* Stone Golem (7 variants)
+* block.stone.place Brick Golem
+* block.gravel.place Clay Golem
+* block.stone.place Clay Golem (16 variants)
+* block.stone.place Quartz Golem (3 variants)
+* block.stone.place Stone Golem (7 variants)
 
 Shepherd:
-* Cloth Golem
-* Loom Golem
-* Wool Golem (16 variants)
+* entity.llama.swag Cloth Golem
+* ui.loom.take_result Loom Golem
+* block.wool.place Wool Golem (16 variants)
 
 Toolsmith:
-* Smith Golem
+* block.smithing_table.use Smith Golem
 
 Weaponsmith:
-* Grind Golem (2 variants)
+* block.grindstone.use Grind Golem (2 variants)
 
 ====
 
@@ -1860,20 +1821,20 @@ The head of that Ancient is dropped instead of the player's.
 [%collapsible]
 ====
 
-* Computron
-* ToasterBot
-* Zip
-* Rubik (2 variants)
-* TV Boy
-* Companion Cube
-* Donut Girl (2 variants)
-* Piston Guy (2 variants)
-* Jukebox Hero
-* Safety Joe
-* Lamp Lover
-* Silent Observer
-* Dispenser of Justice
-* Amp Roadie
+* block.amethyst_block.resonate Amp Roadie
+* entity.allay.ambient_with_item Companion Cube
+* block.stone_button.click_off Computron
+* block.dispenser.dispense Dispenser of Justice
+* entity.generic.eat Donut Girl (2 variants)
+* block.amethyst_block.resonate Jukebox Hero
+* block.glass.break Lamp Lover
+* block.piston.contract Piston Guy (2 variants)
+* block.stone_button.click_on Rubik (2 variants)
+* block.stone_button.click_off Safety Joe
+* block.stone.place Silent Observer
+* block.piston.extend ToasterBot
+* block.stone_button.click_off TV Boy
+* ui.cartography_table.take_result Zip
 
 ====
 
