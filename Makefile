@@ -110,6 +110,9 @@ all: $(PACKFILES)
 DEFAULT_RESOURCE_FILES = LICENSE.txt
 DEFAULT_DATA_FILES = LICENSE.txt data/buce/advancements/root.json
 
+LICENSE.txt: LICENSE
+	cp -v $< $@
+
 painting_overhaul_FILES := $(DEFAULT_RESOURCE_FILES) \
 	assets/minecraft/textures/painting/kebab.png \
 	assets/minecraft/textures/painting/aztec.png \
