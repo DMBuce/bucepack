@@ -17,6 +17,13 @@ shift 2
 # process zip files
 mkdir -p cache
 for file in "$@"; do
+	# delete some files to prevent duplicates
+	zipnote "$file" | sed "/^@ (/d; s/^@ //; s/$from/$to/g" | sort | uniq -d \
+		| while read f; do
+			zip -d "$file" "$f" >/dev/null
+		done
+
+	# rename files
 	zipnote "$file" \
 		| sed "/$from/ { p; s/$from/$to/g; s/^@ /@=/ }" \
 		| zipnote -w "$file"

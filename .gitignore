@@ -1,6 +1,7 @@
 *.zip
 pack.mcmeta
 pack.png
+LICENSE.txt
 cache/
 data/minecraft/loot_tables/*.json
 data/minecraft/loot_tables/archaeology/*.json
