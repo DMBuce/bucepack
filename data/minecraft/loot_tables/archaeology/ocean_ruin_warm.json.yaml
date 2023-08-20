@@ -8,7 +8,7 @@ pools:
       - { type: item,              item: sniffer_egg }
       - { type: item,              item: iron_axe }
       - { type: item,  weight: 2,  item: emerald }
-      - { type: item,  weight: 1,  item: trident, damage: {min: 0.0, max: 1.0 } }
+      - { type: item,  weight: 1,  item: wheat }
       - { type: loot_table, weight: 1, table: relic/random }
       - { type: item,  weight: 2,  item: wooden_hoe }
       - { type: item,  weight: 2,  item: coal }
