@@ -6,7 +6,7 @@ cd "$gitroot"
 
 section="$1"
 sed -n "/BEGIN ${section^^}/,/END ${section^^}/ { /^[^#]/p }" buce-data/heads/heads.dat \
-	| cut -d' ' -f3- \
+	| cut -d' ' -f4- \
 	| sort -k2 \
 	#| uniq -c \
 	#| sed -E 's/^\s*1 //; s/^\s*([0-9]+) (.*)/\2 (\1 variants)/' \
