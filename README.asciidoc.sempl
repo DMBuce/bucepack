@@ -1779,72 +1779,75 @@ your ghost form to life.
 //
 //Becoming a lich is a multi-step process.
 //
-//**Bind the dragon's power to you**
-//
-//Slay the dragon while wearing its grin.
-//If you kill the dragon while wearing a dragon head,
-//the head is transformed into the Relic of Dragon Form.
-//It gains Boon of Vitality X
-//and Myth of the Red Dragon,
-//two custom enchantments that give you 10 hearts
-//and turn arrows you shoot from bows into fiery dragon breath.
-//
-//**Channel the sea's elders**
+//**Impale the sea's elders**
 //
 //Obtain a vessel for your soul.
-//If you channel lightning on an elder guardian and then kill it,
+//If you kill an elder guardian with a trident,
 //it will drop a Relic of the Empty Vessel with Myth of the Phylactery.
 //
 //**Use spellsmithing to create a phylactery**
 //
 //Apply the Relic of the Empty Vessel to a totem
-//with a bottle o' enchanting in a smithing table.
+//in the smithing table.
+//
+//**Bind the dragon's power to you**
+//
+//Slay the dragon while wearing its grin.
+//If you kill the dragon while wearing a dragon head,
+//the head is transformed into the Relic of Dragon Form.
+//It gains Curse of Binding
+//as well as Boon of Health X
+//and Myth of the Red Dragon,
+//two custom enchantments that give you 10 hearts
+//and turn arrows you shoot from bows into fiery dragon breath.
 //
 //**Harness the effects of a wither**
 //
-//Obtain a nether star and craft a beacon with it.
-//
-//If you kill the wither while wearing the Relic of Dragon Form,
-//it gains Myth of Explosions,
+//Defeat a wither while wearing the Relic of Dragon Form.
+//When you do,
+//the relic will gain Myth of Explosions,
 //a custom enchantment that lets you upgrade your dragon breath
 //with fire charges or TNT in the offhand.
+//
+//**Obtain the heart of an ancient horror**
+//
+//Kill the warden with explosive dragon's breath.
+//When you do, it will drop a warden heart
+//with Myth of Soulbinding,
+//a crucial component of lichdom.
 //
 //**Build a pedestal**
 //
 //Construct a phylactery pedestal with a golden beacon, 8 endstone, 8 dark
 //prismarine slabs, and a sculk shrieker.
+//
 //Create a beacon with a gold base,
 //surround the beacon with endstone,
 //place the shrieker on the beacon
 //and surround it with dark prismarine slabs.
 //
-//**Sacrifice a loved one**
+//**Eat the telltale heart**
 //
-//Toss the phylactery on the shrieker of the pedestal,
-//then kill a tamed wolf, cat, or parrot near it.
-//This will complete the formation of the phylactery pedestal.
+//Toss the phylactery on the pedestal's shrieker
+//and consume the warden heart.
+//This will complete the formation of the phylactery pedestal
+//and turn you into a lich.
 //
 //Choose the location for your phylactery pedestal carefully.
 //The pedestal block can't be moved or destroyed once created.
 //The phylactery item can't despawn or be picked up,
 //but it's otherwise a normal item that can be destroyed by fire and explosions.
 //
-//**Sacrifice yourself to an ancient horror**
-//
-//You might want to cover your ears.
-//When you're killed by a Warden,
-//you become a lich.
-//
 //**Enjoy lichdom**
 //
 //As a lich, you can regenerate your body at a phylactery pedestal
 //and enjoy the debilitating effects of undeath!
 //
-//You lose 9 hearts.
+//You lose 5 hearts.
 //
 //Food poisons you.
 //
-//Killing the undead provides sustenance.
+//Killing undead provides sustenance.
 //
 //Each phylactery pedestal you build lets you regenerate your body once.
 //
@@ -1853,8 +1856,7 @@ your ghost form to life.
 //==== Wimpcore Lichdom
 //
 //With this addon datapack for <<hardcore-lichdom,Hardcore Lichdom>>,
-//you lose only only 5 hearts as a lich
-//and can regenerate your body at a phylactery pedestal any number of times.
+//you can regenerate your body at a phylactery pedestal any number of times.
 
 To become a lich, you will need:
 
