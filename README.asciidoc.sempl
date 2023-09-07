@@ -1275,6 +1275,9 @@ Picks break a 3x3 square, axes break a 32-block-high column,
 shovels break a 9-block column, and hoes break a 3x3x3 sphere.
 The extra broken blocks are not affected by fortune or silk touch and do not
 further decrease the tool's durability.
+Additionally, hoes with the enchant
+replace grass-like blocks with farmland in a 5x3x5 volume around the player
+when tilling soil.
 
 // some things to note about Breaking, Silk Touch, and Fortune
 //
@@ -1312,6 +1315,9 @@ which provide access to some of the relics.
 ====
 Myth of Seeking can behave in unexpected ways
 due to https://bugs.mojang.com/browse/MC-138887[MC-138887].
+
+Myth of Breaking tills podzol and mycelium,
+which is inconsistent with https://bugs.mojang.com/browse/MC-8231[MC-8231].
 ====
 
 === Deep Relics
