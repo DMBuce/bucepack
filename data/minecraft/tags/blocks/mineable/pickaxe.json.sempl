@@ -21,6 +21,8 @@ SEMPL_BRACES = {{}}
     "minecraft:magenta_stained_glass_pane",
     "minecraft:orange_stained_glass_pane",
     "minecraft:pink_stained_glass_pane",
+    "minecraft:player_head",
+    "minecraft:player_wall_head",
     "minecraft:purple_stained_glass_pane",
     "minecraft:red_stained_glass_pane",
     "minecraft:redstone_lamp",
@@ -28,6 +30,6 @@ SEMPL_BRACES = {{}}
     "minecraft:white_stained_glass_pane",
     "minecraft:yellow_stained_glass_pane",
 
-	{{!grep minecraft: "$(./bin/latest)".jar/data/minecraft/tags/blocks/mineable/pickaxe.json | grep -v -e spawner -e budding_amethyst}}
+    {{!grep minecraft: "$(./bin/latest)".jar/data/minecraft/tags/blocks/mineable/pickaxe.json | grep -v -e spawner -e budding_amethyst}}
   ]
 }
