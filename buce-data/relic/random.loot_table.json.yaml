@@ -28,6 +28,9 @@ pools:
       - { type: item, weight: 1, item: bone,
           nbt: '{relic:1b,CustomModelData:22183,display:{Name:\"{\\\"text\\\":\\\"Relic of Smiting\\\",\\\"color\\\":\\\"light_purple\\\"}\"},Enchantments:[{id:sharpness,lvl:4},{id:smite,lvl:4}]}'
         }
+      - { type: item, weight: 1, item: bone,
+          nbt: '{relic:1b,CustomModelData:22183,display:{Name:\"{\\\"text\\\":\\\"Relic of the Vorpal Blade\\\",\\\"color\\\":\\\"light_purple\\\"}\"},Enchantments:[{id:looting,lvl:3},{id:sweeping,lvl:3}]}'
+        }
       - { type: item, weight: 1, item: diamond,
           nbt: '{relic:1b,CustomModelData:22183,display:{Name:\"{\\\"text\\\":\\\"Relic of Sharpness\\\",\\\"color\\\":\\\"light_purple\\\"}\"},Enchantments:[{id:sharpness,lvl:5}]}'
         }
