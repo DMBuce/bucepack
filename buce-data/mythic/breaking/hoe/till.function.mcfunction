@@ -4,11 +4,9 @@
 advancement revoke @s only buce:mythic/breaking/hoe/trigger_tilling
 
 # replace tillable blocks with farmland
-fill ~-5 ~-1 ~-5 ~5 ~1 ~5 minecraft:farmland replace #buce:mythic/breaking/hoe/tillable
+execute if entity @s[tag=breaking_enabled] run fill ~-5 ~-1 ~-5 ~5 ~1 ~5 minecraft:farmland replace #buce:mythic/breaking/hoe/tillable
 
-# tag player
-tag @s[tag=breaking_enabled] add breaking_hoe
-
-# break blocks in 1t when the item will exist
-execute if entity @s[tag=breaking_enabled] run schedule function buce:mythic/breaking/hoe/mine 1t append
+# visual and sound effects
+particle minecraft:end_rod ~ ~ ~ 0.1 0.1 0.1 0.03 8
+#playsound minecraft:entity.silverfish.ambient player @a ~ ~ ~
 
