@@ -1554,19 +1554,15 @@ and some iron armor is reskinned as chainmail.
 
 image::https://i.imgur.com/wdWOFyJ.png[Copper Overhaul]
 
-Iron doors, iron trapdoors, gold pressure plates, and blackstone buttons
-are replaced with copper variants.
-
 Tripwire hooks are crafted with copper instead of iron,
 and the dispenser recipe uses tripwire hooks instead of bows.
 Copper is used to craft detector rails,
 and all rail recipes are adjusted to have a stick in the middle.
 
-image::https://i.imgur.com/IeJHUPu.png[Copper Overhaul]
+//image::https://i.imgur.com/IeJHUPu.png[Copper Overhaul]
 
 Partial support is provided for renaming
-wooden and stone tools, chainmail and iron armor,
-iron doors and trapdoors, and blackstone buttons.
+wooden and stone tools, chainmail armor, and iron armor.
 See <<language-support,Language Support>> for details.
 
 {!./bin/packsummary copper_overhaul}
