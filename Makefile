@@ -665,6 +665,7 @@ leashed_FILES := $(DEFAULT_DATA_FILES) \
 mineable_FILES := $(DEFAULT_DATA_FILES) \
 	data/minecraft/tags/blocks/mineable/axe.json \
 	data/minecraft/tags/blocks/mineable/pickaxe.json \
+	data/minecraft/tags/blocks/mineable/shovel.json \
 	data/minecraft/tags/blocks/sword_efficient.json \
 	data/buce/advancements/mineable.json \
 
