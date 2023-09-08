@@ -10,14 +10,6 @@
         },
         {
           "type": "loot_table",
-          "table": "minecraft:chests/ancient_city"
-        },
-        {
-          "type": "loot_table",
-          "table": "minecraft:chests/bastion_hoglin_stable"
-        },
-        {
-          "type": "loot_table",
           "table": "minecraft:chests/spawn_bonus_chest"
         },
         {
@@ -31,10 +23,6 @@
         {
           "type": "loot_table",
           "table": "minecraft:chests/buried_treasure"
-        },
-        {
-          "type": "loot_table",
-          "table": "minecraft:chests/bastion_bridge"
         },
         {
           "type": "loot_table",
@@ -54,19 +42,11 @@
         },
         {
           "type": "loot_table",
-          "table": "minecraft:chests/bastion_other"
-        },
-        {
-          "type": "loot_table",
           "table": "minecraft:chests/pillager_outpost"
         },
         {
           "type": "loot_table",
           "table": "minecraft:chests/underwater_ruin_big"
-        },
-        {
-          "type": "loot_table",
-          "table": "minecraft:chests/nether_bridge"
         },
         {
           "type": "loot_table",
@@ -134,10 +114,6 @@
         },
         {
           "type": "loot_table",
-          "table": "minecraft:chests/end_city_treasure"
-        },
-        {
-          "type": "loot_table",
           "table": "minecraft:chests/shipwreck_supply"
         },
         {
@@ -151,14 +127,6 @@
         {
           "type": "loot_table",
           "table": "minecraft:chests/woodland_mansion"
-        },
-        {
-          "type": "loot_table",
-          "table": "minecraft:chests/bastion_treasure"
-        },
-        {
-          "type": "loot_table",
-          "table": "minecraft:chests/ancient_city_ice_box"
         },
         {
           "type": "loot_table",
