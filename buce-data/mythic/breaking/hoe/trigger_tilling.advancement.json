@@ -19,19 +19,13 @@
 		"note_block": {
 			"trigger": "minecraft:item_used_on_block",
 			"conditions": {
-				"item": {
-				},
 				"location": [
 					{
 						"condition": "minecraft:location_check",
 						"predicate": {
 							"block": {
 								"blocks": [
-									"minecraft:dirt",
-									"minecraft:dirt_path",
-									"minecraft:grass_block",
-									"minecraft:mycelium",
-									"minecraft:podzol"
+									"minecraft:farmland"
 								]
 							}
 						}
