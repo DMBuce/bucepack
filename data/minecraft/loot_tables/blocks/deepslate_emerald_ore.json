@@ -63,6 +63,19 @@
       ],
       "conditions": [
         {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "effects": {
+              "minecraft:haste": {
+                "amplifier": {
+                  "min": 1
+                }
+              }
+            }
+          }
+        },
+        {
           "condition": "minecraft:inverted",
           "term": {
             "condition": "minecraft:match_tool",
