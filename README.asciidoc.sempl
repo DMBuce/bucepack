@@ -548,11 +548,11 @@ They shouldn't add any lag to your game.
 Makes hoes able to harvest blocks that are normally obtained with shears.
 In addition, hoes harvest bamboo saplings faster than normal,
 and grass drops dead bushes when harvested
-with a hoe or shears in badlands biomes.
+with a hoe or shears in badlands, desert, or nether biomes.
 
 image::https://i.imgur.com/7tN7Zij.png[Shearless]
 
-Note that shears are still required to shear sheep, mooshroom, snow golems,
+Shears are still needed to shear sheep, mooshroom, snow golems,
 pumpkins, beehives, and bee nests.
 
 {!./bin/packsummary shearless}
