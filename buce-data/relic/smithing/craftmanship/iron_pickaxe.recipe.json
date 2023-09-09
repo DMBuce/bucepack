@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smithing_transform",
+  "base": {
+    "item": "minecraft:iron_nugget"
+  },
+  "addition": {
+    "item": "minecraft:iron_pickaxe"
+  },
+  "result": {
+    "item": "minecraft:iron_pickaxe"
+  },
+  "template": {
+    "tag": "buce:relic/templates"
+  }
+}

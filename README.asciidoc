@@ -741,6 +741,7 @@ This pack fixes https://bugs.mojang.com/browse/MC-199752[MC-199752].
 ```
 data/minecraft/tags/blocks/mineable/axe.json
 data/minecraft/tags/blocks/mineable/pickaxe.json
+data/minecraft/tags/blocks/mineable/shovel.json
 data/minecraft/tags/blocks/sword_efficient.json
 ```
 
@@ -1972,6 +1973,10 @@ A piece of leather with Projectile Protection II
 that can be applied to elytra.
 //with a bottle o' enchanting in the smithing table.
 
+**Relic of Craftmanship**:
+An iron nugget with Efficiency VII and Unbreaking X
+that can be applied to an iron tool.
+
 ====
 
 //image::https://i.imgur.com/VkbB90K.png[Common Relics]
@@ -3115,11 +3120,6 @@ See <<language-support,Language Support>> for details.
 
 ```
 assets/minecraft/lang/en_us.json
-assets/minecraft/models/block/light_weighted_pressure_plate_down.json
-assets/minecraft/models/block/light_weighted_pressure_plate.json
-assets/minecraft/models/block/polished_blackstone_button_inventory.json
-assets/minecraft/models/block/polished_blackstone_button.json
-assets/minecraft/models/block/polished_blackstone_button_pressed.json
 assets/minecraft/models/item/stone_axe.json
 assets/minecraft/models/item/stone_hoe.json
 assets/minecraft/models/item/stone_pickaxe.json
@@ -3132,16 +3132,12 @@ assets/minecraft/models/item/wooden_shovel.json
 assets/minecraft/models/item/wooden_sword.json
 assets/minecraft/textures/block/detector_rail_on.png
 assets/minecraft/textures/block/detector_rail.png
-assets/minecraft/textures/block/iron_door_bottom.png
-assets/minecraft/textures/block/iron_door_top.png
-assets/minecraft/textures/block/iron_trapdoor.png
 assets/minecraft/textures/block/tripwire_hook.png
 assets/minecraft/textures/item/chainmail_boots.png
 assets/minecraft/textures/item/chainmail_chestplate.png
 assets/minecraft/textures/item/chainmail_helmet.png
 assets/minecraft/textures/item/chainmail_leggings.png
 assets/minecraft/textures/item/iron_chestplate.png
-assets/minecraft/textures/item/iron_door.png
 assets/minecraft/textures/item/iron_leggings.png
 assets/minecraft/textures/models/armor/chainmail_layer_1.png
 assets/minecraft/textures/models/armor/chainmail_layer_2.png
@@ -3150,10 +3146,6 @@ assets/minecraft/textures/models/armor/iron_layer_2.png
 data/minecraft/recipes/activator_rail.json
 data/minecraft/recipes/detector_rail.json
 data/minecraft/recipes/dispenser.json
-data/minecraft/recipes/iron_door.json
-data/minecraft/recipes/iron_trapdoor.json
-data/minecraft/recipes/light_weighted_pressure_plate.json
-data/minecraft/recipes/polished_blackstone_button.json
 data/minecraft/recipes/stone_axe.json
 data/minecraft/recipes/stone_hoe.json
 data/minecraft/recipes/stone_pickaxe.json

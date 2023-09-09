@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smithing_transform",
+  "base": {
+    "item": "minecraft:iron_nugget"
+  },
+  "addition": {
+    "item": "minecraft:shears"
+  },
+  "result": {
+    "item": "minecraft:shears"
+  },
+  "template": {
+    "tag": "buce:relic/templates"
+  }
+}

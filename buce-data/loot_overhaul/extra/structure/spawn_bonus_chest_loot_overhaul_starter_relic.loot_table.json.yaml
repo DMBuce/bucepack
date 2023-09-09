@@ -58,3 +58,6 @@ pools:
 #      - { type: item, weight: 1, item: gold_nugget,
 #          nbt: '{relic:1b,mining:1b,CustomModelData:22183,display:{Name:\"{\\\"text\\\":\\\"Relic of Mining\\\",\\\"color\\\":\\\"light_purple\\\"}\",Lore:[\"\\\"§r§bMining\\\"\"]},Enchantments:[{id:unbreaking,lvl:3}]}'
 #        }
+      - { type: item, weight: 1, item: iron_nugget,
+          nbt: '{relic:1b,CustomModelData:22183,display:{Name:\"{\\\"text\\\":\\\"Relic of Craftmanship\\\",\\\"color\\\":\\\"light_purple\\\"}\"},Enchantments:[{id:efficiency,lvl:7},{id:unbreaking,lvl:10}]}'
+        }

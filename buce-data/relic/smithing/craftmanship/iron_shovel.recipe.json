@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smithing_transform",
+  "base": {
+    "item": "minecraft:iron_nugget"
+  },
+  "addition": {
+    "item": "minecraft:iron_shovel"
+  },
+  "result": {
+    "item": "minecraft:iron_shovel"
+  },
+  "template": {
+    "tag": "buce:relic/templates"
+  }
+}
