@@ -13,5 +13,6 @@ pools:
       - { type: item,  item: raiser_armor_trim_smithing_template }
       - { type: item,  item: shaper_armor_trim_smithing_template }
       - { type: item,  item: host_armor_trim_smithing_template }
-      - { type: item,  item: music_disc_relic }
+      #- { type: item,  item: music_disc_relic }
+      - { type: loot_table, table: relic/random }
 random_sequence: "minecraft:archaeology/trail_ruins_rare"
