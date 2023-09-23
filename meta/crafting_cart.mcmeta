@@ -1,6 +1,6 @@
 {
   "pack": {
-    "pack_format": 15,
+    "pack_format": 18,
     "description": "Buce's Cart Crafting: Extract chests/furnaces/hoppers/tnt from minecarts"
   }
 }
