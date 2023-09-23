@@ -3,8 +3,8 @@
   "ingredient": [
     { "item": "minecraft:warped_button" },
     { "item": "minecraft:warped_door" },
-    { "item": "minecraft:warped_fence_gate" },
     { "item": "minecraft:warped_fence" },
+    { "item": "minecraft:warped_fence_gate" },
     { "item": "minecraft:warped_pressure_plate" },
     { "item": "minecraft:warped_slab" },
     { "item": "minecraft:warped_stairs" },

@@ -2,8 +2,8 @@
   "type": "minecraft:stonecutting",
   "ingredient": [
     { "item": "minecraft:mangrove_door" },
-    { "item": "minecraft:mangrove_fence_gate" },
     { "item": "minecraft:mangrove_fence" },
+    { "item": "minecraft:mangrove_fence_gate" },
     { "item": "minecraft:mangrove_pressure_plate" },
     { "item": "minecraft:mangrove_sign" },
     { "item": "minecraft:mangrove_slab" },

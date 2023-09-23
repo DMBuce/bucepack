@@ -2,8 +2,8 @@
   "type": "minecraft:stonecutting",
   "ingredient": [
     { "item": "minecraft:birch_door" },
-    { "item": "minecraft:birch_fence_gate" },
     { "item": "minecraft:birch_fence" },
+    { "item": "minecraft:birch_fence_gate" },
     { "item": "minecraft:birch_pressure_plate" },
     { "item": "minecraft:birch_sign" },
     { "item": "minecraft:birch_slab" },

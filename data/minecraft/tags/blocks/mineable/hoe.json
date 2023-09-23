@@ -3,8 +3,6 @@
   "values": [
     "#minecraft:wool_carpets",
     "#minecraft:wool",
-    "minecraft:bamboo_sapling",
-    "minecraft:brown_mushroom_block",
     "minecraft:cobweb",
     "minecraft:dead_bush",
     "minecraft:fern",
@@ -12,11 +10,7 @@
     "minecraft:grass",
     "minecraft:hanging_roots",
     "minecraft:large_fern",
-    "minecraft:mushroom_stem",
     "minecraft:nether_sprouts",
-    "minecraft:player_head",
-    "minecraft:player_wall_head",
-    "minecraft:red_mushroom_block",
     "minecraft:seagrass",
     "minecraft:small_dripleaf",
     "minecraft:tall_grass",
@@ -25,6 +19,12 @@
     "minecraft:twisting_vines_plant",
     "minecraft:vine",
     "minecraft:weeping_vines",
-    "minecraft:weeping_vines_plant"
+    "minecraft:weeping_vines_plant",
+    "minecraft:bamboo_sapling",
+    "minecraft:brown_mushroom_block",
+    "minecraft:mushroom_stem",
+    "minecraft:player_head",
+    "minecraft:player_wall_head",
+    "minecraft:red_mushroom_block"
   ]
 }
