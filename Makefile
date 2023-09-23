@@ -1820,7 +1820,7 @@ update:
 	find ./bin/update-* -exec {} \;
 	@echo Copying new loot tables to orig.new folder
 	mkdir -p data/minecraft/loot_tables/orig.new
-	rsync -a `./bin/latest`.jar/data/minecraft/loot_tables/{gameplay,chests} data/minecraft/loot_tables/orig.new/
+	rsync -a `./bin/latest`.jar/data/minecraft/loot_tables/{archaeology,chests,gameplay} data/minecraft/loot_tables/orig.new/
 	@echo Rebuilding everything
 	touch $(TEMPLATES)
 	make -B all clean
