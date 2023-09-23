@@ -25,7 +25,7 @@
 		"in_waterlogged": {
 			"trigger": "minecraft:enter_block",
 			"conditions": {
-				"state": { "waterlogged": true }
+				"state": { "waterlogged": "true" }
 			}
 		},
 		"charging_stormcaller": {
