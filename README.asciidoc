@@ -1134,6 +1134,10 @@ Makes some crafting recipes cheaper.
 * 6 planks → 6 trapdoor
 * 4 log → 4 wood
 * 4 stem → 4 hyphae
+* 3 iron nugget → chain
+* chest + 3 iron ingot → hopper
+* solid door + 8 iron nugget → shield
+* bamboo → stick
 
 ====
 
@@ -1297,6 +1301,27 @@ storage.
 [%collapsible]
 ====
 
+* amethyst block → 4 amethyst shard
+* bricks → 4 brick
+* clay → 4 clay ball
+* glowstone → 4 glowstone dust
+* honeycomb block → 4 honeycomb
+* magma block → 4 magma cream
+* nether bricks → 4 nether brick
+* dripstone block → 4 pointed dripstone
+* purpur block → 4 popped chorus fruit
+* prismarine → 4 prismarine shard
+* red sandstone → 4 red sand
+* sandstone → 4 sand
+* snow block → 4 snowball
+* bamboo block → 18 bamboo
+* packed ice → 9 ice
+* melon → 9 melon slice
+* blue ice → 9 packed ice
+* prismarine bricks → 9 prismarine shard
+* cobweb → 9 string
+* bookshelf → 3 book
+* book → 3 paper
 
 ====
 
@@ -1361,6 +1386,16 @@ The following blocks can be freely crafted into each other.
 [%collapsible]
 ====
 
+* button
+* door
+* fence
+* fence gate
+* pressure plate
+* sign
+* slab
+* stairs
+* trapdoor
+* wall
 
 ====
 
@@ -3512,6 +3547,7 @@ data/minecraft/tags/blocks/stone_ore_replaceables.json
 data/minecraft/worldgen/configured_feature/ore_coal_buried.json
 data/minecraft/worldgen/configured_feature/ore_diamond_buried.json
 data/minecraft/worldgen/configured_feature/ore_diamond_large.json
+data/minecraft/worldgen/configured_feature/ore_diamond_medium.json
 data/minecraft/worldgen/configured_feature/ore_diamond_small.json
 data/minecraft/worldgen/configured_feature/ore_diorite.json
 data/minecraft/worldgen/configured_feature/ore_gold_buried.json
@@ -3958,16 +3994,17 @@ TO DO AFTER MINECRAFT UPDATES
 Run `make update`
 Check and resolve automatic changes with `git status && git diff`
 Merge loot table changes with Loot Overhaul
-Check for new Mineable blocks in data/minecraft/tags/blocks/unmineable.json
-Add new plants to Gardener Endermen
-Add new smooth and cracked blocks to More Cutting
-Add new warm blocks to Warmer Striders
-Add new potions to Brewing Guide
-Add new ores to Ore Types
-Add new End blocks to mk-dragonproof.sh
-Add new leashable mobs to #buce:leashed/leashable
-Add new leashable mobs to #buce:mythic/leashing/leashable
-Add new floating mobs to #buce:mythic/balloons/balloons
+For major version updates,
+* Check for new Mineable blocks in data/minecraft/tags/blocks/unmineable.json
+* Add new plants to Gardener Endermen
+* Add new smooth and cracked blocks to More Cutting
+* Add new warm blocks to Warmer Striders
+* Add new potions to Brewing Guide
+* Add new ores to Ore Types
+* Add new End blocks to mk-dragonproof.sh
+* Add new leashable mobs to #buce:leashed/leashable
+* Add new leashable mobs to #buce:mythic/leashing/leashable
+* Add new floating mobs to #buce:mythic/balloons/balloons
 
 HOW TO UPDATE LOOT TABLES AFTER MINECRAFT UPDATES
 =================================================
