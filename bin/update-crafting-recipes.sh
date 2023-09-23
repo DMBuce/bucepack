@@ -151,7 +151,7 @@ for color in \
 	white
 do
 	# create tags for colorful blocks w/o that color
-	for tag in beds candles terracotta wool; do
+	for tag in candles terracotta; do
 		cp "$latest.jar/data/minecraft/tags/items/$tag.json" "data/minecraft/tags/items/${tag}_without_$color.json"
 		sed -i "/minecraft:${color}_/d" "data/minecraft/tags/items/${tag}_without_$color.json"
 		sed -i -E -n 'H; x; s:,(\s*\n\s*[]}]):\1:; P; ${x; p}' "data/minecraft/tags/items/${tag}_without_$color.json"
