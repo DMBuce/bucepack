@@ -911,28 +911,6 @@ treasure seeds won't generate due to
 https://bugs.mojang.com/browse/MC-156411[MC-156411].
 ====
 
-//==== Relic Loot
-//
-//If this <<ordering-data-packs,addon pack>>
-//is enabled and loaded after <<loot-overhaul,Loot Overhaul>>,
-//<<archaeological-relic,Archaeological Relics>> rarely appear in chest loot. The chance varies depending on
-//the type of loot chest.
-//
-//.Summary of relic loot
-//[%collapsible]
-//====
-//* 1/50 chance: Woodland Mansion chests
-//* 1/500 chance: Abandonded Mineshaft chests, Bastion Treasure chests, Desert
-//  Pyramid chests, Jungle Temple chests, Shipwreck Treasure chests, Armorer
-//  chests, Toolsmith chests, and Weaponsmith chests
-//* 1/1,000 chance: Most other chests
-//====
-//
-//If you have the <<spellsmithing-guide,Spellsmithing Guide>> resource pack
-//installed, some relics have custom item textures in the inventory.
-//
-//{!./bin/packsummary loot_overhaul_relics}
-
 ==== Starter Relic
 
 If this <<ordering-data-packs,addon pack>>
@@ -1521,18 +1499,6 @@ Nether portal mechanics are unchanged for entities other than players.
 Nexuses don't allow nether portal usage outside of their own Anvil regions
 due to https://bugs.mojang.com/browse/MC-138887[MC-138887].
 ====
-
-=== Storage Orbs
-
-Lets you stack shulker boxes with the same contents in orb form.
-
-Store a shulker box in an eye of ender
-by combining them in the smithing table.
-Any dye on the box is destroyed,
-but its contents and name are preserved in the eye.
-Right clicking the orb restores the shulker box and destroys the eye.
-
-{!./bin/packsummary storage_orbs}
 
 == Data Resource Packs
 
