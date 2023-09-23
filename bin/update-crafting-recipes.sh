@@ -74,6 +74,7 @@ done <<< '
 	cobweb            string
 	bamboo_block      bamboo
 '
+sed -i '/"count":/ s/9/18/' buce-data/recipes/crafting/unpacked/3x3_bamboo.recipe.json
 
 # generate 2x2 uncrafting recipes
 while read input output; do

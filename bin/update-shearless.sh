@@ -30,10 +30,13 @@ sempl - data/minecraft/tags/blocks/mineable/hoe.json <<-EOF
 	  "values": [
 	    "#minecraft:wool_carpets",
 	    "#minecraft:wool",
+	    "minecraft:{!./bin/shearless-blocks}",
+	    "minecraft:bamboo_sapling",
+	    "minecraft:brown_mushroom_block",
+	    "minecraft:mushroom_stem",
 	    "minecraft:player_head",
 	    "minecraft:player_wall_head",
-	    "minecraft:{!./bin/shearless-blocks}",
-	    "minecraft:bamboo_sapling"
+	    "minecraft:red_mushroom_block"
 	  ]
 	}
 EOF
