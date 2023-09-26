@@ -11,8 +11,6 @@ fi
 sempl > "$file.new" <<-EOF
 Version $version
 
-**Manual Intervention Required**: Storage Orbs is deprecated and will be removed in a future release. If you've previously used the Storage Orbs datapack, I recommend taking a moment to update to the latest version, crack all your storage orbs to turn them back into shulker boxes, and then uninstall the datapack.
-
 Changelog:
 
 * {!tail -n+5 "$file"}
