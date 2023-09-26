@@ -1250,19 +1250,19 @@ placed in the main hand or dealing damage, it transforms back into its
 sword form. Transforming resets all properties of the item including its
 durability, enchantments, name, and banner pattern.
 
-**Relic of the Burrower**: When a player kills a silverfish in melee without a
-weapon, it drops a silverfish eye with Myth of Breaking, a custom
-enchantment that can be applied to a diamond pick, axe, shovel, or hoe
-with a bottle o' enchanting in the
-smithing table. When a block broken by the tool drops an item and decreases the
-tool's durability, the tool will break several extra blocks.
-Picks break a 3x3 square, axes break a 32-block-high column,
-shovels break a 9-block column, and hoes break a 3x3x3 sphere.
-The extra broken blocks are not affected by fortune or silk touch and do not
-further decrease the tool's durability.
-Additionally, hoes with the enchant
-replace grass-like blocks with farmland in a 5x3x5 volume around the player
-when tilling soil.
+**Relic of the Burrower**:
+When a player kills a silverfish in melee without a weapon,
+it drops a silverfish eye with Myth of Breaking,
+a custom enchantment that can be applied to a diamond pick, axe, shovel, or hoe
+with a bottle o' enchanting in the smithing table.
+When a block broken by the tool drops an item and decreases the tool's durability,
+the tool will break several extra blocks.
+Picks break a 3x3 square,
+axes break a 32-block-high column,
+shovels break a 9-block column.
+Hoes additionally till grass-like blocks in a 5x5 area around the player.
+Extra broken blocks are not affected by fortune or silk touch
+and do not further decrease the tool's durability.
 
 // some things to note about Breaking, Silk Touch, and Fortune
 //
