@@ -680,10 +680,6 @@ worldgen_overworld_FILES := $(DEFAULT_DATA_FILES) \
 	data/minecraft/worldgen/biome/molten_peaks.json \
 	data/minecraft/worldgen/configured_feature/lake_lava_volcano.json \
 	data/minecraft/worldgen/configured_feature/ore_coal_buried.json \
-	data/minecraft/worldgen/configured_feature/ore_diamond_buried.json \
-	data/minecraft/worldgen/configured_feature/ore_diamond_large.json \
-	data/minecraft/worldgen/configured_feature/ore_diamond_medium.json \
-	data/minecraft/worldgen/configured_feature/ore_diamond_small.json \
 	data/minecraft/worldgen/configured_feature/ore_diorite.json \
 	data/minecraft/worldgen/configured_feature/ore_gold_buried.json \
 	data/minecraft/worldgen/configured_feature/ore_granite.json \
@@ -691,6 +687,10 @@ worldgen_overworld_FILES := $(DEFAULT_DATA_FILES) \
 	data/minecraft/worldgen/noise_settings/overworld_worldgen_overworld.json \
 	data/minecraft/worldgen/placed_feature/lake_lava_volcano.json \
 	data/minecraft/worldgen/placed_feature/spring_lava_volcano.json \
+	#data/minecraft/worldgen/configured_feature/ore_diamond_buried.json \
+	#data/minecraft/worldgen/configured_feature/ore_diamond_large.json \
+	#data/minecraft/worldgen/configured_feature/ore_diamond_medium.json \
+	#data/minecraft/worldgen/configured_feature/ore_diamond_small.json \
 
 worldgen_renewable_structures_FILES := $(DEFAULT_DATA_FILES) \
 	data/minecraft/worldgen/structure/desert_pyramid.json \

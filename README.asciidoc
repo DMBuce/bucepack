@@ -3470,9 +3470,9 @@ Granite and diorite generate instead of stone between sea level and and the surf
 of Stony Shores, Stony Peaks, Granite Peaks, and Molten Peaks biomes.
 Granite and diorite blobs don't generate exposed to air.
 
-Diamonds generate with increased air exposure,
-and the reduced air exposure that 1.18 introduced
-is removed for other ores.
+//Diamonds generate with increased air exposure, and
+The reduced air exposure that 1.18 introduced
+is removed for non-diamond ores.
 
 Ores generate in tuff as stone ores instead of deepslate ores
 so that some stone ore variants are easier to obtain.
