@@ -1,8 +1,7 @@
 {
   "replace": false,
   "values": [
-    "#minecraft:cauldrons",
-    "minecraft:composter",
-    "minecraft:decorated_pot"
+    "minecraft:water_cauldron",
+    "minecraft:composter"
   ]
 }

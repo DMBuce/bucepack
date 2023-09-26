@@ -1541,10 +1541,13 @@ Fortune, to a maximum of 5% with Fortune III.
 
 Cherry leaves have a chance to drop pink petals.
 
-Many plants can be placed and grown on cauldrons, composters, and decorated
-pots.
+Azalea bushes, bamboo, mushrooms, fungi, and nether roots
+can be planted on composters.
+Be careful to use shift or else the item will be composted.
 
-image::https://i.imgur.com/5bFaiZC.png[Farmable]
+Dead bushes can be planted on composters and decorated pots.
+
+Dripleaf can be planted on composters and water cauldrons.
 
 Goats drop mutton.
 
@@ -1577,8 +1580,11 @@ data/minecraft/loot_tables/entities/husk.json
 data/minecraft/loot_tables/entities/shulker.json
 data/minecraft/loot_tables/entities/sniffer.json
 data/minecraft/loot_tables/gameplay/sniffer_digging.json
-data/minecraft/tags/blocks/dirt.json
+data/minecraft/tags/blocks/azalea_grows_on.json
+data/minecraft/tags/blocks/bamboo_plantable_on.json
+data/minecraft/tags/blocks/dead_bush_may_place_on.json
 data/minecraft/tags/blocks/mushroom_grow_block.json
+data/minecraft/tags/blocks/nylium.json
 data/minecraft/tags/blocks/small_dripleaf_placeable.json
 data/minecraft/tags/items/sniffer_food.json
 ```
@@ -3490,10 +3496,6 @@ data/minecraft/dimension/overworld.json
 data/minecraft/tags/blocks/deepslate_ore_replaceables.json
 data/minecraft/tags/blocks/stone_ore_replaceables.json
 data/minecraft/worldgen/configured_feature/ore_coal_buried.json
-data/minecraft/worldgen/configured_feature/ore_diamond_buried.json
-data/minecraft/worldgen/configured_feature/ore_diamond_large.json
-data/minecraft/worldgen/configured_feature/ore_diamond_medium.json
-data/minecraft/worldgen/configured_feature/ore_diamond_small.json
 data/minecraft/worldgen/configured_feature/ore_diorite.json
 data/minecraft/worldgen/configured_feature/ore_gold_buried.json
 data/minecraft/worldgen/configured_feature/ore_granite.json

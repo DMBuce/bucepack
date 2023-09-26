@@ -504,10 +504,14 @@ farmable_FILES := $(DEFAULT_DATA_FILES) \
 	data/minecraft/loot_tables/entities/shulker.json \
 	data/minecraft/loot_tables/entities/sniffer.json \
 	data/minecraft/loot_tables/gameplay/sniffer_digging.json \
-	data/minecraft/tags/blocks/dirt.json \
+	data/minecraft/tags/blocks/azalea_grows_on.json \
+	data/minecraft/tags/blocks/bamboo_plantable_on.json \
+	data/minecraft/tags/blocks/dead_bush_may_place_on.json \
 	data/minecraft/tags/blocks/mushroom_grow_block.json \
+	data/minecraft/tags/blocks/nylium.json \
 	data/minecraft/tags/blocks/small_dripleaf_placeable.json \
 	data/minecraft/tags/items/sniffer_food.json \
+	#data/minecraft/tags/blocks/dirt.json \
 
 frienderchest_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell find buce-data/frienderchest -type f | ./bin/ext2dir) \
