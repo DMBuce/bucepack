@@ -3452,7 +3452,7 @@ data/minecraft/worldgen/configured_feature/warped_fungus_planted.json
 
 === Overworld Overhaul
 
-Changes the overworld in various ways.
+Changes default and amplified terrain generation in various ways.
 
 //image::https://i.imgur.com/2XApont.png[Molten Peaks]
 //image::https://i.imgur.com/l3PVJ3p.png[Molten Peaks]
@@ -3505,6 +3505,7 @@ data/minecraft/worldgen/configured_feature/ore_diorite.json
 data/minecraft/worldgen/configured_feature/ore_gold_buried.json
 data/minecraft/worldgen/configured_feature/ore_granite.json
 data/minecraft/worldgen/configured_feature/ore_lapis_buried.json
+data/minecraft/worldgen/noise_settings/amplified.json
 data/minecraft/worldgen/noise_settings/overworld.json
 ```
 

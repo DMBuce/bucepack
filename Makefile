@@ -688,7 +688,7 @@ worldgen_overworld_FILES := $(DEFAULT_DATA_FILES) \
 	data/minecraft/worldgen/configured_feature/ore_gold_buried.json \
 	data/minecraft/worldgen/configured_feature/ore_granite.json \
 	data/minecraft/worldgen/configured_feature/ore_lapis_buried.json \
-	data/minecraft/worldgen/noise_settings/overworld_worldgen_overworld.json \
+	data/minecraft/worldgen/noise_settings/*_worldgen_overworld.json \
 	data/minecraft/worldgen/placed_feature/lake_lava_volcano.json \
 	data/minecraft/worldgen/placed_feature/spring_lava_volcano.json \
 	#data/minecraft/worldgen/configured_feature/ore_diamond_buried.json \
