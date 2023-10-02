@@ -1,13 +1,13 @@
 {
 	"display": {
 		"icon": {
-			"item": "minecraft:wither_skeleton_skull"
+			"item": "minecraft:creeper_head"
 		},
 		"title": {
 			"text": "Blast Resistant Blocks"
 		},
 		"description": {
-			"text": "Once any player kills the wither, mob explosions break blocks without destroying them"
+			"text": "Once any player channels lightning on a creeper, mob explosions break blocks without destroying them"
 		},
 		"show_toast": false,
 		"announce_to_chat": true,
@@ -16,16 +16,12 @@
 	},
 	"parent": "buce:global_effects/root",
 	"criteria": {
-		"killed_warden": {
-			"trigger": "minecraft:player_killed_entity",
+		"c1": {
+			"trigger": "minecraft:channeled_lightning",
 			"conditions": {
-				"entity": [
+				"victims": [
 					{
-						"condition": "minecraft:entity_properties",
-						"predicate": {
-							"type": "minecraft:wither"
-						},
-						"entity": "this"
+						"type": "minecraft:creeper"
 					}
 				]
 			}

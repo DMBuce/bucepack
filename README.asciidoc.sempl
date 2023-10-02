@@ -1065,17 +1065,20 @@ In addition, crimson fungus immunizes hoglins against zombification.
 
 Adjusts various game rules as players make progress in the world.
 
-Snowy weather generates up to three layers of snow instead of one.
+Snowy weather generates up to two layers of snow instead of one.
 
 Once any player enters the nether, all players stop healing from food.
 
-Once any player channels lightning on a creeper,
-mob explosions break blocks without destroying them.
+//Once any player channels lightning on a creeper,
+//mob explosions break blocks without destroying them.
+//
+//The first time the wither has been defeated,
+//the rate of growth and decay for many natural processes is increased.
+//Examples of such processes include
+//plant growth, leaf decay, fire growth, and ice melting.
 
-The first time the wither has been defeated,
-the rate of growth and decay for many natural processes is increased.
-Examples of such processes include
-plant growth, leaf decay, fire growth, and ice melting.
+Once any player kills the wither,
+mob explosions break blocks without destroying them.
 
 Once the dragon has been defeated,
 players stop losing their items when they die,
