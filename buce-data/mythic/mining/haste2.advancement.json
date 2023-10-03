@@ -1,0 +1,59 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:barrier"
+		},
+		"title": {
+			"text": "Trigger Advancement"
+		},
+		"description": {
+			"text": "Something went wrong, you should revoke this advancement"
+		},
+		"show_toast": false,
+		"announce_to_chat": false,
+		"hidden": true,
+		"frame": "task"
+	},
+	"parent": "buce:mythic/root",
+	"criteria": {
+		"c1": {
+			"trigger": "minecraft:consume_item",
+			"conditions": {
+				"item": {
+					"items": [
+						"minecraft:golden_carrot",
+						"minecraft:golden_apple",
+						"minecraft:enchanted_golden_apple"
+					]
+				},
+				"player": [
+					{
+						"condition": "minecraft:entity_properties",
+						"entity": "this",
+						"predicate": {
+							"effects": {
+								"minecraft:haste": {
+									"amplifier": 1
+								}
+							}
+						}
+					},
+					{
+						"condition": "minecraft:entity_properties",
+						"entity": "this",
+						"predicate": {
+							"equipment": {
+								"head": {
+									"nbt": "{mining:1b}"
+								}
+							}
+						}
+					}
+				]
+			}
+		}
+	},
+	"rewards": {
+		"function": "buce:mythic/mining/haste2"
+	}
+}

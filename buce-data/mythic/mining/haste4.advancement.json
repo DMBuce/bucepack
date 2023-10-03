@@ -16,21 +16,28 @@
 	},
 	"parent": "buce:mythic/root",
 	"criteria": {
-		"lose_durability": {
-			"trigger": "minecraft:item_durability_changed",
+		"c1": {
+			"trigger": "minecraft:consume_item",
 			"conditions": {
 				"item": {
 					"items": [
-						"minecraft:wooden_pickaxe",
-						"minecraft:stone_pickaxe",
-						"minecraft:iron_pickaxe",
-						"minecraft:golden_pickaxe",
-						"minecraft:diamond_pickaxe",
-						"minecraft:netherite_pickaxe"
+						"minecraft:golden_carrot",
+						"minecraft:golden_apple",
+						"minecraft:enchanted_golden_apple"
 					]
 				},
-				"delta": { "max": -1 },
 				"player": [
+					{
+						"condition": "minecraft:entity_properties",
+						"entity": "this",
+						"predicate": {
+							"effects": {
+								"minecraft:haste": {
+									"amplifier": 3
+								}
+							}
+						}
+					},
 					{
 						"condition": "minecraft:entity_properties",
 						"entity": "this",
@@ -47,6 +54,6 @@
 		}
 	},
 	"rewards": {
-		"function": "buce:mythic/mining/charge"
+		"function": "buce:mythic/mining/haste4"
 	}
 }

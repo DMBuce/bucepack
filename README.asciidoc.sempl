@@ -1203,18 +1203,17 @@ with a bottle o' enchanting in the smithing table.
 Rockets shot with the crossbow gain two randomly generated firework stars.
 
 **Relic of Mining**:
-Deepslate Emerald Ore drops a gold nugget
-with Myth of Darkvision and Myth of Greed,
+When a player with Haste II mines Gilded Blackstone,
+it drops a gold nugget with Myth of Darkvision and Myth of Greed,
 two custom enchantments that can be applied to a golden helmet
 with a bottle o' enchanting in the smithing table.
 Myth of Darkvision provides eight minutes
-of Night Vision when a player tills soil with a hoe,
-creates a path with a shovel, or strips a log with an axe.
-Myth of Greed charges every time a player's pickaxe loses durability.
-At 250 charge, the enchantment provides one minute of Haste II,
-and the charge resets.
-If the player is below y=0,
-it provides Haste V and Darkness instead.
+of Night Vision when a player kills or eats a pig or hoglin.
+Myth of Greed provides one minute
+of Haste when a player eats golden food.
+Eating more gold increases the level of Haste.
+//and eating too greedily induces negative effects.
+The player is blinded if they eat too greedily.
 
 **Relic of the Lens**: When a player with 1 health (i.e. half a heart) kills an
 endermite in melee, it drops an amethyst shard with Myth of Seeking, a

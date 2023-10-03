@@ -2655,8 +2655,7 @@ Rockets shot with the crossbow gain two randomly generated firework stars.
 
 **Relic of Mining**:
 When a player with Haste II mines Gilded Blackstone,
-it has a chance to drop a gold nugget
-with Myth of Darkvision and Myth of Greed,
+it drops a gold nugget with Myth of Darkvision and Myth of Greed,
 two custom enchantments that can be applied to a golden helmet
 with a bottle o' enchanting in the smithing table.
 Myth of Darkvision provides eight minutes
@@ -2759,7 +2758,6 @@ which provide access to some of the relics.
 ====
 
 ```
-data/minecraft/loot_tables/blocks/deepslate_emerald_ore.json
 data/minecraft/loot_tables/blocks/gilded_blackstone.json
 data/minecraft/loot_tables/entities/bee.json
 data/minecraft/loot_tables/entities/endermite.json

@@ -584,7 +584,7 @@ relics_mythic_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell find buce-data/ -name '*relics_mythic*' | ./bin/ext2dir) \
 	$(shell find buce-data/mythic -type f | ./bin/ext2dir) \
 	data/buce/functions/var.mcfunction \
-	data/minecraft/loot_tables/blocks/deepslate_emerald_ore.json \
+	data/minecraft/loot_tables/blocks/gilded_blackstone.json \
 	data/minecraft/loot_tables/entities/bee.json \
 	data/minecraft/loot_tables/entities/endermite.json \
 	data/minecraft/loot_tables/entities/ghast.json \

@@ -16,68 +16,81 @@
 	},
 	"parent": "buce:mythic/root",
 	"criteria": {
-		"use_tool": {
-			"trigger": "minecraft:item_used_on_block",
+		"ate_pork": {
+			"trigger": "minecraft:consume_item",
 			"conditions": {
-				"location": [
+				"item": {
+					"items": [
+						"minecraft:porkchop",
+						"minecraft:cooked_porkchop"
+					]
+				},
+				"player": [
 					{
-						"condition": "minecraft:location_check",
-						"predicate": {
-							"block": {
-								"blocks": [
-									"minecraft:dirt_path",
-									"minecraft:stripped_acacia_log",
-									"minecraft:stripped_acacia_wood",
-									"minecraft:stripped_bamboo_block",
-									"minecraft:stripped_birch_log",
-									"minecraft:stripped_birch_wood",
-									"minecraft:stripped_cherry_log",
-									"minecraft:stripped_cherry_wood",
-									"minecraft:stripped_crimson_hyphae",
-									"minecraft:stripped_crimson_stem",
-									"minecraft:stripped_dark_oak_log",
-									"minecraft:stripped_dark_oak_wood",
-									"minecraft:stripped_jungle_log",
-									"minecraft:stripped_jungle_wood",
-									"minecraft:stripped_mangrove_log",
-									"minecraft:stripped_mangrove_wood",
-									"minecraft:stripped_oak_log",
-									"minecraft:stripped_oak_wood",
-									"minecraft:stripped_spruce_log",
-									"minecraft:stripped_spruce_wood",
-									"minecraft:stripped_warped_hyphae",
-									"minecraft:stripped_warped_stem",
-									"minecraft:farmland"
-								]
+						"condition": "minecraft:inverted",
+						"term": {
+							"condition": "minecraft:entity_properties",
+							"entity": "this",
+							"predicate": {
+								"effects": {
+									"night_vision": {}
+								}
 							}
 						}
 					},
 					{
-						"condition": "minecraft:match_tool",
+						"condition": "minecraft:entity_properties",
+						"entity": "this",
 						"predicate": {
-							"items": [
-								"minecraft:wooden_hoe",
-								"minecraft:stone_hoe",
-								"minecraft:iron_hoe",
-								"minecraft:golden_hoe",
-								"minecraft:diamond_hoe",
-								"minecraft:netherite_hoe",
-								"minecraft:wooden_shovel",
-								"minecraft:stone_shovel",
-								"minecraft:iron_shovel",
-								"minecraft:golden_shovel",
-								"minecraft:diamond_shovel",
-								"minecraft:netherite_shovel",
-								"minecraft:wooden_axe",
-								"minecraft:stone_axe",
-								"minecraft:iron_axe",
-								"minecraft:golden_axe",
-								"minecraft:diamond_axe",
-								"minecraft:netherite_axe"
-							]
+							"equipment": {
+								"head": {
+									"nbt": "{darkvision:1b}"
+								}
+							}
 						}
 					}
-				],
+				]
+			}
+		},
+		"killed_pig": {
+			"trigger": "minecraft:player_killed_entity",
+			"conditions": {
+				"entity": {
+					"type": "minecraft:pig"
+				},
+				"player": [
+					{
+						"condition": "minecraft:inverted",
+						"term": {
+							"condition": "minecraft:entity_properties",
+							"entity": "this",
+							"predicate": {
+								"effects": {
+									"night_vision": {}
+								}
+							}
+						}
+					},
+					{
+						"condition": "minecraft:entity_properties",
+						"entity": "this",
+						"predicate": {
+							"equipment": {
+								"head": {
+									"nbt": "{darkvision:1b}"
+								}
+							}
+						}
+					}
+				]
+			}
+		},
+		"killed_hoglin": {
+			"trigger": "minecraft:player_killed_entity",
+			"conditions": {
+				"entity": {
+					"type": "minecraft:hoglin"
+				},
 				"player": [
 					{
 						"condition": "minecraft:inverted",
@@ -106,6 +119,13 @@
 			}
 		}
 	},
+	"requirements": [
+		[
+			"ate_pork",
+			"killed_pig",
+			"killed_hoglin"
+		]
+	],
 	"rewards": {
 		"function": "buce:mythic/darkvision/activate"
 	}
