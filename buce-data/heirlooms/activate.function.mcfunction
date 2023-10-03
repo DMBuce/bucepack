@@ -1,7 +1,10 @@
 # runs when a player dies
 
 # revoke advancement
-advancement revoke @s only buce:heirlooms/die
+advancement revoke @s only buce:heirlooms/trigger
+
+## debug
+#say heirlooms
 
 # reset score
 scoreboard players set @s died 0
