@@ -1676,6 +1676,14 @@ and Logs can be crafted from 2 Wood.
 
 {!./bin/packsummary worldgen_trees}
 
+=== Moonlit
+
+Makes direct moonlight prevent hostile mobs from spawning.
+Mobs still spawn under overhangs or in caves
+and can wander to the surface from there.
+
+{!./bin/packsummary worldgen_moonlit}
+
 === Overworld Overhaul
 
 Changes default and amplified terrain generation in various ways.

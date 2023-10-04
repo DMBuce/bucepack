@@ -3449,6 +3449,29 @@ data/minecraft/worldgen/configured_feature/warped_fungus_planted.json
 ====
 ====
 
+=== Moonlit
+
+Makes direct moonlight prevent hostile mobs from spawning.
+Mobs still spawn under overhangs or in caves
+and can wander to the surface from there.
+
+**Downloads**
+
+.https://github.com/DMBuce/bucepack/releases/latest/download/worldgen_moonlit.zip[`worldgen_moonlit.zip`]
+[%collapsible]
+====
+
+```
+data/minecraft/dimension_type/overworld.json
+```
+
+====
+
+.https://github.com/DMBuce/bucepack/releases[All Releases & Changelogs]
+[%collapsible]
+====
+====
+
 === Overworld Overhaul
 
 Changes default and amplified terrain generation in various ways.

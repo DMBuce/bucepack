@@ -99,6 +99,7 @@ DATAPACKFILES = \
 	worldgen_renewable_structures.zip \
 	worldgen_trees.zip \
 	worldgen_apocalypse.zip \
+	worldgen_moonlit.zip \
 	worldgen_overworld.zip \
 
 PACKFILES = $(sort $(RESOURCEPACKFILES) $(DATAPACKFILES))
@@ -700,6 +701,9 @@ worldgen_overworld_FILES := $(DEFAULT_DATA_FILES) \
 	#data/minecraft/worldgen/configured_feature/ore_diamond_large.json \
 	#data/minecraft/worldgen/configured_feature/ore_diamond_medium.json \
 	#data/minecraft/worldgen/configured_feature/ore_diamond_small.json \
+
+worldgen_moonlit_FILES := $(DEFAULT_DATA_FILES) \
+	data/minecraft/dimension_type/overworld.json \
 
 worldgen_renewable_structures_FILES := $(DEFAULT_DATA_FILES) \
 	data/minecraft/worldgen/structure/desert_pyramid.json \
@@ -1610,6 +1614,12 @@ ender_relic.zip: $(ender_relic_FILES)
 	./bin/ziprename _$(@:.zip=) "" $@
 
 worldgen_apocalypse.zip: $(worldgen_apocalypse_FILES)
+	cp meta/$(@:.zip=.png) pack.png
+	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
+	zip $@ pack.png pack.mcmeta $^
+	./bin/ziprename _$(@:.zip=) "" $@
+
+worldgen_moonlit.zip: $(worldgen_moonlit_FILES)
 	cp meta/$(@:.zip=.png) pack.png
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^
