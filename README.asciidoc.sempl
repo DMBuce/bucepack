@@ -1699,6 +1699,12 @@ It generates mountains of granite with occasional strips of andesite.
 
 image::https://i.imgur.com/0tWoCVh.png[Stony Shore]
 
+Due to
+https://bugs.mojang.com/browse/MC-260949[MC-260949],
+in order for custom biomes to generate,
+you must select a World Type in the World tab of the Create New World menu
+*after* adding this datapack in the Select Data Packs screen.
+
 Stony Peaks and Stony Shores generate with andesite on the surface.
 
 image::https://i.imgur.com/OjqRTNZ.png[Stony Peaks Cave]
@@ -1717,6 +1723,16 @@ so that some stone ore variants are easier to obtain.
 //sediments, minerals, and rocks
 
 {!./bin/packsummary worldgen_overworld}
+
+.Known Issues
+[%collapsible]
+====
+Due to
+https://bugs.mojang.com/browse/MC-260949[MC-260949],
+in order for custom biomes to generate,
+you must select a World Type in the World tab of the Create New World menu
+*after* adding this datapack in the Select Data Packs screen.
+====
 
 == Legacy Data Packs
 
@@ -2073,6 +2089,7 @@ Check and resolve automatic changes with `git status && git diff`
 Merge loot table changes with Loot Overhaul
 For major version updates,
 * Check for new Mineable blocks in data/minecraft/tags/blocks/unmineable.json
+* Add new biomes to data/minecraft/dimension/overworld.json (automate this?)
 * Add new plants to Gardener Endermen
 * Add new smooth and cracked blocks to More Cutting
 * Add new warm blocks to Warmer Striders

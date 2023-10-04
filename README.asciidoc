@@ -3472,6 +3472,12 @@ It generates mountains of granite with occasional strips of andesite.
 
 image::https://i.imgur.com/0tWoCVh.png[Stony Shore]
 
+Due to
+https://bugs.mojang.com/browse/MC-260949[MC-260949],
+in order for custom biomes to generate,
+you must select a World Type in the World tab of the Create New World menu
+*after* adding this datapack in the Select Data Packs screen.
+
 Stony Peaks and Stony Shores generate with andesite on the surface.
 
 image::https://i.imgur.com/OjqRTNZ.png[Stony Peaks Cave]
@@ -3496,7 +3502,6 @@ so that some stone ore variants are easier to obtain.
 ====
 
 ```
-data/minecraft/dimension/overworld.json
 data/minecraft/tags/blocks/deepslate_ore_replaceables.json
 data/minecraft/tags/blocks/stone_ore_replaceables.json
 data/minecraft/worldgen/configured_feature/ore_coal_buried.json
@@ -3505,7 +3510,11 @@ data/minecraft/worldgen/configured_feature/ore_gold_buried.json
 data/minecraft/worldgen/configured_feature/ore_granite.json
 data/minecraft/worldgen/configured_feature/ore_lapis_buried.json
 data/minecraft/worldgen/noise_settings/amplified.json
+data/minecraft/worldgen/noise_settings/large_biomes.json
 data/minecraft/worldgen/noise_settings/overworld.json
+data/minecraft/worldgen/world_preset/amplified.json
+data/minecraft/worldgen/world_preset/large_biomes.json
+data/minecraft/worldgen/world_preset/normal.json
 ```
 
 ====
@@ -3513,6 +3522,16 @@ data/minecraft/worldgen/noise_settings/overworld.json
 .https://github.com/DMBuce/bucepack/releases[All Releases & Changelogs]
 [%collapsible]
 ====
+====
+
+.Known Issues
+[%collapsible]
+====
+Due to
+https://bugs.mojang.com/browse/MC-260949[MC-260949],
+in order for custom biomes to generate,
+you must select a World Type in the World tab of the Create New World menu
+*after* adding this datapack in the Select Data Packs screen.
 ====
 
 == Legacy Data Packs
@@ -3948,6 +3967,7 @@ Check and resolve automatic changes with `git status && git diff`
 Merge loot table changes with Loot Overhaul
 For major version updates,
 * Check for new Mineable blocks in data/minecraft/tags/blocks/unmineable.json
+* Add new biomes to data/minecraft/dimension/overworld.json (automate this?)
 * Add new plants to Gardener Endermen
 * Add new smooth and cracked blocks to More Cutting
 * Add new warm blocks to Warmer Striders

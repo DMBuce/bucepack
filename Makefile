@@ -677,7 +677,6 @@ worldgen_apocalypse_FILES := $(DEFAULT_DATA_FILES) \
 	$(wildcard data/minecraft/worldgen/template_pool/village/*/town_centers.json) \
 
 worldgen_overworld_FILES := $(DEFAULT_DATA_FILES) \
-	data/minecraft/dimension/overworld.json \
 	data/minecraft/tags/blocks/deepslate_ore_replaceables.json \
 	data/minecraft/tags/blocks/stone_ore_replaceables.json \
 	data/minecraft/worldgen/biome/granite_peaks.json \
@@ -688,9 +687,15 @@ worldgen_overworld_FILES := $(DEFAULT_DATA_FILES) \
 	data/minecraft/worldgen/configured_feature/ore_gold_buried.json \
 	data/minecraft/worldgen/configured_feature/ore_granite.json \
 	data/minecraft/worldgen/configured_feature/ore_lapis_buried.json \
-	data/minecraft/worldgen/noise_settings/*_worldgen_overworld.json \
+	data/minecraft/worldgen/noise_settings/amplified.json \
+	data/minecraft/worldgen/noise_settings/large_biomes.json \
+	data/minecraft/worldgen/noise_settings/overworld.json \
 	data/minecraft/worldgen/placed_feature/lake_lava_volcano.json \
 	data/minecraft/worldgen/placed_feature/spring_lava_volcano.json \
+	data/minecraft/worldgen/world_preset/amplified.json \
+	data/minecraft/worldgen/world_preset/large_biomes.json \
+	data/minecraft/worldgen/world_preset/normal.json \
+	#data/minecraft/dimension/overworld.json \
 	#data/minecraft/worldgen/configured_feature/ore_diamond_buried.json \
 	#data/minecraft/worldgen/configured_feature/ore_diamond_large.json \
 	#data/minecraft/worldgen/configured_feature/ore_diamond_medium.json \
