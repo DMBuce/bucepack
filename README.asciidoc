@@ -3476,6 +3476,10 @@ data/minecraft/dimension_type/overworld.json
 
 Changes default and amplified terrain generation in various ways.
 
+image::https://i.imgur.com/yY5OSO9.jpg[Swamp]
+
+Mud patches generate in swamps.
+
 //image::https://i.imgur.com/2XApont.png[Molten Peaks]
 //image::https://i.imgur.com/l3PVJ3p.png[Molten Peaks]
 //image::https://i.imgur.com/mwejgdG.png[Molten Peaks]

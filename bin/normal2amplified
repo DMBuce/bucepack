@@ -1,0 +1,16 @@
+#!/bin/bash
+# creates amplified noise settings from normal
+
+cp data/minecraft/worldgen/noise_settings/{overworld,amplified}.json
+sed -i '
+	# various noise params
+	/argument/ s/0.1171875/0.4/
+	/from_y/ s/240/304/
+	/to_y/ s/256/320/
+
+	# resource locations
+	/depth/ s|minecraft:overworld/depth|minecraft:overworld_amplified/depth|
+	/sloped_cheese/ s|minecraft:overworld/sloped_cheese|minecraft:overworld_amplified/sloped_cheese|
+	/factor/ s|minecraft:overworld/factor|minecraft:overworld_amplified/factor|
+' data/minecraft/worldgen/noise_settings/amplified.json
+

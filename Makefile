@@ -677,6 +677,12 @@ mineable_FILES := $(DEFAULT_DATA_FILES) \
 worldgen_apocalypse_FILES := $(DEFAULT_DATA_FILES) \
 	$(wildcard data/minecraft/worldgen/template_pool/village/*/town_centers.json) \
 
+data/minecraft/worldgen/noise_settings/amplified.json: data/minecraft/worldgen/noise_settings/overworld.json
+	./bin/normal2amplified
+
+data/minecraft/worldgen/noise_settings/large_biomes.json: data/minecraft/worldgen/noise_settings/overworld.json
+	./bin/normal2large
+
 worldgen_overworld_FILES := $(DEFAULT_DATA_FILES) \
 	data/minecraft/tags/blocks/deepslate_ore_replaceables.json \
 	data/minecraft/tags/blocks/stone_ore_replaceables.json \

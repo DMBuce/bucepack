@@ -1,0 +1,15 @@
+#!/bin/bash
+# creates large_biomes noise settings from normal
+
+cp data/minecraft/worldgen/noise_settings/{overworld,large_biomes}.json
+sed -i '
+	# resource locations
+	/continents/ s|minecraft:overworld/continents|minecraft:overworld_large_biomes/continents|
+	/depth/ s|minecraft:overworld/depth|minecraft:overworld_large_biomes/depth|
+	/erosion/ s|minecraft:overworld/erosion|minecraft:overworld_large_biomes/erosion|
+	/sloped_cheese/ s|minecraft:overworld/sloped_cheese|minecraft:overworld_large_biomes/sloped_cheese|
+	/factor/ s|minecraft:overworld/factor|minecraft:overworld_large_biomes/factor|
+	/noise.*temperature/ s|minecraft:temperature|minecraft:temperature_large|
+	/vegetation/ s|minecraft:vegetation|minecraft:vegetation_large|
+' data/minecraft/worldgen/noise_settings/large_biomes.json
+
