@@ -694,11 +694,14 @@ worldgen_overworld_FILES := $(DEFAULT_DATA_FILES) \
 	data/minecraft/worldgen/configured_feature/ore_gold_buried.json \
 	data/minecraft/worldgen/configured_feature/ore_granite.json \
 	data/minecraft/worldgen/configured_feature/ore_lapis_buried.json \
+	data/minecraft/worldgen/configured_feature/swamp_vegetation.json \
 	data/minecraft/worldgen/noise_settings/amplified.json \
 	data/minecraft/worldgen/noise_settings/large_biomes.json \
 	data/minecraft/worldgen/noise_settings/overworld.json \
 	data/minecraft/worldgen/placed_feature/lake_lava_volcano.json \
 	data/minecraft/worldgen/placed_feature/spring_lava_volcano.json \
+	data/minecraft/worldgen/placed_feature/swamp_oak_checked.json \
+	data/minecraft/worldgen/placed_feature/trees_swamp.json \
 	data/minecraft/worldgen/world_preset/amplified.json \
 	data/minecraft/worldgen/world_preset/large_biomes.json \
 	data/minecraft/worldgen/world_preset/normal.json \

@@ -3476,9 +3476,10 @@ data/minecraft/dimension_type/overworld.json
 
 Changes default and amplified terrain generation in various ways.
 
-image::https://i.imgur.com/yY5OSO9.jpg[Swamp]
+//image::https://i.imgur.com/yY5OSO9.jpg[Swamp]
+image::https://i.imgur.com/hS3QYwC.jpg[Swamp]
 
-Mud patches generate in swamps.
+Mud patches and huge mushrooms generate in swamps.
 
 //image::https://i.imgur.com/2XApont.png[Molten Peaks]
 //image::https://i.imgur.com/l3PVJ3p.png[Molten Peaks]
@@ -3539,6 +3540,7 @@ data/minecraft/worldgen/configured_feature/ore_lapis_buried.json
 data/minecraft/worldgen/noise_settings/amplified.json
 data/minecraft/worldgen/noise_settings/large_biomes.json
 data/minecraft/worldgen/noise_settings/overworld.json
+data/minecraft/worldgen/placed_feature/trees_swamp.json
 data/minecraft/worldgen/world_preset/amplified.json
 data/minecraft/worldgen/world_preset/large_biomes.json
 data/minecraft/worldgen/world_preset/normal.json
