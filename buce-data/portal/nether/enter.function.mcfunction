@@ -22,7 +22,7 @@ execute in minecraft:the_nether store result score #buce.ntp var run locate stru
 # up to 2 chunks diagonally away in nether,
 # or 9 chunks diagonally away in overworld
 #
-# https://minecraft.fandom.com/wiki/Tutorials/Nether_portals#How_portals_work
+# https://minecraft.wiki/w/Tutorials/Nether_portals#How_portals_work
 execute if score #buce.owp var matches 204.. if score #buce.ntp var matches 46.. run fill ~23 ~23 ~1 ~-23 ~-23 ~-1 minecraft:air replace minecraft:nether_portal
 execute if score #buce.owp var matches 204.. if score #buce.ntp var matches 46.. run fill ~1 ~23 ~23 ~-1 ~-23 ~-23 minecraft:air replace minecraft:nether_portal
 
