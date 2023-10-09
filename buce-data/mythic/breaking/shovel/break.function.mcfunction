@@ -13,6 +13,6 @@ execute if block ~ ~-3 ~ #mineable/shovel run setblock ~ ~-3 ~ air destroy
 execute if block ~ ~-4 ~ #mineable/shovel run setblock ~ ~-4 ~ air destroy
 
 # visual and sound effects
-particle minecraft:end_rod ~ ~ ~ 0.1 0.1 0.1 0.03 8
+particle minecraft:instant_effect ~ ~ ~ 0.1 0.1 0.1 0.03 8
 #playsound minecraft:entity.silverfish.ambient player @a ~ ~ ~
 
