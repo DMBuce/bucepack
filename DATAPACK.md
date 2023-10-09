@@ -14,8 +14,8 @@ ordering target selectors:
 * https://www.reddit.com/r/MinecraftCommands/comments/nw90u4/does_using_predicates_in_place_of_complicated/h18lr5u/
 raycast: https://www.reddit.com/r/MinecraftCommands/comments/9n1ghh/raycasting_in_1131/e7kxv2o/
 check if player is looking toward/away: https://www.reddit.com/r/MinecraftCommands/comments/akjyh5/help_any_way_to_execute_if_a_player_is_looking_at/ef5jehw/
-item nbt structure: https://minecraft.fandom.com/wiki/Player.dat_format#Item_structure
-json text components: https://minecraft.fandom.com/wiki/Raw_JSON_text_format#Component_resolution
+item nbt structure: https://minecraft.wiki/w/Player.dat_format#Item_structure
+json text components: https://minecraft.wiki/w/Raw_JSON_text_format#Component_resolution
 
 ### Version History
 
@@ -43,7 +43,7 @@ charge time
 
 ## Advancement Triggers
 
-https://minecraft.fandom.com/wiki/Advancement/JSON_format#List_of_triggers
+https://minecraft.wiki/w/Advancement/JSON_format#List_of_triggers
 
 ### Generic
 
@@ -98,7 +98,7 @@ https://minecraft.fandom.com/wiki/Advancement/JSON_format#List_of_triggers
 
 ## Predicate Conditions
 
-https://minecraft.fandom.com/wiki/Predicate
+https://minecraft.wiki/w/Predicate
 
     alternative - Joins conditions from parameter terms with "or".
     block_state_property - Check properties of a block state.
@@ -120,7 +120,7 @@ https://minecraft.fandom.com/wiki/Predicate
 
 ## Scoreboard Objective Criteria
 
-https://minecraft.fandom.com/wiki/Scoreboard#Criteria
+https://minecraft.wiki/w/Scoreboard#Criteria
 
 ### Simple Criteria
 
@@ -143,7 +143,7 @@ https://minecraft.fandom.com/wiki/Scoreboard#Criteria
 
 ### Compound Statistic Criteria
 
-https://minecraft.fandom.com/wiki/Statistics#Statistic_types_and_names
+https://minecraft.wiki/w/Statistics#Statistic_types_and_names
 
     minecraft.mined:<block_mined>
     minecraft.broken:<item_broken>
@@ -154,7 +154,7 @@ https://minecraft.fandom.com/wiki/Statistics#Statistic_types_and_names
     minecraft.killed:<entity_that_player_killed>
     minecraft.killed_by:<entity_that_killed_player>
 
-https://minecraft.fandom.com/wiki/Statistics#List_of_custom_statistic_names
+https://minecraft.wiki/w/Statistics#List_of_custom_statistic_names
 
     minecraft.custom:minecraft.animals_bred
     minecraft.custom:minecraft.clean_armor

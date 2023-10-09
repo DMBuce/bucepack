@@ -55,7 +55,7 @@ image::https://i.imgur.com/WLFKdEM.png[Painting Overhaul]
 * https://en.wikipedia.org/wiki/Xu_Beihong[Galloping Horse]
 * https://en.wikipedia.org/wiki/American_Gothic[Testificate Gothic]
 * https://en.wikipedia.org/wiki/Wanderer_above_the_Sea_of_Fog[Farlander Above the Sea of Fog]
-* https://minecraft.gamepedia.com/Painting[Burning Skull]
+* https://minecraft.wiki/w/Painting[Burning Skull]
 * https://www.twoinchbrush.com/painting/night-light[Night Light]
 
 4x2 Paintings:
@@ -275,7 +275,7 @@ Discreet Meow makes cats meow less often.
 == Tag Data Packs
 
 These are simple yet powerful commandless data packs that work by modifying
-https://minecraft.fandom.com/wiki/Tag[tags]
+https://minecraft.wiki/w/Tag[tags]
 in the vanilla game.
 They shouldn't add any lag to your game.
 
@@ -1195,7 +1195,7 @@ they gain Levitation II and Slowness II for 10 seconds,
 and saddling a pig while wearing the chestplate makes it hover.
 
 **Relic of Rainbows**: When a
-https://minecraft.fandom.com/wiki/Sheep#Easter_eggs[rainbow sheep]
+https://minecraft.wiki/w/Sheep#Easter_eggs[rainbow sheep]
 dies from an explosion,
 it drops pink dye with Myth of Chromatic Blasts,
 a custom enchantment that can be applied to a crossbow
@@ -1987,7 +1987,7 @@ they should be ordered this way from _bottom to top_,
 NOT top to bottom as one might intuitively expect.
 
 To reorder datapacks, use the
-https://minecraft.fandom.com/wiki/Commands/datapack[`/datapack`]
+https://minecraft.wiki/w/Commands/datapack[`/datapack`]
 command.
 
 == Language Support
@@ -1997,7 +1997,7 @@ Renaming in languages other than `en_us` (US English)
 is done on a best effort basis.
 Below is a summary of resource packs that support other language codes.
 You can use
-https://minecraft.fandom.com/wiki/Language#Languages[the Language page]
+https://minecraft.wiki/w/Language#Languages[the Language page]
 on the Minecraft Wiki to look up a language code.
 
 .Summary of language support
