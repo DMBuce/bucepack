@@ -2054,8 +2054,7 @@ a Swamp Exploration Map that leads to a Witch Hut.
 Maps found in Nether Fortresses lead to Piglin Bastions, and vice versa.
 End City chests have a chance to spawn a map leading to another End City.
 Maps leading to Jungle Temples can generate in Stronghold Libraries.
-Ancient Cities, Stronghold Libraries, Dungeons,
-and Big Underwater Ruins can have maps that lead to Ancient Cities.
+Big Underwater Ruins can have maps that lead to Ancient Cities.
 And so on.
 
 End Cities generate only diamond gear rather than a mix of diamond and iron,
@@ -2082,8 +2081,10 @@ and ancient cities at levels 40-49.
 Some unobtainable blocks can rarely be found in loot. In addition to the
 tall grass and large ferns that normally generate in savannah and taiga village
 chests, path blocks generate in snowy village chests, farmland in desert
-village chests, and petrified oak slabs in plains village chests. Petrified
-slabs also generate in dungeons. Infested bricks spawn in stronghold chests,
+village chests, and petrified oak slabs in plains village chests.
+Petrified slabs also generate in dungeons, as do empty spawners.
+Budding amethyst spawns in abandoned mineshafts.
+Infested bricks spawn in stronghold chests,
 and a single reinforced deepslate rarely spawns in ancient cities.
 Light blocks spawn in woodland mansion and ancient city chests,
 and have a custom texture if you have the
