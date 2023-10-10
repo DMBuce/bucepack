@@ -563,11 +563,6 @@ loot_overhaul_treasure_barrels_FILES := $(DEFAULT_DATA_FILES) \
 	data/buce/loot_tables/loot_overhaul/buried_treasure_loot_overhaul_treasure_barrels.json \
 	#$(shell find buce-data/ data/minecraft/ -name '*no_treasure_maps*' | ./bin/ext2dir | sort -u) \
 
-loot_overhaul_relics_FILES := $(DEFAULT_DATA_FILES) \
-	$(shell ls buce-data/loot_addons/loot_overhaul_relics* | ./bin/ext2dir) \
-	$(relic_FILES) \
-	data/buce/loot_tables/loot_overhaul/extra/epic_loot_overhaul_relics.json \
-
 wandering_loot_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell find buce-data/wandering -type f | ./bin/ext2dir) \
 
@@ -627,7 +622,7 @@ boss_loot_FILES := $(DEFAULT_DATA_FILES) \
 loot_overhaul_starter_relic_FILES := $(DEFAULT_DATA_FILES) \
 	$(relic_FILES) \
 	$(shell ls buce-data/loot_addons/loot_overhaul_starter_relic* | ./bin/ext2dir) \
-	data/buce/loot_tables/loot_overhaul/extra/structure/spawn_bonus_chest_loot_overhaul_starter_relic.json \
+	data/buce/loot_tables/loot_overhaul/starter_relic_loot_overhaul_starter_relic.json \
 
 starter_bonus_box_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell find buce-data/starter_bonus_box -type f | ./bin/ext2dir) \
@@ -950,13 +945,6 @@ escape_grind_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell find buce-data/mythic/searching -type f | ./bin/ext2dir) \
 	data/buce/advancements/mythic/root.json \
 	data/buce/functions/var.mcfunction \
-	data/buce/loot_tables/loot_overhaul/extra/all.json \
-	data/buce/loot_tables/loot_overhaul/extra/common.json \
-	data/buce/loot_tables/loot_overhaul/extra/epic.json \
-	data/buce/loot_tables/loot_overhaul/extra/mythic.json \
-	data/buce/loot_tables/loot_overhaul/extra/rare.json \
-	data/buce/loot_tables/loot_overhaul/extra/structure/end_city_treasure.json \
-	data/buce/loot_tables/loot_overhaul/extra/uncommon.json \
 	data/buce/loot_tables/loot_overhaul/cake_escape_grind.json \
 	data/buce/recipes/escape/grind/grindstone.json \
 	data/buce/recipes/mythic/smithing/searching.json \
@@ -1053,7 +1041,6 @@ dlist:
 drlist:
 	@printf '%s\n' $(DATARESOURCEPACKFILES)
 
-# data/buce/loot_tables/loot_overhaul/extra/structures/buried_treasure.json
 data/buce/loot_tables/%.json: buce-data/%.loot_table.json
 	mkdir -p $(dir $@)
 	cp -v $< $@
@@ -1146,7 +1133,7 @@ $(TEMPLATES:.sempl=): latest.txt
 buce-data/relic/all.loot_table.json.yaml: buce-data/relic/random.loot_table.json.yaml
 	sed '/^#/d; 5,$$ s/^      -/  - rolls: 1\n    entries:\n&/' $^ > $@
 
-buce-data/loot_overhaul/extra/structure/spawn_bonus_chest_loot_overhaul_starter_relic.loot_table.json.yaml: buce-data/relic/random.loot_table.json.yaml
+buce-data/loot_overhaul/starter_relic_loot_overhaul_starter_relic.loot_table.json.yaml: buce-data/relic/random.loot_table.json.yaml
 	cp -v $^ $@
 
 test.zip: $(test_FILES)
@@ -1534,12 +1521,6 @@ starter_bonus_chest.zip: $(starter_bonus_chest_FILES)
 	./bin/ziprename _$(@:.zip=) "" $@
 
 wandering_loot.zip: $(wandering_loot_FILES)
-	cp meta/$(@:.zip=.png) pack.png
-	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
-	zip $@ pack.png pack.mcmeta $^
-	./bin/ziprename _$(@:.zip=) "" $@
-
-loot_overhaul_relics.zip: $(loot_overhaul_relics_FILES)
 	cp meta/$(@:.zip=.png) pack.png
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^

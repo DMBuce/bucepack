@@ -27,21 +27,4 @@ pools:
     potion: water_breathing
     entries:
       - { type: item, weight: 1, item: potion }
-# extra treasure
-  - rolls: 1
-    entries:
-      - { type: loot_table, weight: 1,   table: loot_overhaul/extra/mythic }
-      - { type: loot_table, weight: 5,   table: loot_overhaul/extra/epic }
-      - { type: loot_table, weight: 10,  table: loot_overhaul/extra/rare }
-      - { type: loot_table, weight: 20,  table: loot_overhaul/extra/uncommon }
-      - { type: loot_table, weight: 100, table: loot_overhaul/extra/common }
-      - { type: empty, weight: 864 }
-# extra per-table loot
-  - rolls: 1
-    entries:
-      - { type: loot_table, weight: 1,   table: loot_overhaul/extra/structure/buried_treasure }
-# extra global loot
-  - rolls: 1
-    entries:
-      - { type: loot_table, weight: 1,   table: loot_overhaul/extra/all }
 random_sequence: "minecraft:chests/buried_treasure"
