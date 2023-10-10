@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smithing_transform",
+  "base": {
+    "item": "minecraft:light_gray_wool"
+  },
+  "addition": {
+    "item": "minecraft:name_tag"
+  },
+  "result": {
+    "item": "minecraft:name_tag"
+  },
+  "template": {
+    "tag": "buce:relic/templates"
+  }
+}

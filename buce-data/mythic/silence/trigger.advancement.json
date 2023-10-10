@@ -1,0 +1,32 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:barrier"
+		},
+		"title": {
+			"text": "Trigger Advancement"
+		},
+		"description": {
+			"text": "Something went wrong, you should revoke this advancement"
+		},
+		"show_toast": false,
+		"announce_to_chat": false,
+		"hidden": true,
+		"frame": "task"
+	},
+	"parent": "buce:mythic/root",
+	"criteria": {
+		"feed": {
+			"trigger": "minecraft:player_interacted_with_entity",
+			"conditions": {
+				"item": {
+					"items": [ "minecraft:name_tag" ],
+					"nbt": "{silence:1b}"
+				}
+			}
+		}
+	},
+	"rewards": {
+		"function": "buce:mythic/silence/activate"
+	}
+}

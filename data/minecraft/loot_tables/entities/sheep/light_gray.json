@@ -1,0 +1,46 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "conditions": [
+                {
+                  "condition": "minecraft:entity_properties",
+                  "entity": "killer_player",
+                  "predicate": {
+                    "type_specific": {
+                      "type": "player",
+                      "advancements": {
+                        "buce:mythic/silence/kill": true
+                      }
+                    }
+                  }
+                }
+              ],
+              "tag": "{relic:1b,silence:1b,CustomModelData:22183,display:{Name:\"{\\\"text\\\":\\\"Relic of Muzzling\\\",\\\"color\\\":\\\"light_purple\\\"}\",Lore:[\"\\\"§r§bMyth of Silence\\\"\"]},Enchantments:[{}]}"
+            }
+          ],
+          "name": "minecraft:light_gray_wool"
+        }
+      ],
+      "rolls": 1.0
+    },
+    {
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "name": "minecraft:entities/sheep"
+        }
+      ],
+      "rolls": 1.0
+    }
+  ],
+  "random_sequence": "minecraft:entities/sheep/light_gray"
+}
