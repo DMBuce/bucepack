@@ -2708,6 +2708,13 @@ placed in the main hand or dealing damage, it transforms back into its
 sword form. Transforming resets all properties of the item including its
 durability, enchantments, name, and banner pattern.
 
+**Relic of Muzzling**:
+When a player kills a gray sheep near a sculk catalyst,
+it drops wool with Myth of Silence,
+a custom enchantment that can be applied to a name tag
+with a bottle o' enchanting in the smithing table.
+A mob named with the name tag is silenced and can't create sound.
+
 **Relic of the Burrower**:
 When a player kills a silverfish in melee without a weapon,
 it drops a silverfish eye with Myth of Breaking,
@@ -2766,6 +2773,7 @@ data/minecraft/loot_tables/entities/glow_squid.json
 data/minecraft/loot_tables/entities/iron_golem.json
 data/minecraft/loot_tables/entities/pig.json
 data/minecraft/loot_tables/entities/sheep.json
+data/minecraft/loot_tables/entities/sheep/light_gray.json
 data/minecraft/loot_tables/entities/silverfish.json
 data/minecraft/tags/entity_types/frog_food.json
 ```

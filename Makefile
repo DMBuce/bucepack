@@ -593,6 +593,7 @@ relics_mythic_FILES := $(DEFAULT_DATA_FILES) \
 	data/minecraft/loot_tables/entities/iron_golem.json \
 	data/minecraft/loot_tables/entities/pig.json \
 	data/minecraft/loot_tables/entities/sheep.json \
+	data/minecraft/loot_tables/entities/sheep/light_gray.json \
 	data/minecraft/loot_tables/entities/silverfish.json \
 	data/minecraft/tags/entity_types/frog_food.json \
 	data/minecraft/tags/functions/load_relics_mythic.json \
