@@ -1136,8 +1136,7 @@ Makes some crafting recipes cheaper.
 * 4 stem → 4 hyphae
 * 3 iron nugget → chain
 * chest + 3 iron ingot → hopper
-* solid door + 8 iron nugget → shield
-* bamboo → stick
+* planks + 8 iron nugget → shield
 
 ====
 
@@ -1257,7 +1256,6 @@ data/minecraft/recipes/spruce_sign.json
 data/minecraft/recipes/spruce_stairs.json
 data/minecraft/recipes/spruce_trapdoor.json
 data/minecraft/recipes/spruce_wood.json
-data/minecraft/recipes/stick_from_bamboo_item.json
 data/minecraft/recipes/stone_brick_stairs.json
 data/minecraft/recipes/stone_pressure_plate.json
 data/minecraft/recipes/stone_stairs.json
@@ -3920,7 +3918,7 @@ Spellsmithing is the process of working magical enchantments onto an item in
 the smithing table.
 It works a little differently than traditional Minecraft smithing.
 Simply place a Bottle o' Enchanting in the left slot of the smithing table,
-a <<relic>> in the middle slot,
+a <<relics,relic>> in the middle slot,
 and a compatible item in the right slot.
 The enchantment(s) from the relic will be transferred to the item.
 

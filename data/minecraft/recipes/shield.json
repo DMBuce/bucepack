@@ -2,7 +2,7 @@
   "type": "minecraft:crafting_shaped",
   "key": {
     "D": {
-      "tag": "buce:recipes/crafting/plentiful/solid_door"
+      "tag": "minecraft:planks"
     },
     ".": {
       "item": "minecraft:iron_nugget"

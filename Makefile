@@ -799,7 +799,6 @@ crafting_plentiful_FILES := $(DEFAULT_DATA_FILES) \
 	data/minecraft/recipes/hopper.json \
 	data/minecraft/recipes/shield.json \
 	data/minecraft/recipes/chain.json \
-	data/minecraft/recipes/stick_from_bamboo_item.json \
 
 crafting_turtle_box_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell find buce-data/recipes/crafting/turtle -type f | ./bin/ext2dir) \

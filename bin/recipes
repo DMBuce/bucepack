@@ -15,7 +15,7 @@ def tr(itemjson):
     if 'item' in itemjson:
         return itemjson['item'].removeprefix("minecraft:").replace('_', ' ')
     else:
-        return itemjson['tag'].split("/")[-1].replace('_', ' ')
+        return itemjson['tag'].removeprefix("minecraft:").split("/")[-1].replace('_', ' ')
 
 # prints a shapeless crafting recipe
 def crafting_shapeless(r):
