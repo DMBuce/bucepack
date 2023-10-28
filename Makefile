@@ -3,6 +3,7 @@ DATARESOURCEPACKFILES = \
 	copper_overhaul.zip \
 	cutting_wood.zip \
 	pig_armor.zip \
+	crafting_turtle_box.zip \
 
 RESOURCEPACKFILES = \
 	$(DATARESOURCEPACKFILES) \
@@ -44,7 +45,6 @@ DATAPACKFILES = \
 	crafting_loot.zip \
 	crafting_plentiful.zip \
 	crafting_unpacked.zip \
-	crafting_turtle_box.zip \
 	crafting_workstation.zip \
 	cutting_declutter.zip \
 	cutting_smooth_cracked.zip \
@@ -805,6 +805,9 @@ crafting_plentiful_FILES := $(DEFAULT_DATA_FILES) \
 
 crafting_turtle_box_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell find buce-data/recipes/crafting/turtle -type f | ./bin/ext2dir) \
+	assets/minecraft/textures/block/green_shulker_box.png \
+	assets/minecraft/textures/entity/shulker/shulker_green.png \
+	assets/minecraft/lang/en_us_crafting_turtle_box.json \
 
 crafting_unpacked_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell find buce-data/recipes/crafting/unpacked -type f | ./bin/ext2dir) \

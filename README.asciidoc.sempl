@@ -536,6 +536,12 @@ Lets you craft green shulker boxes from turtle shells.
 
 image::https://i.imgur.com/4GLS89K.png[Turtle Boxes]
 
+When installed as a resource pack,
+green shulker boxes have a turtle shell
+and partial support is provided for renaming
+green shulker boxes to turtle boxes.
+See <<language-support,Language Support>> for details.
+
 {!./bin/packsummary crafting_turtle_box}
 
 == Loot Data Packs

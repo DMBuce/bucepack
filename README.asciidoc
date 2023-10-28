@@ -1463,11 +1463,24 @@ Lets you craft green shulker boxes from turtle shells.
 
 image::https://i.imgur.com/4GLS89K.png[Turtle Boxes]
 
+When installed as a resource pack,
+green shulker boxes have a turtle shell
+and partial support is provided for renaming
+green shulker boxes to turtle boxes.
+See <<language-support,Language Support>> for details.
+
 **Downloads**
 
 .https://github.com/DMBuce/bucepack/releases/latest/download/crafting_turtle_box.zip[`crafting_turtle_box.zip`]
 [%collapsible]
 ====
+
+```
+assets/minecraft/lang/en_us.json
+assets/minecraft/textures/block/green_shulker_box.png
+assets/minecraft/textures/entity/shulker/shulker_green.png
+```
+
 ====
 
 .https://github.com/DMBuce/bucepack/releases[All Releases & Changelogs]
