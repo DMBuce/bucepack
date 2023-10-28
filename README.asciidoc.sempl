@@ -1068,6 +1068,28 @@ In addition, crimson fungus immunizes hoglins against zombification.
 
 {!./bin/packsummary antidote}
 
+=== Debugless
+
+Reduces the amount of info in the debug screen
+and gives some in-game ways of obtaining player coordinates.
+
+A player holding a map or compass can see their coordinates.
+
+A player holding a lodestone compass can see the distance to the lodestone.
+
+A player holding a recovery compass can see the distance to their death point.
+
+{!./bin/packsummary debugless}
+
+.Known Issues
+[%collapsible]
+====
+Due to limitations in the square root function used,
+the display stops working for lodestone compasses and recovery compasses
+when the player is more than 46340 blocks
+away from the lodestone or death point.
+====
+
 === Global Effects
 
 Adjusts various game rules as players make progress in the world.

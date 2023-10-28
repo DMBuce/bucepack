@@ -1,0 +1,22 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:cartography_table"
+		},
+		"title": {
+			"text": "Debugless"
+		},
+		"description": {
+			"text": "Maps and compasses in the offhand show your coordinates"
+		},
+		"show_toast": false,
+		"announce_to_chat": false,
+		"frame": "task"
+	},
+	"parent": "buce:root",
+	"criteria": {
+		"tick": {
+			"trigger": "minecraft:tick"
+		}
+	}
+}

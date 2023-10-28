@@ -48,6 +48,7 @@ DATAPACKFILES = \
 	crafting_workstation.zip \
 	cutting_declutter.zip \
 	cutting_smooth_cracked.zip \
+	debugless.zip \
 	dragonproof.zip \
 	dripblock.zip \
 	enchanting.zip \
@@ -656,6 +657,12 @@ starter_shulker_FILES := $(DEFAULT_DATA_FILES) \
 starter_spyglass_FILES := $(DEFAULT_DATA_FILES) \
 	data/minecraft/tags/items/starter_item_starter_spyglass.json \
 	data/buce/advancements/loot_addons/starter_spyglass.json \
+
+debugless_FILES := $(DEFAULT_DATA_FILES) \
+	$(shell find buce-data/debugless -type f | ./bin/ext2dir) \
+	data/buce/functions/var.mcfunction \
+	data/buce/functions/sqrt.mcfunction \
+	data/minecraft/tags/functions/load_debugless.json \
 
 dragonproof_FILES := $(DEFAULT_DATA_FILES) \
 	data/buce/advancements/dragonproof.json \
@@ -1574,6 +1581,12 @@ boss_loot_decor.zip: $(boss_loot_decor_FILES)
 	./bin/ziprename _$(@:.zip=) "" $@
 
 boss_loot_modern.zip: $(boss_loot_modern_FILES)
+	cp meta/$(@:.zip=.png) pack.png
+	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
+	zip $@ pack.png pack.mcmeta $^
+	./bin/ziprename _$(@:.zip=) "" $@
+
+debugless.zip: $(debugless_FILES)
 	cp meta/$(@:.zip=.png) pack.png
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^
