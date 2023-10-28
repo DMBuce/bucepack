@@ -1,0 +1,19 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:barrier"
+		},
+		"title": "Buce's Errors",
+		"description": "Something went wrong :(",
+		"background": "minecraft:textures/block/red_terracotta.png",
+		"show_toast": false,
+		"announce_to_chat": false,
+		"hidden": false,
+		"frame": "goal"
+	},
+	"criteria": {
+		"tick": {
+			"trigger": "minecraft:impossible"
+		}
+	}
+}

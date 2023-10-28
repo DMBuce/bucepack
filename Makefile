@@ -109,7 +109,10 @@ all: $(PACKFILES)
 
 # needed by all pack targets
 DEFAULT_RESOURCE_FILES = LICENSE.txt
-DEFAULT_DATA_FILES = LICENSE.txt data/buce/advancements/root.json
+DEFAULT_DATA_FILES = \
+	LICENSE.txt \
+	data/buce/advancements/root.json \
+	data/buce/advancements/errors.json \
 
 LICENSE.txt: LICENSE
 	cp -v $< $@
