@@ -1139,6 +1139,9 @@ $(TEMPLATES:.sempl=): latest.txt
 %.asciidoc: %.asciidoc.sempl
 	sempl $< $@
 
+buce-data/%/root.advancement.json.sempl: meta/%.mcmeta
+	touch $@
+
 %.json: %.json.yaml data/minecraft/loot_tables/loot_table.j2
 	j2 data/minecraft/loot_tables/loot_table.j2 $< -o $@
 

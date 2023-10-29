@@ -1,0 +1,26 @@
+#!/usr/bin/env sempl
+pack = "$(basename $(dirname "$DEST"))"
+meta = "meta/$pack.mcmeta"
+#!end sempl env
+{
+	"display": {
+		"icon": {
+			{!jq .root.icon "$meta" | sed '1d;$d;s/^ *//'}
+		},
+		"title": {
+			"text": {!jq .root.title "$meta"}
+		},
+		"description": {
+			"text": {!jq .root.explanation "$meta"}
+		},
+		"show_toast": false,
+		"announce_to_chat": false,
+		"frame": "task"
+	},
+	"parent": "buce:root",
+	"criteria": {
+		"tick": {
+			"trigger": "minecraft:tick"
+		}
+	}
+}

@@ -24,6 +24,11 @@ for file in $packfiles; do
 		echo "> $file: Missing file: data/buce/advancements/\$pack/root.json"
 		retval=1
 	fi
+
+	if [[ ! -f buce-data/$pack/root.advancement.json.sempl ]]; then
+		echo "> $pack: Missing template: buce-data/$pack/root.advancement.json.sempl"
+		retval=1
+	fi
 done
 
 echo "Checking datapack advancement icons..."

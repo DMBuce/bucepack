@@ -2,5 +2,12 @@
   "pack": {
     "pack_format": 18,
     "description": "Buce's Debugless: Immersive coordinates"
+  },
+  "root": {
+    "title": "Debugless",
+    "explanation": "Maps and compasses in the offhand show your coordinates",
+    "icon": {
+      "item": "minecraft:cartography_table"
+    }
   }
 }
