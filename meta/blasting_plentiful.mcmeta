@@ -1,0 +1,13 @@
+{
+  "pack": {
+    "pack_format": 18,
+    "description": "Buce's Plentiful Blasting: Efficiently blast tools and armor"
+  },
+  "root": {
+    "title": "Plentiful Blasting",
+    "explanation": "Get more nuggets from blasting tools and armor",
+    "icon": {
+      "item": "minecraft:blast_furnace"
+    }
+  }
+}
