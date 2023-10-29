@@ -101,7 +101,6 @@ DATAPACKFILES = \
 	worldgen_apocalypse.zip \
 	worldgen_moonlit.zip \
 	worldgen_overworld.zip \
-	#crafting_cart.zip \
 
 PACKFILES = $(sort $(RESOURCEPACKFILES) $(DATAPACKFILES))
 
@@ -782,9 +781,6 @@ eyes_of_seeking_FILES := $(DEFAULT_DATA_FILES) \
 	data/buce/advancements/eyes_of_seeking.json \
 	data/minecraft/tags/worldgen/structure/eye_of_ender_located.json \
 
-crafting_cart_FILES := $(DEFAULT_DATA_FILES) \
-	$(shell find buce-data/recipes/crafting/carts -type f | ./bin/ext2dir) \
-
 crafting_colorful_FILES := $(DEFAULT_DATA_FILES) \
 	data/minecraft/recipes/*_candle.json \
 	data/minecraft/recipes/*_terracotta.json \
@@ -1443,12 +1439,6 @@ global_effects.zip: $(global_effects_FILES)
 	./bin/ziprename _$(@:.zip=) "" $@
 
 crafting_loot.zip: $(crafting_loot_FILES)
-	cp meta/$(@:.zip=.png) pack.png
-	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
-	zip $@ pack.png pack.mcmeta $^
-	./bin/ziprename _$(@:.zip=) "" $@
-
-crafting_cart.zip: $(crafting_cart_FILES)
 	cp meta/$(@:.zip=.png) pack.png
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^
