@@ -1,0 +1,16 @@
+#!/usr/bin/env sempl
+#!end sempl env
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {{\}
+      "item": "minecraft:{!./bin/allitems | grep 'chest_boat$'}"{\}
+    },
+    {
+      "item": "minecraft:chest_minecart"
+    }
+  ],
+  "result": {
+    "item": "minecraft:chest"
+  }
+}

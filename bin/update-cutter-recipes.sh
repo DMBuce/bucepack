@@ -24,6 +24,7 @@ stemtypes=(
 
 # generate wood recipes
 for t in "${logtypes[@]}"; do
+	# wood cutting recipes
 	cat <<-EOF | while read num output inputs
 		1 ${t}_wood          ${t}_log
 		1 ${t}_log           ${t}_wood
@@ -49,6 +50,23 @@ for t in "${logtypes[@]}"; do
 			}
 		EOF
 	done
+
+	# locomotive boat recipes
+	num=5
+	output="${t}_planks"
+	inputs="${t}_boat ${t}_chest_boat"
+	export num output inputs
+	sempl - "buce-data/locomotive/recipes/${output}.recipe.json" <<-EOF
+		{
+		  "type": "minecraft:stonecutting",
+		  "ingredient": [
+		    { "item": "minecraft:{!printf "%s\\n" \$inputs | head -n-1}" },
+		    { "item": "minecraft:{!printf "%s\\n" \$inputs | tail -n1}" }
+		  ],
+		  "result": "minecraft:$output",
+		  "count": $num
+		}
+	EOF
 done
 
 # generate mushroom recipes

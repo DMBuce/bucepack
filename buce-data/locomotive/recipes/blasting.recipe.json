@@ -1,5 +1,5 @@
 {
-  "type": "minecraft:smelting",
+  "type": "minecraft:blasting",
   "cookingtime": 200,
   "experience": 0.1,
   "ingredient": [
@@ -20,7 +20,7 @@
     }
   ],
   "result": {
-    "item": "minecraft:iron_nugget",
+    "item": "minecraft:iron_ingot",
     "count": 5
   }
 }

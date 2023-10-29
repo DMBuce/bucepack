@@ -1,9 +1,9 @@
 
 DATARESOURCEPACKFILES = \
-	copper_overhaul.zip \
 	cutting_wood.zip \
 	pig_armor.zip \
 	crafting_turtle_box.zip \
+	#copper_overhaul.zip \
 
 RESOURCEPACKFILES = \
 	$(DATARESOURCEPACKFILES) \
@@ -41,7 +41,6 @@ DATAPACKFILES = \
 	blasting_plentiful.zip \
 	blue_fire.zip \
 	climbable.zip \
-	crafting_cart.zip \
 	crafting_colorful.zip \
 	crafting_loot.zip \
 	crafting_plentiful.zip \
@@ -103,6 +102,7 @@ DATAPACKFILES = \
 	worldgen_apocalypse.zip \
 	worldgen_moonlit.zip \
 	worldgen_overworld.zip \
+	#crafting_cart.zip \
 
 PACKFILES = $(sort $(RESOURCEPACKFILES) $(DATAPACKFILES))
 
@@ -975,6 +975,8 @@ escape_grind_FILES := $(DEFAULT_DATA_FILES) \
 
 locomotive_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell find buce-data/locomotive -type f | ./bin/ext2dir) \
+	data/minecraft/recipes/activator_rail.json \
+	data/minecraft/recipes/detector_rail.json \
 
 lichdom_FILES := $(DEFAULT_DATA_FILES) \
 	data/minecraft/tags/functions/load_lichdom.json \
