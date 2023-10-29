@@ -50,11 +50,12 @@ sed -Ei '
 ' $dir/plentiful/*_stairs.recipe.json
 
 # generate 3x3 uncrafting recipes
-while read input output; do
+while read category input output; do
 	[[ -z "$input$output" ]] && continue
 	sempl - "$dir/unpacked/3x3_${output}.recipe.json" <<-EOF
 		{
 		  "type": "minecraft:crafting_shapeless",
+		  "category": "$category",
 		  "ingredients": [
 		    {
 		      "item": "minecraft:$input"
@@ -67,21 +68,22 @@ while read input output; do
 		}
 	EOF
 done <<< '
-	blue_ice          packed_ice
-	packed_ice        ice
-	prismarine_bricks prismarine_shard
-	melon             melon_slice
-	cobweb            string
-	bamboo_block      bamboo
+	building blue_ice          packed_ice
+	building packed_ice        ice
+	building prismarine_bricks prismarine_shard
+	food     melon             melon_slice
+	misc     cobweb            string
+	misc     bamboo_block      bamboo
 '
 sed -i '/"count":/ s/9/18/' buce-data/recipes/crafting/unpacked/3x3_bamboo.recipe.json
 
 # generate 2x2 uncrafting recipes
-while read input output; do
+while read category input output; do
 	[[ -z "$input$output" ]] && continue
 	sempl - "$dir/unpacked/2x2_${output}.recipe.json" <<-EOF
 		{
 		  "type": "minecraft:crafting_shapeless",
+		  "category": "$category",
 		  "ingredients": [
 		    {
 		      "item": "minecraft:$input"
@@ -94,27 +96,28 @@ while read input output; do
 		}
 	EOF
 done <<< '
-	clay clay_ball
-	glowstone glowstone_dust
-	magma_block magma_cream
-	prismarine prismarine_shard
-	purpur_block popped_chorus_fruit
-	sandstone sand
-	red_sandstone red_sand
-	snow_block snowball
-	bricks brick
-	nether_bricks nether_brick
-	amethyst_block amethyst_shard
-	dripstone_block pointed_dripstone
-	honeycomb_block honeycomb
+	misc     clay clay_ball
+	misc     glowstone glowstone_dust
+	misc     magma_block magma_cream
+	misc     prismarine prismarine_shard
+	misc     purpur_block popped_chorus_fruit
+	building sandstone sand
+	building red_sandstone red_sand
+	misc     snow_block snowball
+	misc     bricks brick
+	misc     nether_bricks nether_brick
+	misc     amethyst_block amethyst_shard
+	misc     dripstone_block pointed_dripstone
+	misc     honeycomb_block honeycomb
 '
 
 # generate 3x uncrafting recipes
-while read input output; do
+while read category input output; do
 	[[ -z "$input$output" ]] && continue
 	sempl - "$dir/unpacked/3x_${output}.recipe.json" <<-EOF
 		{
 		  "type": "minecraft:crafting_shapeless",
+		  "category": "$category",
 		  "ingredients": [
 		    {
 		      "item": "minecraft:$input"
@@ -127,8 +130,8 @@ while read input output; do
 		}
 	EOF
 done <<< '
-	bookshelf book
-	book paper
+	misc bookshelf book
+	misc book paper
 '
 
 # generate colorful crafting recipes

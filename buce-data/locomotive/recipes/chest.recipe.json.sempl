@@ -2,6 +2,7 @@
 #!end sempl env
 {
   "type": "minecraft:crafting_shapeless",
+  "category": "misc",
   "ingredients": [
     {{\}
       "item": "minecraft:{!./bin/allitems | grep 'chest_boat$'}"{\}
