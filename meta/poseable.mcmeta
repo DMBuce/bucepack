@@ -2,5 +2,12 @@
   "pack": {
     "pack_format": 18,
     "description": "Buce's Poseable: Posable armor stands"
+  },
+  "root": {
+    "title": "Poseable",
+    "explanation": "Sneak to place an armor stand with arms and sneak equip it to change its pose",
+    "icon": {
+      "item": "minecraft:armor_stand"
+    }
   }
 }

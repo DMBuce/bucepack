@@ -22,5 +22,8 @@ meta = "meta/$pack.mcmeta"
 		"tick": {
 			"trigger": "minecraft:tick"
 		}
+	},
+	"rewards": {
+		"function": "buce:{$pack}/join"
 	}
 }

@@ -2,5 +2,12 @@
   "pack": {
     "pack_format": 18,
     "description": "Buce's Ender Relic: Adds a relic to your ender chest."
+  },
+  "root": {
+    "title": "Ender Relic",
+    "explanation": "Adds a relic to your ender chest",
+    "icon": {
+      "item": "minecraft:ender_chest"
+    }
   }
 }

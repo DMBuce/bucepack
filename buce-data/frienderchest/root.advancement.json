@@ -7,7 +7,7 @@
 			"text": "Frienderchest"
 		},
 		"description": {
-			"text": "Enderchest pocket dimension"
+			"text": "Enter an ender chest by right clicking it with an ender pearl"
 		},
 		"show_toast": false,
 		"announce_to_chat": false,

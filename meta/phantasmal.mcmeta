@@ -2,5 +2,12 @@
   "pack": {
     "pack_format": 18,
     "description": "Buce's Phantasmal: More phantasmal phantoms"
+  },
+  "root": {
+    "title": "Phantasmal",
+    "explanation": "Phantoms have fading and are a source of invisible item frames",
+    "icon": {
+      "item": "minecraft:phantom_membrane"
+    }
   }
 }

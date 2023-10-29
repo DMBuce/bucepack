@@ -2,5 +2,12 @@
   "pack": {
     "pack_format": 18,
     "description": "Buce's Smart Allays: Bind allays to note blocks with shift-right-click"
+  },
+  "root": {
+    "title": "Smart Allays",
+    "explanation": "Place a hopper against a note block to bind allays to note blocks",
+    "icon": {
+      "item": "minecraft:cookie"
+    }
   }
 }

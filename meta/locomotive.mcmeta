@@ -2,5 +2,12 @@
   "pack": {
     "pack_format": 18,
     "description": "Buce's Locomotive: Furnace carts move towards players in minecarts when powered"
+  },
+  "root": {
+    "title": "Locomotive",
+    "explanation": "Furnace carts move towards players in minecarts when fueled",
+    "icon": {
+      "item": "minecraft:furnace_minecart"
+    }
   }
 }

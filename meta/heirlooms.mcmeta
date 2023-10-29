@@ -2,5 +2,12 @@
   "pack": {
     "pack_format": 18,
     "description": "Buce's Heirlooms: Items dropped on death don't despawn"
+  },
+  "root": {
+    "title": "Heirlooms",
+    "explanation": "Items dropped on death don't despawn",
+    "icon": {
+      "item": "minecraft:gold_ingot"
+    }
   }
 }

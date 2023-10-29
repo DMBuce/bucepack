@@ -2,5 +2,12 @@
   "pack": {
     "pack_format": 18,
     "description": "Buce's Nether Portal Network: Limits nether travel to ruined portals"
+  },
+  "root": {
+    "title": "Nether Portal Network",
+    "explanation": "Nether travel is limited to ruined portals",
+    "icon": {
+      "item": "minecraft:fire_charge"
+    }
   }
 }

@@ -20,13 +20,8 @@ for file in $packfiles; do
 		retval=1
 	fi
 
-	if ! grep -qx 'data/buce/advancements/.*/root.json' "cache/$pack.files"; then
-		echo "> $file: Missing file: data/buce/advancements/\$pack/root.json"
-		retval=1
-	fi
-
-	if [[ ! -f buce-data/$pack/root.advancement.json.sempl ]]; then
-		echo "> $pack: Missing template: buce-data/$pack/root.advancement.json.sempl"
+	if ! grep -qx "data/buce/advancements/${pack//_/.}/root.json" "cache/$pack.files"; then
+		echo "> $file: Missing file: data/buce/advancements/$pack/root.json"
 		retval=1
 	fi
 done

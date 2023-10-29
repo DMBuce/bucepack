@@ -7,7 +7,7 @@
 			"text": "Locomotive"
 		},
 		"description": {
-			"text": "Furnace carts move towards players in minecarts when powered"
+			"text": "Furnace carts move towards players in minecarts when fueled"
 		},
 		"show_toast": false,
 		"announce_to_chat": false,

@@ -7,7 +7,7 @@
 			"text": "Poseable"
 		},
 		"description": {
-			"text": "Poseable armor stands"
+			"text": "Sneak to place an armor stand with arms and sneak equip it to change its pose"
 		},
 		"show_toast": false,
 		"announce_to_chat": false,

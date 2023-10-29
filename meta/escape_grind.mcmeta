@@ -2,5 +2,12 @@
   "pack": {
     "pack_format": 18,
     "description": "Buce's Escape the Grind: Less grindy Escape the End / Nether"
+  },
+  "root": {
+    "title": "Escape the Grind",
+    "explanation": "Addon pack for a less grindy Escape the Nether/End experience",
+    "icon": {
+      "item": "minecraft:grindstone"
+    }
   }
 }

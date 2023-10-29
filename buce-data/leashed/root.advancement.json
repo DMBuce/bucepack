@@ -7,7 +7,7 @@
 			"text": "Leashed"
 		},
 		"description": {
-			"text": "Leash mobs to other mobs"
+			"text": "Leash mobs to allays, golems, donkeys, and mules"
 		},
 		"show_toast": false,
 		"announce_to_chat": false,

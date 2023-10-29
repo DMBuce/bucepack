@@ -7,7 +7,7 @@
 			"text": "Smart Allays"
 		},
 		"description": {
-			"text": "Bind allays to note blocks with shift-right-click"
+			"text": "Place a hopper against a note block to bind allays to note blocks"
 		},
 		"show_toast": false,
 		"announce_to_chat": false,

@@ -2,5 +2,12 @@
   "pack": {
     "pack_format": 18,
     "description": "Buce's Wandering Loot: Trader llamas drop loot barrels."
+  },
+  "root": {
+    "title": "Wandering Loot",
+    "explanation": "Wandering traders have loot barrels",
+    "icon": {
+      "item": "minecraft:barrel"
+    }
   }
 }

@@ -2,5 +2,12 @@
   "pack": {
     "pack_format": 18,
     "description": "Buce's Illusory Trader: Illusioners in disguise"
+  },
+  "root": {
+    "title": "Illusory Trader",
+    "explanation": "Some wandering traders are illusioners in disguise",
+    "icon": {
+      "item": "minecraft:leather"
+    }
   }
 }

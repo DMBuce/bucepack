@@ -2,5 +2,12 @@
   "pack": {
     "pack_format": 18,
     "description": "Buce's Deep Relics: Adds mythic devices to ancient city loot"
+  },
+  "root": {
+    "title": "Deep Relics",
+    "explanation": "Adds mythic devices to ancient city loot",
+    "icon": {
+      "item": "minecraft:echo_shard"
+    }
   }
 }

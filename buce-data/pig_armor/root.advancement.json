@@ -7,7 +7,7 @@
 			"text": "Pig Armor"
 		},
 		"description": {
-			"text": "Adds armor to saddled pigs"
+			"text": "Pigs with saddles have armor"
 		},
 		"show_toast": false,
 		"announce_to_chat": false,

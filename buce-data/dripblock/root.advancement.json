@@ -1,10 +1,10 @@
 {
 	"display": {
 		"icon": {
-			"item": "minecraft:pointed_dripstone"
+			"item": "minecraft:dripstone_block"
 		},
 		"title": {
-			"text": "Drip Block"
+			"text": "DripBlock"
 		},
 		"description": {
 			"text": "Dripstone skyblock"
