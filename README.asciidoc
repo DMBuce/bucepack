@@ -989,28 +989,6 @@ data/minecraft/tags/blocks/soul_fire_base_blocks.json
 These packs add or modify recipes in the vanilla game.
 They shouldn't add any lag to your game.
 
-=== Plentiful Blasting
-
-Makes the blast furnace produce three nuggets when melting down tools and armor.
-
-**Downloads**
-
-.https://github.com/DMBuce/bucepack/releases/latest/download/blasting_plentiful.zip[`blasting_plentiful.zip`]
-[%collapsible]
-====
-
-```
-data/minecraft/recipes/gold_nugget_from_blasting.json
-data/minecraft/recipes/iron_nugget_from_blasting.json
-```
-
-====
-
-.https://github.com/DMBuce/bucepack/releases[All Releases & Changelogs]
-[%collapsible]
-====
-====
-
 === Cart Crafting
 
 Lets you remove the minecart from chest/furnace/hopper/tnt minecarts in the
@@ -1142,6 +1120,8 @@ data/minecraft/recipes/leather_horse_armor.json
 === Plentiful Crafting
 
 Makes some crafting recipes cheaper.
+
+Makes the blast furnace produce three nuggets when melting down tools and armor.
 
 .Summary of recipes
 [%collapsible]

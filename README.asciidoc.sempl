@@ -412,12 +412,6 @@ image::https://i.imgur.com/paceJ4Z.png[Blue Fire]
 These packs add or modify recipes in the vanilla game.
 They shouldn't add any lag to your game.
 
-=== Plentiful Blasting
-
-Makes the blast furnace produce three nuggets when melting down tools and armor.
-
-{!./bin/packsummary blasting_plentiful}
-
 === Cart Crafting
 
 Lets you remove the minecart from chest/furnace/hopper/tnt minecarts in the
@@ -446,6 +440,8 @@ The leather horse armor recipe is changed to match other horse armor as well.
 === Plentiful Crafting
 
 Makes some crafting recipes cheaper.
+
+Makes the blast furnace produce three nuggets when melting down tools and armor.
 
 .Summary of recipes
 [%collapsible]

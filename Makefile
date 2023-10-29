@@ -38,7 +38,6 @@ DATAPACKFILES = \
 	acclimated.zip \
 	aggro_bastions.zip \
 	antidote.zip \
-	blasting_plentiful.zip \
 	blue_fire.zip \
 	climbable.zip \
 	crafting_colorful.zip \
@@ -783,9 +782,6 @@ eyes_of_seeking_FILES := $(DEFAULT_DATA_FILES) \
 	data/buce/advancements/eyes_of_seeking.json \
 	data/minecraft/tags/worldgen/structure/eye_of_ender_located.json \
 
-blasting_plentiful_FILES := $(DEFAULT_DATA_FILES) \
-	data/minecraft/recipes/*nugget_from_blasting*.json \
-
 crafting_cart_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell find buce-data/recipes/crafting/carts -type f | ./bin/ext2dir) \
 
@@ -810,6 +806,7 @@ crafting_plentiful_FILES := $(DEFAULT_DATA_FILES) \
 	$(wildcard data/minecraft/recipes/*_trapdoor.json) \
 	$(wildcard data/minecraft/recipes/*_wood.json) \
 	$(wildcard data/minecraft/recipes/*_hyphae.json) \
+	$(wildcard data/minecraft/recipes/*_nugget_from_blasting*.json) \
 	data/minecraft/recipes/hopper.json \
 	data/minecraft/recipes/shield.json \
 	data/minecraft/recipes/chain.json \
@@ -1446,12 +1443,6 @@ global_effects.zip: $(global_effects_FILES)
 	./bin/ziprename _$(@:.zip=) "" $@
 
 crafting_loot.zip: $(crafting_loot_FILES)
-	cp meta/$(@:.zip=.png) pack.png
-	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
-	zip $@ pack.png pack.mcmeta $^
-	./bin/ziprename _$(@:.zip=) "" $@
-
-blasting_plentiful.zip: $(blasting_plentiful_FILES)
 	cp meta/$(@:.zip=.png) pack.png
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^
