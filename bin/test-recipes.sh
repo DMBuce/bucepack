@@ -5,7 +5,7 @@ exec 1>&2
 
 retval=0
 
-#echo "Checking recipes..."
+echo "Checking recipes..."
 {
 find data/minecraft/recipes/ -name \*.json
 find buce-data/ -name \*.recipe.json\*
