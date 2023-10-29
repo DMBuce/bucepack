@@ -989,23 +989,6 @@ data/minecraft/tags/blocks/soul_fire_base_blocks.json
 These packs add or modify recipes in the vanilla game.
 They shouldn't add any lag to your game.
 
-=== Cart Crafting
-
-Lets you remove the minecart from chest/furnace/hopper/tnt minecarts in the
-crafting grid, or smelt them into minecarts.
-
-**Downloads**
-
-.https://github.com/DMBuce/bucepack/releases/latest/download/crafting_cart.zip[`crafting_cart.zip`]
-[%collapsible]
-====
-====
-
-.https://github.com/DMBuce/bucepack/releases[All Releases & Changelogs]
-[%collapsible]
-====
-====
-
 === Colorful Crafting
 
 Lets you dye any color of candle
@@ -1121,8 +1104,6 @@ data/minecraft/recipes/leather_horse_armor.json
 
 Makes some crafting recipes cheaper.
 
-Makes the blast furnace produce three nuggets when melting down tools and armor.
-
 .Summary of recipes
 [%collapsible]
 ====
@@ -1139,6 +1120,8 @@ Makes the blast furnace produce three nuggets when melting down tools and armor.
 * 3 iron nugget → chain
 * chest + 3 iron ingot → hopper
 * planks + 8 iron nugget → shield
+* blasting: tool → 3 nuggets
+* blasting: armor → 3 nuggets
 
 ====
 
@@ -1204,8 +1187,10 @@ data/minecraft/recipes/deepslate_tile_stairs.json
 data/minecraft/recipes/diorite_stairs.json
 data/minecraft/recipes/end_stone_brick_stairs.json
 data/minecraft/recipes/exposed_cut_copper_stairs.json
+data/minecraft/recipes/gold_nugget_from_blasting.json
 data/minecraft/recipes/granite_stairs.json
 data/minecraft/recipes/hopper.json
+data/minecraft/recipes/iron_nugget_from_blasting.json
 data/minecraft/recipes/jungle_fence_gate.json
 data/minecraft/recipes/jungle_fence.json
 data/minecraft/recipes/jungle_pressure_plate.json
@@ -2349,16 +2334,31 @@ that run commands when certain conditions are met.
 
 === Locomotive
 
-Makes furnace minecarts useable as train engines.
+Various vehicle changes.
 
 When a player in a minecart fuels a furnace cart,
 the furnace cart moves towards the player instead of away from them.
+
+Minecarts can be smelted into nuggets or blasted into ingots.
+
+Minecarts with a chest/furnace/hopper/etc. block in them can be crafted into
+the block.
+
+Rail recipes are changed to have a stick in the middle.
+
+Boats can be cut into planks and chest boats can be crafted into chests.
 
 **Downloads**
 
 .https://github.com/DMBuce/bucepack/releases/latest/download/locomotive.zip[`locomotive.zip`]
 [%collapsible]
 ====
+
+```
+data/minecraft/recipes/activator_rail.json
+data/minecraft/recipes/detector_rail.json
+```
+
 ====
 
 .https://github.com/DMBuce/bucepack/releases[All Releases & Changelogs]
@@ -3090,97 +3090,16 @@ Nexuses don't allow nether portal usage outside of their own Anvil regions
 due to https://bugs.mojang.com/browse/MC-138887[MC-138887].
 ====
 
-== Data Resource Packs
-
-These packs can be installed as a resource pack, a data pack, or both.
-
-Due to limitations in data/resource pack versioning,
-these packs will display a false incompatibility warning
-when installed as a datapack in the "Create New World" screen.
-If you grabbed the correct version of the pack from the
-https://github.com/DMBuce/bucepack/releases[Releases] page,
-you can safely ignore this warning.
-
-=== Copper Overhaul
-
-Incorporates copper throughout the game's progression.
-
-Stone tools are reskinned as copper tools.
-Wood tools are reskinned as stone tools
-and can be crafted with flint in addition to cobblestone.
-
-Chainmail armor is reskinned as copper armor
-and some iron armor is reskinned as chainmail.
-
-image::https://i.imgur.com/wdWOFyJ.png[Copper Overhaul]
-
-Tripwire hooks are crafted with copper instead of iron,
-and the dispenser recipe uses tripwire hooks instead of bows.
-Copper is used to craft detector rails,
-and all rail recipes are adjusted to have a stick in the middle.
-
-//image::https://i.imgur.com/IeJHUPu.png[Copper Overhaul]
-
-Partial support is provided for renaming
-wooden and stone tools, chainmail armor, and iron armor.
-See <<language-support,Language Support>> for details.
-
-**Downloads**
-
-.https://github.com/DMBuce/bucepack/releases/latest/download/copper_overhaul.zip[`copper_overhaul.zip`]
-[%collapsible]
-====
-
-```
-assets/minecraft/lang/en_us.json
-assets/minecraft/models/item/stone_axe.json
-assets/minecraft/models/item/stone_hoe.json
-assets/minecraft/models/item/stone_pickaxe.json
-assets/minecraft/models/item/stone_shovel.json
-assets/minecraft/models/item/stone_sword.json
-assets/minecraft/models/item/wooden_axe.json
-assets/minecraft/models/item/wooden_hoe.json
-assets/minecraft/models/item/wooden_pickaxe.json
-assets/minecraft/models/item/wooden_shovel.json
-assets/minecraft/models/item/wooden_sword.json
-assets/minecraft/textures/block/detector_rail_on.png
-assets/minecraft/textures/block/detector_rail.png
-assets/minecraft/textures/block/tripwire_hook.png
-assets/minecraft/textures/item/chainmail_boots.png
-assets/minecraft/textures/item/chainmail_chestplate.png
-assets/minecraft/textures/item/chainmail_helmet.png
-assets/minecraft/textures/item/chainmail_leggings.png
-assets/minecraft/textures/item/iron_chestplate.png
-assets/minecraft/textures/item/iron_leggings.png
-assets/minecraft/textures/models/armor/chainmail_layer_1.png
-assets/minecraft/textures/models/armor/chainmail_layer_2.png
-assets/minecraft/textures/models/armor/iron_layer_1.png
-assets/minecraft/textures/models/armor/iron_layer_2.png
-data/minecraft/recipes/activator_rail.json
-data/minecraft/recipes/detector_rail.json
-data/minecraft/recipes/dispenser.json
-data/minecraft/recipes/stone_axe.json
-data/minecraft/recipes/stone_hoe.json
-data/minecraft/recipes/stone_pickaxe.json
-data/minecraft/recipes/stone_shovel.json
-data/minecraft/recipes/stone_sword.json
-data/minecraft/recipes/tripwire_hook.json
-data/minecraft/recipes/wooden_axe.json
-data/minecraft/recipes/wooden_hoe.json
-data/minecraft/recipes/wooden_pickaxe.json
-data/minecraft/recipes/wooden_shovel.json
-data/minecraft/recipes/wooden_sword.json
-data/minecraft/tags/blocks/needs_stone_tool.json
-data/minecraft/tags/items/stone_crafting_materials.json
-data/minecraft/tags/items/stone_tool_materials.json
-```
-
-====
-
-.https://github.com/DMBuce/bucepack/releases[All Releases & Changelogs]
-[%collapsible]
-====
-====
+//== Data Resource Packs
+//
+//These packs can be installed as a resource pack, a data pack, or both.
+//
+//Due to limitations in data/resource pack versioning,
+//these packs will display a false incompatibility warning
+//when installed as a datapack in the "Create New World" screen.
+//If you grabbed the correct version of the pack from the
+//https://github.com/DMBuce/bucepack/releases[Releases] page,
+//you can safely ignore this warning.
 
 == Challenge Data Packs
 
