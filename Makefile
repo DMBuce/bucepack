@@ -54,7 +54,7 @@ DATAPACKFILES = \
 	ender_relic.zip \
 	escape_grind.zip \
 	escape_nether.zip \
-	escape_the_end.zip \
+	escape_end.zip \
 	eyes_of_seeking.zip \
 	frienderchest.zip \
 	gardener_endermen.zip \
@@ -941,7 +941,7 @@ heads_player_FILES := $(DEFAULT_DATA_FILES) \
 	data/minecraft/loot_tables/entities/player.json \
 	data/buce/loot_tables/heads/ancients.json \
 
-escape_the_end_FILES := $(DEFAULT_DATA_FILES) \
+escape_end_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell find buce-data/escape/end -type f | ./bin/ext2dir) \
 
 escape_nether_FILES := $(DEFAULT_DATA_FILES) \
@@ -1756,7 +1756,7 @@ heads_player.zip: $(heads_player_FILES)
 	zip $@ pack.png pack.mcmeta $^
 	./bin/ziprename _$(@:.zip=) "" $@
 
-escape_the_end.zip: $(escape_the_end_FILES)
+escape_end.zip: $(escape_end_FILES)
 	cp meta/$(@:.zip=.png) pack.png
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^

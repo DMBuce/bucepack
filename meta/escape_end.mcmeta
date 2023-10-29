@@ -5,7 +5,7 @@
   },
   "root": {
     "title": "Escape the End",
-    "explanation": "Defeat the dragon to escape The End",
+    "explanation": "Obtain elytra and defeat the dragon to escape The End",
     "icon": {
       "item": "minecraft:end_stone"
     }

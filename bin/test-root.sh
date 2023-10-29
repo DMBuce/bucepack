@@ -20,7 +20,10 @@ for file in $packfiles; do
 		retval=1
 	fi
 
-	if ! grep -qx "data/buce/advancements/${pack//_/.}/root.json" "cache/$pack.files"; then
+	dir="$(jq -r .root.folder "meta/$pack.mcmeta")"
+	dir="${dir%/}"
+	[[ "$dir" == null ]] && dir="data/buce/advancements/${pack//_/.}"
+	if ! grep -qx "$dir/root.json" "cache/$pack.files"; then
 		echo "> $file: Missing file: data/buce/advancements/$pack/root.json"
 		retval=1
 	fi

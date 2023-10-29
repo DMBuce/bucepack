@@ -4,6 +4,7 @@
     "description": "Buce's Deep Gate Network: Activate deep gates in ancient cities."
   },
   "root": {
+    "folder": "data/buce/advancements/portal/deep",
     "title": "Deep Gate Network",
     "explanation": "Use a goat horn to activate deep gates in ancient cities",
     "icon": {

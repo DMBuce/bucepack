@@ -7,7 +7,7 @@
 			"text": "Wandering Loot"
 		},
 		"description": {
-			"text": "Trader llamas drop loot barrels"
+			"text": "Wandering traders have loot barrels"
 		},
 		"show_toast": false,
 		"announce_to_chat": false,

@@ -1587,7 +1587,7 @@ If both are installed, you will play minecraft in reverse,
 i.e. you will have to defeat The End to gain access to the Nether
 and then defeat the Nether to gain access to the overworld.
 
-{!./bin/packsummary escape_the_end}
+{!./bin/packsummary escape_end}
 
 === Escape the Grind
 

@@ -7,7 +7,7 @@
 			"text": "Nether Portal Network"
 		},
 		"description": {
-			"text": "Limits nether travel to ruined portals"
+			"text": "Nether travel is limited to ruined portals"
 		},
 		"show_toast": false,
 		"announce_to_chat": false,
