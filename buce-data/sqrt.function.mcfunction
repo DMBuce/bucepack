@@ -25,7 +25,7 @@ scoreboard players operation #buce.out var /= #2 var
 
 # base case: stop if abs(out - sqrt) < 1,
 # i.e. if out <= sqrt and out >= sqrt
-execute if score #buce.out var <= #buce.sqrt var if score #buce.out var >= #buce.sqrt var run return 0
+execute if score #buce.out var <= #buce.sqrt var if score #buce.out var >= #buce.sqrt var run return 1
 
 # update sqrt and recurse
 scoreboard players operation #buce.sqrt var = #buce.out var
