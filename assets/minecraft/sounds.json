@@ -1,8 +1,0 @@
-{
-  "particle.soul_escape": {
-    "replace": true,
-    "sounds": [
-    ],
-    "subtitle": "subtitles.particle.soul_escape"
-  }
-}

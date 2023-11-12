@@ -249,9 +249,9 @@ ravager_FILES := $(DEFAULT_RESOURCE_FILES) \
 	assets/minecraft/textures/entity/illager/ravager.png \
 
 duck_FILES := $(DEFAULT_RESOURCE_FILES) \
-	assets/minecraft/lang/en_us_duck.json \
+	$(wildcard assets/minecraft/lang/*_duck.json) \
+	$(wildcard assets/minecraft/sounds/mob/duck/*) \
 	assets/minecraft/sounds_duck.json \
-	assets/minecraft/sounds/mob/duck/* \
 	assets/minecraft/textures/entity/chicken.png \
 
 villager_mech_FILES := $(DEFAULT_RESOURCE_FILES) \
@@ -449,23 +449,6 @@ heirlooms_FILES := $(DEFAULT_DATA_FILES) \
 hover_mode_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell ls buce-data/hover_mode* | ./bin/ext2dir) \
 	data/minecraft/tags/blocks/climbable_hover_mode.json \
-
-path_strider_FILES := $(DEFAULT_DATA_FILES) \
-	$(wildcard assets/minecraft/lang/*_path_strider.json) \
-	assets/minecraft/sounds.json \
-	assets/minecraft/textures/particle/soul_0.png \
-	assets/minecraft/textures/particle/soul_10.png \
-	assets/minecraft/textures/particle/soul_1.png \
-	assets/minecraft/textures/particle/soul_2.png \
-	assets/minecraft/textures/particle/soul_3.png \
-	assets/minecraft/textures/particle/soul_4.png \
-	assets/minecraft/textures/particle/soul_5.png \
-	assets/minecraft/textures/particle/soul_6.png \
-	assets/minecraft/textures/particle/soul_7.png \
-	assets/minecraft/textures/particle/soul_8.png \
-	assets/minecraft/textures/particle/soul_9.png \
-	data/buce/advancements/path_strider.json \
-	data/minecraft/tags/blocks/soul_speed_blocks.json \
 
 waterproof_tech_FILES := $(DEFAULT_DATA_FILES) \
 	data/minecraft/tags/blocks/signs.json \
@@ -1374,12 +1357,6 @@ hover_mode.zip: $(hover_mode_FILES)
 	./bin/ziprename _$(@:.zip=) "" $@
 
 climbable.zip: $(climbable_FILES)
-	cp meta/$(@:.zip=.png) pack.png
-	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
-	zip $@ pack.png pack.mcmeta $^
-	./bin/ziprename _$(@:.zip=) "" $@
-
-path_strider.zip: $(path_strider_FILES)
 	cp meta/$(@:.zip=.png) pack.png
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^
