@@ -1,5 +1,6 @@
 {
   "entity.cat.ambient": {
+    "replace": false,
     "sounds": [
       {
         "name": "silence",
@@ -16,38 +17,6 @@
       {
         "name": "silence",
         "volume": 0.4
-      },
-      {
-        "name": "silence",
-        "volume": 0.5
-      },
-      {
-        "name": "silence",
-        "volume": 0.6
-      },
-      {
-        "name": "silence",
-        "volume": 0.7
-      },
-      {
-        "name": "silence",
-        "volume": 0.8
-      },
-      {
-        "name": "mob/cat/meow1",
-        "volume": 0.6
-      },
-      {
-        "name": "mob/cat/meow2",
-        "volume": 0.5
-      },
-      {
-        "name": "mob/cat/meow3",
-        "volume": 0.6
-      },
-      {
-        "name": "mob/cat/meow4",
-        "volume": 0.5
       }
     ],
     "subtitle": "subtitles.entity.cat.ambient"
