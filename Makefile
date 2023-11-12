@@ -25,6 +25,7 @@ RESOURCEPACKFILES = \
 	discreet_hrrm.zip \
 	discreet_meow.zip \
 	discreet_pumpkin.zip \
+	duck.zip \
 	note_guide.zip \
 	ore_types.zip \
 	painting_overhaul.zip \
@@ -246,6 +247,12 @@ tech_arrows_FILES := $(DEFAULT_RESOURCE_FILES) \
 
 ravager_FILES := $(DEFAULT_RESOURCE_FILES) \
 	assets/minecraft/textures/entity/illager/ravager.png \
+
+duck_FILES := $(DEFAULT_RESOURCE_FILES) \
+	assets/minecraft/lang/en_us_duck.json \
+	assets/minecraft/sounds_duck.json \
+	assets/minecraft/sounds/mob/duck/* \
+	assets/minecraft/textures/entity/chicken.png \
 
 villager_mech_FILES := $(DEFAULT_RESOURCE_FILES) \
 	assets/minecraft/textures/entity/iron_golem/iron_golem.png \
@@ -1187,6 +1194,12 @@ brew_guide_darkmode.zip: $(brew_guide_darkmode_FILES)
 	./bin/ziprename _$(@:.zip=) "" $@
 
 tech_arrows.zip: $(tech_arrows_FILES)
+	cp meta/$(@:.zip=.png) pack.png
+	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
+	zip $@ pack.png pack.mcmeta $^
+	./bin/ziprename _$(@:.zip=) "" $@
+
+duck.zip: $(duck_FILES)
 	cp meta/$(@:.zip=.png) pack.png
 	cp meta/$(@:.zip=.mcmeta) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^

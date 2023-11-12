@@ -1,0 +1,42 @@
+{
+  "entity.chicken.ambient": {
+    "replace": true,
+    "sounds": [
+      "mob/duck/say1",
+      "mob/duck/say2",
+      "mob/duck/say3",
+      "mob/duck/say4",
+      "mob/duck/say5",
+      "mob/duck/say6"
+    ],
+    "subtitle": "subtitles.entity.chicken.ambient"
+  },
+  "entity.chicken.death": {
+    "replace": true,
+    "sounds": [
+      "mob/duck/hurt1",
+      "mob/duck/hurt2"
+    ],
+    "subtitle": "subtitles.entity.chicken.death"
+  },
+  "entity.chicken.hurt": {
+    "replace": true,
+    "sounds": [
+      "mob/duck/hurt1",
+      "mob/duck/hurt2"
+    ],
+    "subtitle": "subtitles.entity.chicken.hurt"
+  },
+  "entity.chicken.step": {
+    "replace": true,
+    "sounds": [
+      "mob/duck/step1",
+      "mob/duck/step2",
+      "mob/duck/step3",
+      "mob/duck/step4",
+      "mob/duck/step5",
+      "mob/duck/step6"
+    ],
+    "subtitle": "subtitles.block.generic.footsteps"
+  }
+}

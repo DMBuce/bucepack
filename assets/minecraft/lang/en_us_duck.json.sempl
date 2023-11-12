@@ -1,0 +1,7 @@
+#!/usr/bin/env sempl
+SEMPL_BRACES = "{{}}"
+latest = "$(./bin/latest)"
+#!end sempl env
+{
+{{!sed -n '/Chicken/ {s/Chicken/Duck/g; s/cluck/quack/g; p}' 1.20.2.jar/assets/minecraft/lang/en_us.json | sed '$s/,$//'}}
+}

@@ -1,0 +1,10 @@
+{
+  "entity.minecraft.chicken": "Duck",
+  "item.minecraft.chicken": "Raw Duck",
+  "item.minecraft.chicken_spawn_egg": "Duck Spawn Egg",
+  "item.minecraft.cooked_chicken": "Cooked Duck",
+  "subtitles.entity.chicken.ambient": "Duck quacks",
+  "subtitles.entity.chicken.death": "Duck dies",
+  "subtitles.entity.chicken.egg": "Duck plops",
+  "subtitles.entity.chicken.hurt": "Duck hurts"
+}

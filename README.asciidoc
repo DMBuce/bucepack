@@ -302,6 +302,34 @@ assets/minecraft/textures/entity/illager/ravager.png
 ====
 ====
 
+=== Duck
+
+Reskins chickens as ducks using the Minecraft: Dungeons textures and sounds.
+
+image::https://i.imgur.com/PeUzSyW.png[Duck]
+
+Partial support is provided for renaming chickens to ducks.
+See <<language-support,Language Support>> for details.
+
+**Downloads**
+
+.https://github.com/DMBuce/bucepack/releases/latest/download/duck.zip[`duck.zip`]
+[%collapsible]
+====
+
+```
+assets/minecraft/lang/en_us.json
+assets/minecraft/sounds.json
+assets/minecraft/textures/entity/chicken.png
+```
+
+====
+
+.https://github.com/DMBuce/bucepack/releases[All Releases & Changelogs]
+[%collapsible]
+====
+====
+
 === Ore Types
 
 Mixes classic ore textures with the modern ones introduced in 1.17.
