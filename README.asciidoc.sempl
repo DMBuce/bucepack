@@ -145,16 +145,6 @@ saddling a pig gives it 4 armor defense points
 
 {!./bin/packsummary pig_armor}
 
-=== Redstone Ravager
-
-Reskins ravagers with a texture inspired by redstone golems
-and the redstone monstrosity from Minecraft: Dungeons.
-
-//image::https://i.imgur.com/bJEeUdc.png[Ravager]
-image::https://i.imgur.com/V7miGki.png[Ravager]
-
-{!./bin/packsummary ravager}
-
 === Duck
 
 Reskins chickens as ducks using the Minecraft: Dungeons textures and sounds.
@@ -165,6 +155,16 @@ Partial support is provided for renaming chickens to ducks.
 See <<language-support,Language Support>> for details.
 
 {!./bin/packsummary duck}
+
+=== Redstone Ravager
+
+Reskins ravagers with a texture inspired by the redstone golem
+and redstone monstrosity from Minecraft: Dungeons.
+
+//image::https://i.imgur.com/bJEeUdc.png[Ravager]
+image::https://i.imgur.com/V7miGki.png[Ravager]
+
+{!./bin/packsummary ravager}
 
 === Ore Types
 

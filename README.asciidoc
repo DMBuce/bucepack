@@ -279,32 +279,6 @@ assets/minecraft/textures/entity/pig/pig_saddle.png
 ====
 ====
 
-=== Redstone Ravager
-
-Reskins ravagers with a texture inspired by redstone golems
-and the redstone monstrosity from Minecraft: Dungeons.
-
-//image::https://i.imgur.com/bJEeUdc.png[Ravager]
-image::https://i.imgur.com/V7miGki.png[Ravager]
-
-**Downloads**
-
-.https://github.com/DMBuce/bucepack/releases/latest/download/ravager.zip[`ravager.zip`]
-[%collapsible]
-====
-
-```
-assets/minecraft/sounds.json
-assets/minecraft/textures/entity/illager/ravager.png
-```
-
-====
-
-.https://github.com/DMBuce/bucepack/releases[All Releases & Changelogs]
-[%collapsible]
-====
-====
-
 === Duck
 
 Reskins chickens as ducks using the Minecraft: Dungeons textures and sounds.
@@ -324,6 +298,32 @@ See <<language-support,Language Support>> for details.
 assets/minecraft/lang/en_us.json
 assets/minecraft/sounds.json
 assets/minecraft/textures/entity/chicken.png
+```
+
+====
+
+.https://github.com/DMBuce/bucepack/releases[All Releases & Changelogs]
+[%collapsible]
+====
+====
+
+=== Redstone Ravager
+
+Reskins ravagers with a texture inspired by the redstone golem
+and redstone monstrosity from Minecraft: Dungeons.
+
+//image::https://i.imgur.com/bJEeUdc.png[Ravager]
+image::https://i.imgur.com/V7miGki.png[Ravager]
+
+**Downloads**
+
+.https://github.com/DMBuce/bucepack/releases/latest/download/ravager.zip[`ravager.zip`]
+[%collapsible]
+====
+
+```
+assets/minecraft/sounds.json
+assets/minecraft/textures/entity/illager/ravager.png
 ```
 
 ====
