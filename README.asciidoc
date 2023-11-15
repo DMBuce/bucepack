@@ -294,6 +294,7 @@ image::https://i.imgur.com/V7miGki.png[Ravager]
 ====
 
 ```
+assets/minecraft/sounds.json
 assets/minecraft/textures/entity/illager/ravager.png
 ```
 

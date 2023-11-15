@@ -1,0 +1,86 @@
+{
+  "entity.ravager.ambient": {
+    "replace": true,
+    "sounds": [
+      "mob/ravager/idle1",
+      "mob/ravager/idle2",
+      "mob/ravager/idle3",
+      "mob/ravager/idle4",
+      "mob/ravager/idle5"
+    ],
+    "subtitle": "subtitles.entity.ravager.ambient"
+  },
+  "entity.ravager.attack": {
+    "replace": true,
+    "sounds": [
+      "mob/ravager/bite1",
+      "mob/ravager/bite2",
+      "mob/ravager/bite3"
+    ],
+    "subtitle": "subtitles.entity.ravager.attack"
+  },
+  "entity.ravager.celebrate": {
+    "replace": true,
+    "sounds": [
+      "mob/ravager/celebrate1",
+      "mob/ravager/celebrate2",
+      "mob/ravager/roar3"
+    ],
+    "subtitle": "subtitles.entity.ravager.celebrate"
+  },
+  "entity.ravager.death": {
+    "replace": true,
+    "sounds": [
+      "mob/ravager/death1",
+      "mob/ravager/death2",
+      "mob/ravager/death3"
+    ],
+    "subtitle": "subtitles.entity.ravager.death"
+  },
+  "entity.ravager.hurt": {
+    "replace": true,
+    "sounds": [
+      "mob/ravager/hurt1",
+      "mob/ravager/hurt2",
+      "mob/ravager/hurt3",
+      "mob/ravager/hurt4"
+    ],
+    "subtitle": "subtitles.entity.ravager.hurt"
+  },
+  "entity.ravager.roar": {
+    "replace": true,
+    "sounds": [
+      {
+        "attenuation_distance": 35,
+        "name": "mob/ravager/roar1"
+      },
+      {
+        "attenuation_distance": 35,
+        "name": "mob/ravager/roar2"
+      },
+      {
+        "attenuation_distance": 35,
+        "name": "mob/ravager/roar3"
+      }
+    ],
+    "subtitle": "subtitles.entity.ravager.roar"
+  },
+  "entity.ravager.step": {
+    "replace": true,
+    "sounds": [
+      "mob/ravager/step1",
+      "mob/ravager/step2",
+      "mob/ravager/step3",
+      "mob/ravager/step4",
+      "mob/ravager/step5"
+    ],
+    "subtitle": "subtitles.entity.ravager.step"
+  },
+  "entity.ravager.stunned": {
+    "replace": true,
+    "sounds": [
+      "mob/ravager/stun1"
+    ],
+    "subtitle": "subtitles.entity.ravager.stunned"
+  }
+}

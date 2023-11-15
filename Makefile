@@ -247,10 +247,12 @@ tech_arrows_FILES := $(DEFAULT_RESOURCE_FILES) \
 
 ravager_FILES := $(DEFAULT_RESOURCE_FILES) \
 	assets/minecraft/textures/entity/illager/ravager.png \
+	$(wildcard assets/minecraft/sounds/mob/ravager/*.ogg) \
+	assets/minecraft/sounds_ravager.json \
 
 duck_FILES := $(DEFAULT_RESOURCE_FILES) \
 	$(wildcard assets/minecraft/lang/*_duck.json) \
-	$(wildcard assets/minecraft/sounds/mob/duck/*) \
+	$(wildcard assets/minecraft/sounds/mob/duck/*.ogg) \
 	assets/minecraft/sounds_duck.json \
 	assets/minecraft/textures/entity/chicken.png \
 
