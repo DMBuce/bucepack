@@ -79,7 +79,7 @@ def blasting(r):
     for x in r['ingredient']:
         inputs = tr(x)
         count = r['result']['count'] if "count" in r['result'] else 1
-        output = tr({"item":r['result']['item']})
+        output = tr({"item":r['result']})
         outputs = f"{count} {output}".removeprefix("1 ")
         print(f"* blasting: {inputs} → {outputs}")
 

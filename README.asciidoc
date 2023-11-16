@@ -1151,8 +1151,8 @@ Makes some crafting recipes cheaper.
 * 3 iron nugget → chain
 * chest + 3 iron ingot → hopper
 * planks + 8 iron nugget → shield
-* blasting: tool → 3 nuggets
-* blasting: armor → 3 nuggets
+* blasting: tool → ingot
+* blasting: armor → ingot
 
 ====
 
@@ -2370,7 +2370,8 @@ Various vehicle changes.
 When a player in a minecart fuels a furnace cart,
 the furnace cart moves towards the player instead of away from them.
 
-Minecarts can be smelted into nuggets or blasted into ingots.
+Minecarts with a chest/furnace/hopper/etc. block in them can be smelted into a
+normal minecart.
 
 Minecarts with a chest/furnace/hopper/etc. block in them can be crafted into
 the block.

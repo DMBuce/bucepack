@@ -47,8 +47,5 @@
       "item": "minecraft:chainmail_boots"
     }
   ],
-  "result": {
-    "item": "minecraft:iron_nugget",
-    "count": 3
-  }
+  "result": "minecraft:iron_ingot"
 }

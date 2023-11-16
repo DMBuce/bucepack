@@ -5,9 +5,6 @@
   "experience": 0.1,
   "ingredient": [
     {
-      "item": "minecraft:minecart"
-    },
-    {
       "item": "minecraft:chest_minecart"
     },
     {
@@ -20,8 +17,5 @@
       "item": "minecraft:furnace_minecart"
     }
   ],
-  "result": {
-    "item": "minecraft:iron_nugget",
-    "count": 5
-  }
+  "result": "minecraft:minecart"
 }
