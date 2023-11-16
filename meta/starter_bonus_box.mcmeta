@@ -1,7 +1,7 @@
 {
   "pack": {
     "pack_format": 18,
-    "description": "Buce's Bonus Chest: Adds a shulker with bonus chest loot to your inventory"
+    "description": "Buce's Bonus Box: Adds a shulker with bonus chest loot to your inventory"
   },
   "root": {
     "title": "Starter Bonus Box",

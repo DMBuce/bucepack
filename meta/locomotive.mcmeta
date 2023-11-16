@@ -1,7 +1,7 @@
 {
   "pack": {
     "pack_format": 18,
-    "description": "Buce's Locomotive: Furnace carts move towards players in minecarts when powered"
+    "description": "Buce's Locomotive: Vehicle changes"
   },
   "root": {
     "title": "Locomotive",
