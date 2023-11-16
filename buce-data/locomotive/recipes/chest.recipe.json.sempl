@@ -4,12 +4,14 @@
   "type": "minecraft:crafting_shapeless",
   "category": "misc",
   "ingredients": [
-    {{\}
-      "item": "minecraft:{!./bin/allitems | grep 'chest_boat$'}"{\}
-    },
-    {
-      "item": "minecraft:chest_minecart"
-    }
+    [
+      {{\}
+        "item": "minecraft:{!./bin/allitems | grep -E 'chest_(boat|raft)$'}"{\}
+      },
+      {
+        "item": "minecraft:chest_minecart"
+      }
+    ]
   ],
   "result": {
     "item": "minecraft:chest"

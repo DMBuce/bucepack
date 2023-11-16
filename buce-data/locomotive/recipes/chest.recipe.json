@@ -2,33 +2,38 @@
   "type": "minecraft:crafting_shapeless",
   "category": "misc",
   "ingredients": [
-    {
-      "item": "minecraft:acacia_chest_boat"
-    },
-    {
-      "item": "minecraft:birch_chest_boat"
-    },
-    {
-      "item": "minecraft:cherry_chest_boat"
-    },
-    {
-      "item": "minecraft:dark_oak_chest_boat"
-    },
-    {
-      "item": "minecraft:jungle_chest_boat"
-    },
-    {
-      "item": "minecraft:mangrove_chest_boat"
-    },
-    {
-      "item": "minecraft:oak_chest_boat"
-    },
-    {
-      "item": "minecraft:spruce_chest_boat"
-    },
-    {
-      "item": "minecraft:chest_minecart"
-    }
+    [
+      {
+        "item": "minecraft:acacia_chest_boat"
+      },
+      {
+        "item": "minecraft:bamboo_chest_raft"
+      },
+      {
+        "item": "minecraft:birch_chest_boat"
+      },
+      {
+        "item": "minecraft:cherry_chest_boat"
+      },
+      {
+        "item": "minecraft:dark_oak_chest_boat"
+      },
+      {
+        "item": "minecraft:jungle_chest_boat"
+      },
+      {
+        "item": "minecraft:mangrove_chest_boat"
+      },
+      {
+        "item": "minecraft:oak_chest_boat"
+      },
+      {
+        "item": "minecraft:spruce_chest_boat"
+      },
+      {
+        "item": "minecraft:chest_minecart"
+      }
+    ]
   ],
   "result": {
     "item": "minecraft:chest"
