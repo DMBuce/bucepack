@@ -69,6 +69,23 @@ for t in "${logtypes[@]}"; do
 	EOF
 done
 
+# locomotive raft recipes
+num=5
+output="bamboo_planks"
+inputs="bamboo_raft bamboo_chest_raft"
+export num output inputs
+sempl - "buce-data/locomotive/recipes/${output}.recipe.json" <<-EOF
+	{
+	  "type": "minecraft:stonecutting",
+	  "ingredient": [
+	    { "item": "minecraft:{!printf "%s\\n" \$inputs | head -n-1}" },
+	    { "item": "minecraft:{!printf "%s\\n" \$inputs | tail -n1}" }
+	  ],
+	  "result": "minecraft:$output",
+	  "count": $num
+	}
+EOF
+
 # generate mushroom recipes
 for t in "${stemtypes[@]}"; do
 	cat <<-EOF | while read num output inputs
