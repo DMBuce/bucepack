@@ -1,20 +1,20 @@
 {
 	"display": {
 		"icon": {
-			"item": "minecraft:skeleton_skull"
+			"item": "minecraft:barrier"
 		},
 		"title": {
-			"text": "Death"
+			"text": "Error found, command to fix it:"
 		},
 		"description": {
-			"text": "Die"
+			"text": "/advancement revoke @s from buce:errors"
 		},
 		"show_toast": false,
 		"announce_to_chat": false,
 		"hidden": true,
 		"frame": "task"
 	},
-	"parent": "buce:global_effects/root",
+	"parent": "buce:errors",
 	"criteria": {
 		"die": {
 			"trigger": "minecraft:entity_hurt_player",
