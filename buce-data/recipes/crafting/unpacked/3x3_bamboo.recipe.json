@@ -4,6 +4,9 @@
   "ingredients": [
     {
       "item": "minecraft:bamboo_block"
+    },
+    {
+      "item": "minecraft:bamboo_block"
     }
   ],
   "result": {

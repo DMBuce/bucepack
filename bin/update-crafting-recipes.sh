@@ -76,6 +76,9 @@ done <<< '
 	misc     bamboo_block      bamboo
 '
 sed -i '/"count":/ s/9/18/' buce-data/recipes/crafting/unpacked/3x3_bamboo.recipe.json
+sed -i '/bamboo_block/ {
+	s/$/\n    },\n    {\n      "item": "minecraft:bamboo_block"/
+}' buce-data/recipes/crafting/unpacked/3x3_bamboo.recipe.json
 
 # generate 2x2 uncrafting recipes
 while read category input output; do
