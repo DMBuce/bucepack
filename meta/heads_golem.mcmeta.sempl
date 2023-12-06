@@ -1,0 +1,6 @@
+{
+  "pack": {
+    "pack_format": {!jq .pack_version.data "$(./bin/latest)".jar/version.json},
+    "description": "Buce's Golem Heads: Villagers give heroes golem heads"
+  }
+}

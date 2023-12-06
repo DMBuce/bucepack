@@ -1,1 +1,14 @@
-wandering_loot.mcmeta
+{
+  "pack": {
+    "pack_format": 26,
+    "description": "Buce's Wandering Loot: Trader llamas drop loot barrels."
+  },
+  "root": {
+    "folder": "data/buce/advancements/wandering",
+    "title": "Wandering Loot",
+    "explanation": "Wandering traders have loot barrels",
+    "icon": {
+      "item": "minecraft:barrel"
+    }
+  }
+}

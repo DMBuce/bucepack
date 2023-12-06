@@ -1,0 +1,13 @@
+{
+  "pack": {
+    "pack_format": {!jq .pack_version.data "$(./bin/latest)".jar/version.json},
+    "description": "Buce's Heirlooms: Items dropped on death don't despawn"
+  },
+  "root": {
+    "title": "Heirlooms",
+    "explanation": "Items dropped on death don't despawn",
+    "icon": {
+      "item": "minecraft:gold_ingot"
+    }
+  }
+}

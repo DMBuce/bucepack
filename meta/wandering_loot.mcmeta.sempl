@@ -1,0 +1,14 @@
+{
+  "pack": {
+    "pack_format": {!jq .pack_version.data "$(./bin/latest)".jar/version.json},
+    "description": "Buce's Wandering Loot: Trader llamas drop loot barrels."
+  },
+  "root": {
+    "folder": "data/buce/advancements/wandering",
+    "title": "Wandering Loot",
+    "explanation": "Wandering traders have loot barrels",
+    "icon": {
+      "item": "minecraft:barrel"
+    }
+  }
+}

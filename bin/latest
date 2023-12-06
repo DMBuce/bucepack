@@ -45,7 +45,7 @@ if stale cache/latest.txt; then
 	jq -r .latest.release cache/version_manifest.json > cache/latest.txt
 fi
 
-# update version info if necessary
+# update latest version info if necessary
 latest="$(<cache/latest.txt)"
 if stale "cache/$latest.json"; then
 	url="$(jq -r ".versions[]|select(.id==\"$latest\").url" cache/version_manifest.json)"
@@ -67,6 +67,22 @@ if [[ ! -d "$latest.jar" ]]; then
 	jar xf "../cache/$latest.jar" assets data version.json
 	rm */.mcassetsroot
 	cd -
+fi
+
+# update pack version info if necessary
+if stale cache/version-data.txt \
+	|| stale cache/version-resource.txt \
+	|| stale cache/version-supported.txt
+then
+	rver="$(jq .pack_version.data "$latest.jar/version.json")"
+	dver="$(jq .pack_version.resource "$latest.jar/version.json")"
+	echo "$rver" > cache/version-data.txt
+	echo "$dver" > cache/version-resource.txt
+	if (( rver < dver )); then
+		echo "[ $rver, $dver ]" > cache/version-supported.txt
+	else
+		echo "[ $dver, $rver ]" > cache/version-supported.txt
+	fi
 fi
 
 # update asset index if necessary

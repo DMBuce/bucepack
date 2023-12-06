@@ -1,0 +1,6 @@
+{
+  "pack": {
+    "pack_format": {!jq .pack_version.resource "$(./bin/latest)".jar/version.json},
+    "description": "Buce's Classic Lava: Makes lava less cheesy"
+  }
+}

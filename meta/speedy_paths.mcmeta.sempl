@@ -1,0 +1,13 @@
+{
+  "pack": {
+    "pack_format": {!jq .pack_version.data "$(./bin/latest)".jar/version.json},
+    "description": "Buce's Speedy Paths: Paths extend speed effects"
+  },
+  "root": {
+    "title": "Speedy Paths",
+    "explanation": "Path blocks extend Speed effects",
+    "icon": {
+      "item": "minecraft:dirt_path"
+    }
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "pack": {
+    "pack_format": {!jq .pack_version.data "$(./bin/latest)".jar/version.json},
+    "description": "Buce's Eyes of Seeking: Locate more structures with ender eyes."
+  }
+}

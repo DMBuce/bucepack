@@ -1,0 +1,13 @@
+{
+  "pack": {
+    "pack_format": {!jq .pack_version.data "$(./bin/latest)".jar/version.json},
+    "description": "Buce's Global Effects: Playable gamerules"
+  },
+  "root": {
+    "title": "Global Effects",
+    "explanation": "Playable gamerules",
+    "icon": {
+      "item": "minecraft:beacon"
+    }
+  }
+}

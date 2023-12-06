@@ -1,0 +1,15 @@
+{
+  "pack": {
+    "pack_format": {!jq .pack_version.data "$(./bin/latest)".jar/version.json},
+    "description": "Buce's Mythic Relics: Adds mythic relics"
+  },
+  "root": {
+    "folder": "data/buce/advancements/mythic",
+    "title": "Mythic Relics",
+    "explanation": "Adds mythic relics to the game",
+    "icon": {
+      "item": "minecraft:diamond_sword",
+      "nbt": "{Enchantments:[{id:unbreaking,lvl:3}]}"
+    }
+  }
+}

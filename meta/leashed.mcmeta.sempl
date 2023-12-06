@@ -1,0 +1,13 @@
+{
+  "pack": {
+    "pack_format": {!jq .pack_version.data "$(./bin/latest)".jar/version.json},
+    "description": "Buce's Leashed: Leash mobs together"
+  },
+  "root": {
+    "title": "Leashed",
+    "explanation": "Leash mobs to allays, golems, donkeys, and mules",
+    "icon": {
+      "item": "minecraft:lead"
+    }
+  }
+}

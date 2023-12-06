@@ -1,0 +1,10 @@
+#!/usr/bin/env sempl
+latest = "$(./bin/latest)"
+#!end sempl env
+{
+  "pack": {
+    "pack_format": {./cache/version-data.txt},
+    "supported_formats": {./cache/version-supported.txt},
+    "description": "Buce's Turtle Boxes: Craft shulker boxes from turtle shells"
+  }
+}

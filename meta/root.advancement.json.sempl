@@ -5,13 +5,13 @@ meta = "meta/$pack.mcmeta"
 {
 	"display": {
 		"icon": {
-			{!jq .root.icon "$meta" | sed '1d;$d;s/^ *//'}
+			{!sempl "$meta.sempl" | jq .root.icon | sed '1d;$d;s/^ *//'}
 		},
 		"title": {
-			"text": {!jq .root.title "$meta"}
+			"text": {!sempl "$meta.sempl" | jq .root.title}
 		},
 		"description": {
-			"text": {!jq .root.explanation "$meta"}
+			"text": {!sempl "$meta.sempl" | jq .root.explanation}
 		},
 		"show_toast": false,
 		"announce_to_chat": false,

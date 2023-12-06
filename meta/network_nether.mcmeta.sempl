@@ -1,0 +1,14 @@
+{
+  "pack": {
+    "pack_format": {!jq .pack_version.data "$(./bin/latest)".jar/version.json},
+    "description": "Buce's Nether Portal Network: Limits nether travel to ruined portals"
+  },
+  "root": {
+    "folder": "data/buce/advancements/portal/nether",
+    "title": "Nether Portal Network",
+    "explanation": "Nether travel is limited to ruined portals",
+    "icon": {
+      "item": "minecraft:fire_charge"
+    }
+  }
+}

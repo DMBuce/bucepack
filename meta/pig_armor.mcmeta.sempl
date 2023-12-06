@@ -1,0 +1,17 @@
+#!/usr/bin/env sempl
+latest = "$(./bin/latest)"
+#!end sempl env
+{
+  "pack": {
+    "pack_format": {./cache/version-resource.txt},
+    "supported_formats": {./cache/version-supported.txt},
+    "description": "Buce's Pig Armor: Adds iron armor to saddled pigs"
+  },
+  "root": {
+    "title": "Pig Armor",
+    "explanation": "Pigs with saddles have armor",
+    "icon": {
+      "item": "minecraft:saddle"
+    }
+  }
+}

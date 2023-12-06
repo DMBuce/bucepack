@@ -1,1 +1,14 @@
-relics_deep.mcmeta
+{
+  "pack": {
+    "pack_format": 26,
+    "description": "Buce's Deep Relics: Adds mythic devices to ancient city loot"
+  },
+  "root": {
+    "folder": "data/buce/advancements/deep",
+    "title": "Deep Relics",
+    "explanation": "Adds mythic devices to ancient city loot",
+    "icon": {
+      "item": "minecraft:echo_shard"
+    }
+  }
+}

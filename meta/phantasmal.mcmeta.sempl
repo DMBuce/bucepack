@@ -1,0 +1,13 @@
+{
+  "pack": {
+    "pack_format": {!jq .pack_version.data "$(./bin/latest)".jar/version.json},
+    "description": "Buce's Phantasmal: More phantasmal phantoms"
+  },
+  "root": {
+    "title": "Phantasmal",
+    "explanation": "Phantoms have fading and are a source of invisible item frames",
+    "icon": {
+      "item": "minecraft:phantom_membrane"
+    }
+  }
+}

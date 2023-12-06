@@ -1,0 +1,6 @@
+{
+  "pack": {
+    "pack_format": {!jq .pack_version.data "$(./bin/latest)".jar/version.json},
+    "description": "Buce's Starter Spyglass: Adds spyglass to curated bonus chest."
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "pack": {
+    "pack_format": {!jq .pack_version.data "$(./bin/latest)".jar/version.json},
+    "description": "Buce's Locomotive: Vehicle changes"
+  },
+  "root": {
+    "title": "Locomotive",
+    "explanation": "Furnace carts move towards players in minecarts when fueled",
+    "icon": {
+      "item": "minecraft:furnace_minecart"
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "pack": {
+    "pack_format": {!jq .pack_version.data "$(./bin/latest)".jar/version.json},
+    "description": "Buce's Escape the End: Defeat the End to get to the overworld"
+  },
+  "root": {
+    "title": "Escape the End",
+    "explanation": "Obtain elytra and defeat the dragon to escape The End",
+    "icon": {
+      "item": "minecraft:end_stone"
+    }
+  }
+}

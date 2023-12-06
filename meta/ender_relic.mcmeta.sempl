@@ -1,0 +1,13 @@
+{
+  "pack": {
+    "pack_format": {!jq .pack_version.data "$(./bin/latest)".jar/version.json},
+    "description": "Buce's Ender Relic: Adds a relic to your ender chest."
+  },
+  "root": {
+    "title": "Ender Relic",
+    "explanation": "Adds a relic to your ender chest",
+    "icon": {
+      "item": "minecraft:ender_chest"
+    }
+  }
+}

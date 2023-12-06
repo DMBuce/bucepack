@@ -1,0 +1,13 @@
+{
+  "pack": {
+    "pack_format": {!jq .pack_version.data "$(./bin/latest)".jar/version.json},
+    "description": "Buce's Escape the Nether: Summon the Wither to get to the overworld"
+  },
+  "root": {
+    "title": "Escape the Nether",
+    "explanation": "Summon the Wither to escape the nether",
+    "icon": {
+      "item": "minecraft:netherrack"
+    }
+  }
+}

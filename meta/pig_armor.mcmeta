@@ -1,6 +1,7 @@
 {
   "pack": {
-    "pack_format": 18,
+    "pack_format": 22,
+    "supported_formats": [ 22, 26 ],
     "description": "Buce's Pig Armor: Adds iron armor to saddled pigs"
   },
   "root": {

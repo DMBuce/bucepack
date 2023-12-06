@@ -1,0 +1,13 @@
+{
+  "pack": {
+    "pack_format": {!jq .pack_version.data "$(./bin/latest)".jar/version.json},
+    "description": "Buce's Phantasmal End: Phantoms in the dragon fight"
+  },
+  "root": {
+    "title": "Phantasmal End",
+    "explanation": "Summoned dragons have phantom allies",
+    "icon": {
+      "item": "minecraft:elytra"
+    }
+  }
+}

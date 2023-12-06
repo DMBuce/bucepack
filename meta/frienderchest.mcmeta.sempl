@@ -1,0 +1,13 @@
+{
+  "pack": {
+    "pack_format": {!jq .pack_version.data "$(./bin/latest)".jar/version.json},
+    "description": "Buce's Frienderchest: Enderchest pocket dimension"
+  },
+  "root": {
+    "title": "Frienderchest",
+    "explanation": "Enter an ender chest by right clicking it with an ender pearl",
+    "icon": {
+      "item": "minecraft:ender_pearl"
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "pack": {
+    "pack_format": {!jq .pack_version.data "$(./bin/latest)".jar/version.json},
+    "description": "Buce's Antidote: Food negates potion effects"
+  },
+  "root": {
+    "title": "Antidote",
+    "explanation": "Food negates potion effects",
+    "icon": {
+      "item": "minecraft:milk_bucket"
+    }
+  }
+}

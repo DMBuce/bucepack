@@ -1,0 +1,13 @@
+{
+  "pack": {
+    "pack_format": {!jq .pack_version.data "$(./bin/latest)".jar/version.json},
+    "description": "Buce's Debugless: Immersive coordinates"
+  },
+  "root": {
+    "title": "Debugless",
+    "explanation": "Maps and compasses in the offhand show your coordinates",
+    "icon": {
+      "item": "minecraft:cartography_table"
+    }
+  }
+}
