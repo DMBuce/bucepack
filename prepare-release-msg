@@ -4,8 +4,8 @@ file="$1"
 oldver="$2"
 version="$3"
 
-if [[ $version != "$(<latest.txt)"* ]]; then
-	version="$(<latest.txt)-1"
+if [[ $version != "$(<cache/latest.txt)"* ]]; then
+	version="$(<cache/latest.txt)-1"
 fi
 
 sempl > "$file.new" <<-EOF

@@ -1119,7 +1119,7 @@ mccurly: $(MCCURLY_TARGETS)
 
 # rebuild all templates when latest.txt updates
 TEMPLATES = $(shell find * -name \*.sempl)
-$(TEMPLATES:.sempl=): latest.txt
+$(TEMPLATES:.sempl=): cache/latest.txt
 
 %.yaml: %.yaml.sempl
 	sempl $< $@

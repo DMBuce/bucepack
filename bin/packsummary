@@ -1,6 +1,6 @@
 #!/bin/bash
 
-latest="$(<latest.txt)"
+latest="$(<cache/latest.txt)"
 
 echo "**Downloads**"
 for pack in "$@"; do

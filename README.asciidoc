@@ -1330,7 +1330,7 @@ storage.
 * red sandstone → 4 red sand
 * sandstone → 4 sand
 * snow block → 4 snowball
-* bamboo block → 18 bamboo
+* 2 bamboo block → 18 bamboo
 * packed ice → 9 ice
 * melon → 9 melon slice
 * blue ice → 9 packed ice
@@ -1534,7 +1534,6 @@ data/minecraft/loot_tables/blocks/cobweb.json
 data/minecraft/loot_tables/blocks/dead_bush.json
 data/minecraft/loot_tables/blocks/fern.json
 data/minecraft/loot_tables/blocks/glow_lichen.json
-data/minecraft/loot_tables/blocks/grass.json
 data/minecraft/loot_tables/blocks/hanging_roots.json
 data/minecraft/loot_tables/blocks/large_fern.json
 data/minecraft/loot_tables/blocks/nether_sprouts.json

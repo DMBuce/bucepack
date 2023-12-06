@@ -1,45 +1,91 @@
-#!/bin/bash
+#!/bin/bash -e
 
-# get latest minecraft version if latest.txt is over a day old
-if [[ ! -f latest.txt ]] || find latest.txt -mtime +1 | grep -q .; then
-	curl -s 'https://launchermeta.mojang.com/mc/game/version_manifest.json' \
-	| jq -r .latest.release \
-	> latest.txt
+# rough sketch of downloaded metadata and assets:
+#
+# - .../version_manifest.json                       -> cache/version_manifest.json
+#   - .latest.release:            $version          -> cache/latest.txt
+#   - .versions[id==$latest].url: .../$version.json -> cache/$version.json
+#     - .downloads.client.url:    .../client.jar    -> cache/$version.jar
+#     - .assetIndex.url:          .../[0-9].json    -> $version.jar/index.json
+#       - .objects."minecraft/sounds.json".hash: $soundhash -> $version.jar/assets/minecraft/sounds.json
+#
+# each level of indentation represents a new file found using json data
+# in the previous one
+#
+# ".../" represents a piston-meta or piston-data url:
+# https://gist.github.com/skyrising/95a8e6a7287634e097ecafa2f21c240f
+#
+#
+#
+# filesystem layout:
+#
+# .   ...................................... git root
+# ├── cache/   ............................. folder used by build system scripts
+# │   ├── version_manifest.json   .......... info about all versions
+# │   ├── latest.txt   ..................... stores version of latest release
+# │   ├── $version.jar   ................... client jar
+# │   └── $version.json   .................. version download info
+# └── $version.jar/   ...................... assets unpacked from vanilla jar
+#     ├── index.json   ..................... asset index
+#     └── assets/minecraft/sounds.json   ... sounds.json
+
+# check if a file does not exist or is over a day old
+stale() {
+	[[ ! -f "$1" ]] || find "$1" -mtime +1 | grep -q .
+}
+
+# update version manifest if necessary
+mkdir -p cache
+if stale cache/version_manifest.json; then
+	curl -s -o cache/version_manifest.json 'https://piston-meta.mojang.com/mc/game/version_manifest.json'
+fi
+
+# update latest version if necessary
+if stale cache/latest.txt; then
+	jq -r .latest.release cache/version_manifest.json > cache/latest.txt
+fi
+
+# update version info if necessary
+latest="$(<cache/latest.txt)"
+if stale "cache/$latest.json"; then
+	url="$(jq -r ".versions[]|select(.id==\"$latest\").url" cache/version_manifest.json)"
+	curl -s -o "cache/$latest.json" "$url"
+fi
+
+# update jar if necessary
+if stale "cache/$latest.jar"; then
+	jarurl="$(jq -r '.downloads.client.url' "cache/$latest.json")"
+	curl -s -o "cache/$latest.jar" "$jarurl"
 fi
 
 # create folder with jar contents if necessary
-latest="$(<latest.txt)"
-if [[ ! -f ~/".minecraft/versions/$latest/$latest.jar" ]]; then
-	echo "File not found: ~/.minecraft/versions/$latest/$latest.jar" >&2
-	exit 1
-elif [[ ! -d "$latest.jar" ]]; then
-	mkdir "$latest.jar"
+if [[ ! -d "$latest.jar" ]]; then
+	mkdir -p "$latest.jar"
 	cd "$latest.jar"
-	jar xf ~/".minecraft/versions/$latest/$latest.jar" assets data version.json
+
+	# unpack jar
+	jar xf "../cache/$latest.jar" assets data version.json
 	rm */.mcassetsroot
 	cd -
 fi
 
-# copy sounds.json
-if [[ -f ~/.minecraft/assets/indexes/${latest%.*}.json && ! -f "$latest.jar/assets/minecraft/sounds.json" ]]; then
-	soundhash="$(jq -r '.objects."minecraft/sounds.json".hash' ~/.minecraft/assets/indexes/${latest%.*}.json)"
-	cp -v ~/".minecraft/assets/objects/${soundhash:0:2}/$soundhash" "$latest.jar/assets/minecraft/sounds.json" >&2
-elif [[ ! -f "$latest.jar/assets/minecraft/sounds.json" ]]; then
-	curl -s -o cache/version_manifest.json 'https://launchermeta.mojang.com/mc/game/version_manifest.json'
-	url="$(jq -r '.versions[]|select(.id=="1.20.1").url' cache/version_manifest.json)"
+# update asset index if necessary
+if stale "$latest.jar/index.json"; then
+	idxurl="$(jq -r '.assetIndex.url' "cache/$latest.json")"
+	curl -s -o "$latest.jar/index.json" "$idxurl"
+fi
 
-	idxurl="$(curl -s "$url" | jq -r '.assetIndex.url')"
-	curl -s -o "$latest.jar/$latest.json" "$idxurl"
-
-	soundhash="$(jq -r '.objects."minecraft/sounds.json".hash' "$latest.jar/$latest.json")"
-	cp -v ~/".minecraft/assets/objects/${soundhash:0:2}/$soundhash" "$latest.jar/assets/minecraft/sounds.json" >&2
+# update sounds.json if necessary
+# https://wiki.vg/Game_files#Assets
+if stale "$latest.jar/assets/minecraft/sounds.json"; then
+	soundhash="$(jq -r '.objects."minecraft/sounds.json".hash' "$latest.jar/index.json")"
+	curl -s -o "$latest.jar/assets/minecraft/sounds.json" "https://resources.download.minecraft.net/${soundhash:0:2}/$soundhash"
 fi
 
 # copy missing data files from mcmeta repo
 cd ../mcmeta
 branch="$(git branch --show-current)"
 if [[ $branch != $latest-data ]]; then
-	#git pull --tags
 	git fetch --tags
 	git checkout -b "$latest-data" "$latest-data"
 	cd -
