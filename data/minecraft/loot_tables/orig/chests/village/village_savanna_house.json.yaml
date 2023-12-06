@@ -2,7 +2,7 @@ pools:
   - rolls: { min: 3, max: 8 }
     entries:
       - { type: item, weight: 1,  min: 1, max: 3, item: gold_nugget }
-      - { type: item, weight: 5,                  item: grass }
+      - { type: item, weight: 5,                  item: short_grass }
       - { type: item, weight: 5,                  item: tall_grass }
       - { type: item, weight: 10, min: 1, max: 4, item: bread }
       - { type: item, weight: 10, min: 1, max: 5, item: wheat_seeds }

@@ -98,7 +98,7 @@
                   "function": "minecraft:set_count"
                 }
               ],
-              "name": "minecraft:grass"
+              "name": "minecraft:short_grass"
             },
             {
               "type": "minecraft:item",
@@ -251,7 +251,7 @@
                   "function": "minecraft:set_count"
                 }
               ],
-              "name": "minecraft:grass"
+              "name": "minecraft:short_grass"
             },
             {
               "type": "minecraft:item",
