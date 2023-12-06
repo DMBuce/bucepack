@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": [
+    { "item": "minecraft:exposed_copper_door" }
+  ],
+  "result": "minecraft:exposed_copper_trapdoor",
+  "count": 1
+}

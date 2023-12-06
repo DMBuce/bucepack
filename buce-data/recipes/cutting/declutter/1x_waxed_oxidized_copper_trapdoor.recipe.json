@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": [
+    { "item": "minecraft:waxed_oxidized_copper_door" }
+  ],
+  "result": "minecraft:waxed_oxidized_copper_trapdoor",
+  "count": 1
+}
