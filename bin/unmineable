@@ -1,6 +1,6 @@
 #!/bin/bash
 
-latest="$(./bin/latest)"
+latest="$(./bin/latest)" || exit
 
 # list any blocks that aren't in a mineable tag
 ./bin/tags {,"$latest.jar"/}data/minecraft/tags/blocks/mineable/*.json data/minecraft/tags/blocks/sword_efficient.json | sort -u \

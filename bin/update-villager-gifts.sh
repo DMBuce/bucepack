@@ -5,7 +5,7 @@ gitroot="$(git rev-parse --show-toplevel)" || exit
 cd "$gitroot"
 
 # define some data
-latest="$(./bin/latest)"
+latest="$(./bin/latest)" || exit
 export SEMPL_BRACES='{{}}'
 
 ls "$latest.jar/data/minecraft/loot_tables/gameplay/hero_of_the_village/" \

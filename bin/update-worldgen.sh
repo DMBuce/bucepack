@@ -5,7 +5,7 @@ gitroot="$(git rev-parse --show-toplevel)" || exit
 cd "$gitroot"
 
 # define some data
-latest="$(./bin/latest)"
+latest="$(./bin/latest)" || exit
 dir="$gitroot/buce-data/recipes/crafting"
 featuredir="data/minecraft/worldgen/configured_feature"
 logtypes=(

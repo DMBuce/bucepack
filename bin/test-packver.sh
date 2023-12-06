@@ -1,6 +1,6 @@
 #!/bin/bash
 
-latest="$(./bin/latest)"
+latest="$(./bin/latest)" || exit
 retval=0
 RESOURCEPACKFILES="${RESOURCEPACKFILES-$(make rlist)}"
 DATAPACKFILES="${DATAPACKFILES-$(make dlist)}"

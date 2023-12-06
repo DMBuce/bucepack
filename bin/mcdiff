@@ -6,7 +6,7 @@ cd "$gitroot"
 
 # parse args
 file="$1"
-latest="$(./bin/latest)"
+latest="$(./bin/latest)" || exit
 
 # validate args
 if [[ ! -f "$latest.jar/$file" ]]; then

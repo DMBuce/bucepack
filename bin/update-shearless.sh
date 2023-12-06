@@ -4,7 +4,7 @@
 gitroot="$(git rev-parse --show-toplevel)" || exit
 cd "$gitroot"
 
-latest="$(./bin/latest)"
+latest="$(./bin/latest)" || exit
 hoes=( $(./bin/allitems | grep '_hoe$') )
 
 # build list of shear/hoe items
