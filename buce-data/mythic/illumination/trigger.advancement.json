@@ -22,7 +22,7 @@
 				"damage": {
 					"direct_entity": {
 						"type": "minecraft:trident",
-						"nbt": "{Trident:{tag:{illumination:1b}}}"
+						"nbt": "{item:{tag:{illumination:1b}}}"
 					}
 				}
 			}

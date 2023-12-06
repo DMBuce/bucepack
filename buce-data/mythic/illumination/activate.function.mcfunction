@@ -7,5 +7,5 @@ advancement revoke @s only buce:mythic/illumination/trigger
 #say zap
 
 # summon light at the trident
-execute as @e[type=trident,distance=..128,nbt={Trident:{tag:{illumination:1b}}},limit=1] at @s if block ~ ~ ~ #buce:mythic/illumination/light_replaceable run setblock ~ ~ ~ light
+execute as @e[type=trident,distance=..128,nbt={item:{tag:{illumination:1b}}},limit=1] at @s if block ~ ~ ~ #buce:mythic/illumination/light_replaceable run setblock ~ ~ ~ light
 
