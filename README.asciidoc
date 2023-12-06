@@ -1538,6 +1538,7 @@ data/minecraft/loot_tables/blocks/hanging_roots.json
 data/minecraft/loot_tables/blocks/large_fern.json
 data/minecraft/loot_tables/blocks/nether_sprouts.json
 data/minecraft/loot_tables/blocks/seagrass.json
+data/minecraft/loot_tables/blocks/short_grass.json
 data/minecraft/loot_tables/blocks/small_dripleaf.json
 data/minecraft/loot_tables/blocks/tall_grass.json
 data/minecraft/loot_tables/blocks/tall_seagrass.json
@@ -3996,7 +3997,7 @@ Relics are added by the following datapacks:
 TO DO AFTER MINECRAFT UPDATES
 =============================
 
-Run `make update`
+Run `make update` and `make clean` and `make install`
 Check and resolve automatic changes with `git status && git diff`
 Merge loot table changes with Loot Overhaul
 For major version updates,
