@@ -1847,7 +1847,7 @@ update:
 
 .PHONY: release
 release: $(PACKFILES)
-	git release $^
+	git release --new-ver=`./bin/newver` $^
 
 .PHONY: clean
 CLEAN_TARGETS := $(PACKFILES) data/buce pack.mcmeta pack.png test.zip \
