@@ -292,19 +292,21 @@ https://minecraft.wiki/w/Tag[tags]
 in the vanilla game.
 They shouldn't add any lag to your game.
 
-=== Enchanting
+=== Archived
 
-Makes more blocks work with the enchantment table.
-Chiseled bookshelves power the enchantment table,
-and
-https://raw.githubusercontent.com/DMBuce/bucepack/master/data/minecraft/tags/blocks/enchantment_power_transmitter.json[these blocks]
+Enhances chiseled bookshelves.
+
+Paper, maps and banner patterns can be placed in chiseled bookshelves.
+
+Chiseled bookshelves can power the enchanting table
+and are crafted with leather instead of slabs.
+
+https://raw.githubusercontent.com/DMBuce/bucepack/master/data/minecraft/tags/blocks/enchantment_power_transmitter.json[These blocks]
 don't block bookshelves from powering the enchantment table.
 
 image::https://i.imgur.com/w9MQeFL.png[Enchanting]
 
-In addition, chiseled bookshelves are crafted with leather instead of planks.
-
-{!./bin/packsummary enchanting}
+{!./bin/packsummary archived}
 
 === Mineable
 

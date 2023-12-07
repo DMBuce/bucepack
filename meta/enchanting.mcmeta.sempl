@@ -1,6 +1,0 @@
-{
-  "pack": {
-    "pack_format": {!jq .pack_version.data "$(./bin/latest)".jar/version.json},
-    "description": "Buce's Enchanting: More flexible enchantment tables"
-  }
-}

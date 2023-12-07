@@ -51,7 +51,7 @@ DATAPACKFILES = \
 	debugless.zip \
 	dragonproof.zip \
 	dripblock.zip \
-	enchanting.zip \
+	archived.zip \
 	ender_relic.zip \
 	escape_grind.zip \
 	escape_nether.zip \
@@ -733,10 +733,11 @@ dripblock_FILES := $(DEFAULT_DATA_FILES) \
 	data/minecraft/tags/functions/load_dripblock.json \
 	data/minecraft/worldgen/noise_settings/overworld_dripblock.json \
 
-enchanting_FILES := $(DEFAULT_DATA_FILES) \
+archived_FILES := $(DEFAULT_DATA_FILES) \
+	data/minecraft/recipes/chiseled_bookshelf.json \
 	data/minecraft/tags/blocks/enchantment_power_provider.json \
 	data/minecraft/tags/blocks/enchantment_power_transmitter.json \
-	data/minecraft/recipes/chiseled_bookshelf.json \
+	data/minecraft/tags/items/bookshelf_books.json \
 
 ender_relic_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell find buce-data/ender_relic -type f | ./bin/ext2dir) \
@@ -1599,7 +1600,7 @@ mineable.zip: $(mineable_FILES)
 	zip $@ pack.png pack.mcmeta $^
 	./bin/ziprename _$(@:.zip=) "" $@
 
-enchanting.zip: $(enchanting_FILES)
+archived.zip: $(archived_FILES)
 	cp meta/$(@:.zip=.png) pack.png
 	sempl meta/$(@:.zip=.mcmeta.sempl) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^
