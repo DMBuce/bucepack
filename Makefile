@@ -467,6 +467,7 @@ antidote_FILES := $(DEFAULT_DATA_FILES) \
 
 acclimated_FILES := $(DEFAULT_DATA_FILES) \
 	data/minecraft/tags/blocks/strider_warm_blocks.json \
+	data/minecraft/tags/entity_types/can_breathe_under_water.json \
 	data/minecraft/tags/entity_types/dismounts_underwater.json \
 	data/minecraft/tags/entity_types/fall_damage_immune.json \
 	data/minecraft/tags/entity_types/powder_snow_walkable_mobs.json \

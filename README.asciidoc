@@ -884,9 +884,11 @@ data/minecraft/tags/worldgen/structure/eye_of_ender_located.json
 
 === Acclimated
 
-Makes certain mobs more resilient to certain hazards.
+Makes some mobs more resilient to certain hazards.
 
 Rabbits don't take fall damage.
+
+Dolphins don't drown.
 
 Mobs don't dismount their riders when underwater.
 
@@ -3126,13 +3128,6 @@ due to https://bugs.mojang.com/browse/MC-138887[MC-138887].
 //== Data Resource Packs
 //
 //These packs can be installed as a resource pack, a data pack, or both.
-//
-//Due to limitations in data/resource pack versioning,
-//these packs will display a false incompatibility warning
-//when installed as a datapack in the "Create New World" screen.
-//If you grabbed the correct version of the pack from the
-//https://github.com/DMBuce/bucepack/releases[Releases] page,
-//you can safely ignore this warning.
 
 == Challenge Data Packs
 
