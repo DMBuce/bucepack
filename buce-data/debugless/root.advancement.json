@@ -7,7 +7,7 @@
 			"text": "Debugless"
 		},
 		"description": {
-			"text": "Maps and compasses in the offhand show your coordinates"
+			"text": "Measure distance with a lodestone compass or recovery compass in the offhand"
 		},
 		"show_toast": false,
 		"announce_to_chat": false,

@@ -1,0 +1,10 @@
+#!/bin/bash
+
+version="$(git release --new-ver=print 2>/dev/null)"
+
+if [[ $version != "$(<cache/latest.txt)"* ]]; then
+	version="$(<cache/latest.txt)-1"
+fi
+
+echo $version
+
