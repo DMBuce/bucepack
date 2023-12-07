@@ -1,11 +1,11 @@
 {
   "pack": {
     "pack_format": {!jq .pack_version.data "$(./bin/latest)".jar/version.json},
-    "description": "Buce's Debugless: Immersive coordinates"
+    "description": "Buce's Debugless: Reduced debug info"
   },
   "root": {
     "title": "Debugless",
-    "explanation": "Maps and compasses in the offhand show your coordinates",
+    "explanation": "Measure distance with a lodestone compass or recovery compass in the offhand",
     "icon": {
       "item": "minecraft:cartography_table"
     }
