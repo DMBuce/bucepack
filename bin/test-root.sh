@@ -20,7 +20,7 @@ for file in $packfiles; do
 		retval=1
 	fi
 
-	dir="$(jq -r .root.folder "meta/$pack.mcmeta")"
+	dir="$(sempl "meta/$pack.mcmeta.sempl" | jq -r .root.folder)"
 	dir="${dir%/}"
 	[[ "$dir" == null ]] && dir="data/buce/advancements/${pack//_/.}"
 	if ! grep -qx "$dir/root.json" "cache/$pack.files"; then
