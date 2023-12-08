@@ -29,9 +29,15 @@
 #     ├── index.json   ..................... asset index
 #     └── assets/minecraft/sounds.json   ... sounds.json
 
+# parse args
+force=0
+if [[ "$*" == '-f' ]]; then
+	force=1
+fi
+
 # check if a file does not exist or is over a day old
 stale() {
-	[[ ! -f "$1" ]] || find "$1" -mtime +1 | grep -q .
+	[[ $force != 0 || ! -f "$1" ]] || find "$1" -mtime +1 | grep -q .
 }
 
 # update version manifest if necessary
@@ -102,7 +108,7 @@ fi
 cd ../mcmeta
 branch="$(git branch --show-current)"
 if [[ $branch != $latest-data ]]; then
-	git fetch --tags
+	git fetch --tags --force
 	git checkout -b "$latest-data" "$latest-data"
 	cd -
 	rsync -a ../mcmeta/data/minecraft/dimension/ "$latest.jar/data/minecraft/dimension/"
