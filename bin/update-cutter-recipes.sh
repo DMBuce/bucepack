@@ -322,4 +322,22 @@ do
 		EOF
 	done
 done
+num=1
+output=stick
+export inputs="bamboo ${logtypes[*]} ${stemtypes[*]}"
+inputs="$(./bin/allitems \
+	| grep -E '_(slab|stairs|fence|fence_gate|wall|button|pressure_plate|door|trapdoor|sign)$' \
+	| grep -e$(echo bamboo "${logtypes[@]}" "${stemtypes[@]}" | sed 's/ / -e/g')
+)"
+sempl - "$dir/declutter/${num}x_${output}.recipe.json" <<-EOF
+	{
+	  "type": "minecraft:stonecutting",
+	  "ingredient": [
+	    { "item": "minecraft:{!printf '%s\\n' \$inputs | head -n-1}" },
+	    { "item": "minecraft:{!printf '%s\\n' \$inputs | tail -n1}" }
+	  ],
+	  "result": "minecraft:$output",
+	  "count": $num
+	}
+EOF
 
