@@ -1154,6 +1154,7 @@ Makes some crafting recipes cheaper.
 * 6 planks → 6 trapdoor
 * 4 log → 4 wood
 * 4 stem → 4 hyphae
+* 3 leather + 1 string → bundle
 * 3 iron nugget → chain
 * chest + 3 iron ingot → hopper
 * planks + 8 iron nugget → shield
@@ -1412,6 +1413,7 @@ The following blocks can be freely crafted into each other.
 * door
 * fence
 * fence gate
+* hanging sign
 * pressure plate
 * sign
 * slab

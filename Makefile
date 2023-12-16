@@ -797,6 +797,7 @@ crafting_plentiful_FILES := $(DEFAULT_DATA_FILES) \
 	$(wildcard data/minecraft/recipes/*_wood.json) \
 	$(wildcard data/minecraft/recipes/*_hyphae.json) \
 	$(wildcard data/minecraft/recipes/*_nugget_from_blasting*.json) \
+	data/minecraft/recipes/bundle.json \
 	data/minecraft/recipes/hopper.json \
 	data/minecraft/recipes/shield.json \
 	data/minecraft/recipes/chain.json \
