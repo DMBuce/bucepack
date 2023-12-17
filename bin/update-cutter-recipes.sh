@@ -326,8 +326,8 @@ num=1
 output=stick
 export inputs="bamboo ${logtypes[*]} ${stemtypes[*]}"
 inputs="$(./bin/allitems \
-	| grep -E '_(slab|stairs|fence|fence_gate|wall|button|pressure_plate|door|trapdoor|sign)$' \
-	| grep -e$(echo bamboo "${logtypes[@]}" "${stemtypes[@]}" | sed 's/ / -e/g')
+	| grep -E "^(${inputs// /|})_(slab|stairs|fence|fence_gate|wall|button|pressure_plate|door|trapdoor|sign)$" \
+	| grep -v hanging_sign
 )"
 sempl - "$dir/declutter/${num}x_${output}.recipe.json" <<-EOF
 	{
