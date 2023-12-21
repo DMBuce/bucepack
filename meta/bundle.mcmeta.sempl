@@ -1,0 +1,11 @@
+{
+  "features": {
+    "enabled": [
+      "minecraft:bundle"
+    ]
+  },
+  "pack": {
+    "pack_format": {!jq .pack_version.data "$(./bin/latest)".jar/version.json},
+    "description": "Buce's Bundle: Bundles crafted from leather"
+  }
+}

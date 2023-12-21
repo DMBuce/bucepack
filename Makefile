@@ -40,6 +40,7 @@ DATAPACKFILES = \
 	aggro_bastions.zip \
 	antidote.zip \
 	blue_fire.zip \
+	bundle.zip \
 	climbable.zip \
 	crafter.zip \
 	crafting_colorful.zip \
@@ -437,6 +438,10 @@ gardener_endermen_FILES := $(DEFAULT_DATA_FILES) \
 	data/minecraft/tags/blocks/enderman_holdable.json \
 	data/buce/advancements/gardener_endermen.json \
 
+bundle_FILES := $(DEFAULT_DATA_FILES) \
+	data/minecraft/recipes/bundle.json \
+	data/minecraft/advancements/recipes/tools/bundle.json \
+
 climbable_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell ls buce-data/climbable* | ./bin/ext2dir) \
 	data/minecraft/tags/blocks/climbable.json \
@@ -805,7 +810,6 @@ crafting_plentiful_FILES := $(DEFAULT_DATA_FILES) \
 	$(wildcard data/minecraft/recipes/*_wood.json) \
 	$(wildcard data/minecraft/recipes/*_hyphae.json) \
 	$(wildcard data/minecraft/recipes/*_nugget_from_blasting*.json) \
-	data/minecraft/recipes/bundle.json \
 	data/minecraft/recipes/hopper.json \
 	data/minecraft/recipes/shield.json \
 	data/minecraft/recipes/chain.json \
@@ -1364,6 +1368,12 @@ heirlooms.zip: $(heirlooms_FILES)
 	./bin/ziprename _$(@:.zip=) "" $@
 
 hover_mode.zip: $(hover_mode_FILES)
+	cp meta/$(@:.zip=.png) pack.png
+	sempl meta/$(@:.zip=.mcmeta.sempl) pack.mcmeta
+	zip $@ pack.png pack.mcmeta $^
+	./bin/ziprename _$(@:.zip=) "" $@
+
+bundle.zip: $(bundle_FILES)
 	cp meta/$(@:.zip=.png) pack.png
 	sempl meta/$(@:.zip=.mcmeta.sempl) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^
