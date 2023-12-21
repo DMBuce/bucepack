@@ -1154,7 +1154,6 @@ Makes some crafting recipes cheaper.
 * 6 planks → 6 trapdoor
 * 4 log → 4 wood
 * 4 stem → 4 hyphae
-* 3 leather + 1 string → bundle
 * 3 iron nugget → chain
 * chest + 3 iron ingot → hopper
 * planks + 8 iron nugget → shield
@@ -3238,8 +3237,7 @@ data/minecraft/loot_tables/entities/endermite.json
 
 == Experimental Data Packs
 
-These packs rely on experimental features from worldgen or the next version of
-minecraft.
+These packs rely on experimental worldgen or snapshot features.
 
 === Crafter
 
@@ -3260,6 +3258,22 @@ data/minecraft/tags/blocks/mineable/pickaxe.json
 data/minecraft/tags/blocks/needs_stone_tool.json
 ```
 
+====
+
+.https://github.com/DMBuce/bucepack/releases[All Releases & Changelogs]
+[%collapsible]
+====
+====
+
+=== Bundle
+
+Adds bundles crafted from 3 leather and 1 string.
+
+**Downloads**
+
+.https://github.com/DMBuce/bucepack/releases/latest/download/bundle.zip[`bundle.zip`]
+[%collapsible]
+====
 ====
 
 .https://github.com/DMBuce/bucepack/releases[All Releases & Changelogs]
