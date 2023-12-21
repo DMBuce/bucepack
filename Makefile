@@ -41,6 +41,7 @@ DATAPACKFILES = \
 	antidote.zip \
 	blue_fire.zip \
 	climbable.zip \
+	crafter.zip \
 	crafting_colorful.zip \
 	crafting_loot.zip \
 	crafting_plentiful.zip \
@@ -524,6 +525,13 @@ relic_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell find buce-data/relic -type f | ./bin/ext2dir) \
 	data/buce/loot_tables/relic/all.json \
 	#$(spellsmithing_guide_FILES) \
+
+crafter_FILES := $(DEFAULT_DATA_FILES) \
+	data/minecraft/advancements/recipes/redstone/crafter.json \
+	data/minecraft/loot_tables/blocks/crafter.json \
+	data/minecraft/recipes/crafter.json \
+	data/minecraft/tags/blocks/mineable/pickaxe_crafter.json \
+	data/minecraft/tags/blocks/needs_stone_tool_crafter.json \
 
 crafting_loot_FILES := $(DEFAULT_DATA_FILES) \
 	data/minecraft/recipes/diamond_horse_armor.json \
@@ -1428,6 +1436,12 @@ frienderchest.zip: $(frienderchest_FILES)
 	./bin/ziprename _$(@:.zip=) "" $@
 
 global_effects.zip: $(global_effects_FILES)
+	cp meta/$(@:.zip=.png) pack.png
+	sempl meta/$(@:.zip=.mcmeta.sempl) pack.mcmeta
+	zip $@ pack.png pack.mcmeta $^
+	./bin/ziprename _$(@:.zip=) "" $@
+
+crafter.zip: $(crafter_FILES)
 	cp meta/$(@:.zip=.png) pack.png
 	sempl meta/$(@:.zip=.mcmeta.sempl) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^

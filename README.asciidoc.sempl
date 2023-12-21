@@ -1634,9 +1634,19 @@ Changes that facilitate survival in The End:
 
 {!./bin/packsummary escape_grind}
 
-== WorldGen Data Packs
+== Experimental Data Packs
 
-These packs rely on experimental worldgen features.
+These packs rely on experimental features from worldgen or the next version of
+minecraft.
+
+=== Crafter
+
+Adds the Crafter from the 1.21 experiment
+without making trial chambers generate,
+new tuff and copper blocks craftable,
+and so on.
+
+{!./bin/packsummary crafter}
 
 === DripBlock
 

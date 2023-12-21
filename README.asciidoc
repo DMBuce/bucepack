@@ -1413,7 +1413,6 @@ The following blocks can be freely crafted into each other.
 * door
 * fence
 * fence gate
-* hanging sign
 * pressure plate
 * sign
 * slab
@@ -3237,9 +3236,36 @@ data/minecraft/loot_tables/entities/endermite.json
 ====
 ====
 
-== WorldGen Data Packs
+== Experimental Data Packs
 
-These packs rely on experimental worldgen features.
+These packs rely on experimental features from worldgen or the next version of
+minecraft.
+
+=== Crafter
+
+Adds the Crafter from the 1.21 experiment
+without making trial chambers generate,
+new tuff and copper blocks craftable,
+and so on.
+
+**Downloads**
+
+.https://github.com/DMBuce/bucepack/releases/latest/download/crafter.zip[`crafter.zip`]
+[%collapsible]
+====
+
+```
+data/minecraft/loot_tables/blocks/crafter.json
+data/minecraft/tags/blocks/mineable/pickaxe.json
+data/minecraft/tags/blocks/needs_stone_tool.json
+```
+
+====
+
+.https://github.com/DMBuce/bucepack/releases[All Releases & Changelogs]
+[%collapsible]
+====
+====
 
 === DripBlock
 
