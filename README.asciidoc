@@ -718,7 +718,8 @@ They shouldn't add any lag to your game.
 
 Enhances chiseled bookshelves.
 
-Paper, maps and banner patterns can be placed in chiseled bookshelves.
+Paper, maps, banner patterns, music discs, and potions
+can be placed in chiseled bookshelves.
 
 Chiseled bookshelves can power the enchanting table
 and are crafted with leather instead of wooden slabs.
