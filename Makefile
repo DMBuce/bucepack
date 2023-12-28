@@ -54,6 +54,7 @@ DATAPACKFILES = \
 	dragonproof.zip \
 	dripblock.zip \
 	archived.zip \
+	elemental.zip \
 	ender_relic.zip \
 	escape_grind.zip \
 	escape_nether.zip \
@@ -752,6 +753,12 @@ archived_FILES := $(DEFAULT_DATA_FILES) \
 	data/minecraft/tags/blocks/enchantment_power_provider.json \
 	data/minecraft/tags/blocks/enchantment_power_transmitter.json \
 	data/minecraft/tags/items/bookshelf_books.json \
+
+elemental_FILES := $(DEFAULT_DATA_FILES) \
+	data/minecraft/loot_tables/entities/blaze.json \
+	data/minecraft/loot_tables/entities/breeze.json \
+	data/minecraft/loot_tables/entities/iron_golem.json \
+	data/minecraft/loot_tables/entities/snow_golem.json \
 
 ender_relic_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell find buce-data/ender_relic -type f | ./bin/ext2dir) \
@@ -1627,6 +1634,12 @@ mineable.zip: $(mineable_FILES)
 	./bin/ziprename _$(@:.zip=) "" $@
 
 archived.zip: $(archived_FILES)
+	cp meta/$(@:.zip=.png) pack.png
+	sempl meta/$(@:.zip=.mcmeta.sempl) pack.mcmeta
+	zip $@ pack.png pack.mcmeta $^
+	./bin/ziprename _$(@:.zip=) "" $@
+
+elemental.zip: $(elemental_FILES)
 	cp meta/$(@:.zip=.png) pack.png
 	sempl meta/$(@:.zip=.mcmeta.sempl) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^

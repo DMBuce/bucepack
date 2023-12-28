@@ -1,0 +1,32 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1.0,
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{EntityTag:{variant:\"minecraft:wind\"}}",
+              "add": false
+            }
+          ],
+          "name": "minecraft:painting"
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "killer",
+          "predicate": {
+            "type": "minecraft:iron_golem"
+          }
+        }
+      ]
+    }
+  ],
+  "random_sequence": "minecraft:entities/breeze"
+}

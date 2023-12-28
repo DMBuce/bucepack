@@ -1,0 +1,47 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:alternatives",
+          "children": [
+            {
+              "name": "minecraft:netherite_ingot",
+              "type": "minecraft:item",
+              "functions": [
+                {
+                  "function": "minecraft:set_nbt",
+                  "tag": "{relic:1b,gravitation:1b,CustomModelData:22183,display:{Name:\"{\\\"text\\\":\\\"Relic of Poles\\\",\\\"color\\\":\\\"light_purple\\\"}\",Lore:[\"\\\"§r§bMyth of Magnetism\\\"\"]},Enchantments:[{}]}",
+                  "add": false
+                }
+              ],
+              "conditions": [
+                {
+                  "condition": "minecraft:entity_properties",
+                  "entity": "this",
+                  "predicate": {
+                    "type": "minecraft:creeper",
+                    "nbt": "{powered:1b}"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "minecraft:item",
+              "name": "minecraft:lodestone",
+              "conditions": [
+                {
+                  "condition": "minecraft:survives_explosion"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "rolls": 1.0
+    }
+  ],
+  "random_sequence": "minecraft:blocks/lodestone"
+}

@@ -11,34 +11,13 @@
               "add": false,
               "count": {
                 "type": "minecraft:uniform",
-                "max": 2.0,
+                "max": 15.0,
                 "min": 0.0
               },
               "function": "minecraft:set_count"
             }
           ],
-          "name": "minecraft:poppy"
-        }
-      ],
-      "rolls": 1.0
-    },
-    {
-      "bonus_rolls": 0.0,
-      "entries": [
-        {
-          "type": "minecraft:item",
-          "functions": [
-            {
-              "add": false,
-              "count": {
-                "type": "minecraft:uniform",
-                "max": 5.0,
-                "min": 3.0
-              },
-              "function": "minecraft:set_count"
-            }
-          ],
-          "name": "minecraft:iron_ingot"
+          "name": "minecraft:snowball"
         }
       ],
       "rolls": 1.0
@@ -52,7 +31,7 @@
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{EntityTag:{variant:\"minecraft:earth\"}}",
+              "tag": "{EntityTag:{variant:\"minecraft:water\"}}",
               "add": false
             }
           ],
@@ -64,11 +43,11 @@
           "condition": "minecraft:entity_properties",
           "entity": "killer",
           "predicate": {
-            "type": "minecraft:breeze"
+            "type": "minecraft:blaze"
           }
         }
       ]
     }
   ],
-  "random_sequence": "minecraft:entities/iron_golem"
+  "random_sequence": "minecraft:entities/snow_golem"
 }

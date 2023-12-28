@@ -1,0 +1,13 @@
+{
+  "pack": {
+    "pack_format": {!jq .pack_version.data "$(./bin/latest)".jar/version.json},
+    "description": "Buce's Elemental: Paintings of earth, wind, fire, and water."
+  },
+  "root": {
+    "title": "Elemental",
+    "explanation": "Paintings of earth, wind, fire, and water",
+    "icon": {
+      "item": "minecraft:painting"
+    }
+  }
+}

@@ -3282,6 +3282,45 @@ Adds bundles crafted from 3 leather and 1 string.
 ====
 ====
 
+=== Elemental
+
+Adds https://minecraft.wiki/w/Painting#Unused_paintings[elemental paintings]
+that drop from mobs
+in a manner similar to how records drop from creepers killed by skeletons.
+
+image::https://i.imgur.com/5Gy2NtN.png[Elemental]
+
+When a breeze kills an iron golem, it drops an Earth painting.
+
+When an iron golem kills a breeze, it drops a Wind painting.
+
+When a snow golem kills a blaze, it drops a Fire painting.
+
+When a blaze kills a snow golem, it drops a Water painting.
+
+These paintings are delicate and drop normal painting items
+if broken after being placed.
+
+**Downloads**
+
+.https://github.com/DMBuce/bucepack/releases/latest/download/elemental.zip[`elemental.zip`]
+[%collapsible]
+====
+
+```
+data/minecraft/loot_tables/entities/blaze.json
+data/minecraft/loot_tables/entities/breeze.json
+data/minecraft/loot_tables/entities/iron_golem.json
+data/minecraft/loot_tables/entities/snow_golem.json
+```
+
+====
+
+.https://github.com/DMBuce/bucepack/releases[All Releases & Changelogs]
+[%collapsible]
+====
+====
+
 === DripBlock
 
 If you create a Default or Large Biomes world with this datapack installed,
