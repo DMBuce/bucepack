@@ -1665,6 +1665,8 @@ image::https://i.imgur.com/5Gy2NtN.png[Elemental]
 When a breeze kills an iron golem, it drops an Earth painting.
 
 When an iron golem kills a breeze, it drops a Wind painting.
+Breezes also drop sand for compatibility with
+the <<desert-breeze,Desert Breeze>> datapack.
 
 When a snow golem kills a blaze, it drops a Fire painting.
 
@@ -1720,14 +1722,9 @@ or find an igloo with a basement.
 
 {!./bin/packsummary worldgen_apocalypse}
 
-=== Renewable Structures
+=== Desert Breeze
 
-Makes desert pyramids and mineshafts a renewable source of sand and cobwebs.
-
-Only husks spawn in desert pyramids,
-and they drop sand instead of rotten flesh.
-
-Cave spiders drop cobwebs instead of string.
+Makes breezes spawn in desert pyramids and drop sand.
 
 {!./bin/packsummary worldgen_renewable_structures}
 

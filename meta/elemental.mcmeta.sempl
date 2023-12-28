@@ -1,4 +1,9 @@
 {
+  "features": {
+    "enabled": [
+      "minecraft:update_1_21"
+    ]
+  },
   "pack": {
     "pack_format": {!jq .pack_version.data "$(./bin/latest)".jar/version.json},
     "description": "Buce's Elemental: Paintings of earth, wind, fire, and water."
