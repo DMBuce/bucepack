@@ -590,11 +590,11 @@ relics_mythic_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell find buce-data/mythic -type f | ./bin/ext2dir) \
 	data/buce/functions/var.mcfunction \
 	data/minecraft/loot_tables/blocks/gilded_blackstone.json \
+	data/minecraft/loot_tables/blocks/lodestone.json \
 	data/minecraft/loot_tables/entities/bee.json \
 	data/minecraft/loot_tables/entities/endermite.json \
 	data/minecraft/loot_tables/entities/ghast.json \
 	data/minecraft/loot_tables/entities/glow_squid.json \
-	data/minecraft/loot_tables/entities/iron_golem.json \
 	data/minecraft/loot_tables/entities/pig.json \
 	data/minecraft/loot_tables/entities/sheep.json \
 	data/minecraft/loot_tables/entities/sheep/light_gray.json \
@@ -603,6 +603,7 @@ relics_mythic_FILES := $(DEFAULT_DATA_FILES) \
 	data/minecraft/tags/functions/load_relics_mythic.json \
 	data/minecraft/tags/worldgen/structure/seeking_located.json \
 	data/buce/tags/items/relic/templates.json \
+	#data/minecraft/loot_tables/entities/iron_golem.json \
 
 boss_loot_seasonal_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell ls buce-data/loot_addons/boss_loot_seasonal* | ./bin/ext2dir) \

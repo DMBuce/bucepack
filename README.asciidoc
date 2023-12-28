@@ -2715,8 +2715,8 @@ table. When a player
 wearing the boots falls 3.5 blocks, eats a carrot, or eats rabbit, they gain
 Speed II and Jump Boost II for 90 seconds.
 
-**Relic of Poles**: When an iron golem is killed by a charged creeper, it
-drops a compass with Myth of Magnetism, a custom enchantment that can be
+**Relic of Poles**: When a lodestone is blown up by a charged creeper, it
+drops a netherite ingot with Myth of Magnetism, a custom enchantment that can be
 applied to a shield
 with a bottle o' enchanting in the smithing table. A player blocking with the shield
 attracts the nearest item. A player that sneaks while blocking with the shield
@@ -2852,11 +2852,11 @@ which provide access to some of the relics.
 
 ```
 data/minecraft/loot_tables/blocks/gilded_blackstone.json
+data/minecraft/loot_tables/blocks/lodestone.json
 data/minecraft/loot_tables/entities/bee.json
 data/minecraft/loot_tables/entities/endermite.json
 data/minecraft/loot_tables/entities/ghast.json
 data/minecraft/loot_tables/entities/glow_squid.json
-data/minecraft/loot_tables/entities/iron_golem.json
 data/minecraft/loot_tables/entities/pig.json
 data/minecraft/loot_tables/entities/sheep.json
 data/minecraft/loot_tables/entities/sheep/light_gray.json

@@ -1,7 +1,7 @@
 {
   "type": "minecraft:smithing_transform",
   "base": {
-    "item": "minecraft:compass"
+    "item": "minecraft:netherite_ingot"
   },
   "addition": {
     "item": "minecraft:shield"
