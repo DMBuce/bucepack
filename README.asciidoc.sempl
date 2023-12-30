@@ -543,7 +543,7 @@ See <<language-support,Language Support>> for details.
 
 {!./bin/packsummary cutting_wood}
 
-== Brick Oven
+=== Brick Oven
 
 Lets you use smokers and campfires as kilns
 and smelt stone-like items with them.
@@ -559,7 +559,7 @@ See <<language-support,Language Support>> for details.
 
 {!./bin/packsummary oven_brick}
 
-=== Oven Tiers
+==== Oven Tiers
 
 This is an addon pack for the
 <<loot-overhaul,Brick Oven>> datapack
