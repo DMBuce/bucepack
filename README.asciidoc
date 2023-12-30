@@ -1485,7 +1485,7 @@ assets/minecraft/lang/en_us.json
 === Brick Oven
 
 Lets you use smokers and campfires as kilns
-and smelt stone-like items with them.
+to smelt stone-like items with them.
 The smoker recipe is changed to use a campfire and 8 bricks.
 
 image::https://i.imgur.com/jFg3LRg.png[Brick Oven]
@@ -1538,7 +1538,7 @@ then use the campfire to make bricks,
 use the bricks to upgrade the campfire into an oven,
 use cobblestone to sidegrade the oven into a furnace,
 use the furnace to smelt iron,
-use the iron to sidegrade the furnace into a blast furnace.
+and use the iron to sidegrade the furnace into a blast furnace.
 
 **Downloads**
 
