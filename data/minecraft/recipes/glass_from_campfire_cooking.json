@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:campfire_cooking",
+  "category": "blocks",
+  "cookingtime": 600,
+  "experience": 0.1,
+  "ingredient": {
+    "tag": "minecraft:smelts_to_glass"
+  },
+  "result": "minecraft:glass"
+}

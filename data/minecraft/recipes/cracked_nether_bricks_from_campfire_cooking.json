@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:campfire_cooking",
+  "category": "blocks",
+  "cookingtime": 600,
+  "experience": 0.1,
+  "ingredient": {
+    "item": "minecraft:nether_bricks"
+  },
+  "result": "minecraft:cracked_nether_bricks"
+}

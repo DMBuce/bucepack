@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:campfire_cooking",
+  "category": "blocks",
+  "cookingtime": 600,
+  "experience": 0.1,
+  "ingredient": {
+    "item": "minecraft:polished_blackstone_bricks"
+  },
+  "result": "minecraft:cracked_polished_blackstone_bricks"
+}

@@ -543,6 +543,44 @@ See <<language-support,Language Support>> for details.
 
 {!./bin/packsummary cutting_wood}
 
+== Brick Oven
+
+Lets you use smokers and campfires as kilns
+and smelt stone-like items with them.
+The smoker recipe is changed to use a campfire and 8 bricks.
+
+image::https://i.imgur.com/jFg3LRg.png[Brick Oven]
+
+When installed as a resource pack,
+smokers have a brick texture,
+and partial support is provided for renaming
+smokers to brick ovens.
+See <<language-support,Language Support>> for details.
+
+{!./bin/packsummary oven_brick}
+
+=== Oven Tiers
+
+This is an addon pack for the
+<<loot-overhaul,Brick Oven>> datapack
+that adds an oven to the center of the furnace recipe.
+With both datapacks,
+furnace variants have tiers,
+with some of them being soft-locked behind others.
+
+image::https://i.imgur.com/z4JrZAD.png[Furnace Tiers]
+
+If a player can't find a furnace variant through exploration,
+they can progress through the furnace tiers to obtain it
+by first crafting a campfire,
+then use the campfire to make bricks,
+use the bricks to upgrade the campfire into an oven,
+use cobblestone to sidegrade the oven into a furnace,
+use the furnace to smelt iron,
+use the iron to sidegrade the furnace into a blast furnace.
+
+{!./bin/packsummary oven_tier}
+
 === Turtle Boxes
 
 Lets you craft green shulker boxes from turtle shells.
@@ -2033,9 +2071,11 @@ this is the order packs should be enabled and loaded in,
 i.e. this is the _reverse_ of their relative priority.
 
 ----
+crafting_workstation.zip
 heads_fae.zip
 loot_overhaul.zip
 {!make dlist | grep loot_overhaul_}
+oven_brick.zip
 phantasmal.zip
 relics_deep.zip
 relics_mythic.zip
@@ -2115,10 +2155,10 @@ to a tool, but they continue to function even without a datapack.
 === Glamer Enchantments
 
 Glamers are enchantments added by the <<phantasmal,Phantasmal>> datapack
-that can be applied to item frames
+that can be applied to item frames and torches
 in the smithing table to give them an illusory invisibility effect.
 No template item is needed when smithing them.
-The illusion is destroyed when the item frame is broken.
+The illusion is destroyed when the item frame or torch is broken.
 
 Glamers are identical to boons in all other ways.
 

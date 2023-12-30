@@ -1,0 +1,9 @@
+#!/usr/bin/env sempl
+latest = "$(./bin/latest)"
+#!end sempl env
+{
+  "pack": {
+    "pack_format": {./cache/version-data.txt},
+    "description": "Buce's Furnace Tiers: Craft furnaces from smokers"
+  }
+}

@@ -3,6 +3,7 @@ DATARESOURCEPACKFILES = \
 	cutting_wood.zip \
 	pig_armor.zip \
 	crafting_turtle_box.zip \
+	oven_brick.zip \
 	#copper_overhaul.zip \
 
 RESOURCEPACKFILES = \
@@ -81,6 +82,7 @@ DATAPACKFILES = \
 	network_deep.zip \
 	network_nether.zip \
 	no_treasure_maps.zip \
+	oven_tier.zip \
 	phantasmal_end.zip \
 	phantasmal.zip \
 	poseable.zip \
@@ -458,6 +460,16 @@ heirlooms_FILES := $(DEFAULT_DATA_FILES) \
 hover_mode_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell ls buce-data/hover_mode* | ./bin/ext2dir) \
 	data/minecraft/tags/blocks/climbable_hover_mode.json \
+
+oven_brick_FILES := $(DEFAULT_DATA_FILES) \
+	$(wildcard assets/minecraft/textures/block/smoker_*) \
+	$(wildcard data/minecraft/recipes/*from_smoking*) \
+	$(wildcard data/minecraft/recipes/*from_campfire_cooking*) \
+	assets/minecraft/lang/en_us_oven_brick.json \
+	data/minecraft/recipes/smoker_oven_brick.json \
+
+oven_tier_FILES := $(DEFAULT_DATA_FILES) \
+	data/minecraft/recipes/furnace.json \
 
 waterproof_tech_FILES := $(DEFAULT_DATA_FILES) \
 	data/minecraft/tags/blocks/signs.json \
@@ -1371,6 +1383,18 @@ illusory_trader.zip: $(illusory_trader_FILES)
 	./bin/ziprename _$(@:.zip=) "" $@
 
 heirlooms.zip: $(heirlooms_FILES)
+	cp meta/$(@:.zip=.png) pack.png
+	sempl meta/$(@:.zip=.mcmeta.sempl) pack.mcmeta
+	zip $@ pack.png pack.mcmeta $^
+	./bin/ziprename _$(@:.zip=) "" $@
+
+oven_brick.zip: $(oven_brick_FILES)
+	cp meta/$(@:.zip=.png) pack.png
+	sempl meta/$(@:.zip=.mcmeta.sempl) pack.mcmeta
+	zip $@ pack.png pack.mcmeta $^
+	./bin/ziprename _$(@:.zip=) "" $@
+
+oven_tier.zip: $(oven_tier_FILES)
 	cp meta/$(@:.zip=.png) pack.png
 	sempl meta/$(@:.zip=.mcmeta.sempl) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^
