@@ -3523,13 +3523,12 @@ Makes breezes spawn in desert pyramids and drop sand.
 
 **Downloads**
 
-.https://github.com/DMBuce/bucepack/releases/latest/download/worldgen_renewable_structures.zip[`worldgen_renewable_structures.zip`]
+.https://github.com/DMBuce/bucepack/releases/latest/download/worldgen_desert_breeze.zip[`worldgen_desert_breeze.zip`]
 [%collapsible]
 ====
 
 ```
-data/minecraft/loot_tables/entities/cave_spider.json
-data/minecraft/loot_tables/entities/husk.json
+data/minecraft/loot_tables/entities/breeze.json
 data/minecraft/worldgen/structure/desert_pyramid.json
 ```
 

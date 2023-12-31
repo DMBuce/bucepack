@@ -1764,7 +1764,7 @@ or find an igloo with a basement.
 
 Makes breezes spawn in desert pyramids and drop sand.
 
-{!./bin/packsummary worldgen_renewable_structures}
+{!./bin/packsummary worldgen_desert_breeze}
 
 === Trees
 
