@@ -228,7 +228,7 @@ Turns iron golems into mechsuit-wearing villagers.
 
 image::https://i.imgur.com/oF0MLK9.png[Village Mech]
 
-// In addition, the villager's expression changes as he takes damage.
+// In addition, the villager's expression changes as they take damage.
 
 **Downloads**
 
