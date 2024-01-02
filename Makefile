@@ -102,6 +102,7 @@ DATAPACKFILES = \
 	starter_spyglass.zip \
 	wandering_loot.zip \
 	waterproof_tech.zip \
+	worldgen_anti.zip \
 	worldgen_desert_breeze.zip \
 	worldgen_trees.zip \
 	worldgen_apocalypse.zip \
@@ -738,6 +739,8 @@ worldgen_overworld_FILES := $(DEFAULT_DATA_FILES) \
 
 worldgen_moonlit_FILES := $(DEFAULT_DATA_FILES) \
 	data/minecraft/dimension_type/overworld.json \
+
+worldgen_anti_FILES := $(DEFAULT_DATA_FILES) \
 
 worldgen_desert_breeze_FILES := $(DEFAULT_DATA_FILES) \
 	data/minecraft/worldgen/structure/desert_pyramid.json \
@@ -1671,6 +1674,12 @@ elemental.zip: $(elemental_FILES)
 	./bin/ziprename _$(@:.zip=) "" $@
 
 ender_relic.zip: $(ender_relic_FILES)
+	cp meta/$(@:.zip=.png) pack.png
+	sempl meta/$(@:.zip=.mcmeta.sempl) pack.mcmeta
+	zip $@ pack.png pack.mcmeta $^
+	./bin/ziprename _$(@:.zip=) "" $@
+
+worldgen_anti.zip: $(worldgen_anti_FILES)
 	cp meta/$(@:.zip=.png) pack.png
 	sempl meta/$(@:.zip=.mcmeta.sempl) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^

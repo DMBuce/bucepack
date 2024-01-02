@@ -1,0 +1,12 @@
+{
+  "pack": {
+    "pack_format": {!jq .pack_version.data "$(./bin/latest)".jar/version.json},
+    "description": "Buce's Anti Worldgen: Disables worldgen features in Mojang's experimental datapacks"
+  },
+  "filter": {
+    "block": [
+      { "path": "worldgen/structure/trial_chambers.json" },
+      { "path": "worldgen/structure_set/trial_chambers.json" }
+    ]
+  }
+}
