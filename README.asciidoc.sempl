@@ -1777,6 +1777,12 @@ Makes breezes spawn in desert pyramids and drop sand.
 
 {!./bin/packsummary worldgen_desert_breeze}
 
+=== Sandy Husks
+
+Makes husks spawn in desert pyramids and drop sand.
+
+{!./bin/packsummary worldgen_sandy_husk}
+
 === Trees
 
 Makes trees generate with Wood blocks instead of Logs.

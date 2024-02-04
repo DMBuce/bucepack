@@ -3560,6 +3560,28 @@ data/minecraft/worldgen/structure/desert_pyramid.json
 ====
 ====
 
+=== Sandy Husks
+
+Makes husks spawn in desert pyramids and drop sand.
+
+**Downloads**
+
+.https://github.com/DMBuce/bucepack/releases/latest/download/worldgen_sandy_husk.zip[`worldgen_sandy_husk.zip`]
+[%collapsible]
+====
+
+```
+data/minecraft/loot_tables/entities/husk.json
+data/minecraft/worldgen/structure/desert_pyramid.json
+```
+
+====
+
+.https://github.com/DMBuce/bucepack/releases[All Releases & Changelogs]
+[%collapsible]
+====
+====
+
 === Trees
 
 Makes trees generate with Wood blocks instead of Logs.

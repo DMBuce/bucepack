@@ -6,10 +6,10 @@
       "bounding_box": "piece",
       "spawns": [
         {
-          "type": "minecraft:husk",
+          "type": "minecraft:breeze",
           "maxCount": 4,
-          "minCount": 4,
-          "weight": 80
+          "minCount": 1,
+          "weight": 10
         }
       ]
     }

@@ -104,6 +104,7 @@ DATAPACKFILES = \
 	waterproof_tech.zip \
 	worldgen_anti.zip \
 	worldgen_desert_breeze.zip \
+	worldgen_sandy_husk.zip \
 	worldgen_trees.zip \
 	worldgen_apocalypse.zip \
 	worldgen_moonlit.zip \
@@ -744,10 +745,12 @@ worldgen_moonlit_FILES := $(DEFAULT_DATA_FILES) \
 worldgen_anti_FILES := $(DEFAULT_DATA_FILES) \
 
 worldgen_desert_breeze_FILES := $(DEFAULT_DATA_FILES) \
-	data/minecraft/worldgen/structure/desert_pyramid.json \
+	data/minecraft/worldgen/structure/desert_pyramid_worldgen_desert_breeze.json \
 	data/minecraft/loot_tables/entities/breeze.json \
-	#data/minecraft/loot_tables/entities/cave_spider.json \
-	#data/minecraft/loot_tables/entities/husk.json \
+
+worldgen_sandy_husk_FILES := $(DEFAULT_DATA_FILES) \
+	data/minecraft/worldgen/structure/desert_pyramid.json \
+	data/minecraft/loot_tables/entities/husk.json \
 
 worldgen_trees_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell find buce-data/recipes/crafting/trees/ -type f | ./bin/ext2dir) \
@@ -1705,6 +1708,12 @@ worldgen_overworld.zip: $(worldgen_overworld_FILES)
 	./bin/ziprename _$(@:.zip=) "" $@
 
 worldgen_desert_breeze.zip: $(worldgen_desert_breeze_FILES)
+	cp meta/$(@:.zip=.png) pack.png
+	sempl meta/$(@:.zip=.mcmeta.sempl) pack.mcmeta
+	zip $@ pack.png pack.mcmeta $^
+	./bin/ziprename _$(@:.zip=) "" $@
+
+worldgen_sandy_husk.zip: $(worldgen_sandy_husk_FILES)
 	cp meta/$(@:.zip=.png) pack.png
 	sempl meta/$(@:.zip=.mcmeta.sempl) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^
