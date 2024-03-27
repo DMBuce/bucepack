@@ -325,8 +325,6 @@ In addition,
 pickaxes are no longer the associated tool for spawners or budding amethyst,
 so that it's more difficult to accidentally break these blocks.
 
-This pack fixes https://bugs.mojang.com/browse/MC-199752[MC-199752].
-
 {!./bin/packsummary mineable}
 
 === Climbable

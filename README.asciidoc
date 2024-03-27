@@ -765,8 +765,6 @@ In addition,
 pickaxes are no longer the associated tool for spawners or budding amethyst,
 so that it's more difficult to accidentally break these blocks.
 
-This pack fixes https://bugs.mojang.com/browse/MC-199752[MC-199752].
-
 **Downloads**
 
 .https://github.com/DMBuce/bucepack/releases/latest/download/mineable.zip[`mineable.zip`]
