@@ -1388,7 +1388,7 @@ The fletching table, cartography table, and smithing table
 have loom-like 2x2 recipes.
 Stone and smoothstone are interchangeable in the
 grindstone, stonecutter, and blast furnace recipes.
-The barrel recipe uses slabs in place of planks.
+The barrel recipe can use a slab or stick in place of any ingredient.
 Smoker recipes use cobblestone in addition to logs.
 Lecterns use two extra slabs.
 
