@@ -194,5 +194,8 @@ do
 		/minecraft:glass_pane/ s/\".*/\"tag\": \"minecraft:glass_panes_without_$color\"/
 	" "data/minecraft/recipes/${color}_stained_glass_pane_from_glass_pane.json"
 
+	# create recipes for dying any banner
+	cp "$latest.jar/data/minecraft/recipes/dye_${color}_bed.json" "data/minecraft/recipes/dye_${color}_banner.json"
+	sed -i 's/_bed/_banner/g' "data/minecraft/recipes/dye_${color}_banner.json"
 done
 

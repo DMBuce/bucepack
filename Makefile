@@ -818,12 +818,13 @@ eyes_of_seeking_FILES := $(DEFAULT_DATA_FILES) \
 
 crafting_colorful_FILES := $(DEFAULT_DATA_FILES) \
 	data/minecraft/recipes/*_candle.json \
-	data/minecraft/recipes/*_terracotta.json \
-	data/minecraft/recipes/*_stained_glass.json \
+	data/minecraft/recipes/dye_*_banner.json \
 	data/minecraft/recipes/*_glass_pane.json \
-	data/minecraft/tags/items/*_without_*.json \
+	data/minecraft/recipes/*_stained_glass.json \
+	data/minecraft/recipes/*_terracotta.json \
 	data/minecraft/tags/items/glass.json \
 	data/minecraft/tags/items/glass_panes.json \
+	data/minecraft/tags/items/*_without_*.json \
 	#data/minecraft/recipes/*_bed.json \
 	#data/minecraft/recipes/*_wool.json \
 

@@ -1027,8 +1027,9 @@ They shouldn't add any lag to your game.
 
 === Colorful Crafting
 
-Lets you dye any color of candle
+Lets you dye any color of candle or banner,
 and any combination of terracotta, glass, or glass panes.
+Banners dyed this way lose their patterns.
 
 **Downloads**
 
