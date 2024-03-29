@@ -29,6 +29,7 @@ done <<< '
 	fence_gate     4
 	pressure_plate 2
 	sign           6
+	banner         6
 	trapdoor       6
 	wood           4
 	hyphae         4

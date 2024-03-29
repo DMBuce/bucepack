@@ -1151,12 +1151,29 @@ Makes some crafting recipes cheaper.
 * 2 planks + 4 sticks → 4 gate
 * 2 planks → 2 pressure plate
 * 6 planks + stick → 6 sign
+* 6 wool + stick → 6 banner
 * 6 planks → 6 trapdoor
 * 4 log → 4 wood
 * 4 stem → 4 hyphae
+* 6 black wool + 1 stick → black banner
+* 6 blue wool + 1 stick → blue banner
+* 6 brown wool + 1 stick → brown banner
 * 3 iron nugget → chain
+* 6 cyan wool + 1 stick → cyan banner
+* 6 gray wool + 1 stick → gray banner
+* 6 green wool + 1 stick → green banner
 * chest + 3 iron ingot → hopper
+* 6 light blue wool + 1 stick → light blue banner
+* 6 light gray wool + 1 stick → light gray banner
+* 6 lime wool + 1 stick → lime banner
+* 6 magenta wool + 1 stick → magenta banner
+* 6 orange wool + 1 stick → orange banner
+* 6 pink wool + 1 stick → pink banner
+* 6 purple wool + 1 stick → purple banner
+* 6 red wool + 1 stick → red banner
 * planks + 8 iron nugget → shield
+* 6 white wool + 1 stick → white banner
+* 6 yellow wool + 1 stick → yellow banner
 * blasting: tool → ingot
 * blasting: armor → ingot
 
@@ -1191,8 +1208,11 @@ data/minecraft/recipes/birch_sign.json
 data/minecraft/recipes/birch_stairs.json
 data/minecraft/recipes/birch_trapdoor.json
 data/minecraft/recipes/birch_wood.json
+data/minecraft/recipes/black_banner.json
 data/minecraft/recipes/blackstone_stairs.json
+data/minecraft/recipes/blue_banner.json
 data/minecraft/recipes/brick_stairs.json
+data/minecraft/recipes/brown_banner.json
 data/minecraft/recipes/chain.json
 data/minecraft/recipes/cherry_fence_gate.json
 data/minecraft/recipes/cherry_fence.json
@@ -1211,6 +1231,7 @@ data/minecraft/recipes/crimson_sign.json
 data/minecraft/recipes/crimson_stairs.json
 data/minecraft/recipes/crimson_trapdoor.json
 data/minecraft/recipes/cut_copper_stairs.json
+data/minecraft/recipes/cyan_banner.json
 data/minecraft/recipes/dark_oak_fence_gate.json
 data/minecraft/recipes/dark_oak_fence.json
 data/minecraft/recipes/dark_oak_pressure_plate.json
@@ -1226,6 +1247,8 @@ data/minecraft/recipes/end_stone_brick_stairs.json
 data/minecraft/recipes/exposed_cut_copper_stairs.json
 data/minecraft/recipes/gold_nugget_from_blasting.json
 data/minecraft/recipes/granite_stairs.json
+data/minecraft/recipes/gray_banner.json
+data/minecraft/recipes/green_banner.json
 data/minecraft/recipes/hopper.json
 data/minecraft/recipes/iron_nugget_from_blasting.json
 data/minecraft/recipes/jungle_fence_gate.json
@@ -1235,6 +1258,10 @@ data/minecraft/recipes/jungle_sign.json
 data/minecraft/recipes/jungle_stairs.json
 data/minecraft/recipes/jungle_trapdoor.json
 data/minecraft/recipes/jungle_wood.json
+data/minecraft/recipes/light_blue_banner.json
+data/minecraft/recipes/light_gray_banner.json
+data/minecraft/recipes/lime_banner.json
+data/minecraft/recipes/magenta_banner.json
 data/minecraft/recipes/mangrove_fence_gate.json
 data/minecraft/recipes/mangrove_fence.json
 data/minecraft/recipes/mangrove_pressure_plate.json
@@ -1254,7 +1281,9 @@ data/minecraft/recipes/oak_sign.json
 data/minecraft/recipes/oak_stairs.json
 data/minecraft/recipes/oak_trapdoor.json
 data/minecraft/recipes/oak_wood.json
+data/minecraft/recipes/orange_banner.json
 data/minecraft/recipes/oxidized_cut_copper_stairs.json
+data/minecraft/recipes/pink_banner.json
 data/minecraft/recipes/polished_andesite_stairs.json
 data/minecraft/recipes/polished_blackstone_brick_stairs.json
 data/minecraft/recipes/polished_blackstone_pressure_plate.json
@@ -1264,8 +1293,10 @@ data/minecraft/recipes/polished_diorite_stairs.json
 data/minecraft/recipes/polished_granite_stairs.json
 data/minecraft/recipes/prismarine_brick_stairs.json
 data/minecraft/recipes/prismarine_stairs.json
+data/minecraft/recipes/purple_banner.json
 data/minecraft/recipes/purpur_stairs.json
 data/minecraft/recipes/quartz_stairs.json
+data/minecraft/recipes/red_banner.json
 data/minecraft/recipes/red_nether_brick_stairs.json
 data/minecraft/recipes/red_sandstone_stairs.json
 data/minecraft/recipes/sandstone_stairs.json
@@ -1305,6 +1336,8 @@ data/minecraft/recipes/waxed_exposed_cut_copper_stairs.json
 data/minecraft/recipes/waxed_oxidized_cut_copper_stairs.json
 data/minecraft/recipes/waxed_weathered_cut_copper_stairs.json
 data/minecraft/recipes/weathered_cut_copper_stairs.json
+data/minecraft/recipes/white_banner.json
+data/minecraft/recipes/yellow_banner.json
 ```
 
 ====

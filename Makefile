@@ -839,6 +839,22 @@ crafting_plentiful_FILES := $(DEFAULT_DATA_FILES) \
 	$(wildcard data/minecraft/recipes/*_wood.json) \
 	$(wildcard data/minecraft/recipes/*_hyphae.json) \
 	$(wildcard data/minecraft/recipes/*_nugget_from_blasting*.json) \
+	data/minecraft/recipes/black_banner.json \
+	data/minecraft/recipes/blue_banner.json \
+	data/minecraft/recipes/brown_banner.json \
+	data/minecraft/recipes/cyan_banner.json \
+	data/minecraft/recipes/gray_banner.json \
+	data/minecraft/recipes/green_banner.json \
+	data/minecraft/recipes/light_blue_banner.json \
+	data/minecraft/recipes/light_gray_banner.json \
+	data/minecraft/recipes/lime_banner.json \
+	data/minecraft/recipes/magenta_banner.json \
+	data/minecraft/recipes/orange_banner.json \
+	data/minecraft/recipes/pink_banner.json \
+	data/minecraft/recipes/purple_banner.json \
+	data/minecraft/recipes/red_banner.json \
+	data/minecraft/recipes/white_banner.json \
+	data/minecraft/recipes/yellow_banner.json \
 	data/minecraft/recipes/hopper.json \
 	data/minecraft/recipes/shield.json \
 	data/minecraft/recipes/chain.json \
