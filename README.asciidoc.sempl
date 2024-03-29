@@ -465,7 +465,8 @@ Makes some crafting recipes cheaper.
 * 6 planks → 6 trapdoor
 * 4 log → 4 wood
 * 4 stem → 4 hyphae
-{!./bin/recipes crafting_plentiful | grep -Ev ' (stairs|fence|gate|plate|sign|door|trapdoor|wood|hyphae|blasting.*)$'}
+* 7 diamond + 1 netherrack + 1 netherite ingot → 2 netherite upgrade smithing template
+{!./bin/recipes crafting_plentiful | grep -Ev '(stairs|fence|gate|plate|sign|door|trapdoor|wood|hyphae|blasting.*|banner)$'}
 * blasting: tool → ingot
 * blasting: armor → ingot
 

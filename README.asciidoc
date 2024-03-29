@@ -1155,25 +1155,10 @@ Makes some crafting recipes cheaper.
 * 6 planks → 6 trapdoor
 * 4 log → 4 wood
 * 4 stem → 4 hyphae
-* 6 black wool + 1 stick → black banner
-* 6 blue wool + 1 stick → blue banner
-* 6 brown wool + 1 stick → brown banner
+* 7 diamond + 1 netherrack + 1 netherite ingot → 2 netherite upgrade smithing template
 * 3 iron nugget → chain
-* 6 cyan wool + 1 stick → cyan banner
-* 6 gray wool + 1 stick → gray banner
-* 6 green wool + 1 stick → green banner
 * chest + 3 iron ingot → hopper
-* 6 light blue wool + 1 stick → light blue banner
-* 6 light gray wool + 1 stick → light gray banner
-* 6 lime wool + 1 stick → lime banner
-* 6 magenta wool + 1 stick → magenta banner
-* 6 orange wool + 1 stick → orange banner
-* 6 pink wool + 1 stick → pink banner
-* 6 purple wool + 1 stick → purple banner
-* 6 red wool + 1 stick → red banner
 * planks + 8 iron nugget → shield
-* 6 white wool + 1 stick → white banner
-* 6 yellow wool + 1 stick → yellow banner
 * blasting: tool → ingot
 * blasting: armor → ingot
 
@@ -1274,6 +1259,7 @@ data/minecraft/recipes/mossy_stone_brick_stairs.json
 data/minecraft/recipes/mud_brick_stairs.json
 data/minecraft/recipes/nether_brick_fence.json
 data/minecraft/recipes/nether_brick_stairs.json
+data/minecraft/recipes/netherite_upgrade_smithing_template.json
 data/minecraft/recipes/oak_fence_gate.json
 data/minecraft/recipes/oak_fence.json
 data/minecraft/recipes/oak_pressure_plate.json

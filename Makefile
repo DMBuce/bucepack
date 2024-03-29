@@ -839,6 +839,7 @@ crafting_plentiful_FILES := $(DEFAULT_DATA_FILES) \
 	$(wildcard data/minecraft/recipes/*_wood.json) \
 	$(wildcard data/minecraft/recipes/*_hyphae.json) \
 	$(wildcard data/minecraft/recipes/*_nugget_from_blasting*.json) \
+	data/minecraft/recipes/netherite_upgrade_smithing_template.json \
 	data/minecraft/recipes/black_banner.json \
 	data/minecraft/recipes/blue_banner.json \
 	data/minecraft/recipes/brown_banner.json \
