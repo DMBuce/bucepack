@@ -1655,6 +1655,7 @@ can be planted on composters.
 Be careful to use shift or else the item will be composted.
 
 Dead bushes can be planted on composters and decorated pots.
+Be careful to use shift or else the item will be placed in the pot.
 
 Dripleaf can be planted on composters and water cauldrons.
 
