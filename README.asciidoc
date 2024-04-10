@@ -3381,6 +3381,39 @@ data/minecraft/tags/blocks/needs_stone_tool.json
 ====
 ====
 
+=== Bulbs
+
+Adds Copper Bulbs from the 1.21 experiment
+without making trial chambers generate,
+new tuff blocks craftable,
+and so on.
+
+**Downloads**
+
+.https://github.com/DMBuce/bucepack/releases/latest/download/bulbs.zip[`bulbs.zip`]
+[%collapsible]
+====
+
+```
+data/minecraft/loot_tables/blocks/copper_bulb.json
+data/minecraft/loot_tables/blocks/exposed_copper_bulb.json
+data/minecraft/loot_tables/blocks/oxidized_copper_bulb.json
+data/minecraft/loot_tables/blocks/waxed_copper_bulb.json
+data/minecraft/loot_tables/blocks/waxed_exposed_copper_bulb.json
+data/minecraft/loot_tables/blocks/waxed_oxidized_copper_bulb.json
+data/minecraft/loot_tables/blocks/waxed_weathered_copper_bulb.json
+data/minecraft/loot_tables/blocks/weathered_copper_bulb.json
+data/minecraft/tags/blocks/mineable/pickaxe.json
+data/minecraft/tags/blocks/needs_stone_tool.json
+```
+
+====
+
+.https://github.com/DMBuce/bucepack/releases[All Releases & Changelogs]
+[%collapsible]
+====
+====
+
 === Bundle
 
 Adds bundles crafted from 3 leather and 1 string.

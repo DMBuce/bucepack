@@ -1699,6 +1699,15 @@ and so on.
 
 {!./bin/packsummary crafter}
 
+=== Bulbs
+
+Adds Copper Bulbs from the 1.21 experiment
+without making trial chambers generate,
+new tuff blocks craftable,
+and so on.
+
+{!./bin/packsummary bulbs}
+
 === Bundle
 
 Adds bundles crafted from 3 leather and 1 string.

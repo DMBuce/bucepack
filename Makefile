@@ -44,6 +44,7 @@ DATAPACKFILES = \
 	bundle.zip \
 	climbable.zip \
 	crafter.zip \
+	bulbs.zip \
 	crafting_colorful.zip \
 	crafting_loot.zip \
 	crafting_plentiful.zip \
@@ -546,6 +547,53 @@ relic_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell find buce-data/relic -type f | ./bin/ext2dir) \
 	data/buce/loot_tables/relic/all.json \
 	#$(spellsmithing_guide_FILES) \
+
+bulbs_FILES := $(DEFAULT_DATA_FILES) \
+	data/minecraft/advancements/recipes/building_blocks/waxed_copper_bulb_from_honeycomb.json \
+	data/minecraft/advancements/recipes/building_blocks/waxed_exposed_copper_bulb_from_honeycomb.json \
+	data/minecraft/advancements/recipes/building_blocks/waxed_oxidized_copper_bulb_from_honeycomb.json \
+	data/minecraft/advancements/recipes/building_blocks/waxed_weathered_copper_bulb_from_honeycomb.json \
+	data/minecraft/advancements/recipes/redstone/copper_bulb.json \
+	data/minecraft/advancements/recipes/redstone/exposed_copper_bulb.json \
+	data/minecraft/advancements/recipes/redstone/oxidized_copper_bulb.json \
+	data/minecraft/advancements/recipes/redstone/waxed_copper_bulb.json \
+	data/minecraft/advancements/recipes/redstone/waxed_exposed_copper_bulb.json \
+	data/minecraft/advancements/recipes/redstone/waxed_oxidized_copper_bulb.json \
+	data/minecraft/advancements/recipes/redstone/waxed_weathered_copper_bulb.json \
+	data/minecraft/advancements/recipes/redstone/weathered_copper_bulb.json \
+	data/minecraft/loot_tables/blocks/copper_bulb.json \
+	data/minecraft/loot_tables/blocks/exposed_copper_bulb.json \
+	data/minecraft/loot_tables/blocks/oxidized_copper_bulb.json \
+	data/minecraft/loot_tables/blocks/waxed_copper_bulb.json \
+	data/minecraft/loot_tables/blocks/waxed_exposed_copper_bulb.json \
+	data/minecraft/loot_tables/blocks/waxed_oxidized_copper_bulb.json \
+	data/minecraft/loot_tables/blocks/waxed_weathered_copper_bulb.json \
+	data/minecraft/loot_tables/blocks/weathered_copper_bulb.json \
+	data/minecraft/recipes/copper_bulb.json \
+	data/minecraft/recipes/exposed_copper_bulb.json \
+	data/minecraft/recipes/oxidized_copper_bulb.json \
+	data/minecraft/recipes/waxed_copper_bulb_from_honeycomb.json \
+	data/minecraft/recipes/waxed_copper_bulb.json \
+	data/minecraft/recipes/waxed_exposed_copper_bulb_from_honeycomb.json \
+	data/minecraft/recipes/waxed_exposed_copper_bulb.json \
+	data/minecraft/recipes/waxed_oxidized_copper_bulb_from_honeycomb.json \
+	data/minecraft/recipes/waxed_oxidized_copper_bulb.json \
+	data/minecraft/recipes/waxed_weathered_copper_bulb_from_honeycomb.json \
+	data/minecraft/recipes/waxed_weathered_copper_bulb.json \
+	data/minecraft/recipes/weathered_copper_bulb.json \
+	data/minecraft/tags/blocks/mineable/pickaxe_bulbs.json \
+	data/minecraft/tags/blocks/needs_stone_tool_bulbs.json \
+	#data/minecraft/worldgen/processor_list/trial_chambers_copper_bulb_degradation.json \
+	#data/minecraft/worldgen/template_pool/trial_chambers/chamber/addon.json \
+	#data/minecraft/worldgen/template_pool/trial_chambers/chamber/end.json \
+	#data/minecraft/worldgen/template_pool/trial_chambers/chamber/entrance_cap.json \
+	#data/minecraft/worldgen/template_pool/trial_chambers/chambers/end.json \
+	#data/minecraft/worldgen/template_pool/trial_chambers/corridor/first.json \
+	#data/minecraft/worldgen/template_pool/trial_chambers/corridor.json \
+	#data/minecraft/worldgen/template_pool/trial_chambers/corridor/second.json \
+	#data/minecraft/worldgen/template_pool/trial_chambers/hallway.json \
+	#data/minecraft/advancements/husbandry/wax_off.json \
+	#data/minecraft/advancements/husbandry/wax_on.json \
 
 crafter_FILES := $(DEFAULT_DATA_FILES) \
 	data/minecraft/advancements/recipes/redstone/crafter.json \
@@ -1504,6 +1552,12 @@ frienderchest.zip: $(frienderchest_FILES)
 	./bin/ziprename _$(@:.zip=) "" $@
 
 global_effects.zip: $(global_effects_FILES)
+	cp meta/$(@:.zip=.png) pack.png
+	sempl meta/$(@:.zip=.mcmeta.sempl) pack.mcmeta
+	zip $@ pack.png pack.mcmeta $^
+	./bin/ziprename _$(@:.zip=) "" $@
+
+bulbs.zip: $(bulbs_FILES)
 	cp meta/$(@:.zip=.png) pack.png
 	sempl meta/$(@:.zip=.mcmeta.sempl) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^

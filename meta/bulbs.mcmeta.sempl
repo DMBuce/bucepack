@@ -1,0 +1,11 @@
+{
+  "features": {
+    "enabled": [
+      "minecraft:update_1_21"
+    ]
+  },
+  "pack": {
+    "pack_format": {!jq .pack_version.data "$(./bin/latest)".jar/version.json},
+    "description": "Buce's Bulbs: Copper Bulbs without other 1.21 changes"
+  }
+}
