@@ -1,6 +1,6 @@
 {
-  "subtitles.ui.stonecutter.take_result": "Saw used",
-  "stat.minecraft.interact_with_stonecutter": "Interactions with Saw",
-  "container.stonecutter": "Saw",
-  "block.minecraft.stonecutter": "Saw"
+  "subtitles.ui.stonecutter.take_result": "Cutter used",
+  "stat.minecraft.interact_with_stonecutter": "Interactions with Cutter",
+  "container.stonecutter": "Cutter",
+  "block.minecraft.stonecutter": "Cutter"
 }
