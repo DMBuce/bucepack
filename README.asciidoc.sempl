@@ -548,7 +548,7 @@ See <<language-support,Language Support>> for details.
 
 Lets you use smokers and campfires as kilns
 to smelt stone-like items with them.
-The smoker recipe is changed to use a campfire and 8 bricks.
+Smokers are crafted from 8 bricks.
 
 image::https://i.imgur.com/jFg3LRg.png[Brick Oven]
 
@@ -575,7 +575,7 @@ If a player can't find a furnace variant through exploration,
 they can progress through the furnace tiers to obtain it
 by first crafting a campfire,
 then use the campfire to make bricks,
-use the bricks to upgrade the campfire into an oven,
+use the bricks to make an oven,
 use cobblestone to sidegrade the oven into a furnace,
 use the furnace to smelt iron,
 and use the iron to sidegrade the furnace into a blast furnace.
