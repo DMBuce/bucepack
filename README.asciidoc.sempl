@@ -1533,6 +1533,9 @@ because of https://bugs.mojang.com/browse/MC-66068[MC-66068],
 a works-as-intended bug that prevents invisible armor stands from being broken.
 // just because mojang says it's a bug doesn't mean i have to agree with them
 // i think it's a bug
+
+Invisible light blocks can't be pushed by pistons
+because of https://bugs.mojang.com/browse/MC-221603[MC-221603].
 ====
 
 === Phantasmal End
