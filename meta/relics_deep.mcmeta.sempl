@@ -8,7 +8,7 @@
     "title": "Deep Relics",
     "explanation": "Adds mythic devices to ancient city loot",
     "icon": {
-      "item": "minecraft:echo_shard"
+      "id": "minecraft:echo_shard"
     }
   }
 }

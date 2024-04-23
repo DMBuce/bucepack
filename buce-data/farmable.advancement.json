@@ -1,7 +1,7 @@
 {
 	"display": {
 		"icon": {
-			"item": "minecraft:wheat"
+			"id": "minecraft:wheat"
 		},
 		"title": {
 			"text": "Farmable"

@@ -1,7 +1,7 @@
 {
 	"display": {
 		"icon": {
-			"item": "minecraft:snowball"
+			"id": "minecraft:snowball"
 		},
 		"title": {
 			"text": "Seasonal Loot"

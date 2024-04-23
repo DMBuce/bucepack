@@ -7,7 +7,7 @@
     "title": "Starter Bonus Chest",
     "explanation": "Start with a chest of bonus loot in your inventory",
     "icon": {
-      "item": "minecraft:torch"
+      "id": "minecraft:torch"
     }
   }
 }

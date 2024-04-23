@@ -7,7 +7,7 @@
     "title": "Ender Relic",
     "explanation": "Adds a relic to your ender chest",
     "icon": {
-      "item": "minecraft:ender_chest"
+      "id": "minecraft:ender_chest"
     }
   }
 }

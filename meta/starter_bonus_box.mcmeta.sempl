@@ -7,7 +7,7 @@
     "title": "Starter Bonus Box",
     "explanation": "Start with a shulker of bonus loot in your inventory",
     "icon": {
-      "item": "minecraft:brown_shulker_box"
+      "id": "minecraft:brown_shulker_box"
     }
   }
 }

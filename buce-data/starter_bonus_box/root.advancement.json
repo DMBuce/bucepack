@@ -1,7 +1,7 @@
 {
 	"display": {
 		"icon": {
-			"item": "minecraft:brown_shulker_box"
+			"id": "minecraft:brown_shulker_box"
 		},
 		"title": {
 			"text": "Starter Bonus Box"

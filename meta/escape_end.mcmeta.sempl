@@ -7,7 +7,7 @@
     "title": "Escape the End",
     "explanation": "Obtain elytra and defeat the dragon to escape The End",
     "icon": {
-      "item": "minecraft:end_stone"
+      "id": "minecraft:end_stone"
     }
   }
 }

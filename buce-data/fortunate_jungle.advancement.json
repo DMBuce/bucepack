@@ -1,7 +1,7 @@
 {
 	"display": {
 		"icon": {
-			"item": "minecraft:jungle_sapling"
+			"id": "minecraft:jungle_sapling"
 		},
 		"title": {
 			"text": "Fortunate Jungle"

@@ -7,7 +7,7 @@
     "title": "Phantasmal End",
     "explanation": "Summoned dragons have phantom allies",
     "icon": {
-      "item": "minecraft:elytra"
+      "id": "minecraft:elytra"
     }
   }
 }

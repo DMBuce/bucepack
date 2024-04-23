@@ -1,7 +1,7 @@
 {
 	"display": {
 		"icon": {
-			"item": "minecraft:leather"
+			"id": "minecraft:leather"
 		},
 		"title": {
 			"text": "Illusory Trader"

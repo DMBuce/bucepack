@@ -7,7 +7,7 @@
     "title": "Poseable",
     "explanation": "Sneak to place an armor stand with arms and sneak equip it to change its pose",
     "icon": {
-      "item": "minecraft:armor_stand"
+      "id": "minecraft:armor_stand"
     }
   }
 }

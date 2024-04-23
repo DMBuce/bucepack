@@ -1,7 +1,7 @@
 {
 	"display": {
 		"icon": {
-			"item": "minecraft:end_stone"
+			"id": "minecraft:end_stone"
 		},
 		"title": {
 			"text": "Escape the End"

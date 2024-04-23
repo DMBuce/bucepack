@@ -1,7 +1,7 @@
 {
 	"display": {
 		"icon": {
-			"item": "minecraft:bedrock"
+			"id": "minecraft:bedrock"
 		},
 		"title": {
 			"text": "Dragonproof"

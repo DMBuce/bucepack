@@ -7,7 +7,7 @@
     "title": "Loot Overhaul",
     "explanation": "Better loot",
     "icon": {
-      "item": "minecraft:chest"
+      "id": "minecraft:chest"
     }
   }
 }

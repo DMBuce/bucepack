@@ -1,7 +1,7 @@
 {
 	"display": {
 		"icon": {
-			"item": "minecraft:smooth_stone"
+			"id": "minecraft:smooth_stone"
 		},
 		"title": {
 			"text": "More Cutting"

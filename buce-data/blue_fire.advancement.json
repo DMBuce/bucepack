@@ -1,7 +1,7 @@
 {
 	"display": {
 		"icon": {
-			"item": "minecraft:diamond_block"
+			"id": "minecraft:diamond_block"
 		},
 		"title": {
 			"text": "Blue Fire"

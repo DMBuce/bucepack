@@ -7,7 +7,7 @@
     "title": "Smart Allays",
     "explanation": "Place a hopper against a note block to bind allays to note blocks",
     "icon": {
-      "item": "minecraft:cookie"
+      "id": "minecraft:cookie"
     }
   }
 }

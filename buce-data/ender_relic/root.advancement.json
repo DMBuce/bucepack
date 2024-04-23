@@ -1,7 +1,7 @@
 {
 	"display": {
 		"icon": {
-			"item": "minecraft:ender_chest"
+			"id": "minecraft:ender_chest"
 		},
 		"title": {
 			"text": "Ender Relic"

@@ -1,7 +1,7 @@
 {
 	"display": {
 		"icon": {
-			"item": "minecraft:heart_of_the_sea"
+			"id": "minecraft:heart_of_the_sea"
 		},
 		"title": {
 			"text": "Treasure Barrels"

@@ -1,7 +1,7 @@
 {
 	"display": {
 		"icon": {
-			"item": "minecraft:bookshelf"
+			"id": "minecraft:bookshelf"
 		},
 		"title": {
 			"text": "Decorative Loot"

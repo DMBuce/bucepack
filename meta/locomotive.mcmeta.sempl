@@ -7,7 +7,7 @@
     "title": "Locomotive",
     "explanation": "Furnace carts move towards players in minecarts when fueled",
     "icon": {
-      "item": "minecraft:furnace_minecart"
+      "id": "minecraft:furnace_minecart"
     }
   }
 }

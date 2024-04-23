@@ -1,7 +1,7 @@
 {
 	"display": {
 		"icon": {
-			"item": "minecraft:bread"
+			"id": "minecraft:bread"
 		},
 		"title": {
 			"text": "Food Loot"

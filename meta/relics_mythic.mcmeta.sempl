@@ -8,7 +8,7 @@
     "title": "Mythic Relics",
     "explanation": "Adds mythic relics to the game",
     "icon": {
-      "item": "minecraft:diamond_sword",
+      "id": "minecraft:diamond_sword",
       "nbt": "{Enchantments:[{id:unbreaking,lvl:3}]}"
     }
   }

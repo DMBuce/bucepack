@@ -1,7 +1,7 @@
 {
 	"display": {
 		"icon": {
-			"item": "minecraft:milk_bucket"
+			"id": "minecraft:milk_bucket"
 		},
 		"title": {
 			"text": "Antidote"

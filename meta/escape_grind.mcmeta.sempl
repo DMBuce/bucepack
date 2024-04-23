@@ -7,7 +7,7 @@
     "title": "Escape the Grind",
     "explanation": "Addon pack for a less grindy Escape the Nether/End experience",
     "icon": {
-      "item": "minecraft:grindstone"
+      "id": "minecraft:grindstone"
     }
   }
 }

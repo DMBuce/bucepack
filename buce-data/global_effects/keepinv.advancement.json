@@ -1,7 +1,7 @@
 {
 	"display": {
 		"icon": {
-			"item": "minecraft:dragon_egg"
+			"id": "minecraft:dragon_egg"
 		},
 		"title": {
 			"text": "Inventory Upgrade"

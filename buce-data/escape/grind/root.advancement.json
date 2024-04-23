@@ -1,7 +1,7 @@
 {
 	"display": {
 		"icon": {
-			"item": "minecraft:grindstone"
+			"id": "minecraft:grindstone"
 		},
 		"title": {
 			"text": "Escape the Grind"

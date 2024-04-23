@@ -7,7 +7,7 @@
     "title": "Debugless",
     "explanation": "Measure distance with a lodestone compass or recovery compass in the offhand",
     "icon": {
-      "item": "minecraft:cartography_table"
+      "id": "minecraft:cartography_table"
     }
   }
 }

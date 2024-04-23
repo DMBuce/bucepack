@@ -8,7 +8,7 @@
     "title": "Deep Gate Network",
     "explanation": "Use a goat horn to activate deep gates in ancient cities",
     "icon": {
-      "item": "minecraft:goat_horn"
+      "id": "minecraft:goat_horn"
     }
   }
 }

@@ -1,7 +1,7 @@
 {
 	"display": {
 		"icon": {
-			"item": "minecraft:gold_ingot"
+			"id": "minecraft:gold_ingot"
 		},
 		"title": {
 			"text": "Heirlooms"

@@ -1,7 +1,7 @@
 {
 	"display": {
 		"icon": {
-			"item": "minecraft:dripstone_block"
+			"id": "minecraft:dripstone_block"
 		},
 		"title": {
 			"text": "DripBlock"

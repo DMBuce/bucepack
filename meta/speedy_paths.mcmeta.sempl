@@ -7,7 +7,7 @@
     "title": "Speedy Paths",
     "explanation": "Path blocks extend Speed effects",
     "icon": {
-      "item": "minecraft:dirt_path"
+      "id": "minecraft:dirt_path"
     }
   }
 }

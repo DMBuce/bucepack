@@ -7,7 +7,7 @@
     "title": "Illusory Trader",
     "explanation": "Some wandering traders are illusioners in disguise",
     "icon": {
-      "item": "minecraft:leather"
+      "id": "minecraft:leather"
     }
   }
 }

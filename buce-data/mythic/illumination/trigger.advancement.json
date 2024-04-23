@@ -1,7 +1,7 @@
 {
 	"display": {
 		"icon": {
-			"item": "minecraft:barrier"
+			"id": "minecraft:barrier"
 		},
 		"title": {
 			"text": "Error found, command to fix it:"

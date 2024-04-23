@@ -1,7 +1,7 @@
 {
 	"display": {
 		"icon": {
-			"item": "minecraft:compass"
+			"id": "minecraft:compass"
 		},
 		"title": {
 			"text": "Super Gravitation"

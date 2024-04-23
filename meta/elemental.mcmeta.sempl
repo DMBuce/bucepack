@@ -12,7 +12,7 @@
     "title": "Elemental",
     "explanation": "Paintings of earth, wind, fire, and water",
     "icon": {
-      "item": "minecraft:painting"
+      "id": "minecraft:painting"
     }
   }
 }

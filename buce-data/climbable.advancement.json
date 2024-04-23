@@ -1,7 +1,7 @@
 {
 	"display": {
 		"icon": {
-			"item": "minecraft:ladder"
+			"id": "minecraft:ladder"
 		},
 		"title": {
 			"text": "Climbable"

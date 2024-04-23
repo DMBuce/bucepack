@@ -7,7 +7,7 @@
     "title": "DripBlock",
     "explanation": "Dripstone skyblock",
     "icon": {
-      "item": "minecraft:dripstone_block"
+      "id": "minecraft:dripstone_block"
     }
   }
 }

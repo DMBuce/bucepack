@@ -1,7 +1,7 @@
 {
 	"display": {
 		"icon": {
-			"item": "minecraft:sugar_cane"
+			"id": "minecraft:sugar_cane"
 		},
 		"title": {
 			"text": "Plant Loot"

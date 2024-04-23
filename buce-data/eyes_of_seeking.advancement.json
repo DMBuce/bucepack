@@ -1,7 +1,7 @@
 {
 	"display": {
 		"icon": {
-			"item": "minecraft:gilded_blackstone"
+			"id": "minecraft:gilded_blackstone"
 		},
 		"title": {
 			"text": "Eyes of Seeking"

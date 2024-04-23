@@ -1,7 +1,7 @@
 {
 	"display": {
 		"icon": {
-			"item": "minecraft:saddle"
+			"id": "minecraft:saddle"
 		},
 		"title": {
 			"text": "Pig Armor"

@@ -11,7 +11,7 @@ latest = "$(./bin/latest)"
     "title": "Pig Armor",
     "explanation": "Pigs with saddles have armor",
     "icon": {
-      "item": "minecraft:saddle"
+      "id": "minecraft:saddle"
     }
   }
 }

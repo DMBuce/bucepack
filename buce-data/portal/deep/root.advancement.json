@@ -1,7 +1,7 @@
 {
 	"display": {
 		"icon": {
-			"item": "minecraft:goat_horn"
+			"id": "minecraft:goat_horn"
 		},
 		"title": {
 			"text": "Deep Gate Network"

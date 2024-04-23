@@ -1,7 +1,7 @@
 {
 	"display": {
 		"icon": {
-			"item": "minecraft:furnace_minecart"
+			"id": "minecraft:furnace_minecart"
 		},
 		"title": {
 			"text": "Locomotive"

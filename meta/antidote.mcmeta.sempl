@@ -7,7 +7,7 @@
     "title": "Antidote",
     "explanation": "Food negates potion effects",
     "icon": {
-      "item": "minecraft:milk_bucket"
+      "id": "minecraft:milk_bucket"
     }
   }
 }

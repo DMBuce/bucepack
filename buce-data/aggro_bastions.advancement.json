@@ -1,7 +1,7 @@
 {
 	"display": {
 		"icon": {
-			"item": "minecraft:polished_blackstone_bricks"
+			"id": "minecraft:polished_blackstone_bricks"
 		},
 		"title": {
 			"text": "Aggro Bastions"

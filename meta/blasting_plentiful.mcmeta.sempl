@@ -7,7 +7,7 @@
     "title": "Plentiful Blasting",
     "explanation": "Get more nuggets from blasting tools and armor",
     "icon": {
-      "item": "minecraft:blast_furnace"
+      "id": "minecraft:blast_furnace"
     }
   }
 }

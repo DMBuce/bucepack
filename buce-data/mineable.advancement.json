@@ -1,7 +1,7 @@
 {
 	"display": {
 		"icon": {
-			"item": "minecraft:glass"
+			"id": "minecraft:glass"
 		},
 		"title": {
 			"text": "Mineable"

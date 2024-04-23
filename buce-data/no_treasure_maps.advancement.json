@@ -1,7 +1,7 @@
 {
 	"display": {
 		"icon": {
-			"item": "minecraft:filled_map"
+			"id": "minecraft:filled_map"
 		},
 		"title": {
 			"text": "No Treasure Maps"

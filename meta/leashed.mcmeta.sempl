@@ -7,7 +7,7 @@
     "title": "Leashed",
     "explanation": "Leash mobs to allays, golems, donkeys, and mules",
     "icon": {
-      "item": "minecraft:lead"
+      "id": "minecraft:lead"
     }
   }
 }

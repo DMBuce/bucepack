@@ -1,7 +1,7 @@
 {
 	"display": {
 		"icon": {
-			"item": "minecraft:map"
+			"id": "minecraft:map"
 		},
 		"title": {
 			"text": "Starter Map"

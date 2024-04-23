@@ -7,7 +7,7 @@
     "title": "Heirlooms",
     "explanation": "Items dropped on death don't despawn",
     "icon": {
-      "item": "minecraft:gold_ingot"
+      "id": "minecraft:gold_ingot"
     }
   }
 }

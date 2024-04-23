@@ -7,7 +7,7 @@
     "title": "Escape the Nether",
     "explanation": "Summon the Wither to escape the nether",
     "icon": {
-      "item": "minecraft:netherrack"
+      "id": "minecraft:netherrack"
     }
   }
 }

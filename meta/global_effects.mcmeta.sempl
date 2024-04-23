@@ -7,7 +7,7 @@
     "title": "Global Effects",
     "explanation": "Playable gamerules",
     "icon": {
-      "item": "minecraft:beacon"
+      "id": "minecraft:beacon"
     }
   }
 }

@@ -1,7 +1,7 @@
 {
 	"display": {
 		"icon": {
-			"item": "minecraft:diamond_chestplate",
+			"id": "minecraft:diamond_chestplate",
 			"nbt": "{Enchantments:[{id:unbreaking,lvl:3}]}"
 		},
 		"title": {

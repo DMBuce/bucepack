@@ -1,7 +1,7 @@
 {
 	"display": {
 		"icon": {
-			"item": "minecraft:wither_skeleton_skull"
+			"id": "minecraft:wither_skeleton_skull"
 		},
 		"title": {
 			"text": "Blast Resistant Blocks"
