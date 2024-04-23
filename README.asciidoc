@@ -577,7 +577,7 @@ datapacks that use <<spellsmithing>>.
 
 * <<phantasmal,Phantasmal>>: Invisible item frames and light blocks
 * <<loot-overhaul,Loot Overhaul>>: Invisible light blocks
-* <<mythic-relics,Mythic Relics>>, <<deep-relics,Deep Relics>>, <<illusory-traders,Illusory Traders>>: Relics
+* <<mythic-relics,Mythic Relics>>, <<deep-relics,Deep Relics>>: Relics
 * <<archaeological-relics,Archaeological Relics>>, <<starter-relic,Starter Relic>>, <<ender-relic,Ender Relic>>: Relics
 
 **Downloads**
@@ -926,53 +926,53 @@ data/minecraft/tags/entity_types/powder_snow_walkable_mobs.json
 ====
 ====
 
-=== Aggro Bastions
+//=== Aggro Bastions
+//
+//Makes piglins hostile when you break blocks that bastions are made out of.
+//
+//**Downloads**
+//
+//.https://github.com/DMBuce/bucepack/releases/latest/download/aggro_bastions.zip[`aggro_bastions.zip`]
+//[%collapsible]
+//====
+//
+//```
+//data/minecraft/tags/blocks/guarded_by_piglins.json
+//```
+//
+//====
+//
+//.https://github.com/DMBuce/bucepack/releases[All Releases & Changelogs]
+//[%collapsible]
+//====
+//====
 
-Makes piglins hostile when you break blocks that bastions are made out of.
-
-**Downloads**
-
-.https://github.com/DMBuce/bucepack/releases/latest/download/aggro_bastions.zip[`aggro_bastions.zip`]
-[%collapsible]
-====
-
-```
-data/minecraft/tags/blocks/guarded_by_piglins.json
-```
-
-====
-
-.https://github.com/DMBuce/bucepack/releases[All Releases & Changelogs]
-[%collapsible]
-====
-====
-
-=== Hover Mode
-
-Adds basic flight.
-Lets players walk on air by sneaking,
-ascend through air with the jump key,
-and slowly descend while falling.
-Basically, air is treated like vines and other climbable blocks.
-
-Best enjoyed in skyblock worlds such as <<dripblock,DripBlock>>.
-
-**Downloads**
-
-.https://github.com/DMBuce/bucepack/releases/latest/download/hover_mode.zip[`hover_mode.zip`]
-[%collapsible]
-====
-
-```
-data/minecraft/tags/blocks/climbable.json
-```
-
-====
-
-.https://github.com/DMBuce/bucepack/releases[All Releases & Changelogs]
-[%collapsible]
-====
-====
+//=== Hover Mode
+//
+//Adds basic flight.
+//Lets players walk on air by sneaking,
+//ascend through air with the jump key,
+//and slowly descend while falling.
+//Basically, air is treated like vines and other climbable blocks.
+//
+//Best enjoyed in skyblock worlds such as <<dripblock,DripBlock>>.
+//
+//**Downloads**
+//
+//.https://github.com/DMBuce/bucepack/releases/latest/download/hover_mode.zip[`hover_mode.zip`]
+//[%collapsible]
+//====
+//
+//```
+//data/minecraft/tags/blocks/climbable.json
+//```
+//
+//====
+//
+//.https://github.com/DMBuce/bucepack/releases[All Releases & Changelogs]
+//[%collapsible]
+//====
+//====
 
 === Waterproof Tech
 
@@ -2286,38 +2286,38 @@ data/minecraft/tags/items/creeper_drop_music_discs.json
 ====
 ====
 
-==== Treasure Seeds
-
-If this <<ordering-data-packs,addon pack>>
-is enabled and loaded after <<loot-overhaul,Loot Overhaul>>,
-it adds so-called "treasure seeds" to the End City and Woodland Mansion loot tables.
-Treasure seeds are plant resources that you haven't used yet.
-Such resources include everything from berries, wheat seeds and potatoes
-to cactus, bamboo, and rose bushes. If you haven't eaten, planted,
-or otherwise used one of the items shown below, you
-have a chance to find it in End City and Woodland Mansion chests.
-
-image::https://i.imgur.com/gUnJW5S.png[Treasure Seeds]
-
-**Downloads**
-
-.https://github.com/DMBuce/bucepack/releases/latest/download/loot_overhaul_treasure_seeds.zip[`loot_overhaul_treasure_seeds.zip`]
-[%collapsible]
-====
-====
-
-.https://github.com/DMBuce/bucepack/releases[All Releases & Changelogs]
-[%collapsible]
-====
-====
-
-.Known Issues
-[%collapsible]
-====
-If a chest is broken instead of opened by a player,
-treasure seeds won't generate due to
-https://bugs.mojang.com/browse/MC-156411[MC-156411].
-====
+//==== Treasure Seeds
+//
+//If this <<ordering-data-packs,addon pack>>
+//is enabled and loaded after <<loot-overhaul,Loot Overhaul>>,
+//it adds so-called "treasure seeds" to the End City and Woodland Mansion loot tables.
+//Treasure seeds are plant resources that you haven't used yet.
+//Such resources include everything from berries, wheat seeds and potatoes
+//to cactus, bamboo, and rose bushes. If you haven't eaten, planted,
+//or otherwise used one of the items shown below, you
+//have a chance to find it in End City and Woodland Mansion chests.
+//
+//image::https://i.imgur.com/gUnJW5S.png[Treasure Seeds]
+//
+//**Downloads**
+//
+//.https://github.com/DMBuce/bucepack/releases/latest/download/loot_overhaul_treasure_seeds.zip[`loot_overhaul_treasure_seeds.zip`]
+//[%collapsible]
+//====
+//====
+//
+//.https://github.com/DMBuce/bucepack/releases[All Releases & Changelogs]
+//[%collapsible]
+//====
+//====
+//
+//.Known Issues
+//[%collapsible]
+//====
+//If a chest is broken instead of opened by a player,
+//treasure seeds won't generate due to
+//https://bugs.mojang.com/browse/MC-156411[MC-156411].
+//====
 
 ==== Starter Relic
 
@@ -2521,23 +2521,23 @@ pose.
 ====
 ====
 
-=== Heirlooms
-
-Prevents items from despawning when dropped on death.
-
-Items dropped in other ways despawn after 5 minutes like normal.
-
-**Downloads**
-
-.https://github.com/DMBuce/bucepack/releases/latest/download/heirlooms.zip[`heirlooms.zip`]
-[%collapsible]
-====
-====
-
-.https://github.com/DMBuce/bucepack/releases[All Releases & Changelogs]
-[%collapsible]
-====
-====
+//=== Heirlooms
+//
+//Prevents items from despawning when dropped on death.
+//
+//Items dropped in other ways despawn after 5 minutes like normal.
+//
+//**Downloads**
+//
+//.https://github.com/DMBuce/bucepack/releases/latest/download/heirlooms.zip[`heirlooms.zip`]
+//[%collapsible]
+//====
+//====
+//
+//.https://github.com/DMBuce/bucepack/releases[All Releases & Changelogs]
+//[%collapsible]
+//====
+//====
 
 === Smart Allays
 
@@ -2564,41 +2564,41 @@ or take an item from it.
 ====
 ====
 
-=== Antidote
-
-Makes more food negate potion effects
-the same way honey negates poison.
-
-.List of potion negations
-[%collapsible]
-====
-* Apples negate nausea
-* Carrots negate blindness
-* Glow berries negate darkness
-* Dark berries negate glowing
-* Cake negates levitation
-* Pumpkin pie negates slow falling
-* Dried kelp negates dolphin's grace
-* Cookies negate slowness and resistance
-* Beetroot soup negates weakness
-* Mushroom stew negates bad omen, luck, and unluck
-* Rabbit stew negates mining fatigue
-* Melons negate withering
-====
-
-In addition, crimson fungus immunizes hoglins against zombification.
-
-**Downloads**
-
-.https://github.com/DMBuce/bucepack/releases/latest/download/antidote.zip[`antidote.zip`]
-[%collapsible]
-====
-====
-
-.https://github.com/DMBuce/bucepack/releases[All Releases & Changelogs]
-[%collapsible]
-====
-====
+//=== Antidote
+//
+//Makes more food negate potion effects
+//the same way honey negates poison.
+//
+//.List of potion negations
+//[%collapsible]
+//====
+//* Apples negate nausea
+//* Carrots negate blindness
+//* Glow berries negate darkness
+//* Dark berries negate glowing
+//* Cake negates levitation
+//* Pumpkin pie negates slow falling
+//* Dried kelp negates dolphin's grace
+//* Cookies negate slowness and resistance
+//* Beetroot soup negates weakness
+//* Mushroom stew negates bad omen, luck, and unluck
+//* Rabbit stew negates mining fatigue
+//* Melons negate withering
+//====
+//
+//In addition, crimson fungus immunizes hoglins against zombification.
+//
+//**Downloads**
+//
+//.https://github.com/DMBuce/bucepack/releases/latest/download/antidote.zip[`antidote.zip`]
+//[%collapsible]
+//====
+//====
+//
+//.https://github.com/DMBuce/bucepack/releases[All Releases & Changelogs]
+//[%collapsible]
+//====
+//====
 
 === Debugless
 
@@ -2673,27 +2673,27 @@ and will continue to attack even if the player they're angry at is dead.
 ====
 ====
 
-=== Leashed
-
-Lets you leash mobs to Allays, Snow Golems, Iron Golems, Donkeys, and Mules.
-Attaching a lead to one of these creatures while sneaking leashes your other
-leashed creatures to them.
-Unattaching a lead while holding another lead and sneaking
-leashes their creatures to you.
-
-image::https://i.imgur.com/xQh03yw.png[Leashed]
-
-**Downloads**
-
-.https://github.com/DMBuce/bucepack/releases/latest/download/leashed.zip[`leashed.zip`]
-[%collapsible]
-====
-====
-
-.https://github.com/DMBuce/bucepack/releases[All Releases & Changelogs]
-[%collapsible]
-====
-====
+//=== Leashed
+//
+//Lets you leash mobs to Allays, Snow Golems, Iron Golems, Donkeys, and Mules.
+//Attaching a lead to one of these creatures while sneaking leashes your other
+//leashed creatures to them.
+//Unattaching a lead while holding another lead and sneaking
+//leashes their creatures to you.
+//
+//image::https://i.imgur.com/xQh03yw.png[Leashed]
+//
+//**Downloads**
+//
+//.https://github.com/DMBuce/bucepack/releases/latest/download/leashed.zip[`leashed.zip`]
+//[%collapsible]
+//====
+//====
+//
+//.https://github.com/DMBuce/bucepack/releases[All Releases & Changelogs]
+//[%collapsible]
+//====
+//====
 
 === Wandering Loot
 
@@ -2702,8 +2702,8 @@ from a random structure or 4-8 end portal frames.
 
 image::https://i.imgur.com/gVEJ2zi.png[Wandering Loot]
 
-Best enjoyed in worlds such as <<dripblock,DripBlock>>
-where structures don't generate.
+//Best enjoyed in worlds such as <<dripblock,DripBlock>>
+//where structures don't generate.
 
 **Downloads**
 
@@ -2759,31 +2759,31 @@ enabled, some relics have custom item textures in the inventory.
 ====
 ====
 
-=== Illusory Traders
-
-Gives each wandering trader a chance to be an illusioner in disguise.
-If a player attacks a disguised illusioner or its llama,
-the illusioner drops the disguise
-and turns any nearby trader llamas into ravagers.
-
-When killed by a player,
-the illusioner drops leather enchanted with Myth of Cloaking,
-a custom enchantment that can be applied to elytra
-with a bottle o' enchanting in the smithing table.
-When a player wearing the elytra is hit by a mob, they gain 8 minutes of
-invisibility. The invisibility ends if the player damages a mob.
-
-**Downloads**
-
-.https://github.com/DMBuce/bucepack/releases/latest/download/illusory_trader.zip[`illusory_trader.zip`]
-[%collapsible]
-====
-====
-
-.https://github.com/DMBuce/bucepack/releases[All Releases & Changelogs]
-[%collapsible]
-====
-====
+//=== Illusory Traders
+//
+//Gives each wandering trader a chance to be an illusioner in disguise.
+//If a player attacks a disguised illusioner or its llama,
+//the illusioner drops the disguise
+//and turns any nearby trader llamas into ravagers.
+//
+//When killed by a player,
+//the illusioner drops leather enchanted with Myth of Cloaking,
+//a custom enchantment that can be applied to elytra
+//with a bottle o' enchanting in the smithing table.
+//When a player wearing the elytra is hit by a mob, they gain 8 minutes of
+//invisibility. The invisibility ends if the player damages a mob.
+//
+//**Downloads**
+//
+//.https://github.com/DMBuce/bucepack/releases/latest/download/illusory_trader.zip[`illusory_trader.zip`]
+//[%collapsible]
+//====
+//====
+//
+//.https://github.com/DMBuce/bucepack/releases[All Releases & Changelogs]
+//[%collapsible]
+//====
+//====
 
 === Mythic Relics
 
@@ -3165,33 +3165,33 @@ invisible item frames and light blocks with phantom membranes.
 //Playing the horn on a mountaintop transports the player back to the last
 //ancient city the player played the horn at.
 
-=== Deep Gate Network
-
-Turns the reinforced deepslate structures at the center of ancient cities
-into _deep gates_ in a network that spans the overworld.
-Deep gates resonate with and amplify the melody of loud instruments.
-A deep gate that detects such a melody echoing through the mountaintops
-or playing nearby can transport a player far and wide.
-
-Playing a goat horn near a deep gate transports the player
-to the world's surface.
-
-Playing a goat horn on a mountain peak transports the player back
-to the last deep gate that horn was played at.
-
-//The transportation effect requires standing on one of [these blocks] to work.
-
-**Downloads**
-
-.https://github.com/DMBuce/bucepack/releases/latest/download/network_deep.zip[`network_deep.zip`]
-[%collapsible]
-====
-====
-
-.https://github.com/DMBuce/bucepack/releases[All Releases & Changelogs]
-[%collapsible]
-====
-====
+//=== Deep Gate Network
+//
+//Turns the reinforced deepslate structures at the center of ancient cities
+//into _deep gates_ in a network that spans the overworld.
+//Deep gates resonate with and amplify the melody of loud instruments.
+//A deep gate that detects such a melody echoing through the mountaintops
+//or playing nearby can transport a player far and wide.
+//
+//Playing a goat horn near a deep gate transports the player
+//to the world's surface.
+//
+//Playing a goat horn on a mountain peak transports the player back
+//to the last deep gate that horn was played at.
+//
+////The transportation effect requires standing on one of [these blocks] to work.
+//
+//**Downloads**
+//
+//.https://github.com/DMBuce/bucepack/releases/latest/download/network_deep.zip[`network_deep.zip`]
+//[%collapsible]
+//====
+//====
+//
+//.https://github.com/DMBuce/bucepack/releases[All Releases & Changelogs]
+//[%collapsible]
+//====
+//====
 
 === Nether Portal Network
 
@@ -3308,8 +3308,7 @@ Changes that facilitate survival in The End:
 * In addition to slimestone materials, you're given TNT when you respawn in
   The End
 * You can obtain the Relic of the Lens from <<mythic-relics,Mythic Relics>>
-* End cities include loot from <<loot-overhaul,Loot Overhaul>>
-  and <<treasure-seeds,Treasure Seeds>>,
+* End cities include loot from <<loot-overhaul,Loot Overhaul>>,
   including enchanted crossbows to use as a ranged weapon, fireworks for ammo,
   plus copper and warped stems to craft the Relic of the Lens with
 
@@ -3474,146 +3473,143 @@ data/minecraft/loot_tables/entities/snow_golem.json
 ====
 ====
 
-=== DripBlock
+//=== DripBlock
+//
+//If you create a Default or Large Biomes world with this datapack installed,
+//it generates a skyblock overworld with a small spawn island at 0, 0.
+//The only available resources at first are dripstone, water, and glow berries.
+//A cauldron on the island provides access to lava later on.
+//
+//image::https://i.imgur.com/t66BrqO.png[DripBlock]
+//
+//Several changes enable survival skyblock gameplay:
+//
+//* Dripstone farming is made faster by setting `randomTickSpeed` to 500
+//* Creepers drop moss when killed by a player, and moss spreads to dripstone
+//* Grass blocks can be crafted from 4 dirt blocks and 2 moss carpet
+//* Buckets can be crafted from iron nuggets instead of ingots
+//
+//Several companion packs are available to enhance your DripBlock experience.
+//<<wandering-loot,Wandering Loot>> gives access to The End
+//and loot found in structure chests,
+//while <<loot-overhaul,Loot Overhaul>> makes the loot in those chests more exciting.
+//
+//**Downloads**
+//
+//.https://github.com/DMBuce/bucepack/releases/latest/download/dripblock.zip[`dripblock.zip`]
+//[%collapsible]
+//====
+//
+//```
+//data/minecraft/loot_tables/entities/creeper.json
+//data/minecraft/tags/blocks/moss_replaceable.json
+//data/minecraft/tags/worldgen/biome/has_structure/ancient_city.json
+//data/minecraft/tags/worldgen/biome/has_structure/buried_treasure.json
+//data/minecraft/tags/worldgen/biome/has_structure/desert_pyramid.json
+//data/minecraft/tags/worldgen/biome/has_structure/igloo.json
+//data/minecraft/tags/worldgen/biome/has_structure/jungle_temple.json
+//data/minecraft/tags/worldgen/biome/has_structure/mineshaft.json
+//data/minecraft/tags/worldgen/biome/has_structure/mineshaft_mesa.json
+//data/minecraft/tags/worldgen/biome/has_structure/ocean_monument.json
+//data/minecraft/tags/worldgen/biome/has_structure/ocean_ruin_cold.json
+//data/minecraft/tags/worldgen/biome/has_structure/ocean_ruin_warm.json
+//data/minecraft/tags/worldgen/biome/has_structure/pillager_outpost.json
+//data/minecraft/tags/worldgen/biome/has_structure/ruined_portal_desert.json
+//data/minecraft/tags/worldgen/biome/has_structure/ruined_portal_jungle.json
+//data/minecraft/tags/worldgen/biome/has_structure/ruined_portal_mountain.json
+//data/minecraft/tags/worldgen/biome/has_structure/ruined_portal_nether.json
+//data/minecraft/tags/worldgen/biome/has_structure/ruined_portal_ocean.json
+//data/minecraft/tags/worldgen/biome/has_structure/ruined_portal_standard.json
+//data/minecraft/tags/worldgen/biome/has_structure/ruined_portal_swamp.json
+//data/minecraft/tags/worldgen/biome/has_structure/shipwreck_beached.json
+//data/minecraft/tags/worldgen/biome/has_structure/shipwreck.json
+//data/minecraft/tags/worldgen/biome/has_structure/stronghold.json
+//data/minecraft/tags/worldgen/biome/has_structure/swamp_hut.json
+//data/minecraft/tags/worldgen/biome/has_structure/village_desert.json
+//data/minecraft/tags/worldgen/biome/has_structure/village_plains.json
+//data/minecraft/tags/worldgen/biome/has_structure/village_savanna.json
+//data/minecraft/tags/worldgen/biome/has_structure/village_snowy.json
+//data/minecraft/tags/worldgen/biome/has_structure/village_taiga.json
+//data/minecraft/tags/worldgen/biome/has_structure/woodland_mansion.json
+//data/minecraft/worldgen/noise_settings/overworld.json
+//```
+//
+//====
+//
+//.https://github.com/DMBuce/bucepack/releases[All Releases & Changelogs]
+//[%collapsible]
+//====
+//====
 
-If you create a Default or Large Biomes world with this datapack installed,
-it generates a skyblock overworld with a small spawn island at 0, 0.
-The only available resources at first are dripstone, water, and glow berries.
-A cauldron on the island provides access to lava later on.
+//=== Frienderchest
+//
+//A shared pocket dimension.
+//Players can enter the Frienderchest
+//by right-clicking an enderchest with an ender pearl in the overworld.
+//
+//**Downloads**
+//
+//.https://github.com/DMBuce/bucepack/releases/latest/download/frienderchest.zip[`frienderchest.zip`]
+//[%collapsible]
+//====
+//====
+//
+//.https://github.com/DMBuce/bucepack/releases[All Releases & Changelogs]
+//[%collapsible]
+//====
+//====
 
-image::https://i.imgur.com/t66BrqO.png[DripBlock]
+//=== Apocalypse
+//
+//Makes all villages generate as zombie villages.
+//
+//In order to access villager-based game mechanics
+//such as trading, raids, and iron farms,
+//the player needs to either cure zombie villagers
+//or find an igloo with a basement.
+//
+//**Downloads**
+//
+//.https://github.com/DMBuce/bucepack/releases/latest/download/worldgen_apocalypse.zip[`worldgen_apocalypse.zip`]
+//[%collapsible]
+//====
+//
+//```
+//data/minecraft/worldgen/template_pool/village/desert/town_centers.json
+//data/minecraft/worldgen/template_pool/village/plains/town_centers.json
+//data/minecraft/worldgen/template_pool/village/savanna/town_centers.json
+//data/minecraft/worldgen/template_pool/village/snowy/town_centers.json
+//data/minecraft/worldgen/template_pool/village/taiga/town_centers.json
+//```
+//
+//====
+//
+//.https://github.com/DMBuce/bucepack/releases[All Releases & Changelogs]
+//[%collapsible]
+//====
+//====
 
-Several changes enable survival skyblock gameplay:
-
-* Dripstone farming is made faster by setting `randomTickSpeed` to 500
-* Creepers drop moss when killed by a player, and moss spreads to dripstone
-* Grass blocks can be crafted from 4 dirt blocks and 2 moss carpet
-* Buckets can be crafted from iron nuggets instead of ingots
-
-Several companion packs are available to enhance your DripBlock experience.
-<<wandering-loot,Wandering Loot>> gives access to The End
-and loot found in structure chests,
-<<loot-overhaul,Loot Overhaul>> makes the loot in those chests more exciting,
-<<treasure-seeds,Treasure Seeds>>
-makes certain resources obtainable through said loot,
-and <<hover-mode,Hover Mode>> adds basic flight.
-
-**Downloads**
-
-.https://github.com/DMBuce/bucepack/releases/latest/download/dripblock.zip[`dripblock.zip`]
-[%collapsible]
-====
-
-```
-data/minecraft/loot_tables/entities/creeper.json
-data/minecraft/tags/blocks/moss_replaceable.json
-data/minecraft/tags/worldgen/biome/has_structure/ancient_city.json
-data/minecraft/tags/worldgen/biome/has_structure/buried_treasure.json
-data/minecraft/tags/worldgen/biome/has_structure/desert_pyramid.json
-data/minecraft/tags/worldgen/biome/has_structure/igloo.json
-data/minecraft/tags/worldgen/biome/has_structure/jungle_temple.json
-data/minecraft/tags/worldgen/biome/has_structure/mineshaft.json
-data/minecraft/tags/worldgen/biome/has_structure/mineshaft_mesa.json
-data/minecraft/tags/worldgen/biome/has_structure/ocean_monument.json
-data/minecraft/tags/worldgen/biome/has_structure/ocean_ruin_cold.json
-data/minecraft/tags/worldgen/biome/has_structure/ocean_ruin_warm.json
-data/minecraft/tags/worldgen/biome/has_structure/pillager_outpost.json
-data/minecraft/tags/worldgen/biome/has_structure/ruined_portal_desert.json
-data/minecraft/tags/worldgen/biome/has_structure/ruined_portal_jungle.json
-data/minecraft/tags/worldgen/biome/has_structure/ruined_portal_mountain.json
-data/minecraft/tags/worldgen/biome/has_structure/ruined_portal_nether.json
-data/minecraft/tags/worldgen/biome/has_structure/ruined_portal_ocean.json
-data/minecraft/tags/worldgen/biome/has_structure/ruined_portal_standard.json
-data/minecraft/tags/worldgen/biome/has_structure/ruined_portal_swamp.json
-data/minecraft/tags/worldgen/biome/has_structure/shipwreck_beached.json
-data/minecraft/tags/worldgen/biome/has_structure/shipwreck.json
-data/minecraft/tags/worldgen/biome/has_structure/stronghold.json
-data/minecraft/tags/worldgen/biome/has_structure/swamp_hut.json
-data/minecraft/tags/worldgen/biome/has_structure/village_desert.json
-data/minecraft/tags/worldgen/biome/has_structure/village_plains.json
-data/minecraft/tags/worldgen/biome/has_structure/village_savanna.json
-data/minecraft/tags/worldgen/biome/has_structure/village_snowy.json
-data/minecraft/tags/worldgen/biome/has_structure/village_taiga.json
-data/minecraft/tags/worldgen/biome/has_structure/woodland_mansion.json
-data/minecraft/worldgen/noise_settings/overworld.json
-```
-
-====
-
-.https://github.com/DMBuce/bucepack/releases[All Releases & Changelogs]
-[%collapsible]
-====
-====
-
-=== Frienderchest
-
-A shared pocket dimension.
-Players can enter the Frienderchest
-by right-clicking an enderchest with an ender pearl in the overworld.
-
-**Downloads**
-
-.https://github.com/DMBuce/bucepack/releases/latest/download/frienderchest.zip[`frienderchest.zip`]
-[%collapsible]
-====
-====
-
-.https://github.com/DMBuce/bucepack/releases[All Releases & Changelogs]
-[%collapsible]
-====
-====
-
-=== Apocalypse
-
-Makes all villages generate as zombie villages.
-
-In order to access villager-based game mechanics
-such as trading, raids, and iron farms,
-the player needs to either cure zombie villagers
-or find an igloo with a basement.
-
-**Downloads**
-
-.https://github.com/DMBuce/bucepack/releases/latest/download/worldgen_apocalypse.zip[`worldgen_apocalypse.zip`]
-[%collapsible]
-====
-
-```
-data/minecraft/worldgen/template_pool/village/desert/town_centers.json
-data/minecraft/worldgen/template_pool/village/plains/town_centers.json
-data/minecraft/worldgen/template_pool/village/savanna/town_centers.json
-data/minecraft/worldgen/template_pool/village/snowy/town_centers.json
-data/minecraft/worldgen/template_pool/village/taiga/town_centers.json
-```
-
-====
-
-.https://github.com/DMBuce/bucepack/releases[All Releases & Changelogs]
-[%collapsible]
-====
-====
-
-=== Desert Breeze
-
-Makes breezes spawn in desert pyramids and drop sand.
-
-**Downloads**
-
-.https://github.com/DMBuce/bucepack/releases/latest/download/worldgen_desert_breeze.zip[`worldgen_desert_breeze.zip`]
-[%collapsible]
-====
-
-```
-data/minecraft/loot_tables/entities/breeze.json
-data/minecraft/worldgen/structure/desert_pyramid.json
-```
-
-====
-
-.https://github.com/DMBuce/bucepack/releases[All Releases & Changelogs]
-[%collapsible]
-====
-====
+//=== Desert Breeze
+//
+//Makes breezes spawn in desert pyramids and drop sand.
+//
+//**Downloads**
+//
+//.https://github.com/DMBuce/bucepack/releases/latest/download/worldgen_desert_breeze.zip[`worldgen_desert_breeze.zip`]
+//[%collapsible]
+//====
+//
+//```
+//data/minecraft/loot_tables/entities/breeze.json
+//data/minecraft/worldgen/structure/desert_pyramid.json
+//```
+//
+//====
+//
+//.https://github.com/DMBuce/bucepack/releases[All Releases & Changelogs]
+//[%collapsible]
+//====
+//====
 
 === Sandy Husks
 
@@ -3819,231 +3815,231 @@ you must select a World Type in the World tab of the Create New World menu
 *after* adding this datapack in the Select Data Packs screen.
 ====
 
-== Legacy Data Packs
-
-These data packs haven't been updated for the most recent version of
-Minecraft.
-They also all happen to access NBT data a lot and run commands every tick,
-which means they're not optimized very well yet.
-Lower end devices might have trouble running them.
-
-=== Hardcore Lichdom
-
-Hardcore Lichdom is a 1.16.x challenge datapack designed for hardcore mode.  With
-this pack, players who conquer the Illagers, the Ocean, the Wither, and The
-End without dying can gain immortality and keep their world forever.
-Advancements document the basics of the data pack. For more comprehensive
-documentation, read on.
-
-When you die in minecraft hardcore mode you are given the
-option to spectate the world as a ghost. If you use rare materials to perform
-the proper rituals, you can cheat death and become a lich, a powerful
-undead that can use a phylactery pedestal to regenerate your body and restore
-your ghost form to life.
-
-//Hardcore Lichdom is a datapack designed for hardcore mode.
-//With this pack, players who conquer
-//the Illagers, the Ocean, the Deep Dark, the Nether and The End
-//can gain immortality and keep their world forever.
+//== Legacy Data Packs
 //
-//When you die in minecraft hardcore mode
-//you are given the option to spectate the world as a ghost.
-//If you use rare materials to perform the proper rituals,
-//you can cheat death and become a lich,
-//a powerful undead that can use a phylactery pedestal
-//to regenerate your body and restore your ghost form to life.
+//These data packs haven't been updated for the most recent version of
+//Minecraft.
+//They also all happen to access NBT data a lot and run commands every tick,
+//which means they're not optimized very well yet.
+//Lower end devices might have trouble running them.
 //
-//This data pack is documented with cryptic advancements
-//that are explained in detail below.
+//=== Hardcore Lichdom
 //
-//.Lichdom instructions
+//Hardcore Lichdom is a 1.16.x challenge datapack designed for hardcore mode.  With
+//this pack, players who conquer the Illagers, the Ocean, the Wither, and The
+//End without dying can gain immortality and keep their world forever.
+//Advancements document the basics of the data pack. For more comprehensive
+//documentation, read on.
+//
+//When you die in minecraft hardcore mode you are given the
+//option to spectate the world as a ghost. If you use rare materials to perform
+//the proper rituals, you can cheat death and become a lich, a powerful
+//undead that can use a phylactery pedestal to regenerate your body and restore
+//your ghost form to life.
+//
+////Hardcore Lichdom is a datapack designed for hardcore mode.
+////With this pack, players who conquer
+////the Illagers, the Ocean, the Deep Dark, the Nether and The End
+////can gain immortality and keep their world forever.
+////
+////When you die in minecraft hardcore mode
+////you are given the option to spectate the world as a ghost.
+////If you use rare materials to perform the proper rituals,
+////you can cheat death and become a lich,
+////a powerful undead that can use a phylactery pedestal
+////to regenerate your body and restore your ghost form to life.
+////
+////This data pack is documented with cryptic advancements
+////that are explained in detail below.
+////
+////.Lichdom instructions
+////[%collapsible]
+////====
+////
+////Becoming a lich is a multi-step process.
+////
+////**Impale the sea's elders**
+////
+////Obtain a vessel for your soul.
+////If you kill an elder guardian with a trident,
+////it will drop a Relic of the Empty Vessel with Myth of the Phylactery.
+////
+////**Use spellsmithing to create a phylactery**
+////
+////Apply the Relic of the Empty Vessel to a totem
+////in the smithing table.
+////
+////**Bind the dragon's power to you**
+////
+////Slay the dragon while wearing its grin.
+////If you kill the dragon while wearing a dragon head,
+////the head is transformed into the Relic of Dragon Form.
+////It gains Curse of Binding
+////as well as Boon of Health X
+////and Myth of the Red Dragon,
+////two custom enchantments that give you 10 hearts
+////and turn arrows you shoot from bows into fiery dragon breath.
+////
+////**Harness the effects of a wither**
+////
+////Defeat a wither while wearing the Relic of Dragon Form.
+////When you do,
+////the relic will gain Myth of Explosions,
+////a custom enchantment that lets you upgrade your dragon breath
+////with fire charges or TNT in the offhand.
+////
+////**Obtain the heart of an ancient horror**
+////
+////Kill the warden with explosive dragon's breath.
+////When you do, it will drop a warden heart
+////with Myth of Soulbinding,
+////a crucial component of lichdom.
+////
+////**Build a pedestal**
+////
+////Construct a phylactery pedestal with a golden beacon, 8 endstone, 8 dark
+////prismarine slabs, and a sculk shrieker.
+////
+////Create a beacon with a gold base,
+////surround the beacon with endstone,
+////place the shrieker on the beacon
+////and surround it with dark prismarine slabs.
+////
+////**Eat the telltale heart**
+////
+////Toss the phylactery on the pedestal's shrieker
+////and consume the warden heart.
+////This will complete the formation of the phylactery pedestal
+////and turn you into a lich.
+////
+////Choose the location for your phylactery pedestal carefully.
+////The pedestal block can't be moved or destroyed once created.
+////The phylactery item can't despawn or be picked up,
+////but it's otherwise a normal item that can be destroyed by fire and explosions.
+////
+////**Enjoy lichdom**
+////
+////As a lich, you can regenerate your body at a phylactery pedestal
+////and enjoy the debilitating effects of undeath!
+////
+////You lose 5 hearts.
+////
+////Food poisons you.
+////
+////Killing undead provides sustenance.
+////
+////Each phylactery pedestal you build lets you regenerate your body once.
+////
+////====
+////
+////==== Wimpcore Lichdom
+////
+////With this addon datapack for <<hardcore-lichdom,Hardcore Lichdom>>,
+////you can regenerate your body at a phylactery pedestal any number of times.
+//
+//To become a lich, you will need:
+//
+//* Totem of Undying
+//* Dry Sponge
+//* Trident with Loyalty III
+//* Cauldron
+//* Dragon Head
+//* Beacon
+//
+//image::https://i.imgur.com/dxgHI3n.png[Hardcore Lichdom]
+//
+//Make sure the cauldron has water in it, then throw the totem, sponge, and
+//loyalty trident in to turn the totem into a phylactery. Place the dragon head
+//on top of the beacon, then throw the phylactery on top of the dragon head to
+//create a phylactery pedestal.
+//
+//image::https://i.imgur.com/a04jraC.png[Phylactery Pedestal]
+//
+//Choose the location for your phylactery pedestal carefully with the following
+//in mind:
+//
+//* The pedestal block can't be moved or destroyed once created
+//* The phylactery item can't despawn or be picked up, but it's otherwise a
+//  normal item that can be destroyed by fire and explosions
+//* You may want to shield the phylactery pedestal from the sun so you aren't
+//  affected by its debilitating effects when you respawn (see below)
+//
+//Once the phylactery pedestal is built, you will need a magic user's help to
+//become a lich. Simply convince a witch to kill you with magic damage, and
+//lichdom is yours. Once the witch kills you, your ghost form will be able to
+//obtain a new body at the phylactery pedestal.
+//
+//Lichdom has the following consequences and benefits:
+//
+//* Direct sunlight poisons you
+//* Undead won't attack you
+//* Food rots in your hands
+//* For sustenance, you must steal necromantic energy from other undead by
+//  damaging them
+//* Some animals transform when they're near you -- bats become vampiric,
+//  rabbits become rabid, and turtles become more turtley
+//
+//In addition, as a lich you can gain different sets of abilities, called
+//"forms", by killing certain animals. The animal forms available to you are
+//described below, and replace the lich powers described above. To revert to
+//lich form, you can either kill a villager or die and regenerate your body at a
+//pedestal.
+//
+//**Form of the Vampire**: Kill a bat to obtain this form
+//
+//* Wings burst from your back, destroying anything in your chestplate slot
+//* Direct sunlight withers you
+//* You have Night Vision and Regeneration
+//* Undead won't attack you unless they're under the power of a lich
+//* Food rots in your hands
+//* For sustenance, you must drink blood from creatures by damaging them
+//* Bats become vampiric when they're near you
+//
+//**Form of the Werebunny**: Kill a rabbit to obtain this form
+//
+//* Your body grows fur and powerful muscles, destroying anything in your
+//  chestplate slot
+//* Direct moonlight increases your speed and makes you ravenously hungry
+//* You have Strength and Jump Boost II
+//* You can eat only carrots and raw meat for sustenance
+//* All other food rots in your hands
+//* Rabbits become rabid when they're near you
+//
+//**Form of the Turtle**: Kill a turtle to obtain this form
+//
+//* You grow a turtle shell, destroying anything in your helmet slot
+//* You die if your shell breaks
+//* You have Slowness, Dolphin's Grace, and Resistance III
+//* You can eat only dried kelp for sustenance
+//* All other food rots in your hands
+//* Turtles become more turtley when they're near you
+//
+//**Downloads**
+//
+//.https://github.com/DMBuce/bucepack/releases/latest/download/lichdom.zip[`lichdom.zip`]
+//[%collapsible]
+//====
+//====
+//
+//.https://github.com/DMBuce/bucepack/releases[All Releases & Changelogs]
+//[%collapsible]
+//====
+//====
+//
+//.Known Issues
 //[%collapsible]
 //====
 //
-//Becoming a lich is a multi-step process.
-//
-//**Impale the sea's elders**
-//
-//Obtain a vessel for your soul.
-//If you kill an elder guardian with a trident,
-//it will drop a Relic of the Empty Vessel with Myth of the Phylactery.
-//
-//**Use spellsmithing to create a phylactery**
-//
-//Apply the Relic of the Empty Vessel to a totem
-//in the smithing table.
-//
-//**Bind the dragon's power to you**
-//
-//Slay the dragon while wearing its grin.
-//If you kill the dragon while wearing a dragon head,
-//the head is transformed into the Relic of Dragon Form.
-//It gains Curse of Binding
-//as well as Boon of Health X
-//and Myth of the Red Dragon,
-//two custom enchantments that give you 10 hearts
-//and turn arrows you shoot from bows into fiery dragon breath.
-//
-//**Harness the effects of a wither**
-//
-//Defeat a wither while wearing the Relic of Dragon Form.
-//When you do,
-//the relic will gain Myth of Explosions,
-//a custom enchantment that lets you upgrade your dragon breath
-//with fire charges or TNT in the offhand.
-//
-//**Obtain the heart of an ancient horror**
-//
-//Kill the warden with explosive dragon's breath.
-//When you do, it will drop a warden heart
-//with Myth of Soulbinding,
-//a crucial component of lichdom.
-//
-//**Build a pedestal**
-//
-//Construct a phylactery pedestal with a golden beacon, 8 endstone, 8 dark
-//prismarine slabs, and a sculk shrieker.
-//
-//Create a beacon with a gold base,
-//surround the beacon with endstone,
-//place the shrieker on the beacon
-//and surround it with dark prismarine slabs.
-//
-//**Eat the telltale heart**
-//
-//Toss the phylactery on the pedestal's shrieker
-//and consume the warden heart.
-//This will complete the formation of the phylactery pedestal
-//and turn you into a lich.
-//
-//Choose the location for your phylactery pedestal carefully.
-//The pedestal block can't be moved or destroyed once created.
-//The phylactery item can't despawn or be picked up,
-//but it's otherwise a normal item that can be destroyed by fire and explosions.
-//
-//**Enjoy lichdom**
-//
-//As a lich, you can regenerate your body at a phylactery pedestal
-//and enjoy the debilitating effects of undeath!
-//
-//You lose 5 hearts.
-//
-//Food poisons you.
-//
-//Killing undead provides sustenance.
-//
-//Each phylactery pedestal you build lets you regenerate your body once.
-//
+//* This pack uses teams and is incompatible with other data packs that use
+//  teams
+//* Sunlight and moonlight affect players even when it's raining or snowing
+//  because Java edition does not have a `/weather query` command
+//* Food that rots will always produce either two rotten flesh or one
+//  poisonous potato because preserving stack sizes with `/replaceitem` is only
+//  possible with hacky shulker box workarounds
+//* If a player in turtle form dies from their shell breaking, other players who
+//  die in the same tick will have their death messages suppressed
 //====
-//
-//==== Wimpcore Lichdom
-//
-//With this addon datapack for <<hardcore-lichdom,Hardcore Lichdom>>,
-//you can regenerate your body at a phylactery pedestal any number of times.
-
-To become a lich, you will need:
-
-* Totem of Undying
-* Dry Sponge
-* Trident with Loyalty III
-* Cauldron
-* Dragon Head
-* Beacon
-
-image::https://i.imgur.com/dxgHI3n.png[Hardcore Lichdom]
-
-Make sure the cauldron has water in it, then throw the totem, sponge, and
-loyalty trident in to turn the totem into a phylactery. Place the dragon head
-on top of the beacon, then throw the phylactery on top of the dragon head to
-create a phylactery pedestal.
-
-image::https://i.imgur.com/a04jraC.png[Phylactery Pedestal]
-
-Choose the location for your phylactery pedestal carefully with the following
-in mind:
-
-* The pedestal block can't be moved or destroyed once created
-* The phylactery item can't despawn or be picked up, but it's otherwise a
-  normal item that can be destroyed by fire and explosions
-* You may want to shield the phylactery pedestal from the sun so you aren't
-  affected by its debilitating effects when you respawn (see below)
-
-Once the phylactery pedestal is built, you will need a magic user's help to
-become a lich. Simply convince a witch to kill you with magic damage, and
-lichdom is yours. Once the witch kills you, your ghost form will be able to
-obtain a new body at the phylactery pedestal.
-
-Lichdom has the following consequences and benefits:
-
-* Direct sunlight poisons you
-* Undead won't attack you
-* Food rots in your hands
-* For sustenance, you must steal necromantic energy from other undead by
-  damaging them
-* Some animals transform when they're near you -- bats become vampiric,
-  rabbits become rabid, and turtles become more turtley
-
-In addition, as a lich you can gain different sets of abilities, called
-"forms", by killing certain animals. The animal forms available to you are
-described below, and replace the lich powers described above. To revert to
-lich form, you can either kill a villager or die and regenerate your body at a
-pedestal.
-
-**Form of the Vampire**: Kill a bat to obtain this form
-
-* Wings burst from your back, destroying anything in your chestplate slot
-* Direct sunlight withers you
-* You have Night Vision and Regeneration
-* Undead won't attack you unless they're under the power of a lich
-* Food rots in your hands
-* For sustenance, you must drink blood from creatures by damaging them
-* Bats become vampiric when they're near you
-
-**Form of the Werebunny**: Kill a rabbit to obtain this form
-
-* Your body grows fur and powerful muscles, destroying anything in your
-  chestplate slot
-* Direct moonlight increases your speed and makes you ravenously hungry
-* You have Strength and Jump Boost II
-* You can eat only carrots and raw meat for sustenance
-* All other food rots in your hands
-* Rabbits become rabid when they're near you
-
-**Form of the Turtle**: Kill a turtle to obtain this form
-
-* You grow a turtle shell, destroying anything in your helmet slot
-* You die if your shell breaks
-* You have Slowness, Dolphin's Grace, and Resistance III
-* You can eat only dried kelp for sustenance
-* All other food rots in your hands
-* Turtles become more turtley when they're near you
-
-**Downloads**
-
-.https://github.com/DMBuce/bucepack/releases/latest/download/lichdom.zip[`lichdom.zip`]
-[%collapsible]
-====
-====
-
-.https://github.com/DMBuce/bucepack/releases[All Releases & Changelogs]
-[%collapsible]
-====
-====
-
-.Known Issues
-[%collapsible]
-====
-
-* This pack uses teams and is incompatible with other data packs that use
-  teams
-* Sunlight and moonlight affect players even when it's raining or snowing
-  because Java edition does not have a `/weather query` command
-* Food that rots will always produce either two rotten flesh or one
-  poisonous potato because preserving stack sizes with `/replaceitem` is only
-  possible with hacky shulker box workarounds
-* If a player in turtle form dies from their shell breaking, other players who
-  die in the same tick will have their death messages suppressed
-====
 
 == Ordering Data Packs
 
@@ -4058,9 +4054,8 @@ i.e. this is the _reverse_ of their relative priority.
 crafting_workstation.zip
 heads_fae.zip
 loot_overhaul.zip
-loot_overhaul_treasure_barrels.zip
 loot_overhaul_starter_relic.zip
-loot_overhaul_treasure_seeds.zip
+loot_overhaul_treasure_barrels.zip
 oven_brick.zip
 phantasmal.zip
 relics_deep.zip
@@ -4243,7 +4238,6 @@ Relics are added by the following datapacks:
 * <<archaeological-relics,Archaeological Relics>>
 * <<mythic-relics,Mythic Relics>>
 * <<deep-relics,Deep Relics>>
-* <<illusory-traders,Illusory Traders>>
 * <<starter-item,Starter Relic>>
 * <<ender-relic,Ender Relic>>
 
