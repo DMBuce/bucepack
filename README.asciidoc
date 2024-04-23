@@ -577,8 +577,6 @@ datapacks that use <<spellsmithing>>.
 
 * <<phantasmal,Phantasmal>>: Invisible item frames and light blocks
 * <<loot-overhaul,Loot Overhaul>>: Invisible light blocks
-* <<mythic-relics,Mythic Relics>>, <<deep-relics,Deep Relics>>: Relics
-* <<archaeological-relics,Archaeological Relics>>, <<starter-relic,Starter Relic>>, <<ender-relic,Ender Relic>>: Relics
 
 **Downloads**
 
@@ -2045,106 +2043,106 @@ data/minecraft/loot_tables/entities/player.json
 ====
 ====
 
-=== Archaeological Relics
-
-Adds <<Relics>> to archaeology loot.
-
-Relics can be applied to tools in the smithing table.
-A Bottle o' Enchanting is placed in the template (left) slot,
-the relic is placed in the middle slot,
-and the item to apply the relic's magic to is placed in the right slot.
-
-.Summary of relics
-[%collapsible]
-====
-
-**Relic of Knockback**:
-A piece of flint with Knockback V that can be applied to a shovel or hoe.
-//with a bottle o' enchanting in the smithing table.
-
-**Relic of Endlessness**:
-A stick with Infinity and Mending that can be applied to a bow.
-//with a bottle o' enchanting in the smithing table.
-
-**Relic of Vitality**:
-A glistering melon with Boon of Health V,
-a custom enchantment that can be applied to a netherite chestplate
-//with a bottle o' enchanting in the smithing table
-to give five extra hearts.
-
-**Relic of Swiftness**:
-A rabbit's foot with Boon of Speed II,
-a custom enchantment that can be applied to leather boots
-//with a bottle o' enchanting in the smithing table
-to give a persistent Speed II effect.
-
-**Relic of Smiting**:
-A bone with Sharpness IV and Smite IV that can be applied to a sword or axe.
-//with a bottle o' enchanting in the smithing table.
-
-**Relic of Sharpness**:
-A diamond with Sharpness V that can be applied to a pickaxe.
-//with a bottle o' enchanting in the smithing table.
-
-//**Relic of Quickness**:
-//A prismarine shard with Boon of Quickness,
-//a custom enchantment that can be applied to a trident
-// //with a bottle o' enchanting in the smithing table
-//to give increased attack speed.
-
-**Relic of Frost and Flood**:
-A prismarine crystal with Frost Walker II and Depth Strider III
-that can be applied to diamond boots.
-//with a bottle o' enchanting in the smithing table.
-
-**Relic of Protection**:
-A scute with Protection IV and Blast Protection II
-that can be applied to a turtle shell.
-//with a bottle o' enchanting in the smithing table.
-
-**Relic of Striding**:
-A sugar cube with Depth Strider III and Feather Falling IV
-that can be applied to horse armor.
-//with a bottle o' enchanting in the smithing table.
-
-**Relic of Projectile Protection**:
-A piece of leather with Projectile Protection II
-that can be applied to elytra.
-//with a bottle o' enchanting in the smithing table.
-
-**Relic of Craftmanship**:
-An iron nugget with Efficiency VII and Unbreaking X
-that can be applied to an iron tool.
-
-====
-
-//image::https://i.imgur.com/VkbB90K.png[Common Relics]
-image::https://i.imgur.com/yCHfql9.png[Common Relics]
-
-If you have the <<spellsmithing-guide,Spellsmithing Guide>> resource pack
-installed, some relics have custom item textures in the inventory.
-
-**Downloads**
-
-.https://github.com/DMBuce/bucepack/releases/latest/download/relics_archy.zip[`relics_archy.zip`]
-[%collapsible]
-====
-
-```
-data/minecraft/loot_tables/archaeology/desert_pyramid.json
-data/minecraft/loot_tables/archaeology/desert_well.json
-data/minecraft/loot_tables/archaeology/ocean_ruin_cold.json
-data/minecraft/loot_tables/archaeology/ocean_ruin_warm.json
-data/minecraft/loot_tables/archaeology/trail_ruins_common.json
-data/minecraft/loot_tables/archaeology/trail_ruins_rare.json
-```
-
-====
-
-.https://github.com/DMBuce/bucepack/releases[All Releases & Changelogs]
-[%collapsible]
-====
-====
+//=== Archaeological Relics
+//
+//Adds <<Relics>> to archaeology loot.
+//
+//Relics can be applied to tools in the smithing table.
+//A Bottle o' Enchanting is placed in the template (left) slot,
+//the relic is placed in the middle slot,
+//and the item to apply the relic's magic to is placed in the right slot.
+//
+//.Summary of relics
+//[%collapsible]
+//====
+//
+//**Relic of Knockback**:
+//A piece of flint with Knockback V that can be applied to a shovel or hoe.
+////with a bottle o' enchanting in the smithing table.
+//
+//**Relic of Endlessness**:
+//A stick with Infinity and Mending that can be applied to a bow.
+////with a bottle o' enchanting in the smithing table.
+//
+//**Relic of Vitality**:
+//A glistering melon with Boon of Health V,
+//a custom enchantment that can be applied to a netherite chestplate
+////with a bottle o' enchanting in the smithing table
+//to give five extra hearts.
+//
+//**Relic of Swiftness**:
+//A rabbit's foot with Boon of Speed II,
+//a custom enchantment that can be applied to leather boots
+////with a bottle o' enchanting in the smithing table
+//to give a persistent Speed II effect.
+//
+//**Relic of Smiting**:
+//A bone with Sharpness IV and Smite IV that can be applied to a sword or axe.
+////with a bottle o' enchanting in the smithing table.
+//
+//**Relic of Sharpness**:
+//A diamond with Sharpness V that can be applied to a pickaxe.
+////with a bottle o' enchanting in the smithing table.
+//
+////**Relic of Quickness**:
+////A prismarine shard with Boon of Quickness,
+////a custom enchantment that can be applied to a trident
+//// //with a bottle o' enchanting in the smithing table
+////to give increased attack speed.
+//
+//**Relic of Frost and Flood**:
+//A prismarine crystal with Frost Walker II and Depth Strider III
+//that can be applied to diamond boots.
+////with a bottle o' enchanting in the smithing table.
+//
+//**Relic of Protection**:
+//A scute with Protection IV and Blast Protection II
+//that can be applied to a turtle shell.
+////with a bottle o' enchanting in the smithing table.
+//
+//**Relic of Striding**:
+//A sugar cube with Depth Strider III and Feather Falling IV
+//that can be applied to horse armor.
+////with a bottle o' enchanting in the smithing table.
+//
+//**Relic of Projectile Protection**:
+//A piece of leather with Projectile Protection II
+//that can be applied to elytra.
+////with a bottle o' enchanting in the smithing table.
+//
+//**Relic of Craftmanship**:
+//An iron nugget with Efficiency VII and Unbreaking X
+//that can be applied to an iron tool.
+//
+//====
+//
+////image::https://i.imgur.com/VkbB90K.png[Common Relics]
+//image::https://i.imgur.com/yCHfql9.png[Common Relics]
+//
+//If you have the <<spellsmithing-guide,Spellsmithing Guide>> resource pack
+//installed, some relics have custom item textures in the inventory.
+//
+//**Downloads**
+//
+//.https://github.com/DMBuce/bucepack/releases/latest/download/relics_archy.zip[`relics_archy.zip`]
+//[%collapsible]
+//====
+//
+//```
+//data/minecraft/loot_tables/archaeology/desert_pyramid.json
+//data/minecraft/loot_tables/archaeology/desert_well.json
+//data/minecraft/loot_tables/archaeology/ocean_ruin_cold.json
+//data/minecraft/loot_tables/archaeology/ocean_ruin_warm.json
+//data/minecraft/loot_tables/archaeology/trail_ruins_common.json
+//data/minecraft/loot_tables/archaeology/trail_ruins_rare.json
+//```
+//
+//====
+//
+//.https://github.com/DMBuce/bucepack/releases[All Releases & Changelogs]
+//[%collapsible]
+//====
+//====
 
 === Loot Overhaul
 
@@ -2163,7 +2161,7 @@ Bonus spawn chests generate a more limited and curated set of starter items
 designed to jumpstart the tree-punching phase of a fresh world:
 3-5 cobble, 3-5 logs, and 2-3 bread. Additional items can be added to the
 bonus spawn chest with one or more <<starter-item,Starter Item>>
-datapacks, or the <<starter-relic,Starter Relic>> datapack.
+datapacks.
 
 Food loot is themed according to the structure it spawns in.
 To give a few examples:
@@ -2319,31 +2317,31 @@ data/minecraft/tags/items/creeper_drop_music_discs.json
 //https://bugs.mojang.com/browse/MC-156411[MC-156411].
 //====
 
-==== Starter Relic
-
-If this <<ordering-data-packs,addon pack>>
-is enabled and loaded after <<loot-overhaul,Loot Overhaul>>,
-it adds a random <<archaeological-relics,Archaeological Relic>>
-to the bonus spawn chest.
-
-If any other <<starter-item,Starter Item>> datapacks are installed,
-the starter relic is generated in addition to the starter item added by
-those packs.
-
-If you have the <<spellsmithing-guide,Spellsmithing Guide>> resource pack
-enabled, some relics have custom item textures in the inventory.
-
-**Downloads**
-
-.https://github.com/DMBuce/bucepack/releases/latest/download/loot_overhaul_starter_relic.zip[`loot_overhaul_starter_relic.zip`]
-[%collapsible]
-====
-====
-
-.https://github.com/DMBuce/bucepack/releases[All Releases & Changelogs]
-[%collapsible]
-====
-====
+//==== Starter Relic
+//
+//If this <<ordering-data-packs,addon pack>>
+//is enabled and loaded after <<loot-overhaul,Loot Overhaul>>,
+//it adds a random <<archaeological-relics,Archaeological Relic>>
+//to the bonus spawn chest.
+//
+//If any other <<starter-item,Starter Item>> datapacks are installed,
+//the starter relic is generated in addition to the starter item added by
+//those packs.
+//
+//If you have the <<spellsmithing-guide,Spellsmithing Guide>> resource pack
+//enabled, some relics have custom item textures in the inventory.
+//
+//**Downloads**
+//
+//.https://github.com/DMBuce/bucepack/releases/latest/download/loot_overhaul_starter_relic.zip[`loot_overhaul_starter_relic.zip`]
+//[%collapsible]
+//====
+//====
+//
+//.https://github.com/DMBuce/bucepack/releases[All Releases & Changelogs]
+//[%collapsible]
+//====
+//====
 
 ==== Starter Item
 
@@ -2738,26 +2736,26 @@ Paths extend Speed I effects for players in a manner similar to beacons.
 ====
 ====
 
-=== Ender Relic
-
-Adds a random <<archaeological-relic,Archaeological Relic>> to each player's enderchest.
-The relic is added to the ender chest's middle slot.
-If that slot is occupied, the relic is given to the player instead.
-
-If you have the <<spellsmithing-guide,Spellsmithing Guide>> resource pack
-enabled, some relics have custom item textures in the inventory.
-
-**Downloads**
-
-.https://github.com/DMBuce/bucepack/releases/latest/download/ender_relic.zip[`ender_relic.zip`]
-[%collapsible]
-====
-====
-
-.https://github.com/DMBuce/bucepack/releases[All Releases & Changelogs]
-[%collapsible]
-====
-====
+//=== Ender Relic
+//
+//Adds a random <<archaeological-relic,Archaeological Relic>> to each player's enderchest.
+//The relic is added to the ender chest's middle slot.
+//If that slot is occupied, the relic is given to the player instead.
+//
+//If you have the <<spellsmithing-guide,Spellsmithing Guide>> resource pack
+//enabled, some relics have custom item textures in the inventory.
+//
+//**Downloads**
+//
+//.https://github.com/DMBuce/bucepack/releases/latest/download/ender_relic.zip[`ender_relic.zip`]
+//[%collapsible]
+//====
+//====
+//
+//.https://github.com/DMBuce/bucepack/releases[All Releases & Changelogs]
+//[%collapsible]
+//====
+//====
 
 //=== Illusory Traders
 //
@@ -2785,264 +2783,264 @@ enabled, some relics have custom item textures in the inventory.
 //====
 //====
 
-=== Mythic Relics
-
-Adds <<Relics>> with <<mythic-enchantments,Mythic Enchantments>>.
-
-Relics can be applied to tools in the smithing table.
-A Bottle o' Enchanting is placed in the template (left) slot,
-the relic is placed in the middle slot,
-and the item to apply the relic's magic to is placed in the right slot.
-
-Each relic added by this datapack can only be obtained under specific
-circumstances described below.
-
-.Summary of mythic relics
-[%collapsible]
-====
-
-**Relic of the Beast**: When a player hits a white rabbit with raw cod, it
-turns into a Killer Bunny. If killed with raw cod, the Killer
-Bunny drops a rabbit's foot with Myth of Bounding, a
-custom enchantment that can be applied to leather boots
-with a bottle o' enchanting in the smithing
-table. When a player
-wearing the boots falls 3.5 blocks, eats a carrot, or eats rabbit, they gain
-Speed II and Jump Boost II for 90 seconds.
-
-**Relic of Poles**: When a lodestone is blown up by a charged creeper, it
-drops a netherite ingot with Myth of Magnetism, a custom enchantment that can be
-applied to a shield
-with a bottle o' enchanting in the smithing table. A player blocking with the shield
-attracts the nearest item. A player that sneaks while blocking with the shield
-attracts all nearby items.
-
-**Relic of the Flying Pig**: When a pig with Levitation dies,
-it drops a porkchop with Myth of Hovering,
-a custom enchantment that can be applied
-to a chainmail chestplate
-with a bottle o' enchanting in the smithing table.
-When a player wearing the chestplate eats cooked or raw porkchop,
-they gain Levitation II and Slowness II for 10 seconds,
-and saddling a pig while wearing the chestplate makes it hover.
-
-**Relic of Rainbows**: When a
-https://minecraft.wiki/w/Sheep#Easter_eggs[rainbow sheep]
-dies from an explosion,
-it drops pink dye with Myth of Chromatic Blasts,
-a custom enchantment that can be applied to a crossbow
-with a bottle o' enchanting in the smithing table.
-Rockets shot with the crossbow gain two randomly generated firework stars.
-
-**Relic of Mining**:
-When a player with Haste II mines Gilded Blackstone,
-it drops a gold nugget with Myth of Darkvision and Myth of Greed,
-two custom enchantments that can be applied to a golden helmet
-with a bottle o' enchanting in the smithing table.
-Myth of Darkvision provides eight minutes
-of Night Vision when a player kills or eats a pig or hoglin.
-Myth of Greed provides one minute
-of Haste when a player eats golden food.
-Eating more gold increases the level of Haste.
-//and eating too greedily induces negative effects.
-The player is blinded if they eat too greedily.
-
-**Relic of the Lens**: When a player with 1 health (i.e. half a heart) kills an
-endermite in melee, it drops an amethyst shard with Myth of Seeking, a
-custom enchantment that can be applied to a spyglass
-with a bottle o' enchanting in the smithing table.
-A player can use the spyglass to pinpoint the direction of the nearest
-Woodland Mansion, Nether Fortress, or End City.
-
-**Relic of Storms**: If the <<loot-overhaul,Loot Overhaul>> datapack is
-installed before this one, hearts of the sea in buried treasure chests have Myth of
-Stormcalling, a custom enchantment that can be applied to a trident
-with a bottle o' enchanting in the
-smithing table. A player can summon rain with the trident
-by standing in water, looking skyward, and holding right click for several
-seconds.
-
-**Relic of Glowing**: When a frog eats a glow squid,
-it drops glow ink with Myth of Lightning Bug,
-a custom enchantment that can be applied to a trident
-with a bottle o' enchanting in the smithing table.
-When the trident is thrown and hits a mob,
-it creates a Light block if there's space to do so.
-
-**Relic of the Rodeo Clown**: When a frog eats a bee,
-it drops a belt buckle with Myth of the Lasso and Myth of Balloon Animals,
-two custom enchantments that can be applied to leather pants
-with a bottle o' enchanting in the smithing
-table. When a player wearing the pants hits one of
-https://raw.githubusercontent.com/DMBuce/bucepack/master/buce-data/mythic/leashing/leashable.entity_type.tag.json[these mobs]
-with a lead, the lead attaches to the mob.
-When a player wearing the pants right clicks a lead on one of
-https://raw.githubusercontent.com/DMBuce/bucepack/master/buce-data/mythic/balloons/balloons.entity_type.tag.json[these creatures],
-it gains levitation until a player unleashes it or it reaches y=350.
-
-**Relic of Quicksilver**: When an iron golem kills a ghast, it drops a bead of
-quicksilver with Sharpness V and Myth of Liquid Metal, a custom enchantment
-that can be applied to an iron sword
-with a bottle o' enchanting in the smithing table. When placed in the
-offhand, the sword transforms into a shield with Unbreaking III. When
-placed in the main hand or dealing damage, it transforms back into its
-sword form. Transforming resets all properties of the item including its
-durability, enchantments, name, and banner pattern.
-
-**Relic of Muzzling**:
-When a player kills a gray sheep near a sculk catalyst,
-it drops wool with Myth of Silence,
-a custom enchantment that can be applied to a name tag
-with a bottle o' enchanting in the smithing table.
-A mob named with the name tag is silenced and can't create sound.
-
-**Relic of the Burrower**:
-When a player kills a silverfish in melee without a weapon,
-it drops a silverfish eye with Myth of Breaking,
-a custom enchantment that can be applied to a diamond pick, axe, shovel, or hoe
-with a bottle o' enchanting in the smithing table.
-When a block broken by the tool drops an item and decreases the tool's durability,
-the tool will break several extra blocks.
-Picks break a 3x3 square,
-axes break a 32-block-high column,
-shovels break a 9-block column.
-Hoes additionally till grass-like blocks in a 5x5 area around the player.
-Extra broken blocks are not affected by fortune or silk touch
-and do not further decrease the tool's durability.
-
-// some things to note about Breaking, Silk Touch, and Fortune
+//=== Mythic Relics
 //
-// getting a mix of drops for ores and stone is really annoying with
-// silk touch + breaking
+//Adds <<Relics>> with <<mythic-enchantments,Mythic Enchantments>>.
 //
-// fortune axes only work on melons
+//Relics can be applied to tools in the smithing table.
+//A Bottle o' Enchanting is placed in the template (left) slot,
+//the relic is placed in the middle slot,
+//and the item to apply the relic's magic to is placed in the right slot.
 //
-// fortune shovels only work on gravel
+//Each relic added by this datapack can only be obtained under specific
+//circumstances described below.
 //
-// silk hoes and fortune hoes are both useful for leaves
+//.Summary of mythic relics
+//[%collapsible]
+//====
 //
-// so my preferred tool loadout is:
-// * picks: fortune + breaking, silk touch + unbreaking
-// * axe: silk touch + breaking
-// * shovel: silk touch + breaking
-// * hoe: fortune, silk touch, not sure about breaking vs unbreaking on them
-
-====
-
-//image::https://i.imgur.com/Rm2NtDa.png[Mythic Relics]
-image::https://i.imgur.com/e0I8doV.png[Mythic Relics]
-
-If you have the <<spellsmithing-guide,Spellsmithing Guide>> resource pack
-installed, some relics have custom item textures in the inventory.
-
-This is a <<ordering-data-packs,companion pack>> for the
-<<loot-overhaul,Loot Overhaul>> and <<phantasmal,Phantasmal>> datapacks,
-which provide access to some of the relics.
-
-**Downloads**
-
-.https://github.com/DMBuce/bucepack/releases/latest/download/relics_mythic.zip[`relics_mythic.zip`]
-[%collapsible]
-====
-
-```
-data/minecraft/loot_tables/blocks/gilded_blackstone.json
-data/minecraft/loot_tables/blocks/lodestone.json
-data/minecraft/loot_tables/entities/bee.json
-data/minecraft/loot_tables/entities/endermite.json
-data/minecraft/loot_tables/entities/ghast.json
-data/minecraft/loot_tables/entities/glow_squid.json
-data/minecraft/loot_tables/entities/pig.json
-data/minecraft/loot_tables/entities/sheep.json
-data/minecraft/loot_tables/entities/sheep/light_gray.json
-data/minecraft/loot_tables/entities/silverfish.json
-data/minecraft/tags/entity_types/frog_food.json
-```
-
-====
-
-.https://github.com/DMBuce/bucepack/releases[All Releases & Changelogs]
-[%collapsible]
-====
-====
-
-.Known Issues
-[%collapsible]
-====
-Myth of Seeking can behave in unexpected ways
-due to https://bugs.mojang.com/browse/MC-138887[MC-138887].
-
-Myth of Breaking tills podzol and mycelium,
-which is inconsistent with https://bugs.mojang.com/browse/MC-8231[MC-8231].
-====
-
-=== Deep Relics
-
-If this <<ordering-data-packs,addon pack>>
-is enabled and loaded after <<loot-overhaul,Loot Overhaul>>,
-it adds <<Relics>> with <<mythic-enchantments,Mythic Enchantments>>
-to ancient city loot.
-//Many of the relics require sculk to power them.
-
-Relics can be applied to tools in the smithing table.
-A Bottle o' Enchanting is placed in the template (left) slot,
-the relic is placed in the middle slot,
-and the item to apply the relic's magic to is placed in the right slot.
-
-.Summary of deep relics
-[%collapsible]
-====
-
-**Relic of Puncheons**:
-Some coal in ancient city chests have Myth of Train Tunnels,
-a custom enchantment that can be applied to a golden helmet
-with a bottle o' enchanting in the smithing table.
-While riding a minecart in the nether or below y=63 in the overworld,
-the enchantment consumes sculk from the player's inventory
-and creates tunnel supports around the minecart track.
-
-**Relic of Echoes**:
-Some echo shards have Myth of Reverberation,
-a custom enchantment that can be applied to a totem
-with a bottle o' enchanting in the smithing table.
-When the totem is used, it creates an echo shard,
-another totem from the player's inventory
-is placed in their hand if one is available,
-and it's given the same enchantment.
-
-**Relic of Rebirth**:
-Some echo shards have Myth of Reincarnation,
-a custom enchantment that can be applied to a totem
-with a bottle o' enchanting in the smithing table.
-When the totem is used, it creates an echo shard,
-teleports the player to a random location,
-and sets their spawn point to that location.
-
-**Relic of Rebuke**:
-Some echo shards have Myth of Retribution,
-a custom enchantment that can be applied to a totem
-with a bottle o' enchanting in the smithing table.
-When the totem is used, it creates an echo shard
-and deals damage to the last mob that damaged the player in the previous 5 seconds.
-
-====
-
-//image::https://i.imgur.com/anthmAo.png[Deep Relics]
-
-If you have the <<spellsmithing-guide,Spellsmithing Guide>> resource pack
-installed, some relics have custom item textures in the inventory.
-
-**Downloads**
-
-.https://github.com/DMBuce/bucepack/releases/latest/download/relics_deep.zip[`relics_deep.zip`]
-[%collapsible]
-====
-====
-
-.https://github.com/DMBuce/bucepack/releases[All Releases & Changelogs]
-[%collapsible]
-====
-====
+//**Relic of the Beast**: When a player hits a white rabbit with raw cod, it
+//turns into a Killer Bunny. If killed with raw cod, the Killer
+//Bunny drops a rabbit's foot with Myth of Bounding, a
+//custom enchantment that can be applied to leather boots
+//with a bottle o' enchanting in the smithing
+//table. When a player
+//wearing the boots falls 3.5 blocks, eats a carrot, or eats rabbit, they gain
+//Speed II and Jump Boost II for 90 seconds.
+//
+//**Relic of Poles**: When a lodestone is blown up by a charged creeper, it
+//drops a netherite ingot with Myth of Magnetism, a custom enchantment that can be
+//applied to a shield
+//with a bottle o' enchanting in the smithing table. A player blocking with the shield
+//attracts the nearest item. A player that sneaks while blocking with the shield
+//attracts all nearby items.
+//
+//**Relic of the Flying Pig**: When a pig with Levitation dies,
+//it drops a porkchop with Myth of Hovering,
+//a custom enchantment that can be applied
+//to a chainmail chestplate
+//with a bottle o' enchanting in the smithing table.
+//When a player wearing the chestplate eats cooked or raw porkchop,
+//they gain Levitation II and Slowness II for 10 seconds,
+//and saddling a pig while wearing the chestplate makes it hover.
+//
+//**Relic of Rainbows**: When a
+//https://minecraft.wiki/w/Sheep#Easter_eggs[rainbow sheep]
+//dies from an explosion,
+//it drops pink dye with Myth of Chromatic Blasts,
+//a custom enchantment that can be applied to a crossbow
+//with a bottle o' enchanting in the smithing table.
+//Rockets shot with the crossbow gain two randomly generated firework stars.
+//
+//**Relic of Mining**:
+//When a player with Haste II mines Gilded Blackstone,
+//it drops a gold nugget with Myth of Darkvision and Myth of Greed,
+//two custom enchantments that can be applied to a golden helmet
+//with a bottle o' enchanting in the smithing table.
+//Myth of Darkvision provides eight minutes
+//of Night Vision when a player kills or eats a pig or hoglin.
+//Myth of Greed provides one minute
+//of Haste when a player eats golden food.
+//Eating more gold increases the level of Haste.
+////and eating too greedily induces negative effects.
+//The player is blinded if they eat too greedily.
+//
+//**Relic of the Lens**: When a player with 1 health (i.e. half a heart) kills an
+//endermite in melee, it drops an amethyst shard with Myth of Seeking, a
+//custom enchantment that can be applied to a spyglass
+//with a bottle o' enchanting in the smithing table.
+//A player can use the spyglass to pinpoint the direction of the nearest
+//Woodland Mansion, Nether Fortress, or End City.
+//
+//**Relic of Storms**: If the <<loot-overhaul,Loot Overhaul>> datapack is
+//installed before this one, hearts of the sea in buried treasure chests have Myth of
+//Stormcalling, a custom enchantment that can be applied to a trident
+//with a bottle o' enchanting in the
+//smithing table. A player can summon rain with the trident
+//by standing in water, looking skyward, and holding right click for several
+//seconds.
+//
+//**Relic of Glowing**: When a frog eats a glow squid,
+//it drops glow ink with Myth of Lightning Bug,
+//a custom enchantment that can be applied to a trident
+//with a bottle o' enchanting in the smithing table.
+//When the trident is thrown and hits a mob,
+//it creates a Light block if there's space to do so.
+//
+//**Relic of the Rodeo Clown**: When a frog eats a bee,
+//it drops a belt buckle with Myth of the Lasso and Myth of Balloon Animals,
+//two custom enchantments that can be applied to leather pants
+//with a bottle o' enchanting in the smithing
+//table. When a player wearing the pants hits one of
+//https://raw.githubusercontent.com/DMBuce/bucepack/master/buce-data/mythic/leashing/leashable.entity_type.tag.json[these mobs]
+//with a lead, the lead attaches to the mob.
+//When a player wearing the pants right clicks a lead on one of
+//https://raw.githubusercontent.com/DMBuce/bucepack/master/buce-data/mythic/balloons/balloons.entity_type.tag.json[these creatures],
+//it gains levitation until a player unleashes it or it reaches y=350.
+//
+//**Relic of Quicksilver**: When an iron golem kills a ghast, it drops a bead of
+//quicksilver with Sharpness V and Myth of Liquid Metal, a custom enchantment
+//that can be applied to an iron sword
+//with a bottle o' enchanting in the smithing table. When placed in the
+//offhand, the sword transforms into a shield with Unbreaking III. When
+//placed in the main hand or dealing damage, it transforms back into its
+//sword form. Transforming resets all properties of the item including its
+//durability, enchantments, name, and banner pattern.
+//
+//**Relic of Muzzling**:
+//When a player kills a gray sheep near a sculk catalyst,
+//it drops wool with Myth of Silence,
+//a custom enchantment that can be applied to a name tag
+//with a bottle o' enchanting in the smithing table.
+//A mob named with the name tag is silenced and can't create sound.
+//
+//**Relic of the Burrower**:
+//When a player kills a silverfish in melee without a weapon,
+//it drops a silverfish eye with Myth of Breaking,
+//a custom enchantment that can be applied to a diamond pick, axe, shovel, or hoe
+//with a bottle o' enchanting in the smithing table.
+//When a block broken by the tool drops an item and decreases the tool's durability,
+//the tool will break several extra blocks.
+//Picks break a 3x3 square,
+//axes break a 32-block-high column,
+//shovels break a 9-block column.
+//Hoes additionally till grass-like blocks in a 5x5 area around the player.
+//Extra broken blocks are not affected by fortune or silk touch
+//and do not further decrease the tool's durability.
+//
+//// some things to note about Breaking, Silk Touch, and Fortune
+////
+//// getting a mix of drops for ores and stone is really annoying with
+//// silk touch + breaking
+////
+//// fortune axes only work on melons
+////
+//// fortune shovels only work on gravel
+////
+//// silk hoes and fortune hoes are both useful for leaves
+////
+//// so my preferred tool loadout is:
+//// * picks: fortune + breaking, silk touch + unbreaking
+//// * axe: silk touch + breaking
+//// * shovel: silk touch + breaking
+//// * hoe: fortune, silk touch, not sure about breaking vs unbreaking on them
+//
+//====
+//
+////image::https://i.imgur.com/Rm2NtDa.png[Mythic Relics]
+//image::https://i.imgur.com/e0I8doV.png[Mythic Relics]
+//
+//If you have the <<spellsmithing-guide,Spellsmithing Guide>> resource pack
+//installed, some relics have custom item textures in the inventory.
+//
+//This is a <<ordering-data-packs,companion pack>> for the
+//<<loot-overhaul,Loot Overhaul>> and <<phantasmal,Phantasmal>> datapacks,
+//which provide access to some of the relics.
+//
+//**Downloads**
+//
+//.https://github.com/DMBuce/bucepack/releases/latest/download/relics_mythic.zip[`relics_mythic.zip`]
+//[%collapsible]
+//====
+//
+//```
+//data/minecraft/loot_tables/blocks/gilded_blackstone.json
+//data/minecraft/loot_tables/blocks/lodestone.json
+//data/minecraft/loot_tables/entities/bee.json
+//data/minecraft/loot_tables/entities/endermite.json
+//data/minecraft/loot_tables/entities/ghast.json
+//data/minecraft/loot_tables/entities/glow_squid.json
+//data/minecraft/loot_tables/entities/pig.json
+//data/minecraft/loot_tables/entities/sheep.json
+//data/minecraft/loot_tables/entities/sheep/light_gray.json
+//data/minecraft/loot_tables/entities/silverfish.json
+//data/minecraft/tags/entity_types/frog_food.json
+//```
+//
+//====
+//
+//.https://github.com/DMBuce/bucepack/releases[All Releases & Changelogs]
+//[%collapsible]
+//====
+//====
+//
+//.Known Issues
+//[%collapsible]
+//====
+//Myth of Seeking can behave in unexpected ways
+//due to https://bugs.mojang.com/browse/MC-138887[MC-138887].
+//
+//Myth of Breaking tills podzol and mycelium,
+//which is inconsistent with https://bugs.mojang.com/browse/MC-8231[MC-8231].
+//====
+//
+//=== Deep Relics
+//
+//If this <<ordering-data-packs,addon pack>>
+//is enabled and loaded after <<loot-overhaul,Loot Overhaul>>,
+//it adds <<Relics>> with <<mythic-enchantments,Mythic Enchantments>>
+//to ancient city loot.
+////Many of the relics require sculk to power them.
+//
+//Relics can be applied to tools in the smithing table.
+//A Bottle o' Enchanting is placed in the template (left) slot,
+//the relic is placed in the middle slot,
+//and the item to apply the relic's magic to is placed in the right slot.
+//
+//.Summary of deep relics
+//[%collapsible]
+//====
+//
+//**Relic of Puncheons**:
+//Some coal in ancient city chests have Myth of Train Tunnels,
+//a custom enchantment that can be applied to a golden helmet
+//with a bottle o' enchanting in the smithing table.
+//While riding a minecart in the nether or below y=63 in the overworld,
+//the enchantment consumes sculk from the player's inventory
+//and creates tunnel supports around the minecart track.
+//
+//**Relic of Echoes**:
+//Some echo shards have Myth of Reverberation,
+//a custom enchantment that can be applied to a totem
+//with a bottle o' enchanting in the smithing table.
+//When the totem is used, it creates an echo shard,
+//another totem from the player's inventory
+//is placed in their hand if one is available,
+//and it's given the same enchantment.
+//
+//**Relic of Rebirth**:
+//Some echo shards have Myth of Reincarnation,
+//a custom enchantment that can be applied to a totem
+//with a bottle o' enchanting in the smithing table.
+//When the totem is used, it creates an echo shard,
+//teleports the player to a random location,
+//and sets their spawn point to that location.
+//
+//**Relic of Rebuke**:
+//Some echo shards have Myth of Retribution,
+//a custom enchantment that can be applied to a totem
+//with a bottle o' enchanting in the smithing table.
+//When the totem is used, it creates an echo shard
+//and deals damage to the last mob that damaged the player in the previous 5 seconds.
+//
+//====
+//
+////image::https://i.imgur.com/anthmAo.png[Deep Relics]
+//
+//If you have the <<spellsmithing-guide,Spellsmithing Guide>> resource pack
+//installed, some relics have custom item textures in the inventory.
+//
+//**Downloads**
+//
+//.https://github.com/DMBuce/bucepack/releases/latest/download/relics_deep.zip[`relics_deep.zip`]
+//[%collapsible]
+//====
+//====
+//
+//.https://github.com/DMBuce/bucepack/releases[All Releases & Changelogs]
+//[%collapsible]
+//====
+//====
 
 === Phantasmal
 
@@ -3307,10 +3305,10 @@ Changes that facilitate survival in The End:
 
 * In addition to slimestone materials, you're given TNT when you respawn in
   The End
-* You can obtain the Relic of the Lens from <<mythic-relics,Mythic Relics>>
+//* You can obtain the Relic of the Lens from <<mythic-relics,Mythic Relics>>
 * End cities include loot from <<loot-overhaul,Loot Overhaul>>,
-  including enchanted crossbows to use as a ranged weapon, fireworks for ammo,
-  plus copper and warped stems to craft the Relic of the Lens with
+  including enchanted crossbows to use as a ranged weapon and fireworks for ammo
+//  plus copper and warped stems to craft the Relic of the Lens with
 
 //image::[Escape the Grind]
 
@@ -4054,7 +4052,6 @@ i.e. this is the _reverse_ of their relative priority.
 crafting_workstation.zip
 heads_fae.zip
 loot_overhaul.zip
-loot_overhaul_starter_relic.zip
 loot_overhaul_treasure_barrels.zip
 oven_brick.zip
 phantasmal.zip
@@ -4161,85 +4158,85 @@ classic_rose.zip:
 If you want to help add support for other languages to my resource packs,
 please reach out to me!
 
-== Spellsmithing
-
-Spellsmithing is the process of working magical enchantments onto an item in
-the smithing table.
-It works a little differently than traditional Minecraft smithing.
-Simply place a Bottle o' Enchanting in the left slot of the smithing table,
-a <<relics,relic>> in the middle slot,
-and a compatible item in the right slot.
-The enchantment(s) from the relic will be transferred to the item.
-
-=== Boon Enchantments
-
-Boons are a type of enchantment that work a little differently
-from normal enchantments. They are a bit unintuitive and finnicky due to
-magic's unpredictable nature.
-
-Like all enchantments, boons magically augment the tool they enchant.
-Like most enchantments, they're destroyed when a tool is repaired in the
-crafting grid.
-
-Like curses, boons can't be removed in the grindstone,
-and their tooltip text isn't white like normal enchantments.
-Unlike curses, the grindstone removes their sheen,
-and their tooltip isn't red.
-
-Like treasure enchantments, boons can't be obtained from the enchanting table,
-and must be found in the world.
-
-Unlike other enchantments, boons can't be obtained from trading
-and aren't found on books. Instead, they are usually
-found on small items such as shards, trinkets, gems, or nuggets.
-To put the boon on a tool, it needs to be worked in the smithing table.
-
-When combining tools in the anvil, a boon in the left slot will be preserved
-and a boon in the right slot will be destroyed. Applying ingots or enchanted
-books with the anvil works normally.
-
-Boons have a light green tooltip by default.
-Boons with these light green tooltips require a datapack to obtain and apply
-to a tool, but they continue to function even without a datapack.
-
-=== Glamer Enchantments
-
-Glamers are enchantments added by the <<phantasmal,Phantasmal>> datapack
-that can be applied to item frames and torches
-in the smithing table to give them an illusory invisibility effect.
-No template item is needed when smithing them.
-The illusion is destroyed when the item frame or torch is broken.
-
-Glamers are identical to boons in all other ways.
-
-=== Mythic Enchantments
-
-Mythic enchantments are boons with tooltips that are light blue instead of
-green. Their effects are often more powerful and/or complex than a typical
-boon, and require a datapack to function.
-
-If the datapack is uninstalled, or if it's incompatible with the version of
-Minecraft you're using, mythic enchantments continue to display their tooltip,
-but their effects cease to work and become mere myths.
-
-=== Relics
-
-A relic is a shard, trinket, or gem with impossible magic -- either a boon
-enchantment, some combination of mutually exclusive enchantments,
-or an enchantment that can be put on a tool that normally couldn't have it.
-
-Relics can be applied to tools in the smithing table.
-A Bottle o' Enchanting is placed in the template (left) slot,
-the relic is placed in the middle slot,
-and the item to apply the relic's magic to is placed in the right slot.
-
-Relics are added by the following datapacks:
-
-* <<archaeological-relics,Archaeological Relics>>
-* <<mythic-relics,Mythic Relics>>
-* <<deep-relics,Deep Relics>>
-* <<starter-item,Starter Relic>>
-* <<ender-relic,Ender Relic>>
+//== Spellsmithing
+//
+//Spellsmithing is the process of working magical enchantments onto an item in
+//the smithing table.
+//It works a little differently than traditional Minecraft smithing.
+//Simply place a Bottle o' Enchanting in the left slot of the smithing table,
+//a <<relics,relic>> in the middle slot,
+//and a compatible item in the right slot.
+//The enchantment(s) from the relic will be transferred to the item.
+//
+//=== Boon Enchantments
+//
+//Boons are a type of enchantment that work a little differently
+//from normal enchantments. They are a bit unintuitive and finnicky due to
+//magic's unpredictable nature.
+//
+//Like all enchantments, boons magically augment the tool they enchant.
+//Like most enchantments, they're destroyed when a tool is repaired in the
+//crafting grid.
+//
+//Like curses, boons can't be removed in the grindstone,
+//and their tooltip text isn't white like normal enchantments.
+//Unlike curses, the grindstone removes their sheen,
+//and their tooltip isn't red.
+//
+//Like treasure enchantments, boons can't be obtained from the enchanting table,
+//and must be found in the world.
+//
+//Unlike other enchantments, boons can't be obtained from trading
+//and aren't found on books. Instead, they are usually
+//found on small items such as shards, trinkets, gems, or nuggets.
+//To put the boon on a tool, it needs to be worked in the smithing table.
+//
+//When combining tools in the anvil, a boon in the left slot will be preserved
+//and a boon in the right slot will be destroyed. Applying ingots or enchanted
+//books with the anvil works normally.
+//
+//Boons have a light green tooltip by default.
+//Boons with these light green tooltips require a datapack to obtain and apply
+//to a tool, but they continue to function even without a datapack.
+//
+//=== Glamer Enchantments
+//
+//Glamers are enchantments added by the <<phantasmal,Phantasmal>> datapack
+//that can be applied to item frames and torches
+//in the smithing table to give them an illusory invisibility effect.
+//No template item is needed when smithing them.
+//The illusion is destroyed when the item frame or torch is broken.
+//
+//Glamers are identical to boons in all other ways.
+//
+//=== Mythic Enchantments
+//
+//Mythic enchantments are boons with tooltips that are light blue instead of
+//green. Their effects are often more powerful and/or complex than a typical
+//boon, and require a datapack to function.
+//
+//If the datapack is uninstalled, or if it's incompatible with the version of
+//Minecraft you're using, mythic enchantments continue to display their tooltip,
+//but their effects cease to work and become mere myths.
+//
+//=== Relics
+//
+//A relic is a shard, trinket, or gem with impossible magic -- either a boon
+//enchantment, some combination of mutually exclusive enchantments,
+//or an enchantment that can be put on a tool that normally couldn't have it.
+//
+//Relics can be applied to tools in the smithing table.
+//A Bottle o' Enchanting is placed in the template (left) slot,
+//the relic is placed in the middle slot,
+//and the item to apply the relic's magic to is placed in the right slot.
+//
+//Relics are added by the following datapacks:
+//
+//* <<archaeological-relics,Archaeological Relics>>
+//* <<mythic-relics,Mythic Relics>>
+//* <<deep-relics,Deep Relics>>
+//* <<starter-item,Starter Relic>>
+//* <<ender-relic,Ender Relic>>
 
 ////
 

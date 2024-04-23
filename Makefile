@@ -54,7 +54,6 @@ DATAPACKFILES = \
 	debugless.zip \
 	dragonproof.zip \
 	elemental.zip \
-	ender_relic.zip \
 	escape_end.zip \
 	escape_grind.zip \
 	escape_nether.zip \
@@ -66,7 +65,6 @@ DATAPACKFILES = \
 	heads_golem.zip \
 	heads_player.zip \
 	locomotive.zip \
-	loot_overhaul_starter_relic.zip \
 	loot_overhaul_treasure_barrels.zip \
 	loot_overhaul.zip \
 	mineable.zip \
@@ -76,8 +74,6 @@ DATAPACKFILES = \
 	phantasmal_end.zip \
 	phantasmal.zip \
 	poseable.zip \
-	relics_archy.zip \
-	relics_deep.zip \
 	shearless.zip \
 	smart_allays.zip \
 	speedy_paths.zip \
@@ -96,18 +92,22 @@ DATAPACKFILES = \
 	worldgen_overworld.zip \
 	worldgen_sandy_husk.zip \
 	worldgen_trees.zip \
-	#relics_mythic.zip \
 	#aggro_bastions.zip \
 	#antidote.zip \
 	#dripblock.zip \
+	#ender_relic.zip \
 	#frienderchest.zip \
 	#heirlooms.zip \
 	#hover_mode.zip \
 	#illusory_trader.zip \
 	#leashed.zip \
 	#lichdom.zip \
+	#loot_overhaul_starter_relic.zip \
 	#loot_overhaul_treasure_seeds.zip \
 	#network_deep.zip \
+	#relics_archy.zip \
+	#relics_deep.zip \
+	#relics_mythic.zip \
 	#worldgen_apocalypse.zip \
 	#worldgen_desert_breeze.zip \
 
@@ -656,7 +656,6 @@ relics_mythic_FILES := $(DEFAULT_DATA_FILES) \
 	data/minecraft/loot_tables/blocks/gilded_blackstone.json \
 	data/minecraft/loot_tables/blocks/lodestone.json \
 	data/minecraft/loot_tables/entities/bee.json \
-	data/minecraft/loot_tables/entities/endermite.json \
 	data/minecraft/loot_tables/entities/ghast.json \
 	data/minecraft/loot_tables/entities/glow_squid.json \
 	data/minecraft/loot_tables/entities/pig.json \
@@ -667,6 +666,7 @@ relics_mythic_FILES := $(DEFAULT_DATA_FILES) \
 	data/minecraft/tags/functions/load_relics_mythic.json \
 	data/minecraft/tags/worldgen/structure/seeking_located.json \
 	data/buce/tags/items/relic/templates.json \
+	#data/minecraft/loot_tables/entities/endermite.json \
 	#data/minecraft/loot_tables/entities/iron_golem.json \
 
 boss_loot_seasonal_FILES := $(DEFAULT_DATA_FILES) \
