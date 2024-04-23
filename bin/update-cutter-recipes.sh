@@ -289,8 +289,8 @@ do
 		"$latest.jar"/data/minecraft/recipes/*_from_"$block"_stonecutting.json
 	do
 		# generate a recipe with the uncobbled block as input
-		num="$(jq -r .count "$recipe")"
-		output="$(jq -r .result "$recipe" | sed 's/^minecraft://')"
+		num="$(jq -r .result.count "$recipe")"
+		output="$(jq -r .result.id "$recipe" | sed 's/^minecraft://')"
 		cp "$recipe" "$dir/smooth_cracked/${num}x_${output}.recipe.json"
 		sed -i "/item/ s/$block/$input/g" "$dir/smooth_cracked/${num}x_${output}.recipe.json"
 	done

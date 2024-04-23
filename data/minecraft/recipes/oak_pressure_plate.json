@@ -12,6 +12,6 @@
   ],
   "result": {
     "count": 2,
-    "item": "minecraft:oak_pressure_plate"
+    "id": "minecraft:oak_pressure_plate"
   }
 }

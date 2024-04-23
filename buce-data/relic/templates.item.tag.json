@@ -1,9 +1,11 @@
 {
   "replace": false,
   "values": [
+    "minecraft:bolt_armor_trim_smithing_template",
     "minecraft:coast_armor_trim_smithing_template",
     "minecraft:dune_armor_trim_smithing_template",
     "minecraft:eye_armor_trim_smithing_template",
+    "minecraft:flow_armor_trim_smithing_template",
     "minecraft:host_armor_trim_smithing_template",
     "minecraft:netherite_upgrade_smithing_template",
     "minecraft:raiser_armor_trim_smithing_template",

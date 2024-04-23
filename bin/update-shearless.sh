@@ -17,7 +17,7 @@ done
 while read old; do
 	new="${old#$latest.jar/}"
 	cp "$old" "$new"
-	sed -i 's/"minecraft:shears"/'"$shears"'/g; $a\' "$new"
+	sed -i 's/"minecraft:shears"/[ '"$shears"' ]/g; $a\' "$new"
 done < <(
 	grep -rl shears "$latest.jar"/data/minecraft/loot_tables/blocks \
 	| grep -v -e{_leaves,/short_grass,/tall_grass} \

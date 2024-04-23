@@ -55,6 +55,7 @@
     ]
   ],
   "result": {
-    "item": "minecraft:yellow_banner"
+    "count": 1,
+    "id": "minecraft:yellow_banner"
   }
 }

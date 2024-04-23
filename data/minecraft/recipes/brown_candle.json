@@ -11,6 +11,7 @@
     }
   ],
   "result": {
-    "item": "minecraft:brown_candle"
+    "count": 1,
+    "id": "minecraft:brown_candle"
   }
 }

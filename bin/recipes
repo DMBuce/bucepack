@@ -13,7 +13,12 @@ else:
 # turns an item id into a human-readable string
 def tr(itemjson):
     if 'item' in itemjson:
-        return itemjson['item'].removeprefix("minecraft:").replace('_', ' ')
+        if isinstance(itemjson['item'], dict):
+            return itemjson['item']['id'].removeprefix("minecraft:").replace('_', ' ')
+        else:
+            return itemjson['item'].removeprefix("minecraft:").replace('_', ' ')
+    elif 'id' in itemjson:
+        return itemjson['id'].removeprefix("minecraft:").replace('_', ' ')
     else:
         return itemjson['tag'].removeprefix("minecraft:").split("/")[-1].replace('_', ' ')
 
