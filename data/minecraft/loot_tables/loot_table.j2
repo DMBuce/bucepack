@@ -154,7 +154,7 @@
               {%- if entry.structure is defined %}
               "destination": "on_{{entry.structure}}_explorer_maps",
               {%- endif %}
-              "decoration": "{{entry.decor}}",
+              "decoration": "minecraft:{{entry.decor}}",
               "function": "minecraft:exploration_map",
               "skip_existing_chunks": {{ entry.skipchunks | lower }},
               "zoom": 1
@@ -165,10 +165,11 @@
 			  {%- if '.' in entry.display %}
               "name": {
                 "translate": "{{entry.display}}"
-              }
+              },
 			  {%- else %}
-              "name": "{{entry.display}}"
+              "name": "{{entry.display}}",
 			  {%- endif %}
+              "target": "item_name"
             }
             {%- endif %}
           ],
@@ -231,17 +232,14 @@
           {%- endif %}
           "conditions": [
             {
-              "condition": "minecraft:any_of",
-              "terms": [
-                {%- for biome in entry.biomes %}
-                {
-                  "condition": "minecraft:location_check",
-                  "predicate": {
-                    "biome": "minecraft:{{biome}}"
-                  }
-                }{{ "," if not loop.last }}
-                {%- endfor %}
-              ]
+              "condition": "minecraft:location_check",
+              "predicate": {
+                "biomes": [
+                  {%- for biome in entry.biomes %}
+                  "minecraft:{{biome}}"{{ "," if not loop.last }}
+                  {%- endfor %}
+                ]
+              }
             }
           ],
           "name": "minecraft:{{entry.item}}"
