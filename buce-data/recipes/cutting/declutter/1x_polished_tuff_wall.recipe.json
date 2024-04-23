@@ -4,6 +4,8 @@
     { "item": "minecraft:polished_tuff_slab" },
     { "item": "minecraft:polished_tuff_stairs" }
   ],
-  "result": "minecraft:polished_tuff_wall",
-  "count": 1
+  "result": {
+    "id": "minecraft:polished_tuff_wall",
+    "count": 1
+  }
 }

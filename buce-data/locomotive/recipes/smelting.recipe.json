@@ -17,5 +17,5 @@
       "item": "minecraft:furnace_minecart"
     }
   ],
-  "result": "minecraft:minecart"
+  "result": { "id": "minecraft:minecart" }
 }

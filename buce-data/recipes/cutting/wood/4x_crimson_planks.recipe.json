@@ -6,6 +6,8 @@
     { "item": "minecraft:stripped_crimson_stem" },
     { "item": "minecraft:stripped_crimson_hyphae" }
   ],
-  "result": "minecraft:crimson_planks",
-  "count": 4
+  "result": {
+    "id": "minecraft:crimson_planks",
+    "count": 4
+  }
 }

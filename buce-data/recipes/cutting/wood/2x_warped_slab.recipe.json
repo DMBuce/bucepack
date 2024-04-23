@@ -3,6 +3,8 @@
   "ingredient": [
     { "item": "minecraft:warped_planks" }
   ],
-  "result": "minecraft:warped_slab",
-  "count": 2
+  "result": {
+    "id": "minecraft:warped_slab",
+    "count": 2
+  }
 }

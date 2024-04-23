@@ -10,6 +10,8 @@
     { "item": "minecraft:birch_slab" },
     { "item": "minecraft:birch_stairs" }
   ],
-  "result": "minecraft:birch_trapdoor",
-  "count": 1
+  "result": {
+    "id": "minecraft:birch_trapdoor",
+    "count": 1
+  }
 }

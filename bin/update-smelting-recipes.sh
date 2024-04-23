@@ -14,7 +14,7 @@ for file in "$latest.jar"/data/minecraft/recipes/*nugget_from_blasting*.json; do
 	#sed -i '
 	#	/result/ s/"minecraft:.*/{\n    "item": &,\n    "count": 3\n  }/
 	#' "${file#$latest.jar/}"
-	sed -i '/result/ s/nugget/ingot/' "${file#$latest.jar/}"
+	sed -i '/"id":/ s/nugget/ingot/' "${file#$latest.jar/}"
 done
 
 # brick ovens

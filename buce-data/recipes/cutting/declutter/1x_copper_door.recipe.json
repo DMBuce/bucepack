@@ -3,6 +3,8 @@
   "ingredient": [
     { "item": "minecraft:copper_trapdoor" }
   ],
-  "result": "minecraft:copper_door",
-  "count": 1
+  "result": {
+    "id": "minecraft:copper_door",
+    "count": 1
+  }
 }

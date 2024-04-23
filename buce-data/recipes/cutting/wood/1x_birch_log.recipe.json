@@ -3,6 +3,8 @@
   "ingredient": [
     { "item": "minecraft:birch_wood" }
   ],
-  "result": "minecraft:birch_log",
-  "count": 1
+  "result": {
+    "id": "minecraft:birch_log",
+    "count": 1
+  }
 }

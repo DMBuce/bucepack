@@ -4,6 +4,8 @@
     { "item": "minecraft:red_nether_brick_slab" },
     { "item": "minecraft:red_nether_brick_wall" }
   ],
-  "result": "minecraft:red_nether_brick_stairs",
-  "count": 1
+  "result": {
+    "id": "minecraft:red_nether_brick_stairs",
+    "count": 1
+  }
 }

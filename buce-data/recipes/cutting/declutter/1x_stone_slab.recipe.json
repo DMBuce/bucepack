@@ -5,6 +5,8 @@
     { "item": "minecraft:stone_pressure_plate" },
     { "item": "minecraft:stone_stairs" }
   ],
-  "result": "minecraft:stone_slab",
-  "count": 1
+  "result": {
+    "id": "minecraft:stone_slab",
+    "count": 1
+  }
 }

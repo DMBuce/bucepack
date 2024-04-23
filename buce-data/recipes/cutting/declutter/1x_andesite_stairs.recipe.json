@@ -4,6 +4,8 @@
     { "item": "minecraft:andesite_slab" },
     { "item": "minecraft:andesite_wall" }
   ],
-  "result": "minecraft:andesite_stairs",
-  "count": 1
+  "result": {
+    "id": "minecraft:andesite_stairs",
+    "count": 1
+  }
 }

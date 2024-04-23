@@ -10,6 +10,8 @@
     { "item": "minecraft:bamboo_slab" },
     { "item": "minecraft:bamboo_trapdoor" }
   ],
-  "result": "minecraft:bamboo_stairs",
-  "count": 1
+  "result": {
+    "id": "minecraft:bamboo_stairs",
+    "count": 1
+  }
 }

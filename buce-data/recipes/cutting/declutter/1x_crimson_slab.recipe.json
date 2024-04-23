@@ -10,6 +10,8 @@
     { "item": "minecraft:crimson_stairs" },
     { "item": "minecraft:crimson_trapdoor" }
   ],
-  "result": "minecraft:crimson_slab",
-  "count": 1
+  "result": {
+    "id": "minecraft:crimson_slab",
+    "count": 1
+  }
 }

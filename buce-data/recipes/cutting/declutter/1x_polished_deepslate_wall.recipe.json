@@ -4,6 +4,8 @@
     { "item": "minecraft:polished_deepslate_slab" },
     { "item": "minecraft:polished_deepslate_stairs" }
   ],
-  "result": "minecraft:polished_deepslate_wall",
-  "count": 1
+  "result": {
+    "id": "minecraft:polished_deepslate_wall",
+    "count": 1
+  }
 }

@@ -10,6 +10,8 @@
     { "item": "minecraft:dark_oak_slab" },
     { "item": "minecraft:dark_oak_stairs" }
   ],
-  "result": "minecraft:dark_oak_trapdoor",
-  "count": 1
+  "result": {
+    "id": "minecraft:dark_oak_trapdoor",
+    "count": 1
+  }
 }

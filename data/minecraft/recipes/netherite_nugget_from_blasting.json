@@ -32,5 +32,5 @@
       "item": "minecraft:netherite_boots"
     }
   ],
-  "result": "minecraft:netherite_ingot"
+  "result": { "id": "minecraft:netherite_ingot" }
 }

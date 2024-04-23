@@ -10,6 +10,8 @@
     { "item": "minecraft:spruce_stairs" },
     { "item": "minecraft:spruce_trapdoor" }
   ],
-  "result": "minecraft:spruce_fence_gate",
-  "count": 1
+  "result": {
+    "id": "minecraft:spruce_fence_gate",
+    "count": 1
+  }
 }

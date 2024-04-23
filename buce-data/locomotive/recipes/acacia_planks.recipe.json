@@ -4,6 +4,8 @@
     { "item": "minecraft:acacia_boat" },
     { "item": "minecraft:acacia_chest_boat" }
   ],
-  "result": "minecraft:acacia_planks",
-  "count": 5
+  "result": {
+    "id": "minecraft:acacia_planks",
+    "count": 5
+  }
 }

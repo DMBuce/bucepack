@@ -5,6 +5,8 @@
     { "item": "minecraft:stone_slab" },
     { "item": "minecraft:stone_stairs" }
   ],
-  "result": "minecraft:stone_button",
-  "count": 1
+  "result": {
+    "id": "minecraft:stone_button",
+    "count": 1
+  }
 }

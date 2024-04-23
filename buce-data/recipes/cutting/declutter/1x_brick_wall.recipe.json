@@ -4,6 +4,8 @@
     { "item": "minecraft:brick_slab" },
     { "item": "minecraft:brick_stairs" }
   ],
-  "result": "minecraft:brick_wall",
-  "count": 1
+  "result": {
+    "id": "minecraft:brick_wall",
+    "count": 1
+  }
 }

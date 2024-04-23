@@ -15,6 +15,6 @@
     "###"
   ],
   "result": {
-    "item": "minecraft:furnace"
+    "id": "minecraft:furnace"
   }
 }

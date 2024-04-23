@@ -6,6 +6,8 @@
     { "item": "minecraft:stripped_birch_log" },
     { "item": "minecraft:stripped_birch_wood" }
   ],
-  "result": "minecraft:birch_slab",
-  "count": 8
+  "result": {
+    "id": "minecraft:birch_slab",
+    "count": 8
+  }
 }

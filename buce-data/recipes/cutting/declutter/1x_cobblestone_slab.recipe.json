@@ -4,6 +4,8 @@
     { "item": "minecraft:cobblestone_stairs" },
     { "item": "minecraft:cobblestone_wall" }
   ],
-  "result": "minecraft:cobblestone_slab",
-  "count": 1
+  "result": {
+    "id": "minecraft:cobblestone_slab",
+    "count": 1
+  }
 }

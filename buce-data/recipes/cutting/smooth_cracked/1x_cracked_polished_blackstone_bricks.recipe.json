@@ -5,6 +5,8 @@
     { "item": "minecraft:polished_blackstone" },
     { "item": "minecraft:polished_blackstone_bricks" }
   ],
-  "result": "minecraft:cracked_polished_blackstone_bricks",
-  "count": 1
+  "result": {
+    "id": "minecraft:cracked_polished_blackstone_bricks",
+    "count": 1
+  }
 }

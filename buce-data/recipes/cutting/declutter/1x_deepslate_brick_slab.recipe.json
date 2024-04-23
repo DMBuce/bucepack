@@ -4,6 +4,8 @@
     { "item": "minecraft:deepslate_brick_stairs" },
     { "item": "minecraft:deepslate_brick_wall" }
   ],
-  "result": "minecraft:deepslate_brick_slab",
-  "count": 1
+  "result": {
+    "id": "minecraft:deepslate_brick_slab",
+    "count": 1
+  }
 }

@@ -10,6 +10,8 @@
     { "item": "minecraft:mangrove_slab" },
     { "item": "minecraft:mangrove_trapdoor" }
   ],
-  "result": "minecraft:mangrove_stairs",
-  "count": 1
+  "result": {
+    "id": "minecraft:mangrove_stairs",
+    "count": 1
+  }
 }

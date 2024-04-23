@@ -45,8 +45,10 @@ for t in "${logtypes[@]}"; do
 			    { "item": "minecraft:{!printf "%s\\n" \$inputs | head -n-1}" },
 			    { "item": "minecraft:{!printf "%s\\n" \$inputs | tail -n1}" }
 			  ],
-			  "result": "minecraft:$output",
-			  "count": $num
+			  "result": {
+			    "id": "minecraft:$output",
+			    "count": $num
+			  }
 			}
 		EOF
 	done
@@ -63,8 +65,10 @@ for t in "${logtypes[@]}"; do
 		    { "item": "minecraft:{!printf "%s\\n" \$inputs | head -n-1}" },
 		    { "item": "minecraft:{!printf "%s\\n" \$inputs | tail -n1}" }
 		  ],
-		  "result": "minecraft:$output",
-		  "count": $num
+		  "result": {
+		    "id": "minecraft:$output",
+		    "count": $num
+		  }
 		}
 	EOF
 done
@@ -81,8 +85,10 @@ sempl - "buce-data/locomotive/recipes/${output}.recipe.json" <<-EOF
 	    { "item": "minecraft:{!printf "%s\\n" \$inputs | head -n-1}" },
 	    { "item": "minecraft:{!printf "%s\\n" \$inputs | tail -n1}" }
 	  ],
-	  "result": "minecraft:$output",
-	  "count": $num
+	  "result": {
+	    "id": "minecraft:$output",
+	    "count": $num
+	  }
 	}
 EOF
 
@@ -108,8 +114,10 @@ for t in "${stemtypes[@]}"; do
 			    { "item": "minecraft:{!printf "%s\\n" \$inputs | head -n-1}" },
 			    { "item": "minecraft:{!printf "%s\\n" \$inputs | tail -n1}" }
 			  ],
-			  "result": "minecraft:$output",
-			  "count": $num
+			  "result": {
+			    "id": "minecraft:$output",
+			    "count": $num
+			  }
 			}
 		EOF
 	done
@@ -140,15 +148,20 @@ do
 		    { "item": "minecraft:{!printf "%s\\n" \$inputs | head -n-1}" },
 		    { "item": "minecraft:{!printf "%s\\n" \$inputs | tail -n1}" }
 		  ],
-		  "result": "minecraft:$output",
-		  "count": $num
+		  "result": {
+		    "id": "minecraft:$output",
+		    "count": $num
+		  }
 		}
 	EOF
 done
 
 # generate recipe for 2 sticks
 #export inputs="$(echo {oak,spruce,birch,jungle,acacia,dark_oak,crimson,warped}_planks)"
-export inputs="bamboo ${logtypes[*]} ${stemtypes[*]}"
+num=2
+output="stick"
+inputs="bamboo ${logtypes[*]} ${stemtypes[*]}"
+export num output inputs
 sempl - "$dir/wood/2x_sticks.recipe.json" <<-EOF
 	{
 	  "type": "minecraft:stonecutting",
@@ -156,13 +169,18 @@ sempl - "$dir/wood/2x_sticks.recipe.json" <<-EOF
 	    { "item": "minecraft:{!printf '%s\\n' \$inputs | head -n-1}_planks" },
 	    { "item": "minecraft:{!printf '%s\\n' \$inputs | tail -n1}_planks" }
 	  ],
-	  "result": "minecraft:stick",
-	  "count": 2
+	  "result": {
+	    "id": "minecraft:$output",
+	    "count": $num
+	  }
 	}
 EOF
 
 # generate recipe for 4 sticks
-export inputs="bamboo_block stripped_bamboo_block"
+num=4
+output="stick"
+inputs="bamboo_block stripped_bamboo_block"
+export num output inputs
 sempl - "$dir/wood/4x_sticks.recipe.json" <<-EOF
 	{
 	  "type": "minecraft:stonecutting",
@@ -170,12 +188,16 @@ sempl - "$dir/wood/4x_sticks.recipe.json" <<-EOF
 	    { "item": "minecraft:{!printf '%s\\n' \$inputs | head -n-1}" },
 	    { "item": "minecraft:{!printf '%s\\n' \$inputs | tail -n1}" }
 	  ],
-	  "result": "minecraft:stick",
-	  "count": 4
+	  "result": {
+	    "id": "minecraft:$output",
+	    "count": $num
+	  }
 	}
 EOF
 
 # generate recipe for 8 sticks
+num=8
+output="stick"
 inputs=""
 for t in "${logtypes[@]}"; do
 	for pre in '' stripped_; do
@@ -191,7 +213,7 @@ for t in "${stemtypes[@]}"; do
 		done
 	done
 done
-export inputs
+export num output inputs
 sempl - "$dir/wood/8x_sticks.recipe.json" <<-EOF
 	{
 	  "type": "minecraft:stonecutting",
@@ -199,8 +221,10 @@ sempl - "$dir/wood/8x_sticks.recipe.json" <<-EOF
 	    { "item": "minecraft:{!printf '%s\\n' \$inputs | head -n-1}" },
 	    { "item": "minecraft:{!printf '%s\\n' \$inputs | tail -n1}" }
 	  ],
-	  "result": "minecraft:stick",
-	  "count": 8
+	  "result": {
+	    "id": "minecraft:$output",
+	    "count": $num
+	  }
 	}
 EOF
 
@@ -225,8 +249,10 @@ do
 		    { "item": "{!jq -r .ingredient.item $latest.jar/data/minecraft/recipes/${inputs}_from_*_stonecutting.json 2>/dev/null}" },
 		    { "item": "minecraft:$inputs" }
 		  ],
-		  "result": "minecraft:$output",
-		  "count": $num
+		  "result": {
+		    "id": "minecraft:$output",
+		    "count": $num
+		  }
 		}
 	EOF
 
@@ -244,8 +270,10 @@ do
 		  "ingredient": [
 		    { "item": "minecraft:$inputs" }
 		  ],
-		  "result": "minecraft:$output",
-		  "count": $num
+		  "result": {
+		    "id": "minecraft:$output",
+		    "count": $num
+		  }
 		}
 	EOF
 	)
@@ -265,8 +293,10 @@ do
 		  "ingredient": [
 		    { "item": "minecraft:$inputs" }
 		  ],
-		  "result": "minecraft:$output",
-		  "count": $num
+		  "result": {
+		    "id": "minecraft:$output",
+		    "count": $num
+		  }
 		}
 	EOF
 	)
@@ -316,8 +346,10 @@ do
 			    { "item": "minecraft:{!printf '%s\\n' \$inputs | head -n-1}" },
 			    { "item": "minecraft:{!printf '%s\\n' \$inputs | tail -n1}" }
 			  ],
-			  "result": "minecraft:$output",
-			  "count": $num
+			  "result": {
+			    "id": "minecraft:$output",
+			    "count": $num
+			  }
 			}
 		EOF
 	done
@@ -336,8 +368,10 @@ sempl - "$dir/declutter/${num}x_${output}.recipe.json" <<-EOF
 	    { "item": "minecraft:{!printf '%s\\n' \$inputs | head -n-1}" },
 	    { "item": "minecraft:{!printf '%s\\n' \$inputs | tail -n1}" }
 	  ],
-	  "result": "minecraft:$output",
-	  "count": $num
+	  "result": {
+	    "id": "minecraft:$output",
+	    "count": $num
+	  }
 	}
 EOF
 

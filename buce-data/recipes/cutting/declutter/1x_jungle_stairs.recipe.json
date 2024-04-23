@@ -10,6 +10,8 @@
     { "item": "minecraft:jungle_slab" },
     { "item": "minecraft:jungle_trapdoor" }
   ],
-  "result": "minecraft:jungle_stairs",
-  "count": 1
+  "result": {
+    "id": "minecraft:jungle_stairs",
+    "count": 1
+  }
 }

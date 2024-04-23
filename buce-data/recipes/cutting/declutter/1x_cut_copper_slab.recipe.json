@@ -3,6 +3,8 @@
   "ingredient": [
     { "item": "minecraft:cut_copper_stairs" }
   ],
-  "result": "minecraft:cut_copper_slab",
-  "count": 1
+  "result": {
+    "id": "minecraft:cut_copper_slab",
+    "count": 1
+  }
 }

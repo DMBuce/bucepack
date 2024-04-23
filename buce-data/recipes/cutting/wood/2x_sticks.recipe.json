@@ -13,6 +13,8 @@
     { "item": "minecraft:crimson_planks" },
     { "item": "minecraft:warped_planks" }
   ],
-  "result": "minecraft:stick",
-  "count": 2
+  "result": {
+    "id": "minecraft:stick",
+    "count": 2
+  }
 }

@@ -10,6 +10,8 @@
     { "item": "minecraft:cherry_slab" },
     { "item": "minecraft:cherry_stairs" }
   ],
-  "result": "minecraft:cherry_trapdoor",
-  "count": 1
+  "result": {
+    "id": "minecraft:cherry_trapdoor",
+    "count": 1
+  }
 }

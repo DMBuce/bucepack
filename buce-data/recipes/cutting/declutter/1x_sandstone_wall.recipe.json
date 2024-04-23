@@ -4,6 +4,8 @@
     { "item": "minecraft:sandstone_slab" },
     { "item": "minecraft:sandstone_stairs" }
   ],
-  "result": "minecraft:sandstone_wall",
-  "count": 1
+  "result": {
+    "id": "minecraft:sandstone_wall",
+    "count": 1
+  }
 }

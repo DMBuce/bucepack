@@ -3,6 +3,8 @@
   "ingredient": [
     { "item": "minecraft:spruce_log" }
   ],
-  "result": "minecraft:spruce_wood",
-  "count": 1
+  "result": {
+    "id": "minecraft:spruce_wood",
+    "count": 1
+  }
 }

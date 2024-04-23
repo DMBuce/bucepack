@@ -4,6 +4,8 @@
     { "item": "minecraft:mossy_stone_brick_stairs" },
     { "item": "minecraft:mossy_stone_brick_wall" }
   ],
-  "result": "minecraft:mossy_stone_brick_slab",
-  "count": 1
+  "result": {
+    "id": "minecraft:mossy_stone_brick_slab",
+    "count": 1
+  }
 }

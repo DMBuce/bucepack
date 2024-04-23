@@ -4,6 +4,8 @@
     { "item": "minecraft:prismarine_slab" },
     { "item": "minecraft:prismarine_stairs" }
   ],
-  "result": "minecraft:prismarine_wall",
-  "count": 1
+  "result": {
+    "id": "minecraft:prismarine_wall",
+    "count": 1
+  }
 }

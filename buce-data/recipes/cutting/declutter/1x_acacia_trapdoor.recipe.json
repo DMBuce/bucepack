@@ -10,6 +10,8 @@
     { "item": "minecraft:acacia_slab" },
     { "item": "minecraft:acacia_stairs" }
   ],
-  "result": "minecraft:acacia_trapdoor",
-  "count": 1
+  "result": {
+    "id": "minecraft:acacia_trapdoor",
+    "count": 1
+  }
 }

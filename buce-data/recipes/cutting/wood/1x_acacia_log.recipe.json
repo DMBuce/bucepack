@@ -3,6 +3,8 @@
   "ingredient": [
     { "item": "minecraft:acacia_wood" }
   ],
-  "result": "minecraft:acacia_log",
-  "count": 1
+  "result": {
+    "id": "minecraft:acacia_log",
+    "count": 1
+  }
 }

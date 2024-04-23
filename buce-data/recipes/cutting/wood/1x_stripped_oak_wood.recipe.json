@@ -5,6 +5,8 @@
     { "item": "minecraft:oak_wood" },
     { "item": "minecraft:stripped_oak_log" }
   ],
-  "result": "minecraft:stripped_oak_wood",
-  "count": 1
+  "result": {
+    "id": "minecraft:stripped_oak_wood",
+    "count": 1
+  }
 }

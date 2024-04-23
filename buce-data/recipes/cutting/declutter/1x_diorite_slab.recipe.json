@@ -4,6 +4,8 @@
     { "item": "minecraft:diorite_stairs" },
     { "item": "minecraft:diorite_wall" }
   ],
-  "result": "minecraft:diorite_slab",
-  "count": 1
+  "result": {
+    "id": "minecraft:diorite_slab",
+    "count": 1
+  }
 }

@@ -10,6 +10,8 @@
     { "item": "minecraft:acacia_stairs" },
     { "item": "minecraft:acacia_trapdoor" }
   ],
-  "result": "minecraft:acacia_fence",
-  "count": 1
+  "result": {
+    "id": "minecraft:acacia_fence",
+    "count": 1
+  }
 }

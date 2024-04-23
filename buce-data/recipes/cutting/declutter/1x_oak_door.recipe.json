@@ -10,6 +10,8 @@
     { "item": "minecraft:oak_stairs" },
     { "item": "minecraft:oak_trapdoor" }
   ],
-  "result": "minecraft:oak_door",
-  "count": 1
+  "result": {
+    "id": "minecraft:oak_door",
+    "count": 1
+  }
 }

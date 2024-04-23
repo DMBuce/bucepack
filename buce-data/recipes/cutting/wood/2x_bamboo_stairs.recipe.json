@@ -4,6 +4,8 @@
     { "item": "minecraft:bamboo_block" },
     { "item": "minecraft:stripped_bamboo_block" }
   ],
-  "result": "minecraft:bamboo_stairs",
-  "count": 2
+  "result": {
+    "id": "minecraft:bamboo_stairs",
+    "count": 2
+  }
 }

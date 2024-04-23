@@ -64,7 +64,7 @@ while read category input output; do
 		  ],
 		  "result": {
 		    "count": 9,
-		    "item": "minecraft:$output"
+		    "id": "minecraft:$output"
 		  }
 		}
 	EOF
@@ -95,7 +95,7 @@ while read category input output; do
 		  ],
 		  "result": {
 		    "count": 4,
-		    "item": "minecraft:$output"
+		    "id": "minecraft:$output"
 		  }
 		}
 	EOF
@@ -129,7 +129,7 @@ while read category input output; do
 		  ],
 		  "result": {
 		    "count": 3,
-		    "item": "minecraft:$output"
+		    "id": "minecraft:$output"
 		  }
 		}
 	EOF

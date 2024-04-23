@@ -3,6 +3,8 @@
   "ingredient": [
     { "item": "minecraft:dark_prismarine_slab" }
   ],
-  "result": "minecraft:dark_prismarine_stairs",
-  "count": 1
+  "result": {
+    "id": "minecraft:dark_prismarine_stairs",
+    "count": 1
+  }
 }

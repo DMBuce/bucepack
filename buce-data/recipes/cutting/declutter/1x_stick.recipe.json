@@ -101,6 +101,8 @@
     { "item": "minecraft:warped_stairs" },
     { "item": "minecraft:warped_trapdoor" }
   ],
-  "result": "minecraft:stick",
-  "count": 1
+  "result": {
+    "id": "minecraft:stick",
+    "count": 1
+  }
 }

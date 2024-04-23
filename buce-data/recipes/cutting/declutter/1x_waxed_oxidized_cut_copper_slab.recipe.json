@@ -3,6 +3,8 @@
   "ingredient": [
     { "item": "minecraft:waxed_oxidized_cut_copper_stairs" }
   ],
-  "result": "minecraft:waxed_oxidized_cut_copper_slab",
-  "count": 1
+  "result": {
+    "id": "minecraft:waxed_oxidized_cut_copper_slab",
+    "count": 1
+  }
 }

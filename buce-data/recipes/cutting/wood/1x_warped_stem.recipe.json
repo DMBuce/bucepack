@@ -3,6 +3,8 @@
   "ingredient": [
     { "item": "minecraft:warped_hyphae" }
   ],
-  "result": "minecraft:warped_stem",
-  "count": 1
+  "result": {
+    "id": "minecraft:warped_stem",
+    "count": 1
+  }
 }

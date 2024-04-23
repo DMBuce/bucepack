@@ -4,6 +4,8 @@
     { "item": "minecraft:bamboo_raft" },
     { "item": "minecraft:bamboo_chest_raft" }
   ],
-  "result": "minecraft:bamboo_planks",
-  "count": 5
+  "result": {
+    "id": "minecraft:bamboo_planks",
+    "count": 5
+  }
 }

@@ -6,6 +6,8 @@
     { "item": "minecraft:stripped_warped_stem" },
     { "item": "minecraft:stripped_warped_hyphae" }
   ],
-  "result": "minecraft:warped_stairs",
-  "count": 4
+  "result": {
+    "id": "minecraft:warped_stairs",
+    "count": 4
+  }
 }

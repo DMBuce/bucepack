@@ -52,7 +52,7 @@ for t in "${logtypes[@]}"; do
 		  ],
 		  "result": {
 		    "count": $num,
-		    "item": "minecraft:$output"
+		    "id": "minecraft:$output"
 		  }
 		}
 	EOF
@@ -134,7 +134,7 @@ for t in "${stemtypes[@]}"; do
 		  ],
 		  "result": {
 		    "count": $num,
-		    "item": "minecraft:$output"
+		    "id": "minecraft:$output"
 		  }
 		}
 	EOF

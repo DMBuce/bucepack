@@ -6,6 +6,8 @@
     { "item": "minecraft:stripped_cherry_log" },
     { "item": "minecraft:stripped_cherry_wood" }
   ],
-  "result": "minecraft:cherry_planks",
-  "count": 4
+  "result": {
+    "id": "minecraft:cherry_planks",
+    "count": 4
+  }
 }

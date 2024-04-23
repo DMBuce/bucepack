@@ -6,6 +6,8 @@
     { "item": "minecraft:stripped_spruce_log" },
     { "item": "minecraft:stripped_spruce_wood" }
   ],
-  "result": "minecraft:spruce_stairs",
-  "count": 4
+  "result": {
+    "id": "minecraft:spruce_stairs",
+    "count": 4
+  }
 }

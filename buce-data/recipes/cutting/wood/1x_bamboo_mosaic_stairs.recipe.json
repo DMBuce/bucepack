@@ -4,6 +4,8 @@
     { "item": "minecraft:bamboo_planks" },
     { "item": "minecraft:bamboo_mosaic" }
   ],
-  "result": "minecraft:bamboo_mosaic_stairs",
-  "count": 1
+  "result": {
+    "id": "minecraft:bamboo_mosaic_stairs",
+    "count": 1
+  }
 }

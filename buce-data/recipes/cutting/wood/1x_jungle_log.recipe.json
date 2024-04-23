@@ -3,6 +3,8 @@
   "ingredient": [
     { "item": "minecraft:jungle_wood" }
   ],
-  "result": "minecraft:jungle_log",
-  "count": 1
+  "result": {
+    "id": "minecraft:jungle_log",
+    "count": 1
+  }
 }

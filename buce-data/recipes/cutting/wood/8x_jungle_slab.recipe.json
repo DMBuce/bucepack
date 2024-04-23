@@ -6,6 +6,8 @@
     { "item": "minecraft:stripped_jungle_log" },
     { "item": "minecraft:stripped_jungle_wood" }
   ],
-  "result": "minecraft:jungle_slab",
-  "count": 8
+  "result": {
+    "id": "minecraft:jungle_slab",
+    "count": 8
+  }
 }

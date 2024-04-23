@@ -4,6 +4,8 @@
     { "item": "minecraft:birch_boat" },
     { "item": "minecraft:birch_chest_boat" }
   ],
-  "result": "minecraft:birch_planks",
-  "count": 5
+  "result": {
+    "id": "minecraft:birch_planks",
+    "count": 5
+  }
 }

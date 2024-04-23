@@ -4,6 +4,8 @@
     { "item": "minecraft:oak_boat" },
     { "item": "minecraft:oak_chest_boat" }
   ],
-  "result": "minecraft:oak_planks",
-  "count": 5
+  "result": {
+    "id": "minecraft:oak_planks",
+    "count": 5
+  }
 }

@@ -3,6 +3,8 @@
   "ingredient": [
     { "item": "minecraft:bamboo_mosaic_stairs" }
   ],
-  "result": "minecraft:bamboo_mosaic_slab",
-  "count": 1
+  "result": {
+    "id": "minecraft:bamboo_mosaic_slab",
+    "count": 1
+  }
 }

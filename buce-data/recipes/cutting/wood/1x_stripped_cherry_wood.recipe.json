@@ -5,6 +5,8 @@
     { "item": "minecraft:cherry_wood" },
     { "item": "minecraft:stripped_cherry_log" }
   ],
-  "result": "minecraft:stripped_cherry_wood",
-  "count": 1
+  "result": {
+    "id": "minecraft:stripped_cherry_wood",
+    "count": 1
+  }
 }

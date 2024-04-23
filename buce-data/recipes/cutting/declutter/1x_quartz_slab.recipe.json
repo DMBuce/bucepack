@@ -3,6 +3,8 @@
   "ingredient": [
     { "item": "minecraft:quartz_stairs" }
   ],
-  "result": "minecraft:quartz_slab",
-  "count": 1
+  "result": {
+    "id": "minecraft:quartz_slab",
+    "count": 1
+  }
 }

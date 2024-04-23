@@ -10,6 +10,8 @@
     { "item": "minecraft:warped_slab" },
     { "item": "minecraft:warped_trapdoor" }
   ],
-  "result": "minecraft:warped_stairs",
-  "count": 1
+  "result": {
+    "id": "minecraft:warped_stairs",
+    "count": 1
+  }
 }
