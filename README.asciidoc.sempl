@@ -794,86 +794,86 @@ Shown above are the heads of Computron, TV Boy, Donut Girl, and Rubik.
 
 {!./bin/packsummary heads_player}
 
-//=== Archaeological Relics
+// === Archaeological Relics
 //
-//Adds <<Relics>> to archaeology loot.
+// Adds <<Relics>> to archaeology loot.
 //
-//Relics can be applied to tools in the smithing table.
-//A Bottle o' Enchanting is placed in the template (left) slot,
-//the relic is placed in the middle slot,
-//and the item to apply the relic's magic to is placed in the right slot.
+// Relics can be applied to tools in the smithing table.
+// A Bottle o' Enchanting is placed in the template (left) slot,
+// the relic is placed in the middle slot,
+// and the item to apply the relic's magic to is placed in the right slot.
 //
-//.Summary of relics
-//[%collapsible]
-//====
+// .Summary of relics
+// [%collapsible]
+// ====
 //
-//**Relic of Knockback**:
-//A piece of flint with Knockback V that can be applied to a shovel or hoe.
-////with a bottle o' enchanting in the smithing table.
+// **Relic of Knockback**:
+// A piece of flint with Knockback V that can be applied to a shovel or hoe.
+// //with a bottle o' enchanting in the smithing table.
 //
-//**Relic of Endlessness**:
-//A stick with Infinity and Mending that can be applied to a bow.
-////with a bottle o' enchanting in the smithing table.
+// **Relic of Endlessness**:
+// A stick with Infinity and Mending that can be applied to a bow.
+// //with a bottle o' enchanting in the smithing table.
 //
-//**Relic of Vitality**:
-//A glistering melon with Boon of Health V,
-//a custom enchantment that can be applied to a netherite chestplate
-////with a bottle o' enchanting in the smithing table
-//to give five extra hearts.
+// **Relic of Vitality**:
+// A glistering melon with Boon of Health V,
+// a custom enchantment that can be applied to a netherite chestplate
+// //with a bottle o' enchanting in the smithing table
+// to give five extra hearts.
 //
-//**Relic of Swiftness**:
-//A rabbit's foot with Boon of Speed II,
-//a custom enchantment that can be applied to leather boots
-////with a bottle o' enchanting in the smithing table
-//to give a persistent Speed II effect.
+// **Relic of Swiftness**:
+// A rabbit's foot with Boon of Speed II,
+// a custom enchantment that can be applied to leather boots
+// //with a bottle o' enchanting in the smithing table
+// to give a persistent Speed II effect.
 //
-//**Relic of Smiting**:
-//A bone with Sharpness IV and Smite IV that can be applied to a sword or axe.
-////with a bottle o' enchanting in the smithing table.
+// **Relic of Smiting**:
+// A bone with Sharpness IV and Smite IV that can be applied to a sword or axe.
+// //with a bottle o' enchanting in the smithing table.
 //
-//**Relic of Sharpness**:
-//A diamond with Sharpness V that can be applied to a pickaxe.
-////with a bottle o' enchanting in the smithing table.
+// **Relic of Sharpness**:
+// A diamond with Sharpness V that can be applied to a pickaxe.
+// //with a bottle o' enchanting in the smithing table.
 //
-////**Relic of Quickness**:
-////A prismarine shard with Boon of Quickness,
-////a custom enchantment that can be applied to a trident
-//// //with a bottle o' enchanting in the smithing table
-////to give increased attack speed.
+// //**Relic of Quickness**:
+// //A prismarine shard with Boon of Quickness,
+// //a custom enchantment that can be applied to a trident
+// // //with a bottle o' enchanting in the smithing table
+// //to give increased attack speed.
 //
-//**Relic of Frost and Flood**:
-//A prismarine crystal with Frost Walker II and Depth Strider III
-//that can be applied to diamond boots.
-////with a bottle o' enchanting in the smithing table.
+// **Relic of Frost and Flood**:
+// A prismarine crystal with Frost Walker II and Depth Strider III
+// that can be applied to diamond boots.
+// //with a bottle o' enchanting in the smithing table.
 //
-//**Relic of Protection**:
-//A scute with Protection IV and Blast Protection II
-//that can be applied to a turtle shell.
-////with a bottle o' enchanting in the smithing table.
+// **Relic of Protection**:
+// A scute with Protection IV and Blast Protection II
+// that can be applied to a turtle shell.
+// //with a bottle o' enchanting in the smithing table.
 //
-//**Relic of Striding**:
-//A sugar cube with Depth Strider III and Feather Falling IV
-//that can be applied to horse armor.
-////with a bottle o' enchanting in the smithing table.
+// **Relic of Striding**:
+// A sugar cube with Depth Strider III and Feather Falling IV
+// that can be applied to horse armor.
+// //with a bottle o' enchanting in the smithing table.
 //
-//**Relic of Projectile Protection**:
-//A piece of leather with Projectile Protection II
-//that can be applied to elytra.
-////with a bottle o' enchanting in the smithing table.
+// **Relic of Projectile Protection**:
+// A piece of leather with Projectile Protection II
+// that can be applied to elytra.
+// //with a bottle o' enchanting in the smithing table.
 //
-//**Relic of Craftmanship**:
-//An iron nugget with Efficiency VII and Unbreaking X
-//that can be applied to an iron tool.
+// **Relic of Craftmanship**:
+// An iron nugget with Efficiency VII and Unbreaking X
+// that can be applied to an iron tool.
 //
-//====
+// ====
 //
-////image::https://i.imgur.com/VkbB90K.png[Common Relics]
-//image::https://i.imgur.com/yCHfql9.png[Common Relics]
+// //image::https://i.imgur.com/VkbB90K.png[Common Relics]
+// image::https://i.imgur.com/yCHfql9.png[Common Relics]
 //
-//If you have the <<spellsmithing-guide,Spellsmithing Guide>> resource pack
-//installed, some relics have custom item textures in the inventory.
+// If you have the <<spellsmithing-guide,Spellsmithing Guide>> resource pack
+// installed, some relics have custom item textures in the inventory.
 //
-//{!./bin/packsummary relics_archy}
+// {!./bin/packsummary relics_archy}
 
 === Loot Overhaul
 
@@ -1245,229 +1245,229 @@ Paths extend Speed I effects for players in a manner similar to beacons.
 //
 //{!./bin/packsummary illusory_trader}
 
-//=== Mythic Relics
+// === Mythic Relics
 //
-//Adds <<Relics>> with <<mythic-enchantments,Mythic Enchantments>>.
+// Adds <<Relics>> with <<mythic-enchantments,Mythic Enchantments>>.
 //
-//Relics can be applied to tools in the smithing table.
-//A Bottle o' Enchanting is placed in the template (left) slot,
-//the relic is placed in the middle slot,
-//and the item to apply the relic's magic to is placed in the right slot.
+// Relics can be applied to tools in the smithing table.
+// A Bottle o' Enchanting is placed in the template (left) slot,
+// the relic is placed in the middle slot,
+// and the item to apply the relic's magic to is placed in the right slot.
 //
-//Each relic added by this datapack can only be obtained under specific
-//circumstances described below.
+// Each relic added by this datapack can only be obtained under specific
+// circumstances described below.
 //
-//.Summary of mythic relics
-//[%collapsible]
-//====
+// .Summary of mythic relics
+// [%collapsible]
+// ====
 //
-//**Relic of the Beast**: When a player hits a white rabbit with raw cod, it
-//turns into a Killer Bunny. If killed with raw cod, the Killer
-//Bunny drops a rabbit's foot with Myth of Bounding, a
-//custom enchantment that can be applied to leather boots
-//with a bottle o' enchanting in the smithing
-//table. When a player
-//wearing the boots falls 3.5 blocks, eats a carrot, or eats rabbit, they gain
-//Speed II and Jump Boost II for 90 seconds.
+// **Relic of the Beast**: When a player hits a white rabbit with raw cod, it
+// turns into a Killer Bunny. If killed with raw cod, the Killer
+// Bunny drops a rabbit's foot with Myth of Bounding, a
+// custom enchantment that can be applied to leather boots
+// with a bottle o' enchanting in the smithing
+// table. When a player
+// wearing the boots falls 3.5 blocks, eats a carrot, or eats rabbit, they gain
+// Speed II and Jump Boost II for 90 seconds.
 //
-//**Relic of Poles**: When a lodestone is blown up by a charged creeper, it
-//drops a netherite ingot with Myth of Magnetism, a custom enchantment that can be
-//applied to a shield
-//with a bottle o' enchanting in the smithing table. A player blocking with the shield
-//attracts the nearest item. A player that sneaks while blocking with the shield
-//attracts all nearby items.
+// **Relic of Poles**: When a lodestone is blown up by a charged creeper, it
+// drops a netherite ingot with Myth of Magnetism, a custom enchantment that can be
+// applied to a shield
+// with a bottle o' enchanting in the smithing table. A player blocking with the shield
+// attracts the nearest item. A player that sneaks while blocking with the shield
+// attracts all nearby items.
 //
-//**Relic of the Flying Pig**: When a pig with Levitation dies,
-//it drops a porkchop with Myth of Hovering,
-//a custom enchantment that can be applied
-//to a chainmail chestplate
-//with a bottle o' enchanting in the smithing table.
-//When a player wearing the chestplate eats cooked or raw porkchop,
-//they gain Levitation II and Slowness II for 10 seconds,
-//and saddling a pig while wearing the chestplate makes it hover.
+// **Relic of the Flying Pig**: When a pig with Levitation dies,
+// it drops a porkchop with Myth of Hovering,
+// a custom enchantment that can be applied
+// to a chainmail chestplate
+// with a bottle o' enchanting in the smithing table.
+// When a player wearing the chestplate eats cooked or raw porkchop,
+// they gain Levitation II and Slowness II for 10 seconds,
+// and saddling a pig while wearing the chestplate makes it hover.
 //
-//**Relic of Rainbows**: When a
-//https://minecraft.wiki/w/Sheep#Easter_eggs[rainbow sheep]
-//dies from an explosion,
-//it drops pink dye with Myth of Chromatic Blasts,
-//a custom enchantment that can be applied to a crossbow
-//with a bottle o' enchanting in the smithing table.
-//Rockets shot with the crossbow gain two randomly generated firework stars.
+// **Relic of Rainbows**: When a
+// https://minecraft.wiki/w/Sheep#Easter_eggs[rainbow sheep]
+// dies from an explosion,
+// it drops pink dye with Myth of Chromatic Blasts,
+// a custom enchantment that can be applied to a crossbow
+// with a bottle o' enchanting in the smithing table.
+// Rockets shot with the crossbow gain two randomly generated firework stars.
 //
-//**Relic of Mining**:
-//When a player with Haste II mines Gilded Blackstone,
-//it drops a gold nugget with Myth of Darkvision and Myth of Greed,
-//two custom enchantments that can be applied to a golden helmet
-//with a bottle o' enchanting in the smithing table.
-//Myth of Darkvision provides eight minutes
-//of Night Vision when a player kills or eats a pig or hoglin.
-//Myth of Greed provides one minute
-//of Haste when a player eats golden food.
-//Eating more gold increases the level of Haste.
-////and eating too greedily induces negative effects.
-//The player is blinded if they eat too greedily.
+// **Relic of Mining**:
+// When a player with Haste II mines Gilded Blackstone,
+// it drops a gold nugget with Myth of Darkvision and Myth of Greed,
+// two custom enchantments that can be applied to a golden helmet
+// with a bottle o' enchanting in the smithing table.
+// Myth of Darkvision provides eight minutes
+// of Night Vision when a player kills or eats a pig or hoglin.
+// Myth of Greed provides one minute
+// of Haste when a player eats golden food.
+// Eating more gold increases the level of Haste.
+// //and eating too greedily induces negative effects.
+// The player is blinded if they eat too greedily.
 //
-//**Relic of the Lens**: When a player with 1 health (i.e. half a heart) kills an
-//endermite in melee, it drops an amethyst shard with Myth of Seeking, a
-//custom enchantment that can be applied to a spyglass
-//with a bottle o' enchanting in the smithing table.
-//A player can use the spyglass to pinpoint the direction of the nearest
-//Woodland Mansion, Nether Fortress, or End City.
+// **Relic of the Lens**: When a player with 1 health (i.e. half a heart) kills an
+// endermite in melee, it drops an amethyst shard with Myth of Seeking, a
+// custom enchantment that can be applied to a spyglass
+// with a bottle o' enchanting in the smithing table.
+// A player can use the spyglass to pinpoint the direction of the nearest
+// Woodland Mansion, Nether Fortress, or End City.
 //
-//**Relic of Storms**: If the <<loot-overhaul,Loot Overhaul>> datapack is
-//installed before this one, hearts of the sea in buried treasure chests have Myth of
-//Stormcalling, a custom enchantment that can be applied to a trident
-//with a bottle o' enchanting in the
-//smithing table. A player can summon rain with the trident
-//by standing in water, looking skyward, and holding right click for several
-//seconds.
+// **Relic of Storms**: If the <<loot-overhaul,Loot Overhaul>> datapack is
+// installed before this one, hearts of the sea in buried treasure chests have Myth of
+// Stormcalling, a custom enchantment that can be applied to a trident
+// with a bottle o' enchanting in the
+// smithing table. A player can summon rain with the trident
+// by standing in water, looking skyward, and holding right click for several
+// seconds.
 //
-//**Relic of Glowing**: When a frog eats a glow squid,
-//it drops glow ink with Myth of Lightning Bug,
-//a custom enchantment that can be applied to a trident
-//with a bottle o' enchanting in the smithing table.
-//When the trident is thrown and hits a mob,
-//it creates a Light block if there's space to do so.
+// **Relic of Glowing**: When a frog eats a glow squid,
+// it drops glow ink with Myth of Lightning Bug,
+// a custom enchantment that can be applied to a trident
+// with a bottle o' enchanting in the smithing table.
+// When the trident is thrown and hits a mob,
+// it creates a Light block if there's space to do so.
 //
-//**Relic of the Rodeo Clown**: When a frog eats a bee,
-//it drops a belt buckle with Myth of the Lasso and Myth of Balloon Animals,
-//two custom enchantments that can be applied to leather pants
-//with a bottle o' enchanting in the smithing
-//table. When a player wearing the pants hits one of
-//https://raw.githubusercontent.com/DMBuce/bucepack/master/buce-data/mythic/leashing/leashable.entity_type.tag.json[these mobs]
-//with a lead, the lead attaches to the mob.
-//When a player wearing the pants right clicks a lead on one of
-//https://raw.githubusercontent.com/DMBuce/bucepack/master/buce-data/mythic/balloons/balloons.entity_type.tag.json[these creatures],
-//it gains levitation until a player unleashes it or it reaches y=350.
+// **Relic of the Rodeo Clown**: When a frog eats a bee,
+// it drops a belt buckle with Myth of the Lasso and Myth of Balloon Animals,
+// two custom enchantments that can be applied to leather pants
+// with a bottle o' enchanting in the smithing
+// table. When a player wearing the pants hits one of
+// https://raw.githubusercontent.com/DMBuce/bucepack/master/buce-data/mythic/leashing/leashable.entity_type.tag.json[these mobs]
+// with a lead, the lead attaches to the mob.
+// When a player wearing the pants right clicks a lead on one of
+// https://raw.githubusercontent.com/DMBuce/bucepack/master/buce-data/mythic/balloons/balloons.entity_type.tag.json[these creatures],
+// it gains levitation until a player unleashes it or it reaches y=350.
 //
-//**Relic of Quicksilver**: When an iron golem kills a ghast, it drops a bead of
-//quicksilver with Sharpness V and Myth of Liquid Metal, a custom enchantment
-//that can be applied to an iron sword
-//with a bottle o' enchanting in the smithing table. When placed in the
-//offhand, the sword transforms into a shield with Unbreaking III. When
-//placed in the main hand or dealing damage, it transforms back into its
-//sword form. Transforming resets all properties of the item including its
-//durability, enchantments, name, and banner pattern.
+// **Relic of Quicksilver**: When an iron golem kills a ghast, it drops a bead of
+// quicksilver with Sharpness V and Myth of Liquid Metal, a custom enchantment
+// that can be applied to an iron sword
+// with a bottle o' enchanting in the smithing table. When placed in the
+// offhand, the sword transforms into a shield with Unbreaking III. When
+// placed in the main hand or dealing damage, it transforms back into its
+// sword form. Transforming resets all properties of the item including its
+// durability, enchantments, name, and banner pattern.
 //
-//**Relic of Muzzling**:
-//When a player kills a gray sheep near a sculk catalyst,
-//it drops wool with Myth of Silence,
-//a custom enchantment that can be applied to a name tag
-//with a bottle o' enchanting in the smithing table.
-//A mob named with the name tag is silenced and can't create sound.
+// **Relic of Muzzling**:
+// When a player kills a gray sheep near a sculk catalyst,
+// it drops wool with Myth of Silence,
+// a custom enchantment that can be applied to a name tag
+// with a bottle o' enchanting in the smithing table.
+// A mob named with the name tag is silenced and can't create sound.
 //
-//**Relic of the Burrower**:
-//When a player kills a silverfish in melee without a weapon,
-//it drops a silverfish eye with Myth of Breaking,
-//a custom enchantment that can be applied to a diamond pick, axe, shovel, or hoe
-//with a bottle o' enchanting in the smithing table.
-//When a block broken by the tool drops an item and decreases the tool's durability,
-//the tool will break several extra blocks.
-//Picks break a 3x3 square,
-//axes break a 32-block-high column,
-//shovels break a 9-block column.
-//Hoes additionally till grass-like blocks in a 5x5 area around the player.
-//Extra broken blocks are not affected by fortune or silk touch
-//and do not further decrease the tool's durability.
+// **Relic of the Burrower**:
+// When a player kills a silverfish in melee without a weapon,
+// it drops a silverfish eye with Myth of Breaking,
+// a custom enchantment that can be applied to a diamond pick, axe, shovel, or hoe
+// with a bottle o' enchanting in the smithing table.
+// When a block broken by the tool drops an item and decreases the tool's durability,
+// the tool will break several extra blocks.
+// Picks break a 3x3 square,
+// axes break a 32-block-high column,
+// shovels break a 9-block column.
+// Hoes additionally till grass-like blocks in a 5x5 area around the player.
+// Extra broken blocks are not affected by fortune or silk touch
+// and do not further decrease the tool's durability.
 //
-//// some things to note about Breaking, Silk Touch, and Fortune
-////
-//// getting a mix of drops for ores and stone is really annoying with
-//// silk touch + breaking
-////
-//// fortune axes only work on melons
-////
-//// fortune shovels only work on gravel
-////
-//// silk hoes and fortune hoes are both useful for leaves
-////
-//// so my preferred tool loadout is:
-//// * picks: fortune + breaking, silk touch + unbreaking
-//// * axe: silk touch + breaking
-//// * shovel: silk touch + breaking
-//// * hoe: fortune, silk touch, not sure about breaking vs unbreaking on them
+// // some things to note about Breaking, Silk Touch, and Fortune
+// //
+// // getting a mix of drops for ores and stone is really annoying with
+// // silk touch + breaking
+// //
+// // fortune axes only work on melons
+// //
+// // fortune shovels only work on gravel
+// //
+// // silk hoes and fortune hoes are both useful for leaves
+// //
+// // so my preferred tool loadout is:
+// // * picks: fortune + breaking, silk touch + unbreaking
+// // * axe: silk touch + breaking
+// // * shovel: silk touch + breaking
+// // * hoe: fortune, silk touch, not sure about breaking vs unbreaking on them
 //
-//====
+// ====
 //
-////image::https://i.imgur.com/Rm2NtDa.png[Mythic Relics]
-//image::https://i.imgur.com/e0I8doV.png[Mythic Relics]
+// //image::https://i.imgur.com/Rm2NtDa.png[Mythic Relics]
+// image::https://i.imgur.com/e0I8doV.png[Mythic Relics]
 //
-//If you have the <<spellsmithing-guide,Spellsmithing Guide>> resource pack
-//installed, some relics have custom item textures in the inventory.
+// If you have the <<spellsmithing-guide,Spellsmithing Guide>> resource pack
+// installed, some relics have custom item textures in the inventory.
 //
-//This is a <<ordering-data-packs,companion pack>> for the
-//<<loot-overhaul,Loot Overhaul>> and <<phantasmal,Phantasmal>> datapacks,
-//which provide access to some of the relics.
+// This is a <<ordering-data-packs,companion pack>> for the
+// <<loot-overhaul,Loot Overhaul>> and <<phantasmal,Phantasmal>> datapacks,
+// which provide access to some of the relics.
 //
-//{!./bin/packsummary relics_mythic}
+// {!./bin/packsummary relics_mythic}
 //
-//.Known Issues
-//[%collapsible]
-//====
-//Myth of Seeking can behave in unexpected ways
-//due to https://bugs.mojang.com/browse/MC-138887[MC-138887].
+// .Known Issues
+// [%collapsible]
+// ====
+// Myth of Seeking can behave in unexpected ways
+// due to https://bugs.mojang.com/browse/MC-138887[MC-138887].
 //
-//Myth of Breaking tills podzol and mycelium,
-//which is inconsistent with https://bugs.mojang.com/browse/MC-8231[MC-8231].
-//====
+// Myth of Breaking tills podzol and mycelium,
+// which is inconsistent with https://bugs.mojang.com/browse/MC-8231[MC-8231].
+// ====
 //
-//=== Deep Relics
+// === Deep Relics
 //
-//If this <<ordering-data-packs,addon pack>>
-//is enabled and loaded after <<loot-overhaul,Loot Overhaul>>,
-//it adds <<Relics>> with <<mythic-enchantments,Mythic Enchantments>>
-//to ancient city loot.
-////Many of the relics require sculk to power them.
+// If this <<ordering-data-packs,addon pack>>
+// is enabled and loaded after <<loot-overhaul,Loot Overhaul>>,
+// it adds <<Relics>> with <<mythic-enchantments,Mythic Enchantments>>
+// to ancient city loot.
+// //Many of the relics require sculk to power them.
 //
-//Relics can be applied to tools in the smithing table.
-//A Bottle o' Enchanting is placed in the template (left) slot,
-//the relic is placed in the middle slot,
-//and the item to apply the relic's magic to is placed in the right slot.
+// Relics can be applied to tools in the smithing table.
+// A Bottle o' Enchanting is placed in the template (left) slot,
+// the relic is placed in the middle slot,
+// and the item to apply the relic's magic to is placed in the right slot.
 //
-//.Summary of deep relics
-//[%collapsible]
-//====
+// .Summary of deep relics
+// [%collapsible]
+// ====
 //
-//**Relic of Puncheons**:
-//Some coal in ancient city chests have Myth of Train Tunnels,
-//a custom enchantment that can be applied to a golden helmet
-//with a bottle o' enchanting in the smithing table.
-//While riding a minecart in the nether or below y=63 in the overworld,
-//the enchantment consumes sculk from the player's inventory
-//and creates tunnel supports around the minecart track.
+// **Relic of Puncheons**:
+// Some coal in ancient city chests have Myth of Train Tunnels,
+// a custom enchantment that can be applied to a golden helmet
+// with a bottle o' enchanting in the smithing table.
+// While riding a minecart in the nether or below y=63 in the overworld,
+// the enchantment consumes sculk from the player's inventory
+// and creates tunnel supports around the minecart track.
 //
-//**Relic of Echoes**:
-//Some echo shards have Myth of Reverberation,
-//a custom enchantment that can be applied to a totem
-//with a bottle o' enchanting in the smithing table.
-//When the totem is used, it creates an echo shard,
-//another totem from the player's inventory
-//is placed in their hand if one is available,
-//and it's given the same enchantment.
+// **Relic of Echoes**:
+// Some echo shards have Myth of Reverberation,
+// a custom enchantment that can be applied to a totem
+// with a bottle o' enchanting in the smithing table.
+// When the totem is used, it creates an echo shard,
+// another totem from the player's inventory
+// is placed in their hand if one is available,
+// and it's given the same enchantment.
 //
-//**Relic of Rebirth**:
-//Some echo shards have Myth of Reincarnation,
-//a custom enchantment that can be applied to a totem
-//with a bottle o' enchanting in the smithing table.
-//When the totem is used, it creates an echo shard,
-//teleports the player to a random location,
-//and sets their spawn point to that location.
+// **Relic of Rebirth**:
+// Some echo shards have Myth of Reincarnation,
+// a custom enchantment that can be applied to a totem
+// with a bottle o' enchanting in the smithing table.
+// When the totem is used, it creates an echo shard,
+// teleports the player to a random location,
+// and sets their spawn point to that location.
 //
-//**Relic of Rebuke**:
-//Some echo shards have Myth of Retribution,
-//a custom enchantment that can be applied to a totem
-//with a bottle o' enchanting in the smithing table.
-//When the totem is used, it creates an echo shard
-//and deals damage to the last mob that damaged the player in the previous 5 seconds.
+// **Relic of Rebuke**:
+// Some echo shards have Myth of Retribution,
+// a custom enchantment that can be applied to a totem
+// with a bottle o' enchanting in the smithing table.
+// When the totem is used, it creates an echo shard
+// and deals damage to the last mob that damaged the player in the previous 5 seconds.
 //
-//====
+// ====
 //
-////image::https://i.imgur.com/anthmAo.png[Deep Relics]
+// //image::https://i.imgur.com/anthmAo.png[Deep Relics]
 //
-//If you have the <<spellsmithing-guide,Spellsmithing Guide>> resource pack
-//installed, some relics have custom item textures in the inventory.
+// If you have the <<spellsmithing-guide,Spellsmithing Guide>> resource pack
+// installed, some relics have custom item textures in the inventory.
 //
-//{!./bin/packsummary relics_deep}
+// {!./bin/packsummary relics_deep}
 
 === Phantasmal
 
@@ -1565,23 +1565,23 @@ invisible item frames and light blocks with phantom membranes.
 //Playing the horn on a mountaintop transports the player back to the last
 //ancient city the player played the horn at.
 
-//=== Deep Gate Network
+// === Deep Gate Network
 //
-//Turns the reinforced deepslate structures at the center of ancient cities
-//into _deep gates_ in a network that spans the overworld.
-//Deep gates resonate with and amplify the melody of loud instruments.
-//A deep gate that detects such a melody echoing through the mountaintops
-//or playing nearby can transport a player far and wide.
+// Turns the reinforced deepslate structures at the center of ancient cities
+// into _deep gates_ in a network that spans the overworld.
+// Deep gates resonate with and amplify the melody of loud instruments.
+// A deep gate that detects such a melody echoing through the mountaintops
+// or playing nearby can transport a player far and wide.
 //
-//Playing a goat horn near a deep gate transports the player
-//to the world's surface.
+// Playing a goat horn near a deep gate transports the player
+// to the world's surface.
 //
-//Playing a goat horn on a mountain peak transports the player back
-//to the last deep gate that horn was played at.
+// Playing a goat horn on a mountain peak transports the player back
+// to the last deep gate that horn was played at.
 //
-////The transportation effect requires standing on one of [these blocks] to work.
+// //The transportation effect requires standing on one of [these blocks] to work.
 //
-//{!./bin/packsummary network_deep}
+// {!./bin/packsummary network_deep}
 
 === Nether Portal Network
 
@@ -1870,221 +1870,221 @@ you must select a World Type in the World tab of the Create New World menu
 *after* adding this datapack in the Select Data Packs screen.
 ====
 
-//== Legacy Data Packs
+// == Legacy Data Packs
 //
-//These data packs haven't been updated for the most recent version of
-//Minecraft.
-//They also all happen to access NBT data a lot and run commands every tick,
-//which means they're not optimized very well yet.
-//Lower end devices might have trouble running them.
+// These data packs haven't been updated for the most recent version of
+// Minecraft.
+// They also all happen to access NBT data a lot and run commands every tick,
+// which means they're not optimized very well yet.
+// Lower end devices might have trouble running them.
 //
-//=== Hardcore Lichdom
+// === Hardcore Lichdom
 //
-//Hardcore Lichdom is a 1.16.x challenge datapack designed for hardcore mode.  With
-//this pack, players who conquer the Illagers, the Ocean, the Wither, and The
-//End without dying can gain immortality and keep their world forever.
-//Advancements document the basics of the data pack. For more comprehensive
-//documentation, read on.
+// Hardcore Lichdom is a 1.16.x challenge datapack designed for hardcore mode.  With
+// this pack, players who conquer the Illagers, the Ocean, the Wither, and The
+// End without dying can gain immortality and keep their world forever.
+// Advancements document the basics of the data pack. For more comprehensive
+// documentation, read on.
 //
-//When you die in minecraft hardcore mode you are given the
-//option to spectate the world as a ghost. If you use rare materials to perform
-//the proper rituals, you can cheat death and become a lich, a powerful
-//undead that can use a phylactery pedestal to regenerate your body and restore
-//your ghost form to life.
+// When you die in minecraft hardcore mode you are given the
+// option to spectate the world as a ghost. If you use rare materials to perform
+// the proper rituals, you can cheat death and become a lich, a powerful
+// undead that can use a phylactery pedestal to regenerate your body and restore
+// your ghost form to life.
 //
-////Hardcore Lichdom is a datapack designed for hardcore mode.
-////With this pack, players who conquer
-////the Illagers, the Ocean, the Deep Dark, the Nether and The End
-////can gain immortality and keep their world forever.
-////
-////When you die in minecraft hardcore mode
-////you are given the option to spectate the world as a ghost.
-////If you use rare materials to perform the proper rituals,
-////you can cheat death and become a lich,
-////a powerful undead that can use a phylactery pedestal
-////to regenerate your body and restore your ghost form to life.
-////
-////This data pack is documented with cryptic advancements
-////that are explained in detail below.
-////
-////.Lichdom instructions
-////[%collapsible]
-////====
-////
-////Becoming a lich is a multi-step process.
-////
-////**Impale the sea's elders**
-////
-////Obtain a vessel for your soul.
-////If you kill an elder guardian with a trident,
-////it will drop a Relic of the Empty Vessel with Myth of the Phylactery.
-////
-////**Use spellsmithing to create a phylactery**
-////
-////Apply the Relic of the Empty Vessel to a totem
-////in the smithing table.
-////
-////**Bind the dragon's power to you**
-////
-////Slay the dragon while wearing its grin.
-////If you kill the dragon while wearing a dragon head,
-////the head is transformed into the Relic of Dragon Form.
-////It gains Curse of Binding
-////as well as Boon of Health X
-////and Myth of the Red Dragon,
-////two custom enchantments that give you 10 hearts
-////and turn arrows you shoot from bows into fiery dragon breath.
-////
-////**Harness the effects of a wither**
-////
-////Defeat a wither while wearing the Relic of Dragon Form.
-////When you do,
-////the relic will gain Myth of Explosions,
-////a custom enchantment that lets you upgrade your dragon breath
-////with fire charges or TNT in the offhand.
-////
-////**Obtain the heart of an ancient horror**
-////
-////Kill the warden with explosive dragon's breath.
-////When you do, it will drop a warden heart
-////with Myth of Soulbinding,
-////a crucial component of lichdom.
-////
-////**Build a pedestal**
-////
-////Construct a phylactery pedestal with a golden beacon, 8 endstone, 8 dark
-////prismarine slabs, and a sculk shrieker.
-////
-////Create a beacon with a gold base,
-////surround the beacon with endstone,
-////place the shrieker on the beacon
-////and surround it with dark prismarine slabs.
-////
-////**Eat the telltale heart**
-////
-////Toss the phylactery on the pedestal's shrieker
-////and consume the warden heart.
-////This will complete the formation of the phylactery pedestal
-////and turn you into a lich.
-////
-////Choose the location for your phylactery pedestal carefully.
-////The pedestal block can't be moved or destroyed once created.
-////The phylactery item can't despawn or be picked up,
-////but it's otherwise a normal item that can be destroyed by fire and explosions.
-////
-////**Enjoy lichdom**
-////
-////As a lich, you can regenerate your body at a phylactery pedestal
-////and enjoy the debilitating effects of undeath!
-////
-////You lose 5 hearts.
-////
-////Food poisons you.
-////
-////Killing undead provides sustenance.
-////
-////Each phylactery pedestal you build lets you regenerate your body once.
-////
-////====
-////
-////==== Wimpcore Lichdom
-////
-////With this addon datapack for <<hardcore-lichdom,Hardcore Lichdom>>,
-////you can regenerate your body at a phylactery pedestal any number of times.
+// //Hardcore Lichdom is a datapack designed for hardcore mode.
+// //With this pack, players who conquer
+// //the Illagers, the Ocean, the Deep Dark, the Nether and The End
+// //can gain immortality and keep their world forever.
+// //
+// //When you die in minecraft hardcore mode
+// //you are given the option to spectate the world as a ghost.
+// //If you use rare materials to perform the proper rituals,
+// //you can cheat death and become a lich,
+// //a powerful undead that can use a phylactery pedestal
+// //to regenerate your body and restore your ghost form to life.
+// //
+// //This data pack is documented with cryptic advancements
+// //that are explained in detail below.
+// //
+// //.Lichdom instructions
+// //[%collapsible]
+// //====
+// //
+// //Becoming a lich is a multi-step process.
+// //
+// //**Impale the sea's elders**
+// //
+// //Obtain a vessel for your soul.
+// //If you kill an elder guardian with a trident,
+// //it will drop a Relic of the Empty Vessel with Myth of the Phylactery.
+// //
+// //**Use spellsmithing to create a phylactery**
+// //
+// //Apply the Relic of the Empty Vessel to a totem
+// //in the smithing table.
+// //
+// //**Bind the dragon's power to you**
+// //
+// //Slay the dragon while wearing its grin.
+// //If you kill the dragon while wearing a dragon head,
+// //the head is transformed into the Relic of Dragon Form.
+// //It gains Curse of Binding
+// //as well as Boon of Health X
+// //and Myth of the Red Dragon,
+// //two custom enchantments that give you 10 hearts
+// //and turn arrows you shoot from bows into fiery dragon breath.
+// //
+// //**Harness the effects of a wither**
+// //
+// //Defeat a wither while wearing the Relic of Dragon Form.
+// //When you do,
+// //the relic will gain Myth of Explosions,
+// //a custom enchantment that lets you upgrade your dragon breath
+// //with fire charges or TNT in the offhand.
+// //
+// //**Obtain the heart of an ancient horror**
+// //
+// //Kill the warden with explosive dragon's breath.
+// //When you do, it will drop a warden heart
+// //with Myth of Soulbinding,
+// //a crucial component of lichdom.
+// //
+// //**Build a pedestal**
+// //
+// //Construct a phylactery pedestal with a golden beacon, 8 endstone, 8 dark
+// //prismarine slabs, and a sculk shrieker.
+// //
+// //Create a beacon with a gold base,
+// //surround the beacon with endstone,
+// //place the shrieker on the beacon
+// //and surround it with dark prismarine slabs.
+// //
+// //**Eat the telltale heart**
+// //
+// //Toss the phylactery on the pedestal's shrieker
+// //and consume the warden heart.
+// //This will complete the formation of the phylactery pedestal
+// //and turn you into a lich.
+// //
+// //Choose the location for your phylactery pedestal carefully.
+// //The pedestal block can't be moved or destroyed once created.
+// //The phylactery item can't despawn or be picked up,
+// //but it's otherwise a normal item that can be destroyed by fire and explosions.
+// //
+// //**Enjoy lichdom**
+// //
+// //As a lich, you can regenerate your body at a phylactery pedestal
+// //and enjoy the debilitating effects of undeath!
+// //
+// //You lose 5 hearts.
+// //
+// //Food poisons you.
+// //
+// //Killing undead provides sustenance.
+// //
+// //Each phylactery pedestal you build lets you regenerate your body once.
+// //
+// //====
+// //
+// //==== Wimpcore Lichdom
+// //
+// //With this addon datapack for <<hardcore-lichdom,Hardcore Lichdom>>,
+// //you can regenerate your body at a phylactery pedestal any number of times.
 //
-//To become a lich, you will need:
+// To become a lich, you will need:
 //
-//* Totem of Undying
-//* Dry Sponge
-//* Trident with Loyalty III
-//* Cauldron
-//* Dragon Head
-//* Beacon
+// * Totem of Undying
+// * Dry Sponge
+// * Trident with Loyalty III
+// * Cauldron
+// * Dragon Head
+// * Beacon
 //
-//image::https://i.imgur.com/dxgHI3n.png[Hardcore Lichdom]
+// image::https://i.imgur.com/dxgHI3n.png[Hardcore Lichdom]
 //
-//Make sure the cauldron has water in it, then throw the totem, sponge, and
-//loyalty trident in to turn the totem into a phylactery. Place the dragon head
-//on top of the beacon, then throw the phylactery on top of the dragon head to
-//create a phylactery pedestal.
+// Make sure the cauldron has water in it, then throw the totem, sponge, and
+// loyalty trident in to turn the totem into a phylactery. Place the dragon head
+// on top of the beacon, then throw the phylactery on top of the dragon head to
+// create a phylactery pedestal.
 //
-//image::https://i.imgur.com/a04jraC.png[Phylactery Pedestal]
+// image::https://i.imgur.com/a04jraC.png[Phylactery Pedestal]
 //
-//Choose the location for your phylactery pedestal carefully with the following
-//in mind:
+// Choose the location for your phylactery pedestal carefully with the following
+// in mind:
 //
-//* The pedestal block can't be moved or destroyed once created
-//* The phylactery item can't despawn or be picked up, but it's otherwise a
-//  normal item that can be destroyed by fire and explosions
-//* You may want to shield the phylactery pedestal from the sun so you aren't
-//  affected by its debilitating effects when you respawn (see below)
+// * The pedestal block can't be moved or destroyed once created
+// * The phylactery item can't despawn or be picked up, but it's otherwise a
+//   normal item that can be destroyed by fire and explosions
+// * You may want to shield the phylactery pedestal from the sun so you aren't
+//   affected by its debilitating effects when you respawn (see below)
 //
-//Once the phylactery pedestal is built, you will need a magic user's help to
-//become a lich. Simply convince a witch to kill you with magic damage, and
-//lichdom is yours. Once the witch kills you, your ghost form will be able to
-//obtain a new body at the phylactery pedestal.
+// Once the phylactery pedestal is built, you will need a magic user's help to
+// become a lich. Simply convince a witch to kill you with magic damage, and
+// lichdom is yours. Once the witch kills you, your ghost form will be able to
+// obtain a new body at the phylactery pedestal.
 //
-//Lichdom has the following consequences and benefits:
+// Lichdom has the following consequences and benefits:
 //
-//* Direct sunlight poisons you
-//* Undead won't attack you
-//* Food rots in your hands
-//* For sustenance, you must steal necromantic energy from other undead by
-//  damaging them
-//* Some animals transform when they're near you -- bats become vampiric,
-//  rabbits become rabid, and turtles become more turtley
+// * Direct sunlight poisons you
+// * Undead won't attack you
+// * Food rots in your hands
+// * For sustenance, you must steal necromantic energy from other undead by
+//   damaging them
+// * Some animals transform when they're near you -- bats become vampiric,
+//   rabbits become rabid, and turtles become more turtley
 //
-//In addition, as a lich you can gain different sets of abilities, called
-//"forms", by killing certain animals. The animal forms available to you are
-//described below, and replace the lich powers described above. To revert to
-//lich form, you can either kill a villager or die and regenerate your body at a
-//pedestal.
+// In addition, as a lich you can gain different sets of abilities, called
+// "forms", by killing certain animals. The animal forms available to you are
+// described below, and replace the lich powers described above. To revert to
+// lich form, you can either kill a villager or die and regenerate your body at a
+// pedestal.
 //
-//**Form of the Vampire**: Kill a bat to obtain this form
+// **Form of the Vampire**: Kill a bat to obtain this form
 //
-//* Wings burst from your back, destroying anything in your chestplate slot
-//* Direct sunlight withers you
-//* You have Night Vision and Regeneration
-//* Undead won't attack you unless they're under the power of a lich
-//* Food rots in your hands
-//* For sustenance, you must drink blood from creatures by damaging them
-//* Bats become vampiric when they're near you
+// * Wings burst from your back, destroying anything in your chestplate slot
+// * Direct sunlight withers you
+// * You have Night Vision and Regeneration
+// * Undead won't attack you unless they're under the power of a lich
+// * Food rots in your hands
+// * For sustenance, you must drink blood from creatures by damaging them
+// * Bats become vampiric when they're near you
 //
-//**Form of the Werebunny**: Kill a rabbit to obtain this form
+// **Form of the Werebunny**: Kill a rabbit to obtain this form
 //
-//* Your body grows fur and powerful muscles, destroying anything in your
-//  chestplate slot
-//* Direct moonlight increases your speed and makes you ravenously hungry
-//* You have Strength and Jump Boost II
-//* You can eat only carrots and raw meat for sustenance
-//* All other food rots in your hands
-//* Rabbits become rabid when they're near you
+// * Your body grows fur and powerful muscles, destroying anything in your
+//   chestplate slot
+// * Direct moonlight increases your speed and makes you ravenously hungry
+// * You have Strength and Jump Boost II
+// * You can eat only carrots and raw meat for sustenance
+// * All other food rots in your hands
+// * Rabbits become rabid when they're near you
 //
-//**Form of the Turtle**: Kill a turtle to obtain this form
+// **Form of the Turtle**: Kill a turtle to obtain this form
 //
-//* You grow a turtle shell, destroying anything in your helmet slot
-//* You die if your shell breaks
-//* You have Slowness, Dolphin's Grace, and Resistance III
-//* You can eat only dried kelp for sustenance
-//* All other food rots in your hands
-//* Turtles become more turtley when they're near you
+// * You grow a turtle shell, destroying anything in your helmet slot
+// * You die if your shell breaks
+// * You have Slowness, Dolphin's Grace, and Resistance III
+// * You can eat only dried kelp for sustenance
+// * All other food rots in your hands
+// * Turtles become more turtley when they're near you
 //
-//{!./bin/packsummary lichdom}
+// {!./bin/packsummary lichdom}
 //
-//.Known Issues
-//[%collapsible]
-//====
+// .Known Issues
+// [%collapsible]
+// ====
 //
-//* This pack uses teams and is incompatible with other data packs that use
-//  teams
-//* Sunlight and moonlight affect players even when it's raining or snowing
-//  because Java edition does not have a `/weather query` command
-//* Food that rots will always produce either two rotten flesh or one
-//  poisonous potato because preserving stack sizes with `/replaceitem` is only
-//  possible with hacky shulker box workarounds
-//* If a player in turtle form dies from their shell breaking, other players who
-//  die in the same tick will have their death messages suppressed
-//====
+// * This pack uses teams and is incompatible with other data packs that use
+//   teams
+// * Sunlight and moonlight affect players even when it's raining or snowing
+//   because Java edition does not have a `/weather query` command
+// * Food that rots will always produce either two rotten flesh or one
+//   poisonous potato because preserving stack sizes with `/replaceitem` is only
+//   possible with hacky shulker box workarounds
+// * If a player in turtle form dies from their shell breaking, other players who
+//   die in the same tick will have their death messages suppressed
+// ====
 
 == Ordering Data Packs
 
