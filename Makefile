@@ -38,13 +38,12 @@ RESOURCEPACKFILES = \
 DATAPACKFILES = \
 	$(DATARESOURCEPACKFILES) \
 	acclimated.zip \
-	aggro_bastions.zip \
-	antidote.zip \
+	archived.zip \
 	blue_fire.zip \
+	bulbs.zip \
 	bundle.zip \
 	climbable.zip \
 	crafter.zip \
-	bulbs.zip \
 	crafting_colorful.zip \
 	crafting_loot.zip \
 	crafting_plentiful.zip \
@@ -54,33 +53,23 @@ DATAPACKFILES = \
 	cutting_smooth_cracked.zip \
 	debugless.zip \
 	dragonproof.zip \
-	dripblock.zip \
-	archived.zip \
 	elemental.zip \
 	ender_relic.zip \
+	escape_end.zip \
 	escape_grind.zip \
 	escape_nether.zip \
-	escape_end.zip \
 	eyes_of_seeking.zip \
-	frienderchest.zip \
+	farmable.zip \
 	gardener_endermen.zip \
 	global_effects.zip \
 	heads_fae.zip \
 	heads_golem.zip \
 	heads_player.zip \
-	heirlooms.zip \
-	hover_mode.zip \
-	farmable.zip \
-	illusory_trader.zip \
-	leashed.zip \
-	lichdom.zip \
 	locomotive.zip \
-	loot_overhaul_treasure_barrels.zip \
 	loot_overhaul_starter_relic.zip \
-	loot_overhaul_treasure_seeds.zip \
+	loot_overhaul_treasure_barrels.zip \
 	loot_overhaul.zip \
 	mineable.zip \
-	network_deep.zip \
 	network_nether.zip \
 	no_treasure_maps.zip \
 	oven_tier.zip \
@@ -88,7 +77,6 @@ DATAPACKFILES = \
 	phantasmal.zip \
 	poseable.zip \
 	relics_archy.zip \
-	relics_mythic.zip \
 	relics_deep.zip \
 	shearless.zip \
 	smart_allays.zip \
@@ -104,12 +92,24 @@ DATAPACKFILES = \
 	wandering_loot.zip \
 	waterproof_tech.zip \
 	worldgen_anti.zip \
-	worldgen_desert_breeze.zip \
-	worldgen_sandy_husk.zip \
-	worldgen_trees.zip \
-	worldgen_apocalypse.zip \
 	worldgen_moonlit.zip \
 	worldgen_overworld.zip \
+	worldgen_sandy_husk.zip \
+	worldgen_trees.zip \
+	#relics_mythic.zip \
+	#aggro_bastions.zip \
+	#antidote.zip \
+	#dripblock.zip \
+	#frienderchest.zip \
+	#heirlooms.zip \
+	#hover_mode.zip \
+	#illusory_trader.zip \
+	#leashed.zip \
+	#lichdom.zip \
+	#loot_overhaul_treasure_seeds.zip \
+	#network_deep.zip \
+	#worldgen_apocalypse.zip \
+	#worldgen_desert_breeze.zip \
 
 PACKFILES = $(sort $(RESOURCEPACKFILES) $(DATAPACKFILES))
 
