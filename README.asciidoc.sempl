@@ -2243,7 +2243,6 @@ For major version updates,
 * Add new potions to Brewing Guide
 * Add new ores to Ore Types
 * Add new End blocks to mk-dragonproof.sh
-* Add new leashable mobs to #buce:leashed/leashable
 * Add new leashable mobs to #buce:mythic/leashing/leashable
 * Add new floating mobs to #buce:mythic/balloons/balloons
 
