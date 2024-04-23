@@ -8,7 +8,7 @@
       "entries": [
         {{\}
           "type": "loot_table",{\}
-          "table": "{!./bin/allloottables | grep minecraft:chests/ | grep -v -e nether -e end_city -e bastion -e ancient_city}"{\}
+          "table": "{!./bin/allloottables | grep minecraft:chests/ | grep -v -e nether -e end_city -e bastion -e ancient_city -e trial_chambers}"{\}
         },
         {
           "type": "item",
