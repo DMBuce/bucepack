@@ -675,30 +675,6 @@ relics_mythic_FILES := $(DEFAULT_DATA_FILES) \
 	#data/minecraft/loot_tables/entities/endermite.json \
 	#data/minecraft/loot_tables/entities/iron_golem.json \
 
-boss_loot_seasonal_FILES := $(DEFAULT_DATA_FILES) \
-	$(shell ls buce-data/loot_addons/boss_loot_seasonal* | ./bin/ext2dir) \
-	data/buce/loot_tables/boss_loot/seasonal/loot_boss_loot_seasonal.json \
-
-boss_loot_food_FILES := $(DEFAULT_DATA_FILES) \
-	$(shell ls buce-data/loot_addons/boss_loot_food* | ./bin/ext2dir) \
-	data/buce/loot_tables/boss_loot/food/loot_boss_loot_food.json \
-
-boss_loot_decor_FILES := $(DEFAULT_DATA_FILES) \
-	$(shell ls buce-data/loot_addons/boss_loot_decor* | ./bin/ext2dir) \
-	data/buce/loot_tables/boss_loot/decor_boss_loot_decor.json \
-
-boss_loot_modern_FILES := $(DEFAULT_DATA_FILES) \
-	$(shell ls buce-data/loot_addons/boss_loot_modern* | ./bin/ext2dir) \
-	data/buce/loot_tables/boss_loot/modern_boss_loot_modern.json \
-
-boss_loot_FILES := $(DEFAULT_DATA_FILES) \
-	$(shell find buce-data/boss_loot -type f | ./bin/ext2dir) \
-	data/minecraft/loot_tables/entities/elder_guardian.json \
-	data/minecraft/loot_tables/entities/ender_dragon.json \
-	data/minecraft/loot_tables/entities/ravager.json \
-	data/minecraft/loot_tables/entities/warden.json \
-	data/minecraft/loot_tables/entities/wither.json \
-
 loot_overhaul_starter_relic_FILES := $(DEFAULT_DATA_FILES) \
 	$(relic_FILES) \
 	$(shell ls buce-data/loot_addons/loot_overhaul_starter_relic* | ./bin/ext2dir) \
@@ -1690,36 +1666,6 @@ relics_deep.zip: $(relics_deep_FILES)
 	./bin/ziprename _$(@:.zip=) "" $@
 
 relics_mythic.zip: $(relics_mythic_FILES)
-	cp meta/$(@:.zip=.png) pack.png
-	sempl meta/$(@:.zip=.mcmeta.sempl) pack.mcmeta
-	zip $@ pack.png pack.mcmeta $^
-	./bin/ziprename _$(@:.zip=) "" $@
-
-boss_loot.zip: $(boss_loot_FILES)
-	cp meta/$(@:.zip=.png) pack.png
-	sempl meta/$(@:.zip=.mcmeta.sempl) pack.mcmeta
-	zip $@ pack.png pack.mcmeta $^
-	./bin/ziprename _$(@:.zip=) "" $@
-
-boss_loot_seasonal.zip: $(boss_loot_seasonal_FILES)
-	cp meta/$(@:.zip=.png) pack.png
-	sempl meta/$(@:.zip=.mcmeta.sempl) pack.mcmeta
-	zip $@ pack.png pack.mcmeta $^
-	./bin/ziprename _$(@:.zip=) "" $@
-
-boss_loot_food.zip: $(boss_loot_food_FILES)
-	cp meta/$(@:.zip=.png) pack.png
-	sempl meta/$(@:.zip=.mcmeta.sempl) pack.mcmeta
-	zip $@ pack.png pack.mcmeta $^
-	./bin/ziprename _$(@:.zip=) "" $@
-
-boss_loot_decor.zip: $(boss_loot_decor_FILES)
-	cp meta/$(@:.zip=.png) pack.png
-	sempl meta/$(@:.zip=.mcmeta.sempl) pack.mcmeta
-	zip $@ pack.png pack.mcmeta $^
-	./bin/ziprename _$(@:.zip=) "" $@
-
-boss_loot_modern.zip: $(boss_loot_modern_FILES)
 	cp meta/$(@:.zip=.png) pack.png
 	sempl meta/$(@:.zip=.mcmeta.sempl) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^
