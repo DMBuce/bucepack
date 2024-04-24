@@ -7,13 +7,13 @@
 			"text": "Starter Book"
 		},
 		"description": {
-			"text": "Adds a book and quill to Loot Overhaul's curated bonus chest"
+			"text": "Adds a book and quill to curated bonus loot"
 		},
 		"show_toast": false,
 		"announce_to_chat": false,
 		"frame": "task"
 	},
-	"parent": "buce:loot_overhaul/root",
+	"parent": "buce:curated_bonus_chest/root",
 	"criteria": {
 		"tick": {
 			"trigger": "minecraft:tick"

@@ -1,59 +1,48 @@
 biomes:
   spruce_log: &spruce_log
-    - snowy_beach
-    - taiga
-    - taiga_hills
-    - taiga_mountains
-    - snowy_taiga
-    - snowy_taiga_hills
-    - snowy_taiga_mountains
-    - giant_tree_taiga
-    - giant_tree_taiga_hills
-    - giant_spruce_taiga
-    - giant_spruce_taiga_hills
-    - snowy_tundra
-    - snowy_mountains
+    - deep_frozen_ocean
+    - frozen_ocean
+    - frozen_peaks
+    - frozen_river
     - ice_spikes
+    - old_growth_pine_taiga
+    - old_growth_spruce_taiga
+    - snowy_beach
+    - snowy_plains
+    - snowy_slopes
+    - snowy_taiga
+    - taiga
   birch_log: &birch_log
     - birch_forest
-    - birch_forest_hills
-    - tall_birch_forest
-    - tall_birch_hills
+    - old_growth_birch_forest
   jungle_log: &jungle_log
-    - jungle
-    - jungle_hills
-    - modified_jungle
-    - jungle_edge
-    - modified_jungle_edge
     - bamboo_jungle
-    - bamboo_jungle_hills
+    - jungle
+    - sparse_jungle
   acacia_log: &acacia_log
     - savanna
     - savanna_plateau
-    - shattered_savanna
-    - shattered_savanna_plateau
+    - windswept_savanna
   dark_oak_log: &dark_oak_log
     - dark_forest
-    - dark_forest_hills
   mangrove_log: &mangrove_log
     - mangrove_swamp
-    - mangrove_swamp_hills
+  cherry_log: &cherry_log
+    - cherry_grove
   crimson_stem: &crimson_stem
-    - nether_wastes
-    - crimson_forest
-    - soul_sand_valley
     - basalt_deltas
+    - crimson_forest
+    - nether_wastes
+    - soul_sand_valley
   warped_stem: &warped_stem
-    - warped_forest
-    - the_end
-    - end_midlands
-    - end_highlands
     - end_barrens
+    - end_highlands
+    - end_midlands
     - small_end_islands
+    - the_end
+    - warped_forest
   stick: &stick
     - desert
-    - desert_hills
-    - desert_lakes
 pools:
   - rolls: 1
     entries:
@@ -64,6 +53,7 @@ pools:
       - { type: item_biome, weight: 99, item: acacia_log,   min: 3, max: 5, biomes: *acacia_log }
       - { type: item_biome, weight: 99, item: dark_oak_log, min: 3, max: 5, biomes: *dark_oak_log }
       - { type: item_biome, weight: 99, item: mangrove_log, min: 3, max: 5, biomes: *mangrove_log }
+      - { type: item_biome, weight: 99, item: cherry_log,   min: 3, max: 5, biomes: *mangrove_log }
       - { type: item_biome, weight: 99, item: crimson_stem, min: 3, max: 5, biomes: *crimson_stem }
       - { type: item_biome, weight: 99, item: warped_stem,  min: 3, max: 5, biomes: *warped_stem }
       - { type: item_biome, weight: 99, item: stick,        min: 2, max: 4, biomes: *stick }

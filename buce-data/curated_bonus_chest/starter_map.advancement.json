@@ -1,19 +1,19 @@
 {
 	"display": {
 		"icon": {
-			"id": "minecraft:spyglass"
+			"id": "minecraft:map"
 		},
 		"title": {
-			"text": "Starter Spyglass"
+			"text": "Starter Map"
 		},
 		"description": {
-			"text": "Adds a spyglass to Loot Overhaul's curated bonus chest"
+			"text": "Adds a map to curated bonus loot"
 		},
 		"show_toast": false,
 		"announce_to_chat": false,
 		"frame": "task"
 	},
-	"parent": "buce:loot_overhaul/root",
+	"parent": "buce:curated_bonus_chest/root",
 	"criteria": {
 		"tick": {
 			"trigger": "minecraft:tick"

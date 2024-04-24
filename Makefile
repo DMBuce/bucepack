@@ -49,6 +49,7 @@ DATAPACKFILES = \
 	crafting_plentiful.zip \
 	crafting_unpacked.zip \
 	crafting_workstation.zip \
+	curated_bonus_chest.zip \
 	cutting_declutter.zip \
 	cutting_smooth_cracked.zip \
 	debugless.zip \
@@ -611,9 +612,14 @@ crafting_loot_FILES := $(DEFAULT_DATA_FILES) \
 	data/minecraft/recipes/piglin_banner_pattern.json \
 	data/minecraft/recipes/saddle.json \
 
+curated_bonus_chest_FILES := $(DEFAULT_DATA_FILES) \
+	data/minecraft/loot_tables/chests/spawn_bonus_chest.json \
+	data/buce/loot_tables/loot_overhaul/biome_log.json \
+	data/buce/advancements/curated_bonus_chest/root.json \
+
 loot_overhaul_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell find buce-data/loot_overhaul -type f | ./bin/ext2dir) \
-	$(shell find data/minecraft/loot_tables/orig/{chests,gameplay/{fishing,piglin_bartering.*}} -type f | sed 's|orig/||' | ./bin/ext2dir) \
+	$(shell find data/minecraft/loot_tables/orig/{chests,gameplay/{fishing,piglin_bartering.*}} -type f | sed '/spawn_bonus/d; s|orig/||' | ./bin/ext2dir) \
 	$(wildcard data/minecraft/tags/worldgen/structure/on_*_maps.json) \
 	data/minecraft/recipes/diamond_horse_armor.json \
 	data/minecraft/recipes/gold_horse_armor.json \
@@ -706,27 +712,27 @@ starter_bonus_chest_FILES := $(DEFAULT_DATA_FILES) \
 
 starter_bed_FILES := $(DEFAULT_DATA_FILES) \
 	data/minecraft/tags/items/starter_item_starter_bed.json \
-	data/buce/advancements/loot_addons/starter_bed.json \
+	data/buce/advancements/curated_bonus_chest/starter_bed.json \
 
 starter_book_FILES := $(DEFAULT_DATA_FILES) \
 	data/minecraft/tags/items/starter_item_starter_book.json \
-	data/buce/advancements/loot_addons/starter_book.json \
+	data/buce/advancements/curated_bonus_chest/starter_book.json \
 
 starter_bucket_FILES := $(DEFAULT_DATA_FILES) \
 	data/minecraft/tags/items/starter_item_starter_bucket.json \
-	data/buce/advancements/loot_addons/starter_bucket.json \
+	data/buce/advancements/curated_bonus_chest/starter_bucket.json \
 
 starter_map_FILES := $(DEFAULT_DATA_FILES) \
 	data/minecraft/tags/items/starter_item_starter_map.json \
-	data/buce/advancements/loot_addons/starter_map.json \
+	data/buce/advancements/curated_bonus_chest/starter_map.json \
 
 starter_shulker_FILES := $(DEFAULT_DATA_FILES) \
 	data/minecraft/tags/items/starter_item_starter_shulker.json \
-	data/buce/advancements/loot_addons/starter_shulker.json \
+	data/buce/advancements/curated_bonus_chest/starter_shulker.json \
 
 starter_spyglass_FILES := $(DEFAULT_DATA_FILES) \
 	data/minecraft/tags/items/starter_item_starter_spyglass.json \
-	data/buce/advancements/loot_addons/starter_spyglass.json \
+	data/buce/advancements/curated_bonus_chest/starter_spyglass.json \
 
 debugless_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell find buce-data/debugless -type f | ./bin/ext2dir) \
@@ -1618,6 +1624,12 @@ crafting_turtle_box.zip: $(crafting_turtle_box_FILES)
 	./bin/ziprename _$(@:.zip=) "" $@
 
 cutting_wood.zip: $(cutting_wood_FILES)
+	cp meta/$(@:.zip=.png) pack.png
+	sempl meta/$(@:.zip=.mcmeta.sempl) pack.mcmeta
+	zip $@ pack.png pack.mcmeta $^
+	./bin/ziprename _$(@:.zip=) "" $@
+
+curated_bonus_chest.zip: $(curated_bonus_chest_FILES)
 	cp meta/$(@:.zip=.png) pack.png
 	sempl meta/$(@:.zip=.mcmeta.sempl) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^

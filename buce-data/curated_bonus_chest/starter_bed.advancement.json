@@ -1,19 +1,19 @@
 {
 	"display": {
 		"icon": {
-			"id": "minecraft:shulker_box"
+			"id": "minecraft:red_bed"
 		},
 		"title": {
-			"text": "Starter Shulker"
+			"text": "Starter Bed"
 		},
 		"description": {
-			"text": "Adds a shulker box to Loot Overhaul's curated bonus chest"
+			"text": "Adds a bed to curated bonus loot"
 		},
 		"show_toast": false,
 		"announce_to_chat": false,
 		"frame": "task"
 	},
-	"parent": "buce:loot_overhaul/root",
+	"parent": "buce:curated_bonus_chest/root",
 	"criteria": {
 		"tick": {
 			"trigger": "minecraft:tick"

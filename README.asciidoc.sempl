@@ -888,12 +888,6 @@ This is to avoid changing the rarity of some entries like ore ingots.
 Nearly all loot table entries added by this pack are replacements
 for the entries that it removes.
 
-Bonus spawn chests generate a more limited and curated set of starter items
-designed to jumpstart the tree-punching phase of a fresh world:
-3-5 cobble, 3-5 logs, and 2-3 bread. Additional items can be added to the
-bonus spawn chest with one or more <<starter-item,Starter Item>>
-datapacks.
-
 Food loot is themed according to the structure it spawns in.
 To give a few examples:
 Underground structures have potatoes and carrots.
@@ -975,56 +969,6 @@ and have a custom texture if you have the
 //https://bugs.mojang.com/browse/MC-156411[MC-156411].
 //====
 
-//==== Starter Relic
-//
-//If this <<ordering-data-packs,addon pack>>
-//is enabled and loaded after <<loot-overhaul,Loot Overhaul>>,
-//it adds a random <<archaeological-relics,Archaeological Relic>>
-//to the bonus spawn chest.
-//
-//If any other <<starter-item,Starter Item>> datapacks are installed,
-//the starter relic is generated in addition to the starter item added by
-//those packs.
-//
-//If you have the <<spellsmithing-guide,Spellsmithing Guide>> resource pack
-//enabled, some relics have custom item textures in the inventory.
-//
-//{!./bin/packsummary loot_overhaul_starter_relic}
-
-==== Starter Item
-
-This is a series of addon packs for the
-<<loot-overhaul,Loot Overhaul>>
-datapack. Each pack adds one additional item to the bonus spawn chest.
-
-Starter Bed adds a Red Bed to the bonus spawn chest.
-
-Starter Book adds a Book & Quill to the bonus spawn chest.
-
-Starter Bucket adds a Bucket to the bonus spawn chest.
-
-Starter Map adds a Map to the bonus spawn chest.
-
-Starter Shulker adds a Shulker Box to the bonus spawn chest.
-
-Starter Spyglass adds a Spyglass to the bonus spawn chest.
-
-If several of these packs are installed, the bonus chest will spawn one
-starter item chosen at random.
-
-{!./bin/packsummary starter_bed starter_book starter_bucket starter_map starter_shulker starter_spyglass}
-
-==== Starter Bonus Loot
-
-This is a pair of companion packs for the <<loot-overhaul,Loot Overhaul>>
-datapack.
-**Starter Bonus Chest** adds a bonus spawn chest to each player's
-inventory the first time they join the world.
-**Starter Bonus Box** adds a shulker box with bonus spawn loot to each player's
-inventory the first time they join the world.
-
-{!./bin/packsummary starter_bonus_chest starter_bonus_box}
-
 ==== Treasure Barrels
 
 If this <<ordering-data-packs,addon pack>>
@@ -1045,6 +989,68 @@ See <<no-treasure-maps,No Treasure Maps>> for a version of this pack that
 doesn't require <<loot-overhaul,Loot Overhaul>>.
 
 {!./bin/packsummary loot_overhaul_treasure_barrels}
+
+=== Curated Bonus Chest
+
+Bonus spawn chests generate a more limited and curated set of starter items
+designed to jumpstart the tree-punching phase of a fresh world:
+3-5 cobble, 3-5 logs, and 2-3 bread. Additional items can be added to the
+bonus spawn chest with one or more <<starter-item,Starter Item>>
+datapacks.
+
+{!./bin/packsummary curated_bonus_chest}
+
+==== Starter Item
+
+This is a series of addon packs for the
+<<curated-bonus-chest,Curated Bonus Chest>>
+datapack. Each pack adds one additional item to the bonus spawn chest.
+
+**Starter Bed** adds a Red Bed to the bonus spawn chest.
+
+**Starter Book** adds a Book & Quill to the bonus spawn chest.
+
+**Starter Bucket** adds a Bucket to the bonus spawn chest.
+
+**Starter Map** adds a Map to the bonus spawn chest.
+
+**Starter Shulker** adds a Shulker Box to the bonus spawn chest.
+
+**Starter Spyglass** adds a Spyglass to the bonus spawn chest.
+
+If several of these packs are installed, the bonus chest will spawn one
+starter item chosen at random.
+
+{!./bin/packsummary starter_bed starter_book starter_bucket starter_map starter_shulker starter_spyglass}
+
+//==== Starter Relic
+//
+//If this <<ordering-data-packs,addon pack>>
+//is enabled and loaded after
+//<<curated-bonus-chest,Curated Bonus Chest>>
+//it adds a random <<archaeological-relics,Archaeological Relic>>
+//to the bonus spawn chest.
+//
+//If any other <<starter-item,Starter Item>> datapacks are installed,
+//the starter relic is generated in addition to the starter item added by
+//those packs.
+//
+//If you have the <<spellsmithing-guide,Spellsmithing Guide>> resource pack
+//enabled, some relics have custom item textures in the inventory.
+//
+//{!./bin/packsummary loot_overhaul_starter_relic}
+
+==== Starter Bonus Loot
+
+This is a pair of companion packs for the
+<<curated-bonus-chest,Curated Bonus Chest>>
+datapack.
+**Starter Bonus Chest** adds a bonus spawn chest to each player's
+inventory the first time they join the world.
+**Starter Bonus Box** adds a shulker box with bonus spawn loot to each player's
+inventory the first time they join the world.
+
+{!./bin/packsummary starter_bonus_chest starter_bonus_box}
 
 == Trigger Data Packs
 
