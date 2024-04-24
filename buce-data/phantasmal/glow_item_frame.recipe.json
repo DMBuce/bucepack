@@ -1,13 +1,19 @@
 {
-  "type": "minecraft:smithing_transform",
-  "base": {
-    "item": "minecraft:phantom_membrane"
-  },
-  "addition": {
-    "item": "minecraft:glow_item_frame"
-  },
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "minecraft:glow_item_frame"
+    },
+    {
+      "item": "minecraft:phantom_membrane"
+    }
+  ],
   "result": {
-    "item": "minecraft:glow_item_frame"
-  },
-  "template": []
+    "id": "minecraft:glow_item_frame",
+	"components": {
+		"custom_model_data": 22183,
+		"entity_data": {"id":"minecraft:glow_item_frame","Invisible":1}
+	}
+  }
 }

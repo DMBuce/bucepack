@@ -1,13 +1,18 @@
 {
-  "type": "minecraft:smithing_transform",
-  "base": {
-    "item": "minecraft:phantom_membrane"
-  },
-  "addition": {
-    "item": "minecraft:torch"
-  },
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "minecraft:torch"
+    },
+    {
+      "item": "minecraft:phantom_membrane"
+    }
+  ],
   "result": {
-    "item": "minecraft:light"
-  },
-  "template": []
+    "id": "minecraft:light",
+	"components": {
+		"block_state": {"level":"14"}
+	}
+  }
 }

@@ -859,9 +859,9 @@ poseable_FILES := $(DEFAULT_DATA_FILES) \
 
 phantasmal_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell find buce-data/phantasmal -type f | ./bin/ext2dir) \
-	data/buce/loot_tables/heads/phantom_membrane_phantasmal.json \
-	data/minecraft/loot_tables/entities/phantom.json \
-	data/buce/tags/items/relic/templates.json \
+	#data/minecraft/loot_tables/entities/phantom.json \
+	#data/buce/tags/items/relic/templates.json \
+	#data/buce/loot_tables/heads/phantom_membrane_phantasmal.json \
 
 phantasmal_end_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell find buce-data/phantasmal_end -type f | ./bin/ext2dir) \

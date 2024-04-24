@@ -1501,23 +1501,14 @@ When a player hits a phantom, it turns visible.
 
 All the above effects only apply to phantoms in the overworld.
 
-Phantom membranes dropped by phantoms have Glamer of Invisibility,
-an enchantment that can be applied to an item frame or glow item frame
-in the smithing table to make an invisible item frame.
-It can also be applied to a torch in the smithing table
-to make an invisible light block.
-// the light block is one light level higher than a torch because the stick,
-// when invisible, does not cast a shadow
+Phantom membranes can be crafted with item frames to make them invisible,
+or with a torch to make an invisible light block.
 
 While holding an item frame,
 a glass particle effect indicates
 the position of nearby invisible item frames.
 
 image::https://i.imgur.com/qR2I580.png[Phantasmal]
-
-If the <<fae-heads,Fae Heads>> datapack is
-installed before this one,
-phantom membranes from cat gifts have Glamer of Invisibility as well.
 
 If you have the <<spellsmithing-guide,Spellsmithing Guide>> resource pack
 installed, invisible item frames will
@@ -1532,7 +1523,7 @@ which adds phantoms to the dragon fight.
 .Known Issues
 [%collapsible]
 ====
-The Glamer of Invisibility can't be applied to armor stands
+Phantom membranes can't be used to craft invisible armor stands
 because of https://bugs.mojang.com/browse/MC-66068[MC-66068],
 a works-as-intended bug that prevents invisible armor stands from being broken.
 // just because mojang says it's a bug doesn't mean i have to agree with them
