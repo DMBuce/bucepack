@@ -51,9 +51,10 @@
           "type": "minecraft:item",
           "functions": [
             {
-              "function": "minecraft:set_nbt",
-              "tag": "{EntityTag:{variant:\"minecraft:earth\"}}",
-              "add": false
+              "function": "minecraft:set_components",
+              "components": {
+				  "minecraft:entity_data": {"id":"minecraft:painting","variant":"minecraft:earth"}
+			  }
             }
           ],
           "name": "minecraft:painting"

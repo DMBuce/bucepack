@@ -3448,8 +3448,6 @@ image::https://i.imgur.com/5Gy2NtN.png[Elemental]
 When a breeze kills an iron golem, it drops an Earth painting.
 
 When an iron golem kills a breeze, it drops a Wind painting.
-Breezes also drop sand for compatibility with
-the <<desert-breeze,Desert Breeze>> datapack.
 
 When a snow golem kills a blaze, it drops a Fire painting.
 
