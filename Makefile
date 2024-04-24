@@ -1246,7 +1246,7 @@ $(TEMPLATES:.sempl=): cache/latest.txt
 	sempl $< $@
 
 buce-data/%/root.advancement.json.sempl: meta/%.mcmeta
-	touch $@
+#	touch $@
 
 %.json: %.json.yaml data/minecraft/loot_tables/loot_table.j2
 	j2 data/minecraft/loot_tables/loot_table.j2 $< -o $@
