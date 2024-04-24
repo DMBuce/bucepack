@@ -29,9 +29,11 @@ do
 		  - rolls: 1
 		    entries:
 		{{<!sed -n '/BEGIN GIFTS/,/END GIFTS/ { /^[^#]/p }' buce-data/heads/heads.dat}}{{\\\\}}
-		      - { type: item, weight: 1, item: player_head, nbt: '{SkullOwner:{Name:\\"{{4:}}\\",Id:{{1}},Properties:{textures:[{Value:\\"{{2}}\\"}]}},BlockEntityTag:{note_block_sound:\"minecraft:{{3}}\"}}' }
+		      - { type: item, weight: 1, item: player_head, components: "{\\"item_name\\":\\"\\\\\\"{{4:}}'s Head\\\\\\"\\",\\"profile\\":{\\"id\\":{{1}},\\"properties\\":[{\\"name\\":\\"textures\\",\\"value\\":\\"{{2}}\\"}]},\\"note_block_sound\\":\\"minecraft:{{3}}\\"}" }
+		      #- { type: item, weight: 1, item: player_head, nbt: '{SkullOwner:{Name:\\"{{4:}}\\",Id:{{1}},Properties:{textures:[{Value:\\"{{2}}\\"}]}},BlockEntityTag:{note_block_sound:\"minecraft:{{3}}\"}}' }
 		{{<!sed -n '/BEGIN ${prof^^}/,/END ${prof^^}/ { /^[^#]/p }' buce-data/heads/heads.dat}}{{\\\\}}
-		      - { type: item, weight: 1, item: player_head, nbt: '{SkullOwner:{Name:\\"{{4:}}\\",Id:{{1}},Properties:{textures:[{Value:\\"{{2}}\\"}]}},BlockEntityTag:{note_block_sound:\"minecraft:{{3}}\"}}' }
+		      - { type: item, weight: 1, item: player_head, components: "{\\"item_name\\":\\"\\\\\\"{{4:}}'s Head\\\\\\"\\",\\"profile\\":{\\"id\\":{{1}},\\"properties\\":[{\\"name\\":\\"textures\\",\\"value\\":\\"{{2}}\\"}]},\\"note_block_sound\\":\\"minecraft:{{3}}\\"}" }
+		      #- { type: item, weight: 1, item: player_head, nbt: '{SkullOwner:{Name:\\"{{4:}}\\",Id:{{1}},Properties:{textures:[{Value:\\"{{2}}\\"}]}},BlockEntityTag:{note_block_sound:\"minecraft:{{3}}\"}}' }
 	EOF
 done
 

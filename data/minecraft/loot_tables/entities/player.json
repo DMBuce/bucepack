@@ -116,7 +116,7 @@
         },
         {
           "type": "minecraft:loot_table",
-          "name": "buce:heads/ancients",
+          "value": "buce:heads/ancients",
           "conditions": [
             {
               "condition": "minecraft:entity_properties",
