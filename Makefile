@@ -1034,20 +1034,20 @@ escape_nether_FILES := $(DEFAULT_DATA_FILES) \
 
 escape_grind_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell find buce-data/escape/grind -type f | ./bin/ext2dir) \
-	$(shell find buce-data/mythic/searching -type f | ./bin/ext2dir) \
-	data/buce/advancements/mythic/root.json \
 	data/buce/functions/var.mcfunction \
 	data/buce/loot_tables/loot_overhaul/cake_escape_grind.json \
 	data/buce/recipes/escape/grind/grindstone.json \
-	data/buce/recipes/mythic/smithing/searching.json \
 	data/minecraft/loot_tables/blocks/crying_obsidian_escape_grind.json \
 	data/minecraft/loot_tables/chests/end_city_treasure.json \
-	data/minecraft/loot_tables/entities/endermite.json \
 	data/minecraft/tags/functions/load_escape_grind.json \
 	data/minecraft/tags/functions/respawn_end.json \
 	data/minecraft/tags/functions/respawn_nether.json \
-	data/minecraft/tags/worldgen/structure/seeking_located.json \
-	data/buce/tags/items/relic/templates.json \
+	#data/buce/advancements/mythic/root.json \
+	#data/buce/recipes/mythic/smithing/searching.json \
+	#data/buce/tags/items/relic/templates.json \
+	#data/minecraft/tags/worldgen/structure/seeking_located.json \
+	#$(shell find buce-data/mythic/searching -type f | ./bin/ext2dir) \
+	#data/minecraft/loot_tables/entities/endermite.json \
 
 locomotive_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell find buce-data/locomotive -type f | ./bin/ext2dir) \
