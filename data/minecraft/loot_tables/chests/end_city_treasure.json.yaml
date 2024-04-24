@@ -10,7 +10,8 @@ pools:
       - { type: explorer_map, weight: 5, structure: end_city, decor: target_point, display: "End Island Explorer Map", skipchunks: true }
       - { type: item, weight: 6, enchant_lvl: { min: 30, max: 39 }, item: crossbow }
       - { type: item, weight: 9,  min: 18, max: 36, item: firework_rocket,
-          nbt: "{Fireworks:{Flight:2,Explosions:[{Type:0,Flicker:0,Trail:1,Colors:[I;14188952]},{Type:1,Flicker:0,Trail:0,Colors:[I;12801229]}]}}"
+          components: '{"fireworks":{"flight_duration":2,"explosions":[{"shape":"small_ball","has_twinkle":false,"has_trail":true,"colors":[14188952]},{"shape":"large_ball","has_twinkle":false,"has_trail":false,"colors":[12801229]}]}}'
+          #nbt: "{Fireworks:{Flight:2,Explosions:[{Type:0,Flicker:0,Trail:1,Colors:[I;14188952]},{Type:1,Flicker:0,Trail:0,Colors:[I;12801229]}]}}"
         }
       - { type: item, weight: 4, enchant_lvl: { min: 30, max: 39 }, item: diamond_sword }
       - { type: item, weight: 4, enchant_lvl: { min: 30, max: 39 }, item: diamond_boots }
