@@ -13,7 +13,8 @@ pools:
       - { type: item, weight: 1,                   item: golden_helmet }
       - { type: item, weight: 5, enchant_rand: [], item: fishing_rod }
       - { type: item, weight: 4, item: barrel,
-        nbt: '{display:{Lore:[\"\\\"§r§7Treasure\\\"\"]},BlockEntityTag:{LootTable:\"minecraft:chests/buried_treasure\"}}'
+        #nbt: '{display:{Lore:[\"\\\"§r§7Treasure\\\"\"]},BlockEntityTag:{LootTable:\"minecraft:chests/buried_treasure\"}}'
+        components: "{\"lore\":[\"{\\\"text\\\":\\\"Treasure\\\",\\\"color\\\":\\\"gray\\\",\\\"italic\\\":false}\"],\"container_loot\":{\"loot_table\":\"minecraft:chests/buried_treasure\"}}"
         }
       - { type: empty, weight: 6 }
 random_sequence: "minecraft:chests/underwater_ruin_big"

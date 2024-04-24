@@ -17,6 +17,7 @@
               or entry.looting is defined
               or entry.potion is defined
               or entry.nbt is defined
+              or entry.components is defined
           %}
           "functions": [
 		  	{%- set comma = "" %}
@@ -96,6 +97,13 @@
             {
               "function": "minecraft:set_potion",
               "id": "minecraft:{{entry.potion}}"
+            }
+            {%- endif %}
+            {%- if entry.components is defined %}{{comma}}
+			{%- set comma = "," %}
+            {
+              "function": "minecraft:set_components",
+              "components": {{entry.components}}
             }
             {%- endif %}
             {%- if entry.nbt is defined %}{{comma}}
