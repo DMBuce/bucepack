@@ -441,9 +441,11 @@ Banners dyed this way lose their patterns.
 Adds recipes for uncraftable chest loot items:
 saddles, nametags, horse armor, and snout banner patterns.
 
-image::https://i.imgur.com/A6dYFhf.png[Recipes]
+//image::https://i.imgur.com/A6dYFhf.png[Recipes]
+image::https://i.imgur.com/911Oepp.png[Recipes]
 
-The leather horse armor recipe is changed to match other horse armor as well.
+The leather horse armor recipe is changed to match wolf armor
+and other horse armor as well.
 
 {!./bin/packsummary crafting_loot}
 
