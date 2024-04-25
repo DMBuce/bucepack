@@ -3095,6 +3095,8 @@ When a player hits a phantom, it turns visible.
 
 All the above effects only apply to phantoms in the overworld.
 
+Phantoms can drop up to two membranes instead of one when killed by a player.
+
 Phantom membranes can be crafted with item frames to make them invisible,
 or with a torch to make an invisible light block.
 
@@ -3117,6 +3119,11 @@ which adds phantoms to the dragon fight.
 .https://github.com/DMBuce/bucepack/releases/latest/download/phantasmal.zip[`phantasmal.zip`]
 [%collapsible]
 ====
+
+```
+data/minecraft/loot_tables/entities/phantom.json
+```
+
 ====
 
 .https://github.com/DMBuce/bucepack/releases[All Releases & Changelogs]
