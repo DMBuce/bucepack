@@ -2461,8 +2461,10 @@ starter item chosen at random.
 This is a pair of companion packs for the
 <<curated-bonus-chest,Curated Bonus Chest>>
 datapack.
+
 **Starter Bonus Chest** adds a bonus spawn chest to each player's
 inventory the first time they join the world.
+
 **Starter Bonus Box** adds a shulker box with bonus spawn loot to each player's
 inventory the first time they join the world.
 
