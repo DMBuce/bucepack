@@ -714,7 +714,7 @@ They shouldn't add any lag to your game.
 
 === Archived
 
-Enhances chiseled bookshelves.
+Enhances books, bookshelves, and enchanting.
 
 Paper, maps, banner patterns, music discs, and potions
 can be placed in chiseled bookshelves.
@@ -724,6 +724,8 @@ and are crafted with leather instead of wooden slabs.
 
 https://raw.githubusercontent.com/DMBuce/bucepack/master/data/minecraft/tags/blocks/enchantment_power_transmitter.json[These blocks]
 don't block bookshelves from powering the enchantment table.
+
+Drowned are vulnerable to the Impaling enchantment.
 
 image::https://i.imgur.com/w9MQeFL.png[Enchanting]
 
@@ -737,6 +739,7 @@ image::https://i.imgur.com/w9MQeFL.png[Enchanting]
 data/minecraft/recipes/chiseled_bookshelf.json
 data/minecraft/tags/blocks/enchantment_power_provider.json
 data/minecraft/tags/blocks/enchantment_power_transmitter.json
+data/minecraft/tags/entity_types/sensitive_to_impaling.json
 data/minecraft/tags/items/bookshelf_books.json
 ```
 

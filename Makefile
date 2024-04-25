@@ -802,6 +802,7 @@ archived_FILES := $(DEFAULT_DATA_FILES) \
 	data/minecraft/recipes/chiseled_bookshelf.json \
 	data/minecraft/tags/blocks/enchantment_power_provider.json \
 	data/minecraft/tags/blocks/enchantment_power_transmitter.json \
+	data/minecraft/tags/entity_types/sensitive_to_impaling.json \
 	data/minecraft/tags/items/bookshelf_books.json \
 
 elemental_FILES := $(DEFAULT_DATA_FILES) \
