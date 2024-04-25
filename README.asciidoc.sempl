@@ -2108,13 +2108,9 @@ i.e. this is the _reverse_ of their relative priority.
 
 ----
 crafting_workstation.zip
-heads_fae.zip
 loot_overhaul.zip
 {!make dlist | grep loot_overhaul_}
 oven_brick.zip
-phantasmal.zip
-relics_deep.zip
-relics_mythic.zip
 update_1_*
 worldgen_anti.zip
 worldgen_*.zip
