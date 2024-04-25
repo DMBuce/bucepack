@@ -60,6 +60,7 @@ DATAPACKFILES = \
 	escape_nether.zip \
 	eyes_of_seeking.zip \
 	farmable.zip \
+	frienderchest.zip \
 	gardener_endermen.zip \
 	global_effects.zip \
 	heads_fae.zip \
@@ -97,7 +98,6 @@ DATAPACKFILES = \
 	#antidote.zip \
 	#dripblock.zip \
 	#ender_relic.zip \
-	#frienderchest.zip \
 	#heirlooms.zip \
 	#hover_mode.zip \
 	#illusory_trader.zip \

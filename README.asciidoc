@@ -3546,23 +3546,30 @@ data/minecraft/loot_tables/entities/snow_golem.json
 //====
 //====
 
-//=== Frienderchest
-//
-//A shared pocket dimension.
-//Players can enter the Frienderchest
-//by right-clicking an enderchest with an ender pearl in the overworld.
-//
-//**Downloads**
-//
-//.https://github.com/DMBuce/bucepack/releases/latest/download/frienderchest.zip[`frienderchest.zip`]
-//[%collapsible]
-//====
-//====
-//
-//.https://github.com/DMBuce/bucepack/releases[All Releases & Changelogs]
-//[%collapsible]
-//====
-//====
+=== Frienderchest
+
+A shared pocket dimension.
+Players can enter the Frienderchest
+by right-clicking an enderchest with an ender pearl in the overworld.
+
+**Downloads**
+
+.https://github.com/DMBuce/bucepack/releases/latest/download/frienderchest.zip[`frienderchest.zip`]
+[%collapsible]
+====
+====
+
+.https://github.com/DMBuce/bucepack/releases[All Releases & Changelogs]
+[%collapsible]
+====
+====
+
+.Known Issues
+[%collapsible]
+====
+Players leaving the frienderchest are sometimes teleported
+to (0,0,0) in the overworld instead of the enderchest they entered.
+====
 
 //=== Apocalypse
 //

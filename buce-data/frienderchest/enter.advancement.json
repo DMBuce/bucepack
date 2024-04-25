@@ -17,7 +17,7 @@
 	"parent": "buce:errors",
 	"criteria": {
 		"note_block": {
-			"trigger": "minecraft:item_used_on_block",
+			"trigger": "minecraft:any_block_use",
 			"conditions": {
 				"location": [
 					{

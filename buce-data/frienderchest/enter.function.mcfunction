@@ -3,6 +3,9 @@
 # revoke advancement
 advancement revoke @s only buce:frienderchest/enter
 
+## debug
+#say enter
+
 # store exit location
 execute store result score @s exit_x run data get entity @s Pos[0] 1
 execute store result score @s exit_y run data get entity @s Pos[1] 1
