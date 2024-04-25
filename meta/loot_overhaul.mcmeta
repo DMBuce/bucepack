@@ -1,13 +1,13 @@
 {
   "pack": {
-    "pack_format": 26,
+    "pack_format": 41,
     "description": "Buce's Loot Overhaul: Better loot"
   },
   "root": {
     "title": "Loot Overhaul",
     "explanation": "Better loot",
     "icon": {
-      "item": "minecraft:chest"
+      "id": "minecraft:chest"
     }
   }
 }

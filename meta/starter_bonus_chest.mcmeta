@@ -1,13 +1,13 @@
 {
   "pack": {
-    "pack_format": 26,
+    "pack_format": 41,
     "description": "Buce's Bonus Chest: Adds a bonus chest to your inventory"
   },
   "root": {
     "title": "Starter Bonus Chest",
     "explanation": "Start with a chest of bonus loot in your inventory",
     "icon": {
-      "item": "minecraft:torch"
+      "id": "minecraft:torch"
     }
   }
 }

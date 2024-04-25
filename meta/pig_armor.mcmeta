@@ -1,14 +1,14 @@
 {
   "pack": {
-    "pack_format": 22,
-    "supported_formats": [ 22, 26 ],
+    "pack_format": 32,
+    "supported_formats": [ 32, 41 ],
     "description": "Buce's Pig Armor: Adds iron armor to saddled pigs"
   },
   "root": {
     "title": "Pig Armor",
     "explanation": "Pigs with saddles have armor",
     "icon": {
-      "item": "minecraft:saddle"
+      "id": "minecraft:saddle"
     }
   }
 }

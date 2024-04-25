@@ -1,13 +1,13 @@
 {
   "pack": {
-    "pack_format": 26,
+    "pack_format": 41,
     "description": "Buce's Frienderchest: Enderchest pocket dimension"
   },
   "root": {
     "title": "Frienderchest",
     "explanation": "Enter an ender chest by right clicking it with an ender pearl",
     "icon": {
-      "item": "minecraft:ender_pearl"
+      "id": "minecraft:ender_pearl"
     }
   }
 }

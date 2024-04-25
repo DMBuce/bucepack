@@ -1,13 +1,13 @@
 {
   "pack": {
-    "pack_format": 26,
+    "pack_format": 41,
     "description": "Buce's Bonus Box: Adds a shulker with bonus chest loot to your inventory"
   },
   "root": {
     "title": "Starter Bonus Box",
     "explanation": "Start with a shulker of bonus loot in your inventory",
     "icon": {
-      "item": "minecraft:brown_shulker_box"
+      "id": "minecraft:brown_shulker_box"
     }
   }
 }

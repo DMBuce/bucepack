@@ -1,13 +1,13 @@
 {
   "pack": {
-    "pack_format": 26,
+    "pack_format": 41,
     "description": "Buce's Global Effects: Playable gamerules"
   },
   "root": {
     "title": "Global Effects",
     "explanation": "Playable gamerules",
     "icon": {
-      "item": "minecraft:beacon"
+      "id": "minecraft:beacon"
     }
   }
 }

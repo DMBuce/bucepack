@@ -1,13 +1,13 @@
 {
   "pack": {
-    "pack_format": 26,
+    "pack_format": 41,
     "description": "Buce's Phantasmal End: Phantoms in the dragon fight"
   },
   "root": {
     "title": "Phantasmal End",
     "explanation": "Summoned dragons have phantom allies",
     "icon": {
-      "item": "minecraft:elytra"
+      "id": "minecraft:elytra"
     }
   }
 }
