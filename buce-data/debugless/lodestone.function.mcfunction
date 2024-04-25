@@ -1,8 +1,5 @@
 # runs when a player holds a recovery compass
 
-# revoke advancement
-advancement revoke @s only buce:debugless/recovery
-
 ## debug
 #say lodestone
 
@@ -10,9 +7,9 @@ advancement revoke @s only buce:debugless/recovery
 execute store result score #buce.x var run data get entity @s Pos[0] 1
 execute store result score #buce.y var run data get entity @s Pos[1] 1
 execute store result score #buce.z var run data get entity @s Pos[2] 1
-execute store result score #buce.dx var run data get entity @s Inventory[{Slot:-106b}].tag.LodestonePos.X
-execute store result score #buce.dy var run data get entity @s Inventory[{Slot:-106b}].tag.LodestonePos.Y
-execute store result score #buce.dz var run data get entity @s Inventory[{Slot:-106b}].tag.LodestonePos.Z
+execute store result score #buce.dx var run data get entity @s Inventory[{Slot:-106b}].components.minecraft:lodestone_tracker.target.pos[0]
+execute store result score #buce.dy var run data get entity @s Inventory[{Slot:-106b}].components.minecraft:lodestone_tracker.target.pos[1]
+execute store result score #buce.dz var run data get entity @s Inventory[{Slot:-106b}].components.minecraft:lodestone_tracker.target.pos[2]
 scoreboard players operation #buce.dx var -= #buce.x var
 scoreboard players operation #buce.dy var -= #buce.y var
 scoreboard players operation #buce.dz var -= #buce.z var

@@ -8,5 +8,6 @@ advancement revoke @s only buce:debugless/compass
 
 # check whether player is holding lodestone compass or a normal one
 #execute unless entity @s[nbt={Inventory:[{Slot:-106b,tag:{LodestonePos:{}}}]}] run function buce:debugless/map
-execute if entity @s[nbt={Inventory:[{Slot:-106b,tag:{LodestonePos:{}}}]}] run function buce:debugless/lodestone
+#execute if entity @s[nbt={Inventory:[{Slot:-106b,tag:{LodestonePos:{}}}]}] run function buce:debugless/lodestone
+execute if entity @s[nbt={Inventory:[{Slot:-106b,components:{"minecraft:lodestone_tracker":{target:{}}}}]}] run function buce:debugless/lodestone
 

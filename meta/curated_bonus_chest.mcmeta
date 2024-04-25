@@ -1,0 +1,13 @@
+{
+  "pack": {
+    "pack_format": 41,
+    "description": "Buce's Bonus Chest: Curated starting loot"
+  },
+  "root": {
+    "title": "Curated bonus chest",
+    "explanation": "Better starting loot",
+    "icon": {
+      "id": "minecraft:chest"
+    }
+  }
+}
