@@ -8,6 +8,7 @@ retval=0
 
 echo 'Checking that all documented packs exist...' >&2
 for pack in $(sed -n '/packsummary/ {
+	/^\/\//d
 	s/.*packsummary //
 	s/}.*//
 	p

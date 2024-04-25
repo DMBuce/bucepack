@@ -34,7 +34,7 @@ if find buce-data/ \
 	-name \*.advancement.json \
 	\! -path \*deleteme\* \
 	\! -path \*disabled\* \
-	-exec jq -r .display.icon.item {} + \
+	-exec jq -r .display.icon.id {} + \
 	| sort | uniq -dc | sort -hr \
 	| grep -v 'minecraft:barrier' \
 	| grep .
