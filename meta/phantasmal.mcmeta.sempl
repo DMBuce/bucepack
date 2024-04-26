@@ -1,6 +1,7 @@
 {
   "pack": {
-    "pack_format": {!jq .pack_version.data "$(./bin/latest)".jar/version.json},
+    "pack_format": {./cache/version-data.txt},
+    "supported_formats": {./cache/version-supported.txt},
     "description": "Buce's Phantasmal: More phantasmal phantoms"
   },
   "root": {

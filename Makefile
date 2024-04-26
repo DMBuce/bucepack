@@ -4,6 +4,7 @@ DATARESOURCEPACKFILES = \
 	pig_armor.zip \
 	crafting_turtle_box.zip \
 	oven_brick.zip \
+	phantasmal.zip \
 	#copper_overhaul.zip \
 
 RESOURCEPACKFILES = \
@@ -31,9 +32,9 @@ RESOURCEPACKFILES = \
 	ore_types.zip \
 	painting_overhaul.zip \
 	ravager.zip \
-	spellsmithing_guide.zip \
 	tech_arrows.zip \
 	villager_mech.zip \
+	#spellsmithing_guide.zip \
 
 DATAPACKFILES = \
 	$(DATARESOURCEPACKFILES) \
@@ -74,7 +75,6 @@ DATAPACKFILES = \
 	no_treasure_maps.zip \
 	oven_tier.zip \
 	phantasmal_end.zip \
-	phantasmal.zip \
 	poseable.zip \
 	shearless.zip \
 	smart_allays.zip \
@@ -837,6 +837,11 @@ poseable_FILES := $(DEFAULT_DATA_FILES) \
 
 phantasmal_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell find buce-data/phantasmal -type f | ./bin/ext2dir) \
+	$(wildcard assets/minecraft/models/item/invis_*.json) \
+	$(wildcard assets/minecraft/textures/item/invis_*.png) \
+	assets/minecraft/models/item/glow_item_frame.json \
+	assets/minecraft/models/item/item_frame.json \
+	assets/minecraft/textures/item/light_* \
 	data/minecraft/loot_tables/entities/phantom.json \
 	#data/buce/tags/items/relic/templates.json \
 	#data/buce/loot_tables/heads/phantom_membrane_phantasmal.json \

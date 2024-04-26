@@ -328,6 +328,11 @@ image::https://i.imgur.com/w9MQeFL.png[Enchanting]
 Quick Charge doesn't work on bows due to
 https://bugs.mojang.com/browse/MC-268814[MC-268814],
 so bows can't be given crossbow enchants in a way that makes sense.
+
+Similarly, most boot enchants don't work on horse or wolf armor.
+
+//And Sweeping Edge doesn't work on tools,
+//though the Toolbox datapack gets around this limitation with commands.
 ====
 
 === Mineable
@@ -1537,10 +1542,10 @@ the position of nearby invisible item frames.
 
 image::https://i.imgur.com/qR2I580.png[Phantasmal]
 
-If you have the <<spellsmithing-guide,Spellsmithing Guide>> resource pack
-installed, invisible item frames will
-have a translucent item texture in the inventory,
-and invisible light items will have a custom texture.
+When installed as a resource pack,
+invisible item frames have a translucent texture
+and the light block texture looks like an aura of light
+instead of a light bulb.
 
 This pack is a companion to the <<phantasmal-end,Phantasmal End>> datapack,
 which adds phantoms to the dragon fight.
