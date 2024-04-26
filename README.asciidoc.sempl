@@ -247,10 +247,9 @@ image::https://i.imgur.com/DorMwHO.png[Classic Food]
 //image::https://i.imgur.com/DH6v35X.png[Spellsmithing Guide]
 
 This pack contains textures for custom items obtained with
-datapacks that use <<spellsmithing>>.
+certain datapacks.
 
-* <<phantasmal,Phantasmal>>: Invisible item frames and light blocks
-* <<loot-overhaul,Loot Overhaul>>: Invisible light blocks
+* <<phantasmal,Phantasmal>>: Invisible item frames
 
 {!./bin/packsummary spellsmithing_guide}
 
@@ -944,9 +943,7 @@ Petrified slabs also generate in dungeons, as do empty spawners.
 Budding amethyst spawns in abandoned mineshafts.
 Infested bricks spawn in stronghold chests,
 and a single reinforced deepslate rarely spawns in ancient cities.
-Light blocks spawn in woodland mansion and ancient city chests,
-and have a custom texture if you have the
-<<spellsmithing-guide,Spellsmithing Guide>> resource pack installed.
+Light blocks spawn in woodland mansion and ancient city chests.
 
 {!./bin/packsummary loot_overhaul}
 
