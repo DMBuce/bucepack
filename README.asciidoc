@@ -724,9 +724,23 @@ and are crafted with leather instead of wooden slabs.
 https://raw.githubusercontent.com/DMBuce/bucepack/master/data/minecraft/tags/blocks/enchantment_power_transmitter.json[These blocks]
 don't block bookshelves from powering the enchantment table.
 
+Axes can be enchanted with Fire Aspect.
+
+Pickaxes and Tridents can be enchanted with Sharpness in the anvil.
+Sharpness is mutually exclusive with Impaling.
+
+//Bows can be enchanted with Multishot, Piercing, and Quick Charge.
+
+Crossbows can be enchanted with Flame, Infinity, Power, and Punch.
+
+Horse armor can be enchanted with Protection variants and Thorns in the anvil.
+
 Drowned are vulnerable to the Impaling enchantment.
 
 image::https://i.imgur.com/w9MQeFL.png[Enchanting]
+
+//This is a companion pack for the <<toolbox,Toolbox>> datapack,
+//which makes tools enchantable with Knockback, Looting, and Sweeping Edge.
 
 **Downloads**
 
@@ -740,6 +754,11 @@ data/minecraft/tags/blocks/enchantment_power_provider.json
 data/minecraft/tags/blocks/enchantment_power_transmitter.json
 data/minecraft/tags/entity_types/sensitive_to_impaling.json
 data/minecraft/tags/items/bookshelf_books.json
+data/minecraft/tags/items/enchantable/armor.json
+data/minecraft/tags/items/enchantable/bow.json
+data/minecraft/tags/items/enchantable/fire_aspect.json
+data/minecraft/tags/items/enchantable/sharp_weapon.json
+data/minecraft/tags/items/enchantable/weapon.json
 ```
 
 ====
@@ -747,6 +766,14 @@ data/minecraft/tags/items/bookshelf_books.json
 .https://github.com/DMBuce/bucepack/releases[All Releases & Changelogs]
 [%collapsible]
 ====
+====
+
+.Known Issues
+[%collapsible]
+====
+Quick Charge doesn't work on bows due to
+https://bugs.mojang.com/browse/MC-268814[MC-268814],
+so bows can't be given crossbow enchants in a way that makes sense.
 ====
 
 === Mineable
@@ -2639,6 +2666,11 @@ A player holding a recovery compass in the offhand can see the distance to their
 .https://github.com/DMBuce/bucepack/releases/latest/download/debugless.zip[`debugless.zip`]
 [%collapsible]
 ====
+
+```
+data/minecraft/tags/blocks/replaceable.json
+```
+
 ====
 
 .https://github.com/DMBuce/bucepack/releases[All Releases & Changelogs]
@@ -3131,14 +3163,16 @@ data/minecraft/loot_tables/entities/phantom.json
 .Known Issues
 [%collapsible]
 ====
+Invisible light blocks can't be pushed by pistons
+because of https://bugs.mojang.com/browse/MC-221603[MC-221603]
+and prevents water from flowing
+because of https://bugs.mojang.com/browse/MC-221590[MC-221590].
+
 Phantom membranes can't be used to craft invisible armor stands
 because of https://bugs.mojang.com/browse/MC-66068[MC-66068],
 a works-as-intended bug that prevents invisible armor stands from being broken.
 // just because mojang says it's a bug doesn't mean i have to agree with them
 // i think it's a bug
-
-Invisible light blocks can't be pushed by pistons
-because of https://bugs.mojang.com/browse/MC-221603[MC-221603].
 ====
 
 === Phantasmal End

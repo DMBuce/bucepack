@@ -1,0 +1,63 @@
+some guesses as to how these tags work
+
+durability: obv, mace
+* mending
+* unbreaking
+vanishing: durability, compass, pumpkin, skulls, mace
+* curse of vanishing
+equippable: armor, elytra, skulls, pumpkin
+* curse of binding
+armor, *_armor: obv
+* blast protection
+* fire protection
+* projectile protection
+* protection
+* thorns
+head_armor: obv
+* aqua affinity
+* respiration
+chest_armor: obv
+leg_armor: obv
+* swift sneak
+foot_armor: obv
+* frost walker
+* soul speed
+* depth strider
+* feather falling
+sword: obv
+* knockback
+* looting
+* sweeping edge
+fire_aspect: swords, mace
+* fire aspect
+sharp_weapon: swords, axes
+* sharpness
+weapon: swords, axes, mace
+* bane of arthropods
+* smite
+mining: tools, shears
+* efficiency
+mining_loot: tools
+* fortune
+* silk touch
+fishing: obv
+* luck of the sea
+* lure
+trident: obv
+* channeling
+* impaling
+* loyalty
+* riptide
+bow: obv
+* flame
+* infinity
+* power
+* punch
+crossbow: obv
+* multishot
+* piercing
+* quick charge
+mace: obv
+* breach
+* density
+* wind burst

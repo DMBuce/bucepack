@@ -799,6 +799,7 @@ dripblock_FILES := $(DEFAULT_DATA_FILES) \
 	data/minecraft/worldgen/noise_settings/overworld_dripblock.json \
 
 archived_FILES := $(DEFAULT_DATA_FILES) \
+	$(wildcard data/minecraft/tags/items/enchantable/*.json) \
 	data/minecraft/recipes/chiseled_bookshelf.json \
 	data/minecraft/tags/blocks/enchantment_power_provider.json \
 	data/minecraft/tags/blocks/enchantment_power_transmitter.json \
