@@ -2660,22 +2660,33 @@ Reduces the amount of info in the debug screen
 //and gives some in-game ways of obtaining player coordinates.
 and gives some in-game ways of measuring distances.
 
-//A player holding a map or compass in the offhand can see their coordinates.
+//A player holding a map or compass in the offhand
+//can see their coordinates.
 
-A player holding a lodestone compass in the offhand can see the distance to the lodestone.
+A player holding a lodestone compass in the offhand
+can see the distance to the lodestone.
 
-A player holding a recovery compass in the offhand can see the distance to their death point.
+A player holding a recovery compass in the offhand
+can see the distance to their death point.
+
+Light blocks in a player's offhand
+show the current light level at the player's feet.
+The light level shown is the block light or
+https://minecraft.wiki/w/Light#Internal_light_level[internal light],
+whichever is highest.
+Light blocks can be crafted from a torch and a phantom membrane.
+
+//This light level will be 0 in unlit underground areas
+//and 4 in areas exposed to sky at night.
+//When lighting up an area,
+//generally speaking it's safest to wait until dark
+//and light up areas to level 5 or higher.
 
 **Downloads**
 
 .https://github.com/DMBuce/bucepack/releases/latest/download/debugless.zip[`debugless.zip`]
 [%collapsible]
 ====
-
-```
-data/minecraft/tags/blocks/replaceable.json
-```
-
 ====
 
 .https://github.com/DMBuce/bucepack/releases[All Releases & Changelogs]
@@ -2690,6 +2701,10 @@ Due to limitations in the square root function used,
 the distance displayed stops working
 when the player is more than 46340 blocks
 away from the lodestone or death point.
+
+Datapacks can only detect light levels with the light predicate,
+which uses `max(internal_sky_light,block_light)` for its calculation.
+So it's not possible to simply show the block light level.
 ====
 
 === Global Effects
@@ -3138,12 +3153,14 @@ While holding an item frame,
 a glass particle effect indicates
 the position of nearby invisible item frames.
 
-image::https://i.imgur.com/qR2I580.png[Phantasmal]
+//image::https://i.imgur.com/qR2I580.png[Phantasmal]
 
 When installed as a resource pack,
 invisible item frames have a translucent texture
 and the light block texture looks like an aura of light
 instead of a light bulb.
+
+image::https://i.imgur.com/OzELz9I.png[Phantasmal]
 
 This pack is a companion to the <<phantasmal-end,Phantasmal End>> datapack,
 which adds phantoms to the dragon fight.

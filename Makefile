@@ -712,8 +712,9 @@ starter_spyglass_FILES := $(DEFAULT_DATA_FILES) \
 
 debugless_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell find buce-data/debugless -type f | ./bin/ext2dir) \
-	data/buce/functions/var.mcfunction \
 	data/buce/functions/sqrt.mcfunction \
+	data/buce/functions/var.mcfunction \
+	data/buce/recipes/phantasmal/light.json \
 	data/minecraft/tags/functions/load_debugless.json \
 
 dragonproof_FILES := $(DEFAULT_DATA_FILES) \
