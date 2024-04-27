@@ -1,0 +1,17 @@
+{
+  "pack": {
+    "pack_format": 41,
+    "supported_formats": [ 32, 41 ],
+    "description": "Buce's Custom Tools: New items"
+  },
+  "root": {
+    "title": "Custom Tools",
+    "explanation": "New unique items",
+    "icon": {
+      "id": "minecraft:lead",
+	  "components": {
+        "custom_model_data": 22183
+	  }
+    }
+  }
+}

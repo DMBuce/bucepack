@@ -2593,6 +2593,28 @@ pose.
 //====
 //====
 
+=== Moccasins
+
+Adds rabbit hide footwear with Speed II, Jump Boost II, and Step Assist
+effects.
+
+**Downloads**
+
+.https://github.com/DMBuce/bucepack/releases/latest/download/tool_custom.zip[`tool_custom.zip`]
+[%collapsible]
+====
+
+```
+assets/minecraft/models/item/leather_boots.json
+```
+
+====
+
+.https://github.com/DMBuce/bucepack/releases[All Releases & Changelogs]
+[%collapsible]
+====
+====
+
 === Smart Allays
 
 When a player places a hopper against a note block,

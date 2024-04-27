@@ -1125,6 +1125,13 @@ pose.
 //
 //{!./bin/packsummary heirlooms}
 
+=== Moccasins
+
+Adds rabbit hide footwear with Speed II, Jump Boost II, and Step Assist
+effects.
+
+{!./bin/packsummary tool_custom}
+
 === Smart Allays
 
 When a player places a hopper against a note block,

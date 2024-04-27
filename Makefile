@@ -5,6 +5,7 @@ DATARESOURCEPACKFILES = \
 	crafting_turtle_box.zip \
 	oven_brick.zip \
 	phantasmal.zip \
+	tool_custom.zip \
 	#copper_overhaul.zip \
 
 RESOURCEPACKFILES = \
@@ -835,6 +836,12 @@ breeding_overhaul_FILES := $(DEFAULT_DATA_FILES) \
 
 poseable_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell find buce-data/poseable -type f | ./bin/ext2dir) \
+
+tool_custom_FILES := $(DEFAULT_DATA_FILES) \
+	$(shell find buce-data/tool/custom -type f | ./bin/ext2dir) \
+	assets/minecraft/models/item/leather_boots.json \
+	assets/minecraft/models/item/leather_moccasins.json \
+	assets/minecraft/textures/item/leather_moccasins*.png \
 
 phantasmal_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell find buce-data/phantasmal -type f | ./bin/ext2dir) \
@@ -1791,6 +1798,12 @@ shearless.zip: $(shearless_FILES)
 	./bin/ziprename _$(@:.zip=) "" $@
 
 poseable.zip: $(poseable_FILES)
+	cp meta/$(@:.zip=.png) pack.png
+	sempl meta/$(@:.zip=.mcmeta.sempl) pack.mcmeta
+	zip $@ pack.png pack.mcmeta $^
+	./bin/ziprename _$(@:.zip=) "" $@
+
+tool_custom.zip: $(tool_custom_FILES)
 	cp meta/$(@:.zip=.png) pack.png
 	sempl meta/$(@:.zip=.mcmeta.sempl) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^

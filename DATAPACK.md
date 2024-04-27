@@ -16,6 +16,7 @@ raycast: https://www.reddit.com/r/MinecraftCommands/comments/9n1ghh/raycasting_i
 check if player is looking toward/away: https://www.reddit.com/r/MinecraftCommands/comments/akjyh5/help_any_way_to_execute_if_a_player_is_looking_at/ef5jehw/
 item nbt structure: https://minecraft.wiki/w/Player.dat_format#Item_structure
 json text components: https://minecraft.wiki/w/Raw_JSON_text_format#Component_resolution
+uuid converter: https://www.soltoder.com/mc-uuid-converter/
 
 ### Version History
 
