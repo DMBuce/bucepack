@@ -1,0 +1,8 @@
+{
+  "function": "minecraft:set_components",
+  "components": {
+    "minecraft:block_state": {
+      "level": "3"
+    }
+  }
+}

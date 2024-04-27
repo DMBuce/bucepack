@@ -4,70 +4,70 @@
 advancement revoke @s only buce:debugless/light
 
 ## debug
-#say recovery
+#say light
 
 execute \
-	if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{location:{light:{light:15}}}} \
-	if predicate {condition:"minecraft:inverted",term:{condition:"minecraft:entity_properties",entity:"this",predicate:{equipment:{offhand:{components:{"minecraft:block_state":{level:"15"}}}}}}} \
-	run item modify entity @s weapon.offhand {function:"minecraft:set_components",components:{"minecraft:block_state":{level:"15"}}}
+	if predicate buce:debugless/light/level/0 \
+	unless predicate buce:debugless/light/state/0 \
+	run item modify entity @s weapon.offhand buce:debugless/light/state/0
 execute \
-	if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{location:{light:{light:14}}}} \
-	if predicate {condition:"minecraft:inverted",term:{condition:"minecraft:entity_properties",entity:"this",predicate:{equipment:{offhand:{components:{"minecraft:block_state":{level:"14"}}}}}}} \
-	run item modify entity @s weapon.offhand {function:"minecraft:set_components",components:{"minecraft:block_state":{level:"14"}}}
+	if predicate buce:debugless/light/level/1 \
+	unless predicate buce:debugless/light/state/1 \
+	run item modify entity @s weapon.offhand buce:debugless/light/state/1
 execute \
-	if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{location:{light:{light:13}}}} \
-	if predicate {condition:"minecraft:inverted",term:{condition:"minecraft:entity_properties",entity:"this",predicate:{equipment:{offhand:{components:{"minecraft:block_state":{level:"13"}}}}}}} \
-	run item modify entity @s weapon.offhand {function:"minecraft:set_components",components:{"minecraft:block_state":{level:"13"}}}
+	if predicate buce:debugless/light/level/2 \
+	unless predicate buce:debugless/light/state/2 \
+	run item modify entity @s weapon.offhand buce:debugless/light/state/2
 execute \
-	if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{location:{light:{light:12}}}} \
-	if predicate {condition:"minecraft:inverted",term:{condition:"minecraft:entity_properties",entity:"this",predicate:{equipment:{offhand:{components:{"minecraft:block_state":{level:"12"}}}}}}} \
-	run item modify entity @s weapon.offhand {function:"minecraft:set_components",components:{"minecraft:block_state":{level:"12"}}}
+	if predicate buce:debugless/light/level/3 \
+	unless predicate buce:debugless/light/state/3 \
+	run item modify entity @s weapon.offhand buce:debugless/light/state/3
 execute \
-	if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{location:{light:{light:11}}}} \
-	if predicate {condition:"minecraft:inverted",term:{condition:"minecraft:entity_properties",entity:"this",predicate:{equipment:{offhand:{components:{"minecraft:block_state":{level:"11"}}}}}}} \
-	run item modify entity @s weapon.offhand {function:"minecraft:set_components",components:{"minecraft:block_state":{level:"11"}}}
+	if predicate buce:debugless/light/level/4 \
+	unless predicate buce:debugless/light/state/4 \
+	run item modify entity @s weapon.offhand buce:debugless/light/state/4
 execute \
-	if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{location:{light:{light:10}}}} \
-	if predicate {condition:"minecraft:inverted",term:{condition:"minecraft:entity_properties",entity:"this",predicate:{equipment:{offhand:{components:{"minecraft:block_state":{level:"10"}}}}}}} \
-	run item modify entity @s weapon.offhand {function:"minecraft:set_components",components:{"minecraft:block_state":{level:"10"}}}
+	if predicate buce:debugless/light/level/5 \
+	unless predicate buce:debugless/light/state/5 \
+	run item modify entity @s weapon.offhand buce:debugless/light/state/5
 execute \
-	if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{location:{light:{light:9}}}} \
-	if predicate {condition:"minecraft:inverted",term:{condition:"minecraft:entity_properties",entity:"this",predicate:{equipment:{offhand:{components:{"minecraft:block_state":{level:"9"}}}}}}} \
-	run item modify entity @s weapon.offhand {function:"minecraft:set_components",components:{"minecraft:block_state":{level:"9"}}}
+	if predicate buce:debugless/light/level/6 \
+	unless predicate buce:debugless/light/state/6 \
+	run item modify entity @s weapon.offhand buce:debugless/light/state/6
 execute \
-	if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{location:{light:{light:8}}}} \
-	if predicate {condition:"minecraft:inverted",term:{condition:"minecraft:entity_properties",entity:"this",predicate:{equipment:{offhand:{components:{"minecraft:block_state":{level:"8"}}}}}}} \
-	run item modify entity @s weapon.offhand {function:"minecraft:set_components",components:{"minecraft:block_state":{level:"8"}}}
+	if predicate buce:debugless/light/level/7 \
+	unless predicate buce:debugless/light/state/7 \
+	run item modify entity @s weapon.offhand buce:debugless/light/state/7
 execute \
-	if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{location:{light:{light:7}}}} \
-	if predicate {condition:"minecraft:inverted",term:{condition:"minecraft:entity_properties",entity:"this",predicate:{equipment:{offhand:{components:{"minecraft:block_state":{level:"7"}}}}}}} \
-	run item modify entity @s weapon.offhand {function:"minecraft:set_components",components:{"minecraft:block_state":{level:"7"}}}
+	if predicate buce:debugless/light/level/8 \
+	unless predicate buce:debugless/light/state/8 \
+	run item modify entity @s weapon.offhand buce:debugless/light/state/8
 execute \
-	if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{location:{light:{light:6}}}} \
-	if predicate {condition:"minecraft:inverted",term:{condition:"minecraft:entity_properties",entity:"this",predicate:{equipment:{offhand:{components:{"minecraft:block_state":{level:"6"}}}}}}} \
-	run item modify entity @s weapon.offhand {function:"minecraft:set_components",components:{"minecraft:block_state":{level:"6"}}}
+	if predicate buce:debugless/light/level/9 \
+	unless predicate buce:debugless/light/state/9 \
+	run item modify entity @s weapon.offhand buce:debugless/light/state/9
 execute \
-	if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{location:{light:{light:5}}}} \
-	if predicate {condition:"minecraft:inverted",term:{condition:"minecraft:entity_properties",entity:"this",predicate:{equipment:{offhand:{components:{"minecraft:block_state":{level:"5"}}}}}}} \
-	run item modify entity @s weapon.offhand {function:"minecraft:set_components",components:{"minecraft:block_state":{level:"5"}}}
+	if predicate buce:debugless/light/level/10 \
+	unless predicate buce:debugless/light/state/10 \
+	run item modify entity @s weapon.offhand buce:debugless/light/state/10
 execute \
-	if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{location:{light:{light:4}}}} \
-	if predicate {condition:"minecraft:inverted",term:{condition:"minecraft:entity_properties",entity:"this",predicate:{equipment:{offhand:{components:{"minecraft:block_state":{level:"4"}}}}}}} \
-	run item modify entity @s weapon.offhand {function:"minecraft:set_components",components:{"minecraft:block_state":{level:"4"}}}
+	if predicate buce:debugless/light/level/11 \
+	unless predicate buce:debugless/light/state/11 \
+	run item modify entity @s weapon.offhand buce:debugless/light/state/11
 execute \
-	if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{location:{light:{light:3}}}} \
-	if predicate {condition:"minecraft:inverted",term:{condition:"minecraft:entity_properties",entity:"this",predicate:{equipment:{offhand:{components:{"minecraft:block_state":{level:"3"}}}}}}} \
-	run item modify entity @s weapon.offhand {function:"minecraft:set_components",components:{"minecraft:block_state":{level:"3"}}}
+	if predicate buce:debugless/light/level/12 \
+	unless predicate buce:debugless/light/state/12 \
+	run item modify entity @s weapon.offhand buce:debugless/light/state/12
 execute \
-	if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{location:{light:{light:2}}}} \
-	if predicate {condition:"minecraft:inverted",term:{condition:"minecraft:entity_properties",entity:"this",predicate:{equipment:{offhand:{components:{"minecraft:block_state":{level:"2"}}}}}}} \
-	run item modify entity @s weapon.offhand {function:"minecraft:set_components",components:{"minecraft:block_state":{level:"2"}}}
+	if predicate buce:debugless/light/level/13 \
+	unless predicate buce:debugless/light/state/13 \
+	run item modify entity @s weapon.offhand buce:debugless/light/state/13
 execute \
-	if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{location:{light:{light:1}}}} \
-	if predicate {condition:"minecraft:inverted",term:{condition:"minecraft:entity_properties",entity:"this",predicate:{equipment:{offhand:{components:{"minecraft:block_state":{level:"1"}}}}}}} \
-	run item modify entity @s weapon.offhand {function:"minecraft:set_components",components:{"minecraft:block_state":{level:"1"}}}
+	if predicate buce:debugless/light/level/14 \
+	unless predicate buce:debugless/light/state/14 \
+	run item modify entity @s weapon.offhand buce:debugless/light/state/14
 execute \
-	if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{location:{light:{light:0}}}} \
-	if predicate {condition:"minecraft:inverted",term:{condition:"minecraft:entity_properties",entity:"this",predicate:{equipment:{offhand:{components:{"minecraft:block_state":{level:"0"}}}}}}} \
-	run item modify entity @s weapon.offhand {function:"minecraft:set_components",components:{"minecraft:block_state":{level:"0"}}}
+	if predicate buce:debugless/light/level/15 \
+	unless predicate buce:debugless/light/state/15 \
+	run item modify entity @s weapon.offhand buce:debugless/light/state/15
 
