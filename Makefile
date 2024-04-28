@@ -838,7 +838,7 @@ poseable_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell find buce-data/poseable -type f | ./bin/ext2dir) \
 
 smithing_upgrade_FILES := $(DEFAULT_DATA_FILES) \
-	$(shell find buce-data/gear/upgrade -type f | ./bin/ext2dir) \
+	$(shell find buce-data/recipes/smithing/upgrade -type f | ./bin/ext2dir) \
 	assets/minecraft/models/item/bow.json \
 	assets/minecraft/models/item/leather_boots.json \
 	assets/minecraft/models/item/diamond_boots.json \
