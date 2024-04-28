@@ -10,7 +10,7 @@
     "count": 1,
     "id": "minecraft:bow",
     "components": {
-      "minecraft:custom_model_data": 22183,
+      "minecraft:custom_model_data": 22185,
       "minecraft:item_name": "'Evernocked Bow'",
       "minecraft:enchantments": {
         "minecraft:infinity": 1,

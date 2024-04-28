@@ -151,6 +151,35 @@
         "pull": 0.9
       },
       "model": "item/crystal_bow_pulling_2"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 22185
+      },
+      "model": "item/echo_bow"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 22185,
+        "pulling": 1
+      },
+      "model": "item/echo_bow_pulling_0"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 22185,
+        "pulling": 1,
+        "pull": 0.65
+      },
+      "model": "item/echo_bow_pulling_1"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 22185,
+        "pulling": 1,
+        "pull": 0.9
+      },
+      "model": "item/echo_bow_pulling_2"
     }
   ]
 }

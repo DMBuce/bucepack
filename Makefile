@@ -849,12 +849,14 @@ gear_upgrade_FILES := $(DEFAULT_DATA_FILES) \
 	assets/minecraft/models/item/diamond_boots.json \
 	assets/minecraft/models/item/frost_flood_boots.json \
 	assets/minecraft/models/item/leather_moccasins.json \
-	assets/minecraft/models/item/recurve_bow*.json \
 	assets/minecraft/models/item/crystal_bow*.json \
+	assets/minecraft/models/item/echo_bow*.json \
+	assets/minecraft/models/item/recurve_bow*.json \
 	assets/minecraft/textures/item/leather_moccasins*.png \
 	assets/minecraft/textures/item/frost_flood_boots.png \
-	assets/minecraft/textures/item/recurve_bow*.png \
 	assets/minecraft/textures/item/crystal_bow*.png \
+	assets/minecraft/textures/item/echo_bow*.png \
+	assets/minecraft/textures/item/recurve_bow*.png \
 	assets/minecraft/models/item/bow.json \
 
 phantasmal_FILES := $(DEFAULT_DATA_FILES) \
