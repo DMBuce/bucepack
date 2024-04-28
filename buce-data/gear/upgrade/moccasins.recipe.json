@@ -11,6 +11,7 @@
     "id": "minecraft:leather_boots",
     "components": {
       "minecraft:custom_model_data": 22183,
+      "minecraft:repair_cost": 1,
       "minecraft:item_name": "'Moccasins'",
 	  "minecraft:dyed_color": {
 		  "rgb": 14201473

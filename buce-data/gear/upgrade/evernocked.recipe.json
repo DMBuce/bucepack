@@ -11,6 +11,7 @@
     "id": "minecraft:bow",
     "components": {
       "minecraft:custom_model_data": 22185,
+      "minecraft:repair_cost": 1,
       "minecraft:item_name": "'Evernocked Bow'",
       "minecraft:enchantments": {
         "minecraft:infinity": 1,

@@ -11,6 +11,7 @@
     "id": "minecraft:bow",
     "components": {
       "minecraft:custom_model_data": 22184,
+      "minecraft:repair_cost": 1,
       "minecraft:item_name": "'Crystal Bow'",
       "minecraft:enchantments": {
         "minecraft:multishot": 1
