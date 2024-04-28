@@ -5,7 +5,6 @@ DATARESOURCEPACKFILES = \
 	crafting_turtle_box.zip \
 	oven_brick.zip \
 	phantasmal.zip \
-	gear_custom.zip \
 	gear_upgrade.zip \
 	#copper_overhaul.zip \
 
@@ -837,9 +836,6 @@ breeding_overhaul_FILES := $(DEFAULT_DATA_FILES) \
 
 poseable_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell find buce-data/poseable -type f | ./bin/ext2dir) \
-
-gear_custom_FILES := $(DEFAULT_DATA_FILES) \
-	$(shell find buce-data/gear/custom -type f | ./bin/ext2dir) \
 
 gear_upgrade_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell find buce-data/gear/upgrade -type f | ./bin/ext2dir) \

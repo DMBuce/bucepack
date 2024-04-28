@@ -1740,6 +1740,12 @@ drop 2 shells.
 ```
 data/minecraft/loot_tables/blocks/beetroots.json
 data/minecraft/loot_tables/blocks/cherry_leaves.json
+data/minecraft/loot_tables/blocks/infested_chiseled_stone_bricks.json
+data/minecraft/loot_tables/blocks/infested_cobblestone.json
+data/minecraft/loot_tables/blocks/infested_cracked_stone_bricks.json
+data/minecraft/loot_tables/blocks/infested_deepslate.json
+data/minecraft/loot_tables/blocks/infested_mossy_stone_bricks.json
+data/minecraft/loot_tables/blocks/infested_stone_bricks.json
 data/minecraft/loot_tables/blocks/infested_stone.json
 data/minecraft/loot_tables/blocks/jungle_leaves.json
 data/minecraft/loot_tables/blocks/wheat.json
@@ -2594,34 +2600,6 @@ pose.
 //[%collapsible]
 //====
 //====
-
-=== Custom Gear
-
-Adds custom items.
-
-Moccasins can be crafted from 4 rabbit hide and 2 rabbit feet.
-They give Speed II, Jump Boost II, and Step Assist.
-
-Frost and Flood Boots can be crafted from 2 diamonds and 1 each of
-powder snow, prismarine crystal, blue ice, and heart of the sea.
-They have Frost Walker I and Depth Strider.
-
-**Downloads**
-
-.https://github.com/DMBuce/bucepack/releases/latest/download/gear_custom.zip[`gear_custom.zip`]
-[%collapsible]
-====
-
-```
-assets/minecraft/models/item/leather_boots.json
-```
-
-====
-
-.https://github.com/DMBuce/bucepack/releases[All Releases & Changelogs]
-[%collapsible]
-====
-====
 
 === Upgradeable
 
