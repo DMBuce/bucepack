@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "item": "minecraft:budding_amethyst"
+  },
+  "base": {
+    "item": "minecraft:bow"
+  },
+  "result": {
+    "count": 1,
+    "id": "minecraft:bow",
+    "components": {
+      "minecraft:custom_model_data": 22184,
+      "minecraft:item_name": "'Crystal Bow'",
+      "minecraft:enchantments": {
+        "minecraft:multishot": 1
+      }
+    }
+  },
+  "template": {
+    "item": "minecraft:netherite_upgrade_smithing_template"
+  }
+}

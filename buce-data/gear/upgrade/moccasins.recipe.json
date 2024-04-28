@@ -1,0 +1,87 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "item": "minecraft:rabbit_foot"
+  },
+  "base": {
+    "item": "minecraft:rabbit_foot"
+  },
+  "result": {
+    "count": 1,
+    "id": "minecraft:leather_boots",
+    "components": {
+      "minecraft:custom_model_data": 22183,
+      "minecraft:item_name": "'Moccasins'",
+      "minecraft:attribute_modifiers": [
+        {
+          "type": "generic.armor",
+          "name": "generic.armor",
+          "slot": "feet",
+          "uuid": [
+            1748112070,
+            948193003,
+            -1561903410,
+            1308854036
+          ],
+          "amount": 1.0,
+          "operation": "add_value"
+        },
+        {
+          "type": "generic.movement_speed",
+          "name": "generic.movement_speed",
+          "slot": "feet",
+          "uuid": [
+            -1739252648,
+            -763214326,
+            -1592923154,
+            1933501344
+          ],
+          "amount": 0.4,
+          "operation": "add_multiplied_total"
+        },
+        {
+          "type": "generic.jump_strength",
+          "name": "generic.jump_strength",
+          "slot": "feet",
+          "uuid": [
+            -1739252648,
+            -763214326,
+            -1592923154,
+            1933501344
+          ],
+          "amount": 0.5,
+          "operation": "add_multiplied_base"
+        },
+        {
+          "type": "generic.safe_fall_distance",
+          "name": "generic.safe_fall_distance",
+          "slot": "feet",
+          "uuid": [
+            -1072669709,
+            -1359460688,
+            -1631808876,
+            928500926
+          ],
+          "amount": 2.0,
+          "operation": "add_value"
+        },
+        {
+          "type": "generic.step_height",
+          "name": "generic.step_height",
+          "slot": "feet",
+          "uuid": [
+            -1739252648,
+            -763214326,
+            -1592923154,
+            1933501344
+          ],
+          "amount": 0.5,
+          "operation": "add_value"
+        }
+      ]
+    }
+  },
+  "template": {
+    "item": "minecraft:netherite_upgrade_smithing_template"
+  }
+}

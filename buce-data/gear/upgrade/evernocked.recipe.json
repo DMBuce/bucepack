@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "item": "minecraft:echo_shard"
+  },
+  "base": {
+    "item": "minecraft:bow"
+  },
+  "result": {
+    "count": 1,
+    "id": "minecraft:bow",
+    "components": {
+      "minecraft:custom_model_data": 22183,
+      "minecraft:item_name": "'Evernocked Bow'",
+      "minecraft:enchantments": {
+        "minecraft:infinity": 1,
+        "minecraft:mending": 1
+      }
+    }
+  },
+  "template": {
+    "item": "minecraft:netherite_upgrade_smithing_template"
+  }
+}

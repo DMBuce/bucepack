@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "item": "minecraft:heart_of_the_sea"
+  },
+  "base": {
+    "item": "minecraft:diamond_boots"
+  },
+  "result": {
+    "count": 1,
+    "id": "minecraft:diamond_boots",
+    "components": {
+      "minecraft:custom_model_data": 22183,
+      "minecraft:item_name": "'Boots of Frost and Flood'",
+      "minecraft:enchantments": {
+        "minecraft:depth_strider": 3,
+        "minecraft:frost_walker": 2
+      }
+    }
+  },
+  "template": {
+    "item": "minecraft:netherite_upgrade_smithing_template"
+  }
+}
