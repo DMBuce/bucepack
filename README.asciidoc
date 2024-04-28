@@ -1564,6 +1564,13 @@ Other enchantments are destroyed when upgrading this way.
 .https://github.com/DMBuce/bucepack/releases/latest/download/smithing_upgrade.zip[`smithing_upgrade.zip`]
 [%collapsible]
 ====
+
+```
+assets/minecraft/models/item/bow.json
+assets/minecraft/models/item/diamond_boots.json
+assets/minecraft/models/item/leather_boots.json
+```
+
 ====
 
 .https://github.com/DMBuce/bucepack/releases[All Releases & Changelogs]
@@ -1646,11 +1653,16 @@ data/minecraft/recipes/furnace.json
 ====
 ====
 
-=== Turtle Boxes
+=== Shell Box Crafting
 
-Lets you craft green shulker boxes from turtle shells.
+Lets you craft green shulker boxes from shells.
+Green or pink shulker boxes can be crafted by using
+turtle shells or nautilus shells in the recipe
+instead of shulker shells.
+Brown shulker boxes can be crafted
+by surrounding a chest with armadillo scutes.
 
-image::https://i.imgur.com/4GLS89K.png[Turtle Boxes]
+image::https://i.imgur.com/4GLS89K.png[Shell Boxes]
 
 When installed as a resource pack,
 green shulker boxes have a turtle shell

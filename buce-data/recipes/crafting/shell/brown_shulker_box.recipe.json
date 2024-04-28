@@ -6,19 +6,15 @@
       "item": "minecraft:chest"
     },
     "-": {
-      "item": "minecraft:shulker_shell"
+      "item": "minecraft:armadillo_scute"
     }
   },
   "pattern": [
-    "-",
-    "#",
-    "-"
+    "---",
+    "-#-",
+    "---"
   ],
   "result": {
-    "count": 1,
-    "id": "minecraft:shulker_box",
-    "components": {
-      "minecraft:fire_resistant": {}
-    }
+    "id": "minecraft:brown_shulker_box"
   }
 }

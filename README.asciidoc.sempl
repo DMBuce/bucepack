@@ -637,11 +637,16 @@ and use the iron to sidegrade the furnace into a blast furnace.
 
 {!./bin/packsummary oven_tier}
 
-=== Turtle Boxes
+=== Shell Box Crafting
 
-Lets you craft green shulker boxes from turtle shells.
+Lets you craft green shulker boxes from shells.
+Green or pink shulker boxes can be crafted by using
+turtle shells or nautilus shells in the recipe
+instead of shulker shells.
+Brown shulker boxes can be crafted
+by surrounding a chest with armadillo scutes.
 
-image::https://i.imgur.com/4GLS89K.png[Turtle Boxes]
+image::https://i.imgur.com/4GLS89K.png[Shell Boxes]
 
 When installed as a resource pack,
 green shulker boxes have a turtle shell

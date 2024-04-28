@@ -2,7 +2,7 @@
 DATARESOURCEPACKFILES = \
 	cutting_wood.zip \
 	pig_armor.zip \
-	crafting_turtle_box.zip \
+	crafting_shell_box.zip \
 	oven_brick.zip \
 	phantasmal.zip \
 	smithing_upgrade.zip \
@@ -916,11 +916,11 @@ crafting_plentiful_FILES := $(DEFAULT_DATA_FILES) \
 	data/minecraft/recipes/shield.json \
 	data/minecraft/recipes/chain.json \
 
-crafting_turtle_box_FILES := $(DEFAULT_DATA_FILES) \
-	$(shell find buce-data/recipes/crafting/turtle -type f | ./bin/ext2dir) \
+crafting_shell_box_FILES := $(DEFAULT_DATA_FILES) \
+	$(shell find buce-data/recipes/crafting/shell -type f | ./bin/ext2dir) \
 	assets/minecraft/textures/block/green_shulker_box.png \
 	assets/minecraft/textures/entity/shulker/shulker_green.png \
-	assets/minecraft/lang/en_us_crafting_turtle_box.json \
+	assets/minecraft/lang/en_us_crafting_shell_box.json \
 
 crafting_unpacked_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell find buce-data/recipes/crafting/unpacked -type f | ./bin/ext2dir) \
@@ -1622,7 +1622,7 @@ crafting_unpacked.zip: $(crafting_unpacked_FILES)
 	zip $@ pack.png pack.mcmeta $^
 	./bin/ziprename _$(@:.zip=) "" $@
 
-crafting_turtle_box.zip: $(crafting_turtle_box_FILES)
+crafting_shell_box.zip: $(crafting_shell_box_FILES)
 	cp meta/$(@:.zip=.png) pack.png
 	sempl meta/$(@:.zip=.mcmeta.sempl) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^

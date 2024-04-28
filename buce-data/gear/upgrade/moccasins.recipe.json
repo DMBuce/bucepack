@@ -16,6 +16,7 @@
 	  "minecraft:dyed_color": {
 		  "rgb": 14201473
 	  },
+      "minecraft:enchantments": {},
       "minecraft:lore": [
         "'§r§7Speed II'",
         "'§r§7Jump Boost II'",
