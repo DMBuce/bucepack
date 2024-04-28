@@ -11,9 +11,12 @@
   ],
   "result": {
     "id": "minecraft:item_frame",
-	"components": {
-		"custom_model_data": 22183,
-		"entity_data": {"id":"minecraft:item_frame","Invisible":1}
-	}
+    "components": {
+      "custom_model_data": 22183,
+      "entity_data": {
+        "id": "minecraft:item_frame",
+        "Invisible": 1
+      }
+    }
   }
 }
