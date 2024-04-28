@@ -846,6 +846,7 @@ gear_custom_FILES := $(DEFAULT_DATA_FILES) \
 
 gear_upgrade_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell find buce-data/gear/upgrade -type f | ./bin/ext2dir) \
+	data/minecraft/recipes/shulker_box.json \
 
 phantasmal_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell find buce-data/phantasmal -type f | ./bin/ext2dir) \
@@ -911,6 +912,7 @@ crafting_plentiful_FILES := $(DEFAULT_DATA_FILES) \
 
 crafting_turtle_box_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell find buce-data/recipes/crafting/turtle -type f | ./bin/ext2dir) \
+	data/minecraft/recipes/shulker_box.json \
 	assets/minecraft/textures/block/green_shulker_box.png \
 	assets/minecraft/textures/entity/shulker/shulker_green.png \
 	assets/minecraft/lang/en_us_crafting_turtle_box.json \
