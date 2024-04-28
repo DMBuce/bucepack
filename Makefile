@@ -518,7 +518,7 @@ farmable_FILES := $(DEFAULT_DATA_FILES) \
 	data/buce/advancements/farmable.json \
 	data/minecraft/loot_tables/blocks/beetroots.json \
 	data/minecraft/loot_tables/blocks/cherry_leaves.json \
-	data/minecraft/loot_tables/blocks/infested_stone.json \
+	data/minecraft/loot_tables/blocks/infested_*.json \
 	data/minecraft/loot_tables/blocks/jungle_leaves.json \
 	data/minecraft/loot_tables/blocks/wheat.json \
 	data/minecraft/loot_tables/entities/cave_spider.json \
@@ -527,7 +527,6 @@ farmable_FILES := $(DEFAULT_DATA_FILES) \
 	data/minecraft/loot_tables/entities/shulker.json \
 	data/minecraft/loot_tables/entities/sniffer.json \
 	data/minecraft/loot_tables/gameplay/sniffer_digging.json \
-	data/minecraft/recipes/sand.json \
 	data/minecraft/tags/blocks/azalea_grows_on.json \
 	data/minecraft/tags/blocks/bamboo_plantable_on.json \
 	data/minecraft/tags/blocks/dead_bush_may_place_on.json \
