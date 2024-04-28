@@ -2,11 +2,11 @@
   "pack": {
     "pack_format": {./cache/version-data.txt},
     "supported_formats": {./cache/version-supported.txt},
-    "description": "Buce's Custom Tools: New items"
+    "description": "Buce's Custom Gear: Custom items"
   },
   "root": {
-    "title": "Custom Tools",
-    "explanation": "New unique items",
+    "title": "Custom Gear",
+    "explanation": "Extra items",
     "icon": {
       "id": "minecraft:lead",
 	  "components": {

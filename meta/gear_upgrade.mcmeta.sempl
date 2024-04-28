@@ -1,0 +1,14 @@
+{
+  "pack": {
+    "pack_format": {./cache/version-data.txt},
+    "supported_formats": {./cache/version-supported.txt},
+    "description": "Buce's Upgrades: Smithing upgrades"
+  },
+  "root": {
+    "title": "Custom Gear",
+    "explanation": "Extra smithing upgrades",
+    "icon": {
+      "id": "minecraft:netherite_upgrade_smithing_template"
+    }
+  }
+}

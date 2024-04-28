@@ -5,7 +5,8 @@ DATARESOURCEPACKFILES = \
 	crafting_turtle_box.zip \
 	oven_brick.zip \
 	phantasmal.zip \
-	tool_custom.zip \
+	gear_custom.zip \
+	gear_upgrade.zip \
 	#copper_overhaul.zip \
 
 RESOURCEPACKFILES = \
@@ -837,11 +838,14 @@ breeding_overhaul_FILES := $(DEFAULT_DATA_FILES) \
 poseable_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell find buce-data/poseable -type f | ./bin/ext2dir) \
 
-tool_custom_FILES := $(DEFAULT_DATA_FILES) \
-	$(shell find buce-data/tool/custom -type f | ./bin/ext2dir) \
+gear_custom_FILES := $(DEFAULT_DATA_FILES) \
+	$(shell find buce-data/gear/custom -type f | ./bin/ext2dir) \
 	assets/minecraft/models/item/leather_boots.json \
 	assets/minecraft/models/item/leather_moccasins.json \
 	assets/minecraft/textures/item/leather_moccasins*.png \
+
+gear_upgrade_FILES := $(DEFAULT_DATA_FILES) \
+	$(shell find buce-data/gear/upgrade -type f | ./bin/ext2dir) \
 
 phantasmal_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell find buce-data/phantasmal -type f | ./bin/ext2dir) \
@@ -1803,7 +1807,13 @@ poseable.zip: $(poseable_FILES)
 	zip $@ pack.png pack.mcmeta $^
 	./bin/ziprename _$(@:.zip=) "" $@
 
-tool_custom.zip: $(tool_custom_FILES)
+gear_upgrade.zip: $(gear_upgrade_FILES)
+	cp meta/$(@:.zip=.png) pack.png
+	sempl meta/$(@:.zip=.mcmeta.sempl) pack.mcmeta
+	zip $@ pack.png pack.mcmeta $^
+	./bin/ziprename _$(@:.zip=) "" $@
+
+gear_custom.zip: $(gear_custom_FILES)
 	cp meta/$(@:.zip=.png) pack.png
 	sempl meta/$(@:.zip=.mcmeta.sempl) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^

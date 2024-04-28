@@ -1125,12 +1125,24 @@ pose.
 //
 //{!./bin/packsummary heirlooms}
 
-=== Moccasins
+=== Custom Gear
 
-Adds rabbit hide footwear with Speed II, Jump Boost II, and Step Assist
-effects.
+Adds custom items.
 
-{!./bin/packsummary tool_custom}
+Moccasins can be crafted from 4 rabbit hide and 2 rabbit feet.
+They give Speed II, Jump Boost II, and Step Assist.
+
+Frost and Flood Boots can be crafted from 2 diamonds and 1 each of
+powder snow, prismarine crystal, blue ice, and heart of the sea.
+They have Frost Walker I and Depth Strider.
+
+{!./bin/packsummary gear_custom}
+
+=== Gear Upgrades
+
+Adds more smithing upgrades that use the Netherite Upgrade Smithing Template.
+
+A trident can be upgraded with a fishing rod to give extra reach.
 
 === Smart Allays
 

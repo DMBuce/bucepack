@@ -2593,14 +2593,20 @@ pose.
 //====
 //====
 
-=== Moccasins
+=== Custom Gear
 
-Adds rabbit hide footwear with Speed II, Jump Boost II, and Step Assist
-effects.
+Adds custom items.
+
+Moccasins can be crafted from 4 rabbit hide and 2 rabbit feet.
+They give Speed II, Jump Boost II, and Step Assist.
+
+Frost and Flood Boots can be crafted from 2 diamonds and 1 each of
+powder snow, prismarine crystal, blue ice, and heart of the sea.
+They have Frost Walker I and Depth Strider.
 
 **Downloads**
 
-.https://github.com/DMBuce/bucepack/releases/latest/download/tool_custom.zip[`tool_custom.zip`]
+.https://github.com/DMBuce/bucepack/releases/latest/download/gear_custom.zip[`gear_custom.zip`]
 [%collapsible]
 ====
 
@@ -2614,6 +2620,12 @@ assets/minecraft/models/item/leather_boots.json
 [%collapsible]
 ====
 ====
+
+=== Gear Upgrades
+
+Adds more smithing upgrades that use the Netherite Upgrade Smithing Template.
+
+A trident can be upgraded with a fishing rod to give extra reach.
 
 === Smart Allays
 
