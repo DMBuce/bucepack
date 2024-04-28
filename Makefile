@@ -518,6 +518,7 @@ farmable_FILES := $(DEFAULT_DATA_FILES) \
 	data/buce/advancements/farmable.json \
 	data/minecraft/loot_tables/blocks/beetroots.json \
 	data/minecraft/loot_tables/blocks/cherry_leaves.json \
+	data/minecraft/loot_tables/blocks/infested_stone.json \
 	data/minecraft/loot_tables/blocks/jungle_leaves.json \
 	data/minecraft/loot_tables/blocks/wheat.json \
 	data/minecraft/loot_tables/entities/cave_spider.json \
@@ -840,13 +841,21 @@ poseable_FILES := $(DEFAULT_DATA_FILES) \
 
 gear_custom_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell find buce-data/gear/custom -type f | ./bin/ext2dir) \
-	assets/minecraft/models/item/leather_boots.json \
-	assets/minecraft/models/item/leather_moccasins.json \
-	assets/minecraft/textures/item/leather_moccasins*.png \
 
 gear_upgrade_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell find buce-data/gear/upgrade -type f | ./bin/ext2dir) \
-	data/minecraft/recipes/shulker_box.json \
+	assets/minecraft/models/item/bow.json \
+	assets/minecraft/models/item/leather_boots.json \
+	assets/minecraft/models/item/diamond_boots.json \
+	assets/minecraft/models/item/frost_flood_boots.json \
+	assets/minecraft/models/item/leather_moccasins.json \
+	assets/minecraft/models/item/recurve_bow*.json \
+	assets/minecraft/models/item/crystal_bow*.json \
+	assets/minecraft/textures/item/leather_moccasins*.png \
+	assets/minecraft/textures/item/frost_flood_boots.png \
+	assets/minecraft/textures/item/recurve_bow*.png \
+	assets/minecraft/textures/item/crystal_bow*.png \
+	assets/minecraft/models/item/bow.json \
 
 phantasmal_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell find buce-data/phantasmal -type f | ./bin/ext2dir) \
@@ -912,7 +921,6 @@ crafting_plentiful_FILES := $(DEFAULT_DATA_FILES) \
 
 crafting_turtle_box_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell find buce-data/recipes/crafting/turtle -type f | ./bin/ext2dir) \
-	data/minecraft/recipes/shulker_box.json \
 	assets/minecraft/textures/block/green_shulker_box.png \
 	assets/minecraft/textures/entity/shulker/shulker_green.png \
 	assets/minecraft/lang/en_us_crafting_turtle_box.json \

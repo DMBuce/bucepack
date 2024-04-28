@@ -4,7 +4,7 @@
     "item": "minecraft:rabbit_foot"
   },
   "base": {
-    "item": "minecraft:rabbit_foot"
+    "item": "minecraft:rabbit_hide"
   },
   "result": {
     "count": 1,
@@ -12,6 +12,9 @@
     "components": {
       "minecraft:custom_model_data": 22183,
       "minecraft:item_name": "'Moccasins'",
+	  "minecraft:dyed_color": {
+		  "rgb": 14201473
+	  },
       "minecraft:attribute_modifiers": [
         {
           "type": "generic.armor",

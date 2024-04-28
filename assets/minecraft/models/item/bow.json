@@ -98,14 +98,14 @@
       "predicate": {
         "custom_model_data": 22183
       },
-      "model": "item/relic_bow"
+      "model": "item/recurve_bow"
     },
     {
       "predicate": {
         "custom_model_data": 22183,
         "pulling": 1
       },
-      "model": "item/relic_bow_pulling_0"
+      "model": "item/recurve_bow_pulling_0"
     },
     {
       "predicate": {
@@ -113,7 +113,7 @@
         "pulling": 1,
         "pull": 0.65
       },
-      "model": "item/relic_bow_pulling_1"
+      "model": "item/recurve_bow_pulling_1"
     },
     {
       "predicate": {
@@ -121,7 +121,36 @@
         "pulling": 1,
         "pull": 0.9
       },
-      "model": "item/relic_bow_pulling_2"
+      "model": "item/recurve_bow_pulling_2"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 22184
+      },
+      "model": "item/crystal_bow"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 22184,
+        "pulling": 1
+      },
+      "model": "item/crystal_bow_pulling_0"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 22184,
+        "pulling": 1,
+        "pull": 0.65
+      },
+      "model": "item/crystal_bow_pulling_1"
+    },
+    {
+      "predicate": {
+        "custom_model_data": 22184,
+        "pulling": 1,
+        "pull": 0.9
+      },
+      "model": "item/crystal_bow_pulling_2"
     }
   ]
 }

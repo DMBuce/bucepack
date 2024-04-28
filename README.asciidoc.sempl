@@ -1138,11 +1138,28 @@ They have Frost Walker I and Depth Strider.
 
 {!./bin/packsummary gear_custom}
 
-=== Gear Upgrades
+=== Upgradeable
 
 Adds more smithing upgrades that use the Netherite Upgrade Smithing Template.
 
-A trident can be upgraded with a fishing rod to give extra reach.
+https://imgur.com/a/u60BcE9[Image album of the upgrades].
+
+Upgrading a trident with a fishing rod gives it extra reach.
+
+Upgrading diamond boots with a heart of the sea
+creates Boots of Frost and Flood with depth strider and frost walker.
+Other enchantments are destroyed when upgrading with this recipe.
+
+Smithing rabbit hide with a rabbit foot creates dyeable Moccasins
+with Speed II, Jump Boost II, and Step Assist.
+
+Upgrading a bow with an echo shard creates an Evernocked Bow
+with infinity and mending.
+Other enchantments are destroyed when upgrading with this recipe.
+
+If <<loot-overhaul,Loot Overhaul>> or another source of budding amethyst is installed,
+upgrading a bow with budding amethyst creates a Crystal Bow with multishot.
+Other enchantments are destroyed when upgrading this way.
 
 === Smart Allays
 
