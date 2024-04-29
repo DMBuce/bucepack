@@ -1,19 +1,17 @@
 #!/usr/bin/env sempl
 #!end sempl env
 {
-  "type": "minecraft:crafting_shapeless",
-  "category": "misc",
-  "ingredients": [
-    [
-      {{\}
-        "item": "minecraft:{!./bin/allitems | grep -E 'chest_(boat|raft)$'}"{\}
-      },
-      {
-        "item": "minecraft:chest_minecart"
-      }
-    ]
+  "type": "minecraft:stonecutting",
+  "ingredient": [
+    {{\}
+      "item": "minecraft:{!./bin/allitems | grep -E 'chest_(boat|raft)$'}"{\}
+    },
+    {
+      "item": "minecraft:chest_minecart"
+    }
   ],
   "result": {
+    "count": 1,
     "id": "minecraft:chest"
   }
 }

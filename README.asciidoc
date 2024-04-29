@@ -2591,15 +2591,10 @@ Various vehicle changes.
 When a player in a minecart fuels a furnace cart,
 the furnace cart moves towards the player instead of away from them.
 
-Minecarts with a chest/furnace/hopper/etc. block in them can be smelted into a
-normal minecart.
-
-Minecarts with a chest/furnace/hopper/etc. block in them can be crafted into
-the block.
+Boats, boats with chests, and minecarts with a block in them
+can be cut into planks, chests, minecarts, or the block as appropriate.
 
 Rail recipes are changed to have a stick in the middle.
-
-Boats can be cut into planks and chest boats can be crafted into chests.
 
 **Downloads**
 
