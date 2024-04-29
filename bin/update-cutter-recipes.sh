@@ -6,7 +6,7 @@ cd "$gitroot"
 
 # define some data
 latest="$(./bin/latest)" || exit
-dir="$gitroot/buce-data/recipes/cutting"
+dir="$gitroot/buce-data/cutting"
 logtypes=(
 	$(join -t _ \
 		<(./bin/allitems | grep _log) \

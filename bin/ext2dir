@@ -3,13 +3,13 @@
 #
 #  data/buce/artifact/splendor/glowing/activate.function.mcfunction
 #  buce-data/artifact/splendor/glowing/trigger.advancement.json
-#  buce-data/recipes/crafting/plentiful/solid_door.item.tag.json
+#  buce-data/crafting/plentiful/solid_door.item.tag.json
 #
 # to
 #
 #  data/buce/functions/artifact/splendor/glowing/activate.mcfunction
 #  data/buce/advancementsartifact/splendor/glowing/trigger.json
-#  data/buce/tags/items/recipes/crafting/plentiful/solid_door.json
+#  data/buce/tags/items/crafting/plentiful/solid_door.json
 #
 
 sed -r '

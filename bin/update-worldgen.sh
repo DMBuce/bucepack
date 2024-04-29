@@ -6,7 +6,7 @@ cd "$gitroot"
 
 # define some data
 latest="$(./bin/latest)" || exit
-dir="$gitroot/buce-data/recipes/crafting"
+dir="$gitroot/buce-data/crafting"
 featuredir="data/minecraft/worldgen/configured_feature"
 logtypes=(
 	$(join -t _ \

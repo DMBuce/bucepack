@@ -6,7 +6,7 @@ cd "$gitroot"
 
 # define some data
 latest="$(./bin/latest)" || exit
-dir="$gitroot/buce-data/recipes/crafting"
+dir="$gitroot/buce-data/crafting"
 
 # increase output of some recipes
 while read block count; do
@@ -76,10 +76,10 @@ done <<< '
 	misc     cobweb            string
 	misc     bamboo_block      bamboo
 '
-sed -i '/"count":/ s/9/18/' buce-data/recipes/crafting/unpacked/3x3_bamboo.recipe.json
+sed -i '/"count":/ s/9/18/' buce-data/crafting/unpacked/3x3_bamboo.recipe.json
 sed -i '/bamboo_block/ {
 	s/$/\n    },\n    {\n      "item": "minecraft:bamboo_block"/
-}' buce-data/recipes/crafting/unpacked/3x3_bamboo.recipe.json
+}' buce-data/crafting/unpacked/3x3_bamboo.recipe.json
 
 # generate 2x2 uncrafting recipes
 while read category input output; do

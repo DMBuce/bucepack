@@ -785,7 +785,7 @@ worldgen_sandy_husk_FILES := $(DEFAULT_DATA_FILES) \
 	data/minecraft/loot_tables/entities/husk.json \
 
 worldgen_trees_FILES := $(DEFAULT_DATA_FILES) \
-	$(shell find buce-data/recipes/crafting/trees/ -type f | ./bin/ext2dir) \
+	$(shell find buce-data/crafting/trees/ -type f | ./bin/ext2dir) \
 	$(shell ls data/minecraft/loot_tables/blocks/*_{wood,hyphae}.json | ./bin/ext2dir) \
 	$(shell grep -rl data/minecraft/worldgen/configured_feature/ -e'"minecraft:.*_'{wood,hyphae}'"' | ./bin/ext2dir) \
 	data/minecraft/tags/blocks/overworld_natural_logs.json \
@@ -838,7 +838,7 @@ poseable_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell find buce-data/poseable -type f | ./bin/ext2dir) \
 
 smithing_upgrade_FILES := $(DEFAULT_DATA_FILES) \
-	$(shell find buce-data/recipes/smithing/upgrade -type f | ./bin/ext2dir) \
+	$(shell find buce-data/smithing/upgrade -type f | ./bin/ext2dir) \
 	assets/minecraft/models/item/bow.json \
 	assets/minecraft/models/item/leather_boots.json \
 	assets/minecraft/models/item/diamond_boots.json \
@@ -885,7 +885,7 @@ crafting_colorful_FILES := $(DEFAULT_DATA_FILES) \
 	#data/minecraft/recipes/*_wool.json \
 
 crafting_plentiful_FILES := $(DEFAULT_DATA_FILES) \
-	$(shell find buce-data/recipes/crafting/plentiful -type f | ./bin/ext2dir) \
+	$(shell find buce-data/crafting/plentiful -type f | ./bin/ext2dir) \
 	$(wildcard data/minecraft/recipes/*_stairs.json) \
 	$(wildcard data/minecraft/recipes/*_fence.json) \
 	$(wildcard data/minecraft/recipes/*_fence_gate.json) \
@@ -917,16 +917,16 @@ crafting_plentiful_FILES := $(DEFAULT_DATA_FILES) \
 	data/minecraft/recipes/chain.json \
 
 crafting_shell_box_FILES := $(DEFAULT_DATA_FILES) \
-	$(shell find buce-data/recipes/crafting/shell -type f | ./bin/ext2dir) \
+	$(shell find buce-data/crafting/shell -type f | ./bin/ext2dir) \
 	assets/minecraft/textures/block/green_shulker_box.png \
 	assets/minecraft/textures/entity/shulker/shulker_green.png \
 	assets/minecraft/lang/en_us_crafting_shell_box.json \
 
 crafting_unpacked_FILES := $(DEFAULT_DATA_FILES) \
-	$(shell find buce-data/recipes/crafting/unpacked -type f | ./bin/ext2dir) \
+	$(shell find buce-data/crafting/unpacked -type f | ./bin/ext2dir) \
 
 crafting_workstation_FILES := $(DEFAULT_DATA_FILES) \
-	$(shell find buce-data/recipes/crafting/workstation -type f | ./bin/ext2dir) \
+	$(shell find buce-data/crafting/workstation -type f | ./bin/ext2dir) \
 	data/minecraft/recipes/barrel.json \
 	data/minecraft/recipes/blast_furnace.json \
 	data/minecraft/recipes/cartography_table.json \
@@ -938,13 +938,13 @@ crafting_workstation_FILES := $(DEFAULT_DATA_FILES) \
 	data/minecraft/recipes/stonecutter.json \
 
 cutting_declutter_FILES := $(DEFAULT_DATA_FILES) \
-	$(shell find buce-data/recipes/cutting/declutter -type f | ./bin/ext2dir) \
+	$(shell find buce-data/cutting/declutter -type f | ./bin/ext2dir) \
 
 cutting_smooth_cracked_FILES := $(DEFAULT_DATA_FILES) \
-	$(shell find buce-data/recipes/cutting/smooth_cracked -type f | ./bin/ext2dir) \
+	$(shell find buce-data/cutting/smooth_cracked -type f | ./bin/ext2dir) \
 
 cutting_wood_FILES := $(DEFAULT_DATA_FILES) \
-	$(shell find buce-data/recipes/cutting/wood -type f | ./bin/ext2dir) \
+	$(shell find buce-data/cutting/wood -type f | ./bin/ext2dir) \
 	$(wildcard assets/minecraft/lang/*_cutting_wood.json) \
 
 copper_overhaul_FILES := $(DEFAULT_DATA_FILES) \

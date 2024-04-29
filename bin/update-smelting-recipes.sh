@@ -6,7 +6,7 @@ cd "$gitroot"
 
 # define some data
 latest="$(./bin/latest)" || exit
-#dir="$gitroot/buce-data/recipes/blasting"
+#dir="$gitroot/buce-data/blasting"
 
 # plentiful blasting
 for file in "$latest.jar"/data/minecraft/recipes/*nugget_from_blasting*.json; do
