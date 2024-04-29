@@ -4,10 +4,11 @@ pools:
     entries:
       - { type: item, weight: 10, item: rabbit_hide }
       - { type: item, weight: 10, item: rabbit_foot }
-      - { type: loot_table, weight: 10, table: heads/fae }
+      - { type: item, weight: 10, item: chicken }
       - { type: item, weight: 10, item: feather }
       - { type: item, weight: 10, item: rotten_flesh }
       - { type: item, weight: 10, item: string }
-      - { type: loot_table, weight: 2, table: heads/phantom_membrane }
+      - { type: loot_table, weight: 10, table: heads/fae }
+      - { type: item, weight: 2,  item: phantom_membrane }
 
 random_sequence: "minecraft:gameplay/cat_morning_gift"
