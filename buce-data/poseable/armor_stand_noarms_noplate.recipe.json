@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "minecraft:armor_stand"
+    },
+    {
+      "item": "minecraft:phantom_membrane"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "minecraft:armor_stand",
+    "components": {
+      "custom_model_data": 22210,
+      "minecraft:entity_data": {
+        "id": "minecraft:armor_stand",
+        "ShowArms": 0,
+        "NoBasePlate": 1,
+        "Pose": {}
+      }
+    }
+  }
+}

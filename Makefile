@@ -6,6 +6,7 @@ DATARESOURCEPACKFILES = \
 	oven_brick.zip \
 	phantasmal.zip \
 	smithing_upgrade.zip \
+	poseable.zip \
 	#copper_overhaul.zip \
 
 RESOURCEPACKFILES = \
@@ -76,7 +77,6 @@ DATAPACKFILES = \
 	no_treasure_maps.zip \
 	oven_tier.zip \
 	phantasmal_end.zip \
-	poseable.zip \
 	shearless.zip \
 	smart_allays.zip \
 	speedy_paths.zip \
@@ -836,6 +836,10 @@ breeding_overhaul_FILES := $(DEFAULT_DATA_FILES) \
 
 poseable_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell find buce-data/poseable -type f | ./bin/ext2dir) \
+	data/minecraft/loot_tables/entities/armor_stand.json \
+	assets/minecraft/models/item/armor_stand.json \
+	assets/minecraft/models/item/armor_stand*arms*plate.json \
+	assets/minecraft/textures/item/armor_stand*arms*plate.png \
 
 smithing_upgrade_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell find buce-data/smithing/upgrade -type f | ./bin/ext2dir) \

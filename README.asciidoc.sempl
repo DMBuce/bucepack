@@ -597,6 +597,9 @@ If <<loot-overhaul,Loot Overhaul>> or another source of budding amethyst is inst
 upgrading a bow with budding amethyst creates a **Crystal Bow** with multishot.
 Other enchantments are destroyed when upgrading this way.
 
+When installed as a resource pack,
+many of the upgraded items have custom textures.
+
 {!./bin/packsummary smithing_upgrade}
 
 === Brick Oven
@@ -1141,11 +1144,16 @@ Boats can be cut into planks and chest boats can be crafted into chests.
 === Poseable
 
 Lets you pose armor stands.
-
-Armor stands placed while sneaking have arms and no base plate.
-
 Sneaking while adding or removing an item from an armor stand changes its
 pose.
+
+Crafting an armor stand with two sticks and/or a phantom membrane
+gives it arms and/or hides the baseplate.
+Placed armor stands drop the sticks and membranes they were crafted with
+when broken.
+
+When installed as a resource pack,
+the item's texture will show the arms and/or baseplate as appropriate.
 
 {!./bin/packsummary poseable}
 

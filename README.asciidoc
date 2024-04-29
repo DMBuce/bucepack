@@ -2617,14 +2617,16 @@ data/minecraft/recipes/detector_rail.json
 === Poseable
 
 Lets you pose armor stands.
-
-Armor stands placed while sneaking have arms and no base plate.
-
 Sneaking while adding or removing an item from an armor stand changes its
 pose.
 
+Crafting an armor stand with two sticks and/or a phantom membrane
+gives it arms and/or hides the baseplate.
+Placed armor stands drop the sticks and membranes they were crafted with
+when broken.
+
 When installed as a resource pack,
-armor stand items have a texture showing whether it has arms or a baseplate.
+the item's texture will show the arms and/or baseplate as appropriate.
 
 **Downloads**
 
