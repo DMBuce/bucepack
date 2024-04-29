@@ -576,6 +576,10 @@ See <<language-support,Language Support>> for details.
 
 Adds more smithing upgrades that use the Netherite Upgrade Smithing Template.
 
+Upgrade templates can be crafted
+using either an upgrade template like normal or a netherite ingot,
+so it's not necessary to find them in bastions.
+
 https://imgur.com/a/u60BcE9[Image album of the upgrades].
 
 Upgrading a trident with a fishing rod gives it extra reach.
@@ -1209,11 +1213,7 @@ or take an item from it.
 === Debugless
 
 Reduces the amount of info in the debug screen
-//and gives some in-game ways of obtaining player coordinates.
-and gives some in-game ways of measuring distances.
-
-//A player holding a map or compass in the offhand
-//can see their coordinates.
+and gives some in-game ways of measuring distance and lighting.
 
 A player holding a lodestone compass in the offhand
 can see the distance to the lodestone.

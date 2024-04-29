@@ -843,6 +843,7 @@ poseable_FILES := $(DEFAULT_DATA_FILES) \
 
 smithing_upgrade_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell find buce-data/smithing/upgrade -type f | ./bin/ext2dir) \
+	data/minecraft/recipes/netherite_upgrade_smithing_template.json \
 	assets/minecraft/models/item/bow.json \
 	assets/minecraft/models/item/leather_boots.json \
 	assets/minecraft/models/item/diamond_boots.json \
