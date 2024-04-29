@@ -52,7 +52,7 @@
           },
           {
             "type": "player.entity_interaction_range",
-            "name": "player.entity_interaction_range",
+            "name": "Trident Reach",
             "slot": "mainhand",
             "uuid": [
               1877133967,
@@ -65,7 +65,7 @@
           },
           {
             "type": "player.block_interaction_range",
-            "name": "player.block_interaction_range",
+            "name": "Trident Reach",
             "slot": "mainhand",
             "uuid": [
               633552556,
@@ -78,7 +78,7 @@
           },
           {
             "type": "player.block_interaction_range",
-            "name": "player.block_interaction_range",
+            "name": "Trident Reach",
             "slot": "offhand",
             "uuid": [
               633552556,

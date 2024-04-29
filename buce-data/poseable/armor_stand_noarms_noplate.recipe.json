@@ -12,6 +12,9 @@
   "result": {
     "count": 1,
     "id": "minecraft:armor_stand",
+    "minecraft:lore": [
+      "'§r§7Hidden Base Plate'"
+    ],
     "components": {
       "custom_model_data": 22210,
       "minecraft:entity_data": {

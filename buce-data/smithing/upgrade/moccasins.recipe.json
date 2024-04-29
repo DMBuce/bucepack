@@ -13,7 +13,8 @@
       "minecraft:custom_model_data": 22183,
       "minecraft:item_name": "'Moccasins'",
 	  "minecraft:dyed_color": {
-		  "rgb": 14201473
+		  "rgb": 14201473,
+		  "show_in_tooltip": false
 	  },
       "minecraft:lore": [
         "'§r§7Speed II'",
@@ -36,7 +37,7 @@
         },
         {
           "type": "generic.movement_speed",
-          "name": "generic.movement_speed",
+          "name": "Moccasin Speed",
           "slot": "feet",
           "uuid": [
             -1739252648,
@@ -49,7 +50,7 @@
         },
         {
           "type": "generic.jump_strength",
-          "name": "generic.jump_strength",
+          "name": "Moccasin Jumping",
           "slot": "feet",
           "uuid": [
             -1739252648,
@@ -62,7 +63,7 @@
         },
         {
           "type": "generic.safe_fall_distance",
-          "name": "generic.safe_fall_distance",
+          "name": "Moccasin Falling",
           "slot": "feet",
           "uuid": [
             -1072669709,
@@ -75,7 +76,7 @@
         },
         {
           "type": "generic.step_height",
-          "name": "generic.step_height",
+          "name": "Moccasin Stepping",
           "slot": "feet",
           "uuid": [
             -1739252648,
