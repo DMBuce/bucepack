@@ -868,7 +868,6 @@ phantasmal_FILES := $(DEFAULT_DATA_FILES) \
 	assets/minecraft/textures/item/light_* \
 	data/minecraft/loot_tables/entities/phantom.json \
 	#data/buce/tags/items/relic/templates.json \
-	#data/buce/loot_tables/heads/phantom_membrane_phantasmal.json \
 
 phantasmal_end_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell find buce-data/phantasmal_end -type f | ./bin/ext2dir) \
@@ -1040,20 +1039,21 @@ copper_tech_FILES := $(DEFAULT_DATA_FILES) \
 buce-data/heads/*.loot_table.json.yaml: buce-data/heads/heads.dat
 
 heads_fae_FILES := $(DEFAULT_DATA_FILES) \
-	data/minecraft/loot_tables/gameplay/cat_morning_gift.json \
 	data/buce/loot_tables/heads/fae.json \
-	data/buce/loot_tables/heads/phantom_membrane.json \
-	#data/buce/loot_tables/heads/test.json \
+	data/minecraft/loot_tables/blocks/player_head.json \
+	data/minecraft/loot_tables/gameplay/cat_morning_gift.json \
 
 data/minecraft/loot_tables/gameplay/hero_of_the_village/%_gift.json.yaml: buce-data/heads/heads.dat
 	./bin/update-villager-gifts.sh
 
 heads_golem_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell find data/minecraft/loot_tables/gameplay/hero_of_the_village -type f | ./bin/ext2dir) \
+	data/minecraft/loot_tables/blocks/player_head.json \
 
 heads_player_FILES := $(DEFAULT_DATA_FILES) \
-	data/minecraft/loot_tables/entities/player.json \
 	data/buce/loot_tables/heads/ancients.json \
+	data/minecraft/loot_tables/blocks/player_head.json \
+	data/minecraft/loot_tables/entities/player.json \
 
 escape_end_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell find buce-data/escape/end -type f | ./bin/ext2dir) \
