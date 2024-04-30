@@ -1980,20 +1980,24 @@ when villagers could create golems out of materials other than iron.
 ====
 
 Any Profession:
+
 * Gift Basket Golem
 * Gift Golem (3 variants)
 
 Armorer:
+
 * Metal Golem
 * Copper Golem (3 variants)
 
 Butcher:
+
 * Cow
 * Sheep
 * Pig (2 variants)
 * Meat Golem (2 variants)
 
 Cartographer:
+
 * Coconut Golem
 * Kiwi Golem
 * Lemon Golem
@@ -2001,12 +2005,14 @@ Cartographer:
 * Map Golem
 
 Cleric:
+
 * Ender Golem
 * Honey Golem
 * Onion Golem
 * Tome Golem
 
 Farmer:
+
 * Cheese Golem
 * Grape Golem
 * Melon Golem
@@ -2017,6 +2023,7 @@ Farmer:
 * Pie Golem (5 variants)
 
 Fisherman:
+
 * Fish
 * Guardian
 * Pufferfish
@@ -2028,32 +2035,39 @@ Fisherman:
 * Glow Squid
 
 Fletcher:
+
 * Fletching Golem
 * Target Golem
 * Straw Golem (2 variants)
 
 Leatherworker:
+
 * Cauldron Golem (4 variants)
 
 Librarian:
+
 * Enchanted Golem (2 variants)
 * Book Golem (3 variants)
 
 Mason:
+
 * Brick Golem
 * Clay Golem (17 variants)
 * Quartz Golem (3 variants)
 * Stone Golem (7 variants)
 
 Shepherd:
+
 * Cloth Golem
 * Loom Golem
 * Wool Golem (16 variants)
 
 Toolsmith:
+
 * Smith Golem
 
 Weaponsmith:
+
 * Grind Golem (2 variants)
 
 ====

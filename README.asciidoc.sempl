@@ -789,45 +789,59 @@ when villagers could create golems out of materials other than iron.
 ====
 
 Any Profession:
+
 * {!./bin/heads gifts | ./bin/variants}
 
 Armorer:
+
 * {!./bin/heads armorer | ./bin/variants}
 
 Butcher:
+
 * {!./bin/heads butcher | ./bin/variants}
 
 Cartographer:
+
 * {!./bin/heads cartographer | ./bin/variants}
 
 Cleric:
+
 * {!./bin/heads cleric | ./bin/variants}
 
 Farmer:
+
 * {!./bin/heads farmer | ./bin/variants}
 
 Fisherman:
+
 * {!./bin/heads fisherman | ./bin/variants}
 
 Fletcher:
+
 * {!./bin/heads fletcher | ./bin/variants}
 
 Leatherworker:
+
 * {!./bin/heads leatherworker | ./bin/variants}
 
 Librarian:
+
 * {!./bin/heads librarian | ./bin/variants}
 
 Mason:
+
 * {!./bin/heads mason | ./bin/variants}
 
 Shepherd:
+
 * {!./bin/heads shepherd | ./bin/variants}
 
 Toolsmith:
+
 * {!./bin/heads toolsmith | ./bin/variants}
 
 Weaponsmith:
+
 * {!./bin/heads weaponsmith | ./bin/variants}
 
 ====
