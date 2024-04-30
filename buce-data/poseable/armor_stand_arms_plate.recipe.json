@@ -15,11 +15,11 @@
   "result": {
     "count": 1,
     "id": "minecraft:armor_stand",
-    "minecraft:lore": [
-      "'§r§7Arms'"
-    ],
     "components": {
       "custom_model_data": 22212,
+      "minecraft:lore": [
+        "'§r§7Arms'"
+      ],
       "minecraft:entity_data": {
         "id": "minecraft:armor_stand",
         "ShowArms": 1,
