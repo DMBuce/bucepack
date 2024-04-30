@@ -238,20 +238,20 @@ image::https://i.imgur.com/DorMwHO.png[Classic Food]
 
 {!./bin/packsummary classic_oak classic_obsidian classic_netherrack classic_lava classic_gravel classic_lapis classic_rose classic_food}
 
-=== Spellsmithing Guide
-
-//Changes the smithing GUI to show that the left slot is where magic is
-//preserved and magic in the right slot gets destroyed. Intended for use with
-//datapacks that have <<spellsmithing>>.
+// === Spellsmithing Guide
 //
-//image::https://i.imgur.com/DH6v35X.png[Spellsmithing Guide]
-
-This pack contains textures for custom items obtained with
-certain datapacks.
-
-* <<phantasmal,Phantasmal>>: Invisible item frames
-
-{!./bin/packsummary spellsmithing_guide}
+// //Changes the smithing GUI to show that the left slot is where magic is
+// //preserved and magic in the right slot gets destroyed. Intended for use with
+// //datapacks that have <<spellsmithing>>.
+// //
+// //image::https://i.imgur.com/DH6v35X.png[Spellsmithing Guide]
+//
+// This pack contains textures for custom items obtained with
+// certain datapacks.
+//
+// * <<phantasmal,Phantasmal>>: Invisible item frames
+//
+// {!./bin/packsummary spellsmithing_guide}
 
 == Sound Packs
 
@@ -661,7 +661,7 @@ and partial support is provided for renaming
 green shulker boxes to turtle boxes.
 See <<language-support,Language Support>> for details.
 
-{!./bin/packsummary crafting_turtle_box}
+{!./bin/packsummary crafting_shell_box}
 
 == Loot Data Packs
 

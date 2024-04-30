@@ -564,61 +564,61 @@ assets/minecraft/textures/item/salmon.png
 ====
 ====
 
-=== Spellsmithing Guide
-
-//Changes the smithing GUI to show that the left slot is where magic is
-//preserved and magic in the right slot gets destroyed. Intended for use with
-//datapacks that have <<spellsmithing>>.
+// === Spellsmithing Guide
 //
-//image::https://i.imgur.com/DH6v35X.png[Spellsmithing Guide]
-
-This pack contains textures for custom items obtained with
-certain datapacks.
-
-* <<phantasmal,Phantasmal>>: Invisible item frames
-
-**Downloads**
-
-.https://github.com/DMBuce/bucepack/releases/latest/download/spellsmithing_guide.zip[`spellsmithing_guide.zip`]
-[%collapsible]
-====
-
-```
-assets/minecraft/models/item/armor_stand.json
-assets/minecraft/models/item/bow.json
-assets/minecraft/models/item/crossbow.json
-assets/minecraft/models/item/diamond_axe.json
-assets/minecraft/models/item/diamond_boots.json
-assets/minecraft/models/item/diamond_hoe.json
-assets/minecraft/models/item/diamond_pickaxe.json
-assets/minecraft/models/item/diamond_shovel.json
-assets/minecraft/models/item/diamond_sword.json
-assets/minecraft/models/item/elytra.json
-assets/minecraft/models/item/glow_item_frame.json
-assets/minecraft/models/item/golden_helmet.json
-assets/minecraft/models/item/iron_sword.json
-assets/minecraft/models/item/item_frame.json
-assets/minecraft/models/item/leather_boots.json
-assets/minecraft/models/item/leather_leggings.json
-assets/minecraft/models/item/light.json
-assets/minecraft/models/item/netherite_axe.json
-assets/minecraft/models/item/netherite_boots.json
-assets/minecraft/models/item/netherite_chestplate.json
-assets/minecraft/models/item/netherite_hoe.json
-assets/minecraft/models/item/netherite_pickaxe.json
-assets/minecraft/models/item/netherite_shovel.json
-assets/minecraft/models/item/netherite_sword.json
-assets/minecraft/models/item/spyglass.json
-assets/minecraft/models/item/totem_of_undying.json
-assets/minecraft/models/item/trident.json
-```
-
-====
-
-.https://github.com/DMBuce/bucepack/releases[All Releases & Changelogs]
-[%collapsible]
-====
-====
+// //Changes the smithing GUI to show that the left slot is where magic is
+// //preserved and magic in the right slot gets destroyed. Intended for use with
+// //datapacks that have <<spellsmithing>>.
+// //
+// //image::https://i.imgur.com/DH6v35X.png[Spellsmithing Guide]
+//
+// This pack contains textures for custom items obtained with
+// certain datapacks.
+//
+// * <<phantasmal,Phantasmal>>: Invisible item frames
+//
+// **Downloads**
+// 
+// .https://github.com/DMBuce/bucepack/releases/latest/download/spellsmithing_guide.zip[`spellsmithing_guide.zip`]
+// [%collapsible]
+// ====
+// 
+// ```
+// assets/minecraft/models/item/armor_stand.json
+// assets/minecraft/models/item/bow.json
+// assets/minecraft/models/item/crossbow.json
+// assets/minecraft/models/item/diamond_axe.json
+// assets/minecraft/models/item/diamond_boots.json
+// assets/minecraft/models/item/diamond_hoe.json
+// assets/minecraft/models/item/diamond_pickaxe.json
+// assets/minecraft/models/item/diamond_shovel.json
+// assets/minecraft/models/item/diamond_sword.json
+// assets/minecraft/models/item/elytra.json
+// assets/minecraft/models/item/glow_item_frame.json
+// assets/minecraft/models/item/golden_helmet.json
+// assets/minecraft/models/item/iron_sword.json
+// assets/minecraft/models/item/item_frame.json
+// assets/minecraft/models/item/leather_boots.json
+// assets/minecraft/models/item/leather_leggings.json
+// assets/minecraft/models/item/light.json
+// assets/minecraft/models/item/netherite_axe.json
+// assets/minecraft/models/item/netherite_boots.json
+// assets/minecraft/models/item/netherite_chestplate.json
+// assets/minecraft/models/item/netherite_hoe.json
+// assets/minecraft/models/item/netherite_pickaxe.json
+// assets/minecraft/models/item/netherite_shovel.json
+// assets/minecraft/models/item/netherite_sword.json
+// assets/minecraft/models/item/spyglass.json
+// assets/minecraft/models/item/totem_of_undying.json
+// assets/minecraft/models/item/trident.json
+// ```
+// 
+// ====
+// 
+// .https://github.com/DMBuce/bucepack/releases[All Releases & Changelogs]
+// [%collapsible]
+// ====
+// ====
 
 == Sound Packs
 
@@ -1680,7 +1680,7 @@ See <<language-support,Language Support>> for details.
 
 **Downloads**
 
-.https://github.com/DMBuce/bucepack/releases/latest/download/crafting_turtle_box.zip[`crafting_turtle_box.zip`]
+.https://github.com/DMBuce/bucepack/releases/latest/download/crafting_shell_box.zip[`crafting_shell_box.zip`]
 [%collapsible]
 ====
 
@@ -1688,7 +1688,6 @@ See <<language-support,Language Support>> for details.
 assets/minecraft/lang/en_us.json
 assets/minecraft/textures/block/green_shulker_box.png
 assets/minecraft/textures/entity/shulker/shulker_green.png
-data/minecraft/recipes/shulker_box.json
 ```
 
 ====
