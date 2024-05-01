@@ -115,8 +115,14 @@
           ]
         },
         {
-          "type": "minecraft:loot_table",
-          "value": "buce:heads/ancients",
+          "type": "minecraft:item",
+          "name": "minecraft:player_head",
+          "functions": [
+            {
+              "function": "minecraft:fill_player_head",
+              "entity": "this"
+            }
+          ],
           "conditions": [
             {
               "condition": "minecraft:entity_properties",

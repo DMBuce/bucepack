@@ -1051,9 +1051,9 @@ heads_golem_FILES := $(DEFAULT_DATA_FILES) \
 	data/minecraft/loot_tables/blocks/player_head.json \
 
 heads_player_FILES := $(DEFAULT_DATA_FILES) \
-	data/buce/loot_tables/heads/ancients.json \
 	data/minecraft/loot_tables/blocks/player_head.json \
 	data/minecraft/loot_tables/entities/player.json \
+	#data/buce/loot_tables/heads/ancients.json \
 
 escape_end_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell find buce-data/escape/end -type f | ./bin/ext2dir) \

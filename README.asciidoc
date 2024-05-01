@@ -1889,9 +1889,6 @@ The heads look like tiny blocks.
 [%collapsible]
 ====
 
-* Bee
-* Slime
-* Spider
 * Amethyst Dwarf
 * Blue Dwarf (3 variants)
 * Coal Dwarf (3 variants)
@@ -1902,7 +1899,6 @@ The heads look like tiny blocks.
 * Red Dwarf (3 variants)
 * Copper Dwarf (4 variants)
 * Tree Elf
-* Bush Elf (2 variants)
 * Cactus Elf (2 variants)
 * Acacia Elf (3 variants)
 * Birch Elf (3 variants)
@@ -1913,7 +1909,6 @@ The heads look like tiny blocks.
 * Oak Elf (3 variants)
 * Spruce Elf (3 variants)
 * Warped Elf (3 variants)
-* Cave Gnome
 * Desert Gnome
 * Forest Gnome
 * Island Gnome
@@ -1921,6 +1916,7 @@ The heads look like tiny blocks.
 * Mountain Gnome
 * Plains Gnome
 * Savanna Gnome
+* Cave Gnome (2 variants)
 * Tundra Gnome (2 variants)
 * Cobble Goblin
 * Deep Goblin
@@ -1954,6 +1950,7 @@ The heads look like tiny blocks.
 ====
 
 ```
+data/minecraft/loot_tables/blocks/player_head.json
 data/minecraft/loot_tables/gameplay/cat_morning_gift.json
 ```
 
@@ -1980,46 +1977,36 @@ when villagers could create golems out of materials other than iron.
 
 Any Profession:
 
-* Gift Basket Golem
-* Gift Golem (3 variants)
+* Music Golem
+* Gift Golem (2 variants)
+* Redstone Golem (6 variants)
 
 Armorer:
 
 * Metal Golem
-* Copper Golem (3 variants)
+* Copper Golem (2 variants)
 
 Butcher:
 
 * Cow
 * Sheep
 * Pig (2 variants)
-* Meat Golem (2 variants)
+* Meat Golem
 
 Cartographer:
 
 * Coconut Golem
-* Kiwi Golem
-* Lemon Golem
-* Lime Golem
 * Map Golem
 
 Cleric:
 
 * Ender Golem
-* Honey Golem
-* Onion Golem
 * Tome Golem
 
 Farmer:
 
-* Cheese Golem
-* Grape Golem
 * Melon Golem
-* Picnic Golem
 * Pumpkin Golem
-* Sandwich Golem
-* Jam Golem (4 variants)
-* Pie Golem (5 variants)
 
 Fisherman:
 
@@ -2027,10 +2014,9 @@ Fisherman:
 * Guardian
 * Pufferfish
 * Squid
-* Clam (3 variants)
 * Tail Golem
 * Fish Golem (2 variants)
-* Storage Golem (3 variants)
+* Storage Golem (2 variants)
 * Glow Squid
 
 Fletcher:
@@ -2051,15 +2037,13 @@ Librarian:
 Mason:
 
 * Brick Golem
-* Clay Golem (17 variants)
-* Quartz Golem (3 variants)
-* Stone Golem (7 variants)
+* Stone Golem (6 variants)
 
 Shepherd:
 
 * Cloth Golem
 * Loom Golem
-* Wool Golem (16 variants)
+* Wool Golem (6 variants)
 
 Toolsmith:
 
@@ -2083,6 +2067,7 @@ enchanted golem, pie golem, lime golem, and honey golem.
 ====
 
 ```
+data/minecraft/loot_tables/blocks/player_head.json
 data/minecraft/loot_tables/gameplay/hero_of_the_village/armorer_gift.json
 data/minecraft/loot_tables/gameplay/hero_of_the_village/butcher_gift.json
 data/minecraft/loot_tables/gameplay/hero_of_the_village/cartographer_gift.json
@@ -2108,32 +2093,14 @@ data/minecraft/loot_tables/gameplay/hero_of_the_village/weaponsmith_gift.json
 ==== Player Heads
 
 Makes players drop their head when killed
-by a player, dragon, wither, elder guardian, ravager, or polar bear.
+by a player, dragon, wither, warden, elder guardian, ravager, or polar bear.
 
-When a warden kills a player, it captures that player's soul
-and releases the soul of one of The Ancients.
-The head of that Ancient is dropped instead of the player's.
-
-.List of heads
-[%collapsible]
-====
-
-* Computron
-* ToasterBot
-* Zip
-* Rubik (2 variants)
-* TV Boy
-* Companion Cube
-* Donut Girl (2 variants)
-* Piston Guy (2 variants)
-* Jukebox Hero
-* Safety Joe
-* Lamp Lover
-* Silent Observer
-* Dispenser of Justice
-* Amp Roadie
-
-====
+//.List of heads
+//[%collapsible]
+//====
+//
+//
+//====
 
 image::https://i.imgur.com/M53dr3U.png[Ancient Heads]
 
@@ -2146,6 +2113,7 @@ Shown above are the heads of Computron, TV Boy, Donut Girl, and Rubik.
 ====
 
 ```
+data/minecraft/loot_tables/blocks/player_head.json
 data/minecraft/loot_tables/entities/player.json
 ```
 

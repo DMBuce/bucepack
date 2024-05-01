@@ -856,19 +856,15 @@ enchanted golem, pie golem, lime golem, and honey golem.
 ==== Player Heads
 
 Makes players drop their head when killed
-by a player, dragon, wither, elder guardian, ravager, or polar bear.
+by a player, dragon, wither, warden, elder guardian, ravager, or polar bear.
 
-When a warden kills a player, it captures that player's soul
-and releases the soul of one of The Ancients.
-The head of that Ancient is dropped instead of the player's.
-
-.List of heads
-[%collapsible]
-====
-
-* {!./bin/heads ancients | ./bin/variants}
-
-====
+//.List of heads
+//[%collapsible]
+//====
+//
+//* {!./bin/heads ancients | ./bin/variants}
+//
+//====
 
 image::https://i.imgur.com/M53dr3U.png[Ancient Heads]
 
