@@ -1534,6 +1534,37 @@ assets/minecraft/lang/en_us.json
 ====
 ====
 
+=== Edible Crafting
+
+Adds more foods and drinks.
+Many of them give potion effects and stack to 16,
+and many of them can be placed as blocks.
+
+.Summary of recipes
+[%collapsible]
+====
+
+* Warped Roots + Big Dripleaf + Potion + Honey Bottle → Dripleaf Tea (Speed I)
+* Glistering Melon + Sweetberries + Nether Wart + Sugar → Glistering Berry Juice (Fire Resistance)
+* Dragon Breath + Tulip + Sugar → Tulip Julep (Strength II)
+* Beetroot + Blaze Powder + Potato → Tuber Smoothie (Haste II)
+* Blaze Powder + Beetroot + Egg + Glow Berries + Turtle Helmet → Terrapin Soup (Resistance IV, Slowness VI)
+* 6 Glistering Melon + Magma Cream → Glistering Jelly (Instant Health II)
+* 6 Glow Berries + Sugar → Glowberry Jam (Glowing)
+* 6 Carrot + Ghast Tear → Pickled Carrots (Invisibility)
+* 6 Chorus Fruit + Fermented Spider Eye → Fermented Chorus Fruit (Levitation)
+* Honey Block + 4 Brick → Honey Jar (Regeneration I)
+* 3 Milk Bucket + Sugar + Carrot + 3 Wheat + Egg → Carrot Cake (Night Vision)
+* Chorus Fruit + Sugar + Egg → Chorus Pie (Slow Falling)
+* Apple + Sugar + Egg → Apple Pie
+* Pitcher Pod + Sugar + Egg → Pitcher Pod Pie
+* Pumpkin + Sugar + Egg → Pumpkin Pie
+* Sweetberries + Sugar + Egg → Sweetberry Pie
+* 2 Bread + Cooked Porkchop + Big Dripleaf + Beetroot → Sandwich
+* Smelting: Milk Bucket → Cheese
+
+====
+
 === Upgraded Smithing
 
 Adds more smithing upgrades that use the Netherite Upgrade Smithing Template.

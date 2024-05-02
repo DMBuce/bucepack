@@ -79,6 +79,15 @@ def smelting(r):
         outputs = f"{count} {output}".removeprefix("1 ")
         print(f"* smelting: {inputs} → {outputs}")
 
+# prints a smelting recipe
+def smelting(r):
+    for x in r['ingredient']:
+        inputs = tr(x)
+        count = r['result']['count'] if "count" in r['result'] else 1
+        output = tr({"item":r['result']})
+        outputs = f"{count} {output}".removeprefix("1 ")
+        print(f"* smelting: {inputs} → {outputs}")
+
 # prints a blasting recipe
 def blasting(r):
     for x in r['ingredient']:
@@ -94,6 +103,7 @@ rhandler = {
     'minecraft:crafting_shaped':    crafting_shaped,
     'minecraft:stonecutting':       stonecutting,
     'minecraft:blasting':           blasting,
+    'minecraft:smelting':           smelting,
 }
 
 # print each recipe in datapack
@@ -101,7 +111,7 @@ with open(f"cache/{pack}.files") as recipe:
     for line in recipe:
         file = line.rstrip()
         if file.startswith("data/minecraft/recipes/") or file.startswith("data/buce/recipes/"):
-            #print(file)
+            print(file, file=sys.stderr)
             with open(file) as f:
                 r = json.load(f)
                 rhandler[r['type']](r)

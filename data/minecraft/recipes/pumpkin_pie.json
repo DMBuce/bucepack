@@ -1,0 +1,37 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "minecraft:pumpkin"
+    },
+    {
+      "item": "minecraft:sugar"
+    },
+    {
+      "item": "minecraft:egg"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "minecraft:player_head",
+    "components": {
+      "custom_model_data": 22183,
+      "minecraft:item_name": "'Pumpkin Pie'",
+      "minecraft:food": {
+        "nutrition": 8,
+        "saturation": 4.8
+      },
+      "note_block_sound": "entity.generic.eat",
+      "minecraft:profile": {
+        "id": [728151533,364397953,-1272830377,-44455818],
+        "properties": [
+          {
+            "name": "textures",
+            "value": "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNmQ5NThhN2Y1YTIyMzFmMDYxYjdlYmM4NzA3MWJhZGViZTI4ZmNhMmI0ZWI0MGZiZjgzODFkNWUwN2EwOTdjIn19fQ=="
+          }
+        ]
+      }
+    }
+  }
+}

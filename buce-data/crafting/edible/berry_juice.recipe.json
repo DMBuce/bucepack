@@ -1,0 +1,37 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "minecraft:glistering_melon"
+    },
+    {
+      "item": "minecraft:sweetberries"
+    },
+    {
+      "item": "minecraft:nether_wart"
+    },
+    {
+      "item": "minecraft:sugar"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "minecraft:potion",
+    "components": {
+      "custom_model_data": 22183,
+      "minecraft:item_name": "'Glistering Berry Juice'",
+      "minecraft:max_stack_size": 16,
+      "minecraft:potion_contents": {
+        "custom_color": 11212042,
+        "custom_effects": [
+          {
+            "id": "minecraft:fire_resistance",
+            "amplifier": 0,
+            "duration": 9600
+          }
+        ]
+      }
+    }
+  }
+}

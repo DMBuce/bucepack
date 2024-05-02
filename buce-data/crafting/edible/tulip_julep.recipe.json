@@ -1,0 +1,34 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "tag": "buce:crafting/edible/tulips"
+    },
+    {
+      "item": "minecraft:dragon_breath"
+    },
+    {
+      "item": "minecraft:sugar"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "minecraft:potion",
+    "components": {
+      "custom_model_data": 22183,
+      "minecraft:item_name": "'Tulip Julep'",
+      "minecraft:max_stack_size": 16,
+      "minecraft:potion_contents": {
+        "custom_color": 14774564,
+        "custom_effects": [
+          {
+            "id": "minecraft:strength",
+            "amplifier": 1,
+            "duration": 1800
+          }
+        ]
+      }
+    }
+  }
+}

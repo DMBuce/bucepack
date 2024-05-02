@@ -1,0 +1,59 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "minecraft:milk_bucket"
+    },
+    "B": {
+      "item": "minecraft:sugar"
+    },
+    "C": {
+      "item": "minecraft:carrot"
+    },
+    "D": {
+      "item": "minecraft:wheat"
+    },
+    "E": {
+      "item": "minecraft:egg"
+    }
+  },
+  "pattern": [
+    "AAA",
+    "BEC",
+    "DDD"
+  ],
+  "result": {
+    "count": 1,
+    "id": "minecraft:player_head",
+    "components": {
+      "custom_model_data": 22183,
+      "minecraft:item_name": "'Carrot Cake'",
+      "minecraft:max_stack_size": 16,
+      "minecraft:food": {
+        "nutrition": 14,
+        "saturation": 2.8,
+        "can_always_eat": true,
+        "effects": [
+          {
+            "effect": {
+              "id": "minecraft:night_vision",
+              "amplifier": 0,
+              "duration": 9600
+            }
+          }
+        ]
+      },
+      "note_block_sound": "entity.generic.eat",
+      "minecraft:profile": {
+        "id": [1706944402,742739098,-1787158039,-475029988],
+        "properties": [
+          {
+            "name": "textures",
+            "value": "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNmIyNmMxMjJlZGYwZDExZTQ2NWE1OTEyMDkwMDYwYWUyOTI3NGQyM2IxOWZkYjhkNzdiMWQ0YjM3NzNhN2VjZCJ9fX0="
+          }
+        ]
+      }
+    }
+  }
+}

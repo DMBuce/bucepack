@@ -1,0 +1,60 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "minecraft:glistering_melon"
+    },
+    {
+      "item": "minecraft:glistering_melon"
+    },
+    {
+      "item": "minecraft:glistering_melon"
+    },
+    {
+      "item": "minecraft:glistering_melon"
+    },
+    {
+      "item": "minecraft:glistering_melon"
+    },
+    {
+      "item": "minecraft:glistering_melon"
+    },
+    {
+      "item": "minecraft:magma_cream"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "minecraft:player_head",
+    "components": {
+      "custom_model_data": 22183,
+      "minecraft:item_name": "'Glistering Jelly'",
+      "minecraft:max_stack_size": 16,
+      "minecraft:food": {
+        "nutrition": 2,
+        "saturation": 1.2,
+        "can_always_eat": true,
+        "effects": [
+          {
+            "effect": {
+              "id": "minecraft:instant_health",
+              "amplifier": 1,
+              "duration": 0
+            }
+          }
+        ]
+      },
+      "note_block_sound": "block.honey_block.slide",
+      "minecraft:profile": {
+        "id": [-1379669389,1531072490,-1573434766,-1255286997],
+        "properties": [
+          {
+            "name": "textures",
+            "value": "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYzBiOGI1ODg5ZWUxYzYzODhkYzZjMmM1ZGJkNzBiNjk4NGFlZmU1NDMxOWEwOTVlNjRkYjc2MzgwOTdiODIxIn19fQ=="
+          }
+        ]
+      }
+    }
+  }
+}

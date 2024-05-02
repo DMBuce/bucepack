@@ -48,6 +48,7 @@ DATAPACKFILES = \
 	climbable.zip \
 	crafter.zip \
 	crafting_colorful.zip \
+	crafting_edible.zip \
 	crafting_loot.zip \
 	crafting_plentiful.zip \
 	crafting_unpacked.zip \
@@ -888,6 +889,10 @@ crafting_colorful_FILES := $(DEFAULT_DATA_FILES) \
 	#data/minecraft/recipes/*_bed.json \
 	#data/minecraft/recipes/*_wool.json \
 
+crafting_edible_FILES := $(DEFAULT_DATA_FILES) \
+	$(shell find buce-data/crafting/edible -type f | ./bin/ext2dir) \
+	data/minecraft/recipes/pumpkin_pie.json \
+
 crafting_plentiful_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell find buce-data/crafting/plentiful -type f | ./bin/ext2dir) \
 	$(wildcard data/minecraft/recipes/*_stairs.json) \
@@ -1592,6 +1597,12 @@ crafting_loot.zip: $(crafting_loot_FILES)
 	./bin/ziprename _$(@:.zip=) "" $@
 
 crafting_colorful.zip: $(crafting_colorful_FILES)
+	cp meta/$(@:.zip=.png) pack.png
+	sempl meta/$(@:.zip=.mcmeta.sempl) pack.mcmeta
+	zip $@ pack.png pack.mcmeta $^
+	./bin/ziprename _$(@:.zip=) "" $@
+
+crafting_edible.zip: $(crafting_edible_FILES)
 	cp meta/$(@:.zip=.png) pack.png
 	sempl meta/$(@:.zip=.mcmeta.sempl) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^
