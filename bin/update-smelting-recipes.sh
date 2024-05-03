@@ -47,4 +47,9 @@ while read file; do
 		/cookingtime/ s/200/600/
 	' "$new"
 done < <(grep minecraft:smelting "$latest.jar"/data/minecraft/recipes/*.json -l)
+sed -i \
+	'/"id":/ s/$/,\n    "components": {\n      "minecraft:food": {\n        "nutrition": 2,\n        "saturation": 0.4,\n        "eat_seconds": 0.865\n      }\n    }/' \
+	data/minecraft/recipes/popped_chorus_fruit_from_*.json
+echo >> data/minecraft/recipes/popped_chorus_fruit_from_campfire_cooking.json
+echo >> data/minecraft/recipes/popped_chorus_fruit_from_smoking.json
 

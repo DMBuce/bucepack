@@ -895,6 +895,9 @@ crafting_elixir_FILES := $(DEFAULT_DATA_FILES) \
 
 crafting_snack_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell find buce-data/crafting/snack -type f | ./bin/ext2dir) \
+	data/minecraft/recipes/glistering_melon_slice.json \
+	data/minecraft/recipes/popped_chorus_fruit_from_campfire_cooking.json \
+	data/minecraft/recipes/popped_chorus_fruit_from_smoking.json \
 	data/minecraft/recipes/pumpkin_pie.json \
 
 crafting_plentiful_FILES := $(DEFAULT_DATA_FILES) \
