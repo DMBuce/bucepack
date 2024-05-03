@@ -16,24 +16,13 @@
     "count": 1,
     "id": "minecraft:player_head",
     "components": {
-      "custom_model_data": 22183,
+      "minecraft:custom_model_data": 22183,
       "minecraft:item_name": "'Chorus Pie'",
-      "minecraft:max_stack_size": 16,
       "minecraft:food": {
         "nutrition": 8,
-        "saturation": 4.8,
-        "can_always_eat": true,
-        "effects": [
-          {
-            "effect": {
-              "id": "minecraft:slow_falling",
-              "amplifier": 0,
-              "duration": 4800
-            }
-          }
-        ]
+        "saturation": 4.8
       },
-      "note_block_sound": "entity.generic.eat",
+      "minecraft:note_block_sound": "entity.generic.eat",
       "minecraft:profile": {
         "id": [877192937,584731823,-1120809297,-1141763827],
         "properties": [

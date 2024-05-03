@@ -3,49 +3,64 @@
   "category": "misc",
   "ingredients": [
     {
-      "item": "minecraft:glistering_melon"
+      "item": "minecraft:sugar"
     },
     {
-      "item": "minecraft:glistering_melon"
+      "item": "minecraft:dragon_breath"
     },
     {
-      "item": "minecraft:glistering_melon"
+      "item": "minecraft:sugar"
     },
     {
-      "item": "minecraft:glistering_melon"
+      "item": "minecraft:glistering_melon_slice"
     },
     {
-      "item": "minecraft:glistering_melon"
+      "item": "minecraft:glistering_melon_slice"
     },
     {
-      "item": "minecraft:glistering_melon"
+      "item": "minecraft:glistering_melon_slice"
     },
     {
-      "item": "minecraft:magma_cream"
+      "item": "minecraft:glistering_melon_slice"
+    },
+    {
+      "item": "minecraft:glistering_melon_slice"
+    },
+    {
+      "item": "minecraft:glistering_melon_slice"
     }
   ],
   "result": {
-    "count": 1,
+    "count": 4,
     "id": "minecraft:player_head",
     "components": {
-      "custom_model_data": 22183,
-      "minecraft:item_name": "'Glistering Jelly'",
+      "minecraft:custom_model_data": 22183,
+      "minecraft:item_name": "'Glistering Jam'",
       "minecraft:max_stack_size": 16,
       "minecraft:food": {
-        "nutrition": 2,
+        "nutrition": 6,
         "saturation": 1.2,
         "can_always_eat": true,
         "effects": [
           {
+            "probability": 0.5,
             "effect": {
               "id": "minecraft:instant_health",
               "amplifier": 1,
-              "duration": 0
+              "duration": 1
+            }
+          },
+          {
+            "probability": 0.5,
+            "effect": {
+              "id": "minecraft:speed",
+              "amplifier": 0,
+              "duration": 9600
             }
           }
         ]
       },
-      "note_block_sound": "block.honey_block.slide",
+      "minecraft:note_block_sound": "block.honey_block.slide",
       "minecraft:profile": {
         "id": [-1379669389,1531072490,-1573434766,-1255286997],
         "properties": [

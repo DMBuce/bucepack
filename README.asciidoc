@@ -1534,35 +1534,68 @@ assets/minecraft/lang/en_us.json
 ====
 ====
 
-=== Edible Crafting
+=== Snack Crafting
 
-Adds more foods and drinks.
-Many of them give potion effects and stack to 16,
-and many of them can be placed as blocks.
+Adds placeable food.
 
 .Summary of recipes
 [%collapsible]
 ====
 
-* Warped Roots + Big Dripleaf + Potion + Honey Bottle → Dripleaf Tea (Speed I)
-* Glistering Melon + Sweetberries + Nether Wart + Sugar → Glistering Berry Juice (Fire Resistance)
-* Dragon Breath + Tulip + Sugar → Tulip Julep (Strength II)
-* Beetroot + Blaze Powder + Potato → Tuber Smoothie (Haste II)
-* Blaze Powder + Beetroot + Egg + Glow Berries + Turtle Helmet → Terrapin Soup (Resistance IV, Slowness VI)
-* 6 Glistering Melon + Magma Cream → Glistering Jelly (Instant Health II)
-* 6 Glow Berries + Sugar → Glowberry Jam (Glowing)
-* 6 Carrot + Ghast Tear → Pickled Carrots (Invisibility)
-* 6 Chorus Fruit + Fermented Spider Eye → Fermented Chorus Fruit (Levitation)
-* Honey Block + 4 Brick → Honey Jar (Regeneration I)
-* 3 Milk Bucket + Sugar + Carrot + 3 Wheat + Egg → Carrot Cake (Night Vision)
-* Chorus Fruit + Sugar + Egg → Chorus Pie (Slow Falling)
-* Apple + Sugar + Egg → Apple Pie
-* Pitcher Pod + Sugar + Egg → Pitcher Pod Pie
-* Pumpkin + Sugar + Egg → Pumpkin Pie
-* Sweetberries + Sugar + Egg → Sweetberry Pie
-* 2 Bread + Cooked Porkchop + Big Dripleaf + Beetroot → Sandwich
-* Smelting: Milk Bucket → Cheese
+* 2 bread + cooked porkchop + big dripleaf + beetroot → sandwich
+* smelting: milk bucket → cheese
+* 3 milk bucket + sugar + carrot + 3 wheat + egg → carrot cake
+* apple + sugar + egg → apple pie
+* chorus fruit + sugar + egg → chorus pie
+* pitcher pod + sugar + egg → pitcher pod pie
+* pumpkin + sugar + egg → pumpkin pie
+* sweetberries + sugar + egg → sweetberry pie
 
+====
+
+**Downloads**
+
+.https://github.com/DMBuce/bucepack/releases/latest/download/crafting_snack.zip[`crafting_snack.zip`]
+[%collapsible]
+====
+
+```
+data/minecraft/recipes/pumpkin_pie.json
+```
+
+====
+
+.https://github.com/DMBuce/bucepack/releases[All Releases & Changelogs]
+[%collapsible]
+====
+====
+
+=== Elixir Crafting
+
+Adds placeable foods that stack to 16 and have a chance to give potion effects.
+
+.Summary of recipes
+[%collapsible]
+====
+
+* 6 Glistering Melon + 2 Sugar + Dragon Breath → 4 Glistering Jam (50% Speed I, 50% Instant Health II)
+* 6 Torchfower Seeds + 2 Blaze Powder + Magma Cream → 4 Hot Pepper Jelly (33% Strength II, 33% Fire Resistance, 33% Haste II)
+* 6 Golden Carrot + 2 Fermented Spider Eye + Nether Wart → 4 Pickled Carrots (50% Night Vision, 50% Invisibility)
+* 6 Chorus Fruit + 2 Ghast Tears + Phantom Membrane → 4 Pickled Chorus Fruit (50% Levitation, 50% Slow Falling)
+* Honey Block + 4 Brick → Honey Jar (Regeneration I)
+
+====
+
+**Downloads**
+
+.https://github.com/DMBuce/bucepack/releases/latest/download/crafting_elixir.zip[`crafting_elixir.zip`]
+[%collapsible]
+====
+====
+
+.https://github.com/DMBuce/bucepack/releases[All Releases & Changelogs]
+[%collapsible]
+====
 ====
 
 === Upgraded Smithing

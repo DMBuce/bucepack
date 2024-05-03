@@ -18,7 +18,7 @@
     "count": 1,
     "id": "minecraft:player_head",
     "components": {
-      "custom_model_data": 22183,
+      "minecraft:custom_model_data": 22183,
       "minecraft:item_name": "'Honey Jar'",
       "minecraft:max_stack_size": 16,
       "minecraft:food": {
@@ -35,7 +35,7 @@
           }
         ]
       },
-      "note_block_sound": "block.honey_block.place",
+      "minecraft:note_block_sound": "block.honey_block.place",
       "minecraft:profile": {
         "id": [-1552866382,-2144122693,-1808803872,861044740],
         "properties": [

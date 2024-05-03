@@ -10,10 +10,14 @@
             {
               "function": "minecraft:copy_components",
               "include": [
-                "minecraft:profile",
-                "minecraft:note_block_sound",
+                "minecraft:custom_model_data",
                 "minecraft:custom_name",
-                "minecraft:item_name"
+                "minecraft:food",
+                "minecraft:item_name",
+                "minecraft:max_stack_size",
+                "minecraft:note_block_sound",
+                "minecraft:potion_contents",
+                "minecraft:profile"
               ],
               "source": "block_entity"
             }

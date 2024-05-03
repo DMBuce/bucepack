@@ -3,7 +3,7 @@
   "category": "misc",
   "ingredients": [
     {
-      "item": "minecraft:sweetberries"
+      "item": "minecraft:sweet_berries"
     },
     {
       "item": "minecraft:sugar"
@@ -16,13 +16,13 @@
     "count": 1,
     "id": "minecraft:player_head",
     "components": {
-      "custom_model_data": 22183,
+      "minecraft:custom_model_data": 22183,
       "minecraft:item_name": "'Sweetberry Pie'",
       "minecraft:food": {
         "nutrition": 8,
         "saturation": 4.8
       },
-      "note_block_sound": "entity.generic.eat",
+      "minecraft:note_block_sound": "entity.generic.eat",
       "minecraft:profile": {
         "id": [-954177299,1776369703,-1836235771,-2047890674],
         "properties": [

@@ -3,7 +3,7 @@
   "category": "misc",
   "ingredients": [
     {
-      "item": "minecraft:apple"
+      "item": "minecraft:pitcher_pod"
     },
     {
       "item": "minecraft:sugar"
@@ -16,19 +16,19 @@
     "count": 1,
     "id": "minecraft:player_head",
     "components": {
-      "custom_model_data": 22183,
-      "minecraft:item_name": "'Apple Pie'",
+      "minecraft:custom_model_data": 22183,
+      "minecraft:item_name": "'Pitcher Pod Pie'",
       "minecraft:food": {
         "nutrition": 8,
         "saturation": 4.8
       },
-      "note_block_sound": "entity.generic.eat",
+      "minecraft:note_block_sound": "entity.generic.eat",
       "minecraft:profile": {
-        "id": [1495991891,345460163,-2118222091,-1135736843],
+        "id": [-705364915,302072093,-1237428989,-1194144162],
         "properties": [
           {
             "name": "textures",
-            "value": "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjMwZWUyMzcyOTBkYmExMzNkYTAxYWY1Zjg4Yjg3Y2NlM2I5NGJjNDBjNTA4OWU5ODg4NTJkNDc4ZmExNTRhMiJ9fX0="
+            "value": "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYWQzYjc2ZGYzYWE3Njg5M2ExNjE4OTVkOTgxZjIyNDhmY2RlOTZkYmM0MDQyMTI5MDQ1Zjk1ZGUxMGUxODQ4NSJ9fX0="
           }
         ]
       }

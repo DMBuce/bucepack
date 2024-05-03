@@ -27,24 +27,13 @@
     "count": 1,
     "id": "minecraft:player_head",
     "components": {
-      "custom_model_data": 22183,
+      "minecraft:custom_model_data": 22183,
       "minecraft:item_name": "'Carrot Cake'",
-      "minecraft:max_stack_size": 16,
       "minecraft:food": {
         "nutrition": 14,
-        "saturation": 2.8,
-        "can_always_eat": true,
-        "effects": [
-          {
-            "effect": {
-              "id": "minecraft:night_vision",
-              "amplifier": 0,
-              "duration": 9600
-            }
-          }
-        ]
+        "saturation": 2.8
       },
-      "note_block_sound": "entity.generic.eat",
+      "minecraft:note_block_sound": "entity.generic.eat",
       "minecraft:profile": {
         "id": [1706944402,742739098,-1787158039,-475029988],
         "properties": [
