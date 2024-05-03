@@ -21,7 +21,7 @@
     " B "
   ],
   "result": {
-    "count": 1,
+    "count": 2,
     "id": "minecraft:player_head",
     "components": {
       "minecraft:custom_model_data": 22183,

@@ -13,8 +13,8 @@
       "minecraft:custom_model_data": 22183,
       "minecraft:item_name": "'Cheese'",
       "minecraft:food": {
-        "nutrition": 5,
-        "saturation": 6
+        "nutrition": 6,
+        "saturation": 7.2
       },
       "minecraft:note_block_sound": "entity.generic.eat",
       "minecraft:profile": {
