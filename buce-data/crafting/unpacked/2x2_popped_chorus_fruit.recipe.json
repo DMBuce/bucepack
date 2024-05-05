@@ -8,6 +8,13 @@
   ],
   "result": {
     "count": 4,
-    "id": "minecraft:popped_chorus_fruit"
+    "id": "minecraft:popped_chorus_fruit",
+    "components": {
+      "minecraft:food": {
+        "nutrition": 2,
+        "saturation": 0.4,
+        "eat_seconds": 0.865
+      }
+    }
   }
 }

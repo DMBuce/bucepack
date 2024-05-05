@@ -1560,6 +1560,7 @@ Adds placeable food and makes glistering melons and popped chorus fruit edible.
 ====
 
 ```
+data/minecraft/recipes/glistering_melon_slice.json
 data/minecraft/recipes/pumpkin_pie.json
 ```
 
