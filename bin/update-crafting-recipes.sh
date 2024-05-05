@@ -104,7 +104,6 @@ done <<< '
 	misc     glowstone glowstone_dust
 	misc     magma_block magma_cream
 	misc     prismarine prismarine_shard
-	misc     purpur_block popped_chorus_fruit
 	building sandstone sand
 	building red_sandstone red_sand
 	misc     snow_block snowball
