@@ -1384,7 +1384,7 @@ storage.
 * magma block → 4 magma cream
 * nether bricks → 4 nether brick
 * dripstone block → 4 pointed dripstone
-* purpur block → 4 popped chorus fruit
+* purpur block → popped chorus fruit
 * prismarine → 4 prismarine shard
 * red sandstone → 4 red sand
 * sandstone → 4 sand
@@ -2716,9 +2716,7 @@ become permanently assigned to their note block.
 To break an allay's assignment,
 you can break the note block,
 reassign it to its note block,
-assign it to a new note block,
-give it an item,
-or take an item from it.
+or assign it to a new note block.
 
 **Downloads**
 

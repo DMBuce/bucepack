@@ -1221,9 +1221,7 @@ become permanently assigned to their note block.
 To break an allay's assignment,
 you can break the note block,
 reassign it to its note block,
-assign it to a new note block,
-give it an item,
-or take an item from it.
+or assign it to a new note block.
 
 {!./bin/packsummary smart_allays}
 
