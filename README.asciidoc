@@ -749,16 +749,16 @@ image::https://i.imgur.com/w9MQeFL.png[Enchanting]
 ====
 
 ```
-data/minecraft/recipes/chiseled_bookshelf.json
-data/minecraft/tags/blocks/enchantment_power_provider.json
-data/minecraft/tags/blocks/enchantment_power_transmitter.json
-data/minecraft/tags/entity_types/sensitive_to_impaling.json
-data/minecraft/tags/items/bookshelf_books.json
-data/minecraft/tags/items/enchantable/armor.json
-data/minecraft/tags/items/enchantable/bow.json
-data/minecraft/tags/items/enchantable/fire_aspect.json
-data/minecraft/tags/items/enchantable/sharp_weapon.json
-data/minecraft/tags/items/enchantable/weapon.json
+data/minecraft/recipe/chiseled_bookshelf.json
+data/minecraft/tags/block/enchantment_power_provider.json
+data/minecraft/tags/block/enchantment_power_transmitter.json
+data/minecraft/tags/entity_type/sensitive_to_impaling.json
+data/minecraft/tags/item/bookshelf_books.json
+data/minecraft/tags/item/enchantable/armor.json
+data/minecraft/tags/item/enchantable/bow.json
+data/minecraft/tags/item/enchantable/fire_aspect.json
+data/minecraft/tags/item/enchantable/sharp_weapon.json
+data/minecraft/tags/item/enchantable/weapon.json
 ```
 
 ====
@@ -804,10 +804,10 @@ so that it's more difficult to accidentally break these blocks.
 ====
 
 ```
-data/minecraft/tags/blocks/mineable/axe.json
-data/minecraft/tags/blocks/mineable/pickaxe.json
-data/minecraft/tags/blocks/mineable/shovel.json
-data/minecraft/tags/blocks/sword_efficient.json
+data/minecraft/tags/block/mineable/axe.json
+data/minecraft/tags/block/mineable/pickaxe.json
+data/minecraft/tags/block/mineable/shovel.json
+data/minecraft/tags/block/sword_efficient.json
 ```
 
 ====
@@ -830,7 +830,7 @@ image::https://i.imgur.com/N0l5B2c.png[Climbable]
 ====
 
 ```
-data/minecraft/tags/blocks/climbable.json
+data/minecraft/tags/block/climbable.json
 ```
 
 ====
@@ -859,7 +859,7 @@ image::https://i.imgur.com/c7kQFcp.png[Dragonproof Blocks]
 ====
 
 ```
-data/minecraft/tags/blocks/dragon_immune.json
+data/minecraft/tags/block/dragon_immune.json
 ```
 
 ====
@@ -884,7 +884,7 @@ https://raw.githubusercontent.com/DMBuce/bucepack/master/data/minecraft/tags/blo
 ====
 
 ```
-data/minecraft/tags/blocks/enderman_holdable.json
+data/minecraft/tags/block/enderman_holdable.json
 ```
 
 ====
@@ -944,11 +944,11 @@ image::https://i.imgur.com/FnDMksX.png[Acclimated]
 ====
 
 ```
-data/minecraft/tags/blocks/strider_warm_blocks.json
-data/minecraft/tags/entity_types/can_breathe_under_water.json
-data/minecraft/tags/entity_types/dismounts_underwater.json
-data/minecraft/tags/entity_types/fall_damage_immune.json
-data/minecraft/tags/entity_types/powder_snow_walkable_mobs.json
+data/minecraft/tags/block/strider_warm_blocks.json
+data/minecraft/tags/entity_type/can_breathe_under_water.json
+data/minecraft/tags/entity_type/dismounts_underwater.json
+data/minecraft/tags/entity_type/fall_damage_immune.json
+data/minecraft/tags/entity_type/powder_snow_walkable_mobs.json
 ```
 
 ====
@@ -967,11 +967,6 @@ data/minecraft/tags/entity_types/powder_snow_walkable_mobs.json
 //.https://github.com/DMBuce/bucepack/releases/latest/download/aggro_bastions.zip[`aggro_bastions.zip`]
 //[%collapsible]
 //====
-//
-//```
-//data/minecraft/tags/blocks/guarded_by_piglins.json
-//```
-//
 //====
 //
 //.https://github.com/DMBuce/bucepack/releases[All Releases & Changelogs]
@@ -994,11 +989,6 @@ data/minecraft/tags/entity_types/powder_snow_walkable_mobs.json
 //.https://github.com/DMBuce/bucepack/releases/latest/download/hover_mode.zip[`hover_mode.zip`]
 //[%collapsible]
 //====
-//
-//```
-//data/minecraft/tags/blocks/climbable.json
-//```
-//
 //====
 //
 //.https://github.com/DMBuce/bucepack/releases[All Releases & Changelogs]
@@ -1019,7 +1009,7 @@ image::https://i.imgur.com/aZKvCrc.png[Waterproof Tech]
 ====
 
 ```
-data/minecraft/tags/blocks/signs.json
+data/minecraft/tags/block/signs.json
 ```
 
 ====
@@ -1042,7 +1032,7 @@ image::https://i.imgur.com/paceJ4Z.png[Blue Fire]
 ====
 
 ```
-data/minecraft/tags/blocks/soul_fire_base_blocks.json
+data/minecraft/tags/block/soul_fire_base_blocks.json
 ```
 
 ====
@@ -1070,70 +1060,70 @@ Banners dyed this way lose their patterns.
 ====
 
 ```
-data/minecraft/recipes/black_candle.json
-data/minecraft/recipes/black_stained_glass.json
-data/minecraft/recipes/black_stained_glass_pane_from_glass_pane.json
-data/minecraft/recipes/black_terracotta.json
-data/minecraft/recipes/blue_candle.json
-data/minecraft/recipes/blue_stained_glass.json
-data/minecraft/recipes/blue_stained_glass_pane_from_glass_pane.json
-data/minecraft/recipes/blue_terracotta.json
-data/minecraft/recipes/brown_candle.json
-data/minecraft/recipes/brown_stained_glass.json
-data/minecraft/recipes/brown_stained_glass_pane_from_glass_pane.json
-data/minecraft/recipes/brown_terracotta.json
-data/minecraft/recipes/cyan_candle.json
-data/minecraft/recipes/cyan_stained_glass.json
-data/minecraft/recipes/cyan_stained_glass_pane_from_glass_pane.json
-data/minecraft/recipes/cyan_terracotta.json
-data/minecraft/recipes/gray_candle.json
-data/minecraft/recipes/gray_stained_glass.json
-data/minecraft/recipes/gray_stained_glass_pane_from_glass_pane.json
-data/minecraft/recipes/gray_terracotta.json
-data/minecraft/recipes/green_candle.json
-data/minecraft/recipes/green_stained_glass.json
-data/minecraft/recipes/green_stained_glass_pane_from_glass_pane.json
-data/minecraft/recipes/green_terracotta.json
-data/minecraft/recipes/light_blue_candle.json
-data/minecraft/recipes/light_blue_stained_glass.json
-data/minecraft/recipes/light_blue_stained_glass_pane_from_glass_pane.json
-data/minecraft/recipes/light_blue_terracotta.json
-data/minecraft/recipes/light_gray_candle.json
-data/minecraft/recipes/light_gray_stained_glass.json
-data/minecraft/recipes/light_gray_stained_glass_pane_from_glass_pane.json
-data/minecraft/recipes/light_gray_terracotta.json
-data/minecraft/recipes/lime_candle.json
-data/minecraft/recipes/lime_stained_glass.json
-data/minecraft/recipes/lime_stained_glass_pane_from_glass_pane.json
-data/minecraft/recipes/lime_terracotta.json
-data/minecraft/recipes/magenta_candle.json
-data/minecraft/recipes/magenta_stained_glass.json
-data/minecraft/recipes/magenta_stained_glass_pane_from_glass_pane.json
-data/minecraft/recipes/magenta_terracotta.json
-data/minecraft/recipes/orange_candle.json
-data/minecraft/recipes/orange_stained_glass.json
-data/minecraft/recipes/orange_stained_glass_pane_from_glass_pane.json
-data/minecraft/recipes/orange_terracotta.json
-data/minecraft/recipes/pink_candle.json
-data/minecraft/recipes/pink_stained_glass.json
-data/minecraft/recipes/pink_stained_glass_pane_from_glass_pane.json
-data/minecraft/recipes/pink_terracotta.json
-data/minecraft/recipes/purple_candle.json
-data/minecraft/recipes/purple_stained_glass.json
-data/minecraft/recipes/purple_stained_glass_pane_from_glass_pane.json
-data/minecraft/recipes/purple_terracotta.json
-data/minecraft/recipes/red_candle.json
-data/minecraft/recipes/red_stained_glass.json
-data/minecraft/recipes/red_stained_glass_pane_from_glass_pane.json
-data/minecraft/recipes/red_terracotta.json
-data/minecraft/recipes/white_candle.json
-data/minecraft/recipes/white_stained_glass.json
-data/minecraft/recipes/white_stained_glass_pane_from_glass_pane.json
-data/minecraft/recipes/white_terracotta.json
-data/minecraft/recipes/yellow_candle.json
-data/minecraft/recipes/yellow_stained_glass.json
-data/minecraft/recipes/yellow_stained_glass_pane_from_glass_pane.json
-data/minecraft/recipes/yellow_terracotta.json
+data/minecraft/recipe/black_candle.json
+data/minecraft/recipe/black_stained_glass.json
+data/minecraft/recipe/black_stained_glass_pane_from_glass_pane.json
+data/minecraft/recipe/black_terracotta.json
+data/minecraft/recipe/blue_candle.json
+data/minecraft/recipe/blue_stained_glass.json
+data/minecraft/recipe/blue_stained_glass_pane_from_glass_pane.json
+data/minecraft/recipe/blue_terracotta.json
+data/minecraft/recipe/brown_candle.json
+data/minecraft/recipe/brown_stained_glass.json
+data/minecraft/recipe/brown_stained_glass_pane_from_glass_pane.json
+data/minecraft/recipe/brown_terracotta.json
+data/minecraft/recipe/cyan_candle.json
+data/minecraft/recipe/cyan_stained_glass.json
+data/minecraft/recipe/cyan_stained_glass_pane_from_glass_pane.json
+data/minecraft/recipe/cyan_terracotta.json
+data/minecraft/recipe/gray_candle.json
+data/minecraft/recipe/gray_stained_glass.json
+data/minecraft/recipe/gray_stained_glass_pane_from_glass_pane.json
+data/minecraft/recipe/gray_terracotta.json
+data/minecraft/recipe/green_candle.json
+data/minecraft/recipe/green_stained_glass.json
+data/minecraft/recipe/green_stained_glass_pane_from_glass_pane.json
+data/minecraft/recipe/green_terracotta.json
+data/minecraft/recipe/light_blue_candle.json
+data/minecraft/recipe/light_blue_stained_glass.json
+data/minecraft/recipe/light_blue_stained_glass_pane_from_glass_pane.json
+data/minecraft/recipe/light_blue_terracotta.json
+data/minecraft/recipe/light_gray_candle.json
+data/minecraft/recipe/light_gray_stained_glass.json
+data/minecraft/recipe/light_gray_stained_glass_pane_from_glass_pane.json
+data/minecraft/recipe/light_gray_terracotta.json
+data/minecraft/recipe/lime_candle.json
+data/minecraft/recipe/lime_stained_glass.json
+data/minecraft/recipe/lime_stained_glass_pane_from_glass_pane.json
+data/minecraft/recipe/lime_terracotta.json
+data/minecraft/recipe/magenta_candle.json
+data/minecraft/recipe/magenta_stained_glass.json
+data/minecraft/recipe/magenta_stained_glass_pane_from_glass_pane.json
+data/minecraft/recipe/magenta_terracotta.json
+data/minecraft/recipe/orange_candle.json
+data/minecraft/recipe/orange_stained_glass.json
+data/minecraft/recipe/orange_stained_glass_pane_from_glass_pane.json
+data/minecraft/recipe/orange_terracotta.json
+data/minecraft/recipe/pink_candle.json
+data/minecraft/recipe/pink_stained_glass.json
+data/minecraft/recipe/pink_stained_glass_pane_from_glass_pane.json
+data/minecraft/recipe/pink_terracotta.json
+data/minecraft/recipe/purple_candle.json
+data/minecraft/recipe/purple_stained_glass.json
+data/minecraft/recipe/purple_stained_glass_pane_from_glass_pane.json
+data/minecraft/recipe/purple_terracotta.json
+data/minecraft/recipe/red_candle.json
+data/minecraft/recipe/red_stained_glass.json
+data/minecraft/recipe/red_stained_glass_pane_from_glass_pane.json
+data/minecraft/recipe/red_terracotta.json
+data/minecraft/recipe/white_candle.json
+data/minecraft/recipe/white_stained_glass.json
+data/minecraft/recipe/white_stained_glass_pane_from_glass_pane.json
+data/minecraft/recipe/white_terracotta.json
+data/minecraft/recipe/yellow_candle.json
+data/minecraft/recipe/yellow_stained_glass.json
+data/minecraft/recipe/yellow_stained_glass_pane_from_glass_pane.json
+data/minecraft/recipe/yellow_terracotta.json
 ```
 
 ====
@@ -1161,7 +1151,7 @@ and other horse armor as well.
 ====
 
 ```
-data/minecraft/recipes/leather_horse_armor.json
+data/minecraft/recipe/leather_horse_armor.json
 ```
 
 ====
@@ -1190,9 +1180,6 @@ Makes some crafting recipes cheaper.
 * 4 log → 4 wood
 * 4 stem → 4 hyphae
 * 7 diamond + 1 netherrack + 1 netherite ingot → 2 netherite upgrade smithing template
-* 3 iron nugget → chain
-* chest + 3 iron ingot → hopper
-* planks + 8 iron nugget → shield
 * blasting: tool → ingot
 * blasting: armor → ingot
 
@@ -1205,159 +1192,163 @@ Makes some crafting recipes cheaper.
 ====
 
 ```
-data/minecraft/recipes/acacia_fence_gate.json
-data/minecraft/recipes/acacia_fence.json
-data/minecraft/recipes/acacia_pressure_plate.json
-data/minecraft/recipes/acacia_sign.json
-data/minecraft/recipes/acacia_stairs.json
-data/minecraft/recipes/acacia_trapdoor.json
-data/minecraft/recipes/acacia_wood.json
-data/minecraft/recipes/andesite_stairs.json
-data/minecraft/recipes/bamboo_fence_gate.json
-data/minecraft/recipes/bamboo_fence.json
-data/minecraft/recipes/bamboo_mosaic_stairs.json
-data/minecraft/recipes/bamboo_pressure_plate.json
-data/minecraft/recipes/bamboo_sign.json
-data/minecraft/recipes/bamboo_stairs.json
-data/minecraft/recipes/bamboo_trapdoor.json
-data/minecraft/recipes/birch_fence_gate.json
-data/minecraft/recipes/birch_fence.json
-data/minecraft/recipes/birch_pressure_plate.json
-data/minecraft/recipes/birch_sign.json
-data/minecraft/recipes/birch_stairs.json
-data/minecraft/recipes/birch_trapdoor.json
-data/minecraft/recipes/birch_wood.json
-data/minecraft/recipes/black_banner.json
-data/minecraft/recipes/blackstone_stairs.json
-data/minecraft/recipes/blue_banner.json
-data/minecraft/recipes/brick_stairs.json
-data/minecraft/recipes/brown_banner.json
-data/minecraft/recipes/chain.json
-data/minecraft/recipes/cherry_fence_gate.json
-data/minecraft/recipes/cherry_fence.json
-data/minecraft/recipes/cherry_pressure_plate.json
-data/minecraft/recipes/cherry_sign.json
-data/minecraft/recipes/cherry_stairs.json
-data/minecraft/recipes/cherry_trapdoor.json
-data/minecraft/recipes/cherry_wood.json
-data/minecraft/recipes/cobbled_deepslate_stairs.json
-data/minecraft/recipes/cobblestone_stairs.json
-data/minecraft/recipes/crimson_fence_gate.json
-data/minecraft/recipes/crimson_fence.json
-data/minecraft/recipes/crimson_hyphae.json
-data/minecraft/recipes/crimson_pressure_plate.json
-data/minecraft/recipes/crimson_sign.json
-data/minecraft/recipes/crimson_stairs.json
-data/minecraft/recipes/crimson_trapdoor.json
-data/minecraft/recipes/cut_copper_stairs.json
-data/minecraft/recipes/cyan_banner.json
-data/minecraft/recipes/dark_oak_fence_gate.json
-data/minecraft/recipes/dark_oak_fence.json
-data/minecraft/recipes/dark_oak_pressure_plate.json
-data/minecraft/recipes/dark_oak_sign.json
-data/minecraft/recipes/dark_oak_stairs.json
-data/minecraft/recipes/dark_oak_trapdoor.json
-data/minecraft/recipes/dark_oak_wood.json
-data/minecraft/recipes/dark_prismarine_stairs.json
-data/minecraft/recipes/deepslate_brick_stairs.json
-data/minecraft/recipes/deepslate_tile_stairs.json
-data/minecraft/recipes/diorite_stairs.json
-data/minecraft/recipes/end_stone_brick_stairs.json
-data/minecraft/recipes/exposed_cut_copper_stairs.json
-data/minecraft/recipes/gold_nugget_from_blasting.json
-data/minecraft/recipes/granite_stairs.json
-data/minecraft/recipes/gray_banner.json
-data/minecraft/recipes/green_banner.json
-data/minecraft/recipes/hopper.json
-data/minecraft/recipes/iron_nugget_from_blasting.json
-data/minecraft/recipes/jungle_fence_gate.json
-data/minecraft/recipes/jungle_fence.json
-data/minecraft/recipes/jungle_pressure_plate.json
-data/minecraft/recipes/jungle_sign.json
-data/minecraft/recipes/jungle_stairs.json
-data/minecraft/recipes/jungle_trapdoor.json
-data/minecraft/recipes/jungle_wood.json
-data/minecraft/recipes/light_blue_banner.json
-data/minecraft/recipes/light_gray_banner.json
-data/minecraft/recipes/lime_banner.json
-data/minecraft/recipes/magenta_banner.json
-data/minecraft/recipes/mangrove_fence_gate.json
-data/minecraft/recipes/mangrove_fence.json
-data/minecraft/recipes/mangrove_pressure_plate.json
-data/minecraft/recipes/mangrove_sign.json
-data/minecraft/recipes/mangrove_stairs.json
-data/minecraft/recipes/mangrove_trapdoor.json
-data/minecraft/recipes/mangrove_wood.json
-data/minecraft/recipes/mossy_cobblestone_stairs.json
-data/minecraft/recipes/mossy_stone_brick_stairs.json
-data/minecraft/recipes/mud_brick_stairs.json
-data/minecraft/recipes/nether_brick_fence.json
-data/minecraft/recipes/nether_brick_stairs.json
-data/minecraft/recipes/netherite_upgrade_smithing_template.json
-data/minecraft/recipes/oak_fence_gate.json
-data/minecraft/recipes/oak_fence.json
-data/minecraft/recipes/oak_pressure_plate.json
-data/minecraft/recipes/oak_sign.json
-data/minecraft/recipes/oak_stairs.json
-data/minecraft/recipes/oak_trapdoor.json
-data/minecraft/recipes/oak_wood.json
-data/minecraft/recipes/orange_banner.json
-data/minecraft/recipes/oxidized_cut_copper_stairs.json
-data/minecraft/recipes/pink_banner.json
-data/minecraft/recipes/polished_andesite_stairs.json
-data/minecraft/recipes/polished_blackstone_brick_stairs.json
-data/minecraft/recipes/polished_blackstone_pressure_plate.json
-data/minecraft/recipes/polished_blackstone_stairs.json
-data/minecraft/recipes/polished_deepslate_stairs.json
-data/minecraft/recipes/polished_diorite_stairs.json
-data/minecraft/recipes/polished_granite_stairs.json
-data/minecraft/recipes/prismarine_brick_stairs.json
-data/minecraft/recipes/prismarine_stairs.json
-data/minecraft/recipes/purple_banner.json
-data/minecraft/recipes/purpur_stairs.json
-data/minecraft/recipes/quartz_stairs.json
-data/minecraft/recipes/red_banner.json
-data/minecraft/recipes/red_nether_brick_stairs.json
-data/minecraft/recipes/red_sandstone_stairs.json
-data/minecraft/recipes/sandstone_stairs.json
-data/minecraft/recipes/shield.json
-data/minecraft/recipes/smooth_quartz_stairs.json
-data/minecraft/recipes/smooth_red_sandstone_stairs.json
-data/minecraft/recipes/smooth_sandstone_stairs.json
-data/minecraft/recipes/spruce_fence_gate.json
-data/minecraft/recipes/spruce_fence.json
-data/minecraft/recipes/spruce_pressure_plate.json
-data/minecraft/recipes/spruce_sign.json
-data/minecraft/recipes/spruce_stairs.json
-data/minecraft/recipes/spruce_trapdoor.json
-data/minecraft/recipes/spruce_wood.json
-data/minecraft/recipes/stone_brick_stairs.json
-data/minecraft/recipes/stone_pressure_plate.json
-data/minecraft/recipes/stone_stairs.json
-data/minecraft/recipes/stripped_acacia_wood.json
-data/minecraft/recipes/stripped_birch_wood.json
-data/minecraft/recipes/stripped_cherry_wood.json
-data/minecraft/recipes/stripped_crimson_hyphae.json
-data/minecraft/recipes/stripped_dark_oak_wood.json
-data/minecraft/recipes/stripped_jungle_wood.json
-data/minecraft/recipes/stripped_mangrove_wood.json
-data/minecraft/recipes/stripped_oak_wood.json
-data/minecraft/recipes/stripped_spruce_wood.json
-data/minecraft/recipes/stripped_warped_hyphae.json
-data/minecraft/recipes/warped_fence_gate.json
-data/minecraft/recipes/warped_fence.json
-data/minecraft/recipes/warped_hyphae.json
-data/minecraft/recipes/warped_pressure_plate.json
-data/minecraft/recipes/warped_sign.json
-data/minecraft/recipes/warped_stairs.json
-data/minecraft/recipes/warped_trapdoor.json
-data/minecraft/recipes/waxed_cut_copper_stairs.json
-data/minecraft/recipes/waxed_exposed_cut_copper_stairs.json
-data/minecraft/recipes/waxed_oxidized_cut_copper_stairs.json
-data/minecraft/recipes/waxed_weathered_cut_copper_stairs.json
-data/minecraft/recipes/weathered_cut_copper_stairs.json
-data/minecraft/recipes/white_banner.json
-data/minecraft/recipes/yellow_banner.json
+data/minecraft/recipe/acacia_fence_gate.json
+data/minecraft/recipe/acacia_fence.json
+data/minecraft/recipe/acacia_pressure_plate.json
+data/minecraft/recipe/acacia_sign.json
+data/minecraft/recipe/acacia_stairs.json
+data/minecraft/recipe/acacia_trapdoor.json
+data/minecraft/recipe/acacia_wood.json
+data/minecraft/recipe/andesite_stairs.json
+data/minecraft/recipe/bamboo_fence_gate.json
+data/minecraft/recipe/bamboo_fence.json
+data/minecraft/recipe/bamboo_mosaic_stairs.json
+data/minecraft/recipe/bamboo_pressure_plate.json
+data/minecraft/recipe/bamboo_sign.json
+data/minecraft/recipe/bamboo_stairs.json
+data/minecraft/recipe/bamboo_trapdoor.json
+data/minecraft/recipe/birch_fence_gate.json
+data/minecraft/recipe/birch_fence.json
+data/minecraft/recipe/birch_pressure_plate.json
+data/minecraft/recipe/birch_sign.json
+data/minecraft/recipe/birch_stairs.json
+data/minecraft/recipe/birch_trapdoor.json
+data/minecraft/recipe/birch_wood.json
+data/minecraft/recipe/black_banner.json
+data/minecraft/recipe/blackstone_stairs.json
+data/minecraft/recipe/blue_banner.json
+data/minecraft/recipe/brick_stairs.json
+data/minecraft/recipe/brown_banner.json
+data/minecraft/recipe/chain.json
+data/minecraft/recipe/cherry_fence_gate.json
+data/minecraft/recipe/cherry_fence.json
+data/minecraft/recipe/cherry_pressure_plate.json
+data/minecraft/recipe/cherry_sign.json
+data/minecraft/recipe/cherry_stairs.json
+data/minecraft/recipe/cherry_trapdoor.json
+data/minecraft/recipe/cherry_wood.json
+data/minecraft/recipe/cobbled_deepslate_stairs.json
+data/minecraft/recipe/cobblestone_stairs.json
+data/minecraft/recipe/copper_trapdoor.json
+data/minecraft/recipe/crimson_fence_gate.json
+data/minecraft/recipe/crimson_fence.json
+data/minecraft/recipe/crimson_hyphae.json
+data/minecraft/recipe/crimson_pressure_plate.json
+data/minecraft/recipe/crimson_sign.json
+data/minecraft/recipe/crimson_stairs.json
+data/minecraft/recipe/crimson_trapdoor.json
+data/minecraft/recipe/cut_copper_stairs.json
+data/minecraft/recipe/cyan_banner.json
+data/minecraft/recipe/dark_oak_fence_gate.json
+data/minecraft/recipe/dark_oak_fence.json
+data/minecraft/recipe/dark_oak_pressure_plate.json
+data/minecraft/recipe/dark_oak_sign.json
+data/minecraft/recipe/dark_oak_stairs.json
+data/minecraft/recipe/dark_oak_trapdoor.json
+data/minecraft/recipe/dark_oak_wood.json
+data/minecraft/recipe/dark_prismarine_stairs.json
+data/minecraft/recipe/deepslate_brick_stairs.json
+data/minecraft/recipe/deepslate_tile_stairs.json
+data/minecraft/recipe/diorite_stairs.json
+data/minecraft/recipe/end_stone_brick_stairs.json
+data/minecraft/recipe/exposed_cut_copper_stairs.json
+data/minecraft/recipe/gold_nugget_from_blasting.json
+data/minecraft/recipe/granite_stairs.json
+data/minecraft/recipe/gray_banner.json
+data/minecraft/recipe/green_banner.json
+data/minecraft/recipe/hopper.json
+data/minecraft/recipe/iron_nugget_from_blasting.json
+data/minecraft/recipe/jungle_fence_gate.json
+data/minecraft/recipe/jungle_fence.json
+data/minecraft/recipe/jungle_pressure_plate.json
+data/minecraft/recipe/jungle_sign.json
+data/minecraft/recipe/jungle_stairs.json
+data/minecraft/recipe/jungle_trapdoor.json
+data/minecraft/recipe/jungle_wood.json
+data/minecraft/recipe/light_blue_banner.json
+data/minecraft/recipe/light_gray_banner.json
+data/minecraft/recipe/lime_banner.json
+data/minecraft/recipe/magenta_banner.json
+data/minecraft/recipe/mangrove_fence_gate.json
+data/minecraft/recipe/mangrove_fence.json
+data/minecraft/recipe/mangrove_pressure_plate.json
+data/minecraft/recipe/mangrove_sign.json
+data/minecraft/recipe/mangrove_stairs.json
+data/minecraft/recipe/mangrove_trapdoor.json
+data/minecraft/recipe/mangrove_wood.json
+data/minecraft/recipe/mossy_cobblestone_stairs.json
+data/minecraft/recipe/mossy_stone_brick_stairs.json
+data/minecraft/recipe/mud_brick_stairs.json
+data/minecraft/recipe/nether_brick_fence.json
+data/minecraft/recipe/nether_brick_stairs.json
+data/minecraft/recipe/netherite_upgrade_smithing_template.json
+data/minecraft/recipe/oak_fence_gate.json
+data/minecraft/recipe/oak_fence.json
+data/minecraft/recipe/oak_pressure_plate.json
+data/minecraft/recipe/oak_sign.json
+data/minecraft/recipe/oak_stairs.json
+data/minecraft/recipe/oak_trapdoor.json
+data/minecraft/recipe/oak_wood.json
+data/minecraft/recipe/orange_banner.json
+data/minecraft/recipe/oxidized_cut_copper_stairs.json
+data/minecraft/recipe/pink_banner.json
+data/minecraft/recipe/polished_andesite_stairs.json
+data/minecraft/recipe/polished_blackstone_brick_stairs.json
+data/minecraft/recipe/polished_blackstone_pressure_plate.json
+data/minecraft/recipe/polished_blackstone_stairs.json
+data/minecraft/recipe/polished_deepslate_stairs.json
+data/minecraft/recipe/polished_diorite_stairs.json
+data/minecraft/recipe/polished_granite_stairs.json
+data/minecraft/recipe/polished_tuff_stairs.json
+data/minecraft/recipe/prismarine_brick_stairs.json
+data/minecraft/recipe/prismarine_stairs.json
+data/minecraft/recipe/purple_banner.json
+data/minecraft/recipe/purpur_stairs.json
+data/minecraft/recipe/quartz_stairs.json
+data/minecraft/recipe/red_banner.json
+data/minecraft/recipe/red_nether_brick_stairs.json
+data/minecraft/recipe/red_sandstone_stairs.json
+data/minecraft/recipe/sandstone_stairs.json
+data/minecraft/recipe/shield.json
+data/minecraft/recipe/smooth_quartz_stairs.json
+data/minecraft/recipe/smooth_red_sandstone_stairs.json
+data/minecraft/recipe/smooth_sandstone_stairs.json
+data/minecraft/recipe/spruce_fence_gate.json
+data/minecraft/recipe/spruce_fence.json
+data/minecraft/recipe/spruce_pressure_plate.json
+data/minecraft/recipe/spruce_sign.json
+data/minecraft/recipe/spruce_stairs.json
+data/minecraft/recipe/spruce_trapdoor.json
+data/minecraft/recipe/spruce_wood.json
+data/minecraft/recipe/stone_brick_stairs.json
+data/minecraft/recipe/stone_pressure_plate.json
+data/minecraft/recipe/stone_stairs.json
+data/minecraft/recipe/stripped_acacia_wood.json
+data/minecraft/recipe/stripped_birch_wood.json
+data/minecraft/recipe/stripped_cherry_wood.json
+data/minecraft/recipe/stripped_crimson_hyphae.json
+data/minecraft/recipe/stripped_dark_oak_wood.json
+data/minecraft/recipe/stripped_jungle_wood.json
+data/minecraft/recipe/stripped_mangrove_wood.json
+data/minecraft/recipe/stripped_oak_wood.json
+data/minecraft/recipe/stripped_spruce_wood.json
+data/minecraft/recipe/stripped_warped_hyphae.json
+data/minecraft/recipe/tuff_brick_stairs.json
+data/minecraft/recipe/tuff_stairs.json
+data/minecraft/recipe/warped_fence_gate.json
+data/minecraft/recipe/warped_fence.json
+data/minecraft/recipe/warped_hyphae.json
+data/minecraft/recipe/warped_pressure_plate.json
+data/minecraft/recipe/warped_sign.json
+data/minecraft/recipe/warped_stairs.json
+data/minecraft/recipe/warped_trapdoor.json
+data/minecraft/recipe/waxed_cut_copper_stairs.json
+data/minecraft/recipe/waxed_exposed_cut_copper_stairs.json
+data/minecraft/recipe/waxed_oxidized_cut_copper_stairs.json
+data/minecraft/recipe/waxed_weathered_cut_copper_stairs.json
+data/minecraft/recipe/weathered_cut_copper_stairs.json
+data/minecraft/recipe/white_banner.json
+data/minecraft/recipe/yellow_banner.json
 ```
 
 ====
@@ -1376,27 +1367,6 @@ storage.
 [%collapsible]
 ====
 
-* amethyst block → 4 amethyst shard
-* bricks → 4 brick
-* clay → 4 clay ball
-* glowstone → 4 glowstone dust
-* honeycomb block → 4 honeycomb
-* magma block → 4 magma cream
-* nether bricks → 4 nether brick
-* dripstone block → 4 pointed dripstone
-* purpur block → popped chorus fruit
-* prismarine → 4 prismarine shard
-* red sandstone → 4 red sand
-* sandstone → 4 sand
-* snow block → 4 snowball
-* 2 bamboo block → 18 bamboo
-* packed ice → 9 ice
-* melon → 9 melon slice
-* blue ice → 9 packed ice
-* prismarine bricks → 9 prismarine shard
-* cobweb → 9 string
-* bookshelf → 3 book
-* book → 3 paper
 
 ====
 
@@ -1433,15 +1403,15 @@ Lecterns use two extra slabs.
 ====
 
 ```
-data/minecraft/recipes/barrel.json
-data/minecraft/recipes/blast_furnace.json
-data/minecraft/recipes/cartography_table.json
-data/minecraft/recipes/fletching_table.json
-data/minecraft/recipes/grindstone.json
-data/minecraft/recipes/lectern.json
-data/minecraft/recipes/smithing_table.json
-data/minecraft/recipes/smoker.json
-data/minecraft/recipes/stonecutter.json
+data/minecraft/recipe/barrel.json
+data/minecraft/recipe/blast_furnace.json
+data/minecraft/recipe/cartography_table.json
+data/minecraft/recipe/fletching_table.json
+data/minecraft/recipe/grindstone.json
+data/minecraft/recipe/lectern.json
+data/minecraft/recipe/smithing_table.json
+data/minecraft/recipe/smoker.json
+data/minecraft/recipe/stonecutter.json
 ```
 
 ====
@@ -1461,16 +1431,6 @@ The following blocks can be freely crafted into each other.
 [%collapsible]
 ====
 
-* button
-* door
-* fence
-* fence gate
-* pressure plate
-* sign
-* slab
-* stairs
-* trapdoor
-* wall
 
 ====
 
@@ -1560,8 +1520,8 @@ Adds placeable food and makes glistering melons and popped chorus fruit edible.
 ====
 
 ```
-data/minecraft/recipes/glistering_melon_slice.json
-data/minecraft/recipes/pumpkin_pie.json
+data/minecraft/recipe/glistering_melon_slice.json
+data/minecraft/recipe/pumpkin_pie.json
 ```
 
 ====
@@ -1641,7 +1601,7 @@ many of the upgraded items have custom textures.
 assets/minecraft/models/item/bow.json
 assets/minecraft/models/item/diamond_boots.json
 assets/minecraft/models/item/leather_boots.json
-data/minecraft/recipes/netherite_upgrade_smithing_template.json
+data/minecraft/recipe/netherite_upgrade_smithing_template.json
 ```
 
 ====
@@ -1679,7 +1639,7 @@ assets/minecraft/textures/block/smoker_front_on.png.mcmeta
 assets/minecraft/textures/block/smoker_front.png
 assets/minecraft/textures/block/smoker_side.png
 assets/minecraft/textures/block/smoker_top.png
-data/minecraft/recipes/smoker.json
+data/minecraft/recipe/smoker.json
 ```
 
 ====
@@ -1716,7 +1676,7 @@ and use the iron to sidegrade the furnace into a blast furnace.
 ====
 
 ```
-data/minecraft/recipes/furnace.json
+data/minecraft/recipe/furnace.json
 ```
 
 ====
@@ -1786,24 +1746,24 @@ pumpkins, beehives, and bee nests.
 ====
 
 ```
-data/minecraft/loot_tables/blocks/cobweb.json
-data/minecraft/loot_tables/blocks/dead_bush.json
-data/minecraft/loot_tables/blocks/fern.json
-data/minecraft/loot_tables/blocks/glow_lichen.json
-data/minecraft/loot_tables/blocks/hanging_roots.json
-data/minecraft/loot_tables/blocks/large_fern.json
-data/minecraft/loot_tables/blocks/nether_sprouts.json
-data/minecraft/loot_tables/blocks/seagrass.json
-data/minecraft/loot_tables/blocks/short_grass.json
-data/minecraft/loot_tables/blocks/small_dripleaf.json
-data/minecraft/loot_tables/blocks/tall_grass.json
-data/minecraft/loot_tables/blocks/tall_seagrass.json
-data/minecraft/loot_tables/blocks/twisting_vines.json
-data/minecraft/loot_tables/blocks/twisting_vines_plant.json
-data/minecraft/loot_tables/blocks/vine.json
-data/minecraft/loot_tables/blocks/weeping_vines.json
-data/minecraft/loot_tables/blocks/weeping_vines_plant.json
-data/minecraft/tags/blocks/mineable/hoe.json
+data/minecraft/loot_table/blocks/cobweb.json
+data/minecraft/loot_table/blocks/dead_bush.json
+data/minecraft/loot_table/blocks/fern.json
+data/minecraft/loot_table/blocks/glow_lichen.json
+data/minecraft/loot_table/blocks/hanging_roots.json
+data/minecraft/loot_table/blocks/large_fern.json
+data/minecraft/loot_table/blocks/nether_sprouts.json
+data/minecraft/loot_table/blocks/seagrass.json
+data/minecraft/loot_table/blocks/short_grass.json
+data/minecraft/loot_table/blocks/small_dripleaf.json
+data/minecraft/loot_table/blocks/tall_grass.json
+data/minecraft/loot_table/blocks/tall_seagrass.json
+data/minecraft/loot_table/blocks/twisting_vines.json
+data/minecraft/loot_table/blocks/twisting_vines_plant.json
+data/minecraft/loot_table/blocks/vine.json
+data/minecraft/loot_table/blocks/weeping_vines.json
+data/minecraft/loot_table/blocks/weeping_vines_plant.json
+data/minecraft/tags/block/mineable/hoe.json
 ```
 
 ====
@@ -1859,30 +1819,30 @@ drop 2 shells.
 ====
 
 ```
-data/minecraft/loot_tables/blocks/beetroots.json
-data/minecraft/loot_tables/blocks/cherry_leaves.json
-data/minecraft/loot_tables/blocks/infested_chiseled_stone_bricks.json
-data/minecraft/loot_tables/blocks/infested_cobblestone.json
-data/minecraft/loot_tables/blocks/infested_cracked_stone_bricks.json
-data/minecraft/loot_tables/blocks/infested_deepslate.json
-data/minecraft/loot_tables/blocks/infested_mossy_stone_bricks.json
-data/minecraft/loot_tables/blocks/infested_stone_bricks.json
-data/minecraft/loot_tables/blocks/infested_stone.json
-data/minecraft/loot_tables/blocks/jungle_leaves.json
-data/minecraft/loot_tables/blocks/wheat.json
-data/minecraft/loot_tables/entities/cave_spider.json
-data/minecraft/loot_tables/entities/goat.json
-data/minecraft/loot_tables/entities/husk.json
-data/minecraft/loot_tables/entities/shulker.json
-data/minecraft/loot_tables/entities/sniffer.json
-data/minecraft/loot_tables/gameplay/sniffer_digging.json
-data/minecraft/tags/blocks/azalea_grows_on.json
-data/minecraft/tags/blocks/bamboo_plantable_on.json
-data/minecraft/tags/blocks/dead_bush_may_place_on.json
-data/minecraft/tags/blocks/mushroom_grow_block.json
-data/minecraft/tags/blocks/nylium.json
-data/minecraft/tags/blocks/small_dripleaf_placeable.json
-data/minecraft/tags/items/sniffer_food.json
+data/minecraft/loot_table/blocks/beetroots.json
+data/minecraft/loot_table/blocks/cherry_leaves.json
+data/minecraft/loot_table/blocks/infested_chiseled_stone_bricks.json
+data/minecraft/loot_table/blocks/infested_cobblestone.json
+data/minecraft/loot_table/blocks/infested_cracked_stone_bricks.json
+data/minecraft/loot_table/blocks/infested_deepslate.json
+data/minecraft/loot_table/blocks/infested_mossy_stone_bricks.json
+data/minecraft/loot_table/blocks/infested_stone_bricks.json
+data/minecraft/loot_table/blocks/infested_stone.json
+data/minecraft/loot_table/blocks/jungle_leaves.json
+data/minecraft/loot_table/blocks/wheat.json
+data/minecraft/loot_table/entities/cave_spider.json
+data/minecraft/loot_table/entities/goat.json
+data/minecraft/loot_table/entities/husk.json
+data/minecraft/loot_table/entities/shulker.json
+data/minecraft/loot_table/entities/sniffer.json
+data/minecraft/loot_table/gameplay/sniffer_digging.json
+data/minecraft/tags/block/azalea_grows_on.json
+data/minecraft/tags/block/bamboo_plantable_on.json
+data/minecraft/tags/block/dead_bush_may_place_on.json
+data/minecraft/tags/block/mushroom_grow_block.json
+data/minecraft/tags/block/nylium.json
+data/minecraft/tags/block/small_dripleaf_placeable.json
+data/minecraft/tags/item/sniffer_food.json
 ```
 
 ====
@@ -1916,9 +1876,9 @@ compatible with <<loot-overhaul,Loot Overhaul>>.
 ====
 
 ```
-data/minecraft/loot_tables/chests/shipwreck_map.json
-data/minecraft/loot_tables/chests/underwater_ruin_big.json
-data/minecraft/loot_tables/chests/underwater_ruin_small.json
+data/minecraft/loot_table/chests/shipwreck_map.json
+data/minecraft/loot_table/chests/underwater_ruin_big.json
+data/minecraft/loot_table/chests/underwater_ruin_small.json
 ```
 
 ====
@@ -2015,8 +1975,8 @@ The heads look like tiny blocks.
 ====
 
 ```
-data/minecraft/loot_tables/blocks/player_head.json
-data/minecraft/loot_tables/gameplay/cat_morning_gift.json
+data/minecraft/loot_table/blocks/player_head.json
+data/minecraft/loot_table/gameplay/cat_morning_gift.json
 ```
 
 ====
@@ -2130,20 +2090,20 @@ enchanted golem, pie golem, lime golem, and honey golem.
 ====
 
 ```
-data/minecraft/loot_tables/blocks/player_head.json
-data/minecraft/loot_tables/gameplay/hero_of_the_village/armorer_gift.json
-data/minecraft/loot_tables/gameplay/hero_of_the_village/butcher_gift.json
-data/minecraft/loot_tables/gameplay/hero_of_the_village/cartographer_gift.json
-data/minecraft/loot_tables/gameplay/hero_of_the_village/cleric_gift.json
-data/minecraft/loot_tables/gameplay/hero_of_the_village/farmer_gift.json
-data/minecraft/loot_tables/gameplay/hero_of_the_village/fisherman_gift.json
-data/minecraft/loot_tables/gameplay/hero_of_the_village/fletcher_gift.json
-data/minecraft/loot_tables/gameplay/hero_of_the_village/leatherworker_gift.json
-data/minecraft/loot_tables/gameplay/hero_of_the_village/librarian_gift.json
-data/minecraft/loot_tables/gameplay/hero_of_the_village/mason_gift.json
-data/minecraft/loot_tables/gameplay/hero_of_the_village/shepherd_gift.json
-data/minecraft/loot_tables/gameplay/hero_of_the_village/toolsmith_gift.json
-data/minecraft/loot_tables/gameplay/hero_of_the_village/weaponsmith_gift.json
+data/minecraft/loot_table/blocks/player_head.json
+data/minecraft/loot_table/gameplay/hero_of_the_village/armorer_gift.json
+data/minecraft/loot_table/gameplay/hero_of_the_village/butcher_gift.json
+data/minecraft/loot_table/gameplay/hero_of_the_village/cartographer_gift.json
+data/minecraft/loot_table/gameplay/hero_of_the_village/cleric_gift.json
+data/minecraft/loot_table/gameplay/hero_of_the_village/farmer_gift.json
+data/minecraft/loot_table/gameplay/hero_of_the_village/fisherman_gift.json
+data/minecraft/loot_table/gameplay/hero_of_the_village/fletcher_gift.json
+data/minecraft/loot_table/gameplay/hero_of_the_village/leatherworker_gift.json
+data/minecraft/loot_table/gameplay/hero_of_the_village/librarian_gift.json
+data/minecraft/loot_table/gameplay/hero_of_the_village/mason_gift.json
+data/minecraft/loot_table/gameplay/hero_of_the_village/shepherd_gift.json
+data/minecraft/loot_table/gameplay/hero_of_the_village/toolsmith_gift.json
+data/minecraft/loot_table/gameplay/hero_of_the_village/weaponsmith_gift.json
 ```
 
 ====
@@ -2176,8 +2136,8 @@ Shown above are the heads of Computron, TV Boy, Donut Girl, and Rubik.
 ====
 
 ```
-data/minecraft/loot_tables/blocks/player_head.json
-data/minecraft/loot_tables/entities/player.json
+data/minecraft/loot_table/blocks/player_head.json
+data/minecraft/loot_table/entities/player.json
 ```
 
 ====
@@ -2271,16 +2231,6 @@ data/minecraft/loot_tables/entities/player.json
 // .https://github.com/DMBuce/bucepack/releases/latest/download/relics_archy.zip[`relics_archy.zip`]
 // [%collapsible]
 // ====
-// 
-// ```
-// data/minecraft/loot_tables/archaeology/desert_pyramid.json
-// data/minecraft/loot_tables/archaeology/desert_well.json
-// data/minecraft/loot_tables/archaeology/ocean_ruin_cold.json
-// data/minecraft/loot_tables/archaeology/ocean_ruin_warm.json
-// data/minecraft/loot_tables/archaeology/trail_ruins_common.json
-// data/minecraft/loot_tables/archaeology/trail_ruins_rare.json
-// ```
-// 
 // ====
 // 
 // .https://github.com/DMBuce/bucepack/releases[All Releases & Changelogs]
@@ -2362,54 +2312,54 @@ Light blocks spawn in woodland mansion and ancient city chests.
 ====
 
 ```
-data/minecraft/loot_tables/chests/abandoned_mineshaft.json
-data/minecraft/loot_tables/chests/ancient_city_ice_box.json
-data/minecraft/loot_tables/chests/ancient_city.json
-data/minecraft/loot_tables/chests/bastion_bridge.json
-data/minecraft/loot_tables/chests/bastion_hoglin_stable.json
-data/minecraft/loot_tables/chests/bastion_other.json
-data/minecraft/loot_tables/chests/bastion_treasure.json
-data/minecraft/loot_tables/chests/buried_treasure.json
-data/minecraft/loot_tables/chests/desert_pyramid.json
-data/minecraft/loot_tables/chests/end_city_treasure.json
-data/minecraft/loot_tables/chests/igloo_chest.json
-data/minecraft/loot_tables/chests/jungle_temple_dispenser.json
-data/minecraft/loot_tables/chests/jungle_temple.json
-data/minecraft/loot_tables/chests/nether_bridge.json
-data/minecraft/loot_tables/chests/pillager_outpost.json
-data/minecraft/loot_tables/chests/ruined_portal.json
-data/minecraft/loot_tables/chests/shipwreck_map.json
-data/minecraft/loot_tables/chests/shipwreck_supply.json
-data/minecraft/loot_tables/chests/shipwreck_treasure.json
-data/minecraft/loot_tables/chests/simple_dungeon.json
-data/minecraft/loot_tables/chests/stronghold_corridor.json
-data/minecraft/loot_tables/chests/stronghold_crossing.json
-data/minecraft/loot_tables/chests/stronghold_library.json
-data/minecraft/loot_tables/chests/underwater_ruin_big.json
-data/minecraft/loot_tables/chests/underwater_ruin_small.json
-data/minecraft/loot_tables/chests/village/village_armorer.json
-data/minecraft/loot_tables/chests/village/village_butcher.json
-data/minecraft/loot_tables/chests/village/village_cartographer.json
-data/minecraft/loot_tables/chests/village/village_desert_house.json
-data/minecraft/loot_tables/chests/village/village_fisher.json
-data/minecraft/loot_tables/chests/village/village_fletcher.json
-data/minecraft/loot_tables/chests/village/village_mason.json
-data/minecraft/loot_tables/chests/village/village_plains_house.json
-data/minecraft/loot_tables/chests/village/village_savanna_house.json
-data/minecraft/loot_tables/chests/village/village_shepherd.json
-data/minecraft/loot_tables/chests/village/village_snowy_house.json
-data/minecraft/loot_tables/chests/village/village_taiga_house.json
-data/minecraft/loot_tables/chests/village/village_tannery.json
-data/minecraft/loot_tables/chests/village/village_temple.json
-data/minecraft/loot_tables/chests/village/village_toolsmith.json
-data/minecraft/loot_tables/chests/village/village_weaponsmith.json
-data/minecraft/loot_tables/chests/woodland_mansion.json
-data/minecraft/loot_tables/gameplay/fishing/fish.json
-data/minecraft/loot_tables/gameplay/fishing/junk.json
-data/minecraft/loot_tables/gameplay/fishing/treasure.json
-data/minecraft/loot_tables/gameplay/piglin_bartering.json
-data/minecraft/recipes/leather_horse_armor.json
-data/minecraft/tags/items/creeper_drop_music_discs.json
+data/minecraft/loot_table/chests/abandoned_mineshaft.json
+data/minecraft/loot_table/chests/ancient_city_ice_box.json
+data/minecraft/loot_table/chests/ancient_city.json
+data/minecraft/loot_table/chests/bastion_bridge.json
+data/minecraft/loot_table/chests/bastion_hoglin_stable.json
+data/minecraft/loot_table/chests/bastion_other.json
+data/minecraft/loot_table/chests/bastion_treasure.json
+data/minecraft/loot_table/chests/buried_treasure.json
+data/minecraft/loot_table/chests/desert_pyramid.json
+data/minecraft/loot_table/chests/end_city_treasure.json
+data/minecraft/loot_table/chests/igloo_chest.json
+data/minecraft/loot_table/chests/jungle_temple_dispenser.json
+data/minecraft/loot_table/chests/jungle_temple.json
+data/minecraft/loot_table/chests/nether_bridge.json
+data/minecraft/loot_table/chests/pillager_outpost.json
+data/minecraft/loot_table/chests/ruined_portal.json
+data/minecraft/loot_table/chests/shipwreck_map.json
+data/minecraft/loot_table/chests/shipwreck_supply.json
+data/minecraft/loot_table/chests/shipwreck_treasure.json
+data/minecraft/loot_table/chests/simple_dungeon.json
+data/minecraft/loot_table/chests/stronghold_corridor.json
+data/minecraft/loot_table/chests/stronghold_crossing.json
+data/minecraft/loot_table/chests/stronghold_library.json
+data/minecraft/loot_table/chests/underwater_ruin_big.json
+data/minecraft/loot_table/chests/underwater_ruin_small.json
+data/minecraft/loot_table/chests/village/village_armorer.json
+data/minecraft/loot_table/chests/village/village_butcher.json
+data/minecraft/loot_table/chests/village/village_cartographer.json
+data/minecraft/loot_table/chests/village/village_desert_house.json
+data/minecraft/loot_table/chests/village/village_fisher.json
+data/minecraft/loot_table/chests/village/village_fletcher.json
+data/minecraft/loot_table/chests/village/village_mason.json
+data/minecraft/loot_table/chests/village/village_plains_house.json
+data/minecraft/loot_table/chests/village/village_savanna_house.json
+data/minecraft/loot_table/chests/village/village_shepherd.json
+data/minecraft/loot_table/chests/village/village_snowy_house.json
+data/minecraft/loot_table/chests/village/village_taiga_house.json
+data/minecraft/loot_table/chests/village/village_tannery.json
+data/minecraft/loot_table/chests/village/village_temple.json
+data/minecraft/loot_table/chests/village/village_toolsmith.json
+data/minecraft/loot_table/chests/village/village_weaponsmith.json
+data/minecraft/loot_table/chests/woodland_mansion.json
+data/minecraft/loot_table/gameplay/fishing/fish.json
+data/minecraft/loot_table/gameplay/fishing/junk.json
+data/minecraft/loot_table/gameplay/fishing/treasure.json
+data/minecraft/loot_table/gameplay/piglin_bartering.json
+data/minecraft/recipe/leather_horse_armor.json
+data/minecraft/tags/item/creeper_drop_music_discs.json
 ```
 
 ====
@@ -2498,7 +2448,7 @@ datapacks.
 ====
 
 ```
-data/minecraft/loot_tables/chests/spawn_bonus_chest.json
+data/minecraft/loot_table/chests/spawn_bonus_chest.json
 ```
 
 ====
@@ -2646,8 +2596,8 @@ Rail recipes are changed to have a stick in the middle.
 ====
 
 ```
-data/minecraft/recipes/activator_rail.json
-data/minecraft/recipes/detector_rail.json
+data/minecraft/recipe/activator_rail.json
+data/minecraft/recipe/detector_rail.json
 ```
 
 ====
@@ -2679,7 +2629,7 @@ the item's texture will show the arms and/or baseplate as appropriate.
 
 ```
 assets/minecraft/models/item/armor_stand.json
-data/minecraft/loot_tables/entities/armor_stand.json
+data/minecraft/loot_table/entities/armor_stand.json
 ```
 
 ====
@@ -3126,21 +3076,6 @@ Paths extend Speed I effects for players in a manner similar to beacons.
 // .https://github.com/DMBuce/bucepack/releases/latest/download/relics_mythic.zip[`relics_mythic.zip`]
 // [%collapsible]
 // ====
-// 
-// ```
-// data/minecraft/loot_tables/blocks/gilded_blackstone.json
-// data/minecraft/loot_tables/blocks/lodestone.json
-// data/minecraft/loot_tables/entities/bee.json
-// data/minecraft/loot_tables/entities/endermite.json
-// data/minecraft/loot_tables/entities/ghast.json
-// data/minecraft/loot_tables/entities/glow_squid.json
-// data/minecraft/loot_tables/entities/pig.json
-// data/minecraft/loot_tables/entities/sheep.json
-// data/minecraft/loot_tables/entities/sheep/light_gray.json
-// data/minecraft/loot_tables/entities/silverfish.json
-// data/minecraft/tags/entity_types/frog_food.json
-// ```
-// 
 // ====
 // 
 // .https://github.com/DMBuce/bucepack/releases[All Releases & Changelogs]
@@ -3298,7 +3233,7 @@ assets/minecraft/textures/item/light_12.png
 assets/minecraft/textures/item/light_13.png
 assets/minecraft/textures/item/light_14.png
 assets/minecraft/textures/item/light_15.png
-data/minecraft/loot_tables/entities/phantom.json
+data/minecraft/loot_table/entities/phantom.json
 ```
 
 ====
@@ -3519,8 +3454,8 @@ Changes that facilitate survival in The End:
 ====
 
 ```
-data/minecraft/loot_tables/blocks/crying_obsidian.json
-data/minecraft/loot_tables/chests/end_city_treasure.json
+data/minecraft/loot_table/blocks/crying_obsidian.json
+data/minecraft/loot_table/chests/end_city_treasure.json
 ```
 
 ====
@@ -3566,13 +3501,6 @@ and so on.
 .https://github.com/DMBuce/bucepack/releases/latest/download/crafter.zip[`crafter.zip`]
 [%collapsible]
 ====
-
-```
-data/minecraft/loot_tables/blocks/crafter.json
-data/minecraft/tags/blocks/mineable/pickaxe.json
-data/minecraft/tags/blocks/needs_stone_tool.json
-```
-
 ====
 
 .https://github.com/DMBuce/bucepack/releases[All Releases & Changelogs]
@@ -3592,20 +3520,6 @@ and so on.
 .https://github.com/DMBuce/bucepack/releases/latest/download/bulbs.zip[`bulbs.zip`]
 [%collapsible]
 ====
-
-```
-data/minecraft/loot_tables/blocks/copper_bulb.json
-data/minecraft/loot_tables/blocks/exposed_copper_bulb.json
-data/minecraft/loot_tables/blocks/oxidized_copper_bulb.json
-data/minecraft/loot_tables/blocks/waxed_copper_bulb.json
-data/minecraft/loot_tables/blocks/waxed_exposed_copper_bulb.json
-data/minecraft/loot_tables/blocks/waxed_oxidized_copper_bulb.json
-data/minecraft/loot_tables/blocks/waxed_weathered_copper_bulb.json
-data/minecraft/loot_tables/blocks/weathered_copper_bulb.json
-data/minecraft/tags/blocks/mineable/pickaxe.json
-data/minecraft/tags/blocks/needs_stone_tool.json
-```
-
 ====
 
 .https://github.com/DMBuce/bucepack/releases[All Releases & Changelogs]
@@ -3655,10 +3569,10 @@ if broken after being placed.
 ====
 
 ```
-data/minecraft/loot_tables/entities/blaze.json
-data/minecraft/loot_tables/entities/breeze.json
-data/minecraft/loot_tables/entities/iron_golem.json
-data/minecraft/loot_tables/entities/snow_golem.json
+data/minecraft/loot_table/entities/blaze.json
+data/minecraft/loot_table/entities/breeze.json
+data/minecraft/loot_table/entities/iron_golem.json
+data/minecraft/loot_table/entities/snow_golem.json
 ```
 
 ====
@@ -3696,8 +3610,6 @@ data/minecraft/loot_tables/entities/snow_golem.json
 //====
 //
 //```
-//data/minecraft/loot_tables/entities/creeper.json
-//data/minecraft/tags/blocks/moss_replaceable.json
 //data/minecraft/tags/worldgen/biome/has_structure/ancient_city.json
 //data/minecraft/tags/worldgen/biome/has_structure/buried_treasure.json
 //data/minecraft/tags/worldgen/biome/has_structure/desert_pyramid.json
@@ -3802,7 +3714,6 @@ to (0,0,0) in the overworld instead of the enderchest they entered.
 //====
 //
 //```
-//data/minecraft/loot_tables/entities/breeze.json
 //data/minecraft/worldgen/structure/desert_pyramid.json
 //```
 //
@@ -3824,7 +3735,7 @@ Makes husks spawn in desert pyramids and drop sand.
 ====
 
 ```
-data/minecraft/loot_tables/entities/husk.json
+data/minecraft/loot_table/entities/husk.json
 data/minecraft/worldgen/structure/desert_pyramid.json
 ```
 
@@ -3848,17 +3759,17 @@ and Logs can be crafted from 2 Wood.
 ====
 
 ```
-data/minecraft/loot_tables/blocks/acacia_wood.json
-data/minecraft/loot_tables/blocks/birch_wood.json
-data/minecraft/loot_tables/blocks/cherry_wood.json
-data/minecraft/loot_tables/blocks/crimson_hyphae.json
-data/minecraft/loot_tables/blocks/dark_oak_wood.json
-data/minecraft/loot_tables/blocks/jungle_wood.json
-data/minecraft/loot_tables/blocks/mangrove_wood.json
-data/minecraft/loot_tables/blocks/oak_wood.json
-data/minecraft/loot_tables/blocks/spruce_wood.json
-data/minecraft/loot_tables/blocks/warped_hyphae.json
-data/minecraft/tags/blocks/overworld_natural_logs.json
+data/minecraft/loot_table/blocks/acacia_wood.json
+data/minecraft/loot_table/blocks/birch_wood.json
+data/minecraft/loot_table/blocks/cherry_wood.json
+data/minecraft/loot_table/blocks/crimson_hyphae.json
+data/minecraft/loot_table/blocks/dark_oak_wood.json
+data/minecraft/loot_table/blocks/jungle_wood.json
+data/minecraft/loot_table/blocks/mangrove_wood.json
+data/minecraft/loot_table/blocks/oak_wood.json
+data/minecraft/loot_table/blocks/spruce_wood.json
+data/minecraft/loot_table/blocks/warped_hyphae.json
+data/minecraft/tags/block/overworld_natural_logs.json
 data/minecraft/worldgen/configured_feature/acacia.json
 data/minecraft/worldgen/configured_feature/azalea_tree.json
 data/minecraft/worldgen/configured_feature/birch_bees_0002.json
@@ -3984,8 +3895,8 @@ so that some stone ore variants are easier to obtain.
 ====
 
 ```
-data/minecraft/tags/blocks/deepslate_ore_replaceables.json
-data/minecraft/tags/blocks/stone_ore_replaceables.json
+data/minecraft/tags/block/deepslate_ore_replaceables.json
+data/minecraft/tags/block/stone_ore_replaceables.json
 data/minecraft/worldgen/configured_feature/ore_coal_buried.json
 data/minecraft/worldgen/configured_feature/ore_diorite.json
 data/minecraft/worldgen/configured_feature/ore_gold_buried.json
@@ -4462,10 +4373,10 @@ HOW TO UPDATE LOOT TABLES AFTER MINECRAFT UPDATES
 =================================================
 
 Extract the necessary folders from the new jar,
-then switch to the loot_tables folder
+then switch to the loot_table folder
 
  make update
- cd data/minecraft/loot_tables
+ cd data/minecraft/loot_table
 
 Convert the original tables from YAML to JSON
 
