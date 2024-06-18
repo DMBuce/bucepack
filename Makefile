@@ -90,11 +90,11 @@ DATAPACKFILES = \
 	starter_spyglass.zip \
 	wandering_loot.zip \
 	waterproof_tech.zip \
-	worldgen_anti.zip \
 	worldgen_moonlit.zip \
 	worldgen_overworld.zip \
 	worldgen_sandy_husk.zip \
 	worldgen_trees.zip \
+	#worldgen_anti.zip \
 	#crafter.zip \
 	#bulbs.zip \
 	#aggro_bastions.zip \

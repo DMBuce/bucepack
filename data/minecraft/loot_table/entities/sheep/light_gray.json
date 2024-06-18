@@ -12,7 +12,7 @@
               "conditions": [
                 {
                   "condition": "minecraft:entity_properties",
-                  "entity": "killer_player",
+                  "entity": "attacking_player",
                   "predicate": {
                     "type_specific": {
                       "type": "player",

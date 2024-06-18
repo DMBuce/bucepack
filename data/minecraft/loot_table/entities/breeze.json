@@ -27,7 +27,8 @@
                 "max": 2.0,
                 "min": 1.0
               },
-              "function": "minecraft:looting_enchant"
+              "enchantment": "minecraft:looting",
+              "function": "minecraft:enchanted_count_increase"
             }
           ],
           "name": "minecraft:breeze_rod"
@@ -55,7 +56,7 @@
       "conditions": [
         {
           "condition": "minecraft:entity_properties",
-          "entity": "killer",
+          "entity": "attacker",
           "predicate": {
             "type": "minecraft:breeze"
           }

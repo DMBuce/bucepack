@@ -30,7 +30,7 @@
           "condition": "minecraft:inverted",
           "term": {
             "condition": "minecraft:entity_properties",
-            "entity": "killer_player",
+            "entity": "attacking_player",
             "predicate": {
               "equipment": {
                 "mainhand": {

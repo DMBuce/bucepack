@@ -31,7 +31,7 @@
           "conditions": [
             {
               "condition": "minecraft:entity_properties",
-              "entity": "killer",
+              "entity": "attacker",
               "predicate": {
                 "type": "minecraft:ender_dragon"
               }
@@ -50,7 +50,7 @@
           "conditions": [
             {
               "condition": "minecraft:entity_properties",
-              "entity": "killer",
+              "entity": "attacker",
               "predicate": {
                 "type": "minecraft:wither"
               }
@@ -69,7 +69,7 @@
           "conditions": [
             {
               "condition": "minecraft:entity_properties",
-              "entity": "killer",
+              "entity": "attacker",
               "predicate": {
                 "type": "minecraft:elder_guardian"
               }
@@ -88,7 +88,7 @@
           "conditions": [
             {
               "condition": "minecraft:entity_properties",
-              "entity": "killer",
+              "entity": "attacker",
               "predicate": {
                 "type": "minecraft:ravager"
               }
@@ -107,7 +107,7 @@
           "conditions": [
             {
               "condition": "minecraft:entity_properties",
-              "entity": "killer",
+              "entity": "attacker",
               "predicate": {
                 "type": "minecraft:polar_bear"
               }
@@ -126,7 +126,7 @@
           "conditions": [
             {
               "condition": "minecraft:entity_properties",
-              "entity": "killer",
+              "entity": "attacker",
               "predicate": {
                 "type": "minecraft:warden"
               }

@@ -23,67 +23,37 @@
       ],
       "minecraft:attribute_modifiers": [
         {
-          "type": "generic.armor",
-          "name": "generic.armor",
+          "type": "minecraft:generic.armor",
+          "id": "minecraft:generic.armor",
           "slot": "feet",
-          "uuid": [
-            1748112070,
-            948193003,
-            -1561903410,
-            1308854036
-          ],
           "amount": 1.0,
           "operation": "add_value"
         },
         {
-          "type": "generic.movement_speed",
-          "name": "Moccasin Speed",
+          "type": "minecraft:generic.movement_speed",
+          "id": "minecraft:generic.movement_speed",
           "slot": "feet",
-          "uuid": [
-            -1739252648,
-            -763214326,
-            -1592923154,
-            1933501344
-          ],
           "amount": 0.4,
           "operation": "add_multiplied_total"
         },
         {
-          "type": "generic.jump_strength",
-          "name": "Moccasin Jumping",
+          "type": "minecraft:generic.jump_strength",
+          "id": "minecraft:generic.jump_strength",
           "slot": "feet",
-          "uuid": [
-            -1739252648,
-            -763214326,
-            -1592923154,
-            1933501344
-          ],
           "amount": 0.5,
           "operation": "add_multiplied_base"
         },
         {
-          "type": "generic.safe_fall_distance",
-          "name": "Moccasin Falling",
+          "type": "minecraft:generic.safe_fall_distance",
+          "id": "minecraft:generic.safe_fall_distance",
           "slot": "feet",
-          "uuid": [
-            -1072669709,
-            -1359460688,
-            -1631808876,
-            928500926
-          ],
           "amount": 2.0,
           "operation": "add_value"
         },
         {
-          "type": "generic.step_height",
-          "name": "Moccasin Stepping",
+          "type": "minecraft:generic.step_height",
+          "id": "minecraft:generic.step_height",
           "slot": "feet",
-          "uuid": [
-            -1739252648,
-            -763214326,
-            -1592923154,
-            1933501344
-          ],
           "amount": 0.5,
           "operation": "add_value"
         }

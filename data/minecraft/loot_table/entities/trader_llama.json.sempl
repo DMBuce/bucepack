@@ -25,7 +25,8 @@ SEMPL_BRACES={{}}
                 "max": 1.0,
                 "min": 0.0
               },
-              "function": "minecraft:looting_enchant"
+              "function": "minecraft:enchanted_count_increase",
+              "enchantment": "minecraft:looting"
             }
           ],
           "name": "minecraft:leather"

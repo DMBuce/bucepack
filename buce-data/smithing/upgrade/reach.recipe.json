@@ -25,67 +25,37 @@
 		"show_in_tooltip": false,
         "modifiers": [
           {
-            "type": "generic.attack_damage",
-            "name": "generic.attack_damage",
+            "type": "minecraft:generic.attack_damage",
+            "id": "minecraft:generic.attack_damage",
             "slot": "mainhand",
-            "uuid": [
-              45345856,
-              -1140243102,
-              -1841144530,
-              -638218093
-            ],
             "amount": 8.0,
             "operation": "add_value"
           },
           {
-            "type": "generic.attack_speed",
-            "name": "generic.attack_speed",
+            "type": "minecraft:generic.attack_speed",
+            "id": "minecraft:generic.attack_speed",
             "slot": "mainhand",
-            "uuid": [
-              107902100,
-              1464878501,
-              -1934334227,
-              1114830228
-            ],
             "amount": -2.9,
             "operation": "add_value"
           },
           {
-            "type": "player.entity_interaction_range",
-            "name": "Trident Reach",
+            "type": "minecraft:player.entity_interaction_range",
+            "id": "minecraft:player.entity_interaction_range",
             "slot": "mainhand",
-            "uuid": [
-              1877133967,
-              1617252131,
-              -1468815810,
-              -1343375326
-            ],
             "amount": 1.0,
             "operation": "add_value"
           },
           {
-            "type": "player.block_interaction_range",
-            "name": "Trident Reach",
+            "type": "minecraft:player.block_interaction_range",
+            "id": "minecraft:player.block_interaction_range",
             "slot": "mainhand",
-            "uuid": [
-              633552556,
-              -1343076997,
-              -1755465998,
-              967661804
-            ],
             "amount": 2.0,
             "operation": "add_value"
           },
           {
-            "type": "player.block_interaction_range",
-            "name": "Trident Reach",
+            "type": "minecraft:player.block_interaction_range",
+            "id": "minecraft:player.block_interaction_range",
             "slot": "offhand",
-            "uuid": [
-              633552556,
-              -1343076997,
-              -1755465998,
-              967661804
-            ],
             "amount": 2.0,
             "operation": "add_value"
           }

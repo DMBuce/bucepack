@@ -28,7 +28,7 @@
         },
         {
           "condition": "minecraft:entity_scores",
-          "entity": "killer_player",
+          "entity": "attacking_player",
           "scores": {
             "health": 1
           }
