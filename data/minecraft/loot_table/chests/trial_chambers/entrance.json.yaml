@@ -1,0 +1,9 @@
+pools:
+  - rolls: { min: 2, max: 3 }
+    entries:
+      - { type: item, weight: 1, count: 1       , item: trial_key }
+      - { type: item, weight: 5, min: 2, max: 5 , item: stick }
+      - { type: item, weight: 10, count: 1      , item: wooden_axe }
+      - { type: item, weight: 10,min: 2, max: 8 , item: honeycomb }
+      - { type: item, weight: 10,min: 5, max: 10 ,item: arrow }
+random_sequence: "minecraft:chests/trial_chambers/entrance"
