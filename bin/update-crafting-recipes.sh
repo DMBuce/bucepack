@@ -11,17 +11,17 @@ dir="$gitroot/buce-data/crafting"
 # increase output of some recipes
 while read block count; do
 	[[ -z "$block$count" ]] && continue
-	cp "$latest.jar"/data/minecraft/recipes/*_$block.json data/minecraft/recipes/
-	[[ "$block" == sign ]] && rm data/minecraft/recipes/*_hanging_sign.json
+	cp "$latest.jar"/data/minecraft/recipe/*_$block.json data/minecraft/recipe/
+	[[ "$block" == sign ]] && rm data/minecraft/recipe/*_hanging_sign.json
 
-	if grep -E -q '"count":' data/minecraft/recipes/*_$block.json; then
+	if grep -E -q '"count":' data/minecraft/recipe/*_$block.json; then
 		sed -Ei "
 			/\"count\":/ s/: [0-9]+,/: $count,/
-		" data/minecraft/recipes/*_$block.json
+		" data/minecraft/recipe/*_$block.json
 	else
 		sed -Ei "
 			/^    \"item\":/ i\    \"count\": $count,
-		" data/minecraft/recipes/*_$block.json
+		" data/minecraft/recipe/*_$block.json
 	fi
 done <<< '
 	stairs         6
@@ -36,12 +36,12 @@ done <<< '
 '
 
 # remove some files
-rm data/minecraft/recipes/iron_trapdoor.json
-rm data/minecraft/recipes/light_weighted_pressure_plate.json
-rm data/minecraft/recipes/heavy_weighted_pressure_plate.json
+rm data/minecraft/recipe/iron_trapdoor.json
+rm data/minecraft/recipe/light_weighted_pressure_plate.json
+rm data/minecraft/recipe/heavy_weighted_pressure_plate.json
 
 # add 2x2 stairs recipes
-cp "$latest.jar"/data/minecraft/recipes/*_stairs.json $dir/plentiful/
+cp "$latest.jar"/data/minecraft/recipe/*_stairs.json $dir/plentiful/
 rename .json .recipe.json $dir/plentiful/*_stairs.json
 sed -Ei '
 	s/"#  ",$/"# ",/
@@ -158,44 +158,44 @@ for color in \
 do
 	# create tags for colorful blocks w/o that color
 	for tag in candles terracotta; do
-		cp "$latest.jar/data/minecraft/tags/items/$tag.json" "data/minecraft/tags/items/${tag}_without_$color.json"
-		sed -i "/minecraft:${color}_/d" "data/minecraft/tags/items/${tag}_without_$color.json"
-		sed -i -E -n 'H; x; s:,(\s*\n\s*[]}]):\1:; P; ${x; p}' "data/minecraft/tags/items/${tag}_without_$color.json"
-		sed -i 1d "data/minecraft/tags/items/${tag}_without_$color.json"
+		cp "$latest.jar/data/minecraft/tags/item/$tag.json" "data/minecraft/tags/item/${tag}_without_$color.json"
+		sed -i "/minecraft:${color}_/d" "data/minecraft/tags/item/${tag}_without_$color.json"
+		sed -i -E -n 'H; x; s:,(\s*\n\s*[]}]):\1:; P; ${x; p}' "data/minecraft/tags/item/${tag}_without_$color.json"
+		sed -i 1d "data/minecraft/tags/item/${tag}_without_$color.json"
 	done
 	for tag in glass glass_panes; do
-		cp "data/minecraft/tags/items/$tag.json" "data/minecraft/tags/items/${tag}_without_$color.json"
-		sed -i "/minecraft:${color}_/d" "data/minecraft/tags/items/${tag}_without_$color.json"
-		sed -i -E -n 'H; x; s:,(\s*\n\s*[]}]):\1:; P; ${x; p}' "data/minecraft/tags/items/${tag}_without_$color.json"
-		sed -i 1d "data/minecraft/tags/items/${tag}_without_$color.json"
+		cp "data/minecraft/tags/item/$tag.json" "data/minecraft/tags/item/${tag}_without_$color.json"
+		sed -i "/minecraft:${color}_/d" "data/minecraft/tags/item/${tag}_without_$color.json"
+		sed -i -E -n 'H; x; s:,(\s*\n\s*[]}]):\1:; P; ${x; p}' "data/minecraft/tags/item/${tag}_without_$color.json"
+		sed -i 1d "data/minecraft/tags/item/${tag}_without_$color.json"
 	done
 
 	# create recipes for dying any candle
-	cp "$latest.jar/data/minecraft/recipes/${color}_candle.json" data/minecraft/recipes/
+	cp "$latest.jar/data/minecraft/recipe/${color}_candle.json" data/minecraft/recipe/
 	sed -i "
 		/minecraft:candle/ s/\".*/\"tag\": \"minecraft:candles_without_$color\"/
-	" "data/minecraft/recipes/${color}_candle.json"
+	" "data/minecraft/recipe/${color}_candle.json"
 
 	# create recipes for dying any mixture of terracotta
-	cp "$latest.jar/data/minecraft/recipes/${color}_terracotta.json" data/minecraft/recipes/
+	cp "$latest.jar/data/minecraft/recipe/${color}_terracotta.json" data/minecraft/recipe/
 	sed -i "
 		/minecraft:terracotta/ s/\".*/\"tag\": \"minecraft:terracotta_without_$color\"/
-	" "data/minecraft/recipes/${color}_terracotta.json"
+	" "data/minecraft/recipe/${color}_terracotta.json"
 
 	# create recipes for dying any mixture of stained_glass
-	cp "$latest.jar/data/minecraft/recipes/${color}_stained_glass.json" data/minecraft/recipes/
+	cp "$latest.jar/data/minecraft/recipe/${color}_stained_glass.json" data/minecraft/recipe/
 	sed -i "
 		/minecraft:glass/ s/\".*/\"tag\": \"minecraft:glass_without_$color\"/
-	" "data/minecraft/recipes/${color}_stained_glass.json"
+	" "data/minecraft/recipe/${color}_stained_glass.json"
 
 	# create recipes for dying any mixture of stained_glass_pane
-	cp "$latest.jar/data/minecraft/recipes/${color}_stained_glass_pane_from_glass_pane.json" data/minecraft/recipes/
+	cp "$latest.jar/data/minecraft/recipe/${color}_stained_glass_pane_from_glass_pane.json" data/minecraft/recipe/
 	sed -i "
 		/minecraft:glass_pane/ s/\".*/\"tag\": \"minecraft:glass_panes_without_$color\"/
-	" "data/minecraft/recipes/${color}_stained_glass_pane_from_glass_pane.json"
+	" "data/minecraft/recipe/${color}_stained_glass_pane_from_glass_pane.json"
 
 	# create recipes for dying any banner
-	cp "$latest.jar/data/minecraft/recipes/dye_${color}_bed.json" "data/minecraft/recipes/dye_${color}_banner.json"
-	sed -i 's/_bed/_banner/g' "data/minecraft/recipes/dye_${color}_banner.json"
+	cp "$latest.jar/data/minecraft/recipe/dye_${color}_bed.json" "data/minecraft/recipe/dye_${color}_banner.json"
+	sed -i 's/_bed/_banner/g' "data/minecraft/recipe/dye_${color}_banner.json"
 done
 

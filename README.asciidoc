@@ -1180,6 +1180,9 @@ Makes some crafting recipes cheaper.
 * 4 log → 4 wood
 * 4 stem → 4 hyphae
 * 7 diamond + 1 netherrack + 1 netherite ingot → 2 netherite upgrade smithing template
+* 3 iron nugget → chain
+* chest + 3 iron ingot → hopper
+* planks + 8 iron nugget → shield
 * blasting: tool → ingot
 * blasting: armor → ingot
 
@@ -1367,6 +1370,27 @@ storage.
 [%collapsible]
 ====
 
+* amethyst block → 4 amethyst shard
+* bricks → 4 brick
+* clay → 4 clay ball
+* glowstone → 4 glowstone dust
+* honeycomb block → 4 honeycomb
+* magma block → 4 magma cream
+* nether bricks → 4 nether brick
+* dripstone block → 4 pointed dripstone
+* purpur block → popped chorus fruit
+* prismarine → 4 prismarine shard
+* red sandstone → 4 red sand
+* sandstone → 4 sand
+* snow block → 4 snowball
+* 2 bamboo block → 18 bamboo
+* packed ice → 9 ice
+* melon → 9 melon slice
+* blue ice → 9 packed ice
+* prismarine bricks → 9 prismarine shard
+* cobweb → 9 string
+* bookshelf → 3 book
+* book → 3 paper
 
 ====
 
@@ -1431,6 +1455,16 @@ The following blocks can be freely crafted into each other.
 [%collapsible]
 ====
 
+* button
+* door
+* fence
+* fence gate
+* pressure plate
+* sign
+* slab
+* stairs
+* trapdoor
+* wall
 
 ====
 
@@ -3489,44 +3523,6 @@ without affecting world generation.
 ====
 ====
 
-=== Crafter
-
-Adds the Crafter from the 1.21 experiment
-without making trial chambers generate,
-new tuff and copper blocks craftable,
-and so on.
-
-**Downloads**
-
-.https://github.com/DMBuce/bucepack/releases/latest/download/crafter.zip[`crafter.zip`]
-[%collapsible]
-====
-====
-
-.https://github.com/DMBuce/bucepack/releases[All Releases & Changelogs]
-[%collapsible]
-====
-====
-
-=== Bulbs
-
-Adds Copper Bulbs from the 1.21 experiment
-without making trial chambers generate,
-new tuff blocks craftable,
-and so on.
-
-**Downloads**
-
-.https://github.com/DMBuce/bucepack/releases/latest/download/bulbs.zip[`bulbs.zip`]
-[%collapsible]
-====
-====
-
-.https://github.com/DMBuce/bucepack/releases[All Releases & Changelogs]
-[%collapsible]
-====
-====
-
 === Bundle
 
 Adds bundles crafted from 3 leather and 1 string.
@@ -4358,10 +4354,10 @@ Run `make update` and `make clean` and `make install`
 Check and resolve automatic changes with `git status && git diff`
 Merge loot table changes with Loot Overhaul
 For major version updates,
-* Check for new Mineable blocks in data/minecraft/tags/blocks/unmineable.json
+* Check for new Mineable blocks in data/minecraft/tags/block/unmineable.json
 * Add new biomes to data/minecraft/dimension/overworld.json (automate this?)
 * Add new plants to Gardener Endermen
-* Add new smooth and cracked blocks to More Cutting
+* Add new smooth and cracked blocks to Smooth & Cracked Cutting
 * Add new warm blocks to Warmer Striders
 * Add new potions to Brewing Guide
 * Add new ores to Ore Types

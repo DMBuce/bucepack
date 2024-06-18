@@ -1,0 +1,46 @@
+pools:
+  - rolls: 1
+    entries:
+      - type: item
+        weight: 15
+        item: diamond_shovel
+        damage: { min: 0.15, max: 0.8 }
+        enchant_rand: ""
+      - type: item
+        weight: 12
+        count: 1
+        item: diamond_pickaxe
+        damage: { min: 0.15, max: 0.95 }
+        enchant_rand: ""
+      - { type: item, weight: 8,  count: 1,        item: netherite_scrap }
+      - { type: item, weight: 12, count: 1,        item: ancient_debris }
+      - { type: item, weight: 5,  count: 2,        item: ancient_debris }
+      - { type: item, weight: 12, count: 1,        item: saddle }
+      - { type: item, weight: 16, min: 2, max: 4,  item: gold_block }
+      - { type: item, weight: 10, min: 8, max: 17, item: golden_carrot }
+      - { type: item, weight: 10, count: 1,        item: golden_apple }
+  - rolls: { min: 3, max: 4 }
+    entries:
+      - { type: item, weight: 1, count: 1, item: golden_axe, enchant_rand: "" }
+      - { type: item, weight: 1, min: 1, max: 5,  item: crying_obsidian }
+      - { type: item, weight: 1, min: 3, max: 6,  item: glowstone }
+      - { type: item, weight: 1, min: 2, max: 5,  item: gilded_blackstone }
+      - { type: item, weight: 1, min: 2, max: 7,  item: soul_sand }
+      - { type: item, weight: 1, min: 2, max: 7,  item: crimson_nylium }
+      - { type: item, weight: 1, min: 2, max: 8,  item: gold_nugget }
+      - { type: item, weight: 1, min: 1, max: 3,  item: leather }
+      - { type: item, weight: 1, min: 5, max: 17, item: arrow }
+      - { type: item, weight: 1, min: 3, max: 8, item: string }
+      - { type: item, weight: 1, min: 2, max: 5, item: porkchop }
+      - { type: item, weight: 1, min: 2, max: 5, item: cooked_porkchop }
+      - { type: item, weight: 1, min: 2, max: 7, item: crimson_fungus }
+      - { type: item, weight: 1, min: 2, max: 7, item: crimson_roots }
+  - rolls: 1
+    entries:
+      - { type: empty, weight: 11 }
+      - { type: item, item: snout_armor_trim_smithing_template }
+  - rolls: 1
+    entries:
+      - { type: empty, weight: 9 }
+      - { type: item, item: netherite_upgrade_smithing_template }
+random_sequence: "minecraft:chests/bastion_hoglin_stable"

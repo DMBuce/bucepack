@@ -2,7 +2,7 @@
 
 # global vars
 gitroot="$(cd "$(dirname "$0")" && git rev-parse --show-toplevel)"
-template="$gitroot/data/minecraft/loot_tables/loot_table.j2"
+template="$gitroot/data/minecraft/loot_table/loot_table.j2"
 
 # parse args
 for yaml in "$@"; do

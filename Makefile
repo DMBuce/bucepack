@@ -43,10 +43,8 @@ DATAPACKFILES = \
 	acclimated.zip \
 	archived.zip \
 	blue_fire.zip \
-	bulbs.zip \
 	bundle.zip \
 	climbable.zip \
-	crafter.zip \
 	crafting_colorful.zip \
 	crafting_snack.zip \
 	crafting_elixir.zip \
@@ -97,6 +95,8 @@ DATAPACKFILES = \
 	worldgen_overworld.zip \
 	worldgen_sandy_husk.zip \
 	worldgen_trees.zip \
+	#crafter.zip \
+	#bulbs.zip \
 	#aggro_bastions.zip \
 	#antidote.zip \
 	#dripblock.zip \
@@ -124,8 +124,8 @@ all: $(PACKFILES)
 DEFAULT_RESOURCE_FILES = LICENSE.txt
 DEFAULT_DATA_FILES = \
 	LICENSE.txt \
-	data/buce/advancements/root.json \
-	data/buce/advancements/errors.json \
+	data/buce/advancement/root.json \
+	data/buce/advancement/errors.json \
 
 LICENSE.txt: LICENSE
 	cp -v $< $@
@@ -445,20 +445,20 @@ discreet_meow_FILES := $(DEFAULT_RESOURCE_FILES) \
 	assets/minecraft/sounds_discreet_meow.json \
 
 gardener_endermen_FILES := $(DEFAULT_DATA_FILES) \
-	data/minecraft/tags/blocks/enderman_holdable.json \
-	data/buce/advancements/gardener_endermen.json \
+	data/minecraft/tags/block/enderman_holdable.json \
+	data/buce/advancement/gardener_endermen.json \
 
 bundle_FILES := $(DEFAULT_DATA_FILES) \
-	data/minecraft/recipes/bundle.json \
-	data/minecraft/advancements/recipes/tools/bundle.json \
+	data/minecraft/recipe/bundle.json \
+	data/minecraft/advancement/recipes/tools/bundle.json \
 
 climbable_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell ls buce-data/climbable* | ./bin/ext2dir) \
-	data/minecraft/tags/blocks/climbable.json \
+	data/minecraft/tags/block/climbable.json \
 
 illusory_trader_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell find buce-data/illusory/trader -type f | ./bin/ext2dir) \
-	data/buce/tags/items/relic/templates.json \
+	data/buce/tags/item/relic/templates.json \
 
 heirlooms_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell find data/minecraft -name '*heirlooms*' | ./bin/ext2dir) \
@@ -466,25 +466,25 @@ heirlooms_FILES := $(DEFAULT_DATA_FILES) \
 
 hover_mode_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell ls buce-data/hover_mode* | ./bin/ext2dir) \
-	data/minecraft/tags/blocks/climbable_hover_mode.json \
+	data/minecraft/tags/block/climbable_hover_mode.json \
 
 oven_brick_FILES := $(DEFAULT_DATA_FILES) \
 	$(wildcard assets/minecraft/textures/block/smoker_*) \
-	$(wildcard data/minecraft/recipes/*from_smoking*) \
-	$(wildcard data/minecraft/recipes/*from_campfire_cooking*) \
+	$(wildcard data/minecraft/recipe/*from_smoking*) \
+	$(wildcard data/minecraft/recipe/*from_campfire_cooking*) \
 	assets/minecraft/lang/en_us_oven_brick.json \
-	data/minecraft/recipes/smoker_oven_brick.json \
+	data/minecraft/recipe/smoker_oven_brick.json \
 
 oven_tier_FILES := $(DEFAULT_DATA_FILES) \
-	data/minecraft/recipes/furnace.json \
+	data/minecraft/recipe/furnace.json \
 
 waterproof_tech_FILES := $(DEFAULT_DATA_FILES) \
-	data/minecraft/tags/blocks/signs.json \
-	data/buce/advancements/waterproof_tech.json \
+	data/minecraft/tags/block/signs.json \
+	data/buce/advancement/waterproof_tech.json \
 
 aggro_bastions_FILES := $(DEFAULT_DATA_FILES) \
-	data/minecraft/tags/blocks/guarded_by_piglins.json \
-	data/buce/advancements/aggro_bastions.json \
+	data/minecraft/tags/block/guarded_by_piglins.json \
+	data/buce/advancement/aggro_bastions.json \
 
 antidote_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell find buce-data/antidote -type f | ./bin/ext2dir) \
@@ -492,11 +492,11 @@ antidote_FILES := $(DEFAULT_DATA_FILES) \
 	data/minecraft/tags/functions/load_antidote.json \
 
 acclimated_FILES := $(DEFAULT_DATA_FILES) \
-	data/minecraft/tags/blocks/strider_warm_blocks.json \
-	data/minecraft/tags/entity_types/can_breathe_under_water.json \
-	data/minecraft/tags/entity_types/dismounts_underwater.json \
-	data/minecraft/tags/entity_types/fall_damage_immune.json \
-	data/minecraft/tags/entity_types/powder_snow_walkable_mobs.json \
+	data/minecraft/tags/block/strider_warm_blocks.json \
+	data/minecraft/tags/entity_type/can_breathe_under_water.json \
+	data/minecraft/tags/entity_type/dismounts_underwater.json \
+	data/minecraft/tags/entity_type/fall_damage_immune.json \
+	data/minecraft/tags/entity_type/powder_snow_walkable_mobs.json \
 
 network_deep_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell find buce-data/portal/deep -type f | ./bin/ext2dir) \
@@ -512,30 +512,30 @@ no_treasure_maps_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell find buce-data/ data/minecraft/ -name '*no_treasure_maps*' | ./bin/ext2dir | sort -u) \
 
 blue_fire_FILES := $(DEFAULT_DATA_FILES) \
-	data/minecraft/tags/blocks/soul_fire_base_blocks.json \
-	data/buce/advancements/blue_fire.json \
+	data/minecraft/tags/block/soul_fire_base_blocks.json \
+	data/buce/advancement/blue_fire.json \
 
 farmable_FILES := $(DEFAULT_DATA_FILES) \
-	data/buce/advancements/farmable.json \
-	data/minecraft/loot_tables/blocks/beetroots.json \
-	data/minecraft/loot_tables/blocks/cherry_leaves.json \
-	data/minecraft/loot_tables/blocks/infested_*.json \
-	data/minecraft/loot_tables/blocks/jungle_leaves.json \
-	data/minecraft/loot_tables/blocks/wheat.json \
-	data/minecraft/loot_tables/entities/cave_spider.json \
-	data/minecraft/loot_tables/entities/goat.json \
-	data/minecraft/loot_tables/entities/husk.json \
-	data/minecraft/loot_tables/entities/shulker.json \
-	data/minecraft/loot_tables/entities/sniffer.json \
-	data/minecraft/loot_tables/gameplay/sniffer_digging.json \
-	data/minecraft/tags/blocks/azalea_grows_on.json \
-	data/minecraft/tags/blocks/bamboo_plantable_on.json \
-	data/minecraft/tags/blocks/dead_bush_may_place_on.json \
-	data/minecraft/tags/blocks/mushroom_grow_block.json \
-	data/minecraft/tags/blocks/nylium.json \
-	data/minecraft/tags/blocks/small_dripleaf_placeable.json \
-	data/minecraft/tags/items/sniffer_food.json \
-	#data/minecraft/tags/blocks/dirt.json \
+	data/buce/advancement/farmable.json \
+	data/minecraft/loot_table/blocks/beetroots.json \
+	data/minecraft/loot_table/blocks/cherry_leaves.json \
+	data/minecraft/loot_table/blocks/infested_*.json \
+	data/minecraft/loot_table/blocks/jungle_leaves.json \
+	data/minecraft/loot_table/blocks/wheat.json \
+	data/minecraft/loot_table/entities/cave_spider.json \
+	data/minecraft/loot_table/entities/goat.json \
+	data/minecraft/loot_table/entities/husk.json \
+	data/minecraft/loot_table/entities/shulker.json \
+	data/minecraft/loot_table/entities/sniffer.json \
+	data/minecraft/loot_table/gameplay/sniffer_digging.json \
+	data/minecraft/tags/block/azalea_grows_on.json \
+	data/minecraft/tags/block/bamboo_plantable_on.json \
+	data/minecraft/tags/block/dead_bush_may_place_on.json \
+	data/minecraft/tags/block/mushroom_grow_block.json \
+	data/minecraft/tags/block/nylium.json \
+	data/minecraft/tags/block/small_dripleaf_placeable.json \
+	data/minecraft/tags/item/sniffer_food.json \
+	#data/minecraft/tags/block/dirt.json \
 
 frienderchest_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell find buce-data/frienderchest -type f | ./bin/ext2dir) \
@@ -549,100 +549,46 @@ global_effects_FILES := $(DEFAULT_DATA_FILES) \
 
 relic_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell find buce-data/relic -type f | ./bin/ext2dir) \
-	data/buce/loot_tables/relic/all.json \
+	data/buce/loot_table/relic/all.json \
 	#$(spellsmithing_guide_FILES) \
 
-bulbs_FILES := $(DEFAULT_DATA_FILES) \
-	data/minecraft/advancements/recipes/building_blocks/waxed_copper_bulb_from_honeycomb.json \
-	data/minecraft/advancements/recipes/building_blocks/waxed_exposed_copper_bulb_from_honeycomb.json \
-	data/minecraft/advancements/recipes/building_blocks/waxed_oxidized_copper_bulb_from_honeycomb.json \
-	data/minecraft/advancements/recipes/building_blocks/waxed_weathered_copper_bulb_from_honeycomb.json \
-	data/minecraft/advancements/recipes/redstone/copper_bulb.json \
-	data/minecraft/advancements/recipes/redstone/exposed_copper_bulb.json \
-	data/minecraft/advancements/recipes/redstone/oxidized_copper_bulb.json \
-	data/minecraft/advancements/recipes/redstone/waxed_copper_bulb.json \
-	data/minecraft/advancements/recipes/redstone/waxed_exposed_copper_bulb.json \
-	data/minecraft/advancements/recipes/redstone/waxed_oxidized_copper_bulb.json \
-	data/minecraft/advancements/recipes/redstone/waxed_weathered_copper_bulb.json \
-	data/minecraft/advancements/recipes/redstone/weathered_copper_bulb.json \
-	data/minecraft/loot_tables/blocks/copper_bulb.json \
-	data/minecraft/loot_tables/blocks/exposed_copper_bulb.json \
-	data/minecraft/loot_tables/blocks/oxidized_copper_bulb.json \
-	data/minecraft/loot_tables/blocks/waxed_copper_bulb.json \
-	data/minecraft/loot_tables/blocks/waxed_exposed_copper_bulb.json \
-	data/minecraft/loot_tables/blocks/waxed_oxidized_copper_bulb.json \
-	data/minecraft/loot_tables/blocks/waxed_weathered_copper_bulb.json \
-	data/minecraft/loot_tables/blocks/weathered_copper_bulb.json \
-	data/minecraft/recipes/copper_bulb.json \
-	data/minecraft/recipes/exposed_copper_bulb.json \
-	data/minecraft/recipes/oxidized_copper_bulb.json \
-	data/minecraft/recipes/waxed_copper_bulb_from_honeycomb.json \
-	data/minecraft/recipes/waxed_copper_bulb.json \
-	data/minecraft/recipes/waxed_exposed_copper_bulb_from_honeycomb.json \
-	data/minecraft/recipes/waxed_exposed_copper_bulb.json \
-	data/minecraft/recipes/waxed_oxidized_copper_bulb_from_honeycomb.json \
-	data/minecraft/recipes/waxed_oxidized_copper_bulb.json \
-	data/minecraft/recipes/waxed_weathered_copper_bulb_from_honeycomb.json \
-	data/minecraft/recipes/waxed_weathered_copper_bulb.json \
-	data/minecraft/recipes/weathered_copper_bulb.json \
-	data/minecraft/tags/blocks/mineable/pickaxe_bulbs.json \
-	data/minecraft/tags/blocks/needs_stone_tool_bulbs.json \
-	#data/minecraft/worldgen/processor_list/trial_chambers_copper_bulb_degradation.json \
-	#data/minecraft/worldgen/template_pool/trial_chambers/chamber/addon.json \
-	#data/minecraft/worldgen/template_pool/trial_chambers/chamber/end.json \
-	#data/minecraft/worldgen/template_pool/trial_chambers/chamber/entrance_cap.json \
-	#data/minecraft/worldgen/template_pool/trial_chambers/chambers/end.json \
-	#data/minecraft/worldgen/template_pool/trial_chambers/corridor/first.json \
-	#data/minecraft/worldgen/template_pool/trial_chambers/corridor.json \
-	#data/minecraft/worldgen/template_pool/trial_chambers/corridor/second.json \
-	#data/minecraft/worldgen/template_pool/trial_chambers/hallway.json \
-	#data/minecraft/advancements/husbandry/wax_off.json \
-	#data/minecraft/advancements/husbandry/wax_on.json \
-
-crafter_FILES := $(DEFAULT_DATA_FILES) \
-	data/minecraft/advancements/recipes/redstone/crafter.json \
-	data/minecraft/loot_tables/blocks/crafter.json \
-	data/minecraft/recipes/crafter.json \
-	data/minecraft/tags/blocks/mineable/pickaxe_crafter.json \
-	data/minecraft/tags/blocks/needs_stone_tool_crafter.json \
-
 crafting_loot_FILES := $(DEFAULT_DATA_FILES) \
-	data/minecraft/recipes/diamond_horse_armor.json \
-	data/minecraft/recipes/gold_horse_armor.json \
-	data/minecraft/recipes/iron_horse_armor.json \
-	data/minecraft/recipes/leather_horse_armor.json \
-	data/minecraft/recipes/nametag.json \
-	data/minecraft/recipes/piglin_banner_pattern.json \
-	data/minecraft/recipes/saddle.json \
+	data/minecraft/recipe/diamond_horse_armor.json \
+	data/minecraft/recipe/gold_horse_armor.json \
+	data/minecraft/recipe/iron_horse_armor.json \
+	data/minecraft/recipe/leather_horse_armor.json \
+	data/minecraft/recipe/nametag.json \
+	data/minecraft/recipe/piglin_banner_pattern.json \
+	data/minecraft/recipe/saddle.json \
 
 curated_bonus_chest_FILES := $(DEFAULT_DATA_FILES) \
-	data/minecraft/loot_tables/chests/spawn_bonus_chest.json \
-	data/buce/loot_tables/loot_overhaul/biome_log.json \
-	data/buce/advancements/curated_bonus_chest/root.json \
+	data/minecraft/loot_table/chests/spawn_bonus_chest.json \
+	data/buce/loot_table/loot_overhaul/biome_log.json \
+	data/buce/advancement/curated_bonus_chest/root.json \
 
 loot_overhaul_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell find buce-data/loot_overhaul -type f | ./bin/ext2dir) \
-	$(shell find data/minecraft/loot_tables/orig/{chests,gameplay/{fishing,piglin_bartering.*}} -type f | sed '/spawn_bonus/d; s|orig/||' | ./bin/ext2dir) \
+	$(shell find data/minecraft/loot_table/orig/{chests,gameplay/{fishing,piglin_bartering.*}} -type f | sed '/spawn_bonus/d; s|orig/||' | ./bin/ext2dir) \
 	$(wildcard data/minecraft/tags/worldgen/structure/on_*_maps.json) \
-	data/minecraft/recipes/diamond_horse_armor.json \
-	data/minecraft/recipes/gold_horse_armor.json \
-	data/minecraft/recipes/iron_horse_armor.json \
-	data/minecraft/recipes/leather_horse_armor.json \
-	data/minecraft/recipes/nametag.json \
-	data/minecraft/recipes/piglin_banner_pattern.json \
-	data/minecraft/recipes/saddle.json \
-	data/minecraft/tags/items/creeper_drop_music_discs.json \
-	data/minecraft/tags/items/starter_item.json \
+	data/minecraft/recipe/diamond_horse_armor.json \
+	data/minecraft/recipe/gold_horse_armor.json \
+	data/minecraft/recipe/iron_horse_armor.json \
+	data/minecraft/recipe/leather_horse_armor.json \
+	data/minecraft/recipe/nametag.json \
+	data/minecraft/recipe/piglin_banner_pattern.json \
+	data/minecraft/recipe/saddle.json \
+	data/minecraft/tags/item/creeper_drop_music_discs.json \
+	data/minecraft/tags/item/starter_item.json \
 	#$(relic_FILES) \
 
 loot_overhaul_treasure_seeds_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell ls buce-data/loot_addons/loot_overhaul_treasure_seeds* | ./bin/ext2dir) \
-	data/buce/loot_tables/loot_overhaul/sus_stew_loot_overhaul_treasure_seeds.json \
-	data/buce/loot_tables/loot_overhaul/cake_loot_overhaul_treasure_seeds.json \
+	data/buce/loot_table/loot_overhaul/sus_stew_loot_overhaul_treasure_seeds.json \
+	data/buce/loot_table/loot_overhaul/cake_loot_overhaul_treasure_seeds.json \
 
 loot_overhaul_treasure_barrels_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell ls buce-data/loot_addons/loot_overhaul_treasure_barrels* | ./bin/ext2dir) \
-	data/buce/loot_tables/loot_overhaul/buried_treasure_loot_overhaul_treasure_barrels.json \
+	data/buce/loot_table/loot_overhaul/buried_treasure_loot_overhaul_treasure_barrels.json \
 	#$(shell find buce-data/ data/minecraft/ -name '*no_treasure_maps*' | ./bin/ext2dir | sort -u) \
 
 wandering_loot_FILES := $(DEFAULT_DATA_FILES) \
@@ -651,37 +597,37 @@ wandering_loot_FILES := $(DEFAULT_DATA_FILES) \
 relics_deep_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell find buce-data/ data/minecraft/ -name '*relics_deep*' | ./bin/ext2dir) \
 	$(shell find buce-data/deep -type f | ./bin/ext2dir) \
-	data/buce/tags/items/relic/templates.json \
+	data/buce/tags/item/relic/templates.json \
 	data/buce/functions/var.mcfunction \
 
 relics_archy_FILES := $(DEFAULT_DATA_FILES) \
-	$(shell find data/minecraft/loot_tables/archaeology/ -name \*.yaml | ./bin/ext2dir) \
+	$(shell find data/minecraft/loot_table/archaeology/ -name \*.yaml | ./bin/ext2dir) \
 	$(relic_FILES) \
 
 relics_mythic_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell find buce-data/ -name '*relics_mythic*' | ./bin/ext2dir) \
 	$(shell find buce-data/mythic -type f | ./bin/ext2dir) \
 	data/buce/functions/var.mcfunction \
-	data/minecraft/loot_tables/blocks/gilded_blackstone.json \
-	data/minecraft/loot_tables/blocks/lodestone.json \
-	data/minecraft/loot_tables/entities/bee.json \
-	data/minecraft/loot_tables/entities/ghast.json \
-	data/minecraft/loot_tables/entities/glow_squid.json \
-	data/minecraft/loot_tables/entities/pig.json \
-	data/minecraft/loot_tables/entities/sheep.json \
-	data/minecraft/loot_tables/entities/sheep/light_gray.json \
-	data/minecraft/loot_tables/entities/silverfish.json \
-	data/minecraft/tags/entity_types/frog_food.json \
+	data/minecraft/loot_table/blocks/gilded_blackstone.json \
+	data/minecraft/loot_table/blocks/lodestone.json \
+	data/minecraft/loot_table/entities/bee.json \
+	data/minecraft/loot_table/entities/ghast.json \
+	data/minecraft/loot_table/entities/glow_squid.json \
+	data/minecraft/loot_table/entities/pig.json \
+	data/minecraft/loot_table/entities/sheep.json \
+	data/minecraft/loot_table/entities/sheep/light_gray.json \
+	data/minecraft/loot_table/entities/silverfish.json \
+	data/minecraft/tags/entity_type/frog_food.json \
 	data/minecraft/tags/functions/load_relics_mythic.json \
 	data/minecraft/tags/worldgen/structure/seeking_located.json \
-	data/buce/tags/items/relic/templates.json \
-	#data/minecraft/loot_tables/entities/endermite.json \
-	#data/minecraft/loot_tables/entities/iron_golem.json \
+	data/buce/tags/item/relic/templates.json \
+	#data/minecraft/loot_table/entities/endermite.json \
+	#data/minecraft/loot_table/entities/iron_golem.json \
 
 loot_overhaul_starter_relic_FILES := $(DEFAULT_DATA_FILES) \
 	$(relic_FILES) \
 	$(shell ls buce-data/loot_addons/loot_overhaul_starter_relic* | ./bin/ext2dir) \
-	data/buce/loot_tables/loot_overhaul/starter_relic_loot_overhaul_starter_relic.json \
+	data/buce/loot_table/loot_overhaul/starter_relic_loot_overhaul_starter_relic.json \
 
 starter_bonus_box_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell find buce-data/starter_bonus_box -type f | ./bin/ext2dir) \
@@ -690,39 +636,39 @@ starter_bonus_chest_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell find buce-data/starter_bonus_chest -type f | ./bin/ext2dir) \
 
 starter_bed_FILES := $(DEFAULT_DATA_FILES) \
-	data/minecraft/tags/items/starter_item_starter_bed.json \
-	data/buce/advancements/curated_bonus_chest/starter_bed.json \
+	data/minecraft/tags/item/starter_item_starter_bed.json \
+	data/buce/advancement/curated_bonus_chest/starter_bed.json \
 
 starter_book_FILES := $(DEFAULT_DATA_FILES) \
-	data/minecraft/tags/items/starter_item_starter_book.json \
-	data/buce/advancements/curated_bonus_chest/starter_book.json \
+	data/minecraft/tags/item/starter_item_starter_book.json \
+	data/buce/advancement/curated_bonus_chest/starter_book.json \
 
 starter_bucket_FILES := $(DEFAULT_DATA_FILES) \
-	data/minecraft/tags/items/starter_item_starter_bucket.json \
-	data/buce/advancements/curated_bonus_chest/starter_bucket.json \
+	data/minecraft/tags/item/starter_item_starter_bucket.json \
+	data/buce/advancement/curated_bonus_chest/starter_bucket.json \
 
 starter_map_FILES := $(DEFAULT_DATA_FILES) \
-	data/minecraft/tags/items/starter_item_starter_map.json \
-	data/buce/advancements/curated_bonus_chest/starter_map.json \
+	data/minecraft/tags/item/starter_item_starter_map.json \
+	data/buce/advancement/curated_bonus_chest/starter_map.json \
 
 starter_shulker_FILES := $(DEFAULT_DATA_FILES) \
-	data/minecraft/tags/items/starter_item_starter_shulker.json \
-	data/buce/advancements/curated_bonus_chest/starter_shulker.json \
+	data/minecraft/tags/item/starter_item_starter_shulker.json \
+	data/buce/advancement/curated_bonus_chest/starter_shulker.json \
 
 starter_spyglass_FILES := $(DEFAULT_DATA_FILES) \
-	data/minecraft/tags/items/starter_item_starter_spyglass.json \
-	data/buce/advancements/curated_bonus_chest/starter_spyglass.json \
+	data/minecraft/tags/item/starter_item_starter_spyglass.json \
+	data/buce/advancement/curated_bonus_chest/starter_spyglass.json \
 
 debugless_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell find buce-data/debugless -type f | ./bin/ext2dir) \
 	data/buce/functions/sqrt.mcfunction \
 	data/buce/functions/var.mcfunction \
-	data/buce/recipes/phantasmal/light.json \
+	data/buce/recipe/phantasmal/light.json \
 	data/minecraft/tags/functions/load_debugless.json \
 
 dragonproof_FILES := $(DEFAULT_DATA_FILES) \
-	data/buce/advancements/dragonproof.json \
-	data/minecraft/tags/blocks/dragon_immune.json \
+	data/buce/advancement/dragonproof.json \
+	data/minecraft/tags/block/dragon_immune.json \
 
 leashed_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell find buce-data/leashed -type f | ./bin/ext2dir) \
@@ -730,11 +676,11 @@ leashed_FILES := $(DEFAULT_DATA_FILES) \
 	data/minecraft/tags/functions/load_leashed.json \
 
 mineable_FILES := $(DEFAULT_DATA_FILES) \
-	data/minecraft/tags/blocks/mineable/axe.json \
-	data/minecraft/tags/blocks/mineable/pickaxe.json \
-	data/minecraft/tags/blocks/mineable/shovel.json \
-	data/minecraft/tags/blocks/sword_efficient.json \
-	data/buce/advancements/mineable.json \
+	data/minecraft/tags/block/mineable/axe.json \
+	data/minecraft/tags/block/mineable/pickaxe.json \
+	data/minecraft/tags/block/mineable/shovel.json \
+	data/minecraft/tags/block/sword_efficient.json \
+	data/buce/advancement/mineable.json \
 
 worldgen_apocalypse_FILES := $(DEFAULT_DATA_FILES) \
 	$(wildcard data/minecraft/worldgen/template_pool/village/*/town_centers.json) \
@@ -746,8 +692,8 @@ data/minecraft/worldgen/noise_settings/large_biomes.json: data/minecraft/worldge
 	./bin/normal2large
 
 worldgen_overworld_FILES := $(DEFAULT_DATA_FILES) \
-	data/minecraft/tags/blocks/deepslate_ore_replaceables.json \
-	data/minecraft/tags/blocks/stone_ore_replaceables.json \
+	data/minecraft/tags/block/deepslate_ore_replaceables.json \
+	data/minecraft/tags/block/stone_ore_replaceables.json \
 	data/minecraft/worldgen/biome/granite_peaks.json \
 	data/minecraft/worldgen/biome/molten_peaks.json \
 	data/minecraft/worldgen/configured_feature/lake_lava_volcano.json \
@@ -780,45 +726,45 @@ worldgen_anti_FILES := $(DEFAULT_DATA_FILES) \
 
 worldgen_desert_breeze_FILES := $(DEFAULT_DATA_FILES) \
 	data/minecraft/worldgen/structure/desert_pyramid_worldgen_desert_breeze.json \
-	data/minecraft/loot_tables/entities/breeze.json \
+	data/minecraft/loot_table/entities/breeze.json \
 
 worldgen_sandy_husk_FILES := $(DEFAULT_DATA_FILES) \
 	data/minecraft/worldgen/structure/desert_pyramid.json \
-	data/minecraft/loot_tables/entities/husk.json \
+	data/minecraft/loot_table/entities/husk.json \
 
 worldgen_trees_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell find buce-data/crafting/trees/ -type f | ./bin/ext2dir) \
-	$(shell ls data/minecraft/loot_tables/blocks/*_{wood,hyphae}.json | ./bin/ext2dir) \
+	$(shell ls data/minecraft/loot_table/blocks/*_{wood,hyphae}.json | ./bin/ext2dir) \
 	$(shell grep -rl data/minecraft/worldgen/configured_feature/ -e'"minecraft:.*_'{wood,hyphae}'"' | ./bin/ext2dir) \
-	data/minecraft/tags/blocks/overworld_natural_logs.json \
+	data/minecraft/tags/block/overworld_natural_logs.json \
 	#data/minecraft/worldgen/noise_settings/overworld.json \
 
 dripblock_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell find buce-data/dripblock -type f | ./bin/ext2dir) \
 	$(shell find data/minecraft/tags/worldgen/biome/has_structure -type f) \
-	data/minecraft/loot_tables/entities/creeper.json \
-	data/minecraft/tags/blocks/moss_replaceable.json \
+	data/minecraft/loot_table/entities/creeper.json \
+	data/minecraft/tags/block/moss_replaceable.json \
 	data/minecraft/tags/functions/island_dripblock.json \
 	data/minecraft/tags/functions/load_dripblock.json \
 	data/minecraft/worldgen/noise_settings/overworld_dripblock.json \
 
 archived_FILES := $(DEFAULT_DATA_FILES) \
-	$(wildcard data/minecraft/tags/items/enchantable/*.json) \
-	data/minecraft/recipes/chiseled_bookshelf.json \
-	data/minecraft/tags/blocks/enchantment_power_provider.json \
-	data/minecraft/tags/blocks/enchantment_power_transmitter.json \
-	data/minecraft/tags/entity_types/sensitive_to_impaling.json \
-	data/minecraft/tags/items/bookshelf_books.json \
+	$(wildcard data/minecraft/tags/item/enchantable/*.json) \
+	data/minecraft/recipe/chiseled_bookshelf.json \
+	data/minecraft/tags/block/enchantment_power_provider.json \
+	data/minecraft/tags/block/enchantment_power_transmitter.json \
+	data/minecraft/tags/entity_type/sensitive_to_impaling.json \
+	data/minecraft/tags/item/bookshelf_books.json \
 
 elemental_FILES := $(DEFAULT_DATA_FILES) \
-	data/minecraft/loot_tables/entities/blaze.json \
-	data/minecraft/loot_tables/entities/breeze.json \
-	data/minecraft/loot_tables/entities/iron_golem.json \
-	data/minecraft/loot_tables/entities/snow_golem.json \
+	data/minecraft/loot_table/entities/blaze.json \
+	data/minecraft/loot_table/entities/breeze.json \
+	data/minecraft/loot_table/entities/iron_golem.json \
+	data/minecraft/loot_table/entities/snow_golem.json \
 
 ender_relic_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell find buce-data/ender_relic -type f | ./bin/ext2dir) \
-	data/buce/loot_tables/relic/random.json \
+	data/buce/loot_table/relic/random.json \
 
 speedy_paths_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell find buce-data/speedy_paths -type f | ./bin/ext2dir) \
@@ -828,8 +774,8 @@ smart_allays_FILES := $(DEFAULT_DATA_FILES) \
 
 shearless_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell ./bin/shearless-files) \
-	data/minecraft/tags/blocks/mineable/hoe.json \
-	data/buce/advancements/shearless.json \
+	data/minecraft/tags/block/mineable/hoe.json \
+	data/buce/advancement/shearless.json \
 
 breeding_overhaul_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell find buce-data/breeding_overhaul -type f | ./bin/ext2dir) \
@@ -838,14 +784,14 @@ breeding_overhaul_FILES := $(DEFAULT_DATA_FILES) \
 
 poseable_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell find buce-data/poseable -type f | ./bin/ext2dir) \
-	data/minecraft/loot_tables/entities/armor_stand.json \
+	data/minecraft/loot_table/entities/armor_stand.json \
 	assets/minecraft/models/item/armor_stand.json \
 	assets/minecraft/models/item/armor_stand*arms*plate.json \
 	assets/minecraft/textures/item/armor_stand*arms*plate.png \
 
 smithing_upgrade_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell find buce-data/smithing/upgrade -type f | ./bin/ext2dir) \
-	data/minecraft/recipes/netherite_upgrade_smithing_template.json \
+	data/minecraft/recipe/netherite_upgrade_smithing_template.json \
 	assets/minecraft/models/item/bow.json \
 	assets/minecraft/models/item/leather_boots.json \
 	assets/minecraft/models/item/diamond_boots.json \
@@ -868,69 +814,69 @@ phantasmal_FILES := $(DEFAULT_DATA_FILES) \
 	assets/minecraft/models/item/glow_item_frame.json \
 	assets/minecraft/models/item/item_frame.json \
 	assets/minecraft/textures/item/light_* \
-	data/minecraft/loot_tables/entities/phantom.json \
-	#data/buce/tags/items/relic/templates.json \
+	data/minecraft/loot_table/entities/phantom.json \
+	#data/buce/tags/item/relic/templates.json \
 
 phantasmal_end_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell find buce-data/phantasmal_end -type f | ./bin/ext2dir) \
 
 eyes_of_seeking_FILES := $(DEFAULT_DATA_FILES) \
-	data/buce/advancements/eyes_of_seeking.json \
+	data/buce/advancement/eyes_of_seeking.json \
 	data/minecraft/tags/worldgen/structure/eye_of_ender_located.json \
 
 crafting_colorful_FILES := $(DEFAULT_DATA_FILES) \
-	data/minecraft/recipes/*_candle.json \
-	data/minecraft/recipes/dye_*_banner.json \
-	data/minecraft/recipes/*_glass_pane.json \
-	data/minecraft/recipes/*_stained_glass.json \
-	data/minecraft/recipes/*_terracotta.json \
-	data/minecraft/tags/items/glass.json \
-	data/minecraft/tags/items/glass_panes.json \
-	data/minecraft/tags/items/*_without_*.json \
-	#data/minecraft/recipes/*_bed.json \
-	#data/minecraft/recipes/*_wool.json \
+	data/minecraft/recipe/*_candle.json \
+	data/minecraft/recipe/dye_*_banner.json \
+	data/minecraft/recipe/*_glass_pane.json \
+	data/minecraft/recipe/*_stained_glass.json \
+	data/minecraft/recipe/*_terracotta.json \
+	data/minecraft/tags/item/glass.json \
+	data/minecraft/tags/item/glass_panes.json \
+	data/minecraft/tags/item/*_without_*.json \
+	#data/minecraft/recipe/*_bed.json \
+	#data/minecraft/recipe/*_wool.json \
 
 crafting_elixir_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell find buce-data/crafting/elixir -type f | ./bin/ext2dir) \
 
 crafting_snack_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell find buce-data/crafting/snack -type f | ./bin/ext2dir) \
-	data/minecraft/recipes/glistering_melon_slice.json \
-	data/minecraft/recipes/popped_chorus_fruit_from_campfire_cooking.json \
-	data/minecraft/recipes/popped_chorus_fruit_from_smoking.json \
-	data/minecraft/recipes/pumpkin_pie.json \
+	data/minecraft/recipe/glistering_melon_slice.json \
+	data/minecraft/recipe/popped_chorus_fruit_from_campfire_cooking.json \
+	data/minecraft/recipe/popped_chorus_fruit_from_smoking.json \
+	data/minecraft/recipe/pumpkin_pie.json \
 
 crafting_plentiful_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell find buce-data/crafting/plentiful -type f | ./bin/ext2dir) \
-	$(wildcard data/minecraft/recipes/*_stairs.json) \
-	$(wildcard data/minecraft/recipes/*_fence.json) \
-	$(wildcard data/minecraft/recipes/*_fence_gate.json) \
-	$(wildcard data/minecraft/recipes/*_pressure_plate.json) \
-	$(wildcard data/minecraft/recipes/*_sign.json) \
-	$(wildcard data/minecraft/recipes/*_trapdoor.json) \
-	$(wildcard data/minecraft/recipes/*_wood.json) \
-	$(wildcard data/minecraft/recipes/*_hyphae.json) \
-	$(wildcard data/minecraft/recipes/*_nugget_from_blasting*.json) \
-	data/minecraft/recipes/netherite_upgrade_smithing_template.json \
-	data/minecraft/recipes/black_banner.json \
-	data/minecraft/recipes/blue_banner.json \
-	data/minecraft/recipes/brown_banner.json \
-	data/minecraft/recipes/cyan_banner.json \
-	data/minecraft/recipes/gray_banner.json \
-	data/minecraft/recipes/green_banner.json \
-	data/minecraft/recipes/light_blue_banner.json \
-	data/minecraft/recipes/light_gray_banner.json \
-	data/minecraft/recipes/lime_banner.json \
-	data/minecraft/recipes/magenta_banner.json \
-	data/minecraft/recipes/orange_banner.json \
-	data/minecraft/recipes/pink_banner.json \
-	data/minecraft/recipes/purple_banner.json \
-	data/minecraft/recipes/red_banner.json \
-	data/minecraft/recipes/white_banner.json \
-	data/minecraft/recipes/yellow_banner.json \
-	data/minecraft/recipes/hopper.json \
-	data/minecraft/recipes/shield.json \
-	data/minecraft/recipes/chain.json \
+	$(wildcard data/minecraft/recipe/*_stairs.json) \
+	$(wildcard data/minecraft/recipe/*_fence.json) \
+	$(wildcard data/minecraft/recipe/*_fence_gate.json) \
+	$(wildcard data/minecraft/recipe/*_pressure_plate.json) \
+	$(wildcard data/minecraft/recipe/*_sign.json) \
+	$(wildcard data/minecraft/recipe/*_trapdoor.json) \
+	$(wildcard data/minecraft/recipe/*_wood.json) \
+	$(wildcard data/minecraft/recipe/*_hyphae.json) \
+	$(wildcard data/minecraft/recipe/*_nugget_from_blasting*.json) \
+	data/minecraft/recipe/netherite_upgrade_smithing_template.json \
+	data/minecraft/recipe/black_banner.json \
+	data/minecraft/recipe/blue_banner.json \
+	data/minecraft/recipe/brown_banner.json \
+	data/minecraft/recipe/cyan_banner.json \
+	data/minecraft/recipe/gray_banner.json \
+	data/minecraft/recipe/green_banner.json \
+	data/minecraft/recipe/light_blue_banner.json \
+	data/minecraft/recipe/light_gray_banner.json \
+	data/minecraft/recipe/lime_banner.json \
+	data/minecraft/recipe/magenta_banner.json \
+	data/minecraft/recipe/orange_banner.json \
+	data/minecraft/recipe/pink_banner.json \
+	data/minecraft/recipe/purple_banner.json \
+	data/minecraft/recipe/red_banner.json \
+	data/minecraft/recipe/white_banner.json \
+	data/minecraft/recipe/yellow_banner.json \
+	data/minecraft/recipe/hopper.json \
+	data/minecraft/recipe/shield.json \
+	data/minecraft/recipe/chain.json \
 
 crafting_shell_box_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell find buce-data/crafting/shell -type f | ./bin/ext2dir) \
@@ -943,15 +889,15 @@ crafting_unpacked_FILES := $(DEFAULT_DATA_FILES) \
 
 crafting_workstation_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell find buce-data/crafting/workstation -type f | ./bin/ext2dir) \
-	data/minecraft/recipes/barrel.json \
-	data/minecraft/recipes/blast_furnace.json \
-	data/minecraft/recipes/cartography_table.json \
-	data/minecraft/recipes/fletching_table.json \
-	data/minecraft/recipes/grindstone.json \
-	data/minecraft/recipes/lectern.json \
-	data/minecraft/recipes/smithing_table.json \
-	data/minecraft/recipes/smoker.json \
-	data/minecraft/recipes/stonecutter.json \
+	data/minecraft/recipe/barrel.json \
+	data/minecraft/recipe/blast_furnace.json \
+	data/minecraft/recipe/cartography_table.json \
+	data/minecraft/recipe/fletching_table.json \
+	data/minecraft/recipe/grindstone.json \
+	data/minecraft/recipe/lectern.json \
+	data/minecraft/recipe/smithing_table.json \
+	data/minecraft/recipe/smoker.json \
+	data/minecraft/recipe/stonecutter.json \
 
 cutting_declutter_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell find buce-data/cutting/declutter -type f | ./bin/ext2dir) \
@@ -971,23 +917,23 @@ copper_overhaul_FILES := $(DEFAULT_DATA_FILES) \
 	$(wildcard assets/minecraft/textures/item/iron_*.png) \
 	$(wildcard assets/minecraft/textures/models/armor/chainmail_*.png) \
 	$(wildcard assets/minecraft/textures/models/armor/iron_*.png) \
-	$(wildcard data/minecraft/recipes/copper_*.json) \
-	$(wildcard data/minecraft/recipes/wooden_*.json) \
-	$(wildcard data/minecraft/tags/items/stone_*_materials.json) \
+	$(wildcard data/minecraft/recipe/copper_*.json) \
+	$(wildcard data/minecraft/recipe/wooden_*.json) \
+	$(wildcard data/minecraft/tags/item/stone_*_materials.json) \
 	assets/minecraft/lang/en_us_copper_overhaul.json \
 	assets/minecraft/textures/block/detector_rail_on.png \
 	assets/minecraft/textures/block/detector_rail.png \
 	assets/minecraft/textures/block/tripwire_hook.png \
-	data/minecraft/recipes/activator_rail.json \
-	data/minecraft/recipes/detector_rail.json \
-	data/minecraft/recipes/dispenser.json \
-	data/minecraft/recipes/stone_axe.json \
-	data/minecraft/recipes/stone_hoe.json \
-	data/minecraft/recipes/stone_pickaxe.json \
-	data/minecraft/recipes/stone_shovel.json \
-	data/minecraft/recipes/stone_sword.json \
-	data/minecraft/recipes/tripwire_hook.json \
-	data/minecraft/tags/blocks/needs_stone_tool.json \
+	data/minecraft/recipe/activator_rail.json \
+	data/minecraft/recipe/detector_rail.json \
+	data/minecraft/recipe/dispenser.json \
+	data/minecraft/recipe/stone_axe.json \
+	data/minecraft/recipe/stone_hoe.json \
+	data/minecraft/recipe/stone_pickaxe.json \
+	data/minecraft/recipe/stone_shovel.json \
+	data/minecraft/recipe/stone_sword.json \
+	data/minecraft/recipe/tripwire_hook.json \
+	data/minecraft/tags/block/needs_stone_tool.json \
 	#assets/minecraft/models/block/light_weighted_pressure_plate_down.json \
 	#assets/minecraft/models/block/light_weighted_pressure_plate.json \
 	#assets/minecraft/models/block/polished_blackstone_button_inventory.json \
@@ -997,10 +943,10 @@ copper_overhaul_FILES := $(DEFAULT_DATA_FILES) \
 	#assets/minecraft/textures/block/iron_door_top.png \
 	#assets/minecraft/textures/block/iron_trapdoor.png \
 	#assets/minecraft/textures/item/iron_door.png \
-	#data/minecraft/recipes/iron_door.json \
-	#data/minecraft/recipes/iron_trapdoor_copper_overhaul.json \
-	#data/minecraft/recipes/light_weighted_pressure_plate_copper_overhaul.json \
-	#data/minecraft/recipes/polished_blackstone_button.json \
+	#data/minecraft/recipe/iron_door.json \
+	#data/minecraft/recipe/iron_trapdoor_copper_overhaul.json \
+	#data/minecraft/recipe/light_weighted_pressure_plate_copper_overhaul.json \
+	#data/minecraft/recipe/polished_blackstone_button.json \
 
 copper_tech_more_FILES := $(DEFAULT_DATA_FILES) \
 	assets/minecraft/models/block/dispenser.json \
@@ -1021,9 +967,9 @@ copper_tech_more_FILES := $(DEFAULT_DATA_FILES) \
 	assets/minecraft/textures/block/observer_side_on_copper.png \
 	assets/minecraft/textures/block/observer_side_copper.png \
 	assets/minecraft/textures/block/observer_top_copper.png \
-	data/minecraft/recipes/dispenser_copper_tech_more.json \
-	data/minecraft/recipes/dropper.json \
-	data/minecraft/recipes/observer_copper_tech_more.json \
+	data/minecraft/recipe/dispenser_copper_tech_more.json \
+	data/minecraft/recipe/dropper.json \
+	data/minecraft/recipe/observer_copper_tech_more.json \
 
 copper_pistons_FILES := $(DEFAULT_DATA_FILES) \
 	assets/minecraft/models/block/piston_head_short_sticky.json \
@@ -1034,7 +980,7 @@ copper_pistons_FILES := $(DEFAULT_DATA_FILES) \
 	assets/minecraft/textures/block/piston_side_sticky.png \
 	assets/minecraft/textures/block/piston_top.png \
 	assets/minecraft/textures/block/piston_top_sticky.png \
-	data/minecraft/recipes/piston.json \
+	data/minecraft/recipe/piston.json \
 
 copper_tech_FILES := $(DEFAULT_DATA_FILES) \
 	$(wildcard assets/minecraft/lang/*_copper_tech.json) \
@@ -1043,59 +989,59 @@ copper_tech_FILES := $(DEFAULT_DATA_FILES) \
 	assets/minecraft/textures/block/copper_block_lever.png \
 	assets/minecraft/textures/block/powered_rail_on.png \
 	assets/minecraft/textures/block/powered_rail.png \
-	data/minecraft/recipes/lever.json \
-	data/minecraft/recipes/powered_rail.json \
+	data/minecraft/recipe/lever.json \
+	data/minecraft/recipe/powered_rail.json \
 	#assets/minecraft/textures/block/activator_rail_on.png \
 	#assets/minecraft/textures/block/activator_rail.png \
 
 buce-data/heads/*.loot_table.json.yaml: buce-data/heads/heads.dat
 
 heads_fae_FILES := $(DEFAULT_DATA_FILES) \
-	data/buce/loot_tables/heads/fae.json \
-	data/minecraft/loot_tables/blocks/player_head.json \
-	data/minecraft/loot_tables/gameplay/cat_morning_gift.json \
+	data/buce/loot_table/heads/fae.json \
+	data/minecraft/loot_table/blocks/player_head.json \
+	data/minecraft/loot_table/gameplay/cat_morning_gift.json \
 
-data/minecraft/loot_tables/gameplay/hero_of_the_village/%_gift.json.yaml: buce-data/heads/heads.dat
+data/minecraft/loot_table/gameplay/hero_of_the_village/%_gift.json.yaml: buce-data/heads/heads.dat
 	./bin/update-villager-gifts.sh
 
 heads_golem_FILES := $(DEFAULT_DATA_FILES) \
-	$(shell find data/minecraft/loot_tables/gameplay/hero_of_the_village -type f | ./bin/ext2dir) \
-	data/minecraft/loot_tables/blocks/player_head.json \
+	$(shell find data/minecraft/loot_table/gameplay/hero_of_the_village -type f | ./bin/ext2dir) \
+	data/minecraft/loot_table/blocks/player_head.json \
 
 heads_player_FILES := $(DEFAULT_DATA_FILES) \
-	data/minecraft/loot_tables/blocks/player_head.json \
-	data/minecraft/loot_tables/entities/player.json \
-	#data/buce/loot_tables/heads/ancients.json \
+	data/minecraft/loot_table/blocks/player_head.json \
+	data/minecraft/loot_table/entities/player.json \
+	#data/buce/loot_table/heads/ancients.json \
 
 escape_end_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell find buce-data/escape/end -type f | ./bin/ext2dir) \
 
 escape_nether_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell find buce-data/escape/nether -type f | ./bin/ext2dir) \
-	data/minecraft/tags/blocks/nether_platform_column_replaceables.json \
+	data/minecraft/tags/block/nether_platform_column_replaceables.json \
 	data/minecraft/tags/functions/load_escape_nether.json \
 
 escape_grind_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell find buce-data/escape/grind -type f | ./bin/ext2dir) \
 	data/buce/functions/var.mcfunction \
-	data/buce/loot_tables/loot_overhaul/cake_escape_grind.json \
-	data/buce/recipes/escape/grind/grindstone.json \
-	data/minecraft/loot_tables/blocks/crying_obsidian_escape_grind.json \
-	data/minecraft/loot_tables/chests/end_city_treasure.json \
+	data/buce/loot_table/loot_overhaul/cake_escape_grind.json \
+	data/buce/recipe/escape/grind/grindstone.json \
+	data/minecraft/loot_table/blocks/crying_obsidian_escape_grind.json \
+	data/minecraft/loot_table/chests/end_city_treasure.json \
 	data/minecraft/tags/functions/load_escape_grind.json \
 	data/minecraft/tags/functions/respawn_end.json \
 	data/minecraft/tags/functions/respawn_nether.json \
-	#data/buce/advancements/mythic/root.json \
-	#data/buce/recipes/mythic/smithing/searching.json \
-	#data/buce/tags/items/relic/templates.json \
+	#data/buce/advancement/mythic/root.json \
+	#data/buce/recipe/mythic/smithing/searching.json \
+	#data/buce/tags/item/relic/templates.json \
 	#data/minecraft/tags/worldgen/structure/seeking_located.json \
 	#$(shell find buce-data/mythic/searching -type f | ./bin/ext2dir) \
-	#data/minecraft/loot_tables/entities/endermite.json \
+	#data/minecraft/loot_table/entities/endermite.json \
 
 locomotive_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell find buce-data/locomotive -type f | ./bin/ext2dir) \
-	data/minecraft/recipes/activator_rail.json \
-	data/minecraft/recipes/detector_rail.json \
+	data/minecraft/recipe/activator_rail.json \
+	data/minecraft/recipe/detector_rail.json \
 
 lichdom_FILES := $(DEFAULT_DATA_FILES) \
 	data/minecraft/tags/functions/load_lichdom.json \
@@ -1103,8 +1049,8 @@ lichdom_FILES := $(DEFAULT_DATA_FILES) \
 	data/lichdom/functions/fixme/load.mcfunction \
 	data/lichdom/functions/fixme/tick.mcfunction \
 	data/lichdom/tags/functions/death.json \
-	data/lichdom/tags/entity_types/undead.json \
-	data/lichdom/tags/entity_types/has_blood.json \
+	data/lichdom/tags/entity_type/undead.json \
+	data/lichdom/tags/entity_type/has_blood.json \
 	data/lichdom/functions/load.mcfunction \
 	data/lichdom/functions/tick.mcfunction \
 	data/lichdom/functions/death.mcfunction \
@@ -1133,25 +1079,25 @@ lichdom_FILES := $(DEFAULT_DATA_FILES) \
 	data/lichdom/functions/drink_blood_3.mcfunction \
 	data/lichdom/functions/drink_blood_4.mcfunction \
 	data/lichdom/functions/test.mcfunction \
-	data/lichdom/advancements/lichdom.json \
-	data/lichdom/advancements/craft_pedestal.json \
-	data/lichdom/advancements/craft_phylactery.json \
-	data/lichdom/advancements/become_bunny.json \
-	data/lichdom/advancements/become_lich.json \
-	data/lichdom/advancements/become_turtle.json \
-	data/lichdom/advancements/become_vampire.json \
-	data/lichdom/advancements/lich_form.json \
-	data/lichdom/advancements/vampire_form.json \
-	data/lichdom/advancements/bunny_form.json \
-	data/lichdom/advancements/turtle_form.json \
-	data/lichdom/advancements/steal_unlife_1.json \
-	data/lichdom/advancements/steal_unlife_2.json \
-	data/lichdom/advancements/steal_unlife_3.json \
-	data/lichdom/advancements/steal_unlife_4.json \
-	data/lichdom/advancements/drink_blood_1.json \
-	data/lichdom/advancements/drink_blood_2.json \
-	data/lichdom/advancements/drink_blood_3.json \
-	data/lichdom/advancements/drink_blood_4.json \
+	data/lichdom/advancement/lichdom.json \
+	data/lichdom/advancement/craft_pedestal.json \
+	data/lichdom/advancement/craft_phylactery.json \
+	data/lichdom/advancement/become_bunny.json \
+	data/lichdom/advancement/become_lich.json \
+	data/lichdom/advancement/become_turtle.json \
+	data/lichdom/advancement/become_vampire.json \
+	data/lichdom/advancement/lich_form.json \
+	data/lichdom/advancement/vampire_form.json \
+	data/lichdom/advancement/bunny_form.json \
+	data/lichdom/advancement/turtle_form.json \
+	data/lichdom/advancement/steal_unlife_1.json \
+	data/lichdom/advancement/steal_unlife_2.json \
+	data/lichdom/advancement/steal_unlife_3.json \
+	data/lichdom/advancement/steal_unlife_4.json \
+	data/lichdom/advancement/drink_blood_1.json \
+	data/lichdom/advancement/drink_blood_2.json \
+	data/lichdom/advancement/drink_blood_3.json \
+	data/lichdom/advancement/drink_blood_4.json \
 
 test_FILES = \
 	# nothing
@@ -1178,7 +1124,7 @@ dlist:
 drlist:
 	@printf '%s\n' $(DATARESOURCEPACKFILES)
 
-data/buce/loot_tables/%.json: buce-data/%.loot_table.json
+data/buce/loot_table/%.json: buce-data/%.loot_table.json
 	mkdir -p $(dir $@)
 	cp -v $< $@
 
@@ -1186,7 +1132,7 @@ data/buce/functions/%.mcfunction: buce-data/%.function.mcfunction
 	mkdir -p $(dir $@)
 	cp -v $< $@
 
-data/buce/advancements/%.json: buce-data/%.advancement.json
+data/buce/advancement/%.json: buce-data/%.advancement.json
 	mkdir -p $(dir $@)
 	cp -v $< $@
 
@@ -1198,19 +1144,19 @@ data/buce/predicates/%.json: buce-data/%.predicate.json
 	mkdir -p $(dir $@)
 	cp -v $< $@
 
-data/buce/recipes/%.json: buce-data/%.recipe.json
+data/buce/recipe/%.json: buce-data/%.recipe.json
 	mkdir -p $(dir $@)
 	cp -v $< $@
 
-data/buce/tags/entity_types/%.json: buce-data/%.entity_type.tag.json
+data/buce/tags/entity_type/%.json: buce-data/%.entity_type.tag.json
 	mkdir -p $(dir $@)
 	cp -v $< $@
 
-data/buce/tags/blocks/%.json: buce-data/%.block.tag.json
+data/buce/tags/block/%.json: buce-data/%.block.tag.json
 	mkdir -p $(dir $@)
 	cp -v $< $@
 
-data/buce/tags/items/%.json: buce-data/%.item.tag.json
+data/buce/tags/item/%.json: buce-data/%.item.tag.json
 	mkdir -p $(dir $@)
 	cp -v $< $@
 
@@ -1222,7 +1168,7 @@ data/buce/worldgen/processor_list/%.json: buce-data/%.processor_list.worldgen.js
 	mkdir -p $(dir $@)
 	cp -v $< $@
 
-data/buce/structures/%.nbt: buce-data/%.structure.nbt
+data/buce/structure/%.nbt: buce-data/%.structure.nbt
 	mkdir -p $(dir $@)
 	cp -v $< $@
 
@@ -1234,7 +1180,7 @@ data/buce/dimension/%.json: buce-data/%.dimension.json
 	mkdir -p $(dir $@)
 	cp -v $< $@
 
-data/minecraft/tags/blocks/unmineable.json: data/minecraft/tags/blocks/mineable/*.json
+data/minecraft/tags/block/unmineable.json: data/minecraft/tags/block/mineable/*.json
 
 # set mccurly options
 MCCURLY_FN_PATH_FMT := %s-data/%s.function.mcfunction
@@ -1270,8 +1216,8 @@ meta/%.mcmeta: meta/%.mcmeta.sempl
 buce-data/%/root.advancement.json: buce-data/%/root.advancement.json.sempl meta/%.mcmeta
 	sempl $< $@
 
-%.json: %.json.yaml data/minecraft/loot_tables/loot_table.j2
-	j2 data/minecraft/loot_tables/loot_table.j2 $< -o $@
+%.json: %.json.yaml data/minecraft/loot_table/loot_table.j2
+	j2 data/minecraft/loot_table/loot_table.j2 $< -o $@
 
 buce-data/relic/all.loot_table.json.yaml: buce-data/relic/random.loot_table.json.yaml
 	sed '/^#/d; 5,$$ s/^      -/  - rolls: 1\n    entries:\n&/' $^ > $@
@@ -2014,8 +1960,8 @@ update:
 	@echo Extracting necessary folders from new jar
 	find ./bin/update-* -exec {} \;
 	@echo Copying new loot tables to orig.new folder
-	mkdir -p data/minecraft/loot_tables/orig.new
-	rsync -a `./bin/latest`.jar/data/minecraft/loot_tables/{archaeology,chests,gameplay} data/minecraft/loot_tables/orig.new/
+	mkdir -p data/minecraft/loot_table/orig.new
+	rsync -a `./bin/latest`.jar/data/minecraft/loot_table/{archaeology,chests,gameplay} data/minecraft/loot_table/orig.new/
 	@echo Rebuilding everything
 	touch $(TEMPLATES)
 	make -B all clean
@@ -2028,18 +1974,18 @@ release: $(PACKFILES)
 
 .PHONY: clean
 CLEAN_TARGETS := $(PACKFILES) data/buce pack.mcmeta pack.png test.zip \
-	data/minecraft/loot_tables/*.json \
-	data/minecraft/loot_tables/chests/*.json \
-	data/minecraft/loot_tables/chests/*/*.json \
-	data/minecraft/loot_tables/gameplay/*.json \
-	data/minecraft/loot_tables/gameplay/*/*.json \
-	data/minecraft/loot_tables/subtables/*.json \
-	data/minecraft/loot_tables/subtables/*/*.json \
+	data/minecraft/loot_table/*.json \
+	data/minecraft/loot_table/chests/*.json \
+	data/minecraft/loot_table/chests/*/*.json \
+	data/minecraft/loot_table/gameplay/*.json \
+	data/minecraft/loot_table/gameplay/*/*.json \
+	data/minecraft/loot_table/subtables/*.json \
+	data/minecraft/loot_table/subtables/*/*.json \
 	buce-data/relic/all.loot_table.json.yaml \
 	#buce-data/*/subtables/*.json
 clean:
 	rm -rf $(CLEAN_TARGETS)
-	git checkout data/buce/loot_tables/mythic/chromatic/fireworks.json
+	git checkout data/buce/loot_table/mythic/chromatic/fireworks.json
 
 export PACKFILES DATARESOURCEPACKFILES RESOURCEPACKFILES DATAPACKFILES
 .PHONY: check

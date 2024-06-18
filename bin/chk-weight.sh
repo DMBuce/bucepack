@@ -1,6 +1,6 @@
 #!/bin/bash
 
-find data/minecraft/loot_tables/{chests,gameplay,orig/chests,orig/gameplay} -name \*.yaml \
+find data/minecraft/loot_table/{chests,gameplay,orig/chests,orig/gameplay} -name \*.yaml \
 | while read file; do
 	echo "$(grep -v -e relic/random -e 'type: empty.*weight: [0-9]*9' "$file" \
 	| grep -o "weight: *[0-9]*" \

@@ -1,0 +1,20 @@
+pools:
+  - rolls: { min: 3, max: 5 }
+    entries:
+      - { type: item, weight: 2, min: 4, max: 14, item: arrow }
+      - { type: item, weight: 2, min: 4, max: 8 , item: tipped_arrow, potion: poison }
+      - { type: item, weight: 1, min: 4, max: 8 , item: tipped_arrow, potion: slowness }
+      - { type: item, weight: 2, min: 2, max: 4 , item: baked_potato }
+      - { type: item, weight: 2, min: 2, max: 10, item: glow_berries }
+      - { type: item, weight: 1, min: 3, max: 6 , item: acacia_planks }
+      - { type: item, weight: 1, min: 2, max: 5 , item: moss_block }
+      - { type: item, weight: 1, min: 2, max: 5 , item: bone_meal }
+      - { type: item, weight: 1, min: 5, max: 10, item: tuff }
+      - { type: item, weight: 1, min: 3, max: 6 , item: torch }
+      - { type: item, weight: 1, count: 1       , item: potion, potion: regeneration }
+      - { type: item, weight: 1, count: 1       , item: potion, potion: strength }
+      - { type: item, weight: 2, count: 1       , item: stone_pickaxe,
+          damage: { min: 0.15, max: 0.8 }
+        }
+      - { type: item, weight: 1, count: 1       , item: milk_bucket }
+random_sequence: "minecraft:chests/trial_chambers/supply"

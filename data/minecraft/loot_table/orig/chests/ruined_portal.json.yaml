@@ -1,0 +1,29 @@
+pools:
+  - rolls: { min: 4, max: 8 }
+    entries:
+      - { type: item, weight: 40, min: 1,  max: 2,  item: obsidian }
+      - { type: item, weight: 40, min: 1,  max: 4,  item: flint }
+      - { type: item, weight: 40, min: 9,  max: 18, item: iron_nugget }
+      - { type: item, weight: 40,                   item: flint_and_steel }
+      - { type: item, weight: 40,                   item: fire_charge }
+      - { type: item, weight: 15,                   item: golden_apple }
+      - { type: item, weight: 15, min: 4,  max: 24, item: gold_nugget }
+      - { type: item, weight: 15, enchant_rand: "", item: golden_sword }
+      - { type: item, weight: 15, enchant_rand: "", item: golden_axe }
+      - { type: item, weight: 15, enchant_rand: "", item: golden_hoe }
+      - { type: item, weight: 15, enchant_rand: "", item: golden_shovel }
+      - { type: item, weight: 15, enchant_rand: "", item: golden_pickaxe }
+      - { type: item, weight: 15, enchant_rand: "", item: golden_boots }
+      - { type: item, weight: 15, enchant_rand: "", item: golden_chestplate }
+      - { type: item, weight: 15, enchant_rand: "", item: golden_helmet }
+      - { type: item, weight: 15, enchant_rand: "", item: golden_leggings }
+      - { type: item, weight: 5,  min: 4,  max: 12, item: glistering_melon_slice }
+      - { type: item, weight: 5,                    item: golden_horse_armor }
+      - { type: item, weight: 5,                    item: light_weighted_pressure_plate }
+      - { type: item, weight: 5,  min: 4,  max: 12, item: golden_carrot }
+      - { type: item, weight: 5,                    item: clock }
+      - { type: item, weight: 5,  min: 2,  max: 8,  item: gold_ingot }
+      - { type: item, weight: 1,                    item: bell }
+      - { type: item, weight: 1,                    item: enchanted_golden_apple }
+      - { type: item, weight: 1,  min: 1,  max: 2,  item: gold_block }
+random_sequence: "minecraft:chests/ruined_portal"

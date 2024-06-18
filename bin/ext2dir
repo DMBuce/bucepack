@@ -9,7 +9,7 @@
 #
 #  data/buce/functions/artifact/splendor/glowing/activate.mcfunction
 #  data/buce/advancementsartifact/splendor/glowing/trigger.json
-#  data/buce/tags/items/crafting/plentiful/solid_door.json
+#  data/buce/tags/item/crafting/plentiful/solid_door.json
 #
 
 sed -r '
@@ -22,8 +22,8 @@ sed -r '
 	s,data/([^/]*)/(.*)\.([^./]*)\.([^./]*),data/\1/\3/\2.\4,g
 	/\/tag\// s,/tag/(.*)\.([^.]*)\.([^.]*),/tag/\2/\1.\3,
 	/\/worldgen\// s,/worldgen/(.*)\.([^.]*)\.([^.]*),/worldgen/\2/\1.\3,
-	s,buce/(advancement|datapack|item_modifier|loot_table|recipe|structure|tag|function|predicate),buce/\1s,g
-	s,buce/tags/(block|entity_type|fluid|game_event|item),buce/tags/\1s,g
+	s,buce/(datapack|item_modifier|tag|function|predicate),buce/\1s,g
+	s,buce/tags/(block|entity_type|fluid|game_event),buce/tags/\1s,g
 	#s,/dimensions/,/dimension/,
 	#s,/dimension_types/,/dimension_type/,
 ' "$@"

@@ -2,7 +2,7 @@
 
 cd "$(git rev-parse --show-toplevel)"
 latest="$(./bin/latest)" || exit
-grep -rl shears "$latest.jar"/data/minecraft/loot_tables/blocks \
+grep -rl shears "$latest.jar"/data/minecraft/loot_table/blocks \
     | grep -v leaves \
     | sort \
 	| sed "s|$latest.jar/||"

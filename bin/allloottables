@@ -2,6 +2,6 @@
 
 latest="$(./bin/latest)" || exit
 
-find "$latest.jar"/data/minecraft/loot_tables -name \*.json \
-	| sed 's|.*loot_tables/|minecraft:|; s|\.json||'
+find "$latest.jar"/data/minecraft/loot_table -name \*.json \
+	| sed 's|.*loot_table/|minecraft:|; s|\.json||'
 

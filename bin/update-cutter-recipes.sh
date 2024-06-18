@@ -58,7 +58,7 @@ for t in "${logtypes[@]}"; do
 	output="${t}_planks"
 	inputs="${t}_boat ${t}_chest_boat"
 	export num output inputs
-	sempl - "buce-data/locomotive/recipes/${output}.recipe.json" <<-EOF
+	sempl - "buce-data/locomotive/recipe/${output}.recipe.json" <<-EOF
 		{
 		  "type": "minecraft:stonecutting",
 		  "ingredient": [
@@ -78,7 +78,7 @@ num=5
 output="bamboo_planks"
 inputs="bamboo_raft bamboo_chest_raft"
 export num output inputs
-sempl - "buce-data/locomotive/recipes/${output}.recipe.json" <<-EOF
+sempl - "buce-data/locomotive/recipe/${output}.recipe.json" <<-EOF
 	{
 	  "type": "minecraft:stonecutting",
 	  "ingredient": [
@@ -246,7 +246,7 @@ do
 		{
 		  "type": "minecraft:stonecutting",
 		  "ingredient": [
-		    { "item": "{!jq -r .ingredient.item $latest.jar/data/minecraft/recipes/${inputs}_from_*_stonecutting.json 2>/dev/null}" },
+		    { "item": "{!jq -r .ingredient.item $latest.jar/data/minecraft/recipe/${inputs}_from_*_stonecutting.json 2>/dev/null}" },
 		    { "item": "minecraft:$inputs" }
 		  ],
 		  "result": {
@@ -316,7 +316,7 @@ do
 
 	# for each stonecutter recipe with the cobbled block as input
 	for recipe in \
-		"$latest.jar"/data/minecraft/recipes/*_from_"$block"_stonecutting.json
+		"$latest.jar"/data/minecraft/recipe/*_from_"$block"_stonecutting.json
 	do
 		# generate a recipe with the uncobbled block as input
 		num="$(jq -r .result.count "$recipe")"

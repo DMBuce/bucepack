@@ -19,12 +19,12 @@ while read old; do
 	cp "$old" "$new"
 	sed -i 's/"minecraft:shears"/[ '"$shears"' ]/g; $a\' "$new"
 done < <(
-	grep -rl shears "$latest.jar"/data/minecraft/loot_tables/blocks \
+	grep -rl shears "$latest.jar"/data/minecraft/loot_table/blocks \
 	| grep -v -e{_leaves,/short_grass,/tall_grass} \
 	| sort
 )
 
-sempl - data/minecraft/tags/blocks/mineable/hoe.json <<-EOF
+sempl - data/minecraft/tags/block/mineable/hoe.json <<-EOF
 	{
 	  "replace": false,
 	  "values": [

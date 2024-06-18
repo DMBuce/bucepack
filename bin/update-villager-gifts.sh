@@ -8,7 +8,7 @@ cd "$gitroot"
 latest="$(./bin/latest)" || exit
 export SEMPL_BRACES='{{}}'
 
-ls "$latest.jar/data/minecraft/loot_tables/gameplay/hero_of_the_village/" \
+ls "$latest.jar/data/minecraft/loot_table/gameplay/hero_of_the_village/" \
 	| sed 's/_gift\.json$//' \
 	| while read prof
 do
@@ -20,7 +20,7 @@ do
 	fi
 
 	#cat <<-EOF
-	sempl - "data/minecraft/loot_tables/gameplay/hero_of_the_village/${prof}_gift.json.yaml" <<-EOF
+	sempl - "data/minecraft/loot_table/gameplay/hero_of_the_village/${prof}_gift.json.yaml" <<-EOF
 		type: gift
 		pools:
 		  #- rolls: 1

@@ -1,0 +1,441 @@
+{
+  "type": "minecraft:{{ type if type is defined else "chest" }}",
+  "pools": [
+    {%- for pool in pools %}
+    {
+      "bonus_rolls": 0.0,
+      {%- if pool.chance is defined %}
+      "conditions": [
+        {
+          "chance": {{pool.chance}},
+          "condition": "minecraft:random_chance"
+        }
+      ],
+      {%- endif %}
+      "entries": [
+        {%- for entry in pool.entries %}
+        {%- if entry.type == "item" %}
+        {
+          "type": "minecraft:item",
+          {%- if entry.min is defined
+              or entry.damage is defined
+              or entry.count is defined
+              or entry.enchant_lvl is defined
+              or entry.enchant_rand is defined
+              or entry.enchants is defined
+              or entry.looting is defined
+              or entry.potion is defined
+              or entry.nbt is defined
+              or entry.components is defined
+          %}
+          "functions": [
+            {%- set comma = "" %}
+            {%- if entry.min is defined %}
+            {%- set comma = "," %}
+            {
+              "add": false,
+              "count": {
+                "type": "minecraft:uniform",
+                "max": {{entry.max}}.0,
+                "min": {{entry.min}}.0
+              },
+              "function": "minecraft:set_count"
+            }
+            {%- endif %}
+            {%- if entry.count is defined %}{{comma}}
+            {%- set comma = "," %}
+            {
+              "add": false,
+              "count": {{entry.count}}.0,
+              "function": "minecraft:set_count"
+            }
+            {%- endif %}
+            {%- if entry.damage is defined %}{{comma}}
+            {%- set comma = "," %}
+            {
+              "add": false,
+              "damage": {
+                "type": "minecraft:uniform",
+                "max": {{entry.damage.max}},
+                "min": {{entry.damage.min}}
+              },
+              "function": "minecraft:set_damage"
+            }
+            {%- endif %}
+            {%- if entry.enchant_lvl is defined %}{{comma}}
+            {%- set comma = "," %}
+            {
+              "function": "minecraft:enchant_with_levels",
+              {%- if entry.enchant_lvl is mapping %}
+              "levels": {
+                "type": "minecraft:uniform",
+                "max": {{entry.enchant_lvl.max}}.0,
+                "min": {{entry.enchant_lvl.min}}.0
+              },
+              {%- else %}
+              "levels": {{entry.enchant_lvl}}.0,
+              {%- endif %}
+              "options": "#minecraft:on_random_loot"
+            }
+            {%- endif %}
+            {%- if entry.enchant_rand is defined %}{{comma}}
+            {%- set comma = "," %}
+            {
+              "function": "minecraft:enchant_randomly",
+              {%- if entry.enchant_rand is string %}
+              "options": "{{entry.enchant_rand if entry.enchant_rand != "" else "#minecraft:on_random_loot"}}"
+			  {%- else %}
+              "options": [
+              {%- for enchant in entry.enchant_rand %}
+                "minecraft:{{enchant}}"{{ "," if not loop.last }}
+              {%- endfor %}
+              ]
+			  {%- endif %}
+            }
+            {%- endif %}
+            {%- if entry.enchants is defined %}{{comma}}
+            {%- set comma = "," %}
+            {
+              "add": false,
+              "enchantments": {
+                {%- for enchant, lvl in entry.enchants.items() %}
+                "minecraft:{{enchant}}": {{lvl}}.0{{ "," if not loop.last }}
+                {%- endfor %}
+              },
+              "function": "minecraft:set_enchantments"
+            }
+            {%- endif %}
+            {%- if entry.looting is defined %}{{comma}}
+            {%- set comma = "," %}
+            {
+              "function": "minecraft:looting_enchant",
+              "count": {
+                "min": {{entry.looting.min}}.0,
+                "max": {{entry.looting.max}}.0
+              }
+            }
+            {%- endif %}
+            {%- if entry.potion is defined %}{{comma}}
+            {%- set comma = "," %}
+            {
+              "function": "minecraft:set_potion",
+              "id": "minecraft:{{entry.potion}}"
+            }
+            {%- endif %}
+            {%- if entry.components is defined %}{{comma}}
+            {%- set comma = "," %}
+            {
+              "function": "minecraft:set_components",
+              "components": {{entry.components}}
+            }
+            {%- endif %}
+            {%- if entry.nbt is defined %}{{comma}}
+            {%- set comma = "," %}
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{{entry.nbt}}"
+            }
+            {%- endif %}
+            {%- if entry.omen is defined %}{{comma}}
+            {%- set comma = "," %}
+            {
+              "amplifier": {
+                "type": "minecraft:uniform",
+                "max": {{entry.omen.max}}.0,
+                "min": {{entry.omen.min}}.0
+              },
+              "function": "minecraft:set_ominous_bottle_amplifier"
+            }
+            {%- endif %}
+          ],
+          {%- endif %}
+          "name": "minecraft:{{entry.item}}"
+          {{- "," if entry.weight is defined and entry.weight != 1 }}
+          {%- if entry.weight is defined and entry.weight != 1 %}
+          "weight": {{entry.weight}}
+          {%- endif %}
+        }{{ "," if not loop.last }}
+        {%- elif entry.type == "tag" %}
+        {
+          "type": "minecraft:tag",
+          "name": "minecraft:{{entry.tag}}",
+          "expand": {{ entry.expand | lower }}
+        }{{ "," if not loop.last }}
+        {%- elif entry.type == "loot_table" %}
+        {
+          "type": "minecraft:loot_table",
+          "value": "{{ "buce:" if ":" not in entry.table else "" }}{{entry.table}}"
+          {%- if entry.weight is defined and entry.weight != 1 %},
+          "weight": {{entry.weight}}
+          {%- endif %}
+          {%- if entry.score is defined %},
+          "conditions": [
+            {
+              "condition": "minecraft:entity_scores",
+              "entity": "this",
+              "scores": {
+                "{{ entry.score }}": { "min": 1 }
+              }
+            }
+          ]
+          {%- endif %}
+        }{{ "," if not loop.last }}
+        {%- elif entry.type == "empty" %}
+        {
+          "type": "minecraft:empty"
+          {%- if entry.weight is defined and entry.weight != 1 %},
+          "weight": {{entry.weight}}
+          {%- endif %}
+        }{{ "," if not loop.last }}
+        {%- elif entry.type == "explorer_map" %}
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              {%- if entry.structure is defined %}
+              "destination": "on_{{entry.structure}}_explorer_maps",
+              {%- endif %}
+              "decoration": "minecraft:{{entry.decor}}",
+              "function": "minecraft:exploration_map",
+              "skip_existing_chunks": {{ entry.skipchunks | lower }},
+              "zoom": 1
+            }
+            {%- if entry.display is defined %},
+            {
+              "function": "minecraft:set_name",
+              {%- if '.' in entry.display %}
+              "name": {
+                "translate": "{{entry.display}}"
+              },
+              {%- else %}
+              "name": "{{entry.display}}",
+              {%- endif %}
+              "target": "item_name"
+            }
+            {%- endif %}
+          ],
+          "name": "minecraft:map"
+          {%- if entry.weight != 1 %},
+          "weight": {{entry.weight}}
+          {%- endif %}
+        }{{ "," if not loop.last }}
+        {%- elif entry.type == "suspicious_stew" %}
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "effects": [
+                {%- for effect in entry.effects %}
+                {
+                  "type": "minecraft:{{effect.name}}",
+                  "duration": {
+                    "type": "minecraft:uniform",
+                    "max": {{effect.max}}.0,
+                    "min": {{effect.min}}.0
+                  }
+                }{{ "," if not loop.last }}
+                {%- endfor %}
+              ],
+              "function": "minecraft:set_stew_effect"
+            }
+            {%- if entry.min is defined %},
+            {
+              "add": false,
+              "count": {
+                "type": "minecraft:uniform",
+                "max": {{entry.max}}.0,
+                "min": {{entry.min}}.0
+              },
+              "function": "minecraft:set_count"
+            }
+            {%- endif %}
+          ],
+          "name": "minecraft:suspicious_stew"
+          {%- if entry.weight is defined and entry.weight != 1 %},
+          "weight": {{entry.weight}}
+          {%- endif %}
+        }{{ "," if not loop.last }}
+        {%- elif entry.type == "item_biome" %}
+        {
+          "type": "minecraft:item",
+          {%- if entry.min is defined %}
+          "functions": [
+            {
+              "add": false,
+              "count": {
+                "max": {{entry.max}}.0,
+                "min": {{entry.min}}.0,
+                "type": "minecraft:uniform"
+              },
+              "function": "minecraft:set_count"
+            }
+          ],
+          {%- endif %}
+          "conditions": [
+            {
+              "condition": "minecraft:location_check",
+              "predicate": {
+                "biomes": [
+                  {%- for biome in entry.biomes %}
+                  "minecraft:{{biome}}"{{ "," if not loop.last }}
+                  {%- endfor %}
+                ]
+              }
+            }
+          ],
+          "name": "minecraft:{{entry.item}}"
+          {%- if entry.weight != 1 %},
+          "weight": {{entry.weight}}
+          {%- endif %}
+        }{{ "," if not loop.last }}
+        {%- elif entry.type == "item_unused" %}
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:{{entry.item}}",
+          {%- if entry.weight != 1 %}
+          "weight": {{entry.weight}},
+          {%- endif %}
+          "functions": [
+            {
+              "add": false,
+              "count": {
+                "max": {{entry.max}}.0,
+                "min": {{entry.min}}.0,
+                "type": "minecraft:uniform"
+              },
+              "function": "minecraft:set_count"
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "player": {
+                  "stats": [
+                    {
+                      "type": "minecraft:used",
+                      "stat": "minecraft:{{entry.item}}",
+                      "value": { "max": 0 }
+                    }
+                  ]
+                }
+              }
+            }{%- if entry.score is defined %},
+            {
+              "condition": "minecraft:entity_scores",
+              "entity": "this",
+              "scores": {
+                "{{ entry.score }}": { "min": 1 }
+              }
+            }
+            {%- endif %}
+          ]
+        }{{ "," if not loop.last }}
+        {%- elif entry.type == "crying_obsidian_drops" %}
+        {#- just hardcode everything #}
+        {
+          "type": "minecraft:alternatives",
+          "children": [
+            {
+              "type": "minecraft:item",
+              "conditions": [
+                {
+                  "condition": "minecraft:match_tool",
+                  "predicate": {
+                    "enchantments": [
+                      {
+                        "enchantment": "minecraft:silk_touch",
+                        "levels": {
+                          "min": 1
+                        }
+                      }
+                    ]
+                  }
+                }
+              ],
+              "name": "minecraft:crying_obsidian"
+            },
+            {
+              "type": "minecraft:alternatives",
+              "conditions": [
+                {
+                  "condition": "minecraft:survives_explosion"
+                }
+              ],
+              "children": [
+                {
+                  "type": "minecraft:item",
+                  "conditions": [
+                    {
+                      "condition": "minecraft:table_bonus",
+                      "enchantment": "minecraft:fortune",
+                      "chances": [
+                        0.15,
+                        0.25,
+                        0.5,
+                        1.0
+                      ]
+                    }
+                  ],
+                  "name": "minecraft:lapis_lazuli"
+                },
+                {
+                  "type": "minecraft:item",
+                  "name": "minecraft:crying_obsidian"
+                }
+              ]
+            }
+          ]
+        }{{ "," if not loop.last }}
+        {%- endif %}
+        {%- endfor %}
+      ],
+      {%- if pool.instrument is defined %}
+      "functions": [
+        {
+          "function": "minecraft:set_instrument",
+          "options": "#minecraft:{{pool.instrument}}"
+        }
+      ],
+      {%- endif %}
+      {%- if pool.potion is defined %}
+      "functions": [
+        {
+          "function": "minecraft:set_potion",
+          "id": "minecraft:{{pool.potion}}"
+        }
+      ],
+      {%- endif %}
+      {%- if pool.rolls is mapping %}
+      "rolls": {
+        "type": "minecraft:uniform",
+        "max": {{pool.rolls.max}}.0,
+        "min": {{pool.rolls.min}}.0
+      }
+      {%- else %}
+      "rolls": {{pool.rolls}}.0
+      {%- endif %}
+      {%- if pool.conditions is defined %},
+      "conditions": [
+        {%- for condition in pool.conditions %}
+        {%- if condition.condition == "skeleton_is_killer" %}
+        {
+          "condition": "minecraft:entity_properties",
+          "predicate": {
+            "type": "#minecraft:skeletons"
+          },
+          "entity": "killer"
+        }{{ "," if not loop.last }}
+        {%- endif %}
+        {%- endfor %}
+      ]
+      {%- endif %}
+    }{{ "," if not loop.last }}
+    {%- endfor %}
+  ]
+  {%- if random_sequence is defined %},
+  "random_sequence": "{{ random_sequence }}"
+  {%- endif %}
+}
+{#- vim: set ft=j2: #}

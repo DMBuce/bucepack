@@ -9,7 +9,7 @@ latest="$(./bin/latest)" || exit
 #dir="$gitroot/buce-data/blasting"
 
 # plentiful blasting
-for file in "$latest.jar"/data/minecraft/recipes/*nugget_from_blasting*.json; do
+for file in "$latest.jar"/data/minecraft/recipe/*nugget_from_blasting*.json; do
 	cp "$file" "${file#$latest.jar/}"
 	#sed -i '
 	#	/result/ s/"minecraft:.*/{\n    "item": &,\n    "count": 3\n  }/
@@ -46,10 +46,10 @@ while read file; do
 		/type/ s/smelting/campfire_cooking/
 		/cookingtime/ s/200/600/
 	' "$new"
-done < <(grep minecraft:smelting "$latest.jar"/data/minecraft/recipes/*.json -l)
+done < <(grep minecraft:smelting "$latest.jar"/data/minecraft/recipe/*.json -l)
 sed -i \
 	'/"id":/ s/$/,\n    "components": {\n      "minecraft:food": {\n        "nutrition": 2,\n        "saturation": 0.4,\n        "eat_seconds": 0.865\n      }\n    }/' \
-	data/minecraft/recipes/popped_chorus_fruit_from_*.json
-echo >> data/minecraft/recipes/popped_chorus_fruit_from_campfire_cooking.json
-echo >> data/minecraft/recipes/popped_chorus_fruit_from_smoking.json
+	data/minecraft/recipe/popped_chorus_fruit_from_*.json
+echo >> data/minecraft/recipe/popped_chorus_fruit_from_campfire_cooking.json
+echo >> data/minecraft/recipe/popped_chorus_fruit_from_smoking.json
 

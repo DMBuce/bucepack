@@ -1,0 +1,35 @@
+pools:
+  - rolls: 1
+    entries:
+      - { type: item, weight: 5,                  item: emerald_block }
+      - { type: item, weight: 4,                  item: iron_block }
+      - { type: item, weight: 4,                  item: crossbow,
+          enchant_lvl: { min: 5, max: 20 }
+        }
+      - { type: item, weight: 3,                  item: golden_apple }
+      - { type: item, weight: 3,                  item: diamond_axe,
+          enchant_lvl: { min: 10, max: 20 }
+        }
+      - { type: item, weight: 3,                  item: diamond_chestplate,
+          enchant_lvl: { min: 10, max: 20 }
+        }
+      - { type: item, weight: 2,                  item: book,
+          enchant_rand: [
+            knockback,
+            punch,
+            smite,
+            looting,
+            multishot
+          ]
+        }
+      - { type: item, weight: 2,                  item: book,
+          enchant_rand: [
+            breach,
+            density
+          ]
+        }
+      - { type: item, weight: 2,                  item: book,
+          enchants: { wind_burst: 1 }
+        }
+      - { type: item, weight: 1,                  item: diamond_block }
+random_sequence: "minecraft:chests/trial_chambers/reward_ominous_rare"

@@ -58,7 +58,7 @@ for t in "${logtypes[@]}"; do
 	EOF
 
 	# loot tables
-	sempl - "data/minecraft/loot_tables/blocks/${t}_wood.json" <<-EOF
+	sempl - "data/minecraft/loot_table/blocks/${t}_wood.json" <<-EOF
 		{
 		  "type": "minecraft:block",
 		  "pools": [
@@ -140,7 +140,7 @@ for t in "${stemtypes[@]}"; do
 	EOF
 
 	# loot tables
-	sempl - "data/minecraft/loot_tables/blocks/${t}_hyphae.json" <<-EOF
+	sempl - "data/minecraft/loot_table/blocks/${t}_hyphae.json" <<-EOF
 		{
 		  "type": "minecraft:block",
 		  "pools": [

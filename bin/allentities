@@ -2,6 +2,6 @@
 
 cd "$(git rev-parse --show-toplevel)"
 
-ls "$(./bin/latest).jar"/data/minecraft/loot_tables/entities/*.json \
+ls "$(./bin/latest).jar"/data/minecraft/loot_table/entities/*.json \
 	| ./bin/path2basename
 
