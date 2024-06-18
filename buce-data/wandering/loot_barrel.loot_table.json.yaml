@@ -10,6 +10,58 @@
         },
         {
           "type": "loot_table",
+          "table": "minecraft:chests/trial_chambers/intersection_barrel"
+        },
+        {
+          "type": "loot_table",
+          "table": "minecraft:chests/trial_chambers/reward_ominous_rare"
+        },
+        {
+          "type": "loot_table",
+          "table": "minecraft:chests/trial_chambers/reward_ominous"
+        },
+        {
+          "type": "loot_table",
+          "table": "minecraft:chests/trial_chambers/reward"
+        },
+        {
+          "type": "loot_table",
+          "table": "minecraft:chests/trial_chambers/entrance"
+        },
+        {
+          "type": "loot_table",
+          "table": "minecraft:chests/trial_chambers/corridor"
+        },
+        {
+          "type": "loot_table",
+          "table": "minecraft:chests/trial_chambers/reward_ominous_unique"
+        },
+        {
+          "type": "loot_table",
+          "table": "minecraft:chests/trial_chambers/reward_common"
+        },
+        {
+          "type": "loot_table",
+          "table": "minecraft:chests/trial_chambers/intersection"
+        },
+        {
+          "type": "loot_table",
+          "table": "minecraft:chests/trial_chambers/reward_rare"
+        },
+        {
+          "type": "loot_table",
+          "table": "minecraft:chests/trial_chambers/reward_ominous_common"
+        },
+        {
+          "type": "loot_table",
+          "table": "minecraft:chests/trial_chambers/reward_unique"
+        },
+        {
+          "type": "loot_table",
+          "table": "minecraft:chests/trial_chambers/supply"
+        },
+        {
+          "type": "loot_table",
           "table": "minecraft:chests/spawn_bonus_chest"
         },
         {
