@@ -488,8 +488,8 @@ aggro_bastions_FILES := $(DEFAULT_DATA_FILES) \
 
 antidote_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell find buce-data/antidote -type f | ./bin/ext2dir) \
-	data/buce/functions/var.mcfunction \
-	data/minecraft/tags/functions/load_antidote.json \
+	data/buce/function/var.mcfunction \
+	data/minecraft/tags/function/load_antidote.json \
 
 acclimated_FILES := $(DEFAULT_DATA_FILES) \
 	data/minecraft/tags/block/strider_warm_blocks.json \
@@ -500,13 +500,13 @@ acclimated_FILES := $(DEFAULT_DATA_FILES) \
 
 network_deep_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell find buce-data/portal/deep -type f | ./bin/ext2dir) \
-	data/minecraft/tags/functions/load_network_deep.json \
-	data/buce/functions/var.mcfunction \
+	data/minecraft/tags/function/load_network_deep.json \
+	data/buce/function/var.mcfunction \
 
 network_nether_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell find buce-data/portal/nether -type f | ./bin/ext2dir) \
-	data/minecraft/tags/functions/load_network_nether.json \
-	data/buce/functions/var.mcfunction \
+	data/minecraft/tags/function/load_network_nether.json \
+	data/buce/function/var.mcfunction \
 
 no_treasure_maps_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell find buce-data/ data/minecraft/ -name '*no_treasure_maps*' | ./bin/ext2dir | sort -u) \
@@ -539,13 +539,13 @@ farmable_FILES := $(DEFAULT_DATA_FILES) \
 
 frienderchest_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell find buce-data/frienderchest -type f | ./bin/ext2dir) \
-	data/minecraft/tags/functions/load_frienderchest.json \
-	data/buce/functions/var.mcfunction \
+	data/minecraft/tags/function/load_frienderchest.json \
+	data/buce/function/var.mcfunction \
 
 global_effects_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell find buce-data/global_effects -type f | ./bin/ext2dir) \
-	data/buce/functions/var.mcfunction \
-	data/minecraft/tags/functions/load_global_effects.json \
+	data/buce/function/var.mcfunction \
+	data/minecraft/tags/function/load_global_effects.json \
 
 relic_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell find buce-data/relic -type f | ./bin/ext2dir) \
@@ -598,7 +598,7 @@ relics_deep_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell find buce-data/ data/minecraft/ -name '*relics_deep*' | ./bin/ext2dir) \
 	$(shell find buce-data/deep -type f | ./bin/ext2dir) \
 	data/buce/tags/item/relic/templates.json \
-	data/buce/functions/var.mcfunction \
+	data/buce/function/var.mcfunction \
 
 relics_archy_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell find data/minecraft/loot_table/archaeology/ -name \*.yaml | ./bin/ext2dir) \
@@ -607,7 +607,7 @@ relics_archy_FILES := $(DEFAULT_DATA_FILES) \
 relics_mythic_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell find buce-data/ -name '*relics_mythic*' | ./bin/ext2dir) \
 	$(shell find buce-data/mythic -type f | ./bin/ext2dir) \
-	data/buce/functions/var.mcfunction \
+	data/buce/function/var.mcfunction \
 	data/minecraft/loot_table/blocks/gilded_blackstone.json \
 	data/minecraft/loot_table/blocks/lodestone.json \
 	data/minecraft/loot_table/entities/bee.json \
@@ -618,7 +618,7 @@ relics_mythic_FILES := $(DEFAULT_DATA_FILES) \
 	data/minecraft/loot_table/entities/sheep/light_gray.json \
 	data/minecraft/loot_table/entities/silverfish.json \
 	data/minecraft/tags/entity_type/frog_food.json \
-	data/minecraft/tags/functions/load_relics_mythic.json \
+	data/minecraft/tags/function/load_relics_mythic.json \
 	data/minecraft/tags/worldgen/structure/seeking_located.json \
 	data/buce/tags/item/relic/templates.json \
 	#data/minecraft/loot_table/entities/endermite.json \
@@ -661,10 +661,10 @@ starter_spyglass_FILES := $(DEFAULT_DATA_FILES) \
 
 debugless_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell find buce-data/debugless -type f | ./bin/ext2dir) \
-	data/buce/functions/sqrt.mcfunction \
-	data/buce/functions/var.mcfunction \
+	data/buce/function/sqrt.mcfunction \
+	data/buce/function/var.mcfunction \
 	data/buce/recipe/phantasmal/light.json \
-	data/minecraft/tags/functions/load_debugless.json \
+	data/minecraft/tags/function/load_debugless.json \
 
 dragonproof_FILES := $(DEFAULT_DATA_FILES) \
 	data/buce/advancement/dragonproof.json \
@@ -672,8 +672,8 @@ dragonproof_FILES := $(DEFAULT_DATA_FILES) \
 
 leashed_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell find buce-data/leashed -type f | ./bin/ext2dir) \
-	data/buce/functions/var.mcfunction \
-	data/minecraft/tags/functions/load_leashed.json \
+	data/buce/function/var.mcfunction \
+	data/minecraft/tags/function/load_leashed.json \
 
 mineable_FILES := $(DEFAULT_DATA_FILES) \
 	data/minecraft/tags/block/mineable/axe.json \
@@ -744,8 +744,8 @@ dripblock_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell find data/minecraft/tags/worldgen/biome/has_structure -type f) \
 	data/minecraft/loot_table/entities/creeper.json \
 	data/minecraft/tags/block/moss_replaceable.json \
-	data/minecraft/tags/functions/island_dripblock.json \
-	data/minecraft/tags/functions/load_dripblock.json \
+	data/minecraft/tags/function/island_dripblock.json \
+	data/minecraft/tags/function/load_dripblock.json \
 	data/minecraft/worldgen/noise_settings/overworld_dripblock.json \
 
 archived_FILES := $(DEFAULT_DATA_FILES) \
@@ -779,8 +779,8 @@ shearless_FILES := $(DEFAULT_DATA_FILES) \
 
 breeding_overhaul_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell find buce-data/breeding_overhaul -type f | ./bin/ext2dir) \
-	data/minecraft/tags/functions/load_breeding_overhaul.json \
-	data/buce/functions/var.mcfunction \
+	data/minecraft/tags/function/load_breeding_overhaul.json \
+	data/buce/function/var.mcfunction \
 
 poseable_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell find buce-data/poseable -type f | ./bin/ext2dir) \
@@ -1019,18 +1019,18 @@ escape_end_FILES := $(DEFAULT_DATA_FILES) \
 escape_nether_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell find buce-data/escape/nether -type f | ./bin/ext2dir) \
 	data/minecraft/tags/block/nether_platform_column_replaceables.json \
-	data/minecraft/tags/functions/load_escape_nether.json \
+	data/minecraft/tags/function/load_escape_nether.json \
 
 escape_grind_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell find buce-data/escape/grind -type f | ./bin/ext2dir) \
-	data/buce/functions/var.mcfunction \
+	data/buce/function/var.mcfunction \
 	data/buce/loot_table/loot_overhaul/cake_escape_grind.json \
 	data/buce/recipe/escape/grind/grindstone.json \
 	data/minecraft/loot_table/blocks/crying_obsidian_escape_grind.json \
 	data/minecraft/loot_table/chests/end_city_treasure.json \
-	data/minecraft/tags/functions/load_escape_grind.json \
-	data/minecraft/tags/functions/respawn_end.json \
-	data/minecraft/tags/functions/respawn_nether.json \
+	data/minecraft/tags/function/load_escape_grind.json \
+	data/minecraft/tags/function/respawn_end.json \
+	data/minecraft/tags/function/respawn_nether.json \
 	#data/buce/advancement/mythic/root.json \
 	#data/buce/recipe/mythic/smithing/searching.json \
 	#data/buce/tags/item/relic/templates.json \
@@ -1044,41 +1044,41 @@ locomotive_FILES := $(DEFAULT_DATA_FILES) \
 	data/minecraft/recipe/detector_rail.json \
 
 lichdom_FILES := $(DEFAULT_DATA_FILES) \
-	data/minecraft/tags/functions/load_lichdom.json \
-	data/minecraft/tags/functions/tick_lichdom.json \
-	data/lichdom/functions/fixme/load.mcfunction \
-	data/lichdom/functions/fixme/tick.mcfunction \
-	data/lichdom/tags/functions/death.json \
+	data/minecraft/tags/function/load_lichdom.json \
+	data/minecraft/tags/function/tick_lichdom.json \
+	data/lichdom/function/fixme/load.mcfunction \
+	data/lichdom/function/fixme/tick.mcfunction \
+	data/lichdom/tags/function/death.json \
 	data/lichdom/tags/entity_type/undead.json \
 	data/lichdom/tags/entity_type/has_blood.json \
-	data/lichdom/functions/load.mcfunction \
-	data/lichdom/functions/tick.mcfunction \
-	data/lichdom/functions/death.mcfunction \
-	data/lichdom/functions/craft_phylactery.mcfunction \
-	data/lichdom/functions/craft_pedestal.mcfunction \
-	data/lichdom/functions/finish_pedestal.mcfunction \
-	data/lichdom/functions/pedestal_respawn.mcfunction \
-	data/lichdom/functions/tick_lich.mcfunction \
-	data/lichdom/functions/tick_vampire.mcfunction \
-	data/lichdom/functions/tick_bunny.mcfunction \
-	data/lichdom/functions/tick_turtle.mcfunction \
-	data/lichdom/functions/tick_bat.mcfunction \
-	data/lichdom/functions/tick_rabbit.mcfunction \
-	data/lichdom/functions/rot_food.mcfunction \
-	data/lichdom/functions/lich_form.mcfunction \
-	data/lichdom/functions/vampire_form.mcfunction \
-	data/lichdom/functions/bunny_form.mcfunction \
-	data/lichdom/functions/turtle_form.mcfunction \
-	data/lichdom/functions/reset_form.mcfunction \
-	data/lichdom/functions/steal_unlife_1.mcfunction \
-	data/lichdom/functions/steal_unlife_2.mcfunction \
-	data/lichdom/functions/steal_unlife_3.mcfunction \
-	data/lichdom/functions/steal_unlife_4.mcfunction \
-	data/lichdom/functions/drink_blood_1.mcfunction \
-	data/lichdom/functions/drink_blood_2.mcfunction \
-	data/lichdom/functions/drink_blood_3.mcfunction \
-	data/lichdom/functions/drink_blood_4.mcfunction \
-	data/lichdom/functions/test.mcfunction \
+	data/lichdom/function/load.mcfunction \
+	data/lichdom/function/tick.mcfunction \
+	data/lichdom/function/death.mcfunction \
+	data/lichdom/function/craft_phylactery.mcfunction \
+	data/lichdom/function/craft_pedestal.mcfunction \
+	data/lichdom/function/finish_pedestal.mcfunction \
+	data/lichdom/function/pedestal_respawn.mcfunction \
+	data/lichdom/function/tick_lich.mcfunction \
+	data/lichdom/function/tick_vampire.mcfunction \
+	data/lichdom/function/tick_bunny.mcfunction \
+	data/lichdom/function/tick_turtle.mcfunction \
+	data/lichdom/function/tick_bat.mcfunction \
+	data/lichdom/function/tick_rabbit.mcfunction \
+	data/lichdom/function/rot_food.mcfunction \
+	data/lichdom/function/lich_form.mcfunction \
+	data/lichdom/function/vampire_form.mcfunction \
+	data/lichdom/function/bunny_form.mcfunction \
+	data/lichdom/function/turtle_form.mcfunction \
+	data/lichdom/function/reset_form.mcfunction \
+	data/lichdom/function/steal_unlife_1.mcfunction \
+	data/lichdom/function/steal_unlife_2.mcfunction \
+	data/lichdom/function/steal_unlife_3.mcfunction \
+	data/lichdom/function/steal_unlife_4.mcfunction \
+	data/lichdom/function/drink_blood_1.mcfunction \
+	data/lichdom/function/drink_blood_2.mcfunction \
+	data/lichdom/function/drink_blood_3.mcfunction \
+	data/lichdom/function/drink_blood_4.mcfunction \
+	data/lichdom/function/test.mcfunction \
 	data/lichdom/advancement/lichdom.json \
 	data/lichdom/advancement/craft_pedestal.json \
 	data/lichdom/advancement/craft_phylactery.json \
@@ -1128,7 +1128,7 @@ data/buce/loot_table/%.json: buce-data/%.loot_table.json
 	mkdir -p $(dir $@)
 	cp -v $< $@
 
-data/buce/functions/%.mcfunction: buce-data/%.function.mcfunction
+data/buce/function/%.mcfunction: buce-data/%.function.mcfunction
 	mkdir -p $(dir $@)
 	cp -v $< $@
 
@@ -1136,11 +1136,11 @@ data/buce/advancement/%.json: buce-data/%.advancement.json
 	mkdir -p $(dir $@)
 	cp -v $< $@
 
-data/buce/item_modifiers/%.json: buce-data/%.item_modifier.json
+data/buce/item_modifier/%.json: buce-data/%.item_modifier.json
 	mkdir -p $(dir $@)
 	cp -v $< $@
 
-data/buce/predicates/%.json: buce-data/%.predicate.json
+data/buce/predicate/%.json: buce-data/%.predicate.json
 	mkdir -p $(dir $@)
 	cp -v $< $@
 
@@ -1160,7 +1160,7 @@ data/buce/tags/item/%.json: buce-data/%.item.tag.json
 	mkdir -p $(dir $@)
 	cp -v $< $@
 
-data/buce/tags/functions/%.json: buce-data/%.function.tag.json
+data/buce/tags/function/%.json: buce-data/%.function.tag.json
 	mkdir -p $(dir $@)
 	cp -v $< $@
 
