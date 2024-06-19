@@ -2369,6 +2369,19 @@ data/minecraft/loot_table/chests/simple_dungeon.json
 data/minecraft/loot_table/chests/stronghold_corridor.json
 data/minecraft/loot_table/chests/stronghold_crossing.json
 data/minecraft/loot_table/chests/stronghold_library.json
+data/minecraft/loot_table/chests/trial_chambers/corridor.json
+data/minecraft/loot_table/chests/trial_chambers/entrance.json
+data/minecraft/loot_table/chests/trial_chambers/intersection_barrel.json
+data/minecraft/loot_table/chests/trial_chambers/intersection.json
+data/minecraft/loot_table/chests/trial_chambers/reward_common.json
+data/minecraft/loot_table/chests/trial_chambers/reward.json
+data/minecraft/loot_table/chests/trial_chambers/reward_ominous_common.json
+data/minecraft/loot_table/chests/trial_chambers/reward_ominous.json
+data/minecraft/loot_table/chests/trial_chambers/reward_ominous_rare.json
+data/minecraft/loot_table/chests/trial_chambers/reward_ominous_unique.json
+data/minecraft/loot_table/chests/trial_chambers/reward_rare.json
+data/minecraft/loot_table/chests/trial_chambers/reward_unique.json
+data/minecraft/loot_table/chests/trial_chambers/supply.json
 data/minecraft/loot_table/chests/underwater_ruin_big.json
 data/minecraft/loot_table/chests/underwater_ruin_small.json
 data/minecraft/loot_table/chests/village/village_armorer.json
@@ -3503,25 +3516,25 @@ data/minecraft/loot_table/chests/end_city_treasure.json
 
 These packs rely on experimental worldgen or snapshot features.
 
-=== Anti Worldgen
-
-If this <<ordering-data-packs,addon pack>>
-is enabled and loaded after Mojang's experimental 1.21 datapack,
-Trial Chambers are disabled.
-Thus, players can craft the new crafter, copper, and tuff blocks
-without affecting world generation.
-
-**Downloads**
-
-.https://github.com/DMBuce/bucepack/releases/latest/download/worldgen_anti.zip[`worldgen_anti.zip`]
-[%collapsible]
-====
-====
-
-.https://github.com/DMBuce/bucepack/releases[All Releases & Changelogs]
-[%collapsible]
-====
-====
+//=== Anti Worldgen
+//
+//If this <<ordering-data-packs,addon pack>>
+//is enabled and loaded after Mojang's experimental 1.21 datapack,
+//Trial Chambers are disabled.
+//Thus, players can craft the new crafter, copper, and tuff blocks
+//without affecting world generation.
+//
+//**Downloads**
+//
+//.https://github.com/DMBuce/bucepack/releases/latest/download/worldgen_anti.zip[`worldgen_anti.zip`]
+//[%collapsible]
+//====
+//====
+//
+//.https://github.com/DMBuce/bucepack/releases[All Releases & Changelogs]
+//[%collapsible]
+//====
+//====
 
 === Bundle
 
@@ -4165,7 +4178,6 @@ loot_overhaul.zip
 loot_overhaul_treasure_barrels.zip
 oven_brick.zip
 update_1_*
-worldgen_anti.zip
 worldgen_*.zip
 ----
 

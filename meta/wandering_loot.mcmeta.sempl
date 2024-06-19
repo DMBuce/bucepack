@@ -4,7 +4,7 @@
     "description": "Buce's Wandering Loot: Trader llamas drop loot barrels."
   },
   "root": {
-    "folder": "data/buce/advancements/wandering",
+    "folder": "data/buce/advancement/wandering",
     "title": "Wandering Loot",
     "explanation": "Wandering traders have loot barrels",
     "icon": {

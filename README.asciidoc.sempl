@@ -1815,15 +1815,15 @@ Changes that facilitate survival in The End:
 
 These packs rely on experimental worldgen or snapshot features.
 
-=== Anti Worldgen
-
-If this <<ordering-data-packs,addon pack>>
-is enabled and loaded after Mojang's experimental 1.21 datapack,
-Trial Chambers are disabled.
-Thus, players can craft the new crafter, copper, and tuff blocks
-without affecting world generation.
-
-{!./bin/packsummary worldgen_anti}
+//=== Anti Worldgen
+//
+//If this <<ordering-data-packs,addon pack>>
+//is enabled and loaded after Mojang's experimental 1.21 datapack,
+//Trial Chambers are disabled.
+//Thus, players can craft the new crafter, copper, and tuff blocks
+//without affecting world generation.
+//
+//{!./bin/packsummary worldgen_anti}
 
 === Bundle
 
@@ -2223,7 +2223,6 @@ loot_overhaul.zip
 {!make dlist | grep loot_overhaul_}
 oven_brick.zip
 update_1_*
-worldgen_anti.zip
 worldgen_*.zip
 ----
 

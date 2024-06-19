@@ -15,16 +15,16 @@ for file in $packfiles; do
 		| grep -q -e/{functions,predicates}/ \
 		|| continue
 
-	if ! grep -qx 'data/buce/advancements/root.json' "cache/$pack.files"; then
-		echo "> $file: Missing file: data/buce/advancements/root.json"
+	if ! grep -qx 'data/buce/advancement/root.json' "cache/$pack.files"; then
+		echo "> $file: Missing file: data/buce/advancement/root.json"
 		retval=1
 	fi
 
 	dir="$(sempl "meta/$pack.mcmeta.sempl" | jq -r .root.folder)"
 	dir="${dir%/}"
-	[[ "$dir" == null ]] && dir="data/buce/advancements/${pack//_/.}"
+	[[ "$dir" == null ]] && dir="data/buce/advancement/${pack//_/.}"
 	if ! grep -qx "$dir/root.json" "cache/$pack.files"; then
-		echo "> $file: Missing file: data/buce/advancements/$pack/root.json"
+		echo "> $file: Missing file: data/buce/advancement/$pack/root.json"
 		retval=1
 	fi
 done

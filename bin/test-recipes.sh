@@ -7,7 +7,7 @@ retval=0
 
 echo "Checking recipes..."
 {
-find data/minecraft/recipes/ -name \*.json
+find data/minecraft/recipe/ -name \*.json
 find buce-data/ -name \*.recipe.json\*
 } | while read file; do
 	if ! grep -q -etype.\*{stonecutting,smithing} "$file" && ! grep -q category "$file"; then
