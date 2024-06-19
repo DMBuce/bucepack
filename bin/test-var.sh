@@ -14,17 +14,17 @@ for packfile in $packfiles; do
 	grep -qxf cache/var-refs.files "cache/$pack.files" || continue
 
 	# make sure 'buce:var' function exists
-	if ! grep -qx data/buce/functions/var.mcfunction "cache/$pack.files"; then
-		echo "> $packfile: Missing file: data/minecraft/tags/functions/load.json" >&2
+	if ! grep -qx data/buce/function/var.mcfunction "cache/$pack.files"; then
+		echo "> $packfile: Missing file: data/minecraft/tags/function/load.json" >&2
 		r=1
 	fi
 
 	# make sure load.json exists and has 'buce:var' function
-	if ! grep -qx data/minecraft/tags/functions/load.json "cache/$pack.files"; then
-		echo "> $packfile: Missing file: data/minecraft/tags/functions/load.json" >&2
+	if ! grep -qx data/minecraft/tags/function/load.json "cache/$pack.files"; then
+		echo "> $packfile: Missing file: data/minecraft/tags/function/load.json" >&2
 		r=1
-	elif ! grep -q '"buce:var"' "data/minecraft/tags/functions/load_$pack.json" 2>/dev/null; then
-		echo "> $packfile: Missing 'buce:var' in file: data/minecraft/tags/functions/load_$pack.json" >&2
+	elif ! grep -q '"buce:var"' "data/minecraft/tags/function/load_$pack.json" 2>/dev/null; then
+		echo "> $packfile: Missing 'buce:var' in file: data/minecraft/tags/function/load_$pack.json" >&2
 		r=1
 	fi
 
