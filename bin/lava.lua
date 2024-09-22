@@ -22,6 +22,12 @@
 --    LAVA_BLEND_FRAMES           the number of extra frames to generate and blend
 --                                into the beginning of the animation
 --
+--    LAVA_SEED                   the random seed to use
+--
+--    LAVA_HOT_COLOR              color to generate in hottest areas
+--
+--    LAVA_COLD_COLOR             color to generate in coldest areas
+--
 --    LAVA_FLAME_CHANCE           chance for flame to flare up per pixel each frame
 --
 --    LAVA_FLAME_MAG              size of flames when they flare up
@@ -37,7 +43,7 @@
 local pi, sin = math.pi, math.sin
 
 -- set defaults
-defaults = {
+num_defaults = {
 	-- simulation params
 	flame_chance = 0.5,
 	flame_mag = 1.5,
@@ -50,10 +56,18 @@ defaults = {
 	frames = 3*1024,
 	sim_frames = 3*512,
 	blend_frames = 64,
+	seed = false,
+}
+str_defaults = {
+	hot_color = "#ffff80",
+	cold_color = "#9b0000",
 }
 
 -- use environment
-for var,value in pairs(defaults) do
+for var,value in pairs(num_defaults) do
+	_G[var] = tonumber(os.getenv("LAVA_"..var:upper())) or value
+end
+for var,value in pairs(str_defaults) do
 	_G[var] = os.getenv("LAVA_"..var:upper()) or value
 end
 
@@ -68,6 +82,7 @@ function wrap(i)
 	return i
 end
 
+-- returns the sign of an angle
 function sign(angle)
 	if angle <= pi then return 1 end
 	return -1
@@ -75,6 +90,18 @@ function sign(angle)
 	--if angle == pi then return 0 end
 	--if angle < pi then return 1 end
 	--if angle > pi then return -1 end
+end
+
+-- converts hex to rgb
+-- hex: hex string e.g. "#9a9a9a"
+-- return: rgb table e.g. {r=154,g=154,b=154}
+function hex2rgb(hex)
+	hex = hex:gsub("#","")
+	return {
+		r=tonumber("0x"..hex:sub(1,2)),
+		g=tonumber("0x"..hex:sub(3,4)),
+		b=tonumber("0x"..hex:sub(5,6)),
+	}
 end
 
 ---- debug
@@ -111,7 +138,19 @@ for i=0,pixels*(frames+blend_frames)-1 do
 	texture[i] = {}
 end
 
+-- set up palette
+hot = hex2rgb(hot_color)
+cold = hex2rgb(cold_color)
+--io.stderr:write("hot = "..hot.r..","..hot.g..","..hot.b.."\n")
+--io.stderr:write("cold = "..cold.r..","..cold.g..","..cold.b.."\n")
+
+---- debug
+--print(os.getenv("LAVA_HOT_COLOR"), hot.r, hot.g, hot.b)
+--print(os.getenv("LAVA_COLD_COLOR"), cold.r, cold.g, cold.b)
+--os.exit()
+
 -- calculate liquid, kettle, and flame heat for each pixel and frame
+if seed then math.randomseed(seed) end
 for frame=1,sim_frames+frames+blend_frames do
 	for i=1,pixels do
 		for j=1,pixels do
@@ -189,9 +228,9 @@ for frame=0,frames-1 do
 		for j=0,pixels-1 do
 			-- figure out pixel color
 			local heat  = texture[i][frame*pixels+j]
-			local red   = math.floor(heat * 100 + 155)
-			local green = math.floor(heat^2 * 255)
-			local blue  = math.floor(heat^4 * 128)
+			local red   = math.floor(heat * (hot.r-cold.r) + cold.r)
+			local green = math.floor(heat^2 * (hot.g-cold.g) + cold.g)
+			local blue  = math.floor(heat^4 * (hot.b-cold.b) + cold.b)
 
 			-- print pixel
 			local rgb = red..","..green..","..blue

@@ -16,7 +16,7 @@ mkdir -p "$dir" || exit
 cd "$dir" || exit
 
 # generate flowing lava texture: roll it down 1 pixel every 3 frames
-magick lava_still.png +repage -crop 16x16 lava_flow_%d.png
+magick lava_still.png +repage -crop ${pixels}x${pixels} lava_flow_%d.png
 i=0
 for file in lava_flow_{?,??,???,????}.png; do
 	magick "$file" -roll +0+$((i/flow_rate%pixels)) "new-$file"
