@@ -141,8 +141,15 @@ end
 -- set up palette
 hot = hex2rgb(hot_color)
 cold = hex2rgb(cold_color)
---io.stderr:write("hot = "..hot.r..","..hot.g..","..hot.b.."\n")
---io.stderr:write("cold = "..cold.r..","..cold.g..","..cold.b.."\n")
+io.stderr:write("example colors:\n")
+for _,heat in ipairs{0.0, 0.25, 0.5, 0.75, 1.0} do
+	local red   = math.floor(heat * (hot.r-cold.r) + cold.r)
+	local green = math.floor(heat^2 * (hot.g-cold.g) + cold.g)
+	local blue  = math.floor(heat^4 * (hot.b-cold.b) + cold.b)
+	local rgb = red..","..green..","..blue
+	local hex = string.format("%02x%02x%02x", red, green, blue)
+	io.stderr:write("  #"..hex.." "..rgb.."\n")
+end
 
 ---- debug
 --print(os.getenv("LAVA_HOT_COLOR"), hot.r, hot.g, hot.b)
@@ -234,7 +241,7 @@ for frame=0,frames-1 do
 
 			-- print pixel
 			local rgb = red..","..green..","..blue
-			local hex = string.format("%x%x%x", red, green, blue)
+			local hex = string.format("%02x%02x%02x", red, green, blue)
 			print(table.concat{
 				j..","..frame*pixels+i..":",
 				" ("..rgb..",255)",
