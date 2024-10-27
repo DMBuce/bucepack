@@ -3,12 +3,8 @@
   "category": "building",
   "group": "stained_terracotta",
   "key": {
-    "#": {
-      "tag": "minecraft:terracotta_without_orange"
-    },
-    "X": {
-      "item": "minecraft:orange_dye"
-    }
+    "#": "#minecraft:terracotta_without_orange",
+    "X": "minecraft:orange_dye"
   },
   "pattern": [
     "###",

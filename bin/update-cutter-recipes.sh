@@ -246,7 +246,7 @@ do
 		{
 		  "type": "minecraft:stonecutting",
 		  "ingredient": [
-		    { "item": "{!jq -r .ingredient.item $latest.jar/data/minecraft/recipe/${inputs}_from_*_stonecutting.json 2>/dev/null}" },
+		    { "item": "{!jq -r .ingredient $latest.jar/data/minecraft/recipe/${inputs}_from_*_stonecutting.json 2>/dev/null}" },
 		    { "item": "minecraft:$inputs" }
 		  ],
 		  "result": {
@@ -322,7 +322,7 @@ do
 		num="$(jq -r .result.count "$recipe")"
 		output="$(jq -r .result.id "$recipe" | sed 's/^minecraft://')"
 		cp "$recipe" "$dir/smooth_cracked/${num}x_${output}.recipe.json"
-		sed -i "/item/ s/$block/$input/g" "$dir/smooth_cracked/${num}x_${output}.recipe.json"
+		sed -i "/ingredient/ s/$block/$input/g" "$dir/smooth_cracked/${num}x_${output}.recipe.json"
 	done
 done
 

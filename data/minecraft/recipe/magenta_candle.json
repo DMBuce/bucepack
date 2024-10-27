@@ -3,12 +3,8 @@
   "category": "misc",
   "group": "dyed_candle",
   "ingredients": [
-    {
-      "tag": "minecraft:candles_without_magenta"
-    },
-    {
-      "item": "minecraft:magenta_dye"
-    }
+    "#minecraft:candles_without_magenta",
+    "minecraft:magenta_dye"
   ],
   "result": {
     "count": 1,

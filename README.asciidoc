@@ -1180,9 +1180,6 @@ Makes some crafting recipes cheaper.
 * 4 log → 4 wood
 * 4 stem → 4 hyphae
 * 7 diamond + 1 netherrack + 1 netherite ingot → 2 netherite upgrade smithing template
-* 3 iron nugget → chain
-* chest + 3 iron ingot → hopper
-* planks + 8 iron nugget → shield
 * blasting: tool → ingot
 * blasting: armor → ingot
 
@@ -1595,7 +1592,7 @@ Adds placeable foods that stack to 16 and have a chance to give potion effects.
 
 === Upgraded Smithing
 
-Adds more smithing upgrades that use the Netherite Upgrade Smithing Template.
+Adds more smithing upgrades that use the Netherite Upgrade smithing template.
 
 Upgrade templates can be crafted
 using either an upgrade template like normal or a netherite ingot,
@@ -2126,6 +2123,7 @@ enchanted golem, pie golem, lime golem, and honey golem.
 ```
 data/minecraft/loot_table/blocks/player_head.json
 data/minecraft/loot_table/gameplay/hero_of_the_village/armorer_gift.json
+data/minecraft/loot_table/gameplay/hero_of_the_village/baby_gift.json
 data/minecraft/loot_table/gameplay/hero_of_the_village/butcher_gift.json
 data/minecraft/loot_table/gameplay/hero_of_the_village/cartographer_gift.json
 data/minecraft/loot_table/gameplay/hero_of_the_village/cleric_gift.json
@@ -2137,6 +2135,7 @@ data/minecraft/loot_table/gameplay/hero_of_the_village/librarian_gift.json
 data/minecraft/loot_table/gameplay/hero_of_the_village/mason_gift.json
 data/minecraft/loot_table/gameplay/hero_of_the_village/shepherd_gift.json
 data/minecraft/loot_table/gameplay/hero_of_the_village/toolsmith_gift.json
+data/minecraft/loot_table/gameplay/hero_of_the_village/unemployed_gift.json
 data/minecraft/loot_table/gameplay/hero_of_the_village/weaponsmith_gift.json
 ```
 
@@ -3545,6 +3544,12 @@ Adds bundles crafted from 3 leather and 1 string.
 .https://github.com/DMBuce/bucepack/releases/latest/download/bundle.zip[`bundle.zip`]
 [%collapsible]
 ====
+
+```
+data/minecraft/advancement/recipes/tools/bundle.json
+data/minecraft/recipe/bundle.json
+```
+
 ====
 
 .https://github.com/DMBuce/bucepack/releases[All Releases & Changelogs]
@@ -3776,6 +3781,7 @@ data/minecraft/loot_table/blocks/dark_oak_wood.json
 data/minecraft/loot_table/blocks/jungle_wood.json
 data/minecraft/loot_table/blocks/mangrove_wood.json
 data/minecraft/loot_table/blocks/oak_wood.json
+data/minecraft/loot_table/blocks/pale_oak_wood.json
 data/minecraft/loot_table/blocks/spruce_wood.json
 data/minecraft/loot_table/blocks/warped_hyphae.json
 data/minecraft/tags/block/overworld_natural_logs.json
@@ -3806,6 +3812,8 @@ data/minecraft/worldgen/configured_feature/oak_bees_0002.json
 data/minecraft/worldgen/configured_feature/oak_bees_002.json
 data/minecraft/worldgen/configured_feature/oak_bees_005.json
 data/minecraft/worldgen/configured_feature/oak.json
+data/minecraft/worldgen/configured_feature/pale_oak_creaking.json
+data/minecraft/worldgen/configured_feature/pale_oak.json
 data/minecraft/worldgen/configured_feature/pine.json
 data/minecraft/worldgen/configured_feature/spruce.json
 data/minecraft/worldgen/configured_feature/super_birch_bees_0002.json

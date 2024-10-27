@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": [
+    { "item": "minecraft:pale_oak_boat" },
+    { "item": "minecraft:pale_oak_chest_boat" }
+  ],
+  "result": {
+    "id": "minecraft:pale_oak_planks",
+    "count": 5
+  }
+}

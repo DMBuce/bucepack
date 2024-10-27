@@ -3,9 +3,7 @@
   "category": "blocks",
   "cookingtime": 100,
   "experience": 0.1,
-  "ingredient": {
-    "item": "minecraft:sandstone"
-  },
+  "ingredient": "minecraft:sandstone",
   "result": {
     "id": "minecraft:smooth_sandstone"
   }

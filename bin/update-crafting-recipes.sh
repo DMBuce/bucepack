@@ -173,25 +173,25 @@ do
 	# create recipes for dying any candle
 	cp "$latest.jar/data/minecraft/recipe/${color}_candle.json" data/minecraft/recipe/
 	sed -i "
-		/minecraft:candle/ s/\".*/\"tag\": \"minecraft:candles_without_$color\"/
+		/minecraft:candle/ s/minecraft:candle/#minecraft:candles_without_$color/
 	" "data/minecraft/recipe/${color}_candle.json"
 
 	# create recipes for dying any mixture of terracotta
 	cp "$latest.jar/data/minecraft/recipe/${color}_terracotta.json" data/minecraft/recipe/
 	sed -i "
-		/minecraft:terracotta/ s/\".*/\"tag\": \"minecraft:terracotta_without_$color\"/
+		/minecraft:terracotta/ s/minecraft:terracotta/#minecraft:terracotta_without_$color/
 	" "data/minecraft/recipe/${color}_terracotta.json"
 
 	# create recipes for dying any mixture of stained_glass
 	cp "$latest.jar/data/minecraft/recipe/${color}_stained_glass.json" data/minecraft/recipe/
 	sed -i "
-		/minecraft:glass/ s/\".*/\"tag\": \"minecraft:glass_without_$color\"/
+		/minecraft:glass/ s/minecraft:glass/#minecraft:glass_without_$color/
 	" "data/minecraft/recipe/${color}_stained_glass.json"
 
 	# create recipes for dying any mixture of stained_glass_pane
 	cp "$latest.jar/data/minecraft/recipe/${color}_stained_glass_pane_from_glass_pane.json" data/minecraft/recipe/
 	sed -i "
-		/minecraft:glass_pane/ s/\".*/\"tag\": \"minecraft:glass_panes_without_$color\"/
+		/minecraft:glass_pane/ s/minecraft:glass_pane/#minecraft:glass_panes_without_$color/
 	" "data/minecraft/recipe/${color}_stained_glass_pane_from_glass_pane.json"
 
 	# create recipes for dying any banner

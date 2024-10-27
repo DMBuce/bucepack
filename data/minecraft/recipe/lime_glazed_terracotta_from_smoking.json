@@ -3,9 +3,7 @@
   "category": "blocks",
   "cookingtime": 100,
   "experience": 0.1,
-  "ingredient": {
-    "item": "minecraft:lime_terracotta"
-  },
+  "ingredient": "minecraft:lime_terracotta",
   "result": {
     "id": "minecraft:lime_glazed_terracotta"
   }

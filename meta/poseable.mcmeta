@@ -1,7 +1,7 @@
 {
   "pack": {
-    "pack_format": 48,
-    "supported_formats": [ 34, 48 ],
+    "pack_format": 57,
+    "supported_formats": [ 42, 57 ],
     "description": "Buce's Poseable: Posable armor stands"
   },
   "root": {

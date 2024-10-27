@@ -3,55 +3,23 @@
   "category": "building",
   "group": "bed",
   "ingredients": [
-    {
-      "item": "minecraft:light_gray_dye"
-    },
+    "minecraft:light_gray_dye",
     [
-      {
-        "item": "minecraft:black_banner"
-      },
-      {
-        "item": "minecraft:blue_banner"
-      },
-      {
-        "item": "minecraft:brown_banner"
-      },
-      {
-        "item": "minecraft:cyan_banner"
-      },
-      {
-        "item": "minecraft:gray_banner"
-      },
-      {
-        "item": "minecraft:green_banner"
-      },
-      {
-        "item": "minecraft:light_blue_banner"
-      },
-      {
-        "item": "minecraft:lime_banner"
-      },
-      {
-        "item": "minecraft:magenta_banner"
-      },
-      {
-        "item": "minecraft:orange_banner"
-      },
-      {
-        "item": "minecraft:pink_banner"
-      },
-      {
-        "item": "minecraft:purple_banner"
-      },
-      {
-        "item": "minecraft:red_banner"
-      },
-      {
-        "item": "minecraft:yellow_banner"
-      },
-      {
-        "item": "minecraft:white_banner"
-      }
+      "minecraft:black_banner",
+      "minecraft:blue_banner",
+      "minecraft:brown_banner",
+      "minecraft:cyan_banner",
+      "minecraft:gray_banner",
+      "minecraft:green_banner",
+      "minecraft:light_blue_banner",
+      "minecraft:lime_banner",
+      "minecraft:magenta_banner",
+      "minecraft:orange_banner",
+      "minecraft:pink_banner",
+      "minecraft:purple_banner",
+      "minecraft:red_banner",
+      "minecraft:yellow_banner",
+      "minecraft:white_banner"
     ]
   ],
   "result": {

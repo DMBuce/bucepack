@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": [
+    { "item": "minecraft:pale_oak_log" },
+    { "item": "minecraft:pale_oak_wood" },
+    { "item": "minecraft:stripped_pale_oak_wood" }
+  ],
+  "result": {
+    "id": "minecraft:stripped_pale_oak_log",
+    "count": 1
+  }
+}

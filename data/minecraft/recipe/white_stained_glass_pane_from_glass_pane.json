@@ -3,12 +3,8 @@
   "category": "misc",
   "group": "stained_glass_pane",
   "key": {
-    "#": {
-      "tag": "minecraft:glass_panes_without_white"
-    },
-    "$": {
-      "item": "minecraft:white_dye"
-    }
+    "#": "#minecraft:glass_panes_without_white",
+    "$": "minecraft:white_dye"
   },
   "pattern": [
     "###",

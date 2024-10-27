@@ -3,12 +3,8 @@
   "category": "misc",
   "group": "stained_glass_pane",
   "key": {
-    "#": {
-      "tag": "minecraft:glass_panes_without_green"
-    },
-    "$": {
-      "item": "minecraft:green_dye"
-    }
+    "#": "#minecraft:glass_panes_without_green",
+    "$": "minecraft:green_dye"
   },
   "pattern": [
     "###",

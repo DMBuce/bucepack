@@ -3,12 +3,8 @@
   "category": "building",
   "group": "stained_glass",
   "key": {
-    "#": {
-      "tag": "minecraft:glass_without_white"
-    },
-    "X": {
-      "item": "minecraft:white_dye"
-    }
+    "#": "#minecraft:glass_without_white",
+    "X": "minecraft:white_dye"
   },
   "pattern": [
     "###",
