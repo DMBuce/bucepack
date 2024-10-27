@@ -42,9 +42,7 @@ for t in "${logtypes[@]}"; do
 		  "type": "minecraft:crafting_shaped",
 		  "category": "building",
 		  "key": {
-		    "#": {
-		      "item": "minecraft:$input"
-		    }
+		    "#": "minecraft:$input"
 		  },
 		  "pattern": [
 		    "#",
@@ -124,9 +122,7 @@ for t in "${stemtypes[@]}"; do
 		  "type": "minecraft:crafting_shaped",
 		  "category": "building",
 		  "key": {
-		    "#": {
-		      "item": "minecraft:$input"
-		    }
+		    "#": "minecraft:$input"
 		  },
 		  "pattern": [
 		    "#",

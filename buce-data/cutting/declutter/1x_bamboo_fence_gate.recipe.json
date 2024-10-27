@@ -1,14 +1,14 @@
 {
   "type": "minecraft:stonecutting",
   "ingredient": [
-    { "item": "minecraft:bamboo_button" },
-    { "item": "minecraft:bamboo_door" },
-    { "item": "minecraft:bamboo_fence" },
-    { "item": "minecraft:bamboo_pressure_plate" },
-    { "item": "minecraft:bamboo_sign" },
-    { "item": "minecraft:bamboo_slab" },
-    { "item": "minecraft:bamboo_stairs" },
-    { "item": "minecraft:bamboo_trapdoor" }
+    "minecraft:bamboo_button",
+    "minecraft:bamboo_door",
+    "minecraft:bamboo_fence",
+    "minecraft:bamboo_pressure_plate",
+    "minecraft:bamboo_sign",
+    "minecraft:bamboo_slab",
+    "minecraft:bamboo_stairs",
+    "minecraft:bamboo_trapdoor"
   ],
   "result": {
     "id": "minecraft:bamboo_fence_gate",

@@ -1,8 +1,8 @@
 {
   "type": "minecraft:stonecutting",
   "ingredient": [
-    { "item": "minecraft:granite_stairs" },
-    { "item": "minecraft:granite_wall" }
+    "minecraft:granite_stairs",
+    "minecraft:granite_wall"
   ],
   "result": {
     "id": "minecraft:granite_slab",

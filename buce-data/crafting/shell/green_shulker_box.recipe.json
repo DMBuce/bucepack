@@ -2,12 +2,8 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "key": {
-    "#": {
-      "item": "minecraft:chest"
-    },
-    "-": {
-      "item": "minecraft:turtle_helmet"
-    }
+    "#": "minecraft:chest",
+    "-": "minecraft:turtle_helmet"
   },
   "pattern": [
     "-",

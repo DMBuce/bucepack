@@ -2,9 +2,7 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "key": {
-    "N": {
-      "item": "minecraft:iron_nugget"
-    }
+    "N": "minecraft:iron_nugget"
   },
   "pattern": [
     "N",

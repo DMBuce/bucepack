@@ -1,7 +1,7 @@
 {
   "type": "minecraft:stonecutting",
   "ingredient": [
-    { "item": "minecraft:copper_door" }
+    "minecraft:copper_door"
   ],
   "result": {
     "id": "minecraft:copper_trapdoor",

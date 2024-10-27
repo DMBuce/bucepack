@@ -1,10 +1,10 @@
 {
   "type": "minecraft:stonecutting",
   "ingredient": [
-    { "item": "minecraft:pale_oak_log" },
-    { "item": "minecraft:pale_oak_wood" },
-    { "item": "minecraft:stripped_pale_oak_log" },
-    { "item": "minecraft:stripped_pale_oak_wood" }
+    "minecraft:pale_oak_log",
+    "minecraft:pale_oak_wood",
+    "minecraft:stripped_pale_oak_log",
+    "minecraft:stripped_pale_oak_wood"
   ],
   "result": {
     "id": "minecraft:pale_oak_slab",

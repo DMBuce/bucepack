@@ -11,9 +11,6 @@ latest="$(./bin/latest)" || exit
 # plentiful blasting
 for file in "$latest.jar"/data/minecraft/recipe/*nugget_from_blasting*.json; do
 	cp "$file" "${file#$latest.jar/}"
-	#sed -i '
-	#	/result/ s/"minecraft:.*/{\n    "item": &,\n    "count": 3\n  }/
-	#' "${file#$latest.jar/}"
 	sed -i '/"id":/ s/nugget/ingot/' "${file#$latest.jar/}"
 done
 

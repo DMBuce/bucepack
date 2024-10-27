@@ -6,12 +6,8 @@
     "#"
   ],
   "key": {
-    "#": {
-      "item": "minecraft:copper_ingot"
-    },
-    "X": {
-      "item": "minecraft:stick"
-    }
+    "#": "minecraft:copper_ingot",
+    "X": "minecraft:stick"
   },
   "result": {
     "item": "minecraft:lever"

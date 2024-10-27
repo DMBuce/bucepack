@@ -1,11 +1,7 @@
 {
   "type": "minecraft:smithing_transform",
-  "addition": {
-    "item": "minecraft:fishing_rod"
-  },
-  "base": {
-    "item": "minecraft:trident"
-  },
+  "addition": "minecraft:fishing_rod",
+  "base": "minecraft:trident",
   "result": {
     "count": 1,
     "id": "minecraft:trident",
@@ -25,36 +21,36 @@
 		"show_in_tooltip": false,
         "modifiers": [
           {
-            "type": "minecraft:generic.attack_damage",
-            "id": "minecraft:generic.attack_damage",
+            "type": "minecraft:attack_damage",
+            "id": "minecraft:attack_damage",
             "slot": "mainhand",
             "amount": 8.0,
             "operation": "add_value"
           },
           {
-            "type": "minecraft:generic.attack_speed",
-            "id": "minecraft:generic.attack_speed",
+            "type": "minecraft:attack_speed",
+            "id": "minecraft:attack_speed",
             "slot": "mainhand",
             "amount": -2.9,
             "operation": "add_value"
           },
           {
-            "type": "minecraft:player.entity_interaction_range",
-            "id": "minecraft:player.entity_interaction_range",
+            "type": "minecraft:entity_interaction_range",
+            "id": "minecraft:entity_interaction_range",
             "slot": "mainhand",
             "amount": 1.0,
             "operation": "add_value"
           },
           {
-            "type": "minecraft:player.block_interaction_range",
-            "id": "minecraft:player.block_interaction_range",
+            "type": "minecraft:block_interaction_range",
+            "id": "minecraft:block_interaction_range",
             "slot": "mainhand",
             "amount": 2.0,
             "operation": "add_value"
           },
           {
-            "type": "minecraft:player.block_interaction_range",
-            "id": "minecraft:player.block_interaction_range",
+            "type": "minecraft:block_interaction_range",
+            "id": "minecraft:block_interaction_range",
             "slot": "offhand",
             "amount": 2.0,
             "operation": "add_value"
@@ -63,7 +59,5 @@
       }
     }
   },
-  "template": {
-    "item": "minecraft:netherite_upgrade_smithing_template"
-  }
+  "template": "minecraft:netherite_upgrade_smithing_template"
 }

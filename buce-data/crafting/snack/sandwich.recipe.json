@@ -2,18 +2,10 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "key": {
-    "B": {
-      "item": "minecraft:bread"
-    },
-    "P": {
-      "item": "minecraft:cooked_porkchop"
-    },
-    "D": {
-      "item": "minecraft:big_dripleaf"
-    },
-    "R": {
-      "item": "minecraft:beetroot"
-    }
+    "B": "minecraft:bread",
+    "P": "minecraft:cooked_porkchop",
+    "D": "minecraft:big_dripleaf",
+    "R": "minecraft:beetroot"
   },
   "pattern": [
     " B ",

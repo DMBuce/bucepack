@@ -1,9 +1,9 @@
 {
   "type": "minecraft:stonecutting",
   "ingredient": [
-    { "item": "minecraft:stone_button" },
-    { "item": "minecraft:stone_pressure_plate" },
-    { "item": "minecraft:stone_slab" }
+    "minecraft:stone_button",
+    "minecraft:stone_pressure_plate",
+    "minecraft:stone_slab"
   ],
   "result": {
     "id": "minecraft:stone_stairs",

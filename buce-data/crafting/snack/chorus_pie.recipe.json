@@ -2,15 +2,9 @@
   "type": "minecraft:crafting_shapeless",
   "category": "misc",
   "ingredients": [
-    {
-      "item": "minecraft:chorus_fruit"
-    },
-    {
-      "item": "minecraft:sugar"
-    },
-    {
-      "item": "minecraft:egg"
-    }
+    "minecraft:chorus_fruit",
+    "minecraft:sugar",
+    "minecraft:egg"
   ],
   "result": {
     "count": 1,

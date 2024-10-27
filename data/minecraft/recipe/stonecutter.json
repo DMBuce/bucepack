@@ -2,12 +2,8 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "key": {
-    "#": {
-      "tag": "buce:recipes/crafting/workstation/cooked_stone"
-    },
-    "I": {
-      "item": "minecraft:iron_ingot"
-    }
+    "#": "#buce:crafting/workstation/cooked_stone",
+    "I": "minecraft:iron_ingot"
   },
   "pattern": [
     " I ",

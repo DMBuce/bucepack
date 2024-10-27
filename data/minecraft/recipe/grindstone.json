@@ -2,15 +2,9 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "key": {
-    "#": {
-      "tag": "minecraft:planks"
-    },
-    "-": {
-      "tag": "buce:recipes/crafting/workstation/cooked_stone_slab"
-    },
-    "I": {
-      "item": "minecraft:stick"
-    }
+    "#": "#minecraft:planks",
+    "-": "#buce:crafting/workstation/cooked_stone_slab",
+    "I": "minecraft:stick"
   },
   "pattern": [
     "I-I",

@@ -1,14 +1,14 @@
 {
   "type": "minecraft:stonecutting",
   "ingredient": [
-    { "item": "minecraft:spruce_button" },
-    { "item": "minecraft:spruce_door" },
-    { "item": "minecraft:spruce_fence_gate" },
-    { "item": "minecraft:spruce_pressure_plate" },
-    { "item": "minecraft:spruce_sign" },
-    { "item": "minecraft:spruce_slab" },
-    { "item": "minecraft:spruce_stairs" },
-    { "item": "minecraft:spruce_trapdoor" }
+    "minecraft:spruce_button",
+    "minecraft:spruce_door",
+    "minecraft:spruce_fence_gate",
+    "minecraft:spruce_pressure_plate",
+    "minecraft:spruce_sign",
+    "minecraft:spruce_slab",
+    "minecraft:spruce_stairs",
+    "minecraft:spruce_trapdoor"
   ],
   "result": {
     "id": "minecraft:spruce_fence",

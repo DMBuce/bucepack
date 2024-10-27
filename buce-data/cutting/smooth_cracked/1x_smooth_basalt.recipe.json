@@ -1,7 +1,7 @@
 {
   "type": "minecraft:stonecutting",
   "ingredient": [
-    { "item": "minecraft:basalt" }
+    "minecraft:basalt"
   ],
   "result": {
     "id": "minecraft:smooth_basalt",

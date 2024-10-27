@@ -58,9 +58,7 @@ while read category input output; do
 		  "type": "minecraft:crafting_shapeless",
 		  "category": "$category",
 		  "ingredients": [
-		    {
-		      "item": "minecraft:$input"
-		    }
+		    "minecraft:$input"
 		  ],
 		  "result": {
 		    "count": 9,
@@ -78,7 +76,7 @@ done <<< '
 '
 sed -i '/"count":/ s/9/18/' buce-data/crafting/unpacked/3x3_bamboo.recipe.json
 sed -i '/bamboo_block/ {
-	s/$/\n    },\n    {\n      "item": "minecraft:bamboo_block"/
+	s/$/,\n    "minecraft:bamboo_block"/
 }' buce-data/crafting/unpacked/3x3_bamboo.recipe.json
 
 # generate 2x2 uncrafting recipes
@@ -89,9 +87,7 @@ while read category input output; do
 		  "type": "minecraft:crafting_shapeless",
 		  "category": "$category",
 		  "ingredients": [
-		    {
-		      "item": "minecraft:$input"
-		    }
+		    "minecraft:$input"
 		  ],
 		  "result": {
 		    "count": 4,
@@ -122,9 +118,7 @@ while read category input output; do
 		  "type": "minecraft:crafting_shapeless",
 		  "category": "$category",
 		  "ingredients": [
-		    {
-		      "item": "minecraft:$input"
-		    }
+		    "minecraft:$input"
 		  ],
 		  "result": {
 		    "count": 3,

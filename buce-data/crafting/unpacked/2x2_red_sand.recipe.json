@@ -2,9 +2,7 @@
   "type": "minecraft:crafting_shapeless",
   "category": "building",
   "ingredients": [
-    {
-      "item": "minecraft:red_sandstone"
-    }
+    "minecraft:red_sandstone"
   ],
   "result": {
     "count": 4,

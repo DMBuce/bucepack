@@ -2,12 +2,8 @@
   "type": "minecraft:crafting_shapeless",
   "category": "misc",
   "ingredients": [
-    {
-      "item": "minecraft:bamboo_block"
-    },
-    {
-      "item": "minecraft:bamboo_block"
-    }
+    "minecraft:bamboo_block",
+    "minecraft:bamboo_block"
   ],
   "result": {
     "count": 18,

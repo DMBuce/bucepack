@@ -1,8 +1,8 @@
 {
   "type": "minecraft:stonecutting",
   "ingredient": [
-    { "item": "minecraft:cobblestone_slab" },
-    { "item": "minecraft:cobblestone_wall" }
+    "minecraft:cobblestone_slab",
+    "minecraft:cobblestone_wall"
   ],
   "result": {
     "id": "minecraft:cobblestone_stairs",

@@ -2,12 +2,8 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "key": {
-    "#": {
-      "tag": "minecraft:stone_crafting_materials"
-    },
-    "X": {
-      "item": "minecraft:smoker"
-    }
+    "#": "#minecraft:stone_crafting_materials",
+    "X": "minecraft:smoker"
   },
   "pattern": [
     "###",

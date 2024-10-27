@@ -1,7 +1,7 @@
 {
   "type": "minecraft:stonecutting",
   "ingredient": [
-    { "item": "minecraft:mangrove_log" }
+    "minecraft:mangrove_log"
   ],
   "result": {
     "id": "minecraft:mangrove_wood",

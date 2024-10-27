@@ -1,14 +1,14 @@
 {
   "type": "minecraft:stonecutting",
   "ingredient": [
-    { "item": "minecraft:pale_oak_button" },
-    { "item": "minecraft:pale_oak_door" },
-    { "item": "minecraft:pale_oak_fence" },
-    { "item": "minecraft:pale_oak_fence_gate" },
-    { "item": "minecraft:pale_oak_pressure_plate" },
-    { "item": "minecraft:pale_oak_sign" },
-    { "item": "minecraft:pale_oak_slab" },
-    { "item": "minecraft:pale_oak_stairs" }
+    "minecraft:pale_oak_button",
+    "minecraft:pale_oak_door",
+    "minecraft:pale_oak_fence",
+    "minecraft:pale_oak_fence_gate",
+    "minecraft:pale_oak_pressure_plate",
+    "minecraft:pale_oak_sign",
+    "minecraft:pale_oak_slab",
+    "minecraft:pale_oak_stairs"
   ],
   "result": {
     "id": "minecraft:pale_oak_trapdoor",

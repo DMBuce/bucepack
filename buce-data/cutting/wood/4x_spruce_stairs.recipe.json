@@ -1,10 +1,10 @@
 {
   "type": "minecraft:stonecutting",
   "ingredient": [
-    { "item": "minecraft:spruce_log" },
-    { "item": "minecraft:spruce_wood" },
-    { "item": "minecraft:stripped_spruce_log" },
-    { "item": "minecraft:stripped_spruce_wood" }
+    "minecraft:spruce_log",
+    "minecraft:spruce_wood",
+    "minecraft:stripped_spruce_log",
+    "minecraft:stripped_spruce_wood"
   ],
   "result": {
     "id": "minecraft:spruce_stairs",

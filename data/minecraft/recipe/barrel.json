@@ -2,20 +2,13 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "key": {
-    "P": [
-      { "tag": "minecraft:planks" },
-      { "tag": "minecraft:wooden_slabs" },
-      { "item": "minecraft:stick" }
-    ],
-    "S": [
-      { "tag": "minecraft:wooden_slabs" },
-      { "item": "minecraft:stick" }
-    ]
+    "|": "#buce:crafting/workstation/barrel_side",
+    "#": "#buce:crafting/workstation/barrel_top"
   },
   "pattern": [
-    "PSP",
-    "P P",
-    "PSP"
+    "|#|",
+    "| |",
+    "|#|"
   ],
   "result": {
     "id": "minecraft:barrel"

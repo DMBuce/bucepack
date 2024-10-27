@@ -7,15 +7,9 @@
     "CRC"
   ],
   "key": {
-    "R": {
-      "item": "minecraft:redstone"
-    },
-    "C": {
-      "item": "minecraft:copper_ingot"
-    },
-    "#": {
-      "tag": "minecraft:planks"
-    }
+    "R": "minecraft:redstone",
+    "C": "minecraft:copper_ingot",
+    "#": "#minecraft:planks"
   },
   "result": {
     "item": "minecraft:dropper"

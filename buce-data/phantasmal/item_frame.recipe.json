@@ -2,12 +2,8 @@
   "type": "minecraft:crafting_shapeless",
   "category": "misc",
   "ingredients": [
-    {
-      "item": "minecraft:item_frame"
-    },
-    {
-      "item": "minecraft:phantom_membrane"
-    }
+    "minecraft:item_frame",
+    "minecraft:phantom_membrane"
   ],
   "result": {
     "id": "minecraft:item_frame",

@@ -2,9 +2,7 @@
   "type": "minecraft:crafting_shapeless",
   "category": "misc",
   "ingredients": [
-    {
-      "item": "minecraft:clay"
-    }
+    "minecraft:clay"
   ],
   "result": {
     "count": 4,

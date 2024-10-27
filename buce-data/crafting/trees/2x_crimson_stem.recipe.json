@@ -2,9 +2,7 @@
   "type": "minecraft:crafting_shaped",
   "category": "building",
   "key": {
-    "#": {
-      "item": "minecraft:crimson_hyphae"
-    }
+    "#": "minecraft:crimson_hyphae"
   },
   "pattern": [
     "#",

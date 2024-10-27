@@ -1,7 +1,7 @@
 {
   "type": "minecraft:stonecutting",
   "ingredient": [
-    { "item": "minecraft:purpur_stairs" }
+    "minecraft:purpur_stairs"
   ],
   "result": {
     "id": "minecraft:purpur_slab",

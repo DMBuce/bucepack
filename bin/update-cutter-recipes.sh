@@ -42,8 +42,8 @@ for t in "${logtypes[@]}"; do
 			{
 			  "type": "minecraft:stonecutting",
 			  "ingredient": [
-			    { "item": "minecraft:{!printf "%s\\n" \$inputs | head -n-1}" },
-			    { "item": "minecraft:{!printf "%s\\n" \$inputs | tail -n1}" }
+			    "minecraft:{!printf "%s\\n" \$inputs | head -n-1}",
+			    "minecraft:{!printf "%s\\n" \$inputs | tail -n1}"
 			  ],
 			  "result": {
 			    "id": "minecraft:$output",
@@ -62,8 +62,8 @@ for t in "${logtypes[@]}"; do
 		{
 		  "type": "minecraft:stonecutting",
 		  "ingredient": [
-		    { "item": "minecraft:{!printf "%s\\n" \$inputs | head -n-1}" },
-		    { "item": "minecraft:{!printf "%s\\n" \$inputs | tail -n1}" }
+		    "minecraft:{!printf "%s\\n" \$inputs | head -n-1}",
+		    "minecraft:{!printf "%s\\n" \$inputs | tail -n1}"
 		  ],
 		  "result": {
 		    "id": "minecraft:$output",
@@ -82,8 +82,8 @@ sempl - "buce-data/locomotive/recipe/${output}.recipe.json" <<-EOF
 	{
 	  "type": "minecraft:stonecutting",
 	  "ingredient": [
-	    { "item": "minecraft:{!printf "%s\\n" \$inputs | head -n-1}" },
-	    { "item": "minecraft:{!printf "%s\\n" \$inputs | tail -n1}" }
+	    "minecraft:{!printf "%s\\n" \$inputs | head -n-1}",
+	    "minecraft:{!printf "%s\\n" \$inputs | tail -n1}"
 	  ],
 	  "result": {
 	    "id": "minecraft:$output",
@@ -111,8 +111,8 @@ for t in "${stemtypes[@]}"; do
 			{
 			  "type": "minecraft:stonecutting",
 			  "ingredient": [
-			    { "item": "minecraft:{!printf "%s\\n" \$inputs | head -n-1}" },
-			    { "item": "minecraft:{!printf "%s\\n" \$inputs | tail -n1}" }
+			    "minecraft:{!printf "%s\\n" \$inputs | head -n-1}",
+			    "minecraft:{!printf "%s\\n" \$inputs | tail -n1}"
 			  ],
 			  "result": {
 			    "id": "minecraft:$output",
@@ -145,8 +145,8 @@ do
 		{
 		  "type": "minecraft:stonecutting",
 		  "ingredient": [
-		    { "item": "minecraft:{!printf "%s\\n" \$inputs | head -n-1}" },
-		    { "item": "minecraft:{!printf "%s\\n" \$inputs | tail -n1}" }
+		    "minecraft:{!printf "%s\\n" \$inputs | head -n-1}",
+		    "minecraft:{!printf "%s\\n" \$inputs | tail -n1}"
 		  ],
 		  "result": {
 		    "id": "minecraft:$output",
@@ -166,8 +166,8 @@ sempl - "$dir/wood/2x_sticks.recipe.json" <<-EOF
 	{
 	  "type": "minecraft:stonecutting",
 	  "ingredient": [
-	    { "item": "minecraft:{!printf '%s\\n' \$inputs | head -n-1}_planks" },
-	    { "item": "minecraft:{!printf '%s\\n' \$inputs | tail -n1}_planks" }
+	    "minecraft:{!printf '%s\\n' \$inputs | head -n-1}_planks",
+	    "minecraft:{!printf '%s\\n' \$inputs | tail -n1}_planks"
 	  ],
 	  "result": {
 	    "id": "minecraft:$output",
@@ -185,8 +185,8 @@ sempl - "$dir/wood/4x_sticks.recipe.json" <<-EOF
 	{
 	  "type": "minecraft:stonecutting",
 	  "ingredient": [
-	    { "item": "minecraft:{!printf '%s\\n' \$inputs | head -n-1}" },
-	    { "item": "minecraft:{!printf '%s\\n' \$inputs | tail -n1}" }
+	    "minecraft:{!printf '%s\\n' \$inputs | head -n-1}",
+	    "minecraft:{!printf '%s\\n' \$inputs | tail -n1}"
 	  ],
 	  "result": {
 	    "id": "minecraft:$output",
@@ -218,8 +218,8 @@ sempl - "$dir/wood/8x_sticks.recipe.json" <<-EOF
 	{
 	  "type": "minecraft:stonecutting",
 	  "ingredient": [
-	    { "item": "minecraft:{!printf '%s\\n' \$inputs | head -n-1}" },
-	    { "item": "minecraft:{!printf '%s\\n' \$inputs | tail -n1}" }
+	    "minecraft:{!printf '%s\\n' \$inputs | head -n-1}",
+	    "minecraft:{!printf '%s\\n' \$inputs | tail -n1}"
 	  ],
 	  "result": {
 	    "id": "minecraft:$output",
@@ -246,8 +246,8 @@ do
 		{
 		  "type": "minecraft:stonecutting",
 		  "ingredient": [
-		    { "item": "{!jq -r .ingredient $latest.jar/data/minecraft/recipe/${inputs}_from_*_stonecutting.json 2>/dev/null}" },
-		    { "item": "minecraft:$inputs" }
+		    "{!jq -r .ingredient $latest.jar/data/minecraft/recipe/${inputs}_from_*_stonecutting.json 2>/dev/null}",
+		    "minecraft:$inputs"
 		  ],
 		  "result": {
 		    "id": "minecraft:$output",
@@ -268,7 +268,7 @@ do
 		{
 		  "type": "minecraft:stonecutting",
 		  "ingredient": [
-		    { "item": "minecraft:$inputs" }
+		    "minecraft:$inputs"
 		  ],
 		  "result": {
 		    "id": "minecraft:$output",
@@ -291,7 +291,7 @@ do
 		{
 		  "type": "minecraft:stonecutting",
 		  "ingredient": [
-		    { "item": "minecraft:$inputs" }
+		    "minecraft:$inputs"
 		  ],
 		  "result": {
 		    "id": "minecraft:$output",
@@ -343,8 +343,8 @@ do
 			{
 			  "type": "minecraft:stonecutting",
 			  "ingredient": [
-			    { "item": "minecraft:{!printf '%s\\n' \$inputs | head -n-1}" },
-			    { "item": "minecraft:{!printf '%s\\n' \$inputs | tail -n1}" }
+			    "minecraft:{!printf '%s\\n' \$inputs | head -n-1}",
+			    "minecraft:{!printf '%s\\n' \$inputs | tail -n1}"
 			  ],
 			  "result": {
 			    "id": "minecraft:$output",
@@ -365,8 +365,8 @@ sempl - "$dir/declutter/${num}x_${output}.recipe.json" <<-EOF
 	{
 	  "type": "minecraft:stonecutting",
 	  "ingredient": [
-	    { "item": "minecraft:{!printf '%s\\n' \$inputs | head -n-1}" },
-	    { "item": "minecraft:{!printf '%s\\n' \$inputs | tail -n1}" }
+	    "minecraft:{!printf '%s\\n' \$inputs | head -n-1}",
+	    "minecraft:{!printf '%s\\n' \$inputs | tail -n1}"
 	  ],
 	  "result": {
 	    "id": "minecraft:$output",

@@ -2,33 +2,15 @@
   "type": "minecraft:crafting_shapeless",
   "category": "misc",
   "ingredients": [
-    {
-      "item": "minecraft:blaze_powder"
-    },
-    {
-      "item": "minecraft:magma_cream"
-    },
-    {
-      "item": "minecraft:blaze_powder"
-    },
-    {
-      "item": "minecraft:torchflower_seeds"
-    },
-    {
-      "item": "minecraft:torchflower_seeds"
-    },
-    {
-      "item": "minecraft:torchflower_seeds"
-    },
-    {
-      "item": "minecraft:torchflower_seeds"
-    },
-    {
-      "item": "minecraft:torchflower_seeds"
-    },
-    {
-      "item": "minecraft:torchflower_seeds"
-    }
+    "minecraft:blaze_powder",
+    "minecraft:magma_cream",
+    "minecraft:blaze_powder",
+    "minecraft:torchflower_seeds",
+    "minecraft:torchflower_seeds",
+    "minecraft:torchflower_seeds",
+    "minecraft:torchflower_seeds",
+    "minecraft:torchflower_seeds",
+    "minecraft:torchflower_seeds"
   ],
   "result": {
     "count": 4,

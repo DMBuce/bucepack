@@ -2,12 +2,8 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "key": {
-    "W": {
-      "item": "minecraft:wheat"
-    },
-    "C": {
-      "item": "minecraft:cocoa_beans"
-    }
+    "W": "minecraft:wheat",
+    "C": "minecraft:cocoa_beans"
   },
   "pattern": [
     " W ",

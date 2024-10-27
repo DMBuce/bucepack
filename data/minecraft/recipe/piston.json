@@ -7,15 +7,9 @@
     "#R#"
   ],
   "key": {
-    "R": {
-      "item": "minecraft:redstone"
-    },
-    "#": {
-      "item": "minecraft:cobblestone"
-    },
-    "T": {
-      "tag": "minecraft:copper_ingot"
-    }
+    "R": "minecraft:redstone",
+    "#": "minecraft:cobblestone",
+    "T": "#minecraft:copper_ingot"
   },
   "result": {
     "item": "minecraft:piston"

@@ -2,9 +2,7 @@
   "type": "minecraft:crafting_shapeless",
   "category": "misc",
   "ingredients": [
-    {
-      "item": "minecraft:nether_bricks"
-    }
+    "minecraft:nether_bricks"
   ],
   "result": {
     "count": 4,

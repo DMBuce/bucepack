@@ -1,7 +1,7 @@
 {
   "type": "minecraft:stonecutting",
   "ingredient": [
-    { "item": "minecraft:dark_oak_wood" }
+    "minecraft:dark_oak_wood"
   ],
   "result": {
     "id": "minecraft:dark_oak_log",

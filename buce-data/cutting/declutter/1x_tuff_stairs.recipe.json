@@ -1,8 +1,8 @@
 {
   "type": "minecraft:stonecutting",
   "ingredient": [
-    { "item": "minecraft:tuff_slab" },
-    { "item": "minecraft:tuff_wall" }
+    "minecraft:tuff_slab",
+    "minecraft:tuff_wall"
   ],
   "result": {
     "id": "minecraft:tuff_stairs",

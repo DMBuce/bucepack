@@ -1,8 +1,8 @@
 {
   "type": "minecraft:stonecutting",
   "ingredient": [
-    { "item": "minecraft:andesite_slab" },
-    { "item": "minecraft:andesite_stairs" }
+    "minecraft:andesite_slab",
+    "minecraft:andesite_stairs"
   ],
   "result": {
     "id": "minecraft:andesite_wall",

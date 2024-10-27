@@ -1,18 +1,18 @@
 {
   "type": "minecraft:stonecutting",
   "ingredient": [
-    { "item": "minecraft:bamboo_planks" },
-    { "item": "minecraft:acacia_planks" },
-    { "item": "minecraft:birch_planks" },
-    { "item": "minecraft:cherry_planks" },
-    { "item": "minecraft:dark_oak_planks" },
-    { "item": "minecraft:jungle_planks" },
-    { "item": "minecraft:mangrove_planks" },
-    { "item": "minecraft:oak_planks" },
-    { "item": "minecraft:pale_oak_planks" },
-    { "item": "minecraft:spruce_planks" },
-    { "item": "minecraft:crimson_planks" },
-    { "item": "minecraft:warped_planks" }
+    "minecraft:bamboo_planks",
+    "minecraft:acacia_planks",
+    "minecraft:birch_planks",
+    "minecraft:cherry_planks",
+    "minecraft:dark_oak_planks",
+    "minecraft:jungle_planks",
+    "minecraft:mangrove_planks",
+    "minecraft:oak_planks",
+    "minecraft:pale_oak_planks",
+    "minecraft:spruce_planks",
+    "minecraft:crimson_planks",
+    "minecraft:warped_planks"
   ],
   "result": {
     "id": "minecraft:stick",

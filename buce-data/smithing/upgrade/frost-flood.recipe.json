@@ -1,11 +1,7 @@
 {
   "type": "minecraft:smithing_transform",
-  "addition": {
-    "item": "minecraft:heart_of_the_sea"
-  },
-  "base": {
-    "item": "minecraft:diamond_boots"
-  },
+  "addition": "minecraft:heart_of_the_sea",
+  "base": "minecraft:diamond_boots",
   "result": {
     "count": 1,
     "id": "minecraft:diamond_boots",
@@ -19,7 +15,5 @@
       }
     }
   },
-  "template": {
-    "item": "minecraft:netherite_upgrade_smithing_template"
-  }
+  "template": "minecraft:netherite_upgrade_smithing_template"
 }

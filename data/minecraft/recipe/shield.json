@@ -2,12 +2,8 @@
   "type": "minecraft:crafting_shaped",
   "category": "equipment",
   "key": {
-    "D": {
-      "tag": "minecraft:planks"
-    },
-    ".": {
-      "item": "minecraft:iron_nugget"
-    }
+    "D": "#minecraft:planks",
+    ".": "minecraft:iron_nugget"
   },
   "pattern": [
     "...",

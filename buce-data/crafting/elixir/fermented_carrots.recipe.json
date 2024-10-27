@@ -2,33 +2,15 @@
   "type": "minecraft:crafting_shapeless",
   "category": "misc",
   "ingredients": [
-    {
-      "item": "minecraft:fermented_spider_eye"
-    },
-    {
-      "item": "minecraft:nether_wart"
-    },
-    {
-      "item": "minecraft:fermented_spider_eye"
-    },
-    {
-      "item": "minecraft:golden_carrot"
-    },
-    {
-      "item": "minecraft:golden_carrot"
-    },
-    {
-      "item": "minecraft:golden_carrot"
-    },
-    {
-      "item": "minecraft:golden_carrot"
-    },
-    {
-      "item": "minecraft:golden_carrot"
-    },
-    {
-      "item": "minecraft:golden_carrot"
-    }
+    "minecraft:fermented_spider_eye",
+    "minecraft:nether_wart",
+    "minecraft:fermented_spider_eye",
+    "minecraft:golden_carrot",
+    "minecraft:golden_carrot",
+    "minecraft:golden_carrot",
+    "minecraft:golden_carrot",
+    "minecraft:golden_carrot",
+    "minecraft:golden_carrot"
   ],
   "result": {
     "count": 4,

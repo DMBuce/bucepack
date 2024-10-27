@@ -2,9 +2,7 @@
   "type": "minecraft:crafting_shaped",
   "category": "building",
   "key": {
-    "#": {
-      "item": "minecraft:mangrove_wood"
-    }
+    "#": "minecraft:mangrove_wood"
   },
   "pattern": [
     "#",

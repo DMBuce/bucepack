@@ -1,8 +1,8 @@
 {
   "type": "minecraft:stonecutting",
   "ingredient": [
-    { "item": "minecraft:prismarine_slab" },
-    { "item": "minecraft:prismarine_stairs" }
+    "minecraft:prismarine_slab",
+    "minecraft:prismarine_stairs"
   ],
   "result": {
     "id": "minecraft:prismarine_wall",

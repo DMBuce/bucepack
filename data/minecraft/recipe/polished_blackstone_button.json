@@ -2,9 +2,7 @@
   "type": "minecraft:crafting_shapeless",
   "category": "redstone",
   "ingredients": [
-    {
-      "item": "minecraft:copper_ingot"
-    }
+    "minecraft:copper_ingot"
   ],
   "result": {
     "item": "minecraft:polished_blackstone_button"

@@ -2,15 +2,9 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "key": {
-    "+": {
-      "tag": "minecraft:logs"
-    },
-    "#": {
-      "tag": "minecraft:stone_crafting_materials"
-    },
-    "X": {
-      "item": "minecraft:furnace"
-    }
+    "+": "#minecraft:logs",
+    "#": "#minecraft:stone_crafting_materials",
+    "X": "minecraft:furnace"
   },
   "pattern": [
     "+#+",

@@ -1,7 +1,7 @@
 {
   "type": "minecraft:stonecutting",
   "ingredient": [
-    { "item": "minecraft:spruce_log" }
+    "minecraft:spruce_log"
   ],
   "result": {
     "id": "minecraft:spruce_wood",

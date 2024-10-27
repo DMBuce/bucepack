@@ -1,10 +1,10 @@
 {
   "type": "minecraft:stonecutting",
   "ingredient": [
-    { "item": "minecraft:mangrove_log" },
-    { "item": "minecraft:mangrove_wood" },
-    { "item": "minecraft:stripped_mangrove_log" },
-    { "item": "minecraft:stripped_mangrove_wood" }
+    "minecraft:mangrove_log",
+    "minecraft:mangrove_wood",
+    "minecraft:stripped_mangrove_log",
+    "minecraft:stripped_mangrove_wood"
   ],
   "result": {
     "id": "minecraft:mangrove_slab",

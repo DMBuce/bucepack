@@ -1,11 +1,7 @@
 {
   "type": "minecraft:smithing_transform",
-  "addition": {
-    "item": "minecraft:rabbit_foot"
-  },
-  "base": {
-    "item": "minecraft:rabbit_hide"
-  },
+  "addition": "minecraft:rabbit_foot",
+  "base": "minecraft:rabbit_hide",
   "result": {
     "count": 1,
     "id": "minecraft:leather_boots",
@@ -23,36 +19,36 @@
       ],
       "minecraft:attribute_modifiers": [
         {
-          "type": "minecraft:generic.armor",
-          "id": "minecraft:generic.armor",
+          "type": "minecraft:armor",
+          "id": "minecraft:armor",
           "slot": "feet",
           "amount": 1.0,
           "operation": "add_value"
         },
         {
-          "type": "minecraft:generic.movement_speed",
-          "id": "minecraft:generic.movement_speed",
+          "type": "minecraft:movement_speed",
+          "id": "minecraft:movement_speed",
           "slot": "feet",
           "amount": 0.4,
           "operation": "add_multiplied_total"
         },
         {
-          "type": "minecraft:generic.jump_strength",
-          "id": "minecraft:generic.jump_strength",
+          "type": "minecraft:jump_strength",
+          "id": "minecraft:jump_strength",
           "slot": "feet",
           "amount": 0.5,
           "operation": "add_multiplied_base"
         },
         {
-          "type": "minecraft:generic.safe_fall_distance",
-          "id": "minecraft:generic.safe_fall_distance",
+          "type": "minecraft:safe_fall_distance",
+          "id": "minecraft:safe_fall_distance",
           "slot": "feet",
           "amount": 2.0,
           "operation": "add_value"
         },
         {
-          "type": "minecraft:generic.step_height",
-          "id": "minecraft:generic.step_height",
+          "type": "minecraft:step_height",
+          "id": "minecraft:step_height",
           "slot": "feet",
           "amount": 0.5,
           "operation": "add_value"
@@ -60,7 +56,5 @@
       ]
     }
   },
-  "template": {
-    "item": "minecraft:netherite_upgrade_smithing_template"
-  }
+  "template": "minecraft:netherite_upgrade_smithing_template"
 }

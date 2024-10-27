@@ -2,12 +2,8 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "key": {
-    "H": {
-      "item": "minecraft:honey_block"
-    },
-    "#": {
-      "item": "minecraft:brick"
-    }
+    "H": "minecraft:honey_block",
+    "#": "minecraft:brick"
   },
   "pattern": [
     " # ",

@@ -1,11 +1,7 @@
 {
   "type": "minecraft:smithing_transform",
-  "addition": {
-    "item": "minecraft:echo_shard"
-  },
-  "base": {
-    "item": "minecraft:bow"
-  },
+  "addition": "minecraft:echo_shard",
+  "base": "minecraft:bow",
   "result": {
     "count": 1,
     "id": "minecraft:bow",
@@ -19,7 +15,5 @@
       }
     }
   },
-  "template": {
-    "item": "minecraft:netherite_upgrade_smithing_template"
-  }
+  "template": "minecraft:netherite_upgrade_smithing_template"
 }

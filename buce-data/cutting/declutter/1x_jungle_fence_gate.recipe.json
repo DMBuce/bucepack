@@ -1,14 +1,14 @@
 {
   "type": "minecraft:stonecutting",
   "ingredient": [
-    { "item": "minecraft:jungle_button" },
-    { "item": "minecraft:jungle_door" },
-    { "item": "minecraft:jungle_fence" },
-    { "item": "minecraft:jungle_pressure_plate" },
-    { "item": "minecraft:jungle_sign" },
-    { "item": "minecraft:jungle_slab" },
-    { "item": "minecraft:jungle_stairs" },
-    { "item": "minecraft:jungle_trapdoor" }
+    "minecraft:jungle_button",
+    "minecraft:jungle_door",
+    "minecraft:jungle_fence",
+    "minecraft:jungle_pressure_plate",
+    "minecraft:jungle_sign",
+    "minecraft:jungle_slab",
+    "minecraft:jungle_stairs",
+    "minecraft:jungle_trapdoor"
   ],
   "result": {
     "id": "minecraft:jungle_fence_gate",

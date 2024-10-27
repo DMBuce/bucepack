@@ -2,12 +2,8 @@
   "type": "minecraft:crafting_shapeless",
   "category": "misc",
   "ingredients": [
-    {
-      "item": "minecraft:torch"
-    },
-    {
-      "item": "minecraft:phantom_membrane"
-    }
+    "minecraft:torch",
+    "minecraft:phantom_membrane"
   ],
   "result": {
     "id": "minecraft:light",

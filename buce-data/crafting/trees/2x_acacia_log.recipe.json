@@ -2,9 +2,7 @@
   "type": "minecraft:crafting_shaped",
   "category": "building",
   "key": {
-    "#": {
-      "item": "minecraft:acacia_wood"
-    }
+    "#": "minecraft:acacia_wood"
   },
   "pattern": [
     "#",

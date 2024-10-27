@@ -1,7 +1,7 @@
 {
   "type": "minecraft:stonecutting",
   "ingredient": [
-    { "item": "minecraft:sandstone" }
+    "minecraft:sandstone"
   ],
   "result": {
     "id": "minecraft:smooth_sandstone_slab",

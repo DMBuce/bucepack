@@ -1,9 +1,9 @@
 {
   "type": "minecraft:stonecutting",
   "ingredient": [
-    { "item": "minecraft:acacia_log" },
-    { "item": "minecraft:acacia_wood" },
-    { "item": "minecraft:stripped_acacia_log" }
+    "minecraft:acacia_log",
+    "minecraft:acacia_wood",
+    "minecraft:stripped_acacia_log"
   ],
   "result": {
     "id": "minecraft:stripped_acacia_wood",

@@ -1,8 +1,8 @@
 {
   "type": "minecraft:stonecutting",
   "ingredient": [
-    { "item": "minecraft:dark_oak_boat" },
-    { "item": "minecraft:dark_oak_chest_boat" }
+    "minecraft:dark_oak_boat",
+    "minecraft:dark_oak_chest_boat"
   ],
   "result": {
     "id": "minecraft:dark_oak_planks",

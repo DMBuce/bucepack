@@ -6,15 +6,9 @@
     "# #"
   ],
   "key": {
-    "I": {
-      "item": "minecraft:stick"
-    },
-    "-": {
-      "item": "minecraft:polished_blackstone_slab"
-    },
-    "#": {
-      "tag": "minecraft:planks"
-    }
+    "I": "minecraft:stick",
+    "-": "minecraft:polished_blackstone_slab",
+    "#": "#minecraft:planks"
   },
   "result": {
     "id": "minecraft:grindstone"

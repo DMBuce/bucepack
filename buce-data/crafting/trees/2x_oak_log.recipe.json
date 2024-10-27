@@ -2,9 +2,7 @@
   "type": "minecraft:crafting_shaped",
   "category": "building",
   "key": {
-    "#": {
-      "item": "minecraft:oak_wood"
-    }
+    "#": "minecraft:oak_wood"
   },
   "pattern": [
     "#",

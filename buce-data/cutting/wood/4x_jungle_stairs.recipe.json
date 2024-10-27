@@ -1,10 +1,10 @@
 {
   "type": "minecraft:stonecutting",
   "ingredient": [
-    { "item": "minecraft:jungle_log" },
-    { "item": "minecraft:jungle_wood" },
-    { "item": "minecraft:stripped_jungle_log" },
-    { "item": "minecraft:stripped_jungle_wood" }
+    "minecraft:jungle_log",
+    "minecraft:jungle_wood",
+    "minecraft:stripped_jungle_log",
+    "minecraft:stripped_jungle_wood"
   ],
   "result": {
     "id": "minecraft:jungle_stairs",

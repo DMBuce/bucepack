@@ -2,12 +2,8 @@
   "type": "minecraft:crafting_shapeless",
   "category": "misc",
   "ingredients": [
-    {
-      "item": "minecraft:armor_stand"
-    },
-    {
-      "item": "minecraft:phantom_membrane"
-    }
+    "minecraft:armor_stand",
+    "minecraft:phantom_membrane"
   ],
   "result": {
     "count": 1,
