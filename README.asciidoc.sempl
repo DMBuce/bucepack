@@ -1825,12 +1825,6 @@ These packs rely on experimental worldgen or snapshot features.
 //
 //{!./bin/packsummary worldgen_anti}
 
-=== Bundle
-
-Adds bundles crafted from 3 leather and 1 string.
-
-{!./bin/packsummary bundle}
-
 === Elemental
 
 Adds https://minecraft.wiki/w/Painting#Unused_paintings[elemental paintings]

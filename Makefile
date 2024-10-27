@@ -43,7 +43,6 @@ DATAPACKFILES = \
 	acclimated.zip \
 	archived.zip \
 	blue_fire.zip \
-	bundle.zip \
 	climbable.zip \
 	crafting_colorful.zip \
 	crafting_snack.zip \
@@ -447,10 +446,6 @@ discreet_meow_FILES := $(DEFAULT_RESOURCE_FILES) \
 gardener_endermen_FILES := $(DEFAULT_DATA_FILES) \
 	data/minecraft/tags/block/enderman_holdable.json \
 	data/buce/advancement/gardener_endermen.json \
-
-bundle_FILES := $(DEFAULT_DATA_FILES) \
-	data/minecraft/recipe/bundle.json \
-	data/minecraft/advancement/recipes/tools/bundle.json \
 
 climbable_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell ls buce-data/climbable* | ./bin/ext2dir) \
@@ -1448,12 +1443,6 @@ oven_tier.zip: $(oven_tier_FILES)
 	./bin/ziprename _$(@:.zip=) "" $@
 
 hover_mode.zip: $(hover_mode_FILES)
-	cp meta/$(@:.zip=.png) pack.png
-	sempl meta/$(@:.zip=.mcmeta.sempl) pack.mcmeta
-	zip $@ pack.png pack.mcmeta $^
-	./bin/ziprename _$(@:.zip=) "" $@
-
-bundle.zip: $(bundle_FILES)
 	cp meta/$(@:.zip=.png) pack.png
 	sempl meta/$(@:.zip=.mcmeta.sempl) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^

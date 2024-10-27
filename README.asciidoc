@@ -3535,28 +3535,6 @@ These packs rely on experimental worldgen or snapshot features.
 //====
 //====
 
-=== Bundle
-
-Adds bundles crafted from 3 leather and 1 string.
-
-**Downloads**
-
-.https://github.com/DMBuce/bucepack/releases/latest/download/bundle.zip[`bundle.zip`]
-[%collapsible]
-====
-
-```
-data/minecraft/advancement/recipes/tools/bundle.json
-data/minecraft/recipe/bundle.json
-```
-
-====
-
-.https://github.com/DMBuce/bucepack/releases[All Releases & Changelogs]
-[%collapsible]
-====
-====
-
 === Elemental
 
 Adds https://minecraft.wiki/w/Painting#Unused_paintings[elemental paintings]
