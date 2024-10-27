@@ -15,6 +15,7 @@
         "nutrition": 10,
         "saturation": 16
       },
+      "minecraft:consumable": {},
       "minecraft:note_block_sound": "entity.pig.ambient",
       "minecraft:profile": {
         "id": [-13711728,-2052759295,-2103862104,1940091026],

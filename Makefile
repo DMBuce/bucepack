@@ -833,9 +833,11 @@ crafting_colorful_FILES := $(DEFAULT_DATA_FILES) \
 
 crafting_elixir_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell find buce-data/crafting/elixir -type f | ./bin/ext2dir) \
+	data/minecraft/loot_table/blocks/player_head.json \
 
 crafting_snack_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell find buce-data/crafting/snack -type f | ./bin/ext2dir) \
+	data/minecraft/loot_table/blocks/player_head.json \
 	data/minecraft/recipe/glistering_melon_slice.json \
 	data/minecraft/recipe/popped_chorus_fruit_from_campfire_cooking.json \
 	data/minecraft/recipe/popped_chorus_fruit_from_smoking.json \

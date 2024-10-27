@@ -22,29 +22,36 @@
       "minecraft:food": {
         "nutrition": 6,
         "saturation": 1.2,
-        "can_always_eat": true,
-        "effects": [
+        "can_always_eat": true
+      },
+      "minecraft:consumable": {
+        "on_consume_effects": [
           {
+            "type": "minecraft:apply_effects",
             "probability": 0.5,
-            "effect": {
-              "id": "minecraft:night_vision",
-              "amplifier": 0,
-              "duration": 9600
-            }
-          },
-          {
-            "probability": 0.5,
-            "effect": {
-              "id": "minecraft:invisibility",
-              "amplifier": 0,
-              "duration": 9600
-            }
+            "effects": [
+              {
+                "id": "minecraft:night_vision",
+                "amplifier": 0,
+                "duration": 9600
+              },
+              {
+                "id": "minecraft:invisibility",
+                "amplifier": 0,
+                "duration": 9600
+              }
+            ]
           }
         ]
       },
       "minecraft:note_block_sound": "block.honey_block.slide",
       "minecraft:profile": {
-        "id": [-1559130298,641027791,-1193861644,-1782555296],
+        "id": [
+          -1559130298,
+          641027791,
+          -1193861644,
+          -1782555296
+        ],
         "properties": [
           {
             "name": "textures",

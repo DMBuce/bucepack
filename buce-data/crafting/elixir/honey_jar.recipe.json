@@ -20,20 +20,31 @@
       "minecraft:food": {
         "nutrition": 6,
         "saturation": 1.2,
-        "can_always_eat": true,
-        "effects": [
+        "can_always_eat": true
+      },
+      "minecraft:consumable": {
+        "on_consume_effects": [
           {
-            "effect": {
-              "id": "minecraft:regeneration",
-              "amplifier": 0,
-              "duration": 900
-            }
+            "type": "minecraft:apply_effects",
+            "probability": 1.0,
+            "effects": [
+              {
+                "id": "minecraft:regeneration",
+                "amplifier": 0,
+                "duration": 900
+              }
+            ]
           }
         ]
       },
       "minecraft:note_block_sound": "block.honey_block.place",
       "minecraft:profile": {
-        "id": [-1552866382,-2144122693,-1808803872,861044740],
+        "id": [
+          -1552866382,
+          -2144122693,
+          -1808803872,
+          861044740
+        ],
         "properties": [
           {
             "name": "textures",

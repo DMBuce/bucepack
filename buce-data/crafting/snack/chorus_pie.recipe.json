@@ -16,6 +16,7 @@
         "nutrition": 8,
         "saturation": 4.8
       },
+      "minecraft:consumable": {},
       "minecraft:note_block_sound": "entity.generic.eat",
       "minecraft:profile": {
         "id": [877192937,584731823,-1120809297,-1141763827],
