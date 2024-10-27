@@ -188,3 +188,13 @@ for t in "${stemtypes[@]}"; do
 		EOF
 done
 
+# generate custom biomes
+cp $latest.jar/data/minecraft/worldgen/biome/stony_peaks.json \
+	data/minecraft/worldgen/biome/granite_peaks.json
+cp $latest.jar/data/minecraft/worldgen/biome/stony_peaks.json \
+	data/minecraft/worldgen/biome/molten_peaks.json
+sed -i '
+	/minecraft:lake_lava_surface/ s/lava_surface/lava_volcano/
+	/minecraft:spring_lava/ s/lava/lava_volcano/
+' data/minecraft/worldgen/biome/molten_peaks.json
+
