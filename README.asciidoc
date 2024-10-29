@@ -1367,27 +1367,6 @@ storage.
 [%collapsible]
 ====
 
-* amethyst block → 4 amethyst shard
-* bricks → 4 brick
-* clay → 4 clay ball
-* glowstone → 4 glowstone dust
-* honeycomb block → 4 honeycomb
-* magma block → 4 magma cream
-* nether bricks → 4 nether brick
-* dripstone block → 4 pointed dripstone
-* purpur block → popped chorus fruit
-* prismarine → 4 prismarine shard
-* red sandstone → 4 red sand
-* sandstone → 4 sand
-* snow block → 4 snowball
-* 2 bamboo block → 18 bamboo
-* packed ice → 9 ice
-* melon → 9 melon slice
-* blue ice → 9 packed ice
-* prismarine bricks → 9 prismarine shard
-* cobweb → 9 string
-* bookshelf → 3 book
-* book → 3 paper
 
 ====
 
@@ -1452,16 +1431,6 @@ The following blocks can be freely crafted into each other.
 [%collapsible]
 ====
 
-* button
-* door
-* fence
-* fence gate
-* pressure plate
-* sign
-* slab
-* stairs
-* trapdoor
-* wall
 
 ====
 
@@ -1551,6 +1520,7 @@ Adds placeable food and makes glistering melons and popped chorus fruit edible.
 ====
 
 ```
+data/minecraft/loot_table/blocks/player_head.json
 data/minecraft/recipe/glistering_melon_slice.json
 data/minecraft/recipe/pumpkin_pie.json
 ```
@@ -1583,6 +1553,11 @@ Adds placeable foods that stack to 16 and have a chance to give potion effects.
 .https://github.com/DMBuce/bucepack/releases/latest/download/crafting_elixir.zip[`crafting_elixir.zip`]
 [%collapsible]
 ====
+
+```
+data/minecraft/loot_table/blocks/player_head.json
+```
+
 ====
 
 .https://github.com/DMBuce/bucepack/releases[All Releases & Changelogs]

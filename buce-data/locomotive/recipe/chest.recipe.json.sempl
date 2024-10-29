@@ -3,8 +3,8 @@
 {
   "type": "minecraft:stonecutting",
   "ingredient": [
-    "item": "minecraft:{!./bin/allitems | grep -E 'chest_(boat|raft)$'}",
-    "item": "minecraft:chest_minecart"
+    "minecraft:{!./bin/allitems | grep -E 'chest_(boat|raft)$'}",
+    "minecraft:chest_minecart"
   ],
   "result": {
     "count": 1,
