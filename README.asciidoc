@@ -1180,6 +1180,9 @@ Makes some crafting recipes cheaper.
 * 4 log → 4 wood
 * 4 stem → 4 hyphae
 * 7 diamond + 1 netherrack + 1 netherite ingot → 2 netherite upgrade smithing template
+* 3 iron nugget → chain
+* chest + 3 iron ingot → hopper
+* planks + 8 iron nugget → shield
 * blasting: tool → ingot
 * blasting: armor → ingot
 
@@ -1367,6 +1370,27 @@ storage.
 [%collapsible]
 ====
 
+* amethyst block → 4 amethyst shard
+* bricks → 4 brick
+* clay → 4 clay ball
+* glowstone → 4 glowstone dust
+* honeycomb block → 4 honeycomb
+* magma block → 4 magma cream
+* nether bricks → 4 nether brick
+* dripstone block → 4 pointed dripstone
+* purpur block → popped chorus fruit
+* prismarine → 4 prismarine shard
+* red sandstone → 4 red sand
+* sandstone → 4 sand
+* snow block → 4 snowball
+* 2 bamboo block → 18 bamboo
+* packed ice → 9 ice
+* melon → 9 melon slice
+* blue ice → 9 packed ice
+* prismarine bricks → 9 prismarine shard
+* cobweb → 9 string
+* bookshelf → 3 book
+* book → 3 paper
 
 ====
 
@@ -1431,6 +1455,16 @@ The following blocks can be freely crafted into each other.
 [%collapsible]
 ====
 
+* button
+* door
+* fence
+* fence gate
+* pressure plate
+* sign
+* slab
+* stairs
+* trapdoor
+* wall
 
 ====
 
