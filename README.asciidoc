@@ -721,7 +721,7 @@ can be placed in chiseled bookshelves.
 Chiseled bookshelves can power the enchanting table
 and are crafted with leather instead of wooden slabs.
 
-https://raw.githubusercontent.com/DMBuce/bucepack/master/data/minecraft/tags/blocks/enchantment_power_transmitter.json[These blocks]
+https://raw.githubusercontent.com/DMBuce/bucepack/refs/heads/master/data/minecraft/tags/block/enchantment_power_transmitter.json[These blocks]
 don't block bookshelves from powering the enchantment table.
 
 Axes can be enchanted with Fire Aspect.
@@ -789,9 +789,9 @@ tool or an Efficiency tool. This pack gives more blocks an associated tool.
 
 The blocks that are given an associated tool are listed here:
 
-* https://raw.githubusercontent.com/DMBuce/bucepack/master/data/minecraft/tags/blocks/mineable/pickaxe.json.sempl[Pick]
-* https://raw.githubusercontent.com/DMBuce/bucepack/master/data/minecraft/tags/blocks/mineable/axe.json[Axe]
-* https://raw.githubusercontent.com/DMBuce/bucepack/master/data/minecraft/tags/blocks/sword_efficient.json[Sword]
+* https://raw.githubusercontent.com/DMBuce/bucepack/refs/heads/master/data/minecraft/tags/block/mineable/pickaxe.json.sempl[Pick]
+* https://raw.githubusercontent.com/DMBuce/bucepack/refs/heads/master/data/minecraft/tags/block/mineable/axe.json[Axe]
+* https://raw.githubusercontent.com/DMBuce/bucepack/refs/heads/master/data/minecraft/tags/block/sword_efficient.json[Sword]
 
 In addition,
 pickaxes are no longer the associated tool for spawners or budding amethyst,
@@ -847,7 +847,7 @@ to the magenta glass and banners found in End Cities, this pack makes other
 magenta blocks dragonproof as well.
 
 The additional dragonproofed blocks are listed
-https://raw.githubusercontent.com/DMBuce/bucepack/master/data/minecraft/tags/blocks/dragon_immune.json[here].
+https://raw.githubusercontent.com/DMBuce/bucepack/refs/heads/master/data/minecraft/tags/block/dragon_immune.json[here].
 Many of them are shown below.
 
 image::https://i.imgur.com/c7kQFcp.png[Dragonproof Blocks]
@@ -875,7 +875,7 @@ Makes it so that endermen can't pick up blocks such as dirt and grass blocks,
 and can pick up more plants and fungi.
 
 All the blocks that endermen can pick up are listed
-https://raw.githubusercontent.com/DMBuce/bucepack/master/data/minecraft/tags/blocks/enderman_holdable.json[here].
+https://raw.githubusercontent.com/DMBuce/bucepack/refs/heads/master/data/minecraft/tags/block/enderman_holdable.json[here].
 
 **Downloads**
 
@@ -929,7 +929,7 @@ Mobs don't dismount their riders when underwater.
 Mobs that are light enough, surefooted enough, or immune to fall damage
 don't sink into powdered snow.
 The list of mobs that don't sink is
-https://raw.githubusercontent.com/DMBuce/bucepack/master/data/minecraft/tags/entity_types/powder_snow_walkable_mobs.json[here].
+https://raw.githubusercontent.com/DMBuce/bucepack/refs/heads/master/data/minecraft/tags/entity_type/powder_snow_walkable_mobs.json[here].
 
 More blocks are warm enough to keep striders comfortable.
 The list of blocks that can warm striders is
@@ -3061,10 +3061,10 @@ Paths extend Speed I effects for players in a manner similar to beacons.
 // two custom enchantments that can be applied to leather pants
 // with a bottle o' enchanting in the smithing
 // table. When a player wearing the pants hits one of
-// https://raw.githubusercontent.com/DMBuce/bucepack/master/buce-data/mythic/leashing/leashable.entity_type.tag.json[these mobs]
+// https://raw.githubusercontent.com/DMBuce/bucepack/refs/heads/master/buce-data/mythic/leashing/leashable.entity_type.tag.json[these mobs]
 // with a lead, the lead attaches to the mob.
 // When a player wearing the pants right clicks a lead on one of
-// https://raw.githubusercontent.com/DMBuce/bucepack/master/buce-data/mythic/balloons/balloons.entity_type.tag.json[these creatures],
+// https://raw.githubusercontent.com/DMBuce/bucepack/refs/heads/master/buce-data/mythic/balloons/balloons.entity_type.tag.json[these creatures],
 // it gains levitation until a player unleashes it or it reaches y=350.
 //
 // **Relic of Quicksilver**: When an iron golem kills a ghast, it drops a bead of

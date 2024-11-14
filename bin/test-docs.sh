@@ -27,5 +27,14 @@ for file in $packfiles; do
 	fi
 done
 
+echo 'Checking that all github user content is valid...' >&2
+while read url; do
+	http_code="$(curl -s -o /dev/null -Iw '%{http_code}' "$url")"
+	if (( $http_code != 200 )); then
+		echo "> HTTP code $http_code for url: $url"
+		retval=1
+	fi
+done < <(grep -o 'https://raw.githubusercontent.com[^[]*' README.asciidoc.sempl)
+
 exit $retval
 
