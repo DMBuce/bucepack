@@ -74,5 +74,6 @@
     {
       "function": "minecraft:explosion_decay"
     }
-  ]
+  ],
+  "random_sequence": "minecraft:blocks/beetroots"
 }
