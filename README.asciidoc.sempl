@@ -409,7 +409,7 @@ https://raw.githubusercontent.com/DMBuce/bucepack/master/data/minecraft/tags/ent
 
 More blocks are warm enough to keep striders comfortable.
 The list of blocks that can warm striders is
-https://raw.githubusercontent.com/DMBuce/bucepack/master/data/minecraft/tags/blocks/strider_warm_blocks.json[here].
+https://raw.githubusercontent.com/DMBuce/bucepack/refs/heads/master/data/minecraft/tags/block/strider_warm_blocks.json[here].
 
 image::https://i.imgur.com/FnDMksX.png[Acclimated]
 
