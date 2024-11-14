@@ -1576,7 +1576,7 @@ Adds placeable foods that stack to 16 and have a chance to give potion effects.
 
 * 6 Glistering Melon + 2 Sugar + Dragon Breath → 4 Glistering Jam (50% Speed I, 50% Instant Health II)
 * 6 Torchfower Seeds + 2 Blaze Powder + Magma Cream → 4 Hot Pepper Jelly (33% Strength II, 33% Fire Resistance, 33% Haste II)
-* 6 Golden Carrot + 2 Fermented Spider Eye + Nether Wart → 4 Pickled Carrots (50% Night Vision, 50% Invisibility)
+* 6 Golden Carrot + 2 Fermented Spider Eye + Nether Wart → 4 Fermented Carrots (50% Night Vision, 50% Invisibility)
 * 6 Chorus Fruit + 2 Ghast Tears + Phantom Membrane → 4 Pickled Chorus Fruit (50% Levitation, 50% Slow Falling)
 * Honey Block + 4 Brick → Honey Jar (Regeneration I)
 
