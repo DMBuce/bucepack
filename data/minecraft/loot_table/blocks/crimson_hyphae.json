@@ -31,11 +31,11 @@
                   }
                 }
               ],
-              "name": "minecraft:crimson_hyphae.jsonwood"
+              "name": "minecraft:crimson_hyphae"
             },
             {
               "type": "minecraft:item",
-              "name": "minecraft:crimson_hyphae.jsonlog"
+              "name": "minecraft:crimson_stem"
             }
           ]
         }
@@ -43,5 +43,5 @@
       "rolls": 1.0
     }
   ],
-  "random_sequence": "minecraft:blocks/crimson_hyphae.jsonwood"
+  "random_sequence": "minecraft:blocks/crimson_hyphae"
 }

@@ -31,11 +31,11 @@
                   }
                 }
               ],
-              "name": "minecraft:warped_hyphae.jsonwood"
+              "name": "minecraft:warped_hyphae"
             },
             {
               "type": "minecraft:item",
-              "name": "minecraft:warped_hyphae.jsonlog"
+              "name": "minecraft:warped_stem"
             }
           ]
         }
@@ -43,5 +43,5 @@
       "rolls": 1.0
     }
   ],
-  "random_sequence": "minecraft:blocks/warped_hyphae.jsonwood"
+  "random_sequence": "minecraft:blocks/warped_hyphae"
 }
