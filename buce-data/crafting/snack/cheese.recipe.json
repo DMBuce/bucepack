@@ -9,7 +9,7 @@
     "id": "minecraft:player_head",
     "components": {
       "minecraft:custom_model_data": 22183,
-      "minecraft:item_name": "'Cheese'",
+      "minecraft:item_name": "'Smoked Cheese'",
       "minecraft:food": {
         "nutrition": 6,
         "saturation": 7.2

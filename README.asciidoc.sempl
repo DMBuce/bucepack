@@ -582,13 +582,18 @@ Adds placeable food and makes glistering melons and popped chorus fruit edible.
 
 * cooked porkchop + honey bottle → honey glazed ham
 * 2 bread + cooked porkchop + big dripleaf + beetroot → 2 sandwich
-* smelting: milk bucket → cheese
+* smelting: milk bucket → smoked cheese
 * 3 milk bucket + sugar + carrot + 3 wheat + egg → carrot cake
 * apple + sugar + egg → apple pie
 * chorus fruit + sugar + egg → chorus pie
 * pitcher pod + sugar + egg → pitcher pod pie
 * pumpkin + sugar + egg → pumpkin pie
 * sweetberries + sugar + egg → sweetberry pie
+* glistering melon + sweet berries + glass bottle → glistering jam (negates withering)
+* torchfower seeds + blaze powder + glass bottle → hot & spicy jelly (negates slowness)
+* chorus fruit + fermented spider eye + glass bottle → fermented chorus fruit (negates levitation)
+* golden carrot + ghast tear + glass bottle → pickled carrots (provides night vision)
+* honey block + 4 brick → honey jar (provides regeneration)
 
 ====
 
@@ -596,19 +601,11 @@ Adds placeable food and makes glistering melons and popped chorus fruit edible.
 
 === Elixir Crafting
 
-Adds placeable foods that stack to 16 and have a chance to give potion effects.
-
-.Summary of recipes
-[%collapsible]
-====
-
-* 6 Glistering Melon + 2 Sugar + Dragon Breath → 4 Glistering Jam (50% Speed I, 50% Instant Health II)
-* 6 Torchfower Seeds + 2 Blaze Powder + Magma Cream → 4 Hot Pepper Jelly (33% Strength II, 33% Fire Resistance, 33% Haste II)
-* 6 Golden Carrot + 2 Fermented Spider Eye + Nether Wart → 4 Fermented Carrots (50% Night Vision, 50% Invisibility)
-* 6 Chorus Fruit + 2 Ghast Tears + Phantom Membrane → 4 Pickled Chorus Fruit (50% Levitation, 50% Slow Falling)
-* Honey Block + 4 Brick → Honey Jar (Regeneration I)
-
-====
+Lets you add a non-splash, non-lingering potion to a honey bottle in the
+crafting grid.
+Honey bottles infused with the same potion effect stack to 16.
+The potion effect is applied when the honey bottle is drunk
+despite not being shown in the tooltip.
 
 {!./bin/packsummary crafting_elixir}
 

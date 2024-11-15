@@ -2,22 +2,16 @@
   "type": "minecraft:crafting_shapeless",
   "category": "misc",
   "ingredients": [
-    "minecraft:fermented_spider_eye",
-    "minecraft:nether_wart",
-    "minecraft:fermented_spider_eye",
     "minecraft:golden_carrot",
-    "minecraft:golden_carrot",
-    "minecraft:golden_carrot",
-    "minecraft:golden_carrot",
-    "minecraft:golden_carrot",
-    "minecraft:golden_carrot"
+    "minecraft:ghast_tear",
+    "minecraft:glass_bottle"
   ],
   "result": {
-    "count": 4,
+    "count": 1,
     "id": "minecraft:player_head",
     "components": {
       "minecraft:custom_model_data": 22183,
-      "minecraft:item_name": "'Fermented Carrots'",
+      "minecraft:item_name": "'Pickled Carrots'",
       "minecraft:max_stack_size": 16,
       "minecraft:food": {
         "nutrition": 6,
@@ -25,20 +19,16 @@
         "can_always_eat": true
       },
       "minecraft:consumable": {
+		"has_consume_particles": false,
         "on_consume_effects": [
           {
             "type": "minecraft:apply_effects",
-            "probability": 0.5,
+            "probability": 1.0,
             "effects": [
               {
                 "id": "minecraft:night_vision",
                 "amplifier": 0,
-                "duration": 9600
-              },
-              {
-                "id": "minecraft:invisibility",
-                "amplifier": 0,
-                "duration": 9600
+                "duration": 3600
               }
             ]
           }

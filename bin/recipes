@@ -93,7 +93,7 @@ with open(f"cache/{pack}.files") as recipe:
     for line in recipe:
         file = line.rstrip()
         if file.startswith("data/minecraft/recipe/") or file.startswith("data/buce/recipe/"):
-            print(file, file=sys.stderr)
+            #print(file, file=sys.stderr)
             with open(file) as f:
                 r = json.load(f)
                 rhandler[r['type']](r)

@@ -1,0 +1,7 @@
+{
+  "type": "minecraft:crafting_transmute",
+  "category": "misc",
+  "input": "minecraft:potion",
+  "material": "minecraft:honey_bottle",
+  "result": "minecraft:honey_bottle"
+}
