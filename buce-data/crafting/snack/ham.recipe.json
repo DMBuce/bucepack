@@ -10,7 +10,7 @@
     "id": "minecraft:player_head",
     "components": {
       "minecraft:custom_model_data": 22183,
-      "minecraft:item_name": "'Honey Glazed Ham'",
+      "minecraft:item_name": "'Glazed Ham'",
       "minecraft:food": {
         "nutrition": 10,
         "saturation": 16
