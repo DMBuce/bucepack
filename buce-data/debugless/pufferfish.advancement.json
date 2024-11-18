@@ -1,0 +1,37 @@
+{
+	"display": {
+		"icon": {
+			"id": "minecraft:barrier"
+		},
+		"title": {
+			"text": "Error found, command to fix it:"
+		},
+		"description": {
+			"text": "/advancement revoke @s from buce:errors"
+		},
+		"show_toast": false,
+		"announce_to_chat": false,
+		"hidden": true,
+		"frame": "task"
+	},
+	"parent": "buce:errors",
+	"criteria": {
+		"c1": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player": {
+					"equipment": {
+						"offhand": {
+							"items": [
+								"minecraft:pufferfish_bucket"
+							]
+						}
+					}
+				}
+			}
+		}
+	},
+	"rewards": {
+		"function": "buce:debugless/pufferfish"
+	}
+}

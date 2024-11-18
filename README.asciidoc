@@ -2780,6 +2780,9 @@ can see the distance to the lodestone.
 A player holding a recovery compass in the offhand
 can see the distance to their death point.
 
+A player holding a bucket of pufferfish in the offhand
+can see their elevation.
+
 Light blocks in a player's offhand
 show the current light level at the player's feet.
 The light level shown is the block light or
