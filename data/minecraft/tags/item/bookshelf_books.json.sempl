@@ -1,18 +1,12 @@
 {
   "replace": false,
   "values": [
-    "minecraft:paper",
     "minecraft:map",
     "minecraft:filled_map",
     "minecraft:potion",
     "minecraft:splash_potion",
     "minecraft:lingering_potion",
-    "minecraft:{!./bin/allitems | grep '^music_disc_'}",
-    "minecraft:creeper_banner_pattern",
-    "minecraft:flower_banner_pattern",
-    "minecraft:globe_banner_pattern",
-    "minecraft:mojang_banner_pattern",
-    "minecraft:piglin_banner_pattern",
-    "minecraft:skull_banner_pattern"
+    "minecraft:{!./bin/allitems | grep -e '^music_disc_' -e 'banner_pattern$'}",
+    "minecraft:paper"
   ]
 }
