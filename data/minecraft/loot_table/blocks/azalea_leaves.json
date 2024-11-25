@@ -37,10 +37,10 @@
                   ]
                 }
               ],
-              "name": "minecraft:cherry_leaves"
+              "name": "minecraft:azalea_leaves"
             },
             {
-              "type": "minecraft:item",
+              "type": "minecraft:alternatives",
               "conditions": [
                 {
                   "condition": "minecraft:survives_explosion"
@@ -56,7 +56,24 @@
                   "enchantment": "minecraft:fortune"
                 }
               ],
-              "name": "minecraft:cherry_sapling"
+              "children": [
+                {
+                  "type": "minecraft:item",
+                  "conditions": [
+                    {
+                      "condition": "minecraft:location_check",
+                      "predicate": {
+                        "biomes": "#minecraft:is_nether"
+                      }
+                    }
+                  ],
+                  "name": "minecraft:dead_bush"
+                },
+                {
+                  "type": "minecraft:item",
+                  "name": "minecraft:azalea"
+                }
+              ]
             }
           ]
         }
@@ -130,64 +147,7 @@
         }
       ],
       "rolls": 1.0
-    },
-    {
-      "bonus_rolls": 0.0,
-      "conditions": [
-        {
-          "condition": "minecraft:inverted",
-          "term": {
-            "condition": "minecraft:any_of",
-            "terms": [
-              {
-                "condition": "minecraft:match_tool",
-                "predicate": {
-                  "items": "minecraft:shears"
-                }
-              },
-              {
-                "condition": "minecraft:match_tool",
-                "predicate": {
-                  "predicates": {
-                    "minecraft:enchantments": [
-                      {
-                        "enchantments": "minecraft:silk_touch",
-                        "levels": {
-                          "min": 1
-                        }
-                      }
-                    ]
-                  }
-                }
-              }
-            ]
-          }
-        }
-      ],
-      "entries": [
-        {
-          "type": "minecraft:item",
-          "conditions": [
-            {
-              "condition": "minecraft:survives_explosion"
-            },
-            {
-              "chances": [
-                0.005,
-                0.0055555557,
-                0.00625,
-                0.008333334,
-                0.025
-              ],
-              "condition": "minecraft:table_bonus",
-              "enchantment": "minecraft:fortune"
-            }
-          ],
-          "name": "minecraft:pink_petals"
-        }
-      ],
-      "rolls": 1.0
     }
   ],
-  "random_sequence": "minecraft:blocks/cherry_leaves"
+  "random_sequence": "minecraft:blocks/azalea_leaves"
 }

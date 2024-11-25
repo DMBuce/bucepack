@@ -708,9 +708,7 @@ They shouldn't add any lag to your game.
 === Shearless
 
 Makes hoes able to harvest blocks that are normally obtained with shears.
-In addition, hoes harvest bamboo saplings faster than normal,
-and grass drops dead bushes when harvested
-with a hoe or shears in badlands, desert, or nether biomes.
+In addition, hoes harvest bamboo saplings faster than normal.
 
 image::https://i.imgur.com/7tN7Zij.png[Shearless]
 
@@ -730,7 +728,7 @@ Fortune level.
 The drop rate of jungle saplings is slightly increased when harvested with
 Fortune, to a maximum of 5% with Fortune III.
 
-Cherry leaves have a chance to drop pink petals.
+Azalea trees in the nether drop dead bushes instead of azalea bushes.
 
 Bamboo, mushrooms, fungi, and nether roots
 can be planted on composters.

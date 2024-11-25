@@ -512,8 +512,9 @@ blue_fire_FILES := $(DEFAULT_DATA_FILES) \
 
 farmable_FILES := $(DEFAULT_DATA_FILES) \
 	data/buce/advancement/farmable.json \
+	data/minecraft/loot_table/blocks/azalea_leaves.json \
 	data/minecraft/loot_table/blocks/beetroots.json \
-	data/minecraft/loot_table/blocks/cherry_leaves.json \
+	data/minecraft/loot_table/blocks/flowering_azalea_leaves.json \
 	data/minecraft/loot_table/blocks/infested_*.json \
 	data/minecraft/loot_table/blocks/jungle_leaves.json \
 	data/minecraft/loot_table/blocks/wheat.json \
