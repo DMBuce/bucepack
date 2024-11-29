@@ -1855,8 +1855,10 @@ drop 2 shells.
 ====
 
 ```
+data/minecraft/loot_table/blocks/azalea_leaves.json
 data/minecraft/loot_table/blocks/beetroots.json
 data/minecraft/loot_table/blocks/cherry_leaves.json
+data/minecraft/loot_table/blocks/flowering_azalea_leaves.json
 data/minecraft/loot_table/blocks/infested_chiseled_stone_bricks.json
 data/minecraft/loot_table/blocks/infested_cobblestone.json
 data/minecraft/loot_table/blocks/infested_cracked_stone_bricks.json
