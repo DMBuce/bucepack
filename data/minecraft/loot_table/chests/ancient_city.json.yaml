@@ -59,7 +59,7 @@ pools:
       - { type: loot_table, weight: 7,            table: loot_overhaul/coal }
   - rolls: 1
     entries:
-      - { type: empty, weight: 75 }
+      - { type: empty, weight: 72 }
       - { type: item, weight: 4, item: ward_armor_trim_smithing_template }
-      - { type: item,            item: silence_armor_trim_smithing_template }
+      - { type: item, weight: 4, item: silence_armor_trim_smithing_template }
 random_sequence: "minecraft:chests/ancient_city"
