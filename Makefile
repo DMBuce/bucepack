@@ -108,7 +108,6 @@ DATAPACKFILES = \
 	#loot_overhaul_starter_relic.zip \
 	#loot_overhaul_treasure_seeds.zip \
 	#network_deep.zip \
-	#relics_archy.zip \
 	#relics_deep.zip \
 	#relics_mythic.zip \
 	#worldgen_apocalypse.zip \
@@ -566,6 +565,7 @@ loot_overhaul_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell find buce-data/loot_overhaul -type f | ./bin/ext2dir) \
 	$(shell find data/minecraft/loot_table/orig/{chests,gameplay/{fishing,piglin_bartering.*}} -type f | sed '/spawn_bonus/d; s|orig/||' | ./bin/ext2dir) \
 	$(wildcard data/minecraft/tags/worldgen/structure/on_*_maps.json) \
+	data/minecraft/loot_table/archaeology/trail_ruins_common.json \
 	data/minecraft/recipe/diamond_horse_armor.json \
 	data/minecraft/recipe/gold_horse_armor.json \
 	data/minecraft/recipe/iron_horse_armor.json \
@@ -595,10 +595,6 @@ relics_deep_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell find buce-data/deep -type f | ./bin/ext2dir) \
 	data/buce/tags/item/relic/templates.json \
 	data/buce/function/var.mcfunction \
-
-relics_archy_FILES := $(DEFAULT_DATA_FILES) \
-	$(shell find data/minecraft/loot_table/archaeology/ -name \*.yaml | ./bin/ext2dir) \
-	$(relic_FILES) \
 
 relics_mythic_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell find buce-data/ -name '*relics_mythic*' | ./bin/ext2dir) \
@@ -1644,12 +1640,6 @@ starter_bonus_chest.zip: $(starter_bonus_chest_FILES)
 	./bin/ziprename _$(@:.zip=) "" $@
 
 wandering_loot.zip: $(wandering_loot_FILES)
-	cp meta/$(@:.zip=.png) pack.png
-	sempl meta/$(@:.zip=.mcmeta.sempl) pack.mcmeta
-	zip $@ pack.png pack.mcmeta $^
-	./bin/ziprename _$(@:.zip=) "" $@
-
-relics_archy.zip: $(relics_archy_FILES)
 	cp meta/$(@:.zip=.png) pack.png
 	sempl meta/$(@:.zip=.mcmeta.sempl) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^

@@ -3,16 +3,15 @@ pools:
   - rolls: 1
     entries:
       - { type: item,  weight: 2,  item: emerald }
-      - { type: item,  weight: 1,  item: wheat }
-      - { type: loot_table, weight: 1, table: relic/random }
+      - { type: item,  weight: 2,  item: wheat }
       - { type: item,  weight: 2,  item: wooden_hoe }
       - { type: item,  weight: 2,  item: clay }
       - { type: item,  weight: 2,  item: brick }
-      - { type: item,  weight: 2,  item: yellow_dye }
-      - { type: item,  weight: 2,  item: blue_dye }
-      - { type: item,  weight: 2,  item: light_blue_dye }
-      - { type: item,  weight: 2,  item: white_dye }
-      - { type: item,  weight: 2,  item: orange_dye }
+      - { type: item,  weight: 2,  item: yellow_carpet }
+      - { type: item,  weight: 2,  item: blue_carpet }
+      - { type: item,  weight: 2,  item: light_blue_carpet }
+      - { type: item,  weight: 2,  item: white_carpet }
+      - { type: item,  weight: 2,  item: orange_carpet }
       - { type: item,  weight: 2,  item: red_candle }
       - { type: item,  weight: 2,  item: green_candle }
       - { type: item,  weight: 2,  item: purple_candle }
