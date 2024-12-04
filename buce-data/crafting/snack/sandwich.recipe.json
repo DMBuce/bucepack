@@ -16,7 +16,7 @@
     "count": 2,
     "id": "minecraft:player_head",
     "components": {
-      "minecraft:custom_model_data": 22183,
+      "minecraft:custom_model_data": {"floats": [22183]},
       "minecraft:item_name": "'Sandwich'",
       "minecraft:food": {
         "nutrition": 8,

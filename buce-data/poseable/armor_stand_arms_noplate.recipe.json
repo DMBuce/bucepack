@@ -11,7 +11,7 @@
     "count": 1,
     "id": "minecraft:armor_stand",
     "components": {
-      "custom_model_data": 22211,
+      "minecraft:custom_model_data": {"floats": [22211]},
       "minecraft:lore": [
         "'§r§7Arms'",
         "'§r§7No Base Plate'"

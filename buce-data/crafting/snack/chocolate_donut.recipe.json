@@ -14,7 +14,7 @@
     "count": 1,
     "id": "minecraft:player_head",
     "components": {
-      "minecraft:custom_model_data": 22183,
+      "minecraft:custom_model_data": {"floats": [22183]},
       "minecraft:item_name": "'Chocolate Glazed Donut'",
       "minecraft:food": {
         "nutrition": 5,
