@@ -777,7 +777,7 @@ breeding_overhaul_FILES := $(DEFAULT_DATA_FILES) \
 poseable_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell find buce-data/poseable -type f | ./bin/ext2dir) \
 	data/minecraft/loot_table/entities/armor_stand.json \
-	assets/minecraft/models/item/armor_stand.json \
+	assets/minecraft/items/armor_stand.json \
 	assets/minecraft/models/item/armor_stand*arms*plate.json \
 	assets/minecraft/textures/item/armor_stand*arms*plate.png \
 

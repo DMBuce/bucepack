@@ -1,0 +1,33 @@
+{
+  "model": {
+    "type": "minecraft:range_dispatch",
+    "property": "minecraft:custom_model_data",
+    "entries": [
+      {
+        "threshold": 22210,
+        "model": {
+          "type": "minecraft:model",
+          "model": "minecraft:item/armor_stand_noarms_noplate"
+        }
+      },
+      {
+        "threshold": 22211,
+        "model": {
+          "type": "minecraft:model",
+          "model": "minecraft:item/armor_stand_arms_noplate"
+        }
+      },
+      {
+        "threshold": 22212,
+        "model": {
+          "type": "minecraft:model",
+          "model": "minecraft:item/armor_stand_arms_plate"
+        }
+      }
+    ],
+    "fallback": {
+      "type": "minecraft:model",
+      "model": "minecraft:item/armor_stand"
+    }
+  }
+}
