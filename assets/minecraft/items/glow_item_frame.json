@@ -1,0 +1,19 @@
+{
+  "model": {
+    "type": "minecraft:range_dispatch",
+    "property": "minecraft:custom_model_data",
+    "entries": [
+      {
+        "threshold": 22183,
+        "model": {
+          "type": "minecraft:model",
+          "model": "minecraft:item/invis_glow_item_frame"
+        }
+      }
+    ],
+    "fallback": {
+      "type": "minecraft:model",
+      "model": "minecraft:item/glow_item_frame"
+    }
+  }
+}

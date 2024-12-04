@@ -803,11 +803,10 @@ phantasmal_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell find buce-data/phantasmal -type f | ./bin/ext2dir) \
 	$(wildcard assets/minecraft/models/item/invis_*.json) \
 	$(wildcard assets/minecraft/textures/item/invis_*.png) \
-	assets/minecraft/models/item/glow_item_frame.json \
-	assets/minecraft/models/item/item_frame.json \
+	assets/minecraft/items/item_frame.json \
+	assets/minecraft/items/glow_item_frame.json \
 	assets/minecraft/textures/item/light_* \
 	data/minecraft/loot_table/entities/phantom.json \
-	#data/buce/tags/item/relic/templates.json \
 
 phantasmal_end_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell find buce-data/phantasmal_end -type f | ./bin/ext2dir) \
