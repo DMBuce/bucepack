@@ -190,6 +190,9 @@ for t in "${stemtypes[@]}"; do
 		EOF
 done
 
+# add new biomes
+touch data/minecraft/worldgen/world_preset/*.sempl
+
 # generate custom biomes
 cp $latest.jar/data/minecraft/worldgen/biome/stony_peaks.json \
 	data/minecraft/worldgen/biome/granite_peaks.json
