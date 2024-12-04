@@ -140,7 +140,6 @@ block underneath:
 
 ```
 assets/minecraft/blockstates/note_block.json
-assets/minecraft/models/item/note_block.json
 ```
 
 ====
@@ -1294,6 +1293,13 @@ data/minecraft/recipe/oak_trapdoor.json
 data/minecraft/recipe/oak_wood.json
 data/minecraft/recipe/orange_banner.json
 data/minecraft/recipe/oxidized_cut_copper_stairs.json
+data/minecraft/recipe/pale_oak_fence_gate.json
+data/minecraft/recipe/pale_oak_fence.json
+data/minecraft/recipe/pale_oak_pressure_plate.json
+data/minecraft/recipe/pale_oak_sign.json
+data/minecraft/recipe/pale_oak_stairs.json
+data/minecraft/recipe/pale_oak_trapdoor.json
+data/minecraft/recipe/pale_oak_wood.json
 data/minecraft/recipe/pink_banner.json
 data/minecraft/recipe/polished_andesite_stairs.json
 data/minecraft/recipe/polished_blackstone_brick_stairs.json
@@ -1311,6 +1317,7 @@ data/minecraft/recipe/quartz_stairs.json
 data/minecraft/recipe/red_banner.json
 data/minecraft/recipe/red_nether_brick_stairs.json
 data/minecraft/recipe/red_sandstone_stairs.json
+data/minecraft/recipe/resin_brick_stairs.json
 data/minecraft/recipe/sandstone_stairs.json
 data/minecraft/recipe/shield.json
 data/minecraft/recipe/smooth_quartz_stairs.json
@@ -1334,6 +1341,7 @@ data/minecraft/recipe/stripped_dark_oak_wood.json
 data/minecraft/recipe/stripped_jungle_wood.json
 data/minecraft/recipe/stripped_mangrove_wood.json
 data/minecraft/recipe/stripped_oak_wood.json
+data/minecraft/recipe/stripped_pale_oak_wood.json
 data/minecraft/recipe/stripped_spruce_wood.json
 data/minecraft/recipe/stripped_warped_hyphae.json
 data/minecraft/recipe/tuff_brick_stairs.json
@@ -1789,6 +1797,7 @@ data/minecraft/loot_table/blocks/glow_lichen.json
 data/minecraft/loot_table/blocks/hanging_roots.json
 data/minecraft/loot_table/blocks/large_fern.json
 data/minecraft/loot_table/blocks/nether_sprouts.json
+data/minecraft/loot_table/blocks/pale_hanging_moss.json
 data/minecraft/loot_table/blocks/seagrass.json
 data/minecraft/loot_table/blocks/short_grass.json
 data/minecraft/loot_table/blocks/small_dripleaf.json
@@ -1857,7 +1866,6 @@ drop 2 shells.
 ```
 data/minecraft/loot_table/blocks/azalea_leaves.json
 data/minecraft/loot_table/blocks/beetroots.json
-data/minecraft/loot_table/blocks/cherry_leaves.json
 data/minecraft/loot_table/blocks/flowering_azalea_leaves.json
 data/minecraft/loot_table/blocks/infested_chiseled_stone_bricks.json
 data/minecraft/loot_table/blocks/infested_cobblestone.json
@@ -2352,6 +2360,7 @@ Light blocks spawn in woodland mansion and ancient city chests.
 ====
 
 ```
+data/minecraft/loot_table/archaeology/trail_ruins_common.json
 data/minecraft/loot_table/chests/abandoned_mineshaft.json
 data/minecraft/loot_table/chests/ancient_city_ice_box.json
 data/minecraft/loot_table/chests/ancient_city.json
@@ -3800,6 +3809,7 @@ data/minecraft/worldgen/configured_feature/oak_bees_0002.json
 data/minecraft/worldgen/configured_feature/oak_bees_002.json
 data/minecraft/worldgen/configured_feature/oak_bees_005.json
 data/minecraft/worldgen/configured_feature/oak.json
+data/minecraft/worldgen/configured_feature/pale_oak_bonemeal.json
 data/minecraft/worldgen/configured_feature/pale_oak_creaking.json
 data/minecraft/worldgen/configured_feature/pale_oak.json
 data/minecraft/worldgen/configured_feature/pine.json

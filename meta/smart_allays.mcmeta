@@ -1,6 +1,6 @@
 {
   "pack": {
-    "pack_format": 57,
+    "pack_format": 61,
     "description": "Buce's Smart Allays: Bind allays to note blocks with shift-right-click"
   },
   "root": {

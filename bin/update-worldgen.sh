@@ -62,6 +62,11 @@ for t in "${logtypes[@]}"; do
 		  "pools": [
 		    {
 		      "bonus_rolls": 0.0,
+		      "conditions": [
+		        {
+		          "condition": "minecraft:survives_explosion"
+		        }
+		      ],
 		      "entries": [
 		        {
 		          "type": "minecraft:alternatives",
@@ -72,14 +77,16 @@ for t in "${logtypes[@]}"; do
 		                {
 		                  "condition": "minecraft:match_tool",
 		                  "predicate": {
-		                    "enchantments": [
-		                      {
-		                        "enchantment": "minecraft:silk_touch",
-		                        "levels": {
-		                          "min": 1
+		                    "predicates": {
+		                      "minecraft:enchantments": [
+		                        {
+		                          "enchantments": "minecraft:silk_touch",
+		                          "levels": {
+		                            "min": 1
+		                          }
 		                        }
-		                      }
-		                    ]
+		                      ]
+		                    }
 		                  }
 		                }
 		              ],
@@ -87,11 +94,6 @@ for t in "${logtypes[@]}"; do
 		            },
 		            {
 		              "type": "minecraft:item",
-		              "conditions": [
-		                {
-		                  "condition": "minecraft:survives_explosion"
-		                }
-		              ],
 		              "name": "minecraft:${t}_log"
 		            }
 		          ]
@@ -99,7 +101,8 @@ for t in "${logtypes[@]}"; do
 		      ],
 		      "rolls": 1.0
 		    }
-		  ]
+		  ],
+		  "random_sequence": "minecraft:blocks/${t}_wood"
 		}
 		EOF
 done
@@ -142,6 +145,11 @@ for t in "${stemtypes[@]}"; do
 		  "pools": [
 		    {
 		      "bonus_rolls": 0.0,
+		      "conditions": [
+		        {
+		          "condition": "minecraft:survives_explosion"
+		        }
+		      ],
 		      "entries": [
 		        {
 		          "type": "minecraft:alternatives",
@@ -152,14 +160,16 @@ for t in "${stemtypes[@]}"; do
 		                {
 		                  "condition": "minecraft:match_tool",
 		                  "predicate": {
-		                    "enchantments": [
-		                      {
-		                        "enchantment": "minecraft:silk_touch",
-		                        "levels": {
-		                          "min": 1
+		                    "predicates": {
+		                      "minecraft:enchantments": [
+		                        {
+		                          "enchantments": "minecraft:silk_touch",
+		                          "levels": {
+		                            "min": 1
+		                          }
 		                        }
-		                      }
-		                    ]
+		                      ]
+		                    }
 		                  }
 		                }
 		              ],
@@ -167,11 +177,6 @@ for t in "${stemtypes[@]}"; do
 		            },
 		            {
 		              "type": "minecraft:item",
-		              "conditions": [
-		                {
-		                  "condition": "minecraft:survives_explosion"
-		                }
-		              ],
 		              "name": "minecraft:${t}_stem"
 		            }
 		          ]
@@ -179,7 +184,8 @@ for t in "${stemtypes[@]}"; do
 		      ],
 		      "rolls": 1.0
 		    }
-		  ]
+		  ],
+		  "random_sequence": "minecraft:blocks/${t}_hyphae"
 		}
 		EOF
 done

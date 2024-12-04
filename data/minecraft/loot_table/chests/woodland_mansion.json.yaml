@@ -31,6 +31,7 @@ pools:
       - { type: item, weight: 15, min: 1,  max: 4,  item: coal }
       - { type: loot_table, weight: 20, table: loot_overhaul/sus_stew }
       - { type: item, weight: 10,                  item: cake }
+      - { type: item, weight: 50, min: 2, max: 4, item: resin_clump }
   - rolls: 3
     entries:
       - { type: item, weight: 10, min: 1, max: 8, item: bone }

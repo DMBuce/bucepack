@@ -2,7 +2,7 @@
 
 cd "$(git rev-parse --show-toplevel)"
 
-ls "$(./bin/latest).jar/assets/minecraft/models/item/"* \
+ls "$(./bin/latest).jar/assets/minecraft/items/"* \
 	| ./bin/path2basename \
 	| sort -u
 

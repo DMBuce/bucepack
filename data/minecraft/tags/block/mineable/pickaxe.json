@@ -408,6 +408,11 @@
         "minecraft:waxed_exposed_copper_trapdoor",
         "minecraft:waxed_weathered_copper_trapdoor",
         "minecraft:waxed_oxidized_copper_trapdoor",
-        "minecraft:heavy_core"
+        "minecraft:heavy_core",
+        "minecraft:resin_bricks",
+        "minecraft:resin_brick_slab",
+        "minecraft:resin_brick_wall",
+        "minecraft:resin_brick_stairs",
+        "minecraft:chiseled_resin_bricks"
   ]
 }
