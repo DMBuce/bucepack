@@ -312,7 +312,7 @@ assets/minecraft/textures/entity/chicken.png
 Moves the ravager's eyes to the side of its face.
 
 image::https://i.imgur.com/bJEeUdc.png[Ravager]
-image::https://i.imgur.com/V7miGki.png[Ravager]
+//image::https://i.imgur.com/V7miGki.png[Ravager]
 
 **Downloads**
 
@@ -406,7 +406,7 @@ Classic Netherrack reverts netherrack to its bloody texture from before 1.14.
 
 Classic Lava reverts lava to its less cheesy texture from before 1.5.
 
-Classic Gravel reverts gravel to its beta texture from before 1.0.0.
+//Classic Gravel reverts gravel to its beta texture from before 1.0.0.
 
 Classic Lapis reverts the lapis block to its smooth texture from before 1.6.1.
 
@@ -484,16 +484,6 @@ assets/minecraft/textures/block/lava_flow.png
 assets/minecraft/textures/block/lava_flow.png.mcmeta
 assets/minecraft/textures/block/lava_still.png
 assets/minecraft/textures/block/lava_still.png.mcmeta
-```
-
-====
-
-.https://github.com/DMBuce/bucepack/releases/latest/download/classic_gravel.zip[`classic_gravel.zip`]
-[%collapsible]
-====
-
-```
-assets/minecraft/textures/block/gravel.png
 ```
 
 ====

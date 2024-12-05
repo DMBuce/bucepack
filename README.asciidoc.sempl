@@ -161,7 +161,7 @@ See <<language-support,Language Support>> for details.
 Moves the ravager's eyes to the side of its face.
 
 image::https://i.imgur.com/bJEeUdc.png[Ravager]
-image::https://i.imgur.com/V7miGki.png[Ravager]
+//image::https://i.imgur.com/V7miGki.png[Ravager]
 
 {!./bin/packsummary ravager}
 
@@ -203,7 +203,7 @@ Classic Netherrack reverts netherrack to its bloody texture from before 1.14.
 
 Classic Lava reverts lava to its less cheesy texture from before 1.5.
 
-Classic Gravel reverts gravel to its beta texture from before 1.0.0.
+//Classic Gravel reverts gravel to its beta texture from before 1.0.0.
 
 Classic Lapis reverts the lapis block to its smooth texture from before 1.6.1.
 
@@ -235,7 +235,7 @@ image::https://i.imgur.com/DorMwHO.png[Classic Food]
 * Cake
 ====
 
-{!./bin/packsummary classic_oak classic_obsidian classic_netherrack classic_lava classic_gravel classic_lapis classic_rose classic_food}
+{!./bin/packsummary classic_oak classic_obsidian classic_netherrack classic_lava classic_lapis classic_rose classic_food}
 
 // === Spellsmithing Guide
 //
