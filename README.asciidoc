@@ -140,6 +140,7 @@ block underneath:
 
 ```
 assets/minecraft/blockstates/note_block.json
+assets/minecraft/items/note_block.json
 ```
 
 ====
@@ -306,12 +307,11 @@ assets/minecraft/textures/entity/chicken.png
 ====
 ====
 
-=== Redstone Ravager
+=== Ravager
 
-Reskins ravagers with a texture inspired by the redstone golem
-and redstone monstrosity from Minecraft: Dungeons.
+Moves the ravager's eyes to the side of its face.
 
-//image::https://i.imgur.com/bJEeUdc.png[Ravager]
+image::https://i.imgur.com/bJEeUdc.png[Ravager]
 image::https://i.imgur.com/V7miGki.png[Ravager]
 
 **Downloads**
@@ -321,7 +321,6 @@ image::https://i.imgur.com/V7miGki.png[Ravager]
 ====
 
 ```
-assets/minecraft/sounds.json
 assets/minecraft/textures/entity/illager/ravager.png
 ```
 

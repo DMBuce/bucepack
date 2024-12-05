@@ -156,12 +156,11 @@ See <<language-support,Language Support>> for details.
 
 {!./bin/packsummary duck}
 
-=== Redstone Ravager
+=== Ravager
 
-Reskins ravagers with a texture inspired by the redstone golem
-and redstone monstrosity from Minecraft: Dungeons.
+Moves the ravager's eyes to the side of its face.
 
-//image::https://i.imgur.com/bJEeUdc.png[Ravager]
+image::https://i.imgur.com/bJEeUdc.png[Ravager]
 image::https://i.imgur.com/V7miGki.png[Ravager]
 
 {!./bin/packsummary ravager}

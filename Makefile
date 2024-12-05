@@ -2,7 +2,6 @@
 DATARESOURCEPACKFILES = \
 	cutting_wood.zip \
 	pig_armor.zip \
-	crafting_shell_box.zip \
 	oven_brick.zip \
 	phantasmal.zip \
 	smithing_upgrade.zip \
@@ -45,10 +44,11 @@ DATAPACKFILES = \
 	blue_fire.zip \
 	climbable.zip \
 	crafting_colorful.zip \
-	crafting_snack.zip \
 	crafting_elixir.zip \
 	crafting_loot.zip \
 	crafting_plentiful.zip \
+	crafting_shell_box.zip \
+	crafting_snack.zip \
 	crafting_unpacked.zip \
 	crafting_workstation.zip \
 	curated_bonus_chest.zip \
@@ -257,8 +257,8 @@ tech_arrows_FILES := $(DEFAULT_RESOURCE_FILES) \
 
 ravager_FILES := $(DEFAULT_RESOURCE_FILES) \
 	assets/minecraft/textures/entity/illager/ravager.png \
-	$(wildcard assets/minecraft/sounds/mob/ravager/*.ogg) \
-	assets/minecraft/sounds_ravager.json \
+	#$(wildcard assets/minecraft/sounds/mob/ravager/*.ogg) \
+	#assets/minecraft/sounds_ravager.json \
 
 duck_FILES := $(DEFAULT_RESOURCE_FILES) \
 	$(wildcard assets/minecraft/lang/*_duck.json) \
