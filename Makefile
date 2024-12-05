@@ -14,7 +14,6 @@ RESOURCEPACKFILES = \
 	brew_guide.zip \
 	classic_crunch.zip \
 	classic_food.zip \
-	classic_gravel.zip \
 	classic_lapis.zip \
 	classic_lava.zip \
 	classic_moo.zip \
@@ -35,6 +34,7 @@ RESOURCEPACKFILES = \
 	ravager.zip \
 	tech_arrows.zip \
 	villager_mech.zip \
+	#classic_gravel.zip \
 	#spellsmithing_guide.zip \
 
 DATAPACKFILES = \
