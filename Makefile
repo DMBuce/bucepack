@@ -181,7 +181,7 @@ note_guide_FILES := $(DEFAULT_RESOURCE_FILES) \
 	assets/minecraft/models/block/note_block_9.json \
 	assets/minecraft/models/block/note_block_10.json \
 	assets/minecraft/models/block/note_block_11.json \
-	assets/minecraft/models/item/note_block.json \
+	assets/minecraft/items/note_block.json \
 	assets/minecraft/blockstates/note_block.json \
 
 note_guide_adv_FILES := $(DEFAULT_RESOURCE_FILES) \
