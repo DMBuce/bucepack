@@ -638,9 +638,6 @@ If <<loot-overhaul,Loot Overhaul>> or another source of budding amethyst is inst
 upgrading a bow with budding amethyst creates a **Crystal Bow** with multishot.
 Other enchantments are destroyed when upgrading this way.
 
-When installed as a resource pack,
-many of the upgraded items have custom textures.
-
 {!./bin/packsummary smithing_upgrade}
 
 === Brick Oven

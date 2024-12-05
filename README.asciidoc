@@ -1634,9 +1634,6 @@ If <<loot-overhaul,Loot Overhaul>> or another source of budding amethyst is inst
 upgrading a bow with budding amethyst creates a **Crystal Bow** with multishot.
 Other enchantments are destroyed when upgrading this way.
 
-When installed as a resource pack,
-many of the upgraded items have custom textures.
-
 **Downloads**
 
 .https://github.com/DMBuce/bucepack/releases/latest/download/smithing_upgrade.zip[`smithing_upgrade.zip`]
@@ -2690,7 +2687,7 @@ the item's texture will show the arms and/or baseplate as appropriate.
 ====
 
 ```
-assets/minecraft/models/item/armor_stand.json
+assets/minecraft/items/armor_stand.json
 data/minecraft/loot_table/entities/armor_stand.json
 ```
 
@@ -3280,8 +3277,8 @@ which adds phantoms to the dragon fight.
 ====
 
 ```
-assets/minecraft/models/item/glow_item_frame.json
-assets/minecraft/models/item/item_frame.json
+assets/minecraft/items/glow_item_frame.json
+assets/minecraft/items/item_frame.json
 assets/minecraft/textures/item/light_00.png
 assets/minecraft/textures/item/light_01.png
 assets/minecraft/textures/item/light_02.png
