@@ -554,6 +554,8 @@ crafting_loot_FILES := $(DEFAULT_DATA_FILES) \
 	data/minecraft/recipe/leather_horse_armor.json \
 	data/minecraft/recipe/nametag.json \
 	data/minecraft/recipe/piglin_banner_pattern.json \
+	data/minecraft/recipe/guster_banner_pattern.json \
+	data/minecraft/recipe/flow_banner_pattern.json \
 	data/minecraft/recipe/saddle.json \
 
 curated_bonus_chest_FILES := $(DEFAULT_DATA_FILES) \

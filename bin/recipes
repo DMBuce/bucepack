@@ -27,7 +27,7 @@ def crafting_shapeless(r):
         item = tr(i)
         inputstrs.append( f"{count} {item}" )
 
-    count = r['result']['count']
+    count = r['result']['count'] if "count" in r['result'] else 1
     output = tr(r['result']['id'])
     outputs = f"{count} {output}".removeprefix("1 ")
     inputs = " + ".join(inputstrs).removeprefix("1 ")

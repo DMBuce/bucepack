@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "minecraft:paper",
+    "minecraft:wind_charge"
+  ],
+  "result": {
+    "id": "minecraft:flow_banner_pattern"
+  }
+}

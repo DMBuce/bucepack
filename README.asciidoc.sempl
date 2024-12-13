@@ -464,12 +464,19 @@ Banners dyed this way lose their patterns.
 === Loot Crafting
 
 Adds recipes for uncraftable chest loot items:
-saddles, nametags, horse armor, and snout banner patterns.
+saddles, nametags, horse armor, and banner patterns.
 
 //image::https://i.imgur.com/A6dYFhf.png[Recipes]
-image::https://i.imgur.com/911Oepp.png[Recipes]
+//image::https://i.imgur.com/911Oepp.png[Recipes]
+.Summary of recipes
+[%collapsible]
+====
 
-The leather horse armor recipe is changed to match wolf armor
+{!./bin/recipes crafting_loot | sort}
+
+====
+
+In addition, the leather horse armor recipe is changed to match wolf armor
 and other horse armor as well.
 
 {!./bin/packsummary crafting_loot}
