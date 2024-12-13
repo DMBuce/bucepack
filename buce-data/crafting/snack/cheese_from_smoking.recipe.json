@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:smoking",
+  "category": "misc",
+  "cookingtime": 100,
+  "experience": 0.15,
+  "ingredient": "minecraft:milk_bucket",
+  "result": {
+    "count": 1,
+    "id": "minecraft:player_head",
+    "components": {
+      "minecraft:custom_model_data": {"floats": [22183]},
+      "minecraft:item_name": "'Smoked Cheese'",
+      "minecraft:food": {
+        "nutrition": 6,
+        "saturation": 7.2
+      },
+      "minecraft:consumable": {},
+      "minecraft:note_block_sound": "entity.generic.eat",
+      "minecraft:profile": {
+        "id": [500980024,217664345,-1780560096,-398142751],
+        "properties": [
+          {
+            "name": "textures",
+            "value": "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDVmNjEzMGYxY2Y4YmExNjhjNTdmYzAzNzMwYWUwYzA2ODAzMzMzODAzNTE3MWRhMmZlNTMwMWNkZTM2YTJhNCJ9fX0="
+          }
+        ]
+      }
+    }
+  }
+}
