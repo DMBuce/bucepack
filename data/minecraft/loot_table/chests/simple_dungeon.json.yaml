@@ -6,7 +6,7 @@ pools:
       - { type: item, weight: 15,                  item: golden_apple }
       - { type: item, weight: 2,                   item: enchanted_golden_apple }
       - { type: item, weight: 2,                   item: spawner }
-      - { type: tag,  weight: 30, expand: true,    tag: music_discs }
+      - { type: tag,  weight: 30, expand: true,    tag: creeper_drop_music_discs }
       - { type: item, weight: 10, item: iron_pickaxe, enchant_lvl: { min: 20, max: 24 } }
       - { type: item, weight: 10, item: iron_sword, enchant_lvl: { min: 20, max: 24 } }
       - { type: item, weight: 10,                  item: skeleton_skull }

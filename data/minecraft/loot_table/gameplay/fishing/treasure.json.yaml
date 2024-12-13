@@ -3,7 +3,7 @@ pools:
   - rolls: 1
     entries:
       - { type: item, weight: 1, item: lead }
-      - { type: tag,  weight: 1, expand: true, tag: music_discs }
+      - { type: tag,  weight: 1, expand: true, tag: creeper_drop_music_discs }
       - type: item
         weight: 1
         item: bow

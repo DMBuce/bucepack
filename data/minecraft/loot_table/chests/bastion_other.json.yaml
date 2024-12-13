@@ -10,7 +10,7 @@ pools:
       - { type: item, weight: 12, count: 1,         item: ancient_debris }
       - { type: item, weight: 4,  count: 1,         item: netherite_scrap }
       - { type: item, weight: 10, min: 10, max: 22, item: spectral_arrow }
-      - { type: tag,  weight: 14, expand: true,     tag:  music_discs }
+      - { type: tag,  weight: 14, expand: true,     tag:  creeper_drop_music_discs }
       - { type: item, weight: 12, min: 6,  max: 17, item: golden_carrot }
       - { type: item, weight: 9,  count: 1,         item: golden_apple }
       - { type: item, weight: 10, item: book, enchant_rand: [

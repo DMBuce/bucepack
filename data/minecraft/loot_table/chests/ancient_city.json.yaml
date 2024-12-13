@@ -24,7 +24,7 @@ pools:
       - { type: item, weight: 2, count: 1,        item: diamond_sword,
           damage: {min: 0.8,max: 1.0}, enchant_lvl: {min: 40,max: 49}
         }
-      - { type: tag,  weight: 2, expand: true,    tag: music_discs }
+      - { type: tag,  weight: 2, expand: true,    tag: creeper_drop_music_discs }
       - { type: item, weight: 2,  item: painting,
           min: 3, max: 6,
           components: '{"minecraft:entity_data": {"id":"minecraft:painting","variant":"minecraft:earth"}}'

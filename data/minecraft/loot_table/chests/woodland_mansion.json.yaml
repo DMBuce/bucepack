@@ -7,7 +7,7 @@ pools:
       - { type: item, weight: 15, item: ender_chest }
       - { type: item, weight: 5,  item: enchanted_golden_apple }
       - { type: item, weight: 15, item: enchanting_table }
-      - { type: tag,  weight: 15, expand: true, tag: music_discs }
+      - { type: tag,  weight: 15, expand: true, tag: creeper_drop_music_discs }
       - { type: item, weight: 20, item: chipped_anvil }
       - { type: item, weight: 2,  item: conduit }
       - { type: item, weight: 2,  item: beacon }

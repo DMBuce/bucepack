@@ -2292,7 +2292,7 @@ data/minecraft/loot_table/entities/player.json
 Overhauls the vanilla loot tables to make early-to-midgame exploration more
 exciting. Many, though not all, of the loot changes are described below.
 
-Saddles, nametags, horse armor, and snout banner patterns are craftable
+Saddles, nametags, horse armor, and banner patterns are craftable
 using the same recipes as the <<loot-crafting,Loot Crafting>> datapack.
 These items and leads are removed from the loot tables
 to make room for other loot.

@@ -11,7 +11,7 @@ pools:
       - { type: item, weight: 10, min: 8, max: 16,item: mossy_cobblestone }
       - { type: item, weight: 5,  min: 1, max: 8, item: moss_block }
       - { type: item, weight: 1,  min: 4, max: 8, item: honey_bottle }
-      - { type: tag,  weight: 3,  expand: true,   tag:  music_discs }
+      - { type: tag,  weight: 3,  expand: true,   tag:  creeper_drop_music_discs }
       - { type: item, weight: 1,                  item: enchanted_golden_apple }
       - { type: loot_table, weight: 3, table: loot_overhaul/ench_book }
   - rolls: 1

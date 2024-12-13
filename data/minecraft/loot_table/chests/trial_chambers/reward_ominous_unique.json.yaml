@@ -3,7 +3,6 @@ pools:
     entries:
       - { type: item, weight: 3,                  item: enchanted_golden_apple }
       - { type: item, weight: 3,                  item: flow_armor_trim_smithing_template }
-      - { type: item, weight: 2,                  item: flow_banner_pattern }
-      - { type: item, weight: 1,                  item: music_disc_creator }
-      - { type: item, weight: 1,                  item: heavy_core }
+      - { type: tag,  weight: 2, expand: true,     tag: creeper_drop_music_discs }
+      - { type: item, weight: 2,                  item: heavy_core }
 random_sequence: "minecraft:chests/trial_chambers/reward_ominous_unique"

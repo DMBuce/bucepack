@@ -14,7 +14,7 @@ pools:
     entries:
       - { type: item, weight: 5,  min: 4, max: 8, item: emerald }
       - { type: item, weight: 5,  min: 1, max: 2, item: diamond }
-      - { type: tag,  weight: 1,  expand: true,   tag:  music_discs }
+      - { type: tag,  weight: 1,  expand: true,   tag:  creeper_drop_music_discs }
   - rolls: { min: 0, max: 1 }
     entries:
       - { type: item, weight: 1, item: leather_helmet, enchant_rand: [ "respiration", "aqua_affinity" ] }

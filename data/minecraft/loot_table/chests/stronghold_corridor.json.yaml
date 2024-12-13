@@ -21,7 +21,7 @@ pools:
       - { type: item, weight: 1, min: 1, max: 4,  item: moss_block }
       - { type: item, weight: 1, min: 8, max: 16, item: infested_stone_bricks }
       - { type: item, weight: 1, min: 8, max: 16, item: infested_mossy_stone_bricks }
-      - { type: tag,  weight: 1, expand: true,    tag:  music_discs }
+      - { type: tag,  weight: 1, expand: true,    tag:  creeper_drop_music_discs }
       - { type: loot_table, weight: 1, table: loot_overhaul/ench_book }
   - rolls: 1
     entries:

@@ -35,7 +35,7 @@ pools:
         damage: { min: 0.8, max: 1.0 }
         enchant_lvl: { min: 25, max: 29 }
         item: diamond_pickaxe
-      - { type: tag,  weight: 5, expand: true,   tag:  music_discs }
+      - { type: tag,  weight: 5, expand: true,   tag:  creeper_drop_music_discs }
       - { type: item, weight: 5, item: book, enchant_rand: [
             mending,
             soul_speed,
