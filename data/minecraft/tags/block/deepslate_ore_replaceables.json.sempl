@@ -4,6 +4,6 @@ SEMPL_BRACES = {{}}
 {
   "replace": true,
   "values": [
-{{!grep minecraft: "$(./bin/latest)".jar/data/minecraft/tags/blocks/deepslate_ore_replaceables.json | grep -v -etuff | sed '$s/,$//'}}
+{{!grep minecraft: "$(./bin/latest)".jar/data/minecraft/tags/block/deepslate_ore_replaceables.json | grep -v -etuff | sed '$s/,$//'}}
   ]
 }

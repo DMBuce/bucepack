@@ -4,6 +4,6 @@ SEMPL_BRACES = {{}}
 {
   "replace": true,
   "values": [
-{{!grep minecraft: "$(./bin/latest)".jar/data/minecraft/tags/blocks/needs_stone_tool.json | grep -v -e{copper,lightning_rod} | sed '$s/,$//'}}
+{{!grep minecraft: "$(./bin/latest)".jar/data/minecraft/tags/block/needs_stone_tool.json | grep -v -e{copper,lightning_rod} | sed '$s/,$//'}}
   ]
 }
