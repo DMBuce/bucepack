@@ -15,6 +15,7 @@ pools:
       - { type: item, weight: 15, enchant_rand: "", item: golden_leggings }
       - { type: item, weight: 5,  min: 4,  max: 12, item: glistering_melon_slice,
         components: '{"minecraft:food":{"nutrition":4,"saturation":9.6},"minecraft:consumable":{}}'
+        }
       - { type: item, weight: 5, item: book, enchant_rand: [
             mending,
             soul_speed,
