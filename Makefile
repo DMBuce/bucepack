@@ -504,17 +504,6 @@ global_effects_FILES := $(DEFAULT_DATA_FILES) \
 	data/buce/function/var.mcfunction \
 	data/minecraft/tags/function/load_global_effects.json \
 
-crafting_loot_FILES := $(DEFAULT_DATA_FILES) \
-	data/minecraft/recipe/diamond_horse_armor.json \
-	data/minecraft/recipe/gold_horse_armor.json \
-	data/minecraft/recipe/iron_horse_armor.json \
-	data/minecraft/recipe/leather_horse_armor.json \
-	data/minecraft/recipe/nametag.json \
-	data/minecraft/recipe/piglin_banner_pattern.json \
-	data/minecraft/recipe/guster_banner_pattern.json \
-	data/minecraft/recipe/flow_banner_pattern.json \
-	data/minecraft/recipe/saddle.json \
-
 curated_bonus_chest_FILES := $(DEFAULT_DATA_FILES) \
 	data/minecraft/loot_table/chests/spawn_bonus_chest.json \
 	data/buce/loot_table/loot_overhaul/biome_log.json \
@@ -522,16 +511,11 @@ curated_bonus_chest_FILES := $(DEFAULT_DATA_FILES) \
 
 loot_overhaul_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell find buce-data/loot_overhaul -type f | ./bin/ext2dir) \
+	$(shell find buce-data/crafting/loot -type f | ./bin/ext2dir) \
 	$(shell find data/minecraft/loot_table/orig/{chests,gameplay/{fishing,piglin_bartering.*}} -type f | sed '/spawn_bonus/d; s|orig/||' | ./bin/ext2dir) \
 	$(wildcard data/minecraft/tags/worldgen/structure/on_*_maps.json) \
 	data/minecraft/loot_table/archaeology/trail_ruins_common.json \
-	data/minecraft/recipe/diamond_horse_armor.json \
-	data/minecraft/recipe/gold_horse_armor.json \
-	data/minecraft/recipe/iron_horse_armor.json \
 	data/minecraft/recipe/leather_horse_armor.json \
-	data/minecraft/recipe/nametag.json \
-	data/minecraft/recipe/piglin_banner_pattern.json \
-	data/minecraft/recipe/saddle.json \
 	data/minecraft/tags/item/creeper_drop_music_discs.json \
 	data/minecraft/tags/item/starter_item.json \
 
@@ -753,6 +737,10 @@ crafting_colorful_FILES := $(DEFAULT_DATA_FILES) \
 crafting_elixir_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell find buce-data/crafting/elixir -type f | ./bin/ext2dir) \
 	data/minecraft/loot_table/blocks/player_head.json \
+
+crafting_loot_FILES := $(DEFAULT_DATA_FILES) \
+	$(shell find buce-data/crafting/loot -type f | ./bin/ext2dir) \
+	data/minecraft/recipe/leather_horse_armor.json \
 
 crafting_snack_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell find buce-data/crafting/snack -type f | ./bin/ext2dir) \
