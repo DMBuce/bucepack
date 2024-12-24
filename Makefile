@@ -35,7 +35,6 @@ RESOURCEPACKFILES = \
 	tech_arrows.zip \
 	villager_mech.zip \
 	#classic_gravel.zip \
-	#spellsmithing_guide.zip \
 
 DATAPACKFILES = \
 	$(DATARESOURCEPACKFILES) \
@@ -99,17 +98,13 @@ DATAPACKFILES = \
 	#aggro_bastions.zip \
 	#antidote.zip \
 	#dripblock.zip \
-	#ender_relic.zip \
 	#heirlooms.zip \
 	#hover_mode.zip \
 	#illusory_trader.zip \
 	#leashed.zip \
 	#lichdom.zip \
-	#loot_overhaul_starter_relic.zip \
 	#loot_overhaul_treasure_seeds.zip \
 	#network_deep.zip \
-	#relics_deep.zip \
-	#relics_mythic.zip \
 	#worldgen_apocalypse.zip \
 	#worldgen_desert_breeze.zip \
 
@@ -365,34 +360,6 @@ classic_food_FILES := $(DEFAULT_RESOURCE_FILES) \
 	assets/minecraft/textures/item/rabbit.png \
 	assets/minecraft/textures/item/salmon.png \
 
-spellsmithing_guide_FILES := $(DEFAULT_RESOURCE_FILES) \
-	$(wildcard assets/minecraft/models/item/armor_stand*.json) \
-	$(wildcard assets/minecraft/models/item/diamond_*.json) \
-	$(wildcard assets/minecraft/models/item/invis_*.json) \
-	$(wildcard assets/minecraft/models/item/leather_*.json) \
-	$(wildcard assets/minecraft/models/item/mythic_*.json) \
-	$(wildcard assets/minecraft/models/item/netherite_*.json) \
-	$(wildcard assets/minecraft/models/item/relic_*.json) \
-	$(wildcard assets/minecraft/textures/item/armor_stand_*.png) \
-	$(wildcard assets/minecraft/textures/item/invis_*.png) \
-	$(wildcard assets/minecraft/textures/item/mythic_*.png) \
-	$(wildcard assets/minecraft/textures/item/relic_*.png) \
-	assets/minecraft/models/item/bow.json \
-	assets/minecraft/models/item/crossbow.json \
-	assets/minecraft/models/item/elytra.json \
-	assets/minecraft/models/item/glow_item_frame.json \
-	assets/minecraft/models/item/golden_helmet.json \
-	assets/minecraft/models/item/iron_sword.json \
-	assets/minecraft/models/item/item_frame.json \
-	assets/minecraft/models/item/light.json \
-	assets/minecraft/models/item/netherite_chestplate.json \
-	assets/minecraft/models/item/relic_totem.json \
-	assets/minecraft/models/item/spyglass.json \
-	assets/minecraft/models/item/totem_of_undying.json \
-	assets/minecraft/models/item/trident.json \
-	assets/minecraft/textures/item/relic_totem.png \
-	#assets/minecraft/textures/gui/container/smithing.png \
-
 retronetherrack_FILES := $(DEFAULT_RESOURCE_FILES) \
 	assets/minecraft/textures/block/netherrack.png \
 	assets/minecraft/textures/block/nether_quartz_ore.png \
@@ -449,10 +416,6 @@ gardener_endermen_FILES := $(DEFAULT_DATA_FILES) \
 climbable_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell ls buce-data/climbable* | ./bin/ext2dir) \
 	data/minecraft/tags/block/climbable.json \
-
-illusory_trader_FILES := $(DEFAULT_DATA_FILES) \
-	$(shell find buce-data/illusory/trader -type f | ./bin/ext2dir) \
-	data/buce/tags/item/relic/templates.json \
 
 heirlooms_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell find data/minecraft -name '*heirlooms*' | ./bin/ext2dir) \
@@ -542,11 +505,6 @@ global_effects_FILES := $(DEFAULT_DATA_FILES) \
 	data/buce/function/var.mcfunction \
 	data/minecraft/tags/function/load_global_effects.json \
 
-relic_FILES := $(DEFAULT_DATA_FILES) \
-	$(shell find buce-data/relic -type f | ./bin/ext2dir) \
-	data/buce/loot_table/relic/all.json \
-	#$(spellsmithing_guide_FILES) \
-
 crafting_loot_FILES := $(DEFAULT_DATA_FILES) \
 	data/minecraft/recipe/diamond_horse_armor.json \
 	data/minecraft/recipe/gold_horse_armor.json \
@@ -577,7 +535,6 @@ loot_overhaul_FILES := $(DEFAULT_DATA_FILES) \
 	data/minecraft/recipe/saddle.json \
 	data/minecraft/tags/item/creeper_drop_music_discs.json \
 	data/minecraft/tags/item/starter_item.json \
-	#$(relic_FILES) \
 
 loot_overhaul_treasure_seeds_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell ls buce-data/loot_addons/loot_overhaul_treasure_seeds* | ./bin/ext2dir) \
@@ -591,37 +548,6 @@ loot_overhaul_treasure_barrels_FILES := $(DEFAULT_DATA_FILES) \
 
 wandering_loot_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell find buce-data/wandering -type f | ./bin/ext2dir) \
-
-relics_deep_FILES := $(DEFAULT_DATA_FILES) \
-	$(shell find buce-data/ data/minecraft/ -name '*relics_deep*' | ./bin/ext2dir) \
-	$(shell find buce-data/deep -type f | ./bin/ext2dir) \
-	data/buce/tags/item/relic/templates.json \
-	data/buce/function/var.mcfunction \
-
-relics_mythic_FILES := $(DEFAULT_DATA_FILES) \
-	$(shell find buce-data/ -name '*relics_mythic*' | ./bin/ext2dir) \
-	$(shell find buce-data/mythic -type f | ./bin/ext2dir) \
-	data/buce/function/var.mcfunction \
-	data/minecraft/loot_table/blocks/gilded_blackstone.json \
-	data/minecraft/loot_table/blocks/lodestone.json \
-	data/minecraft/loot_table/entities/bee.json \
-	data/minecraft/loot_table/entities/ghast.json \
-	data/minecraft/loot_table/entities/glow_squid.json \
-	data/minecraft/loot_table/entities/pig.json \
-	data/minecraft/loot_table/entities/sheep.json \
-	data/minecraft/loot_table/entities/sheep/light_gray.json \
-	data/minecraft/loot_table/entities/silverfish.json \
-	data/minecraft/tags/entity_type/frog_food.json \
-	data/minecraft/tags/function/load_relics_mythic.json \
-	data/minecraft/tags/worldgen/structure/seeking_located.json \
-	data/buce/tags/item/relic/templates.json \
-	#data/minecraft/loot_table/entities/endermite.json \
-	#data/minecraft/loot_table/entities/iron_golem.json \
-
-loot_overhaul_starter_relic_FILES := $(DEFAULT_DATA_FILES) \
-	$(relic_FILES) \
-	$(shell ls buce-data/loot_addons/loot_overhaul_starter_relic* | ./bin/ext2dir) \
-	data/buce/loot_table/loot_overhaul/starter_relic_loot_overhaul_starter_relic.json \
 
 starter_bonus_box_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell find buce-data/starter_bonus_box -type f | ./bin/ext2dir) \
@@ -755,10 +681,6 @@ elemental_FILES := $(DEFAULT_DATA_FILES) \
 	data/minecraft/loot_table/entities/breeze.json \
 	data/minecraft/loot_table/entities/iron_golem.json \
 	data/minecraft/loot_table/entities/snow_golem.json \
-
-ender_relic_FILES := $(DEFAULT_DATA_FILES) \
-	$(shell find buce-data/ender_relic -type f | ./bin/ext2dir) \
-	data/buce/loot_table/relic/random.json \
 
 speedy_paths_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell find buce-data/speedy_paths -type f | ./bin/ext2dir) \
@@ -1028,7 +950,6 @@ escape_grind_FILES := $(DEFAULT_DATA_FILES) \
 	data/minecraft/tags/function/respawn_nether.json \
 	#data/buce/advancement/mythic/root.json \
 	#data/buce/recipe/mythic/smithing/searching.json \
-	#data/buce/tags/item/relic/templates.json \
 	#data/minecraft/tags/worldgen/structure/seeking_located.json \
 	#$(shell find buce-data/mythic/searching -type f | ./bin/ext2dir) \
 	#data/minecraft/loot_table/entities/endermite.json \
@@ -1214,12 +1135,6 @@ buce-data/%/root.advancement.json: buce-data/%/root.advancement.json.sempl meta/
 %.json: %.json.yaml data/minecraft/loot_table/loot_table.j2
 	j2 data/minecraft/loot_table/loot_table.j2 $< -o $@
 
-buce-data/relic/all.loot_table.json.yaml: buce-data/relic/random.loot_table.json.yaml
-	sed '/^#/d; 5,$$ s/^      -/  - rolls: 1\n    entries:\n&/' $^ > $@
-
-buce-data/loot_overhaul/starter_relic_loot_overhaul_starter_relic.loot_table.json.yaml: buce-data/relic/random.loot_table.json.yaml
-	cp -v $^ $@
-
 test.zip: $(test_FILES)
 	cp meta/$(@:.zip=.png) pack.png
 	sempl meta/$(@:.zip=.mcmeta.sempl) pack.mcmeta
@@ -1347,12 +1262,6 @@ classic_rose.zip: $(classic_rose_FILES)
 	./bin/ziprename _$(@:.zip=) "" $@
 
 classic_food.zip: $(classic_food_FILES)
-	cp meta/$(@:.zip=.png) pack.png
-	sempl meta/$(@:.zip=.mcmeta.sempl) pack.mcmeta
-	zip $@ pack.png pack.mcmeta $^
-	./bin/ziprename _$(@:.zip=) "" $@
-
-spellsmithing_guide.zip: $(spellsmithing_guide_FILES)
 	cp meta/$(@:.zip=.png) pack.png
 	sempl meta/$(@:.zip=.mcmeta.sempl) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^
@@ -1622,12 +1531,6 @@ loot_overhaul_treasure_seeds.zip: $(loot_overhaul_treasure_seeds_FILES)
 	zip $@ pack.png pack.mcmeta $^
 	./bin/ziprename _$(@:.zip=) "" $@
 
-loot_overhaul_starter_relic.zip: $(loot_overhaul_starter_relic_FILES)
-	cp meta/$(@:.zip=.png) pack.png
-	sempl meta/$(@:.zip=.mcmeta.sempl) pack.mcmeta
-	zip $@ pack.png pack.mcmeta $^
-	./bin/ziprename _$(@:.zip=) "" $@
-
 starter_bonus_box.zip: $(starter_bonus_box_FILES)
 	cp meta/$(@:.zip=.png) pack.png
 	sempl meta/$(@:.zip=.mcmeta.sempl) pack.mcmeta
@@ -1641,18 +1544,6 @@ starter_bonus_chest.zip: $(starter_bonus_chest_FILES)
 	./bin/ziprename _$(@:.zip=) "" $@
 
 wandering_loot.zip: $(wandering_loot_FILES)
-	cp meta/$(@:.zip=.png) pack.png
-	sempl meta/$(@:.zip=.mcmeta.sempl) pack.mcmeta
-	zip $@ pack.png pack.mcmeta $^
-	./bin/ziprename _$(@:.zip=) "" $@
-
-relics_deep.zip: $(relics_deep_FILES)
-	cp meta/$(@:.zip=.png) pack.png
-	sempl meta/$(@:.zip=.mcmeta.sempl) pack.mcmeta
-	zip $@ pack.png pack.mcmeta $^
-	./bin/ziprename _$(@:.zip=) "" $@
-
-relics_mythic.zip: $(relics_mythic_FILES)
 	cp meta/$(@:.zip=.png) pack.png
 	sempl meta/$(@:.zip=.mcmeta.sempl) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^
@@ -1689,12 +1580,6 @@ archived.zip: $(archived_FILES)
 	./bin/ziprename _$(@:.zip=) "" $@
 
 elemental.zip: $(elemental_FILES)
-	cp meta/$(@:.zip=.png) pack.png
-	sempl meta/$(@:.zip=.mcmeta.sempl) pack.mcmeta
-	zip $@ pack.png pack.mcmeta $^
-	./bin/ziprename _$(@:.zip=) "" $@
-
-ender_relic.zip: $(ender_relic_FILES)
 	cp meta/$(@:.zip=.png) pack.png
 	sempl meta/$(@:.zip=.mcmeta.sempl) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^
@@ -1964,8 +1849,7 @@ CLEAN_TARGETS := $(PACKFILES) data/buce pack.mcmeta pack.png test.zip \
 	data/minecraft/loot_table/gameplay/*/*.json \
 	data/minecraft/loot_table/subtables/*.json \
 	data/minecraft/loot_table/subtables/*/*.json \
-	buce-data/relic/all.loot_table.json.yaml \
-	#buce-data/*/subtables/*.json
+
 clean:
 	rm -rf $(CLEAN_TARGETS)
 	git checkout data/buce/loot_table/mythic/chromatic/fireworks.json
