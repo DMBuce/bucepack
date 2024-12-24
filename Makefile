@@ -647,6 +647,7 @@ dripblock_FILES := $(DEFAULT_DATA_FILES) \
 
 archived_FILES := $(DEFAULT_DATA_FILES) \
 	$(wildcard data/minecraft/tags/item/enchantable/*.json) \
+	$(wildcard data/minecraft/tags/enchantment/exclusive_set/*.json) \
 	data/minecraft/recipe/chiseled_bookshelf.json \
 	data/minecraft/tags/block/enchantment_power_provider.json \
 	data/minecraft/tags/block/enchantment_power_transmitter.json \

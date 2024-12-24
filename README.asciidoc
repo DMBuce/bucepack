@@ -712,6 +712,11 @@ and are crafted with leather instead of wooden slabs.
 https://raw.githubusercontent.com/DMBuce/bucepack/refs/heads/master/data/minecraft/tags/block/enchantment_power_transmitter.json[These blocks]
 don't block bookshelves from powering the enchantment table.
 
+Infinity and Mending
+aren't mutually exlusive.
+Neither are
+Frost Walker and Depth Strider.
+
 Axes can be enchanted with Fire Aspect.
 
 Pickaxes and Tridents can be enchanted with Sharpness in the anvil.
@@ -740,6 +745,8 @@ image::https://i.imgur.com/w9MQeFL.png[Enchanting]
 data/minecraft/recipe/chiseled_bookshelf.json
 data/minecraft/tags/block/enchantment_power_provider.json
 data/minecraft/tags/block/enchantment_power_transmitter.json
+data/minecraft/tags/enchantment/exclusive_set/boots.json
+data/minecraft/tags/enchantment/exclusive_set/bow.json
 data/minecraft/tags/entity_type/sensitive_to_impaling.json
 data/minecraft/tags/item/bookshelf_books.json
 data/minecraft/tags/item/enchantable/armor.json
