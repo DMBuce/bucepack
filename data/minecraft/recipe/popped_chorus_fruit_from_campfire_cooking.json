@@ -7,6 +7,7 @@
   "result": {
     "id": "minecraft:popped_chorus_fruit",
     "components": {
+      "minecraft:consumable":{},
       "minecraft:food": {
         "nutrition": 2,
         "saturation": 0.4,
