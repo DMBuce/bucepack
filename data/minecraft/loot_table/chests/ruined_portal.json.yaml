@@ -4,15 +4,15 @@ pools:
       - { type: item, weight: 40, min: 1,  max: 2,  item: obsidian }
       - { type: item, weight: 15,                   item: golden_apple }
       - { type: item, weight: 15, min: 4,  max: 24, item: gold_nugget }
-      - { type: item, weight: 15, enchant_rand: [], item: golden_sword }
-      - { type: item, weight: 15, enchant_rand: [], item: golden_axe }
-      - { type: item, weight: 15, enchant_rand: [], item: golden_hoe }
-      - { type: item, weight: 15, enchant_rand: [], item: golden_shovel }
-      - { type: item, weight: 15, enchant_rand: [], item: golden_pickaxe }
-      - { type: item, weight: 15, enchant_rand: [], item: golden_boots }
-      - { type: item, weight: 15, enchant_rand: [], item: golden_chestplate }
-      - { type: item, weight: 15, enchant_rand: [], item: golden_helmet }
-      - { type: item, weight: 15, enchant_rand: [], item: golden_leggings }
+      - { type: item, weight: 15, enchant_rand: "", item: golden_sword }
+      - { type: item, weight: 15, enchant_rand: "", item: golden_axe }
+      - { type: item, weight: 15, enchant_rand: "", item: golden_hoe }
+      - { type: item, weight: 15, enchant_rand: "", item: golden_shovel }
+      - { type: item, weight: 15, enchant_rand: "", item: golden_pickaxe }
+      - { type: item, weight: 15, enchant_rand: "", item: golden_boots }
+      - { type: item, weight: 15, enchant_rand: "", item: golden_chestplate }
+      - { type: item, weight: 15, enchant_rand: "", item: golden_helmet }
+      - { type: item, weight: 15, enchant_rand: "", item: golden_leggings }
       - { type: item, weight: 5,  min: 4,  max: 12, item: glistering_melon_slice,
         components: '{"minecraft:food":{"nutrition":4,"saturation":9.6}}'
         }
