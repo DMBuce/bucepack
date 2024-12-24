@@ -884,8 +884,9 @@ data/minecraft/tags/block/enderman_holdable.json
 
 === Eyes of Seeking
 
-Lets you use ender eyes to find End Cities and Bastion Remnants
-in addition to Strongholds.
+Lets you use ender eyes to find
+ruined nether portals in the Nether
+and end cities in The End.
 
 **Downloads**
 
