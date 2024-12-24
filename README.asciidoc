@@ -1124,7 +1124,7 @@ data/minecraft/recipe/yellow_terracotta.json
 === Loot Crafting
 
 Adds recipes for uncraftable chest loot items:
-saddles, nametags, horse armor, and banner patterns.
+saddles, nametags, horse armor, banner patterns, and sherds.
 
 //image::https://i.imgur.com/A6dYFhf.png[Recipes]
 //image::https://i.imgur.com/911Oepp.png[Recipes]
@@ -1141,6 +1141,7 @@ saddles, nametags, horse armor, and banner patterns.
 * paper + 1 piglin head → piglin banner pattern
 * paper + 1 wind charge → flow banner pattern
 * string + 1 paper → name tag
+* brick + 1 pottery sherd → 2 pottery sherd
 
 ====
 

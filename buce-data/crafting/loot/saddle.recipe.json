@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "XXX",
+    "S S"
+  ],
+  "key": {
+    "X": "minecraft:leather",
+    "S": "minecraft:string"
+  },
+  "result": {
+    "id": "minecraft:saddle"
+  }
+}

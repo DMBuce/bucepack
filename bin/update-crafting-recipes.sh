@@ -193,3 +193,21 @@ do
 	sed -i 's/_bed/_banner/g' "data/minecraft/recipe/dye_${color}_banner.json"
 done
 
+# loot crafting
+for sherd in $(./bin/allitems | sed -n '/_pottery_sherd$/ s/_pottery_sherd$//p'); do
+	sempl - "$dir/loot/sherd/$sherd.recipe.json" <<-EOF
+		{
+		  "type": "minecraft:crafting_shapeless",
+		  "category": "misc",
+		  "ingredients": [
+		    "minecraft:brick",
+		    "minecraft:${sherd}_pottery_sherd"
+		  ],
+		  "result": {
+		    "count": 2,
+		    "id": "minecraft:${sherd}_pottery_sherd"
+		  }
+		}
+	EOF
+done
+

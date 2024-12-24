@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "minecraft:paper",
+    "minecraft:piglin_head"
+  ],
+  "result": {
+    "id": "minecraft:piglin_banner_pattern"
+  }
+}

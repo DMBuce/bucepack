@@ -464,7 +464,7 @@ Banners dyed this way lose their patterns.
 === Loot Crafting
 
 Adds recipes for uncraftable chest loot items:
-saddles, nametags, horse armor, and banner patterns.
+saddles, nametags, horse armor, banner patterns, and sherds.
 
 //image::https://i.imgur.com/A6dYFhf.png[Recipes]
 //image::https://i.imgur.com/911Oepp.png[Recipes]
@@ -472,7 +472,8 @@ saddles, nametags, horse armor, and banner patterns.
 [%collapsible]
 ====
 
-{!./bin/recipes crafting_loot | sort}
+{!./bin/recipes crafting_loot | grep -v sherd | sort}
+* brick + 1 pottery sherd → 2 pottery sherd
 
 ====
 
