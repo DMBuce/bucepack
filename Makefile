@@ -480,7 +480,6 @@ farmable_FILES := $(DEFAULT_DATA_FILES) \
 	data/minecraft/loot_table/blocks/infested_*.json \
 	data/minecraft/loot_table/blocks/jungle_leaves.json \
 	data/minecraft/loot_table/blocks/wheat.json \
-	data/minecraft/loot_table/entities/cave_spider.json \
 	data/minecraft/loot_table/entities/goat.json \
 	data/minecraft/loot_table/entities/husk.json \
 	data/minecraft/loot_table/entities/shulker.json \

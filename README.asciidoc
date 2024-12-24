@@ -1848,8 +1848,6 @@ Goats drop mutton.
 Husks drop sand instead of rotten flesh,
 and sand drops from infested blocks not harvested with silk touch.
 
-Cave spiders drop cobwebs instead of string.
-
 Sniffers have a small chance to drop moss when killed by a player.
 They also dig up spore blossoms and small dripleaves,
 and can eat both types of dripleaves.
@@ -1877,7 +1875,6 @@ data/minecraft/loot_table/blocks/infested_stone_bricks.json
 data/minecraft/loot_table/blocks/infested_stone.json
 data/minecraft/loot_table/blocks/jungle_leaves.json
 data/minecraft/loot_table/blocks/wheat.json
-data/minecraft/loot_table/entities/cave_spider.json
 data/minecraft/loot_table/entities/goat.json
 data/minecraft/loot_table/entities/husk.json
 data/minecraft/loot_table/entities/shulker.json
