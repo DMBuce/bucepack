@@ -1,25 +1,28 @@
 pools:
   - rolls: { min: 2, max: 6 }
     entries:
-      - { type: item, weight: 5,  min: 2, max: 7, item: diamond }
-      - { type: item, weight: 10, min: 4, max: 8, item: iron_ingot }
-      - { type: item, weight: 10, min: 2, max: 7, item: gold_ingot }
-      - { type: item, weight: 5,  min: 4, max: 8, item: copper_ingot }
-      - { type: item, weight: 2,  min: 2, max: 6, item: emerald }
-      - { type: loot_table, weight: 5, table: loot_overhaul/cake }
-      - { type: explorer_map, weight: 5, structure: end_city, decor: target_point, display: "End Island Explorer Map", skipchunks: true }
+      - { type: item, weight: 5,  min: 2, max: 7,  item: diamond }
+      - { type: item, weight: 10, min: 4, max: 8,  item: iron_ingot }
+      - { type: item, weight: 10, min: 2, max: 7,  item: gold_ingot }
+      - { type: item, weight: 5,  min: 4, max: 8,  item: copper_ingot }
+      - { type: item, weight: 2,  min: 2, max: 6,  item: emerald }
+      - { type: loot_table, weight: 5, table: loot_overhaul/treasure_seeds }
+      - { type: item, weight: 5,  min: 1, max: 10, item: chorus_fruit }
+      - { type: item, weight: 1,  min: 2, max: 3,  item: chorus_fruit,
+          components: '{"minecraft:item_name":"''Enchanted Chorus Fruit''","minecraft:consumable":{"on_consume_effects":[{"type":"minecraft:teleport_randomly","diameter":384}]},"minecraft:enchantment_glint_override":true}'
+        }
+      - { type: item, weight: 3, enchant_lvl: { min: 30, max: 39 }, item: diamond_sword }
+      - { type: item, weight: 3, enchant_lvl: { min: 30, max: 39 }, item: diamond_boots }
+      - { type: item, weight: 3, enchant_lvl: { min: 30, max: 39 }, item: diamond_chestplate }
+      - { type: item, weight: 3, enchant_lvl: { min: 30, max: 39 }, item: diamond_leggings }
+      - { type: item, weight: 3, enchant_lvl: { min: 30, max: 39 }, item: diamond_helmet }
+      - { type: item, weight: 3, enchant_lvl: { min: 30, max: 39 }, item: diamond_pickaxe }
+      - { type: item, weight: 3, enchant_lvl: { min: 30, max: 39 }, item: diamond_axe }
+      - { type: item, weight: 6, min: 1, max: 3,  item: ender_eye }
       - { type: item, weight: 6, enchant_lvl: { min: 30, max: 39 }, item: crossbow }
       - { type: item, weight: 9,  min: 18, max: 36, item: firework_rocket,
           components: '{"fireworks":{"flight_duration":2,"explosions":[{"shape":"small_ball","has_twinkle":false,"has_trail":true,"colors":[14188952]},{"shape":"large_ball","has_twinkle":false,"has_trail":false,"colors":[12801229]}]}}'
-          #nbt: "{Fireworks:{Flight:2,Explosions:[{Type:0,Flicker:0,Trail:1,Colors:[I;14188952]},{Type:1,Flicker:0,Trail:0,Colors:[I;12801229]}]}}"
         }
-      - { type: item, weight: 4, enchant_lvl: { min: 30, max: 39 }, item: diamond_sword }
-      - { type: item, weight: 4, enchant_lvl: { min: 30, max: 39 }, item: diamond_boots }
-      - { type: item, weight: 4, enchant_lvl: { min: 30, max: 39 }, item: diamond_chestplate }
-      - { type: item, weight: 4, enchant_lvl: { min: 30, max: 39 }, item: diamond_leggings }
-      - { type: item, weight: 4, enchant_lvl: { min: 30, max: 39 }, item: diamond_helmet }
-      - { type: item, weight: 4, enchant_lvl: { min: 30, max: 39 }, item: diamond_pickaxe }
-      - { type: item, weight: 4, enchant_lvl: { min: 30, max: 39 }, item: diamond_axe }
   - rolls: 1
     entries:
       - { type: empty, weight: 14 }

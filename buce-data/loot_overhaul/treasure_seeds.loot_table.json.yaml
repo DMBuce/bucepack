@@ -1,0 +1,37 @@
+pools:
+  - rolls: 1
+    entries:
+      - { type: item, weight: 1, item: carrot            , min: 2, max: 4 }
+      - { type: item, weight: 1, item: potato            , min: 2, max: 4 }
+      - { type: item, weight: 1, item: wheat_seeds       , min: 2, max: 4 }
+      - { type: item, weight: 1, item: melon_seeds       , min: 2, max: 4 }
+      - { type: item, weight: 1, item: pumpkin_seeds     , min: 2, max: 4 }
+      - { type: item, weight: 1, item: beetroot_seeds    , min: 2, max: 4 }
+      - { type: item, weight: 1, item: cocoa_beans       , min: 2, max: 4 }
+      - { type: item, weight: 1, item: sweet_berries     , min: 2, max: 4 }
+      - { type: item, weight: 1, item: glow_berries      , min: 2, max: 4 }
+      - { type: item, weight: 1, item: fern              , min: 2, max: 4 }
+      - { type: item, weight: 1, item: vine              , min: 2, max: 4 }
+      - { type: item, weight: 1, item: weeping_vines     , min: 2, max: 4 }
+      - { type: item, weight: 1, item: twisting_vines    , min: 2, max: 4 }
+      - { type: item, weight: 1, item: pale_hanging_moss , min: 2, max: 4 }
+      - { type: item, weight: 1, item: glow_lichen       , min: 2, max: 4 }
+      - { type: item, weight: 1, item: small_dripleaf    , min: 2, max: 4 }
+      - { type: item, weight: 1, item: fern              , min: 2, max: 4 }
+      - { type: item, weight: 1, item: short_grass       , min: 2, max: 4 }
+      - { type: item, weight: 1, item: cactus            , min: 2, max: 4 }
+      - { type: item, weight: 1, item: sugar_cane        , min: 2, max: 4 }
+      - { type: item, weight: 1, item: bamboo            , min: 2, max: 4 }
+      - { type: item, weight: 1, item: kelp              , min: 2, max: 4 }
+      - { type: item, weight: 1, item: brown_mushroom    , min: 2, max: 4 }
+      - { type: item, weight: 1, item: red_mushroom      , min: 2, max: 4 }
+      - { type: item, weight: 1, item: pink_petals       , min: 2, max: 4 }
+      - { type: item, weight: 1, item: rose_bush         , min: 2, max: 4 }
+      - { type: item, weight: 1, item: lilac             , min: 2, max: 4 }
+      - { type: item, weight: 1, item: peony             , min: 2, max: 4 }
+      - { type: item, weight: 1, item: sunflower         , min: 2, max: 4 }
+      - { type: item, weight: 1, item: snowball          , min: 8, max: 12 }
+      - { type: item, weight: 1, item: egg               , min: 8, max: 12 }
+      - { type: item, weight: 1, item: coarse_dirt       , min: 2, max: 4 }
+      - { type: item, weight: 1, item: stripped_warped_hyphae , min: 4, max: 8 }
+      - { type: item, weight: 1, item: sculk_catalyst    , count: 1 }

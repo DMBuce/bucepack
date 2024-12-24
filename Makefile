@@ -103,7 +103,6 @@ DATAPACKFILES = \
 	#illusory_trader.zip \
 	#leashed.zip \
 	#lichdom.zip \
-	#loot_overhaul_treasure_seeds.zip \
 	#network_deep.zip \
 	#worldgen_apocalypse.zip \
 	#worldgen_desert_breeze.zip \
@@ -519,11 +518,6 @@ loot_overhaul_FILES := $(DEFAULT_DATA_FILES) \
 	data/minecraft/tags/item/creeper_drop_music_discs.json \
 	data/minecraft/tags/item/starter_item.json \
 
-loot_overhaul_treasure_seeds_FILES := $(DEFAULT_DATA_FILES) \
-	$(shell ls buce-data/loot_addons/loot_overhaul_treasure_seeds* | ./bin/ext2dir) \
-	data/buce/loot_table/loot_overhaul/sus_stew_loot_overhaul_treasure_seeds.json \
-	data/buce/loot_table/loot_overhaul/cake_loot_overhaul_treasure_seeds.json \
-
 loot_overhaul_treasure_barrels_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell ls buce-data/loot_addons/loot_overhaul_treasure_barrels* | ./bin/ext2dir) \
 	data/buce/loot_table/loot_overhaul/buried_treasure_loot_overhaul_treasure_barrels.json \
@@ -928,7 +922,7 @@ escape_nether_FILES := $(DEFAULT_DATA_FILES) \
 escape_grind_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell find buce-data/escape/grind -type f | ./bin/ext2dir) \
 	data/buce/function/var.mcfunction \
-	data/buce/loot_table/loot_overhaul/cake_escape_grind.json \
+	data/buce/loot_table/loot_overhaul/treasure_seeds.json \
 	data/buce/recipe/escape/grind/grindstone.json \
 	data/minecraft/loot_table/blocks/crying_obsidian_escape_grind.json \
 	data/minecraft/loot_table/chests/end_city_treasure.json \
@@ -1507,12 +1501,6 @@ loot_overhaul.zip: $(loot_overhaul_FILES)
 	./bin/ziprename _$(@:.zip=) "" $@
 
 loot_overhaul_treasure_barrels.zip: $(loot_overhaul_treasure_barrels_FILES)
-	cp meta/$(@:.zip=.png) pack.png
-	sempl meta/$(@:.zip=.mcmeta.sempl) pack.mcmeta
-	zip $@ pack.png pack.mcmeta $^
-	./bin/ziprename _$(@:.zip=) "" $@
-
-loot_overhaul_treasure_seeds.zip: $(loot_overhaul_treasure_seeds_FILES)
 	cp meta/$(@:.zip=.png) pack.png
 	sempl meta/$(@:.zip=.mcmeta.sempl) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^

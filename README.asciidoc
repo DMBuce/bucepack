@@ -2316,7 +2316,6 @@ a Reconnaissance Map that leads to a Pillager Outpost,
 and the chest in the outpost has a chance to spawn
 a Swamp Exploration Map that leads to a Witch Hut.
 Maps found in Nether Fortresses lead to Piglin Bastions, and vice versa.
-End City chests have a chance to spawn a map leading to another End City.
 Maps leading to Jungle Temples can generate in Stronghold Libraries.
 Big Underwater Ruins can have maps that lead to Ancient Cities.
 And so on.
