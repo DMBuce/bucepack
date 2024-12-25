@@ -34,7 +34,6 @@ RESOURCEPACKFILES = \
 	ravager.zip \
 	tech_arrows.zip \
 	villager_mech.zip \
-	#classic_gravel.zip \
 
 DATAPACKFILES = \
 	$(DATARESOURCEPACKFILES) \
@@ -313,9 +312,6 @@ classic_lava_FILES := $(DEFAULT_RESOURCE_FILES) \
 	assets/minecraft/textures/block/lava_flow.png.mcmeta \
 	assets/minecraft/textures/block/lava_still.png \
 	assets/minecraft/textures/block/lava_flow.png \
-
-classic_gravel_FILES := $(DEFAULT_RESOURCE_FILES) \
-	assets/minecraft/textures/block/gravel.png \
 
 classic_obsidian_FILES := $(DEFAULT_RESOURCE_FILES) \
 	assets/minecraft/textures/block/crying_obsidian.png \
@@ -1214,12 +1210,6 @@ classic_netherrack.zip: $(classic_netherrack_FILES)
 	./bin/ziprename _$(@:.zip=) "" $@
 
 classic_lava.zip: $(classic_lava_FILES)
-	cp meta/$(@:.zip=.png) pack.png
-	sempl meta/$(@:.zip=.mcmeta.sempl) pack.mcmeta
-	zip $@ pack.png pack.mcmeta $^
-	./bin/ziprename _$(@:.zip=) "" $@
-
-classic_gravel.zip: $(classic_gravel_FILES)
 	cp meta/$(@:.zip=.png) pack.png
 	sempl meta/$(@:.zip=.mcmeta.sempl) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^
