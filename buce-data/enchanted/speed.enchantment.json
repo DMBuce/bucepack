@@ -1,0 +1,33 @@
+{
+  "description": "Speed",
+  "max_level": 2,
+  "effects": {
+    "minecraft:attributes": [
+      {
+        "amount": {
+          "type": "minecraft:linear",
+          "base": 0.2,
+          "per_level_above_first": 0.2
+        },
+        "attribute": "minecraft:movement_speed",
+        "id": "minecraft:effect.speed",
+        "operation": "add_multiplied_total"
+      }
+    ]
+  },
+  "exclusive_set": "minecraft:soul_speed",
+  "anvil_cost": 4,
+  "weight": 2,
+  "max_cost": {
+    "base": 25,
+    "per_level_above_first": 20
+  },
+  "min_cost": {
+    "base": 10,
+    "per_level_above_first": 20
+  },
+  "slots": [
+    "feet"
+  ],
+  "supported_items": "#buce:enchanted/light_foot_armor"
+}

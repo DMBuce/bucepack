@@ -55,6 +55,7 @@ DATAPACKFILES = \
 	debugless.zip \
 	dragonproof.zip \
 	elemental.zip \
+	enchanted.zip \
 	escape_end.zip \
 	escape_grind.zip \
 	escape_nether.zip \
@@ -656,6 +657,10 @@ elemental_FILES := $(DEFAULT_DATA_FILES) \
 	data/minecraft/loot_table/entities/iron_golem.json \
 	data/minecraft/loot_table/entities/snow_golem.json \
 
+enchanted_FILES := $(DEFAULT_DATA_FILES) \
+	$(shell find buce-data/enchanted -type f | ./bin/ext2dir) \
+	$(wildcard data/minecraft/tags/enchantment/*.json) \
+
 speedy_paths_FILES := $(DEFAULT_DATA_FILES) \
 	$(shell find buce-data/speedy_paths -type f | ./bin/ext2dir) \
 
@@ -1054,6 +1059,10 @@ data/buce/tags/item/%.json: buce-data/%.item.tag.json
 	mkdir -p $(dir $@)
 	cp -v $< $@
 
+data/buce/tags/enchantment/%.json: buce-data/%.enchantment.tag.json
+	mkdir -p $(dir $@)
+	cp -v $< $@
+
 data/buce/tags/function/%.json: buce-data/%.function.tag.json
 	mkdir -p $(dir $@)
 	cp -v $< $@
@@ -1071,6 +1080,10 @@ data/buce/dimension_type/%.json: buce-data/%.dimension_type.json
 	cp -v $< $@
 
 data/buce/dimension/%.json: buce-data/%.dimension.json
+	mkdir -p $(dir $@)
+	cp -v $< $@
+
+data/buce/enchantment/%.json: buce-data/%.enchantment.json
 	mkdir -p $(dir $@)
 	cp -v $< $@
 
@@ -1546,6 +1559,12 @@ archived.zip: $(archived_FILES)
 	./bin/ziprename _$(@:.zip=) "" $@
 
 elemental.zip: $(elemental_FILES)
+	cp meta/$(@:.zip=.png) pack.png
+	sempl meta/$(@:.zip=.mcmeta.sempl) pack.mcmeta
+	zip $@ pack.png pack.mcmeta $^
+	./bin/ziprename _$(@:.zip=) "" $@
+
+enchanted.zip: $(enchanted_FILES)
 	cp meta/$(@:.zip=.png) pack.png
 	sempl meta/$(@:.zip=.mcmeta.sempl) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^

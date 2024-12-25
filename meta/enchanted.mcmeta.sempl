@@ -1,0 +1,13 @@
+{
+  "pack": {
+    "pack_format": {./cache/version-data.txt},
+    "description": "Buce's Enchanted: Extra enchantments"
+  },
+  "root": {
+    "title": "Enchanted",
+    "explanation": "Extra enchantments",
+    "icon": {
+      "id": "minecraft:experience_bottle"
+    }
+  }
+}

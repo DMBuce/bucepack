@@ -1,0 +1,42 @@
+{
+  "description": "Jump Boost",
+  "max_level": 2,
+  "effects": {
+    "minecraft:attributes": [
+      {
+        "amount": {
+          "type": "minecraft:linear",
+          "base": 0.25,
+          "per_level_above_first": 0.25
+        },
+        "attribute": "minecraft:jump_strength",
+        "id": "minecraft:effect.jump_boost",
+        "operation": "add_multiplied_base"
+      },
+      {
+        "amount": {
+          "type": "minecraft:linear",
+          "base": 1.0,
+          "per_level_above_first": 1.0
+        },
+        "attribute": "minecraft:safe_fall_distance",
+        "id": "minecraft:effect.jump_boost",
+        "operation": "add_value"
+      }
+    ]
+  },
+  "anvil_cost": 4,
+  "weight": 2,
+  "max_cost": {
+    "base": 25,
+    "per_level_above_first": 20
+  },
+  "min_cost": {
+    "base": 10,
+    "per_level_above_first": 20
+  },
+  "slots": [
+    "legs"
+  ],
+  "supported_items": "#minecraft:enchantable/leg_armor"
+}

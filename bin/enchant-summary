@@ -1,0 +1,33 @@
+#!/bin/bash
+# prints a summary of enchantment stats
+
+printf "%25s %-3s %-12s %-9s %-9s %-9s %-9s\n" ID WT ANVIL_COST MAX_LVL MIN_COST MAX_COST AVG_COST
+for file in \
+	"$(./bin/latest)".jar/data/minecraft/enchantment/* \
+	buce-data/enchanted/*.enchantment.json
+do
+	# get stats
+	enchant="${file##*/}"
+	enchant="${enchant%.json}"
+	enchant="${enchant%.enchantment}"
+	anvil_cost="$(jq -r .anvil_cost "$file")"
+	max_lvl="$(jq -r .max_level "$file")"
+	weight="$(jq -r .weight "$file")"
+	max_cost_base="$(jq -r .max_cost.base "$file")"
+	max_cost_lvl="$(jq -r .max_cost.per_level_above_first "$file")"
+	min_cost_base="$(jq -r .min_cost.base "$file")"
+	min_cost_lvl="$(jq -r .min_cost.per_level_above_first "$file")"
+
+	# compute some state based on costs
+	min_min_cost=$(( min_cost_base ))
+	max_max_cost=$(( max_cost_base + max_cost_lvl*(max_lvl-1) ))
+	avg_min_cost=$(( min_cost_base + min_cost_lvl*(max_lvl-1)/2 )).$(( min_cost_lvl*(max_lvl-1)%2 * 5 ))
+	avg_max_cost=$(( max_cost_base + max_cost_lvl*(max_lvl-1)/2 )).$(( min_cost_lvl*(max_lvl-1)%2 * 5 ))
+	avg_cost_numerator=$((
+		2*min_cost_base + min_cost_lvl*(max_lvl-1)
+		+ 2*max_cost_base + max_cost_lvl*(max_lvl-1)
+	))
+	avg_cost=$((avg_cost_numerator/4)).$((avg_cost_numerator%4 * 25))
+	printf "%25s %-3s %-12s %-9s %-9s %-9s %-9s\n" "$enchant" "$weight" "$anvil_cost" "$max_lvl" "$min_min_cost" "$max_max_cost" "$avg_cost"
+done | sort -nk2
+

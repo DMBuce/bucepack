@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "buce:enchanted/darkvision",
+    "buce:enchanted/jump_boost",
+    "buce:enchanted/reach",
+    "buce:enchanted/speed"
+  ]
+}

@@ -1040,7 +1040,7 @@ data/minecraft/tags/block/soul_fire_base_blocks.json
 
 == Recipe Data Packs
 
-These packs add or modify recipes in the vanilla game.
+These packs add or modify recipes and/or enchantments in the vanilla game.
 They shouldn't add any lag to your game.
 
 === Colorful Crafting
@@ -1617,6 +1617,23 @@ data/minecraft/loot_table/blocks/player_head.json
 [%collapsible]
 ====
 ====
+
+=== Enchanted
+
+Adds the following custom enchantments that can be obtained from the
+enchanting table, chest loot, and mob equipment.
+
+* **Reach** (Trident):
+  Increases the range at which players can attack mobs and build with blocks.
+* **Speed I-II** (Leather, Gold, or Chainmail Boots):
+  Increases speed by 20% per level.
+  Does not stack with the speed effect from potions or beacons.
+  Mutually exclusive with Soul Speed.
+* **Jump Boost I-II** (Leggings):
+  Increases jump height by ??? per level.
+  Does not stack with the jump boost effect from potions or beacons.
+* **Darkvision** (Leather, Gold, Chainmail, or Turtle Helmet):
+  Gives night vision in low light levels.
 
 === Upgraded Smithing
 

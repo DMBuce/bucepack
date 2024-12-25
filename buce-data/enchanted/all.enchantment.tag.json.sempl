@@ -1,0 +1,10 @@
+#!/usr/bin/env sempl
+SEMPL_BRACES = {}
+#!end sempl env
+{
+  "replace": false,
+  "values": [
+    "{!find buce-data/enchanted/*.enchantment.json \! -name \*.tag.\* | ./bin/ext2dir | ./bin/path2res | head -n-1}",
+    "{!find buce-data/enchanted/*.enchantment.json \! -name \*.tag.\* | ./bin/ext2dir | ./bin/path2res | tail -n1}"
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "description": "Darkvision",
+  "supported_items": "#buce:enchanted/light_head_armor",
+  "weight": 1,
+  "max_level": 1,
+  "min_cost": {
+    "base": 0,
+    "per_level_above_first": 0
+  },
+  "max_cost": {
+    "base": 0,
+    "per_level_above_first": 0
+  },
+  "anvil_cost": 0,
+  "slots": [],
+  "effects": {
+    "minecraft:tick": [
+      {
+        "requirements": [
+          {
+            "condition": "minecraft:inverted",
+            "term": {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "effects": {
+                  "minecraft:night_vision": {
+                    "duration": { "min": 12 }
+                  }
+                }
+              }
+            }
+          },
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "light": {
+                "light": { "max": 3 }
+              }
+            }
+          }
+        ],
+        "effect": {
+          "type": "minecraft:apply_mob_effect",
+          "to_apply": "minecraft:night_vision",
+          "min_duration": 17,
+          "max_duration": 17,
+          "min_amplifier": 0,
+          "max_amplifier": 0
+        }
+      }
+    ]
+  }
+}

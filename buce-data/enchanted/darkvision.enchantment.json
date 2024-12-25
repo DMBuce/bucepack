@@ -1,0 +1,40 @@
+{
+  "description": "Darkvision",
+  "max_level": 1,
+  "effects": {
+    "minecraft:location_changed": [
+      {
+        "effect": {
+          "type": "minecraft:apply_mob_effect",
+          "to_apply": "minecraft:night_vision",
+          "min_duration": 17,
+          "max_duration": 17,
+          "min_amplifier": 0,
+          "max_amplifier": 0
+        },
+        "requirements": {
+          "condition": "minecraft:location_check",
+          "predicate": {
+            "light": {
+              "light": { "min": 0, "max": 3 }
+            }
+          }
+        }
+      }
+    ]
+  },
+  "anvil_cost": 8,
+  "weight": 1,
+  "max_cost": {
+    "base": 25,
+    "per_level_above_first": 10
+  },
+  "min_cost": {
+    "base": 10,
+    "per_level_above_first": 10
+  },
+  "slots": [
+    "head"
+  ],
+  "supported_items": "#buce:enchanted/light_head_armor"
+}

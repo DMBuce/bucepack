@@ -1,0 +1,35 @@
+{
+  "description": "Reach",
+  "max_level": 1,
+  "effects": {
+    "minecraft:attributes": [
+      {
+        "amount": 1.0,
+        "attribute": "minecraft:entity_interaction_range",
+        "id": "buce:enchanted.entity_reach",
+        "operation": "add_value"
+      },
+      {
+        "amount": 2.0,
+        "attribute": "minecraft:block_interaction_range",
+        "id": "buce:enchanted.block_reach",
+        "operation": "add_value"
+      }
+    ]
+  },
+  "anvil_cost": 4,
+  "weight": 2,
+  "max_cost": {
+    "base": 50,
+    "per_level_above_first": 0
+  },
+  "min_cost": {
+    "base": 20,
+    "per_level_above_first": 0
+  },
+  "slots": [
+    "mainhand",
+    "offhand"
+  ],
+  "supported_items": "#buce:enchanted/light_foot_armor"
+}

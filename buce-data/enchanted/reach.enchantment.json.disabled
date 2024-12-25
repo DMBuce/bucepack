@@ -1,0 +1,54 @@
+{
+  "description": "Reach",
+  "supported_items": "#buce:enchanted/light_head_armor",
+  "weight": 1,
+  "max_level": 1,
+  "min_cost": {
+    "base": 0,
+    "per_level_above_first": 0
+  },
+  "max_cost": {
+    "base": 0,
+    "per_level_above_first": 0
+  },
+  "anvil_cost": 0,
+  "slots": [],
+  "effects": {
+    "minecraft:location_changed": [
+      {
+        "requirements": {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "equipment": {
+              "mainhand": {
+                "components": {
+                  "minecraft:enchantments": {
+                    "levels": {
+                      "buce:enchanted/reach": 1
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "effect": {
+          "type": "minecraft:attribute",
+          "attribute": "minecraft:entity_interaction_range",
+          "id": "buce:enchanted.entity_reach",
+          "amount": 1,
+          "operation": "add_value"
+        }
+      }
+    ],
+    "minecraft:attributes": [
+      {
+        "attribute": "minecraft:block_interaction_range",
+        "id": "buce:enchanted.block_reach",
+        "amount": 2,
+        "operation": "add_value"
+      }
+    ]
+  }
+}
