@@ -1,8 +1,9 @@
 {
-  "note-to-self": "include only what can be planted as single blocks in the ground and avoid double-tall or vinelike plants",
   "replace": true,
   "values": [
     "#minecraft:small_flowers",
+    "minecraft:brown_mushroom",
+    "minecraft:red_mushroom",
     "minecraft:tnt",
     "minecraft:cactus",
     "minecraft:pumpkin",
@@ -11,18 +12,6 @@
     "minecraft:crimson_fungus",
     "minecraft:crimson_roots",
     "minecraft:warped_fungus",
-    "minecraft:warped_roots",
-    "minecraft:dead_bush",
-    "minecraft:short_grass",
-    "minecraft:fern",
-    "#minecraft:saplings",
-    "minecraft:sweet_berry_bush",
-    "minecraft:brown_mushroom",
-    "minecraft:red_mushroom",
-    "minecraft:glow_lichen",
-    "minecraft:small_dripleaf",
-    "minecraft:azalea",
-    "minecraft:flowering_azalea",
-	"minecraft:torchflower"
+    "minecraft:warped_roots"
   ]
 }

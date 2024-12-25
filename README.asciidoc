@@ -867,7 +867,7 @@ data/minecraft/tags/block/dragon_immune.json
 === Gardener Endermen
 
 Makes it so that endermen can't pick up blocks such as dirt and grass blocks,
-and can pick up more plants and fungi.
+and can only pick up plants and fungi.
 
 All the blocks that endermen can pick up are listed
 https://raw.githubusercontent.com/DMBuce/bucepack/refs/heads/master/data/minecraft/tags/block/enderman_holdable.json[here].
