@@ -1,49 +1,33 @@
 {
-  "type": "minecraft:smithing_transform",
-  "addition": "minecraft:rabbit_foot",
-  "base": "minecraft:rabbit_hide",
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "X": "minecraft:rabbit_hide",
+    "#": "minecraft:rabbit_foot"
+  },
+  "pattern": [
+    "X X",
+    "# #"
+  ],
   "result": {
     "count": 1,
     "id": "minecraft:leather_boots",
     "components": {
-      "minecraft:custom_model_data": {"floats": [22183]},
+      "minecraft:item_model": "minecraft:moccasins",
       "minecraft:item_name": "'Moccasins'",
-	  "minecraft:dyed_color": {
-		  "rgb": 14201473,
-		  "show_in_tooltip": false
-	  },
-      "minecraft:lore": [
-        "'§r§7Speed II'",
-        "'§r§7Jump Boost II'",
-        "'§r§7Springy Step'"
-      ],
+      "minecraft:repairable": {
+        "items": "minecraft:rabbit_hide"
+      },
+      "minecraft:dyed_color": {
+        "rgb": 14201473,
+        "show_in_tooltip": false
+      },
       "minecraft:attribute_modifiers": [
         {
           "type": "minecraft:armor",
           "id": "minecraft:armor",
           "slot": "feet",
           "amount": 1.0,
-          "operation": "add_value"
-        },
-        {
-          "type": "minecraft:movement_speed",
-          "id": "minecraft:movement_speed",
-          "slot": "feet",
-          "amount": 0.4,
-          "operation": "add_multiplied_total"
-        },
-        {
-          "type": "minecraft:jump_strength",
-          "id": "minecraft:jump_strength",
-          "slot": "feet",
-          "amount": 0.5,
-          "operation": "add_multiplied_base"
-        },
-        {
-          "type": "minecraft:safe_fall_distance",
-          "id": "minecraft:safe_fall_distance",
-          "slot": "feet",
-          "amount": 2.0,
           "operation": "add_value"
         },
         {
@@ -55,6 +39,5 @@
         }
       ]
     }
-  },
-  "template": "minecraft:netherite_upgrade_smithing_template"
+  }
 }
