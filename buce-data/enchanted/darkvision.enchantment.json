@@ -2,8 +2,32 @@
   "description": "Darkvision",
   "max_level": 1,
   "effects": {
-    "minecraft:location_changed": [
+    "minecraft:tick": [
       {
+        "requirements": [
+          {
+            "condition": "minecraft:inverted",
+            "term": {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "effects": {
+                  "minecraft:night_vision": {
+                    "duration": { "min": 261, "max": 999999 }
+                  }
+                }
+              }
+            }
+          },
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "light": {
+                "light": { "max": 3 }
+              }
+            }
+          }
+        ],
         "effect": {
           "type": "minecraft:apply_mob_effect",
           "to_apply": "minecraft:night_vision",
@@ -11,14 +35,6 @@
           "max_duration": 17,
           "min_amplifier": 0,
           "max_amplifier": 0
-        },
-        "requirements": {
-          "condition": "minecraft:location_check",
-          "predicate": {
-            "light": {
-              "light": { "min": 0, "max": 3 }
-            }
-          }
         }
       }
     ]
