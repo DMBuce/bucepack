@@ -1627,11 +1627,9 @@ enchanting table, chest loot, and mob equipment.
   Increases the range at which players can attack mobs and build with blocks.
 * **Speed I-II** (Leather, Gold, or Chainmail Boots):
   Increases speed by 20% per level.
-  Does not stack with the speed effect from potions or beacons.
   Mutually exclusive with Soul Speed.
 * **Jump Boost I-II** (Leggings):
-  Increases jump height by ??? per level.
-  Does not stack with the jump boost effect from potions or beacons.
+  Increases jump strength by 0.1 blocks per tick per level.
 * **Darkvision** (Leather, Gold, Chainmail, or Turtle Helmet):
   Gives night vision in low light levels.
 
