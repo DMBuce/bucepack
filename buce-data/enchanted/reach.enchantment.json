@@ -2,17 +2,39 @@
   "description": "Reach",
   "max_level": 1,
   "effects": {
+    "minecraft:location_changed": [
+      {
+        "requirements": {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "equipment": {
+              "mainhand": {
+                "components": {
+                  "minecraft:enchantments": {
+                    "levels": {
+                      "buce:enchanted/reach": 1
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "effect": {
+          "type": "minecraft:attribute",
+          "attribute": "minecraft:entity_interaction_range",
+          "id": "buce:enchanted.entity_reach",
+          "amount": 1,
+          "operation": "add_value"
+        }
+      }
+    ],
     "minecraft:attributes": [
       {
-        "amount": 1.0,
-        "attribute": "minecraft:entity_interaction_range",
-        "id": "buce:enchanted.entity_reach",
-        "operation": "add_value"
-      },
-      {
-        "amount": 2.0,
         "attribute": "minecraft:block_interaction_range",
         "id": "buce:enchanted.block_reach",
+        "amount": 2,
         "operation": "add_value"
       }
     ]
@@ -31,5 +53,5 @@
     "mainhand",
     "offhand"
   ],
-  "supported_items": "#buce:enchanted/light_foot_armor"
+  "supported_items": "#minecraft:enchantable/trident"
 }
