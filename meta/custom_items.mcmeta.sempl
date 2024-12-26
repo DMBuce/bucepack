@@ -2,11 +2,11 @@
   "pack": {
     "pack_format": {./cache/version-data.txt},
     "supported_formats": {./cache/version-supported.txt},
-    "description": "Buce's Upgraded Smithing: Smithing upgrades"
+    "description": "Buce's Custom Items: Adds more items"
   },
   "root": {
-    "title": "Smithing Upgrades",
-    "explanation": "Extra smithing upgrades",
+    "title": "Custom Items",
+    "explanation": "Adds more items",
     "icon": {
       "id": "minecraft:netherite_upgrade_smithing_template"
     }

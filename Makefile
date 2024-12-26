@@ -4,7 +4,7 @@ DATARESOURCEPACKFILES = \
 	pig_armor.zip \
 	oven_brick.zip \
 	phantasmal.zip \
-	smithing_upgrade.zip \
+	custom_items.zip \
 	poseable.zip \
 	#copper_overhaul.zip \
 
@@ -684,8 +684,8 @@ poseable_FILES := $(DEFAULT_DATA_FILES) \
 	assets/minecraft/models/item/armor_stand*arms*plate.json \
 	assets/minecraft/textures/item/armor_stand*arms*plate.png \
 
-smithing_upgrade_FILES := $(DEFAULT_DATA_FILES) \
-	$(shell find buce-data/smithing/upgrade -type f | ./bin/ext2dir) \
+custom_items_FILES := $(DEFAULT_DATA_FILES) \
+	$(shell find buce-data/custom_items -type f | ./bin/ext2dir) \
 	data/minecraft/recipe/netherite_upgrade_smithing_template.json \
 	assets/minecraft/models/item/bow.json \
 	assets/minecraft/models/item/leather_boots.json \
@@ -1642,7 +1642,7 @@ poseable.zip: $(poseable_FILES)
 	zip $@ pack.png pack.mcmeta $^
 	./bin/ziprename _$(@:.zip=) "" $@
 
-smithing_upgrade.zip: $(smithing_upgrade_FILES)
+custom_items.zip: $(custom_items_FILES)
 	cp meta/$(@:.zip=.png) pack.png
 	sempl meta/$(@:.zip=.mcmeta.sempl) pack.mcmeta
 	zip $@ pack.png pack.mcmeta $^
