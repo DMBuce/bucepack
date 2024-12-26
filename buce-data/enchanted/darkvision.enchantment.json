@@ -1,5 +1,7 @@
 {
-  "description": "Darkvision",
+  "description": {
+    "translate": "Darkvision"
+  },
   "max_level": 1,
   "effects": {
     "minecraft:tick": [

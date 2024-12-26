@@ -1,5 +1,7 @@
 {
-  "description": "Speed",
+  "description": {
+    "translate": "Speed"
+  },
   "max_level": 2,
   "effects": {
     "minecraft:attributes": [

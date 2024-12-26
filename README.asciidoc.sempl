@@ -628,14 +628,17 @@ Adds the following custom enchantments that can be obtained from the
 enchanting table, chest loot, and mob equipment.
 
 * **Reach** (Trident):
-  Increases the range at which players can attack mobs and build with blocks.
+  Increases mob interaction range by 1 block when held in the main hand.
+  Increases block interaction range by 2 blocks when held in the main or off hand.
 * **Speed I-II** (Leather, Gold, or Chainmail Boots):
   Increases speed by 20% per level.
   Mutually exclusive with Soul Speed.
 * **Jump Boost I-II** (Leggings):
-  Increases jump strength by 0.1 blocks per tick per level.
+  Increases jump strength by 2m/s per level.
 * **Darkvision** (Leather, Gold, Chainmail, or Turtle Helmet):
-  Gives night vision in low light levels.
+  Gives night vision at
+  https://minecraft.wiki/w/Light#Internal_light_level[internal light level]
+  3 or less.
 
 === Upgraded Smithing
 

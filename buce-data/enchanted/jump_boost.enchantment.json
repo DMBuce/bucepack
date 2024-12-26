@@ -1,5 +1,7 @@
 {
-  "description": "Jump Boost",
+  "description": {
+    "translate": "Jump Boost"
+  },
   "max_level": 2,
   "effects": {
     "minecraft:attributes": [

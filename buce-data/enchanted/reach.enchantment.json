@@ -1,5 +1,7 @@
 {
-  "description": "Reach",
+  "description": {
+    "translate": "Reach"
+  },
   "max_level": 1,
   "effects": {
     "minecraft:location_changed": [
